@@ -57,10 +57,16 @@ const jsonLd = [
   description={data.description}
   canonicalPath={`/radiolink/${data.slug}/`}
   jsonLd={jsonLd}
+  robots={data.content_status === 'manufacturer_review' ? 'noindex, nofollow' : undefined}
 >
   <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-6 lg:px-8">
     <Breadcrumbs items={breadcrumbItems} />
     <ProductHero product={data} />
+    {data.content_status === 'manufacturer_review' && (
+      <UnverifiedNotice
+        text={data.review_note ?? 'この商品情報はメーカー確認中です。確認完了までは確定仕様として扱わないでください。'}
+      />
+    )}
 
     <div class="grid gap-12 lg:grid-cols-[1fr_20rem]">
       <div class="space-y-12">
@@ -80,7 +86,12 @@ const jsonLd = [
         <section data-product-section="specifications">
           <h2 class="text-3xl font-bold text-slate-950">主な仕様</h2>
           {data.specifications.length ? (
-            <DefinitionTable rows={data.specifications} />
+            <>
+              <DefinitionTable rows={data.specifications} />
+              {data.specifications.some((row) => row.status === 'review_required') && (
+                <UnverifiedNotice text="一部仕様はメーカー確認中です。" />
+              )}
+            </>
           ) : (
             <UnverifiedNotice />
           )}
@@ -89,11 +100,16 @@ const jsonLd = [
         <section data-product-section="receivers">
           <h2 class="text-3xl font-bold text-slate-950">対応受信機</h2>
           {data.relations.receivers.length ? (
-            <ul>
-              {data.relations.receivers.map((receiver) => (
-                <li>{receiver}</li>
-              ))}
-            </ul>
+            <>
+              <ul>
+                {data.relations.receivers.map((receiver) => (
+                  <li>{receiver}</li>
+                ))}
+              </ul>
+              {data.relations.receiver_status === 'review_required' && (
+                <UnverifiedNotice text="対応受信機リストはメーカー確認中です。" />
+              )}
+            </>
           ) : (
             <UnverifiedNotice />
           )}
@@ -119,7 +135,10 @@ const jsonLd = [
           {data.firmware.length ? (
             <ul>
               {data.firmware.map((item) => (
-                <li>{item.title}</li>
+                <li>
+                  <span>{item.title}</span>
+                  {item.note && <small class="ml-2 text-slate-500">{item.note}</small>}
+                </li>
               ))}
             </ul>
           ) : (
@@ -128,7 +147,7 @@ const jsonLd = [
         </section>
 
         <section data-product-section="updates">
-          <h2 class="text-3xl font-bold text-slate-950">更新情報</h2>
+          <h2 class="text-3xl font-bold text-slate-950">Radiolink更新情報</h2>
           {updates.length ? (
             <ul>
               {updates.map(({ data: update }) => (
