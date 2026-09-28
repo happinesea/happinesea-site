@@ -6,41 +6,138 @@
     "slug": "rc8x",
     "category": "送信機",
     "title": "RC8X",
-    "description": "RC8Xは、車両・ボート向けとして案内されているRadiolinkの8チャンネル送信機です。このページは商品テンプレート検証用の公開サンプルです。",
-    "content_status": "sample",
-    "features": ["8チャンネル送信機"],
+    "description": "RC8Xは、RCカー・ボート・ロボット向けのタッチスクリーン搭載送信機です。現行公式情報と日本語マニュアル正本をもとにメーカー確認用データを構成しています。",
+    "content_status": "manufacturer_review",
+    "review_note": "メーカー確認中です。特に8ch/16chのFirmware条件、対応受信機、画像、現行UI/図版を確認しています。",
+    "features": [
+      "4.3インチ 800×480 フルカラーIPSタッチスクリーン",
+      "200モデルメモリー",
+      "地上で最大600mのコントロール距離（メーカー試験条件）",
+      "出荷時8ch。現行公式ページではFirmware更新後16ch対応と案内"
+    ],
     "specifications": [
-      { "label": "チャンネル数", "value": "8", "status": "verified" },
-      { "label": "対象", "value": "車両・ボート", "status": "verified" }
+      {
+        "label": "寸法",
+        "value": "121×163×209mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "438.5g",
+        "status": "verified"
+      },
+      {
+        "label": "用途",
+        "value": "カー / ボート / ロボット",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "出荷時8ch / Firmware更新後16ch案内あり",
+        "status": "review_required"
+      },
+      {
+        "label": "画面",
+        "value": "4.3インチ 800×480 フルカラーIPSタッチスクリーン",
+        "status": "verified"
+      },
+      {
+        "label": "周波数帯",
+        "value": "2.4GHz ISM（2400MHz–2483.5MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS、67チャンネル疑似ランダム周波数ホッピング",
+        "status": "verified"
+      },
+      {
+        "label": "応答遅延",
+        "value": "3ms / 4ms / 14msから選択",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "7–17V DC",
+        "status": "verified"
+      },
+      {
+        "label": "モデルメモリー",
+        "value": "200",
+        "status": "verified"
+      },
+      {
+        "label": "サブID",
+        "value": "16",
+        "status": "verified"
+      },
+      {
+        "label": "CRSF",
+        "value": "対応",
+        "status": "verified"
+      }
     ],
     "media": {
       "hero": {
         "src": null,
-        "alt": "",
+        "alt": "Radiolink RC8X 送信機",
         "source_image_url": null,
         "source_page_url": "https://www.radiolink.com/rc8x",
         "retrieved_at": null,
         "width": null,
         "height": null,
-        "image_status": "unavailable"
+        "image_status": "manufacturer_source_required"
       }
     },
     "manuals": [
       {
-        "title": "RC8X 日本語マニュアル（構成サンプル）",
-        "href": "/manuals/rc8x/",
-        "status": "sample"
+        "title": "第1章 RC8X リモートコントロールシステム",
+        "href": "/manuals/rc8x/chapter-01/",
+        "status": "manufacturer_review"
       },
       {
-        "title": "基本設定（構成サンプル）",
-        "href": "/manuals/rc8x/basic-setup/",
-        "status": "sample"
+        "title": "第2章 RC8X 基本機能",
+        "href": "/manuals/rc8x/chapter-02/",
+        "status": "manufacturer_review"
       }
     ],
-    "firmware": [],
-    "support": { "href": "/support/", "faq_count": 0 },
-    "relations": { "products": [], "receivers": [] },
+    "firmware": [
+      {
+        "title": "RC8X Firmware V1.3.6",
+        "version": "1.3.6",
+        "url": "https://www.radiolink.com/rc8x_firmware",
+        "status": "verified",
+        "note": "公式FirmwareページでLatest Firmwareとして確認"
+      },
+      {
+        "title": "8ch→16ch拡張条件",
+        "url": "https://www.radiolink.com/rc8x",
+        "status": "review_required",
+        "note": "公式商品ページ内のFirmware version表記をメーカー確認中"
+      }
+    ],
+    "support": {
+      "href": "/support/",
+      "faq_count": 0
+    },
+    "relations": {
+      "products": [],
+      "receivers": [
+        "R8FG",
+        "R4FGM",
+        "R6FG",
+        "R6F",
+        "R7FG",
+        "R8EF",
+        "R8FGH",
+        "R16F",
+        "R12F"
+      ],
+      "receiver_status": "review_required"
+    },
     "official_url": "https://www.radiolink.com/rc8x",
-    "last_checked_at": "2026-09-28"
+    "firmware_url": "https://www.radiolink.com/rc8x_firmware",
+    "manual_url": "https://www.radiolink.com/rc8x_manual",
+    "last_checked_at": "2026-09-29"
   }
 ]
