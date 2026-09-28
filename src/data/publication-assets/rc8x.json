@@ -1,0 +1,25 @@
+{
+  "product_id": "rc8x",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "rc8x-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/rc8x",
+      "source_image_url": null,
+      "source_status": "manufacturer_source_required",
+      "alt": "Radiolink RC8X 送信機",
+      "public_path": "/assets/radiolink/rc8x/hero"
+    },
+    {
+      "id": "rc8x-gallery-01",
+      "role": "gallery",
+      "source_page_url": "https://www.radiolink.com/rc8x",
+      "source_image_url": null,
+      "source_status": "manufacturer_source_required",
+      "alt": "Radiolink RC8X 商品画像",
+      "public_path": "/assets/radiolink/rc8x/gallery-01"
+    }
+  ],
+  "note": "メーカー担当による代表画像指定または現行公式ページ画像の最終確認後にsource_image_urlを確定する。"
+}

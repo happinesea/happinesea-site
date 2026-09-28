@@ -17,3 +17,6 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+
+# Publication asset source cache
+.cache/publication-assets/

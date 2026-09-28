@@ -14,6 +14,19 @@ const productCategory = z.enum([
   'モジュール・アクセサリー',
 ]);
 
+const publicationStatus = z.enum([
+  'sample',
+  'draft',
+  'manufacturer_review',
+  'published',
+]);
+
+const verificationStatus = z.enum([
+  'verified',
+  'review_required',
+  'unverified',
+]);
+
 const mediaSchema = z.object({
   src: z.string().nullable(),
   alt: z.string(),
@@ -22,7 +35,12 @@ const mediaSchema = z.object({
   retrieved_at: z.coerce.date().nullable(),
   width: z.number().int().positive().nullable(),
   height: z.number().int().positive().nullable(),
-  image_status: z.enum(['verified', 'unverified', 'unavailable']),
+  image_status: z.enum([
+    'verified',
+    'unverified',
+    'unavailable',
+    'manufacturer_source_required',
+  ]),
 });
 
 const products = defineCollection({
@@ -35,13 +53,14 @@ const products = defineCollection({
     category: productCategory,
     title: z.string(),
     description: z.string(),
-    content_status: z.enum(['sample', 'draft', 'published']),
+    content_status: publicationStatus,
+    review_note: z.string().optional(),
     features: z.array(z.string()),
     specifications: z.array(
       z.object({
         label: z.string(),
         value: z.string(),
-        status: z.enum(['verified', 'unverified']),
+        status: verificationStatus,
       }),
     ),
     media: z.object({ hero: mediaSchema }),
@@ -49,7 +68,7 @@ const products = defineCollection({
       z.object({
         title: z.string(),
         href: z.string(),
-        status: z.enum(['sample', 'draft', 'published']),
+        status: publicationStatus,
       }),
     ),
     firmware: z.array(
@@ -57,7 +76,8 @@ const products = defineCollection({
         title: z.string(),
         version: z.string().optional(),
         url: z.url().optional(),
-        status: z.enum(['verified', 'unverified']),
+        status: verificationStatus,
+        note: z.string().optional(),
       }),
     ),
     support: z.object({
@@ -67,8 +87,11 @@ const products = defineCollection({
     relations: z.object({
       products: z.array(z.string()),
       receivers: z.array(z.string()),
+      receiver_status: verificationStatus.optional(),
     }),
     official_url: z.url().nullable(),
+    firmware_url: z.url().optional(),
+    manual_url: z.url().optional(),
     last_checked_at: z.coerce.date().nullable(),
   }),
 });
@@ -144,9 +167,13 @@ export const collections = {
       extend: z.object({
         product: z.string(),
         slug: z.string(),
-        status: z.enum(['sample', 'draft', 'published']),
+        status: publicationStatus,
         source: z.object({
-          kind: z.enum(['publication_sample', 'canonical_public']),
+          kind: z.enum([
+            'publication_sample',
+            'canonical_public',
+            'publication_contract',
+          ]),
           url: z.url().optional(),
         }),
       }),
