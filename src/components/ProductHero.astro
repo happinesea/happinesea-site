@@ -1,0 +1,47 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../lib/urls';
+import ResponsiveMedia from './ResponsiveMedia.astro';
+
+interface Props {
+  product: CollectionEntry<'products'>['data'];
+}
+
+const { product } = Astro.props;
+const manual = product.manuals[0];
+const media = {
+  src: product.media.hero.src ?? undefined,
+  alt: product.media.hero.alt,
+  width: product.media.hero.width ?? undefined,
+  height: product.media.hero.height ?? undefined,
+  image_status: product.media.hero.image_status,
+};
+---
+
+<section
+  class="grid gap-10 py-10 lg:grid-cols-2 lg:items-center lg:py-16"
+  data-product-section="overview"
+>
+  <div>
+    <p class="mb-2 text-sm font-bold tracking-[0.16em] text-teal-700 uppercase">
+      {product.manufacturer}
+    </p>
+    <h1 class="m-0 text-4xl font-bold tracking-tight text-slate-950 sm:text-6xl">
+      {product.model}
+    </h1>
+    <p class="mt-6 text-lg text-slate-600">{product.description}</p>
+    {manual && (
+      <a
+        class="mt-5 inline-block rounded-full bg-slate-950 px-5 py-3 font-bold text-white no-underline"
+        href={withBase(manual.href)}
+      >
+        マニュアルを見る
+      </a>
+    )}
+  </div>
+  <ResponsiveMedia
+    media={media}
+    eager
+    placeholderLabel={`${product.model} 製品画像準備中`}
+  />
+</section>

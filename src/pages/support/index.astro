@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import LineCta from '../../components/LineCta.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const entries = await getCollection('support');
+---
+
+<BaseLayout
+  title="サポート"
+  description="製品サポートと問い合わせ窓口を案内します。"
+>
+  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
+    <SectionHeading
+      eyebrow="Support"
+      title="サポート"
+      description="公開マニュアル、よくある質問、問い合わせ窓口を製品ごとに案内します。"
+    />
+    <div class="mt-10 grid gap-8 lg:grid-cols-[1fr_22rem]">
+      <div>
+        {entries.map(({ data }) => (
+          <article class="rounded-2xl border border-slate-200 p-6">
+            <h2 class="m-0 text-2xl font-bold text-slate-950">{data.title}</h2>
+            <p class="text-slate-600">{data.description}</p>
+            {data.faq.length ? (
+              <dl>
+                {data.faq.map((item) => (
+                  <>
+                    <dt class="font-bold">{item.question}</dt>
+                    <dd>{item.answer}</dd>
+                  </>
+                ))}
+              </dl>
+            ) : (
+              <UnverifiedNotice text="公開中のFAQはありません。" />
+            )}
+          </article>
+        ))}
+      </div>
+      <LineCta />
+    </div>
+  </section>
+</BaseLayout>

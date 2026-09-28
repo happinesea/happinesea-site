@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const updates = (await getCollection('productUpdates')).sort(
+  (a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf(),
+);
+---
+
+<BaseLayout
+  title="Radiolink更新情報"
+  description="Radiolink製品のファームウェア、マニュアル、メーカー告知を掲載します。"
+>
+  <section
+    class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20"
+    data-content-kind="product_update"
+  >
+    <SectionHeading
+      eyebrow="Product Updates"
+      title="Radiolink更新情報"
+      description="製品に関する一次情報への導線です。業界・技術記事とは別に掲載しています。"
+    />
+    <ul class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+      {updates.map(({ data }) => (
+        <li class="grid gap-2 py-5 sm:grid-cols-[10rem_1fr]">
+          <time
+            class="text-sm font-semibold text-slate-500"
+            datetime={data.published_at.toISOString()}
+          >
+            {data.published_at.toLocaleDateString('ja-JP')}
+          </time>
+          <a
+            class="font-bold text-slate-900"
+            href={data.source_url}
+            rel="noreferrer"
+          >
+            {data.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

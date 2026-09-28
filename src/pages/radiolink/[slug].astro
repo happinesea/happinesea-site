@@ -1,0 +1,200 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import AdSlot from '../../components/AdSlot.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DefinitionTable from '../../components/DefinitionTable.astro';
+import LineCta from '../../components/LineCta.astro';
+import ProductHero from '../../components/ProductHero.astro';
+import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  buildBreadcrumbJsonLd,
+  buildProductJsonLd,
+} from '../../lib/structured-data';
+import { canonicalUrl, withBase } from '../../lib/urls';
+
+interface Props {
+  product: CollectionEntry<'products'>;
+}
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map((product) => ({
+    params: { slug: product.data.slug },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const { data } = product;
+const updates = (await getCollection('productUpdates')).filter(
+  (entry) => entry.data.product === data.slug,
+);
+const productUrl = canonicalUrl(`/radiolink/${data.slug}/`);
+const breadcrumbItems = [
+  { label: 'ホーム', href: withBase('/') },
+  { label: 'Radiolink製品', href: withBase('/radiolink/') },
+  { label: data.model },
+];
+const jsonLd = [
+  buildBreadcrumbJsonLd([
+    { name: 'ホーム', url: canonicalUrl('/') },
+    { name: 'Radiolink製品', url: canonicalUrl('/radiolink/') },
+    { name: data.model, url: productUrl },
+  ]),
+  buildProductJsonLd({
+    name: data.title,
+    description: data.description,
+    manufacturer: data.manufacturer,
+    model: data.model,
+    url: productUrl,
+  }),
+];
+---
+
+<BaseLayout
+  title={`${data.manufacturer} ${data.model}`}
+  description={data.description}
+  canonicalPath={`/radiolink/${data.slug}/`}
+  jsonLd={jsonLd}
+>
+  <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbItems} />
+    <ProductHero product={data} />
+
+    <div class="grid gap-12 lg:grid-cols-[1fr_20rem]">
+      <div class="space-y-12">
+        <section data-product-section="features">
+          <h2 class="text-3xl font-bold text-slate-950">特長</h2>
+          {data.features.length ? (
+            <ul>
+              {data.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <section data-product-section="specifications">
+          <h2 class="text-3xl font-bold text-slate-950">主な仕様</h2>
+          {data.specifications.length ? (
+            <DefinitionTable rows={data.specifications} />
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <section data-product-section="receivers">
+          <h2 class="text-3xl font-bold text-slate-950">対応受信機</h2>
+          {data.relations.receivers.length ? (
+            <ul>
+              {data.relations.receivers.map((receiver) => (
+                <li>{receiver}</li>
+              ))}
+            </ul>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <section data-product-section="manuals">
+          <h2 class="text-3xl font-bold text-slate-950">マニュアル</h2>
+          {data.manuals.length ? (
+            <ul>
+              {data.manuals.map((manual) => (
+                <li>
+                  <a href={withBase(manual.href)}>{manual.title}</a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <section data-product-section="firmware">
+          <h2 class="text-3xl font-bold text-slate-950">ファームウェア</h2>
+          {data.firmware.length ? (
+            <ul>
+              {data.firmware.map((item) => (
+                <li>{item.title}</li>
+              ))}
+            </ul>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <section data-product-section="updates">
+          <h2 class="text-3xl font-bold text-slate-950">更新情報</h2>
+          {updates.length ? (
+            <ul>
+              {updates.map(({ data: update }) => (
+                <li>
+                  <a href={update.source_url} rel="noreferrer">
+                    {update.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <UnverifiedNotice />
+          )}
+          <a href={withBase('/radiolink/updates/')}>
+            Radiolink更新情報をすべて見る
+          </a>
+        </section>
+
+        <section data-product-section="related-products">
+          <h2 class="text-3xl font-bold text-slate-950">関連製品</h2>
+          {data.relations.products.length ? (
+            <ul>
+              {data.relations.products.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <AdSlot />
+
+        <section data-product-section="source">
+          <h2 class="text-3xl font-bold text-slate-950">情報源</h2>
+          {data.official_url ? (
+            <a href={data.official_url} rel="noreferrer">
+              メーカー公式ページ
+            </a>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+
+        <section data-product-section="last-checked">
+          <h2 class="text-xl font-bold text-slate-950">最終確認日</h2>
+          {data.last_checked_at ? (
+            <time datetime={data.last_checked_at.toISOString()}>
+              {data.last_checked_at.toLocaleDateString('ja-JP')}
+            </time>
+          ) : (
+            <UnverifiedNotice />
+          )}
+        </section>
+      </div>
+
+      <section data-product-section="support">
+        <h2 class="text-3xl font-bold text-slate-950">サポート</h2>
+        <LineCta heading={`${data.model}について問い合わせる`} />
+        <a
+          class="mt-4 inline-block font-bold text-teal-800"
+          href={withBase(data.support.href)}
+        >
+          サポート情報を見る
+        </a>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

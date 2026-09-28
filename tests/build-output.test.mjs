@@ -29,3 +29,44 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
   }
   assert.match(html, /aria-live="polite"/);
 });
+
+test('RC8X product page exposes required sections without commercial claims', async () => {
+  const html = await route('radiolink/rc8x/index.html');
+  const sections = [
+    'overview',
+    'features',
+    'specifications',
+    'receivers',
+    'manuals',
+    'support',
+    'firmware',
+    'updates',
+    'related-products',
+    'source',
+    'last-checked',
+  ];
+
+  assert.match(html, /aria-label="パンくずリスト"/);
+  assert.match(html, /Radiolink/);
+  assert.match(html, /RC8X/);
+  assert.match(html, /href="https:\/\/line\.me\/R\/ti\/p\/%40662zyrsb"/);
+  for (const section of sections) {
+    assert.match(html, new RegExp(`data-product-section="${section}"`));
+  }
+  assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);
+  assert.doesNotMatch(html, /"offers"|"aggregateRating"/);
+  assert.doesNotMatch(
+    html,
+    /pagead2\.googlesyndication|data-ad-client|data-ad-slot/,
+  );
+});
+
+test('support and product update routes are distinct public targets', async () => {
+  const support = await route('support/index.html');
+  const updates = await route('radiolink/updates/index.html');
+
+  assert.match(support, /RC8X サポート/);
+  assert.match(support, /href="https:\/\/line\.me\/R\/ti\/p\/%40662zyrsb"/);
+  assert.match(updates, /Radiolink更新情報/);
+  assert.match(updates, /data-content-kind="product_update"/);
+});
