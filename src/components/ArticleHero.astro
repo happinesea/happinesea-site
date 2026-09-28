@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ResponsiveMedia from './ResponsiveMedia.astro';
+
+interface Props {
+  article: CollectionEntry<'insights'>['data'];
+}
+
+const { article } = Astro.props;
+const media = {
+  src: article.hero.src ?? undefined,
+  alt: article.hero.alt,
+  image_status: article.hero.image_status,
+};
+const published = article.published_at.toLocaleDateString('ja-JP', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<header class="py-10 lg:py-16">
+  <p class="mb-3 text-sm font-bold tracking-[0.14em] text-teal-700 uppercase">
+    {article.topic}
+  </p>
+  <h1 class="m-0 max-w-4xl text-4xl leading-tight font-bold tracking-tight text-slate-950 sm:text-6xl">
+    {article.title}
+  </h1>
+  <time
+    class="mt-5 block text-sm text-slate-500"
+    datetime={article.published_at.toISOString()}
+  >
+    {published}
+  </time>
+  <ResponsiveMedia
+    media={media}
+    class="mt-10 min-h-72"
+    eager
+    placeholderLabel="記事画像準備中"
+  />
+</header>

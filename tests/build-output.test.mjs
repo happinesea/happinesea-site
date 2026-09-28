@@ -70,3 +70,37 @@ test('support and product update routes are distinct public targets', async () =
   assert.match(updates, /Radiolink更新情報/);
   assert.match(updates, /data-content-kind="product_update"/);
 });
+
+test('insights index exposes all editorial topics', async () => {
+  const html = await route('insights/index.html');
+  const topics = [
+    '航空・ドローン',
+    'RC技術',
+    '法規・制度',
+    '業界動向',
+    '技術解説',
+    '導入事例',
+  ];
+
+  assert.match(html, /data-editorial-index/);
+  for (const topic of topics) {
+    assert.match(html, new RegExp(`data-topic-label="${topic}"`));
+  }
+});
+
+test('sample insight renders the complete editorial template', async () => {
+  const html = await route('insights/aircraft-engine-stop/index.html');
+  const sections = ['introduction', 'body', 'related', 'attribution'];
+
+  assert.match(html, /aria-label="パンくずリスト"/);
+  assert.match(html, /航空・ドローン/);
+  assert.match(html, /航空機のエンジンが停止するとどうなる？/);
+  assert.match(html, /2026年9月28日/);
+  assert.match(html, /記事画像準備中/);
+  assert.match(html, /レイアウト検証用のサンプル/);
+  assert.match(html, /data-ad-candidate/);
+  assert.match(html, /"@type":"TechArticle"/);
+  for (const section of sections) {
+    assert.match(html, new RegExp(`data-article-section="${section}"`));
+  }
+});
