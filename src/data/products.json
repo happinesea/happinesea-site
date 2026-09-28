@@ -1,0 +1,46 @@
+[
+  {
+    "id": "rc8x",
+    "manufacturer": "Radiolink",
+    "model": "RC8X",
+    "slug": "rc8x",
+    "category": "送信機",
+    "title": "RC8X",
+    "description": "RC8Xは、車両・ボート向けとして案内されているRadiolinkの8チャンネル送信機です。このページは商品テンプレート検証用の公開サンプルです。",
+    "content_status": "sample",
+    "features": ["8チャンネル送信機"],
+    "specifications": [
+      { "label": "チャンネル数", "value": "8", "status": "verified" },
+      { "label": "対象", "value": "車両・ボート", "status": "verified" }
+    ],
+    "media": {
+      "hero": {
+        "src": null,
+        "alt": "",
+        "source_image_url": null,
+        "source_page_url": "https://www.radiolink.com/rc8x",
+        "retrieved_at": null,
+        "width": null,
+        "height": null,
+        "image_status": "unavailable"
+      }
+    },
+    "manuals": [
+      {
+        "title": "RC8X 日本語マニュアル（構成サンプル）",
+        "href": "/manuals/rc8x/",
+        "status": "sample"
+      },
+      {
+        "title": "基本設定（構成サンプル）",
+        "href": "/manuals/rc8x/basic-setup/",
+        "status": "sample"
+      }
+    ],
+    "firmware": [],
+    "support": { "href": "/support/", "faq_count": 0 },
+    "relations": { "products": [], "receivers": [] },
+    "official_url": "https://www.radiolink.com/rc8x",
+    "last_checked_at": "2026-09-28"
+  }
+]
