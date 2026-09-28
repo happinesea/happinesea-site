@@ -1,0 +1,28 @@
+---
+import { withBase } from '../../lib/urls';
+---
+
+<a
+  class="manual-site-title"
+  href={withBase('/')}
+  aria-label="happinesea トップへ戻る"
+>
+  <strong>happinesea</strong>
+  <span>マニュアル</span>
+</a>
+
+<style>
+  .manual-site-title {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .manual-site-title span {
+    color: var(--sl-color-gray-3);
+    font-size: var(--sl-text-xs);
+    font-weight: 600;
+  }
+</style>

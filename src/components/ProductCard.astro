@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../lib/urls';
+
+interface Props {
+  product: CollectionEntry<'products'>;
+}
+
+const { product } = Astro.props;
+const { data } = product;
+---
+
+<article
+  class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+  data-product-category={data.category}
+>
+  <div class="grid aspect-[16/9] place-items-center bg-slate-100 text-sm font-semibold text-slate-600">
+    {data.media.hero.src ? (
+      <img
+        class="h-full w-full object-cover"
+        src={data.media.hero.src}
+        alt={data.media.hero.alt}
+        loading="lazy"
+      />
+    ) : (
+      <span>画像準備中</span>
+    )}
+  </div>
+  <div class="flex flex-1 flex-col p-6">
+    <p class="m-0 text-sm font-bold text-teal-700">{data.category}</p>
+    <h3 class="mt-2 mb-0 text-2xl font-bold text-slate-950">{data.title}</h3>
+    <p class="mt-3 flex-1 text-slate-600">{data.description}</p>
+    <a
+      class="mt-5 font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+      href={withBase(`/radiolink/${data.slug}/`)}
+    >
+      製品情報を見る
+    </a>
+  </div>
+</article>

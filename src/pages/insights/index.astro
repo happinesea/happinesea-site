@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import InsightCard from '../../components/InsightCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const insights = (await getCollection('insights')).sort(
+  (a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf(),
+);
+const topics = [
+  '航空・ドローン',
+  'RC技術',
+  '法規・制度',
+  '業界動向',
+  '技術解説',
+  '導入事例',
+] as const;
+---
+
+<BaseLayout
+  title="業界・技術"
+  description="航空・RC・ドローン分野の業界動向と技術解説を掲載します。"
+>
+  <section
+    class="border-b border-slate-300 bg-slate-950 text-white"
+    data-editorial-index
+  >
+    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
+      <p class="mb-3 text-sm font-bold tracking-[0.18em] text-teal-300 uppercase">
+        Insights
+      </p>
+      <h1 class="m-0 max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">
+        業界と技術を、背景から理解する。
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg text-slate-300">
+        公開情報を整理し、製品の周辺にある技術と業界の動きを読み解くための記事セクションです。
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
+    <SectionHeading title="トピック" description="掲載対象となる6分野です。" />
+    <ul class="mt-6 flex list-none flex-wrap gap-2 p-0">
+      {topics.map((topic) => (
+        <li
+          class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700"
+          data-topic-label={topic}
+        >
+          {topic}
+        </li>
+      ))}
+    </ul>
+
+    <div class="mt-14">
+      {insights.map((insight) => (
+        <InsightCard insight={insight} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

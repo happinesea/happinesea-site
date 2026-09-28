@@ -1,0 +1,86 @@
+---
+interface Props {
+  total: number;
+}
+
+const { total } = Astro.props;
+const categories = [
+  '送信機',
+  '受信機',
+  'フライトコントローラー',
+  'GPS・RTK・センサー',
+  '機体',
+  '電源・ESC',
+  'モジュール・アクセサリー',
+] as const;
+---
+
+<div class="my-8" data-category-controls>
+  <div
+    class="flex flex-wrap gap-2"
+    role="group"
+    aria-label="製品カテゴリで絞り込む"
+  >
+    <button
+      class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:border-teal-600 hover:text-teal-800"
+      type="button"
+      data-category-filter="すべて"
+      aria-pressed="true"
+    >
+      すべて
+    </button>
+    {categories.map((category) => (
+      <button
+        class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:border-teal-600 hover:text-teal-800"
+        type="button"
+        data-category-filter={category}
+        aria-pressed="false"
+      >
+        {category}
+      </button>
+    ))}
+  </div>
+  <p class="mt-4 text-sm text-slate-600" aria-live="polite" data-result-count>
+    {total}件を表示
+  </p>
+</div>
+
+<style>
+  button[aria-pressed='true'] {
+    border-color: #0f172a;
+    background: #0f172a;
+    color: white;
+  }
+</style>
+
+<script>
+  const controls = document.querySelector('[data-category-controls]');
+  const catalogue = document.querySelector('[data-product-catalogue]');
+
+  if (controls && catalogue) {
+    const buttons = controls.querySelectorAll<HTMLButtonElement>(
+      '[data-category-filter]',
+    );
+    const products = catalogue.querySelectorAll<HTMLElement>(
+      '[data-product-category]',
+    );
+    const count = controls.querySelector<HTMLElement>('[data-result-count]');
+
+    for (const button of buttons) {
+      button.addEventListener('click', () => {
+        const selected = button.dataset.categoryFilter;
+        let visible = 0;
+
+        for (const product of products) {
+          product.hidden =
+            selected !== 'すべて' &&
+            product.dataset.productCategory !== selected;
+          if (!product.hidden) visible += 1;
+        }
+        for (const item of buttons)
+          item.setAttribute('aria-pressed', String(item === button));
+        if (count) count.textContent = `${visible}件を表示`;
+      });
+    }
+  }
+</script>

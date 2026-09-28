@@ -1,0 +1,64 @@
+---
+import { withBase } from '../lib/urls';
+
+interface Source {
+  src: string;
+  type: 'image/avif' | 'image/webp';
+}
+
+interface Media {
+  src?: string;
+  alt?: string;
+  width?: number;
+  height?: number;
+  image_status: 'verified' | 'unverified' | 'unavailable';
+  sources?: Source[];
+}
+
+interface Props {
+  media?: Media;
+  eager?: boolean;
+  class?: string;
+  placeholderLabel?: string;
+}
+
+const {
+  media,
+  eager = false,
+  class: className,
+  placeholderLabel = '画像準備中',
+} = Astro.props;
+const isVerified = media?.image_status === 'verified' && media.src;
+
+if (isVerified && (media.alt === undefined || !media.width || !media.height)) {
+  throw new TypeError('Verified media requires alt, width, and height');
+}
+---
+
+{isVerified ? (
+  <picture class={className}>
+    {media.sources?.map((source) => (
+      <source srcset={withBase(source.src)} type={source.type} />
+    ))}
+    <img
+      src={withBase(media.src!)}
+      alt={media.alt!}
+      width={media.width}
+      height={media.height}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding={eager ? 'sync' : 'async'}
+      fetchpriority={eager ? 'high' : 'auto'}
+    />
+  </picture>
+) : (
+  <div
+    class:list={[
+      'grid min-h-56 place-items-center rounded-3xl border border-dashed border-slate-300 bg-slate-100 text-sm font-semibold text-slate-600',
+      className,
+    ]}
+    role="img"
+    aria-label={placeholderLabel}
+  >
+    {placeholderLabel}
+  </div>
+)}

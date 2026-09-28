@@ -1,0 +1,12 @@
+---
+interface Props {
+  children?: never;
+  text?: string;
+}
+
+const { text = '公開情報を確認できていません。' } = Astro.props;
+---
+
+<p class="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-600">
+  {text}
+</p>

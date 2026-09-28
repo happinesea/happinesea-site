@@ -1,0 +1,79 @@
+---
+import { getNavigation, SITE_NAME } from '../lib/site';
+import { withBase } from '../lib/urls';
+
+const navigation = getNavigation();
+const home = withBase('/');
+const currentPath = Astro.url.pathname;
+---
+
+<header class="site-header border-b border-slate-200 bg-white/95 backdrop-blur">
+  <div class="mx-auto flex max-w-[var(--site-max-width)] items-center justify-between gap-4 px-5 py-4 lg:px-8">
+    <a
+      class="text-lg font-bold tracking-tight text-slate-950 no-underline"
+      href={home}
+      aria-label="happinesea トップ"
+    >
+      {SITE_NAME}
+    </a>
+    <details class="site-menu relative">
+      <summary class="cursor-pointer list-none rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800">
+        メニュー
+      </summary>
+      <nav aria-label="メインナビゲーション">
+        <ul class="m-0 flex list-none flex-col gap-1 p-3 md:flex-row md:items-center md:gap-2 md:p-0">
+          {navigation.map((item) => (
+            <li>
+              <a
+                class:list={[
+                  'block rounded-full px-4 py-2 text-sm font-semibold no-underline transition hover:bg-teal-50 hover:text-teal-800',
+                  currentPath.startsWith(item.href)
+                    ? 'bg-teal-50 text-teal-800'
+                    : 'text-slate-700',
+                ]}
+                href={item.href}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+
+  .site-menu nav {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.75rem);
+    min-width: 13rem;
+    border: 1px solid var(--site-border);
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 18px 45px rgb(15 23 42 / 14%);
+  }
+
+  @media (min-width: 48rem) {
+    .site-menu summary {
+      display: none;
+    }
+
+    .site-menu nav,
+    .site-menu:not([open]) nav {
+      position: static;
+      display: block;
+      min-width: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+</style>

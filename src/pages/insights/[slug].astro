@@ -1,0 +1,98 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import AdSlot from '../../components/AdSlot.astro';
+import ArticleHero from '../../components/ArticleHero.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  buildArticleJsonLd,
+  buildBreadcrumbJsonLd,
+} from '../../lib/structured-data';
+import { canonicalUrl, withBase } from '../../lib/urls';
+
+interface Props {
+  article: CollectionEntry<'insights'>;
+}
+
+export async function getStaticPaths() {
+  const insights = await getCollection('insights');
+  return insights.map((article) => ({
+    params: { slug: article.data.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { data } = article;
+const { Content } = await render(article);
+const articleUrl = canonicalUrl(`/insights/${data.slug}/`);
+const kind =
+  data.article_kind === 'technical_explainer' ? 'TechArticle' : 'Article';
+const jsonLd = [
+  buildBreadcrumbJsonLd([
+    { name: 'ホーム', url: canonicalUrl('/') },
+    { name: '業界・技術', url: canonicalUrl('/insights/') },
+    { name: data.title, url: articleUrl },
+  ]),
+  buildArticleJsonLd({
+    kind,
+    headline: data.title,
+    description: data.description,
+    url: articleUrl,
+    datePublished: data.published_at.toISOString(),
+    dateModified: data.updated_at.toISOString(),
+    author: 'happinesea',
+  }),
+];
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  canonicalPath={`/insights/${data.slug}/`}
+  type="article"
+  jsonLd={jsonLd}
+>
+  <article class="mx-auto max-w-4xl px-5 py-6 lg:px-8">
+    <Breadcrumbs
+      items={[
+        { label: 'ホーム', href: withBase('/') },
+        { label: '業界・技術', href: withBase('/insights/') },
+        { label: data.title },
+      ]}
+    />
+    <ArticleHero article={data} />
+
+    <section
+      class="border-y border-slate-200 py-7 text-xl leading-9 text-slate-700"
+      data-article-section="introduction"
+    >
+      <p>{data.description}</p>
+      {data.content_status === 'sample' && (
+        <p class="text-base font-bold text-amber-800">
+          この記事はレイアウト検証用のサンプルです。
+        </p>
+      )}
+    </section>
+
+    <div class="prose prose-slate mt-10 max-w-none" data-article-section="body">
+      <Content />
+    </div>
+
+    <AdSlot label="記事内広告掲載候補" />
+
+    <section class="mt-12" data-article-section="related">
+      <h2 class="text-2xl font-bold text-slate-950">関連情報</h2>
+      <UnverifiedNotice text="関連する公開情報はありません。" />
+    </section>
+
+    <footer
+      class="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-600"
+      data-article-section="attribution"
+    >
+      <p>編集・公開: happinesea</p>
+      <p>公開状態: 構成サンプル</p>
+    </footer>
+  </article>
+</BaseLayout>

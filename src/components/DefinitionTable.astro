@@ -1,0 +1,24 @@
+---
+interface Row {
+  label: string;
+  value: string;
+  status?: 'verified' | 'unverified';
+}
+
+interface Props {
+  rows: Row[];
+}
+
+const { rows } = Astro.props;
+---
+
+<dl class="overflow-hidden rounded-2xl border border-slate-200">
+  {rows.map((row) => (
+    <div class="grid gap-1 border-b border-slate-200 p-4 last:border-b-0 sm:grid-cols-[12rem_1fr]">
+      <dt class="font-bold text-slate-700">{row.label}</dt>
+      <dd class="m-0 text-slate-900">
+        {row.status === 'unverified' ? '未確認' : row.value}
+      </dd>
+    </div>
+  ))}
+</dl>
