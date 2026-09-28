@@ -1,0 +1,135 @@
+---
+import { getCollection } from 'astro:content';
+import Hero from '../components/Hero.astro';
+import ProductCard from '../components/ProductCard.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/urls';
+
+const products = await getCollection('products');
+const updates = await getCollection('productUpdates');
+---
+
+<BaseLayout>
+  <Hero
+    eyebrow="航空・RC・ドローンの情報拠点"
+    title="技術を理解し、製品を使いこなすために。"
+    description="happineseaは、製品情報、公開マニュアル、サポート、業界・技術記事をひとつにつなぐ日本語情報サイトです。"
+    actions={[
+      { label: '製品を見る', href: withBase('/radiolink/') },
+      {
+        label: '業界・技術を読む',
+        href: withBase('/insights/'),
+        secondary: true,
+      },
+    ]}
+  />
+
+  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
+    <SectionHeading
+      title="探す、理解する、解決する"
+      description="目的から公開情報へ進めます。"
+    />
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
+      {[
+        ['製品情報', '仕様と関連情報を製品単位で確認します。', '/radiolink/'],
+        [
+          'マニュアル',
+          '公開用に整備された操作情報を参照します。',
+          '/manuals/rc8x/',
+        ],
+        ['サポート', 'FAQと問い合わせ窓口を確認します。', '/support/'],
+      ].map(([title, description, href]) => (
+        <a
+          class="rounded-2xl border border-slate-200 p-6 no-underline transition hover:border-teal-500 hover:shadow-md"
+          href={withBase(href)}
+        >
+          <h3 class="m-0 text-xl font-bold text-slate-950">{title}</h3>
+          <p class="mb-0 text-slate-600">{description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="bg-slate-50" data-home-pillar="insights">
+    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
+      <SectionHeading
+        eyebrow="Industry & Technology"
+        title="業界と技術を、背景から読む"
+        description="航空・ドローン分野の動向とRC技術を、公開情報に基づいて整理します。"
+      />
+      <a
+        class="mt-8 inline-block font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+        href={withBase('/insights/')}
+      >
+        記事一覧へ
+      </a>
+    </div>
+  </section>
+
+  <section
+    class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24"
+    data-home-pillar="products"
+  >
+    <SectionHeading
+      eyebrow="Products"
+      title="Radiolink製品情報"
+      description="確認できた公開情報を、製品ごとに整理しています。"
+    />
+    <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {products.map((product) => (
+        <ProductCard product={product} />
+      ))}
+    </div>
+    <a
+      class="mt-8 inline-block font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+      href={withBase('/radiolink/')}
+    >
+      すべての製品を見る
+    </a>
+  </section>
+
+  <section class="border-y border-slate-200 bg-slate-950 text-white">
+    <div class="mx-auto grid max-w-[var(--site-max-width)] gap-8 px-5 py-16 md:grid-cols-2 lg:px-8">
+      <div>
+        <h2 class="m-0 text-3xl font-bold">マニュアル</h2>
+        <p class="text-slate-300">製品別の公開マニュアルを参照できます。</p>
+        <a class="font-bold text-teal-300" href={withBase('/manuals/rc8x/')}>
+          RC8Xマニュアルへ
+        </a>
+      </div>
+      <div>
+        <h2 class="m-0 text-3xl font-bold">サポート</h2>
+        <p class="text-slate-300">
+          よくある質問と問い合わせ先をまとめています。
+        </p>
+        <a class="font-bold text-teal-300" href={withBase('/support/')}>
+          サポートへ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
+    <SectionHeading eyebrow="Updates" title="製品アップデート" />
+    <ul class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
+      {updates.map(({ data }) => (
+        <li class="grid gap-2 py-5 sm:grid-cols-[10rem_1fr]">
+          <time
+            class="text-sm font-semibold text-slate-500"
+            datetime={data.published_at.toISOString()}
+          >
+            {data.published_at.toLocaleDateString('ja-JP')}
+          </time>
+          <a
+            class="font-bold text-slate-900"
+            href={data.source_url}
+            rel="noreferrer"
+          >
+            {data.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
