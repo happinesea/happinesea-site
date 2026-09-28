@@ -104,3 +104,30 @@ test('sample insight renders the complete editorial template', async () => {
     assert.match(html, new RegExp(`data-article-section="${section}"`));
   }
 });
+
+test('Starlight manual retains navigation features under the project base', async () => {
+  const index = await route('manuals/rc8x/index.html');
+  const next = await route('manuals/rc8x/basic-setup/index.html');
+
+  assert.match(index, /<html lang="ja"/);
+  assert.match(index, /data-has-sidebar/);
+  assert.match(index, /data-has-toc/);
+  assert.match(index, /<main/);
+  assert.match(index, /<site-search/);
+  assert.match(index, /class="sidebar /);
+  assert.match(index, /right-sidebar/);
+  assert.match(index, /pagination-links/);
+  assert.match(index, /sl-menu-button/);
+  assert.match(index, /happinesea/);
+  assert.match(index, /href="\/happinesea-site\/"/);
+  assert.match(index, /href="\/happinesea-site\/manuals\/rc8x\/basic-setup\/"/);
+  assert.match(next, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  const productHref = index.match(/href="([^"]+)">RC8X商品ページへ戻る/)?.[1];
+  assert.equal(
+    new URL(
+      productHref,
+      'https://happinesea.github.io/happinesea-site/manuals/rc8x/',
+    ).pathname,
+    '/happinesea-site/radiolink/rc8x/',
+  );
+});
