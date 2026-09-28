@@ -1,0 +1,30 @@
+---
+interface Props {
+  label?: string;
+  minHeight?: number;
+}
+
+const { label = '広告掲載候補', minHeight = 160 } = Astro.props;
+const client = import.meta.env.PUBLIC_ADSENSE_CLIENT_ID;
+const slot = import.meta.env.PUBLIC_ADSENSE_SLOT_ID;
+const enabled = /^ca-pub-\d+$/.test(client ?? '') && /^\d+$/.test(slot ?? '');
+---
+
+<aside
+  class="my-10 grid place-items-center rounded-2xl border border-slate-200 bg-slate-50 text-xs text-slate-500"
+  style={`min-height:${minHeight}px`}
+  aria-label={label}
+  data-ad-candidate={!enabled || undefined}
+>
+  {enabled ? (
+    <ins
+      class="adsbygoogle block w-full"
+      data-ad-client={client}
+      data-ad-slot={slot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+  ) : (
+    <span>{label}</span>
+  )}
+</aside>

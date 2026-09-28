@@ -13,6 +13,16 @@ export default [
     ],
   },
   eslint.configs.recommended,
+  {
+    files: ['**/*.{js,mjs,cjs}'],
+    languageOptions: {
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        URL: 'readonly',
+      },
+    },
+  },
   ...tseslint.configs.recommended,
   ...astro.configs.recommended,
 ];
