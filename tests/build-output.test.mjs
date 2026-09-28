@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 const route = (path) =>
@@ -130,4 +130,64 @@ test('Starlight manual retains navigation features under the project base', asyn
     ).pathname,
     '/happinesea-site/radiolink/rc8x/',
   );
+});
+
+test('all public routes emit project-base canonical and Open Graph URLs', async () => {
+  const routes = [
+    'index.html',
+    'radiolink/index.html',
+    'radiolink/rc8x/index.html',
+    'radiolink/updates/index.html',
+    'support/index.html',
+    'insights/index.html',
+    'insights/aircraft-engine-stop/index.html',
+    'manuals/rc8x/index.html',
+    'manuals/rc8x/basic-setup/index.html',
+  ];
+
+  for (const path of routes) {
+    const html = await route(path);
+    assert.match(
+      html,
+      /<link rel="canonical" href="https:\/\/happinesea\.github\.io\/happinesea-site\//,
+      path,
+    );
+    assert.match(
+      html,
+      /<meta property="og:url" content="https:\/\/happinesea\.github\.io\/happinesea-site\//,
+      path,
+    );
+    for (const [, value] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
+      if (value.startsWith('/')) {
+        assert.ok(value.startsWith('/happinesea-site/'), `${path}: ${value}`);
+      }
+    }
+  }
+});
+
+test('robots and sitemap stay on the standard project Pages URL', async () => {
+  const robots = await route('robots.txt');
+  const sitemap = await route('sitemap-index.xml');
+
+  assert.match(robots, /^User-agent: \*$/m);
+  assert.match(robots, /^Allow: \/$/m);
+  assert.match(
+    robots,
+    /^Sitemap: https:\/\/happinesea\.github\.io\/happinesea-site\/sitemap-index\.xml$/m,
+  );
+  assert.match(
+    sitemap,
+    /https:\/\/happinesea\.github\.io\/happinesea-site\/sitemap-0\.xml/,
+  );
+  await assert.rejects(access(new URL('../CNAME', import.meta.url)));
+});
+
+test('structured data contains only backed product and article types', async () => {
+  const product = await route('radiolink/rc8x/index.html');
+  const article = await route('insights/aircraft-engine-stop/index.html');
+
+  assert.match(product, /"@type":"Product"/);
+  assert.match(product, /"@type":"BreadcrumbList"/);
+  assert.match(article, /"@type":"TechArticle"/);
+  assert.doesNotMatch(product, /"offers"|"aggregateRating"|"review"/);
 });
