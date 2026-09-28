@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+
+const home = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <title>ページが見つかりません | happinesea</title>
+  </head>
+  <body class="grid min-h-screen place-items-center bg-slate-50 px-6 text-slate-800">
+    <main class="max-w-xl text-center">
+      <p class="text-sm font-semibold tracking-[0.18em] text-teal-700">404</p>
+      <h1 class="mt-3 text-3xl font-bold">ページが見つかりません</h1>
+      <p class="mt-4 text-slate-600">
+        URLをご確認いただくか、トップページからお探しください。
+      </p>
+      <a
+        class="mt-8 inline-flex rounded-full bg-teal-700 px-6 py-3 font-semibold text-white"
+        href={home}
+      >
+        トップページへ
+      </a>
+    </main>
+  </body>
+</html>

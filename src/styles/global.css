@@ -1,0 +1,64 @@
+@layer base, starlight, theme, components, utilities;
+
+@import '@astrojs/starlight-tailwind';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@theme {
+  --font-sans:
+    Inter, 'Hiragino Sans', 'Yu Gothic UI', 'Yu Gothic', Meiryo, sans-serif;
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-500: #0f766e;
+  --color-brand-600: #0d6963;
+  --color-brand-700: #115e59;
+  --color-ink-950: #0f172a;
+}
+
+:root {
+  --site-bg: #ffffff;
+  --site-surface: #f8fafc;
+  --site-border: #dbe4e8;
+  --site-text: #1e293b;
+  --site-muted: #526172;
+  --site-accent: #0f766e;
+  --site-accent-strong: #115e59;
+  --site-max-width: 76rem;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    background: var(--site-bg);
+    color: var(--site-text);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 20rem;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--site-accent) 55%, white);
+    outline-offset: 3px;
+  }
+}
