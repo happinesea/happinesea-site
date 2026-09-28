@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - codex/initialize-happinesea-site
   workflow_dispatch:
 
 concurrency:
