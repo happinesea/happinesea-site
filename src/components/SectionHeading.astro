@@ -3,9 +3,11 @@ interface Props {
   eyebrow?: string;
   title: string;
   description?: string;
+  level?: 'h1' | 'h2';
 }
 
-const { eyebrow, title, description } = Astro.props;
+const { eyebrow, title, description, level = 'h2' } = Astro.props;
+const Heading = level;
 ---
 
 <header class="max-w-3xl">
@@ -14,8 +16,8 @@ const { eyebrow, title, description } = Astro.props;
       {eyebrow}
     </p>
   )}
-  <h2 class="m-0 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+  <Heading class="m-0 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
     {title}
-  </h2>
+  </Heading>
   {description && <p class="mt-4 text-lg text-slate-600">{description}</p>}
 </header>
