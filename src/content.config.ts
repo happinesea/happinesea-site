@@ -56,6 +56,28 @@ const products = defineCollection({
     content_status: publicationStatus,
     review_note: z.string().optional(),
     features: z.array(z.string()),
+    feature_sections: z
+      .array(
+        z.object({
+          id: z.string(),
+          title: z.string(),
+          description: z.string(),
+          points: z.array(z.string()),
+          media: mediaSchema.optional(),
+        }),
+      )
+      .default([]),
+    package_contents: z.array(z.string()).default([]),
+    videos: z
+      .array(
+        z.object({
+          youtube_id: z.string(),
+          title: z.string(),
+          description: z.string(),
+          source_url: z.url(),
+        }),
+      )
+      .default([]),
     specifications: z.array(
       z.object({
         label: z.string(),
@@ -159,11 +181,45 @@ const support = defineCollection({
   }),
 });
 
+const manualSections = defineCollection({
+  loader: file('src/data/manual-sections.json'),
+  schema: z.object({
+    id: z.string(),
+    product: z.string(),
+    chapter: z.string(),
+    section: z.string(),
+    figures: z
+      .array(
+        z.object({
+          src: z.string(),
+          alt: z.string(),
+          caption: z.string(),
+          source_document_url: z.url(),
+          source_page: z.number().int().positive(),
+          source_image_name: z.string(),
+          retrieved_at: z.coerce.date(),
+        }),
+      )
+      .default([]),
+    videos: z
+      .array(
+        z.object({
+          youtube_id: z.string(),
+          title: z.string(),
+          description: z.string().optional(),
+          source_url: z.url(),
+        }),
+      )
+      .default([]),
+  }),
+});
+
 export const collections = {
   products,
   insights,
   productUpdates,
   support,
+  manualSections,
   docs: defineCollection({
     loader: docsLoader(),
     schema: docsSchema({

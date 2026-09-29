@@ -4,6 +4,7 @@ import AdSlot from '../../components/AdSlot.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DefinitionTable from '../../components/DefinitionTable.astro';
 import LineCta from '../../components/LineCta.astro';
+import ManualVideo from '../../components/manuals/ManualVideo.astro';
 import ProductHero from '../../components/ProductHero.astro';
 import ResponsiveMedia from '../../components/ResponsiveMedia.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
@@ -58,14 +59,21 @@ const jsonLd = [
   description={data.description}
   canonicalPath={`/radiolink/${data.slug}/`}
   jsonLd={jsonLd}
-  robots={data.content_status === 'manufacturer_review' ? 'noindex, nofollow' : undefined}
+  robots={
+    data.content_status === 'manufacturer_review'
+      ? 'noindex, nofollow'
+      : undefined
+  }
 >
   <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-6 lg:px-8">
     <Breadcrumbs items={breadcrumbItems} />
     <ProductHero product={data} />
     {data.content_status === 'manufacturer_review' && (
       <UnverifiedNotice
-        text={data.review_note ?? 'この商品情報はメーカー確認中です。確認完了までは確定仕様として扱わないでください。'}
+        text={
+          data.review_note ??
+          'この商品情報はメーカー確認中です。確認完了までは確定仕様として扱わないでください。'
+        }
       />
     )}
 
@@ -85,7 +93,10 @@ const jsonLd = [
                     alt: media.alt,
                     width: media.width ?? undefined,
                     height: media.height ?? undefined,
-                    image_status: media.image_status === 'verified' ? 'verified' : 'unverified',
+                    image_status:
+                      media.image_status === 'verified'
+                        ? 'verified'
+                        : 'unverified',
                   }}
                 />
               ))}
@@ -93,17 +104,47 @@ const jsonLd = [
           </section>
         )}
 
-        <section data-product-section="features">
-          <h2 class="text-3xl font-bold text-slate-950">主な特長</h2>
-          {data.features.length ? (
-            <ul>
-              {data.features.map((feature) => (
-                <li>{feature}</li>
-              ))}
-            </ul>
-          ) : (
-            <UnverifiedNotice />
-          )}
+        <section>
+          <h2 class="text-3xl font-bold text-slate-950">RC8Xの主要機能</h2>
+          <div class="mt-6 grid gap-8">
+            {data.feature_sections.map((feature, index) => (
+              <article
+                data-product-section={feature.id}
+                class="grid gap-6 rounded-3xl bg-slate-50 p-6 md:grid-cols-2 md:items-center"
+              >
+                <div class:list={{ 'md:order-2': index % 2 }}>
+                  <h3 class="mt-0 text-2xl font-bold text-slate-950">
+                    {feature.title}
+                  </h3>
+                  <p class="text-slate-600">{feature.description}</p>
+                  <ul>
+                    {feature.points.map((point) => (
+                      <li>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+                <ResponsiveMedia
+                  class:list={{ 'md:order-1': index % 2 }}
+                  media={{
+                    src: feature.media?.src ?? undefined,
+                    alt: feature.media?.alt,
+                    width: feature.media?.width ?? undefined,
+                    height: feature.media?.height ?? undefined,
+                    image_status: feature.media?.image_status ?? 'unavailable',
+                  }}
+                />
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section data-product-section="package">
+          <h2 class="text-3xl font-bold text-slate-950">パッケージ内容</h2>
+          <ul class="grid gap-x-8 sm:grid-cols-2">
+            {data.package_contents.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
         </section>
 
         <section data-product-section="specifications">
@@ -111,9 +152,9 @@ const jsonLd = [
           {data.specifications.length ? (
             <>
               <DefinitionTable rows={data.specifications} />
-              {data.specifications.some((row) => row.status === 'review_required') && (
-                <UnverifiedNotice text="一部仕様はメーカー確認中です。" />
-              )}
+              {data.specifications.some(
+                (row) => row.status === 'review_required',
+              ) && <UnverifiedNotice text="一部仕様はメーカー確認中です。" />}
             </>
           ) : (
             <UnverifiedNotice />
@@ -143,17 +184,54 @@ const jsonLd = [
 
         <section data-product-section="manuals">
           <h2 class="text-3xl font-bold text-slate-950">マニュアル</h2>
-          {data.manuals.length ? (
-            <ul>
-              {data.manuals.map((manual) => (
-                <li>
-                  <a href={withBase(manual.href)}>{manual.title}</a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <UnverifiedNotice />
-          )}
+          <div class="grid gap-5 md:grid-cols-2">
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <p class="m-0 text-sm font-bold text-teal-700">日本語</p>
+              <h3 class="mt-2 text-xl font-bold">
+                happineseaオンラインマニュアル
+              </h3>
+              <a
+                class="font-bold text-teal-800"
+                href={withBase('/manuals/rc8x/')}
+              >
+                日本語マニュアルを開く
+              </a>
+              <ul>
+                {data.manuals.map((manual) => (
+                  <li>
+                    <a href={withBase(manual.href)}>{manual.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <p class="m-0 text-sm font-bold text-slate-500">英語／公式</p>
+              <h3 class="mt-2 text-xl font-bold">RC8X User Manual</h3>
+              <a
+                class="font-bold text-teal-800"
+                href={data.manual_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Radiolink公式・外部サイト
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section data-product-section="videos">
+          <h2 class="text-3xl font-bold text-slate-950">
+            公式チュートリアル動画
+          </h2>
+          <div class="grid gap-6 md:grid-cols-2">
+            {data.videos.map((video) => (
+              <ManualVideo
+                youtubeId={video.youtube_id}
+                title={video.title}
+                description={video.description}
+              />
+            ))}
+          </div>
         </section>
 
         <section data-product-section="firmware">
@@ -163,7 +241,9 @@ const jsonLd = [
               {data.firmware.map((item) => (
                 <li>
                   <span>{item.title}</span>
-                  {item.note && <small class="ml-2 text-slate-500">{item.note}</small>}
+                  {item.note && (
+                    <small class="ml-2 text-slate-500">{item.note}</small>
+                  )}
                 </li>
               ))}
             </ul>
@@ -175,10 +255,13 @@ const jsonLd = [
         <section data-product-section="updates">
           <h2 class="text-3xl font-bold text-slate-950">Radiolink更新情報</h2>
           {updates.length ? (
-            <ul>
+            <ul class="m-0 list-none p-0">
               {updates.map(({ data: update }) => (
-                <li>
-                  <a href={update.source_url} rel="noreferrer">
+                <li class="grid gap-2 border-b border-slate-200 py-3 sm:grid-cols-[7rem_1fr]">
+                  <time datetime={update.published_at.toISOString()}>
+                    {update.published_at.toLocaleDateString('ja-JP')}
+                  </time>
+                  <a href={update.source_url} target="_blank" rel="noreferrer">
                     {update.title}
                   </a>
                 </li>
@@ -206,28 +289,6 @@ const jsonLd = [
         </section>
 
         <AdSlot />
-
-        <section data-product-section="source">
-          <h2 class="text-3xl font-bold text-slate-950">情報源</h2>
-          {data.official_url ? (
-            <a href={data.official_url} rel="noreferrer">
-              メーカー公式ページ
-            </a>
-          ) : (
-            <UnverifiedNotice />
-          )}
-        </section>
-
-        <section data-product-section="last-checked">
-          <h2 class="text-xl font-bold text-slate-950">最終確認日</h2>
-          {data.last_checked_at ? (
-            <time datetime={data.last_checked_at.toISOString()}>
-              {data.last_checked_at.toLocaleDateString('ja-JP')}
-            </time>
-          ) : (
-            <UnverifiedNotice />
-          )}
-        </section>
       </div>
 
       <section data-product-section="support">

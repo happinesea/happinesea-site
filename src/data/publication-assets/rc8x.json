@@ -10,6 +10,42 @@
       "source_status": "verified",
       "alt": "Radiolink RC8X 送信機",
       "public_path": "/assets/radiolink/rc8x/hero"
+    },
+    {
+      "id": "rc8x-ports",
+      "role": "gallery",
+      "source_page_url": "https://www.radiolink.com/rc8x",
+      "source_image_url": "https://radiolink.com/34026fd141d4c0fe5ecafebd98a17986.png",
+      "source_status": "verified",
+      "alt": "RC8Xの外部接続ポート",
+      "public_path": "/assets/radiolink/rc8x/ports"
+    },
+    {
+      "id": "rc8x-interface",
+      "role": "gallery",
+      "source_page_url": "https://www.radiolink.com/rc8x",
+      "source_image_url": "https://radiolink.com/cdb19603fc97fb8a0286df9ebf9a0cf7.png",
+      "source_status": "verified",
+      "alt": "RC8Xのサウンド設定画面",
+      "public_path": "/assets/radiolink/rc8x/interface"
+    },
+    {
+      "id": "rc8x-trigger",
+      "role": "gallery",
+      "source_page_url": "https://www.radiolink.com/rc8x",
+      "source_image_url": "https://radiolink.com/773814a27e762e651e984d77336212f5.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xの調整可能なスロットルトリガー",
+      "public_path": "/assets/radiolink/rc8x/trigger"
+    },
+    {
+      "id": "rc8x-type-c",
+      "role": "gallery",
+      "source_page_url": "https://www.radiolink.com/rc8x",
+      "source_image_url": "https://radiolink.com/d27a4645d6cea7ba3acc59b3b617f76d.jpg",
+      "source_status": "verified",
+      "alt": "RC8XのType-C給電",
+      "public_path": "/assets/radiolink/rc8x/type-c"
     }
   ],
   "note": "Radiolink公式RC8X商品ページのHero商品画像をdeploy時に取得し、WebP/AVIFへ最適化してhappinesea側から配信する。"

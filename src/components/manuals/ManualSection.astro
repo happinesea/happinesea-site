@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import ManualFigure from './ManualFigure.astro';
+import ManualVideo from './ManualVideo.astro';
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+const entry = (await getCollection('manualSections')).find(
+  (candidate) => candidate.data.id === id,
+);
+
+if (!entry) throw new TypeError(`Unknown manual section: ${id}`);
+---
+
+<div data-manual-section={entry.data.section}>
+  {entry.data.figures.map((figure) => (
+    <ManualFigure {...figure} />
+  ))}
+  {entry.data.videos.map((video) => (
+    <ManualVideo
+      youtubeId={video.youtube_id}
+      title={video.title}
+      description={video.description}
+    />
+  ))}
+</div>

@@ -34,7 +34,12 @@ test('RC8X product page exposes required sections without commercial claims', as
   const html = await route('radiolink/rc8x/index.html');
   const sections = [
     'overview',
-    'features',
+    'feature-display',
+    'feature-connectivity',
+    'feature-customization',
+    'feature-telemetry',
+    'package',
+    'videos',
     'specifications',
     'receivers',
     'manuals',
@@ -42,8 +47,6 @@ test('RC8X product page exposes required sections without commercial claims', as
     'firmware',
     'updates',
     'related-products',
-    'source',
-    'last-checked',
   ];
 
   assert.match(html, /aria-label="パンくずリスト"/);
@@ -53,6 +56,13 @@ test('RC8X product page exposes required sections without commercial claims', as
   for (const section of sections) {
     assert.match(html, new RegExp(`data-product-section="${section}"`));
   }
+  assert.match(html, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.match(html, /Radiolink公式・外部サイト/);
+  assert.match(html, /target="_blank"/);
+  assert.match(html, /youtube-nocookie\.com\/embed\//);
+  assert.match(html, /<time[^>]*>[^<]+<\/time>[\s\S]*?<a[^>]+>[^<]+<\/a>/);
+  assert.doesNotMatch(html, /data-product-section="(?:source|last-checked)"/);
+  assert.doesNotMatch(html, />情報源</);
   assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);
   assert.doesNotMatch(html, /"offers"|"aggregateRating"/);
   assert.doesNotMatch(
@@ -107,7 +117,7 @@ test('sample insight renders the complete editorial template', async () => {
 
 test('Starlight manual retains navigation features under the project base', async () => {
   const index = await route('manuals/rc8x/index.html');
-  const next = await route('manuals/rc8x/basic-setup/index.html');
+  const next = await route('manuals/rc8x/chapter-01/index.html');
 
   assert.match(index, /<html lang="ja"/);
   assert.match(index, /data-has-sidebar/);
@@ -120,7 +130,7 @@ test('Starlight manual retains navigation features under the project base', asyn
   assert.match(index, /sl-menu-button/);
   assert.match(index, /happinesea/);
   assert.match(index, /href="\/happinesea-site\/"/);
-  assert.match(index, /href="\/happinesea-site\/manuals\/rc8x\/basic-setup\/"/);
+  assert.match(index, /href="\/happinesea-site\/manuals\/rc8x\/chapter-01\/"/);
   assert.match(next, /href="\/happinesea-site\/manuals\/rc8x\/"/);
   const productHref = index.match(/href="([^"]+)">RC8X商品ページへ戻る/)?.[1];
   assert.equal(
@@ -130,6 +140,20 @@ test('Starlight manual retains navigation features under the project base', asyn
     ).pathname,
     '/happinesea-site/radiolink/rc8x/',
   );
+});
+
+test('RC8X manual chapters place official figures and videos in relevant sections', async () => {
+  for (const path of [
+    'manuals/rc8x/chapter-01/index.html',
+    'manuals/rc8x/chapter-02/index.html',
+  ]) {
+    const html = await route(path);
+    assert.match(html, /data-manual-section=/);
+    assert.match(html, /data-manual-figure(?:=|\s|>)/);
+    assert.match(html, /\/happinesea-site\/assets\/radiolink\/rc8x\/manual\//);
+    assert.match(html, /data-manual-video(?:=|\s|>)/);
+    assert.match(html, /youtube-nocookie\.com\/embed\//);
+  }
 });
 
 test('all public routes emit project-base canonical and Open Graph URLs', async () => {
@@ -142,7 +166,8 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
     'insights/index.html',
     'insights/aircraft-engine-stop/index.html',
     'manuals/rc8x/index.html',
-    'manuals/rc8x/basic-setup/index.html',
+    'manuals/rc8x/chapter-01/index.html',
+    'manuals/rc8x/chapter-02/index.html',
   ];
 
   for (const path of routes) {

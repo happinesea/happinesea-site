@@ -5,6 +5,8 @@ const routes = [
   ['catalogue', './radiolink/'],
   ['product', './radiolink/rc8x/'],
   ['manual', './manuals/rc8x/'],
+  ['manual-chapter-01', './manuals/rc8x/chapter-01/'],
+  ['manual-chapter-02', './manuals/rc8x/chapter-02/'],
   ['insights', './insights/'],
   ['article', './insights/aircraft-engine-stop/'],
 ] as const;
