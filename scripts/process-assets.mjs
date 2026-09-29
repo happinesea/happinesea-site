@@ -35,6 +35,20 @@ for (const asset of manifest.assets ?? []) {
   const outBase = resolve('public', basePath);
   await mkdir(resolve(outBase, '..'), { recursive: true });
 
+  if (input.length >= 26 && input.subarray(0, 2).toString('ascii') === 'BM') {
+    await writeFile(`${outBase}.bmp`, input);
+    results.push({
+      id: asset.id,
+      status: 'processed',
+      sha256: hash,
+      width: Math.abs(input.readInt32LE(18)),
+      height: Math.abs(input.readInt32LE(22)),
+      bytes: input.length,
+      bmp: `/${basePath}.bmp`,
+    });
+    continue;
+  }
+
   const image = sharp(input, { animated: true, failOn: 'warning' });
   const meta = await image.metadata();
 

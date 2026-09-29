@@ -64,6 +64,40 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.match(html, /※出荷時は8チャンネル。Firmware V1\.3\.5以上/);
   assert.match(html, /data-feature-layout="tile"/);
   assert.match(html, /data-feature-layout="split"/);
+  const cardOrder = [
+    'wallpaper',
+    'theme-customization',
+    'voice-customization',
+    'voice-broadcast',
+    'channel-customization',
+    'switch-customization',
+    'languages',
+    'fpv-display',
+    'model-storage',
+    'cruise-control',
+    'dual-rate',
+    'ergonomics',
+    'physical-options',
+    'power',
+    'r8fg-stability-protection',
+  ];
+  let previousCardPosition = -1;
+  for (const featureId of cardOrder) {
+    const position = html.indexOf(`data-feature-section="${featureId}"`);
+    assert.ok(position > previousCardPosition, `${featureId} card order`);
+    previousCardPosition = position;
+  }
+  for (const groupLabel of [
+    'カスタマイズ / UI',
+    '運用 / 表示 / モデル管理',
+    '操作性 / 拡張 / ハードウェア',
+    '付属受信機',
+  ]) {
+    assert.match(html, new RegExp(groupLabel.replaceAll('/', '\\/')));
+  }
+  assert.match(html, /\/assets\/radiolink\/rc8x\/buzzer-screen\.bmp/);
+  assert.match(html, /\/assets\/radiolink\/rc8x\/languages\.gif/);
+  assert.doesNotMatch(html, /data-feature-section="(?:gyro|water-resistance)"/);
   assert.match(html, /\/assets\/radiolink\/rc8x\/telemetry\.gif/);
   assert.doesNotMatch(
     html,

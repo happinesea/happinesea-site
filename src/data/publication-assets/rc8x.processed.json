@@ -104,6 +104,15 @@
       "gif": "/assets/radiolink/rc8x/voice.gif"
     },
     {
+      "id": "rc8x-buzzer-screen",
+      "status": "processed",
+      "sha256": "52d000813f9c3a85f1234449ca861847ac02744ad47ca884aa4926b5829e4b67",
+      "width": 480,
+      "height": 800,
+      "bytes": 768066,
+      "bmp": "/assets/radiolink/rc8x/buzzer-screen.bmp"
+    },
+    {
       "id": "rc8x-channel",
       "status": "processed",
       "sha256": "a279001fc4ebc8236f6fa01c2b718c97fb1362b3c9c75310991e0c15e3c2f7e9",

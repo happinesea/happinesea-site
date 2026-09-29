@@ -77,6 +77,21 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(
     page.locator('[data-feature-section="telemetry"] img'),
   ).toHaveAttribute('src', /telemetry\.gif$/);
+  await expect(page.locator('[data-feature-layout="tile"]')).toHaveCount(15);
+  await expect(
+    page.locator('[data-feature-section="voice-broadcast"] img'),
+  ).toHaveAttribute('src', /buzzer-screen\.bmp$/);
+  await expect(
+    page.locator('[data-feature-section="languages"] img'),
+  ).toHaveAttribute('src', /languages\.gif$/);
+  await expect(
+    page.locator('[data-feature-section="r8fg-stability-protection"]'),
+  ).toContainText('ジャイロによる車体安定化とナノコーティング');
+  await expect(
+    page.locator(
+      '[data-feature-section="gyro"], [data-feature-section="water-resistance"]',
+    ),
+  ).toHaveCount(0);
   await expect(page.locator('[data-product-nav]')).toBeVisible();
   await expect(page.locator('[data-product-section="manuals"]')).toHaveCount(0);
   await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);

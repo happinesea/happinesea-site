@@ -172,7 +172,11 @@
       "title": "音声通知を自由に構成",
       "lead": "聞こえるだけでなく、用途に合う音へ",
       "description": "送信機電圧、受信機電圧、モデル用バッテリー電圧、RSSI、各操作へ音声アラームを設定できます。言語、通知形式、内容を用途に合わせ、騒音下や静かな場所ではヘッドホンでも確認できます。音色、話速、音量、方言などの独自音声パックはユーザー側で用意します。",
-      "points": []
+      "points": [],
+      "media": {
+        "src": "/assets/radiolink/rc8x/buzzer-screen.bmp",
+        "alt": "RC8XのBuzzer音源選択画面"
+      }
     },
     {
       "id": "fpv-display",
@@ -259,11 +263,15 @@
       }
     },
     {
-      "id": "gyro",
-      "title": "ジャイロ内蔵R8FG受信機",
-      "lead": "感度を調整できる車体安定化",
-      "description": "標準付属のR8FGはジャイロを内蔵し、高電圧サーボをサポートします。横滑りを抑えて直進性と旋回の滑らかさを支援し、感度は初期設定でDL1が操作するCH8から調整できます。",
-      "points": []
+      "id": "r8fg-stability-protection",
+      "title": "付属R8FG受信機の安定化機能と保護設計",
+      "lead": "ジャイロによる車体安定化とナノコーティング",
+      "description": "標準付属のR8FGはジャイロを内蔵し、高電圧サーボに対応します。横滑りを抑えて直進性と旋回の滑らかさを支援し、感度は初期設定でDL1が操作するCH8から調整できます。基板とピンにはナノコーティングによる防滴処理が施され、防滴等級はIPX4です。完全防水を意味するものではありません。",
+      "points": [],
+      "media": {
+        "src": "/assets/radiolink/rc8x/r8fg-ipx4.webp",
+        "alt": "R8FG受信機のジャイロとIPX4防滴設計"
+      }
     },
     {
       "id": "ergonomics",
@@ -299,17 +307,6 @@
       "media": {
         "src": "/assets/radiolink/rc8x/power-modes.webp",
         "alt": "RC8Xの電池ボックス給電"
-      }
-    },
-    {
-      "id": "water-resistance",
-      "title": "R8FG受信機はIPX4防滴",
-      "lead": "基板と端子へナノコーティング",
-      "description": "付属R8FG受信機の基板とピンには防滴処理が施され、防滴等級はIPX4です。完全防水を意味するものではありません。",
-      "points": [],
-      "media": {
-        "src": "/assets/radiolink/rc8x/r8fg-ipx4.webp",
-        "alt": "R8FG受信機のIPX4防滴説明"
       }
     },
     {

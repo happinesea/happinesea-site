@@ -102,6 +102,15 @@
       "public_path": "/assets/radiolink/rc8x/voice"
     },
     {
+      "id": "rc8x-buzzer-screen",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/2bbbbdc6074da05e4e3ef427668823d6.bmp",
+      "source_status": "verified",
+      "alt": "RC8XのBuzzer音源選択画面",
+      "public_path": "/assets/radiolink/rc8x/buzzer-screen"
+    },
+    {
       "id": "rc8x-channel",
       "role": "feature",
       "source_page_url": "https://www.radiolink.com.cn/rc8x",

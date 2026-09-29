@@ -49,16 +49,41 @@ const jsonLd = [
 const row = ([label, value]: string[]) => ({ label, value, status: 'verified' as const });
 const featuredVideos = detail.videos.slice(0, 6);
 const moreVideos = detail.videos.slice(6);
-const tileFeatureIds = new Set([
-  'theme-customization',
-  'voice-customization',
-  'channel-customization',
-  'switch-customization',
-  'cruise-control',
-  'dual-rate',
-  'ergonomics',
-  'physical-options',
-]);
+const featureCardGroups = [
+  {
+    label: 'カスタマイズ / UI',
+    ids: ['wallpaper', 'theme-customization', 'voice-customization', 'voice-broadcast', 'channel-customization', 'switch-customization', 'languages'],
+  },
+  {
+    label: '運用 / 表示 / モデル管理',
+    ids: ['fpv-display', 'model-storage', 'cruise-control', 'dual-rate'],
+  },
+  {
+    label: '操作性 / 拡張 / ハードウェア',
+    ids: ['ergonomics', 'physical-options', 'power'],
+  },
+  {
+    label: '付属受信機',
+    ids: ['r8fg-stability-protection'],
+  },
+];
+const cardFeatureIds = new Set(featureCardGroups.flatMap(({ ids }) => ids));
+const cardOrder = new Map(
+  featureCardGroups.flatMap(({ ids }) => ids).map((id, index) => [id, index]),
+);
+const cardFeatures = detail.features
+  .filter(({ id }) => cardFeatureIds.has(id))
+  .sort((a, b) => cardOrder.get(a.id)! - cardOrder.get(b.id)!);
+const otherFeatures = detail.features.filter(({ id }) => !cardFeatureIds.has(id));
+const cardInsertionIndex = otherFeatures.findIndex(({ id }) => id === 'customization') + 1;
+const orderedFeatures = [
+  ...otherFeatures.slice(0, cardInsertionIndex),
+  ...cardFeatures,
+  ...otherFeatures.slice(cardInsertionIndex),
+];
+const groupLabelByFirstFeature = new Map(
+  featureCardGroups.map(({ label, ids }) => [ids[0], label]),
+);
 ---
 
 <BaseLayout
@@ -104,28 +129,36 @@ const tileFeatureIds = new Set([
 
       <section id="features" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-product-section="features" aria-labelledby="features-heading">
         <h2 id="features-heading" class="sr-only">RC8X</h2>
-        {detail.features.map((feature, index) => (
-          <article
+        {orderedFeatures.map((feature, index) => (
+          <>
+            {groupLabelByFirstFeature.has(feature.id) && (
+              <div class="col-span-full mt-8 border-t border-slate-200 pt-10">
+                <p class="m-0 text-sm font-bold tracking-[0.12em] text-teal-700 uppercase">
+                  {groupLabelByFirstFeature.get(feature.id)}
+                </p>
+              </div>
+            )}
+            <article
             id={feature.id}
             class:list={[
               'scroll-mt-36',
-              tileFeatureIds.has(feature.id)
+              cardFeatureIds.has(feature.id)
                 ? 'flex flex-col rounded-3xl border border-slate-200 bg-slate-50 p-5'
                 : 'col-span-full grid gap-8 border-t border-slate-200 py-14 md:grid-cols-2 md:items-center md:gap-12',
             ]}
             data-feature-section={feature.id}
-            data-feature-layout={tileFeatureIds.has(feature.id) ? 'tile' : 'split'}
+            data-feature-layout={cardFeatureIds.has(feature.id) ? 'tile' : 'split'}
           >
             <div
               class:list={{
                 'md:order-2':
-                  !tileFeatureIds.has(feature.id) && index % 2 === 1 && 'media' in feature && feature.media,
+                  !cardFeatureIds.has(feature.id) && index % 2 === 1 && 'media' in feature && feature.media,
                 'md:col-span-2 md:max-w-3xl':
                   !('media' in feature && feature.media),
               }}
             >
               <p class="m-0 text-sm font-bold text-teal-700">{feature.lead}</p>
-              <h3 class:list={['mt-2 font-bold tracking-tight text-slate-950', tileFeatureIds.has(feature.id) ? 'text-2xl' : 'text-3xl']}>{feature.title}</h3>
+              <h3 class:list={['mt-2 font-bold tracking-tight text-slate-950', cardFeatureIds.has(feature.id) ? 'text-2xl' : 'text-3xl']}>{feature.title}</h3>
               <p class="mt-5 text-slate-600">{feature.description}</p>
               {feature.points.length > 0 && (
                 <ul class="mt-5 space-y-2 pl-5 text-slate-700">
@@ -136,15 +169,16 @@ const tileFeatureIds = new Set([
             {'media' in feature && feature.media && (
               <figure class:list={[
                 'm-0 grid place-items-center overflow-hidden',
-                tileFeatureIds.has(feature.id)
+                cardFeatureIds.has(feature.id)
                   ? 'order-first mb-5 aspect-[4/3] [&_img]:max-h-64 [&_img]:rounded-2xl'
                   : 'max-h-80 [&_img]:max-h-80 [&_img]:rounded-2xl',
-                { 'md:order-1': !tileFeatureIds.has(feature.id) && index % 2 === 1 },
+                { 'md:order-1': !cardFeatureIds.has(feature.id) && index % 2 === 1 },
               ]}>
                 <ResponsiveMedia media={{ ...feature.media, image_status: 'verified' }} />
               </figure>
             )}
-          </article>
+            </article>
+          </>
         ))}
       </section>
 

@@ -16,6 +16,8 @@
 | Hero actions     | P1: English manual competed with the primary Japanese manual; LINE label made the action row too wide.       | Kept the Japanese manual as the primary pill, reduced the English manual to a labelled external text link, and used the official LINE brand icon at 44 px. | Passed |
 | Product summary  | P2: Overview and features were presented as separate concepts; the channel condition interrupted the metric. | Renamed the section and navigation to RC8X, changed the metric to `最大16チャンネル※`, and placed the Firmware condition directly below the metric grid.   | Passed |
 | Feature layout   | P1: Repeated full-width split rows made small customization and ergonomics points visually oversized.        | Retained split rows for major features and grouped compact points into responsive cards with contained media height.                                       | Passed |
+| Card structure   | P1: Related UI, operation, hardware, and receiver details were split across the page.                        | Reordered 15 cards into four labelled groups, moved the requested features into the card deck, and merged gyro/IPX4 details into one R8FG card.            | Passed |
+| Card media       | P1: Voice broadcast had no buzzer screenshot, while the language selector needed to remain animated.         | Added the official 480 x 800 buzzer BMP without re-encoding and retained the official language GIF.                                                        | Passed |
 | Animated media   | P1: Official animated GIFs were being converted to static WebP/AVIF outputs.                                 | GIF inputs are copied byte-for-byte and referenced as GIF; the processor test verifies exact bytes and excludes static derivatives.                        | Passed |
 | Tutorial wording | P2: Video headings used `公式動画`, which did not match the intended user task.                              | Changed the section and disclosure labels to `チュートリアル`.                                                                                             | Passed |
 
@@ -25,6 +27,9 @@
 - Mobile full view and focused Hero/body captures reviewed.
 - Hero CTA row stays on one line at 397 px content width with no horizontal overflow.
 - Telemetry media loaded from `/assets/radiolink/rc8x/telemetry.gif` at its natural 1920 x 780 dimensions.
+- Desktop card deck rendered at three columns with equal widths and zero horizontal overflow.
+- Pixel 7 card deck rendered at one column in the required order with zero horizontal overflow.
+- Buzzer BMP and language GIF loaded successfully inside their cards; the legacy gyro and water-resistance sections are absent.
 - Playwright desktop/mobile checks cover console errors, internal links, image responses, and overflow.
 
 No unresolved P0, P1, or P2 visual issues remain.
