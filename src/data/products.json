@@ -6,14 +6,23 @@
     "slug": "rc8x",
     "category": "送信機",
     "title": "RC8X",
-    "description": "RC8Xは、RCカー・ボート・ロボット向けのタッチスクリーン搭載送信機です。現行公式情報と日本語マニュアル正本をもとにメーカー確認用データを構成しています。",
+    "description": "RC8Xは、RCカー・ボート・ロボット向けの4.3インチIPSタッチスクリーン搭載送信機です。出荷時は8チャンネルで、現行Firmwareでは16チャンネルへの拡張が案内されています。公式商品ページの内容を日本向けに整理しています。",
     "content_status": "manufacturer_review",
-    "review_note": "メーカー確認中です。特に8ch/16chのFirmware条件、対応受信機、画像、現行UI/図版を確認しています。",
+    "review_note": "Radiolink公式商品ページを基にした日本語商品ページのメーカー確認用プレビューです。8ch→16chのFirmware表記だけ、公式ページ内の記載差を確認対象として残しています。",
     "features": [
-      "4.3インチ 800×480 フルカラーIPSタッチスクリーン",
-      "200モデルメモリー",
-      "地上で最大600mのコントロール距離（メーカー試験条件）",
-      "出荷時8ch。現行公式ページではFirmware更新後16ch対応と案内"
+      "4.3インチ・800×480のフルカラーIPSタッチスクリーン",
+      "出荷時8チャンネル。Firmware更新により16チャンネルへ拡張可能",
+      "地上最大600mのコントロール距離（メーカー試験条件）",
+      "200グループのモデルデータを保存",
+      "16グループのサブIDを保存",
+      "8グループのプログラムミキシング",
+      "3ms / 4ms / 14msの応答速度を選択可能（受信機・Firmware条件あり）",
+      "5.8GHz受信モジュール接続時、画面を設定表示とFPV表示に分割可能",
+      "音声、テーマ、背景、チャンネル、スイッチなどをカスタマイズ可能",
+      "R8FG受信機ではRSSI、受信機電圧、モデル用バッテリー電圧のテレメトリーに対応",
+      "ステアリングホイール部を左右反転でき、左利き向け構成に変更可能",
+      "最大64GBのMicroSD拡張に対応（32GBカード付属の案内あり）",
+      "Type-CによるFirmware更新・給電に対応"
     ],
     "specifications": [
       {
@@ -28,17 +37,37 @@
       },
       {
         "label": "用途",
-        "value": "カー / ボート / ロボット",
+        "value": "RCカー / ボート / ロボット / メカ",
         "status": "verified"
       },
       {
         "label": "チャンネル",
-        "value": "出荷時8ch / Firmware更新後16ch案内あり",
+        "value": "出荷時8ch。Firmware更新後16ch対応",
         "status": "review_required"
       },
       {
         "label": "画面",
-        "value": "4.3インチ 800×480 フルカラーIPSタッチスクリーン",
+        "value": "4.3インチ 800×480 フルカラーIPS静電容量式タッチスクリーン",
+        "status": "verified"
+      },
+      {
+        "label": "モデルメモリー",
+        "value": "200グループ",
+        "status": "verified"
+      },
+      {
+        "label": "サブID",
+        "value": "16グループ",
+        "status": "verified"
+      },
+      {
+        "label": "プログラムミキシング",
+        "value": "8グループ",
+        "status": "verified"
+      },
+      {
+        "label": "地上コントロール距離",
+        "value": "最大600m（メーカー試験条件）",
         "status": "verified"
       },
       {
@@ -52,8 +81,13 @@
         "status": "verified"
       },
       {
-        "label": "応答遅延",
-        "value": "3ms / 4ms / 14msから選択",
+        "label": "変調方式",
+        "value": "GFSK",
+        "status": "verified"
+      },
+      {
+        "label": "応答速度",
+        "value": "3ms / 4ms / 14ms",
         "status": "verified"
       },
       {
@@ -62,32 +96,54 @@
         "status": "verified"
       },
       {
-        "label": "モデルメモリー",
-        "value": "200",
+        "label": "電源",
+        "value": "単4形乾電池8本 / 6S Ni-MH / 2S–4S LiPo / Type-C外部給電",
         "status": "verified"
       },
       {
-        "label": "サブID",
-        "value": "16",
+        "label": "ストレージ",
+        "value": "MicroSD 最大64GB",
         "status": "verified"
       },
       {
-        "label": "CRSF",
-        "value": "対応",
+        "label": "CRSF / TBS Crossfire",
+        "value": "DSCポート設定で対応",
         "status": "verified"
       }
     ],
     "media": {
       "hero": {
-        "src": null,
+        "src": "https://radiolink.com/467e6fad9c0dbb3b1e2b6f349e2953ee.jpg",
         "alt": "Radiolink RC8X 送信機",
-        "source_image_url": null,
+        "source_image_url": "https://radiolink.com/467e6fad9c0dbb3b1e2b6f349e2953ee.jpg",
         "source_page_url": "https://www.radiolink.com/rc8x",
-        "retrieved_at": null,
+        "retrieved_at": "2026-09-29",
         "width": null,
         "height": null,
-        "image_status": "manufacturer_source_required"
-      }
+        "image_status": "verified"
+      },
+      "gallery": [
+        {
+          "src": "https://radiolink.com/02f764273bad1a24f2ab318accdb7a40.jpg",
+          "alt": "RC8X 公式商品ページ掲載画像",
+          "source_image_url": "https://radiolink.com/02f764273bad1a24f2ab318accdb7a40.jpg",
+          "source_page_url": "https://www.radiolink.com/rc8x",
+          "retrieved_at": "2026-09-29",
+          "width": null,
+          "height": null,
+          "image_status": "verified"
+        },
+        {
+          "src": "https://radiolink.com/d3fa808655e005e3ec774baa7d910f7f.png",
+          "alt": "RC8X 公式商品ページ掲載画像",
+          "source_image_url": "https://radiolink.com/d3fa808655e005e3ec774baa7d910f7f.png",
+          "source_page_url": "https://www.radiolink.com/rc8x",
+          "retrieved_at": "2026-09-29",
+          "width": null,
+          "height": null,
+          "image_status": "verified"
+        }
+      ]
     },
     "manuals": [
       {
@@ -107,13 +163,19 @@
         "version": "1.3.6",
         "url": "https://www.radiolink.com/rc8x_firmware",
         "status": "verified",
-        "note": "公式FirmwareページでLatest Firmwareとして確認"
+        "note": "公式Firmwareページでは2026.6.7のLatest Firmwareとして掲載"
       },
       {
-        "title": "8ch→16ch拡張条件",
+        "title": "16チャンネル拡張",
+        "url": "https://www.radiolink.com/rc8x_firmware",
+        "status": "verified",
+        "note": "Firmware V1.3.5の更新履歴に「8→16チャンネルへ拡張」と明記"
+      },
+      {
+        "title": "公式商品ページ内の旧表記",
         "url": "https://www.radiolink.com/rc8x",
         "status": "review_required",
-        "note": "公式商品ページ内のFirmware version表記をメーカー確認中"
+        "note": "商品ページ上部にV1.3.4表記が残っているため、メーカー確認対象"
       }
     ],
     "support": {
@@ -124,16 +186,18 @@
       "products": [],
       "receivers": [
         "R8FG",
-        "R4FGM",
+        "R16F",
+        "R12F",
+        "R8FGH",
+        "R8F",
+        "R8EF",
+        "R7FG",
         "R6FG",
         "R6F",
-        "R7FG",
-        "R8EF",
-        "R8FGH",
-        "R16F",
-        "R12F"
+        "R4FGM",
+        "R4F"
       ],
-      "receiver_status": "review_required"
+      "receiver_status": "verified"
     },
     "official_url": "https://www.radiolink.com/rc8x",
     "firmware_url": "https://www.radiolink.com/rc8x_firmware",
