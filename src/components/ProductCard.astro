@@ -18,7 +18,7 @@ const { data } = product;
     {data.media.hero.src ? (
       <img
         class="h-full w-full object-cover"
-        src={data.media.hero.src}
+        src={withBase(data.media.hero.src)}
         alt={data.media.hero.alt}
         loading="lazy"
       />

@@ -1,0 +1,50 @@
+{
+  "product_id": "rc8x",
+  "results": [
+    {
+      "id": "rc8x-hero",
+      "status": "processed",
+      "sha256": "192be3b5169fc408bfa2401e06fa56e93a6f0e96069a5f6ddbd0709de0198879",
+      "width": 1920,
+      "height": 880,
+      "webp": "/assets/radiolink/rc8x/hero.webp",
+      "avif": "/assets/radiolink/rc8x/hero.avif"
+    },
+    {
+      "id": "rc8x-ports",
+      "status": "processed",
+      "sha256": "0e911c2be81a0164e800608402cf30697c60aeafed39a475256a9075ec810fd1",
+      "width": 2463,
+      "height": 2000,
+      "webp": "/assets/radiolink/rc8x/ports.webp",
+      "avif": "/assets/radiolink/rc8x/ports.avif"
+    },
+    {
+      "id": "rc8x-interface",
+      "status": "processed",
+      "sha256": "b0c61b5eb67985fb30be3813eee0dea6972531e390cc237f6ce6619eaffeec7e",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/interface.webp",
+      "avif": "/assets/radiolink/rc8x/interface.avif"
+    },
+    {
+      "id": "rc8x-trigger",
+      "status": "processed",
+      "sha256": "7100b8799f9f91ee840518ae58a9f6e2d5226ada0fe95f1610377d5c6db5ec48",
+      "width": 587,
+      "height": 409,
+      "webp": "/assets/radiolink/rc8x/trigger.webp",
+      "avif": "/assets/radiolink/rc8x/trigger.avif"
+    },
+    {
+      "id": "rc8x-type-c",
+      "status": "processed",
+      "sha256": "f1644a8232b8032cd7a7f66d6813af0d30212ffcef08e9d284d827643c7914b4",
+      "width": 1000,
+      "height": 1000,
+      "webp": "/assets/radiolink/rc8x/type-c.webp",
+      "avif": "/assets/radiolink/rc8x/type-c.avif"
+    }
+  ]
+}

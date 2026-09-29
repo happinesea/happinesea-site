@@ -15,9 +15,13 @@ sidebar:
   order: 3
 ---
 
+import ManualSection from '../../../../components/manuals/ManualSection.astro';
+
 > **メーカー確認中**: このページは公開前レビュー用です。現行Firmware・UI・図版との一致を確認中です。
 
 ## 2.1 システムメニュー（System menu）
+
+<ManualSection id="rc8x-ch2-system" />
 
 「System menu」では、言語、システムテーマ、バックライト、サウンド、バッテリー、バイブレーション、LED輝度、HOMEボタン、外部入出力、キャリブレーション、情報を設定できます。
 
@@ -67,6 +71,8 @@ Press button to broadcast:
 
 ### 2.1.5 バッテリー（送信機バッテリー電圧）
 
+<ManualSection id="rc8x-ch2-battery" />
+
 #### Voltage 1/2
 
 - Current: 送信機をバッテリーで給電している場合、リアルタイムの送信機バッテリー電圧を表示します。
@@ -112,6 +118,8 @@ LEDは送信機左右側面のLEDストリップを指します。
 
 ### 2.1.9 External input output
 
+<ManualSection id="rc8x-ch2-io" />
+
 この機能は主に、DSCマルチプロトコルポート、USBポート、マルチメディアポートの動作モード選択に使用します。対象機器には、シミュレーター、トレーナーケーブル、ヘッドトラック、Crossfire、5.8G映像伝送などがあります。
 
 #### External input output 1/2
@@ -123,14 +131,10 @@ LEDは送信機左右側面のLEDストリップを指します。
 - SBUS: DSCポートにSBUS信号で制御する機器を接続する場合に選択します。
 - CRSF: DSCポートにTBS Crossfire/ELRSモジュールを接続する場合に選択します。
 
-DJIゴーグル接続チュートリアル：https://www.youtube.com/watch?v=m00C4pvAyfI
-
 RC8Xでヘッドトラック機能を使用する場合の注意：
 
 1. 通常、ヘッドトラック用チャンネルは「Channel setting」で「NULL」に設定する必要があります。例：ヘッドトラック機器をチャンネル5、6、7へ接続する場合、チャンネル5、6、7を「NULL」に設定できます。
 2. ヘッドトラック機器ごとの互換性により、ゴーグル接続成功後に各チャンネルへトリム値が加わる場合があります。「External input output」でPPM値を調整し、互換性要件に合わせてください。まず中央値を調整してトリムを0付近にし、次に最小値を調整して最大舵角を-100%付近にし、最後に最大値を調整して最大舵角を+100%付近にします。対象チャンネルの最大舵角が+100%を超える場合は、「Channel limiter」のMAX値を100%に設定できます。
-
-TBS Crossfire接続チュートリアル：https://www.youtube.com/watch?v=W_5y_OxVn2o
 
 ELRSモジュール接続手順：
 
@@ -147,8 +151,6 @@ ELRSモジュール接続手順：
 - Multimedia Mode: RC8Xのヘッドホンジャックの動作モード設定です。
 - Audio output: ヘッドホンジャックにヘッドホンを接続する場合に選択します。
 - Video input: ヘッドホンジャックに5.8G映像伝送モジュール、または他のAVアナログ映像信号機器を接続する場合に選択します。
-
-FPV設定チュートリアル：https://www.youtube.com/watch?v=fIBKCq7quLY
 
 注：5.8G映像伝送モジュールのケーブルをヘッドホンジャックとUSBポートへ正常に接続し、映像伝送モジュールと5.8G映像伝送モジュールのカメラとのペアリングに成功すると、RC8X画面は上下に自動分割されます。上画面は送信機のメニュー画面、下画面はFPVカメラの撮影画面です。1画面を2用途で使い、互いに干渉しません。詳細は右図を参照してください。
 
@@ -167,9 +169,9 @@ Video input settings: RC8Xを映像伝送モジュールへ接続している場
 
 ### 2.1.10 校正（Calibration）
 
-機械的なずれが発生した場合、ホイール、トリガー、Rotary knobを補正できます。
+<ManualSection id="rc8x-ch2-calibration" />
 
-RC8Xキャリブレーションチュートリアル：https://www.youtube.com/watch?v=pRnrocA0kKI
+機械的なずれが発生した場合、ホイール、トリガー、Rotary knobを補正できます。
 
 - Wheel: ステアリング補正。「Wheel」の「End point」をタップしてステアリングキャリブレーションメニューに入り、送信機のステアリングホイールを時計回りの端まで回し、次に反時計回りの端まで回します。その後、自動的にニュートラルへ戻し、minimum/neutral/maximum値の変化が止まるまで待ってから「Calibration finished」をクリックします。送信機が自動的に「Calibration menu」へ戻れば、ステアリングキャリブレーション成功です。
 - Trigger: スロットル補正。「Trigger」の「End point」をタップしてスロットルキャリブレーションメニューに入り、スロットルトリガーをフルスロットル位置とブレーキ位置まで操作します。その後、自動的にニュートラルへ戻し、minimum/neutral/maximum値の変化が止まるまで待ってから「Calibration finished」をクリックします。
@@ -203,11 +205,11 @@ RC8Xキャリブレーションチュートリアル：https://www.youtube.com/w
 
 ### 2.2.3 エンドポイント調整（EPA）
 
+<ManualSection id="rc8x-ch2-epa" />
+
 各チャンネルの最大動作量を調整します。各チャンネルの左右側を個別に調整でき、初期値は100、設定範囲は0-120です。
 
 - End point switch: エンドポイントを切り替えるスイッチです。PS1、PS2、PS3、PS4、PS5、steering switch（SS）、trigger switch（TS）、DT1、DT2、DT3、DT4、DL1を割り当てられます。「NULL」は制御スイッチなしで現在のエンドポイントを直接実行することを示します。
-
-EPAチュートリアル：https://www.youtube.com/watch?v=m00C4pvAyfI
 
 ### 2.2.4 サブトリム（Sub trim）
 
@@ -288,7 +290,7 @@ Double Ratioは各チャンネルのサーボ動作量を減らす機能です�
 
 - Ratio switch: エンドポイントを切り替えるスイッチです。PS1、PS2、PS3、PS4、PS5、steering switch（SS）、trigger switch（TS）、DT1、DT2、DT3、DT4、DL1を割り当てられます。「NULL」は制御スイッチなしで現在の比率を直接実行することを示します。
 
-Double Ratioチュートリアル：https://www.youtube.com/watch?v=m00C4pvAyfI
+デュアルレートとEPAの共通操作は、2.2.3の公式チュートリアル動画を参照してください。
 
 ### 2.2.10 フェイルセーフ（Fail-safe）
 
@@ -297,6 +299,8 @@ Double Ratioチュートリアル：https://www.youtube.com/watch?v=m00C4pvAyfI
 モデルに応じて、フェイルセーフ作動時にサーボを任意の設定位置へ動かす値を設定できます。ガソリンエンジンカーでは、安全のため、スロットルチャンネルをブレーキがかかる方向に設定することを推奨します。
 
 ### 2.2.11 Receiver setting
+
+<ManualSection id="rc8x-ch2-receiver" />
 
 RC8Xには標準でR8FG受信機が付属し、初期状態でバインド済みです。新しい対応受信機を購入した場合は、使用前にバインドが必要です。手順は1.3.2「Binding」を参照してください。
 
@@ -331,6 +335,8 @@ Subsidary ID mode設定手順：
 2. Subsidary ID mode設定が完了すると、対応するID番号がRC8Xメイン画面に表示されます（例：ID_1）。「-」または「+」でID番号を変更し、「Reset」をクリックするとID番号はID_0へ戻ります。
 
 ## 2.3 テレメトリー設定（Telemetry setting）
+
+<ManualSection id="rc8x-ch2-telemetry" />
 
 ### 2.3.1 Receiver signal
 
@@ -386,6 +392,8 @@ Subsidary ID mode設定手順：
 - VTR curve: ニュートラルポイントからハイポイントまで直線カーブでステアリング動作を変化させます。VTR rateは-100%-+100%、VTR point初期値は50、設定範囲は0-100です。
 
 ### 2.4.2 スロットルカーブ（Throttle curve）
+
+<ManualSection id="rc8x-ch2-throttle-curve" />
 
 スロットル高側のサーボ動作を速く、または穏やかにします。サーボ最大動作量には影響しません。Throttle curve typeはEXP、VTR、Multiple point curveの3種類を選択できます。
 
@@ -566,6 +574,8 @@ Engine cut機能スイッチを押すと、スロットルトリガー位置に�
 
 ### 2.5.3 Gyro mixing
 
+<ManualSection id="rc8x-ch2-gyro" />
+
 受信機内蔵ジャイロと外部の車用プロフェッショナルジャイロ機能を個別に設定できます。補助チャンネルのスイッチまたはボタンでジャイロ感度を調整できます。
 
 #### Gyro mixing 1/2
@@ -648,6 +658,8 @@ Engine cut機能スイッチを押すと、スロットルトリガー位置に�
 3. トリガーをブレーキ側へ操作しながらステアリングホイールを操作すると、前進側と同じ動作を逆方向に行います。
 
 ### 2.5.8 プログラマブルミキシング（Programmable mixing）
+
+<ManualSection id="rc8x-ch2-programmable-mix" />
 
 ステアリング、スロットル、補助チャンネル間のミキシングを適用できます。8つのProgrammable mixingを選択でき、各Programmable mixingの機能は同じです。
 
@@ -856,9 +868,9 @@ Update settingメニュー上の名称説明：
 
 ## 2.9 Modifying for Left-hand Use
 
-ホイール部の左右取り付け方向は反転できます。RC8Xのホイールは初期状態で右側にありますが、ユーザーはプラスドライバーで取り付け直すことができます。
+<ManualSection id="rc8x-ch2-left-hand" />
 
-チュートリアル：https://www.youtube.com/watch?v=ULw-8ui4Bco
+ホイール部の左右取り付け方向は反転できます。RC8Xのホイールは初期状態で右側にありますが、ユーザーはプラスドライバーで取り付け直すことができます。
 
 以下の操作は、右手用から左手用へ変更する例です。
 
@@ -927,11 +939,11 @@ RC8Xのホイールまたはトリガーは、必要に応じて機械的に調�
 
 ## 2.11 ファームウェア更新（Firmware Update）
 
+<ManualSection id="rc8x-ch2-firmware" />
+
 RC8Xは新機能追加のため、ファームウェア更新を継続します。最新ファームウェアを入手するには、Webサイト www.radiolink.com を確認してください。
 
 更新前に、最新ファームウェアをRC8Xのmicro-SDカードへコピーする必要があります。
-
-RC8Xファームウェア更新チュートリアル：https://www.youtube.com/watch?v=cUAxwb3nxuw
 
 ### 2.11.1 Methods for Firmware Copy
 

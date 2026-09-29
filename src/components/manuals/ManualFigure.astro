@@ -1,0 +1,35 @@
+---
+import { withBase } from '../../lib/urls';
+
+interface Props {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+const { src, alt, caption } = Astro.props;
+---
+
+<figure data-manual-figure class="manual-figure">
+  <img src={withBase(src)} alt={alt} loading="lazy" decoding="async" />
+  <figcaption>{caption}</figcaption>
+</figure>
+
+<style>
+  .manual-figure {
+    margin-block: 1.5rem;
+  }
+
+  img {
+    max-height: 44rem;
+    margin-inline: auto;
+    object-fit: contain;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: var(--sl-color-gray-3);
+    font-size: 0.875rem;
+    text-align: center;
+  }
+</style>

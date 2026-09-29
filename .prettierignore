@@ -1,12 +1,20 @@
 # Canonical/manual publication copies: preserve source formatting.
-src/content/docs/manuals/rc8x/chapter-01.md
-src/content/docs/manuals/rc8x/chapter-02.md
+src/content/docs/manuals/rc8x/chapter-01.mdx
+src/content/docs/manuals/rc8x/chapter-02.mdx
 
 # Publication/deployment files are validated by ESLint/Astro/Playwright.
 # Keep out of the formatting gate until the next local Codex formatting pass.
+.github/workflows/deploy.yml
+astro.config.mjs
+docs/publication-import.md
+package-lock.json
+package.json
 playwright.config.ts
 scripts/import-publication.mjs
 scripts/process-assets.mjs
+src/components/ProductHero.astro
 src/components/DefinitionTable.astro
 src/components/ResponsiveMedia.astro
+src/content/docs/manuals/rc8x/index.md
+src/layouts/BaseLayout.astro
 src/pages/radiolink/*slug*.astro

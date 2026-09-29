@@ -24,6 +24,128 @@
       "最大64GBのMicroSD拡張に対応（32GBカード付属の案内あり）",
       "Type-CによるFirmware更新・給電に対応"
     ],
+    "feature_sections": [
+      {
+        "id": "feature-display",
+        "title": "4.3インチIPSタッチ画面",
+        "description": "800×480のフルカラー画面で、設定値、サーボ出力、テレメトリーを確認できます。テーマ、背景、フォント色、音声も利用環境に合わせて変更できます。",
+        "points": [
+          "静電容量式タッチ操作",
+          "200モデルの設定を保存",
+          "画面キャプチャとカスタム壁紙に対応"
+        ],
+        "media": {
+          "src": "/assets/radiolink/rc8x/interface.webp",
+          "alt": "RC8Xの設定画面",
+          "source_image_url": "https://radiolink.com/cdb19603fc97fb8a0286df9ebf9a0cf7.png",
+          "source_page_url": "https://www.radiolink.com/rc8x",
+          "retrieved_at": "2026-09-29",
+          "width": 480,
+          "height": 800,
+          "image_status": "verified"
+        }
+      },
+      {
+        "id": "feature-connectivity",
+        "title": "FPV・CRSF・外部機器へ接続",
+        "description": "DSC、Type-C、マルチメディア端子を備え、TBS Crossfire、ELRS、ヘッドトラッキング、シミュレーター、5.8GHzアナログ映像入力へ接続できます。",
+        "points": [
+          "FPV映像と設定画面の分割表示",
+          "PPM入力・出力、SBUS、CRSFを選択",
+          "Type-Cはデータ転送と一時給電に対応"
+        ],
+        "media": {
+          "src": "/assets/radiolink/rc8x/ports.webp",
+          "alt": "RC8Xの外部接続ポート",
+          "source_image_url": "https://radiolink.com/34026fd141d4c0fe5ecafebd98a17986.png",
+          "source_page_url": "https://www.radiolink.com/rc8x",
+          "retrieved_at": "2026-09-29",
+          "width": 2463,
+          "height": 2000,
+          "image_status": "verified"
+        }
+      },
+      {
+        "id": "feature-customization",
+        "title": "車種に合わせた操作とミキシング",
+        "description": "8グループのプログラマブルミキシングに加え、4WS、デュアルESC、タンク、CPS、チルトなど地上モデル向けの機能をまとめています。",
+        "points": [
+          "3ms / 4ms / 14msの応答速度",
+          "16グループの受信機サブID",
+          "ステアリング・スロットル・ブレーキカーブ"
+        ],
+        "media": {
+          "src": "/assets/radiolink/rc8x/manual/home-screen.webp",
+          "alt": "RC8Xのホーム画面とシステムメニュー",
+          "source_image_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+          "source_page_url": "https://www.radiolink.com.cn/rc8x_manual",
+          "retrieved_at": "2026-09-29",
+          "width": 991,
+          "height": 382,
+          "image_status": "verified"
+        }
+      },
+      {
+        "id": "feature-telemetry",
+        "title": "R8FGテレメトリーと調整機構",
+        "description": "標準受信機R8FGではRSSI、受信機電圧、モデル用バッテリー電圧を確認できます。ホイール左右反転、トリガー位置、ばね強度も調整できます。",
+        "points": [
+          "R8FGはジャイロとSBUS/PWM出力を搭載",
+          "最大600m（メーカー試験条件）",
+          "単4形8本、Ni-MH、2S–4S LiPoに対応"
+        ],
+        "media": {
+          "src": "/assets/radiolink/rc8x/trigger.webp",
+          "alt": "RC8Xの調整可能なスロットルトリガー",
+          "source_image_url": "https://radiolink.com/773814a27e762e651e984d77336212f5.jpg",
+          "source_page_url": "https://www.radiolink.com/rc8x",
+          "retrieved_at": "2026-09-29",
+          "width": 587,
+          "height": 409,
+          "image_status": "verified"
+        }
+      }
+    ],
+    "package_contents": [
+      "RC8X送信機",
+      "R8FG受信機",
+      "R4FGM受信機",
+      "32GB MicroSDカード（装着済み）",
+      "Type-Cケーブル",
+      "EXT接続ケーブル",
+      "予備トリガー",
+      "六角レンチ2本",
+      "スクリーンプロテクター",
+      "ランヤード",
+      "クイックスタートガイド",
+      "キャリングバッグ・アクセサリーボックス"
+    ],
+    "videos": [
+      {
+        "youtube_id": "n1r9-XVVEAY",
+        "title": "RC8X製品紹介",
+        "description": "画面、操作部、主要機能を紹介するRadiolink公式動画です。",
+        "source_url": "https://www.youtube.com/watch?v=n1r9-XVVEAY"
+      },
+      {
+        "youtube_id": "fIBKCq7quLY",
+        "title": "FPV映像入力の設定",
+        "description": "5.8GHzアナログ映像をRC8X画面へ表示する手順です。",
+        "source_url": "https://www.youtube.com/watch?v=fIBKCq7quLY"
+      },
+      {
+        "youtube_id": "W_5y_OxVn2o",
+        "title": "TBS Crossfireの接続",
+        "description": "DSCポートをCRSFモードで使用する接続例です。",
+        "source_url": "https://www.youtube.com/watch?v=W_5y_OxVn2o"
+      },
+      {
+        "youtube_id": "cUAxwb3nxuw",
+        "title": "ファームウェア更新",
+        "description": "Type-CとMicroSDを使った更新手順です。",
+        "source_url": "https://www.youtube.com/watch?v=cUAxwb3nxuw"
+      }
+    ],
     "specifications": [
       {
         "label": "寸法",
@@ -122,7 +244,18 @@
         "height": null,
         "image_status": "verified"
       },
-      "gallery": []
+      "gallery": [
+        {
+          "src": "/assets/radiolink/rc8x/type-c.webp",
+          "alt": "RC8XのType-C給電",
+          "source_image_url": "https://radiolink.com/d27a4645d6cea7ba3acc59b3b617f76d.jpg",
+          "source_page_url": "https://www.radiolink.com/rc8x",
+          "retrieved_at": "2026-09-29",
+          "width": 1000,
+          "height": 1000,
+          "image_status": "verified"
+        }
+      ]
     },
     "manuals": [
       {
@@ -180,7 +313,7 @@
     },
     "official_url": "https://www.radiolink.com/rc8x",
     "firmware_url": "https://www.radiolink.com/rc8x_firmware",
-    "manual_url": "https://www.radiolink.com/rc8x_manual",
+    "manual_url": "https://www.radiolink.com.cn/download/b8d088918eea29d74ad2922cbbaeeb6c.pdf",
     "last_checked_at": "2026-09-29"
   }
 ]

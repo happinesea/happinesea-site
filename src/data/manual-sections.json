@@ -1,0 +1,399 @@
+[
+  {
+    "id": "rc8x-ch1-overview",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.2",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/product.webp",
+        "alt": "RC8X送信機と付属受信機",
+        "caption": "RC8X送信機と標準構成の受信機",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 1,
+        "source_image_name": "p01-01-IM14.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-package",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.2.3",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/package-contents.webp",
+        "alt": "RC8Xパッケージ内容一覧",
+        "caption": "公式日本語クイックスタートガイド掲載のパッケージ内容",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 2,
+        "source_image_name": "page-02.png",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-controls",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.2.5",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/controls-front.webp",
+        "alt": "RC8X前面と上面の操作部名称",
+        "caption": "RC8X前面・上面の各スイッチとポート",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 5,
+        "source_image_name": "p05-01-IM73.jpg",
+        "retrieved_at": "2026-09-29"
+      },
+      {
+        "src": "/assets/radiolink/rc8x/manual/controls-wheel.webp",
+        "alt": "RC8Xステアリング周辺と背面の操作部名称",
+        "caption": "ステアリング周辺・背面の操作部",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 6,
+        "source_image_name": "p06-01-IM78.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-three-position",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.2.7",
+    "videos": [
+      {
+        "youtube_id": "6YpKuzUdwQQ",
+        "title": "3ポジションスイッチの設定",
+        "source_url": "https://www.youtube.com/watch?v=6YpKuzUdwQQ"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-home",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.2.9",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/home-screen.webp",
+        "alt": "RC8Xホーム画面とシステムメニュー",
+        "caption": "ホーム画面の表示項目とシステムメニュー",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 7,
+        "source_image_name": "p07-01-IM81.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-receiver",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.3",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/r8fg-ports.webp",
+        "alt": "R8FG受信機の接続端子",
+        "caption": "R8FGのチャンネル端子とテレメトリー端子",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 8,
+        "source_image_name": "p08-02-IM97.jpg",
+        "retrieved_at": "2026-09-29"
+      },
+      {
+        "src": "/assets/radiolink/rc8x/manual/r8fg-antenna.webp",
+        "alt": "R8FG受信機アンテナの有効部分",
+        "caption": "R8FGアンテナの有効部分",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 8,
+        "source_image_name": "p08-03-IM98.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-bind",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.3.2",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/receiver-settings.webp",
+        "alt": "RC8X受信機設定画面",
+        "caption": "受信機設定画面でIDと動作モードを確認",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 9,
+        "source_image_name": "p09-01-IM103.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ],
+    "videos": [
+      {
+        "youtube_id": "6dypWw92mWY",
+        "title": "RC8Xと受信機のバインド",
+        "source_url": "https://www.youtube.com/watch?v=6dypWw92mWY"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-connect",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.3.3",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/telemetry-wiring.webp",
+        "alt": "R8FGテレメトリー配線例",
+        "caption": "受信機電圧とモデル用バッテリー電圧の配線例",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 11,
+        "source_image_name": "p11-05-IM120.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-mode",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.3.4",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/servo-monitor.webp",
+        "alt": "RC8Xサーボモニター画面",
+        "caption": "各チャンネル出力を確認するサーボ表示",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 9,
+        "source_image_name": "p09-02-IM104.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ],
+    "videos": [
+      {
+        "youtube_id": "uDIiyr9tmYA",
+        "title": "R8FGの動作モード切り替え",
+        "source_url": "https://www.youtube.com/watch?v=uDIiyr9tmYA"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-gyro",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.3.5",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/gyro-mixing.webp",
+        "alt": "RC8Xジャイロミキシング設定画面",
+        "caption": "ジャイロ感度を割り当てるGyro mixing画面",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 13,
+        "source_image_name": "p13-01-IM132.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch1-rssi",
+    "product": "rc8x",
+    "chapter": "chapter-01",
+    "section": "1.3.7",
+    "videos": [
+      {
+        "youtube_id": "RA0NasTZS90",
+        "title": "RSSI試験",
+        "source_url": "https://www.youtube.com/watch?v=RA0NasTZS90"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-system",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.1",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/home-screen.webp",
+        "alt": "RC8Xシステムメニュー",
+        "caption": "ホーム画面から開くシステムメニュー",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 7,
+        "source_image_name": "p07-01-IM81.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-battery",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.1.5",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/battery-settings.webp",
+        "alt": "RC8Xバッテリー電圧設定画面",
+        "caption": "送信機電圧・警告電圧・自動電源OFFの設定",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 8,
+        "source_image_name": "p08-01-IM96.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-io",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.1.9",
+    "videos": [
+      {
+        "youtube_id": "XD9ycqagQeo",
+        "title": "ヘッドトラッキングの接続",
+        "source_url": "https://www.youtube.com/watch?v=XD9ycqagQeo"
+      },
+      {
+        "youtube_id": "W_5y_OxVn2o",
+        "title": "TBS Crossfireの接続",
+        "source_url": "https://www.youtube.com/watch?v=W_5y_OxVn2o"
+      },
+      {
+        "youtube_id": "fIBKCq7quLY",
+        "title": "FPV映像入力の設定",
+        "source_url": "https://www.youtube.com/watch?v=fIBKCq7quLY"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-calibration",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.1.10",
+    "videos": [
+      {
+        "youtube_id": "pRnrocA0kKI",
+        "title": "ホイール・トリガーのキャリブレーション",
+        "source_url": "https://www.youtube.com/watch?v=pRnrocA0kKI"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-epa",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.2.3",
+    "videos": [
+      {
+        "youtube_id": "m00C4pvAyfI",
+        "title": "デュアルレートとEPAの設定",
+        "source_url": "https://www.youtube.com/watch?v=m00C4pvAyfI"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-receiver",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.2.11",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/receiver-settings.webp",
+        "alt": "RC8X受信機設定画面",
+        "caption": "Receiver settingの主要項目",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 9,
+        "source_image_name": "p09-01-IM103.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-telemetry",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.3",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/external-voltage.webp",
+        "alt": "RC8Xモデル用バッテリー電圧表示",
+        "caption": "モデル用バッテリー電圧の表示と警告設定",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 14,
+        "source_image_name": "p14-04-IM138.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-throttle-curve",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.4.2",
+    "videos": [
+      {
+        "youtube_id": "kss9N4sx_LE",
+        "title": "スロットルカーブの設定",
+        "source_url": "https://www.youtube.com/watch?v=kss9N4sx_LE"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-gyro",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.5.3",
+    "figures": [
+      {
+        "src": "/assets/radiolink/rc8x/manual/gyro-mixing.webp",
+        "alt": "RC8Xジャイロミキシング設定画面",
+        "caption": "Gyro mixingでスイッチと感度を設定",
+        "source_document_url": "https://www.radiolink.com.cn/download/2c365ff86a165960383e1fe31663e4f9.pdf",
+        "source_page": 13,
+        "source_image_name": "p13-01-IM132.jpg",
+        "retrieved_at": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-programmable-mix",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.5.8",
+    "videos": [
+      {
+        "youtube_id": "jS46WNhg-d0",
+        "title": "プログラマブルミキシングの設定",
+        "source_url": "https://www.youtube.com/watch?v=jS46WNhg-d0"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-left-hand",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.9",
+    "videos": [
+      {
+        "youtube_id": "ULw-8ui4Bco",
+        "title": "左利き用ステアリングへの変更",
+        "source_url": "https://www.youtube.com/watch?v=ULw-8ui4Bco"
+      }
+    ]
+  },
+  {
+    "id": "rc8x-ch2-firmware",
+    "product": "rc8x",
+    "chapter": "chapter-02",
+    "section": "2.11",
+    "videos": [
+      {
+        "youtube_id": "cUAxwb3nxuw",
+        "title": "RC8Xファームウェア更新",
+        "source_url": "https://www.youtube.com/watch?v=cUAxwb3nxuw"
+      }
+    ]
+  }
+]
