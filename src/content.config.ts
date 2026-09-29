@@ -63,7 +63,10 @@ const products = defineCollection({
         status: verificationStatus,
       }),
     ),
-    media: z.object({ hero: mediaSchema }),
+    media: z.object({
+      hero: mediaSchema,
+      gallery: z.array(mediaSchema).default([]),
+    }),
     manuals: z.array(
       z.object({
         title: z.string(),
