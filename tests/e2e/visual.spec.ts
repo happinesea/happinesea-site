@@ -18,6 +18,39 @@ for (const [name, path] of routes) {
       path: `test-results/screenshots/${testInfo.project.name}-${name}.png`,
       fullPage: true,
       animations: 'disabled',
+      scale: 'css',
     });
   });
 }
+
+test('capture RC8X review views', async ({ page }, testInfo) => {
+  await page.goto('./radiolink/rc8x/');
+  const output = (name: string) =>
+    `test-results/screenshots/${testInfo.project.name}-rc8x-${name}.png`;
+  const middleFeature = page.locator('[data-feature-section="range"]');
+
+  await page.locator('[data-product-section="overview"]').screenshot({
+    path: output('hero'),
+    animations: 'disabled',
+  });
+  await middleFeature.scrollIntoViewIfNeeded();
+  await middleFeature
+    .locator('img')
+    .evaluate((image: HTMLImageElement) => image.decode());
+  await middleFeature.screenshot({
+    path: output('feature-middle'),
+    animations: 'disabled',
+  });
+  await page.locator('[data-product-section="specifications"]').screenshot({
+    path: output('specifications'),
+    animations: 'disabled',
+  });
+  await page.locator('[data-product-section="videos"]').screenshot({
+    path: output('videos'),
+    animations: 'disabled',
+  });
+  await page.locator('[data-product-section="faq"]').screenshot({
+    path: output('faq'),
+    animations: 'disabled',
+  });
+});

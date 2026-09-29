@@ -30,23 +30,18 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
   assert.match(html, /aria-live="polite"/);
 });
 
-test('RC8X product page exposes required sections without commercial claims', async () => {
+test('RC8X product page follows the official product flow without commercial claims', async () => {
   const html = await route('radiolink/rc8x/index.html');
   const sections = [
     'overview',
-    'feature-display',
-    'feature-connectivity',
-    'feature-customization',
-    'feature-telemetry',
+    'features',
     'package',
-    'videos',
     'specifications',
-    'receivers',
-    'manuals',
-    'support',
+    'certificates',
     'firmware',
+    'videos',
+    'faq',
     'updates',
-    'related-products',
   ];
 
   assert.match(html, /aria-label="パンくずリスト"/);
@@ -56,11 +51,25 @@ test('RC8X product page exposes required sections without commercial claims', as
   for (const section of sections) {
     assert.match(html, new RegExp(`data-product-section="${section}"`));
   }
+  assert.match(html, /data-product-nav/);
   assert.match(html, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.match(html, />日本語マニュアル</);
+  assert.match(html, />英語マニュアル</);
   assert.match(html, /Radiolink公式・外部サイト/);
-  assert.match(html, /target="_blank"/);
+  assert.match(html, /target="_blank" rel="noopener noreferrer"/);
+  assert.match(html, />LINEで相談</);
+  assert.match(
+    html,
+    /href="https:\/\/www\.radiolink\.com\.cn\/rc8x_certificates"/,
+  );
+  assert.match(html, /RC8X仕様/);
+  assert.match(html, /R8FG仕様/);
+  assert.match(html, /V1\.3\.6/);
   assert.match(html, /youtube-nocookie\.com\/embed\//);
+  assert.match(html, /<details[^>]*data-product-faq/);
   assert.match(html, /<time[^>]*>[^<]+<\/time>[\s\S]*?<a[^>]+>[^<]+<\/a>/);
+  assert.doesNotMatch(html, /data-product-section="manuals"/);
+  assert.doesNotMatch(html, /data-product-section="support"/);
   assert.doesNotMatch(html, /data-product-section="(?:source|last-checked)"/);
   assert.doesNotMatch(html, />情報源</);
   assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);

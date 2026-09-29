@@ -46,6 +46,204 @@
       "source_status": "verified",
       "alt": "RC8XのType-C給電",
       "public_path": "/assets/radiolink/rc8x/type-c"
+    },
+    {
+      "id": "rc8x-display-speed",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/006bf7467f944a808eb5d810e03c528a.gif",
+      "source_status": "verified",
+      "alt": "RC8Xの4.3インチIPSタッチ画面",
+      "public_path": "/assets/radiolink/rc8x/display-speed"
+    },
+    {
+      "id": "rc8x-simulator",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/8d0d202503d9eaeb53a7dd16efaf01dc.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xのシミュレーター接続",
+      "public_path": "/assets/radiolink/rc8x/simulator"
+    },
+    {
+      "id": "rc8x-control-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/96d3e8777fe97c53fcc6d817895ab7d5.png",
+      "source_status": "verified",
+      "alt": "RC8Xの周波数ホッピング測定図",
+      "public_path": "/assets/radiolink/rc8x/control-range"
+    },
+    {
+      "id": "rc8x-response",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/47ce1e6455fc62c4470215ec8106b31a.png",
+      "source_status": "verified",
+      "alt": "RC8Xの応答速度設定画面",
+      "public_path": "/assets/radiolink/rc8x/response"
+    },
+    {
+      "id": "rc8x-theme",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/8ed22ded0fc959fb2e2d686887bd2fc1.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのテーマカスタマイズ",
+      "public_path": "/assets/radiolink/rc8x/theme"
+    },
+    {
+      "id": "rc8x-voice",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/4559a5aa56db4b42e263e77fd117db2e.gif",
+      "source_status": "verified",
+      "alt": "RC8Xの音声カスタマイズ",
+      "public_path": "/assets/radiolink/rc8x/voice"
+    },
+    {
+      "id": "rc8x-channel",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/d4c8943117bbd2a596b947964a7835be.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのチャンネル割り当て",
+      "public_path": "/assets/radiolink/rc8x/channel"
+    },
+    {
+      "id": "rc8x-switch",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/c0ff8cc60b31a022ddbe0d93924e9b75.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのスイッチ割り当て",
+      "public_path": "/assets/radiolink/rc8x/switch"
+    },
+    {
+      "id": "rc8x-wallpaper",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/241656244d8ea32b4f341e6b1c35c696.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのホーム画面壁紙",
+      "public_path": "/assets/radiolink/rc8x/wallpaper"
+    },
+    {
+      "id": "rc8x-fpv",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/f6dcb230b05db31b3aae60fe6ba494b7.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xの設定画面とFPV画面",
+      "public_path": "/assets/radiolink/rc8x/fpv"
+    },
+    {
+      "id": "rc8x-model-types",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/b2cf51f15416163bbce83b2f69e4528a.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xが対応する車両とボート",
+      "public_path": "/assets/radiolink/rc8x/model-types"
+    },
+    {
+      "id": "rc8x-model-storage",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/60f7c9ceaef3f1b702a1b6ba87d0699e.png",
+      "source_status": "verified",
+      "alt": "RC8Xのモデルメモリーとミキシング",
+      "public_path": "/assets/radiolink/rc8x/model-storage"
+    },
+    {
+      "id": "rc8x-languages",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/8d5ce419a71942d15fce149a2baa4ed9.gif",
+      "source_status": "verified",
+      "alt": "RC8Xの言語選択画面",
+      "public_path": "/assets/radiolink/rc8x/languages"
+    },
+    {
+      "id": "rc8x-cruise-control",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/943b931b5203c88ee555dbea39319b61.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのクルーズコントロール",
+      "public_path": "/assets/radiolink/rc8x/cruise-control"
+    },
+    {
+      "id": "rc8x-dual-rate",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/6d884298fe691e0a13c3be2d512282de.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのデュアルレート切り替え",
+      "public_path": "/assets/radiolink/rc8x/dual-rate"
+    },
+    {
+      "id": "rc8x-telemetry",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/dfbeb5100c46950b1c77c8de6110b045.gif",
+      "source_status": "verified",
+      "alt": "RC8Xのテレメトリー表示",
+      "public_path": "/assets/radiolink/rc8x/telemetry"
+    },
+    {
+      "id": "rc8x-ergonomics",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/dd416bf67953201757f61cee21747fb7.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xのグリップとトリガー調整部",
+      "public_path": "/assets/radiolink/rc8x/ergonomics"
+    },
+    {
+      "id": "rc8x-left-handed",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/5dc603e588679f380bcdf8d88c908ae9.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xの左利き向けホイール配置",
+      "public_path": "/assets/radiolink/rc8x/left-handed"
+    },
+    {
+      "id": "rc8x-power-modes",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/c980d4f88469cee2886a04770b4ac582.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xの電池ボックス給電",
+      "public_path": "/assets/radiolink/rc8x/power-modes"
+    },
+    {
+      "id": "rc8x-r8fg-ipx4",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/ac3d8436c60843401370510c8c22c134.jpg",
+      "source_status": "verified",
+      "alt": "R8FG受信機のIPX4防滴説明",
+      "public_path": "/assets/radiolink/rc8x/r8fg-ipx4"
+    },
+    {
+      "id": "rc8x-compatible-receivers",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/a591d2f70b3f67fee53d928e22f0927c.gif",
+      "source_status": "verified",
+      "alt": "RC8Xの対応受信機一覧",
+      "public_path": "/assets/radiolink/rc8x/compatible-receivers"
+    },
+    {
+      "id": "rc8x-package",
+      "role": "package",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/7399a015150512515a2152a8f53979be.jpg",
+      "source_status": "verified",
+      "alt": "RC8Xのパッケージ内容",
+      "public_path": "/assets/radiolink/rc8x/package"
     }
   ],
   "note": "Radiolink公式RC8X商品ページのHero商品画像をdeploy時に取得し、WebP/AVIFへ最適化してhappinesea側から配信する。"

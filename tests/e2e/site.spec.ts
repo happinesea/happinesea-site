@@ -56,10 +56,19 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page.locator('[data-product-category]:visible')).toHaveCount(1);
 
   await page.goto('./radiolink/rc8x/');
-  await expect(page.getByRole('link', { name: 'LINEを開く' })).toHaveAttribute(
+  await expect(
+    page.getByRole('link', { name: '日本語マニュアル' }),
+  ).toHaveAttribute('href', '/happinesea-site/manuals/rc8x/');
+  await expect(
+    page.getByRole('link', { name: '英語マニュアル' }),
+  ).toHaveAttribute('target', '_blank');
+  await expect(page.getByRole('link', { name: 'LINEで相談' })).toHaveAttribute(
     'href',
     'https://line.me/R/ti/p/%40662zyrsb',
   );
+  await expect(page.locator('[data-product-nav]')).toBeVisible();
+  await expect(page.locator('[data-product-section="manuals"]')).toHaveCount(0);
+  await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
 
@@ -89,5 +98,25 @@ test('same-origin links return successful responses', async ({
   for (const url of links) {
     const response = await request.get(url);
     expect(response.status(), url).toBeLessThan(400);
+  }
+});
+
+test('RC8X product images return successful responses', async ({
+  page,
+  request,
+}) => {
+  await page.goto('./radiolink/rc8x/');
+  const pageUrl = page.url();
+  const sources = await page
+    .locator('img[src]')
+    .evaluateAll((images) =>
+      images.map((image) => image.getAttribute('src')).filter(Boolean),
+    );
+
+  expect(sources.length).toBeGreaterThan(15);
+  for (const source of sources) {
+    const url = new URL(source!, pageUrl);
+    const response = await request.get(url.href);
+    expect(response.status(), url.href).toBeLessThan(400);
   }
 });

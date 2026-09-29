@@ -45,6 +45,204 @@
       "height": 1000,
       "webp": "/assets/radiolink/rc8x/type-c.webp",
       "avif": "/assets/radiolink/rc8x/type-c.avif"
+    },
+    {
+      "id": "rc8x-display-speed",
+      "status": "processed",
+      "sha256": "95c830d3e7205c446db5f3de10f8bc286fcffd6bf6318b2849e7744bcde93747",
+      "width": 500,
+      "height": 500,
+      "webp": "/assets/radiolink/rc8x/display-speed.webp",
+      "avif": "/assets/radiolink/rc8x/display-speed.avif"
+    },
+    {
+      "id": "rc8x-simulator",
+      "status": "processed",
+      "sha256": "07e0dabe8ec2e62d038c736c703a9a846b3d77481a274cbd0e0d6699a7cda700",
+      "width": 1200,
+      "height": 490,
+      "webp": "/assets/radiolink/rc8x/simulator.webp",
+      "avif": "/assets/radiolink/rc8x/simulator.avif"
+    },
+    {
+      "id": "rc8x-control-range",
+      "status": "processed",
+      "sha256": "98d90503e0249f4870d0a49c814dd54f1826de6c1d1f25b74f10c43f45253d35",
+      "width": 1754,
+      "height": 733,
+      "webp": "/assets/radiolink/rc8x/control-range.webp",
+      "avif": "/assets/radiolink/rc8x/control-range.avif"
+    },
+    {
+      "id": "rc8x-response",
+      "status": "processed",
+      "sha256": "34028d5332fd21f5ee0ab835584d3aca21cc98d4944eef518d9671737aea69d6",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/response.webp",
+      "avif": "/assets/radiolink/rc8x/response.avif"
+    },
+    {
+      "id": "rc8x-theme",
+      "status": "processed",
+      "sha256": "3f80546e6de6e21c4c622654b89f78dc174a025ac465bcba0750a3e7962d2626",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/theme.webp",
+      "avif": "/assets/radiolink/rc8x/theme.avif"
+    },
+    {
+      "id": "rc8x-voice",
+      "status": "processed",
+      "sha256": "f4ab48972cea994a11f71afe00892656a4d23e7b58b60d46c50510d5bc26d5e1",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/voice.webp",
+      "avif": "/assets/radiolink/rc8x/voice.avif"
+    },
+    {
+      "id": "rc8x-channel",
+      "status": "processed",
+      "sha256": "a279001fc4ebc8236f6fa01c2b718c97fb1362b3c9c75310991e0c15e3c2f7e9",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/channel.webp",
+      "avif": "/assets/radiolink/rc8x/channel.avif"
+    },
+    {
+      "id": "rc8x-switch",
+      "status": "processed",
+      "sha256": "91361d75e43c5934efcfef9db4e3e8ce3aa95644a23ef11132ea0842e492d4c8",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/switch.webp",
+      "avif": "/assets/radiolink/rc8x/switch.avif"
+    },
+    {
+      "id": "rc8x-wallpaper",
+      "status": "processed",
+      "sha256": "a576510b5f224ac445578e4fe6d00564b93adb7f15feff64daa60a2275f77144",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/wallpaper.webp",
+      "avif": "/assets/radiolink/rc8x/wallpaper.avif"
+    },
+    {
+      "id": "rc8x-fpv",
+      "status": "processed",
+      "sha256": "98d1057bd6d388b9cd1a27dd2fdca28e786f23c2e4a85b9e283d4b3ff07e2469",
+      "width": 1920,
+      "height": 1152,
+      "webp": "/assets/radiolink/rc8x/fpv.webp",
+      "avif": "/assets/radiolink/rc8x/fpv.avif"
+    },
+    {
+      "id": "rc8x-model-types",
+      "status": "processed",
+      "sha256": "cdf81b9e4439c6c6f129e4397269aa5e0fcf41913bf1eb86a2bc7f65509a452c",
+      "width": 2813,
+      "height": 1372,
+      "webp": "/assets/radiolink/rc8x/model-types.webp",
+      "avif": "/assets/radiolink/rc8x/model-types.avif"
+    },
+    {
+      "id": "rc8x-model-storage",
+      "status": "processed",
+      "sha256": "195529df06f814047a0760670bc1e2e51ac7d0354c82dc38b243772447a0bcc1",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/model-storage.webp",
+      "avif": "/assets/radiolink/rc8x/model-storage.avif"
+    },
+    {
+      "id": "rc8x-languages",
+      "status": "processed",
+      "sha256": "ef53da31a9ba66011c5f468ccc58d542feb11a3399adffe9707f5e1aa4fe90bb",
+      "width": 1500,
+      "height": 940,
+      "webp": "/assets/radiolink/rc8x/languages.webp",
+      "avif": "/assets/radiolink/rc8x/languages.avif"
+    },
+    {
+      "id": "rc8x-cruise-control",
+      "status": "processed",
+      "sha256": "650d2630e97270e46c1369812db5ab004b0ab452b0eed0037b44a9c2e518ff2a",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/cruise-control.webp",
+      "avif": "/assets/radiolink/rc8x/cruise-control.avif"
+    },
+    {
+      "id": "rc8x-dual-rate",
+      "status": "processed",
+      "sha256": "5bb128d3975908e15a8be929e2d619f6e2c46421c35a998817da171d6b8e23c2",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/dual-rate.webp",
+      "avif": "/assets/radiolink/rc8x/dual-rate.avif"
+    },
+    {
+      "id": "rc8x-telemetry",
+      "status": "processed",
+      "sha256": "0ce77999fecc5f915cae5674294484bff993d59020dee174704921af7467d456",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/rc8x/telemetry.webp",
+      "avif": "/assets/radiolink/rc8x/telemetry.avif"
+    },
+    {
+      "id": "rc8x-ergonomics",
+      "status": "processed",
+      "sha256": "e5106ac2d7636e5b03051d7f7fdc08470a66c0cf5e7504491c4b0bf786a235a2",
+      "width": 1001,
+      "height": 700,
+      "webp": "/assets/radiolink/rc8x/ergonomics.webp",
+      "avif": "/assets/radiolink/rc8x/ergonomics.avif"
+    },
+    {
+      "id": "rc8x-left-handed",
+      "status": "processed",
+      "sha256": "576b57b2ae084fd52b8d72320a770570422af6315be99bcb90333a5e7d58e610",
+      "width": 1004,
+      "height": 704,
+      "webp": "/assets/radiolink/rc8x/left-handed.webp",
+      "avif": "/assets/radiolink/rc8x/left-handed.avif"
+    },
+    {
+      "id": "rc8x-power-modes",
+      "status": "processed",
+      "sha256": "7fc879a92a2c06422046b92374c48d0a17ccb843ccbce729b8164e1ccb6164c5",
+      "width": 1500,
+      "height": 1080,
+      "webp": "/assets/radiolink/rc8x/power-modes.webp",
+      "avif": "/assets/radiolink/rc8x/power-modes.avif"
+    },
+    {
+      "id": "rc8x-r8fg-ipx4",
+      "status": "processed",
+      "sha256": "f450b870a5d931e8b57b34ef491c06522b50bff6f672b43b57502f573d8491a0",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/rc8x/r8fg-ipx4.webp",
+      "avif": "/assets/radiolink/rc8x/r8fg-ipx4.avif"
+    },
+    {
+      "id": "rc8x-compatible-receivers",
+      "status": "processed",
+      "sha256": "f98aa205b80afd8353d3f1efe299e2719dae813a68cc9233ee21204b0ee2c5bc",
+      "width": 480,
+      "height": 800,
+      "webp": "/assets/radiolink/rc8x/compatible-receivers.webp",
+      "avif": "/assets/radiolink/rc8x/compatible-receivers.avif"
+    },
+    {
+      "id": "rc8x-package",
+      "status": "processed",
+      "sha256": "1b40118f5ba89249de53017ce41343383e263dc795e4cd7e3c97098803e1cfce",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/rc8x/package.webp",
+      "avif": "/assets/radiolink/rc8x/package.avif"
     }
   ]
 }

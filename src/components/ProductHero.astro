@@ -1,14 +1,19 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { LINE_URL } from '../lib/site';
 import { withBase } from '../lib/urls';
 import ResponsiveMedia from './ResponsiveMedia.astro';
 
 interface Props {
   product: CollectionEntry<'products'>['data'];
+  copy?: {
+    tagline: string;
+    subline: string;
+    note: string;
+  };
 }
 
-const { product } = Astro.props;
-const manual = product.manuals[0];
+const { product, copy } = Astro.props;
 const media = {
   src: product.media.hero.src ?? undefined,
   alt: product.media.hero.alt,
@@ -36,15 +41,35 @@ const media = {
     <h1 class="m-0 text-4xl font-bold tracking-tight text-slate-950 sm:text-6xl">
       {product.model}
     </h1>
-    <p class="mt-6 text-lg text-slate-600">{product.description}</p>
-    {manual && (
+    <p class="mt-5 text-2xl font-bold text-slate-900">
+      {copy?.tagline ?? product.description}
+    </p>
+    {copy?.subline && <p class="mt-2 text-lg text-slate-600">{copy.subline}</p>}
+    {copy?.note && <p class="mt-4 text-sm text-slate-500">{copy.note}</p>}
+    <div class="mt-7 flex flex-wrap gap-3">
       <a
-        class="mt-5 inline-block rounded-full bg-slate-950 px-5 py-3 font-bold text-white no-underline"
-        href={withBase(manual.href)}
+        class="inline-flex items-center rounded-full bg-slate-950 px-5 py-3 font-bold text-white no-underline"
+        href={withBase(`/manuals/${product.slug}/`)}
       >
-        マニュアルを見る
+        日本語マニュアル
       </a>
-    )}
+      <a
+        class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-5 py-3 font-bold text-slate-900 no-underline"
+        href={product.manual_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        英語マニュアル
+        <span class="text-xs font-medium text-slate-500">Radiolink公式・外部サイト</span>
+      </a>
+      <a
+        class="inline-flex items-center rounded-full bg-[#06c755] px-5 py-3 font-bold text-white no-underline"
+        href={LINE_URL}
+        rel="noreferrer"
+      >
+        LINEで相談
+      </a>
+    </div>
   </div>
   <ResponsiveMedia
     media={media}
