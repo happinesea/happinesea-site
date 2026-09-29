@@ -113,7 +113,7 @@
     ],
     "media": {
       "hero": {
-        "src": "https://radiolink.com/467e6fad9c0dbb3b1e2b6f349e2953ee.jpg",
+        "src": "/assets/radiolink/rc8x/hero.webp",
         "alt": "Radiolink RC8X 送信機",
         "source_image_url": "https://radiolink.com/467e6fad9c0dbb3b1e2b6f349e2953ee.jpg",
         "source_page_url": "https://www.radiolink.com/rc8x",
@@ -122,28 +122,7 @@
         "height": null,
         "image_status": "verified"
       },
-      "gallery": [
-        {
-          "src": "https://radiolink.com/02f764273bad1a24f2ab318accdb7a40.jpg",
-          "alt": "RC8X 公式商品ページ掲載画像",
-          "source_image_url": "https://radiolink.com/02f764273bad1a24f2ab318accdb7a40.jpg",
-          "source_page_url": "https://www.radiolink.com/rc8x",
-          "retrieved_at": "2026-09-29",
-          "width": null,
-          "height": null,
-          "image_status": "verified"
-        },
-        {
-          "src": "https://radiolink.com/d3fa808655e005e3ec774baa7d910f7f.png",
-          "alt": "RC8X 公式商品ページ掲載画像",
-          "source_image_url": "https://radiolink.com/d3fa808655e005e3ec774baa7d910f7f.png",
-          "source_page_url": "https://www.radiolink.com/rc8x",
-          "retrieved_at": "2026-09-29",
-          "width": null,
-          "height": null,
-          "image_status": "verified"
-        }
-      ]
+      "gallery": []
     },
     "manuals": [
       {
