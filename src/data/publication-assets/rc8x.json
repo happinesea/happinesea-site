@@ -6,20 +6,11 @@
       "id": "rc8x-hero",
       "role": "hero",
       "source_page_url": "https://www.radiolink.com/rc8x",
-      "source_image_url": null,
-      "source_status": "manufacturer_source_required",
+      "source_image_url": "https://radiolink.com/467e6fad9c0dbb3b1e2b6f349e2953ee.jpg",
+      "source_status": "verified",
       "alt": "Radiolink RC8X 送信機",
       "public_path": "/assets/radiolink/rc8x/hero"
-    },
-    {
-      "id": "rc8x-gallery-01",
-      "role": "gallery",
-      "source_page_url": "https://www.radiolink.com/rc8x",
-      "source_image_url": null,
-      "source_status": "manufacturer_source_required",
-      "alt": "Radiolink RC8X 商品画像",
-      "public_path": "/assets/radiolink/rc8x/gallery-01"
     }
   ],
-  "note": "メーカー担当による代表画像指定または現行公式ページ画像の最終確認後にsource_image_urlを確定する。"
+  "note": "Radiolink公式RC8X商品ページのHero商品画像をdeploy時に取得し、WebP/AVIFへ最適化してhappinesea側から配信する。"
 }
