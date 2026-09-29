@@ -62,7 +62,7 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.match(html, />RC8X</);
   assert.match(
     html,
-    /※出荷時は8チャンネルです。Firmware V1\.3\.5以降へ更新すると16チャンネルに拡張できます。/,
+    /※出荷時は8チャンネルです。ファームウェアV1\.3\.5以降へ更新すると16チャンネルに拡張できます。/,
   );
   assert.doesNotMatch(html, /PRODUCT OVERVIEW/);
   assert.doesNotMatch(html, /data-product-section="feature-summary"/);

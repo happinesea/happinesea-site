@@ -109,7 +109,7 @@ const groupLabelByFirstFeature = new Map(
       <ul class="mx-auto flex w-max min-w-full list-none items-center gap-1 p-2 text-sm font-bold">
         {[
           ['RC8X', '#overview'], ['仕様', '#specifications'],
-          ['証明書', '#certificates'], ['Firmware', '#firmware'], ['チュートリアル', '#videos'], ['FAQ', '#faq'],
+          ['証明書', '#certificates'], ['ファームウェア', '#firmware'], ['チュートリアル', '#videos'], ['FAQ', '#faq'],
         ].map(([label, href]) => (
           <li><a class="block rounded-full px-4 py-2 text-slate-700 no-underline hover:bg-teal-50 hover:text-teal-800" href={href}>{label}</a></li>
         ))}
@@ -229,7 +229,7 @@ const groupLabelByFirstFeature = new Map(
 
       <section id="firmware" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="firmware">
         <p class="m-0 text-sm font-bold text-teal-700">Latest Firmware</p>
-        <h2 class="mt-2 text-3xl font-bold text-slate-950">Firmware</h2>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">ファームウェア</h2>
         <p class="max-w-3xl text-slate-600">WindowsはType-C接続、MacはMicroSDカードを取り外してカードリーダーを使う方法が公式に案内されています。complete packageは設定を初期化し、fix packageは現在のカスタマイズを維持する用途です。</p>
         <div class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
           {detail.firmware.map((release) => (
@@ -242,7 +242,7 @@ const groupLabelByFirstFeature = new Map(
             </article>
           ))}
         </div>
-        <a class="mt-6 inline-flex font-bold text-teal-800" href={detail.source.firmware_url} target="_blank" rel="noopener noreferrer">Radiolink公式Firmwareページを開く</a>
+        <a class="mt-6 inline-flex font-bold text-teal-800" href={detail.source.firmware_url} target="_blank" rel="noopener noreferrer">Radiolink公式ファームウェアページを開く</a>
       </section>
 
       <section id="videos" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="videos">
