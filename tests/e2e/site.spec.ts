@@ -90,6 +90,9 @@ test('navigation, category filtering, and LINE support work', async ({
     page.getByText('Radiolink公式 RC8X製品動画', { exact: true }),
   ).toHaveCount(0);
   await expect(
+    page.locator('[data-feature-section="architecture"]'),
+  ).not.toHaveClass(/py-14/);
+  await expect(
     page.locator('[data-feature-section="architecture"] img'),
   ).toHaveAttribute('src', /architecture\.webp$/);
   await expect(

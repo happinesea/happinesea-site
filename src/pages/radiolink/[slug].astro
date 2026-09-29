@@ -140,7 +140,7 @@ const groupLabelByFirstFeature = new Map(
               'scroll-mt-36',
               cardFeatureIds.has(feature.id)
                 ? 'flex flex-col rounded-3xl border border-slate-200 bg-slate-50 p-5'
-                : 'col-span-full grid gap-8 border-t border-slate-200 py-14 md:grid-cols-2 md:items-center md:gap-12',
+                : `col-span-full grid gap-8 border-t border-slate-200 ${feature.id === 'architecture' ? 'pb-14' : 'py-14'} md:grid-cols-2 md:items-center md:gap-12`,
             ]}
             data-feature-section={feature.id}
             data-feature-layout={cardFeatureIds.has(feature.id) ? 'tile' : 'split'}
