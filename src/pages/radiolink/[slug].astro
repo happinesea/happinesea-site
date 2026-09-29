@@ -5,6 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DefinitionTable from '../../components/DefinitionTable.astro';
 import LineCta from '../../components/LineCta.astro';
 import ProductHero from '../../components/ProductHero.astro';
+import ResponsiveMedia from '../../components/ResponsiveMedia.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
@@ -70,8 +71,30 @@ const jsonLd = [
 
     <div class="grid gap-12 lg:grid-cols-[1fr_20rem]">
       <div class="space-y-12">
+        {data.media.gallery.length > 0 && (
+          <section data-product-section="gallery">
+            <h2 class="text-3xl font-bold text-slate-950">製品画像</h2>
+            <p class="text-sm text-slate-500">
+              Radiolink公式商品ページ掲載画像を使用しています。
+            </p>
+            <div class="mt-6 grid gap-5 md:grid-cols-2">
+              {data.media.gallery.map((media) => (
+                <ResponsiveMedia
+                  media={{
+                    src: media.src ?? undefined,
+                    alt: media.alt,
+                    width: media.width ?? undefined,
+                    height: media.height ?? undefined,
+                    image_status: media.image_status === 'verified' ? 'verified' : 'unverified',
+                  }}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+
         <section data-product-section="features">
-          <h2 class="text-3xl font-bold text-slate-950">特長</h2>
+          <h2 class="text-3xl font-bold text-slate-950">主な特長</h2>
           {data.features.length ? (
             <ul>
               {data.features.map((feature) => (
@@ -99,6 +122,9 @@ const jsonLd = [
 
         <section data-product-section="receivers">
           <h2 class="text-3xl font-bold text-slate-950">対応受信機</h2>
+          <p class="text-slate-600">
+            現行のRadiolink公式FAQに掲載されているRC8X対応受信機を整理しています。
+          </p>
           {data.relations.receivers.length ? (
             <>
               <ul>
