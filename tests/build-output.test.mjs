@@ -68,6 +68,7 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.doesNotMatch(html, /data-product-section="feature-summary"/);
   assert.match(html, /data-official-product-video/);
   assert.match(html, /d5acb416b76a01be7edf080741b0e681\.mp4/);
+  assert.doesNotMatch(html, /Radiolink公式 RC8X製品動画/);
   assert.match(html, /\/assets\/radiolink\/rc8x\/architecture\.webp/);
   assert.match(html, /data-feature-layout="tile"/);
   assert.match(html, /data-feature-layout="split"/);

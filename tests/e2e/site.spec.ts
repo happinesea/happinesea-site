@@ -78,10 +78,17 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(
     page.locator('[data-product-section="feature-summary"]'),
   ).toHaveCount(0);
-  await expect(page.locator('[data-official-product-video]')).toHaveAttribute(
+  const officialProductVideo = page.locator('[data-official-product-video]');
+  await expect(officialProductVideo).toHaveAttribute(
     'src',
     /d5acb416b76a01be7edf080741b0e681\.mp4$/,
   );
+  await expect(officialProductVideo.locator('..')).not.toHaveClass(
+    /(?:border-t|py-14)/,
+  );
+  await expect(
+    page.getByText('Radiolink公式 RC8X製品動画', { exact: true }),
+  ).toHaveCount(0);
   await expect(
     page.locator('[data-feature-section="architecture"] img'),
   ).toHaveAttribute('src', /architecture\.webp$/);

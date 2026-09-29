@@ -175,7 +175,7 @@ const groupLabelByFirstFeature = new Map(
             )}
             </article>
             {feature.id === 'communication' && (
-              <figure class="col-span-full m-0 border-t border-slate-200 py-14">
+              <figure class="col-span-full m-0">
                 <video
                   data-official-product-video
                   src={detail.product_video.src}
@@ -186,7 +186,6 @@ const groupLabelByFirstFeature = new Map(
                 >
                   RC8X公式製品動画を再生できません。
                 </video>
-                <figcaption class="mt-3 text-sm text-slate-500">{detail.product_video.caption}</figcaption>
               </figure>
             )}
           </>
