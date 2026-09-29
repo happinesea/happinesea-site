@@ -28,26 +28,33 @@ const {
   class: className,
   placeholderLabel = '画像準備中',
 } = Astro.props;
+
+const isExternal = (value: string) =>
+  /^[a-z][a-z\d+.-]*:/i.test(value) || value.startsWith('//');
+const resolveSrc = (value: string) => (isExternal(value) ? value : withBase(value));
+
 const isVerified = media?.image_status === 'verified' && media.src;
 
-if (isVerified && (media.alt === undefined || !media.width || !media.height)) {
-  throw new TypeError('Verified media requires alt, width, and height');
+if (isVerified && media.alt === undefined) {
+  throw new TypeError('Verified media requires alt text');
 }
 ---
 
 {isVerified ? (
   <picture class={className}>
     {media.sources?.map((source) => (
-      <source srcset={withBase(source.src)} type={source.type} />
+      <source srcset={resolveSrc(source.src)} type={source.type} />
     ))}
     <img
-      src={withBase(media.src!)}
+      src={resolveSrc(media.src!)}
       alt={media.alt!}
       width={media.width}
       height={media.height}
       loading={eager ? 'eager' : 'lazy'}
       decoding={eager ? 'sync' : 'async'}
       fetchpriority={eager ? 'high' : 'auto'}
+      class="h-auto w-full rounded-3xl object-contain"
+      referrerpolicy="no-referrer"
     />
   </picture>
 ) : (
