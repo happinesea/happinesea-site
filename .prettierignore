@@ -9,4 +9,4 @@ scripts/import-publication.mjs
 scripts/process-assets.mjs
 src/components/DefinitionTable.astro
 src/components/ResponsiveMedia.astro
-src/pages/radiolink/[slug].astro
+src/pages/radiolink/*slug*.astro
