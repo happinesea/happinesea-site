@@ -57,7 +57,20 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.match(html, />英語マニュアル</);
   assert.match(html, /Radiolink公式・外部サイト/);
   assert.match(html, /target="_blank" rel="noopener noreferrer"/);
-  assert.match(html, />LINEで相談</);
+  assert.match(html, /aria-label="LINEで相談"/);
+  assert.doesNotMatch(html, />LINEで相談</);
+  assert.match(html, />RC8X</);
+  assert.match(html, /最大16チャンネル※/);
+  assert.match(html, /※出荷時は8チャンネル。Firmware V1\.3\.5以上/);
+  assert.match(html, /data-feature-layout="tile"/);
+  assert.match(html, /data-feature-layout="split"/);
+  assert.match(html, /\/assets\/radiolink\/rc8x\/telemetry\.gif/);
+  assert.doesNotMatch(
+    html,
+    /\/assets\/radiolink\/rc8x\/telemetry\.(?:webp|avif)/,
+  );
+  assert.match(html, />チュートリアル</);
+  assert.match(html, /チュートリアル動画をさらに表示する（24本）/);
   assert.match(
     html,
     /href="https:\/\/www\.radiolink\.com\.cn\/rc8x_certificates"/,

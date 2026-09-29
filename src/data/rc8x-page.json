@@ -17,7 +17,7 @@
     "4.3インチ フルカラーIPSタッチ画面",
     "ユーザー定義の音声パック",
     "設定画面とFPV画面の2画面表示",
-    "Firmware更新で16チャンネル",
+    "最大16チャンネル※",
     "地上最大600m",
     "200モデル保存",
     "16モデルのサブID",
@@ -49,7 +49,7 @@
       "description": "バックライト付きIPS画面は高速スクロールや機能画面の切り替えでも遅れを抑え、スマートフォンのような表示更新を目指しています。狭額縁は電子設計と機構設計の両面から実現されています。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/display-speed.webp",
+        "src": "/assets/radiolink/rc8x/display-speed.gif",
         "alt": "RC8Xの4.3インチIPSタッチ画面"
       }
     },
@@ -119,7 +119,7 @@
       "description": "背景色、文字色、機能ボタンなどを好みに合わせて変更できます。コードを書き換える必要はありません。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/theme.webp",
+        "src": "/assets/radiolink/rc8x/theme.gif",
         "alt": "RC8Xのテーマカスタマイズ"
       }
     },
@@ -130,7 +130,7 @@
       "description": "状況に合わせた独自の音声通知を設定し、操作に必要な情報を音声で受け取れます。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/voice.webp",
+        "src": "/assets/radiolink/rc8x/voice.gif",
         "alt": "RC8Xの音声カスタマイズ"
       }
     },
@@ -141,7 +141,7 @@
       "description": "各チャンネルへ必要な機能を割り当て、操作習慣に合わせてスイッチを選べます。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/channel.webp",
+        "src": "/assets/radiolink/rc8x/channel.gif",
         "alt": "RC8Xのチャンネル割り当て画面"
       }
     },
@@ -152,7 +152,7 @@
       "description": "ステアリングホイール、トリガー、2つのノブ、3つのキースイッチ、4つのトリムボタン、1つのダイヤルをショートカットへ割り当てられます。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/switch.webp",
+        "src": "/assets/radiolink/rc8x/switch.gif",
         "alt": "RC8Xのスイッチ割り当て"
       }
     },
@@ -163,7 +163,7 @@
       "description": "RC8Xのホーム画面へ独自の壁紙を設定できます。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/wallpaper.webp",
+        "src": "/assets/radiolink/rc8x/wallpaper.gif",
         "alt": "RC8Xのホーム画面壁紙"
       }
     },
@@ -214,7 +214,7 @@
       "description": "簡体字中国語、繁体字中国語、英語、日本語、スペイン語、ドイツ語、ロシア語、フランス語、韓国語、ポーランド語を選択できます。音声パックも多言語でカスタマイズできます。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/languages.webp",
+        "src": "/assets/radiolink/rc8x/languages.gif",
         "alt": "RC8Xの言語選択画面"
       }
     },
@@ -232,7 +232,7 @@
       "description": "下り坂でスロットルを保つのが難しい場面でも、最適なスロットル量を設定してクローラーの操作を支援します。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/cruise-control.webp",
+        "src": "/assets/radiolink/rc8x/cruise-control.gif",
         "alt": "RC8Xのクルーズコントロール"
       }
     },
@@ -243,7 +243,7 @@
       "description": "走行中にスイッチ／ボタンでD/Rを切り替えられます。操作の習熟度に合わせて走行パラメーターを用意し、教える側と操作する側で素早く切り替えられます。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/dual-rate.webp",
+        "src": "/assets/radiolink/rc8x/dual-rate.gif",
         "alt": "RC8Xのデュアルレート切り替え"
       }
     },
@@ -254,7 +254,7 @@
       "description": "バインド後にRSSIと受信機電圧を表示し、ESCとバッテリーへ電圧線を接続するとモデル用バッテリー電圧も表示します。R8FGHは最大14S（58.8V）、R7FG／R8FGは最大8S（33.6V）の電圧テレメトリーに対応します。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/telemetry.webp",
+        "src": "/assets/radiolink/rc8x/telemetry.gif",
         "alt": "RC8Xのテレメトリー表示"
       }
     },
@@ -319,7 +319,7 @@
       "description": "R8FGは8チャンネル、ジャイロ内蔵、高電圧サーボ、モデル電圧テレメトリー、SBUS出力に対応します。RC8XはR16F、R16SM、R12F、R8FGH、R8EF、R8FG、R8FM、R8SM、R8XM、R7FG、R6FG、R6F、R4FGMにも対応します。",
       "points": [],
       "media": {
-        "src": "/assets/radiolink/rc8x/compatible-receivers.webp",
+        "src": "/assets/radiolink/rc8x/compatible-receivers.gif",
         "alt": "RC8Xの対応受信機一覧"
       }
     }

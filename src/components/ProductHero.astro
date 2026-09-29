@@ -46,7 +46,7 @@ const media = {
     </p>
     {copy?.subline && <p class="mt-2 text-lg text-slate-600">{copy.subline}</p>}
     {copy?.note && <p class="mt-4 text-sm text-slate-500">{copy.note}</p>}
-    <div class="mt-7 flex flex-wrap gap-3">
+    <div class="mt-7 flex flex-wrap items-center gap-x-4 gap-y-3">
       <a
         class="inline-flex items-center rounded-full bg-slate-950 px-5 py-3 font-bold text-white no-underline"
         href={withBase(`/manuals/${product.slug}/`)}
@@ -54,20 +54,28 @@ const media = {
         日本語マニュアル
       </a>
       <a
-        class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-5 py-3 font-bold text-slate-900 no-underline"
+        class="inline-flex items-center gap-1 text-sm font-semibold text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-teal-800"
         href={product.manual_url}
         target="_blank"
         rel="noopener noreferrer"
       >
         英語マニュアル
-        <span class="text-xs font-medium text-slate-500">Radiolink公式・外部サイト</span>
+        <span class="sr-only">（Radiolink公式・外部サイト）</span>
+        <span aria-hidden="true">↗</span>
       </a>
       <a
-        class="inline-flex items-center rounded-full bg-[#06c755] px-5 py-3 font-bold text-white no-underline"
+        class="inline-flex size-11 items-center justify-center no-underline"
         href={LINE_URL}
         rel="noreferrer"
+        aria-label="LINEで相談"
       >
-        LINEで相談
+        <img
+          src={withBase('/assets/brands/line-brand-icon.png')}
+          alt=""
+          width="44"
+          height="44"
+          class="size-11"
+        />
       </a>
     </div>
   </div>

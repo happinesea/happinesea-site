@@ -62,10 +62,21 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(
     page.getByRole('link', { name: '英語マニュアル' }),
   ).toHaveAttribute('target', '_blank');
-  await expect(page.getByRole('link', { name: 'LINEで相談' })).toHaveAttribute(
-    'href',
-    'https://line.me/R/ti/p/%40662zyrsb',
-  );
+  await expect(
+    page.getByRole('link', { name: 'LINEで相談', exact: true }),
+  ).toHaveAttribute('href', 'https://line.me/R/ti/p/%40662zyrsb');
+  await expect(
+    page.getByRole('heading', { name: 'RC8X', exact: true }).last(),
+  ).toBeVisible();
+  await expect(
+    page.getByText('最大16チャンネル※', { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'チュートリアル', exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.locator('[data-feature-section="telemetry"] img'),
+  ).toHaveAttribute('src', /telemetry\.gif$/);
   await expect(page.locator('[data-product-nav]')).toBeVisible();
   await expect(page.locator('[data-product-section="manuals"]')).toHaveCount(0);
   await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);

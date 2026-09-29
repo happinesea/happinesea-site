@@ -52,8 +52,9 @@
       "sha256": "95c830d3e7205c446db5f3de10f8bc286fcffd6bf6318b2849e7744bcde93747",
       "width": 500,
       "height": 500,
-      "webp": "/assets/radiolink/rc8x/display-speed.webp",
-      "avif": "/assets/radiolink/rc8x/display-speed.avif"
+      "pages": 61,
+      "bytes": 2384489,
+      "gif": "/assets/radiolink/rc8x/display-speed.gif"
     },
     {
       "id": "rc8x-simulator",
@@ -88,8 +89,9 @@
       "sha256": "3f80546e6de6e21c4c622654b89f78dc174a025ac465bcba0750a3e7962d2626",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/theme.webp",
-      "avif": "/assets/radiolink/rc8x/theme.avif"
+      "pages": 10,
+      "bytes": 98936,
+      "gif": "/assets/radiolink/rc8x/theme.gif"
     },
     {
       "id": "rc8x-voice",
@@ -97,8 +99,9 @@
       "sha256": "f4ab48972cea994a11f71afe00892656a4d23e7b58b60d46c50510d5bc26d5e1",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/voice.webp",
-      "avif": "/assets/radiolink/rc8x/voice.avif"
+      "pages": 23,
+      "bytes": 89315,
+      "gif": "/assets/radiolink/rc8x/voice.gif"
     },
     {
       "id": "rc8x-channel",
@@ -106,8 +109,9 @@
       "sha256": "a279001fc4ebc8236f6fa01c2b718c97fb1362b3c9c75310991e0c15e3c2f7e9",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/channel.webp",
-      "avif": "/assets/radiolink/rc8x/channel.avif"
+      "pages": 4,
+      "bytes": 22441,
+      "gif": "/assets/radiolink/rc8x/channel.gif"
     },
     {
       "id": "rc8x-switch",
@@ -115,8 +119,9 @@
       "sha256": "91361d75e43c5934efcfef9db4e3e8ce3aa95644a23ef11132ea0842e492d4c8",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/switch.webp",
-      "avif": "/assets/radiolink/rc8x/switch.avif"
+      "pages": 8,
+      "bytes": 37798,
+      "gif": "/assets/radiolink/rc8x/switch.gif"
     },
     {
       "id": "rc8x-wallpaper",
@@ -124,8 +129,9 @@
       "sha256": "a576510b5f224ac445578e4fe6d00564b93adb7f15feff64daa60a2275f77144",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/wallpaper.webp",
-      "avif": "/assets/radiolink/rc8x/wallpaper.avif"
+      "pages": 13,
+      "bytes": 49246,
+      "gif": "/assets/radiolink/rc8x/wallpaper.gif"
     },
     {
       "id": "rc8x-fpv",
@@ -160,8 +166,9 @@
       "sha256": "ef53da31a9ba66011c5f468ccc58d542feb11a3399adffe9707f5e1aa4fe90bb",
       "width": 1500,
       "height": 940,
-      "webp": "/assets/radiolink/rc8x/languages.webp",
-      "avif": "/assets/radiolink/rc8x/languages.avif"
+      "pages": 9,
+      "bytes": 153900,
+      "gif": "/assets/radiolink/rc8x/languages.gif"
     },
     {
       "id": "rc8x-cruise-control",
@@ -169,8 +176,9 @@
       "sha256": "650d2630e97270e46c1369812db5ab004b0ab452b0eed0037b44a9c2e518ff2a",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/cruise-control.webp",
-      "avif": "/assets/radiolink/rc8x/cruise-control.avif"
+      "pages": 2,
+      "bytes": 13480,
+      "gif": "/assets/radiolink/rc8x/cruise-control.gif"
     },
     {
       "id": "rc8x-dual-rate",
@@ -178,8 +186,9 @@
       "sha256": "5bb128d3975908e15a8be929e2d619f6e2c46421c35a998817da171d6b8e23c2",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/dual-rate.webp",
-      "avif": "/assets/radiolink/rc8x/dual-rate.avif"
+      "pages": 3,
+      "bytes": 18127,
+      "gif": "/assets/radiolink/rc8x/dual-rate.gif"
     },
     {
       "id": "rc8x-telemetry",
@@ -187,8 +196,9 @@
       "sha256": "0ce77999fecc5f915cae5674294484bff993d59020dee174704921af7467d456",
       "width": 1920,
       "height": 780,
-      "webp": "/assets/radiolink/rc8x/telemetry.webp",
-      "avif": "/assets/radiolink/rc8x/telemetry.avif"
+      "pages": 32,
+      "bytes": 424037,
+      "gif": "/assets/radiolink/rc8x/telemetry.gif"
     },
     {
       "id": "rc8x-ergonomics",
@@ -232,8 +242,9 @@
       "sha256": "f98aa205b80afd8353d3f1efe299e2719dae813a68cc9233ee21204b0ee2c5bc",
       "width": 480,
       "height": 800,
-      "webp": "/assets/radiolink/rc8x/compatible-receivers.webp",
-      "avif": "/assets/radiolink/rc8x/compatible-receivers.avif"
+      "pages": 6,
+      "bytes": 59644,
+      "gif": "/assets/radiolink/rc8x/compatible-receivers.gif"
     },
     {
       "id": "rc8x-package",
