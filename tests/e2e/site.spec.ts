@@ -69,15 +69,22 @@ test('navigation, category filtering, and LINE support work', async ({
     page.getByRole('heading', { name: 'RC8X', exact: true }).last(),
   ).toBeVisible();
   await expect(
-    page.getByText('最大16チャンネル※', { exact: true }),
-  ).toBeVisible();
-  await expect(
     page.getByRole('heading', { name: 'チュートリアル', exact: true }),
   ).toBeVisible();
   await expect(
     page.locator('[data-feature-section="telemetry"] img'),
   ).toHaveAttribute('src', /telemetry\.gif$/);
-  await expect(page.locator('[data-feature-layout="tile"]')).toHaveCount(15);
+  await expect(page.locator('[data-feature-layout="tile"]')).toHaveCount(14);
+  await expect(
+    page.locator('[data-product-section="feature-summary"]'),
+  ).toHaveCount(0);
+  await expect(page.locator('[data-official-product-video]')).toHaveAttribute(
+    'src',
+    /d5acb416b76a01be7edf080741b0e681\.mp4$/,
+  );
+  await expect(
+    page.locator('[data-feature-section="architecture"] img'),
+  ).toHaveAttribute('src', /architecture\.webp$/);
   await expect(
     page.locator('[data-feature-section="voice-broadcast"] img'),
   ).toHaveAttribute('src', /buzzer-screen\.bmp$/);
@@ -85,11 +92,14 @@ test('navigation, category filtering, and LINE support work', async ({
     page.locator('[data-feature-section="languages"] img'),
   ).toHaveAttribute('src', /languages\.gif$/);
   await expect(
-    page.locator('[data-feature-section="r8fg-stability-protection"]'),
+    page.locator('[data-feature-section="r8fg-receiver-system"]'),
   ).toContainText('ジャイロによる車体安定化とナノコーティング');
   await expect(
+    page.locator('[data-feature-section="fpv-external-functions"]'),
+  ).toContainText('設定画面とFPV画面');
+  await expect(
     page.locator(
-      '[data-feature-section="gyro"], [data-feature-section="water-resistance"]',
+      '[data-feature-section="interfaces"], [data-feature-section="external-functions"], [data-feature-section="fpv-display"], [data-feature-section="gyro"], [data-feature-section="water-resistance"], [data-feature-section="r8fg-stability-protection"], [data-feature-section="receivers"]',
     ),
   ).toHaveCount(0);
   await expect(page.locator('[data-product-nav]')).toBeVisible();

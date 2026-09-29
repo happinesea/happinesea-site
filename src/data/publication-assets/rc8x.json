@@ -12,6 +12,15 @@
       "public_path": "/assets/radiolink/rc8x/hero"
     },
     {
+      "id": "rc8x-architecture",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com.cn/rc8x",
+      "source_image_url": "https://www.radiolink.com.cn/7cb6c9f68d914171fadc768b24aa7151.jpg",
+      "source_status": "verified",
+      "alt": "RC8XのCortex-Aアーキテクチャ",
+      "public_path": "/assets/radiolink/rc8x/architecture"
+    },
+    {
       "id": "rc8x-ports",
       "role": "gallery",
       "source_page_url": "https://www.radiolink.com/rc8x",

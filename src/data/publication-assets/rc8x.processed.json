@@ -11,6 +11,15 @@
       "avif": "/assets/radiolink/rc8x/hero.avif"
     },
     {
+      "id": "rc8x-architecture",
+      "status": "processed",
+      "sha256": "8ca2da8c49fb29eade5f5c9a541fac7673bfa58b5829b8a295dc0c04aec417b7",
+      "width": 1920,
+      "height": 1080,
+      "webp": "/assets/radiolink/rc8x/architecture.webp",
+      "avif": "/assets/radiolink/rc8x/architecture.avif"
+    },
+    {
       "id": "rc8x-ports",
       "status": "processed",
       "sha256": "0e911c2be81a0164e800608402cf30697c60aeafed39a475256a9075ec810fd1",

@@ -11,19 +11,12 @@
   "hero": {
     "tagline": "16チャンネル・フルカラーIPSタッチスクリーン",
     "subline": "幅広い用途を1台に。期待を超えるRC送信機。",
-    "note": "出荷時は8チャンネルです。Firmware V1.3.5以降で16チャンネルへ拡張でき、RadiolinkはR16F受信機を推奨しています。"
+    "note": "※出荷時は8チャンネルです。Firmware V1.3.5以降へ更新すると16チャンネルに拡張できます。Radiolinkは受信機をR16Fへ変更することを推奨しています。"
   },
-  "feature_metrics": [
-    "4.3インチ フルカラーIPSタッチ画面",
-    "ユーザー定義の音声パック",
-    "設定画面とFPV画面の2画面表示",
-    "最大16チャンネル※",
-    "地上最大600m",
-    "200モデル保存",
-    "16モデルのサブID",
-    "8系統のプログラマブルミックス",
-    "最短3ms応答"
-  ],
+  "product_video": {
+    "src": "https://www.radiolink.com.cn/d5acb416b76a01be7edf080741b0e681.mp4",
+    "caption": "Radiolink公式 RC8X製品動画"
+  },
   "features": [
     {
       "id": "communication",
@@ -40,7 +33,11 @@
       "title": "モデル用送信機をスマートマシンへ",
       "lead": "Cortex-AアーキテクチャとリアルタイムOS",
       "description": "従来のCortex-M系MCU構成から、Linux／Androidを動かせるアプリケーション向けCortex-A CPUへ移行。汎用Linuxではなく高効率のRTOSを採用し、マルチメディア操作とリアルタイム制御を両立しています。",
-      "points": []
+      "points": [],
+      "media": {
+        "src": "/assets/radiolink/rc8x/architecture.webp",
+        "alt": "RC8XのCortex-Aアーキテクチャ"
+      }
     },
     {
       "id": "display",
@@ -54,25 +51,18 @@
       }
     },
     {
-      "id": "interfaces",
-      "title": "豊富な音声・映像インターフェース",
-      "lead": "FPV表示、メモリー拡張、外部機器接続",
-      "description": "FPVディスプレイホルダー用ポート、最大64GBのメモリー拡張、シミュレーター、FPVヘッドトラッキング、TBS Crossfire、Firmware更新／給電用Type-C、3.5mmヘッドホン端子を備えます。",
-      "points": [],
-      "media": {
-        "src": "/assets/radiolink/rc8x/ports.webp",
-        "alt": "RC8Xの外部接続ポート"
-      }
-    },
-    {
-      "id": "external-functions",
-      "title": "さらに広がる遊び方",
-      "lead": "シミュレーター、ヘッドトラッキング、TBS Crossfire",
-      "description": "DSCポートはVRC Pro、CarX、Assetto Corsa Competizioneなどのシミュレーター、2軸／3軸FPVヘッドトラッキング、TBS Crossfire出力に設定できます。TBS Crossfireは高出力モードで遠距離走行を支援します。",
-      "points": [],
+      "id": "fpv-external-functions",
+      "title": "FPVと外部機器で広がる使い方",
+      "lead": "設定画面とFPV画面、シミュレーター、ヘッドトラッキング",
+      "description": "通常は設定画面として使用し、外付け5.8GHz受信モジュールを接続すると、上部を設定画面、下部をFPV画面として表示できます。DSCポートはシミュレーター、2軸／3軸FPVヘッドトラッキング、TBS Crossfire出力に設定できます。",
+      "points": [
+        "FPVディスプレイホルダー用ポートと3.5mmヘッドホン端子",
+        "VRC Pro、CarX、Assetto Corsa Competizioneなどのシミュレーターに対応",
+        "TBS Crossfireは高出力モードで遠距離走行を支援"
+      ],
       "media": {
         "src": "/assets/radiolink/rc8x/simulator.webp",
-        "alt": "RC8Xをシミュレーターへ接続した例"
+        "alt": "RC8XのシミュレーターとFPV外部機器接続"
       }
     },
     {
@@ -179,17 +169,6 @@
       }
     },
     {
-      "id": "fpv-display",
-      "title": "1画面を2つの用途に",
-      "lead": "設定画面とFPV画面を同時表示",
-      "description": "通常は設定画面として使用し、外付け5.8GHz受信モジュールを接続すると、上部を設定画面、下部をFPV画面として表示できます。",
-      "points": [],
-      "media": {
-        "src": "/assets/radiolink/rc8x/fpv.webp",
-        "alt": "RC8Xの設定画面とFPV画面"
-      }
-    },
-    {
       "id": "model-types",
       "title": "多彩なモデルに対応する16チャンネル",
       "lead": "RCカー、ボート、ロボットへ",
@@ -263,11 +242,14 @@
       }
     },
     {
-      "id": "r8fg-stability-protection",
+      "id": "r8fg-receiver-system",
       "title": "付属R8FG受信機の安定化機能と保護設計",
       "lead": "ジャイロによる車体安定化とナノコーティング",
       "description": "標準付属のR8FGはジャイロを内蔵し、高電圧サーボに対応します。横滑りを抑えて直進性と旋回の滑らかさを支援し、感度は初期設定でDL1が操作するCH8から調整できます。基板とピンにはナノコーティングによる防滴処理が施され、防滴等級はIPX4です。完全防水を意味するものではありません。",
-      "points": [],
+      "points": [
+        "8チャンネル、モデル電圧テレメトリー、SBUS出力に対応",
+        "R16F、R16SM、R12F、R8FGH、R8EF、R8FM、R8SM、R8XM、R7FG、R6FG、R6F、R4FGMにも対応"
+      ],
       "media": {
         "src": "/assets/radiolink/rc8x/r8fg-ipx4.webp",
         "alt": "R8FG受信機のジャイロとIPX4防滴設計"
@@ -307,17 +289,6 @@
       "media": {
         "src": "/assets/radiolink/rc8x/power-modes.webp",
         "alt": "RC8Xの電池ボックス給電"
-      }
-    },
-    {
-      "id": "receivers",
-      "title": "旧型を含む幅広い受信機に対応",
-      "lead": "R8FGを標準付属",
-      "description": "R8FGは8チャンネル、ジャイロ内蔵、高電圧サーボ、モデル電圧テレメトリー、SBUS出力に対応します。RC8XはR16F、R16SM、R12F、R8FGH、R8EF、R8FG、R8FM、R8SM、R8XM、R7FG、R6FG、R6F、R4FGMにも対応します。",
-      "points": [],
-      "media": {
-        "src": "/assets/radiolink/rc8x/compatible-receivers.gif",
-        "alt": "RC8Xの対応受信機一覧"
       }
     }
   ],

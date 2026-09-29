@@ -60,8 +60,15 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.match(html, /aria-label="LINEで相談"/);
   assert.doesNotMatch(html, />LINEで相談</);
   assert.match(html, />RC8X</);
-  assert.match(html, /最大16チャンネル※/);
-  assert.match(html, /※出荷時は8チャンネル。Firmware V1\.3\.5以上/);
+  assert.match(
+    html,
+    /※出荷時は8チャンネルです。Firmware V1\.3\.5以降へ更新すると16チャンネルに拡張できます。/,
+  );
+  assert.doesNotMatch(html, /PRODUCT OVERVIEW/);
+  assert.doesNotMatch(html, /data-product-section="feature-summary"/);
+  assert.match(html, /data-official-product-video/);
+  assert.match(html, /d5acb416b76a01be7edf080741b0e681\.mp4/);
+  assert.match(html, /\/assets\/radiolink\/rc8x\/architecture\.webp/);
   assert.match(html, /data-feature-layout="tile"/);
   assert.match(html, /data-feature-layout="split"/);
   const cardOrder = [
@@ -72,14 +79,13 @@ test('RC8X product page follows the official product flow without commercial cla
     'channel-customization',
     'switch-customization',
     'languages',
-    'fpv-display',
+    'latency',
     'model-storage',
     'cruise-control',
     'dual-rate',
     'ergonomics',
     'physical-options',
     'power',
-    'r8fg-stability-protection',
   ];
   let previousCardPosition = -1;
   for (const featureId of cardOrder) {
@@ -91,13 +97,17 @@ test('RC8X product page follows the official product flow without commercial cla
     'カスタマイズ / UI',
     '運用 / 表示 / モデル管理',
     '操作性 / 拡張 / ハードウェア',
-    '付属受信機',
   ]) {
     assert.match(html, new RegExp(groupLabel.replaceAll('/', '\\/')));
   }
   assert.match(html, /\/assets\/radiolink\/rc8x\/buzzer-screen\.bmp/);
   assert.match(html, /\/assets\/radiolink\/rc8x\/languages\.gif/);
-  assert.doesNotMatch(html, /data-feature-section="(?:gyro|water-resistance)"/);
+  assert.match(html, /data-feature-section="fpv-external-functions"/);
+  assert.match(html, /data-feature-section="r8fg-receiver-system"/);
+  assert.doesNotMatch(
+    html,
+    /data-feature-section="(?:interfaces|external-functions|fpv-display|gyro|water-resistance|r8fg-stability-protection|receivers)"/,
+  );
   assert.match(html, /\/assets\/radiolink\/rc8x\/telemetry\.gif/);
   assert.doesNotMatch(
     html,
