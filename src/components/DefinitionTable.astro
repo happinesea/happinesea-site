@@ -2,7 +2,7 @@
 interface Row {
   label: string;
   value: string;
-  status?: 'verified' | 'unverified';
+  status?: 'verified' | 'review_required' | 'unverified';
 }
 
 interface Props {
@@ -18,6 +18,9 @@ const { rows } = Astro.props;
       <dt class="font-bold text-slate-700">{row.label}</dt>
       <dd class="m-0 text-slate-900">
         {row.status === 'unverified' ? '未確認' : row.value}
+      {row.status === 'review_required' && (
+          <span class="ml-2 text-xs font-semibold text-amber-700">確認中</span>
+        )}
       </dd>
     </div>
   ))}
