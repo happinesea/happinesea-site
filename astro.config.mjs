@@ -21,7 +21,11 @@ export default defineConfig({
           label: 'RC8X',
           items: [
             { label: 'はじめに', slug: 'manuals/rc8x' },
-            { label: '基本設定', slug: 'manuals/rc8x/basic-setup' },
+            {
+              label: '第1章 リモートコントロールシステム',
+              slug: 'manuals/rc8x/chapter-01',
+            },
+            { label: '第2章 基本機能', slug: 'manuals/rc8x/chapter-02' },
           ],
         },
       ],
