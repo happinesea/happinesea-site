@@ -35,8 +35,38 @@ for (const asset of manifest.assets ?? []) {
   const outBase = resolve('public', basePath);
   await mkdir(resolve(outBase, '..'), { recursive: true });
 
-  const image = sharp(input, { failOn: 'warning' });
+  if (input.length >= 26 && input.subarray(0, 2).toString('ascii') === 'BM') {
+    await writeFile(`${outBase}.bmp`, input);
+    results.push({
+      id: asset.id,
+      status: 'processed',
+      sha256: hash,
+      width: Math.abs(input.readInt32LE(18)),
+      height: Math.abs(input.readInt32LE(22)),
+      bytes: input.length,
+      bmp: `/${basePath}.bmp`,
+    });
+    continue;
+  }
+
+  const image = sharp(input, { animated: true, failOn: 'warning' });
   const meta = await image.metadata();
+
+  if (meta.format === 'gif') {
+    await writeFile(`${outBase}.gif`, input);
+    results.push({
+      id: asset.id,
+      status: 'processed',
+      sha256: hash,
+      width: meta.width ?? null,
+      height: meta.pageHeight ?? meta.height ?? null,
+      pages: meta.pages ?? null,
+      bytes: input.length,
+      gif: `/${basePath}.gif`,
+    });
+    continue;
+  }
+
   await image.clone().webp({ quality: 82 }).toFile(`${outBase}.webp`);
   await image.clone().avif({ quality: 55 }).toFile(`${outBase}.avif`);
 

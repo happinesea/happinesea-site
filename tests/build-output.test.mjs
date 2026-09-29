@@ -30,23 +30,18 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
   assert.match(html, /aria-live="polite"/);
 });
 
-test('RC8X product page exposes required sections without commercial claims', async () => {
+test('RC8X product page follows the official product flow without commercial claims', async () => {
   const html = await route('radiolink/rc8x/index.html');
   const sections = [
     'overview',
-    'feature-display',
-    'feature-connectivity',
-    'feature-customization',
-    'feature-telemetry',
+    'features',
     'package',
-    'videos',
     'specifications',
-    'receivers',
-    'manuals',
-    'support',
+    'certificates',
     'firmware',
+    'videos',
+    'faq',
     'updates',
-    'related-products',
   ];
 
   assert.match(html, /aria-label="パンくずリスト"/);
@@ -56,11 +51,83 @@ test('RC8X product page exposes required sections without commercial claims', as
   for (const section of sections) {
     assert.match(html, new RegExp(`data-product-section="${section}"`));
   }
+  assert.match(html, /data-product-nav/);
   assert.match(html, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.match(html, />日本語マニュアル</);
+  assert.match(html, />英語マニュアル</);
   assert.match(html, /Radiolink公式・外部サイト/);
-  assert.match(html, /target="_blank"/);
+  assert.match(html, /target="_blank" rel="noopener noreferrer"/);
+  assert.match(html, /aria-label="LINEで相談"/);
+  assert.doesNotMatch(html, />LINEで相談</);
+  assert.match(html, />RC8X</);
+  assert.match(
+    html,
+    /※出荷時は8チャンネルです。ファームウェアV1\.3\.5以降へ更新すると16チャンネルに拡張できます。/,
+  );
+  assert.doesNotMatch(html, /PRODUCT OVERVIEW/);
+  assert.doesNotMatch(html, /data-product-section="feature-summary"/);
+  assert.match(html, /data-official-product-video/);
+  assert.match(html, /d5acb416b76a01be7edf080741b0e681\.mp4/);
+  assert.doesNotMatch(html, /Radiolink公式 RC8X製品動画/);
+  assert.match(html, /\/assets\/radiolink\/rc8x\/architecture\.webp/);
+  assert.match(html, /data-feature-layout="tile"/);
+  assert.match(html, /data-feature-layout="split"/);
+  const cardOrder = [
+    'wallpaper',
+    'theme-customization',
+    'voice-customization',
+    'voice-broadcast',
+    'channel-customization',
+    'switch-customization',
+    'languages',
+    'latency',
+    'model-storage',
+    'cruise-control',
+    'dual-rate',
+    'ergonomics',
+    'physical-options',
+    'power',
+  ];
+  let previousCardPosition = -1;
+  for (const featureId of cardOrder) {
+    const position = html.indexOf(`data-feature-section="${featureId}"`);
+    assert.ok(position > previousCardPosition, `${featureId} card order`);
+    previousCardPosition = position;
+  }
+  for (const groupLabel of [
+    'カスタマイズ / UI',
+    '運用 / 表示 / モデル管理',
+    '操作性 / 拡張 / ハードウェア',
+  ]) {
+    assert.match(html, new RegExp(groupLabel.replaceAll('/', '\\/')));
+  }
+  assert.match(html, /\/assets\/radiolink\/rc8x\/buzzer-screen\.bmp/);
+  assert.match(html, /\/assets\/radiolink\/rc8x\/languages\.gif/);
+  assert.match(html, /data-feature-section="fpv-external-functions"/);
+  assert.match(html, /data-feature-section="r8fg-receiver-system"/);
+  assert.doesNotMatch(
+    html,
+    /data-feature-section="(?:interfaces|external-functions|fpv-display|gyro|water-resistance|r8fg-stability-protection|receivers)"/,
+  );
+  assert.match(html, /\/assets\/radiolink\/rc8x\/telemetry\.gif/);
+  assert.doesNotMatch(
+    html,
+    /\/assets\/radiolink\/rc8x\/telemetry\.(?:webp|avif)/,
+  );
+  assert.match(html, />チュートリアル</);
+  assert.match(html, /チュートリアル動画をさらに表示する（24本）/);
+  assert.match(
+    html,
+    /href="https:\/\/www\.radiolink\.com\.cn\/rc8x_certificates"/,
+  );
+  assert.match(html, /RC8X仕様/);
+  assert.match(html, /R8FG仕様/);
+  assert.match(html, /V1\.3\.6/);
   assert.match(html, /youtube-nocookie\.com\/embed\//);
+  assert.match(html, /<details[^>]*data-product-faq/);
   assert.match(html, /<time[^>]*>[^<]+<\/time>[\s\S]*?<a[^>]+>[^<]+<\/a>/);
+  assert.doesNotMatch(html, /data-product-section="manuals"/);
+  assert.doesNotMatch(html, /data-product-section="support"/);
   assert.doesNotMatch(html, /data-product-section="(?:source|last-checked)"/);
   assert.doesNotMatch(html, />情報源</);
   assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);

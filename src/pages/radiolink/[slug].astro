@@ -1,18 +1,14 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
-import AdSlot from '../../components/AdSlot.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DefinitionTable from '../../components/DefinitionTable.astro';
-import LineCta from '../../components/LineCta.astro';
 import ManualVideo from '../../components/manuals/ManualVideo.astro';
 import ProductHero from '../../components/ProductHero.astro';
 import ResponsiveMedia from '../../components/ResponsiveMedia.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
+import rc8xPage from '../../data/rc8x-page.json';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import {
-  buildBreadcrumbJsonLd,
-  buildProductJsonLd,
-} from '../../lib/structured-data';
+import { buildBreadcrumbJsonLd, buildProductJsonLd } from '../../lib/structured-data';
 import { canonicalUrl, withBase } from '../../lib/urls';
 
 interface Props {
@@ -21,14 +17,12 @@ interface Props {
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
-  return products.map((product) => ({
-    params: { slug: product.data.slug },
-    props: { product },
-  }));
+  return products.map((product) => ({ params: { slug: product.data.slug }, props: { product } }));
 }
 
 const { product } = Astro.props;
 const { data } = product;
+const detail = rc8xPage;
 const updates = (await getCollection('productUpdates')).filter(
   (entry) => entry.data.product === data.slug,
 );
@@ -52,6 +46,43 @@ const jsonLd = [
     url: productUrl,
   }),
 ];
+const row = ([label, value]: string[]) => ({ label, value, status: 'verified' as const });
+const featuredVideos = detail.videos.slice(0, 6);
+const moreVideos = detail.videos.slice(6);
+const featureCardGroups = [
+  {
+    label: 'カスタマイズ / UI',
+    ids: ['wallpaper', 'theme-customization', 'voice-customization', 'voice-broadcast', 'channel-customization', 'switch-customization', 'languages', 'latency'],
+  },
+  {
+    label: '運用 / 表示 / モデル管理',
+    ids: ['model-storage', 'cruise-control', 'dual-rate'],
+  },
+  {
+    label: '操作性 / 拡張 / ハードウェア',
+    ids: ['ergonomics', 'physical-options', 'power'],
+  },
+];
+const cardFeatureIds = new Set(featureCardGroups.flatMap(({ ids }) => ids));
+const cardOrder = new Map(
+  featureCardGroups.flatMap(({ ids }) => ids).map((id, index) => [id, index]),
+);
+const cardFeatures = detail.features
+  .filter(({ id }) => cardFeatureIds.has(id))
+  .sort((a, b) => cardOrder.get(a.id)! - cardOrder.get(b.id)!);
+const customizationIntro = detail.features.find(({ id }) => id === 'customization');
+const otherFeatures = detail.features.filter(
+  ({ id }) => !cardFeatureIds.has(id) && id !== 'customization',
+);
+const cardInsertionIndex = otherFeatures.findIndex(({ id }) => id === 'range') + 1;
+const orderedFeatures = [
+  ...otherFeatures.slice(0, cardInsertionIndex),
+  ...cardFeatures,
+  ...otherFeatures.slice(cardInsertionIndex),
+];
+const groupLabelByFirstFeature = new Map(
+  featureCardGroups.map(({ label, ids }) => [ids[0], label]),
+);
 ---
 
 <BaseLayout
@@ -59,248 +90,207 @@ const jsonLd = [
   description={data.description}
   canonicalPath={`/radiolink/${data.slug}/`}
   jsonLd={jsonLd}
-  robots={
-    data.content_status === 'manufacturer_review'
-      ? 'noindex, nofollow'
-      : undefined
-  }
+  robots={data.content_status === 'manufacturer_review' ? 'noindex, nofollow' : undefined}
 >
   <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-6 lg:px-8">
     <Breadcrumbs items={breadcrumbItems} />
-    <ProductHero product={data} />
+    <ProductHero product={data} copy={detail.hero} />
     {data.content_status === 'manufacturer_review' && (
       <UnverifiedNotice
-        text={
-          data.review_note ??
-          'この商品情報はメーカー確認中です。確認完了までは確定仕様として扱わないでください。'
-        }
+        text={data.review_note ?? 'この商品情報はメーカー確認中です。確認完了までは確定仕様として扱わないでください。'}
       />
     )}
 
-    <div class="grid gap-12 lg:grid-cols-[1fr_20rem]">
-      <div class="space-y-12">
-        {data.media.gallery.length > 0 && (
-          <section data-product-section="gallery">
-            <h2 class="text-3xl font-bold text-slate-950">製品画像</h2>
-            <p class="text-sm text-slate-500">
-              Radiolink公式商品ページ掲載画像を使用しています。
-            </p>
-            <div class="mt-6 grid gap-5 md:grid-cols-2">
-              {data.media.gallery.map((media) => (
-                <ResponsiveMedia
-                  media={{
-                    src: media.src ?? undefined,
-                    alt: media.alt,
-                    width: media.width ?? undefined,
-                    height: media.height ?? undefined,
-                    image_status:
-                      media.image_status === 'verified'
-                        ? 'verified'
-                        : 'unverified',
-                  }}
-                />
-              ))}
+    <nav
+      aria-label="RC8Xページ内ナビゲーション"
+      class="sticky top-[4.5rem] z-30 -mx-5 mt-8 overflow-x-auto border-y border-slate-200 bg-white/95 px-5 backdrop-blur lg:-mx-8 lg:px-8"
+      data-product-nav
+    >
+      <ul class="mx-auto flex w-max min-w-full list-none items-center gap-1 p-2 text-sm font-bold">
+        {[
+          ['RC8X', '#overview'], ['仕様', '#specifications'],
+          ['証明書', '#certificates'], ['ファームウェア', '#firmware'], ['チュートリアル', '#videos'], ['FAQ', '#faq'],
+        ].map(([label, href]) => (
+          <li><a class="block rounded-full px-4 py-2 text-slate-700 no-underline hover:bg-teal-50 hover:text-teal-800" href={href}>{label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <main class="mx-auto max-w-5xl pt-10" id="overview">
+      <section id="features" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-product-section="features" aria-labelledby="features-heading">
+        <h2 id="features-heading" class="sr-only">RC8X</h2>
+        {orderedFeatures.map((feature, index) => (
+          <>
+            {groupLabelByFirstFeature.has(feature.id) && (
+              <div class="col-span-full mt-8 border-t border-slate-200 pt-10">
+                <p class="m-0 text-sm font-bold tracking-[0.12em] text-teal-700 uppercase">
+                  {groupLabelByFirstFeature.get(feature.id)}
+                </p>
+                {feature.id === 'wallpaper' && customizationIntro && (
+                  <div class="mt-4 max-w-3xl">
+                    <h3 class="m-0 text-3xl font-bold tracking-tight text-slate-950">{customizationIntro.title}</h3>
+                    <p class="mt-3 text-slate-600">{customizationIntro.description}</p>
+                  </div>
+                )}
+              </div>
+            )}
+            <article
+            id={feature.id}
+            class:list={[
+              'scroll-mt-36',
+              cardFeatureIds.has(feature.id)
+                ? 'flex flex-col rounded-3xl border border-slate-200 bg-slate-50 p-5'
+                : `col-span-full grid gap-8 border-t border-slate-200 ${feature.id === 'architecture' ? 'pb-14' : 'py-14'} md:grid-cols-2 md:items-center md:gap-12`,
+            ]}
+            data-feature-section={feature.id}
+            data-feature-layout={cardFeatureIds.has(feature.id) ? 'tile' : 'split'}
+          >
+            <div
+              class:list={{
+                'md:order-2':
+                  !cardFeatureIds.has(feature.id) && index % 2 === 1 && 'media' in feature && feature.media,
+                'md:col-span-2 md:max-w-3xl':
+                  !('media' in feature && feature.media),
+              }}
+            >
+              <p class="m-0 text-sm font-bold text-teal-700">{feature.lead}</p>
+              <h3 class:list={['mt-2 font-bold tracking-tight text-slate-950', cardFeatureIds.has(feature.id) ? 'text-2xl' : 'text-3xl']}>{feature.title}</h3>
+              <p class="mt-5 text-slate-600">{feature.description}</p>
+              {feature.points.length > 0 && (
+                <ul class="mt-5 space-y-2 pl-5 text-slate-700">
+                  {feature.points.map((point) => <li>{point}</li>)}
+                </ul>
+              )}
             </div>
-          </section>
-        )}
+            {'media' in feature && feature.media && (
+              <figure class:list={[
+                'm-0 grid place-items-center overflow-hidden',
+                cardFeatureIds.has(feature.id)
+                  ? 'order-first mb-5 aspect-[4/3] [&_img]:max-h-64 [&_img]:rounded-2xl'
+                  : 'max-h-80 [&_img]:max-h-80 [&_img]:rounded-2xl',
+                { 'md:order-1': !cardFeatureIds.has(feature.id) && index % 2 === 1 },
+              ]}>
+                <ResponsiveMedia media={{ ...feature.media, image_status: 'verified' }} />
+              </figure>
+            )}
+            </article>
+            {feature.id === 'communication' && (
+              <figure class="col-span-full m-0">
+                <video
+                  data-official-product-video
+                  src={detail.product_video.src}
+                  controls
+                  playsinline
+                  preload="metadata"
+                  class="aspect-video w-full rounded-3xl bg-slate-950"
+                >
+                  RC8X公式製品動画を再生できません。
+                </video>
+              </figure>
+            )}
+          </>
+        ))}
+      </section>
 
-        <section>
-          <h2 class="text-3xl font-bold text-slate-950">RC8Xの主要機能</h2>
-          <div class="mt-6 grid gap-8">
-            {data.feature_sections.map((feature, index) => (
-              <article
-                data-product-section={feature.id}
-                class="grid gap-6 rounded-3xl bg-slate-50 p-6 md:grid-cols-2 md:items-center"
-              >
-                <div class:list={{ 'md:order-2': index % 2 }}>
-                  <h3 class="mt-0 text-2xl font-bold text-slate-950">
-                    {feature.title}
-                  </h3>
-                  <p class="text-slate-600">{feature.description}</p>
-                  <ul>
-                    {feature.points.map((point) => (
-                      <li>{point}</li>
-                    ))}
-                  </ul>
-                </div>
-                <ResponsiveMedia
-                  class:list={{ 'md:order-1': index % 2 }}
-                  media={{
-                    src: feature.media?.src ?? undefined,
-                    alt: feature.media?.alt,
-                    width: feature.media?.width ?? undefined,
-                    height: feature.media?.height ?? undefined,
-                    image_status: feature.media?.image_status ?? 'unavailable',
-                  }}
-                />
-              </article>
-            ))}
+      <section class="border-t border-slate-200 py-16" data-product-section="package">
+        <div class="grid gap-8 md:grid-cols-2 md:items-start md:gap-12">
+          <div>
+            <p class="m-0 text-sm font-bold text-teal-700">RC8X Packing List</p>
+            <h2 class="mt-2 text-3xl font-bold text-slate-950">パッケージ内容</h2>
+            <p class="text-slate-600">実際の同梱品は購入した販売ページ、または販売店で確認してください。</p>
+            <ul class="mt-5 grid gap-x-8 pl-5 sm:grid-cols-2 md:grid-cols-1">
+              {data.package_contents.map((item) => <li>{item}</li>)}
+            </ul>
           </div>
-        </section>
+          <ResponsiveMedia media={{ ...detail.package_media, image_status: 'verified' }} />
+        </div>
+      </section>
 
-        <section data-product-section="package">
-          <h2 class="text-3xl font-bold text-slate-950">パッケージ内容</h2>
-          <ul class="grid gap-x-8 sm:grid-cols-2">
-            {data.package_contents.map((item) => (
-              <li>{item}</li>
+      <section id="specifications" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="specifications">
+        <p class="m-0 text-sm font-bold text-teal-700">Specifications</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">仕様</h2>
+        <h3 class="mt-10 text-2xl font-bold text-slate-950">RC8X仕様</h3>
+        <DefinitionTable rows={detail.rc8x_specifications.map(row)} />
+        <h3 class="mt-12 text-2xl font-bold text-slate-950">R8FG仕様</h3>
+        <DefinitionTable rows={detail.r8fg_specifications.map(row)} />
+      </section>
+
+      <section id="certificates" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="certificates">
+        <p class="m-0 text-sm font-bold text-teal-700">Certificates</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">認証・証明書</h2>
+        <p class="max-w-3xl text-slate-600">CE、RoHS、FCC、MIC、SRRCの資料はRadiolink公式ページで確認できます。</p>
+        <a
+          class="mt-5 inline-flex rounded-full border border-slate-300 px-5 py-3 font-bold text-teal-800 no-underline"
+          href={detail.source.certificates_url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >Radiolink公式の証明書ページを開く</a>
+      </section>
+
+      <section id="firmware" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="firmware">
+        <p class="m-0 text-sm font-bold text-teal-700">Latest Firmware</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">ファームウェア</h2>
+        <p class="max-w-3xl text-slate-600">WindowsはType-C接続、MacはMicroSDカードを取り外してカードリーダーを使う方法が公式に案内されています。complete packageは設定を初期化し、fix packageは現在のカスタマイズを維持する用途です。</p>
+        <div class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
+          {detail.firmware.map((release) => (
+            <article class="grid gap-3 py-6 sm:grid-cols-[8rem_1fr]">
+              <div>
+                <h3 class="m-0 text-xl font-bold text-slate-950">{release.version}</h3>
+                {release.date && <time class="text-sm text-slate-500">{release.date}</time>}
+              </div>
+              <ul class="m-0 pl-5 text-slate-700">{release.notes.map((note) => <li>{note}</li>)}</ul>
+            </article>
+          ))}
+        </div>
+        <a class="mt-6 inline-flex font-bold text-teal-800" href={detail.source.firmware_url} target="_blank" rel="noopener noreferrer">Radiolink公式ファームウェアページを開く</a>
+      </section>
+
+      <section id="videos" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="videos">
+        <p class="m-0 text-sm font-bold text-teal-700">Tutorial videos</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">チュートリアル</h2>
+        <div class="mt-8 grid gap-8 md:grid-cols-2">
+          {featuredVideos.map(([youtubeId, title]) => (
+            <ManualVideo youtubeId={youtubeId} title={title} description="Radiolink公式チュートリアル" />
+          ))}
+        </div>
+        <details class="mt-8 rounded-2xl border border-slate-200 p-5">
+          <summary class="cursor-pointer font-bold text-slate-950">チュートリアル動画をさらに表示する（{moreVideos.length}本）</summary>
+          <ol class="mt-5 grid gap-3 pl-6 md:grid-cols-2">
+            {moreVideos.map(([youtubeId, title]) => (
+              <li><a class="text-teal-800" href={`https://www.youtube.com/watch?v=${youtubeId}`} target="_blank" rel="noopener noreferrer">{title}</a></li>
+            ))}
+          </ol>
+        </details>
+      </section>
+
+      <section id="faq" class="scroll-mt-36 border-t border-slate-200 py-16" data-product-section="faq">
+        <p class="m-0 text-sm font-bold text-teal-700">Frequently asked questions</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">FAQ</h2>
+        <div class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
+          {detail.faq.map(([question, answer]) => (
+            <details class="group py-5" data-product-faq>
+              <summary class="cursor-pointer list-none pr-8 font-bold text-slate-950 marker:content-none">{question}</summary>
+              <p class="mb-0 max-w-4xl text-slate-600">{answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section class="border-t border-slate-200 py-16" data-product-section="updates">
+        <p class="m-0 text-sm font-bold text-teal-700">Updates</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-950">Radiolink更新情報</h2>
+        {updates.length ? (
+          <ul class="m-0 mt-6 list-none p-0">
+            {updates.map(({ data: update }) => (
+              <li class="grid gap-2 border-b border-slate-200 py-3 sm:grid-cols-[7rem_1fr]">
+                <time datetime={update.published_at.toISOString()}>{update.published_at.toLocaleDateString('ja-JP')}</time>
+                <a href={update.source_url} target="_blank" rel="noopener noreferrer">{update.title}</a>
+              </li>
             ))}
           </ul>
-        </section>
-
-        <section data-product-section="specifications">
-          <h2 class="text-3xl font-bold text-slate-950">主な仕様</h2>
-          {data.specifications.length ? (
-            <>
-              <DefinitionTable rows={data.specifications} />
-              {data.specifications.some(
-                (row) => row.status === 'review_required',
-              ) && <UnverifiedNotice text="一部仕様はメーカー確認中です。" />}
-            </>
-          ) : (
-            <UnverifiedNotice />
-          )}
-        </section>
-
-        <section data-product-section="receivers">
-          <h2 class="text-3xl font-bold text-slate-950">対応受信機</h2>
-          <p class="text-slate-600">
-            現行のRadiolink公式FAQに掲載されているRC8X対応受信機を整理しています。
-          </p>
-          {data.relations.receivers.length ? (
-            <>
-              <ul>
-                {data.relations.receivers.map((receiver) => (
-                  <li>{receiver}</li>
-                ))}
-              </ul>
-              {data.relations.receiver_status === 'review_required' && (
-                <UnverifiedNotice text="対応受信機リストはメーカー確認中です。" />
-              )}
-            </>
-          ) : (
-            <UnverifiedNotice />
-          )}
-        </section>
-
-        <section data-product-section="manuals">
-          <h2 class="text-3xl font-bold text-slate-950">マニュアル</h2>
-          <div class="grid gap-5 md:grid-cols-2">
-            <div class="rounded-2xl border border-slate-200 p-5">
-              <p class="m-0 text-sm font-bold text-teal-700">日本語</p>
-              <h3 class="mt-2 text-xl font-bold">
-                happineseaオンラインマニュアル
-              </h3>
-              <a
-                class="font-bold text-teal-800"
-                href={withBase('/manuals/rc8x/')}
-              >
-                日本語マニュアルを開く
-              </a>
-              <ul>
-                {data.manuals.map((manual) => (
-                  <li>
-                    <a href={withBase(manual.href)}>{manual.title}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div class="rounded-2xl border border-slate-200 p-5">
-              <p class="m-0 text-sm font-bold text-slate-500">英語／公式</p>
-              <h3 class="mt-2 text-xl font-bold">RC8X User Manual</h3>
-              <a
-                class="font-bold text-teal-800"
-                href={data.manual_url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Radiolink公式・外部サイト
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section data-product-section="videos">
-          <h2 class="text-3xl font-bold text-slate-950">
-            公式チュートリアル動画
-          </h2>
-          <div class="grid gap-6 md:grid-cols-2">
-            {data.videos.map((video) => (
-              <ManualVideo
-                youtubeId={video.youtube_id}
-                title={video.title}
-                description={video.description}
-              />
-            ))}
-          </div>
-        </section>
-
-        <section data-product-section="firmware">
-          <h2 class="text-3xl font-bold text-slate-950">ファームウェア</h2>
-          {data.firmware.length ? (
-            <ul>
-              {data.firmware.map((item) => (
-                <li>
-                  <span>{item.title}</span>
-                  {item.note && (
-                    <small class="ml-2 text-slate-500">{item.note}</small>
-                  )}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <UnverifiedNotice />
-          )}
-        </section>
-
-        <section data-product-section="updates">
-          <h2 class="text-3xl font-bold text-slate-950">Radiolink更新情報</h2>
-          {updates.length ? (
-            <ul class="m-0 list-none p-0">
-              {updates.map(({ data: update }) => (
-                <li class="grid gap-2 border-b border-slate-200 py-3 sm:grid-cols-[7rem_1fr]">
-                  <time datetime={update.published_at.toISOString()}>
-                    {update.published_at.toLocaleDateString('ja-JP')}
-                  </time>
-                  <a href={update.source_url} target="_blank" rel="noreferrer">
-                    {update.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <UnverifiedNotice />
-          )}
-          <a href={withBase('/radiolink/updates/')}>
-            Radiolink更新情報をすべて見る
-          </a>
-        </section>
-
-        <section data-product-section="related-products">
-          <h2 class="text-3xl font-bold text-slate-950">関連製品</h2>
-          {data.relations.products.length ? (
-            <ul>
-              {data.relations.products.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            <UnverifiedNotice />
-          )}
-        </section>
-
-        <AdSlot />
-      </div>
-
-      <section data-product-section="support">
-        <h2 class="text-3xl font-bold text-slate-950">サポート</h2>
-        <LineCta heading={`${data.model}について問い合わせる`} />
-        <a
-          class="mt-4 inline-block font-bold text-teal-800"
-          href={withBase(data.support.href)}
-        >
-          サポート情報を見る
-        </a>
+        ) : <UnverifiedNotice />}
+        <a class="mt-6 inline-flex font-bold text-teal-800" href={withBase('/radiolink/updates/')}>Radiolink更新情報をすべて見る</a>
       </section>
-    </div>
+    </main>
   </div>
 </BaseLayout>

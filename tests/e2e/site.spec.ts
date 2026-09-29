@@ -56,10 +56,65 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page.locator('[data-product-category]:visible')).toHaveCount(1);
 
   await page.goto('./radiolink/rc8x/');
-  await expect(page.getByRole('link', { name: 'LINEを開く' })).toHaveAttribute(
-    'href',
-    'https://line.me/R/ti/p/%40662zyrsb',
+  await expect(
+    page.getByRole('link', { name: '日本語マニュアル' }),
+  ).toHaveAttribute('href', '/happinesea-site/manuals/rc8x/');
+  await expect(
+    page.getByRole('link', { name: '英語マニュアル' }),
+  ).toHaveAttribute('target', '_blank');
+  await expect(
+    page.getByRole('link', { name: 'LINEで相談', exact: true }),
+  ).toHaveAttribute('href', 'https://line.me/R/ti/p/%40662zyrsb');
+  await expect(
+    page.getByRole('heading', { name: 'RC8X', exact: true }).last(),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'チュートリアル', exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.locator('[data-feature-section="telemetry"] img'),
+  ).toHaveAttribute('src', /telemetry\.gif$/);
+  await expect(page.locator('[data-feature-layout="tile"]')).toHaveCount(14);
+  await expect(
+    page.locator('[data-product-section="feature-summary"]'),
+  ).toHaveCount(0);
+  const officialProductVideo = page.locator('[data-official-product-video]');
+  await expect(officialProductVideo).toHaveAttribute(
+    'src',
+    /d5acb416b76a01be7edf080741b0e681\.mp4$/,
   );
+  await expect(officialProductVideo.locator('..')).not.toHaveClass(
+    /(?:border-t|py-14)/,
+  );
+  await expect(
+    page.getByText('Radiolink公式 RC8X製品動画', { exact: true }),
+  ).toHaveCount(0);
+  await expect(
+    page.locator('[data-feature-section="architecture"]'),
+  ).not.toHaveClass(/py-14/);
+  await expect(
+    page.locator('[data-feature-section="architecture"] img'),
+  ).toHaveAttribute('src', /architecture\.webp$/);
+  await expect(
+    page.locator('[data-feature-section="voice-broadcast"] img'),
+  ).toHaveAttribute('src', /buzzer-screen\.bmp$/);
+  await expect(
+    page.locator('[data-feature-section="languages"] img'),
+  ).toHaveAttribute('src', /languages\.gif$/);
+  await expect(
+    page.locator('[data-feature-section="r8fg-receiver-system"]'),
+  ).toContainText('ジャイロによる車体安定化とナノコーティング');
+  await expect(
+    page.locator('[data-feature-section="fpv-external-functions"]'),
+  ).toContainText('設定画面とFPV画面');
+  await expect(
+    page.locator(
+      '[data-feature-section="interfaces"], [data-feature-section="external-functions"], [data-feature-section="fpv-display"], [data-feature-section="gyro"], [data-feature-section="water-resistance"], [data-feature-section="r8fg-stability-protection"], [data-feature-section="receivers"]',
+    ),
+  ).toHaveCount(0);
+  await expect(page.locator('[data-product-nav]')).toBeVisible();
+  await expect(page.locator('[data-product-section="manuals"]')).toHaveCount(0);
+  await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
 
@@ -89,5 +144,25 @@ test('same-origin links return successful responses', async ({
   for (const url of links) {
     const response = await request.get(url);
     expect(response.status(), url).toBeLessThan(400);
+  }
+});
+
+test('RC8X product images return successful responses', async ({
+  page,
+  request,
+}) => {
+  await page.goto('./radiolink/rc8x/');
+  const pageUrl = page.url();
+  const sources = await page
+    .locator('img[src]')
+    .evaluateAll((images) =>
+      images.map((image) => image.getAttribute('src')).filter(Boolean),
+    );
+
+  expect(sources.length).toBeGreaterThan(15);
+  for (const source of sources) {
+    const url = new URL(source!, pageUrl);
+    const response = await request.get(url.href);
+    expect(response.status(), url.href).toBeLessThan(400);
   }
 });
