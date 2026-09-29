@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { Buffer } from 'node:buffer';
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -23,7 +24,7 @@ for (const asset of manifest.assets ?? []) {
     continue;
   }
 
-  const response = await fetch(asset.source_image_url);
+  const response = await globalThis.fetch(asset.source_image_url);
   if (!response.ok) {
     throw new Error(`asset download failed ${response.status}: ${asset.source_image_url}`);
   }
