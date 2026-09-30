@@ -17,7 +17,9 @@ interface Props {
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
-  return products.map((product) => ({ params: { slug: product.data.slug }, props: { product } }));
+  return products
+    .filter(({ data }) => data.slug === 'rc8x')
+    .map((product) => ({ params: { slug: product.data.slug }, props: { product } }));
 }
 
 const { product } = Astro.props;

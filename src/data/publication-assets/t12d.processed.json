@@ -1,0 +1,160 @@
+{
+  "product_id": "t12d",
+  "results": [
+    {
+      "id": "t12d-hero",
+      "status": "processed",
+      "sha256": "c3925698b6902e7910030d1c01b75f7c05fc4c4a998479e634d31e879dd41bc1",
+      "width": 1920,
+      "height": 880,
+      "webp": "/assets/radiolink/t12d/hero.webp",
+      "avif": "/assets/radiolink/t12d/hero.avif"
+    },
+    {
+      "id": "t12d-hero-product",
+      "status": "processed",
+      "sha256": "d06107f1614fc2eb3efc704c1104000ce7937401933d7ebefce9d8930a4b5d90",
+      "width": 2000,
+      "height": 2400,
+      "webp": "/assets/radiolink/t12d/hero-product.webp",
+      "avif": "/assets/radiolink/t12d/hero-product.avif"
+    },
+    {
+      "id": "t12d-range",
+      "status": "processed",
+      "sha256": "7c8deefdc0cb35b55413a938adefe6e0a85337b88f2cf608c09f5fab00ad68a1",
+      "width": 1920,
+      "height": 1257,
+      "webp": "/assets/radiolink/t12d/range.webp",
+      "avif": "/assets/radiolink/t12d/range.avif"
+    },
+    {
+      "id": "t12d-interference",
+      "status": "processed",
+      "sha256": "98d90503e0249f4870d0a49c814dd54f1826de6c1d1f25b74f10c43f45253d35",
+      "width": 1754,
+      "height": 733,
+      "webp": "/assets/radiolink/t12d/interference.webp",
+      "avif": "/assets/radiolink/t12d/interference.avif"
+    },
+    {
+      "id": "t12d-channels",
+      "status": "processed",
+      "sha256": "60e6f63820bb729fafaaa935e7209d05b3d37f3c257ad8959791f3cc8585efcf",
+      "width": 1920,
+      "height": 1083,
+      "webp": "/assets/radiolink/t12d/channels.webp",
+      "avif": "/assets/radiolink/t12d/channels.avif"
+    },
+    {
+      "id": "t12d-models",
+      "status": "processed",
+      "sha256": "542cea92a5f1a4032448e7bb4355c32c90da7c3d0566a0782692d2bc91a6dd27",
+      "width": 1200,
+      "height": 612,
+      "webp": "/assets/radiolink/t12d/models.webp",
+      "avif": "/assets/radiolink/t12d/models.avif"
+    },
+    {
+      "id": "t12d-os",
+      "status": "processed",
+      "sha256": "d15b60979cd674d7ea0bc162de514b616097127c97a4b9b0dcb5cd69dcbfe13f",
+      "width": 1920,
+      "height": 1404,
+      "webp": "/assets/radiolink/t12d/os.webp",
+      "avif": "/assets/radiolink/t12d/os.avif"
+    },
+    {
+      "id": "t12d-config",
+      "status": "processed",
+      "sha256": "e4d0a0b263cb6b5fdfc828b578bbf78891e12351a39dd34d8c86617cd7b5c487",
+      "width": 1920,
+      "height": 748,
+      "webp": "/assets/radiolink/t12d/config.webp",
+      "avif": "/assets/radiolink/t12d/config.avif"
+    },
+    {
+      "id": "t12d-simulator",
+      "status": "processed",
+      "sha256": "608f78b1340fcc700fde589369db05ae603333e3ee46dba56b56ef6160e41e31",
+      "width": 1200,
+      "height": 674,
+      "webp": "/assets/radiolink/t12d/simulator.webp",
+      "avif": "/assets/radiolink/t12d/simulator.avif"
+    },
+    {
+      "id": "t12d-trainer",
+      "status": "processed",
+      "sha256": "10d2514036e91ab4c79affd51c19cf456fa175893e6da10ecd1d08e596877da1",
+      "width": 1200,
+      "height": 674,
+      "webp": "/assets/radiolink/t12d/trainer.webp",
+      "avif": "/assets/radiolink/t12d/trainer.avif"
+    },
+    {
+      "id": "t12d-telemetry",
+      "status": "processed",
+      "sha256": "fd8fd3c2ae8a0170dc4566f01166baf676874c5bd3b8cd34b33932dcaa39e019",
+      "width": 1200,
+      "height": 696,
+      "webp": "/assets/radiolink/t12d/telemetry.webp",
+      "avif": "/assets/radiolink/t12d/telemetry.avif"
+    },
+    {
+      "id": "t12d-modes",
+      "status": "processed",
+      "sha256": "3d1ef1f33ff2b71656d6fbe3927b1b7caf68a740ea21f53d559edad47926080f",
+      "width": 640,
+      "height": 480,
+      "pages": 131,
+      "bytes": 745340,
+      "gif": "/assets/radiolink/t12d/modes.gif"
+    },
+    {
+      "id": "t12d-language",
+      "status": "processed",
+      "sha256": "a67c2baf67c393fff93c8bc262bb80f681fe4f4a42d06e74c85baefc82b7cf29",
+      "width": 320,
+      "height": 240,
+      "pages": 179,
+      "bytes": 164379,
+      "gif": "/assets/radiolink/t12d/language.gif"
+    },
+    {
+      "id": "t12d-mix",
+      "status": "processed",
+      "sha256": "1a860a90daf114b38d0d918eb7f152c15508af840888aa92e46a7194a2860306",
+      "width": 320,
+      "height": 240,
+      "webp": "/assets/radiolink/t12d/mix.webp",
+      "avif": "/assets/radiolink/t12d/mix.avif"
+    },
+    {
+      "id": "t12d-rssi",
+      "status": "processed",
+      "sha256": "8c1227f127f24cefb6e4efa16c0bd7265da1b4ed0faf4b1340b526d6c794ca3e",
+      "width": 1162,
+      "height": 756,
+      "webp": "/assets/radiolink/t12d/rssi.webp",
+      "avif": "/assets/radiolink/t12d/rssi.avif"
+    },
+    {
+      "id": "t12d-r12f",
+      "status": "processed",
+      "sha256": "d6c9788b842054fc78dc882d1aaf90ee212e93e3ee7cd90c899d9ca740595007",
+      "width": 1200,
+      "height": 696,
+      "webp": "/assets/radiolink/t12d/r12f.webp",
+      "avif": "/assets/radiolink/t12d/r12f.avif"
+    },
+    {
+      "id": "t12d-power",
+      "status": "processed",
+      "sha256": "c74f89f0530172aba7a505df0491537f9e0c092ebab98d4169ff48387adc6872",
+      "width": 1920,
+      "height": 1300,
+      "webp": "/assets/radiolink/t12d/power.webp",
+      "avif": "/assets/radiolink/t12d/power.avif"
+    }
+  ]
+}

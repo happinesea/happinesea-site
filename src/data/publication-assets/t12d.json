@@ -1,0 +1,159 @@
+{
+  "product_id": "t12d",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "t12d-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/f36c2899cd85b0f9b62eb845bb4d98b3.jpg",
+      "source_status": "verified",
+      "alt": "Radiolink T12D送信機",
+      "public_path": "/assets/radiolink/t12d/hero"
+    },
+    {
+      "id": "t12d-hero-product",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/24bea9a7c7af2188b1b1f914c1cc905f.png",
+      "source_status": "verified",
+      "alt": "Radiolink T12D送信機",
+      "public_path": "/assets/radiolink/t12d/hero-product"
+    },
+    {
+      "id": "t12d-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/75e3bf1c6fe8997b65c244a3bd5c799a.jpg",
+      "source_status": "verified",
+      "alt": "T12Dの長距離通信",
+      "public_path": "/assets/radiolink/t12d/range"
+    },
+    {
+      "id": "t12d-interference",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/96d3e8777fe97c53fcc6d817895ab7d5.png",
+      "source_status": "verified",
+      "alt": "T12Dの耐干渉通信",
+      "public_path": "/assets/radiolink/t12d/interference"
+    },
+    {
+      "id": "t12d-channels",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/6ddb3b85604bc9019c4a71dccccc1547.jpg",
+      "source_status": "verified",
+      "alt": "T12Dの12チャンネル操作",
+      "public_path": "/assets/radiolink/t12d/channels"
+    },
+    {
+      "id": "t12d-models",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/9cc422e57211e157becceddfe65d295a.jpg",
+      "source_status": "verified",
+      "alt": "T12Dの対応モデル",
+      "public_path": "/assets/radiolink/t12d/models"
+    },
+    {
+      "id": "t12d-os",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/973f7c22334b12ef93ca9d8d7002b197.jpg",
+      "source_status": "verified",
+      "alt": "T12DのFreeRTOSとLVGL",
+      "public_path": "/assets/radiolink/t12d/os"
+    },
+    {
+      "id": "t12d-config",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/5c791a766e09e60e294cd41e46cd85e1.jpg",
+      "source_status": "verified",
+      "alt": "T12Dの操作部",
+      "public_path": "/assets/radiolink/t12d/config"
+    },
+    {
+      "id": "t12d-simulator",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/db0ee500360c104457bdd1cc9d467f2b.jpg",
+      "source_status": "verified",
+      "alt": "T12Dのシミュレーター接続",
+      "public_path": "/assets/radiolink/t12d/simulator"
+    },
+    {
+      "id": "t12d-trainer",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/95314f0067534417cc14d1fbc1e3b734.jpg",
+      "source_status": "verified",
+      "alt": "T12Dのトレーナー機能",
+      "public_path": "/assets/radiolink/t12d/trainer"
+    },
+    {
+      "id": "t12d-telemetry",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/e106356527fae592ad9a8d4cf16c632b.jpg",
+      "source_status": "verified",
+      "alt": "T12Dのテレメトリー表示",
+      "public_path": "/assets/radiolink/t12d/telemetry"
+    },
+    {
+      "id": "t12d-modes",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/9dcb24398dad70bfbd1b6a8b2707edbe.gif",
+      "source_status": "verified",
+      "alt": "T12Dのモデルタイプ設定",
+      "public_path": "/assets/radiolink/t12d/modes"
+    },
+    {
+      "id": "t12d-language",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/6f5ce283c727a6a89c94cad06c26321e.gif",
+      "source_status": "verified",
+      "alt": "T12Dの言語切り替え",
+      "public_path": "/assets/radiolink/t12d/language"
+    },
+    {
+      "id": "t12d-mix",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/cbc9e344a6ad72746adfc4074484a391.png",
+      "source_status": "verified",
+      "alt": "T12Dのプログラマブルミックス",
+      "public_path": "/assets/radiolink/t12d/mix"
+    },
+    {
+      "id": "t12d-rssi",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/5f10d485c2f50b6cd63db4cce5aa0d7f.jpg",
+      "source_status": "verified",
+      "alt": "T12DのRSSI表示",
+      "public_path": "/assets/radiolink/t12d/rssi"
+    },
+    {
+      "id": "t12d-r12f",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/638c1454afb55eb9eafa1ce840def589.jpg",
+      "source_status": "verified",
+      "alt": "R12F受信機のオンライン更新",
+      "public_path": "/assets/radiolink/t12d/r12f"
+    },
+    {
+      "id": "t12d-power",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/t12d",
+      "source_image_url": "https://www.radiolink.com/9c0c64cd5e98f7f9d19d6c000b9db10b.jpg",
+      "source_status": "verified",
+      "alt": "T12Dの電源とバッテリー",
+      "public_path": "/assets/radiolink/t12d/power"
+    }
+  ]
+}

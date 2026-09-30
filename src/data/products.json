@@ -315,5 +315,359 @@
     "firmware_url": "https://www.radiolink.com/rc8x_firmware",
     "manual_url": "https://www.radiolink.com.cn/download/b8d088918eea29d74ad2922cbbaeeb6c.pdf",
     "last_checked_at": "2026-09-29"
+  },
+  {
+    "id": "rc8p",
+    "manufacturer": "Radiolink",
+    "model": "RC8P",
+    "slug": "rc8p",
+    "category": "送信機",
+    "title": "RC8P",
+    "description": "RC8Pは、2.4インチ高輝度カラー画面と音声カスタマイズ機能を備えた、RCカー向け8チャンネル送信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。公式ページ間で表記差がある項目は確認中です。",
+    "features": [
+      "8フルプロポーショナルチャンネル",
+      "2.4インチ・320×240・16-bitカラー画面",
+      "最短3ms応答",
+      "地上最大600m（メーカー試験条件）",
+      "30モデル・16サブID・4プログラマブルミックス",
+      "音声案内のカスタマイズ",
+      "有線・無線トレーナー機能",
+      "シミュレーター接続",
+      "R8FGのテレメトリーとジャイロ",
+      "Type-C充電・更新"
+    ],
+    "feature_sections": [],
+    "package_contents": [
+      "RC8P送信機×1",
+      "R8FG受信機×1",
+      "バッテリー（RC8Pへ装着済み）×1",
+      "EXT接続ケーブル（R8FG用）×1",
+      "Type-Cケーブル（更新・充電用）×1",
+      "ランヤード×1",
+      "2.0mm六角レンチ×1",
+      "取扱説明書×1",
+      "梱包箱×1"
+    ],
+    "videos": [
+      {
+        "youtube_id": "j0kLmJ62wHA",
+        "title": "RC8Pファームウェア更新",
+        "description": "Radiolink公式のファームウェア更新手順です。",
+        "source_url": "https://www.youtube.com/watch?v=j0kLmJ62wHA"
+      },
+      {
+        "youtube_id": "GBRNi3YmwVQ",
+        "title": "RC8Pと受信機のバインド",
+        "description": "Radiolink公式のバインド手順です。",
+        "source_url": "https://www.youtube.com/watch?v=GBRNi3YmwVQ"
+      },
+      {
+        "youtube_id": "EgzTPUAYJOU",
+        "title": "RC8P開封",
+        "description": "RC8Pと付属品を紹介するRadiolink公式動画です。",
+        "source_url": "https://www.youtube.com/watch?v=EgzTPUAYJOU"
+      },
+      {
+        "youtube_id": "j7Em6ZpOQA4",
+        "title": "スイッチ音声のカスタマイズ",
+        "description": "スイッチへ音声案内を設定する手順です。",
+        "source_url": "https://www.youtube.com/watch?v=j7Em6ZpOQA4"
+      },
+      {
+        "youtube_id": "QeCXOTD6ELg",
+        "title": "エンドポイント設定",
+        "description": "エンドポイント設定のRadiolink公式チュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=QeCXOTD6ELg"
+      },
+      {
+        "youtube_id": "_6c3HnVPI88",
+        "title": "RC8Pの校正",
+        "description": "操作部を校正するRadiolink公式チュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=_6c3HnVPI88"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "147.5×124.5×80mm", "status": "verified" },
+      { "label": "重量", "value": "193g", "status": "verified" },
+      { "label": "チャンネル", "value": "8チャンネル", "status": "verified" },
+      {
+        "label": "周波数帯",
+        "value": "2.4GHz（2400–2483.5MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "応答速度",
+        "value": "3ms / 4ms / 14ms",
+        "status": "verified"
+      },
+      { "label": "PWM分解能", "value": "4096、0.25μs", "status": "verified" },
+      { "label": "送信出力", "value": "100mW未満", "status": "verified" },
+      {
+        "label": "地上通信距離",
+        "value": "最大600m（メーカー試験条件）",
+        "status": "verified"
+      },
+      { "label": "動作電圧", "value": "3.4–4.2V", "status": "verified" },
+      {
+        "label": "バッテリー",
+        "value": "18650リチウムイオン電池 2500mAh×1",
+        "status": "verified"
+      },
+      { "label": "動作電流", "value": "230mA±15mA@4.2V", "status": "verified" },
+      { "label": "Type-C入力", "value": "5V・500mA", "status": "verified" },
+      {
+        "label": "画面",
+        "value": "2.4インチ・320×240・16-bitカラー",
+        "status": "verified"
+      },
+      {
+        "label": "モデルメモリー",
+        "value": "30グループ",
+        "status": "verified"
+      },
+      { "label": "サブID", "value": "16グループ", "status": "verified" },
+      {
+        "label": "R8FG寸法 / 重量",
+        "value": "35×24×13.5mm / 10.5g",
+        "status": "verified"
+      },
+      {
+        "label": "R8FG出力 / 動作電圧",
+        "value": "SBUS + PWM / 3–12V",
+        "status": "verified"
+      }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/rc8p/hero.webp",
+        "alt": "Radiolink RC8P送信機",
+        "source_image_url": "https://www.radiolink.com/d73b418e691a0b3f5a2f4d2c7734923d.jpg",
+        "source_page_url": "https://www.radiolink.com/en/rc8p",
+        "retrieved_at": "2026-10-01",
+        "width": 3840,
+        "height": 2160,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [
+      {
+        "title": "RC8P Firmware V1.0.5",
+        "version": "1.0.5",
+        "url": "https://www.radiolink.com/en/rc8p_firmware",
+        "status": "verified",
+        "note": "公式ページのLatest Firmware。更新履歴の日付は2026-09-05です。"
+      }
+    ],
+    "support": { "href": "/support/", "faq_count": 4 },
+    "relations": {
+      "products": [],
+      "receivers": [
+        "R8FG",
+        "R16F",
+        "R16SM",
+        "R12F",
+        "R8FGH",
+        "R8EF",
+        "R8FM",
+        "R8SM",
+        "R8XM",
+        "R7FG",
+        "R6FG",
+        "R6F",
+        "R4FGM"
+      ],
+      "receiver_status": "review_required"
+    },
+    "official_url": "https://www.radiolink.com/en/rc8p",
+    "firmware_url": "https://www.radiolink.com/en/rc8p_firmware",
+    "manual_url": "https://www.radiolink.com/en/rc8p_user_manual",
+    "last_checked_at": "2026-10-01"
+  },
+  {
+    "id": "t12d",
+    "manufacturer": "Radiolink",
+    "model": "T12D",
+    "slug": "t12d",
+    "category": "送信機",
+    "title": "T12D",
+    "description": "T12Dは、12フルプロポーショナルチャンネルと長距離モジュール対応を備えた送信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。公式ページ間の受信機表記差（R8F / R4F）と日付差は確認中です。",
+    "features": [
+      "12フルプロポーショナルチャンネル",
+      "ELRS・TBS Crossfireなどの長距離モジュール対応",
+      "FreeRTOS + LVGL GUI",
+      "2.8インチ・320×240・16-bitカラー画面",
+      "50モデル・16サブID",
+      "多言語表示と音声カスタマイズ",
+      "12チャンネルのプログラマブルミックス",
+      "有線・無線トレーナー機能",
+      "R12F受信機のオンライン更新",
+      "7.4–18V電源・逆接保護"
+    ],
+    "feature_sections": [],
+    "package_contents": [
+      "T12D送信機×1",
+      "R12F受信機×1",
+      "バッテリー接続延長ケーブル（バランスポート）×1",
+      "Type-Cケーブル（更新用）×1",
+      "フック・スプリング×1",
+      "取扱説明書×1",
+      "梱包箱×1"
+    ],
+    "videos": [
+      {
+        "youtube_id": "654ypzdXGRI",
+        "title": "T12Dと受信機のバインド",
+        "description": "異なる受信機とのバインド手順です。",
+        "source_url": "https://www.youtube.com/watch?v=654ypzdXGRI"
+      },
+      {
+        "youtube_id": "5gClfQRbBVI",
+        "title": "2.4GHz ELRSモジュールの接続",
+        "description": "ELRSモジュールをT12Dへ接続する手順です。",
+        "source_url": "https://www.youtube.com/watch?v=5gClfQRbBVI"
+      },
+      {
+        "youtube_id": "n5nCGDuu0L8",
+        "title": "R12Fのバインドと動作モード",
+        "description": "R12Fのバインドとモード切り替え手順です。",
+        "source_url": "https://www.youtube.com/watch?v=n5nCGDuu0L8"
+      },
+      {
+        "youtube_id": "gwKzE4DdTII",
+        "title": "RSSI表示",
+        "description": "RSSI情報を使用するRadiolink公式チュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=gwKzE4DdTII"
+      },
+      {
+        "youtube_id": "KtBAAfF5FMo",
+        "title": "T12Dファームウェア更新",
+        "description": "T12Dのファームウェア更新手順です。",
+        "source_url": "https://www.youtube.com/watch?v=KtBAAfF5FMo"
+      },
+      {
+        "youtube_id": "v-IHTwAUk-g",
+        "title": "シミュレーター接続",
+        "description": "T12Dをシミュレーターへ接続する手順です。",
+        "source_url": "https://www.youtube.com/watch?v=v-IHTwAUk-g"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "174.3×206.9×106.9mm", "status": "verified" },
+      { "label": "重量", "value": "536g", "status": "verified" },
+      {
+        "label": "チャンネル",
+        "value": "12フルプロポーショナルチャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "周波数帯",
+        "value": "2.4GHz（2400–2483.5MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "応答速度",
+        "value": "3ms / 4ms / 14ms",
+        "status": "verified"
+      },
+      { "label": "PWM分解能", "value": "4096、0.25μs", "status": "verified" },
+      { "label": "送信出力", "value": "100mW未満", "status": "verified" },
+      { "label": "動作電圧", "value": "7.4–18V", "status": "verified" },
+      {
+        "label": "Type-C",
+        "value": "5V・500mA入力 / 4.6–5V・最大1A出力",
+        "status": "verified"
+      },
+      { "label": "動作電流", "value": "100mA±10mA@8.4V", "status": "verified" },
+      {
+        "label": "画面",
+        "value": "2.8インチ・320×240・16-bitカラー",
+        "status": "verified"
+      },
+      {
+        "label": "モデルメモリー",
+        "value": "50グループ",
+        "status": "verified"
+      },
+      { "label": "サブID", "value": "16グループ", "status": "verified" },
+      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" },
+      {
+        "label": "R12F寸法 / 重量",
+        "value": "35.6×25×13.6mm / 11.8g",
+        "status": "verified"
+      },
+      {
+        "label": "R12F出力 / 動作電圧",
+        "value": "SBUS + CRSF + PWM / 3–12V",
+        "status": "verified"
+      },
+      {
+        "label": "R12F地上距離",
+        "value": "地上最大600m / 空中最大4000m（メーカー試験条件）",
+        "status": "verified"
+      }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/t12d/hero-product.webp",
+        "alt": "Radiolink T12D送信機",
+        "source_image_url": "https://www.radiolink.com/24bea9a7c7af2188b1b1f914c1cc905f.png",
+        "source_page_url": "https://www.radiolink.com/en/t12d",
+        "retrieved_at": "2026-10-01",
+        "width": null,
+        "height": null,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [
+      {
+        "title": "T12D Firmware V2.0.2",
+        "version": "2.0.2",
+        "url": "https://www.radiolink.com/en/t12d_firmwares",
+        "status": "verified",
+        "note": "公式ファームウェアページのLatest Firmware。ページ掲載日と配布ファイル日付の差は確認対象です。"
+      }
+    ],
+    "support": { "href": "/support/", "faq_count": 6 },
+    "relations": {
+      "products": [],
+      "receivers": [
+        "R12F",
+        "R16F",
+        "R16SM",
+        "R8FG",
+        "R8FGH",
+        "R8EF",
+        "R8FM",
+        "R8SM",
+        "R8XM",
+        "R7FG",
+        "R6FG",
+        "R6F",
+        "R4FGM"
+      ],
+      "receiver_status": "review_required"
+    },
+    "official_url": "https://www.radiolink.com/en/t12d",
+    "firmware_url": "https://www.radiolink.com/en/t12d_firmwares",
+    "manual_url": "https://www.radiolink.com/en/t12d_manual",
+    "last_checked_at": "2026-10-01"
   }
 ]

@@ -1,0 +1,150 @@
+{
+  "product_id": "rc8p",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "rc8p-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/d73b418e691a0b3f5a2f4d2c7734923d.jpg",
+      "source_status": "verified",
+      "alt": "Radiolink RC8P送信機",
+      "public_path": "/assets/radiolink/rc8p/hero"
+    },
+    {
+      "id": "rc8p-compact",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/cf3e9e7cfa514afc8d59d345dac6872f.jpg",
+      "source_status": "verified",
+      "alt": "コンパクトなRC8P",
+      "public_path": "/assets/radiolink/rc8p/compact"
+    },
+    {
+      "id": "rc8p-screen",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/c4ba28359d99693772fe22e6a2c55408.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの2.4インチ画面",
+      "public_path": "/assets/radiolink/rc8p/screen"
+    },
+    {
+      "id": "rc8p-voice",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/aa5ab7a544c7f84ac39bd47664f07625.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの音声設定",
+      "public_path": "/assets/radiolink/rc8p/voice"
+    },
+    {
+      "id": "rc8p-response",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/871424a4718d2d18c7e065a633a736bc.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの応答速度設定",
+      "public_path": "/assets/radiolink/rc8p/response"
+    },
+    {
+      "id": "rc8p-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/5e29908096459d80fbc2e3ca9b291c90.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの地上通信距離",
+      "public_path": "/assets/radiolink/rc8p/range"
+    },
+    {
+      "id": "rc8p-channels",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/c61439cb1f3ff3aceb963212c6ac16bc.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの8チャンネル操作",
+      "public_path": "/assets/radiolink/rc8p/channels"
+    },
+    {
+      "id": "rc8p-storage",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/40f66636090883703e53e63d3bc3974e.png",
+      "source_status": "verified",
+      "alt": "RC8Pのモデル保存画面",
+      "public_path": "/assets/radiolink/rc8p/storage"
+    },
+    {
+      "id": "rc8p-battery",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/a904fefec555adcc90574b409fbbc0c5.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの18650バッテリー",
+      "public_path": "/assets/radiolink/rc8p/battery"
+    },
+    {
+      "id": "rc8p-type-c",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/fff91a5bada3dee604a03adefabf6419.png",
+      "source_status": "verified",
+      "alt": "RC8PのType-C端子",
+      "public_path": "/assets/radiolink/rc8p/type-c"
+    },
+    {
+      "id": "rc8p-simulator",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/5b0e73b09a68690874f910458ed130da.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pのシミュレーター接続",
+      "public_path": "/assets/radiolink/rc8p/simulator"
+    },
+    {
+      "id": "rc8p-trainer",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/1cde41ad121a1fbc4c616b8e0f4a3b09.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pのトレーナー機能",
+      "public_path": "/assets/radiolink/rc8p/trainer"
+    },
+    {
+      "id": "rc8p-telemetry",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/6d7a4f561fb1b0ac3e917f9af9dd9b36.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pのテレメトリー表示",
+      "public_path": "/assets/radiolink/rc8p/telemetry"
+    },
+    {
+      "id": "rc8p-gyro",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/dfbeb5100c46950b1c77c8de6110b045.gif",
+      "source_status": "verified",
+      "alt": "R8FGジャイロの動作比較",
+      "public_path": "/assets/radiolink/rc8p/gyro"
+    },
+    {
+      "id": "rc8p-ergonomics",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/a351b0dd446847010173bb5680d6b34e.jpg",
+      "source_status": "verified",
+      "alt": "RC8Pの調整可能なトリガー",
+      "public_path": "/assets/radiolink/rc8p/ergonomics"
+    },
+    {
+      "id": "rc8p-ipx4",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/en/rc8p",
+      "source_image_url": "https://www.radiolink.com/ac3d8436c60843401370510c8c22c134.jpg",
+      "source_status": "verified",
+      "alt": "R8FG受信機のIPX4防滴設計",
+      "public_path": "/assets/radiolink/rc8p/ipx4"
+    }
+  ]
+}

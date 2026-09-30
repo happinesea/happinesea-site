@@ -138,6 +138,47 @@ test('RC8X product page follows the official product flow without commercial cla
   );
 });
 
+for (const product of [
+  {
+    slug: 'rc8p',
+    model: 'RC8P',
+    officialUrl: 'https://www.radiolink.com/en/rc8p',
+    asset: 'gyro.gif',
+  },
+  {
+    slug: 't12d',
+    model: 'T12D',
+    officialUrl: 'https://www.radiolink.com/en/t12d',
+    asset: 'language.gif',
+  },
+]) {
+  test(`${product.model} product page keeps official flow and public-review boundaries`, async () => {
+    const html = await route(`radiolink/${product.slug}/index.html`);
+
+    assert.match(html, new RegExp(`>${product.model}<`));
+    assert.match(html, /data-standard-product-page/);
+    assert.match(html, /data-product-section="features"/);
+    assert.match(html, /data-product-section="specifications"/);
+    assert.match(html, /data-product-section="package"/);
+    assert.match(html, /data-product-section="videos"/);
+    assert.match(html, /data-product-section="faq"/);
+    assert.match(html, new RegExp(product.officialUrl.replaceAll('/', '\\/')));
+    assert.match(
+      html,
+      new RegExp(`/assets/radiolink/${product.slug}/${product.asset}`),
+    );
+    if (product.slug === 't12d') {
+      assert.match(html, />地上距離</);
+      assert.match(html, />空中距離</);
+      assert.doesNotMatch(html, />標準モード</);
+      assert.doesNotMatch(html, />長距離モード</);
+    }
+    assert.doesNotMatch(html, new RegExp(`/manuals/${product.slug}/`));
+    assert.doesNotMatch(html, />情報源</);
+    assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);
+  });
+}
+
 test('support and product update routes are distinct public targets', async () => {
   const support = await route('support/index.html');
   const updates = await route('radiolink/updates/index.html');

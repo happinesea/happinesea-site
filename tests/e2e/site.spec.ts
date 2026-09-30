@@ -4,6 +4,8 @@ const routes = [
   ['home', './'],
   ['catalogue', './radiolink/'],
   ['product', './radiolink/rc8x/'],
+  ['RC8P product', './radiolink/rc8p/'],
+  ['T12D product', './radiolink/t12d/'],
   ['manual', './manuals/rc8x/'],
   ['manual chapter 1', './manuals/rc8x/chapter-01/'],
   ['manual chapter 2', './manuals/rc8x/chapter-02/'],
@@ -52,8 +54,8 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page.locator('[data-product-category]:visible')).toHaveCount(0);
 
   await page.getByRole('button', { name: '送信機', exact: true }).click();
-  await expect(page.locator('[data-result-count]')).toHaveText('1件を表示');
-  await expect(page.locator('[data-product-category]:visible')).toHaveCount(1);
+  await expect(page.locator('[data-result-count]')).toHaveText('3件を表示');
+  await expect(page.locator('[data-product-category]:visible')).toHaveCount(3);
 
   await page.goto('./radiolink/rc8x/');
   await expect(
@@ -117,6 +119,38 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+
+for (const [model, path] of [
+  ['RC8P', './radiolink/rc8p/'],
+  ['T12D', './radiolink/t12d/'],
+] as const) {
+  test(`${model} product page has no broken local media`, async ({
+    page,
+    request,
+  }) => {
+    const errors = captureErrors(page);
+    await page.goto(path);
+    await expect(page.locator('[data-standard-product-page]')).toBeVisible();
+    await expect(
+      page.getByRole('heading', { name: model, exact: true }).first(),
+    ).toBeVisible();
+    await expect(
+      page.getByRole('link', { name: '日本語マニュアル' }),
+    ).toHaveCount(0);
+
+    const sources = await page
+      .locator('img[src]')
+      .evaluateAll((images) =>
+        images.map((image) => image.getAttribute('src')).filter(Boolean),
+      );
+    expect(sources.length).toBeGreaterThan(8);
+    for (const source of sources) {
+      const response = await request.get(new URL(source!, page.url()).href);
+      expect(response.status(), source!).toBeLessThan(400);
+    }
+    expect(errors).toEqual([]);
+  });
+}
 
 test('same-origin links return successful responses', async ({
   page,

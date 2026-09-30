@@ -1,0 +1,10 @@
+---
+import { getEntry } from 'astro:content';
+import StandardProductPage from '../../components/StandardProductPage.astro';
+import pages from '../../data/standard-product-pages.json';
+
+const product = await getEntry('products', 't12d');
+if (!product) throw new Error('T12D product data is missing');
+---
+
+<StandardProductPage product={product} detail={pages.t12d} />

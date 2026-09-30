@@ -1,0 +1,283 @@
+{
+  "rc8p": {
+    "hero": {
+      "tagline": "音声をカスタマイズできる、大画面ポケット送信機",
+      "subline": "8チャンネルのフルプロポーショナル操作と2.4インチ高輝度カラー画面を、持ち運びやすい筐体にまとめています。",
+      "note": "各数値は、障害物のない良好な条件の閉鎖環境で行ったRadiolinkの試験値です。実際の結果は環境、使用方法、ファームウェアにより異なります。"
+    },
+    "sections": [
+      {
+        "id": "compact",
+        "eyebrow": "コンパクト設計",
+        "title": "手の中に収まるポケット送信機",
+        "description": "ポケットやバックパックへ入れやすい小型筐体です。屋外走行、サーキット、家庭での操作へ持ち運べます。",
+        "image": "/assets/radiolink/rc8p/compact.webp",
+        "alt": "コンパクトなRC8P"
+      },
+      {
+        "id": "display",
+        "eyebrow": "2.4インチ高輝度カラー画面",
+        "title": "屋外でも確認しやすい設定表示",
+        "description": "2.4インチの高輝度カラー画面を搭載し、直射日光下でもデータを確認できます。画面仕様は320×240ピクセル、16-bitカラーです。",
+        "image": "/assets/radiolink/rc8p/screen.webp",
+        "alt": "RC8Pの2.4インチ画面"
+      },
+      {
+        "id": "voice",
+        "eyebrow": "スマート音声案内",
+        "title": "操作に合わせた音声を設定",
+        "description": "スイッチと機能に音声案内を割り当てられます。Radiolink公式ページでは、音声内容を用途に合わせてカスタマイズできる機能として案内されています。",
+        "image": "/assets/radiolink/rc8p/voice.webp",
+        "alt": "RC8Pの音声設定"
+      },
+      {
+        "id": "response",
+        "eyebrow": "3ms・4ms・14ms",
+        "title": "サーボに合わせて応答速度を選択",
+        "description": "応答速度は3ms、4ms、14msから選択します。3ms／4msは対応するデジタルサーボ受信機、14msはアナログサーボで使用します。",
+        "image": "/assets/radiolink/rc8p/response.webp",
+        "alt": "RC8Pの応答速度設定"
+      },
+      {
+        "id": "range",
+        "eyebrow": "産業用途でも採用される耐干渉通信",
+        "title": "地上通信距離は最大600m",
+        "description": "FHSSによる67チャンネルの疑似ランダム周波数ホッピングを使用します。Radiolinkの試験条件では、地上通信距離は最大600m、応答遅延は最短3msです。",
+        "image": "/assets/radiolink/rc8p/range.webp",
+        "alt": "RC8Pの地上通信距離"
+      },
+      {
+        "id": "channels",
+        "eyebrow": "8フルプロポーショナルチャンネル",
+        "title": "RCカーの各機能を比例制御",
+        "description": "スロットル、ステアリング、ブレーキ、デフロック、ライト、ジンバルなどへ8チャンネルを使用できます。ツーリングカー、バギー、クローラー、モンスタートラック、ミニRC、建設車両に対応します。",
+        "image": "/assets/radiolink/rc8p/channels.webp",
+        "alt": "RC8Pの8チャンネル操作"
+      },
+      {
+        "id": "storage",
+        "eyebrow": "モデル管理とミキシング",
+        "title": "30モデル・16サブID・4ミックス",
+        "description": "30グループのモデルデータ、16グループのサブID、4グループのプログラマブルミックスを保存できます。",
+        "image": "/assets/radiolink/rc8p/storage.webp",
+        "alt": "RC8Pのモデル保存画面"
+      },
+      {
+        "id": "power",
+        "eyebrow": "2500mAh 18650バッテリー",
+        "title": "最大12時間の使用時間",
+        "description": "3.4〜4.2Vで動作し、2500mAhの18650リチウムイオン電池を1本使用します。Type-C端子は充電、ファームウェア更新、シミュレーター接続に使用します。",
+        "image": "/assets/radiolink/rc8p/battery.webp",
+        "alt": "RC8Pの18650バッテリー"
+      },
+      {
+        "id": "simulator-trainer",
+        "eyebrow": "シミュレーター / トレーナー",
+        "title": "練習と教習を有線・無線で支援",
+        "description": "Type-C端子からシミュレーターへ接続できます。トレーナー機能は有線と無線に対応し、送信機間で操作を受け渡せます。",
+        "image": "/assets/radiolink/rc8p/simulator.webp",
+        "alt": "RC8Pのシミュレーター接続"
+      },
+      {
+        "id": "telemetry",
+        "eyebrow": "R8FG受信機",
+        "title": "テレメトリーとジャイロを標準装備",
+        "description": "付属R8FGはRSSI、受信機電圧、モデル用バッテリー電圧を送信機へ返します。内蔵ジャイロは車体の横滑りを抑えるために使用でき、SBUSとPWM出力にも対応します。",
+        "image": "/assets/radiolink/rc8p/gyro.gif",
+        "alt": "R8FGジャイロの動作比較"
+      },
+      {
+        "id": "ergonomics",
+        "eyebrow": "操作性",
+        "title": "握りやすさと調整可能な操作部",
+        "description": "滑りにくいトリガー、配置を整理したスイッチ、ランヤードにより長時間操作を支援します。片手操作用アクセサリーは別売です。",
+        "image": "/assets/radiolink/rc8p/ergonomics.webp",
+        "alt": "RC8Pの調整可能なトリガー"
+      },
+      {
+        "id": "receiver-protection",
+        "eyebrow": "IPX4防滴",
+        "title": "R8FGの基板と端子をナノコーティング",
+        "description": "R8FGの基板と端子にはナノコーティングによる防滴処理が施されています。防滴等級はIPX4で、完全防水ではありません。",
+        "image": "/assets/radiolink/rc8p/ipx4.webp",
+        "alt": "R8FG受信機のIPX4防滴設計"
+      }
+    ],
+    "certificates": [
+      {
+        "label": "証明書",
+        "value": "COMING SOON",
+        "href": "https://www.radiolink.com/en/rc8p_certificates"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "RC8Pのファームウェアはどこで更新できますか？",
+        "answer": "Radiolink公式ファームウェアページから最新パッケージを取得し、Type-Cケーブルで更新します。"
+      },
+      {
+        "question": "R8FGのジャイロはどのように有効にしますか？",
+        "answer": "受信機を動かさずに電源を入れて自己診断を完了させ、ID SETボタンを1秒以内の間隔で3回押します。赤色LEDの点灯がジャイロ有効、消灯が無効を示します。"
+      },
+      {
+        "question": "R8FGはどの信号出力に対応しますか？",
+        "answer": "PWM出力とSBUS出力に対応します。"
+      },
+      {
+        "question": "RC8Pの通信距離はどのくらいですか？",
+        "answer": "Radiolinkの試験条件では地上最大600mです。実際の距離は環境、使用方法、ファームウェアにより異なります。"
+      }
+    ]
+  },
+  "t12d": {
+    "hero": {
+      "tagline": "12フルプロポーショナルチャンネル送信機",
+      "subline": "航空機、車両、ボート、ロボットに対応し、長距離モジュールと組み合わせられる送信機です。",
+      "note": "各数値は、障害物のない良好な条件の閉鎖環境で行ったRadiolinkの試験値です。実際の結果は環境、使用方法、ファームウェアにより異なります。"
+    },
+    "sections": [
+      {
+        "id": "long-range",
+        "eyebrow": "ELRS / TBS Crossfire",
+        "title": "長距離モジュールを送信機から設定",
+        "description": "ELRS、TBS Crossfireなどの長距離モジュールに対応します。プロトコル、ボーレート、データレート、テレメトリーレート、送信出力、Wi-FiモードなどをT12Dから設定できます。",
+        "image": "/assets/radiolink/t12d/range.webp",
+        "alt": "T12Dの長距離通信"
+      },
+      {
+        "id": "communication",
+        "eyebrow": "FHSS・67チャンネル",
+        "title": "耐干渉性を重視した通信方式",
+        "description": "2.4GHz帯で67チャンネルの疑似ランダム周波数ホッピングを使用します。Radiolinkの公式試験値では、受信機により地上距離は400〜1100m、空中距離は最大4000mです。",
+        "image": "/assets/radiolink/t12d/interference.webp",
+        "alt": "T12Dの耐干渉通信"
+      },
+      {
+        "id": "channels",
+        "eyebrow": "12フルプロポーショナルチャンネル",
+        "title": "各チャンネルを比例制御",
+        "description": "12チャンネルをフルプロポーショナルで操作します。ヘリコプター、固定翼、グライダー、マルチローター、レーシングドローン、建設車両、ボート、ロボット、芝刈り機などに対応します。",
+        "image": "/assets/radiolink/t12d/channels.webp",
+        "alt": "T12Dの12チャンネル操作"
+      },
+      {
+        "id": "models",
+        "eyebrow": "フルモデル対応",
+        "title": "航空・地上・水上モデルを1台で管理",
+        "description": "50グループのモデルデータと16グループのサブIDを保存します。モデルタイプごとの設定と飛行モード表示を備えています。",
+        "image": "/assets/radiolink/t12d/models.webp",
+        "alt": "T12Dの対応モデル"
+      },
+      {
+        "id": "os",
+        "eyebrow": "FreeRTOS + LVGL",
+        "title": "応答性を重視したユーザーインターフェース",
+        "description": "FreeRTOSとLVGL GUIを採用し、2.8インチ、320×240ピクセル、16-bitカラー画面で設定を表示します。",
+        "image": "/assets/radiolink/t12d/os.webp",
+        "alt": "T12DのFreeRTOSとLVGL"
+      },
+      {
+        "id": "controls",
+        "eyebrow": "ベアリングジンバルと操作部",
+        "title": "スイッチ、ダイヤル、スライダーを装備",
+        "description": "3ポジションスイッチ3個、2ポジションスイッチ1個、ダイヤル2個、スライダー2個を搭載します。JRスタイルのモジュールベイへ長距離モジュールを装着できます。",
+        "image": "/assets/radiolink/t12d/config.webp",
+        "alt": "T12Dの操作部"
+      },
+      {
+        "id": "simulator-trainer",
+        "eyebrow": "シミュレーター / トレーナー",
+        "title": "練習と教習に対応",
+        "description": "Type-C端子を使用するシミュレーター機能と、有線・無線のトレーナー機能を備えています。",
+        "image": "/assets/radiolink/t12d/simulator.webp",
+        "alt": "T12Dのシミュレーター接続"
+      },
+      {
+        "id": "telemetry",
+        "eyebrow": "テレメトリー",
+        "title": "飛行制御情報、RSSI、電圧を表示",
+        "description": "対応する受信機・フライトコントローラーとの組み合わせで、飛行制御情報、RSSI、送信機電圧、受信機電圧、モデル用バッテリー電圧を表示します。RSSIはFPVモニターへの出力にも対応します。",
+        "image": "/assets/radiolink/t12d/telemetry.webp",
+        "alt": "T12Dのテレメトリー表示"
+      },
+      {
+        "id": "language",
+        "eyebrow": "多言語",
+        "title": "日本語を含む複数言語に対応",
+        "description": "中国語、英語、ドイツ語、フランス語、ロシア語、日本語、スペイン語、韓国語、タイ語、ポーランド語などを選択できます。音声案内も複数言語でカスタマイズできます。",
+        "image": "/assets/radiolink/t12d/language.gif",
+        "alt": "T12Dの言語切り替え"
+      },
+      {
+        "id": "mix",
+        "eyebrow": "プログラマブルミックス",
+        "title": "12チャンネルの高度な設定を連携",
+        "description": "12チャンネルを任意の高度な設定へ割り当てられます。複数のミックス制御を連鎖させ、1つのスイッチで複数チャンネルを操作できます。",
+        "image": "/assets/radiolink/t12d/mix.webp",
+        "alt": "T12Dのプログラマブルミックス"
+      },
+      {
+        "id": "receiver",
+        "eyebrow": "付属R12F受信機",
+        "title": "12チャンネル・オンライン更新対応",
+        "description": "付属R12Fは12チャンネル、SBUS・CRSF・PWM出力に対応します。Type-CケーブルでPCへ接続し、追加機器なしでオンライン更新できます。",
+        "image": "/assets/radiolink/t12d/r12f.webp",
+        "alt": "R12F受信機のオンライン更新"
+      },
+      {
+        "id": "power",
+        "eyebrow": "7.4〜18V",
+        "title": "複数の電源方式と逆接保護",
+        "description": "18650リチウム電池2本、2S〜4S LiPo、単3形乾電池8本に対応します。外部高周波モジュール使用時は最大3S LiPoです。SMPSにより100mA（±10mA）@8.4Vで動作し、1800mAh LiPo使用時は最大12時間と案内されています。Type-C端子は送信機の充電には使用できません。",
+        "image": "/assets/radiolink/t12d/power.webp",
+        "alt": "T12Dの電源とバッテリー"
+      }
+    ],
+    "certificates": [
+      {
+        "label": "CE / RoHS / FCC / MIC / ISED / SRRC",
+        "value": "Radiolink公式証明書ページ",
+        "href": "https://www.radiolink.com/en/t12d_certificates"
+      }
+    ],
+    "rangeTable": [
+      ["R12F", "600m", "4000m"],
+      ["R16F", "600m", "4000m"],
+      ["R16SM", "—", "3000m"],
+      ["R8FG", "600m", "—"],
+      ["R8FGH", "600m", "—"],
+      ["R8EF", "500m", "2000m"],
+      ["R8XM", "1100m", "4000m"],
+      ["R8FM", "500m", "2000m"],
+      ["R8SM", "—", "2000m"],
+      ["R7FG", "600m", "—"],
+      ["R6FG / R6F / R4FGM", "400m", "—"]
+    ],
+    "faqs": [
+      {
+        "question": "T12Dで受信機とバインドできない場合は？",
+        "answer": "最新ファームウェアを使用し、Receiver Settings → RF SETTINGでMODULE SELECTIONをInternalに設定します。さらに受信機に対応するプロトコルを選択してください。R7FG、R8EFなどはFHSS V1を使用します。"
+      },
+      {
+        "question": "表示言語を変更するには？",
+        "answer": "MODEボタンを長押ししてMAIN MENUを開き、Transmitter Settings → SYSTEM SETTING → LANGUAGEで言語を選択します。"
+      },
+      {
+        "question": "T12Dを16チャンネルへ拡張できますか？",
+        "answer": "できません。T12DとT16Dはメインボードとチップが異なり、T16DのファームウェアをT12Dへ書き込むこともできません。"
+      },
+      {
+        "question": "Type-C端子でT12Dを充電できますか？",
+        "answer": "できません。T12DのType-C端子はファームウェア更新とデータ通信に使用します。"
+      },
+      {
+        "question": "VRノブが反応しない場合は？",
+        "answer": "Radiolink公式の校正手順に従って、送信機のスティックとVRノブを校正してください。"
+      },
+      {
+        "question": "R12Fのファームウェアを更新するには？",
+        "answer": "R12Fをデータ通信対応のType-CケーブルでPCへ接続し、Radiolink公式の更新手順に従います。"
+      }
+    ]
+  }
+}

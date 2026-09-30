@@ -14,6 +14,7 @@ interface Props {
 }
 
 const { product, copy } = Astro.props;
+const internalManual = product.manuals.find(({ href }) => href.startsWith('/manuals/'));
 const media = {
   src: product.media.hero.src ?? undefined,
   alt: product.media.hero.alt,
@@ -47,12 +48,14 @@ const media = {
     {copy?.subline && <p class="mt-2 text-lg text-slate-600">{copy.subline}</p>}
     {copy?.note && <p class="mt-4 text-sm text-slate-500">{copy.note}</p>}
     <div class="mt-7 flex flex-wrap items-center gap-x-4 gap-y-3">
-      <a
-        class="inline-flex items-center rounded-full bg-slate-950 px-5 py-3 font-bold text-white no-underline"
-        href={withBase(`/manuals/${product.slug}/`)}
-      >
-        日本語マニュアル
-      </a>
+      {internalManual && (
+        <a
+          class="inline-flex items-center rounded-full bg-slate-950 px-5 py-3 font-bold text-white no-underline"
+          href={withBase(`/manuals/${product.slug}/`)}
+        >
+          日本語マニュアル
+        </a>
+      )}
       <a
         class="inline-flex items-center gap-1 text-sm font-semibold text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-teal-800"
         href={product.manual_url}
