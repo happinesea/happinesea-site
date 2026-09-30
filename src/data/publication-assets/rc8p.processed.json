@@ -1,0 +1,150 @@
+{
+  "product_id": "rc8p",
+  "results": [
+    {
+      "id": "rc8p-hero",
+      "status": "processed",
+      "sha256": "1f5a947480b6fc0323bd4bbb1e662d5c1d5c445e58a0fc0c64ed7d7fc270f069",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/hero.webp",
+      "avif": "/assets/radiolink/rc8p/hero.avif"
+    },
+    {
+      "id": "rc8p-compact",
+      "status": "processed",
+      "sha256": "6eb63475e935b5269ed818663368e3f1b2985fb74048443266da576fb7d66359",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/compact.webp",
+      "avif": "/assets/radiolink/rc8p/compact.avif"
+    },
+    {
+      "id": "rc8p-screen",
+      "status": "processed",
+      "sha256": "0784f5529c8f3d03a6d063b957c389e287372430346eee02e53c231af40ea5ec",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/screen.webp",
+      "avif": "/assets/radiolink/rc8p/screen.avif"
+    },
+    {
+      "id": "rc8p-voice",
+      "status": "processed",
+      "sha256": "d07948abae6ff6750afeacfa7b64a5adf76f90cf67a6d0ede2d5a425cd167c50",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/voice.webp",
+      "avif": "/assets/radiolink/rc8p/voice.avif"
+    },
+    {
+      "id": "rc8p-response",
+      "status": "processed",
+      "sha256": "deb28d24d3397477ff3f39dafdac928aed879b43430a7b353d6487add1e77321",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/response.webp",
+      "avif": "/assets/radiolink/rc8p/response.avif"
+    },
+    {
+      "id": "rc8p-range",
+      "status": "processed",
+      "sha256": "c3d6dfd1afde9298e136b1bb5bd251481f61eaaa92f467a446ab3627d80a3172",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/range.webp",
+      "avif": "/assets/radiolink/rc8p/range.avif"
+    },
+    {
+      "id": "rc8p-channels",
+      "status": "processed",
+      "sha256": "26c493db4816671da61953b88dad60d62bfe72acf272f86d72e408329c74967b",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/channels.webp",
+      "avif": "/assets/radiolink/rc8p/channels.avif"
+    },
+    {
+      "id": "rc8p-storage",
+      "status": "processed",
+      "sha256": "6fef67ddd76a135bfe947587ce2892c9694fc59297b7acd237fc32dbaf8c6a09",
+      "width": 482,
+      "height": 634,
+      "webp": "/assets/radiolink/rc8p/storage.webp",
+      "avif": "/assets/radiolink/rc8p/storage.avif"
+    },
+    {
+      "id": "rc8p-battery",
+      "status": "processed",
+      "sha256": "760b164ff67ad8fdae9eea20157104eba95f4f55078085d87a8d7d474ab29e4c",
+      "width": 2560,
+      "height": 1440,
+      "webp": "/assets/radiolink/rc8p/battery.webp",
+      "avif": "/assets/radiolink/rc8p/battery.avif"
+    },
+    {
+      "id": "rc8p-type-c",
+      "status": "processed",
+      "sha256": "2edcb357a8d573720159f4559dd2af2fdf1dbb04fec70a7ddbcce2d2f6201182",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/type-c.webp",
+      "avif": "/assets/radiolink/rc8p/type-c.avif"
+    },
+    {
+      "id": "rc8p-simulator",
+      "status": "processed",
+      "sha256": "dbf6c7e19ea17883d08b19af6505f1644c6c70e08e8ab37a1123466bc2245960",
+      "width": 3840,
+      "height": 2160,
+      "webp": "/assets/radiolink/rc8p/simulator.webp",
+      "avif": "/assets/radiolink/rc8p/simulator.avif"
+    },
+    {
+      "id": "rc8p-trainer",
+      "status": "processed",
+      "sha256": "f89add49afde3ef4af70e9686ca9a79014dc4c9b7ff70495afd7dcabc7b4b4c4",
+      "width": 2560,
+      "height": 1440,
+      "webp": "/assets/radiolink/rc8p/trainer.webp",
+      "avif": "/assets/radiolink/rc8p/trainer.avif"
+    },
+    {
+      "id": "rc8p-telemetry",
+      "status": "processed",
+      "sha256": "23bb77581b0c39405cd279e975032945b02027948b47d86940e9baff17e5d70e",
+      "width": 2563,
+      "height": 1442,
+      "webp": "/assets/radiolink/rc8p/telemetry.webp",
+      "avif": "/assets/radiolink/rc8p/telemetry.avif"
+    },
+    {
+      "id": "rc8p-gyro",
+      "status": "processed",
+      "sha256": "0ce77999fecc5f915cae5674294484bff993d59020dee174704921af7467d456",
+      "width": 1920,
+      "height": 780,
+      "pages": 32,
+      "bytes": 424037,
+      "gif": "/assets/radiolink/rc8p/gyro.gif"
+    },
+    {
+      "id": "rc8p-ergonomics",
+      "status": "processed",
+      "sha256": "fdbb1749f75d83b3b4664a74619be677cad2274b4c4d9e512a6e451dd5bb3745",
+      "width": 2560,
+      "height": 1440,
+      "webp": "/assets/radiolink/rc8p/ergonomics.webp",
+      "avif": "/assets/radiolink/rc8p/ergonomics.avif"
+    },
+    {
+      "id": "rc8p-ipx4",
+      "status": "processed",
+      "sha256": "f450b870a5d931e8b57b34ef491c06522b50bff6f672b43b57502f573d8491a0",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/rc8p/ipx4.webp",
+      "avif": "/assets/radiolink/rc8p/ipx4.avif"
+    }
+  ]
+}

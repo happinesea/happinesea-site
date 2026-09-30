@@ -1,0 +1,344 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Breadcrumbs from './Breadcrumbs.astro';
+import DefinitionTable from './DefinitionTable.astro';
+import ManualVideo from './manuals/ManualVideo.astro';
+import ProductHero from './ProductHero.astro';
+import ResponsiveMedia from './ResponsiveMedia.astro';
+import UnverifiedNotice from './UnverifiedNotice.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  buildBreadcrumbJsonLd,
+  buildProductJsonLd,
+} from '../lib/structured-data';
+import { canonicalUrl, withBase } from '../lib/urls';
+
+interface Detail {
+  hero: { tagline: string; subline: string; note: string };
+  sections: Array<{
+    id: string;
+    eyebrow: string;
+    title: string;
+    description: string;
+    image: string;
+    alt: string;
+  }>;
+  certificates: Array<{ label: string; value: string; href: string }>;
+  rangeTable?: string[][];
+  faqs: Array<{ question: string; answer: string }>;
+}
+
+interface Props {
+  product: CollectionEntry<'products'>;
+  detail: Detail;
+}
+
+const { product, detail } = Astro.props;
+const { data } = product;
+const canonicalPath = `/radiolink/${data.slug}/`;
+const jsonLd = [
+  buildBreadcrumbJsonLd([
+    { name: 'ホーム', url: canonicalUrl('/') },
+    { name: 'Radiolink製品', url: canonicalUrl('/radiolink/') },
+    { name: data.model, url: canonicalUrl(canonicalPath) },
+  ]),
+  buildProductJsonLd({
+    name: data.title,
+    description: data.description,
+    manufacturer: data.manufacturer,
+    model: data.model,
+    url: canonicalUrl(canonicalPath),
+  }),
+];
+---
+
+<BaseLayout
+  title={`${data.manufacturer} ${data.model}`}
+  description={data.description}
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+  robots="noindex, nofollow"
+>
+  <div
+    class="mx-auto max-w-[var(--site-max-width)] px-5 py-6 lg:px-8"
+    data-standard-product-page
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'ホーム', href: withBase('/') },
+        { label: 'Radiolink製品', href: withBase('/radiolink/') },
+        { label: data.model },
+      ]}
+    />
+    <ProductHero product={data} copy={detail.hero} />
+    <UnverifiedNotice text={data.review_note} />
+
+    <nav
+      aria-label={`${data.model}ページ内ナビゲーション`}
+      class="sticky top-[4.5rem] z-30 -mx-5 mt-8 overflow-x-auto border-y border-slate-200 bg-white/95 px-5 backdrop-blur lg:-mx-8 lg:px-8"
+      data-product-nav
+    >
+      <ul class="mx-auto flex w-max min-w-full list-none items-center gap-1 p-2 text-sm font-bold">
+        {[
+          ['特長', '#features'],
+          ['仕様', '#specifications'],
+          ['通信距離', '#range'],
+          ['内容物', '#package'],
+          ['証明書', '#certificates'],
+          ['Firmware', '#firmware'],
+          ['チュートリアル', '#videos'],
+          ['FAQ', '#faq'],
+        ]
+          .filter(([, href]) => href !== '#range' || detail.rangeTable)
+          .map(([label, href]) => (
+            <li>
+              <a
+                class="block rounded-full px-4 py-2 text-slate-700 no-underline hover:bg-teal-50 hover:text-teal-800"
+                href={href}
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+      </ul>
+    </nav>
+
+    <main class="mx-auto max-w-5xl">
+      <section
+        id="features"
+        class="py-14"
+        data-product-section="features"
+        aria-labelledby="features-heading"
+      >
+        <p class="m-0 text-sm font-bold tracking-[0.14em] text-teal-700 uppercase">
+          Product features
+        </p>
+        <h2
+          id="features-heading"
+          class="mt-2 text-3xl font-bold text-slate-950"
+        >
+          {data.model}の特長
+        </h2>
+        <div class="mt-10 grid gap-14">
+          {detail.sections.map((section, index) => (
+            <article
+              id={section.id}
+              class:list={[
+                'grid gap-8 border-t border-slate-200 pt-10 lg:grid-cols-2 lg:items-center',
+                index % 2 && 'lg:[&>figure]:order-first',
+              ]}
+              data-feature-section={section.id}
+            >
+              <div>
+                <p class="m-0 text-sm font-bold text-teal-700">
+                  {section.eyebrow}
+                </p>
+                <h3 class="mt-2 text-2xl font-bold text-slate-950">
+                  {section.title}
+                </h3>
+                <p class="mt-5 leading-8 text-slate-700">
+                  {section.description}
+                </p>
+              </div>
+              <ResponsiveMedia
+                media={{
+                  src: section.image,
+                  alt: section.alt,
+                  image_status: 'verified',
+                }}
+                class="m-0"
+              />
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {detail.rangeTable && (
+        <section
+          id="range"
+          class="border-t border-slate-200 py-14"
+          data-product-section="range"
+          aria-labelledby="range-heading"
+        >
+          <h2 id="range-heading" class="text-3xl font-bold text-slate-950">
+            受信機別の地上・空中通信距離
+          </h2>
+          <p class="mt-4 text-sm text-slate-600">
+            障害物のない良好な条件でのRadiolink試験値です。
+          </p>
+          <div class="mt-7 overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full min-w-[36rem] border-collapse text-left">
+              <thead class="bg-slate-100">
+                <tr>
+                  <th class="p-4">受信機</th>
+                  <th class="p-4">地上距離</th>
+                  <th class="p-4">空中距離</th>
+                </tr>
+              </thead>
+              <tbody>
+                {detail.rangeTable.map(([receiver, ground, airborne]) => (
+                  <tr class="border-t border-slate-200">
+                    <th class="p-4">{receiver}</th>
+                    <td class="p-4">{ground}</td>
+                    <td class="p-4">{airborne}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      <section
+        id="specifications"
+        class="border-t border-slate-200 py-14"
+        data-product-section="specifications"
+        aria-labelledby="specifications-heading"
+      >
+        <h2
+          id="specifications-heading"
+          class="text-3xl font-bold text-slate-950"
+        >
+          仕様
+        </h2>
+        <div class="mt-7">
+          <DefinitionTable rows={data.specifications} />
+        </div>
+        <h3 class="mt-10 text-xl font-bold text-slate-950">
+          対応するRadiolink受信機
+        </h3>
+        <p class="mt-3 leading-8 text-slate-700">
+          {data.relations.receivers.join(' / ')}
+        </p>
+        {data.relations.receiver_status === 'review_required' && (
+          <p class="mt-2 text-sm font-semibold text-amber-700">
+            公式ページ間で表記差がある受信機は、この一覧から除外して確認中です。
+          </p>
+        )}
+      </section>
+
+      <section
+        id="package"
+        class="border-t border-slate-200 py-14"
+        data-product-section="package"
+        aria-labelledby="package-heading"
+      >
+        <h2 id="package-heading" class="text-3xl font-bold text-slate-950">
+          パッケージ内容
+        </h2>
+        <ul class="mt-7 grid gap-3 sm:grid-cols-2">
+          {data.package_contents.map((item) => (
+            <li class="rounded-xl bg-slate-50 p-4 text-slate-700">{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section
+        id="certificates"
+        class="border-t border-slate-200 py-14"
+        data-product-section="certificates"
+        aria-labelledby="certificates-heading"
+      >
+        <h2 id="certificates-heading" class="text-3xl font-bold text-slate-950">
+          証明書
+        </h2>
+        <ul class="mt-7 grid gap-3">
+          {detail.certificates.map((certificate) => (
+            <li class="rounded-xl border border-slate-200 p-4">
+              <strong>{certificate.label}</strong>
+              <span class="mx-2">—</span>
+              <a
+                href={certificate.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {certificate.value}
+                <span class="sr-only">（Radiolink公式・外部サイト）</span> ↗
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section
+        id="firmware"
+        class="border-t border-slate-200 py-14"
+        data-product-section="firmware"
+        aria-labelledby="firmware-heading"
+      >
+        <h2 id="firmware-heading" class="text-3xl font-bold text-slate-950">
+          Firmware
+        </h2>
+        <div class="mt-7 grid gap-4">
+          {data.firmware.map((firmware) => (
+            <article class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="m-0 text-lg font-bold">{firmware.title}</h3>
+              {firmware.note && (
+                <p class="mb-0 mt-3 text-sm text-slate-600">{firmware.note}</p>
+              )}
+              {firmware.url && (
+                <a
+                  class="mt-3 inline-flex font-bold text-teal-800"
+                  href={firmware.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Radiolink公式Firmwareページ ↗
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="videos"
+        class="border-t border-slate-200 py-14"
+        data-product-section="videos"
+        aria-labelledby="videos-heading"
+      >
+        <h2 id="videos-heading" class="text-3xl font-bold text-slate-950">
+          チュートリアル
+        </h2>
+        <div class="mt-7 grid gap-8 md:grid-cols-2">
+          {data.videos.map((video) => (
+            <ManualVideo
+              youtubeId={video.youtube_id}
+              title={video.title}
+              description={video.description}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="faq"
+        class="border-t border-slate-200 py-14"
+        data-product-section="faq"
+        aria-labelledby="faq-heading"
+      >
+        <h2 id="faq-heading" class="text-3xl font-bold text-slate-950">
+          FAQ
+        </h2>
+        <div class="mt-7 divide-y divide-slate-200 border-y border-slate-200">
+          {detail.faqs.map((faq) => (
+            <details class="py-5" data-product-faq>
+              <summary class="cursor-pointer font-bold text-slate-950">
+                {faq.question}
+              </summary>
+              <p class="mb-0 mt-4 leading-7 text-slate-700">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+        <a
+          class="mt-6 inline-flex font-bold text-teal-800"
+          href={`${data.official_url}_faq`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Radiolink公式FAQ（外部サイト）↗
+        </a>
+      </section>
+    </main>
+  </div>
+</BaseLayout>

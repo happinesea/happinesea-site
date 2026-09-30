@@ -4,6 +4,8 @@ const routes = [
   ['home', './'],
   ['catalogue', './radiolink/'],
   ['product', './radiolink/rc8x/'],
+  ['rc8p', './radiolink/rc8p/'],
+  ['t12d', './radiolink/t12d/'],
   ['manual', './manuals/rc8x/'],
   ['manual-chapter-01', './manuals/rc8x/chapter-01/'],
   ['manual-chapter-02', './manuals/rc8x/chapter-02/'],
@@ -14,6 +16,10 @@ const routes = [
 for (const [name, path] of routes) {
   test(`capture ${name}`, async ({ page }, testInfo) => {
     await page.goto(path);
+    for (const image of await page.locator('img').all()) {
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate((element: HTMLImageElement) => element.decode());
+    }
     await page.screenshot({
       path: `test-results/screenshots/${testInfo.project.name}-${name}.png`,
       fullPage: true,
