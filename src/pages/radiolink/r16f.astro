@@ -1,0 +1,10 @@
+---
+import { getEntry } from 'astro:content';
+import StandardProductPage from '../../components/StandardProductPage.astro';
+import pages from '../../data/standard-product-pages.json';
+
+const product = await getEntry('products', 'r16f');
+if (!product) throw new Error('R16F product data is missing');
+---
+
+<StandardProductPage product={product} detail={pages.r16f} />

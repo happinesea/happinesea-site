@@ -1,0 +1,87 @@
+{
+  "product_id": "r8fg",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "r8fg-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/b86e66e3859331780657619223c6b20f.jpg",
+      "source_status": "verified",
+      "alt": "Radiolink R8FG受信機",
+      "public_path": "/assets/radiolink/r8fg/hero"
+    },
+    {
+      "id": "r8fg-response",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/96d3e8777fe97c53fcc6d817895ab7d5.png",
+      "source_status": "verified",
+      "alt": "R8FGのFHSS通信",
+      "public_path": "/assets/radiolink/r8fg/response"
+    },
+    {
+      "id": "r8fg-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/153b6b01046824b6d69512c818139bbd.jpg",
+      "source_status": "verified",
+      "alt": "R8FGの地上通信距離",
+      "public_path": "/assets/radiolink/r8fg/range"
+    },
+    {
+      "id": "r8fg-gyro",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/390bd7fb4570f427a467428196453e0c.gif",
+      "source_status": "verified",
+      "alt": "R8FGのジャイロ動作",
+      "public_path": "/assets/radiolink/r8fg/gyro"
+    },
+    {
+      "id": "r8fg-signal",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/f2561f7c6f70a1625642fccc43f514dc.jpg",
+      "source_status": "verified",
+      "alt": "R8FGのPWMとSBUS出力",
+      "public_path": "/assets/radiolink/r8fg/signal"
+    },
+    {
+      "id": "r8fg-ipx4",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/6e6052a1856edbc517912daed22ff607.jpg",
+      "source_status": "verified",
+      "alt": "R8FGのIPX4防滴設計",
+      "public_path": "/assets/radiolink/r8fg/ipx4"
+    },
+    {
+      "id": "r8fg-subsidiary",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/799ff033f89579c3beb0a363f60d0c5a.gif",
+      "source_status": "verified",
+      "alt": "R8FGのサブID切り替え",
+      "public_path": "/assets/radiolink/r8fg/subsidiary"
+    },
+    {
+      "id": "r8fg-power",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/c533016726d97a6e586fd36b0ab31df7.jpg",
+      "source_status": "verified",
+      "alt": "R8FGの電源接続",
+      "public_path": "/assets/radiolink/r8fg/power"
+    },
+    {
+      "id": "r8fg-package",
+      "role": "package",
+      "source_page_url": "https://www.radiolink.com/r8fg",
+      "source_image_url": "https://www.radiolink.com/9832adb6dbe4fdd9d9532413986c4652.jpg",
+      "source_status": "verified",
+      "alt": "R8FG受信機本体",
+      "public_path": "/assets/radiolink/r8fg/package"
+    }
+  ]
+}

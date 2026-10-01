@@ -1,0 +1,114 @@
+{
+  "product_id": "r16f",
+  "results": [
+    {
+      "id": "r16f-hero",
+      "status": "processed",
+      "sha256": "98f4c6ffa53952e675ca68fe73194653dedba0ed38c56404406031d3a5ada28f",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r16f/hero.webp",
+      "avif": "/assets/radiolink/r16f/hero.avif"
+    },
+    {
+      "id": "r16f-range",
+      "status": "processed",
+      "sha256": "98d90503e0249f4870d0a49c814dd54f1826de6c1d1f25b74f10c43f45253d35",
+      "width": 1754,
+      "height": 733,
+      "webp": "/assets/radiolink/r16f/range.webp",
+      "avif": "/assets/radiolink/r16f/range.avif"
+    },
+    {
+      "id": "r16f-simulator",
+      "status": "processed",
+      "sha256": "44c8bb08a0ccd19a744df5fb3aa8b49173806d73e57eacbb26de64ad2dc26915",
+      "width": 1200,
+      "height": 674,
+      "webp": "/assets/radiolink/r16f/simulator.webp",
+      "avif": "/assets/radiolink/r16f/simulator.avif"
+    },
+    {
+      "id": "r16f-telemetry",
+      "status": "processed",
+      "sha256": "29fb34f4af8b775caf054e12b4b395462336026936bff1d4e7641d66bb8a0982",
+      "width": 320,
+      "height": 240,
+      "webp": "/assets/radiolink/r16f/telemetry.webp",
+      "avif": "/assets/radiolink/r16f/telemetry.avif"
+    },
+    {
+      "id": "r16f-pwm",
+      "status": "processed",
+      "sha256": "5b7cf207faabd2e1e17d0a8a4f5e1905d54df62c4c4ededbdc814a98d90b5f35",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r16f/pwm.webp",
+      "avif": "/assets/radiolink/r16f/pwm.avif"
+    },
+    {
+      "id": "r16f-sbus",
+      "status": "processed",
+      "sha256": "8bad63b0f8d7f15f88e475f9fab61ab2df64b69b30ed1462ce23396a0ea2c619",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r16f/sbus.webp",
+      "avif": "/assets/radiolink/r16f/sbus.avif"
+    },
+    {
+      "id": "r16f-crsf",
+      "status": "processed",
+      "sha256": "39cf5e249ae115bcec983f248bfd3964e313056d8589cfed89bad888de8e5fd7",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r16f/crsf.webp",
+      "avif": "/assets/radiolink/r16f/crsf.avif"
+    },
+    {
+      "id": "r16f-power",
+      "status": "processed",
+      "sha256": "3acd0c76d35cfbb8458640e6e12b76efc192230cf42126edf1aa77deb20d0ab5",
+      "width": 1200,
+      "height": 1083,
+      "webp": "/assets/radiolink/r16f/power.webp",
+      "avif": "/assets/radiolink/r16f/power.avif"
+    },
+    {
+      "id": "r16f-subsidiary",
+      "status": "processed",
+      "sha256": "056266647fa1e7ae3f3cfa3c2874359f50b2f53cd58addc6e1b0219e7cf10a98",
+      "width": 480,
+      "height": 800,
+      "pages": 31,
+      "bytes": 39107,
+      "gif": "/assets/radiolink/r16f/subsidiary.gif"
+    },
+    {
+      "id": "r16f-models",
+      "status": "processed",
+      "sha256": "b1928e87c18a488a113130bc9951f1a576667fd5ff10ce571a2ff5e3c708ce97",
+      "width": 1200,
+      "height": 612,
+      "webp": "/assets/radiolink/r16f/models.webp",
+      "avif": "/assets/radiolink/r16f/models.avif"
+    },
+    {
+      "id": "r16f-servo",
+      "status": "processed",
+      "sha256": "42e6402f1da5307752c1df9ec4ee482bc0e30fd0f2cf21cc6b7ec66e0687b94e",
+      "width": 639,
+      "height": 480,
+      "webp": "/assets/radiolink/r16f/servo.webp",
+      "avif": "/assets/radiolink/r16f/servo.avif"
+    },
+    {
+      "id": "r16f-update",
+      "status": "processed",
+      "sha256": "a9a057217cfc531e64b33acf625d9e1333c8003e8f889d2331ca0c59fe259644",
+      "width": 1200,
+      "height": 696,
+      "webp": "/assets/radiolink/r16f/update.webp",
+      "avif": "/assets/radiolink/r16f/update.avif"
+    }
+  ]
+}

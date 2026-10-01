@@ -279,5 +279,515 @@
         "answer": "R12Fをデータ通信対応のType-CケーブルでPCへ接続し、Radiolink公式の更新手順に従います。"
       }
     ]
+  },
+  "r16f": {
+    "hero": {
+      "tagline": "16チャンネル・内蔵テレメトリー受信機",
+      "subline": "PWM、SBUS、CRSFの出力モードとType-C更新に対応します。",
+      "note": "通信距離は障害物のない良好な条件でのRadiolink試験値です。実際の距離は環境により異なります。"
+    },
+    "sections": [
+      {
+        "id": "communication",
+        "eyebrow": "FHSS・67チャンネル",
+        "title": "地上最大600 m・空中最大4000 m",
+        "description": "2.4 GHz帯で67チャンネルの疑似ランダム周波数ホッピングを使用します。Radiolinkの試験条件では、地上最大600 m、空中最大4000 mです。",
+        "image": "/assets/radiolink/r16f/range.webp",
+        "alt": "R16FのFHSS通信"
+      },
+      {
+        "id": "simulator",
+        "eyebrow": "Firmware V1.7以降",
+        "title": "Type-C接続のシミュレーター機能",
+        "description": "受信機をType-CケーブルでPCへ接続し、追加のシミュレーター用アダプターなしで使用できます。TRYP FPV、AeroFly、RealFlight、Liftoffなどに対応します。",
+        "image": "/assets/radiolink/r16f/simulator.webp",
+        "alt": "R16Fのシミュレーター接続"
+      },
+      {
+        "id": "telemetry",
+        "eyebrow": "内蔵テレメトリー機能",
+        "title": "RSSI、電圧、位置情報を送信機へ表示",
+        "description": "RSSI、受信機電圧、モデル用バッテリー電圧を表示します。対応するフライトコントローラーまたはベイトボートモードでは、緯度、経度、距離、方位、GPS衛星数も送信できます。",
+        "image": "/assets/radiolink/r16f/telemetry.webp",
+        "alt": "R16Fのテレメトリー情報"
+      },
+      {
+        "id": "outputs",
+        "eyebrow": "4つの動作モード",
+        "title": "PWM、SBUS、CRSFを用途に合わせて出力",
+        "description": "16チャンネルPWM、SBUS、CRSF、およびPWMとシリアル信号を組み合わせる4つの動作モードを備えています。モードはID SETボタンで切り替えます。",
+        "images": [
+          {
+            "src": "/assets/radiolink/r16f/pwm.webp",
+            "alt": "R16FのPWMモード"
+          },
+          {
+            "src": "/assets/radiolink/r16f/sbus.webp",
+            "alt": "R16FのSBUSモード"
+          },
+          {
+            "src": "/assets/radiolink/r16f/crsf.webp",
+            "alt": "R16FのCRSFモード"
+          }
+        ]
+      },
+      {
+        "id": "power",
+        "eyebrow": "3〜12 V・逆接保護",
+        "title": "高電圧サーボへ直接給電",
+        "description": "3〜12 Vで動作し、高電圧サーボに対応します。電源のプラスとマイナスを逆に接続した場合に受信機を保護する逆接保護を備えています。",
+        "image": "/assets/radiolink/r16f/power.webp",
+        "alt": "R16Fの電源接続"
+      },
+      {
+        "id": "subsidiary",
+        "eyebrow": "サブID",
+        "title": "複数モデルを個別にバインド",
+        "description": "送信機のサブIDを利用して、複数のモデルを個別に識別できます。選択中のモデルに対応する受信機だけが動作します。",
+        "image": "/assets/radiolink/r16f/subsidiary.gif",
+        "alt": "R16FのサブID切り替え"
+      },
+      {
+        "id": "models",
+        "eyebrow": "幅広いモデルに対応",
+        "title": "航空・地上・水上モデルで使用",
+        "description": "固定翼、グライダー、ヘリコプター、マルチローター、RCカー、ボート、ロボットなどに使用できます。",
+        "image": "/assets/radiolink/r16f/models.webp",
+        "alt": "R16Fの対応モデル"
+      },
+      {
+        "id": "servo",
+        "eyebrow": "270°サーボ",
+        "title": "広角サーボの動作範囲に対応",
+        "description": "通常の180°サーボに加え、270°サーボを使用できます。",
+        "image": "/assets/radiolink/r16f/servo.webp",
+        "alt": "R16Fの270度サーボ対応"
+      },
+      {
+        "id": "update",
+        "eyebrow": "Type-Cオンライン更新",
+        "title": "追加機器なしでFirmwareを更新",
+        "description": "データ通信対応のType-CケーブルでPCへ接続し、Radiolink公式の更新ツールからFirmwareを更新できます。",
+        "image": "/assets/radiolink/r16f/update.webp",
+        "alt": "R16FのType-C更新"
+      }
+    ],
+    "relations": {
+      "heading": "対応するRadiolink送信機",
+      "items": [
+        "RC8P",
+        "T16D",
+        "T12D",
+        "T8FB",
+        "T8S",
+        "RC8X",
+        "RC6GS V3 / V2",
+        "RC4GS V3 / V2",
+        "RC6GS",
+        "RC4GS"
+      ],
+      "note": "公式商品本文と仕様ページでRC8Pの掲載有無に差があるため、対応条件を確認中です。"
+    },
+    "certificates": [],
+    "faqs": [
+      {
+        "question": "R16Fはシミュレーターに接続できますか？",
+        "answer": "Firmware V1.7以降では、データ通信対応のType-CケーブルでPCへ接続して使用できます。"
+      },
+      {
+        "question": "R16Fはどの出力方式に対応しますか？",
+        "answer": "PWM、SBUS、CRSFに対応し、4つの動作モードを切り替えられます。"
+      },
+      {
+        "question": "モデル用バッテリー電圧は何Vまで測定できますか？",
+        "answer": "EXT端子から1S〜14S、3.0〜60 Vのモデル用バッテリー電圧を測定できます。"
+      }
+    ]
+  },
+  "r12f": {
+    "hero": {
+      "tagline": "12チャンネル・PWM／SBUS／CRSF受信機",
+      "subline": "地上・空中モデルに対応し、Type-Cで更新できます。",
+      "note": "通信距離は障害物のない良好な条件でのRadiolink試験値です。実際の距離は環境により異なります。"
+    },
+    "sections": [
+      {
+        "id": "communication",
+        "eyebrow": "FHSS・67チャンネル",
+        "title": "地上最大600 m・空中最大4000 m",
+        "description": "2.4 GHz帯で67チャンネルの疑似ランダム周波数ホッピングを使用します。Radiolinkの試験条件では、地上最大600 m、空中最大4000 mです。",
+        "image": "/assets/radiolink/r12f/range.webp",
+        "alt": "R12FのFHSS通信"
+      },
+      {
+        "id": "outputs",
+        "eyebrow": "PWM・SBUS・CRSF",
+        "title": "4つの動作モードを切り替え",
+        "description": "12チャンネルPWM、SBUS、CRSF、およびPWMとシリアル信号を組み合わせる4つの動作モードを備えています。",
+        "images": [
+          {
+            "src": "/assets/radiolink/r12f/pwm.webp",
+            "alt": "R12FのPWMモード"
+          },
+          {
+            "src": "/assets/radiolink/r12f/sbus.webp",
+            "alt": "R12FのSBUSモード"
+          },
+          {
+            "src": "/assets/radiolink/r12f/crsf.webp",
+            "alt": "R12FのCRSFモード"
+          }
+        ]
+      },
+      {
+        "id": "simulator",
+        "eyebrow": "内蔵シミュレーター機能",
+        "title": "Type-CケーブルでPCへ接続",
+        "description": "対応Firmwareでは、追加のシミュレーター用アダプターなしでPCへ接続できます。対応開始バージョンは公式ページ間で表記差があるため確認中です。",
+        "image": "/assets/radiolink/r12f/simulator.webp",
+        "alt": "R12Fのシミュレーター接続"
+      },
+      {
+        "id": "power",
+        "eyebrow": "3〜12 V・逆接保護",
+        "title": "高電圧サーボに対応",
+        "description": "3〜12 Vで動作し、高電圧サーボに対応します。電源の逆接から受信機を保護します。",
+        "image": "/assets/radiolink/r12f/power.webp",
+        "alt": "R12Fの電源接続"
+      },
+      {
+        "id": "subsidiary",
+        "eyebrow": "サブID",
+        "title": "複数モデルを個別にバインド",
+        "description": "送信機のサブIDを利用し、選択中のモデルに対応する受信機だけを動作させられます。",
+        "image": "/assets/radiolink/r12f/subsidiary.gif",
+        "alt": "R12FのサブID切り替え"
+      },
+      {
+        "id": "update",
+        "eyebrow": "Type-Cオンライン更新",
+        "title": "追加機器なしでFirmwareを更新",
+        "description": "データ通信対応のType-CケーブルでPCへ接続し、Radiolink公式の更新ツールからFirmwareを更新できます。",
+        "image": "/assets/radiolink/r12f/update.webp",
+        "alt": "R12FのType-C更新"
+      },
+      {
+        "id": "servo",
+        "eyebrow": "270°サーボ",
+        "title": "広角サーボの動作範囲に対応",
+        "description": "通常の180°サーボに加え、270°サーボを使用できます。",
+        "image": "/assets/radiolink/r12f/servo.webp",
+        "alt": "R12Fの270度サーボ対応"
+      },
+      {
+        "id": "models",
+        "eyebrow": "幅広いモデルに対応",
+        "title": "航空・地上・水上モデルで使用",
+        "description": "固定翼、グライダー、ヘリコプター、マルチローター、RCカー、ボート、ロボットなどに使用できます。",
+        "image": "/assets/radiolink/r12f/models.webp",
+        "alt": "R12Fの対応モデル"
+      }
+    ],
+    "relations": {
+      "heading": "対応するRadiolink送信機",
+      "items": [
+        "T16D",
+        "T12D",
+        "T8FB",
+        "T8S",
+        "RC8P",
+        "RC8X",
+        "RC6GS V3 / V2",
+        "RC4GS V3 / V2",
+        "RC6GS",
+        "RC4GS"
+      ]
+    },
+    "certificates": [],
+    "faqs": [
+      {
+        "question": "R12Fはどの出力方式に対応しますか？",
+        "answer": "PWM、SBUS、CRSFに対応し、4つの動作モードを切り替えられます。"
+      },
+      {
+        "question": "R12Fはオンライン更新できますか？",
+        "answer": "データ通信対応のType-CケーブルでPCへ接続して更新できます。"
+      },
+      {
+        "question": "R12Fはシミュレーターに接続できますか？",
+        "answer": "対応FirmwareではType-CケーブルでPCへ接続できます。対応開始バージョンは公式ページ間で表記差があります。"
+      }
+    ]
+  },
+  "r8fg": {
+    "hero": {
+      "tagline": "8チャンネル・ジャイロ内蔵テレメトリー受信機",
+      "subline": "RCカーとボート向けに、車体安定化と電圧テレメトリーを備えています。",
+      "note": "通信距離は障害物のない良好な条件でのRadiolink試験値です。実際の距離は環境により異なります。"
+    },
+    "sections": [
+      {
+        "id": "response",
+        "eyebrow": "FHSS・67チャンネル",
+        "title": "最短3 msの応答速度",
+        "description": "対応する送信機、受信機バージョン、Firmware、プロトコルの組み合わせで3 msまたは4 msを選択できます。アナログサーボでは14 msを使用します。",
+        "image": "/assets/radiolink/r8fg/response.webp",
+        "alt": "R8FGのFHSS通信"
+      },
+      {
+        "id": "range",
+        "eyebrow": "地上通信距離",
+        "title": "地上最大600 m",
+        "description": "Radiolinkの試験条件では地上最大600 mです。FPVカーやボートを含む地上モデルに使用できます。",
+        "image": "/assets/radiolink/r8fg/range.webp",
+        "alt": "R8FGの地上通信距離"
+      },
+      {
+        "id": "gyro",
+        "eyebrow": "プロ仕様のジャイロを内蔵",
+        "title": "車体の横滑りを抑えて安定化",
+        "description": "内蔵ジャイロが車体の姿勢変化を検出し、直進性と旋回時の安定性を補助します。ジャイロ感度は対応送信機から調整できます。",
+        "image": "/assets/radiolink/r8fg/gyro.gif",
+        "alt": "R8FGのジャイロ動作"
+      },
+      {
+        "id": "telemetry",
+        "eyebrow": "内蔵テレメトリー機能",
+        "title": "RSSI、受信機電圧、モデル用バッテリー電圧を表示",
+        "description": "対応送信機へRSSIと受信機電圧を送信します。EXT端子を接続すると、最大8S（33.6 V）のモデル用バッテリー電圧も表示できます。"
+      },
+      {
+        "id": "outputs",
+        "eyebrow": "PWM・SBUS",
+        "title": "2つの出力方式に対応",
+        "description": "通常のPWM出力とSBUS出力を切り替えて使用できます。",
+        "image": "/assets/radiolink/r8fg/signal.webp",
+        "alt": "R8FGのPWMとSBUS出力"
+      },
+      {
+        "id": "protection",
+        "eyebrow": "IPX4防滴",
+        "title": "基板と端子へナノコーティング",
+        "description": "基板と端子にナノコーティングによる防滴処理を施しています。IPX4は完全防水を意味しません。",
+        "image": "/assets/radiolink/r8fg/ipx4.webp",
+        "alt": "R8FGのIPX4防滴設計"
+      },
+      {
+        "id": "subsidiary",
+        "eyebrow": "サブID",
+        "title": "複数モデルを個別にバインド",
+        "description": "送信機のサブIDを利用し、選択中のモデルに対応する受信機だけを動作させられます。",
+        "image": "/assets/radiolink/r8fg/subsidiary.gif",
+        "alt": "R8FGのサブID切り替え"
+      },
+      {
+        "id": "power",
+        "eyebrow": "3〜12 V・逆接保護",
+        "title": "高電圧サーボに対応",
+        "description": "3〜12 Vで動作し、高電圧サーボに対応します。電源の逆接から受信機を保護します。",
+        "image": "/assets/radiolink/r8fg/power.webp",
+        "alt": "R8FGの電源接続"
+      }
+    ],
+    "relations": {
+      "heading": "対応するRadiolink送信機",
+      "items": [
+        "RC8P",
+        "RC8X",
+        "RC6GS V3",
+        "RC4GS V3",
+        "T16D",
+        "T12D",
+        "T8FB",
+        "T8S"
+      ],
+      "note": "旧製品との互換性は公式マニュアルの各バージョン条件を確認してください。"
+    },
+    "certificates": [],
+    "faqs": [
+      {
+        "question": "R8FGのジャイロを有効にするには？",
+        "answer": "受信機の自己診断完了後、ID SETボタンを1秒以内の間隔で3回押します。赤色LEDの点灯がジャイロ有効を示します。"
+      },
+      {
+        "question": "R8FGはどの出力方式に対応しますか？",
+        "answer": "PWM出力とSBUS出力に対応します。"
+      },
+      {
+        "question": "モデル用バッテリー電圧は何Vまで測定できますか？",
+        "answer": "最大8S、33.6 Vまでのモデル用バッテリー電圧に対応します。"
+      }
+    ]
+  },
+  "r7fg": {
+    "hero": {
+      "tagline": "7チャンネル・ジャイロ内蔵テレメトリー受信機",
+      "subline": "PWM、PPM、SBUS出力とIPX4防滴に対応します。",
+      "note": "通信距離は障害物のない良好な条件でのRadiolink試験値です。実際の距離は環境により異なります。"
+    },
+    "sections": [
+      {
+        "id": "range",
+        "eyebrow": "地上通信距離",
+        "title": "地上最大600 m",
+        "description": "Radiolinkの試験条件では地上最大600 mです。RCカー、ボート、ロボットに使用できます。"
+      },
+      {
+        "id": "telemetry",
+        "eyebrow": "内蔵テレメトリー機能",
+        "title": "RSSI、受信機電圧、モデル用バッテリー電圧を表示",
+        "description": "対応送信機へRSSIと受信機電圧を送信します。EXT端子を接続すると、最大8S（33.6 V）のモデル用バッテリー電圧も表示できます。"
+      },
+      {
+        "id": "fhss",
+        "eyebrow": "FHSS・67チャンネル",
+        "title": "耐干渉性を重視した通信方式",
+        "description": "2.4 GHz帯で67チャンネルの疑似ランダム周波数ホッピングを使用します。",
+        "image": "/assets/radiolink/r7fg/fhss.webp",
+        "alt": "R7FGのFHSS通信"
+      },
+      {
+        "id": "protection",
+        "eyebrow": "IPX4防滴",
+        "title": "基板と端子へナノコーティング",
+        "description": "R7FG V1.2とV1.3の基板と端子には、ナノコーティングによる防滴処理が施されています。IPX4は完全防水を意味しません。",
+        "image": "/assets/radiolink/r7fg/ipx4.webp",
+        "alt": "R7FGのIPX4防滴設計"
+      },
+      {
+        "id": "outputs",
+        "eyebrow": "PWM・PPM・SBUS",
+        "title": "3つの出力方式に対応",
+        "description": "用途に合わせてPWM、PPM、SBUS出力を切り替えられます。",
+        "image": "/assets/radiolink/r7fg/signal.webp",
+        "alt": "R7FGのPWM、PPM、SBUS出力"
+      },
+      {
+        "id": "gyro",
+        "eyebrow": "ジャイロを内蔵",
+        "title": "車体の横滑りを抑えて安定化",
+        "description": "内蔵ジャイロが車体の姿勢変化を検出し、直進性と旋回時の安定性を補助します。",
+        "image": "/assets/radiolink/r7fg/gyro.gif",
+        "alt": "R7FGのジャイロ動作"
+      },
+      {
+        "id": "response",
+        "eyebrow": "4096分解能・0.25 μs",
+        "title": "12 msの安定した応答",
+        "description": "分解能は4096（0.25 μs）で、応答速度は12 msです。"
+      },
+      {
+        "id": "subsidiary",
+        "eyebrow": "サブID",
+        "title": "最大10台の受信機IDを管理",
+        "description": "1台の送信機に合計10台の受信機IDを保存し、モデルごとに個別にバインドできます。",
+        "image": "/assets/radiolink/r7fg/subsidiary.webp",
+        "alt": "R7FGのサブID設定"
+      },
+      {
+        "id": "power",
+        "eyebrow": "3〜12 V・逆接保護",
+        "title": "高電圧サーボに対応",
+        "description": "3〜12 Vで動作し、高電圧サーボに対応します。電源の逆接から受信機を保護します。",
+        "image": "/assets/radiolink/r7fg/power.webp",
+        "alt": "R7FGの電源接続"
+      }
+    ],
+    "relations": {
+      "heading": "対応するRadiolink送信機",
+      "items": [
+        "RC8P",
+        "RC8X",
+        "RC6GS V3",
+        "RC4GS V3",
+        "T16D",
+        "T12D",
+        "T8FB",
+        "T8S"
+      ],
+      "note": "公式マニュアルの対応一覧は現行仕様ページより古いため、旧送信機はFirmware条件を確認してください。"
+    },
+    "certificates": [],
+    "faqs": [
+      {
+        "question": "R7FGはどの出力方式に対応しますか？",
+        "answer": "PWM、PPM、SBUS出力に対応します。"
+      },
+      {
+        "question": "R7FGは防水ですか？",
+        "answer": "防滴等級はIPX4です。完全防水ではありません。"
+      },
+      {
+        "question": "モデル用バッテリー電圧は何Vまで測定できますか？",
+        "answer": "最大8S、33.6 Vまでのモデル用バッテリー電圧に対応します。"
+      }
+    ]
+  },
+  "r6fg": {
+    "hero": {
+      "tagline": "6チャンネル・ジャイロ内蔵受信機",
+      "subline": "RCカーとボート向けに、テレメトリーと車体安定化機能を備えています。",
+      "note": "通信距離は障害物のない良好な条件でのRadiolink試験値です。実際の距離は環境により異なります。"
+    },
+    "sections": [
+      {
+        "id": "communication",
+        "eyebrow": "FHSS・67チャンネル・12 ms",
+        "title": "地上最大400 m",
+        "description": "2.4 GHz帯で67チャンネルの疑似ランダム周波数ホッピングを使用します。Radiolinkの試験条件では地上最大400 mです。",
+        "image": "/assets/radiolink/r6fg/range.webp",
+        "alt": "R6FGの地上通信距離"
+      },
+      {
+        "id": "telemetry",
+        "eyebrow": "内蔵テレメトリー機能",
+        "title": "RSSIと電圧情報を表示",
+        "description": "対応送信機へRSSIと電圧情報を送信します。公式商品ページと仕様ページで電圧の対象表記が異なるため、確認中です。",
+        "image": "/assets/radiolink/r6fg/telemetry.webp",
+        "alt": "R6FGのテレメトリー表示"
+      },
+      {
+        "id": "gyro",
+        "eyebrow": "ジャイロを内蔵",
+        "title": "車体の横滑りを抑えて安定化",
+        "description": "内蔵ジャイロが車体の姿勢変化を検出し、直進性と旋回時の安定性を補助します。",
+        "image": "/assets/radiolink/r6fg/gyro.gif",
+        "alt": "R6FGのジャイロ動作"
+      },
+      {
+        "id": "dimensions",
+        "eyebrow": "小型・軽量",
+        "title": "35×20×13 mm・6 g",
+        "description": "RCカー、ボート、ロボットへの搭載を想定した小型受信機です。",
+        "image": "/assets/radiolink/r6fg/specs.webp",
+        "alt": "R6FGの寸法と端子配置"
+      }
+    ],
+    "relations": {
+      "heading": "対応するRadiolink送信機",
+      "items": [
+        "RC8P",
+        "RC8X",
+        "RC6GS V3",
+        "RC4GS V3",
+        "T16D",
+        "T12D",
+        "T8FB",
+        "T8S"
+      ],
+      "note": "公式マニュアルの対応一覧は現行仕様ページより古いため、旧送信機はFirmware条件を確認してください。"
+    },
+    "certificates": [],
+    "faqs": [
+      {
+        "question": "R6FGのジャイロを有効にするには？",
+        "answer": "受信機の自己診断完了後、ID SETボタンを1秒以内の間隔で3回押します。赤色LEDの点灯がジャイロ有効を示します。"
+      },
+      {
+        "question": "R6FGの地上通信距離は？",
+        "answer": "Radiolinkの試験条件では最大400 mです。実際の距離は環境により異なります。"
+      },
+      { "question": "R6FGの動作電圧は？", "answer": "3〜15 Vで動作します。" }
+    ]
   }
 }

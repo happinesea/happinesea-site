@@ -6,6 +6,11 @@ const routes = [
   ['product', './radiolink/rc8x/'],
   ['RC8P product', './radiolink/rc8p/'],
   ['T12D product', './radiolink/t12d/'],
+  ['R16F product', './radiolink/r16f/'],
+  ['R12F product', './radiolink/r12f/'],
+  ['R8FG product', './radiolink/r8fg/'],
+  ['R7FG product', './radiolink/r7fg/'],
+  ['R6FG product', './radiolink/r6fg/'],
   ['manual', './manuals/rc8x/'],
   ['manual chapter 1', './manuals/rc8x/chapter-01/'],
   ['manual chapter 2', './manuals/rc8x/chapter-02/'],
@@ -50,8 +55,8 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page).toHaveURL(/\/happinesea-site\/radiolink\/$/);
 
   await page.getByRole('button', { name: '受信機', exact: true }).click();
-  await expect(page.locator('[data-result-count]')).toHaveText('0件を表示');
-  await expect(page.locator('[data-product-category]:visible')).toHaveCount(0);
+  await expect(page.locator('[data-result-count]')).toHaveText('5件を表示');
+  await expect(page.locator('[data-product-category]:visible')).toHaveCount(5);
 
   await page.getByRole('button', { name: '送信機', exact: true }).click();
   await expect(page.locator('[data-result-count]')).toHaveText('3件を表示');
@@ -123,6 +128,11 @@ test('navigation, category filtering, and LINE support work', async ({
 for (const [model, path] of [
   ['RC8P', './radiolink/rc8p/'],
   ['T12D', './radiolink/t12d/'],
+  ['R16F', './radiolink/r16f/'],
+  ['R12F', './radiolink/r12f/'],
+  ['R8FG', './radiolink/r8fg/'],
+  ['R7FG', './radiolink/r7fg/'],
+  ['R6FG', './radiolink/r6fg/'],
 ] as const) {
   test(`${model} product page has no broken local media`, async ({
     page,
@@ -143,12 +153,35 @@ for (const [model, path] of [
       .evaluateAll((images) =>
         images.map((image) => image.getAttribute('src')).filter(Boolean),
       );
-    expect(sources.length).toBeGreaterThan(8);
+    expect(sources.length).toBeGreaterThan(model === 'R6FG' ? 4 : 7);
     for (const source of sources) {
       const response = await request.get(new URL(source!, page.url()).href);
       expect(response.status(), source!).toBeLessThan(400);
     }
     expect(errors).toEqual([]);
+  });
+}
+
+for (const [model, path] of [
+  ['R16F', './radiolink/r16f/'],
+  ['R12F', './radiolink/r12f/'],
+  ['R8FG', './radiolink/r8fg/'],
+  ['R7FG', './radiolink/r7fg/'],
+  ['R6FG', './radiolink/r6fg/'],
+] as const) {
+  test(`${model} receiver page preserves the receiver-family structure`, async ({
+    page,
+  }) => {
+    await page.goto(path);
+    await expect(
+      page.getByRole('heading', { name: '対応するRadiolink送信機' }),
+    ).toBeVisible();
+    await expect(
+      page.locator('[data-product-section="certificates"]'),
+    ).toHaveCount(0);
+    expect(
+      await page.locator('img[src$=".gif"]').count(),
+    ).toBeGreaterThanOrEqual(1);
   });
 }
 

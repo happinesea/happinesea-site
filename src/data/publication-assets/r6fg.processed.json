@@ -1,0 +1,51 @@
+{
+  "product_id": "r6fg",
+  "results": [
+    {
+      "id": "r6fg-hero",
+      "status": "processed",
+      "sha256": "966de835d9692b8928f2e2def7e98d4fee895f9c47d77a304b312da886b60e5d",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r6fg/hero.webp",
+      "avif": "/assets/radiolink/r6fg/hero.avif"
+    },
+    {
+      "id": "r6fg-range",
+      "status": "processed",
+      "sha256": "002e44e196641650341e7ce4c2dc7795085b8241a1c87b123fe89b77d40afb31",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r6fg/range.webp",
+      "avif": "/assets/radiolink/r6fg/range.avif"
+    },
+    {
+      "id": "r6fg-telemetry",
+      "status": "processed",
+      "sha256": "a44c12249c9b5c85ffd6434fdd2916b933c7b9bb2350d2b2dc8855c915216b55",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r6fg/telemetry.webp",
+      "avif": "/assets/radiolink/r6fg/telemetry.avif"
+    },
+    {
+      "id": "r6fg-gyro",
+      "status": "processed",
+      "sha256": "0ce77999fecc5f915cae5674294484bff993d59020dee174704921af7467d456",
+      "width": 1920,
+      "height": 780,
+      "pages": 32,
+      "bytes": 424037,
+      "gif": "/assets/radiolink/r6fg/gyro.gif"
+    },
+    {
+      "id": "r6fg-specs",
+      "status": "processed",
+      "sha256": "a065e74fb3024db6c11d743746c80ab9614503a640d82fa23fc0213d2d667e37",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r6fg/specs.webp",
+      "avif": "/assets/radiolink/r6fg/specs.avif"
+    }
+  ]
+}

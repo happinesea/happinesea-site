@@ -1,0 +1,105 @@
+{
+  "product_id": "r12f",
+  "results": [
+    {
+      "id": "r12f-hero",
+      "status": "processed",
+      "sha256": "2dc989c458a2fc0f849b90166a7030be58bfebf8e99ea1aa5b9d5eba3228c59f",
+      "width": 1920,
+      "height": 755,
+      "webp": "/assets/radiolink/r12f/hero.webp",
+      "avif": "/assets/radiolink/r12f/hero.avif"
+    },
+    {
+      "id": "r12f-range",
+      "status": "processed",
+      "sha256": "98d90503e0249f4870d0a49c814dd54f1826de6c1d1f25b74f10c43f45253d35",
+      "width": 1754,
+      "height": 733,
+      "webp": "/assets/radiolink/r12f/range.webp",
+      "avif": "/assets/radiolink/r12f/range.avif"
+    },
+    {
+      "id": "r12f-pwm",
+      "status": "processed",
+      "sha256": "ff40ab2d9b61c28cabcc6d98c47f3718256e10b48c70ccc3a34f8c2bb9e627d6",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r12f/pwm.webp",
+      "avif": "/assets/radiolink/r12f/pwm.avif"
+    },
+    {
+      "id": "r12f-sbus",
+      "status": "processed",
+      "sha256": "e5cf95b336eba1bf7c0078aa2ea01ff36625d60a0d3c0251f2ee64a8cbdaa92a",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r12f/sbus.webp",
+      "avif": "/assets/radiolink/r12f/sbus.avif"
+    },
+    {
+      "id": "r12f-crsf",
+      "status": "processed",
+      "sha256": "562ff7631f4730205409425a7dac0b4c811d0716bfb1ec1e87cf95ddcdcc4204",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r12f/crsf.webp",
+      "avif": "/assets/radiolink/r12f/crsf.avif"
+    },
+    {
+      "id": "r12f-simulator",
+      "status": "processed",
+      "sha256": "2652f7d0b5cbe4dfb8d6308440576648a15b8405aa207c179c513d0d3b15221e",
+      "width": 1200,
+      "height": 674,
+      "webp": "/assets/radiolink/r12f/simulator.webp",
+      "avif": "/assets/radiolink/r12f/simulator.avif"
+    },
+    {
+      "id": "r12f-power",
+      "status": "processed",
+      "sha256": "2b2505c25ef015229549a7b6a512a50afa1279bea3cf15953b3625936df36aac",
+      "width": 1200,
+      "height": 965,
+      "webp": "/assets/radiolink/r12f/power.webp",
+      "avif": "/assets/radiolink/r12f/power.avif"
+    },
+    {
+      "id": "r12f-subsidiary",
+      "status": "processed",
+      "sha256": "056266647fa1e7ae3f3cfa3c2874359f50b2f53cd58addc6e1b0219e7cf10a98",
+      "width": 480,
+      "height": 800,
+      "pages": 31,
+      "bytes": 39107,
+      "gif": "/assets/radiolink/r12f/subsidiary.gif"
+    },
+    {
+      "id": "r12f-update",
+      "status": "processed",
+      "sha256": "d6c9788b842054fc78dc882d1aaf90ee212e93e3ee7cd90c899d9ca740595007",
+      "width": 1200,
+      "height": 696,
+      "webp": "/assets/radiolink/r12f/update.webp",
+      "avif": "/assets/radiolink/r12f/update.avif"
+    },
+    {
+      "id": "r12f-servo",
+      "status": "processed",
+      "sha256": "42e6402f1da5307752c1df9ec4ee482bc0e30fd0f2cf21cc6b7ec66e0687b94e",
+      "width": 639,
+      "height": 480,
+      "webp": "/assets/radiolink/r12f/servo.webp",
+      "avif": "/assets/radiolink/r12f/servo.avif"
+    },
+    {
+      "id": "r12f-models",
+      "status": "processed",
+      "sha256": "79dbaf049e0db5d40e1c4f2917440015c05d987bd795d1f0ec0eb6b8f7bbdba6",
+      "width": 1200,
+      "height": 612,
+      "webp": "/assets/radiolink/r12f/models.webp",
+      "avif": "/assets/radiolink/r12f/models.avif"
+    }
+  ]
+}

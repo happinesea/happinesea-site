@@ -1,0 +1,105 @@
+{
+  "product_id": "r12f",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "r12f-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/1eb3b52a5ef3d3d5411cc0ff774256a5.jpg",
+      "source_status": "verified",
+      "alt": "Radiolink R12F受信機",
+      "public_path": "/assets/radiolink/r12f/hero"
+    },
+    {
+      "id": "r12f-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/96d3e8777fe97c53fcc6d817895ab7d5.png",
+      "source_status": "verified",
+      "alt": "R12FのFHSS通信",
+      "public_path": "/assets/radiolink/r12f/range"
+    },
+    {
+      "id": "r12f-pwm",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/a755277d6b37c8803a59d4c1faa07a77.jpg",
+      "source_status": "verified",
+      "alt": "R12FのPWMモード",
+      "public_path": "/assets/radiolink/r12f/pwm"
+    },
+    {
+      "id": "r12f-sbus",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/4a53367d6ebcbde64b31a820c06090f9.jpg",
+      "source_status": "verified",
+      "alt": "R12FのSBUSモード",
+      "public_path": "/assets/radiolink/r12f/sbus"
+    },
+    {
+      "id": "r12f-crsf",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/e690685c6d9042d020ca83361ab3bd8c.jpg",
+      "source_status": "verified",
+      "alt": "R12FのCRSFモード",
+      "public_path": "/assets/radiolink/r12f/crsf"
+    },
+    {
+      "id": "r12f-simulator",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/276990db1a2d46d2c7d0831df34a9f16.jpg",
+      "source_status": "verified",
+      "alt": "R12Fのシミュレーター接続",
+      "public_path": "/assets/radiolink/r12f/simulator"
+    },
+    {
+      "id": "r12f-power",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/b584429afbffc591c4303e93576b8bda.jpg",
+      "source_status": "verified",
+      "alt": "R12Fの電源接続",
+      "public_path": "/assets/radiolink/r12f/power"
+    },
+    {
+      "id": "r12f-subsidiary",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/e794d4873f1af4787a755e56eca5a603.gif",
+      "source_status": "verified",
+      "alt": "R12FのサブID切り替え",
+      "public_path": "/assets/radiolink/r12f/subsidiary"
+    },
+    {
+      "id": "r12f-update",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/638c1454afb55eb9eafa1ce840def589.jpg",
+      "source_status": "verified",
+      "alt": "R12FのType-C更新",
+      "public_path": "/assets/radiolink/r12f/update"
+    },
+    {
+      "id": "r12f-servo",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/0d346eaa601211ed49fbf2e00d5075ef.png",
+      "source_status": "verified",
+      "alt": "R12Fの270度サーボ対応",
+      "public_path": "/assets/radiolink/r12f/servo"
+    },
+    {
+      "id": "r12f-models",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r12f",
+      "source_image_url": "https://www.radiolink.com/2ed808d174245e17a7079623dd0ca4af.jpg",
+      "source_status": "verified",
+      "alt": "R12Fの対応モデル",
+      "public_path": "/assets/radiolink/r12f/models"
+    }
+  ]
+}

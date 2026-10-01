@@ -669,5 +669,488 @@
     "firmware_url": "https://www.radiolink.com/en/t12d_firmwares",
     "manual_url": "https://www.radiolink.com/en/t12d_manual",
     "last_checked_at": "2026-10-01"
+  },
+  {
+    "id": "r16f",
+    "manufacturer": "Radiolink",
+    "model": "R16F",
+    "slug": "r16f",
+    "category": "受信機",
+    "title": "R16F",
+    "description": "R16Fは、16チャンネルのPWM、SBUS、CRSF出力と内蔵テレメトリー機能を備えた受信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。Firmwareページの掲載日と更新履歴の日付差は確認中です。",
+    "features": [
+      "16チャンネル",
+      "PWM・SBUS・CRSF",
+      "内蔵テレメトリー機能",
+      "Type-C更新",
+      "シミュレーター接続"
+    ],
+    "feature_sections": [],
+    "package_contents": [
+      "R16F受信機×1",
+      "モデル用バッテリー電圧接続ケーブル×1",
+      "接続ケーブル×3",
+      "収納袋×1"
+    ],
+    "videos": [
+      {
+        "youtube_id": "a-bOznPAq28",
+        "title": "R16Fのバインドと動作モード",
+        "description": "Radiolink公式のバインドと動作モードのチュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=a-bOznPAq28"
+      },
+      {
+        "youtube_id": "k-TGPy9AsNU",
+        "title": "R16FのFirmware更新",
+        "description": "Radiolink公式のType-C更新手順です。",
+        "source_url": "https://www.youtube.com/watch?v=k-TGPy9AsNU"
+      },
+      {
+        "youtube_id": "VkRftk5fYP0",
+        "title": "R16Fのシミュレーター接続",
+        "description": "Radiolink公式のシミュレーター接続手順です。",
+        "source_url": "https://www.youtube.com/watch?v=VkRftk5fYP0"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "45×32×15 mm", "status": "verified" },
+      { "label": "重量", "value": "17 g", "status": "verified" },
+      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
+      { "label": "チャンネル", "value": "16チャンネル", "status": "verified" },
+      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
+      { "label": "動作電流", "value": "50±10 mA@5 V", "status": "verified" },
+      {
+        "label": "信号出力",
+        "value": "SBUS + CRSF + PWM",
+        "status": "verified"
+      },
+      {
+        "label": "周波数帯",
+        "value": "2.4 GHz（2400〜2483.5 MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "空中通信距離",
+        "value": "最大4000 m（メーカー試験条件）",
+        "status": "verified"
+      },
+      {
+        "label": "EXT電圧入力",
+        "value": "1S〜14S（3.0〜60 V）",
+        "status": "verified"
+      },
+      {
+        "label": "応答速度",
+        "value": "3 ms / 4 ms / 14 ms",
+        "status": "verified"
+      },
+      { "label": "防滴等級", "value": "IPX4", "status": "verified" },
+      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/r16f/hero.webp",
+        "alt": "Radiolink R16F受信機",
+        "source_image_url": "https://www.radiolink.com/0523ec9af89bdcfaedebc7df263ece53.jpg",
+        "source_page_url": "https://www.radiolink.com/r16f",
+        "retrieved_at": "2026-10-01",
+        "width": null,
+        "height": null,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [
+      {
+        "title": "R16F Firmware V2.3",
+        "version": "2.3",
+        "url": "https://www.radiolink.com/r16f_firmwares",
+        "status": "review_required",
+        "note": "公式ページの掲載日と更新履歴の日付に差があるため、配布バージョンのみ表示しています。"
+      }
+    ],
+    "support": { "href": "/support/", "faq_count": 3 },
+    "relations": { "products": [], "receivers": [] },
+    "official_url": "https://www.radiolink.com/r16f",
+    "firmware_url": "https://www.radiolink.com/r16f_firmwares",
+    "manual_url": "https://www.radiolink.com/r16f_manual",
+    "last_checked_at": "2026-10-01"
+  },
+  {
+    "id": "r12f",
+    "manufacturer": "Radiolink",
+    "model": "R12F",
+    "slug": "r12f",
+    "category": "受信機",
+    "title": "R12F",
+    "description": "R12Fは、12チャンネルのPWM、SBUS、CRSF出力とType-C更新に対応する受信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。シミュレーター対応開始版とFirmware日付の表記差は確認中です。",
+    "features": [
+      "12チャンネル",
+      "PWM・SBUS・CRSF",
+      "Type-C更新",
+      "シミュレーター接続",
+      "3〜12 V"
+    ],
+    "feature_sections": [],
+    "package_contents": ["R12F受信機×1", "収納袋×1"],
+    "videos": [
+      {
+        "youtube_id": "a-bOznPAq28",
+        "title": "R12Fのバインドと動作モード",
+        "description": "Radiolink公式のバインドと動作モードのチュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=a-bOznPAq28"
+      },
+      {
+        "youtube_id": "n5nCGDuu0L8",
+        "title": "R12Fの接続とモード切り替え",
+        "description": "Radiolink公式の接続とモード切り替え手順です。",
+        "source_url": "https://www.youtube.com/watch?v=n5nCGDuu0L8"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "35.6×25×13.6 mm", "status": "verified" },
+      { "label": "重量", "value": "11.8 g", "status": "verified" },
+      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
+      { "label": "チャンネル", "value": "12チャンネル", "status": "verified" },
+      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
+      { "label": "動作電流", "value": "37±3 mA@5 V", "status": "verified" },
+      {
+        "label": "信号出力",
+        "value": "SBUS + CRSF + PWM",
+        "status": "verified"
+      },
+      {
+        "label": "周波数帯",
+        "value": "2.4 GHz（2400〜2483.5 MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "空中通信距離",
+        "value": "最大4000 m（メーカー試験条件）",
+        "status": "verified"
+      },
+      {
+        "label": "応答速度",
+        "value": "3 ms / 4 ms / 14 ms",
+        "status": "verified"
+      },
+      {
+        "label": "シミュレーター対応版",
+        "value": "公式ページ間でV1.6 / V1.7の表記差あり",
+        "status": "review_required"
+      },
+      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/r12f/hero.webp",
+        "alt": "Radiolink R12F受信機",
+        "source_image_url": "https://www.radiolink.com/1eb3b52a5ef3d3d5411cc0ff774256a5.jpg",
+        "source_page_url": "https://www.radiolink.com/r12f",
+        "retrieved_at": "2026-10-01",
+        "width": null,
+        "height": null,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [
+      {
+        "title": "R12F Firmware V2.0",
+        "version": "2.0",
+        "url": "https://www.radiolink.com/r12f_firmwares",
+        "status": "review_required",
+        "note": "公式ページの掲載日と更新履歴の日付に差があるため、配布バージョンのみ表示しています。"
+      }
+    ],
+    "support": { "href": "/support/", "faq_count": 3 },
+    "relations": { "products": [], "receivers": [] },
+    "official_url": "https://www.radiolink.com/r12f",
+    "firmware_url": "https://www.radiolink.com/r12f_firmwares",
+    "manual_url": "https://www.radiolink.com/r12f_manual",
+    "last_checked_at": "2026-10-01"
+  },
+  {
+    "id": "r8fg",
+    "manufacturer": "Radiolink",
+    "model": "R8FG",
+    "slug": "r8fg",
+    "category": "受信機",
+    "title": "R8FG",
+    "description": "R8FGは、8チャンネル、内蔵ジャイロ、電圧テレメトリー、PWM／SBUS出力を備えた受信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。受信機バージョンごとの応答速度条件は公式マニュアルに従ってください。",
+    "features": [
+      "8チャンネル",
+      "ジャイロ内蔵",
+      "RSSI・電圧テレメトリー",
+      "PWM・SBUS",
+      "IPX4防滴"
+    ],
+    "feature_sections": [],
+    "package_contents": [
+      "R8FG受信機×1",
+      "モデル用バッテリー電圧接続ケーブル×1",
+      "収納袋×1"
+    ],
+    "videos": [
+      {
+        "youtube_id": "-e1XzRnMnhs",
+        "title": "R8FGのバインドとジャイロ設定",
+        "description": "Radiolink公式のバインドとジャイロ設定手順です。",
+        "source_url": "https://www.youtube.com/watch?v=-e1XzRnMnhs"
+      },
+      {
+        "youtube_id": "uDIiyr9tmYA",
+        "title": "R8FGの動作モード",
+        "description": "Radiolink公式の出力モード切り替え手順です。",
+        "source_url": "https://www.youtube.com/watch?v=uDIiyr9tmYA"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "35×24×13.5 mm", "status": "verified" },
+      { "label": "重量", "value": "10.5 g", "status": "verified" },
+      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
+      { "label": "チャンネル", "value": "8チャンネル", "status": "verified" },
+      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
+      { "label": "動作電流", "value": "35 mA@5 V", "status": "verified" },
+      { "label": "信号出力", "value": "SBUS + PWM", "status": "verified" },
+      {
+        "label": "周波数帯",
+        "value": "2.4 GHz（2400〜2483.5 MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "応答速度",
+        "value": "3 ms / 4 ms / 14 ms（受信機バージョン条件あり）",
+        "status": "verified"
+      },
+      {
+        "label": "地上通信距離",
+        "value": "最大600 m（メーカー試験条件）",
+        "status": "verified"
+      },
+      {
+        "label": "モデル用バッテリー電圧",
+        "value": "最大8S（33.6 V）",
+        "status": "verified"
+      },
+      { "label": "防滴等級", "value": "IPX4", "status": "verified" }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/r8fg/hero.webp",
+        "alt": "Radiolink R8FG受信機",
+        "source_image_url": "https://www.radiolink.com/b86e66e3859331780657619223c6b20f.jpg",
+        "source_page_url": "https://www.radiolink.com/r8fg",
+        "retrieved_at": "2026-10-01",
+        "width": null,
+        "height": null,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [],
+    "support": { "href": "/support/", "faq_count": 3 },
+    "relations": { "products": [], "receivers": [] },
+    "official_url": "https://www.radiolink.com/r8fg",
+    "manual_url": "https://www.radiolink.com/r8fg_manual",
+    "last_checked_at": "2026-10-01"
+  },
+  {
+    "id": "r7fg",
+    "manufacturer": "Radiolink",
+    "model": "R7FG",
+    "slug": "r7fg",
+    "category": "受信機",
+    "title": "R7FG",
+    "description": "R7FGは、7チャンネル、内蔵ジャイロ、電圧テレメトリー、PWM／PPM／SBUS出力を備えた受信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。現行仕様ページと旧マニュアルの対応送信機一覧の差は確認中です。",
+    "features": [
+      "7チャンネル",
+      "ジャイロ内蔵",
+      "RSSI・電圧テレメトリー",
+      "PWM・PPM・SBUS",
+      "IPX4防滴"
+    ],
+    "feature_sections": [],
+    "package_contents": [
+      "R7FG受信機×1",
+      "モデル用バッテリー電圧接続ケーブル×1",
+      "収納袋×1"
+    ],
+    "videos": [
+      {
+        "youtube_id": "NR-sZ8BYmQs",
+        "title": "R7FGのバインドとジャイロ設定",
+        "description": "Radiolink公式のR7FGチュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=NR-sZ8BYmQs"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "35×22×14 mm", "status": "verified" },
+      { "label": "重量", "value": "6 g", "status": "verified" },
+      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
+      { "label": "チャンネル", "value": "7チャンネル", "status": "verified" },
+      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
+      { "label": "動作電流", "value": "30 mA", "status": "verified" },
+      {
+        "label": "信号出力",
+        "value": "PWM + PPM + SBUS",
+        "status": "verified"
+      },
+      {
+        "label": "周波数帯",
+        "value": "2.4 GHz（2400〜2483.5 MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "地上通信距離",
+        "value": "最大600 m（メーカー試験条件）",
+        "status": "verified"
+      },
+      {
+        "label": "モデル用バッテリー電圧",
+        "value": "最大8S（33.6 V）",
+        "status": "verified"
+      },
+      { "label": "防滴等級", "value": "IPX4", "status": "verified" }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/r7fg/hero.webp",
+        "alt": "Radiolink R7FG受信機",
+        "source_image_url": "https://www.radiolink.com/ea13c06f1e1e75e391d27f41f37275aa.jpg",
+        "source_page_url": "https://www.radiolink.com/r7fg",
+        "retrieved_at": "2026-10-01",
+        "width": null,
+        "height": null,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [],
+    "support": { "href": "/support/", "faq_count": 3 },
+    "relations": { "products": [], "receivers": [] },
+    "official_url": "https://www.radiolink.com/r7fg",
+    "manual_url": "https://www.radiolink.com/r7fg_manual",
+    "last_checked_at": "2026-10-01"
+  },
+  {
+    "id": "r6fg",
+    "manufacturer": "Radiolink",
+    "model": "R6FG",
+    "slug": "r6fg",
+    "category": "受信機",
+    "title": "R6FG",
+    "description": "R6FGは、6チャンネル、内蔵ジャイロ、RSSIと電圧情報のテレメトリーを備えた受信機です。",
+    "content_status": "manufacturer_review",
+    "review_note": "Radiolink公式公開情報を基に作成しています。商品ページと仕様ページでテレメトリー電圧の対象表記が異なるため確認中です。",
+    "features": [
+      "6チャンネル",
+      "ジャイロ内蔵",
+      "RSSI・電圧テレメトリー",
+      "PWM",
+      "地上最大400 m"
+    ],
+    "feature_sections": [],
+    "package_contents": ["R6FG受信機×1"],
+    "videos": [
+      {
+        "youtube_id": "-e1XzRnMnhs",
+        "title": "受信機のバインドとジャイロ設定",
+        "description": "Radiolink公式のバインドとジャイロ設定手順です。",
+        "source_url": "https://www.youtube.com/watch?v=-e1XzRnMnhs"
+      },
+      {
+        "youtube_id": "iTrBj7eO6F0",
+        "title": "R6FGの設定",
+        "description": "Radiolink公式のR6FGチュートリアルです。",
+        "source_url": "https://www.youtube.com/watch?v=iTrBj7eO6F0"
+      }
+    ],
+    "specifications": [
+      { "label": "寸法", "value": "35×20×13 mm", "status": "verified" },
+      { "label": "重量", "value": "6 g", "status": "verified" },
+      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
+      { "label": "チャンネル", "value": "6チャンネル", "status": "verified" },
+      { "label": "動作電圧", "value": "3〜15 V DC", "status": "verified" },
+      { "label": "動作電流", "value": "30 mA@5 V", "status": "verified" },
+      { "label": "信号出力", "value": "PWM", "status": "verified" },
+      {
+        "label": "テレメトリー",
+        "value": "RSSI・受信機電圧（商品ページと表記差あり）",
+        "status": "review_required"
+      },
+      {
+        "label": "周波数帯",
+        "value": "2.4 GHz（2400〜2483.5 MHz）",
+        "status": "verified"
+      },
+      {
+        "label": "スペクトラム拡散",
+        "value": "FHSS・67チャンネル",
+        "status": "verified"
+      },
+      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "地上通信距離",
+        "value": "最大400 m（メーカー試験条件）",
+        "status": "verified"
+      },
+      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" }
+    ],
+    "media": {
+      "hero": {
+        "src": "/assets/radiolink/r6fg/hero.webp",
+        "alt": "Radiolink R6FG受信機",
+        "source_image_url": "https://www.radiolink.com/2c4815b0e7a4e59b2470c30e0954e810.png",
+        "source_page_url": "https://www.radiolink.com/r6fg",
+        "retrieved_at": "2026-10-01",
+        "width": null,
+        "height": null,
+        "image_status": "verified"
+      },
+      "gallery": []
+    },
+    "manuals": [],
+    "firmware": [],
+    "support": { "href": "/support/", "faq_count": 3 },
+    "relations": { "products": [], "receivers": [] },
+    "official_url": "https://www.radiolink.com/r6fg",
+    "manual_url": "https://www.radiolink.com/r6fg_manual",
+    "last_checked_at": "2026-10-01"
   }
 ]

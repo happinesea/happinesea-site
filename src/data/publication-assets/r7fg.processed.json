@@ -1,0 +1,78 @@
+{
+  "product_id": "r7fg",
+  "results": [
+    {
+      "id": "r7fg-hero",
+      "status": "processed",
+      "sha256": "2098fd783f2c63ea40459a2a6409497ef39deeb2686acbac5a4c29172dbb4256",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r7fg/hero.webp",
+      "avif": "/assets/radiolink/r7fg/hero.avif"
+    },
+    {
+      "id": "r7fg-fhss",
+      "status": "processed",
+      "sha256": "98d90503e0249f4870d0a49c814dd54f1826de6c1d1f25b74f10c43f45253d35",
+      "width": 1754,
+      "height": 733,
+      "webp": "/assets/radiolink/r7fg/fhss.webp",
+      "avif": "/assets/radiolink/r7fg/fhss.avif"
+    },
+    {
+      "id": "r7fg-ipx4",
+      "status": "processed",
+      "sha256": "a75cc46bbd5a6bf7e5bd07ed6c392134ae2d1227325f549f8c95f177d4075b93",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r7fg/ipx4.webp",
+      "avif": "/assets/radiolink/r7fg/ipx4.avif"
+    },
+    {
+      "id": "r7fg-signal",
+      "status": "processed",
+      "sha256": "8a0474b9faaef52291112f3a0daf27d4e670ed26ba9694b9a2ff0b9b843d3fbf",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r7fg/signal.webp",
+      "avif": "/assets/radiolink/r7fg/signal.avif"
+    },
+    {
+      "id": "r7fg-gyro",
+      "status": "processed",
+      "sha256": "0ce77999fecc5f915cae5674294484bff993d59020dee174704921af7467d456",
+      "width": 1920,
+      "height": 780,
+      "pages": 32,
+      "bytes": 424037,
+      "gif": "/assets/radiolink/r7fg/gyro.gif"
+    },
+    {
+      "id": "r7fg-subsidiary",
+      "status": "processed",
+      "sha256": "319915e840a59cd18f26dc0591c4c921f62d4cdd3f02717b8a370eebeadf7d2b",
+      "width": 600,
+      "height": 423,
+      "webp": "/assets/radiolink/r7fg/subsidiary.webp",
+      "avif": "/assets/radiolink/r7fg/subsidiary.avif"
+    },
+    {
+      "id": "r7fg-power",
+      "status": "processed",
+      "sha256": "95bf6b838ae8d1c7d5ca62145efeda2a0a1a31a5c8e02f75cece165eae0d83ba",
+      "width": 2000,
+      "height": 1560,
+      "webp": "/assets/radiolink/r7fg/power.webp",
+      "avif": "/assets/radiolink/r7fg/power.avif"
+    },
+    {
+      "id": "r7fg-package",
+      "status": "processed",
+      "sha256": "b088dac0358cd947ffff98b6ccd49cfa464b4fa4eb5710c87932a13756fb63f3",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r7fg/package.webp",
+      "avif": "/assets/radiolink/r7fg/package.avif"
+    }
+  ]
+}

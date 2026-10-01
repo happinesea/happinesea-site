@@ -151,6 +151,36 @@ for (const product of [
     officialUrl: 'https://www.radiolink.com/en/t12d',
     asset: 'language.gif',
   },
+  {
+    slug: 'r16f',
+    model: 'R16F',
+    officialUrl: 'https://www.radiolink.com/r16f',
+    asset: 'subsidiary.gif',
+  },
+  {
+    slug: 'r12f',
+    model: 'R12F',
+    officialUrl: 'https://www.radiolink.com/r12f',
+    asset: 'subsidiary.gif',
+  },
+  {
+    slug: 'r8fg',
+    model: 'R8FG',
+    officialUrl: 'https://www.radiolink.com/r8fg',
+    asset: 'gyro.gif',
+  },
+  {
+    slug: 'r7fg',
+    model: 'R7FG',
+    officialUrl: 'https://www.radiolink.com/r7fg',
+    asset: 'gyro.gif',
+  },
+  {
+    slug: 'r6fg',
+    model: 'R6FG',
+    officialUrl: 'https://www.radiolink.com/r6fg',
+    asset: 'gyro.gif',
+  },
 ]) {
   test(`${product.model} product page keeps official flow and public-review boundaries`, async () => {
     const html = await route(`radiolink/${product.slug}/index.html`);
@@ -162,6 +192,10 @@ for (const product of [
     assert.match(html, /data-product-section="package"/);
     assert.match(html, /data-product-section="videos"/);
     assert.match(html, /data-product-section="faq"/);
+    if (['r16f', 'r12f', 'r8fg', 'r7fg', 'r6fg'].includes(product.slug)) {
+      assert.match(html, />対応するRadiolink送信機</);
+      assert.doesNotMatch(html, /data-product-section="certificates"/);
+    }
     assert.match(html, new RegExp(product.officialUrl.replaceAll('/', '\\/')));
     assert.match(
       html,
@@ -269,6 +303,11 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
     'index.html',
     'radiolink/index.html',
     'radiolink/rc8x/index.html',
+    'radiolink/r16f/index.html',
+    'radiolink/r12f/index.html',
+    'radiolink/r8fg/index.html',
+    'radiolink/r7fg/index.html',
+    'radiolink/r6fg/index.html',
     'radiolink/updates/index.html',
     'support/index.html',
     'insights/index.html',

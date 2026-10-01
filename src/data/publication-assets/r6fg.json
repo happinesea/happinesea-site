@@ -1,0 +1,51 @@
+{
+  "product_id": "r6fg",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "r6fg-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/r6fg",
+      "source_image_url": "https://www.radiolink.com/2c4815b0e7a4e59b2470c30e0954e810.png",
+      "source_status": "verified",
+      "alt": "Radiolink R6FG受信機",
+      "public_path": "/assets/radiolink/r6fg/hero"
+    },
+    {
+      "id": "r6fg-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r6fg",
+      "source_image_url": "https://www.radiolink.com/5e6709f1bbb896947de8a7def07d6d77.jpg",
+      "source_status": "verified",
+      "alt": "R6FGの地上通信距離",
+      "public_path": "/assets/radiolink/r6fg/range"
+    },
+    {
+      "id": "r6fg-telemetry",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r6fg",
+      "source_image_url": "https://www.radiolink.com/9b8c6f2a47f049f3594456df823eb79b.png",
+      "source_status": "verified",
+      "alt": "R6FGのテレメトリー表示",
+      "public_path": "/assets/radiolink/r6fg/telemetry"
+    },
+    {
+      "id": "r6fg-gyro",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r6fg",
+      "source_image_url": "https://www.radiolink.com/dfbeb5100c46950b1c77c8de6110b045.gif",
+      "source_status": "verified",
+      "alt": "R6FGのジャイロ動作",
+      "public_path": "/assets/radiolink/r6fg/gyro"
+    },
+    {
+      "id": "r6fg-specs",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r6fg",
+      "source_image_url": "https://www.radiolink.com/82a79e3a90df6c610e8b683c95ff1ef8.png",
+      "source_status": "verified",
+      "alt": "R6FGの寸法と端子配置",
+      "public_path": "/assets/radiolink/r6fg/specs"
+    }
+  ]
+}
