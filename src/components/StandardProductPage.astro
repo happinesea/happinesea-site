@@ -5,7 +5,6 @@ import DefinitionTable from './DefinitionTable.astro';
 import ManualVideo from './manuals/ManualVideo.astro';
 import ProductHero from './ProductHero.astro';
 import ResponsiveMedia from './ResponsiveMedia.astro';
-import UnverifiedNotice from './UnverifiedNotice.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   buildBreadcrumbJsonLd,
@@ -75,7 +74,6 @@ const jsonLd = [
       ]}
     />
     <ProductHero product={data} copy={detail.hero} />
-    <UnverifiedNotice text={data.review_note} />
 
     <nav
       aria-label={`${data.model}ページ内ナビゲーション`}

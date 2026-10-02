@@ -97,11 +97,6 @@ const groupLabelByFirstFeature = new Map(
   <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-6 lg:px-8">
     <Breadcrumbs items={breadcrumbItems} />
     <ProductHero product={data} copy={detail.hero} />
-    {data.content_status === 'manufacturer_review' && (
-      <UnverifiedNotice
-        text={data.review_note ?? 'この商品情報はメーカー確認中です。確認完了までは確定仕様として扱わないでください。'}
-      />
-    )}
 
     <nav
       aria-label="RC8Xページ内ナビゲーション"
