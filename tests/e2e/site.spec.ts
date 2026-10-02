@@ -55,12 +55,12 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page).toHaveURL(/\/happinesea-site\/radiolink\/$/);
 
   await page.getByRole('button', { name: '受信機', exact: true }).click();
-  await expect(page.locator('[data-result-count]')).toHaveText('5件を表示');
-  await expect(page.locator('[data-product-category]:visible')).toHaveCount(5);
+  await expect(page.locator('[data-result-count]')).toHaveText('20件を表示');
+  await expect(page.locator('[data-product-category]:visible')).toHaveCount(20);
 
   await page.getByRole('button', { name: '送信機', exact: true }).click();
-  await expect(page.locator('[data-result-count]')).toHaveText('3件を表示');
-  await expect(page.locator('[data-product-category]:visible')).toHaveCount(3);
+  await expect(page.locator('[data-result-count]')).toHaveText('10件を表示');
+  await expect(page.locator('[data-product-category]:visible')).toHaveCount(10);
 
   await page.goto('./radiolink/rc8x/');
   await expect(
@@ -123,6 +123,29 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page.locator('[data-product-section="manuals"]')).toHaveCount(0);
   await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);
   expect(errors).toEqual([]);
+});
+
+test('catalogue exposes all products and every local image decodes', async ({
+  page,
+}) => {
+  await page.goto('./radiolink/');
+  await expect(page.locator('[data-product-card]')).toHaveCount(83);
+  await expect(page.locator('[data-detail-available]')).toHaveCount(8);
+  await expect(page.locator('[data-detail-preparing]')).toHaveCount(75);
+
+  const images = page.locator('[data-product-card-image]');
+  await expect(images).toHaveCount(83);
+  for (const image of await images.all()) {
+    await image.scrollIntoViewIfNeeded();
+    await image.evaluate((element: HTMLImageElement) => element.decode());
+  }
+  expect(
+    await images.evaluateAll((elements: HTMLImageElement[]) =>
+      elements.every(
+        (image) => image.naturalWidth === 480 && image.naturalHeight === 480,
+      ),
+    ),
+  ).toBe(true);
 });
 
 for (const [model, path] of [

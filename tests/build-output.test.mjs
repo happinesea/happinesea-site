@@ -30,6 +30,24 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
   assert.match(html, /aria-live="polite"/);
 });
 
+test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
+  const html = await route('radiolink/index.html');
+
+  assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
+  assert.equal((html.match(/data-detail-available/g) ?? []).length, 8);
+  assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 75);
+  assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
+  assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
+  assert.match(html, /83件を表示/);
+  assert.match(html, /Radiolink製品をカテゴリ別に紹介します。/);
+  assert.doesNotMatch(html, /公式ページで確認した83商品/);
+  assert.doesNotMatch(html, /詳細ページがない商品/);
+  assert.doesNotMatch(
+    html,
+    /href="\/happinesea-site\/radiolink\/(?:turbo-pix|at10-ii)\/"/,
+  );
+});
+
 test('Radiolink catalogue uses official white-background menu icons', async () => {
   const html = await route('radiolink/index.html');
 
@@ -45,7 +63,7 @@ test('Radiolink catalogue uses official white-background menu icons', async () =
   ]) {
     assert.match(
       html,
-      new RegExp(`/assets/radiolink/catalogue/${slug}\\.(?:jpg|png)`),
+      new RegExp(`/assets/radiolink/catalogue/${slug}\\.webp`),
       slug,
     );
   }
@@ -83,6 +101,8 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.match(html, /target="_blank" rel="noopener noreferrer"/);
   assert.match(html, /aria-label="LINEで相談"/);
   assert.doesNotMatch(html, />LINEで相談</);
+  assert.doesNotMatch(html, /メーカー確認中/);
+  assert.doesNotMatch(html, /メーカー確認用プレビュー/);
   assert.match(html, />RC8X</);
   assert.match(
     html,
@@ -233,6 +253,8 @@ for (const product of [
     }
     assert.doesNotMatch(html, new RegExp(`/manuals/${product.slug}/`));
     assert.doesNotMatch(html, />情報源</);
+    assert.doesNotMatch(html, /メーカー確認中/);
+    assert.doesNotMatch(html, /公式公開情報を基に作成しています/);
     assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);
   });
 }

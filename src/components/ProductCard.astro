@@ -9,14 +9,14 @@ interface Props {
 const { product } = Astro.props;
 const { data } = product;
 const catalogueImages: Record<string, string> = {
-  rc8x: '/assets/radiolink/catalogue/rc8x.jpg',
-  rc8p: '/assets/radiolink/catalogue/rc8p.jpg',
-  t12d: '/assets/radiolink/catalogue/t12d.png',
-  r16f: '/assets/radiolink/catalogue/r16f.jpg',
-  r12f: '/assets/radiolink/catalogue/r12f.jpg',
-  r8fg: '/assets/radiolink/catalogue/r8fg.jpg',
-  r7fg: '/assets/radiolink/catalogue/r7fg.jpg',
-  r6fg: '/assets/radiolink/catalogue/r6fg.jpg',
+  rc8x: '/assets/radiolink/catalogue/rc8x.webp',
+  rc8p: '/assets/radiolink/catalogue/rc8p.webp',
+  t12d: '/assets/radiolink/catalogue/t12d.webp',
+  r16f: '/assets/radiolink/catalogue/r16f.webp',
+  r12f: '/assets/radiolink/catalogue/r12f.webp',
+  r8fg: '/assets/radiolink/catalogue/r8fg.webp',
+  r7fg: '/assets/radiolink/catalogue/r7fg.webp',
+  r6fg: '/assets/radiolink/catalogue/r6fg.webp',
 };
 const cardImage = catalogueImages[data.slug] ?? data.media.hero.src;
 ---
