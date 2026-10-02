@@ -64,6 +64,9 @@ const categories = [
     const products = catalogue.querySelectorAll<HTMLElement>(
       '[data-product-category]',
     );
+    const sections = catalogue.querySelectorAll<HTMLElement>(
+      '[data-product-category-section]',
+    );
     const count = controls.querySelector<HTMLElement>('[data-result-count]');
 
     for (const button of buttons) {
@@ -76,6 +79,11 @@ const categories = [
             selected !== 'すべて' &&
             product.dataset.productCategory !== selected;
           if (!product.hidden) visible += 1;
+        }
+        for (const section of sections) {
+          section.hidden =
+            selected !== 'すべて' &&
+            section.dataset.productCategorySection !== selected;
         }
         for (const item of buttons)
           item.setAttribute('aria-pressed', String(item === button));

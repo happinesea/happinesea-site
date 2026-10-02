@@ -30,6 +30,21 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
   assert.match(html, /aria-live="polite"/);
 });
 
+test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
+  const html = await route('radiolink/index.html');
+
+  assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
+  assert.equal((html.match(/data-detail-available/g) ?? []).length, 8);
+  assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 75);
+  assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
+  assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
+  assert.match(html, /83件を表示/);
+  assert.doesNotMatch(
+    html,
+    /href="\/happinesea-site\/radiolink\/(?:turbo-pix|at10-ii)\/"/,
+  );
+});
+
 test('Radiolink catalogue uses official white-background menu icons', async () => {
   const html = await route('radiolink/index.html');
 
@@ -45,7 +60,7 @@ test('Radiolink catalogue uses official white-background menu icons', async () =
   ]) {
     assert.match(
       html,
-      new RegExp(`/assets/radiolink/catalogue/${slug}\\.(?:jpg|png)`),
+      new RegExp(`/assets/radiolink/catalogue/${slug}\\.webp`),
       slug,
     );
   }

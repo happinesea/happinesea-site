@@ -1,0 +1,87 @@
+---
+import { withBase } from '../lib/urls';
+
+interface CatalogueProduct {
+  name: string;
+  slug: string;
+  category: string;
+  subcategoryLabel: string;
+  description: string;
+  officialUrl: string;
+  detailPath: string | null;
+  image: {
+    src: string;
+    width: number;
+    height: number;
+  };
+}
+
+interface Props {
+  product: CatalogueProduct;
+}
+
+const { product } = Astro.props;
+---
+
+<article
+  class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+  data-product-card={product.slug}
+  data-product-category={product.category}
+>
+  <div class="grid aspect-square place-items-center bg-white p-6 sm:p-7">
+    <img
+      class="h-full w-full object-contain"
+      src={withBase(product.image.src)}
+      alt={`Radiolink ${product.name}`}
+      width={product.image.width}
+      height={product.image.height}
+      loading="lazy"
+      decoding="async"
+      data-product-card-image
+    />
+  </div>
+  <div class="flex flex-1 flex-col border-t border-slate-100 p-5">
+    <p class="m-0 text-xs font-bold tracking-wide text-teal-700">
+      {product.subcategoryLabel}
+    </p>
+    <h3 class="mt-2 mb-0 text-xl font-bold text-slate-950">{product.name}</h3>
+    <p class="catalogue-description mt-3 text-sm leading-6 text-slate-600">
+      {product.description}
+    </p>
+    <div class="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-5">
+      {product.detailPath ? (
+        <a
+          class="font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+          href={withBase(product.detailPath)}
+          data-detail-available
+        >
+          製品情報を見る
+        </a>
+      ) : (
+        <span
+          class="text-sm font-semibold text-slate-500"
+          data-detail-preparing
+        >
+          詳細ページ準備中
+        </span>
+      )}
+      <a
+        class="text-sm text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-teal-800"
+        href={product.officialUrl}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Radiolink公式<span class="sr-only">・外部サイト</span>
+      </a>
+    </div>
+  </div>
+</article>
+
+<style>
+  .catalogue-description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+</style>
