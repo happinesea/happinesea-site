@@ -5,14 +5,23 @@ interface Action {
   secondary?: boolean;
 }
 
+interface Visual {
+  src: string;
+  alt: string;
+  label: string;
+}
+
 interface Props {
   eyebrow: string;
   title: string;
   description: string;
   actions: Action[];
+  visuals: Visual[];
 }
 
-const { eyebrow, title, description, actions } = Astro.props;
+import { withBase } from '../lib/urls';
+
+const { eyebrow, title, description, actions, visuals } = Astro.props;
 ---
 
 <section class="overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
@@ -43,14 +52,27 @@ const { eyebrow, title, description, actions } = Astro.props;
         ))}
       </div>
     </div>
-    <div
-      aria-hidden="true"
-      class="relative min-h-64 rounded-3xl border border-slate-700 bg-slate-900 p-6"
-    >
-      <div class="absolute inset-6 rounded-2xl border border-teal-400/30"></div>
-      <div class="absolute top-1/2 right-12 left-12 h-px bg-teal-400/40"></div>
-      <div class="absolute top-12 bottom-12 left-1/2 w-px bg-teal-400/40"></div>
-      <div class="absolute top-1/2 left-1/2 size-24 -translate-x-1/2 -translate-y-1/2 rounded-full border border-teal-300/70 bg-teal-400/10"></div>
+    <div class="grid grid-cols-2 gap-3 rounded-3xl border border-slate-700 bg-slate-900 p-3 sm:p-5">
+      {visuals.map((visual, index) => (
+        <figure
+          class:list={[
+            'm-0 overflow-hidden rounded-2xl bg-white p-3 text-slate-950',
+            index === 0 && 'col-span-2',
+          ]}
+        >
+          <img
+            class:list={[
+              'w-full object-contain',
+              index === 0 ? 'h-40 sm:h-48' : 'h-24 sm:h-28',
+            ]}
+            src={withBase(visual.src)}
+            alt={visual.alt}
+          />
+          <figcaption class="mt-2 text-center text-xs font-bold text-slate-600">
+            {visual.label}
+          </figcaption>
+        </figure>
+      ))}
     </div>
   </div>
 </section>
