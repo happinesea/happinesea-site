@@ -1,0 +1,114 @@
+{
+  "product_id": "r16f",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "r16f-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/0523ec9af89bdcfaedebc7df263ece53.jpg",
+      "source_status": "verified",
+      "alt": "Radiolink R16F受信機",
+      "public_path": "/assets/radiolink/r16f/hero"
+    },
+    {
+      "id": "r16f-range",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/96d3e8777fe97c53fcc6d817895ab7d5.png",
+      "source_status": "verified",
+      "alt": "R16FのFHSS通信",
+      "public_path": "/assets/radiolink/r16f/range"
+    },
+    {
+      "id": "r16f-simulator",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/9b1e3193f04e687b5838a3f58676ea54.jpg",
+      "source_status": "verified",
+      "alt": "R16Fのシミュレーター接続",
+      "public_path": "/assets/radiolink/r16f/simulator"
+    },
+    {
+      "id": "r16f-telemetry",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/775f9ed3189c8ed76265eca4d205e4cc.png",
+      "source_status": "verified",
+      "alt": "R16Fのテレメトリー情報",
+      "public_path": "/assets/radiolink/r16f/telemetry"
+    },
+    {
+      "id": "r16f-pwm",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/122e260b294054ff64b4b7bc96ebfe08.jpg",
+      "source_status": "verified",
+      "alt": "R16FのPWMモード",
+      "public_path": "/assets/radiolink/r16f/pwm"
+    },
+    {
+      "id": "r16f-sbus",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/6a6823f1668471483c544fbd4910aaee.jpg",
+      "source_status": "verified",
+      "alt": "R16FのSBUSモード",
+      "public_path": "/assets/radiolink/r16f/sbus"
+    },
+    {
+      "id": "r16f-crsf",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/be27928aa99457de3201fe74ba4b0f54.jpg",
+      "source_status": "verified",
+      "alt": "R16FのCRSFモード",
+      "public_path": "/assets/radiolink/r16f/crsf"
+    },
+    {
+      "id": "r16f-power",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/b66c84734e5ddd296a276ec7bef2dc1a.jpg",
+      "source_status": "verified",
+      "alt": "R16Fの電源接続",
+      "public_path": "/assets/radiolink/r16f/power"
+    },
+    {
+      "id": "r16f-subsidiary",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/e794d4873f1af4787a755e56eca5a603.gif",
+      "source_status": "verified",
+      "alt": "R16FのサブID切り替え",
+      "public_path": "/assets/radiolink/r16f/subsidiary"
+    },
+    {
+      "id": "r16f-models",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/84d55b31117bb9776b3d92a65e01e21e.jpg",
+      "source_status": "verified",
+      "alt": "R16Fの対応モデル",
+      "public_path": "/assets/radiolink/r16f/models"
+    },
+    {
+      "id": "r16f-servo",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/0d346eaa601211ed49fbf2e00d5075ef.png",
+      "source_status": "verified",
+      "alt": "R16Fの270度サーボ対応",
+      "public_path": "/assets/radiolink/r16f/servo"
+    },
+    {
+      "id": "r16f-update",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r16f",
+      "source_image_url": "https://www.radiolink.com/d61791f375247eb6f165a871fc845c88.jpg",
+      "source_status": "verified",
+      "alt": "R16FのType-C更新",
+      "public_path": "/assets/radiolink/r16f/update"
+    }
+  ]
+}

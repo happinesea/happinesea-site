@@ -1,0 +1,88 @@
+{
+  "product_id": "r8fg",
+  "results": [
+    {
+      "id": "r8fg-hero",
+      "status": "processed",
+      "sha256": "f41eabebb5f061d4fc89dd418951d190e13e724d432181a0ab91db7733fa6af7",
+      "width": 1920,
+      "height": 720,
+      "webp": "/assets/radiolink/r8fg/hero.webp",
+      "avif": "/assets/radiolink/r8fg/hero.avif"
+    },
+    {
+      "id": "r8fg-response",
+      "status": "processed",
+      "sha256": "98d90503e0249f4870d0a49c814dd54f1826de6c1d1f25b74f10c43f45253d35",
+      "width": 1754,
+      "height": 733,
+      "webp": "/assets/radiolink/r8fg/response.webp",
+      "avif": "/assets/radiolink/r8fg/response.avif"
+    },
+    {
+      "id": "r8fg-range",
+      "status": "processed",
+      "sha256": "5f826a19f029c1b3721ed307ef12a2e43a1ed18dab5454f203c3bc02f34b97e7",
+      "width": 1920,
+      "height": 1152,
+      "webp": "/assets/radiolink/r8fg/range.webp",
+      "avif": "/assets/radiolink/r8fg/range.avif"
+    },
+    {
+      "id": "r8fg-gyro",
+      "status": "processed",
+      "sha256": "b91973a20d6f66a5c00fb4633f32f60ef6e074067e32adc078258999b6da08af",
+      "width": 1920,
+      "height": 780,
+      "pages": 32,
+      "bytes": 424684,
+      "gif": "/assets/radiolink/r8fg/gyro.gif"
+    },
+    {
+      "id": "r8fg-signal",
+      "status": "processed",
+      "sha256": "bcc6602e61a08065eb3ee6f4b8001886710834271ce0271f756a79ed0ae0f3e2",
+      "width": 2813,
+      "height": 1372,
+      "webp": "/assets/radiolink/r8fg/signal.webp",
+      "avif": "/assets/radiolink/r8fg/signal.avif"
+    },
+    {
+      "id": "r8fg-ipx4",
+      "status": "processed",
+      "sha256": "88cc08f1dec720a9ef2bb2b573d8c3908dce9c2f15d48dd34af1b3ed12cdd23d",
+      "width": 1920,
+      "height": 780,
+      "webp": "/assets/radiolink/r8fg/ipx4.webp",
+      "avif": "/assets/radiolink/r8fg/ipx4.avif"
+    },
+    {
+      "id": "r8fg-subsidiary",
+      "status": "processed",
+      "sha256": "481ada3972c6b2bd814b8769e82b1659ea68e4172ec9d699932db8e862cedd22",
+      "width": 480,
+      "height": 800,
+      "pages": 31,
+      "bytes": 38549,
+      "gif": "/assets/radiolink/r8fg/subsidiary.gif"
+    },
+    {
+      "id": "r8fg-power",
+      "status": "processed",
+      "sha256": "82a260a66dc2fbf82a9e15929919ec3a5f02ba674b53d7098386a21d369052a9",
+      "width": 3840,
+      "height": 1560,
+      "webp": "/assets/radiolink/r8fg/power.webp",
+      "avif": "/assets/radiolink/r8fg/power.avif"
+    },
+    {
+      "id": "r8fg-package",
+      "status": "processed",
+      "sha256": "ca4b67abeb40ec4f51075099d6819a27ee17e6c8fd452e6ae43660fddbd51c28",
+      "width": 600,
+      "height": 600,
+      "webp": "/assets/radiolink/r8fg/package.webp",
+      "avif": "/assets/radiolink/r8fg/package.avif"
+    }
+  ]
+}

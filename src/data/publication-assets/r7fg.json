@@ -1,0 +1,78 @@
+{
+  "product_id": "r7fg",
+  "status": "manufacturer_review",
+  "assets": [
+    {
+      "id": "r7fg-hero",
+      "role": "hero",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/ea13c06f1e1e75e391d27f41f37275aa.jpg",
+      "source_status": "verified",
+      "alt": "Radiolink R7FG受信機",
+      "public_path": "/assets/radiolink/r7fg/hero"
+    },
+    {
+      "id": "r7fg-fhss",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/96d3e8777fe97c53fcc6d817895ab7d5.png",
+      "source_status": "verified",
+      "alt": "R7FGのFHSS通信",
+      "public_path": "/assets/radiolink/r7fg/fhss"
+    },
+    {
+      "id": "r7fg-ipx4",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/55d27dabf64fd080ab23f3bddfbf1c23.jpg",
+      "source_status": "verified",
+      "alt": "R7FGのIPX4防滴設計",
+      "public_path": "/assets/radiolink/r7fg/ipx4"
+    },
+    {
+      "id": "r7fg-signal",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/8245c8b9df46e16698457453f7a808a0.jpg",
+      "source_status": "verified",
+      "alt": "R7FGのPWM、PPM、SBUS出力",
+      "public_path": "/assets/radiolink/r7fg/signal"
+    },
+    {
+      "id": "r7fg-gyro",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/dfbeb5100c46950b1c77c8de6110b045.gif",
+      "source_status": "verified",
+      "alt": "R7FGのジャイロ動作",
+      "public_path": "/assets/radiolink/r7fg/gyro"
+    },
+    {
+      "id": "r7fg-subsidiary",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/984643e9cda525f9eae5ae4d6ee3b38c.png",
+      "source_status": "verified",
+      "alt": "R7FGのサブID設定",
+      "public_path": "/assets/radiolink/r7fg/subsidiary"
+    },
+    {
+      "id": "r7fg-power",
+      "role": "feature",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/b45be5f4e216eff186fbd0f0698e8c3c.jpg",
+      "source_status": "verified",
+      "alt": "R7FGの電源接続",
+      "public_path": "/assets/radiolink/r7fg/power"
+    },
+    {
+      "id": "r7fg-package",
+      "role": "package",
+      "source_page_url": "https://www.radiolink.com/r7fg",
+      "source_image_url": "https://www.radiolink.com/944ac1f7f6bd5e4d1eb2778a6afc9f49.jpg",
+      "source_status": "verified",
+      "alt": "R7FG受信機本体",
+      "public_path": "/assets/radiolink/r7fg/package"
+    }
+  ]
+}
