@@ -30,6 +30,30 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
   assert.match(html, /aria-live="polite"/);
 });
 
+test('Radiolink catalogue uses official white-background menu icons', async () => {
+  const html = await route('radiolink/index.html');
+
+  for (const slug of [
+    'rc8x',
+    'rc8p',
+    't12d',
+    'r16f',
+    'r12f',
+    'r8fg',
+    'r7fg',
+    'r6fg',
+  ]) {
+    assert.match(
+      html,
+      new RegExp(`/assets/radiolink/catalogue/${slug}\\.(?:jpg|png)`),
+      slug,
+    );
+  }
+  assert.match(html, /data-product-card-image/);
+  assert.match(html, /object-contain/);
+  assert.doesNotMatch(html, /公式商品ページの内容を日本向けに整理しています。/);
+});
+
 test('RC8X product page follows the official product flow without commercial claims', async () => {
   const html = await route('radiolink/rc8x/index.html');
   const sections = [

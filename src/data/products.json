@@ -6,7 +6,7 @@
     "slug": "rc8x",
     "category": "送信機",
     "title": "RC8X",
-    "description": "RC8Xは、RCカー・ボート・ロボット向けの4.3インチIPSタッチスクリーン搭載送信機です。出荷時は8チャンネルで、現行Firmwareでは16チャンネルへの拡張が案内されています。公式商品ページの内容を日本向けに整理しています。",
+    "description": "RC8Xは、RCカー・ボート・ロボット向けの4.3インチIPSタッチスクリーン搭載送信機です。出荷時は8チャンネルで、現行Firmwareでは16チャンネルへの拡張が案内されています。",
     "content_status": "manufacturer_review",
     "review_note": "Radiolink公式商品ページを基にした日本語商品ページのメーカー確認用プレビューです。8ch→16chのファームウェア表記だけ、公式ページ内の記載差を確認対象として残しています。",
     "features": [
