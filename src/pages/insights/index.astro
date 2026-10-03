@@ -5,11 +5,12 @@ import SectionHeading from '../../components/SectionHeading.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { withBase } from '../../lib/urls';
 
-const insights = (await getCollection('insights'))
-  .filter(({ data }) => data.content_status === 'published')
-  .sort(
-    (a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf(),
-  );
+const insights = [
+  ...(await getCollection('insights')).filter(
+    ({ data }) => data.content_status === 'published',
+  ),
+  ...(await getCollection('wordpressInsights')),
+].sort((a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf());
 const topics = [
   '航空・ドローン',
   'RC技術',

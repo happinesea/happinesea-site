@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { withBase } from '../lib/urls';
 
 interface Props {
-  insight: CollectionEntry<'insights'>;
+  insight: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
 }
 
 const { insight } = Astro.props;
