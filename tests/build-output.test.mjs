@@ -16,6 +16,8 @@ test('home exposes the two publication pillars and concise product discovery', a
   assert.match(html, /data-home-resource="support"/);
   assert.match(html, /data-home-resource="updates"/);
   assert.equal((html.match(/data-home-featured-product/g) ?? []).length, 4);
+  assert.match(html, /href="\/happinesea-site\/manuals\/"/);
+  assert.doesNotMatch(html, /実装済み|公開サンプル|検証用/);
 });
 
 test('Radiolink catalogue exposes seven accessible category filters', async () => {
@@ -42,12 +44,14 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
   assert.equal((html.match(/data-detail-available/g) ?? []).length, 8);
   assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 75);
+  assert.equal((html.match(/商品情報は順次掲載予定です/g) ?? []).length, 75);
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);
   assert.match(html, /Radiolink製品をカテゴリ別に紹介します。/);
   assert.doesNotMatch(html, /公式ページで確認した83商品/);
   assert.doesNotMatch(html, /詳細ページがない商品/);
+  assert.doesNotMatch(html, /詳細ページ準備中/);
   assert.doesNotMatch(
     html,
     /href="\/happinesea-site\/radiolink\/(?:turbo-pix|at10-ii)\/"/,
@@ -271,8 +275,28 @@ test('support and product update routes are distinct public targets', async () =
 
   assert.match(support, /RC8X サポート/);
   assert.match(support, /href="https:\/\/line\.me\/R\/ti\/p\/%40662zyrsb"/);
+  assert.match(support, /href="\/happinesea-site\/radiolink\/rc8x\/"/);
+  assert.match(support, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.doesNotMatch(support, /構成サンプル|公開中のFAQはありません/);
   assert.match(updates, /Radiolink更新情報/);
   assert.match(updates, /data-content-kind="product_update"/);
+});
+
+test('manuals category provides a public entry point without review language', async () => {
+  const category = await route('manuals/index.html');
+  const manual = await route('manuals/rc8x/index.html');
+  const chapterOne = await route('manuals/rc8x/chapter-01/index.html');
+  const chapterTwo = await route('manuals/rc8x/chapter-02/index.html');
+
+  assert.match(category, /data-manual-index/);
+  assert.match(category, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.match(category, /現在は概要、第1章、第2章を掲載しています。/);
+  for (const html of [category, manual, chapterOne, chapterTwo]) {
+    assert.doesNotMatch(
+      html,
+      /メーカー確認|公開前レビュー|確認中の主な項目|公開status/,
+    );
+  }
 });
 
 test('insights index exposes all editorial topics', async () => {
@@ -290,23 +314,18 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
+  assert.match(html, /data-insights-empty/);
+  assert.match(html, /記事は順次掲載します。/);
+  assert.doesNotMatch(html, /公開サンプル|検証用|航空機のエンジンが停止/);
 });
 
-test('sample insight renders the complete editorial template', async () => {
+test('non-published insight route stays available without internal copy', async () => {
   const html = await route('insights/aircraft-engine-stop/index.html');
-  const sections = ['introduction', 'body', 'related', 'attribution'];
 
-  assert.match(html, /aria-label="パンくずリスト"/);
-  assert.match(html, /航空・ドローン/);
-  assert.match(html, /航空機のエンジンが停止するとどうなる？/);
-  assert.match(html, /2026年9月28日/);
-  assert.match(html, /記事画像準備中/);
-  assert.match(html, /レイアウト検証用のサンプル/);
-  assert.match(html, /data-ad-candidate/);
-  assert.match(html, /"@type":"TechArticle"/);
-  for (const section of sections) {
-    assert.match(html, new RegExp(`data-article-section="${section}"`));
-  }
+  assert.match(html, /この記事の本文は現在掲載していません。/);
+  assert.match(html, /href="\/happinesea-site\/insights\/"/);
+  assert.doesNotMatch(html, /公開サンプル|検証用|構成サンプル|記事画像準備中/);
+  assert.doesNotMatch(html, /"@type":"TechArticle"/);
 });
 
 test('Starlight manual retains navigation features under the project base', async () => {
@@ -364,6 +383,7 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
     'support/index.html',
     'insights/index.html',
     'insights/aircraft-engine-stop/index.html',
+    'manuals/index.html',
     'manuals/rc8x/index.html',
     'manuals/rc8x/chapter-01/index.html',
     'manuals/rc8x/chapter-02/index.html',
@@ -408,10 +428,12 @@ test('robots and sitemap stay on the standard project Pages URL', async () => {
 
 test('structured data contains only backed product and article types', async () => {
   const product = await route('radiolink/rc8x/index.html');
-  const article = await route('insights/aircraft-engine-stop/index.html');
+  const unpublishedArticle = await route(
+    'insights/aircraft-engine-stop/index.html',
+  );
 
   assert.match(product, /"@type":"Product"/);
   assert.match(product, /"@type":"BreadcrumbList"/);
-  assert.match(article, /"@type":"TechArticle"/);
+  assert.doesNotMatch(unpublishedArticle, /"@type":"TechArticle"/);
   assert.doesNotMatch(product, /"offers"|"aggregateRating"|"review"/);
 });

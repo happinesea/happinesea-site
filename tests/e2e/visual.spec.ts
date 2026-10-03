@@ -11,11 +11,13 @@ const routes = [
   ['r8fg', './radiolink/r8fg/'],
   ['r7fg', './radiolink/r7fg/'],
   ['r6fg', './radiolink/r6fg/'],
+  ['manuals-category', './manuals/'],
   ['manual', './manuals/rc8x/'],
   ['manual-chapter-01', './manuals/rc8x/chapter-01/'],
   ['manual-chapter-02', './manuals/rc8x/chapter-02/'],
+  ['support', './support/'],
   ['insights', './insights/'],
-  ['article', './insights/aircraft-engine-stop/'],
+  ['insight-availability', './insights/aircraft-engine-stop/'],
 ] as const;
 
 for (const [name, path] of routes) {

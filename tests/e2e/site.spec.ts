@@ -11,11 +11,13 @@ const routes = [
   ['R8FG product', './radiolink/r8fg/'],
   ['R7FG product', './radiolink/r7fg/'],
   ['R6FG product', './radiolink/r6fg/'],
+  ['manuals category', './manuals/'],
   ['manual', './manuals/rc8x/'],
   ['manual chapter 1', './manuals/rc8x/chapter-01/'],
   ['manual chapter 2', './manuals/rc8x/chapter-02/'],
+  ['support', './support/'],
   ['insights', './insights/'],
-  ['article', './insights/aircraft-engine-stop/'],
+  ['insight availability', './insights/aircraft-engine-stop/'],
 ] as const;
 
 function captureErrors(page: Page) {
@@ -123,6 +125,35 @@ test('navigation, category filtering, and LINE support work', async ({
   await expect(page.locator('[data-product-section="manuals"]')).toHaveCount(0);
   await expect(page.locator('[data-product-section="support"]')).toHaveCount(0);
   expect(errors).toEqual([]);
+});
+
+test('category navigation exposes the four public entry points', async ({
+  page,
+}) => {
+  await page.goto('./');
+  for (const [label, path] of [
+    ['商品', '/radiolink/'],
+    ['マニュアル', '/manuals/'],
+    ['サポート', '/support/'],
+    ['業界・技術', '/insights/'],
+  ] as const) {
+    await expect(
+      page.getByRole('link', { name: label, exact: true }).first(),
+    ).toHaveAttribute('href', `/happinesea-site${path}`);
+  }
+
+  await page.goto('./manuals/');
+  await expect(
+    page.getByRole('link', { name: 'RC8Xマニュアルを見る' }),
+  ).toHaveAttribute('href', '/happinesea-site/manuals/rc8x/');
+
+  await page.goto('./support/');
+  await expect(
+    page.getByRole('link', { name: 'RC8Xの商品情報を見る' }),
+  ).toHaveAttribute('href', '/happinesea-site/radiolink/rc8x/');
+  await expect(
+    page.getByRole('link', { name: 'RC8Xマニュアルを見る' }),
+  ).toHaveAttribute('href', '/happinesea-site/manuals/rc8x/');
 });
 
 test('catalogue exposes all products and every local image decodes', async ({
