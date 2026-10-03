@@ -3,10 +3,13 @@ import { getCollection } from 'astro:content';
 import InsightCard from '../../components/InsightCard.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
 
-const insights = (await getCollection('insights')).sort(
-  (a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf(),
-);
+const insights = (await getCollection('insights'))
+  .filter(({ data }) => data.content_status === 'published')
+  .sort(
+    (a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf(),
+  );
 const topics = [
   '航空・ドローン',
   'RC技術',
@@ -39,7 +42,7 @@ const topics = [
   </section>
 
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
-    <SectionHeading title="トピック" description="掲載対象となる6分野です。" />
+    <SectionHeading title="トピック" description="扱う6つの分野です。" />
     <ul class="mt-6 flex list-none flex-wrap gap-2 p-0">
       {topics.map((topic) => (
         <li
@@ -51,10 +54,30 @@ const topics = [
       ))}
     </ul>
 
-    <div class="mt-14">
-      {insights.map((insight) => (
-        <InsightCard insight={insight} />
-      ))}
-    </div>
+    {insights.length ? (
+      <div class="mt-14">
+        {insights.map((insight) => (
+          <InsightCard insight={insight} />
+        ))}
+      </div>
+    ) : (
+      <div
+        class="mt-14 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8"
+        data-insights-empty
+      >
+        <h2 class="m-0 text-2xl font-bold text-slate-950">
+          記事は順次掲載します。
+        </h2>
+        <p class="mt-3 text-slate-600">
+          航空・RC・ドローン分野の技術や業界動向を、公開情報に基づいて紹介します。
+        </p>
+        <a
+          class="mt-2 inline-block font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+          href={withBase('/radiolink/')}
+        >
+          製品情報を見る
+        </a>
+      </div>
+    )}
   </section>
 </BaseLayout>

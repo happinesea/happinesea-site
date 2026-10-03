@@ -9,7 +9,7 @@ export const LINE_URL = 'https://line.me/R/ti/p/%40662zyrsb';
 export function getNavigation(base = import.meta.env.BASE_URL) {
   return [
     { label: '商品', href: withBase('/radiolink/', base) },
-    { label: 'マニュアル', href: withBase('/manuals/rc8x/', base) },
+    { label: 'マニュアル', href: withBase('/manuals/', base) },
     { label: 'サポート', href: withBase('/support/', base) },
     { label: '業界・技術', href: withBase('/insights/', base) },
   ] as const;
