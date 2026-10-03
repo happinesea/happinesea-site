@@ -314,7 +314,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 3);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 11);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
@@ -326,35 +326,23 @@ test('insights index exposes all editorial topics', async () => {
   );
 });
 
-test('WordPress insight PoC emits sanitized static routes with local images and legacy canonicals', async () => {
-  const articles = [
-    {
-      path: 'insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/index.html',
-      canonical: 'https://happinesea.com/news/202601202187.html',
-      image: '2187-8c80983b0fb0.webp',
-    },
-    {
-      path: 'insights/パトリオットは極超音速ミサイルキンジャールを/index.html',
-      canonical: 'https://happinesea.com/news/202506242177.html',
-      image: '2177-d306f164c758.webp',
-    },
-    {
-      path: 'insights/how-to-set-t16d-t12d-to-control-a560/index.html',
-      canonical: 'https://happinesea.com/news/202504082138.html',
-      image: '2138-efec77d83daa.webp',
-    },
-  ];
+test('WordPress insight batch emits sanitized static routes with local images and legacy canonicals', async () => {
+  const articles = JSON.parse(
+    await readFile(
+      new URL('../src/data/wordpress-insights.json', import.meta.url),
+      'utf8',
+    ),
+  );
 
   for (const article of articles) {
-    const html = await route(article.path);
+    const html = await route(
+      `insights/${decodeURIComponent(article.slug)}/index.html`,
+    );
     assert.match(
       html,
       new RegExp(`<link rel="canonical" href="${article.canonical}"`),
     );
-    assert.match(
-      html,
-      new RegExp(`/happinesea-site/assets/insights/wordpress/${article.image}`),
-    );
+    assert.match(html, new RegExp(`/happinesea-site${article.hero.src}`));
     assert.match(html, /<img[^>]+alt(?:="")?(?:\s|>)/);
     assert.match(html, /https:\/\/www\.youtube\.com\/embed\//);
     assert.doesNotMatch(html, /happinesea\.com\/wp-(?:json|content)/);
@@ -366,7 +354,7 @@ test('WordPress insight PoC emits sanitized static routes with local images and 
   }
 });
 
-test('WordPress publication validation report records the closed three-article scope', async () => {
+test('WordPress publication validation report records the approved batch scope', async () => {
   const report = JSON.parse(
     await readFile(
       new URL(
@@ -377,9 +365,18 @@ test('WordPress publication validation report records the closed three-article s
     ),
   );
 
-  assert.equal(report.expected_count, 3);
-  assert.equal(report.received_count, 3);
-  assert.deepEqual(report.article_ids, [2187, 2177, 2138]);
+  const manifest = JSON.parse(
+    await readFile(
+      new URL('../src/data/wordpress-insight-manifest.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  assert.equal(report.expected_count, manifest.expected_count);
+  assert.equal(report.received_count, manifest.expected_count);
+  assert.deepEqual(
+    report.article_ids,
+    manifest.articles.map(({ id }) => id),
+  );
   assert.equal(report.validation.status, 'passed');
   assert.equal(report.validation.remote_runtime_dependency, false);
 });

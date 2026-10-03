@@ -9,6 +9,7 @@ import sharp from 'sharp';
 import {
   assertCollection,
   assertManifestContinuity,
+  extractRemoteArticleImages,
   fetchImage,
   fetchPublishedPosts,
   htmlText,
@@ -35,29 +36,35 @@ const assetDir = join(root, 'public/assets/insights/wordpress');
 const sourceEndpoint =
   process.env.WORDPRESS_API_URL ?? manifest.source_endpoint;
 
-async function downloadImage(article) {
-  const image = article.contract.featured_image;
-  if (!image) return null;
-  const { contentType, bytes: source } = await fetchImage(image.url);
+async function downloadAsset(url, prefix) {
+  const { contentType, bytes: source } = await fetchImage(url);
   const metadata = await sharp(source, { animated: true }).metadata();
   if (!metadata.width || !metadata.height)
-    throw new Error(`image decode failed: ${image.url}`);
+    throw new Error(`image decode failed: ${url}`);
 
   const digest = createHash('sha256').update(source).digest('hex');
   const isGif = contentType === 'image/gif';
   const extension = isGif ? 'gif' : 'webp';
-  const filename = `${article.contract.id}-${digest.slice(0, 12)}.${extension}`;
+  const filename = `${prefix}-${digest.slice(0, 12)}.${extension}`;
   const bytes = isGif
     ? source
     : await sharp(source).webp({ quality: 90 }).toBuffer();
   await writeFile(join(assetDir, filename), bytes);
   return {
     src: `/assets/insights/wordpress/${filename}`,
-    alt: article.contract.featured_image_alt,
     width: metadata.width,
     height: metadata.height,
     sha256: digest,
-    source_url: image.url,
+    source_url: url,
+  };
+}
+
+async function downloadImage(article) {
+  const image = article.contract.featured_image;
+  if (!image) return null;
+  return {
+    ...(await downloadAsset(image.url, article.contract.id)),
+    alt: article.contract.featured_image_alt,
   };
 }
 
@@ -86,30 +93,35 @@ if (
 
 const posts = await fetchPublishedPosts(sourceEndpoint, ids);
 const postById = new Map(posts.map((post) => [post.id, post]));
-const articles = activeMappings.map((mapping) =>
-  normalizePost(postById.get(mapping.id), mapping),
-);
-assertCollection(articles);
-assertManifestContinuity(articles, manifest.articles, manifest.withdrawals);
-validateContracts(articles, schema);
-
-for (const article of articles) {
-  if (
-    /\bsrc=["']https?:\/\//i.test(
-      article.contract.content.replaceAll(/<iframe\b[\s\S]*?<\/iframe>/gi, ''),
-    )
-  ) {
-    throw new Error(
-      `remote inline asset requires migration review: ${article.contract.id}`,
-    );
-  }
-}
 
 await mkdir(assetDir, { recursive: true });
 for (const name of await readdir(assetDir)) {
-  if (/^\d+-[a-f0-9]{12}\.(?:gif|webp)$/.test(name))
+  if (/^\d+(?:-body-\d+)?-[a-f0-9]{12}\.(?:gif|webp)$/.test(name))
     await unlink(join(assetDir, name));
 }
+
+const articles = [];
+for (const mapping of activeMappings) {
+  const post = postById.get(mapping.id);
+  const bodyAssets = new Map();
+  let imageIndex = 0;
+  for (const image of extractRemoteArticleImages(post.content?.rendered)) {
+    if (bodyAssets.has(image.src)) continue;
+    imageIndex += 1;
+    const asset = await downloadAsset(
+      image.src.startsWith('//') ? `https:${image.src}` : image.src,
+      `${mapping.id}-body-${imageIndex}`,
+    );
+    bodyAssets.set(image.src, asset);
+  }
+  articles.push({
+    ...normalizePost(post, mapping, { bodyAssets }),
+    body_assets: [...bodyAssets.values()],
+  });
+}
+assertCollection(articles);
+assertManifestContinuity(articles, manifest.articles, manifest.withdrawals);
+validateContracts(articles, schema);
 
 const output = [];
 for (const article of articles) {
@@ -127,6 +139,7 @@ for (const article of articles) {
     canonical: article.contract.canonical,
     noindex: article.contract.noindex,
     hero: hero ? { ...hero, image_status: 'verified' } : null,
+    body_assets: article.body_assets,
   });
 }
 
@@ -139,10 +152,15 @@ await writeJson(reportPath, {
   article_ids: output.map(({ contract }) => contract.id),
   canonicals: output.map(({ contract }) => contract.canonical),
   routes: output.map(({ route }) => route),
-  assets: output.map(({ contract, hero }) => ({
+  assets: output.map(({ contract, hero, body_assets: bodyAssets }) => ({
     id: contract.id,
     path: hero ? `public${hero.src}` : null,
     sha256: hero?.sha256 ?? null,
+    body: bodyAssets.map((asset) => ({
+      path: `public${asset.src}`,
+      sha256: asset.sha256,
+      source_url: asset.source_url,
+    })),
   })),
   validation: {
     schema: 'publication-content-v0.1.schema.json',
