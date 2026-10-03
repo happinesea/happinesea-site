@@ -5,11 +5,17 @@ import test from 'node:test';
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 
-test('home exposes product and editorial pillars', async () => {
+test('home exposes the two publication pillars and concise product discovery', async () => {
   const html = await route('index.html');
 
-  assert.match(html, /data-home-pillar="products"/);
-  assert.match(html, /data-home-pillar="insights"/);
+  assert.match(html, /data-home-pillar="products-support"/);
+  assert.match(html, /data-home-pillar="industry-technology"/);
+  assert.match(html, />製品・サポート</);
+  assert.match(html, />業界・技術</);
+  assert.match(html, /data-home-resource="manuals"/);
+  assert.match(html, /data-home-resource="support"/);
+  assert.match(html, /data-home-resource="updates"/);
+  assert.equal((html.match(/data-home-featured-product/g) ?? []).length, 4);
 });
 
 test('Radiolink catalogue exposes seven accessible category filters', async () => {
