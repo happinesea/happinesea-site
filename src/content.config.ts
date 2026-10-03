@@ -27,6 +27,17 @@ const verificationStatus = z.enum([
   'unverified',
 ]);
 
+const insightTopic = z.enum([
+  '航空・ドローン',
+  'RC技術',
+  '法規・制度',
+  '業界動向',
+  '技術解説',
+  '導入事例',
+]);
+
+const insightKind = z.enum(['article', 'technical_explainer', 'case_study']);
+
 const mediaSchema = z.object({
   src: z.string().nullable(),
   alt: z.string(),
@@ -127,15 +138,8 @@ const insights = defineCollection({
     slug: z.string(),
     title: z.string(),
     description: z.string(),
-    topic: z.enum([
-      '航空・ドローン',
-      'RC技術',
-      '法規・制度',
-      '業界動向',
-      '技術解説',
-      '導入事例',
-    ]),
-    article_kind: z.enum(['article', 'technical_explainer', 'case_study']),
+    topic: insightTopic,
+    article_kind: insightKind,
     published_at: z.coerce.date(),
     updated_at: z.coerce.date(),
     hero: z.object({
@@ -147,6 +151,32 @@ const insights = defineCollection({
     related_manuals: z.array(z.string()),
     related_articles: z.array(z.string()),
     content_status: z.enum(['sample', 'draft', 'published']),
+  }),
+});
+
+const wordpressInsights = defineCollection({
+  loader: file('src/data/wordpress-insights.json'),
+  schema: z.object({
+    slug: z.string(),
+    title: z.string(),
+    description: z.string(),
+    topic: insightTopic,
+    article_kind: insightKind,
+    published_at: z.coerce.date(),
+    updated_at: z.coerce.date(),
+    content_status: z.literal('published'),
+    content_html: z.string(),
+    canonical: z.url(),
+    noindex: z.boolean(),
+    hero: z
+      .object({
+        src: z.string(),
+        alt: z.string(),
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+        image_status: z.literal('verified'),
+      })
+      .nullable(),
   }),
 });
 
@@ -217,6 +247,7 @@ const manualSections = defineCollection({
 export const collections = {
   products,
   insights,
+  wordpressInsights,
   productUpdates,
   support,
   manualSections,

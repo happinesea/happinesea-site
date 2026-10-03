@@ -1,0 +1,38 @@
+{
+  "contract_version": "0.1",
+  "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
+  "expected_count": 3,
+  "articles": [
+    {
+      "id": 2187,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "how-to-change-radiolink-t8fb-stick-mode-joystick-calibration",
+      "route": "/insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/news/202601202187.html"
+    },
+    {
+      "id": 2177,
+      "content_type": "insight",
+      "topic": "業界動向",
+      "article_kind": "article",
+      "slug": "%e3%83%91%e3%83%88%e3%83%aa%e3%82%aa%e3%83%83%e3%83%88%e3%81%af%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%bc%e3%83%ab%e3%82%92",
+      "route": "/insights/%e3%83%91%e3%83%88%e3%83%aa%e3%82%aa%e3%83%83%e3%83%88%e3%81%af%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%bc%e3%83%ab%e3%82%92/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/news/202506242177.html"
+    },
+    {
+      "id": 2138,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "how-to-set-t16d-t12d-to-control-a560",
+      "route": "/insights/how-to-set-t16d-t12d-to-control-a560/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/news/202504082138.html"
+    }
+  ],
+  "withdrawals": []
+}

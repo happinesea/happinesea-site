@@ -17,6 +17,14 @@ const routes = [
   ['manual chapter 2', './manuals/rc8x/chapter-02/'],
   ['support', './support/'],
   ['insights', './insights/'],
+  [
+    'WordPress insight',
+    './insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/',
+  ],
+  [
+    'WordPress percent slug insight',
+    './insights/%e3%83%91%e3%83%88%e3%83%aa%e3%82%aa%e3%83%83%e3%83%88%e3%81%af%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%bc%e3%83%ab%e3%82%92/',
+  ],
   ['insight availability', './insights/aircraft-engine-stop/'],
 ] as const;
 
@@ -177,6 +185,31 @@ test('catalogue exposes all products and every local image decodes', async ({
       ),
     ),
   ).toBe(true);
+});
+
+test('WordPress insight uses a local hero and an allowlisted YouTube embed', async ({
+  page,
+  request,
+}) => {
+  await page.goto(
+    './insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/',
+  );
+  const hero = page.locator('article header img');
+  await expect(hero).toHaveAttribute(
+    'src',
+    /\/assets\/insights\/wordpress\/2187-[a-f0-9]+\.webp$/,
+  );
+  await hero.evaluate((image: HTMLImageElement) => image.decode());
+  expect(
+    (
+      await request.get(
+        new URL((await hero.getAttribute('src'))!, page.url()).href,
+      )
+    ).status(),
+  ).toBeLessThan(400);
+  await expect(
+    page.locator('[data-article-section="body"] iframe'),
+  ).toHaveAttribute('src', /^https:\/\/www\.youtube\.com\/embed\//);
 });
 
 for (const [model, path] of [

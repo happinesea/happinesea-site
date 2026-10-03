@@ -1,0 +1,40 @@
+{
+  "contract_version": "0.1",
+  "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
+  "expected_count": 3,
+  "received_count": 3,
+  "article_ids": [2187, 2177, 2138],
+  "canonicals": [
+    "https://happinesea.com/news/202601202187.html",
+    "https://happinesea.com/news/202506242177.html",
+    "https://happinesea.com/news/202504082138.html"
+  ],
+  "routes": [
+    "/insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/",
+    "/insights/%e3%83%91%e3%83%88%e3%83%aa%e3%82%aa%e3%83%83%e3%83%88%e3%81%af%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%bc%e3%83%ab%e3%82%92/",
+    "/insights/how-to-set-t16d-t12d-to-control-a560/"
+  ],
+  "assets": [
+    {
+      "id": 2187,
+      "path": "public/assets/insights/wordpress/2187-8c80983b0fb0.webp",
+      "sha256": "8c80983b0fb0d926aceaf4813655c746b4e54e802001e5f53820c33385543ef2"
+    },
+    {
+      "id": 2177,
+      "path": "public/assets/insights/wordpress/2177-d306f164c758.webp",
+      "sha256": "d306f164c758e4c8d3c7482ba175db13086b35844ce457ef7314c7860e4ce7c0"
+    },
+    {
+      "id": 2138,
+      "path": "public/assets/insights/wordpress/2138-efec77d83daa.webp",
+      "sha256": "efec77d83daa1b3a6b12e102f0a73b6c78b0a039f9248588d306cd940c51e069"
+    }
+  ],
+  "validation": {
+    "schema": "publication-content-v0.1.schema.json",
+    "status": "passed",
+    "html_policy": "allowlist-with-youtube-only-iframes",
+    "remote_runtime_dependency": false
+  }
+}

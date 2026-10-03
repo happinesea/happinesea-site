@@ -9,9 +9,12 @@ import { withBase } from '../lib/urls';
 
 const products = await getCollection('products');
 const updates = await getCollection('productUpdates');
-const insights = (await getCollection('insights')).filter(
-  ({ data }) => data.content_status === 'published',
-);
+const insights = [
+  ...(await getCollection('insights')).filter(
+    ({ data }) => data.content_status === 'published',
+  ),
+  ...(await getCollection('wordpressInsights')),
+].sort((a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf());
 const featuredSlugs = ['rc8x', 'rc8p', 't12d', 'r8fg'];
 const featuredProducts = products
   .filter(({ data }) => featuredSlugs.includes(data.slug))

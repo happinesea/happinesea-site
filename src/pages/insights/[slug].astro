@@ -1,6 +1,5 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import AdSlot from '../../components/AdSlot.astro';
 import ArticleHero from '../../components/ArticleHero.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
@@ -12,28 +11,45 @@ import {
 import { canonicalUrl, withBase } from '../../lib/urls';
 
 interface Props {
-  article: CollectionEntry<'insights'>;
+  article: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
 }
 
 export async function getStaticPaths() {
-  const insights = await getCollection('insights');
+  const insights = [
+    ...(await getCollection('insights')),
+    ...(await getCollection('wordpressInsights')),
+  ];
+  const slugs = new Set<string>();
+  for (const { data } of insights) {
+    const routeSlug = decodeURIComponent(data.slug);
+    if (slugs.has(routeSlug))
+      throw new Error(`Duplicate insight route: ${data.slug}`);
+    slugs.add(routeSlug);
+  }
   return insights.map((article) => ({
-    params: { slug: article.data.slug },
+    params: { slug: decodeURIComponent(article.data.slug) },
     props: { article },
   }));
 }
 
 const { article } = Astro.props;
 const { data } = article;
-const { Content } = await render(article);
+const isWordpress = article.collection === 'wordpressInsights';
+const wordpressData =
+  article.collection === 'wordpressInsights' ? article.data : undefined;
+const staticArticle = article.collection === 'insights' ? article : undefined;
+const Content = staticArticle
+  ? (await render(staticArticle)).Content
+  : undefined;
 const isPublished = data.content_status === 'published';
-const articleUrl = canonicalUrl(`/insights/${data.slug}/`);
+const routeUrl = canonicalUrl(`/insights/${data.slug}/`);
+const articleUrl = wordpressData?.canonical ?? routeUrl;
 const kind =
   data.article_kind === 'technical_explainer' ? 'TechArticle' : 'Article';
 const breadcrumbJsonLd = buildBreadcrumbJsonLd([
   { name: 'ホーム', url: canonicalUrl('/') },
   { name: '業界・技術', url: canonicalUrl('/insights/') },
-  { name: data.title, url: articleUrl },
+  { name: data.title, url: routeUrl },
 ]);
 const jsonLd = isPublished
   ? [
@@ -58,8 +74,11 @@ const description = isPublished
   title={data.title}
   description={description}
   canonicalPath={`/insights/${data.slug}/`}
+  canonicalUrlOverride={wordpressData?.canonical}
+  image={wordpressData?.hero?.src}
   type={isPublished ? 'article' : 'website'}
   jsonLd={jsonLd}
+  robots={wordpressData?.noindex ? 'noindex, nofollow' : undefined}
 >
   <article class="mx-auto max-w-4xl px-5 py-6 lg:px-8">
     <Breadcrumbs
@@ -81,13 +100,15 @@ const description = isPublished
         </section>
 
         <div
-          class="prose prose-slate mt-10 max-w-none"
+          class="prose prose-slate mt-10 max-w-none overflow-x-auto [&_iframe]:aspect-video [&_iframe]:h-auto [&_iframe]:max-w-full [&_iframe]:w-full [&_img]:h-auto [&_img]:max-w-full"
           data-article-section="body"
         >
-          <Content />
+          {isWordpress ? (
+            <Fragment set:html={wordpressData!.content_html} />
+          ) : (
+            Content && <Content />
+          )}
         </div>
-
-        <AdSlot label="記事内広告掲載候補" />
 
         <section class="mt-12" data-article-section="related">
           <h2 class="text-2xl font-bold text-slate-950">関連情報</h2>
@@ -99,6 +120,11 @@ const description = isPublished
           data-article-section="attribution"
         >
           <p>編集・公開: happinesea</p>
+          {isWordpress && (
+            <p>
+              <a href={wordpressData!.canonical}>元の記事を見る</a>
+            </p>
+          )}
         </footer>
       </>
     ) : (
