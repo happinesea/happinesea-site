@@ -1,5 +1,5 @@
 ---
-import { LINE_ACCOUNT_ID, LINE_URL } from '../lib/site';
+import { LINE_ACCOUNT_ID, LINE_URL, SITE_NAME } from '../lib/site';
 
 interface Props {
   heading?: string;
@@ -10,7 +10,9 @@ const { heading = 'LINEで問い合わせる' } = Astro.props;
 
 <aside class="rounded-2xl bg-[#06c755] p-6 text-white">
   <h3 class="m-0 text-xl font-bold">{heading}</h3>
-  <p class="mt-2 mb-5 text-sm">公式アカウント {LINE_ACCOUNT_ID}</p>
+  <p class="mt-2 mb-5 text-sm">
+    {SITE_NAME}のLINE相談窓口 {LINE_ACCOUNT_ID}
+  </p>
   <a
     class="inline-block rounded-full bg-white px-5 py-3 font-bold text-slate-950 no-underline"
     href={LINE_URL}

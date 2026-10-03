@@ -10,17 +10,17 @@ const updates = (await getCollection('productUpdates')).sort(
 
 <BaseLayout
   title="Radiolink更新情報"
-  description="Radiolink製品のファームウェア、マニュアル、メーカー告知を掲載します。"
+  description="Radiolink製品のファームウェアやマニュアルの更新、メーカーからのお知らせを確認できます。"
 >
   <section
     class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20"
     data-content-kind="product_update"
   >
     <SectionHeading
-      eyebrow="Product Updates"
+      eyebrow="Radiolink"
       title="Radiolink更新情報"
       level="h1"
-      description="製品に関する一次情報への導線です。業界・技術記事とは別に掲載しています。"
+      description="ファームウェアやマニュアルの更新、メーカーからのお知らせはこちら。"
     />
     <ul class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
       {updates.map(({ data }) => (

@@ -1,13 +1,14 @@
 ---
 import { withBase } from '../../lib/urls';
+import { SITE_NAME } from '../../lib/site';
 ---
 
 <a
   class="manual-site-title"
   href={withBase('/')}
-  aria-label="happinesea トップへ戻る"
+  aria-label={`${SITE_NAME} トップへ戻る`}
 >
-  <strong>happinesea</strong>
+  <strong>{SITE_NAME}</strong>
   <span>マニュアル</span>
 </a>
 

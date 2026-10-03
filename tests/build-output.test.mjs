@@ -10,8 +10,16 @@ test('home exposes the two publication pillars and concise product discovery', a
 
   assert.match(html, /data-home-pillar="products-support"/);
   assert.match(html, /data-home-pillar="industry-technology"/);
-  assert.match(html, />製品・サポート</);
-  assert.match(html, />業界・技術</);
+  assert.match(html, />製品・マニュアル・サポート</);
+  assert.match(html, />ニュース・航空知識</);
+  assert.match(html, /happinesea hobby/);
+  assert.match(html, /夢を現実に！/);
+  assert.match(html, /href="https:\/\/happinesea.com\/drawinglibrary"/);
+  assert.match(html, /href="https:\/\/happinesea.com\/drone-rc-glossary"/);
+  assert.doesNotMatch(
+    html,
+    /業界・技術|Products &amp; Support|Industry &amp; Technology|日本代理店/,
+  );
   assert.match(html, /data-home-resource="manuals"/);
   assert.match(html, /data-home-resource="support"/);
   assert.match(html, /data-home-resource="updates"/);
@@ -44,7 +52,7 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
   assert.equal((html.match(/data-detail-available/g) ?? []).length, 8);
   assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 75);
-  assert.equal((html.match(/商品情報は順次掲載予定です/g) ?? []).length, 75);
+  assert.equal((html.match(/詳しい仕様は公式サイトで/g) ?? []).length, 75);
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);
@@ -387,7 +395,7 @@ test('WordPress publication validation report records the closed three-article s
 test('non-published insight route stays available without internal copy', async () => {
   const html = await route('insights/aircraft-engine-stop/index.html');
 
-  assert.match(html, /この記事の本文は現在掲載していません。/);
+  assert.match(html, /この記事は現在お読みいただけません。/);
   assert.match(html, /href="\/happinesea-site\/insights\/"/);
   assert.doesNotMatch(html, /公開サンプル|検証用|構成サンプル|記事画像準備中/);
   assert.doesNotMatch(html, /"@type":"TechArticle"/);
@@ -456,6 +464,7 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
 
   for (const path of routes) {
     const html = await route(path);
+    assert.match(html, /<title>[^<]*happinesea hobby[^<]*<\/title>/, path);
     assert.match(
       html,
       /<link rel="canonical" href="https:\/\/happinesea\.github\.io\/happinesea-site\//,

@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductCard.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/urls';
+import { SITE_NAME, SITE_TAGLINE } from '../lib/site';
 
 const products = await getCollection('products');
 const updates = await getCollection('productUpdates');
@@ -35,13 +36,13 @@ const insightTopics = [
 
 <BaseLayout>
   <Hero
-    eyebrow="製品・サポート / 業界・技術"
-    title="使うための情報と、理解するための知識を。"
-    description="happineseaは、製品を選び使い続けるための情報と、航空・RC・ドローン分野を読み解くための記事を届ける日本語技術・サポートサイトです。"
+    eyebrow={SITE_NAME}
+    title={SITE_TAGLINE}
+    description="ラジコンを走らせる、飛行機を飛ばす、電子工作で試してみる。製品の使い方や航空の話題から、次に楽しむことを見つけてください。"
     actions={[
-      { label: '製品を見る', href: withBase('/radiolink/') },
+      { label: 'Radiolink製品を探す', href: withBase('/radiolink/') },
       {
-        label: '業界・技術を読む',
+        label: 'ニュース・航空知識を読む',
         href: withBase('/insights/'),
         secondary: true,
       },
@@ -68,9 +69,8 @@ const insightTopics = [
   <section class="bg-slate-50">
     <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
       <SectionHeading
-        eyebrow="Two Pillars"
-        title="happineseaの2つの入口"
-        description="製品を探すときも、技術の背景を知りたいときも、ここから目的の情報へ進めます。"
+        title="探す・使う・楽しむ"
+        description="製品の選び方や操作方法を調べたり、航空の話題を読んだり。目的に合わせてお選びください。"
       />
       <div class="mt-10 grid gap-6 lg:grid-cols-2">
         <article
@@ -79,13 +79,13 @@ const insightTopics = [
           data-home-pillar="products-support"
         >
           <p class="m-0 text-sm font-bold tracking-[0.16em] text-teal-700 uppercase">
-            Products & Support
+            Radiolink
           </p>
           <h2 class="mt-3 mb-0 text-3xl font-bold text-slate-950 sm:text-4xl">
-            製品・サポート
+            製品・マニュアル・サポート
           </h2>
           <p class="mt-5 text-lg leading-8 text-slate-600">
-            83製品の一覧、公開中の商品情報、マニュアル、FAQ、更新情報をひとつの流れで確認できます。
+            送信機・受信機・フライトコントローラーの仕様や使い方、よくある質問、ファームウェアの更新情報を確認できます。
           </p>
           <a
             class="mt-3 inline-flex w-fit rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white no-underline transition hover:bg-teal-800"
@@ -101,7 +101,7 @@ const insightTopics = [
             >
               <strong class="block text-slate-950">マニュアル</strong>
               <span class="mt-1 block text-sm text-slate-600">
-                操作情報を確認
+                操作方法を調べる
               </span>
             </a>
             <a
@@ -121,7 +121,7 @@ const insightTopics = [
             >
               <strong class="block text-slate-950">更新情報</strong>
               <span class="mt-1 block text-sm text-slate-600">
-                製品の新着情報
+                ファームウェアなど
               </span>
             </a>
           </div>
@@ -132,13 +132,13 @@ const insightTopics = [
           data-home-pillar="industry-technology"
         >
           <p class="m-0 text-sm font-bold tracking-[0.16em] text-teal-700 uppercase">
-            Industry & Technology
+            読み物・動画
           </p>
           <h2 class="mt-3 mb-0 text-3xl font-bold text-slate-950 sm:text-4xl">
-            業界・技術
+            ニュース・航空知識
           </h2>
           <p class="mt-5 text-lg leading-8 text-slate-600">
-            航空・ドローン分野の動向、RC技術、法規や導入事例を、製品紹介とは分けて背景から整理します。
+            航空の話題やラジコン・ドローンの技術、操作のヒントを動画と記事で紹介しています。
           </p>
           <a
             class="mt-3 inline-flex w-fit rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white no-underline transition hover:bg-teal-800"
@@ -148,7 +148,7 @@ const insightTopics = [
           </a>
           <ul
             class="mt-8 flex list-none flex-wrap gap-2 p-0"
-            aria-label="業界・技術のトピック"
+            aria-label="ニュース・航空知識のトピック"
           >
             {insightTopics.map((topic) => (
               <li class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-semibold text-slate-700">
@@ -156,6 +156,26 @@ const insightTopics = [
               </li>
             ))}
           </ul>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2">
+            <a
+              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
+              href="https://happinesea.com/drawinglibrary"
+            >
+              <strong class="block text-slate-950">設計図ライブラリ</strong>
+              <span class="mt-1 block text-sm text-slate-600">
+                飛行機などの設計図を見る
+              </span>
+            </a>
+            <a
+              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
+              href="https://happinesea.com/drone-rc-glossary"
+            >
+              <strong class="block text-slate-950">基本用語集</strong>
+              <span class="mt-1 block text-sm text-slate-600">
+                ラジコン・ドローンの用語を調べる
+              </span>
+            </a>
+          </div>
         </article>
       </div>
     </div>
@@ -163,9 +183,9 @@ const insightTopics = [
 
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
     <SectionHeading
-      eyebrow="Featured Products"
-      title="製品情報から探す"
-      description="公開中の商品情報から、代表的な送信機と受信機を紹介します。全83製品は製品一覧から確認できます。"
+      eyebrow="Radiolink"
+      title="送信機・受信機を探す"
+      description="送信機と受信機の仕様や機能を紹介します。フライトコントローラーや機体、アクセサリーは製品一覧をご覧ください。"
     />
     <div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
       {featuredProducts.map((product) => (
@@ -185,9 +205,8 @@ const insightTopics = [
   <section class="border-y border-slate-200 bg-slate-50">
     <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
       <SectionHeading
-        eyebrow="Industry & Technology"
-        title="業界・技術を読む"
-        description="製品の使い方だけでなく、その背景にある技術や業界の動きを公開情報から読み解きます。"
+        title="ニュース・航空知識"
+        description="航空の話題、ラジコン・ドローンの使い方を記事や動画で楽しめます。"
       />
       {insights.length ? (
         <div class="mt-10">
@@ -201,10 +220,15 @@ const insightTopics = [
           data-insights-empty
         >
           <h3 class="m-0 text-xl font-bold text-slate-950">
-            記事は順次掲載します。
+            現在ご紹介できる記事はありません。
           </h3>
           <p class="mb-0 text-slate-600">
-            航空・RC・ドローン分野の技術や業界動向を、公開情報に基づいて紹介します。
+            <a
+              href="https://happinesea.com/category/news"
+              class="text-teal-800 underline"
+            >
+              これまでのニュース・航空知識を見る
+            </a>
           </p>
         </div>
       )}
@@ -218,7 +242,7 @@ const insightTopics = [
   </section>
 
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
-    <SectionHeading eyebrow="Updates" title="製品アップデート" />
+    <SectionHeading title="Radiolink更新情報" />
     <ul class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
       {updates.map(({ data }) => (
         <li class="grid gap-2 py-5 sm:grid-cols-[10rem_1fr]">

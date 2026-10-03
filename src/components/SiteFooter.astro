@@ -1,5 +1,10 @@
 ---
-import { getNavigation, SITE_NAME } from '../lib/site';
+import {
+  getNavigation,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TAGLINE,
+} from '../lib/site';
 import { withBase } from '../lib/urls';
 
 const navigation = getNavigation();
@@ -12,9 +17,8 @@ const home = withBase('/');
       <a class="font-bold text-slate-950 no-underline" href={home}>
         {SITE_NAME}
       </a>
-      <p class="mt-3 max-w-xl text-sm text-slate-600">
-        航空・RC・ドローン分野の製品理解からマニュアル、サポート、業界・技術情報までを整理する日本語情報サイトです。
-      </p>
+      <p class="mt-3 text-sm font-bold text-teal-800">{SITE_TAGLINE}</p>
+      <p class="mt-3 max-w-xl text-sm text-slate-600">{SITE_DESCRIPTION}</p>
     </div>
     <nav aria-label="フッターナビゲーション">
       <ul class="m-0 grid list-none grid-cols-2 gap-x-8 gap-y-3 p-0 text-sm">
@@ -29,6 +33,6 @@ const home = withBase('/');
     </nav>
   </div>
   <div class="border-t border-slate-200 px-5 py-5 text-center text-xs text-slate-500">
-    © {new Date().getFullYear()} happinesea
+    © {new Date().getFullYear()} {SITE_NAME}
   </div>
 </footer>
