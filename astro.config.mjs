@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     starlight({
-      title: 'happinesea manuals',
+      title: 'happinesea hobby マニュアル',
       disable404Route: true,
       locales: {
         root: { label: '日本語', lang: 'ja' },

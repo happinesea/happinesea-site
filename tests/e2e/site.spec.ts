@@ -51,7 +51,7 @@ for (const [name, path] of routes) {
         document.documentElement.scrollWidth -
         document.documentElement.clientWidth,
     );
-    expect(overflow).toBeLessThanOrEqual(1);
+    expect(overflow).toBe(0);
     expect(errors).toEqual([]);
   });
 }
@@ -61,7 +61,9 @@ test('navigation, category filtering, and LINE support work', async ({
 }) => {
   const errors = captureErrors(page);
   await page.goto('./');
-  await page.getByRole('link', { name: '製品を見る', exact: true }).click();
+  await page
+    .getByRole('link', { name: 'Radiolink製品を探す', exact: true })
+    .click();
   await expect(page).toHaveURL(/\/happinesea-site\/radiolink\/$/);
 
   await page.getByRole('button', { name: '受信機', exact: true }).click();
@@ -137,17 +139,22 @@ test('navigation, category filtering, and LINE support work', async ({
 
 test('category navigation exposes the four public entry points', async ({
   page,
+  isMobile,
 }) => {
   await page.goto('./');
+  if (isMobile) await page.getByText('メニュー', { exact: true }).click();
   for (const [label, path] of [
-    ['商品', '/radiolink/'],
+    ['Radiolink製品', '/radiolink/'],
     ['マニュアル', '/manuals/'],
     ['サポート', '/support/'],
-    ['業界・技術', '/insights/'],
+    ['ニュース・航空知識', '/insights/'],
   ] as const) {
     await expect(
       page.getByRole('link', { name: label, exact: true }).first(),
     ).toHaveAttribute('href', `/happinesea-site${path}`);
+    await expect(
+      page.getByRole('link', { name: label, exact: true }).first(),
+    ).toBeVisible();
   }
 
   await page.goto('./manuals/');
