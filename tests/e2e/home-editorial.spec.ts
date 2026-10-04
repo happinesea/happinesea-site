@@ -19,6 +19,7 @@ test('home prioritizes the latest article and real hobby resources', async ({
     if (message.type() === 'error') errors.push(message.text());
   });
   await page.goto('./');
+  await page.getByRole('button', { name: '自動切替を停止' }).click();
   const latest = [...articles].sort(
     (a, b) => Date.parse(b.published_at) - Date.parse(a.published_at),
   )[0];
@@ -71,9 +72,18 @@ test('home prioritizes the latest article and real hobby resources', async ({
   expect(textBox).not.toBeNull();
   if (isMobile)
     expect(imageBox!.y + imageBox!.height).toBeLessThanOrEqual(textBox!.y);
-  else expect(imageBox!.x + imageBox!.width).toBeLessThanOrEqual(textBox!.x);
+  else {
+    expect(imageBox!.y + imageBox!.height).toBeLessThanOrEqual(textBox!.y);
+    const brandBox = await page.locator('[data-home-brand]').boundingBox();
+    const carouselBox = await page
+      .locator('[data-hero-carousel]')
+      .boundingBox();
+    expect(brandBox!.x + brandBox!.width).toBeLessThanOrEqual(carouselBox!.x);
+    await expect(
+      page.getByRole('navigation', { name: 'メインナビゲーション' }),
+    ).toBeVisible();
+  }
   for (const image of await page.locator('main img').all()) {
-    await image.scrollIntoViewIfNeeded();
     expect(
       (await request.get((await image.getAttribute('src'))!)).status(),
     ).toBe(200);
@@ -96,4 +106,22 @@ test('home prioritizes the latest article and real hobby resources', async ({
     ),
   ).toBe(0);
   expect(errors).toEqual([]);
+  await page.goto('./');
+  await page.getByRole('button', { name: '自動切替を停止' }).click();
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+  await page.screenshot({
+    path: `test-results/hero-${isMobile ? 'mobile' : 'desktop'}.png`,
+    fullPage: false,
+    scale: 'css',
+  });
+  const heroHeight = await page
+    .locator('[data-home-section="latest"]')
+    .evaluate((node) => node.getBoundingClientRect().height);
+  const width = page.viewportSize()!.width;
+  await page.setViewportSize({ width, height: Math.ceil(heroHeight + 80) });
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+  await page.screenshot({
+    path: `test-results/hero-${isMobile ? 'mobile' : 'desktop'}-complete.png`,
+    scale: 'css',
+  });
 });

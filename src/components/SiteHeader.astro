@@ -2,7 +2,8 @@
 import { getNavigation, SITE_NAME } from '../lib/site';
 import { withBase } from '../lib/urls';
 
-const navigation = getNavigation();
+const links = getNavigation();
+const navigation = [...links.slice(3), ...links.slice(0, 3)];
 const home = withBase('/');
 const currentPath = Astro.url.pathname;
 ---
@@ -21,12 +22,12 @@ const currentPath = Astro.url.pathname;
         メニュー
       </summary>
       <nav aria-label="メインナビゲーション">
-        <ul class="m-0 flex list-none flex-col gap-1 p-3 xl:flex-row xl:items-center xl:gap-1 xl:p-0">
+        <ul class="m-0 flex list-none flex-col gap-1 p-3">
           {navigation.map((item) => (
             <li>
               <a
                 class:list={[
-                  'block rounded-full px-3 py-2 text-sm font-semibold no-underline transition hover:bg-teal-50 hover:text-teal-800',
+                  'block whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold no-underline transition hover:bg-teal-50 hover:text-teal-800',
                   currentPath.startsWith(item.href)
                     ? 'bg-teal-50 text-teal-800'
                     : 'text-slate-700',
@@ -61,7 +62,12 @@ const currentPath = Astro.url.pathname;
     box-shadow: 0 18px 45px rgb(15 23 42 / 14%);
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 72rem) {
+    .site-menu ul {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+    }
     .site-menu::details-content {
       content-visibility: visible;
     }

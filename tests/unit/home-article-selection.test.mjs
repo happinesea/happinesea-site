@@ -10,7 +10,7 @@ const page = await readFile(
 );
 const frontmatter = page.split('---')[1].replace(/^import .*;\r?\n/gm, '');
 const select = compileFunction(
-  `return (async () => { ${frontmatter}; return { latest, news, rcArticles }; })();`,
+  `return (async () => { ${frontmatter}; return { latest, latestSlides, news, rcArticles }; })();`,
   ['getCollection'],
 );
 
@@ -49,3 +49,32 @@ for (const topic of ['業界動向', 'RC技術']) {
     );
   });
 }
+
+test('carousel takes the newest five published articles across both collections without topic exclusions', async () => {
+  const entry = (slug, topic, day, content_status = 'published') => ({
+    data: {
+      slug,
+      topic,
+      published_at: new Date(`2026-01-${day}`),
+      content_status,
+    },
+  });
+  const { latestSlides } = await select(async (name) =>
+    name === 'insights'
+      ? [
+          entry('static-news', '業界動向', '06'),
+          entry('static-rc', 'RC技術', '04'),
+          entry('draft', '業界動向', '07', 'draft'),
+        ]
+      : [
+          entry('wp-drone', '航空・ドローン', '05'),
+          entry('wp-news', '業界動向', '03'),
+          entry('wp-rc', 'RC技術', '02'),
+          entry('old', '業界動向', '01'),
+        ],
+  );
+  assert.deepEqual(
+    latestSlides.map(({ data }) => data.slug),
+    ['static-news', 'wp-drone', 'static-rc', 'wp-news', 'wp-rc'],
+  );
+});
