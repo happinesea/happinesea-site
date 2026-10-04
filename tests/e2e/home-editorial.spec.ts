@@ -24,6 +24,11 @@ test('home prioritizes the latest article and real hobby resources', async ({
   )[0];
   const featured = page.locator('[data-home-latest]');
   await expect(featured).toHaveCount(1);
+  await expect(
+    page.locator(
+      `[data-home-section="news"] a[href="/happinesea-site/insights/${latest.slug}/"], [data-home-section="rc-drone"] a[href="/happinesea-site/insights/${latest.slug}/"]`,
+    ),
+  ).toHaveCount(0);
   await expect(featured.getByRole('link').first()).toHaveAttribute(
     'href',
     `/happinesea-site/insights/${latest.slug}/`,

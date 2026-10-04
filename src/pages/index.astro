@@ -16,7 +16,10 @@ const latest = insights[0];
 // Presentation groups reuse existing editorial topics; taxonomy is unchanged.
 const rcTopics = ['RC技術', '航空・ドローン'];
 const news = insights
-  .filter(({ data }) => !rcTopics.includes(data.topic))
+  .filter(
+    ({ data }) =>
+      !rcTopics.includes(data.topic) && data.slug !== latest?.data.slug,
+  )
   .slice(0, 3);
 const rcArticles = insights
   .filter(
