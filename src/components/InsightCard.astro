@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { withBase } from '../lib/urls';
+import wordpressInsights from '../data/wordpress-insights.json';
 
 interface Props {
   insight: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
@@ -8,20 +9,61 @@ interface Props {
 
 const { insight } = Astro.props;
 const { data } = insight;
+// Exact WordPress category names verified through the public categories API.
+// Presentation labels only: preserve the stored category slugs and their order.
+const categoryNames: Record<string, string> = {
+  news: 'ニュース・航空知識',
+  'radiolink-support': 'Radiolink製品サポート',
+  'radiolink-videos': 'Radiolink動画集',
+};
+const source =
+  insight.collection === 'wordpressInsights'
+    ? wordpressInsights.find((article) => article.id === insight.id)
+    : undefined;
+const categories = source
+  ? source.contract.category.map((slug) => {
+      const name = categoryNames[slug];
+      if (!name)
+        throw new Error(`Missing verified category display name: ${slug}`);
+      return name;
+    })
+  : [data.topic];
+const hero = data.hero;
 ---
 
-<article class="border-t border-slate-300 py-7 sm:grid sm:grid-cols-[11rem_1fr] sm:gap-8">
-  <div>
-    <p class="m-0 text-sm font-bold text-teal-700">{data.topic}</p>
-    <time
-      class="mt-2 block text-sm text-slate-500"
-      datetime={data.published_at.toISOString()}
+<article
+  class:list={[
+    'border-t border-slate-300 py-7',
+    hero?.src &&
+      'md:grid md:grid-cols-[minmax(0,18rem)_minmax(0,1fr)] md:gap-8',
+  ]}
+>
+  {hero?.src && (
+    <img
+      class="mb-5 aspect-[4/3] w-full rounded-xl bg-slate-50 object-contain md:mb-0"
+      src={withBase(hero.src)}
+      alt={hero.alt}
+      loading="lazy"
+      decoding="async"
+    />
+  )}
+  <div class="min-w-0" data-insight-text>
+    <div
+      class="flex flex-col gap-2 text-xs leading-5 text-slate-500 md:flex-row md:flex-wrap md:items-baseline md:gap-x-3"
+      data-insight-metadata
     >
-      {data.published_at.toLocaleDateString('ja-JP')}
-    </time>
-  </div>
-  <div>
-    <h2 class="mt-3 mb-0 text-2xl font-bold leading-snug text-slate-950 sm:mt-0 sm:text-3xl">
+      <time datetime={data.published_at.toISOString()}>
+        {data.published_at.toLocaleDateString('ja-JP')}
+      </time>
+      <div class="flex min-w-0 flex-wrap gap-x-3 gap-y-1">
+        {categories.map((category) => (
+          <span class="[overflow-wrap:anywhere]" data-insight-category>
+            {category}
+          </span>
+        ))}
+      </div>
+    </div>
+    <h2 class="mt-3 mb-0 text-2xl font-bold leading-snug text-slate-950 [overflow-wrap:anywhere] sm:text-3xl">
       <a
         class="no-underline hover:text-teal-800"
         href={withBase(`/insights/${data.slug}/`)}
@@ -29,7 +71,10 @@ const { data } = insight;
         {data.title}
       </a>
     </h2>
-    <p class="mb-0 [overflow-wrap:anywhere] text-slate-600">
+    <p
+      class="mb-0 [overflow-wrap:anywhere] text-slate-600"
+      data-insight-excerpt
+    >
       {data.description}
     </p>
   </div>
