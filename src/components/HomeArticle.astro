@@ -1,0 +1,82 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import wordpressArticles from '../data/wordpress-insights.json';
+import { withBase } from '../lib/urls';
+interface Props {
+  insight: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
+  slide?: boolean;
+  horizontal?: boolean;
+}
+const { insight, slide = false, horizontal = false } = Astro.props;
+const { data } = insight;
+const categoryNames: Record<string, string> = {
+  news: 'ニュース・航空知識',
+  'radiolink-support': 'Radiolink製品サポート',
+  'radiolink-videos': 'Radiolink動画集',
+};
+const source = wordpressArticles.find((article) => article.id === insight.id);
+const categories = source
+  ? source.contract.category.map((category) => {
+      const name = categoryNames[category];
+      if (!name) throw new Error(`Unknown homepage category: ${category}`);
+      return name;
+    })
+  : [data.topic];
+const href = withBase(`/insights/${data.slug}/`);
+---
+
+<article
+  class:list={[
+    'min-w-0',
+    slide
+      ? 'flex flex-col'
+      : horizontal
+        ? 'grid gap-6 border-t border-slate-200 py-6 md:grid-cols-[18rem_1fr] md:items-start md:gap-8'
+        : 'border-t border-slate-200 py-6',
+  ]}
+>
+  {data.hero?.src && (
+    <a class="block rounded-xl" href={href} tabindex={slide ? -1 : undefined}>
+      <img
+        class:list={[
+          'w-full rounded-xl bg-slate-50 object-contain',
+          slide ? 'h-44 sm:h-60 lg:h-64' : 'aspect-[4/3]',
+          !horizontal && 'mb-5',
+        ]}
+        src={withBase(data.hero.src)}
+        alt={data.hero.alt}
+        loading={slide ? 'eager' : 'lazy'}
+        decoding="async"
+      />
+    </a>
+  )}
+  <div class="min-w-0" data-home-article-text>
+    <div class="flex flex-col gap-2 text-xs leading-5 text-slate-500 md:flex-row md:flex-wrap md:gap-x-3">
+      <time datetime={data.published_at.toISOString()}>
+        {data.published_at.toLocaleDateString('ja-JP')}
+      </time>
+      <div class="flex flex-wrap gap-x-3 gap-y-1">
+        {categories.map((category) => (
+          <span class="[overflow-wrap:anywhere]" data-home-category>
+            {category}
+          </span>
+        ))}
+      </div>
+    </div>
+    <h2
+      class:list={[
+        'mt-3 mb-0 leading-snug font-bold text-slate-950 [overflow-wrap:anywhere]',
+        'text-xl sm:text-2xl',
+      ]}
+    >
+      <a class="no-underline hover:text-teal-800" href={href}>
+        {data.title}
+      </a>
+    </h2>
+    {!slide && (
+      <p class="mt-4 mb-0 leading-7 text-slate-600 [overflow-wrap:anywhere]">
+        {data.description}
+      </p>
+    )}
+  </div>
+</article>

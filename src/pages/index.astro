@@ -1,266 +1,212 @@
 ---
 import { getCollection } from 'astro:content';
-import Hero from '../components/Hero.astro';
-import InsightCard from '../components/InsightCard.astro';
-import ProductCard from '../components/ProductCard.astro';
+import HomeArticle from '../components/HomeArticle.astro';
+import HeroCarousel from '../components/HeroCarousel.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/urls';
 import { SITE_NAME, SITE_TAGLINE } from '../lib/site';
 
-const products = await getCollection('products');
-const updates = await getCollection('productUpdates');
 const insights = [
   ...(await getCollection('insights')).filter(
     ({ data }) => data.content_status === 'published',
   ),
   ...(await getCollection('wordpressInsights')),
 ].sort((a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf());
-const featuredSlugs = ['rc8x', 'rc8p', 't12d', 'r8fg'];
-const featuredProducts = products
-  .filter(({ data }) => featuredSlugs.includes(data.slug))
-  .sort(
-    (left, right) =>
-      featuredSlugs.indexOf(left.data.slug) -
-      featuredSlugs.indexOf(right.data.slug),
-  );
-const insightTopics = [
-  '航空・ドローン',
-  'RC技術',
-  '法規・制度',
-  '業界動向',
-  '技術解説',
-  '導入事例',
+const latest = insights[0];
+const latestSlides = insights.slice(0, 5);
+// Presentation groups reuse existing editorial topics; taxonomy is unchanged.
+const rcTopics = ['RC技術', '航空・ドローン'];
+const news = insights
+  .filter(
+    ({ data }) =>
+      !rcTopics.includes(data.topic) && data.slug !== latest?.data.slug,
+  )
+  .slice(0, 3);
+const rcArticles = insights
+  .filter(
+    ({ data }) =>
+      rcTopics.includes(data.topic) && data.slug !== latest?.data.slug,
+  )
+  .slice(0, 3);
+const resources = [
+  { label: '製品を探す', href: '/radiolink/' },
+  { label: 'マニュアル', href: '/manuals/', key: 'manuals' },
+  { label: 'FAQ・サポート', href: '/support/', key: 'support' },
+  { label: '更新情報', href: '/radiolink/updates/', key: 'updates' },
+];
+const drawings = [
+  {
+    title:
+      'RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。',
+    href: 'https://happinesea.com/engineering-drawing/202201171891.html',
+  },
+  {
+    title:
+      'RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。',
+    href: 'https://happinesea.com/engineering-drawing/202110211742.html',
+  },
+  {
+    title: 'C-17輸送機設計図(CAD付き)',
+    href: 'https://happinesea.com/engineering-drawing/202110191734.html',
+  },
 ];
 ---
 
 <BaseLayout>
-  <Hero
-    eyebrow={SITE_NAME}
-    title={SITE_TAGLINE}
-    description="ラジコンを走らせる、飛行機を飛ばす、電子工作で試してみる。製品の使い方や航空の話題から、次に楽しむことを見つけてください。"
-    actions={[
-      { label: 'Radiolink製品を探す', href: withBase('/radiolink/') },
-      {
-        label: 'ニュース・航空知識を読む',
-        href: withBase('/insights/'),
-        secondary: true,
-      },
-    ]}
-    visuals={[
-      {
-        src: '/assets/radiolink/catalogue/rc8x.webp',
-        alt: 'Radiolink RC8X送信機',
-        label: '送信機',
-      },
-      {
-        src: '/assets/radiolink/catalogue/r16f.webp',
-        alt: 'Radiolink R16F受信機',
-        label: '受信機',
-      },
-      {
-        src: '/assets/radiolink/catalogue/pix6.webp',
-        alt: 'Radiolink PIX6フライトコントローラー',
-        label: 'フライトコントローラー',
-      },
-    ]}
-  />
-
-  <section class="bg-slate-50">
-    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
-      <SectionHeading
-        title="探す・使う・楽しむ"
-        description="製品の選び方や操作方法を調べたり、航空の話題を読んだり。目的に合わせてお選びください。"
-      />
-      <div class="mt-10 grid gap-6 lg:grid-cols-2">
-        <article
-          id="products-support"
-          class="flex h-full flex-col rounded-3xl border border-slate-200 border-t-4 border-t-teal-600 bg-white p-7 shadow-sm sm:p-9"
-          data-home-pillar="products-support"
-        >
-          <p class="m-0 text-sm font-bold tracking-[0.16em] text-teal-700 uppercase">
-            Radiolink
-          </p>
-          <h2 class="mt-3 mb-0 text-3xl font-bold text-slate-950 sm:text-4xl">
-            製品・マニュアル・サポート
-          </h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">
-            送信機・受信機・フライトコントローラーの仕様や使い方、よくある質問、ファームウェアの更新情報を確認できます。
-          </p>
+  <section
+    class="border-b border-slate-800 bg-slate-950 text-white"
+    data-home-section="latest"
+  >
+    <div class="mx-auto grid max-w-[var(--site-max-width)] gap-8 px-5 py-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12 lg:px-8 lg:py-14">
+      <div class="min-w-0" data-home-brand>
+        <p class="m-0 text-sm font-bold tracking-widest text-teal-300">
+          {SITE_NAME}
+        </p>
+        <h1 class="mt-4 mb-0 text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl">
+          {SITE_TAGLINE}
+        </h1>
+        <p class="mt-6 mb-0 max-w-xl leading-8 text-slate-200">
+          ラジコンを走らせる。飛行機を飛ばす。ドローンを楽しむ。電子工作で試してみる。
+        </p>
+        <p class="mt-3 mb-0 max-w-xl leading-8 text-slate-200">
+          航空の話題や製品の使い方、設計図から、次に楽しむものを見つけてください。
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
           <a
-            class="mt-3 inline-flex w-fit rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white no-underline transition hover:bg-teal-800"
-            href={withBase('/radiolink/')}
+            class="rounded-full bg-teal-300 px-5 py-3 text-sm font-bold text-slate-950 no-underline hover:bg-teal-200"
+            href={
+              latest
+                ? withBase(`/insights/${latest.data.slug}/`)
+                : withBase('/insights/')
+            }
           >
-            製品一覧を見る
+            最新記事を読む
           </a>
-          <div class="mt-8 grid gap-3 sm:grid-cols-3">
-            <a
-              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
-              href={withBase('/manuals/')}
-              data-home-resource="manuals"
-            >
-              <strong class="block text-slate-950">マニュアル</strong>
-              <span class="mt-1 block text-sm text-slate-600">
-                操作方法を調べる
-              </span>
-            </a>
-            <a
-              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
-              href={withBase('/support/')}
-              data-home-resource="support"
-            >
-              <strong class="block text-slate-950">サポート</strong>
-              <span class="mt-1 block text-sm text-slate-600">
-                FAQと相談窓口
-              </span>
-            </a>
-            <a
-              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
-              href={withBase('/radiolink/updates/')}
-              data-home-resource="updates"
-            >
-              <strong class="block text-slate-950">更新情報</strong>
-              <span class="mt-1 block text-sm text-slate-600">
-                ファームウェアなど
-              </span>
-            </a>
-          </div>
-        </article>
-        <article
-          id="industry-technology"
-          class="flex h-full flex-col rounded-3xl border border-slate-200 border-t-4 border-t-slate-900 bg-white p-7 shadow-sm sm:p-9"
-          data-home-pillar="industry-technology"
-        >
-          <p class="m-0 text-sm font-bold tracking-[0.16em] text-teal-700 uppercase">
-            読み物・動画
-          </p>
-          <h2 class="mt-3 mb-0 text-3xl font-bold text-slate-950 sm:text-4xl">
-            ニュース・航空知識
-          </h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">
-            航空の話題やラジコン・ドローンの技術、操作のヒントを動画と記事で紹介しています。
-          </p>
           <a
-            class="mt-3 inline-flex w-fit rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white no-underline transition hover:bg-teal-800"
-            href={withBase('/insights/')}
+            class="rounded-full border border-slate-500 px-5 py-3 text-sm font-semibold text-white no-underline hover:border-teal-300 hover:text-teal-200"
+            href="https://happinesea.com/drawinglibrary"
           >
-            記事一覧を見る
+            設計図を見る
           </a>
-          <ul
-            class="mt-8 flex list-none flex-wrap gap-2 p-0"
-            aria-label="ニュース・航空知識のトピック"
+          <a
+            class="rounded-full border border-slate-500 px-5 py-3 text-sm font-semibold text-white no-underline hover:border-teal-300 hover:text-teal-200"
+            href={withBase('/manuals/')}
           >
-            {insightTopics.map((topic) => (
-              <li class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-semibold text-slate-700">
-                {topic}
-              </li>
-            ))}
-          </ul>
-          <div class="mt-6 grid gap-3 sm:grid-cols-2">
-            <a
-              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
-              href="https://happinesea.com/drawinglibrary"
-            >
-              <strong class="block text-slate-950">設計図ライブラリ</strong>
-              <span class="mt-1 block text-sm text-slate-600">
-                飛行機などの設計図を見る
-              </span>
-            </a>
-            <a
-              class="rounded-2xl bg-slate-50 p-4 no-underline hover:bg-teal-50"
-              href="https://happinesea.com/drone-rc-glossary"
-            >
-              <strong class="block text-slate-950">基本用語集</strong>
-              <span class="mt-1 block text-sm text-slate-600">
-                ラジコン・ドローンの用語を調べる
-              </span>
-            </a>
-          </div>
-        </article>
+            Radiolink製品マニュアル
+          </a>
+        </div>
       </div>
+      <HeroCarousel insights={latestSlides} />
     </div>
   </section>
 
-  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
-    <SectionHeading
-      eyebrow="Radiolink"
-      title="送信機・受信機を探す"
-      description="送信機と受信機の仕様や機能を紹介します。フライトコントローラーや機体、アクセサリーは製品一覧をご覧ください。"
-    />
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-      {featuredProducts.map((product) => (
-        <div data-home-featured-product>
-          <ProductCard product={product} />
-        </div>
-      ))}
-    </div>
-    <a
-      class="mt-8 inline-block font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
-      href={withBase('/radiolink/')}
-    >
-      すべての製品を見る
-    </a>
-  </section>
-
-  <section class="border-y border-slate-200 bg-slate-50">
-    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
-      <SectionHeading
-        title="ニュース・航空知識"
-        description="航空の話題、ラジコン・ドローンの使い方を記事や動画で楽しめます。"
-      />
-      {insights.length ? (
-        <div class="mt-10">
-          {insights.map((insight) => (
-            <InsightCard insight={insight} />
-          ))}
-        </div>
-      ) : (
-        <div
-          class="mt-10 rounded-2xl border border-slate-200 bg-white p-6"
-          data-insights-empty
-        >
-          <h3 class="m-0 text-xl font-bold text-slate-950">
-            現在ご紹介できる記事はありません。
-          </h3>
-          <p class="mb-0 text-slate-600">
-            <a
-              href="https://happinesea.com/category/news"
-              class="text-teal-800 underline"
-            >
-              これまでのニュース・航空知識を見る
-            </a>
-          </p>
-        </div>
-      )}
+  <section
+    class="border-y border-slate-200 bg-slate-50"
+    data-home-section="news"
+  >
+    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-12 lg:px-8 lg:py-16">
+      <SectionHeading title="ニュース・航空知識" />
+      <div class="mt-8 grid gap-8 md:grid-cols-3">
+        {news.map((insight) => (
+          <HomeArticle insight={insight} />
+        ))}
+      </div>
       <a
-        class="mt-8 inline-block font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+        class="mt-6 inline-block font-bold text-teal-800 underline underline-offset-4"
         href={withBase('/insights/')}
       >
-        すべての記事を見る
+        記事一覧を見る
       </a>
     </div>
   </section>
 
-  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-16 lg:px-8 lg:py-24">
-    <SectionHeading title="Radiolink更新情報" />
-    <ul class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
-      {updates.map(({ data }) => (
-        <li class="grid gap-2 py-5 sm:grid-cols-[10rem_1fr]">
-          <time
-            class="text-sm font-semibold text-slate-500"
-            datetime={data.published_at.toISOString()}
-          >
-            {data.published_at.toLocaleDateString('ja-JP')}
-          </time>
-          <a
-            class="font-bold text-slate-900"
-            href={data.source_url}
-            rel="noreferrer"
-          >
-            {data.title}
-          </a>
-        </li>
+  <section
+    class="mx-auto max-w-[var(--site-max-width)] px-5 py-12 lg:px-8 lg:py-16"
+    data-home-section="rc-drone"
+  >
+    <SectionHeading title="RC・ドローン" />
+    <div class="mt-8 grid gap-8 md:grid-cols-3">
+      {rcArticles.map((insight) => (
+        <HomeArticle insight={insight} />
       ))}
-    </ul>
+    </div>
+    <a
+      class="mt-6 inline-block font-bold text-teal-800 underline underline-offset-4"
+      href={withBase('/insights/')}
+    >
+      使い方の記事を探す
+    </a>
+  </section>
+
+  <section
+    class="border-y border-slate-200 bg-slate-50"
+    data-home-section="drawings"
+  >
+    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-12 lg:px-8 lg:py-16">
+      <SectionHeading
+        title="設計図ライブラリ"
+        description="飛行機などの設計図を探す。"
+      />
+      <div class="mt-8 grid gap-8 md:grid-cols-3">
+        {drawings.map((drawing) => (
+          <article class="min-w-0 border-t border-slate-200 py-6">
+            <h2 class="m-0 text-xl leading-snug font-bold text-slate-950 sm:text-2xl [overflow-wrap:anywhere]">
+              <a class="no-underline hover:text-teal-800" href={drawing.href}>
+                {drawing.title}
+              </a>
+            </h2>
+          </article>
+        ))}
+      </div>
+      <a
+        class="mt-6 inline-block rounded-full bg-slate-950 px-6 py-3 font-semibold text-white no-underline hover:bg-teal-800"
+        href="https://happinesea.com/drawinglibrary"
+      >
+        設計図を見る
+      </a>
+    </div>
+  </section>
+
+  <section
+    class="mx-auto max-w-[var(--site-max-width)] px-5 py-12 lg:px-8 lg:py-16"
+    data-home-section="glossary"
+  >
+    <SectionHeading
+      title="基本用語集"
+      description="ラジコン・ドローンの用語を調べる。"
+    />
+    <a
+      class="mt-6 inline-block font-bold text-teal-800 underline underline-offset-4"
+      href="https://happinesea.com/drone-rc-glossary"
+    >
+      基本用語集を見る
+    </a>
+  </section>
+
+  <section
+    class="border-t border-slate-200 bg-slate-50"
+    data-home-section="radiolink"
+  >
+    <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-12 lg:px-8 lg:py-16">
+      <SectionHeading
+        eyebrow="Radiolink"
+        title="製品・マニュアル・サポート"
+        description="製品の仕様や操作方法、よくある質問、更新情報を確認できます。"
+      />
+      <ul class="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
+        {resources.map((resource) => (
+          <li>
+            <a
+              class="block rounded-xl border border-slate-200 bg-white px-5 py-5 font-bold text-teal-800 no-underline hover:border-teal-500"
+              href={withBase(resource.href)}
+              data-home-resource={resource.key}
+            >
+              {resource.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   </section>
 </BaseLayout>

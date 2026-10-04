@@ -1,0 +1,254 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import HomeArticle from './HomeArticle.astro';
+import { withBase } from '../lib/urls';
+
+interface Props {
+  insights: (
+    CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>
+  )[];
+}
+const { insights } = Astro.props;
+---
+
+<section
+  class="min-w-0 rounded-2xl bg-white p-5 text-slate-950 sm:p-6"
+  aria-label="最新記事"
+  aria-roledescription="カルーセル"
+  data-hero-carousel
+>
+  <div class="mb-4 flex items-center justify-between gap-4">
+    <h2 class="m-0 text-sm font-bold tracking-wider text-teal-800">最新記事</h2>
+    <a
+      class="text-xs text-slate-600 underline underline-offset-4"
+      href={withBase('/insights/')}
+    >
+      記事一覧
+    </a>
+  </div>
+  <div class="slides">
+    {insights.map((insight, index) => (
+      <div
+        data-slide
+        data-active={index === 0 ? 'true' : 'false'}
+        data-home-latest={index === 0 || undefined}
+        aria-hidden={index !== 0 ? 'true' : 'false'}
+        inert={index !== 0}
+        role="group"
+        aria-roledescription="スライド"
+        aria-label={`${index + 1} / ${insights.length}`}
+      >
+        <HomeArticle insight={insight} slide />
+      </div>
+    ))}
+  </div>
+  {insights.length > 1 && (
+    <div class="mt-5 border-t border-slate-200 pt-3" data-controls hidden>
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <button
+          class="min-h-11 px-2 text-sm font-semibold hover:text-teal-800"
+          type="button"
+          aria-label="前の記事"
+          data-prev
+        >
+          前へ
+        </button>
+        <div class="flex items-center" aria-label="記事の位置">
+          {insights.map((_, index) => (
+            <button
+              class="position min-h-11 min-w-11 text-sm"
+              type="button"
+              aria-label={`記事${index + 1}を表示`}
+              aria-current={index === 0 ? 'true' : 'false'}
+              data-position={index}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
+        <button
+          class="min-h-11 px-2 text-sm font-semibold hover:text-teal-800"
+          type="button"
+          aria-label="次の記事"
+          data-next
+        >
+          次へ
+        </button>
+      </div>
+      <div class="flex items-center justify-between gap-3 text-xs text-slate-600">
+        <span data-counter>1 / {insights.length}</span>
+        <button
+          class="min-h-11 min-w-11"
+          type="button"
+          data-toggle
+          aria-label="自動切替を停止"
+        >
+          <img
+            src={withBase('/assets/ui/lucide/pause.svg')}
+            width="20"
+            height="20"
+            alt=""
+            aria-hidden="true"
+            data-pause-icon
+          />
+          <img
+            src={withBase('/assets/ui/lucide/play.svg')}
+            width="20"
+            height="20"
+            alt=""
+            aria-hidden="true"
+            data-play-icon
+            hidden
+          />
+        </button>
+      </div>
+    </div>
+  )}
+  <p class="sr-only" role="status" data-announcement></p>
+</section>
+
+<style>
+  button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+  }
+  [data-toggle] {
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--site-border);
+    border-radius: 50%;
+    background: var(--site-surface);
+  }
+  [data-toggle]:disabled {
+    opacity: 0.5;
+  }
+  .slides {
+    display: grid;
+  }
+  [data-slide] {
+    grid-area: 1 / 1;
+    min-width: 0;
+    visibility: hidden;
+  }
+  [data-slide][data-active='true'] {
+    visibility: visible;
+  }
+  .position[aria-current='true'] {
+    color: var(--site-accent-strong);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+  }
+</style>
+
+<script>
+  document
+    .querySelectorAll<HTMLElement>('[data-hero-carousel]')
+    .forEach((root) => {
+      const slides = [...root.querySelectorAll<HTMLElement>('[data-slide]')];
+      if (slides.length < 2) return;
+      const controls = root.querySelector<HTMLElement>('[data-controls]')!;
+      const toggle = root.querySelector<HTMLButtonElement>('[data-toggle]')!;
+      const positions = [
+        ...root.querySelectorAll<HTMLButtonElement>('[data-position]'),
+      ];
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let current = 0;
+      let paused = false;
+      let hovered = false;
+      let pointerPause: boolean | undefined;
+      let timer: number | undefined;
+
+      function schedule() {
+        window.clearTimeout(timer);
+        const stopped = paused || motion.matches;
+        const label = motion.matches
+          ? '自動切替なし'
+          : paused
+            ? '自動切替を再開'
+            : '自動切替を停止';
+        toggle.setAttribute('aria-label', label);
+        toggle.title = label;
+        toggle.querySelector<HTMLElement>('[data-play-icon]')!.hidden =
+          !stopped;
+        toggle.querySelector<HTMLElement>('[data-pause-icon]')!.hidden =
+          stopped;
+        toggle.disabled = motion.matches;
+        if (
+          !stopped &&
+          !hovered &&
+          !root.contains(document.activeElement) &&
+          !document.hidden
+        )
+          timer = window.setTimeout(() => {
+            show(current + 1);
+            schedule();
+          }, 6000);
+      }
+
+      function show(index: number, manual = false) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const active = i === current;
+          slide.dataset.active = String(active);
+          slide.setAttribute('aria-hidden', String(!active));
+          slide.inert = !active;
+          positions[i].setAttribute('aria-current', String(active));
+        });
+        root.querySelector('[data-counter]')!.textContent =
+          `${current + 1} / ${slides.length}`;
+        if (manual) {
+          paused = true;
+          root.querySelector('[data-announcement]')!.textContent =
+            `${current + 1} / ${slides.length}：${slides[current].querySelector('h2')!.textContent?.trim()}`;
+          schedule();
+        }
+      }
+
+      root
+        .querySelector('[data-prev]')!
+        .addEventListener('click', () => show(current - 1, true));
+      root
+        .querySelector('[data-next]')!
+        .addEventListener('click', () => show(current + 1, true));
+      positions.forEach((button, index) =>
+        button.addEventListener('click', () => show(index, true)),
+      );
+      // Preserve a pointer click's intent before focus itself pauses rotation.
+      toggle.addEventListener('pointerdown', () => {
+        pointerPause = !paused;
+      });
+      toggle.addEventListener('pointercancel', () => {
+        pointerPause = undefined;
+      });
+      toggle.addEventListener('keydown', () => {
+        pointerPause = undefined;
+      });
+      toggle.addEventListener('click', () => {
+        paused = pointerPause ?? !paused;
+        pointerPause = undefined;
+        schedule();
+      });
+      root.addEventListener('mouseenter', () => {
+        hovered = true;
+        schedule();
+      });
+      root.addEventListener('mouseleave', () => {
+        hovered = false;
+        schedule();
+      });
+      root.addEventListener('focusin', () => {
+        paused = true;
+        schedule();
+      });
+      root.addEventListener('focusout', () => window.setTimeout(schedule, 0));
+      motion.addEventListener('change', schedule);
+      document.addEventListener('visibilitychange', schedule);
+      controls.hidden = false;
+      schedule();
+    });
+</script>

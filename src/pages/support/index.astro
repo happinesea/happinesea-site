@@ -9,16 +9,21 @@ const entries = await getCollection('support');
 ---
 
 <BaseLayout
-  title="Radiolink製品サポート"
+  title="サポート情報"
   description="Radiolink製品の使い方やよくある質問、LINE相談窓口はこちら。"
 >
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
     <SectionHeading
-      eyebrow="Radiolink"
-      title="製品サポート"
+      title="サポート情報"
       level="h1"
       description="製品情報とマニュアルを確認し、解決しない場合はLINEからお問い合わせください。"
     />
+    <a
+      class="mt-6 inline-block rounded-full border border-slate-300 px-5 py-3 text-sm font-bold text-slate-900 no-underline hover:border-teal-700 hover:text-teal-800"
+      href={withBase('/manuals/')}
+    >
+      Radiolink製品マニュアル
+    </a>
     <div class="mt-10 grid gap-8 lg:grid-cols-[1fr_22rem]">
       <div>
         {entries.map(({ data }) => (

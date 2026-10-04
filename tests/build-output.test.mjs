@@ -5,11 +5,21 @@ import test from 'node:test';
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 
-test('home exposes the two publication pillars and concise product discovery', async () => {
+test('home puts articles and hobby resources before Radiolink', async () => {
   const html = await route('index.html');
 
-  assert.match(html, /data-home-pillar="products-support"/);
-  assert.match(html, /data-home-pillar="industry-technology"/);
+  const order = [...html.matchAll(/data-home-section="([^"]+)"/g)].map(
+    (match) => match[1],
+  );
+  assert.deepEqual(order, [
+    'latest',
+    'news',
+    'rc-drone',
+    'drawings',
+    'glossary',
+    'radiolink',
+  ]);
+  assert.equal((html.match(/data-home-latest/g) ?? []).length, 1);
   assert.match(html, />製品・マニュアル・サポート</);
   assert.match(html, />ニュース・航空知識</);
   assert.match(html, /happinesea hobby/);
@@ -23,7 +33,6 @@ test('home exposes the two publication pillars and concise product discovery', a
   assert.match(html, /data-home-resource="manuals"/);
   assert.match(html, /data-home-resource="support"/);
   assert.match(html, /data-home-resource="updates"/);
-  assert.equal((html.match(/data-home-featured-product/g) ?? []).length, 4);
   assert.match(html, /href="\/happinesea-site\/manuals\/"/);
   assert.doesNotMatch(html, /実装済み|公開サンプル|検証用/);
 });
