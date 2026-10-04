@@ -17,6 +17,7 @@ export default defineConfig({
         command: 'npm run build && npm run preview -- --host 127.0.0.1 --port 4327',
         url: localBaseUrl,
         reuseExistingServer: false,
+        timeout: 120_000,
       },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },

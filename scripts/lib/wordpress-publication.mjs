@@ -10,6 +10,7 @@ const YOUTUBE_HOSTS = new Set([
 ]);
 
 const forbiddenMarkup = [
+  [/_wp_link_placeholder/i, 'unresolved WordPress link placeholder'],
   [/<script\b/i, 'script'],
   [/<(?:object|embed)\b/i, 'object/embed'],
   [
@@ -25,6 +26,116 @@ export function htmlText(value) {
     .trim();
 }
 
+export function extractRemoteArticleImages(input) {
+  const images = [];
+  for (const match of String(input ?? '').matchAll(/<img\b[^>]*>/gi)) {
+    const src = match[0].match(/\bsrc=["']([^"']+)["']/i)?.[1];
+    if (!src || !/^(?:https?:)?\/\//i.test(src)) continue;
+    const alt = match[0].match(/\balt=["']([^"']*)["']/i)?.[1] ?? '';
+    images.push({ src, alt });
+  }
+  return images;
+}
+
+export function analyzePostMarkup(input) {
+  const value = String(input ?? '');
+  const iframes = [...value.matchAll(/<iframe\b[^>]*>/gi)].map(([tag]) => {
+    const src = tag.match(/\bsrc=["']([^"']+)["']/i)?.[1] ?? null;
+    const host = (() => {
+      try {
+        return new URL(src?.startsWith('//') ? `https:${src}` : src).hostname;
+      } catch {
+        return null;
+      }
+    })();
+    const classification = YOUTUBE_HOSTS.has(host)
+      ? 'A'
+      : host === 'rcm-fe.amazon-adsystem.com'
+        ? 'C'
+        : 'D';
+    return { src, host, classification };
+  });
+  return {
+    body_images: extractRemoteArticleImages(value),
+    iframes,
+    shortcodes: [...value.matchAll(/\[[a-z][\w-]*(?:\s[^\]]*)?\]/gi)].map(
+      ([shortcode]) => shortcode,
+    ),
+    script_count: (value.match(/<script\b/gi) ?? []).length,
+    unresolved_links: (value.match(/_wp_link_placeholder/gi) ?? []).length,
+  };
+}
+
+export function classifyInventoryPost(
+  { markup, featuredAlt, featuredImage = false },
+  mapping,
+) {
+  const priority = {
+    READY: 0,
+    NEEDS_REVIEW: 1,
+    NEEDS_TRANSFORM: 2,
+    BLOCKED: 3,
+  };
+  const reasons = [];
+  let status = 'READY';
+  const flag = (nextStatus, reason) => {
+    if (priority[nextStatus] > priority[status]) status = nextStatus;
+    reasons.push(reason);
+  };
+  if (markup.iframes.some(({ classification }) => classification === 'D')) {
+    flag('BLOCKED', 'unsupported iframe');
+  }
+  if (markup.shortcodes.length) {
+    flag('BLOCKED', 'unsupported shortcode');
+  }
+  if (
+    markup.unresolved_links ||
+    markup.script_count ||
+    markup.iframes.some(({ classification }) => classification === 'C')
+  ) {
+    flag(
+      'NEEDS_TRANSFORM',
+      markup.unresolved_links
+        ? 'unresolved WordPress link placeholder'
+        : 'legacy script or advertising embed',
+    );
+  }
+  if (!mapping) {
+    flag('NEEDS_REVIEW', 'content mapping not approved');
+  }
+  if (
+    featuredImage &&
+    !featuredAlt?.trim() &&
+    mapping?.featured_image_role !== 'decorative'
+  ) {
+    flag('NEEDS_REVIEW', 'featured image alt not reviewed');
+  }
+  if (markup.body_images.some(({ alt }) => !alt.trim())) {
+    flag('NEEDS_REVIEW', 'body image alt not reviewed');
+  }
+  return { status, reasons };
+}
+
+export function localizeArticleImages(input, assets = new Map()) {
+  const value = String(input ?? '');
+  for (const { src, alt } of extractRemoteArticleImages(value)) {
+    if (!alt.trim()) throw new Error(`missing alt for body image: ${src}`);
+    if (!assets.has(src)) throw new Error(`body image not localized: ${src}`);
+  }
+  return value.replaceAll(/<img\b[^>]*>/gi, (tag) => {
+    const source = tag.match(/\bsrc=["']([^"']+)["']/i)?.[1];
+    const asset = assets.get(source);
+    if (!asset) return tag;
+    const cleaned = tag
+      .replace(/\bsrc=["'][^"']+["']/i, `src="${asset.src}"`)
+      .replace(/\s(?:width|height|loading|decoding)=["'][^"']*["']/gi, '');
+    return cleaned.replace(/\s*\/?>(?=$)/, (ending) => {
+      const close = ending.includes('/') ? ' />' : '>';
+      return ` width="${asset.width}" height="${asset.height}" loading="lazy" decoding="async"${close}`;
+    });
+  });
+}
+
 function isoUtc(value, field) {
   if (!value) throw new Error(`missing ${field}`);
   const date = new Date(value.endsWith('Z') ? value : `${value}Z`);
@@ -32,8 +143,8 @@ function isoUtc(value, field) {
   return date.toISOString();
 }
 
-export function sanitizeArticleHtml(input) {
-  const value = String(input ?? '');
+export function sanitizeArticleHtml(input, imageAssets = new Map()) {
+  const value = localizeArticleImages(input, imageAssets);
   for (const [pattern, label] of forbiddenMarkup) {
     if (pattern.test(value)) throw new Error(`forbidden HTML: ${label}`);
   }
@@ -116,7 +227,7 @@ export function sanitizeArticleHtml(input) {
   }).trim();
 }
 
-export function normalizePost(post, mapping) {
+export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
   if (post?.status !== 'publish')
     throw new Error(`post ${post?.id ?? '?'} is not publish`);
   if (post.id !== mapping.id)
@@ -133,7 +244,7 @@ export function normalizePost(post, mapping) {
   const title = htmlText(post.title?.rendered);
   if (!title) throw new Error(`missing title for post ${post.id}`);
   const excerpt = sanitizeArticleHtml(post.excerpt?.rendered);
-  const content = sanitizeArticleHtml(post.content?.rendered);
+  const content = sanitizeArticleHtml(post.content?.rendered, bodyAssets);
   if (!excerpt) throw new Error(`missing excerpt for post ${post.id}`);
   if (!content) throw new Error(`missing content for post ${post.id}`);
 
@@ -248,6 +359,32 @@ export function assertManifestContinuity(articles, mappings, withdrawals) {
     if (!present.has(mapping.id) && !withdrawal) {
       throw new Error(`missing approved article ${mapping.id}`);
     }
+  }
+}
+
+export function assertInventoryContinuity(current, previous, withdrawals) {
+  const currentById = new Map(current.map((article) => [article.id, article]));
+  const withdrawn = new Map(withdrawals.map((item) => [item.id, item]));
+  for (const article of previous) {
+    const next = currentById.get(article.id);
+    if (!next && !withdrawn.has(article.id)) {
+      throw new Error(`published article disappeared: ${article.id}`);
+    }
+    if (!next) {
+      const withdrawal = withdrawn.get(article.id);
+      if (
+        withdrawal.canonical !== article.canonical ||
+        !withdrawal.reason?.trim() ||
+        Number.isNaN(Date.parse(withdrawal.approved_at))
+      ) {
+        throw new Error(`invalid withdrawal for article ${article.id}`);
+      }
+      continue;
+    }
+    if (next.slug !== article.slug)
+      throw new Error(`inventory slug drift: ${article.id}`);
+    if (next.canonical !== article.canonical)
+      throw new Error(`inventory canonical drift: ${article.id}`);
   }
 }
 

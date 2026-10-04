@@ -1,34 +1,103 @@
 {
   "contract_version": "0.1",
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 3,
-  "received_count": 3,
-  "article_ids": [2187, 2177, 2138],
+  "expected_count": 11,
+  "received_count": 11,
+  "article_ids": [
+    2187, 2177, 2157, 2153, 2138, 2135, 2081, 2074, 2062, 2066, 2058
+  ],
   "canonicals": [
     "https://happinesea.com/news/202601202187.html",
     "https://happinesea.com/news/202506242177.html",
-    "https://happinesea.com/news/202504082138.html"
+    "https://happinesea.com/radiolink-videos/202504222157.html",
+    "https://happinesea.com/radiolink-videos/202504092153.html",
+    "https://happinesea.com/news/202504082138.html",
+    "https://happinesea.com/news/202504082135.html",
+    "https://happinesea.com/news/202301102081.html",
+    "https://happinesea.com/news/202212202074.html",
+    "https://happinesea.com/radiolink-videos/202212072062.html",
+    "https://happinesea.com/radiolink-videos/202212072066.html",
+    "https://happinesea.com/radiolink-videos/202212072058.html"
   ],
   "routes": [
     "/insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/",
     "/insights/%e3%83%91%e3%83%88%e3%83%aa%e3%82%aa%e3%83%83%e3%83%88%e3%81%af%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%bc%e3%83%ab%e3%82%92/",
-    "/insights/how-to-set-t16d-t12d-to-control-a560/"
+    "/insights/2-position-switch-setting-of-rc8x/",
+    "/insights/t16d-t12d-self-centering-throttle-stick-adjustment/",
+    "/insights/how-to-set-t16d-t12d-to-control-a560/",
+    "/insights/how-to-set-t16d-t12d-to-control-d460/",
+    "/insights/radiolink-new-arrival-8ch-rc8x-transmitter/",
+    "/insights/%e3%80%8c%e5%a4%9a%e6%a9%9f%e8%83%bd%e3%80%8d%e3%80%8c%e9%ab%98%e3%82%b3%e3%82%b9%e3%83%91%e3%80%8d%e3%81%aa%e5%a4%9a%e3%83%81%e3%83%a3%e3%83%b3%e3%83%8d%e3%83%ab%ef%bc%9c%e3%83%8f%e3%82%a4%e3%82%a8/",
+    "/insights/radiolink-rc8x-controls-jdm-98-hydraulic-bulldozer/",
+    "/insights/how-to-update-firmware-of-radiolink-rc8x/",
+    "/insights/radiolink-new-transmitter-rc8x/"
   ],
   "assets": [
     {
       "id": 2187,
       "path": "public/assets/insights/wordpress/2187-8c80983b0fb0.webp",
-      "sha256": "8c80983b0fb0d926aceaf4813655c746b4e54e802001e5f53820c33385543ef2"
+      "sha256": "8c80983b0fb0d926aceaf4813655c746b4e54e802001e5f53820c33385543ef2",
+      "body": []
     },
     {
       "id": 2177,
       "path": "public/assets/insights/wordpress/2177-d306f164c758.webp",
-      "sha256": "d306f164c758e4c8d3c7482ba175db13086b35844ce457ef7314c7860e4ce7c0"
+      "sha256": "d306f164c758e4c8d3c7482ba175db13086b35844ce457ef7314c7860e4ce7c0",
+      "body": []
+    },
+    {
+      "id": 2157,
+      "path": "public/assets/insights/wordpress/2157-da15ec56b279.webp",
+      "sha256": "da15ec56b279e6406e87d4015c823966be290469484fb036bae172764edd22cf",
+      "body": []
+    },
+    {
+      "id": 2153,
+      "path": "public/assets/insights/wordpress/2153-d3ea79288893.webp",
+      "sha256": "d3ea79288893ddff0d1610b53df5f6b6058680b39d6fd3b70f043fdeb26785fa",
+      "body": []
     },
     {
       "id": 2138,
       "path": "public/assets/insights/wordpress/2138-efec77d83daa.webp",
-      "sha256": "efec77d83daa1b3a6b12e102f0a73b6c78b0a039f9248588d306cd940c51e069"
+      "sha256": "efec77d83daa1b3a6b12e102f0a73b6c78b0a039f9248588d306cd940c51e069",
+      "body": []
+    },
+    {
+      "id": 2135,
+      "path": "public/assets/insights/wordpress/2135-5cf36f2c2eb3.webp",
+      "sha256": "5cf36f2c2eb3294889e6a383c3ddd1834327eeaf11c087a9262b8d7163ee6087",
+      "body": []
+    },
+    {
+      "id": 2081,
+      "path": "public/assets/insights/wordpress/2081-13b6aa3346da.webp",
+      "sha256": "13b6aa3346da6381db3f5f9cabadf8000848e905b6cc9b4f3e855bdf968df16e",
+      "body": []
+    },
+    {
+      "id": 2074,
+      "path": "public/assets/insights/wordpress/2074-cc7a1a68ca77.webp",
+      "sha256": "cc7a1a68ca77089496919d513ace2c4cdada8927bec7fec07c3999e112123b77",
+      "body": []
+    },
+    {
+      "id": 2062,
+      "path": "public/assets/insights/wordpress/2062-ab59200045a1.webp",
+      "sha256": "ab59200045a1c6f7aeada73839073fe4a249894b1c8183b603fac2e42d9b678d",
+      "body": []
+    },
+    {
+      "id": 2066,
+      "path": "public/assets/insights/wordpress/2066-fc12f319318f.webp",
+      "sha256": "fc12f319318f0060aaf83a96b8810b145fb75ffd9d2d5ccd0602e2580684c86d",
+      "body": []
+    },
+    {
+      "id": 2058,
+      "path": "public/assets/insights/wordpress/2058-c0ea505a872e.webp",
+      "sha256": "c0ea505a872e5e9d3591691e294b8fd6912c8f683914a3ff288e8ad73aa2078c",
+      "body": []
     }
   ],
   "validation": {

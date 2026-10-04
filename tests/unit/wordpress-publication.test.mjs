@@ -4,10 +4,15 @@ import test from 'node:test';
 
 import {
   assertCollection,
+  assertInventoryContinuity,
   assertManifestContinuity,
+  analyzePostMarkup,
+  classifyInventoryPost,
   fetchJson,
   fetchImage,
   fetchPublishedPosts,
+  extractRemoteArticleImages,
+  localizeArticleImages,
   normalizePost,
   sanitizeArticleHtml,
   validateContracts,
@@ -158,6 +163,93 @@ test('strips inline styles and event handlers instead of publishing them', () =>
   );
 });
 
+test('localizes reviewed body images and rejects missing mappings or alt text', () => {
+  const source = 'https://happinesea.com/wp-content/uploads/figure.png';
+  const html = `<figure><img src="${source}" alt="配線図"></figure>`;
+  assert.deepEqual(extractRemoteArticleImages(html), [
+    { src: source, alt: '配線図' },
+  ]);
+  assert.equal(
+    extractRemoteArticleImages('<img src="//example.com/a.png" alt="図">')
+      .length,
+    1,
+  );
+  assert.throws(
+    () =>
+      localizeArticleImages(
+        `<img src="${source}" alt=""><img src="${source}" alt="図">`,
+        new Map(),
+      ),
+    /missing alt/,
+  );
+  const localized = localizeArticleImages(
+    html,
+    new Map([
+      [
+        source,
+        {
+          src: '/assets/insights/wordpress/10-body-a.webp',
+          width: 640,
+          height: 480,
+        },
+      ],
+    ]),
+  );
+  assert.match(
+    localized,
+    /src="\/assets\/insights\/wordpress\/10-body-a\.webp"/,
+  );
+  assert.match(localized, /width="640"/);
+  assert.match(localized, /height="480"/);
+  assert.match(localized, /loading="lazy"/);
+  assert.match(localized, /decoding="async"/);
+  assert.throws(() => localizeArticleImages(html, new Map()), /not localized/);
+  assert.throws(
+    () =>
+      localizeArticleImages(
+        `<img src="${source}" alt="">`,
+        new Map([[source, { src: '/local.webp', width: 1, height: 1 }]]),
+      ),
+    /missing alt/,
+  );
+});
+
+test('classifies preflight blockers without silently allowing legacy embeds', () => {
+  const placeholder = '<a href="_wp_link_placeholder">本文</a>';
+  assert.throws(() => sanitizeArticleHtml(placeholder), /placeholder/);
+  assert.equal(
+    classifyInventoryPost({ markup: analyzePostMarkup(placeholder) }, mapping)
+      .status,
+    'NEEDS_TRANSFORM',
+  );
+  const youtube = analyzePostMarkup(
+    '<iframe src="https://www.youtube.com/embed/abc"></iframe>',
+  );
+  assert.equal(youtube.iframes[0].classification, 'A');
+  assert.equal(
+    classifyInventoryPost({ markup: youtube, featuredAlt: '' }, mapping).status,
+    'READY',
+  );
+
+  const amazon = analyzePostMarkup(
+    '<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm"></iframe>',
+  );
+  assert.equal(amazon.iframes[0].classification, 'C');
+  assert.equal(
+    classifyInventoryPost({ markup: amazon, featuredAlt: '' }, null).status,
+    'NEEDS_TRANSFORM',
+  );
+
+  const unknown = analyzePostMarkup(
+    '<iframe src="https://example.com/embed/1"></iframe>[gallery id="1"]',
+  );
+  assert.equal(unknown.iframes[0].classification, 'D');
+  assert.equal(
+    classifyInventoryPost({ markup: unknown, featuredAlt: null }, null).status,
+    'BLOCKED',
+  );
+});
+
 test('rejects duplicate ids, slugs, canonicals, and missing approved articles', () => {
   const article = normalizePost(post, mapping);
   assert.throws(() => assertCollection([article, article]), /duplicate id/);
@@ -213,6 +305,43 @@ test('rejects duplicate ids, slugs, canonicals, and missing approved articles', 
         },
       ],
     ),
+  );
+});
+
+test('detects full inventory disappearance and URL drift', () => {
+  const previous = [
+    {
+      id: 10,
+      slug: 'stable',
+      canonical: 'https://happinesea.com/news/10.html',
+    },
+  ];
+  assert.doesNotThrow(() => assertInventoryContinuity(previous, previous, []));
+  assert.throws(
+    () => assertInventoryContinuity([], previous, [{ id: 10 }]),
+    /invalid withdrawal/,
+  );
+  assert.doesNotThrow(() =>
+    assertInventoryContinuity([], previous, [
+      {
+        ...previous[0],
+        reason: 'Reviewed withdrawal',
+        approved_at: '2026-10-03',
+      },
+    ]),
+  );
+  assert.throws(
+    () => assertInventoryContinuity([], previous, []),
+    /disappeared/,
+  );
+  assert.throws(
+    () =>
+      assertInventoryContinuity(
+        [{ ...previous[0], slug: 'changed' }],
+        previous,
+        [],
+      ),
+    /slug drift/,
   );
 });
 

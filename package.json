@@ -22,7 +22,8 @@
     "validate": "npm run test && npm run check && npm run lint && npm run format:check && npm run build && npm run test:dist",
     "import:publication": "node scripts/import-publication.mjs",
     "assets:sync": "node scripts/process-assets.mjs",
-    "wordpress:sync": "node scripts/sync-wordpress-insights.mjs"
+    "wordpress:sync": "npm run wordpress:inventory && node scripts/sync-wordpress-insights.mjs",
+    "wordpress:inventory": "node scripts/inventory-wordpress-insights.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
