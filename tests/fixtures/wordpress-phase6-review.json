@@ -1,0 +1,312 @@
+{
+  "reviewed_at": "2026-10-05",
+  "scope": "public WordPress video editorial migration",
+  "articles": [
+    {
+      "id": 1876,
+      "source_url": "https://happinesea.com/product/202201041876.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1876?_embed",
+      "source_content_sha256": "9e623d27b943445157ca57f9a427b63cdd933c2e4c68dd6b59020c2df92805ce",
+      "category_names": [
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        },
+        {
+          "slug": "product",
+          "name": "製品紹介"
+        }
+      ],
+      "youtube_ids": ["TJZz-7-26To", "w1NVkZIGpNk", "8IrY5g73jjU"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2022/01/yt-1876-ee7a4e08510027a9c8f1daa86e7440e6.4GHzRC6GS-V2.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "戦艦ラジコンに便利な6ch・RC6GS V2の文字と送信機。タイトルと動画導入を繰り返すサムネイル。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1851,
+      "source_url": "https://happinesea.com/news/202112231851.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1851?_embed",
+      "source_content_sha256": "33f8b9145281dc5410a7dafaa8c4837846a05128fd9d078738b7a03bf80ba8ea",
+      "category_names": [
+        {
+          "slug": "news",
+          "name": "ニュース・航空知識"
+        }
+      ],
+      "youtube_ids": ["c_f-vMfb9Ms", "Ykv9m1i2NKs"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1851-1b03a28dc752759f2909efb5532652a9.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "ボディ塗装初級編・前編の文字とマスキング中の車体、出演者。記事タイトルと前編動画の内容を繰り返す。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1839,
+      "source_url": "https://happinesea.com/radiolink-support/202112191839.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1839?_embed",
+      "source_content_sha256": "0310de649858b7b3e4913e21fe7fb9216714c75f427cf8360abc8f6fc4a8bb19",
+      "category_names": [
+        {
+          "slug": "byme-a-manual",
+          "name": "Byme-A製品マニュアル"
+        },
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        },
+        {
+          "slug": "radiolink-support",
+          "name": "Radiolink製品サポート"
+        }
+      ],
+      "youtube_ids": ["N2Gm4OUhu-c"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1839-Radiolink-Fixed-Wing-A560-Vertical-Flight.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "Radiolinkの赤白固定翼機を垂直に持つ動画フレーム。記事タイトルのホバリング実演を表すプレビュー。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1833,
+      "source_url": "https://happinesea.com/product/202112171833.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1833?_embed",
+      "source_content_sha256": "1bd146f0722fea2ca077dd7f3fc07a242723c05f5817a7447d2f06f6c492c370",
+      "category_names": [
+        {
+          "slug": "byme-a-manual",
+          "name": "Byme-A製品マニュアル"
+        },
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        },
+        {
+          "slug": "radiolink-support",
+          "name": "Radiolink製品サポート"
+        },
+        {
+          "slug": "product",
+          "name": "製品紹介"
+        }
+      ],
+      "youtube_ids": ["QRIA7KnmpvM"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1833-Radiolink-Byme-A-5-Flight-Modes-Airplane-Flight-Controller.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "Byme-A Flight Mode Performanceの文字、機体とコントローラー。本文の5つの飛行モードの動画紹介を繰り返す。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1829,
+      "source_url": "https://happinesea.com/radiolink-support/202112161829.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1829?_embed",
+      "source_content_sha256": "b9eb776a24ad0f3de367a728558006d0d02c0838fb20d3d9bb5407db27a29df6",
+      "category_names": [
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        },
+        {
+          "slug": "radiolink-support",
+          "name": "Radiolink製品サポート"
+        }
+      ],
+      "youtube_ids": ["okCI14ls9j0"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1829-Radiolink-Byme-D-Connection-and-Calibration-Tutorial.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "Byme-D Flight Controller、対応機体名と機体・コントローラー。本文の対応機体と接続調整動画紹介を繰り返す。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1825,
+      "source_url": "https://happinesea.com/radiolink-support/202112151825.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1825?_embed",
+      "source_content_sha256": "43c51b2b8aefeca9f403245525f5fd7f28a632d59c0e630226a0df6380a1ce47",
+      "category_names": [
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        },
+        {
+          "slug": "radiolink-support",
+          "name": "Radiolink製品サポート"
+        }
+      ],
+      "youtube_ids": ["pavTMj4CI6E"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1825-Radiolink-Byme-D-Gyro-Stabilizer-Revisited.-Setup-and-Flight.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "Byme-D Revisitedの文字とコントローラー。タイトルの再訪・設定飛行動画を表すサムネイルで、背景建築は説明対象ではない。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1810,
+      "source_url": "https://happinesea.com/news/202112151810.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1810?_embed",
+      "source_content_sha256": "01d4374ad45ded658f9422673ae01ec55da329132ad1b4e9c61e0ef833e35fee",
+      "category_names": [
+        {
+          "slug": "news",
+          "name": "ニュース・航空知識"
+        }
+      ],
+      "youtube_ids": ["q8DwBEtEK9I"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1810-Rubber-powered-copter-ascends-almost-out-of-sight.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "芝生でゴム動力ヘリコプターを放す動画フレーム。タイトルと動画の飛行紹介を繰り返すプレビュー。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1804,
+      "source_url": "https://happinesea.com/product/202112141804.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1804?_embed",
+      "source_content_sha256": "e7eff824071985c0b8346cfd9cef03dddae11505700b75a52b6221a176dbff17",
+      "category_names": [
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        },
+        {
+          "slug": "product",
+          "name": "製品紹介"
+        }
+      ],
+      "youtube_ids": ["APkRKE543AI"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1804-RadioLink-Byme-A-SBUS-PWM-Converter-With-6-Axis-Flight-Controller.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "Byme-A Setupの文字と搭載コントローラー。タイトルと本文の設定動画紹介を繰り返すサムネイル。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1798,
+      "source_url": "https://happinesea.com/radiolink-videos/202112071798.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1798?_embed",
+      "source_content_sha256": "a2a7222df72a120a67808c00a0d967867424303d892a84f9eed90f8271f45024",
+      "category_names": [
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        }
+      ],
+      "youtube_ids": ["23YsA50LYyI"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/12/yt-1798-3D-Helicopter-Flying-A-ALIGN-550L-Helicopter-controlled-by-Radiolink-AT9S.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "屋外でRCヘリコプターと送信機を前にした動画フレーム。タイトルと動画のヘリコプター飛行紹介を繰り返す。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    },
+    {
+      "id": 1534,
+      "source_url": "https://happinesea.com/radiolink-videos/202105071534.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1534?_embed",
+      "source_content_sha256": "3158294168239d69d98516cdeafec8b92b9f50960349763800213b86062330fb",
+      "category_names": [
+        {
+          "slug": "radiolink-videos",
+          "name": "Radiolink動画集"
+        }
+      ],
+      "youtube_ids": ["AImpkPxAQGs"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/05/yt-1534-4a36221d60c095be4b506e3ebc797f8c.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "alt": "",
+        "visual_observation": "AT10 II開封の文字、送信機と説明書。タイトルと動画の開封紹介を繰り返すサムネイル。",
+        "decision": "動画紹介のプレビューで、タイトル・本文・埋め込み動画にある情報の重複。独立した手順や図解として使わないため空altを維持。"
+      },
+      "body_review": {
+        "images": 0,
+        "scripts": 0,
+        "shortcodes": 0,
+        "policy": "本文の主張とリンクを変更せず、既存HTMLポリシーでpublication copyを作成。製品・マニュアルのcanonical所有権は移さない。"
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "contract_version": "0.1",
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 11,
+  "expected_count": 21,
   "articles": [
     {
       "id": 2187,
@@ -112,6 +112,106 @@
       "route": "/insights/radiolink-new-transmitter-rc8x/",
       "featured_image_role": "decorative",
       "canonical": "https://happinesea.com/radiolink-videos/202212072058.html"
+    },
+    {
+      "id": 1876,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "%e3%80%90%e6%88%a6%e8%89%a6%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aa6ch%e3%80%91-2-4ghz%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88rc6gs-v2",
+      "route": "/insights/%e3%80%90%e6%88%a6%e8%89%a6%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aa6ch%e3%80%91-2-4ghz%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88rc6gs-v2/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/product/202201041876.html"
+    },
+    {
+      "id": 1851,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e5%88%9d%e5%bf%83%e8%80%85%e3%81%ae%e6%96%b9%e5%90%91%e3%81%91%e3%80%90%e3%81%a1%e3%82%87%e3%81%a3%e3%81%a8%e3%81%97%e3%81%9f%e5%b0%8f%e6%8a%80%ef%bc%9f%e3%82%82",
+      "route": "/insights/%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e5%88%9d%e5%bf%83%e8%80%85%e3%81%ae%e6%96%b9%e5%90%91%e3%81%91%e3%80%90%e3%81%a1%e3%82%87%e3%81%a3%e3%81%a8%e3%81%97%e3%81%9f%e5%b0%8f%e6%8a%80%ef%bc%9f%e3%82%82/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/news/202112231851.html"
+    },
+    {
+      "id": 1839,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "radiolink-fixed-wing-a560-vertical-flight",
+      "route": "/insights/radiolink-fixed-wing-a560-vertical-flight/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/radiolink-support/202112191839.html"
+    },
+    {
+      "id": 1833,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "radiolink-byme-a-5-flight-modes-airplane-flight-controller",
+      "route": "/insights/radiolink-byme-a-5-flight-modes-airplane-flight-controller/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/product/202112171833.html"
+    },
+    {
+      "id": 1829,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "radiolink-byme-d-connection-and-calibration-tutorial",
+      "route": "/insights/radiolink-byme-d-connection-and-calibration-tutorial/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/radiolink-support/202112161829.html"
+    },
+    {
+      "id": 1825,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "radiolink-byme-d-gyro-stabilizer-revisited-setup-and-flight",
+      "route": "/insights/radiolink-byme-d-gyro-stabilizer-revisited-setup-and-flight/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/radiolink-support/202112151825.html"
+    },
+    {
+      "id": 1810,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rubber-powered-copter-ascends-almost-out-of-sight",
+      "route": "/insights/rubber-powered-copter-ascends-almost-out-of-sight/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/news/202112151810.html"
+    },
+    {
+      "id": 1804,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "radiolink-byme-a-sbus-pwm-converter-with-6-axis-flight-controller",
+      "route": "/insights/radiolink-byme-a-sbus-pwm-converter-with-6-axis-flight-controller/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/product/202112141804.html"
+    },
+    {
+      "id": 1798,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "3d-helicopter-flying-a-align-550l-helicopter-controlled-by-radiolink-at9s",
+      "route": "/insights/3d-helicopter-flying-a-align-550l-helicopter-controlled-by-radiolink-at9s/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/radiolink-videos/202112071798.html"
+    },
+    {
+      "id": 1534,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "radiolink-at10%e2%85%b1%e9%96%8b%e5%b0%81%ef%bc%86%e9%9b%bb%e6%ba%90%e4%bb%98%e3%81%91%e3%82%8b%e3%81%be%e3%81%a7at10%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b32",
+      "route": "/insights/radiolink-at10%e2%85%b1%e9%96%8b%e5%b0%81%ef%bc%86%e9%9b%bb%e6%ba%90%e4%bb%98%e3%81%91%e3%82%8b%e3%81%be%e3%81%a7at10%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b32/",
+      "featured_image_role": "decorative",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071534.html"
     }
   ],
   "withdrawals": []

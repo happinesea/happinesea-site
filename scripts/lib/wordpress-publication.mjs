@@ -426,6 +426,20 @@ export async function fetchWithRetry(url, options, fetchImpl = fetch) {
 }
 
 export async function fetchPublishedPosts(endpoint, ids, fetchImpl = fetch) {
+  if (new Set(ids).size !== ids.length)
+    throw new Error('duplicate requested post ids');
+  if (ids.length > 10) {
+    const posts = [];
+    for (let index = 0; index < ids.length; index += 10)
+      posts.push(
+        ...(await fetchPublishedPosts(
+          endpoint,
+          ids.slice(index, index + 10),
+          fetchImpl,
+        )),
+      );
+    return posts;
+  }
   const url = new URL(endpoint);
   url.searchParams.set('status', 'publish');
   url.searchParams.set('include', ids.join(','));
