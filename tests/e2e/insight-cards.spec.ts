@@ -11,9 +11,12 @@ const categoryNames: Record<string, string> = {
   news: 'ニュース・航空知識',
   'radiolink-support': 'Radiolink製品サポート',
   'radiolink-videos': 'Radiolink動画集',
+  product: '製品紹介',
+  'byme-a-manual': 'Byme-A製品マニュアル',
 };
 
-for (const route of ['./', './insights/']) {
+// Home uses its own cards, covered by home-editorial.spec.ts.
+for (const route of ['./insights/']) {
   test(`article cards preserve source metadata and responsive layout on ${route}`, async ({
     page,
     request,

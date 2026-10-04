@@ -345,6 +345,63 @@ test('detects full inventory disappearance and URL drift', () => {
   );
 });
 
+test('fetches larger manifests in bounded embedded requests and rejects incomplete chunks', async () => {
+  const ids = Array.from({ length: 21 }, (_, index) => index + 1);
+  const fetchPosts = async (url) => {
+    const requested = url.searchParams.get('include').split(',').map(Number);
+    assert.ok(
+      requested.length <= 10,
+      'embedded request exceeds safe WordPress batch size',
+    );
+    assert.equal(Number(url.searchParams.get('per_page')), requested.length);
+    return new Response(
+      JSON.stringify(requested.map((id) => ({ ...post, id }))),
+      {
+        headers: {
+          'x-wp-total': String(requested.length),
+          'x-wp-totalpages': '1',
+        },
+      },
+    );
+  };
+  const posts = await fetchPublishedPosts(
+    'https://example.test/posts',
+    ids,
+    fetchPosts,
+  );
+  assert.deepEqual(
+    posts.map(({ id }) => id),
+    ids,
+  );
+  await assert.rejects(
+    fetchPublishedPosts('https://example.test/posts', [...ids, 1], fetchPosts),
+    /duplicate requested post/,
+  );
+  await assert.rejects(
+    fetchPublishedPosts('https://example.test/posts', ids, async (url) => {
+      const response = await fetchPosts(url);
+      if (!url.searchParams.get('include').startsWith('11,')) return response;
+      const duplicated = await response.json();
+      duplicated[0].id = 1;
+      return new Response(JSON.stringify(duplicated), {
+        headers: { 'x-wp-total': '10', 'x-wp-totalpages': '1' },
+      });
+    }),
+    /missing published post 11/,
+  );
+  await assert.rejects(
+    fetchPublishedPosts('https://example.test/posts', ids, async (url) => {
+      if (url.searchParams.get('include').startsWith('11,')) {
+        return new Response('[]', {
+          headers: { 'x-wp-total': '0', 'x-wp-totalpages': '0' },
+        });
+      }
+      return fetchPosts(url);
+    }),
+    /expected 10 published posts/,
+  );
+});
+
 test('fails closed when WordPress or an image fetch fails', async () => {
   await assert.rejects(
     fetchJson('https://example.test/posts', async () => {
