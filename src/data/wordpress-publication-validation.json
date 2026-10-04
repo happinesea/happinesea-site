@@ -1,10 +1,11 @@
 {
   "contract_version": "0.1",
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 11,
-  "received_count": 11,
+  "expected_count": 21,
+  "received_count": 21,
   "article_ids": [
-    2187, 2177, 2157, 2153, 2138, 2135, 2081, 2074, 2062, 2066, 2058
+    2187, 2177, 2157, 2153, 2138, 2135, 2081, 2074, 2062, 2066, 2058, 1876,
+    1851, 1839, 1833, 1829, 1825, 1810, 1804, 1798, 1534
   ],
   "canonicals": [
     "https://happinesea.com/news/202601202187.html",
@@ -17,7 +18,17 @@
     "https://happinesea.com/news/202212202074.html",
     "https://happinesea.com/radiolink-videos/202212072062.html",
     "https://happinesea.com/radiolink-videos/202212072066.html",
-    "https://happinesea.com/radiolink-videos/202212072058.html"
+    "https://happinesea.com/radiolink-videos/202212072058.html",
+    "https://happinesea.com/product/202201041876.html",
+    "https://happinesea.com/news/202112231851.html",
+    "https://happinesea.com/radiolink-support/202112191839.html",
+    "https://happinesea.com/product/202112171833.html",
+    "https://happinesea.com/radiolink-support/202112161829.html",
+    "https://happinesea.com/radiolink-support/202112151825.html",
+    "https://happinesea.com/news/202112151810.html",
+    "https://happinesea.com/product/202112141804.html",
+    "https://happinesea.com/radiolink-videos/202112071798.html",
+    "https://happinesea.com/radiolink-videos/202105071534.html"
   ],
   "routes": [
     "/insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/",
@@ -30,7 +41,17 @@
     "/insights/%e3%80%8c%e5%a4%9a%e6%a9%9f%e8%83%bd%e3%80%8d%e3%80%8c%e9%ab%98%e3%82%b3%e3%82%b9%e3%83%91%e3%80%8d%e3%81%aa%e5%a4%9a%e3%83%81%e3%83%a3%e3%83%b3%e3%83%8d%e3%83%ab%ef%bc%9c%e3%83%8f%e3%82%a4%e3%82%a8/",
     "/insights/radiolink-rc8x-controls-jdm-98-hydraulic-bulldozer/",
     "/insights/how-to-update-firmware-of-radiolink-rc8x/",
-    "/insights/radiolink-new-transmitter-rc8x/"
+    "/insights/radiolink-new-transmitter-rc8x/",
+    "/insights/%e3%80%90%e6%88%a6%e8%89%a6%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aa6ch%e3%80%91-2-4ghz%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88rc6gs-v2/",
+    "/insights/%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e5%88%9d%e5%bf%83%e8%80%85%e3%81%ae%e6%96%b9%e5%90%91%e3%81%91%e3%80%90%e3%81%a1%e3%82%87%e3%81%a3%e3%81%a8%e3%81%97%e3%81%9f%e5%b0%8f%e6%8a%80%ef%bc%9f%e3%82%82/",
+    "/insights/radiolink-fixed-wing-a560-vertical-flight/",
+    "/insights/radiolink-byme-a-5-flight-modes-airplane-flight-controller/",
+    "/insights/radiolink-byme-d-connection-and-calibration-tutorial/",
+    "/insights/radiolink-byme-d-gyro-stabilizer-revisited-setup-and-flight/",
+    "/insights/rubber-powered-copter-ascends-almost-out-of-sight/",
+    "/insights/radiolink-byme-a-sbus-pwm-converter-with-6-axis-flight-controller/",
+    "/insights/3d-helicopter-flying-a-align-550l-helicopter-controlled-by-radiolink-at9s/",
+    "/insights/radiolink-at10%e2%85%b1%e9%96%8b%e5%b0%81%ef%bc%86%e9%9b%bb%e6%ba%90%e4%bb%98%e3%81%91%e3%82%8b%e3%81%be%e3%81%a7at10%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b32/"
   ],
   "assets": [
     {
@@ -97,6 +118,66 @@
       "id": 2058,
       "path": "public/assets/insights/wordpress/2058-c0ea505a872e.webp",
       "sha256": "c0ea505a872e5e9d3591691e294b8fd6912c8f683914a3ff288e8ad73aa2078c",
+      "body": []
+    },
+    {
+      "id": 1876,
+      "path": "public/assets/insights/wordpress/1876-9ed42c10fe3a.webp",
+      "sha256": "9ed42c10fe3a1b5d80f05576971cf56d75d0d9764981e2b39e48c4480e89db9f",
+      "body": []
+    },
+    {
+      "id": 1851,
+      "path": "public/assets/insights/wordpress/1851-59450a0fa374.webp",
+      "sha256": "59450a0fa37475789d05f698f9126310b489557666e3f3b4d0cb7049c4bd9a8e",
+      "body": []
+    },
+    {
+      "id": 1839,
+      "path": "public/assets/insights/wordpress/1839-432f18200392.webp",
+      "sha256": "432f18200392843d6faa09431c6c716f907a6541e283b61c48ec998f89c8dcb4",
+      "body": []
+    },
+    {
+      "id": 1833,
+      "path": "public/assets/insights/wordpress/1833-2521decc2cf0.webp",
+      "sha256": "2521decc2cf023cda832ceee64e8f1f2e81850fcc9d5a039e7132efd967c32f2",
+      "body": []
+    },
+    {
+      "id": 1829,
+      "path": "public/assets/insights/wordpress/1829-4c33e1ae6d8f.webp",
+      "sha256": "4c33e1ae6d8fd436d0219f9b95a8e3ce4c2b3ff61bfd9d041156cc20de02ff95",
+      "body": []
+    },
+    {
+      "id": 1825,
+      "path": "public/assets/insights/wordpress/1825-4b0816ad96b3.webp",
+      "sha256": "4b0816ad96b3300539dc7bdc87a2f5b6cb71ca8c68e67cafd1491d450c58f6bb",
+      "body": []
+    },
+    {
+      "id": 1810,
+      "path": "public/assets/insights/wordpress/1810-4bcaaa9ef4ae.webp",
+      "sha256": "4bcaaa9ef4aebd95e586045ea1295c5f638d73a210bb4c387d50aed8361bf196",
+      "body": []
+    },
+    {
+      "id": 1804,
+      "path": "public/assets/insights/wordpress/1804-b3bb32fe01f8.webp",
+      "sha256": "b3bb32fe01f8666ee6b00058feaf0329d8ebc10c9dedbbca4a09109c468be050",
+      "body": []
+    },
+    {
+      "id": 1798,
+      "path": "public/assets/insights/wordpress/1798-0f44dd1f25b7.webp",
+      "sha256": "0f44dd1f25b7341cf264ef0c424dbb1f63a54e33387381220e586e7e1f0e4943",
+      "body": []
+    },
+    {
+      "id": 1534,
+      "path": "public/assets/insights/wordpress/1534-22e13e8a886e.webp",
+      "sha256": "22e13e8a886ec611d169c7f362c8cd53427a73a0fb860af8501ffb06c0e1cab9",
       "body": []
     }
   ],

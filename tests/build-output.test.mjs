@@ -331,7 +331,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 11);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 21);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
@@ -354,6 +354,14 @@ test('WordPress insight batch emits sanitized static routes with local images an
   for (const article of articles) {
     const html = await route(
       `insights/${decodeURIComponent(article.slug)}/index.html`,
+    );
+    const legacyHtml = await route(
+      new URL(article.canonical).pathname.slice(1),
+    );
+    assert.equal(
+      legacyHtml,
+      html,
+      `exact legacy alias for ${article.contract.id}`,
     );
     assert.match(
       html,

@@ -2,8 +2,8 @@
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
   "expected_count": 97,
   "status_counts": {
-    "READY": 11,
-    "NEEDS_REVIEW": 75,
+    "READY": 21,
+    "NEEDS_REVIEW": 65,
     "NEEDS_TRANSFORM": 6,
     "BLOCKED": 5
   },
@@ -792,15 +792,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/%e3%80%90%e6%88%a6%e8%89%a6%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aa6ch%e3%80%91-2-4ghz%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88rc6gs-v2/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1857,
@@ -890,15 +884,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/%e3%83%a9%e3%82%b8%e3%82%b3%e3%83%b3%e5%88%9d%e5%bf%83%e8%80%85%e3%81%ae%e6%96%b9%e5%90%91%e3%81%91%e3%80%90%e3%81%a1%e3%82%87%e3%81%a3%e3%81%a8%e3%81%97%e3%81%9f%e5%b0%8f%e6%8a%80%ef%bc%9f%e3%82%82/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1839,
@@ -931,15 +919,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-fixed-wing-a560-vertical-flight/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1833,
@@ -976,15 +958,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-byme-a-5-flight-modes-airplane-flight-controller/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1829,
@@ -1012,15 +988,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-byme-d-connection-and-calibration-tutorial/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1825,
@@ -1051,15 +1021,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-byme-d-gyro-stabilizer-revisited-setup-and-flight/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1810,
@@ -1087,15 +1051,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/rubber-powered-copter-ascends-almost-out-of-sight/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1804,
@@ -1123,15 +1081,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-byme-a-sbus-pwm-converter-with-6-axis-flight-controller/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1798,
@@ -1163,15 +1115,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/3d-helicopter-flying-a-align-550l-helicopter-controlled-by-radiolink-at9s/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1779,
@@ -2005,15 +1951,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-at10%e2%85%b1%e9%96%8b%e5%b0%81%ef%bc%86%e9%9b%bb%e6%ba%90%e4%bb%98%e3%81%91%e3%82%8b%e3%81%be%e3%81%a7at10%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b32/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1500,
