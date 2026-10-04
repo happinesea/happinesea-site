@@ -78,12 +78,28 @@ const { insights } = Astro.props;
       <div class="flex items-center justify-between gap-3 text-xs text-slate-600">
         <span data-counter>1 / {insights.length}</span>
         <button
-          class="min-h-11 px-2 underline underline-offset-4"
+          class="min-h-11 min-w-11"
           type="button"
           data-toggle
           aria-label="自動切替を停止"
         >
-          自動切替を停止
+          <img
+            src={withBase('/assets/ui/lucide/pause.svg')}
+            width="20"
+            height="20"
+            alt=""
+            aria-hidden="true"
+            data-pause-icon
+          />
+          <img
+            src={withBase('/assets/ui/lucide/play.svg')}
+            width="20"
+            height="20"
+            alt=""
+            aria-hidden="true"
+            data-play-icon
+            hidden
+          />
         </button>
       </div>
     </div>
@@ -99,6 +115,16 @@ const { insights } = Astro.props;
   }
   button:disabled {
     cursor: default;
+  }
+  [data-toggle] {
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--site-border);
+    border-radius: 50%;
+    background: var(--site-surface);
+  }
+  [data-toggle]:disabled {
+    opacity: 0.5;
   }
   .slides {
     display: grid;
@@ -140,12 +166,17 @@ const { insights } = Astro.props;
       function schedule() {
         window.clearTimeout(timer);
         const stopped = paused || motion.matches;
-        toggle.textContent = motion.matches
+        const label = motion.matches
           ? '自動切替なし'
           : paused
             ? '自動切替を再開'
             : '自動切替を停止';
-        toggle.setAttribute('aria-label', toggle.textContent);
+        toggle.setAttribute('aria-label', label);
+        toggle.title = label;
+        toggle.querySelector<HTMLElement>('[data-play-icon]')!.hidden =
+          !stopped;
+        toggle.querySelector<HTMLElement>('[data-pause-icon]')!.hidden =
+          stopped;
         toggle.disabled = motion.matches;
         if (
           !stopped &&

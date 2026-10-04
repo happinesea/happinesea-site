@@ -9,6 +9,9 @@ test('hero presents five latest articles with metadata and working controls', as
   const slides = carousel.locator('[data-slide]');
   await expect(slides).toHaveCount(5);
   const first = slides.nth(0);
+  const playback = carousel.locator('[data-toggle]');
+  await expect(playback).toHaveText('');
+  await expect(playback.locator('[data-pause-icon]')).toBeVisible();
   await expect(first).toBeVisible();
   await expect(first.locator('time')).toBeVisible();
   await expect(first.locator('[data-home-category]').first()).toBeVisible();
@@ -19,6 +22,8 @@ test('hero presents five latest articles with metadata and working controls', as
     firstHref!,
   );
   await carousel.getByRole('button', { name: '次の記事', exact: true }).click();
+  await expect(playback.locator('[data-play-icon]')).toBeVisible();
+  await expect(playback.locator('[data-pause-icon]')).not.toBeVisible();
   await expect(slides.nth(1)).toBeVisible();
   await expect(first).not.toBeVisible();
   await expect(

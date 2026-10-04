@@ -64,6 +64,11 @@ test('home prioritizes the latest article and real hobby resources', async ({
   await expect(
     page.locator('[data-home-brand] a[href*="/radiolink/"]'),
   ).toHaveCount(0);
+  await expect(
+    page
+      .locator('[data-home-brand]')
+      .getByRole('link', { name: 'Radiolink製品マニュアル', exact: true }),
+  ).toHaveAttribute('href', '/happinesea-site/manuals/');
   const imageBox = await featured.locator('img').boundingBox();
   const textBox = await featured
     .locator('[data-home-article-text]')
