@@ -8,6 +8,84 @@ const articles = JSON.parse(
   hero: { src: string; alt: string };
 }[];
 
+test('home grids and support hub retain real resource links', async ({
+  page,
+  request,
+  isMobile,
+}) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  page.on('console', (message) => {
+    if (message.type() === 'error') errors.push(message.text());
+  });
+  await page.goto('./');
+  if (isMobile) await page.locator('header summary').click();
+  const nav = page.getByRole('navigation', { name: 'メインナビゲーション' });
+  await expect(
+    nav.getByRole('link', { name: 'サポート情報', exact: true }),
+  ).toHaveAttribute('href', '/happinesea-site/support/');
+  if (isMobile) await page.locator('header summary').click();
+  const manual = page
+    .locator('[data-home-brand]')
+    .getByRole('link', { name: 'Radiolink製品マニュアル', exact: true });
+  expect(
+    await manual.evaluate((node) => getComputedStyle(node).borderRadius),
+  ).not.toBe('0px');
+  for (const section of ['news', 'drawings']) {
+    const grid = page.locator(`[data-home-section="${section}"] .grid`);
+    const columns = await grid.evaluate(
+      (node) => getComputedStyle(node).gridTemplateColumns.split(' ').length,
+    );
+    expect(columns).toBe(isMobile ? 1 : 3);
+  }
+  await expect(
+    page.locator('[data-home-section="drawings"] article'),
+  ).toHaveCount(3);
+  for (const path of ['202201171891', '202110211742', '202110191734']) {
+    await expect(
+      page.locator(
+        `[data-home-section="drawings"] a[href="https://happinesea.com/engineering-drawing/${path}.html"]`,
+      ),
+    ).toBeVisible();
+  }
+  for (const image of await page.locator('main img').all()) {
+    await image.evaluate((node: HTMLImageElement) => {
+      node.loading = 'eager';
+      return node.decode();
+    });
+  }
+  await page.screenshot({
+    path: `test-results/home-resources-${isMobile ? 'mobile' : 'desktop'}.png`,
+    fullPage: true,
+  });
+  await page.goto('./support/');
+  await expect(
+    page.getByRole('heading', { name: 'サポート情報', exact: true }),
+  ).toBeVisible();
+  await expect(
+    page
+      .locator('main')
+      .getByRole('link', { name: 'Radiolink製品マニュアル', exact: true }),
+  ).toHaveAttribute('href', '/happinesea-site/manuals/');
+  for (const link of await page.locator('main a[href]').all()) {
+    const href = (await link.getAttribute('href'))!;
+    if (href.startsWith('/'))
+      expect((await request.get(href)).status()).toBe(200);
+  }
+  expect(
+    await page.evaluate(
+      () =>
+        document.documentElement.scrollWidth -
+        document.documentElement.clientWidth,
+    ),
+  ).toBe(0);
+  expect(errors).toEqual([]);
+  await page.screenshot({
+    path: `test-results/support-${isMobile ? 'mobile' : 'desktop'}.png`,
+    fullPage: true,
+  });
+});
+
 test('home prioritizes the latest article and real hobby resources', async ({
   page,
   request,

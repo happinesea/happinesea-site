@@ -3,7 +3,7 @@ import { getNavigation, SITE_NAME } from '../lib/site';
 import { withBase } from '../lib/urls';
 
 const links = getNavigation();
-const navigation = [...links.slice(3), ...links.slice(0, 3)];
+const navigation = [...links.slice(2), ...links.slice(0, 2)];
 const home = withBase('/');
 const currentPath = Astro.url.pathname;
 ---

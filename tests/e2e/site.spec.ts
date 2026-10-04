@@ -137,7 +137,7 @@ test('navigation, category filtering, and LINE support work', async ({
   expect(errors).toEqual([]);
 });
 
-test('category navigation exposes the four public entry points', async ({
+test('category navigation exposes the public entry points', async ({
   page,
   isMobile,
 }) => {
@@ -145,8 +145,7 @@ test('category navigation exposes the four public entry points', async ({
   if (isMobile) await page.getByText('メニュー', { exact: true }).click();
   for (const [label, path] of [
     ['Radiolink製品', '/radiolink/'],
-    ['マニュアル', '/manuals/'],
-    ['サポート', '/support/'],
+    ['サポート情報', '/support/'],
     ['ニュース・航空知識', '/insights/'],
   ] as const) {
     await expect(

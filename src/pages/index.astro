@@ -35,6 +35,22 @@ const resources = [
   { label: 'FAQ・サポート', href: '/support/', key: 'support' },
   { label: '更新情報', href: '/radiolink/updates/', key: 'updates' },
 ];
+const drawings = [
+  {
+    title:
+      'RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。',
+    href: 'https://happinesea.com/engineering-drawing/202201171891.html',
+  },
+  {
+    title:
+      'RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。',
+    href: 'https://happinesea.com/engineering-drawing/202110211742.html',
+  },
+  {
+    title: 'C-17輸送機設計図(CAD付き)',
+    href: 'https://happinesea.com/engineering-drawing/202110191734.html',
+  },
+];
 ---
 
 <BaseLayout>
@@ -74,7 +90,7 @@ const resources = [
             設計図を見る
           </a>
           <a
-            class="self-center px-2 py-3 text-sm text-slate-200 underline underline-offset-4 hover:text-teal-200"
+            class="rounded-full border border-slate-500 px-5 py-3 text-sm font-semibold text-white no-underline hover:border-teal-300 hover:text-teal-200"
             href={withBase('/manuals/')}
           >
             Radiolink製品マニュアル
@@ -91,11 +107,9 @@ const resources = [
   >
     <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-12 lg:px-8 lg:py-16">
       <SectionHeading title="ニュース・航空知識" />
-      <div
-        class:list={['mt-8 grid gap-8', news.length > 1 && 'md:grid-cols-3']}
-      >
+      <div class="mt-8 grid gap-8 md:grid-cols-3">
         {news.map((insight) => (
-          <HomeArticle insight={insight} horizontal={news.length === 1} />
+          <HomeArticle insight={insight} />
         ))}
       </div>
       <a
@@ -134,6 +148,17 @@ const resources = [
         title="設計図ライブラリ"
         description="飛行機などの設計図を探す。"
       />
+      <div class="mt-8 grid gap-8 md:grid-cols-3">
+        {drawings.map((drawing) => (
+          <article class="min-w-0 border-t border-slate-200 py-6">
+            <h2 class="m-0 text-xl leading-snug font-bold text-slate-950 sm:text-2xl [overflow-wrap:anywhere]">
+              <a class="no-underline hover:text-teal-800" href={drawing.href}>
+                {drawing.title}
+              </a>
+            </h2>
+          </article>
+        ))}
+      </div>
       <a
         class="mt-6 inline-block rounded-full bg-slate-950 px-6 py-3 font-semibold text-white no-underline hover:bg-teal-800"
         href="https://happinesea.com/drawinglibrary"

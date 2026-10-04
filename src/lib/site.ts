@@ -10,8 +10,7 @@ export const LINE_URL = 'https://line.me/R/ti/p/%40662zyrsb';
 export function getNavigation(base = import.meta.env.BASE_URL) {
   return [
     { label: 'Radiolink製品', href: withBase('/radiolink/', base) },
-    { label: 'マニュアル', href: withBase('/manuals/', base) },
-    { label: 'サポート', href: withBase('/support/', base) },
+    { label: 'サポート情報', href: withBase('/support/', base) },
     { label: 'ニュース・航空知識', href: withBase('/insights/', base) },
     {
       label: '設計図ライブラリ',
