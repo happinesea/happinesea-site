@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "5df74c4b18cdb51e2ab6eb52535e1a13cc822efb",
+  "baseline_commit": "1848acf14fde313b9efc8921d6c9ad7575e6a8c7",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -55,7 +55,7 @@
       "page": 141,
       "post": 92
     },
-    "preserved_routes": 159,
+    "preserved_routes": 174,
     "redirect_required": 0,
     "blocked": 14,
     "old_domain_only_assets": 621,
@@ -64,7 +64,7 @@
     "unverified": 1187,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1217,
+    "unresolved_surfaces": 1202,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -8040,15 +8040,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200317175.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200317175.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.1．画面表示",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200317175.html; byte-identical to /insights/what-is-this-new-sport-that-is-winning-the-world/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/what-is-this-new-sport-that-is-winning-the-world/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200317175.html/attachment/baseball-1599580_1280",
@@ -8157,15 +8159,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200319121.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319121.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.3．モデルの選択",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200319121.html; byte-identical to /insights/evolution-in-virtual-gaming/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/evolution-in-virtual-gaming/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319121.html/attachment/a-photo-by-pawel-kadysz-unsplash-comphotoscufyw1c97w8",
@@ -8338,15 +8342,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200319234.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319234.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.2．言語選択",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200319234.html; byte-identical to /insights/why-should-you-be-eating-organic/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/why-should-you-be-eating-organic/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319234.html/attachment/apple-fruit-green-healthy-37645",
@@ -8469,15 +8475,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200323185.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200323185.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.5．ステアリングカーブ(STEXP)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200323185.html; byte-identical to /insights/horse-racing-is-disappearing-in-south-africa/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/horse-racing-is-disappearing-in-south-africa/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200323185.html/attachment/saratoga-springs-1",
@@ -8502,15 +8510,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200324100.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200324100.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.6．ステアリングスピード(STSPD)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200324100.html; byte-identical to /insights/rideing-wave-on-a-bodyboard/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rideing-wave-on-a-bodyboard/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200324100.html/attachment/pexels-photo-25496",
@@ -8800,15 +8810,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/news/202006281075.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040754.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040754.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.13．サーボリバース機能 (REV)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040754.html; byte-identical to /insights/health-benifits-of-yoga/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/health-benifits-of-yoga/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040754.html/attachment/pexels-photo-1",
@@ -8906,15 +8918,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040870.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040870.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.11．アイドルアップ (IDLUP)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040870.html; byte-identical to /insights/best-way-to-have-fun-during-roadtrip/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/best-way-to-have-fun-during-roadtrip/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040870.html/attachment/pexels-photo-4",
@@ -8996,15 +9010,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/download/rc4gs-v6-0-1fhss-rx"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040877.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040877.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.10．スロットルアクセレーション (ACCEL)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040877.html; byte-identical to /insights/light-ultra-powerful-laptop/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/light-ultra-powerful-laptop/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040877.html/attachment/man-person-hands-coffee",
@@ -9181,15 +9197,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040910.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040910.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.18．モデルネーム (NAME)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040910.html; byte-identical to /insights/best-home-design-ideas-for-2016/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/best-home-design-ideas-for-2016/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040910.html/attachment/hotel-389256_1280-1",
@@ -9270,15 +9288,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200409169.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409169.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.14．ヂュアルレート (D/R)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200409169.html; byte-identical to /insights/everything-you-need-to-know-about-em-thruster/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/everything-you-need-to-know-about-em-thruster/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html",
@@ -9290,15 +9310,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/rc4gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040939.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.17．予備チャンネル (AUX)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040939.html; byte-identical to /insights/global-increase-in-the-sales-of-tablet/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/global-increase-in-the-sales-of-tablet/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html/attachment/imac-apple-mockup-app-38544",
@@ -9380,15 +9402,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/download/rc4gs-firmware-v3-0-8"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040962.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040962.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.12．サブトリム (SUBTR)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040962.html; byte-identical to /insights/love-for-football-around-the-world/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/love-for-football-around-the-world/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040962.html/attachment/football-888015_1280",
@@ -9484,15 +9508,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/rc4gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200409850.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.19．ローバッテリー警告(ALARM)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200409850.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html",
@@ -9504,15 +9530,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/rc4gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200409854.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.21．フェイルセーフ(F/S)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200409854.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html",
@@ -9524,15 +9552,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/rc4gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200410863.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.22．リセット機能 (RESET)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200410863.html; byte-identical to /insights/2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
@@ -23604,12 +23634,12 @@
       "content_type_header": "image/png"
     }
   ],
-  "reconciled_at": "2026-10-07T11:30:33.648Z",
+  "reconciled_at": "2026-10-07T15:44:17.211Z",
   "migration": {
-    "migrated_articles": 33,
-    "insight_articles": 28,
+    "migrated_articles": 48,
+    "insight_articles": 43,
     "drawing_articles": 5,
-    "exact_legacy_html_routes": 33
+    "exact_legacy_html_routes": 48
   },
   "compatibility": {
     "verified_pages": 65,

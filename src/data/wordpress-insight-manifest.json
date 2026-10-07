@@ -1,7 +1,7 @@
 {
   "contract_version": "0.1",
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 28,
+  "expected_count": 43,
   "articles": [
     {
       "id": 2187,
@@ -280,6 +280,231 @@
       "slug": "hello-world",
       "route": "/insights/hello-world/",
       "canonical": "https://happinesea.com/news/202003121.html"
+    },
+    {
+      "id": 863,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset",
+      "route": "/insights/2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-28_No-00.png",
+        "sha256": "7800866399044ead1535715e7d963f958ef8e6a53b2c9be9d0ce0a083ad31f0c",
+        "alt": "RC4GSのRESET画面。YESとNOが並び、NOが選択されている。"
+      }
+    },
+    {
+      "id": 854,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-22_No-00.png",
+        "sha256": "14177daa0f02690f9488238fd4a416b4110cfab81d5c33127a2f26066013c706",
+        "alt": "RC4GSのF/S画面。ST、TH、CH3、CH4の設定値はすべて0。"
+      }
+    },
+    {
+      "id": 850,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-8_No-00.png",
+        "sha256": "4fc95005a20282f687bdeb7e928b7f6ed7ced0d6bb68a1d13918810ac2664c1e",
+        "alt": "RC4GSのALARM画面。MODEはNi4S-4.6V、ALARMは4.4V。"
+      }
+    },
+    {
+      "id": 39,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "global-increase-in-the-sales-of-tablet",
+      "route": "/insights/global-increase-in-the-sales-of-tablet/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-54_No-00.png",
+        "sha256": "00919952b2d4bb86fe8ec297de826eb5db8fb9c7d1a7f0c9a2e9bca31ccba845",
+        "alt": "RC4GSの予備チャンネル画面。CH3はVR(RATE)、CH4はSW(TACT)で、位置を示すバーが表示されている。"
+      }
+    },
+    {
+      "id": 10,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "best-home-design-ideas-for-2016",
+      "route": "/insights/best-home-design-ideas-for-2016/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040910.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-0_No-00.png",
+        "sha256": "b5cb5251c2e920a4cbadf8f201a8dc4fde3f1e73535cb2c6b76f123271235b9e",
+        "alt": "RC4GSのモデル名入力画面。MODEL10と、数字・英字・記号の選択欄が表示されている。"
+      }
+    },
+    {
+      "id": 169,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "everything-you-need-to-know-about-em-thruster",
+      "route": "/insights/everything-you-need-to-know-about-em-thruster/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409169.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-29_No-00.png",
+        "sha256": "6829f5c99b0b2ab0d679228d3aa924a02a17ba9baed1c3e703169ed2b521c740",
+        "alt": "RC4GSのD/R画面。ST-RATEとTH-RATEはともに100%。"
+      }
+    },
+    {
+      "id": 62,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "love-for-football-around-the-world",
+      "route": "/insights/love-for-football-around-the-world/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040962.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-15_No-00.png",
+        "sha256": "02ccb41eef94e222eac6a09a6b56a2c97d4be7dfc91ca1f903ab7317e53c3f22",
+        "alt": "RC4GSのSUB-TRIM画面。ST、TH、CH3、CH4の設定値はすべて0。"
+      }
+    },
+    {
+      "id": 77,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "light-ultra-powerful-laptop",
+      "route": "/insights/light-ultra-powerful-laptop/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040877.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-19-59_No-00.png",
+        "sha256": "c03c7e7bfd5ce7dcf11ee1b21035b4aa66c027fca378c67bd49b6f4c16bcca66",
+        "alt": "RC4GSのACCEL画面。FWRDとBRAKはともに0%。"
+      }
+    },
+    {
+      "id": 70,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "best-way-to-have-fun-during-roadtrip",
+      "route": "/insights/best-way-to-have-fun-during-roadtrip/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040870.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-8_No-00.png",
+        "sha256": "7bf3b3a1bc5183fe140dd9f3014503656778df148c4c3bb07ab35c57e3ab58bb",
+        "alt": "RC4GSのIDLUP画面。RATEは0%。"
+      }
+    },
+    {
+      "id": 54,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "health-benifits-of-yoga",
+      "route": "/insights/health-benifits-of-yoga/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040754.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-22_No-00.png",
+        "sha256": "284fecc998c7149cd681566f88abeb3aabb8ea8f3c7674fb0ab4d8e2e7e16db9",
+        "alt": "RC4GSのREVERSE画面。ST、TH、CH3、CH4はすべてNOR。"
+      }
+    },
+    {
+      "id": 100,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rideing-wave-on-a-bodyboard",
+      "route": "/insights/rideing-wave-on-a-bodyboard/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200324100.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-31_No-00.png",
+        "sha256": "5aa6dbc7e46292766df773137f9f83e364e012d4a4383253b6396e88c1015288",
+        "alt": "RC4GSのSTSPD画面。TURNとRETURNはともに100%。"
+      }
+    },
+    {
+      "id": 185,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "horse-racing-is-disappearing-in-south-africa",
+      "route": "/insights/horse-racing-is-disappearing-in-south-africa/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200323185.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-23_No-00.png",
+        "sha256": "1a27cf827d215bae2f8474789b8181eeb2173ffa8dd18de4925fa2f2de2c8575",
+        "alt": "RC4GSのSTEXP画面。RATEは0%で、右上がりの直線が表示されている。"
+      }
+    },
+    {
+      "id": 121,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "evolution-in-virtual-gaming",
+      "route": "/insights/evolution-in-virtual-gaming/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319121.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-58_No-00-1.png",
+        "sha256": "62eb7711791829bc79aeb3020d64f7a37197f3040c4d71019b0767151145105a",
+        "alt": "RC4GSのMODEL画面。MODEL9とMODEL10が表示され、現在のモデルはMODEL10。"
+      }
+    },
+    {
+      "id": 234,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "why-should-you-be-eating-organic",
+      "route": "/insights/why-should-you-be-eating-organic/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319234.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-51_No-00.png",
+        "sha256": "486e0e8b2c021157182163dc45280400d91e22bfcd2f71d92a24d03a0c32dd16",
+        "alt": "RC4GSのLANGUAGE画面。Englishと中文が並び、Englishが選択されている。V3.0.2（FHSS）と表示。"
+      }
+    },
+    {
+      "id": 175,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "what-is-this-new-sport-that-is-winning-the-world",
+      "route": "/insights/what-is-this-new-sport-that-is-winning-the-world/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200317175.html",
+      "featured_image_role": "content",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/85cbf390fea65ba60b197cad75e8ee1c.png",
+        "sha256": "8e0dc2faa6e4bd7dcf89724e53086e0c4371559977d1bb55a49cfc1bb7199896",
+        "alt": "RC4GSのLCD表示の説明図。モデル名、バッテリー電圧、送信機名、ステアリングトリム、スロットルトリムの位置を赤い線で示している。"
+      }
     }
   ],
   "withdrawals": []

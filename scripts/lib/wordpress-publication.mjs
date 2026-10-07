@@ -106,6 +106,7 @@ export function classifyInventoryPost(
   if (
     featuredImage &&
     !featuredAlt?.trim() &&
+    !mapping?.featured_image_review?.alt?.trim() &&
     mapping?.featured_image_role !== 'decorative'
   ) {
     flag('NEEDS_REVIEW', 'featured image alt not reviewed');
@@ -232,6 +233,20 @@ export function sanitizeArticleHtml(
   }).trim();
 }
 
+export function reviewedFeaturedImageAlt(media, review, sha256) {
+  if (!review) return media?.alt_text ?? '';
+  if (
+    !media ||
+    media.source_url !== review.source_url ||
+    typeof review.alt !== 'string' ||
+    !review.alt.trim() ||
+    !/^[a-f0-9]{64}$/.test(review.sha256) ||
+    (sha256 !== undefined && sha256 !== review.sha256)
+  )
+    throw new Error('featured image review drift');
+  return media.alt_text || review.alt;
+}
+
 export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
   if (post?.status !== 'publish')
     throw new Error(`post ${post?.id ?? '?'} is not publish`);
@@ -277,7 +292,10 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
   if (media && (!media.source_url || width < 1 || height < 1)) {
     throw new Error(`invalid featured image for post ${post.id}`);
   }
-  const featuredImageAlt = media?.alt_text ?? '';
+  const featuredImageAlt = reviewedFeaturedImageAlt(
+    media,
+    mapping.featured_image_review,
+  );
   if (
     media &&
     !featuredImageAlt &&

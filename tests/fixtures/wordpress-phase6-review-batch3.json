@@ -1,0 +1,1005 @@
+{
+  "reviewed_at": "2026-10-07T15:36:58.004Z",
+  "baseline": "1848acf14fde313b9efc8921d6c9ad7575e6a8c7",
+  "articles": [
+    {
+      "id": 863,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/863",
+      "slug": "2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset",
+      "title": "RC4GS取扱説明書：2.22．リセット機能 (RESET)",
+      "source_content_sha256": "c37e161c62a1be9ea8ef18b5905a9745f00bb9d4d47f699781b67de49d43ab5c",
+      "source_text": "リセット機能は送信機に保存されるデータはすべて消して、初期状態にリセットする機能となります。※データの復旧ができないため、ご利用時にご注意をしてください。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-28_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-28_No-00.png",
+        "sha256": "7800866399044ead1535715e7d963f958ef8e6a53b2c9be9d0ce0a083ad31f0c",
+        "alt": "RC4GSのRESET画面。YESとNOが並び、NOが選択されている。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 863,
+        "slug": "2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html",
+        "date_gmt": "2020-04-10T01:29:18",
+        "modified_gmt": "2020-04-13T03:52:54",
+        "title": { "rendered": "RC4GS取扱説明書：2.22．リセット機能 (RESET)" },
+        "excerpt": {
+          "rendered": "<p>リセット機能は送信機に保存されるデータはすべて消して、初期状態にリセットする機能となります。※データの復旧ができないため、ご利用時にご注意をしてください。</p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "\n<p>リセット機能は送信機に保存されるデータはすべて消して、初期状態にリセットする機能となります。<br>※データの復旧ができないため、ご利用時にご注意をしてください。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 536,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-28_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 217, "height": 196 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 854,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/854",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95",
+      "title": "RC4GS取扱説明書：2.21．フェイルセーフ(F/S)",
+      "source_content_sha256": "94c1a65ed6551392c45381b88f0187e57d0759257007bc7c329615535aafac85",
+      "source_text": "受信機が何らかの原因で、送信機の信号を受信できなくなったり、受信機のバッテリー電圧が低下した場合のサーボ動作位置の設定機能です。 設定項目ST：ステアリングTH：スロットルCH3：3チャンネルCH4：4チャンネル 設定値範囲-100〜100 初期値：0 (1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してF/S機能を選択して、「Enter」ボタンを押下して遷移します。(2) 「Dec（-）」と「Inc（+）」ボタンを使ってSTを選択して、「Enter」ボタンを押下します。(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0」に戻ります。)「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。(4) 同じステップで、TH、CH3、CH4の設定はできます。(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-22_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-22_No-00.png",
+        "sha256": "14177daa0f02690f9488238fd4a416b4110cfab81d5c33127a2f26066013c706",
+        "alt": "RC4GSのF/S画面。ST、TH、CH3、CH4の設定値はすべて0。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 854,
+        "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html",
+        "date_gmt": "2020-04-09T14:49:32",
+        "modified_gmt": "2020-04-10T11:32:29",
+        "title": { "rendered": "RC4GS取扱説明書：2.21．フェイルセーフ(F/S)" },
+        "excerpt": {
+          "rendered": "<p>受信機が何らかの原因で、送信機の信号を受信できなくなったり、受信機のバッテリー電圧が低下した場合のサーボ動作位置の設定機能です。 設定項目ST：ステアリングTH：スロットルCH3：3チャンネルCH4： &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>受信機が何らかの原因で、送信機の信号を受信できなくなったり、受信機のバッテリー電圧が低下した場合のサーボ動作位置の設定機能です。</p>\n\n\n<p>設定項目<br>ST：ステアリング<br>TH：スロットル<br>CH3：3チャンネル<br>CH4：4チャンネル</p>\n\n\n\n<p>設定値範囲<br>-100〜100<br>　初期値：0</p>\n\n\n\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してF/S機能を選択して、「Enter」ボタンを押下して遷移します。<br>(2) 「Dec（-）」と「Inc（+）」ボタンを使ってSTを選択して、「Enter」ボタンを押下します。<br>(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br>(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0」に戻ります。)<br>「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br>(4) 同じステップで、TH、CH3、CH4の設定はできます。<br>(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 537,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-22_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 239, "height": 215 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 850,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/850",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7",
+      "title": "RC4GS取扱説明書：2.19．ローバッテリー警告(ALARM)",
+      "source_content_sha256": "08d8f0f34a28e725868179fbe3d17f8d57d311fed41b74e71cca5db9066de712",
+      "source_text": "送信機のバッテリー電圧が使用可能範囲より下がると、警告音とローバッテリーの表示が現れてで警告します。 LiFeとNi-MHバッテリーでは使用可能範囲が異なりますので、バッテリー種類の設定が必要です。 MODE： Li2S-7.2V Li3-10.8V Ni4S-4.6V ALARM：設定範囲、4.0v〜16.0v",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-8_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-8_No-00.png",
+        "sha256": "4fc95005a20282f687bdeb7e928b7f6ed7ced0d6bb68a1d13918810ac2664c1e",
+        "alt": "RC4GSのALARM画面。MODEはNi4S-4.6V、ALARMは4.4V。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 850,
+        "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html",
+        "date_gmt": "2020-04-09T14:11:41",
+        "modified_gmt": "2020-04-10T11:31:40",
+        "title": {
+          "rendered": "RC4GS取扱説明書：2.19．ローバッテリー警告(ALARM)"
+        },
+        "excerpt": {
+          "rendered": "<p>送信機のバッテリー電圧が使用可能範囲より下がると、警告音とローバッテリーの表示が現れてで警告します。 LiFeとNi-MHバッテリーでは使用可能範囲が異なりますので、バッテリー種類の設定が必要です。  &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>送信機のバッテリー電圧が使用可能範囲より下がると、警告音とローバッテリーの表示が現れてで警告します。<br />\nLiFeとNi-MHバッテリーでは使用可能範囲が異なりますので、バッテリー種類の設定が必要です。</p>\n<p>MODE：<br />\nLi2S-7.2V<br />\nLi3-10.8V<br />\nNi4S-4.6V</p>\n<p>ALARM：設定範囲、4.0v〜16.0v</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 540,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-8_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 234, "height": 206 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 39,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/39",
+      "slug": "global-increase-in-the-sales-of-tablet",
+      "title": "RC4GS取扱説明書：2.17．予備チャンネル (AUX)",
+      "source_content_sha256": "6a2b4ce21097b1a22835cbd3563c29d77105e58af24a66a9568eaa1e0f272ed8",
+      "source_text": "予備チャンネルは、3チャンネルおよび3チャンネルサーボの動作位置の確認、また、各ミキシングの設定に割当てられている場合、ミキシングの種類が確認できます。 3チャンネルポジション(POSI) スイッチ(SW(TACT))、または、ボリュームレバー(VR(RATE)) 4チャンネルポジション(POSI) スイッチ(SW(TACT))、または、ボリュームレバー(VR(RATE) (1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してAUX機能を選択して、「Enter」ボタンを押下して遷移します。 (2) 「Dec（-）」と「Inc（+）」ボタンを使ってCH3またはch4を選択して、「Enter」ボタンを押下します。 (3) 引き続き、「Dec（-）」と「Inc（+）」ボタンを使って、VRまたはSWを選択して、「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 (4) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。)",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-54_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-54_No-00.png",
+        "sha256": "00919952b2d4bb86fe8ec297de826eb5db8fb9c7d1a7f0c9a2e9bca31ccba845",
+        "alt": "RC4GSの予備チャンネル画面。CH3はVR(RATE)、CH4はSW(TACT)で、位置を示すバーが表示されている。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 39,
+        "slug": "global-increase-in-the-sales-of-tablet",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html",
+        "date_gmt": "2020-04-09T00:56:00",
+        "modified_gmt": "2020-04-09T09:34:37",
+        "title": { "rendered": "RC4GS取扱説明書：2.17．予備チャンネル (AUX)" },
+        "excerpt": {
+          "rendered": "<p>予備チャンネルは、3チャンネルおよび3チャンネルサーボの動作位置の確認、また、各ミキシングの設定に割当てられている場合、ミキシングの種類が確認できます。 3チャンネルポジション(POSI) スイッチ( &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>予備チャンネルは、3チャンネルおよび3チャンネルサーボの動作位置の確認、また、各ミキシングの設定に割当てられている場合、ミキシングの種類が確認できます。</p>\n<p>3チャンネルポジション(POSI)<br />\nスイッチ(SW(TACT))、または、ボリュームレバー(VR(RATE))<br />\n4チャンネルポジション(POSI)<br />\nスイッチ(SW(TACT))、または、ボリュームレバー(VR(RATE)</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してAUX機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使ってCH3またはch4を選択して、「Enter」ボタンを押下します。<br />\n(3) 引き続き、「Dec（-）」と「Inc（+）」ボタンを使って、VRまたはSWを選択して、「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(4) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。)</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 542,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-54_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 211, "height": 192 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040910.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/10",
+      "slug": "best-home-design-ideas-for-2016",
+      "title": "RC4GS取扱説明書：2.18．モデルネーム (NAME)",
+      "source_content_sha256": "e1cfc350fa8a4c53af65ebb726b64aa8b34816cd12a907b82e7e36fde04bcdaa",
+      "source_text": "RC4GSは10モデルまでメモリ上に保存できます。各モデルメモリごとにモデル名を登録することができます。英数字符号が使用できます。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-0_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-0_No-00.png",
+        "sha256": "b5cb5251c2e920a4cbadf8f201a8dc4fde3f1e73535cb2c6b76f123271235b9e",
+        "alt": "RC4GSのモデル名入力画面。MODEL10と、数字・英字・記号の選択欄が表示されている。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 10,
+        "slug": "best-home-design-ideas-for-2016",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040910.html",
+        "date_gmt": "2020-04-08T23:29:00",
+        "modified_gmt": "2020-04-09T14:50:49",
+        "title": { "rendered": "RC4GS取扱説明書：2.18．モデルネーム (NAME)" },
+        "excerpt": {
+          "rendered": "<p>RC4GSは10モデルまでメモリ上に保存できます。各モデルメモリごとにモデル名を登録することができます。英数字符号が使用できます。</p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>RC4GSは10モデルまでメモリ上に保存できます。各モデルメモリごとにモデル名を登録することができます。英数字符号が使用できます。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 541,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-0_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 236, "height": 210 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 169,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409169.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/169",
+      "slug": "everything-you-need-to-know-about-em-thruster",
+      "title": "RC4GS取扱説明書：2.14．ヂュアルレート (D/R)",
+      "source_content_sha256": "9e59fdd5a2b4a9a9c6a3b737e1efb5b73d353478703d60df9115ee5564927b85",
+      "source_text": "ステアリングの左右の舵角が同時に調整されます。舵角を増やしたいときは「＋」側に、舵角を減らしたときは「−」側に調整します。 設定項目： ステアリングD/R、範囲：0%〜100%、初期値：100% スロットルD/R、範囲：0%〜100%、初期値：100% (1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してD/R機能を選択して、「Enter」ボタンを押下して遷移します。 (2) 「Dec（-）」と「Inc（+）」ボタンを使ってStreering D/Rを選択して、「Enter」ボタンを押下します。 (3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。 (※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「100%」に戻ります。) 「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 (4) 同じステップで、Throttle D/Rの設定はできます。 (5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-29_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-29_No-00.png",
+        "sha256": "6829f5c99b0b2ab0d679228d3aa924a02a17ba9baed1c3e703169ed2b521c740",
+        "alt": "RC4GSのD/R画面。ST-RATEとTH-RATEはともに100%。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 169,
+        "slug": "everything-you-need-to-know-about-em-thruster",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409169.html",
+        "date_gmt": "2020-04-08T19:22:00",
+        "modified_gmt": "2020-04-09T06:21:46",
+        "title": { "rendered": "RC4GS取扱説明書：2.14．ヂュアルレート (D/R)" },
+        "excerpt": {
+          "rendered": "<p>ステアリングの左右の舵角が同時に調整されます。舵角を増やしたいときは「＋」側に、舵角を減らしたときは「−」側に調整します。 設定項目： ステアリングD/R、範囲：0%〜100%、初期値：100% スロ &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>ステアリングの左右の舵角が同時に調整されます。舵角を増やしたいときは「＋」側に、舵角を減らしたときは「−」側に調整します。</p>\n<p>設定項目：<br />\nステアリングD/R、範囲：0%〜100%、初期値：100%<br />\nスロットルD/R、範囲：0%〜100%、初期値：100%</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してD/R機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使ってStreering D/Rを選択して、「Enter」ボタンを押下します。<br />\n(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br />\n(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「100%」に戻ります。)<br />\n「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(4) 同じステップで、Throttle D/Rの設定はできます。<br />\n(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 545,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-29_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 235, "height": 207 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 62,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040962.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/62",
+      "slug": "love-for-football-around-the-world",
+      "title": "RC4GS取扱説明書：2.12．サブトリム (SUBTR)",
+      "source_content_sha256": "f67a0793e0eeaca657fd7d835f15afcc4a1d9850fec6532dd53ac1cf4893e14d",
+      "source_text": "この機能はステアリング、スロットルと3チャンネル、4チャンネルの各サーボのセンター位置を補正するときに使用します。 設定項目(チャンネル)： ST：ステアリングのサブトリム TH：スロットルのサブトリム CH3：3チャンネルのサブトリム CH4：4チャンネルのサブトリム サブトリム設定範囲： ST：-100〜0〜100 TH：-100〜0〜100 CH3：-100〜0〜100 CH4：-100〜0〜100 初期値：0 (1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してSUBTR機能を選択して、「Enter」ボタンを押下して遷移します。 (2) 「Dec（-）」と「Inc（+）」ボタンを使ってSTを選択して、「Enter」ボタンを押下します。 (3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。 (※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。) 「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 (4) 同じステップで、TH、CH3、CH4の設定はできます。 (5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-15_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-15_No-00.png",
+        "sha256": "02ccb41eef94e222eac6a09a6b56a2c97d4be7dfc91ca1f903ab7317e53c3f22",
+        "alt": "RC4GSのSUB-TRIM画面。ST、TH、CH3、CH4の設定値はすべて0。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 62,
+        "slug": "love-for-football-around-the-world",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040962.html",
+        "date_gmt": "2020-04-08T16:08:00",
+        "modified_gmt": "2020-04-09T01:16:44",
+        "title": { "rendered": "RC4GS取扱説明書：2.12．サブトリム (SUBTR)" },
+        "excerpt": {
+          "rendered": "<p>この機能はステアリング、スロットルと3チャンネル、4チャンネルの各サーボのセンター位置を補正するときに使用します。 設定項目(チャンネル)： ST：ステアリングのサブトリム TH：スロットルのサブトリ &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>この機能はステアリング、スロットルと3チャンネル、4チャンネルの各サーボのセンター位置を補正するときに使用します。</p>\n<p>設定項目(チャンネル)：<br />\nST：ステアリングのサブトリム<br />\nTH：スロットルのサブトリム<br />\nCH3：3チャンネルのサブトリム<br />\nCH4：4チャンネルのサブトリム</p>\n<p>サブトリム設定範囲：<br />\nST：-100〜0〜100<br />\nTH：-100〜0〜100<br />\nCH3：-100〜0〜100<br />\nCH4：-100〜0〜100<br />\n初期値：0</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してSUBTR機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使ってSTを選択して、「Enter」ボタンを押下します。<br />\n(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br />\n(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)<br />\n「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(4) 同じステップで、TH、CH3、CH4の設定はできます。<br />\n(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 547,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-15_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 233, "height": 212 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 77,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040877.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/77",
+      "slug": "light-ultra-powerful-laptop",
+      "title": "RC4GS取扱説明書：2.10．スロットルアクセレーション (ACCEL)",
+      "source_content_sha256": "d8a8131549a8210597b390cf4cb839cdb39b153805762dc7a74b7d0e79fb55ff",
+      "source_text": "スロットルの前進、ブレーキ側のニュートラル付近の立ち上がり特性を別々に調整できます。 設定項目FWRD：前進加速量BRAK：ブレーキ(後進)加速量 スロットルスピードの設定機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してACCEL機能を選択して、「Enter」ボタンを押下して遷移します。 (1) 前進加速量の設定「Dec（-）」と「Inc（+）」ボタンを使用してFWRDを選択して、「Enter」ボタンを押下して初期値が点滅します。引き続き、「Dec（-）」と「Inc（+）」ボタンで加速量を調整できます。(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 「0%」：加速量なし「100%」」：最大加速量(舵角の前進側の1/2) 設定値の範囲：0%〜100% 初期値：0% (2) ブレーキ(後進)加速量の設定「Dec（-）」と「Inc（+）」ボタンを使用してBRAKを選択して、「Enter」ボタンを押下して初期値が点滅します。引き続き、「Dec（-）」と「Inc（+）」ボタンで加速量を調整できます。(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 「0%」：加速量なし「100%」」：最大加速量(舵角のブレーキ(後進)側の1/2) 設定値の範囲：0%〜100% 初期値：0% 設定完了後、「Exit」ボタンを2回押下して、初期画面へ戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-19-59_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-19-59_No-00.png",
+        "sha256": "c03c7e7bfd5ce7dcf11ee1b21035b4aa66c027fca378c67bd49b6f4c16bcca66",
+        "alt": "RC4GSのACCEL画面。FWRDとBRAKはともに0%。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 77,
+        "slug": "light-ultra-powerful-laptop",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040877.html",
+        "date_gmt": "2020-04-08T14:26:00",
+        "modified_gmt": "2020-04-10T06:36:51",
+        "title": {
+          "rendered": "RC4GS取扱説明書：2.10．スロットルアクセレーション (ACCEL)"
+        },
+        "excerpt": {
+          "rendered": "<p>スロットルの前進、ブレーキ側のニュートラル付近の立ち上がり特性を別々に調整できます。 設定項目FWRD：前進加速量BRAK：ブレーキ(後進)加速量 スロットルスピードの設定機能メニューから、「Dec（ &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>スロットルの前進、ブレーキ側のニュートラル付近の立ち上がり特性を別々に調整できます。</p>\n<p><strong>設定項目</strong><br />FWRD：前進加速量<br />BRAK：ブレーキ(後進)加速量</p>\n<p><strong>スロットルスピードの設定</strong><br />機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してACCEL機能を選択して、「Enter」ボタンを押下して遷移します。 </p>\n<p>(1) 前進加速量の設定<br />「Dec（-）」と「Inc（+）」ボタンを使用してFWRDを選択して、「Enter」ボタンを押下して初期値が点滅します。<br />引き続き、「Dec（-）」と「Inc（+）」ボタンで加速量を調整できます。<br />(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)<br />「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 </p>\n<p>「0%」：加速量なし<br />「100%」」：最大加速量(舵角の前進側の1/2)</p>\n<p>設定値の範囲：<br />0%〜100%<br />　初期値：0%</p>\n<p>(2) ブレーキ(後進)加速量の設定<br />「Dec（-）」と「Inc（+）」ボタンを使用してBRAKを選択して、「Enter」ボタンを押下して初期値が点滅します。<br />引き続き、「Dec（-）」と「Inc（+）」ボタンで加速量を調整できます。<br />(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)<br />「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 </p>\n<p>「0%」：加速量なし<br />「100%」」：最大加速量(舵角のブレーキ(後進)側の1/2)</p>\n<p>設定値の範囲：<br />0%〜100%<br />　初期値：0%</p>\n<p>設定完了後、「Exit」ボタンを2回押下して、初期画面へ戻ります。</p>\n\n\n<p></p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 549,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-19-59_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 243, "height": 215 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 70,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040870.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/70",
+      "slug": "best-way-to-have-fun-during-roadtrip",
+      "title": "RC4GS取扱説明書：2.11．アイドルアップ (IDLUP)",
+      "source_content_sha256": "47cd157e2e3e619724934fe9dc30ea6fc1e0d6a31ffd61696c9a058fe5e10a92",
+      "source_text": "アイドルアップ機能がエンジンカー(ボート)のエンジンスタート時に、アイドリングを上げておくことにより、エンジンの始動性を良くするために使用します。 アイドルアップ設定範囲： -50%〜-1%、0、1%〜50% 初期値：0% 「-」：ブレーキ(後進)側 「+」：前進側 (1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してIDLUP機能を選択して、「Enter」ボタンを押下して遷移します。 (2) 「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。 (※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。) 「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 (3) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-8_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-8_No-00.png",
+        "sha256": "7bf3b3a1bc5183fe140dd9f3014503656778df148c4c3bb07ab35c57e3ab58bb",
+        "alt": "RC4GSのIDLUP画面。RATEは0%。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 70,
+        "slug": "best-way-to-have-fun-during-roadtrip",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040870.html",
+        "date_gmt": "2020-04-08T14:17:00",
+        "modified_gmt": "2020-04-08T15:45:26",
+        "title": {
+          "rendered": "RC4GS取扱説明書：2.11．アイドルアップ (IDLUP)"
+        },
+        "excerpt": {
+          "rendered": "<p>アイドルアップ機能がエンジンカー(ボート)のエンジンスタート時に、アイドリングを上げておくことにより、エンジンの始動性を良くするために使用します。 アイドルアップ設定範囲： -50%〜-1%、0、1% &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>アイドルアップ機能がエンジンカー(ボート)のエンジンスタート時に、アイドリングを上げておくことにより、エンジンの始動性を良くするために使用します。</p>\n<p>アイドルアップ設定範囲：<br />\n-50%〜-1%、0、1%〜50%<br />\n初期値：0%<br />\n「-」：ブレーキ(後進)側<br />\n「+」：前進側</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してIDLUP機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br />\n(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)<br />\n「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(3) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 548,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-8_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 234, "height": 210 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 54,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040754.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/54",
+      "slug": "health-benifits-of-yoga",
+      "title": "RC4GS取扱説明書：2.13．サーボリバース機能 (REV)",
+      "source_content_sha256": "e7e439003bef80dccd8233af33c833587eefb748d85bc8eb756eb864e4659de0",
+      "source_text": "送信機のステアリングチャンネル、スロットルチャンネル、3チャンネル及び4チャンネルの操作に対して、サーボの操作方向を変更する機能です。 設定項目(チャンネル)： ST：ステアリングのサブトリム TH：スロットルのサブトリム CH3：3チャンネルのサブトリム CH4：4チャンネルのサブトリム (1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してREV機能を選択して、「Enter」ボタンを押下して遷移します。 (2) 「Dec（-）」と「Inc（+）」ボタンを使ってSTを選択して、「Enter」ボタンを押下します。 (3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。 (※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。) 「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 (4) 同じステップで、TH、CH3、CH4の設定はできます。 (5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-22_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-22_No-00.png",
+        "sha256": "284fecc998c7149cd681566f88abeb3aabb8ea8f3c7674fb0ab4d8e2e7e16db9",
+        "alt": "RC4GSのREVERSE画面。ST、TH、CH3、CH4はすべてNOR。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 54,
+        "slug": "health-benifits-of-yoga",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040754.html",
+        "date_gmt": "2020-04-07T01:28:00",
+        "modified_gmt": "2020-04-09T06:23:05",
+        "title": {
+          "rendered": "RC4GS取扱説明書：2.13．サーボリバース機能 (REV)"
+        },
+        "excerpt": {
+          "rendered": "<p>送信機のステアリングチャンネル、スロットルチャンネル、3チャンネル及び4チャンネルの操作に対して、サーボの操作方向を変更する機能です。 設定項目(チャンネル)： ST：ステアリングのサブトリム TH： &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>送信機のステアリングチャンネル、スロットルチャンネル、3チャンネル及び4チャンネルの操作に対して、サーボの操作方向を変更する機能です。</p>\n<p>設定項目(チャンネル)：<br />\nST：ステアリングのサブトリム<br />\nTH：スロットルのサブトリム<br />\nCH3：3チャンネルのサブトリム<br />\nCH4：4チャンネルのサブトリム</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してREV機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使ってSTを選択して、「Enter」ボタンを押下します。<br />\n(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br />\n(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「0%」に戻ります。)<br />\n「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(4) 同じステップで、TH、CH3、CH4の設定はできます。<br />\n(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 546,
+              "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-22_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 230, "height": 201 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 100,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200324100.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/100",
+      "slug": "rideing-wave-on-a-bodyboard",
+      "title": "RC4GS取扱説明書：2.6．ステアリングスピード(STSPD)",
+      "source_content_sha256": "de341a2f3f6bcc6ea391dcb4afceb14d66de0a774f8f746145fe7e1caafb1d9c",
+      "source_text": "早いステアリングの操作の際に、瞬間的にステアリングの動きが足りなくなったり、スピードが安定しなかったりするような現象があります。STSPDはこの現象を改善するための設定です。 設定項目：TURN：方向転換RETURN：元に戻る 設定範囲：0%～100%、100%の場合、遅延がありません。 ステアリングスピードの設定方法：(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューから、「Inc（+）」ボタンを4回押してSTSPD機能を選択します。 (2)「Enter」ボタンを押してSTSPD機能の画面に遷移し、「Dec（-）」または「Inc（+）」ボタンで項目を選択し、「Enter」ボタンを押下してRATEの初期値が点滅します。 (3) 「Dec（-）」または「Inc（+）」ボタンを使用して選択した値を変更します。 （※値を設定する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒間以上押し続けると、初期値「100％」に戻ります。） (4)「Enter」ボタンを押下して、RATEの点滅が停止し、選択した設定項目の値が設定されます。 (5)「終了」ボタンを2回押して、初期画面に戻ります。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-31_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-31_No-00.png",
+        "sha256": "5aa6dbc7e46292766df773137f9f83e364e012d4a4383253b6396e88c1015288",
+        "alt": "RC4GSのSTSPD画面。TURNとRETURNはともに100%。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 100,
+        "slug": "rideing-wave-on-a-bodyboard",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200324100.html",
+        "date_gmt": "2020-03-23T23:17:00",
+        "modified_gmt": "2020-03-24T09:13:34",
+        "title": {
+          "rendered": "RC4GS取扱説明書：2.6．ステアリングスピード(STSPD)"
+        },
+        "excerpt": {
+          "rendered": "<p>早いステアリングの操作の際に、瞬間的にステアリングの動きが足りなくなったり、スピードが安定しなかったりするような現象があります。STSPDはこの現象を改善するための設定です。 設定項目：TURN：方向 &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>早いステアリングの操作の際に、瞬間的にステアリングの動きが足りなくなったり、スピードが安定しなかったりするような現象があります。STSPDはこの現象を改善するための設定です。</p>\n\n\n<p><strong>設定項目：</strong><br>TURN：方向転換<br>RETURN：元に戻る</p>\n\n\n\n<p><strong>設定範囲：</strong><br>0%～100%、100%の場合、遅延がありません。</p>\n\n\n\n<p><strong>ステアリングスピードの設定方法：</strong><br>(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューから、「Inc（+）」ボタンを4回押してSTSPD機能を選択します。<br> (2)「Enter」ボタンを押してSTSPD機能の画面に遷移し、「Dec（-）」または「Inc（+）」ボタンで項目を選択し、「Enter」ボタンを押下してRATEの初期値が点滅します。<br>  (3) 「Dec（-）」または「Inc（+）」ボタンを使用して選択した値を変更します。<br> （※値を設定する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒間以上押し続けると、初期値「100％」に戻ります。）<br> (4)「Enter」ボタンを押下して、RATEの点滅が停止し、選択した設定項目の値が設定されます。<br> (5)「終了」ボタンを2回押して、初期画面に戻ります。</p>\n\n\n\n<p></p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 521,
+              "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-31_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 221, "height": 197 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 185,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200323185.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/185",
+      "slug": "horse-racing-is-disappearing-in-south-africa",
+      "title": "RC4GS取扱説明書：2.5．ステアリングカーブ(STEXP)",
+      "source_content_sha256": "206ad43fe97c46e2a9650e06ad0e72d4c7a7d2e1ad9332458d6eae15783686c8",
+      "source_text": "この機能はステアリングの操作する際の真ん中と左右の感度の設定します。この設定がサーボの最大角度に影響しません。 設定項目：RATE:レート値、設定範囲：-100%～0%～100%初期値：0% -100%～0%：真ん中の位置では感度が低くなり、左右に近づくと感度が高くなる。0%：真ん中と左右の感度が同じ。0%～100%：真ん中の位置では感度が高く、左右に近づくと感度が低くなる。 ステアリング曲線の操作方法 (1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューから、「Inc（+）」ボタンを3回押してEAP機能を選択します。(2)「Enter」ボタンを押してSTEXP機能の画面に遷移し、更に「Enter」ボタンを押下してRATEの初期値が点滅します。 「Dec（-）」または「Inc（+）」ボタンを使用して図に画面に表示するRATEの曲線が、指定された値に応じて変化します。 （※値を設定する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒間以上押し続けると、初期値「100％」に戻ります。）(3)「Enter」ボタンを押下して、RATEの点滅が停止し、選択した設定項目の値が設定されます。(4)「終了」ボタンを2回押して、初期画面に戻ります。 (※画面に表示される垂直のカーソルがステアリングの操作に合わせて移動します。)",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-23_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-23_No-00.png",
+        "sha256": "1a27cf827d215bae2f8474789b8181eeb2173ffa8dd18de4925fa2f2de2c8575",
+        "alt": "RC4GSのSTEXP画面。RATEは0%で、右上がりの直線が表示されている。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 185,
+        "slug": "horse-racing-is-disappearing-in-south-africa",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200323185.html",
+        "date_gmt": "2020-03-23T10:13:00",
+        "modified_gmt": "2020-04-10T07:02:23",
+        "title": {
+          "rendered": "RC4GS取扱説明書：2.5．ステアリングカーブ(STEXP)"
+        },
+        "excerpt": {
+          "rendered": "<p>この機能はステアリングの操作する際の真ん中と左右の感度の設定します。この設定がサーボの最大角度に影響しません。 設定項目：RATE:レート値、設定範囲：-100%～0%～100%初期値：0% -100 &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>この機能はステアリングの操作する際の真ん中と左右の感度の設定します。この設定がサーボの最大角度に影響しません。</p>\n\n\n<p><strong>設定項目：<br></strong>RATE:レート値、設定範囲：-100%～0%～100%<br>初期値：0%</p>\n\n\n\n<p>-100%～0%：真ん中の位置では感度が低くなり、左右に近づくと感度が高くなる。<br>0%：真ん中と左右の感度が同じ。<br>0%～100%：真ん中の位置では感度が高く、左右に近づくと感度が低くなる。</p>\n\n\n\n<p><strong>ステアリング曲線の操作方法</strong><br> (1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューから、「Inc（+）」ボタンを3回押してEAP機能を選択します。<br>(2)「Enter」ボタンを押してSTEXP機能の画面に遷移し、更に「Enter」ボタンを押下してRATEの初期値が点滅します。 <br>「Dec（-）」または「Inc（+）」ボタンを使用して図に画面に表示するRATEの曲線が、指定された値に応じて変化します。<br> （※値を設定する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒間以上押し続けると、初期値「100％」に戻ります。）<br>(3)「Enter」ボタンを押下して、RATEの点滅が停止し、選択した設定項目の値が設定されます。<br>(4)「終了」ボタンを2回押して、初期画面に戻ります。 <br>　(※画面に表示される垂直のカーソルがステアリングの操作に合わせて移動します。)</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 522,
+              "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-23_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 228, "height": 203 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 121,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319121.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/121",
+      "slug": "evolution-in-virtual-gaming",
+      "title": "RC4GS取扱説明書：2.3．モデルの選択",
+      "source_content_sha256": "9d738dd544cb0ce1688a5df51ffba02a4b56cf6a9e8616c030ea0455425a0271",
+      "source_text": "RC4GSが10件のモデルデータをメモリーに保存できます。この機能を使って、個々のモデルを使い分ける事は可能です。 以下の手順でモデル変更を行います。(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示します。「MODEL」を選択します。(2)「Enter」ボタンを押下して、現在、動作中のモデルが選択された状態で表示します。(3)「Dec(-)」と「Inc(+)」を使って、選択したいモデルを選択します。(4)「Enter」ボタンを押して、点滅したモデル名が通常表示に戻り、対象となるモデルが選択された状態になります。(5)「Exit」ボタンを押下し、初期画面へもどして、設定が終了します。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-58_No-00-1.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-58_No-00-1.png",
+        "sha256": "62eb7711791829bc79aeb3020d64f7a37197f3040c4d71019b0767151145105a",
+        "alt": "RC4GSのMODEL画面。MODEL9とMODEL10が表示され、現在のモデルはMODEL10。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 121,
+        "slug": "evolution-in-virtual-gaming",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319121.html",
+        "date_gmt": "2020-03-18T23:54:00",
+        "modified_gmt": "2020-04-01T10:32:17",
+        "title": { "rendered": "RC4GS取扱説明書：2.3．モデルの選択" },
+        "excerpt": {
+          "rendered": "<p>RC4GSが10件のモデルデータをメモリーに保存できます。この機能を使って、個々のモデルを使い分ける事は可能です。 以下の手順でモデル変更を行います。(1)「Exit」と「Enter」ボタンを同時に１ &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>RC4GSが10件のモデルデータをメモリーに保存できます。この機能を使って、個々のモデルを使い分ける事は可能です。</p>\n<p>以下の手順でモデル変更を行います。<br>(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示します。「MODEL」を選択します。<br>(2)「Enter」ボタンを押下して、現在、動作中のモデルが選択された状態で表示します。<br>(3)「Dec(-)」と「Inc(+)」を使って、選択したいモデルを選択します。<br>(4)「Enter」ボタンを押して、点滅したモデル名が通常表示に戻り、対象となるモデルが選択された状態になります。<br>(5)「Exit」ボタンを押下し、初期画面へもどして、設定が終了します。</p>\n\n\n<p></p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 666,
+              "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-58_No-00-1.png",
+              "alt_text": "",
+              "media_details": { "width": 233, "height": 203 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 234,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319234.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/234",
+      "slug": "why-should-you-be-eating-organic",
+      "title": "RC4GS取扱説明書：2.2．言語選択",
+      "source_content_sha256": "54fa9f58dd1fdff27a840950068656111e90d3200ec170a59fc0d5714b3abaac",
+      "source_text": "現在のファームウェアの言語は、英語と中国語をサポートします。(※言語の拡張する予定があります。) 変更手順が以下となります。(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示します。「LANGUAGE」がデフォルトでフォーカスされます。(2)「Enter」ボタンを押下して、「LANGUAGE」機能画面を選択(3)「Dec(-)」と「Inc(+)」を使って、言語を選択する(当文書は英語版を基に説明する)(4)「Enter」ボタンを押して、選択した言語がフォーカスされ、自動で初期画面へ遷移します。",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-51_No-00.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-51_No-00.png",
+        "sha256": "486e0e8b2c021157182163dc45280400d91e22bfcd2f71d92a24d03a0c32dd16",
+        "alt": "RC4GSのLANGUAGE画面。Englishと中文が並び、Englishが選択されている。V3.0.2（FHSS）と表示。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 234,
+        "slug": "why-should-you-be-eating-organic",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319234.html",
+        "date_gmt": "2020-03-18T23:25:00",
+        "modified_gmt": "2020-03-19T03:48:00",
+        "title": { "rendered": "RC4GS取扱説明書：2.2．言語選択" },
+        "excerpt": {
+          "rendered": "<p>現在のファームウェアの言語は、英語と中国語をサポートします。(※言語の拡張する予定があります。) 変更手順が以下となります。(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニュ &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p>現在のファームウェアの言語は、英語と中国語をサポートします。<br />(※言語の拡張する予定があります。)</p>\n<p>変更手順が以下となります。<br />(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示します。「LANGUAGE」がデフォルトでフォーカスされます。<br />(2)「Enter」ボタンを押下して、「LANGUAGE」機能画面を選択<br />(3)「Dec(-)」と「Inc(+)」を使って、言語を選択する(当文書は英語版を基に説明する)<br />(4)「Enter」ボタンを押して、選択した言語がフォーカスされ、自動で初期画面へ遷移します。</p>\n\n\n<p></p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 512,
+              "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-51_No-00.png",
+              "alt_text": "",
+              "media_details": { "width": 237, "height": 214 }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 175,
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200317175.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/175",
+      "slug": "what-is-this-new-sport-that-is-winning-the-world",
+      "title": "RC4GS取扱説明書：2.1．画面表示",
+      "source_content_sha256": "f76225eb5da160d5e3e1096ede80ee672bef896da86c479e149db0599877f121",
+      "source_text": "LCD画面 電源をONにして、送信機に以下の内容でLCD画面が表示されます。 ・モデル名 ・バッテリー電圧 ・送信機名 ・ステアリングトリム ・スロットルトリム モデル名 RC4GSが最大10件のモデルデータを保存できます。起動した際、選択されているモデル名が表示されるので、想定したモデルか確認してください。 異なるモデル名が表示される場合、設定ミスが起こってしまうかもしれないので、ご注意ください。 バッテリー電圧 モデル名の右側に送信機のバッテリー電圧が表示されます。 電圧が4.6Vに下回ると、電源OFFまでに、アラーム音が鳴らします。アラーム音を聞こえたら、4分以内に、操作は完了するようにしてください。 4分を超えると、送信機の電池が切れてしまうため、モデルが操作されない事になり、危険ですので、ご注意ください。 送信機の機能メニュー 送信機の設定を参照、又は、変更する際に、機能メニューから、設定モードに遷移して、操作する必要があります。 機能メニューの設定モードから以下の操作はできます。 ・「LANGUAGE」：表示言語の設定 ・「MODEL」：モデル選択 ・「EPA」：エンドポイントアジャスター ・「STEXP」：ステアリングEXP ・「STSPD」：ステアリングスピード ・「THEXP」スロットルEXP ・「THSPD」スロットルスピード ・「A.B.S」A.B.S.機能 ・「ACCEL」：スロットルスアクセレーション ・「IDLUP」：アイドルアップ ・「SUBTR」：サブトリム ・「REV」：サーボリバース機能 ・「D/R」ヂュアルレート ・「ATL」：ATL機能 ・「PMIX1」：プログラムミキシング1 ・「PMIX2」：プログラムミキシング2 ・「AUX」：3チャンネルポジション ・「NAME」モデル名設定 ・「RESET」：リセット機能",
+      "source_links": [],
+      "category_names": [
+        { "slug": "rc4gs-manual", "name": "RC4GS製品マニュアル" }
+      ],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/85cbf390fea65ba60b197cad75e8ee1c.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/85cbf390fea65ba60b197cad75e8ee1c.png",
+        "sha256": "8e0dc2faa6e4bd7dcf89724e53086e0c4371559977d1bb55a49cfc1bb7199896",
+        "alt": "RC4GSのLCD表示の説明図。モデル名、バッテリー電圧、送信機名、ステアリングトリム、スロットルトリムの位置を赤い線で示している。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      },
+      "source_record": {
+        "id": 175,
+        "slug": "what-is-this-new-sport-that-is-winning-the-world",
+        "status": "publish",
+        "link": "https://happinesea.com/radiolink-support/rc4gs-manual/20200317175.html",
+        "date_gmt": "2020-03-16T21:54:00",
+        "modified_gmt": "2020-07-29T03:24:49",
+        "title": { "rendered": "RC4GS取扱説明書：2.1．画面表示" },
+        "excerpt": {
+          "rendered": "<p>LCD画面 電源をONにして、送信機に以下の内容でLCD画面が表示されます。 ・モデル名 ・バッテリー電圧 ・送信機名 ・ステアリングトリム ・スロットルトリム モデル名 RC4GSが最大10件のモデ &hellip; </p>\n",
+          "protected": false
+        },
+        "content": {
+          "rendered": "<p><b>LCD画面<br />\n</b>電源をONにして、送信機に以下の内容でLCD画面が表示されます。<br />\n・モデル名<br />\n・バッテリー電圧<br />\n・送信機名<br />\n・ステアリングトリム<br />\n・スロットルトリム</p>\n<p><strong>モデル名<br />\n</strong>RC4GSが最大10件のモデルデータを保存できます。起動した際、選択されているモデル名が表示されるので、想定したモデルか確認してください。<br />\n異なるモデル名が表示される場合、設定ミスが起こってしまうかもしれないので、ご注意ください。</p>\n<p><strong>バッテリー電圧</strong><br />\nモデル名の右側に送信機のバッテリー電圧が表示されます。<br />\n電圧が4.6Vに下回ると、電源OFFまでに、アラーム音が鳴らします。アラーム音を聞こえたら、4分以内に、操作は完了するようにしてください。<br />\n4分を超えると、送信機の電池が切れてしまうため、モデルが操作されない事になり、危険ですので、ご注意ください。</p>\n<p><strong>送信機の機能メニュー<br />\n</strong>送信機の設定を参照、又は、変更する際に、機能メニューから、設定モードに遷移して、操作する必要があります。<br />\n機能メニューの設定モードから以下の操作はできます。<br />\n・「LANGUAGE」：表示言語の設定<br />\n・「MODEL」：モデル選択<br />\n・「EPA」：エンドポイントアジャスター<br />\n・「STEXP」：ステアリングEXP<br />\n・「STSPD」：ステアリングスピード<br />\n・「THEXP」スロットルEXP<br />\n・「THSPD」スロットルスピード<br />\n・「A.B.S」A.B.S.機能<br />\n・「ACCEL」：スロットルスアクセレーション<br />\n・「IDLUP」：アイドルアップ<br />\n・「SUBTR」：サブトリム<br />\n・「REV」：サーボリバース機能<br />\n・「D/R」ヂュアルレート<br />\n・「ATL」：ATL機能<br />\n・「PMIX1」：プログラムミキシング1<br />\n・「PMIX2」：プログラムミキシング2<br />\n・「AUX」：3チャンネルポジション<br />\n・「NAME」モデル名設定<br />\n・「RESET」：リセット機能</p>\n",
+          "protected": false
+        },
+        "_embedded": {
+          "wp:term": [
+            [
+              {
+                "taxonomy": "category",
+                "slug": "rc4gs-manual",
+                "name": "RC4GS製品マニュアル"
+              }
+            ],
+            [{ "taxonomy": "post_tag", "slug": "rc4gs", "name": "rc4gs" }]
+          ],
+          "wp:featuredmedia": [
+            {
+              "id": 552,
+              "source_url": "https://happinesea.com/wp-content/uploads/2020/03/85cbf390fea65ba60b197cad75e8ee1c.png",
+              "alt_text": "",
+              "media_details": { "width": 759, "height": 259 }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "id": 911,
+      "reason": "image review needed",
+      "detail": "Mini Pix photograph includes connector/pin closeups; no reviewed publication alt or Mini Pix presentation mapping in this bounded RC4GS batch."
+    },
+    {
+      "id": 188,
+      "reason": "external link uncertainty",
+      "detail": "Source points to /rc4gs-manual, whose exact shortcut compatibility remains a cutover gate; do not infer equivalent manual/download from the cover."
+    },
+    {
+      "id": 47,
+      "reason": "image review needed",
+      "detail": "ATL instructional screen is not decoration; omitted to keep this bounded batch at fifteen and requires its own image-bound review."
+    },
+    {
+      "id": 943,
+      "reason": "image review needed; external link uncertainty",
+      "detail": "Body image has empty alt and Reuters/Wikipedia source links are outside the verified RC4GS batch."
+    },
+    {
+      "id": 1058,
+      "reason": "image review needed; external link uncertainty",
+      "detail": "PMIX screen and links to unmigrated mixing chapters 1075/1082/1086 require a connected chapter review."
+    }
+  ]
+}

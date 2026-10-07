@@ -13,6 +13,7 @@ const categoryNames: Record<string, string> = {
   'radiolink-videos': 'Radiolink動画集',
   product: '製品紹介',
   'byme-a-manual': 'Byme-A製品マニュアル',
+  'rc4gs-manual': 'RC4GS製品マニュアル',
 };
 
 // Home uses its own cards, covered by home-editorial.spec.ts.
