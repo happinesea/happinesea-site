@@ -24,8 +24,8 @@ test('home puts articles and hobby resources before Radiolink', async () => {
   assert.match(html, />ニュース・航空知識</);
   assert.match(html, /happinesea hobby/);
   assert.match(html, /夢を現実に！/);
-  assert.match(html, /href="https:\/\/happinesea.com\/drawinglibrary"/);
-  assert.match(html, /href="https:\/\/happinesea.com\/drone-rc-glossary"/);
+  assert.match(html, /href="\/happinesea-site\/drawinglibrary\/"/);
+  assert.match(html, /href="\/happinesea-site\/drone-rc-glossary\/"/);
   assert.doesNotMatch(
     html,
     /業界・技術|Products &amp; Support|Industry &amp; Technology|日本代理店/,

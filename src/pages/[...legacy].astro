@@ -1,0 +1,91 @@
+---
+import snapshot from '../data/legacy-compatibility.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { withBase } from '../lib/urls';
+
+export function getStaticPaths() {
+  return snapshot.pages.map((page) => ({
+    params: {
+      legacy: decodeURIComponent(page.target_route).replace(/^\//, ''),
+    },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const knownRoutes = new Set([
+  ...snapshot.pages.map((item) => decodeURIComponent(item.target_route)),
+  ...snapshot.assets.map((item) => decodeURIComponent(item.target_route)),
+]);
+const content = page.content_html.replaceAll(
+  /\b(href|src)="([^"]+)"/g,
+  (match: string, attr: string, value: string) => {
+    if (value.startsWith('#')) return match;
+    const url = new URL(value, snapshot.source_origin);
+    if (
+      url.origin !== snapshot.source_origin ||
+      !knownRoutes.has(decodeURIComponent(url.pathname))
+    )
+      return match;
+    return `${attr}="${withBase(url.pathname + url.search + url.hash)}"`;
+  },
+);
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.title}
+  canonicalUrlOverride={page.canonical}
+>
+  <article class="mx-auto max-w-4xl px-5 py-6 [overflow-wrap:anywhere] lg:px-8">
+    <Breadcrumbs
+      items={[{ label: 'ホーム', href: withBase('/') }, { label: page.title }]}
+    />
+    <h1 class="my-8 text-4xl leading-tight font-bold tracking-tight text-slate-950">
+      {page.title}
+    </h1>
+    {page.hero && (
+      <img
+        class="mb-10 h-auto max-h-[32rem] w-full object-contain"
+        src={withBase(page.hero.src)}
+        alt={page.hero.alt}
+        width={page.hero.width}
+        height={page.hero.height}
+      />
+    )}
+    <div
+      class="prose prose-slate max-w-none [&_a]:text-teal-800 [&_a]:underline [&_h2]:mt-8 [&_h3]:mt-8 [&_img]:h-auto [&_img]:max-w-full [&_li]:my-2 [&_p]:my-4 [&_table]:w-full [&_table]:table-fixed [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_td]:align-top"
+      data-legacy-body
+      set:html={content}
+    />
+    {page.type === 'drawing_library' && (
+      <ul class="mt-10 space-y-3 border-t border-slate-200 pt-6">
+        {snapshot.pages
+          .filter((item) => item.type === 'drawing')
+          .map((item) => (
+            <li>
+              <a
+                class="text-teal-800 underline"
+                href={withBase(item.target_route)}
+              >
+                {item.title}
+              </a>
+            </li>
+          ))}
+      </ul>
+    )}
+  </article>
+</BaseLayout>
+
+{page.type === 'download_endpoint' && <script
+  define:vars={{
+    downloadId: page.download_id,
+    downloadTarget: page.download_target
+      ? withBase(page.download_target)
+      : undefined,
+  }}
+>
+  const requestedId = new URLSearchParams(location.search).get('wpdmdl');
+  if (requestedId === downloadId) location.replace(downloadTarget);
+</script>}

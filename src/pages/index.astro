@@ -39,16 +39,16 @@ const drawings = [
   {
     title:
       'RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。',
-    href: 'https://happinesea.com/engineering-drawing/202201171891.html',
+    href: '/engineering-drawing/202201171891.html',
   },
   {
     title:
       'RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。',
-    href: 'https://happinesea.com/engineering-drawing/202110211742.html',
+    href: '/engineering-drawing/202110211742.html',
   },
   {
     title: 'C-17輸送機設計図(CAD付き)',
-    href: 'https://happinesea.com/engineering-drawing/202110191734.html',
+    href: '/engineering-drawing/202110191734.html',
   },
 ];
 ---
@@ -85,7 +85,7 @@ const drawings = [
           </a>
           <a
             class="rounded-full border border-slate-500 px-5 py-3 text-sm font-semibold text-white no-underline hover:border-teal-300 hover:text-teal-200"
-            href="https://happinesea.com/drawinglibrary"
+            href={withBase('/drawinglibrary/')}
           >
             設計図を見る
           </a>
@@ -152,7 +152,10 @@ const drawings = [
         {drawings.map((drawing) => (
           <article class="min-w-0 border-t border-slate-200 py-6">
             <h2 class="m-0 text-xl leading-snug font-bold text-slate-950 sm:text-2xl [overflow-wrap:anywhere]">
-              <a class="no-underline hover:text-teal-800" href={drawing.href}>
+              <a
+                class="no-underline hover:text-teal-800"
+                href={withBase(drawing.href)}
+              >
                 {drawing.title}
               </a>
             </h2>
@@ -161,7 +164,7 @@ const drawings = [
       </div>
       <a
         class="mt-6 inline-block rounded-full bg-slate-950 px-6 py-3 font-semibold text-white no-underline hover:bg-teal-800"
-        href="https://happinesea.com/drawinglibrary"
+        href={withBase('/drawinglibrary/')}
       >
         設計図を見る
       </a>
@@ -178,7 +181,7 @@ const drawings = [
     />
     <a
       class="mt-6 inline-block font-bold text-teal-800 underline underline-offset-4"
-      href="https://happinesea.com/drone-rc-glossary"
+      href={withBase('/drone-rc-glossary/')}
     >
       基本用語集を見る
     </a>

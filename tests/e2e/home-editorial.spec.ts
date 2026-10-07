@@ -44,7 +44,7 @@ test('home grids and support hub retain real resource links', async ({
   for (const path of ['202201171891', '202110211742', '202110191734']) {
     await expect(
       page.locator(
-        `[data-home-section="drawings"] a[href="https://happinesea.com/engineering-drawing/${path}.html"]`,
+        `[data-home-section="drawings"] a[href="/happinesea-site/engineering-drawing/${path}.html"]`,
       ),
     ).toBeVisible();
   }

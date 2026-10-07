@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "fd0eb42507a45901c1378b3c8e136b70e223a552",
+  "baseline_commit": "73b30ef0cf6cf0baf2a90288b9a8b4d177f63069",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -34,30 +34,31 @@
     "supplemental_http_probes": 2
   },
   "summary": {
-    "total_urls": 1340,
+    "total_urls": 1353,
     "by_type": {
       "attachment": 385,
       "category_archive": 11,
-      "download": 23,
+      "download": 26,
       "download_endpoint": 27,
+      "download_query": 7,
       "drawing": 5,
       "drawing_library": 1,
       "faq": 11,
       "glossary": 1,
-      "image": 649,
+      "image": 652,
       "page": 135,
       "post": 92
     },
-    "preserved_routes": 21,
+    "preserved_routes": 68,
     "redirect_required": 0,
-    "blocked": 8,
-    "old_domain_only_assets": 672,
+    "blocked": 10,
+    "old_domain_only_assets": 645,
     "broken_links": 3,
     "missing_downloads": 0,
-    "unverified": 1282,
+    "unverified": 1265,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1319,
+    "unresolved_surfaces": 1285,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -1604,19 +1605,23 @@
     {
       "legacy_url": "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
       "content_type": "download_endpoint",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1734",
         "content 233",
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml",
         "rendered https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+      "canonical": "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Probe failed: TimeoutError"]
+      "notes": [
+        "Probe failed: TimeoutError",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
@@ -1788,18 +1793,21 @@
     {
       "legacy_url": "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
       "content_type": "download_endpoint",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 233",
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml",
         "rendered https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
@@ -1810,9 +1818,9 @@
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml",
         "rendered https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+      "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -1827,7 +1835,10 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2153-T16DT12D-Self-Centering-Throttle-Stick-Adjustment-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
@@ -1853,9 +1864,9 @@
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml",
         "rendered https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -1878,7 +1889,10 @@
         "https://happinesea.com/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-960x539.jpg",
         "https://happinesea.com/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-480x270.jpg"
       ],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
@@ -1933,19 +1947,23 @@
     {
       "legacy_url": "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
       "content_type": "download_endpoint",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1742",
         "content 233",
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml",
         "rendered https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "canonical": "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Probe failed: TimeoutError"]
+      "notes": [
+        "Probe failed: TimeoutError",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
@@ -1957,9 +1975,9 @@
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml",
         "rendered https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+      "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -1981,7 +1999,10 @@
         "https://happinesea.com/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029-768x480.jpg",
         "https://happinesea.com/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029-1536x960.jpg"
       ],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
@@ -2000,17 +2021,20 @@
     {
       "legacy_url": "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c-2",
       "content_type": "download_endpoint",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 233",
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+      "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/rc4gs-firmware-v3-0-8",
@@ -2150,15 +2174,17 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/drawinglibrary",
       "canonical": "https://happinesea.com/drawinglibrary",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: 設計図ライブラリ",
-        "Supplemental GET 200: rendered HTML received; content/compatibility publication remains unreviewed."
-      ]
+        "Supplemental GET 200: rendered HTML received; content/compatibility publication remains unreviewed.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/drone-rc-glossary",
@@ -2194,15 +2220,17 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/drone-rc-glossary",
       "canonical": "https://happinesea.com/drone-rc-glossary",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: ラジコン、ドローンの基本用語集",
-        "Supplemental GET 200: rendered HTML received; content/compatibility publication remains unreviewed."
-      ]
+        "Supplemental GET 200: rendered HTML received; content/compatibility publication remains unreviewed.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/drone-rc-glossary/attachment/48377577_2100216346975769_63900592149364736_o",
@@ -2249,7 +2277,7 @@
     {
       "legacy_url": "https://happinesea.com/engineering-drawing/202110181716.html",
       "content_type": "drawing",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1716",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2277,9 +2305,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/engineering-drawing/202110181716.html",
       "canonical": "https://happinesea.com/engineering-drawing/202110181716.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-2.jpg",
@@ -2289,13 +2317,14 @@
       ],
       "notes": [
         "Source title: FIGHTER ULTRALIGHT軽飛行機設計図をアップしました。",
-        "Article readiness BLOCKED: content mapping not approved; featured image alt not reviewed; body image alt not reviewed; featured image metadata unavailable"
-      ]
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/engineering-drawing/202110181726.html",
       "content_type": "drawing",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1726",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2323,22 +2352,23 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/engineering-drawing/202110181726.html",
       "canonical": "https://happinesea.com/engineering-drawing/202110181726.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg"
       ],
       "notes": [
         "Source title: Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/engineering-drawing/202110191734.html",
       "content_type": "drawing",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1734",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2367,22 +2397,23 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/engineering-drawing/202110191734.html",
       "canonical": "https://happinesea.com/engineering-drawing/202110191734.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg"
       ],
       "notes": [
         "Source title: C-17輸送機設計図(CAD付き)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/engineering-drawing/202110211742.html",
       "content_type": "drawing",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1742",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2411,22 +2442,23 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/engineering-drawing/202110211742.html",
       "canonical": "https://happinesea.com/engineering-drawing/202110211742.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg"
       ],
       "notes": [
         "Source title: RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/engineering-drawing/202201171891.html",
       "content_type": "drawing",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1891",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2455,17 +2487,18 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/engineering-drawing/202201171891.html",
       "canonical": "https://happinesea.com/engineering-drawing/202201171891.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg"
       ],
       "notes": [
         "Source title: RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。",
-        "Article readiness BLOCKED: content mapping not approved; featured image alt not reviewed; featured image metadata unavailable"
-      ]
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/etp4tr79_400x400",
@@ -12654,7 +12687,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2051",
         "content 2035",
@@ -12663,17 +12696,21 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "c62ac892f6e1862637c3eda2536ac20d072a5fdfa60bd7d844e520018e924041",
+      "content_type_header": "image/svg+xml",
+      "received_bytes": 3336
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1891",
         "content 1742",
@@ -12681,12 +12718,16 @@
         "content 1726",
         "frontend src/data/wordpress-insight-inventory.json"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "2fde18ca3152d069ac7557524ff0a21d49389b15a71f7a44750774fcb8053e9e",
+      "content_type_header": "image/svg+xml",
+      "received_bytes": 1961
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/20200317-1_01.png",
@@ -14851,12 +14892,17 @@
       "source": ["REST media 7"],
       "target_route": null,
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+        "Source reachable; bytes/rights/local compatibility path not yet reviewed.",
+        "Compatibility blocked: Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "ba6c1fb7955237bcc603222358cc7f2b7da7d4cdf82419ec15382a3e1bad7942",
+      "content_type_header": "text/plain",
+      "received_bytes": 2292
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png",
@@ -14951,28 +14997,36 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 265"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2020/03/RC4GS_firmware_V6.0.1-2019.7.8.zip",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "3807bccee5d12bb883d737ab09ec3cbe0bb28230aff76389ac8647454dbfd7ed",
+      "content_type_header": "application/zip",
+      "received_bytes": 77117
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/RC4GS-firmware-V3.0.8.zip",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 264"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2020/03/RC4GS-firmware-V3.0.8.zip",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "ed0e198286a74a53f9252a22cfc2ba9b92f3c3b4072e5d3894956e0a55a6f532",
+      "content_type_header": "application/zip",
+      "received_bytes": 34067
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-17-51_No-00.png",
@@ -16888,14 +16942,18 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1365"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2020/12/52f531d6abf35f011c55b1285ea49380.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "99450ec096dff9947af9b4c27728827ce9e06aa0d8a411dfb0dbef484e86a49d",
+      "content_type_header": "application/pdf",
+      "received_bytes": 471225
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/12/574f312052bcd063018c6472-w640.png",
@@ -17944,14 +18002,18 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1499"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/02/fc91bf1c5b462916d920c83b874cff0a.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "63134271a3fbf37f4e5e3789cf68f26e005a5561f70249724b2ae0a12db5c9cf",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 655723
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/02/yubi_point_illust_743.png",
@@ -18268,14 +18330,18 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1639"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/08/52f531d6abf35f011c55b1285ea49380.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "cdc4c9058b74b44b9e374d0a08c4b335ce065946aaf36b51d2a66baffd708589",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 977672
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/08/IMG_20210820_102614-scaled.jpg",
@@ -18366,14 +18432,18 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1640"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/08/RC6GS.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "685c3a37b3f0b4bcab647ee0e43114bc94f93986b7d2c48927701b649dac461f",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 3807513
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/1-300x102.png",
@@ -19183,44 +19253,56 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1732"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+      "content_type_header": "application/zip",
+      "received_bytes": 2934006
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/77142_1.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1739",
         "frontend src/data/wordpress-insight-inventory.json"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/77142_1.jpg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "9164753a4d247b75f07a1d2f2a6ff21c9258e008d1d83f62960cf0db45fd315a",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 47334
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/7ea9e89dfe81625de6cff93c38cde4df-1.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1731",
         "frontend src/data/wordpress-insight-inventory.json"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/7ea9e89dfe81625de6cff93c38cde4df-1.jpg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "45d876693f61003103067c3dd315acaeb557de61fe388873fc6aa5e7ae22ff7f",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 32308
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/cropped-happines_bobby_banner_line_1290.jpg",
@@ -19263,28 +19345,36 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1737"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/Draken.zip",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+      "content_type_header": "application/zip",
+      "received_bytes": 197718
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "rendered https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "949525884a8dc562fe0ca3864a1d165b781dc1fddec3e56ecb08fc8027475854",
+      "content_type_header": "image/gif",
+      "received_bytes": 59038
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-2-300x182.jpg",
@@ -19313,18 +19403,22 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-2.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1716",
         "frontend src/data/wordpress-insight-inventory.json",
         "rendered https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-2.jpg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "f27752d66c8fb2332cb5d491ce47c06d4e0a036af9fea64e3b69925c14d5e049",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 35891
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/line-ja.png",
@@ -19467,18 +19561,22 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1721",
         "frontend src/data/wordpress-insight-inventory.json",
         "rendered https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.jpg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "421f33a59839ab693a3c61258112c3d33b485028c2e053d389247460cc4c4be2",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 49584
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111002-1024x509.png",
@@ -19809,42 +19907,54 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1748"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/11/RC4GS.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "8f79e335a5bc49900fcb596664ec2ef8bbc22998fa41edee769e771980513a7e",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 3683732
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/RC4GS.pdf",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1749"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/11/RC4GS.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "c10f047394ca95516c4399b9e5c0fbee8de91d057e04a2b373709687d9602c1e",
+      "content_type_header": "application/pdf",
+      "received_bytes": 1403246
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/RC6GS.pdf",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1768"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2021/11/RC6GS.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "c5602f2eb671821e166dcffde8de8bfdca73979a84f0fcce0bf13a99d5e8ccd1",
+      "content_type_header": "application/pdf",
+      "received_bytes": 1385086
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/yt-1774-f9a75772632a5566408a360b23b672ad.jpg",
@@ -19883,11 +19993,12 @@
       "source": ["REST media 1838"],
       "target_route": null,
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Source reachable; bytes/rights/local compatibility path not yet reviewed."
+        "Source reachable; bytes/rights/local compatibility path not yet reviewed.",
+        "Compatibility blocked: Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
       ]
     },
     {
@@ -20245,16 +20356,20 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "rendered https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c"
       ],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029.jpg",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "32ecf0b01d145e5990bb856f9e9a76422454a8cbfb6bf9c1b16461f9370f70a1",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 87831
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/01/yt-1876-ee7a4e08510027a9c8f1daa86e7440e6.4GHzRC6GS-V2.jpg",
@@ -20458,11 +20573,12 @@
       "source": ["REST media 1960"],
       "target_route": null,
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Source reachable; bytes/rights/local compatibility path not yet reviewed."
+        "Source reachable; bytes/rights/local compatibility path not yet reviewed.",
+        "Compatibility blocked: Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
       ]
     },
     {
@@ -20586,28 +20702,36 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1946"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/52f531d6abf35f011c55b1285ea49380.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "cdc4c9058b74b44b9e374d0a08c4b335ce065946aaf36b51d2a66baffd708589",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 977672
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/52f531d6abf35f011c55b1285ea49380.pdf",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1940"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/52f531d6abf35f011c55b1285ea49380.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "99450ec096dff9947af9b4c27728827ce9e06aa0d8a411dfb0dbef484e86a49d",
+      "content_type_header": "application/pdf",
+      "received_bytes": 471225
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/800x-1.jpg",
@@ -20643,11 +20767,12 @@
       "source": ["REST media 1943"],
       "target_route": null,
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Source reachable; bytes/rights/local compatibility path not yet reviewed."
+        "Source reachable; bytes/rights/local compatibility path not yet reviewed.",
+        "Compatibility blocked: Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
       ]
     },
     {
@@ -20655,14 +20780,18 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1939"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/fc91bf1c5b462916d920c83b874cff0a.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "63134271a3fbf37f4e5e3789cf68f26e005a5561f70249724b2ae0a12db5c9cf",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 655723
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/FLzOqB8aQAAs7XY.jpg",
@@ -20757,56 +20886,72 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1942"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/RC4GS.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "8f79e335a5bc49900fcb596664ec2ef8bbc22998fa41edee769e771980513a7e",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 3683732
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/RC4GS.pdf",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1944"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/RC4GS.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "c10f047394ca95516c4399b9e5c0fbee8de91d057e04a2b373709687d9602c1e",
+      "content_type_header": "application/pdf",
+      "received_bytes": 1403246
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/RC6GS.docx",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1941"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/RC6GS.docx",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "ff6642fc734f075915e3b88b34db0c22247834624f1765c90661356af7afb023",
+      "content_type_header": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "received_bytes": 3847026
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/RC6GS.pdf",
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 1945"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/03/RC6GS.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "c5602f2eb671821e166dcffde8de8bfdca73979a84f0fcce0bf13a99d5e8ccd1",
+      "content_type_header": "application/pdf",
+      "received_bytes": 1385086
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/sp_i_serialization_cp_01_r.jpg",
@@ -21124,14 +21269,18 @@
       "content_type": "download",
       "current_status": 200,
       "source": ["REST media 2055"],
-      "target_route": null,
+      "target_route": "/wp-content/uploads/2022/11/cool9030_manual_jp.pdf",
       "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "static_output": "VERIFIED",
+      "sha256": "bbe86cafd206b88932c5ad0355ebb1a5e05945bd18ecf11bb3453efa1b97dfc7",
+      "content_type_header": "application/pdf",
+      "received_bytes": 1619137
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/12/yt-2058-RadioLink-New-Transmitter-RC8X.jpg",
@@ -22329,8 +22478,214 @@
       "notes": [
         "Attachment page from public REST; rendered route not probed in this batch. Retain until individually reviewed."
       ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c-2?wpdmdl=2168",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/assets/legacy-downloads/2168/d29b41480f9c051a1113334ae83dd8a3.zip",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/wp-content/uploads/2022/01/F4D.zip",
+      "content_type": "download",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2022/01/F4D.zip",
+      "canonical": null,
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+      "content_type_header": "application/zip",
+      "received_bytes": 932818
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c?wpdmdl=1886",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2022/01/F4D.zip",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/Fighter.pdf",
+      "content_type": "download",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/Fighter.pdf",
+      "canonical": null,
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+      "content_type_header": "application/pdf",
+      "received_bytes": 888705
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3?wpdmdl=1712",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/Fighter.pdf",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip",
+      "content_type": "download",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip",
+      "canonical": null,
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+      "content_type_header": "application/zip",
+      "received_bytes": 247043
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3?wpdmdl=1724",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98?wpdmdl=1733",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89?wpdmdl=1740",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/Draken.zip",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2?wpdmdl=1717",
+      "content_type": "download_query",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2021/10/Fighter.pdf",
+      "canonical": null,
+      "migration_status": "NEEDS_REVIEW",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Browser-only handoff to verified local bytes. Static hosting cannot return query-dependent file bytes to non-JavaScript HTTP clients; compatibility decision remains open."
+      ]
+    },
+    {
+      "legacy_url": "https://happinesea.com/wp-content/uploads/2025/05/5af21b0c87d83b8aca7b2e864f82861e.jpg",
+      "content_type": "image",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2025/05/5af21b0c87d83b8aca7b2e864f82861e.jpg",
+      "canonical": null,
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "28d689f6be94bd3414e540eb406183d8141d15f47252568d51d3f3297262d3be",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 9715
+    },
+    {
+      "legacy_url": "https://happinesea.com/wp-content/uploads/2025/05/bd092ec83d848f9adc1f7b707d133d4e.jpg",
+      "content_type": "image",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2025/05/bd092ec83d848f9adc1f7b707d133d4e.jpg",
+      "canonical": null,
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "45c2e95f7e034965ed9d0a84a875acd5a4953c06f840f5b059b6982f2b00017c",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 18835
+    },
+    {
+      "legacy_url": "https://happinesea.com/wp-content/uploads/2025/05/b6d02ee8ddb426fad9e5f2f243af4261.jpg",
+      "content_type": "image",
+      "current_status": 200,
+      "source": ["Public legacy compatibility capture"],
+      "target_route": "/wp-content/uploads/2025/05/b6d02ee8ddb426fad9e5f2f243af4261.jpg",
+      "canonical": null,
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "static_output": "VERIFIED",
+      "sha256": "8275d32fbec16d7f59a9d4404ac7a33968530a661b050810cceb06ac3cb1d0ba",
+      "content_type_header": "image/jpeg",
+      "received_bytes": 9821
     }
   ],
-  "reconciled_at": "2026-10-07T04:27:25.656Z",
-  "migration": { "migrated_articles": 21, "exact_legacy_html_routes": 21 }
+  "reconciled_at": "2026-10-07T05:38:51.389Z",
+  "migration": {
+    "migrated_articles": 26,
+    "insight_articles": 21,
+    "drawing_articles": 5,
+    "exact_legacy_html_routes": 26
+  },
+  "compatibility": {
+    "verified_pages": 14,
+    "drawing_ids": [1716, 1726, 1734, 1742, 1891],
+    "verified_unique_asset_paths": 34,
+    "blocked": 4,
+    "query_downloads": "BROWSER_ONLY; NON_JS_HTTP_COMPATIBILITY_OPEN"
+  }
 }
