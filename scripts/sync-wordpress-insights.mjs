@@ -14,6 +14,7 @@ import {
   fetchPublishedPosts,
   htmlText,
   normalizePost,
+  reviewedFeaturedImageAlt,
   validateContracts,
 } from './lib/wordpress-publication.mjs';
 
@@ -62,9 +63,17 @@ async function downloadAsset(url, prefix) {
 async function downloadImage(article) {
   const image = article.contract.featured_image;
   if (!image) return null;
+  const asset = await downloadAsset(image.url, article.contract.id);
+  const review = activeMappings.find(
+    ({ id }) => id === article.contract.id,
+  )?.featured_image_review;
   return {
-    ...(await downloadAsset(image.url, article.contract.id)),
-    alt: article.contract.featured_image_alt,
+    ...asset,
+    alt: reviewedFeaturedImageAlt(
+      { source_url: image.url, alt_text: article.contract.featured_image_alt },
+      review,
+      asset.sha256,
+    ),
   };
 }
 

@@ -2,8 +2,8 @@
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
   "expected_count": 97,
   "status_counts": {
-    "READY": 28,
-    "NEEDS_REVIEW": 58,
+    "READY": 43,
+    "NEEDS_REVIEW": 43,
     "NEEDS_TRANSFORM": 6,
     "BLOCKED": 5
   },
@@ -2584,15 +2584,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/2-22%ef%bc%8e%e3%83%aa%e3%82%bb%e3%83%83%e3%83%88%e6%a9%9f%e8%83%bd-reset/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 854,
@@ -2614,15 +2608,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-21%ef%bc%8e%e3%83%95%e3%82%a7%e3%82%a4%e3%83%ab%e3%82%bb%e3%83%bc%e3%83%95/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 850,
@@ -2644,15 +2632,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-19%ef%bc%8e%e3%83%ad%e3%83%bc%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e4%bf%9d%e8%ad%b7/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 39,
@@ -2674,15 +2656,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/global-increase-in-the-sales-of-tablet/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 10,
@@ -2704,15 +2680,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/best-home-design-ideas-for-2016/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 169,
@@ -2734,15 +2704,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/everything-you-need-to-know-about-em-thruster/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 62,
@@ -2764,15 +2728,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/love-for-football-around-the-world/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 77,
@@ -2794,15 +2752,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/light-ultra-powerful-laptop/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 70,
@@ -2824,15 +2776,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/best-way-to-have-fun-during-roadtrip/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 85,
@@ -2890,15 +2836,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/health-benifits-of-yoga/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 92,
@@ -3008,15 +2948,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/rideing-wave-on-a-bodyboard/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 185,
@@ -3038,15 +2972,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/horse-racing-is-disappearing-in-south-africa/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 129,
@@ -3108,15 +3036,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/evolution-in-virtual-gaming/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 234,
@@ -3138,15 +3060,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/why-should-you-be-eating-organic/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 107,
@@ -3207,15 +3123,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/what-is-this-new-sport-that-is-winning-the-world/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 191,

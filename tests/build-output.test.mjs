@@ -331,7 +331,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 28);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 43);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
@@ -344,6 +344,15 @@ test('insights index exposes all editorial topics', async () => {
 });
 
 test('WordPress insight batch emits sanitized static routes with local images and legacy canonicals', async () => {
+  const contentImageReviews = JSON.parse(
+    await readFile(
+      new URL(
+        './fixtures/wordpress-phase6-review-batch3.json',
+        import.meta.url,
+      ),
+      'utf8',
+    ),
+  ).articles;
   const articles = JSON.parse(
     await readFile(
       new URL('../src/data/wordpress-insights.json', import.meta.url),
@@ -372,14 +381,23 @@ test('WordPress insight batch emits sanitized static routes with local images an
       assert.doesNotMatch(html, /<img\b/);
     } else {
       assert.match(html, new RegExp(`/happinesea-site${article.hero.src}`));
-      assert.match(
-        html,
-        article.contract.id === 1
-          ? /<img[^>]+alt="Radiolinkロゴ"/
-          : /<img[^>]+alt(?:="")?(?:\s|>)/,
+      const reviewed = contentImageReviews.find(
+        (item) => item.id === article.contract.id,
       );
+      if (reviewed)
+        assert.ok(html.includes(`alt="${reviewed.featured_image_review.alt}"`));
+      else
+        assert.match(
+          html,
+          article.contract.id === 1
+            ? /<img[^>]+alt="Radiolinkロゴ"/
+            : /<img[^>]+alt(?:="")?(?:\s|>)/,
+        );
     }
-    if ([2005, 1635, 1].includes(article.contract.id))
+    if (
+      [2005, 1635, 1].includes(article.contract.id) ||
+      contentImageReviews.some((item) => item.id === article.contract.id)
+    )
       assert.doesNotMatch(html, /<iframe\b/);
     else assert.match(html, /https:\/\/www\.youtube\.com\/embed\//);
     assert.doesNotMatch(html, /happinesea\.com\/wp-(?:json|content)/);
