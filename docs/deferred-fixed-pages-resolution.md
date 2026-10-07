@@ -1,5 +1,7 @@
 # Deferred fixed pages: cutover dispositions
 
+Historical PR #28 decision snapshot. Follow-up/current six-page decisions: [fixed-page-safe-transforms.md](fixed-page-safe-transforms.md). Counts below describe that original task, not the current readiness ledger.
+
 Baseline: `85ffe04618498d20527504ae544eac86efc7cdba` (PR #27 merged). Public source observations: 2026-10-07. Scope: precisely the eleven deferred fixed pages, not article migration or a domain switch.
 
 ## Final classification
