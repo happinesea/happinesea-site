@@ -7,6 +7,12 @@ const manifest = JSON.parse(
     'utf8',
   ),
 );
+const linkedBatch = JSON.parse(
+  readFileSync(
+    new URL('../fixtures/wordpress-phase6-review-batch4.json', import.meta.url),
+    'utf8',
+  ),
+);
 
 for (const article of manifest.articles) {
   test(`WordPress batch article ${article.id}`, async ({
@@ -67,6 +73,23 @@ for (const article of manifest.articles) {
       ]);
     for (const href of internalLinks)
       expect((await request.get(href)).status()).toBeLessThan(400);
+    const reviewed = linkedBatch.articles.find(
+      (item: { id: number }) => item.id === article.id,
+    );
+    for (const href of reviewed?.source_links ?? []) {
+      const source = new URL(href);
+      if (source.origin !== 'https://happinesea.com') continue;
+      const linkedResponse = await request.get(
+        `.${source.pathname}${source.search}`,
+      );
+      expect(linkedResponse.status(), `cutover destination ${href}`).toBe(200);
+      const evidence = linkedBatch.link_evidence.find(
+        (item: { url: string }) => item.url === href,
+      );
+      expect(await linkedResponse.text()).toContain(
+        `href="${evidence.canonical}"`,
+      );
+    }
     expect(errors).toEqual([]);
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({

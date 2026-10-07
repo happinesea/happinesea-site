@@ -24,6 +24,7 @@ const knownRoutes = new Set([
   ...articles.map((item) =>
     decodeURIComponent(new URL(item.canonical).pathname),
   ),
+  ...articles.flatMap((item) => item.body_assets.map((asset) => asset.src)),
 ]);
 const content = page.content_html.replaceAll(
   /\b(href|src)="([^"]+)"/g,

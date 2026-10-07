@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "1848acf14fde313b9efc8921d6c9ad7575e6a8c7",
+  "baseline_commit": "7f92e88a52d356eca679e7ab5c9c2538e338fd02",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -55,7 +55,7 @@
       "page": 141,
       "post": 92
     },
-    "preserved_routes": 174,
+    "preserved_routes": 192,
     "redirect_required": 0,
     "blocked": 14,
     "old_domain_only_assets": 621,
@@ -64,7 +64,7 @@
     "unverified": 1187,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1202,
+    "unresolved_surfaces": 1184,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -3625,9 +3625,9 @@
       "content_type": "page",
       "current_status": 200,
       "source": ["content 1058", "content 921"],
-      "target_route": null,
+      "target_route": "/news/202006281075.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -3646,16 +3646,19 @@
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_6-750x309.png",
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_7-300x174.png"
       ],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202006281086.html",
       "content_type": "page",
       "current_status": 200,
       "source": ["content 1058", "content 921"],
-      "target_route": null,
+      "target_route": "/news/202006281086.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -3684,7 +3687,10 @@
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_15-768x408.png",
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_16-300x127.png"
       ],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202006301090.html",
@@ -6511,15 +6517,17 @@
         "rendered https://happinesea.com/news/202006281086.html",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/2016091547.html",
       "canonical": "https://happinesea.com/radiolink-support/2016091547.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.15．ブレーキレート機能 (ATL)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/2016091547.html; byte-identical to /insights/solo-travel-around-the-world/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/solo-travel-around-the-world/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/2016091547.html/attachment/a-photo-by-steven-lewis-unsplash-comphotosr4he4btlsro",
@@ -7682,15 +7690,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200315188.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315188.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書(日本語版)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200315188.html; byte-identical to /insights/boxing-ring-is-rigged-says-tagerine/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/boxing-ring-is-rigged-says-tagerine/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315188.html/attachment/2017-radiolink-4-rc4gs-rc4g-2-4-4ch-r6fg-jpg_q50",
@@ -7744,9 +7754,9 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/news/202006281086.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200315199.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_1.png",
@@ -7756,8 +7766,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：1.1．送信機",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200315199.html; byte-identical to /insights/lions-of-africa-protesting-against-disney/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/lions-of-africa-protesting-against-disney/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html/attachment/africa-21787_1920",
@@ -7784,17 +7796,19 @@
         "rendered https://happinesea.com/news/202006281075.html",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200316191.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-15_No-00.png"
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.20．ジャイロ感度(GYRO)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200316191.html; byte-identical to /insights/will-emdrive-thruster-change-in-space-travel/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/will-emdrive-thruster-change-in-space-travel/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html/attachment/iss-548328_1280",
@@ -8001,9 +8015,9 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200316196.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png",
@@ -8013,8 +8027,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：1.2．受信機(R6FG)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200316196.html; byte-identical to /insights/selfie-in-the-space-is-so-fun/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/selfie-in-the-space-is-so-fun/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html/attachment/astronaut-11080_1280-1",
@@ -8278,9 +8294,9 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/20200319129.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png",
@@ -8288,8 +8304,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.4．エンドポイント (EPA)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/20200319129.html; byte-identical to /insights/smart-watch-on-the-go/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/smart-watch-on-the-go/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html/attachment/a-photo-by-crew-unsplash-comphotosrcowmc8qf8a",
@@ -8603,9 +8621,9 @@
         "rendered https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020033030.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png",
@@ -8615,8 +8633,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.7．スロットルカーブ (THEXP)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020033030.html; byte-identical to /insights/shooting-passing-dribbling-and-rebounding/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/shooting-passing-dribbling-and-rebounding/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html/attachment/basketball-95607_1280",
@@ -8717,9 +8737,9 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020033192.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-22_No-00.png",
@@ -8727,8 +8747,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.8．スロットルスピード (THSPD)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020033192.html; byte-identical to /insights/beautiful-cities-around-the-world/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/beautiful-cities-around-the-world/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html/attachment/a-photo-by-steven-wei-unsplash-comphotosg-aklivi1ai",
@@ -9091,9 +9113,9 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/news/202006281086.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/2020040885.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/04/de11012c3776344ed23d95ee2724e862.png",
@@ -9101,8 +9123,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.9．A.B.S.機能 (A.B.S.)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/2020040885.html; byte-identical to /insights/scientific-study-of-organisms-in-the-ocean/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/scientific-study-of-organisms-in-the-ocean/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html/attachment/de11012c3776344ed23d95ee2724e862",
@@ -9576,9 +9600,9 @@
         "rendered https://happinesea.com/rc4gs-manual",
         "rendered https://happinesea.com/download/rc4gs-firmware-v3-0-8"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/202006181050.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_4.png",
@@ -9586,8 +9610,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：1.4．電波状況(RSSI)の確認",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/202006181050.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
@@ -9601,9 +9627,9 @@
         "rendered https://happinesea.com/news/202006281075.html",
         "rendered https://happinesea.com/rc4gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/202006181054.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_5.png",
@@ -9611,8 +9637,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：1.5．テレメトリー情報の確認",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/202006181054.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
@@ -9629,15 +9657,17 @@
         "rendered https://happinesea.com/rc4gs-manual",
         "rendered https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/202006241058.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書：2.16．プログラムミキシング (PMIX)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/202006241058.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
@@ -9651,9 +9681,9 @@
         "rendered https://happinesea.com/rc4gs-manual",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/202006281075.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_6.png",
@@ -9664,8 +9694,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.16.1．プログラムミキシングのために混合制御の説明",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/202006281075.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
@@ -9682,9 +9714,9 @@
         "rendered https://happinesea.com/rc4gs-manual",
         "rendered https://happinesea.com/download/rc4gs-v6-0-1fhss-rx"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/202006281082.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_8.png",
@@ -9703,8 +9735,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：混合制御(ミックスコントロール)設定前の受信機の準備について",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/202006281082.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
@@ -9717,9 +9751,9 @@
         "rendered https://happinesea.com/news/202006281086.html",
         "rendered https://happinesea.com/rc4gs-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/rc4gs-manual/202006281086.html",
       "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_13.png",
@@ -9735,8 +9769,10 @@
       ],
       "notes": [
         "Source title: RC4GS取扱説明書：2.16.3．混合制御(ミックスコントロール)設定",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/rc4gs-manual/202006281086.html; byte-identical to /insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202105071534.html",
@@ -10494,9 +10530,9 @@
         "content 1035",
         "rendered https://happinesea.com/radiolink"
       ],
-      "target_route": null,
+      "target_route": "/rc4gs-manual",
       "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -10515,10 +10551,13 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2153-T16DT12D-Self-Centering-Throttle-Stick-Adjustment-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
-      "notes": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
       "http_observed_at": "2026-10-07T10:56:24.802Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "0211bda6c5dfd922f344aab0f0ae35d27f2361eb45de9ecbf73ee15cca675b3b"
+      "sha256": "0211bda6c5dfd922f344aab0f0ae35d27f2361eb45de9ecbf73ee15cca675b3b",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/rc4gs-manual/page/2",
@@ -23634,15 +23673,15 @@
       "content_type_header": "image/png"
     }
   ],
-  "reconciled_at": "2026-10-07T15:44:17.211Z",
+  "reconciled_at": "2026-10-07T21:06:03.996Z",
   "migration": {
-    "migrated_articles": 48,
-    "insight_articles": 43,
+    "migrated_articles": 63,
+    "insight_articles": 58,
     "drawing_articles": 5,
-    "exact_legacy_html_routes": 48
+    "exact_legacy_html_routes": 63
   },
   "compatibility": {
-    "verified_pages": 65,
+    "verified_pages": 68,
     "drawing_ids": [1716, 1726, 1734, 1742, 1891],
     "verified_unique_asset_paths": 60,
     "blocked": 4,
