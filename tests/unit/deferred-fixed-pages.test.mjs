@@ -62,7 +62,8 @@ test('deferred page copies retain source text, links, reviewed image bytes and c
     false,
   );
   for (const page of resolution.pages.filter(
-    (item) => item.disposition !== 'PRESERVE_STATIC',
+    (item) =>
+      !['PRESERVE_STATIC', 'TRANSFORM_AND_PUBLISH'].includes(item.disposition),
   )) {
     assert.equal(
       publication.pages.some((item) => item.id === page.id),

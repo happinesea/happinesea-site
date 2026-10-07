@@ -1,0 +1,118 @@
+{
+  "id": 1172,
+  "content_html": "\n<span class=\"hero\"></span>\n<header class=\"happinesea-header\">\n\n<figure class=\"wp-block-image is-resized size-large\" style=\"margin-top:0px\"><img decoding=\"async\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2525666.png\" alt=\"\" class=\"wp-image-1174\" width=\"260\" style=\"float: left;\" srcset=\"https://happinesea.com/wp-content/uploads/2020/11/2525666.png 2754w, https://happinesea.com/wp-content/uploads/2020/11/2525666-300x47.png 300w, https://happinesea.com/wp-content/uploads/2020/11/2525666-1024x161.png 1024w, https://happinesea.com/wp-content/uploads/2020/11/2525666-768x121.png 768w, https://happinesea.com/wp-content/uploads/2020/11/2525666-1536x242.png 1536w, https://happinesea.com/wp-content/uploads/2020/11/2525666-2048x323.png 2048w\" sizes=\"(max-width: 2754px) 100vw, 2754px\" />\n\n<div style=\"float: left;\">\n<ur style=\"list-style: none;overflow: hidden;\"><li style=\"width: 200px;text-align: center;float: left;\">プロポセット</li>\n<li style=\"width: 200px;text-align: center;float: left;\">フライトコントローラー</li>\n</ur>\n</div>\n\n</figure>\n</header>\n\n\n<script type=\"text/javascript\">\n\njQuery(document).ready(function($) {\nvar _window = $(window),\n    _header = $('.happinesea-header'),\n    heroBottom;\n \n_window.on('scroll',function(){     \n    heroBottom = $('.hero').height();\n    if(_window.scrollTop() > heroBottom){\n        _header.addClass('fixed');   \n    }\n    else{\n        _header.removeClass('fixed');   \n    }\n});\n \n_window.trigger('scroll');\n});\n</script>\n\n\n\n\n<figure class=\"wp-block-image size-large is-resized\" style=\"margin-top:0px\"><img decoding=\"async\" loading=\"lazy\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948492.jpg\" alt=\"\" width=\"100%\" height=\"239\"></figure>\n\n\n\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2683426.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>最大操縦距離400メートル以上</strong></p>\n    <p>RC4GS V2はAT9Sと同様、67チャンネルのFHSSスペクトラム拡散方式で通信を行う事で、干渉に強い事を実現しております。</p>\n  </div>\n</div>\n<div style=\"width: 100%;\">\n  <p><img decoding=\"async\" loading=\"lazy\" width=\"580\" height=\"500\" class=\"size-medium wp-image-1229 alignright\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3217660.jpg\" alt=\"\" srcset=\"https://happinesea.com/wp-content/uploads/2020/11/3217660.jpg 580w, https://happinesea.com/wp-content/uploads/2020/11/3217660-300x259.jpg 300w\" sizes=\"(max-width: 580px) 100vw, 580px\" /></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>リアルタイムテレメトリー：電波状況、車体電圧など</strong></p>\n    <p>Note:車体のバッテリー電圧等、全てのテレメトリー機能を利用するには、R7FG、又は、R8F受信機を利用する必要がある。</p>\n    <p>テレメトリー機能は電波強度(RSSI)、車体の電圧などの情報を送信機の画面に表示させ、常に車体の状態を監視できるようにします。<br>車体電圧は、最大6Sまでサポートします。</p>\n  </div>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>2系統プログラムMIX</strong></p>\n    <p>クローラー、戦車など、ツインエンジンは、簡単なプログラムMIXの設定で対応可能。<br>ティンバートラックの場合：プログラムMIXにより、前輪と後輪のミックスが実現し、回転半径を小さくすることができます。\n</p>\n  </div>\n</div>\n<div style=\"width: 100%;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1229 alignright\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948500.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>複数のモデル対応できる4チャンネル</strong></p>\n    <p>RC4GS V2は、市販の殆どンのRCカー、RCボートを対応できます。<br>ドリフトカー、オフロード、ガソリンRC、キャタピラー、バギー等、シングルエンジンは勿論、クローラー、戦車等、ツインエンジンも対応できます。</p>\n  </div>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p><img decoding=\"async\" loading=\"lazy\" width=\"780\" height=\"780\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3100721.jpg\" alt=\"\" srcset=\"https://happinesea.com/wp-content/uploads/2020/11/3100721.jpg 780w, https://happinesea.com/wp-content/uploads/2020/11/3100721-300x300.jpg 300w, https://happinesea.com/wp-content/uploads/2020/11/3100721-150x150.jpg 150w, https://happinesea.com/wp-content/uploads/2020/11/3100721-768x768.jpg 768w\" sizes=\"(max-width: 780px) 100vw, 780px\" /></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>ジャイロセンサーの感度はカスタマイズ可能</strong></p>\n    <p>ジャイロ機能内蔵の受信機は付属するので、設定は簡単で、直ぐ使えます。<br>然も、デフォルト設定ではCH3のボリュームレバー(VR)で、感度の調整はできますので、需要に合わせて感度の指定は可能ですので、特に初期設定では、通常のジャイロより設定は便利になります。</p>\n  </div>\n</div>\n<div style=\"width: 100%;position: relative;\">\n  <img decoding=\"async\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948502.jpg\" width=\"100%\">\n  <p style=\"height:90%;width:100%;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);margin:0;padding:0;color:#ffffff;text-align:center;width:100%\">\n    <strong>レスポンスタイム：12ms</strong><br>産業基準のチップを採用しており、<br>\n    送信機STM32F103RB、受信機は32ビットM0を使用することで、<br>\n    RC4GS V2の全てのチャンネルは12msを実現してます。<br>優れた干渉防止性能で、ガソリンRCなど、高性能を求める車体でも問題なく使えるでしょう。\n  </p>\n</div>\n<div style=\"width: 100%;position: relative;\">\n  <img decoding=\"async\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3100755.gif\" width=\"100%\">\n  <p style=\"height:90%;width:100%;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);margin:0;padding:0;text-align:center;\">\n    <strong>ジャイロ機能付き</strong><br>標準付属の受信器R6FGはジャイロ機能内蔵し、横滑りを抑制可能。<br>\n    特に2WDのドリフトカーに不可欠？\n  </p>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p><img decoding=\"async\" loading=\"lazy\" width=\"780\" height=\"780\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3100721.jpg\" alt=\"\" srcset=\"https://happinesea.com/wp-content/uploads/2020/11/3100721.jpg 780w, https://happinesea.com/wp-content/uploads/2020/11/3100721-300x300.jpg 300w, https://happinesea.com/wp-content/uploads/2020/11/3100721-150x150.jpg 150w, https://happinesea.com/wp-content/uploads/2020/11/3100721-768x768.jpg 768w\" sizes=\"(max-width: 780px) 100vw, 780px\" /></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>送信機からジャイロのカスタマイズは可能</strong></p>\n    <p>送信機から簡単な設定により、ジャイロをより適切に制御できます。\n    デフォルト設定上、ジャイロの感度はチャンネル3のボリュームレバー(VR)で調整できます。\n    </p>\n  </div>\n</div>\n\n<div style=\"width: 100%;\">\n  <p style=\"width:100%;margin:0;padding:0;text-align:center;\">\n    <br><br><strong>RC4GS V2はデザインをアップグレードしました。</strong><br>ユーザのフィードバックをもとに、レーシング選手、FPVにも満足して頂くために、ユーザビリティ向上させました。<br><br><br>\n  </p>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p style=\"margin:0px\"><img decoding=\"async\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948494.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>スロットルトリガーを再設計しました。</strong></p>\n    <p>改善したスロットルトリガーは、より簡単に正確なスロットル調整はできます。</p>\n    <p>新しいデザインでは長時間の使用や、夏場の暑いときでも、滑り止めに役立ちます</p>\n  </div>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p style=\"margin:0px\"><img decoding=\"async\" class=\"size-medium wp-image-1218 alignright\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n\n    <p>FPVホルダーで、モニターの設置は簡単になります。</p>\n    <p>FPVディスプレイホルダー穴対応ネジ：M6（1/4インチ）</p>\n  </div>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p style=\"margin:0px\"><img decoding=\"async\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948496.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    \n    <p>ストラップを利用することで、操縦者の負担を軽減して、長時間の利用も可能になります。</p>\n  </div>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p style=\"margin:0px\"><img decoding=\"async\" class=\"size-medium wp-image-1218 alignright\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948497.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>人間工学をもとにデザインを改善</strong></p>\n    <p>人間工学をもとに、ハンドルを握りやすいように改善しました。長く握っても疲れ難いようになっています。</p>\n    <p>ボタンを押し安いように、CH3-CH4チャンネルの操作をSWA、SWDのどちらかに変更できます。</p>\n  </div>\n</div>\n<div style=\"width: 100%;position: relative;\">\n  <div style=\"text-align:center;width:100%;height:500px\"><img decoding=\"async\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3217675-1.jpg\" style=\"width:70%\"></div>\n  <p style=\"height:90%;width:100%;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);margin:0;padding:0;text-align:center;\">\n    <strong>10モデルのデータ保存可能</strong><br>RC4GS V2は最大、10モデルのデータまで保存できます。\n  </p>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3100723.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>受信機の冗長化(IDシード)</strong></p>\n    <p>RC4GS V2はIDシード機能を活かして、受信機の冗長化は実現することで、RCカー、ボートの遠距離救助には実現できます。</p>\n  </div>\n</div>\n<div style=\"width: 100%;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1229 alignright\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948507.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>逆極性保護</strong></p>\n    <p>RC4GS V2は、6個の単三乾電池、又は、2S-4SLiPoバッテリー等、幅広い動作電圧の範囲を許容します。</p>\n    <p>Radiolinkは電圧保護機能を提供しており、逆極性保護します。</p>\n  </div>\n</div>\n<div style=\"width: 100%; background-color: #eeeeee;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1218 alignleft\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/2948508.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>USBアップグレード</strong></p>\n    <p>RC4GS V2はパソコンのUSBケーブル経由でアップグレードできます。<br>やり方は簡単です。\t</p>\n  </div>\n</div>\n<div style=\"width: 100%;\">\n  <p><img decoding=\"async\" class=\"size-medium wp-image-1229 alignright\" style=\"height: 500px;\" src=\"https://happinesea.com/wp-content/uploads/2020/11/3102093.jpg\" alt=\"\"></p>\n  <div style=\"width: 460px; height: 500px; display: table-cell; vertical-align: middle;padding: 0px 5px\">\n    <p><strong>交換性のある受信機</strong></p>\n    <p>標準セットでは、R6FG、ジャイロ機能内蔵、HVサーボ対応の受信器を付属します。</p>\n    <p>ミニRCカー用に設計された4チャンネルミニ受信機R4FGM/R4F、<br>\n    上位の7チャンネル、ジャイロ内蔵のデュアルアンテナ受信機のR7FG、RCボート用長距離受信機R8EF/R8Fと交換性があります。\n    </p>\n  </div>\n</div>\n\n\n\n<p></p>\n",
+  "image_sources": [
+    "https://happinesea.com/wp-content/uploads/2020/11/2525666.png",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948492.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2683426.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/3217660.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948500.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/3100721.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948502.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/3100755.gif",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948494.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948496.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948497.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/3217675-1.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/3100723.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948507.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/2948508.jpg",
+    "https://happinesea.com/wp-content/uploads/2020/11/3102093.jpg"
+  ],
+  "reviewed_alts": [
+    "RadioLinkのロゴ。",
+    "RC4GS V2の送信機と、4チャンネル・最大操縦距離400m以上・プログラムMIXの表示。",
+    "周波数と波形を表示した測定画面。",
+    "RC4GSの通常画面と、RSSI・電圧などを表示したテレメトリー画面。",
+    "RC4GSとモニターを持ち、車両を操縦する場面。",
+    "RC4GS送信機と、バギー・車・トラック・戦車の模型。",
+    "RC4GSのGYRO設定画面。MODEがSTDとVRの例。",
+    "砂地を走るRCバギー。",
+    "Without GYROとWith GYROを比較するアニメーション。車体の向きと周回走行の変化。",
+    "スロットルトリガーの接触面の拡大図。",
+    "送信機にモニターを取り付けて操縦する場面。",
+    "送信機とストラップ取付部の拡大図。",
+    "送信機を握る手と、側面ボタンの拡大図。",
+    "RC4GSのモデル選択画面。MODEL9とMODEL10の表示。",
+    "RC4GSの通常画面とID SEED設定画面。",
+    "乾電池ホルダーと送信機の電池収納部。",
+    "送信機のUSB端子の拡大図。",
+    "RC4GS送信機と5台の受信機。"
+  ],
+  "image_receipts": [
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2525666.png",
+      "sha256": "9784ee59b8769b6f8879ea08692b4c6e92915081b58f7d735d358899874e0601"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948492.jpg",
+      "sha256": "8cde50061c32f434b4e97831ea2f6bbe126bf97bf49c9696032e08a94a49f4a5"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2683426.jpg",
+      "sha256": "37880498d8858eeb79405d67047d39f5a5fc7aa4942937f56eb6cd6cddec9a56"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/3217660.jpg",
+      "sha256": "996a2e9ae7569f15088c4470b518c8236c876a5c136f0cc4a48dd0626bf530fa"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg",
+      "sha256": "403d47157f33027cc4292e256b6db85f94483441693e48644e543510c4b06b16"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948500.jpg",
+      "sha256": "cdff20baf15e6559ed9b727a7102b5ba17809aaf6360d0a62883a7f9c1d696a0"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/3100721.jpg",
+      "sha256": "e37abd2d74598a6c6a044d5160d365bf41f40d4aba0848c5ae659a19c9419a3e"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948502.jpg",
+      "sha256": "e3a04ce7fbaaf6fbcf72ebd2aafe315ffbcb2cd5f063e744b08fb1c0e181f552"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/3100755.gif",
+      "sha256": "06534a96a20f1747025da96776f7da65c73ea3aa14e4b18e30c23b71b4ab54f1"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948494.jpg",
+      "sha256": "063fd95cc92805588516a096db43c0cee346f63d5a2cef17004285970adad3a7"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_.jpg",
+      "sha256": "9d9acb0954e167d6c5f33569ab6641f45b50c510d1a6c5dc75d1dd8061369585"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948496.jpg",
+      "sha256": "4150d4839f882668224b52a39f4839c98ceea9b56778b17cd58cdadde66d29c1"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948497.jpg",
+      "sha256": "1440c3bdccc82b2ed844a30e8473db45ed01922447ebc0f8d0be1e12b094281b"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/3217675-1.jpg",
+      "sha256": "1b28668a90f7e7e8019ade5a692e2924cf61c41e8def01c5879187bd3411c0d9"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/3100723.jpg",
+      "sha256": "8c6d719818025599397cf897ba39860aa410bfc0576e375a412ed240de7f564a"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948507.jpg",
+      "sha256": "c51f55f9db8ce3e157856a0dedd089187f167b79db87c68fdfb4dce2df207319"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/2948508.jpg",
+      "sha256": "00207b7814f05d4a25bd625533fbd08c339aa5db39285cc8ae6690f5d0c19ca7"
+    },
+    {
+      "url": "https://happinesea.com/wp-content/uploads/2020/11/3102093.jpg",
+      "sha256": "2c4540f9cf02b0d5edb0d5c6b47feb3ed8a01a72fca9aab06c158fede83317a2"
+    }
+  ]
+}
