@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "73b30ef0cf6cf0baf2a90288b9a8b4d177f63069",
+  "baseline_commit": "2ba40a05161ff55e62c00b6e62f96e5d2784539c",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -31,7 +31,13 @@
       "HTML crawl ceiling reached; inventory incomplete"
     ],
     "complete": false,
-    "supplemental_http_probes": 2
+    "supplemental_http_probes": 2,
+    "editorial_inventory": {
+      "observed_at": "2026-10-07T06:07:18.444Z",
+      "counts": { "pages": 22, "ufaq": 5, "categories": 11 },
+      "http_counts": { "200": 36, "UNVERIFIED": 2 },
+      "supplemental_faq_http_counts": { "200": 4, "UNVERIFIED": 1 }
+    }
   },
   "summary": {
     "total_urls": 1353,
@@ -49,23 +55,23 @@
       "page": 135,
       "post": 92
     },
-    "preserved_routes": 68,
+    "preserved_routes": 75,
     "redirect_required": 0,
     "blocked": 10,
     "old_domain_only_assets": 645,
     "broken_links": 3,
     "missing_downloads": 0,
-    "unverified": 1265,
+    "unverified": 1239,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1285,
+    "unresolved_surfaces": 1278,
     "domain_cutover": "NOT READY"
   },
   "entries": [
     {
       "legacy_url": "https://happinesea.com/",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 14",
         "explicit critical entry",
@@ -92,7 +98,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/14"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/",
@@ -1019,7 +1026,7 @@
     {
       "legacy_url": "https://happinesea.com/blog",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 139",
         "sitemap https://happinesea.com/post-sitemap.xml",
@@ -1035,7 +1042,8 @@
         "rendered https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
         "rendered https://happinesea.com/download/rc4gs-firmware-v3-0-8",
         "rendered https://happinesea.com/news/202109281673.html",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/139"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/blog",
@@ -1075,7 +1083,7 @@
     {
       "legacy_url": "https://happinesea.com/category/engineering-drawing",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 17",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1100,7 +1108,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/17"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/engineering-drawing",
@@ -1114,7 +1123,7 @@
     {
       "legacy_url": "https://happinesea.com/category/experience",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 18",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1139,7 +1148,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/18"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/experience",
@@ -1153,7 +1163,7 @@
     {
       "legacy_url": "https://happinesea.com/category/news",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 19",
         "frontend src/pages/insights/index.astro",
@@ -1179,7 +1189,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/19"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/news",
@@ -1193,7 +1204,7 @@
     {
       "legacy_url": "https://happinesea.com/category/pixhawk",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 41",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1218,7 +1229,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/41"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/pixhawk",
@@ -1232,7 +1244,7 @@
     {
       "legacy_url": "https://happinesea.com/category/product",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 21",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1257,7 +1269,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/21"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/product",
@@ -1271,7 +1284,7 @@
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 22",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1296,7 +1309,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/22"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/radiolink-support",
@@ -1310,8 +1324,11 @@
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/at9s-manual",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
-      "source": ["REST category 38"],
+      "current_status": 200,
+      "source": [
+        "REST category 38",
+        "https://happinesea.com/wp-json/wp/v2/categories/38"
+      ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/radiolink-support/at9s-manual",
       "migration_status": "MIGRATE",
@@ -1324,7 +1341,7 @@
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/byme-a-manual",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 73",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1349,7 +1366,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/73"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/radiolink-support/byme-a-manual",
@@ -1363,7 +1381,7 @@
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/minipix-manual",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 40",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1388,7 +1406,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/40"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/radiolink-support/minipix-manual",
@@ -1402,7 +1421,7 @@
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 20",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1427,7 +1446,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/20"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
@@ -1453,7 +1473,7 @@
     {
       "legacy_url": "https://happinesea.com/category/radiolink-videos",
       "content_type": "category_archive",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST category 23",
         "sitemap https://happinesea.com/category-sitemap.xml",
@@ -1478,7 +1498,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/categories/23"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/category/radiolink-videos",
@@ -2172,7 +2193,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/233"
       ],
       "target_route": "/drawinglibrary",
       "canonical": "https://happinesea.com/drawinglibrary",
@@ -2218,7 +2240,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/141"
       ],
       "target_route": "/drone-rc-glossary",
       "canonical": "https://happinesea.com/drone-rc-glossary",
@@ -3221,15 +3244,17 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202003121.html",
       "canonical": "https://happinesea.com/news/202003121.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolinkの日本代理店、happinesea hobbyのサイトを立ち上げました。",
-        "Article readiness NEEDS_REVIEW: content mapping not approved"
-      ]
+        "Exact legacy HTML verified: /news/202003121.html; byte-identical to /insights/hello-world/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/hello-world/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/20200317107.html",
@@ -4084,15 +4109,17 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202108131635.html",
       "canonical": "https://happinesea.com/news/202108131635.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Yahoo!ショッピングで、マニュアルのまとめページを公開しました。",
-        "Article readiness NEEDS_REVIEW: content mapping not approved"
-      ]
+        "Exact legacy HTML verified: /news/202108131635.html; byte-identical to /insights/yahoo%e3%82%b7%e3%83%a7%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0%e3%81%a7%e3%80%81%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/yahoo%e3%82%b7%e3%83%a7%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0%e3%81%a7%e3%80%81%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202109281673.html",
@@ -4326,15 +4353,17 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202111301779.html",
       "canonical": "https://happinesea.com/news/202111301779.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC6GS V2で、RCカーのヘッドトラッキングFPV設定例(Radiolink RC6GS V2送信機、SKYZONE 02X FPV ゴーグル)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202111301779.html; byte-identical to /insights/head-tracking-set-up-on-rc-cars-radiolink-rc6gs-v2-transmitter-and-skyzone-02x-fpv-goggle/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/head-tracking-set-up-on-rc-cars-radiolink-rc6gs-v2-transmitter-and-skyzone-02x-fpv-goggle/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202112151810.html",
@@ -4776,15 +4805,17 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202206092005.html",
       "canonical": "https://happinesea.com/news/202206092005.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS V3、RC6GS V3の日本語版マニュアルを翻訳中です。",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202206092005.html; byte-identical to /insights/rc4gs-v3%e3%80%81rc6gs-v3%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e7%89%88%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e7%bf%bb%e8%a8%b3%e4%b8%ad%e3%81%a7%e3%81%99%e3%80%82/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc4gs-v3%e3%80%81rc6gs-v3%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e7%89%88%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e7%bf%bb%e8%a8%b3%e4%b8%ad%e3%81%a7%e3%81%99%e3%80%82/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202206092005.html/attachment/20220609",
@@ -5414,10 +5445,11 @@
     {
       "legacy_url": "https://happinesea.com/page-examples",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 216",
-        "sitemap https://happinesea.com/page-sitemap.xml"
+        "sitemap https://happinesea.com/page-sitemap.xml",
+        "https://happinesea.com/wp-json/wp/v2/pages/216"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/page-examples",
@@ -5457,7 +5489,7 @@
     {
       "legacy_url": "https://happinesea.com/privacy-policy",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 3",
         "sitemap https://happinesea.com/page-sitemap.xml",
@@ -5482,7 +5514,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/3"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/privacy-policy",
@@ -5623,7 +5656,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/1160"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink",
@@ -5676,7 +5710,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/1035"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual",
@@ -5732,7 +5767,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/1664"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
@@ -5760,7 +5796,7 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 934",
         "sitemap https://happinesea.com/page-sitemap.xml",
@@ -5785,7 +5821,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/934"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
@@ -5804,7 +5841,8 @@
       "source": [
         "REST page 1405",
         "sitemap https://happinesea.com/page-sitemap.xml",
-        "rendered https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual"
+        "rendered https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual",
+        "https://happinesea.com/wp-json/wp/v2/pages/1405"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual",
@@ -5845,7 +5883,7 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/r6dsm-manual",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 969",
         "sitemap https://happinesea.com/page-sitemap.xml",
@@ -5870,7 +5908,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/969"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/r6dsm-manual",
@@ -5988,7 +6027,7 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/rc4gs-manual",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 921",
         "sitemap https://happinesea.com/page-sitemap.xml",
@@ -6013,7 +6052,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/921"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/rc4gs-manual",
@@ -6053,7 +6093,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/1344"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
@@ -6103,7 +6144,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/1594"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-q-and-a",
@@ -6156,7 +6198,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/1604"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq",
@@ -6205,7 +6248,8 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink/rc4gs",
         "rendered https://happinesea.com/radiolink",
-        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
+        "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
+        "https://happinesea.com/wp-json/wp/v2/pages/2108"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-q-and-a/rssi-test",
@@ -6378,15 +6422,17 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/radiolink-support/20200313160.html/embed"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/20200313160.html",
       "canonical": "https://happinesea.com/radiolink-support/20200313160.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GSファームウェアアップグレード手順",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/20200313160.html; byte-identical to /insights/tips-for-travelling-with-an-infant/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/tips-for-travelling-with-an-infant/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/20200313160.html/attachment/20181210174049778",
@@ -9460,15 +9506,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-videos/202105071546.html",
       "canonical": "https://happinesea.com/radiolink-videos/202105071546.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink RC4GS 4チャンネル、ジャイロ機能付きプロポセットを開封します！",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-videos/202105071546.html; byte-identical to /insights/radiolink-rc4gs-4%e3%83%81%e3%83%a3%e3%83%b3%e3%83%8d%e3%83%ab%e3%80%81%e3%82%b8%e3%83%a3%e3%82%a4%e3%83%ad%e6%a9%9f%e8%83%bd%e4%bb%98%e3%81%8d%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/radiolink-rc4gs-4%e3%83%81%e3%83%a3%e3%83%b3%e3%83%8d%e3%83%ab%e3%80%81%e3%82%b8%e3%83%a3%e3%82%a4%e3%83%ad%e6%a9%9f%e8%83%bd%e4%bb%98%e3%81%8d%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202105071548.html",
@@ -9498,15 +9546,17 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-videos/202111271774.html",
       "canonical": "https://happinesea.com/radiolink-videos/202111271774.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: FPV!? RC6GS V2/RC4GS V2で新たなRCカー生活へ",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-videos/202111271774.html; byte-identical to /insights/starting-new-rc-fpv-car-world-your-partner-radiolink-rc4gs-v2-rc6gs-v2/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/starting-new-rc-fpv-car-world-your-partner-radiolink-rc4gs-v2-rc6gs-v2/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202112071798.html",
@@ -9702,7 +9752,8 @@
         "content 1160",
         "sitemap https://happinesea.com/page-sitemap.xml",
         "rendered https://happinesea.com/radiolink/rc4gs",
-        "rendered https://happinesea.com/radiolink"
+        "rendered https://happinesea.com/radiolink",
+        "https://happinesea.com/wp-json/wp/v2/pages/1172"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink/rc4gs",
@@ -10539,7 +10590,8 @@
       "source": [
         "REST page 2122",
         "sitemap https://happinesea.com/page-sitemap.xml",
-        "rendered https://happinesea.com/rc8x_firmewar_upgarde"
+        "rendered https://happinesea.com/rc8x_firmewar_upgarde",
+        "https://happinesea.com/wp-json/wp/v2/pages/2122"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/rc8x_firmewar_upgarde",
@@ -10582,7 +10634,8 @@
       "current_status": "UNVERIFIED",
       "source": [
         "REST page 2",
-        "sitemap https://happinesea.com/page-sitemap.xml"
+        "sitemap https://happinesea.com/page-sitemap.xml",
+        "https://happinesea.com/wp-json/wp/v2/pages/2"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/sample-page",
@@ -10594,10 +10647,11 @@
     {
       "legacy_url": "https://happinesea.com/sample-page-2",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 241",
-        "sitemap https://happinesea.com/page-sitemap.xml"
+        "sitemap https://happinesea.com/page-sitemap.xml",
+        "https://happinesea.com/wp-json/wp/v2/pages/241"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/sample-page-2",
@@ -10819,10 +10873,11 @@
     {
       "legacy_url": "https://happinesea.com/style-guide",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 207",
-        "sitemap https://happinesea.com/page-sitemap.xml"
+        "sitemap https://happinesea.com/page-sitemap.xml",
+        "https://happinesea.com/wp-json/wp/v2/pages/207"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/style-guide",
@@ -12500,11 +12555,12 @@
     {
       "legacy_url": "https://happinesea.com/ufaq/faq-rc4gs-rc6gs-telemetry",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST FAQ 1622",
         "sitemap https://happinesea.com/ufaq-sitemap.xml",
-        "rendered https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa"
+        "rendered https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa",
+        "https://happinesea.com/wp-json/wp/v2/ufaq/1622"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/ufaq/faq-rc4gs-rc6gs-telemetry",
@@ -12522,7 +12578,8 @@
       "current_status": 200,
       "source": [
         "REST FAQ 1603",
-        "sitemap https://happinesea.com/ufaq-sitemap.xml"
+        "sitemap https://happinesea.com/ufaq-sitemap.xml",
+        "https://happinesea.com/wp-json/wp/v2/ufaq/1603"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa",
@@ -12546,7 +12603,7 @@
     {
       "legacy_url": "https://happinesea.com/ufaq/radiolink%E3%81%AE%E3%83%9B%E3%82%A4%E3%83%A9%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E3%83%97%E3%83%AD%E3%83%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%83%90%E3%83%83%E3%83%86%E3%83%AA",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "rendered https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa"
       ],
@@ -12564,7 +12621,8 @@
       "source": [
         "REST FAQ 1625",
         "sitemap https://happinesea.com/ufaq-sitemap.xml",
-        "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f"
+        "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
+        "https://happinesea.com/wp-json/wp/v2/ufaq/1625"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f",
@@ -12588,7 +12646,7 @@
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%A8%E4%BA%A4%E6%8F%9B%E6%80%A7%E3%81%82%E3%82%8B%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82%E4%BB%96%E7%A4%BE%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f"
       ],
@@ -12602,11 +12660,12 @@
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e3%80%81%e3%83%88%e3%83%a9%e3%82%af%e3%82%b5%e3%82%b9traxxas%e7%ad%89%e3%80%81%e3%83%84%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%82%bf%e3%82%92%e6%93%8d%e7%b8%a6%e3%81%a7%e3%81%8d",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST FAQ 1623",
         "sitemap https://happinesea.com/ufaq-sitemap.xml",
-        "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f"
+        "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
+        "https://happinesea.com/wp-json/wp/v2/ufaq/1623"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e3%80%81%e3%83%88%e3%83%a9%e3%82%af%e3%82%b5%e3%82%b9traxxas%e7%ad%89%e3%80%81%e3%83%84%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%82%bf%e3%82%92%e6%93%8d%e7%b8%a6%e3%81%a7%e3%81%8d",
@@ -12625,7 +12684,8 @@
       "source": [
         "REST FAQ 1624",
         "sitemap https://happinesea.com/ufaq-sitemap.xml",
-        "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f"
+        "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f",
+        "https://happinesea.com/wp-json/wp/v2/ufaq/1624"
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
@@ -12647,7 +12707,7 @@
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%AF%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%95%B0%E3%81%AF%EF%BC%9F",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f"
       ],
@@ -12661,7 +12721,7 @@
     {
       "legacy_url": "https://happinesea.com/ufaq/ufaq-category/faq-wheeler",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": ["sitemap https://happinesea.com/ufaq-category-sitemap.xml"],
       "target_route": null,
       "canonical": null,
@@ -22674,12 +22734,12 @@
       "received_bytes": 9821
     }
   ],
-  "reconciled_at": "2026-10-07T05:38:51.389Z",
+  "reconciled_at": "2026-10-07T06:13:17.373Z",
   "migration": {
-    "migrated_articles": 26,
-    "insight_articles": 21,
+    "migrated_articles": 33,
+    "insight_articles": 28,
     "drawing_articles": 5,
-    "exact_legacy_html_routes": 26
+    "exact_legacy_html_routes": 33
   },
   "compatibility": {
     "verified_pages": 14,

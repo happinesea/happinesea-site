@@ -37,6 +37,11 @@ for (const article of manifest.articles) {
       article.canonical,
     );
     for (const image of await page.locator('img').all()) {
+      expect(
+        new URL(
+          await image.evaluate((element: HTMLImageElement) => element.src),
+        ).origin,
+      ).toBe(new URL(page.url()).origin);
       await image.scrollIntoViewIfNeeded();
       expect(
         await image.evaluate((element: HTMLImageElement) =>

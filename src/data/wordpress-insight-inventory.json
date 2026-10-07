@@ -2,8 +2,8 @@
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
   "expected_count": 97,
   "status_counts": {
-    "READY": 21,
-    "NEEDS_REVIEW": 65,
+    "READY": 28,
+    "NEEDS_REVIEW": 58,
     "NEEDS_TRANSFORM": 6,
     "BLOCKED": 5
   },
@@ -566,15 +566,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/rc4gs-v3%e3%80%81rc6gs-v3%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e7%89%88%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e7%bf%bb%e8%a8%b3%e4%b8%ad%e3%81%a7%e3%81%99%e3%80%82/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1998,
@@ -1145,15 +1139,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/head-tracking-set-up-on-rc-cars-radiolink-rc6gs-v2-transmitter-and-skyzone-02x-fpv-goggle/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1774,
@@ -1181,15 +1169,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/starting-new-rc-fpv-car-world-your-partner-radiolink-rc4gs-v2-rc6gs-v2/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1758,
@@ -1665,12 +1647,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": ["content mapping not approved"]
-      }
+      "content_type": "insight",
+      "route": "/insights/yahoo%e3%82%b7%e3%83%a7%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0%e3%81%a7%e3%80%81%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1627,
@@ -1879,15 +1858,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/radiolink-rc4gs-4%e3%83%81%e3%83%a3%e3%83%b3%e3%83%8d%e3%83%ab%e3%80%81%e3%82%b8%e3%83%a3%e3%82%a4%e3%83%ad%e6%a9%9f%e8%83%bd%e4%bb%98%e3%81%8d%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 1548,
@@ -3434,15 +3407,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
-      }
+      "content_type": "insight",
+      "route": "/insights/tips-for-travelling-with-an-infant/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 114,
@@ -3504,12 +3471,9 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": ["content mapping not approved"]
-      }
+      "content_type": "insight",
+      "route": "/insights/hello-world/",
+      "readiness": { "status": "READY", "reasons": [] }
     },
     {
       "id": 47,
