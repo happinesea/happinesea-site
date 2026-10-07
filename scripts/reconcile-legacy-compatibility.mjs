@@ -2,7 +2,10 @@ import { execFileSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { format } from 'prettier';
-import { finalizeLegacyOutputs } from './lib/legacy-compatibility.mjs';
+import {
+  finalizeLegacyOutputs,
+  reconcileObservedVariants,
+} from './lib/legacy-compatibility.mjs';
 import {
   cutoverSummary,
   sameCanonical,
@@ -63,6 +66,7 @@ for (const page of compatibility.pages) {
     'Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture.',
   );
 }
+reconcileObservedVariants(audit.entries, compatibility.pages);
 for (const asset of compatibility.assets) {
   const query = new URL(asset.source_url).searchParams.has('wpdmdl');
   const fileSource = query ? asset.final_url : asset.source_url;

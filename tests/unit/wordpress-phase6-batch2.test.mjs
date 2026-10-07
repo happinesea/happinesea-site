@@ -34,7 +34,7 @@ test('batch 2 preserves reviewed source text, links, categories, embeds and orig
   }
 });
 
-test('editorial surface audit retains every public REST page, FAQ and category without claiming archive compatibility', () => {
+test('editorial surface audit retains every public REST page, FAQ and category and requires output proof for compatibility', () => {
   const path = new URL(
     '../../src/data/legacy-editorial-surface-review.json',
     import.meta.url,
@@ -53,8 +53,20 @@ test('editorial surface audit retains every public REST page, FAQ and category w
     assert.ok(
       item.http_status === 'UNVERIFIED' || Number.isInteger(item.http_status),
     );
-    if (item.content_type === 'category_archive')
-      assert.notEqual(entry.migration_status, 'READY');
+    if (
+      item.content_type === 'category_archive' &&
+      entry.migration_status === 'READY'
+    ) {
+      assert.equal(item.compatibility_class, 'ARCHIVE_COMPAT');
+      assert.equal(entry.static_output, 'VERIFIED');
+      assert.ok(
+        read('../../src/data/legacy-compatibility.json').pages.some(
+          (page) =>
+            page.target_route === entry.target_route &&
+            page.canonical === entry.canonical,
+        ),
+      );
+    }
     if (item.error) assert.equal(item.http_status, 'UNVERIFIED');
   }
   assert.equal(audit.supplemental_faq_surfaces.length, 5);
@@ -64,6 +76,11 @@ test('editorial surface audit retains every public REST page, FAQ and category w
     );
     assert.ok(entry, `missing supplemental FAQ URL ${item.legacy_url}`);
     assert.equal(entry.current_status, item.http_status);
-    assert.notEqual(entry.migration_status, 'READY');
+    if (entry.migration_status === 'READY') {
+      assert.ok(
+        ['READY_AS_IS', 'ARCHIVE_COMPAT'].includes(item.compatibility_class),
+      );
+      assert.equal(entry.static_output, 'VERIFIED');
+    }
   }
 });

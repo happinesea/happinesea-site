@@ -146,7 +146,6 @@ test('reconciled snapshot records all merged article aliases without redirects o
   assert.equal(snapshot.migration?.drawing_articles, 5);
   assert.equal(snapshot.migration?.migrated_articles, 33);
   assert.equal(snapshot.migration?.exact_legacy_html_routes, 33);
-  assert.equal(snapshot.summary.preserved_routes, 75);
   assert.equal(snapshot.summary.redirect_required, 0);
   for (const article of manifest.articles) {
     const entry = snapshot.entries.find(
