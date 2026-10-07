@@ -35,7 +35,7 @@ const content = page.content_html.replaceAll(
       !knownRoutes.has(decodeURIComponent(url.pathname))
     )
       return match;
-    return `${attr}="${withBase(url.pathname + url.search + url.hash)}"`;
+    return `${attr}="${withBase(url.pathname + url.search + (url.hash || (value.endsWith('#') ? '#' : '')))}"`;
   },
 );
 ---

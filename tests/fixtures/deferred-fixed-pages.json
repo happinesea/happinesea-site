@@ -1,0 +1,66 @@
+[
+  {
+    "id": 2122,
+    "canonical": "https://happinesea.com/rc8x_firmewar_upgarde",
+    "content_html": "\n<p>RC8Xのファームウェアをアップグレードの手順は以下となります。</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" loading=\"lazy\" width=\"853\" height=\"1024\" src=\"https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-853x1024.jpg\" alt=\"\" class=\"wp-image-2123\" srcset=\"https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-853x1024.jpg 853w, https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-250x300.jpg 250w, https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-768x922.jpg 768w, https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-1280x1536.jpg 1280w, https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-1707x2048.jpg 1707w\" sizes=\"(max-width: 853px) 100vw, 853px\" /></figure>\n",
+    "links": [],
+    "images": [
+      {
+        "source_url": "https://happinesea.com/wp-content/uploads/2023/07/RC8Xupdate-853x1024.jpg",
+        "sha256": "89bd008b4ee94e9cd724208e875f5de30a53e20710e482008483915b10f0fcb0",
+        "alt": "RC8X ファームウェアアップグレードガイド。カスタマイズ音声等、リセットされる事があります。Step 1からStep 11までの操作画面と手順。"
+      }
+    ]
+  },
+  {
+    "id": 2108,
+    "canonical": "https://happinesea.com/radiolink-q-and-a/rssi-test",
+    "content_html": "\n<p><a href=\"https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq#\"></a></p>\n\n\n\n<p>Radiolinkのホイラータイプの送信機と受信機の操縦距離が短くなった？とか、調子が悪くなり、状況の確認、故障個所を特定する際に、以下RSSI値確認手順を従って、確認してください。<br>ご確認された映像などは、アフターサービスへ問合せする際に、状況を説明するエビデンスとなります。</p>\n\n\n\n<p>対応する送信機の型番：RC4GS、RC4GS V2以降、RC6GS、RC6GS V2以降となります。RC8Xの場合、操作画面が異なるので、読み替えて下さい。</p>\n\n\n\n<p><strong>RSSIテスト方法：</strong></p>\n\n\n<div class=\"wp-block-image\">\n<figure class=\"aligncenter size-full\"><img decoding=\"async\" loading=\"lazy\" width=\"411\" height=\"193\" src=\"https://happinesea.com/wp-content/uploads/2020/12/RC6GS_4.png\" alt=\"\" class=\"wp-image-1375\" srcset=\"https://happinesea.com/wp-content/uploads/2020/12/RC6GS_4.png 411w, https://happinesea.com/wp-content/uploads/2020/12/RC6GS_4-300x141.png 300w\" sizes=\"(max-width: 411px) 100vw, 411px\" /></figure></div>\n\n\n<ol>\n<li>電源ONして、受信機と接続する状態にします。<br>正常に接続した場合、上の図の左側に、電波のマークが画面の上に表示されます。<br>(※尚、バインディングされてない場合、予め受信機のバインディングしてください。)</li>\n\n\n\n<li>Exitキーを2回押下して、上図の右側のように、RSSIと他のテレメトリーの情報を確認できます。</li>\n\n\n\n<li>送信機と受信機を以下の図のように、距離を離れておきます。<br>1つのアンテナと2つのアンテナを持つ受信器は異なるので、必要に応じて設置してください。</li>\n</ol>\n\n\n<div class=\"wp-block-image\">\n<figure class=\"aligncenter size-full is-resized\"><img decoding=\"async\" loading=\"lazy\" src=\"https://happinesea.com/wp-content/uploads/2023/06/5717828.png\" alt=\"\" class=\"wp-image-2112\" width=\"576\" height=\"193\" srcset=\"https://happinesea.com/wp-content/uploads/2023/06/5717828.png 987w, https://happinesea.com/wp-content/uploads/2023/06/5717828-300x101.png 300w, https://happinesea.com/wp-content/uploads/2023/06/5717828-768x258.png 768w\" sizes=\"(max-width: 576px) 100vw, 576px\" /></figure></div>\n\n\n<p>送信機画面のRSSI値を観測してください。</p>\n\n\n\n<p>①1つのアンテナの受信機(R6FG, R6F, R4FGM, R4F, R8EF, R8FM, R8SM)<br>　送信機と20センチほどの距離を置く時、RSSI値は、0～-30dbmの範囲内であれば、正常です。<br>0に近い数値ほど、電波が強いことを表します。</p>\n\n\n\n<p>②2つのアンテナの受信機(R8F, R7FG、R8FG)<br>　送信機と50センチほどの距離を置く時、RSSI値は、0～-30dbmの範囲内であれば、正常です。<br>こちらも同様に、0に近い数値ほど、電波の強度が強いことを表します。</p>\n\n\n\n<p>Radiolinkの送信機のRSSI値の範囲は0 ～ -99dbmです。-99dbmは電波の強度が一番弱い事を表します。</p>\n\n\n\n<p><strong>電波強度異常時の対応方法：</strong></p>\n\n\n\n<ol>\n<li>送信機と受信機のアンテナに、破損がないかどうかを確認する事です。<br>電波強度異常の場合、アンテナの破損が一番多いです。<br>アンテナの破損を確認した場合、アンテナの交換等、アフターサービスにお問い合わせ下さい。</li>\n\n\n\n<li>アンテナの破損なく、原因不明の場合、<br>別の受信機でRSSIの確認してください。</li>\n</ol>\n\n\n\n<p><strong>アフターサービスの問い合わせについて</strong></p>\n\n\n\n<p>小売店の方にお問い合わせして頂くか、本系のメール(after_service@radiolink.com.cn)にお問い合わせして頂くことになります。<br>happineseaにて、ご購入された場合、info@happinesea.comへ、直接メールをして下さい。</p>\n",
+    "links": [
+      "https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq#"
+    ],
+    "images": [
+      {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/12/RC6GS_4.png",
+        "sha256": "211bd485ac5793d48b0f5b0826fc5f419455c8e62c93c7a3c67cd2e19516eb1e",
+        "alt": "RC6GSの画面。左は電波マークのある通常画面、右はRSSI -31dBm、RATE、EXT、RXを表示した画面。"
+      },
+      {
+        "source_url": "https://happinesea.com/wp-content/uploads/2023/06/5717828.png",
+        "sha256": "7ea2ba09136aa3a2dae4014f6c2fa39a27030433e8902c5c48a0fe07dab7d261",
+        "alt": "RSSI確認時の送信機と受信機の配置。左はアンテナ1本で20センチ、右はアンテナ2本で50センチ。"
+      }
+    ]
+  },
+  {
+    "id": 1405,
+    "canonical": "https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual",
+    "content_html": "\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" loading=\"lazy\" width=\"776\" height=\"653\" src=\"https://happinesea.com/wp-content/uploads/2021/01/pixhawk-1.png\" alt=\"\" class=\"wp-image-1407\" srcset=\"https://happinesea.com/wp-content/uploads/2021/01/pixhawk-1.png 776w, https://happinesea.com/wp-content/uploads/2021/01/pixhawk-1-300x252.png 300w, https://happinesea.com/wp-content/uploads/2021/01/pixhawk-1-768x646.png 768w\" sizes=\"(max-width: 776px) 100vw, 776px\" /></figure>\n\n\n\n<h2 class=\"has-text-align-center wp-block-heading\">ユーザマニュアル</h2>\n\n\n\n<p>対応モデル：固定翼飛行機/グライダー/マルチコプター/ヘリコプター/カー/ボート/ロボット</p>\n\n\n\n<p>日本語版(準備中)</p>\n\n\n\n<p><a href=\"https://radiolink.com/pixhawk_manual\" target=\"_blank\" rel=\"noreferrer noopener\">英語版</a></p>\n",
+    "links": ["https://radiolink.com/pixhawk_manual"],
+    "images": [
+      {
+        "source_url": "https://happinesea.com/wp-content/uploads/2021/01/pixhawk-1.png",
+        "sha256": "c3342998abe00659e0bba7b28f6a93aa6863dd6e54c5083a194000e846b6c4ab",
+        "alt": "Radiolink PIXHAWKの外観と端子配置。"
+      }
+    ]
+  },
+  {
+    "id": 969,
+    "canonical": "https://happinesea.com/radiolink-productions-manual/r6dsm-manual",
+    "content_html": "\n<p><strong>R6DSMとは</strong><br>R6DSMは、受信距離600メートル、DSSS/FHSS通信方式対応の受信機です。PMWジッタ最大1.84us、通常0.5usのハイスピードを実現しています。</p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large\"><img decoding=\"async\" loading=\"lazy\" width=\"1024\" height=\"275\" src=\"https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1-1024x275.jpg\" alt=\"\" class=\"wp-image-986\" srcset=\"https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1-1024x275.jpg 1024w, https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1-300x81.jpg 300w, https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1-768x206.jpg 768w, https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1-1536x413.jpg 1536w, https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1.jpg 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure></div>\n\n\n\n<p><strong>SBUS/PPMを対応</strong><br>R6DSMはSBUS/PPMの10チャンネル出力を対応します。<br>重さ1.5gで、15×13mmの小さいサイズで、ミニレーシングドローンや、グライダーの全ての需要に満たしているでしょう。<br>以下のフライトコントローラーと交換性があります。1本のケーブルで接続するので、設置はシンプルにできます。</p>\n\n\n\n<ul><li>PIXHAWK</li><li>MINI PIX</li><li>TURBO PIX</li><li>APM</li><li>MINI APM</li><li>DJI NAZA</li><li>ZERO TECH</li><li>NAZE 32</li><li>CC3D</li></ul>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large is-resized\"><img decoding=\"async\" loading=\"lazy\" src=\"https://happinesea.com/wp-content/uploads/2020/06/R6DSM_3.jpg\" alt=\"\" class=\"wp-image-992\" width=\"251\" height=\"164\" srcset=\"https://happinesea.com/wp-content/uploads/2020/06/R6DSM_3.jpg 528w, https://happinesea.com/wp-content/uploads/2020/06/R6DSM_3-300x195.jpg 300w\" sizes=\"(max-width: 251px) 100vw, 251px\" /></figure></div>\n\n\n\n<p><strong>スペック情報：</strong></p>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td>サイズ</td><td>15×13mm</td></tr><tr><td>重さ</td><td>1.5g</td></tr><tr><td>CH数</td><td>10</td></tr><tr><td>出力信号方式</td><td>SBUS/PPM</td></tr><tr><td>動作電圧</td><td>4.8-6.0V</td></tr><tr><td>動作電流</td><td>38-45mA@5V</td></tr><tr><td>セクション制度</td><td>4096,0.25us/セクション</td></tr><tr><td>制御距離</td><td>600m<br>(空中、実際の制御距離は周りの電波環境に影響されます。)</td></tr><tr><td>対応送信機</td><td>AT9、AT9S、AT9S PRO、AT10、 AT10II</td></tr><tr><td></td><td></td></tr></tbody></table></figure>\n\n\n\n<p><strong>二つの動作モードと切替</strong>：<br>モード1(SBUSモード)<br>　ブル/紫 LED点滅の場合、最大10CHのSBUS信号出力の動作モードで稼働中<br>モード2(PPMモード)：<br>　赤LED点灯の場合、最大10CHのPPM信号出力の動作モードで稼働中<br><br>バインディングボタンを1秒以内に、2回押下することで、SBUS/PPMの2動作モードの切替はできます。LEDの点滅方法が変わったら、切替操作は成功したことを確認できます。</p>\n\n\n\n<p><strong>送信機とのバインディング：</strong><br>R6DSMはRadiolink社製の対象となる送信機のみ、対応します。対象機種について、前文のスペック情報を確認してください。<br>バインディングの手順が以下となります。</p>\n\n\n\n<ol><li>送信機と約1メートルほど離れて操作を行います。</li><li>送信機、R6DSMの順で、電源をONにします。</li><li>ESC、サーボ、又は、フライトコントローラーをR6DSMに接続します。</li><li>R6DSMのバインディングボタンを約2秒ほど長押して、離す、約8回繰り返して、LEDが点灯になったら、バインディングが成功になります。</li></ol>\n\n\n\n<p><strong>アンテナ―の取り扱いについて</strong></p>\n\n\n\n<ol><li>制御の有効範囲に影響するので、アンテナ―が成るべく真直ぐように保つ事を推奨します。</li><li>大型R/C飛行機など、金属の部品が電波に大きく影響する可能性があるため、成るべく、胴体の両辺からはみだすようにし、どんな姿勢でも電波のよく届く状態を保つよう、心掛けして、設置すること。</li><li>アンテナ―は金属や、カーボンなどの導電性のある材料から、少なくとも12mmで離すこと。</li><li>小さい半径でアンテナ―を曲げないこと。</li><li>可能な限り、モーター、ESC等、ノイズの発生しやすい部品から離れるところに設置すること。</li><li>強い衝撃から受信機を守るために、スポンジなどの緩衝材で梱包して設置することをお勧めします。</li></ol>\n\n\n\n<p>また、受信機の正しく動作させるために、送信機の電源をOFFした状態で、受信機の電源をつけるようにしてください。</p>\n",
+    "links": [],
+    "images": [
+      {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1-1024x275.jpg",
+        "sha256": "0cce062a43f22002207e9a266897b63ec0bc6ebe48d8409cf0657afe5b921f46",
+        "alt": "3台のフライトコントローラーと受信機を矢印で示した図。"
+      },
+      {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/R6DSM_3.jpg",
+        "sha256": "51ae6eacf72116bc7eda9ff3b5caae2aae9976a4d7c35796a746e5fdc5bc1acb",
+        "alt": "R6DSM受信機の寸法図。横15mm、縦13mm。"
+      }
+    ]
+  }
+]
