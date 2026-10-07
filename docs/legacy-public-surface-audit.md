@@ -3,10 +3,16 @@
 ## Scope and evidence
 
 This is a discovery snapshot, not approval to switch domains, delete URLs, or
-generate redirects. Baseline: `origin/main` commit `5748002`. The homepage design
+generate redirects. Reconciled baseline: `origin/main` commit
+`fd0eb42507a45901c1378b3c8e136b70e223a552` (PR #23 merged). The homepage design
 is unchanged. The machine-readable inventory is
 `src/data/legacy-public-surface.json`; rerun with
 `node scripts/audit-legacy-public-surface.mjs`.
+After a fresh build, run `node scripts/reconcile-legacy-public-surface.mjs`
+to verify article aliases and refresh migration counts without repeating source
+HTTP probes. `observed_at` remains the original HTTP discovery timestamp;
+`reconciled_at` records the newer static-output verification. Source HTTP status
+is not replaced with an inferred 200 merely because local output exists.
 
 Sources: unauthenticated published WordPress REST posts/pages/categories/media,
 public `ufaq` records, Yoast sitemap index/children, links in public article/page
@@ -24,8 +30,8 @@ URLs, 649 image URLs and 385 attachment pages. These overlapping source counts
 are not additive; the exact disjoint classification is in `summary.by_type`.
 There are 1,282 HTTP-unverified records, eight blocked surfaces, 672 original
 asset URL compatibility candidates and 379 possible attachment-page orphans.
-No preserved legacy output is claimed on this audit baseline; 11 article paths
-need compatibility work. Only 40 HTML routes and 30 original assets were probed;
+There are 21 verified exact legacy article outputs, zero article redirects
+required and 1,319 unresolved surfaces. Only 40 HTML routes and 30 original assets were probed;
 14 attempts remained unverified. Two supplemental GET probes returned HTML with
 HTTP 200 for the drawing library and glossary; their content publication remains
 unreviewed. These two observations are recorded separately in discovery metadata.
@@ -74,13 +80,16 @@ the same-origin route inventory and must still be reviewed per migration batch.
 
 ## Article migration relationship
 
-This audit PR is independent of the first safe migration batch. Its baseline has
-11 published article copies at `/insights/<slug>/`; their old `.html` paths are
-marked `REDIRECT` as compatibility work required, not an implemented redirect.
-The companion migration batch adds ten reviewed articles (21 total) and copies
-the generated article HTML to all 21 exact legacy `.html` paths without redirect
-or canonical changes. Merge/rebase reconciliation of this snapshot is still
-required; it does not claim the companion branch has been deployed.
+PR #23 is merged; this audit branch incorporates that main baseline. All 21
+published article copies and exact legacy `.html` outputs are verified against
+the merged manifest. Each alias must be byte-identical to its generated Insight
+article and retain the exact canonical before promotion to `READY`.
+`target_route` is the exact legacy path; `publication_route` is the corresponding
+`/insights/<slug>/` route. Missing/mismatched output or canonical drift fails
+reconciliation before inventory mutation. No redirects are required for these
+21 paths. Source HTTP observations, original asset compatibility and all
+unmapped surfaces retain their existing evidence/status. Phase 6 article counts:
+97 total, 21 migrated, 65 NEEDS_REVIEW, 6 NEEDS_TRANSFORM, 5 BLOCKED.
 
 Remaining transformation/blocker investigations are not bypassed:
 
@@ -115,14 +124,22 @@ Analytics or AdSense change is included. Domain cutover remains a user decision.
 ## Verification
 
 - `npm run validate`: passed (unit, Astro check, lint, format, live WordPress
-  inventory/sync, static build and 23 build-output tests). Final unit rerun:
-  28 passed, including snapshot integrity and canonical comparison.
-- Local static preview: homepage/support and carousel desktop/mobile Playwright,
-  14 passed; first-party console errors, overflow, broken internal links and
-  image failures: zero in tested routes. Actual desktop/mobile captures inspected;
-  no homepage markup/CSS changes are part of this PR.
+  inventory/sync, static build and 23 build-output tests). The reconciled baseline
+  passed 35 unit tests, including eight audit/reconciliation tests. All 21 exact
+  legacy aliases were copied during the fresh build and verified again afterward.
+- Local static preview: all 21 articles/exact aliases plus homepage/support and
+  carousel desktop/mobile Playwright, 56 passed. First-party console errors,
+  overflow, broken internal links and image failures: zero in tested routes;
+  legacy aliases returned HTTP 200 without redirects. Existing narrowly matched
+  YouTube player permissions-policy diagnostics remain separately annotated,
+  not a claim of zero messages from every third-party frame. No homepage
+  markup/CSS changes are part of this reconciliation.
 - Independent read-only review: no P0/P1/P2 findings. Snapshot is not a claim that
   all legacy routes, downloads or canonicals have passed QA.
-- Branch deployment/CI is not claimed. Existing Actions only deploys main or an
-  explicitly dispatched workflow; no workflow, protection or deployment settings
-  are changed. New branch changes are verified locally, not yet on Pages.
+- Branch deployment/CI is not claimed. Main run
+  [37237900687](https://github.com/happinesea/happinesea-site/actions/runs/37237900687)
+  for `fd0eb425` passed check but failed build with TimeoutError after WordPress
+  inventory; deploy/browser-check were skipped. This observation does not establish
+  a server root cause. The successful local live sync/build is separate evidence,
+  not proof of a successful Pages deployment. No workflow, protection or deployment
+  settings are changed.
