@@ -5,6 +5,33 @@ import test from 'node:test';
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 
+test('localized article body images include the Pages base on all article and linked compatibility routes', async () => {
+  const articles = JSON.parse(
+    await readFile(
+      new URL('../src/data/wordpress-insights.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  for (const article of articles) {
+    if (!article.body_assets.length) continue;
+    const paths = [
+      `insights/${decodeURIComponent(article.slug)}/index.html`,
+      new URL(article.canonical).pathname.slice(1),
+    ];
+    if ([1075, 1086].includes(article.contract.id))
+      paths.push(`news/20200628${article.contract.id}.html`);
+    for (const path of paths) {
+      const html = await route(path);
+      for (const image of article.body_assets)
+        assert.ok(
+          html.includes(`src="/happinesea-site${image.src}"`),
+          `body image base missing: ${path} ${image.src}`,
+        );
+      assert.doesNotMatch(html, /src="\/assets\/insights\/wordpress\//);
+    }
+  }
+});
+
 test('home puts articles and hobby resources before Radiolink', async () => {
   const html = await route('index.html');
 
@@ -331,7 +358,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 43);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 58);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
@@ -344,15 +371,22 @@ test('insights index exposes all editorial topics', async () => {
 });
 
 test('WordPress insight batch emits sanitized static routes with local images and legacy canonicals', async () => {
-  const contentImageReviews = JSON.parse(
-    await readFile(
-      new URL(
-        './fixtures/wordpress-phase6-review-batch3.json',
-        import.meta.url,
+  const contentImageReviews = (
+    await Promise.all(
+      [3, 4].map(
+        async (batch) =>
+          JSON.parse(
+            await readFile(
+              new URL(
+                `./fixtures/wordpress-phase6-review-batch${batch}.json`,
+                import.meta.url,
+              ),
+              'utf8',
+            ),
+          ).articles,
       ),
-      'utf8',
-    ),
-  ).articles;
+    )
+  ).flat();
   const articles = JSON.parse(
     await readFile(
       new URL('../src/data/wordpress-insights.json', import.meta.url),
@@ -376,16 +410,20 @@ test('WordPress insight batch emits sanitized static routes with local images an
       html,
       new RegExp(`<link rel="canonical" href="${article.canonical}"`),
     );
-    if (article.contract.id === 1635) {
+    if (!article.hero) {
       assert.equal(article.hero, null);
-      assert.doesNotMatch(html, /<img\b/);
+      if (article.body_assets.length === 0) assert.doesNotMatch(html, /<img\b/);
     } else {
       assert.match(html, new RegExp(`/happinesea-site${article.hero.src}`));
       const reviewed = contentImageReviews.find(
         (item) => item.id === article.contract.id,
       );
-      if (reviewed)
-        assert.ok(html.includes(`alt="${reviewed.featured_image_review.alt}"`));
+      if (reviewed?.featured_image_review)
+        assert.ok(
+          html.includes(
+            `alt="${reviewed.source_record._embedded['wp:featuredmedia'][0].alt_text || reviewed.featured_image_review.alt}"`,
+          ),
+        );
       else
         assert.match(
           html,

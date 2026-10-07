@@ -2310,6 +2310,108 @@
       "observed_at": "2026-10-07T11:26:02.998Z",
       "download_id": "2032",
       "download_target": "/downloads/rc6gs-v3-manual-2032.pdf"
+    },
+    {
+      "id": "article-variant-1075",
+      "type": "article_compatibility",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1075",
+      "title": "RC4GS取扱説明書：2.16.1．プログラムミキシングのために混合制御の説明",
+      "content_html": "<p>RCカーの制御の概念から、プログラムミキシングの活用について説明します。</p>\n\n\n\n<p><strong>1</strong><strong>．RC</strong><strong>カー：</strong><br />単一通常のRCカーは一つのモーターで、方向を制御するステアリング(CH1)と前進・後退を制御するスロットルトリガー(CH2)となります。</p>\n\n\n\n<p><strong>1</strong><strong>つのチャンネルが1</strong><strong>つのユニット(1</strong><strong>⇒1)</strong>を対応します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1075-body-1-399b796be62e.webp\" alt=\"送信機のトリガーを動かす矢印と、RCカーの進行方向を示す矢印。\" width=\"752\" height=\"309\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>図のようにスロットルトリガーを引くと、前進します。</p>\n\n\n\n<p><strong>2</strong><strong>．デュアルエンジンモデル：<br /></strong>戦車など、無限軌道車の場合、二つのモーターで動作させることは多いでしょう。<br />この二つのモーターで、前進・後退、方向、全て制御します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1075-body-2-a62dde8080ce.webp\" alt=\"上部を開けた履帯式車両。車体内の左右のモーターが見える。\" width=\"487\" height=\"282\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>3</strong><strong>．混合制御(</strong><strong>ミックスコントロール)</strong><strong>：<br /></strong>スロットルトリガーが二つのモーターを制御して、前進させて、ステアリングを回ったら、片方のモーターが前進、もう片方のモーターが同時に後退して、左右に曲がることを実現することは、1つの機能が2つのユニット(1⇒2)を制御する混合制御(ミックスコントロール)と言います。</p>\n\n\n\n<ol><li><strong>デュアル混合制御(</strong><strong>デュアルミックスコントロール)</strong><strong>：</strong></li></ol>\n\n\n\n<p>デュアルエンジンモデルは、前進と左右に曲がるには混合制御が必要で、更に後退の左右に曲がるを実現するには、デュアル混合制御は必要となります。</p>",
+      "hero": null,
+      "source_url": "https://happinesea.com/news/202006281075.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
+      "target_route": "/news/202006281075.html",
+      "http_status": 200,
+      "observed_at": "2026-10-07T21:00:05.598Z",
+      "source_sha256": "4354668c9983594c0218ec57b6240a49c8675959590696120508baebc481a377",
+      "status": "READY",
+      "transformation": "Evidence-bound compatibility copy of the verified canonical publication; no source article rewrite or redirect."
+    },
+    {
+      "id": "article-variant-1086",
+      "type": "article_compatibility",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1086",
+      "title": "RC4GS取扱説明書：2.16.3．混合制御(ミックスコントロール)設定",
+      "content_html": "<p><strong>1</strong><strong>．スロットルMIX</strong><strong>ステアリング：無限軌道車の先進・後退設定</strong></p>\n\n\n\n<p>スロットルで無限軌道車の前進・後退を制御する際に、スロットルチャンネルでステアリングチャンネルをリードするように混合制御を設定します。<br />この場合、マスター：スロットル、スレーブ：ステアリングとなります。</p>\n\n\n\n<p>設定の値について、下記の図をご参考してください。<br />詳しい手順について、「2.16．プログラムミキシング」をご参照して、PMIX1の設定をしてください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-1-d43fd39945d5.webp\" alt=\"PMIX01の選択画面と設定画面。MXMDはON、MSTはTH、SLVはST、LEFTとRIGHは+100%。\" width=\"772\" height=\"413\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>設定完了後、スロットルトリガーを引くと、車が前進するように、両方のトラックが動くことを確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-2-ba0057ff39cc.webp\" alt=\"送信機のトリガーを動かす矢印と、履帯式車両の左右の履帯を同じ方向へ動かす矢印。\" width=\"746\" height=\"310\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>1</strong><strong>．ステアリングMIX</strong><strong>スロットル：無限軌道車の左折・右折設定</strong></p>\n\n\n\n<p>ステアリングで無限軌道車の左折・右折設定について、ステアリンチャンネルでスロットルチャンネルをリードする混合制御の設定となります。</p>\n\n\n\n<p>この場合、マスター：スロットル、スレーブ：ステアリングとなります。</p>\n\n\n\n<p>設定の値について、下記の図をご参考してください。<br />詳しい手順について、「2.16．プログラムミキシング」をご参照して、PMIX2の設定をしてください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-3-45797d8270ca.webp\" alt=\"PMIX02の選択画面と設定画面。MXMDはON、MSTはST、SLVはTH、LEFTとRIGHは+100%。\" width=\"773\" height=\"411\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>設定完了後、ステアリンを回すことで、両トラックが逆方向で動き、折れ曲がる事はできるようになります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-4-732f346ece0a.webp\" alt=\"送信機のステアリングを回す矢印と、履帯式車両の左右の履帯を逆方向へ動かす矢印。\" width=\"750\" height=\"318\" loading=\"lazy\" decoding=\"async\" /></figure>",
+      "hero": {
+        "src": "/assets/insights/wordpress/1086-403d47157f33.webp",
+        "width": 1000,
+        "height": 1000,
+        "sha256": "403d47157f33027cc4292e256b6db85f94483441693e48644e543510c4b06b16",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg",
+        "alt": "RC4GS送信機と履帯式車両の写真。送信機の画面付近にPMIXと表示されている。",
+        "image_status": "verified"
+      },
+      "source_url": "https://happinesea.com/news/202006281086.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
+      "target_route": "/news/202006281086.html",
+      "http_status": 200,
+      "observed_at": "2026-10-07T21:00:16.543Z",
+      "source_sha256": "14c31173583b985a76a7ae9b7368483e8210640fb03ff001b66517d175a09bcd",
+      "status": "READY",
+      "transformation": "Evidence-bound compatibility copy of the verified canonical publication; no source article rewrite or redirect."
+    },
+    {
+      "id": "rc4gs-manual-shortcut",
+      "type": "category_archive",
+      "category_id": 20,
+      "source_url": "https://happinesea.com/rc4gs-manual",
+      "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
+      "title": "RC4GS製品マニュアル",
+      "http_status": 200,
+      "observed_at": "2026-10-07T21:01:24.366Z",
+      "source_sha256": "5f0a51c971ff7c34ce776f03b50454aa3718c7e1350375eed8363d56091007ec",
+      "content_html": "<p>RC4GS 日本語製品のマニュアル</p>\n<p>RC4GS日本語マニュアルの最新更新について、<a href=\"https://www.amazon.co.jp/dp/B086JQW9LQ\">RC4GS R/C プロポセット取扱説明書: Radiolink社製品日本語版マニュアル Kindle版</a>からご確認してください。</p>\n<ul><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html\">RC4GS取扱説明書：2.16.3．混合制御(ミックスコントロール)設定</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html\">RC4GS取扱説明書：混合制御(ミックスコントロール)設定前の受信機の準備について</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html\">RC4GS取扱説明書：2.16.1．プログラムミキシングのために混合制御の説明</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html\">RC4GS取扱説明書：2.16．プログラムミキシング (PMIX)</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html\">RC4GS取扱説明書：1.5．テレメトリー情報の確認</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html\">RC4GS取扱説明書：1.4．電波状況(RSSI)の確認</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html\">RC4GS取扱説明書：2.22．リセット機能 (RESET)</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html\">RC4GS取扱説明書：2.21．フェイルセーフ(F/S)</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html\">RC4GS取扱説明書：2.19．ローバッテリー警告(ALARM)</a></li><li><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html\">RC4GS取扱説明書：2.17．予備チャンネル (AUX)</a></li></ul><h2>ページ</h2><ul><li><a href=\"https://happinesea.com/category/radiolink-support/rc4gs-manual/page/2\">Page 2</a></li><li><a href=\"https://happinesea.com/category/radiolink-support/rc4gs-manual/page/3\">Page 3</a></li></ul>",
+      "archive_entries": [
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
+          "title": "RC4GS取扱説明書：2.16.3．混合制御(ミックスコントロール)設定"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
+          "title": "RC4GS取扱説明書：混合制御(ミックスコントロール)設定前の受信機の準備について"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
+          "title": "RC4GS取扱説明書：2.16.1．プログラムミキシングのために混合制御の説明"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
+          "title": "RC4GS取扱説明書：2.16．プログラムミキシング (PMIX)"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
+          "title": "RC4GS取扱説明書：1.5．テレメトリー情報の確認"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
+          "title": "RC4GS取扱説明書：1.4．電波状況(RSSI)の確認"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html",
+          "title": "RC4GS取扱説明書：2.22．リセット機能 (RESET)"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html",
+          "title": "RC4GS取扱説明書：2.21．フェイルセーフ(F/S)"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html",
+          "title": "RC4GS取扱説明書：2.19．ローバッテリー警告(ALARM)"
+        },
+        {
+          "url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html",
+          "title": "RC4GS取扱説明書：2.17．予備チャンネル (AUX)"
+        }
+      ],
+      "pagination_links": [
+        "https://happinesea.com/category/radiolink-support/rc4gs-manual/page/2",
+        "https://happinesea.com/category/radiolink-support/rc4gs-manual/page/3"
+      ],
+      "transformation": "Evidence-bound compatibility copy of the verified canonical publication; no source article rewrite or redirect.",
+      "target_route": "/rc4gs-manual",
+      "hero": null,
+      "status": "READY"
     }
   ],
   "assets": [

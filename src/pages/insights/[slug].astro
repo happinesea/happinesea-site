@@ -105,7 +105,12 @@ const description = isPublished
           data-article-section="body"
         >
           {isWordpress ? (
-            <Fragment set:html={wordpressData!.content_html} />
+            <Fragment
+              set:html={wordpressData!.content_html.replaceAll(
+                /\bsrc="(\/assets\/insights\/wordpress\/[^"]+)"/g,
+                (_, src: string) => `src="${withBase(src)}"`,
+              )}
+            />
           ) : (
             Content && <Content />
           )}

@@ -1,7 +1,7 @@
 {
   "contract_version": "0.1",
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 43,
+  "expected_count": 58,
   "articles": [
     {
       "id": 2187,
@@ -505,6 +505,340 @@
         "sha256": "8e0dc2faa6e4bd7dcf89724e53086e0c4371559977d1bb55a49cfc1bb7199896",
         "alt": "RC4GSのLCD表示の説明図。モデル名、バッテリー電圧、送信機名、ステアリングトリム、スロットルトリムの位置を赤い線で示している。"
       }
+    },
+    {
+      "id": 188,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "boxing-ring-is-rigged-says-tagerine",
+      "route": "/insights/boxing-ring-is-rigged-says-tagerine/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315188.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/2017-RadioLink-4-RC4GS-RC4G-2-4-4CH-R6FG_q50.jpg",
+        "sha256": "88bc02ffeb8b14704b2f48df6bb48141f33e1c4b63fd04bb14ad479a9e85f57e",
+        "alt": "RC4GS日本語取扱説明書の表紙。送信機と受信機の写真が掲載されている。"
+      }
+    },
+    {
+      "id": 47,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "solo-travel-around-the-world",
+      "route": "/insights/solo-travel-around-the-world/",
+      "canonical": "https://happinesea.com/radiolink-support/2016091547.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-38_No-00.png",
+        "sha256": "ab0a4a466a143615cb215838f0b2b5317c6c05663f4d276ffd62dc29fc4b96ca",
+        "alt": "RC4GSのATL画面。RATEの100%が選択されている。"
+      }
+    },
+    {
+      "id": 1058,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-45_No-00.png",
+        "sha256": "a0c915299666ef0dfe57e46f7999efd0f22d4b9c48f1b0a0b3019cc7b1ce51c6",
+        "alt": "RC4GSのPMIX画面。MXMDはOFF、LEFTとRIGHは0%、MSTとSLVはST。"
+      }
+    },
+    {
+      "id": 1075,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_6.png",
+          "sha256": "399b796be62e30222b870b0d63cc6ae8e48160350a423248a3ff34a11529f30d",
+          "alt": "送信機のトリガーを動かす矢印と、RCカーの進行方向を示す矢印。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_7.png",
+          "sha256": "a62dde8080cec339876ce26aaf32f4e99bae04527657d5931a39f893e238858e",
+          "alt": "上部を開けた履帯式車両。車体内の左右のモーターが見える。"
+        }
+      ]
+    },
+    {
+      "id": 1082,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_8.png",
+          "sha256": "59ceb2400f841b42618d457c423be936ca7969620b945201670610ee8a3a2340",
+          "alt": "R6FG受信機のCH1とCH2を囲み、ステアリングとスロットルの接続先を示した図。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_9.png",
+          "sha256": "67098a63b4ffbcede3b7b70295c2a819a1df4f27c3de6adc5b5557e601a0ad73",
+          "alt": "送信機のトリガーを動かす矢印と、履帯式車両の片側の履帯を動かす矢印。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_10.png",
+          "sha256": "f4b49500a06c2f7728bddb01efa38ab33c4a275889051bfecb1144c0ac4d37bc",
+          "alt": "REVERSEの選択画面と設定画面。THのREVが選択されている。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_11.png",
+          "sha256": "0381a63fa977ea8e9489b3a972ffac3ec013b84e7e30c50050a692499ddaba08",
+          "alt": "送信機のステアリングを回す矢印と、履帯式車両の片側の履帯を動かす矢印。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_12.png",
+          "sha256": "13ab704d54d7b986576b91b3a6bfc520d6b5987ef67ac2df51726f126d4f4fc3",
+          "alt": "REVERSEの選択画面と設定画面。STのREVが選択されている。"
+        }
+      ]
+    },
+    {
+      "id": 1086,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg",
+        "sha256": "403d47157f33027cc4292e256b6db85f94483441693e48644e543510c4b06b16",
+        "alt": "RC4GS送信機と履帯式車両の写真。送信機の画面付近にPMIXと表示されている。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_13.png",
+          "sha256": "d43fd39945d5450f225ffd52b8ccace580030e80e8ca4003f175d775aa64170f",
+          "alt": "PMIX01の選択画面と設定画面。MXMDはON、MSTはTH、SLVはST、LEFTとRIGHは+100%。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_14.png",
+          "sha256": "ba0057ff39cc08b71b43a79a28a1dd3fb50d82be72f9139d61579b8452e18fc8",
+          "alt": "送信機のトリガーを動かす矢印と、履帯式車両の左右の履帯を同じ方向へ動かす矢印。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_15.png",
+          "sha256": "45797d8270ca2b355a19a3dd7fd5782ccad18b039b5949d6918b5fa1edb96ef2",
+          "alt": "PMIX02の選択画面と設定画面。MXMDはON、MSTはST、SLVはTH、LEFTとRIGHは+100%。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_16.png",
+          "sha256": "732f346ece0a279d316da58dfa8c38425cf2a08b71197f5195b561c2cfc09c70",
+          "alt": "送信機のステアリングを回す矢印と、履帯式車両の左右の履帯を逆方向へ動かす矢印。"
+        }
+      ]
+    },
+    {
+      "id": 1054,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_5.png",
+          "sha256": "63244eba92d0d0342ea9a50253f0c7bdfee4546dfbd6a34f27836f1fd4714ea9",
+          "alt": "バッテリー、ESC、モーター、R7FG受信機、ステアリングサーボの接続図。ESCはCH2、サーボはCH1に接続されている。"
+        }
+      ]
+    },
+    {
+      "id": 1050,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d",
+      "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_4.png",
+          "sha256": "b3160a5d4922cc4e703739c0c46a1ca1362177cda0133880575c887c9908525a",
+          "alt": "RC4GSのメイン画面とテレメトリー画面。RSSI、RATE、EXT、RXの値が表示されている。"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "scientific-study-of-organisms-in-the-ocean",
+      "route": "/insights/scientific-study-of-organisms-in-the-ocean/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-39_No-00.png",
+        "sha256": "8569823149a1f95656827279476111bb7726b0fc6d87c151e6afbb30cfc47371",
+        "alt": "RC4GSのABS画面。MODEのOFFが選択されている。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/04/de11012c3776344ed23d95ee2724e862.png",
+          "sha256": "13e887f0751338d114bfb6b44eb4aff917754c8560b10b9037726cdceb69ed98",
+          "alt": "ステアリングホイールのNとEの範囲を色分けした図。"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "beautiful-cities-around-the-world",
+      "route": "/insights/beautiful-cities-around-the-world/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-15_No-00.png",
+        "sha256": "7ad14665a8030bdf73deb09ed4b13fa28bfbe58b66bce9778dbd869e5a86eebf",
+        "alt": "RC4GSのTHSPD画面。MODEはOFF。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-22_No-00.png",
+          "sha256": "dc9771b9a23a50a2b5952362265cd4fa17ec008b9e4b89b0e6e112531b123879",
+          "alt": "RC4GSのTHSPD画面。MODEはSPEED1、ALLは100。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-32_No-00.png",
+          "sha256": "a5132ba1442b021872271c1157e3abc80447dcdf3669a2f8a34aaadd778e2b41",
+          "alt": "RC4GSのTHSPD画面。MODEはSPEED2、LOWとHIGHは100、TGP1は30。"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "shooting-passing-dribbling-and-rebounding",
+      "route": "/insights/shooting-passing-dribbling-and-rebounding/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png",
+        "sha256": "fd4569c0ef1ebb11555b8d9bd9e511d50374728b2dd91c0886e8a9a30e92830b",
+        "alt": "RC4GSのスロットルカーブ画面。MODEはON、P1の17%が選択され、右側に上昇するカーブが表示されている。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png",
+          "sha256": "fd4569c0ef1ebb11555b8d9bd9e511d50374728b2dd91c0886e8a9a30e92830b",
+          "alt": "RC4GSのスロットルカーブ画面。MODEはON、P1の17%が選択され、右側に上昇するカーブが表示されている。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-46_No-00.png",
+          "sha256": "c4ca8e57f9f561b12e8f084f74dd1409b479c2492cbd93358861442eac1de1ab",
+          "alt": "RC4GSのFWD VTR画面。MODEはOFF、TG.Pは50、RATEは0。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-55_No-00.png",
+          "sha256": "61aa3c9f1e35208e8d46550d0eda24e1cd960b3b0a0859bd55eb30e753bdb32a",
+          "alt": "RC4GSのFWD EXP画面。MODEはOFF、RATEは0。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-6_No-00.png",
+          "sha256": "3de262142a54afbceffb70b74ea523611665d12690049ee0304cd3290b10a79b",
+          "alt": "RC4GSのBRK EXP画面。RATEは0。"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "smart-watch-on-the-go",
+      "route": "/insights/smart-watch-on-the-go/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png",
+        "sha256": "0900c31003e0695bbd920ff462cfd2e310a4b48c0d245e391a4a65f7786e5370",
+        "alt": "RC4GSのEPA画面。ST LFTの100が選択され、ST RGT、TH FWD、TH BRKも100。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png",
+          "sha256": "0900c31003e0695bbd920ff462cfd2e310a4b48c0d245e391a4a65f7786e5370",
+          "alt": "RC4GSのEPA画面。ST LFTの100が選択され、ST RGT、TH FWD、TH BRKも100。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-14_No-00.png",
+          "sha256": "1be2749f3305d985f26cb245f9e3019fac04234da4a6421a55d82b5b1f3d7fdd",
+          "alt": "RC4GSのEPA画面。3C LFTの100が選択され、3C RGT、4C UP、4C DWNも100。"
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "will-emdrive-thruster-change-in-space-travel",
+      "route": "/insights/will-emdrive-thruster-change-in-space-travel/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html",
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-15_No-00.png",
+          "sha256": "37d657359c70a54b882756e5d601660f7cbe0dc4e507f938df0595b4ce6866fa",
+          "alt": "RC4GSのGYRO画面。MIXはON、MODEはCH3、RATEは70%。"
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "selfie-in-the-space-is-so-fun",
+      "route": "/insights/selfie-in-the-space-is-so-fun/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html",
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/61PgGnRMzL._SL1350_.jpg",
+        "sha256": "c77db5aab12c5691427a0b345c3772727ea5240f6e59f428f1e6f7c981497e40",
+        "alt": "RC4GS送信機の写真。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png",
+          "sha256": "bb3cc51586a4d48e9cd2158de4144ed32525fc38182a2f274730d0fba694b642",
+          "alt": "R6FG V2受信機のアンテナ、バインドボタン、LED、電源と信号端子、各チャンネルの位置を示した図。"
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "content_type": "insight",
+      "topic": "RC技術",
+      "article_kind": "article",
+      "slug": "lions-of-africa-protesting-against-disney",
+      "route": "/insights/lions-of-africa-protesting-against-disney/",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html",
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_1.png",
+          "sha256": "db8caadd8faa9d6fc0d151915115876ec26d792cdaf6ae729d42a7fbbbd1c47c",
+          "alt": "RC4GS送信機の前面と背面。アンテナ、接続端子、トリム、ステアリング、トリガー、電源スイッチなどの位置を示した図。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_2.png",
+          "sha256": "452f640edb2233c7051a76fe24656db270cd3df806e209de49ff5b3caba43fcb",
+          "alt": "RC4GS送信機のLCD画面と機能選択キーの位置を示した図。"
+        }
+      ]
     }
   ],
   "withdrawals": []

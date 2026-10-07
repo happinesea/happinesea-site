@@ -2208,5 +2208,886 @@
       "alt": "RC4GSのLCD表示の説明図。モデル名、バッテリー電圧、送信機名、ステアリングトリム、スロットルトリムの位置を赤い線で示している。",
       "image_status": "verified"
     }
+  },
+  {
+    "id": "wordpress-188",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 188,
+      "slug": "boxing-ring-is-rigged-says-tagerine",
+      "title": "RC4GS取扱説明書(日本語版)",
+      "excerpt": "<p>目次ページを以下へ移動しました。 https://happinesea.com/rc4gs-manual</p>",
+      "content": "<h2>目次ページを以下へ移動しました。</h2>\n\n\n\n<p><a href=\"https://happinesea.com/rc4gs-manual\">https://happinesea.com/rc4gs-manual</a></p>\n\n\n\n<p></p>",
+      "published_at": "2020-03-15T11:07:00.000Z",
+      "modified_at": "2021-12-07T07:32:37.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/03/2017-RadioLink-4-RC4GS-RC4G-2-4-4CH-R6FG_q50.jpg",
+        "width": 800,
+        "height": 1280,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/2017-RadioLink-4-RC4GS-RC4G-2-4-4CH-R6FG_q50.jpg"
+      },
+      "featured_image_alt": "RC4GS日本語取扱説明書の表紙。送信機と受信機の写真が掲載されている。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315188.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315188.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/boxing-ring-is-rigged-says-tagerine/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [],
+    "slug": "boxing-ring-is-rigged-says-tagerine",
+    "title": "RC4GS取扱説明書(日本語版)",
+    "description": "目次ページを以下へ移動しました。 https://happinesea.com/rc4gs-manual",
+    "published_at": "2020-03-15T11:07:00.000Z",
+    "updated_at": "2021-12-07T07:32:37.000Z",
+    "content_status": "published",
+    "content_html": "<h2>目次ページを以下へ移動しました。</h2>\n\n\n\n<p><a href=\"https://happinesea.com/rc4gs-manual\">https://happinesea.com/rc4gs-manual</a></p>\n\n\n\n<p></p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315188.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/188-88bc02ffeb8b.webp",
+      "width": 675,
+      "height": 1080,
+      "sha256": "88bc02ffeb8b14704b2f48df6bb48141f33e1c4b63fd04bb14ad479a9e85f57e",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/03/2017-RadioLink-4-RC4GS-RC4G-2-4-4CH-R6FG_q50.jpg",
+      "alt": "RC4GS日本語取扱説明書の表紙。送信機と受信機の写真が掲載されている。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-47",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 47,
+      "slug": "solo-travel-around-the-world",
+      "title": "RC4GS取扱説明書：2.15．ブレーキレート機能 (ATL)",
+      "excerpt": "<p>ブレーキングをして、ブレーキの効果を強くしたい時は「＋」側に、弱くしたいときは「−」側に調整します。 ブレーキレート設定項目： RATE：0%〜100%、初期値：100% (1) 機能メニューから、「 … </p>",
+      "content": "<p>ブレーキングをして、ブレーキの効果を強くしたい時は「＋」側に、弱くしたいときは「−」側に調整します。</p>\n<p><strong>ブレーキレート設定項目：</strong><br />\nRATE：0%〜100%、初期値：100%</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してD/R機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使ってStreering D/Rを選択して、「Enter」ボタンを押下します。<br />\n(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br />\n(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「100%」に戻ります。)<br />\n「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(4) 同じステップで、Throttle D/Rの設定はできます。<br />\n(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>",
+      "published_at": "2016-09-15T10:05:05.000Z",
+      "modified_at": "2020-04-09T07:13:01.000Z",
+      "category": ["radiolink-support"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-38_No-00.png",
+        "width": 206,
+        "height": 185,
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-38_No-00.png"
+      },
+      "featured_image_alt": "RC4GSのATL画面。RATEの100%が選択されている。",
+      "canonical": "https://happinesea.com/radiolink-support/2016091547.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/2016091547.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/solo-travel-around-the-world/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [],
+    "slug": "solo-travel-around-the-world",
+    "title": "RC4GS取扱説明書：2.15．ブレーキレート機能 (ATL)",
+    "description": "ブレーキングをして、ブレーキの効果を強くしたい時は「＋」側に、弱くしたいときは「−」側に調整します。 ブレーキレート設定項目： RATE：0%〜100%、初期値：100% (1) 機能メニューから、「 …",
+    "published_at": "2016-09-15T10:05:05.000Z",
+    "updated_at": "2020-04-09T07:13:01.000Z",
+    "content_status": "published",
+    "content_html": "<p>ブレーキングをして、ブレーキの効果を強くしたい時は「＋」側に、弱くしたいときは「−」側に調整します。</p>\n<p><strong>ブレーキレート設定項目：</strong><br />\nRATE：0%〜100%、初期値：100%</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してD/R機能を選択して、「Enter」ボタンを押下して遷移します。<br />\n(2) 「Dec（-）」と「Inc（+）」ボタンを使ってStreering D/Rを選択して、「Enter」ボタンを押下します。<br />\n(3) 引き続き、STの初期値が点滅になり、「Dec（-）」と「Inc（+）」ボタンを使って、値を設定します。<br />\n(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「100%」に戻ります。)<br />\n「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。<br />\n(4) 同じステップで、Throttle D/Rの設定はできます。<br />\n(5) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>",
+    "canonical": "https://happinesea.com/radiolink-support/2016091547.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/47-ab0a4a466a14.webp",
+      "width": 206,
+      "height": 185,
+      "sha256": "ab0a4a466a143615cb215838f0b2b5317c6c05663f4d276ffd62dc29fc4b96ca",
+      "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-38_No-00.png",
+      "alt": "RC4GSのATL画面。RATEの100%が選択されている。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-1058",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 1058,
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix",
+      "title": "RC4GS取扱説明書：2.16．プログラムミキシング (PMIX)",
+      "excerpt": "<p>ステアリング、スロットル、3チャンネル、4チャンネルの任意のチャンネルの間で、ミキシングをかけることができます。古いファームウェアのプログラムミキシングが、1系統のみとなります。PMIX2を確認できな … </p>",
+      "content": "<p>ステアリング、スロットル、3チャンネル、4チャンネルの任意のチャンネルの間で、ミキシングをかけることができます。<br />古いファームウェアのプログラムミキシングが、1系統のみとなります。<br />PMIX2を確認できない場合、ファームウェアをアップグレードすることで、プログラムミキシングは2系統利用できます。<br /><br />参考：<strong><a href=\"https://happinesea.com/radiolink-support/20200313160.html\">1.3．RC4GSファームウェアアップグレード手順</a></strong></p>\n\n\n\n<p>設定項目：<br />　LEFT：ミキシングレート(左/前進/上)<br />　RIGH：ミキシングレート(右/ブレーキ/下)<br />　MST：マスタチャンネル<br />　SLV：スレーブチャンネル</p>\n\n\n\n<p><strong>プログラムミキシング調整方法</strong></p>\n\n\n\n<p>機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してPMIX機能を選択して、「Enter」ボタンを押下してプログラムミキシングの調整画面へ遷移できます。<br />最新のファームウェアの場合、PMIX1とPMIX2の2系統を利用できます。</p>\n\n\n\n<ul><li>マスタチャンネル<br />指定チャンネル：ステアリング、スロットル、3チャンネル、4チャンネル<br />初期値：ステアリング</li><li>スレーブチャンネル<br />指定チャンネル：ステアリング、スロットル、3チャンネル、4チャンネル<br />初期値：ステアリング</li><li>左/前進/上、ミキシングレートの調整<br />指定範囲：-100 ～ 0 ～ 100、初期値：0</li><li>右/ブレーキ/下、ミキシングレートの調整<br />指定範囲：-100 ～ 0 ～ 100、初期値：0</li></ul>\n\n\n\n<p><a href=\"https://happinesea.com/news/202006281075.html\">2.16.1．プログラムミキシングのために、混合制御の説明</a><br /><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html\">2.16.2．混合制御(ミックスコントロール)設定前の受信機の準備について</a><br /><a href=\"https://happinesea.com/news/202006281086.html\">2.16.3．混合制御(ミックスコントロール)設定</a></p>",
+      "published_at": "2020-06-24T08:41:19.000Z",
+      "modified_at": "2020-06-29T07:56:49.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-45_No-00.png",
+        "width": 214,
+        "height": 189,
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-45_No-00.png"
+      },
+      "featured_image_alt": "RC4GSのPMIX画面。MXMDはOFF、LEFTとRIGHは0%、MSTとSLVはST。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [],
+    "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0-pmix",
+    "title": "RC4GS取扱説明書：2.16．プログラムミキシング (PMIX)",
+    "description": "ステアリング、スロットル、3チャンネル、4チャンネルの任意のチャンネルの間で、ミキシングをかけることができます。古いファームウェアのプログラムミキシングが、1系統のみとなります。PMIX2を確認できな …",
+    "published_at": "2020-06-24T08:41:19.000Z",
+    "updated_at": "2020-06-29T07:56:49.000Z",
+    "content_status": "published",
+    "content_html": "<p>ステアリング、スロットル、3チャンネル、4チャンネルの任意のチャンネルの間で、ミキシングをかけることができます。<br />古いファームウェアのプログラムミキシングが、1系統のみとなります。<br />PMIX2を確認できない場合、ファームウェアをアップグレードすることで、プログラムミキシングは2系統利用できます。<br /><br />参考：<strong><a href=\"https://happinesea.com/radiolink-support/20200313160.html\">1.3．RC4GSファームウェアアップグレード手順</a></strong></p>\n\n\n\n<p>設定項目：<br />　LEFT：ミキシングレート(左/前進/上)<br />　RIGH：ミキシングレート(右/ブレーキ/下)<br />　MST：マスタチャンネル<br />　SLV：スレーブチャンネル</p>\n\n\n\n<p><strong>プログラムミキシング調整方法</strong></p>\n\n\n\n<p>機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してPMIX機能を選択して、「Enter」ボタンを押下してプログラムミキシングの調整画面へ遷移できます。<br />最新のファームウェアの場合、PMIX1とPMIX2の2系統を利用できます。</p>\n\n\n\n<ul><li>マスタチャンネル<br />指定チャンネル：ステアリング、スロットル、3チャンネル、4チャンネル<br />初期値：ステアリング</li><li>スレーブチャンネル<br />指定チャンネル：ステアリング、スロットル、3チャンネル、4チャンネル<br />初期値：ステアリング</li><li>左/前進/上、ミキシングレートの調整<br />指定範囲：-100 ～ 0 ～ 100、初期値：0</li><li>右/ブレーキ/下、ミキシングレートの調整<br />指定範囲：-100 ～ 0 ～ 100、初期値：0</li></ul>\n\n\n\n<p><a href=\"https://happinesea.com/news/202006281075.html\">2.16.1．プログラムミキシングのために、混合制御の説明</a><br /><a href=\"https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html\">2.16.2．混合制御(ミックスコントロール)設定前の受信機の準備について</a><br /><a href=\"https://happinesea.com/news/202006281086.html\">2.16.3．混合制御(ミックスコントロール)設定</a></p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006241058.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/1058-a0c915299666.webp",
+      "width": 214,
+      "height": 189,
+      "sha256": "a0c915299666ef0dfe57e46f7999efd0f22d4b9c48f1b0a0b3019cc7b1ce51c6",
+      "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-20-45_No-00.png",
+      "alt": "RC4GSのPMIX画面。MXMDはOFF、LEFTとRIGHは0%、MSTとSLVはST。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-1075",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 1075,
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab",
+      "title": "RC4GS取扱説明書：2.16.1．プログラムミキシングのために混合制御の説明",
+      "excerpt": "<p>RCカーの制御の概念から、プログラムミキシングの活用について説明します。 1．RCカー：単一通常のRCカーは一つのモーターで、方向を制御するステアリング(CH1)と前進・後退を制御するスロットルトリガ … </p>",
+      "content": "<p>RCカーの制御の概念から、プログラムミキシングの活用について説明します。</p>\n\n\n\n<p><strong>1</strong><strong>．RC</strong><strong>カー：</strong><br />単一通常のRCカーは一つのモーターで、方向を制御するステアリング(CH1)と前進・後退を制御するスロットルトリガー(CH2)となります。</p>\n\n\n\n<p><strong>1</strong><strong>つのチャンネルが1</strong><strong>つのユニット(1</strong><strong>⇒1)</strong>を対応します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1075-body-1-399b796be62e.webp\" alt=\"送信機のトリガーを動かす矢印と、RCカーの進行方向を示す矢印。\" width=\"752\" height=\"309\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>図のようにスロットルトリガーを引くと、前進します。</p>\n\n\n\n<p><strong>2</strong><strong>．デュアルエンジンモデル：<br /></strong>戦車など、無限軌道車の場合、二つのモーターで動作させることは多いでしょう。<br />この二つのモーターで、前進・後退、方向、全て制御します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1075-body-2-a62dde8080ce.webp\" alt=\"上部を開けた履帯式車両。車体内の左右のモーターが見える。\" width=\"487\" height=\"282\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>3</strong><strong>．混合制御(</strong><strong>ミックスコントロール)</strong><strong>：<br /></strong>スロットルトリガーが二つのモーターを制御して、前進させて、ステアリングを回ったら、片方のモーターが前進、もう片方のモーターが同時に後退して、左右に曲がることを実現することは、1つの機能が2つのユニット(1⇒2)を制御する混合制御(ミックスコントロール)と言います。</p>\n\n\n\n<ol><li><strong>デュアル混合制御(</strong><strong>デュアルミックスコントロール)</strong><strong>：</strong></li></ol>\n\n\n\n<p>デュアルエンジンモデルは、前進と左右に曲がるには混合制御が必要で、更に後退の左右に曲がるを実現するには、デュアル混合制御は必要となります。</p>",
+      "published_at": "2020-06-28T11:51:39.000Z",
+      "modified_at": "2020-06-28T11:53:51.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": null,
+      "featured_image_alt": "",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/1075-body-1-399b796be62e.webp",
+        "width": 752,
+        "height": 309,
+        "sha256": "399b796be62e30222b870b0d63cc6ae8e48160350a423248a3ff34a11529f30d",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_6.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1075-body-2-a62dde8080ce.webp",
+        "width": 487,
+        "height": 282,
+        "sha256": "a62dde8080cec339876ce26aaf32f4e99bae04527657d5931a39f893e238858e",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_7.png"
+      }
+    ],
+    "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-1%ef%bc%8e%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%83%9f%e3%82%ad%e3%82%b7%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ab",
+    "title": "RC4GS取扱説明書：2.16.1．プログラムミキシングのために混合制御の説明",
+    "description": "RCカーの制御の概念から、プログラムミキシングの活用について説明します。 1．RCカー：単一通常のRCカーは一つのモーターで、方向を制御するステアリング(CH1)と前進・後退を制御するスロットルトリガ …",
+    "published_at": "2020-06-28T11:51:39.000Z",
+    "updated_at": "2020-06-28T11:53:51.000Z",
+    "content_status": "published",
+    "content_html": "<p>RCカーの制御の概念から、プログラムミキシングの活用について説明します。</p>\n\n\n\n<p><strong>1</strong><strong>．RC</strong><strong>カー：</strong><br />単一通常のRCカーは一つのモーターで、方向を制御するステアリング(CH1)と前進・後退を制御するスロットルトリガー(CH2)となります。</p>\n\n\n\n<p><strong>1</strong><strong>つのチャンネルが1</strong><strong>つのユニット(1</strong><strong>⇒1)</strong>を対応します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1075-body-1-399b796be62e.webp\" alt=\"送信機のトリガーを動かす矢印と、RCカーの進行方向を示す矢印。\" width=\"752\" height=\"309\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>図のようにスロットルトリガーを引くと、前進します。</p>\n\n\n\n<p><strong>2</strong><strong>．デュアルエンジンモデル：<br /></strong>戦車など、無限軌道車の場合、二つのモーターで動作させることは多いでしょう。<br />この二つのモーターで、前進・後退、方向、全て制御します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1075-body-2-a62dde8080ce.webp\" alt=\"上部を開けた履帯式車両。車体内の左右のモーターが見える。\" width=\"487\" height=\"282\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>3</strong><strong>．混合制御(</strong><strong>ミックスコントロール)</strong><strong>：<br /></strong>スロットルトリガーが二つのモーターを制御して、前進させて、ステアリングを回ったら、片方のモーターが前進、もう片方のモーターが同時に後退して、左右に曲がることを実現することは、1つの機能が2つのユニット(1⇒2)を制御する混合制御(ミックスコントロール)と言います。</p>\n\n\n\n<ol><li><strong>デュアル混合制御(</strong><strong>デュアルミックスコントロール)</strong><strong>：</strong></li></ol>\n\n\n\n<p>デュアルエンジンモデルは、前進と左右に曲がるには混合制御が必要で、更に後退の左右に曲がるを実現するには、デュアル混合制御は必要となります。</p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281075.html",
+    "noindex": false,
+    "hero": null
+  },
+  {
+    "id": "wordpress-1082",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 1082,
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad",
+      "title": "RC4GS取扱説明書：混合制御(ミックスコントロール)設定前の受信機の準備について",
+      "excerpt": "<p>混合制御を設定する前に、受信機のステアリング、スロットルの各チャンネルが正しく動作するか、確認する必要があります。通常の場合、以下の図のように、各チャンネルとステアリングとスロットルの対応関係となりま … </p>",
+      "content": "<p>混合制御を設定する前に、受信機のステアリング、スロットルの各チャンネルが正しく動作するか、確認する必要があります。通常の場合、以下の図のように、各チャンネルとステアリングとスロットルの対応関係となります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-1-59ceb2400f84.webp\" alt=\"R6FG受信機のCH1とCH2を囲み、ステアリングとスロットルの接続先を示した図。\" width=\"878\" height=\"213\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>1．スロットルのリバース</p>\n\n\n\n<p>図のように、送信機を持って、スロットルトリガーを引くと、片方のトラックが前進することを確認してください。後退側の動きになる場合、リバースの設定が必要となります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-2-67098a63b4ff.webp\" alt=\"送信機のトリガーを動かす矢印と、履帯式車両の片側の履帯を動かす矢印。\" width=\"753\" height=\"274\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>もし、動きが上記と逆になる場合、下記の図のように、スロットルチャンネルのリバースの設定を行ってください。詳しい手順について、「2.13．サーボリバース機能(REV)」に参考してください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-3-f4b49500a06c.webp\" alt=\"REVERSEの選択画面と設定画面。THのREVが選択されている。\" width=\"765\" height=\"410\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>※スロットルの動きが正しい場合、上記の操作をスキップしてください。</p>\n\n\n\n<p>2．ステアリングのリバース</p>\n\n\n\n<p>図のように、ステアリングを右に回して、左側の軌道が前進、又は、右側の軌道が後退で動けば正しい動作となります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-4-0381a63fa977.webp\" alt=\"送信機のステアリングを回す矢印と、履帯式車両の片側の履帯を動かす矢印。\" width=\"750\" height=\"318\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>動きが逆になる場合、下記の図のように、スロットルチャンネルのリバースの設定を行ってください。詳しい手順について、「2.13．サーボリバース機能(REV)」に参考してください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-5-13ab704d54d7.webp\" alt=\"REVERSEの選択画面と設定画面。STのREVが選択されている。\" width=\"847\" height=\"404\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>※ステアリングの動きが正しい場合、上記の操作をスキップしてください。</p>\n\n\n\n<p>スロットルとステアリングのリバース設定が完了したら、次の混合制御(ミックスコントロール)のステップへ移ります。</p>",
+      "published_at": "2020-06-28T11:59:42.000Z",
+      "modified_at": "2021-01-01T13:30:53.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": null,
+      "featured_image_alt": "",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/1082-body-1-59ceb2400f84.webp",
+        "width": 878,
+        "height": 213,
+        "sha256": "59ceb2400f841b42618d457c423be936ca7969620b945201670610ee8a3a2340",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_8.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1082-body-2-67098a63b4ff.webp",
+        "width": 753,
+        "height": 274,
+        "sha256": "67098a63b4ffbcede3b7b70295c2a819a1df4f27c3de6adc5b5557e601a0ad73",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_9.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1082-body-3-f4b49500a06c.webp",
+        "width": 765,
+        "height": 410,
+        "sha256": "f4b49500a06c2f7728bddb01efa38ab33c4a275889051bfecb1144c0ac4d37bc",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_10.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1082-body-4-0381a63fa977.webp",
+        "width": 750,
+        "height": 318,
+        "sha256": "0381a63fa977ea8e9489b3a972ffac3ec013b84e7e30c50050a692499ddaba08",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_11.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1082-body-5-13ab704d54d7.webp",
+        "width": 847,
+        "height": 404,
+        "sha256": "13ab704d54d7b986576b91b3a6bfc520d6b5987ef67ac2df51726f126d4f4fc3",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_12.png"
+      }
+    ],
+    "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e8%a8%ad",
+    "title": "RC4GS取扱説明書：混合制御(ミックスコントロール)設定前の受信機の準備について",
+    "description": "混合制御を設定する前に、受信機のステアリング、スロットルの各チャンネルが正しく動作するか、確認する必要があります。通常の場合、以下の図のように、各チャンネルとステアリングとスロットルの対応関係となりま …",
+    "published_at": "2020-06-28T11:59:42.000Z",
+    "updated_at": "2021-01-01T13:30:53.000Z",
+    "content_status": "published",
+    "content_html": "<p>混合制御を設定する前に、受信機のステアリング、スロットルの各チャンネルが正しく動作するか、確認する必要があります。通常の場合、以下の図のように、各チャンネルとステアリングとスロットルの対応関係となります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-1-59ceb2400f84.webp\" alt=\"R6FG受信機のCH1とCH2を囲み、ステアリングとスロットルの接続先を示した図。\" width=\"878\" height=\"213\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>1．スロットルのリバース</p>\n\n\n\n<p>図のように、送信機を持って、スロットルトリガーを引くと、片方のトラックが前進することを確認してください。後退側の動きになる場合、リバースの設定が必要となります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-2-67098a63b4ff.webp\" alt=\"送信機のトリガーを動かす矢印と、履帯式車両の片側の履帯を動かす矢印。\" width=\"753\" height=\"274\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>もし、動きが上記と逆になる場合、下記の図のように、スロットルチャンネルのリバースの設定を行ってください。詳しい手順について、「2.13．サーボリバース機能(REV)」に参考してください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-3-f4b49500a06c.webp\" alt=\"REVERSEの選択画面と設定画面。THのREVが選択されている。\" width=\"765\" height=\"410\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>※スロットルの動きが正しい場合、上記の操作をスキップしてください。</p>\n\n\n\n<p>2．ステアリングのリバース</p>\n\n\n\n<p>図のように、ステアリングを右に回して、左側の軌道が前進、又は、右側の軌道が後退で動けば正しい動作となります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-4-0381a63fa977.webp\" alt=\"送信機のステアリングを回す矢印と、履帯式車両の片側の履帯を動かす矢印。\" width=\"750\" height=\"318\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>動きが逆になる場合、下記の図のように、スロットルチャンネルのリバースの設定を行ってください。詳しい手順について、「2.13．サーボリバース機能(REV)」に参考してください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1082-body-5-13ab704d54d7.webp\" alt=\"REVERSEの選択画面と設定画面。STのREVが選択されている。\" width=\"847\" height=\"404\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>※ステアリングの動きが正しい場合、上記の操作をスキップしてください。</p>\n\n\n\n<p>スロットルとステアリングのリバース設定が完了したら、次の混合制御(ミックスコントロール)のステップへ移ります。</p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281082.html",
+    "noindex": false,
+    "hero": null
+  },
+  {
+    "id": "wordpress-1086",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 1086,
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc",
+      "title": "RC4GS取扱説明書：2.16.3．混合制御(ミックスコントロール)設定",
+      "excerpt": "<p>1．スロットルMIXステアリング：無限軌道車の先進・後退設定 スロットルで無限軌道車の前進・後退を制御する際に、スロットルチャンネルでステアリングチャンネルをリードするように混合制御を設定します。この … </p>",
+      "content": "<p><strong>1</strong><strong>．スロットルMIX</strong><strong>ステアリング：無限軌道車の先進・後退設定</strong></p>\n\n\n\n<p>スロットルで無限軌道車の前進・後退を制御する際に、スロットルチャンネルでステアリングチャンネルをリードするように混合制御を設定します。<br />この場合、マスター：スロットル、スレーブ：ステアリングとなります。</p>\n\n\n\n<p>設定の値について、下記の図をご参考してください。<br />詳しい手順について、「2.16．プログラムミキシング」をご参照して、PMIX1の設定をしてください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-1-d43fd39945d5.webp\" alt=\"PMIX01の選択画面と設定画面。MXMDはON、MSTはTH、SLVはST、LEFTとRIGHは+100%。\" width=\"772\" height=\"413\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>設定完了後、スロットルトリガーを引くと、車が前進するように、両方のトラックが動くことを確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-2-ba0057ff39cc.webp\" alt=\"送信機のトリガーを動かす矢印と、履帯式車両の左右の履帯を同じ方向へ動かす矢印。\" width=\"746\" height=\"310\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>1</strong><strong>．ステアリングMIX</strong><strong>スロットル：無限軌道車の左折・右折設定</strong></p>\n\n\n\n<p>ステアリングで無限軌道車の左折・右折設定について、ステアリンチャンネルでスロットルチャンネルをリードする混合制御の設定となります。</p>\n\n\n\n<p>この場合、マスター：スロットル、スレーブ：ステアリングとなります。</p>\n\n\n\n<p>設定の値について、下記の図をご参考してください。<br />詳しい手順について、「2.16．プログラムミキシング」をご参照して、PMIX2の設定をしてください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-3-45797d8270ca.webp\" alt=\"PMIX02の選択画面と設定画面。MXMDはON、MSTはST、SLVはTH、LEFTとRIGHは+100%。\" width=\"773\" height=\"411\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>設定完了後、ステアリンを回すことで、両トラックが逆方向で動き、折れ曲がる事はできるようになります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-4-732f346ece0a.webp\" alt=\"送信機のステアリングを回す矢印と、履帯式車両の左右の履帯を逆方向へ動かす矢印。\" width=\"750\" height=\"318\" loading=\"lazy\" decoding=\"async\" /></figure>",
+      "published_at": "2020-06-28T12:04:08.000Z",
+      "modified_at": "2021-01-01T13:38:21.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg",
+        "width": 1000,
+        "height": 1000,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg"
+      },
+      "featured_image_alt": "RC4GS送信機と履帯式車両の写真。送信機の画面付近にPMIXと表示されている。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/1086-body-1-d43fd39945d5.webp",
+        "width": 772,
+        "height": 413,
+        "sha256": "d43fd39945d5450f225ffd52b8ccace580030e80e8ca4003f175d775aa64170f",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_13.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1086-body-2-ba0057ff39cc.webp",
+        "width": 746,
+        "height": 310,
+        "sha256": "ba0057ff39cc08b71b43a79a28a1dd3fb50d82be72f9139d61579b8452e18fc8",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_14.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1086-body-3-45797d8270ca.webp",
+        "width": 773,
+        "height": 411,
+        "sha256": "45797d8270ca2b355a19a3dd7fd5782ccad18b039b5949d6918b5fa1edb96ef2",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_15.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/1086-body-4-732f346ece0a.webp",
+        "width": 750,
+        "height": 318,
+        "sha256": "732f346ece0a279d316da58dfa8c38425cf2a08b71197f5195b561c2cfc09c70",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_16.png"
+      }
+    ],
+    "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a2-16-3%ef%bc%8e%e6%b7%b7%e5%90%88%e5%88%b6%e5%be%a1%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc",
+    "title": "RC4GS取扱説明書：2.16.3．混合制御(ミックスコントロール)設定",
+    "description": "1．スロットルMIXステアリング：無限軌道車の先進・後退設定 スロットルで無限軌道車の前進・後退を制御する際に、スロットルチャンネルでステアリングチャンネルをリードするように混合制御を設定します。この …",
+    "published_at": "2020-06-28T12:04:08.000Z",
+    "updated_at": "2021-01-01T13:38:21.000Z",
+    "content_status": "published",
+    "content_html": "<p><strong>1</strong><strong>．スロットルMIX</strong><strong>ステアリング：無限軌道車の先進・後退設定</strong></p>\n\n\n\n<p>スロットルで無限軌道車の前進・後退を制御する際に、スロットルチャンネルでステアリングチャンネルをリードするように混合制御を設定します。<br />この場合、マスター：スロットル、スレーブ：ステアリングとなります。</p>\n\n\n\n<p>設定の値について、下記の図をご参考してください。<br />詳しい手順について、「2.16．プログラムミキシング」をご参照して、PMIX1の設定をしてください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-1-d43fd39945d5.webp\" alt=\"PMIX01の選択画面と設定画面。MXMDはON、MSTはTH、SLVはST、LEFTとRIGHは+100%。\" width=\"772\" height=\"413\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>設定完了後、スロットルトリガーを引くと、車が前進するように、両方のトラックが動くことを確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-2-ba0057ff39cc.webp\" alt=\"送信機のトリガーを動かす矢印と、履帯式車両の左右の履帯を同じ方向へ動かす矢印。\" width=\"746\" height=\"310\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>1</strong><strong>．ステアリングMIX</strong><strong>スロットル：無限軌道車の左折・右折設定</strong></p>\n\n\n\n<p>ステアリングで無限軌道車の左折・右折設定について、ステアリンチャンネルでスロットルチャンネルをリードする混合制御の設定となります。</p>\n\n\n\n<p>この場合、マスター：スロットル、スレーブ：ステアリングとなります。</p>\n\n\n\n<p>設定の値について、下記の図をご参考してください。<br />詳しい手順について、「2.16．プログラムミキシング」をご参照して、PMIX2の設定をしてください。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-3-45797d8270ca.webp\" alt=\"PMIX02の選択画面と設定画面。MXMDはON、MSTはST、SLVはTH、LEFTとRIGHは+100%。\" width=\"773\" height=\"411\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>設定完了後、ステアリンを回すことで、両トラックが逆方向で動き、折れ曲がる事はできるようになります。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1086-body-4-732f346ece0a.webp\" alt=\"送信機のステアリングを回す矢印と、履帯式車両の左右の履帯を逆方向へ動かす矢印。\" width=\"750\" height=\"318\" loading=\"lazy\" decoding=\"async\" /></figure>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006281086.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/1086-403d47157f33.webp",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "403d47157f33027cc4292e256b6db85f94483441693e48644e543510c4b06b16",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/11/61M-VJMliyL._AC_SL1000_.jpg",
+      "alt": "RC4GS送信機と履帯式車両の写真。送信機の画面付近にPMIXと表示されている。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-1054",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 1054,
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d",
+      "title": "RC4GS取扱説明書：1.5．テレメトリー情報の確認",
+      "excerpt": "<p>RC4GSは2018年1月1日以降、アップデートしたファームウェアはテレメトリー機能を対応します。R7FG、又は、R8F受信機とバインディングした場合、RSSI以外に、受信機の電圧などの情報も確認でき … </p>",
+      "content": "<p>RC4GSは2018年1月1日以降、アップデートしたファームウェアはテレメトリー機能を対応します。R7FG、又は、R8F受信機とバインディングした場合、RSSI以外に、受信機の電圧などの情報も確認できます。<br />※ファームウェアのアップデート手順について、「1.3．RC4GSファームウェアアップグレード手順」を参考してください。</p>\n\n\n\n<p>以下の手順で、受信機の電圧のアラームの設定は可能です。</p>\n\n\n\n<p>(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示。<br />(2)「Dec(-)」と「Inc(+)」を使って、「ARARM」を選択して、受信機電圧のアラーム値を指定します。</p>\n\n\n\n<p>バッテリーケーブルのオス側をESCに接続して、メス側をバッテリーに接続します。受信機に付属するJSTヘッドを受信機に繋げます。これで、受信機側のバッテリーの電圧が送信機にテレメトリーします。<br />以下の図は接続の例です。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1054-body-1-63244eba92d0.webp\" alt=\"バッテリー、ESC、モーター、R7FG受信機、ステアリングサーボの接続図。ESCはCH2、サーボはCH1に接続されている。\" width=\"476\" height=\"234\" loading=\"lazy\" decoding=\"async\" /></figure>",
+      "published_at": "2020-06-18T14:59:24.000Z",
+      "modified_at": "2020-06-18T14:59:24.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": null,
+      "featured_image_alt": "",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/1054-body-1-63244eba92d0.webp",
+        "width": 476,
+        "height": 234,
+        "sha256": "63244eba92d0d0342ea9a50253f0c7bdfee4546dfbd6a34f27836f1fd4714ea9",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_5.png"
+      }
+    ],
+    "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-5%ef%bc%8e%e3%83%86%e3%83%ac%e3%83%a1%e3%83%88%e3%83%aa%e3%83%bc%e6%83%85%e5%a0%b1%e3%81%ae%e7%a2%ba%e8%aa%8d",
+    "title": "RC4GS取扱説明書：1.5．テレメトリー情報の確認",
+    "description": "RC4GSは2018年1月1日以降、アップデートしたファームウェアはテレメトリー機能を対応します。R7FG、又は、R8F受信機とバインディングした場合、RSSI以外に、受信機の電圧などの情報も確認でき …",
+    "published_at": "2020-06-18T14:59:24.000Z",
+    "updated_at": "2020-06-18T14:59:24.000Z",
+    "content_status": "published",
+    "content_html": "<p>RC4GSは2018年1月1日以降、アップデートしたファームウェアはテレメトリー機能を対応します。R7FG、又は、R8F受信機とバインディングした場合、RSSI以外に、受信機の電圧などの情報も確認できます。<br />※ファームウェアのアップデート手順について、「1.3．RC4GSファームウェアアップグレード手順」を参考してください。</p>\n\n\n\n<p>以下の手順で、受信機の電圧のアラームの設定は可能です。</p>\n\n\n\n<p>(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示。<br />(2)「Dec(-)」と「Inc(+)」を使って、「ARARM」を選択して、受信機電圧のアラーム値を指定します。</p>\n\n\n\n<p>バッテリーケーブルのオス側をESCに接続して、メス側をバッテリーに接続します。受信機に付属するJSTヘッドを受信機に繋げます。これで、受信機側のバッテリーの電圧が送信機にテレメトリーします。<br />以下の図は接続の例です。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1054-body-1-63244eba92d0.webp\" alt=\"バッテリー、ESC、モーター、R7FG受信機、ステアリングサーボの接続図。ESCはCH2、サーボはCH1に接続されている。\" width=\"476\" height=\"234\" loading=\"lazy\" decoding=\"async\" /></figure>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181054.html",
+    "noindex": false,
+    "hero": null
+  },
+  {
+    "id": "wordpress-1050",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 1050,
+      "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d",
+      "title": "RC4GS取扱説明書：1.4．電波状況(RSSI)の確認",
+      "excerpt": "<p>送信機の電源をONにしたら、電波を発信します。受信機が正常にバインディングされた場合、電波の状況(強さ)が送信機の画面に表示されます。 Exitボタンを連続して2回押下して、テレメトリー情報が表示され … </p>",
+      "content": "<p>送信機の電源をONにしたら、電波を発信します。受信機が正常にバインディングされた場合、電波の状況(強さ)が送信機の画面に表示されます。 Exitボタンを連続して2回押下して、テレメトリー情報が表示される画面に移り、RSSIの強度が画面から確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1050-body-1-b3160a5d4922.webp\" alt=\"RC4GSのメイン画面とテレメトリー画面。RSSI、RATE、EXT、RXの値が表示されている。\" width=\"476\" height=\"234\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>電波状況が悪くなる時、以下の手順で、アラームの設定は可能です。</p>\n\n\n\n<p>(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示。<br />(2)「Dec(-)」と「Inc(+)」を使って、「ARARM」を選択して、RSSIのアラーム値を指定します。</p>",
+      "published_at": "2020-06-18T14:56:45.000Z",
+      "modified_at": "2020-06-18T14:56:45.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": null,
+      "featured_image_alt": "",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/1050-body-1-b3160a5d4922.webp",
+        "width": 476,
+        "height": 234,
+        "sha256": "b3160a5d4922cc4e703739c0c46a1ca1362177cda0133880575c887c9908525a",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_4.png"
+      }
+    ],
+    "slug": "rc4gs%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%ef%bc%9a1-4%ef%bc%8e%e9%9b%bb%e6%b3%a2%e7%8a%b6%e6%b3%81rssi%e3%81%ae%e7%a2%ba%e8%aa%8d",
+    "title": "RC4GS取扱説明書：1.4．電波状況(RSSI)の確認",
+    "description": "送信機の電源をONにしたら、電波を発信します。受信機が正常にバインディングされた場合、電波の状況(強さ)が送信機の画面に表示されます。 Exitボタンを連続して2回押下して、テレメトリー情報が表示され …",
+    "published_at": "2020-06-18T14:56:45.000Z",
+    "updated_at": "2020-06-18T14:56:45.000Z",
+    "content_status": "published",
+    "content_html": "<p>送信機の電源をONにしたら、電波を発信します。受信機が正常にバインディングされた場合、電波の状況(強さ)が送信機の画面に表示されます。 Exitボタンを連続して2回押下して、テレメトリー情報が表示される画面に移り、RSSIの強度が画面から確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/1050-body-1-b3160a5d4922.webp\" alt=\"RC4GSのメイン画面とテレメトリー画面。RSSI、RATE、EXT、RXの値が表示されている。\" width=\"476\" height=\"234\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>電波状況が悪くなる時、以下の手順で、アラームの設定は可能です。</p>\n\n\n\n<p>(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューを表示。<br />(2)「Dec(-)」と「Inc(+)」を使って、「ARARM」を選択して、RSSIのアラーム値を指定します。</p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/202006181050.html",
+    "noindex": false,
+    "hero": null
+  },
+  {
+    "id": "wordpress-85",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 85,
+      "slug": "scientific-study-of-organisms-in-the-ocean",
+      "title": "RC4GS取扱説明書：2.9．A.B.S.機能 (A.B.S.)",
+      "excerpt": "<p>パルスブレーキフルタイム4WD等で、コーナリング中にブレーキをかけると、アンダーステアが発生しますが、この機能を使う事により、アンダーステアが発生し難くなり、スムーズなコーナーリングができます。 動作 … </p>",
+      "content": "<p><strong>パルスブレーキ</strong><br />フルタイム4WD等で、コーナリング中にブレーキをかけると、アンダーステアが発生しますが、この機能を使う事により、アンダーステアが発生し難くなり、スムーズなコーナーリングができます。</p>\n<p><strong>動作：</strong><br />・ブレーキ操作時、スロットルサーボを断続的にブレーキ動作させる、ポンピングブレーキです。<br />・ブレーキの戻り量、遅延量等、ブレーキのデューティーを設定できます。<br />・ブレーキミキシング機能を設定すると、ABS有効領域を設定できます。</p>\n<p><strong>設定項目：</strong><br />ABP: ブレキー戻り量<br />DLY: 遅延量<br />CYC: サイクル速度<br />TGP: トリガーポイント<br />DTY: サイクル遅延比<br />STM: ステアリングミキシング</p>\n<p>・ABP(ブレーキの戻り量)：ブレーキ解放のために、トリガー操作に対してサーボが戻る比率を設定します。0に設定するとA.B.S機能は動きません。50でトリガー操作量の50%(半分)、100%でニュートラル位置まで戻ります。<br />・DLY(遅延)：ブレーキ操作してから、A.B.S動作が動くまでの遅延を設定します。0に設定すると遅れなしでA.B.S機能が動きます。50で約0.7秒遅れてA.B.S機能が動き、100で約1.4秒遅れてA.B.S機能が動きます。<br />・CYC（サイクルスピード）：ポンピングの速さ(サイクル)を設定します。設定数値が小さい程ポンピングサイクルが早くあなります。<br />・TGP（トリガーポイント）：ブレーキ操作で、A.B.Sが動きはじめるトリガーの位置を設定します。<br />・DTY（デューティ比）：ポンピング動作でブレーキのかかる時間と、解放する時間の比率を設定します。比率は　+3～0～-3　の7段階の設定できます。<br />・STM（ステアリングミキシング）：ステアリング操作範囲によって、A.B.S動作のON/OFFを設定できます。</p>\n<p><strong>A.B.S機能設定</strong><br />機能メニューから、「Dec（-）」、「Inc（+）」ボタンを使用してA.B.S機能を選択、「Enter」ボタンを押下してA.B.S機能画面に遷移ます。</p>\n<p><strong>(1)ブレーキの戻り量(ABP)の設定<br /></strong>「Dec（-）」「Inc（+）」ボタンを押下して設定項目「ABP」を選択し、「Enter」キーを押下すると「ABP」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「50」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。</p>\n<p>「0」：戻り量なし<br />「50」：ブレーキ操作量の50％位置に戻る<br />「100」：中立位置に戻る</p>\n<p><strong>ブレーキの戻り量の設定値について<br /></strong>0～50～100<br />初期値：50<br />　※ブレーキの戻り量(ABP)の設定がブレーキ側の「EXP」率の影響を受けます。</p>\n<p><strong>(2)遅延(DLY)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「DLY」を選択し、「Enter」キーを押下すると「DLY」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「0」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。</p>\n<p>「0」：遅延なし<br />「50」：A.B.S機能遅延時間：約0.7秒<br />「100」：A.B.S機能遅延時間：約1.4秒</p>\n<p><strong>遅延の設定値について<br /></strong>0～100<br />初期値：0</p>\n<p><strong>(3)サイクルスピード(CYC)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「CYC」を選択し、「Enter」キーを押下すると「CYC」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「5」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。<br />※設定値が小さい程、サイクルスピードが速くなります。</p>\n<p><strong>サイクルスピードの値について</strong><br />0～30<br />初期値：5</p>\n<p><strong>(4)トリガーポイント(TGP)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「TGP」を選択し、「Enter」キーを押下すると「TGP」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「30」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。<br />※A.B.S.機能のスロットルトリガー位置を設定します。 数値はパーセンテージの表示で、フルブレーキ位置を100％としています。</p>\n<p><strong>トリガーポイントの値について</strong><br />0～100<br />初期値：30</p>\n<p><strong>(5)ヂューティ比(DTY)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「DTY」を選択し、「Enter」キーを押下すると「DTY」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「0」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。</p>\n<p>「-3」：ブレーキロックが困難）<br />「+3」：ブレーキの適用時間が最も長くなります（ブレーキがロックしやすくなります）<br />（備考）-側がローグリップセット、+側がハイグリップセットです。</p>\n<p><strong>(6)ステアリングミキシング(STM)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「ABP」を選択し、「Enter」キーを押下すると「ABP」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「OFF」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。<br />※ステアリングホイルの操作に対して、A.B.S機能の動く範囲を設定できます。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/85-body-1-13e887f07513.webp\" alt=\"ステアリングホイールのNとEの範囲を色分けした図。\" width=\"376\" height=\"190\" loading=\"lazy\" decoding=\"async\" /><figcaption>ステアリング操作</figcaption></figure>\n\n\n\n<p>ステアリングミキシング(STM)<br />OFF、<br />N10〜N100、<br />E10〜E100<br />初期値：OFF</p>\n\n\n<p>ステアリングミキシングが設定され、ステアリング操作が設定範囲に入ると、数字の前に「*」が表示されます。<br />ミキシングがオフの場合、A.B.S機能はステアリング範囲全体で動作できます。 <br />設定を終了する場合は、「終了」ボタンを2回押すと初期画面に戻ります。</p>",
+      "published_at": "2020-04-08T10:24:00.000Z",
+      "modified_at": "2020-04-09T14:51:14.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-39_No-00.png",
+        "width": 219,
+        "height": 195,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-39_No-00.png"
+      },
+      "featured_image_alt": "RC4GSのABS画面。MODEのOFFが選択されている。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/scientific-study-of-organisms-in-the-ocean/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/85-body-1-13e887f07513.webp",
+        "width": 376,
+        "height": 190,
+        "sha256": "13e887f0751338d114bfb6b44eb4aff917754c8560b10b9037726cdceb69ed98",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/04/de11012c3776344ed23d95ee2724e862.png"
+      }
+    ],
+    "slug": "scientific-study-of-organisms-in-the-ocean",
+    "title": "RC4GS取扱説明書：2.9．A.B.S.機能 (A.B.S.)",
+    "description": "パルスブレーキフルタイム4WD等で、コーナリング中にブレーキをかけると、アンダーステアが発生しますが、この機能を使う事により、アンダーステアが発生し難くなり、スムーズなコーナーリングができます。 動作 …",
+    "published_at": "2020-04-08T10:24:00.000Z",
+    "updated_at": "2020-04-09T14:51:14.000Z",
+    "content_status": "published",
+    "content_html": "<p><strong>パルスブレーキ</strong><br />フルタイム4WD等で、コーナリング中にブレーキをかけると、アンダーステアが発生しますが、この機能を使う事により、アンダーステアが発生し難くなり、スムーズなコーナーリングができます。</p>\n<p><strong>動作：</strong><br />・ブレーキ操作時、スロットルサーボを断続的にブレーキ動作させる、ポンピングブレーキです。<br />・ブレーキの戻り量、遅延量等、ブレーキのデューティーを設定できます。<br />・ブレーキミキシング機能を設定すると、ABS有効領域を設定できます。</p>\n<p><strong>設定項目：</strong><br />ABP: ブレキー戻り量<br />DLY: 遅延量<br />CYC: サイクル速度<br />TGP: トリガーポイント<br />DTY: サイクル遅延比<br />STM: ステアリングミキシング</p>\n<p>・ABP(ブレーキの戻り量)：ブレーキ解放のために、トリガー操作に対してサーボが戻る比率を設定します。0に設定するとA.B.S機能は動きません。50でトリガー操作量の50%(半分)、100%でニュートラル位置まで戻ります。<br />・DLY(遅延)：ブレーキ操作してから、A.B.S動作が動くまでの遅延を設定します。0に設定すると遅れなしでA.B.S機能が動きます。50で約0.7秒遅れてA.B.S機能が動き、100で約1.4秒遅れてA.B.S機能が動きます。<br />・CYC（サイクルスピード）：ポンピングの速さ(サイクル)を設定します。設定数値が小さい程ポンピングサイクルが早くあなります。<br />・TGP（トリガーポイント）：ブレーキ操作で、A.B.Sが動きはじめるトリガーの位置を設定します。<br />・DTY（デューティ比）：ポンピング動作でブレーキのかかる時間と、解放する時間の比率を設定します。比率は　+3～0～-3　の7段階の設定できます。<br />・STM（ステアリングミキシング）：ステアリング操作範囲によって、A.B.S動作のON/OFFを設定できます。</p>\n<p><strong>A.B.S機能設定</strong><br />機能メニューから、「Dec（-）」、「Inc（+）」ボタンを使用してA.B.S機能を選択、「Enter」ボタンを押下してA.B.S機能画面に遷移ます。</p>\n<p><strong>(1)ブレーキの戻り量(ABP)の設定<br /></strong>「Dec（-）」「Inc（+）」ボタンを押下して設定項目「ABP」を選択し、「Enter」キーを押下すると「ABP」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「50」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。</p>\n<p>「0」：戻り量なし<br />「50」：ブレーキ操作量の50％位置に戻る<br />「100」：中立位置に戻る</p>\n<p><strong>ブレーキの戻り量の設定値について<br /></strong>0～50～100<br />初期値：50<br />　※ブレーキの戻り量(ABP)の設定がブレーキ側の「EXP」率の影響を受けます。</p>\n<p><strong>(2)遅延(DLY)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「DLY」を選択し、「Enter」キーを押下すると「DLY」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「0」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。</p>\n<p>「0」：遅延なし<br />「50」：A.B.S機能遅延時間：約0.7秒<br />「100」：A.B.S機能遅延時間：約1.4秒</p>\n<p><strong>遅延の設定値について<br /></strong>0～100<br />初期値：0</p>\n<p><strong>(3)サイクルスピード(CYC)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「CYC」を選択し、「Enter」キーを押下すると「CYC」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「5」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。<br />※設定値が小さい程、サイクルスピードが速くなります。</p>\n<p><strong>サイクルスピードの値について</strong><br />0～30<br />初期値：5</p>\n<p><strong>(4)トリガーポイント(TGP)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「TGP」を選択し、「Enter」キーを押下すると「TGP」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「30」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。<br />※A.B.S.機能のスロットルトリガー位置を設定します。 数値はパーセンテージの表示で、フルブレーキ位置を100％としています。</p>\n<p><strong>トリガーポイントの値について</strong><br />0～100<br />初期値：30</p>\n<p><strong>(5)ヂューティ比(DTY)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「DTY」を選択し、「Enter」キーを押下すると「DTY」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「0」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。</p>\n<p>「-3」：ブレーキロックが困難）<br />「+3」：ブレーキの適用時間が最も長くなります（ブレーキがロックしやすくなります）<br />（備考）-側がローグリップセット、+側がハイグリップセットです。</p>\n<p><strong>(6)ステアリングミキシング(STM)の設定</strong><br />「Dec（-）」「Inc（+）」ボタンを押下して設定項目「ABP」を選択し、「Enter」キーを押下すると「ABP」の初期値が点滅します。 <br />「Dec（-）」と「Inc（+）」ボタンを使用して値を調整します。<br />（注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒ほど押し続けると、初期値「OFF」に戻ります。）<br />「Enter」ボタンを押下して、指定された値の点滅が止まり、設定完了します。<br />※ステアリングホイルの操作に対して、A.B.S機能の動く範囲を設定できます。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/85-body-1-13e887f07513.webp\" alt=\"ステアリングホイールのNとEの範囲を色分けした図。\" width=\"376\" height=\"190\" loading=\"lazy\" decoding=\"async\" /><figcaption>ステアリング操作</figcaption></figure>\n\n\n\n<p>ステアリングミキシング(STM)<br />OFF、<br />N10〜N100、<br />E10〜E100<br />初期値：OFF</p>\n\n\n<p>ステアリングミキシングが設定され、ステアリング操作が設定範囲に入ると、数字の前に「*」が表示されます。<br />ミキシングがオフの場合、A.B.S機能はステアリング範囲全体で動作できます。 <br />設定を終了する場合は、「終了」ボタンを2回押すと初期画面に戻ります。</p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/85-8569823149a1.webp",
+      "width": 219,
+      "height": 195,
+      "sha256": "8569823149a1f95656827279476111bb7726b0fc6d87c151e6afbb30cfc47371",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-39_No-00.png",
+      "alt": "RC4GSのABS画面。MODEのOFFが選択されている。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-92",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 92,
+      "slug": "beautiful-cities-around-the-world",
+      "title": "RC4GS取扱説明書：2.8．スロットルスピード (THSPD)",
+      "excerpt": "<p>スロットルサーボの遅延滑りやすい路面での急加速操作は、車輪が回転するだけで車両はスムーズに加速できません。THSPD機能を設定することで、無駄なバッテリー消費を抑えつつ、スムーズで楽しい操作が可能とな … </p>",
+      "content": "<p><strong>スロットルサーボの遅延</strong><br />滑りやすい路面での急加速操作は、車輪が回転するだけで車両はスムーズに加速できません。THSPD機能を設定することで、無駄なバッテリー消費を抑えつつ、スムーズで楽しい操作が可能となります。</p>\n<p><strong>設定方法：</strong><br />スロットルトリガーが必要以上に操作されても駆動輪が回転しないようにスロットルサーボ（amp）操作を遅らせます。<br />この遅延機能は、スロットルトリガーが戻されたときやブレーキ操作時には実行されません。 <br />THSPDのモードがSPEED1とSPEED2から選択できます。<br />OFF：THSPD機能しない</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/92-body-1-dc9771b9a23a.webp\" alt=\"RC4GSのTHSPD画面。MODEはSPEED1、ALLは100。\" width=\"218\" height=\"192\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n<p><strong>SPEED1の設定方法：</strong><br />MODE：指定されたSPEEDモード<br />ALL：速度の設定値、0～100、100で設定される場合、遅延しない。</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してTHSPD機能を選択して、「Enter」ボタンを押下して遷移します。 <br />(2) 初期モード設定項目がSPEED1の場合<br />　(※尚、初期モード設定項目がSPEED2またはOFFの場合、「Dec（-）」または「Inc（+）」ボタンを押してSPEED1を選択すること)<br />　「Dec（-）」または「Inc（+）」ボタンを押して「ALL」設定項目を選択し、「Enter」キーを押下すると、初期値が点滅し、「Dec（-）」と「Inc（+）」ボタンを使用して、スロットル前側範囲全体の遅延を調整します。 <br />　(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「100」に戻ります。)<br />「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 <br />(3) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/92-body-2-a5132ba1442b.webp\" alt=\"RC4GSのTHSPD画面。MODEはSPEED2、LOWとHIGHは100、TGP1は30。\" width=\"250\" height=\"221\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n<p><strong>SPEED2</strong><strong>の設定方法：<br /></strong>MODE：指定されたSPEEDモード<br />LOW：0～100<br />HIGH：速度の設定値、0～100、100で設定される場合、遅延しない。<br />TGP1：0～100</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してTHSPD機能を選択して、「Enter」ボタンを押下して遷移します。<br />(2) 初期MODE設定項目がSPEED 2の場合<br />　(最初のMODE設定項目がSPEED1又はOFFの場合、「Dec（-）」または「Inc（+）」ボタンを押してSPEED2を選択すること)<br />　「Dec（-）」または「Inc（+）」ボタンを押下して、「LOW」、「HIGH」遅延調整、「TGP1」速度切り替え調整します。<br />(3) 「Enter」キーを押して「LOW」「HIGH」「TGP1」の設定項目を確定すると、選択した設定項目の値が点滅します。 「Dec（-）」、「Inc（+）」ボタンを使用して値を調整します。 <br />　(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値（LOW、HIGHの初期値は「100」、TGP1は「30」）に戻ります。)。<br />(4) 設定を終了する場合は、「終了」ボタンを2回押すと初期画面に戻ります。</p>",
+      "published_at": "2020-03-30T22:47:00.000Z",
+      "modified_at": "2020-04-01T10:32:02.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-15_No-00.png",
+        "width": 214,
+        "height": 195,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-15_No-00.png"
+      },
+      "featured_image_alt": "RC4GSのTHSPD画面。MODEはOFF。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/beautiful-cities-around-the-world/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/92-body-1-dc9771b9a23a.webp",
+        "width": 218,
+        "height": 192,
+        "sha256": "dc9771b9a23a50a2b5952362265cd4fa17ec008b9e4b89b0e6e112531b123879",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-22_No-00.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/92-body-2-a5132ba1442b.webp",
+        "width": 250,
+        "height": 221,
+        "sha256": "a5132ba1442b021872271c1157e3abc80447dcdf3669a2f8a34aaadd778e2b41",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-32_No-00.png"
+      }
+    ],
+    "slug": "beautiful-cities-around-the-world",
+    "title": "RC4GS取扱説明書：2.8．スロットルスピード (THSPD)",
+    "description": "スロットルサーボの遅延滑りやすい路面での急加速操作は、車輪が回転するだけで車両はスムーズに加速できません。THSPD機能を設定することで、無駄なバッテリー消費を抑えつつ、スムーズで楽しい操作が可能とな …",
+    "published_at": "2020-03-30T22:47:00.000Z",
+    "updated_at": "2020-04-01T10:32:02.000Z",
+    "content_status": "published",
+    "content_html": "<p><strong>スロットルサーボの遅延</strong><br />滑りやすい路面での急加速操作は、車輪が回転するだけで車両はスムーズに加速できません。THSPD機能を設定することで、無駄なバッテリー消費を抑えつつ、スムーズで楽しい操作が可能となります。</p>\n<p><strong>設定方法：</strong><br />スロットルトリガーが必要以上に操作されても駆動輪が回転しないようにスロットルサーボ（amp）操作を遅らせます。<br />この遅延機能は、スロットルトリガーが戻されたときやブレーキ操作時には実行されません。 <br />THSPDのモードがSPEED1とSPEED2から選択できます。<br />OFF：THSPD機能しない</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/92-body-1-dc9771b9a23a.webp\" alt=\"RC4GSのTHSPD画面。MODEはSPEED1、ALLは100。\" width=\"218\" height=\"192\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n<p><strong>SPEED1の設定方法：</strong><br />MODE：指定されたSPEEDモード<br />ALL：速度の設定値、0～100、100で設定される場合、遅延しない。</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してTHSPD機能を選択して、「Enter」ボタンを押下して遷移します。 <br />(2) 初期モード設定項目がSPEED1の場合<br />　(※尚、初期モード設定項目がSPEED2またはOFFの場合、「Dec（-）」または「Inc（+）」ボタンを押してSPEED1を選択すること)<br />　「Dec（-）」または「Inc（+）」ボタンを押して「ALL」設定項目を選択し、「Enter」キーを押下すると、初期値が点滅し、「Dec（-）」と「Inc（+）」ボタンを使用して、スロットル前側範囲全体の遅延を調整します。 <br />　(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値「100」に戻ります。)<br />「Enter」ボタンを押すと、調整された値の点滅が停止し、値が設定されました。 <br />(3) 設定を終了する場合は、「Exit」ボタンを2回押下して初期画面に戻ります。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/92-body-2-a5132ba1442b.webp\" alt=\"RC4GSのTHSPD画面。MODEはSPEED2、LOWとHIGHは100、TGP1は30。\" width=\"250\" height=\"221\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n<p><strong>SPEED2</strong><strong>の設定方法：<br /></strong>MODE：指定されたSPEEDモード<br />LOW：0～100<br />HIGH：速度の設定値、0～100、100で設定される場合、遅延しない。<br />TGP1：0～100</p>\n<p>(1) 機能メニューから、「Dec（-）」と「Inc（+）」ボタンを使用してTHSPD機能を選択して、「Enter」ボタンを押下して遷移します。<br />(2) 初期MODE設定項目がSPEED 2の場合<br />　(最初のMODE設定項目がSPEED1又はOFFの場合、「Dec（-）」または「Inc（+）」ボタンを押してSPEED2を選択すること)<br />　「Dec（-）」または「Inc（+）」ボタンを押下して、「LOW」、「HIGH」遅延調整、「TGP1」速度切り替え調整します。<br />(3) 「Enter」キーを押して「LOW」「HIGH」「TGP1」の設定項目を確定すると、選択した設定項目の値が点滅します。 「Dec（-）」、「Inc（+）」ボタンを使用して値を調整します。 <br />　(※値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押すと、初期値（LOW、HIGHの初期値は「100」、TGP1は「30」）に戻ります。)。<br />(4) 設定を終了する場合は、「終了」ボタンを2回押すと初期画面に戻ります。</p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/92-7ad14665a803.webp",
+      "width": 214,
+      "height": 195,
+      "sha256": "7ad14665a8030bdf73deb09ed4b13fa28bfbe58b66bce9778dbd869e5a86eebf",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-15_No-00.png",
+      "alt": "RC4GSのTHSPD画面。MODEはOFF。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-30",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 30,
+      "slug": "shooting-passing-dribbling-and-rebounding",
+      "title": "RC4GS取扱説明書：2.7．スロットルカーブ (THEXP)",
+      "excerpt": "<p>スロットルトリガーの前進及びブレーキ側の各方向について、サーボの動作をクイックにしたり、マイルドにしたりする機能です。サーボの最大動作量に影響しません。尚、前進側については３種(CRV/VTR/EXP … </p>",
+      "content": "<p>スロットルトリガーの前進及びブレーキ側の各方向について、サーボの動作をクイックにしたり、マイルドにしたりする機能です。サーボの最大動作量に影響しません。尚、前進側については３種(CRV/VTR/EXP)のカーブタイプから選択できます。</p>\n<p>カーブが以下5つの方法で設定できます。<br />・5ポイントスロットルカーブ設定<br />・シングルポイント設定<br />・EXPカーブ設定<br />・ブレーキインデックスカーブ設定<br />・エレベーションカーブ設定</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-1-fd4569c0ef1e.webp\" alt=\"RC4GSのスロットルカーブ画面。MODEはON、P1の17%が選択され、右側に上昇するカーブが表示されている。\" width=\"228\" height=\"208\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>スロットカーブの設定(5ポイントスロットル)</strong><br />(1) 「Enter」ボタンを押下して、曲線ポイント値が点滅し始めたら、「Dec（-）」と「Inc（+）」ボタンを押下して開始値を調整します。<br /> (2) 「Enter」ボタンを押すと、開始値の点滅が止まり、調整が完了します。<br /> (3) 「終了」ボタンを2回押すと、最初に戻ります。</p>\n\n\n\n<p><strong>スロットルカーブの設定方法<br /></strong>CRVカーブを設定します。</p>\n\n\n\n<p><strong>設定項目</strong>：<br />MODE：ON / OFF<br />RATE：0％〜100％<br />(1) 機能メニューから、「Dec（-）」または「Inc（+）」ボタンを使用してTHEXP機能にアクセスします。 「FWD-CRV」機能を選択します。<br /> ( 2 )  「Dec（-）」または「Inc（+）」ボタンを押して、必要なカーブポイント調整用のカーブポイント1〜5を選択します。グラフから、設定した変更が画面に表示されます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-2-c4ca8e57f9f5.webp\" alt=\"RC4GSのFWD VTR画面。MODEはOFF、TG.Pは50、RATEは0。\" width=\"225\" height=\"200\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>VTRカーブの設定方法<br />設定項目：</strong><br />TG.P：20～80<br /> RATE：-100～0～+ 100<br />  ( 1 )  機能メニューから、「Dec（-）」または「Inc（+）」ボタンを使用してTHEXP機能に遷移して「FWD-VTR」機能を選択します。<br />  ( 2 )  「Dec（-）」または「Inc（+）」ボタンを押下して、転送のレートを選択します<br /> 「MODE」の値が「オフ」の場合、VTRは機能せず、「オン」に設定された「モード」の値のみがVTR機能で使用できます。グラフから、TG.PとRATEに加えた変更を確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-3-61aa3c9f1e35.webp\" alt=\"RC4GSのFWD EXP画面。MODEはOFF、RATEは0。\" width=\"227\" height=\"206\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>EXPカーブの設定方法</strong><br /><strong>設定項目：</strong><br />MODEL: OFF/ON<br />RATE: -100～0～+100<br />(1 )  機能メニューから、「Dec（-）」または「Inc（+）」ボタンを使用してTHEXP機能にアクセスし、「FWD-EXP」機能を選択します。<br /> (2 )  「Dec（-）」または「Inc（+）」ボタンを押下して、調整するRATEを選択し、最も快適な値を設定します。グラフから、EXP RATEに設定した値を確認できます。また、トリガーを動かしてスロットルの状態を確認します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-4-3de262142a54.webp\" alt=\"RC4GSのBRK EXP画面。RATEは0。\" width=\"220\" height=\"196\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>BRK-EXPカーブの設定方法</strong><br /> <strong>設定項目：</strong> <br />RATE: -100～0～+100<br /> 0～-100:フラットブレーキ<br /> 0:均一ブレーキ<br /> 0～+100:敏感なブレーキ<br /><strong>ブレーキ側の調整</strong><br />(1) 「Enter」キーを押下して、現在のBRK値が点滅します。ブレーキの制動を早くしたい場合は、「Inc（+）」ボタン、穏やかにしたい場合は、「Dec（-）」ボタンで調整します。<br /> （注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押し続けると、初期値「0」に戻ります。）<br /> (2) 「Enter」ボタンを押下して、指定されたBRK値の点滅が停止し、設定されます。<br /> (3) 設定を終了する場合は、「終了」ボタンを2回押すと初期画面に戻ります。</p>\n\n\n\n<p></p>\n\n\n\n<p></p>",
+      "published_at": "2020-03-30T00:34:00.000Z",
+      "modified_at": "2020-04-13T03:24:19.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png",
+        "width": 228,
+        "height": 208,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png"
+      },
+      "featured_image_alt": "RC4GSのスロットルカーブ画面。MODEはON、P1の17%が選択され、右側に上昇するカーブが表示されている。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/shooting-passing-dribbling-and-rebounding/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/30-body-1-fd4569c0ef1e.webp",
+        "width": 228,
+        "height": 208,
+        "sha256": "fd4569c0ef1ebb11555b8d9bd9e511d50374728b2dd91c0886e8a9a30e92830b",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/30-body-2-c4ca8e57f9f5.webp",
+        "width": 225,
+        "height": 200,
+        "sha256": "c4ca8e57f9f561b12e8f084f74dd1409b479c2492cbd93358861442eac1de1ab",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-46_No-00.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/30-body-3-61aa3c9f1e35.webp",
+        "width": 227,
+        "height": 206,
+        "sha256": "61aa3c9f1e35208e8d46550d0eda24e1cd960b3b0a0859bd55eb30e753bdb32a",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-55_No-00.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/30-body-4-3de262142a54.webp",
+        "width": 220,
+        "height": 196,
+        "sha256": "3de262142a54afbceffb70b74ea523611665d12690049ee0304cd3290b10a79b",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-19-6_No-00.png"
+      }
+    ],
+    "slug": "shooting-passing-dribbling-and-rebounding",
+    "title": "RC4GS取扱説明書：2.7．スロットルカーブ (THEXP)",
+    "description": "スロットルトリガーの前進及びブレーキ側の各方向について、サーボの動作をクイックにしたり、マイルドにしたりする機能です。サーボの最大動作量に影響しません。尚、前進側については３種(CRV/VTR/EXP …",
+    "published_at": "2020-03-30T00:34:00.000Z",
+    "updated_at": "2020-04-13T03:24:19.000Z",
+    "content_status": "published",
+    "content_html": "<p>スロットルトリガーの前進及びブレーキ側の各方向について、サーボの動作をクイックにしたり、マイルドにしたりする機能です。サーボの最大動作量に影響しません。尚、前進側については３種(CRV/VTR/EXP)のカーブタイプから選択できます。</p>\n<p>カーブが以下5つの方法で設定できます。<br />・5ポイントスロットルカーブ設定<br />・シングルポイント設定<br />・EXPカーブ設定<br />・ブレーキインデックスカーブ設定<br />・エレベーションカーブ設定</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-1-fd4569c0ef1e.webp\" alt=\"RC4GSのスロットルカーブ画面。MODEはON、P1の17%が選択され、右側に上昇するカーブが表示されている。\" width=\"228\" height=\"208\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>スロットカーブの設定(5ポイントスロットル)</strong><br />(1) 「Enter」ボタンを押下して、曲線ポイント値が点滅し始めたら、「Dec（-）」と「Inc（+）」ボタンを押下して開始値を調整します。<br /> (2) 「Enter」ボタンを押すと、開始値の点滅が止まり、調整が完了します。<br /> (3) 「終了」ボタンを2回押すと、最初に戻ります。</p>\n\n\n\n<p><strong>スロットルカーブの設定方法<br /></strong>CRVカーブを設定します。</p>\n\n\n\n<p><strong>設定項目</strong>：<br />MODE：ON / OFF<br />RATE：0％〜100％<br />(1) 機能メニューから、「Dec（-）」または「Inc（+）」ボタンを使用してTHEXP機能にアクセスします。 「FWD-CRV」機能を選択します。<br /> ( 2 )  「Dec（-）」または「Inc（+）」ボタンを押して、必要なカーブポイント調整用のカーブポイント1〜5を選択します。グラフから、設定した変更が画面に表示されます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-2-c4ca8e57f9f5.webp\" alt=\"RC4GSのFWD VTR画面。MODEはOFF、TG.Pは50、RATEは0。\" width=\"225\" height=\"200\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>VTRカーブの設定方法<br />設定項目：</strong><br />TG.P：20～80<br /> RATE：-100～0～+ 100<br />  ( 1 )  機能メニューから、「Dec（-）」または「Inc（+）」ボタンを使用してTHEXP機能に遷移して「FWD-VTR」機能を選択します。<br />  ( 2 )  「Dec（-）」または「Inc（+）」ボタンを押下して、転送のレートを選択します<br /> 「MODE」の値が「オフ」の場合、VTRは機能せず、「オン」に設定された「モード」の値のみがVTR機能で使用できます。グラフから、TG.PとRATEに加えた変更を確認できます。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-3-61aa3c9f1e35.webp\" alt=\"RC4GSのFWD EXP画面。MODEはOFF、RATEは0。\" width=\"227\" height=\"206\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>EXPカーブの設定方法</strong><br /><strong>設定項目：</strong><br />MODEL: OFF/ON<br />RATE: -100～0～+100<br />(1 )  機能メニューから、「Dec（-）」または「Inc（+）」ボタンを使用してTHEXP機能にアクセスし、「FWD-EXP」機能を選択します。<br /> (2 )  「Dec（-）」または「Inc（+）」ボタンを押下して、調整するRATEを選択し、最も快適な値を設定します。グラフから、EXP RATEに設定した値を確認できます。また、トリガーを動かしてスロットルの状態を確認します。</p>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/30-body-4-3de262142a54.webp\" alt=\"RC4GSのBRK EXP画面。RATEは0。\" width=\"220\" height=\"196\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p><strong>BRK-EXPカーブの設定方法</strong><br /> <strong>設定項目：</strong> <br />RATE: -100～0～+100<br /> 0～-100:フラットブレーキ<br /> 0:均一ブレーキ<br /> 0～+100:敏感なブレーキ<br /><strong>ブレーキ側の調整</strong><br />(1) 「Enter」キーを押下して、現在のBRK値が点滅します。ブレーキの制動を早くしたい場合は、「Inc（+）」ボタン、穏やかにしたい場合は、「Dec（-）」ボタンで調整します。<br /> （注：値を調整する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に約1秒間押し続けると、初期値「0」に戻ります。）<br /> (2) 「Enter」ボタンを押下して、指定されたBRK値の点滅が停止し、設定されます。<br /> (3) 設定を終了する場合は、「終了」ボタンを2回押すと初期画面に戻ります。</p>\n\n\n\n<p></p>\n\n\n\n<p></p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/30-fd4569c0ef1e.webp",
+      "width": 228,
+      "height": 208,
+      "sha256": "fd4569c0ef1ebb11555b8d9bd9e511d50374728b2dd91c0886e8a9a30e92830b",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-40_No-00.png",
+      "alt": "RC4GSのスロットルカーブ画面。MODEはON、P1の17%が選択され、右側に上昇するカーブが表示されている。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-129",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 129,
+      "slug": "smart-watch-on-the-go",
+      "title": "RC4GS取扱説明書：2.4．エンドポイント (EPA)",
+      "excerpt": "<p>R/Cの性能を最大限に発揮させるために、ステアリング、スロットル、及び、追加サーボのリンケージで、各サーボの動作角度を設定する必要な場合があります。この設定について、RC4GSのエンドポイントアジャス … </p>",
+      "content": "<p>R/Cの性能を最大限に発揮させるために、ステアリング、スロットル、及び、追加サーボのリンケージで、各サーボの動作角度を設定する必要な場合があります。この設定について、RC4GSのエンドポイントアジャスター (EPA)機能を利用します。車両などの特性により、迂回の半径に差がある場合、サーボの最大角度、左右の角度の設定を行ってください。</p>\n\n\n<figure><ul><li><figure><img src=\"/assets/insights/wordpress/129-body-1-0900c31003e0.webp\" alt=\"RC4GSのEPA画面。ST LFTの100が選択され、ST RGT、TH FWD、TH BRKも100。\" width=\"196\" height=\"174\" loading=\"lazy\" decoding=\"async\" /></figure></li><li><figure><img src=\"/assets/insights/wordpress/129-body-2-1be2749f3305.webp\" alt=\"RC4GSのEPA画面。3C LFTの100が選択され、3C RGT、4C UP、4C DWNも100。\" width=\"198\" height=\"176\" loading=\"lazy\" decoding=\"async\" /></figure></li></ul></figure>\n\n\n\n<p><strong>・設定項目(チャンネルと方向)</strong><br />ST-LFT:ステアリング(左)<br />ST-RGT:ステアリング(右)<br />TH-FWD:スロットル(前進)<br />TH-BRK:スロットル(ブレーキ)<br />3C-LFT:チャンネル3(左)<br />3C-RGT:チャンネル3 (右)<br />4C-UP:チャンネル4(アップ)<br />4C-DWN:チャンネル4(ダウン) </p>\n\n\n\n\n\n<p><strong>ステアリングEPA<br /></strong>ST-LFT：0% ～ 120%(左)<br />ST-RGT：0%～120%(右)<br />初期値：100%</p>\n\n\n\n\n\n<p><strong>スロットルEPA<br /></strong> TH-FWD：0%～120%(前進)<br /> TH-BRK：0%～120%(ブレーキ)<br /> 初期値：100% </p>\n\n\n\n\n\n\n\n<p><strong>AUXサーボEPA<br /></strong>3C-LFT ：0% ～ 120%(左)<br />3C-RGT ：0%～120%(右)<br />初期値：100%</p>\n\n\n\n\n\n<p><strong>AUXサーボEPA<br /></strong> 4C-UP ：0%～120%(前進)<br /> 4C-DWN ：0%～120%(ブレーキ)<br /> 初期値：100% </p>\n\n\n\n\n\n<p><strong>EPAの設定方法</strong><br />(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューから、「Inc（+）」ボタンを2回押してEAP機能を選択します。<br />(2)「Enter」ボタンを押してEPA機能の画面に遷移し、「Dec（-）」または「Inc（+）」ボタンを使用して目的の設定項目を選択し、「Enter」ボタンで選択した設定の初期値を押します。<br />項目が点滅したら、「Dec（-）」または「Inc（+）」ボタンで、選択した設定項目の値を調整します。<br /> （※値を設定する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒間以上押し続けると、初期値「100％」に戻ります。）<br />(3)「Enter」ボタンを押下して、選択した設定項目の調整値が点滅が停止し、選択した設定項目の値が設定されます。<br />(4)「終了」ボタンを2回押して、初期画面に戻ります。</p>\n\n\n\n<p></p>",
+      "published_at": "2020-03-19T00:15:00.000Z",
+      "modified_at": "2020-04-10T03:33:55.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png",
+        "width": 196,
+        "height": 174,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png"
+      },
+      "featured_image_alt": "RC4GSのEPA画面。ST LFTの100が選択され、ST RGT、TH FWD、TH BRKも100。",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/smart-watch-on-the-go/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/129-body-1-0900c31003e0.webp",
+        "width": 196,
+        "height": 174,
+        "sha256": "0900c31003e0695bbd920ff462cfd2e310a4b48c0d245e391a4a65f7786e5370",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/129-body-2-1be2749f3305.webp",
+        "width": 198,
+        "height": 176,
+        "sha256": "1be2749f3305d985f26cb245f9e3019fac04234da4a6421a55d82b5b1f3d7fdd",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-14_No-00.png"
+      }
+    ],
+    "slug": "smart-watch-on-the-go",
+    "title": "RC4GS取扱説明書：2.4．エンドポイント (EPA)",
+    "description": "R/Cの性能を最大限に発揮させるために、ステアリング、スロットル、及び、追加サーボのリンケージで、各サーボの動作角度を設定する必要な場合があります。この設定について、RC4GSのエンドポイントアジャス …",
+    "published_at": "2020-03-19T00:15:00.000Z",
+    "updated_at": "2020-04-10T03:33:55.000Z",
+    "content_status": "published",
+    "content_html": "<p>R/Cの性能を最大限に発揮させるために、ステアリング、スロットル、及び、追加サーボのリンケージで、各サーボの動作角度を設定する必要な場合があります。この設定について、RC4GSのエンドポイントアジャスター (EPA)機能を利用します。車両などの特性により、迂回の半径に差がある場合、サーボの最大角度、左右の角度の設定を行ってください。</p>\n\n\n<figure><ul><li><figure><img src=\"/assets/insights/wordpress/129-body-1-0900c31003e0.webp\" alt=\"RC4GSのEPA画面。ST LFTの100が選択され、ST RGT、TH FWD、TH BRKも100。\" width=\"196\" height=\"174\" loading=\"lazy\" decoding=\"async\" /></figure></li><li><figure><img src=\"/assets/insights/wordpress/129-body-2-1be2749f3305.webp\" alt=\"RC4GSのEPA画面。3C LFTの100が選択され、3C RGT、4C UP、4C DWNも100。\" width=\"198\" height=\"176\" loading=\"lazy\" decoding=\"async\" /></figure></li></ul></figure>\n\n\n\n<p><strong>・設定項目(チャンネルと方向)</strong><br />ST-LFT:ステアリング(左)<br />ST-RGT:ステアリング(右)<br />TH-FWD:スロットル(前進)<br />TH-BRK:スロットル(ブレーキ)<br />3C-LFT:チャンネル3(左)<br />3C-RGT:チャンネル3 (右)<br />4C-UP:チャンネル4(アップ)<br />4C-DWN:チャンネル4(ダウン) </p>\n\n\n\n\n\n<p><strong>ステアリングEPA<br /></strong>ST-LFT：0% ～ 120%(左)<br />ST-RGT：0%～120%(右)<br />初期値：100%</p>\n\n\n\n\n\n<p><strong>スロットルEPA<br /></strong> TH-FWD：0%～120%(前進)<br /> TH-BRK：0%～120%(ブレーキ)<br /> 初期値：100% </p>\n\n\n\n\n\n\n\n<p><strong>AUXサーボEPA<br /></strong>3C-LFT ：0% ～ 120%(左)<br />3C-RGT ：0%～120%(右)<br />初期値：100%</p>\n\n\n\n\n\n<p><strong>AUXサーボEPA<br /></strong> 4C-UP ：0%～120%(前進)<br /> 4C-DWN ：0%～120%(ブレーキ)<br /> 初期値：100% </p>\n\n\n\n\n\n<p><strong>EPAの設定方法</strong><br />(1)「Exit」と「Enter」ボタンを同時に１秒間押し続けて、機能メニューから、「Inc（+）」ボタンを2回押してEAP機能を選択します。<br />(2)「Enter」ボタンを押してEPA機能の画面に遷移し、「Dec（-）」または「Inc（+）」ボタンを使用して目的の設定項目を選択し、「Enter」ボタンで選択した設定の初期値を押します。<br />項目が点滅したら、「Dec（-）」または「Inc（+）」ボタンで、選択した設定項目の値を調整します。<br /> （※値を設定する画面で、「Dec（-）」と「Inc（+）」ボタンを同時に1秒間以上押し続けると、初期値「100％」に戻ります。）<br />(3)「Enter」ボタンを押下して、選択した設定項目の調整値が点滅が停止し、選択した設定項目の値が設定されます。<br />(4)「終了」ボタンを2回押して、初期画面に戻ります。</p>\n\n\n\n<p></p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/129-0900c31003e0.webp",
+      "width": 196,
+      "height": 174,
+      "sha256": "0900c31003e0695bbd920ff462cfd2e310a4b48c0d245e391a4a65f7786e5370",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/03/SnapCrab_NoName_2020-3-16_16-18-7_No-00.png",
+      "alt": "RC4GSのEPA画面。ST LFTの100が選択され、ST RGT、TH FWD、TH BRKも100。",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-191",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 191,
+      "slug": "will-emdrive-thruster-change-in-space-travel",
+      "title": "RC4GS取扱説明書：2.20．ジャイロ感度(GYRO)",
+      "excerpt": "<p>この機能はジャイロ感度とボリュームレバー(VR)の連携のON/OFFを設定できます。MIXがOFFに設定した場合、ジャイロ感度の設定が送信機からできなくなる。MIXがON、且つ、MODEのチャンネル、 … </p>",
+      "content": "<figure><img src=\"/assets/insights/wordpress/191-body-1-37d657359c70.webp\" alt=\"RC4GSのGYRO画面。MIXはON、MODEはCH3、RATEは70%。\" width=\"220\" height=\"196\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>この機能はジャイロ感度とボリュームレバー(VR)の連携のON/OFFを設定できます。<br />MIXがOFFに設定した場合、ジャイロ感度の設定が送信機からできなくなる。<br />MIXがON、且つ、MODEのチャンネル、感度の基準(RATE)とあわせて、送信機のボリュームレバー(VR)からジャイロの感度の設定ができます。デフォルトでは、「CH3」がボリュームレバー(VR)であり、送信機からジャイロの感度を設定できます。<br />通常の場合、感度の範囲が0%-100%です。<br />(1)メニューに入って、「Dec(-)」と「Inc(+)」でジャイロ感度オプションを選択する。<br />(2)「Enter」ボタンを押下して、ジャイロ感度のサブメニューへ遷移<br />(3)もう一度「Enter」を押下して、選択した値が点滅になり、「Dec(-)」と「Inc(+)」を使って、値を変更します。<br />(4)更に「Enter」を押して、点滅が止まり、設定完了となります。 <br />(5)「MODE」と「RATE」も同じ手順で設定します。<br />(6)「Exit」ボタンを押下して、初期画面へ戻します。</p>\n\n\n\n<p></p>",
+      "published_at": "2020-03-16T14:12:00.000Z",
+      "modified_at": "2020-04-10T11:32:09.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": null,
+      "featured_image_alt": "",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/will-emdrive-thruster-change-in-space-travel/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/191-body-1-37d657359c70.webp",
+        "width": 220,
+        "height": 196,
+        "sha256": "37d657359c70a54b882756e5d601660f7cbe0dc4e507f938df0595b4ce6866fa",
+        "source_url": "https://happinesea.com/wp-content/uploads/2016/11/SnapCrab_NoName_2020-3-16_16-21-15_No-00.png"
+      }
+    ],
+    "slug": "will-emdrive-thruster-change-in-space-travel",
+    "title": "RC4GS取扱説明書：2.20．ジャイロ感度(GYRO)",
+    "description": "この機能はジャイロ感度とボリュームレバー(VR)の連携のON/OFFを設定できます。MIXがOFFに設定した場合、ジャイロ感度の設定が送信機からできなくなる。MIXがON、且つ、MODEのチャンネル、 …",
+    "published_at": "2020-03-16T14:12:00.000Z",
+    "updated_at": "2020-04-10T11:32:09.000Z",
+    "content_status": "published",
+    "content_html": "<figure><img src=\"/assets/insights/wordpress/191-body-1-37d657359c70.webp\" alt=\"RC4GSのGYRO画面。MIXはON、MODEはCH3、RATEは70%。\" width=\"220\" height=\"196\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>この機能はジャイロ感度とボリュームレバー(VR)の連携のON/OFFを設定できます。<br />MIXがOFFに設定した場合、ジャイロ感度の設定が送信機からできなくなる。<br />MIXがON、且つ、MODEのチャンネル、感度の基準(RATE)とあわせて、送信機のボリュームレバー(VR)からジャイロの感度の設定ができます。デフォルトでは、「CH3」がボリュームレバー(VR)であり、送信機からジャイロの感度を設定できます。<br />通常の場合、感度の範囲が0%-100%です。<br />(1)メニューに入って、「Dec(-)」と「Inc(+)」でジャイロ感度オプションを選択する。<br />(2)「Enter」ボタンを押下して、ジャイロ感度のサブメニューへ遷移<br />(3)もう一度「Enter」を押下して、選択した値が点滅になり、「Dec(-)」と「Inc(+)」を使って、値を変更します。<br />(4)更に「Enter」を押して、点滅が止まり、設定完了となります。 <br />(5)「MODE」と「RATE」も同じ手順で設定します。<br />(6)「Exit」ボタンを押下して、初期画面へ戻します。</p>\n\n\n\n<p></p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html",
+    "noindex": false,
+    "hero": null
+  },
+  {
+    "id": "wordpress-196",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 196,
+      "slug": "selfie-in-the-space-is-so-fun",
+      "title": "RC4GS取扱説明書：1.2．受信機(R6FG)",
+      "excerpt": "<p>RC4GSのプロポセットには、ジャイロ機能付きのR6FG 2.4GHz 6チャンネル受信機が標準に付属しております。以下はR6FG各部位の名称とスペックとなります。 サイズ: 35×20×13mmチャ … </p>",
+      "content": "<p>RC4GSのプロポセットには、ジャイロ機能付きの<a href=\"https://store.shopping.yahoo.co.jp/happinesea/r6fg.html\" target=\"_blank\" rel=\"noopener noreferrer\">R6FG 2.4GHz 6チャンネル受信機</a>が標準に付属しております。<br />以下はR6FG各部位の名称とスペックとなります。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/196-body-1-bb3cc51586a4.webp\" alt=\"R6FG V2受信機のアンテナ、バインドボタン、LED、電源と信号端子、各チャンネルの位置を示した図。\" width=\"1024\" height=\"417\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>サイズ: 35×20×13mm<br />チャンネル数: 6<br />用途: R/Cカー、又は、R/Cボート<br />変調モード: GFSK<br />スペクトラム拡散: FHSS<br />アンテナ―長さ: 210mm<br />制御距離：陸上、400m以上<br />稼働電圧: 4.8-15.0V DC, 単三型電池×4、又は、2S-4S LiPOバッテリー<br />動作電流: 30mA<br />周波数: 2.4GHz ISM band(2400MHz~2483.5MHz)</p>\n\n\n\n<p><strong>注意：</strong><br />・R6FGがRadiolink社製の送信機しか対応しません。現時点、以下の型番に対応します。<br />　RC4GS、RC6GS、RC4G、T8FB、T8S<br />・R6GFデフォルトでは、ジャイロ機能を<strong>OFF</strong>にしています。ジャイロ機能を利用するためには、ONの設定が必要です。</p>\n\n\n\n<h2>1.2.1．送信機、受信機のバインディング</h2>\n\n\n<p>以下の手順で、送信機と受信機のバインディングを行います。<br />1．送信機と受信機を30-50cmの距離に置く<br />2．送信機と受信機の電源をONにする<br />3．R6FGにあるバインディングボタンを1秒以上長押し→離して、<br />　受信機のLEDライトが点滅→常に点灯になれば、バインディング完了となります。</p>\n\n\n<h2>1.2.2．受信機の動作モード</h2>\n\n\n<p>通常の動作モードが緑のLEDが点灯します。ジャイロ機能が動作しない。<br />ジャイロモードが動作する時に緑と赤のLEDが同時に点灯します。</p>\n\n\n<p>ジャイロ機能のON/OFFの切替えるには、バインディングボタンを、1秒以内に素早く3回連続押します。<br />LEDライトの赤になれば、ジャイロ機能がONになっています。</p>\n\n\n\n<p>ジャイロ機能ONにすることで、急激な加速や、制動を行う際に、直線を保つようにしてくれます。<br />ジャイロ機能を利用するには、受信機の設定以外、感度の設定など、送信機から行えます。詳しくはジャイロ機能の設定について、ご参照ください。</p>\n\n\n\n<h2>1.2.3．ジャイロ機能の設定と調整</h2>\n\n\n\n<p>(1) ジャイロの有効<br />前述通り、バインディングボタンを1秒以内、3回連続おして、LEDが3回点滅して、受信機のジャイロ機能のON/OFFに切り替えます。 <br />(2) ジャイロの感度<br />ジャイロ感度の設定は、ボリュームレバー(VR)を回すことで、調整できるように、メーカーの初期設定となっております。<br />　・時計回り：感度UP<br />　・逆時計回り：感度DOWN <br />(3) ジャイロの前進<br /> <strong>※以下の操作は、車が動かないよう、手元に確保してください。</strong><br />R/C電動カーのように、前進、後退の動きにも、ジャイロも機能をします。設定手順は以下となります。<br />ジャイロが有効な状態で、ステアリングを動かないで、スロットルトリガーを引いたり離したりして、車が左右に回して、サーボが追従しない場合、ジャイロの前後の設定が逆になっている。<br />バインディングボタンを1秒以内に、1回押して、LEDの赤いランプが1回点滅して、ジャイロの前後動作の設定が完了です。<br />(4) ジャイロの逆設定<br /> <strong>※以下の操作は、車が動かないよう、手元に確保してください。 </strong><br />ジャイロフォワード設定完了後、ステアリングを回さないで、車を左右に回して、ジャイロの挙動を確認します。<br />以下のような挙動を確認できれば、ジャイロの設定が完了となります。<br />　・車を右側に回す→前輪が左に<br />　・車を左側に回す→前輪が右に<br />もし、前輪の動作が上記と逆であれば、バインディングボタンを1秒以内に、2回押して、LEDの赤いランプが2回点滅し、ジャイロの反転が修正されます。</p>\n\n\n\n<p>上記の設定は、前輪の向きで方向を変更する車の例をしています。<br />ボートや、後輪の向きで方向を変更する車などは、適切に読み替えてください。</p>\n\n\n\n<p><strong>受信機アンテナ―の扱いについて：</strong><br />1．制御の有効範囲に影響するので、アンテナ―が成るべく真直ぐように保つ事を推奨します。<br />2．大型R/C飛行機など、金属の部品が電波に大きく影響する可能性があるため、成るべく、胴体の両辺からはみだすようにし、どんな姿勢でも電波のよく届く状態を保つよう、心掛けして、設置すること。<br />3． アンテナ―は金属や、カーボンなどの導電性のある材料から、少なくとも12mmで離すこと。<br />4．小さい半径でアンテナ―を曲げないこと。<br />5．可能な限り、モーター、ESC等、ノイズの発生しやすい部品から離れるところに設置すること。<br /> 6．バインディングボタンを1秒ほど押し続けると作動します。動作する場合、緑、又は、赤いLEDランプが点灯します。<br />７．強い衝撃から受信機を守るために、スポンジなどの緩衝材で梱包して設置することをお勧めします。</p>\n\n\n\n<p>また、受信機の正しく動作させるために、送信機の電源をOFFした状態で、受信機の電源をつけるようにしてください。<br /> これ以上、受信機の使い方の説明となります。 </p>",
+      "published_at": "2020-03-16T02:21:00.000Z",
+      "modified_at": "2021-06-10T07:54:00.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["r6fg", "rc4gs"],
+      "featured_image": {
+        "url": "https://happinesea.com/wp-content/uploads/2020/03/61PgGnRMzL._SL1350_.jpg",
+        "width": 1350,
+        "height": 1350,
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/61PgGnRMzL._SL1350_.jpg"
+      },
+      "featured_image_alt": "RC4GS送信機",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/selfie-in-the-space-is-so-fun/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/196-body-1-bb3cc51586a4.webp",
+        "width": 1024,
+        "height": 417,
+        "sha256": "bb3cc51586a4d48e9cd2158de4144ed32525fc38182a2f274730d0fba694b642",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png"
+      }
+    ],
+    "slug": "selfie-in-the-space-is-so-fun",
+    "title": "RC4GS取扱説明書：1.2．受信機(R6FG)",
+    "description": "RC4GSのプロポセットには、ジャイロ機能付きのR6FG 2.4GHz 6チャンネル受信機が標準に付属しております。以下はR6FG各部位の名称とスペックとなります。 サイズ: 35×20×13mmチャ …",
+    "published_at": "2020-03-16T02:21:00.000Z",
+    "updated_at": "2021-06-10T07:54:00.000Z",
+    "content_status": "published",
+    "content_html": "<p>RC4GSのプロポセットには、ジャイロ機能付きの<a href=\"https://store.shopping.yahoo.co.jp/happinesea/r6fg.html\" target=\"_blank\" rel=\"noopener noreferrer\">R6FG 2.4GHz 6チャンネル受信機</a>が標準に付属しております。<br />以下はR6FG各部位の名称とスペックとなります。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/196-body-1-bb3cc51586a4.webp\" alt=\"R6FG V2受信機のアンテナ、バインドボタン、LED、電源と信号端子、各チャンネルの位置を示した図。\" width=\"1024\" height=\"417\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>サイズ: 35×20×13mm<br />チャンネル数: 6<br />用途: R/Cカー、又は、R/Cボート<br />変調モード: GFSK<br />スペクトラム拡散: FHSS<br />アンテナ―長さ: 210mm<br />制御距離：陸上、400m以上<br />稼働電圧: 4.8-15.0V DC, 単三型電池×4、又は、2S-4S LiPOバッテリー<br />動作電流: 30mA<br />周波数: 2.4GHz ISM band(2400MHz~2483.5MHz)</p>\n\n\n\n<p><strong>注意：</strong><br />・R6FGがRadiolink社製の送信機しか対応しません。現時点、以下の型番に対応します。<br />　RC4GS、RC6GS、RC4G、T8FB、T8S<br />・R6GFデフォルトでは、ジャイロ機能を<strong>OFF</strong>にしています。ジャイロ機能を利用するためには、ONの設定が必要です。</p>\n\n\n\n<h2>1.2.1．送信機、受信機のバインディング</h2>\n\n\n<p>以下の手順で、送信機と受信機のバインディングを行います。<br />1．送信機と受信機を30-50cmの距離に置く<br />2．送信機と受信機の電源をONにする<br />3．R6FGにあるバインディングボタンを1秒以上長押し→離して、<br />　受信機のLEDライトが点滅→常に点灯になれば、バインディング完了となります。</p>\n\n\n<h2>1.2.2．受信機の動作モード</h2>\n\n\n<p>通常の動作モードが緑のLEDが点灯します。ジャイロ機能が動作しない。<br />ジャイロモードが動作する時に緑と赤のLEDが同時に点灯します。</p>\n\n\n<p>ジャイロ機能のON/OFFの切替えるには、バインディングボタンを、1秒以内に素早く3回連続押します。<br />LEDライトの赤になれば、ジャイロ機能がONになっています。</p>\n\n\n\n<p>ジャイロ機能ONにすることで、急激な加速や、制動を行う際に、直線を保つようにしてくれます。<br />ジャイロ機能を利用するには、受信機の設定以外、感度の設定など、送信機から行えます。詳しくはジャイロ機能の設定について、ご参照ください。</p>\n\n\n\n<h2>1.2.3．ジャイロ機能の設定と調整</h2>\n\n\n\n<p>(1) ジャイロの有効<br />前述通り、バインディングボタンを1秒以内、3回連続おして、LEDが3回点滅して、受信機のジャイロ機能のON/OFFに切り替えます。 <br />(2) ジャイロの感度<br />ジャイロ感度の設定は、ボリュームレバー(VR)を回すことで、調整できるように、メーカーの初期設定となっております。<br />　・時計回り：感度UP<br />　・逆時計回り：感度DOWN <br />(3) ジャイロの前進<br /> <strong>※以下の操作は、車が動かないよう、手元に確保してください。</strong><br />R/C電動カーのように、前進、後退の動きにも、ジャイロも機能をします。設定手順は以下となります。<br />ジャイロが有効な状態で、ステアリングを動かないで、スロットルトリガーを引いたり離したりして、車が左右に回して、サーボが追従しない場合、ジャイロの前後の設定が逆になっている。<br />バインディングボタンを1秒以内に、1回押して、LEDの赤いランプが1回点滅して、ジャイロの前後動作の設定が完了です。<br />(4) ジャイロの逆設定<br /> <strong>※以下の操作は、車が動かないよう、手元に確保してください。 </strong><br />ジャイロフォワード設定完了後、ステアリングを回さないで、車を左右に回して、ジャイロの挙動を確認します。<br />以下のような挙動を確認できれば、ジャイロの設定が完了となります。<br />　・車を右側に回す→前輪が左に<br />　・車を左側に回す→前輪が右に<br />もし、前輪の動作が上記と逆であれば、バインディングボタンを1秒以内に、2回押して、LEDの赤いランプが2回点滅し、ジャイロの反転が修正されます。</p>\n\n\n\n<p>上記の設定は、前輪の向きで方向を変更する車の例をしています。<br />ボートや、後輪の向きで方向を変更する車などは、適切に読み替えてください。</p>\n\n\n\n<p><strong>受信機アンテナ―の扱いについて：</strong><br />1．制御の有効範囲に影響するので、アンテナ―が成るべく真直ぐように保つ事を推奨します。<br />2．大型R/C飛行機など、金属の部品が電波に大きく影響する可能性があるため、成るべく、胴体の両辺からはみだすようにし、どんな姿勢でも電波のよく届く状態を保つよう、心掛けして、設置すること。<br />3． アンテナ―は金属や、カーボンなどの導電性のある材料から、少なくとも12mmで離すこと。<br />4．小さい半径でアンテナ―を曲げないこと。<br />5．可能な限り、モーター、ESC等、ノイズの発生しやすい部品から離れるところに設置すること。<br /> 6．バインディングボタンを1秒ほど押し続けると作動します。動作する場合、緑、又は、赤いLEDランプが点灯します。<br />７．強い衝撃から受信機を守るために、スポンジなどの緩衝材で梱包して設置することをお勧めします。</p>\n\n\n\n<p>また、受信機の正しく動作させるために、送信機の電源をOFFした状態で、受信機の電源をつけるようにしてください。<br /> これ以上、受信機の使い方の説明となります。 </p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html",
+    "noindex": false,
+    "hero": {
+      "src": "/assets/insights/wordpress/196-c77db5aab12c.webp",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "c77db5aab12c5691427a0b345c3772727ea5240f6e59f428f1e6f7c981497e40",
+      "source_url": "https://happinesea.com/wp-content/uploads/2020/03/61PgGnRMzL._SL1350_.jpg",
+      "alt": "RC4GS送信機",
+      "image_status": "verified"
+    }
+  },
+  {
+    "id": "wordpress-199",
+    "contract": {
+      "contract_version": "0.1",
+      "id": 199,
+      "slug": "lions-of-africa-protesting-against-disney",
+      "title": "RC4GS取扱説明書：1.1．送信機",
+      "excerpt": "<p>RC4GS送信機は32bitマイコンを内蔵し、レスポンスタイム12msを実現した高性能R/Cシステムとなります。FHSS方式で、16チャンネルの疑似周波数のスペクトラム拡散方式で、受信機と接続して、妨 … </p>",
+      "content": "<p>RC4GS送信機は32bitマイコンを内蔵し、レスポンスタイム12msを実現した高性能R/Cシステムとなります。FHSS方式で、16チャンネルの疑似周波数のスペクトラム拡散方式で、受信機と接続して、妨害に強いことは特徴であります。<br />以下はRC4GS送信機の各部位の名称とスペック情報です。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/199-body-1-db8caadd8faa.webp\" alt=\"RC4GS送信機の前面と背面。アンテナ、接続端子、トリム、ステアリング、トリガー、電源スイッチなどの位置を示した図。\" width=\"769\" height=\"509\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/199-body-2-452f640edb22.webp\" alt=\"RC4GS送信機のLCD画面と機能選択キーの位置を示した図。\" width=\"398\" height=\"227\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>サイズ: 213 ×117 × 115.5mm<br />周波数: 2.4Ghz ISM Band（2400MHZ-2483.5MHz）<br />チャンネル数: 4CH<br />用途: R/Cカー、又は、R/Cボート<br />変調モード: GFSK<br />スペクトラム拡散: FHSS、16チャンネル疑似周波数シーケンスホッピング<br />メモリ：10モデル<br />アンテナ―長さ: 106mm<br />制御距離：陸上、400m以上<br />LCD画面: 128×64 LCDバックライト<em> </em><br />稼働電圧<em>: 4.8-15.0V DC</em><br />送信機バッテリー：単三電池×6、又は、2-4S LiPO<br />動作電流：80-120mA<br />高周波電源: &lt;20dbm<br />ローバッテリアラート：あり(4.6V以下)、2-4S LiPoバッテリー利用時に設定可<br />対応受信機: R4FG、R4F、R8EF、R6FG、R8EF、R8FM、R7FG </p>",
+      "published_at": "2020-03-15T02:10:00.000Z",
+      "modified_at": "2020-06-18T14:33:05.000Z",
+      "category": ["rc4gs-manual"],
+      "tags": ["rc4gs"],
+      "featured_image": null,
+      "featured_image_alt": "",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html",
+      "content_type": "insight",
+      "status": "publish",
+      "source_url": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html",
+      "author": "管理人",
+      "language": "ja-JP",
+      "noindex": false
+    },
+    "route": "/insights/lions-of-africa-protesting-against-disney/",
+    "topic": "RC技術",
+    "article_kind": "article",
+    "body_assets": [
+      {
+        "src": "/assets/insights/wordpress/199-body-1-db8caadd8faa.webp",
+        "width": 769,
+        "height": 509,
+        "sha256": "db8caadd8faa9d6fc0d151915115876ec26d792cdaf6ae729d42a7fbbbd1c47c",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_1.png"
+      },
+      {
+        "src": "/assets/insights/wordpress/199-body-2-452f640edb22.webp",
+        "width": 398,
+        "height": 227,
+        "sha256": "452f640edb2233c7051a76fe24656db270cd3df806e209de49ff5b3caba43fcb",
+        "source_url": "https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_2.png"
+      }
+    ],
+    "slug": "lions-of-africa-protesting-against-disney",
+    "title": "RC4GS取扱説明書：1.1．送信機",
+    "description": "RC4GS送信機は32bitマイコンを内蔵し、レスポンスタイム12msを実現した高性能R/Cシステムとなります。FHSS方式で、16チャンネルの疑似周波数のスペクトラム拡散方式で、受信機と接続して、妨 …",
+    "published_at": "2020-03-15T02:10:00.000Z",
+    "updated_at": "2020-06-18T14:33:05.000Z",
+    "content_status": "published",
+    "content_html": "<p>RC4GS送信機は32bitマイコンを内蔵し、レスポンスタイム12msを実現した高性能R/Cシステムとなります。FHSS方式で、16チャンネルの疑似周波数のスペクトラム拡散方式で、受信機と接続して、妨害に強いことは特徴であります。<br />以下はRC4GS送信機の各部位の名称とスペック情報です。</p>\n\n\n<figure><img src=\"/assets/insights/wordpress/199-body-1-db8caadd8faa.webp\" alt=\"RC4GS送信機の前面と背面。アンテナ、接続端子、トリム、ステアリング、トリガー、電源スイッチなどの位置を示した図。\" width=\"769\" height=\"509\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<figure><img src=\"/assets/insights/wordpress/199-body-2-452f640edb22.webp\" alt=\"RC4GS送信機のLCD画面と機能選択キーの位置を示した図。\" width=\"398\" height=\"227\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n\n<p>サイズ: 213 ×117 × 115.5mm<br />周波数: 2.4Ghz ISM Band（2400MHZ-2483.5MHz）<br />チャンネル数: 4CH<br />用途: R/Cカー、又は、R/Cボート<br />変調モード: GFSK<br />スペクトラム拡散: FHSS、16チャンネル疑似周波数シーケンスホッピング<br />メモリ：10モデル<br />アンテナ―長さ: 106mm<br />制御距離：陸上、400m以上<br />LCD画面: 128×64 LCDバックライト<em> </em><br />稼働電圧<em>: 4.8-15.0V DC</em><br />送信機バッテリー：単三電池×6、又は、2-4S LiPO<br />動作電流：80-120mA<br />高周波電源: &lt;20dbm<br />ローバッテリアラート：あり(4.6V以下)、2-4S LiPoバッテリー利用時に設定可<br />対応受信機: R4FG、R4F、R8EF、R6FG、R8EF、R8FM、R7FG </p>",
+    "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html",
+    "noindex": false,
+    "hero": null
   }
 ]

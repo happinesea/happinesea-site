@@ -111,25 +111,56 @@ export function classifyInventoryPost(
   ) {
     flag('NEEDS_REVIEW', 'featured image alt not reviewed');
   }
-  if (markup.body_images.some(({ alt }) => !alt.trim())) {
+  if (
+    markup.body_images.some(
+      ({ src, alt }) =>
+        !alt.trim() &&
+        !mapping?.body_image_reviews
+          ?.find(({ source_url }) => source_url === src)
+          ?.alt?.trim(),
+    )
+  ) {
     flag('NEEDS_REVIEW', 'body image alt not reviewed');
   }
   return { status, reasons };
 }
 
-export function localizeArticleImages(input, assets = new Map()) {
+export function localizeArticleImages(input, assets = new Map(), reviews = []) {
   const value = String(input ?? '');
   for (const { src, alt } of extractRemoteArticleImages(value)) {
-    if (!alt.trim()) throw new Error(`missing alt for body image: ${src}`);
+    const review = reviews.find(({ source_url }) => source_url === src);
+    if (review && !assets.get(src)?.sha256)
+      throw new Error(`image review drift: missing source hash for ${src}`);
+    const reviewedAlt = reviewedFeaturedImageAlt(
+      { source_url: src, alt_text: alt },
+      review,
+      assets.get(src)?.sha256,
+    );
+    if (!reviewedAlt.trim())
+      throw new Error(`missing alt for body image: ${src}`);
     if (!assets.has(src)) throw new Error(`body image not localized: ${src}`);
   }
   return value.replaceAll(/<img\b[^>]*>/gi, (tag) => {
     const source = tag.match(/\bsrc=["']([^"']+)["']/i)?.[1];
     const asset = assets.get(source);
     if (!asset) return tag;
-    const cleaned = tag
+    let cleaned = tag
       .replace(/\bsrc=["'][^"']+["']/i, `src="${asset.src}"`)
       .replace(/\s(?:width|height|loading|decoding)=["'][^"']*["']/gi, '');
+    const sourceAlt = tag.match(/\balt=["']([^"']*)["']/i)?.[1] ?? '';
+    if (!sourceAlt.trim()) {
+      const alt = reviewedFeaturedImageAlt(
+        { source_url: source, alt_text: sourceAlt },
+        reviews.find(({ source_url }) => source_url === source),
+        asset.sha256,
+      )
+        .replaceAll('&', '&amp;')
+        .replaceAll('"', '&quot;')
+        .replaceAll('<', '&lt;');
+      cleaned = /\balt=["'][^"']*["']/i.test(cleaned)
+        ? cleaned.replace(/\balt=["'][^"']*["']/i, `alt="${alt}"`)
+        : cleaned.replace(/\s*\/?>(?=$)/, (ending) => ` alt="${alt}"${ending}`);
+    }
     return cleaned.replace(/\s*\/?>(?=$)/, (ending) => {
       const close = ending.includes('/') ? ' />' : '>';
       return ` width="${asset.width}" height="${asset.height}" loading="lazy" decoding="async"${close}`;
@@ -147,9 +178,9 @@ function isoUtc(value, field) {
 export function sanitizeArticleHtml(
   input,
   imageAssets = new Map(),
-  { preserveAnchors = false } = {},
+  { preserveAnchors = false, imageReviews = [] } = {},
 ) {
-  const value = localizeArticleImages(input, imageAssets);
+  const value = localizeArticleImages(input, imageAssets, imageReviews);
   for (const [pattern, label] of forbiddenMarkup) {
     if (pattern.test(value)) throw new Error(`forbidden HTML: ${label}`);
   }
@@ -244,7 +275,7 @@ export function reviewedFeaturedImageAlt(media, review, sha256) {
     (sha256 !== undefined && sha256 !== review.sha256)
   )
     throw new Error('featured image review drift');
-  return media.alt_text || review.alt;
+  return media.alt_text?.trim() ? media.alt_text : review.alt;
 }
 
 export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
@@ -264,7 +295,9 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
   const title = htmlText(post.title?.rendered);
   if (!title) throw new Error(`missing title for post ${post.id}`);
   const excerpt = sanitizeArticleHtml(post.excerpt?.rendered);
-  const content = sanitizeArticleHtml(post.content?.rendered, bodyAssets);
+  const content = sanitizeArticleHtml(post.content?.rendered, bodyAssets, {
+    imageReviews: mapping.body_image_reviews ?? [],
+  });
   if (!excerpt) throw new Error(`missing excerpt for post ${post.id}`);
   if (!content) throw new Error(`missing content for post ${post.id}`);
 
