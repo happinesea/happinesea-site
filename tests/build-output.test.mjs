@@ -331,7 +331,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 21);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 28);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
@@ -367,9 +367,21 @@ test('WordPress insight batch emits sanitized static routes with local images an
       html,
       new RegExp(`<link rel="canonical" href="${article.canonical}"`),
     );
-    assert.match(html, new RegExp(`/happinesea-site${article.hero.src}`));
-    assert.match(html, /<img[^>]+alt(?:="")?(?:\s|>)/);
-    assert.match(html, /https:\/\/www\.youtube\.com\/embed\//);
+    if (article.contract.id === 1635) {
+      assert.equal(article.hero, null);
+      assert.doesNotMatch(html, /<img\b/);
+    } else {
+      assert.match(html, new RegExp(`/happinesea-site${article.hero.src}`));
+      assert.match(
+        html,
+        article.contract.id === 1
+          ? /<img[^>]+alt="Radiolinkロゴ"/
+          : /<img[^>]+alt(?:="")?(?:\s|>)/,
+      );
+    }
+    if ([2005, 1635, 1].includes(article.contract.id))
+      assert.doesNotMatch(html, /<iframe\b/);
+    else assert.match(html, /https:\/\/www\.youtube\.com\/embed\//);
     assert.doesNotMatch(html, /happinesea\.com\/wp-(?:json|content)/);
     assert.doesNotMatch(
       html,

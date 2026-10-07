@@ -1,0 +1,244 @@
+{
+  "reviewed_at": "2026-10-07T06:04:40.059Z",
+  "articles": [
+    {
+      "id": 2005,
+      "source_url": "https://happinesea.com/news/202206092005.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/2005",
+      "slug": "rc4gs-v3%e3%80%81rc6gs-v3%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e7%89%88%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e7%bf%bb%e8%a8%b3%e4%b8%ad%e3%81%a7%e3%81%99%e3%80%82",
+      "title": "RC4GS V3、RC6GS V3の日本語版マニュアルを翻訳中です。",
+      "source_content_sha256": "7cf4fc2993f0bff0364d5c80bb098b33751b7e9509ceccd5ce6693ce1390a739",
+      "source_text": "今回のアップグレードはあまりにも大きいため、マニュアルの更新のボリュームはあります。 時間はいただきますが、もう暫くお待ちください。 Kindle版をご購入済みの場合、更新を待っていただければと思います。 まだの方は、お早めに、ご購入してください。↓↓↓↓↓↓↓↓↓ RC4GS、RC6GS、Kindle版日本語マニュアルの商品ページ",
+      "source_links": ["https://amzn.to/3zAm7Fw", "https://amzn.to/3zAm7Fw"],
+      "category_names": [{ "slug": "news", "name": "ニュース・航空知識" }],
+      "youtube_ids": [],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2022/06/20220609.png",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "visual_observation": "マニュアル表紙。製品名とマニュアルの紹介を重複するプレビューで、操作説明図ではない。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    },
+    {
+      "id": 1779,
+      "source_url": "https://happinesea.com/news/202111301779.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1779",
+      "slug": "head-tracking-set-up-on-rc-cars-radiolink-rc6gs-v2-transmitter-and-skyzone-02x-fpv-goggle",
+      "title": "RC6GS V2で、RCカーのヘッドトラッキングFPV設定例(Radiolink RC6GS V2送信機、SKYZONE 02X FPV ゴーグル)",
+      "source_content_sha256": "34e7ffaba40bb5906e7bd618d48cd9ffa7455c933cdba904082c0cccdf797744",
+      "source_text": "英語ですが、設置、プログラムMIXの設定例となります。 Directed and shot by @JIPPERR_RC Devices: Radiolink RC6GS V2 Transmitter * 1 Radiolink R7FG Receiver * 1 SKYZONE 02X FPV Goggle * 1 STorM32 Brushless Gimbal Controller * 1 Know more about RC6GS V2: https://www.radiolink.com/rc6gsv2 Big Sales up to 20%off on Cyber Monday at Aliexpress, Amazon US, Amazon CA: Purchasing links: https://www.radiolink.com/rc6gsv2_where_to_buy #fpv#radiolink#rc4gs#rc6gsv2#rchobby#blackfriday#cybermonday",
+      "source_links": [],
+      "category_names": [
+        { "slug": "radiolink-videos", "name": "Radiolink動画集" },
+        { "slug": "news", "name": "ニュース・航空知識" }
+      ],
+      "youtube_ids": ["9E8WGL9PFAw"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/11/yt-1779-Head-Tracking-Set-Up-on-RC-Cars-Radiolink-RC6GS-V2-Transmitter-and-SKYZONE-02X-FPV-Goggle.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "visual_observation": "動画のタイトル画面。ヘッドトラッキング機器の集合写真。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [
+          {
+            "src": "https://www.youtube.com/embed/9E8WGL9PFAw?feature=oembed",
+            "host": "www.youtube.com",
+            "classification": "A"
+          }
+        ],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    },
+    {
+      "id": 1774,
+      "source_url": "https://happinesea.com/radiolink-videos/202111271774.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1774",
+      "slug": "starting-new-rc-fpv-car-world-your-partner-radiolink-rc4gs-v2-rc6gs-v2",
+      "title": "FPV!? RC6GS V2/RC4GS V2で新たなRCカー生活へ",
+      "source_content_sha256": "4066a29000ed11c0c114d917ac608747504be6fca529893d8b99b5b9e723917a",
+      "source_text": "RCカーでFPVをやるには何が必要でしょうか？ FPVカメラ+OSDモジュール+FPVスクリーンorゴーグル+ホルダーとRC6GS V2/RC4GS V2 以上です 只今、RC4GS V2、RC6GS V2は絶賛販売中です。 https://store.shopping.yahoo.co.jp/happinesea/",
+      "source_links": ["https://store.shopping.yahoo.co.jp/happinesea/"],
+      "category_names": [
+        { "slug": "radiolink-videos", "name": "Radiolink動画集" }
+      ],
+      "youtube_ids": ["v2kVSSVmwB8"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/11/yt-1774-f9a75772632a5566408a360b23b672ad.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "visual_observation": "動画のタイトル画面。FPVカーと映像モニター。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [
+          {
+            "src": "https://www.youtube.com/embed/v2kVSSVmwB8?feature=oembed",
+            "host": "www.youtube.com",
+            "classification": "A"
+          }
+        ],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    },
+    {
+      "id": 1635,
+      "source_url": "https://happinesea.com/news/202108131635.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1635",
+      "slug": "yahoo%e3%82%b7%e3%83%a7%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0%e3%81%a7%e3%80%81%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92",
+      "title": "Yahoo!ショッピングで、マニュアルのまとめページを公開しました。",
+      "source_content_sha256": "ae3f66ba8b383acdbd8a3016f75a852c51d08edda2a27c3cb1e37f758d5440fe",
+      "source_text": "当店のYahoo！ショッピング店舗ページに、製品マニュアルのまとめページを公開しました。 「happinesea hobbyオンラインマニュアル」 引続き宜しくお願い致します。",
+      "source_links": [
+        "https://store.shopping.yahoo.co.jp/happinesea/happinesea-hobby-online-manual.html"
+      ],
+      "category_names": [{ "slug": "news", "name": "ニュース・航空知識" }],
+      "youtube_ids": [],
+      "source_featured_image": null,
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "absent",
+        "visual_observation": "アイキャッチなし。生成しない。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    },
+    {
+      "id": 1546,
+      "source_url": "https://happinesea.com/radiolink-videos/202105071546.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1546",
+      "slug": "radiolink-rc4gs-4%e3%83%81%e3%83%a3%e3%83%b3%e3%83%8d%e3%83%ab%e3%80%81%e3%82%b8%e3%83%a3%e3%82%a4%e3%83%ad%e6%a9%9f%e8%83%bd%e4%bb%98%e3%81%8d%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88",
+      "title": "Radiolink RC4GS 4チャンネル、ジャイロ機能付きプロポセットを開封します！",
+      "source_content_sha256": "9a4c1ddfabc1299921035accc856e25d5bdd3e285baf0c8422bdd6cf6470be9f",
+      "source_text": "RCカー、ボート用、ジャイロ機能付き、Radiolink RC4GS 4CH プロポセットを開封します。 技適対応品ですので、正規代理店からお求めください。 Amazon：https://www.amazon.co.jp/dp/B07XJMC3HN",
+      "source_links": [],
+      "category_names": [
+        { "slug": "radiolink-videos", "name": "Radiolink動画集" }
+      ],
+      "youtube_ids": ["ZWIxpPtb7ss"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2021/05/yt-1546-3d09e36c3fe786d56e1f3279c6984bdc.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "visual_observation": "動画のタイトル画面。製品と開封タイトル。購入先は本文にも記載。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [
+          {
+            "src": "https://www.youtube.com/embed/ZWIxpPtb7ss?feature=oembed",
+            "host": "www.youtube.com",
+            "classification": "A"
+          }
+        ],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    },
+    {
+      "id": 160,
+      "source_url": "https://happinesea.com/radiolink-support/20200313160.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/160",
+      "slug": "tips-for-travelling-with-an-infant",
+      "title": "RC4GSファームウェアアップグレード手順",
+      "source_content_sha256": "64cf74a9435ca5d637c63d195b5582300c45d9cdd8e842c030b0ed4ef3e333b9",
+      "source_text": "Radiolink社のRC4GSをアップグレードするには、パソコンからUSBを接続する必要があります。手順は以下となります。 プロポの電源をOFFして、USBでパソコンと接続プロポの電源をONプロポがUSBドライブとして表示されるので、パソコンからクリックして、フォーマットするフォーマット完了後、解凍したファームウェアをコピー＆ペストコピー完了後、アップグレードが完了します。プロポの電源を入れて結果を確認する 最新版のファームウェア：RC4GS-V6.0.1(FHSS-RX) メーカー出荷の常態に戻す場合、古いバージョンのファームウェアを使ってください。・RC4GS V3.0.8",
+      "source_links": [
+        "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
+        "https://happinesea.com/download/rc4gs-firmware-v3-0-8"
+      ],
+      "category_names": [
+        { "slug": "radiolink-support", "name": "Radiolink製品サポート" }
+      ],
+      "youtube_ids": ["vZmu18fC_sY"],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/20181210174049778.jpg",
+      "source_featured_alt": "",
+      "featured_image_review": {
+        "role": "decorative",
+        "visual_observation": "ボート・戦車・送信機のイメージ写真。本文のアップグレード手順を説明する図ではない。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [
+          {
+            "src": "https://www.youtube.com/embed/vZmu18fC_sY?feature=oembed",
+            "host": "www.youtube.com",
+            "classification": "A"
+          }
+        ],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    },
+    {
+      "id": 1,
+      "source_url": "https://happinesea.com/news/202003121.html",
+      "source_api": "https://happinesea.com/wp-json/wp/v2/posts/1",
+      "slug": "hello-world",
+      "title": "Radiolinkの日本代理店、happinesea hobbyのサイトを立ち上げました。",
+      "source_content_sha256": "6663075a7f350bc26539d38d45824569b981724553763ecead79640bc8481842",
+      "source_text": "いつもありがとうございます。 hapinsea hobby(ハピネスシーホビー)はドローン、ラジコン関連の商品を取り扱う小売業者です。 いつも愛されたお客様により良いサービスを提供する一環として、有益な情報発信するために、当サイトを運営し始めました。 ご意見などありましたら、是非、お気楽に連絡して頂ければと思います。",
+      "source_links": [],
+      "category_names": [{ "slug": "news", "name": "ニュース・航空知識" }],
+      "youtube_ids": [],
+      "source_featured_image": "https://happinesea.com/wp-content/uploads/2020/03/feb3bae2-67ad-4ab8-8601-652d530051fe.__CR00600180_PT0_SX600_V1___.png",
+      "source_featured_alt": "Radiolinkロゴ",
+      "featured_image_review": {
+        "role": "content",
+        "visual_observation": "Radiolinkロゴ。既存altを保持。",
+        "decision": "既存altを保持。動画プレビュー・表紙・補助的イメージは本文理解に必須の情報図ではない。新しいaltは生成しない。"
+      },
+      "body_review": {
+        "body_images": [],
+        "iframes": [],
+        "shortcodes": [],
+        "script_count": 0,
+        "unresolved_links": 0
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "id": 2051,
+      "reason": "ダウンロード操作の保存と情報を持つ空alt画像の判断が必要。"
+    },
+    {
+      "id": 107,
+      "reason": "既存HTTPリンクが現行sanitizerで除去されるため、リンク保全の判断を別taskに保留。"
+    },
+    { "id": 1673, "reason": "アイキャッチが配線情報図で、既存altは空。" },
+    {
+      "id": 375,
+      "reason": "今回の表示変更禁止に従い、未登録カテゴリ表示名の対応を別taskに保留。"
+    },
+    {
+      "id": 1548,
+      "reason": "独立visual reviewで、本文にないマニュアル案内QRを持つ画像と確認。空altを装飾として通さず保留。"
+    }
+  ]
+}
