@@ -4,13 +4,16 @@
 
 This is a discovery snapshot, not approval to switch domains, delete URLs, or
 generate redirects. Reconciled baseline: `origin/main` commit
-`fd0eb42507a45901c1378b3c8e136b70e223a552` (PR #23 merged). The homepage design
+`73b30ef0cf6cf0baf2a90288b9a8b4d177f63069` (PR #24 merged). Current compatibility
+and Phase 6 counts are in [legacy drawings/glossary compatibility](legacy-drawings-glossary-compatibility.md).
+The numerical discovery and article baseline below describes the original PR #24 audit, not the newer compatibility result. The homepage design
 is unchanged. The machine-readable inventory is
-`src/data/legacy-public-surface.json`; rerun with
-`node scripts/audit-legacy-public-surface.mjs`.
-After a fresh build, run `node scripts/reconcile-legacy-public-surface.mjs`
-to verify article aliases and refresh migration counts without repeating source
-HTTP probes. `observed_at` remains the original HTTP discovery timestamp;
+`src/data/legacy-public-surface.json`. Broad discovery uses
+`node scripts/audit-legacy-public-surface.mjs`, but its output must be reconciled
+before replacing the compatibility inventory.
+After a fresh build, run `node scripts/reconcile-legacy-compatibility.mjs`
+to verify article aliases, drawings, glossary and assets and refresh migration
+counts without repeating source HTTP probes. `observed_at` remains the original HTTP discovery timestamp;
 `reconciled_at` records the newer static-output verification. Source HTTP status
 is not replaced with an inferred 200 merely because local output exists.
 

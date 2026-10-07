@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import InsightCard from '../../components/InsightCard.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
 
 const insights = [
   ...(await getCollection('insights')).filter(
@@ -83,7 +84,7 @@ const topics = [
     <div class="mt-12 grid gap-5 sm:grid-cols-2">
       <a
         class="rounded-2xl border border-slate-200 p-6 no-underline hover:border-teal-600"
-        href="https://happinesea.com/drawinglibrary"
+        href={withBase('/drawinglibrary/')}
       >
         <h2 class="m-0 text-xl font-bold text-slate-950">設計図ライブラリ</h2>
         <p class="mb-0 text-slate-600">
@@ -92,7 +93,7 @@ const topics = [
       </a>
       <a
         class="rounded-2xl border border-slate-200 p-6 no-underline hover:border-teal-600"
-        href="https://happinesea.com/drone-rc-glossary"
+        href={withBase('/drone-rc-glossary/')}
       >
         <h2 class="m-0 text-xl font-bold text-slate-950">基本用語集</h2>
         <p class="mb-0 text-slate-600">

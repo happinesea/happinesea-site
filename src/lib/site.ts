@@ -14,8 +14,8 @@ export function getNavigation(base = import.meta.env.BASE_URL) {
     { label: 'ニュース・航空知識', href: withBase('/insights/', base) },
     {
       label: '設計図ライブラリ',
-      href: 'https://happinesea.com/drawinglibrary',
+      href: withBase('/drawinglibrary/', base),
     },
-    { label: '基本用語集', href: 'https://happinesea.com/drone-rc-glossary' },
+    { label: '基本用語集', href: withBase('/drone-rc-glossary/', base) },
   ] as const;
 }

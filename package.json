@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run wordpress:sync && astro build && node scripts/copy-wordpress-aliases.mjs",
+    "build": "npm run wordpress:sync && astro build && node scripts/copy-wordpress-aliases.mjs && node scripts/finalize-legacy-compatibility.mjs",
     "preview": "astro preview",
     "test": "node --test tests/unit/*.test.mjs",
     "check": "astro check",
@@ -23,7 +23,8 @@
     "import:publication": "node scripts/import-publication.mjs",
     "assets:sync": "node scripts/process-assets.mjs",
     "wordpress:sync": "npm run wordpress:inventory && node scripts/sync-wordpress-insights.mjs",
-    "wordpress:inventory": "node scripts/inventory-wordpress-insights.mjs"
+    "wordpress:inventory": "node scripts/inventory-wordpress-insights.mjs",
+    "legacy:sync": "node scripts/sync-legacy-compatibility.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

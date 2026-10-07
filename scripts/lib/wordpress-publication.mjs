@@ -143,7 +143,11 @@ function isoUtc(value, field) {
   return date.toISOString();
 }
 
-export function sanitizeArticleHtml(input, imageAssets = new Map()) {
+export function sanitizeArticleHtml(
+  input,
+  imageAssets = new Map(),
+  { preserveAnchors = false } = {},
+) {
   const value = localizeArticleImages(input, imageAssets);
   for (const [pattern, label] of forbiddenMarkup) {
     if (pattern.test(value)) throw new Error(`forbidden HTML: ${label}`);
@@ -199,6 +203,7 @@ export function sanitizeArticleHtml(input, imageAssets = new Map()) {
       'iframe',
     ],
     allowedAttributes: {
+      ...(preserveAnchors ? { '*': ['id'] } : {}),
       a: ['href', 'title', 'target', 'rel'],
       img: ['src', 'alt', 'width', 'height', 'loading', 'decoding'],
       iframe: [
