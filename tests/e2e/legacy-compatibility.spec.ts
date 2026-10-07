@@ -10,7 +10,7 @@ const snapshot = JSON.parse(
 );
 
 for (const item of snapshot.pages) {
-  test(`legacy compatibility ${item.type} ${item.id ?? item.download_id}`, async ({
+  test(`legacy compatibility ${item.type} ${item.target_route}`, async ({
     page,
     request,
   }, testInfo) => {
@@ -83,7 +83,7 @@ for (const item of snapshot.pages) {
     expect(failedImages).toEqual([]);
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({
-      path: `test-results/screenshots/${testInfo.project.name}-legacy-${item.id ?? item.download_id}.png`,
+      path: `test-results/screenshots/${testInfo.project.name}-legacy-${createHash('sha256').update(item.target_route).digest('hex').slice(0, 12)}.png`,
       fullPage: true,
     });
   });

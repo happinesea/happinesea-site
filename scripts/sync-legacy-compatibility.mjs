@@ -175,6 +175,18 @@ async function capturePage(source, type, post) {
 }
 
 // Explicitly scoped publication copies; WordPress/Git upstream remains the owner.
+// Independently reviewed editorial captures are refreshed by their own bounded review.
+for (const page of previous.pages.filter((page) =>
+  [
+    'fixed_page',
+    'faq',
+    'category_archive',
+    'blog_archive',
+    'faq_archive',
+  ].includes(page.type),
+)) {
+  pages.push({ ...page, source_html: page.content_html });
+}
 for (const id of [233, 141, 1716, 1726, 1734, 1742, 1891]) {
   const prior = process.argv.includes('--reuse-reviewed')
     ? previous.pages.find((page) => page.id === id)

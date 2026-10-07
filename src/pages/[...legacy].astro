@@ -1,5 +1,6 @@
 ---
 import snapshot from '../data/legacy-compatibility.json';
+import articles from '../data/wordpress-insights.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { withBase } from '../lib/urls';
@@ -15,8 +16,14 @@ export function getStaticPaths() {
 
 const { page } = Astro.props;
 const knownRoutes = new Set([
-  ...snapshot.pages.map((item) => decodeURIComponent(item.target_route)),
+  ...snapshot.pages.flatMap((item) => {
+    const route = decodeURIComponent(item.target_route);
+    return route.endsWith('.html') ? [route] : [route, `${route}/`];
+  }),
   ...snapshot.assets.map((item) => decodeURIComponent(item.target_route)),
+  ...articles.map((item) =>
+    decodeURIComponent(new URL(item.canonical).pathname),
+  ),
 ]);
 const content = page.content_html.replaceAll(
   /\b(href|src)="([^"]+)"/g,

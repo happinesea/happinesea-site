@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "2ba40a05161ff55e62c00b6e62f96e5d2784539c",
+  "baseline_commit": "f0103b9cf4e48eb67b06577456e3e5da3db10c53",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -40,10 +40,10 @@
     }
   },
   "summary": {
-    "total_urls": 1353,
+    "total_urls": 1374,
     "by_type": {
       "attachment": 385,
-      "category_archive": 11,
+      "category_archive": 26,
       "download": 26,
       "download_endpoint": 27,
       "download_query": 7,
@@ -52,19 +52,19 @@
       "faq": 11,
       "glossary": 1,
       "image": 652,
-      "page": 135,
+      "page": 141,
       "post": 92
     },
-    "preserved_routes": 75,
+    "preserved_routes": 127,
     "redirect_required": 0,
-    "blocked": 10,
+    "blocked": 13,
     "old_domain_only_assets": 645,
     "broken_links": 3,
     "missing_downloads": 0,
-    "unverified": 1239,
+    "unverified": 1235,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1278,
+    "unresolved_surfaces": 1247,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -106,7 +106,13 @@
       "migration_status": "MIGRATE",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Source title: Home"]
+      "notes": [
+        "Source title: Home",
+        "Editorial classification: NEEDS_REVIEW: Existing user-approved Astro homepage occupies this route; legacy CMS body is empty. No homepage or canonical change in this scope."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:16:12.759Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/?p=1075",
@@ -1045,12 +1051,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/139"
       ],
-      "target_route": null,
+      "target_route": "/blog",
       "canonical": "https://happinesea.com/blog",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Source title: Blog"]
+      "notes": [
+        "Source title: Blog",
+        "Editorial classification: ARCHIVE_COMPAT: Actual public Blog listing and all observed pagination preserved; not inferred from REST total.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:17.658Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/book",
@@ -1111,14 +1125,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/17"
       ],
-      "target_route": null,
+      "target_route": "/category/engineering-drawing",
       "canonical": "https://happinesea.com/category/engineering-drawing",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: 設計図; 5 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: 設計図; 5 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:17.650Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/experience",
@@ -1151,14 +1171,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/18"
       ],
-      "target_route": null,
+      "target_route": "/category/experience",
       "canonical": "https://happinesea.com/category/experience",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: 遊ぶ・学ぶ; 6 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: 遊ぶ・学ぶ; 6 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:17.654Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/news",
@@ -1192,14 +1218,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/19"
       ],
-      "target_route": null,
+      "target_route": "/category/news",
       "canonical": "https://happinesea.com/category/news",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: ニュース・航空知識; 36 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: ニュース・航空知識; 36 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:51.296Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/pixhawk",
@@ -1232,14 +1264,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/41"
       ],
-      "target_route": null,
+      "target_route": "/category/pixhawk",
       "canonical": "https://happinesea.com/category/pixhawk",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: pixhawk; 1 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: pixhawk; 1 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:18:59.185Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/product",
@@ -1272,14 +1310,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/21"
       ],
-      "target_route": null,
+      "target_route": "/category/product",
       "canonical": "https://happinesea.com/category/product",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: 製品紹介; 4 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: 製品紹介; 4 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:17.646Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support",
@@ -1312,14 +1356,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/22"
       ],
-      "target_route": null,
+      "target_route": "/category/radiolink-support",
       "canonical": "https://happinesea.com/category/radiolink-support",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: Radiolink製品サポート; 10 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: Radiolink製品サポート; 10 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:15.846Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/at9s-manual",
@@ -1329,14 +1379,20 @@
         "REST category 38",
         "https://happinesea.com/wp-json/wp/v2/categories/38"
       ],
-      "target_route": null,
+      "target_route": "/category/radiolink-support/at9s-manual",
       "canonical": "https://happinesea.com/category/radiolink-support/at9s-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: AT9S Pro製品マニュアル; 0 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: AT9S Pro製品マニュアル; 0 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:18:59.173Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/byme-a-manual",
@@ -1369,14 +1425,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/73"
       ],
-      "target_route": null,
+      "target_route": "/category/radiolink-support/byme-a-manual",
       "canonical": "https://happinesea.com/category/radiolink-support/byme-a-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: Byme-A製品マニュアル; 8 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: Byme-A製品マニュアル; 8 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:18:59.180Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/minipix-manual",
@@ -1409,14 +1471,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/40"
       ],
-      "target_route": null,
+      "target_route": "/category/radiolink-support/minipix-manual",
       "canonical": "https://happinesea.com/category/radiolink-support/minipix-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: Mini Pix製品マニュアル; 2 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: Mini Pix製品マニュアル; 2 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:18:59.182Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
@@ -1449,26 +1517,37 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/20"
       ],
-      "target_route": null,
+      "target_route": "/category/radiolink-support/rc4gs-manual",
       "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: RC4GS製品マニュアル; 29 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: RC4GS製品マニュアル; 29 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:39.082Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-support/rc4gs-manual/page/2",
-      "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "content_type": "category_archive",
+      "current_status": 200,
       "source": ["rendered https://happinesea.com/rc4gs-manual"],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/category/radiolink-support/rc4gs-manual/page/2",
+      "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual/page/2",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:39.084Z",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/category/radiolink-videos",
@@ -1501,14 +1580,20 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/categories/23"
       ],
-      "target_route": null,
+      "target_route": "/category/radiolink-videos",
       "canonical": "https://happinesea.com/category/radiolink-videos",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Category: Radiolink動画集; 23 published posts. Archive compatibility is not implemented."
-      ]
+        "Category: Radiolink動画集; 23 published posts. Archive compatibility is not implemented.",
+        "Editorial classification: ARCHIVE_COMPAT: Exact source archive membership, order and observed pagination; no topic/taxonomy remapping.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:18:59.187Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/cool9030_manual_jp",
@@ -2204,9 +2289,13 @@
       "notes": [
         "Source title: 設計図ライブラリ",
         "Supplemental GET 200: rendered HTML received; content/compatibility publication remains unreviewed.",
+        "Editorial classification: READY_AS_IS: Existing reviewed compatibility publication copy retained.",
         "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
       ],
-      "static_output": "VERIFIED"
+      "static_output": "VERIFIED",
+      "compatibility_class": "READY_AS_IS",
+      "http_observed_at": "2026-10-07T10:16:11.364Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/drone-rc-glossary",
@@ -2251,9 +2340,13 @@
       "notes": [
         "Source title: ラジコン、ドローンの基本用語集",
         "Supplemental GET 200: rendered HTML received; content/compatibility publication remains unreviewed.",
+        "Editorial classification: READY_AS_IS: Existing reviewed compatibility publication copy retained.",
         "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
       ],
-      "static_output": "VERIFIED"
+      "static_output": "VERIFIED",
+      "compatibility_class": "READY_AS_IS",
+      "http_observed_at": "2026-10-07T10:16:03.266Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/drone-rc-glossary/attachment/48377577_2100216346975769_63900592149364736_o",
@@ -5451,12 +5544,20 @@
         "sitemap https://happinesea.com/page-sitemap.xml",
         "https://happinesea.com/wp-json/wp/v2/pages/216"
       ],
-      "target_route": null,
+      "target_route": "/page-examples",
       "canonical": "https://happinesea.com/page-examples",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Source title: Page Examples"]
+      "notes": [
+        "Source title: Page Examples",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:52.603Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/pexels-photo-8",
@@ -5522,7 +5623,13 @@
       "migration_status": "MIGRATE",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Source title: プライバシーポリシー"]
+      "notes": [
+        "Source title: プライバシーポリシー",
+        "Editorial classification: NEEDS_REVIEW: Legacy privacy policy describes WordPress comments/login/cookies; keep source unchanged pending owner review of applicability."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:15:38.765Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/product/202112141804.html",
@@ -5680,12 +5787,18 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2157-2-Position-Switch-Setting-of-RC8X-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2153-T16DT12D-Self-Centering-Throttle-Stick-Adjustment-81x76.jpg"
       ],
-      "notes": ["Source title: Radiolinkラインナップ"]
+      "notes": [
+        "Source title: Radiolinkラインナップ",
+        "Editorial classification: NEEDS_REVIEW: Existing Git-owned product catalogue occupies this route; legacy product landing content is not one-to-one equivalent."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:15:24.676Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 1035",
         "sitemap https://happinesea.com/page-sitemap.xml",
@@ -5713,15 +5826,21 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/1035"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-productions-manual",
       "canonical": "https://happinesea.com/radiolink-productions-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink製品マニュアル",
-        "Probe failed: TimeoutError"
-      ]
+        "Probe failed: TimeoutError",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:24.660Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/attachment/004_manualttenanda",
@@ -5772,7 +5891,7 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/book.jpg",
@@ -5790,8 +5909,12 @@
         "https://happinesea.com/wp-content/uploads/2020/05/manual_title-300x150.jpg"
       ],
       "notes": [
-        "Source title: Byme-A固定翼飛行機フライトコントローラー操作マニュアル"
-      ]
+        "Source title: Byme-A固定翼飛行機フライトコントローラー操作マニュアル",
+        "Editorial classification: BLOCKED: Unsupported Amazon iframe and unreviewed image; no silent advertisement/embed removal."
+      ],
+      "compatibility_class": "BLOCKED",
+      "http_observed_at": "2026-10-07T10:14:57.955Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
@@ -5824,15 +5947,21 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/934"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-productions-manual/minipix-manual-multicopter",
       "canonical": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Mini Pix 取扱説明書(日本語版)―マルチコプター編",
-        "Probe failed: TimeoutError"
-      ]
+        "Probe failed: TimeoutError",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:32.797Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual",
@@ -5864,7 +5993,13 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2020/05/manual_title-300x150.jpg"
       ],
-      "notes": ["Source title: PIXHAWKユーザマニュアル"]
+      "notes": [
+        "Source title: PIXHAWKユーザマニュアル",
+        "Editorial classification: NEEDS_REVIEW: Content image alt is empty; no inferred image description."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:15:09.105Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual/attachment/pixhawk-1",
@@ -5924,7 +6059,14 @@
         "https://happinesea.com/wp-content/uploads/2020/06/R6DSM_2-1.jpg",
         "https://happinesea.com/wp-content/uploads/2020/06/R6DSM_3-300x195.jpg"
       ],
-      "notes": ["Source title: R6DSM取扱説明書", "Probe failed: TimeoutError"]
+      "notes": [
+        "Source title: R6DSM取扱説明書",
+        "Probe failed: TimeoutError",
+        "Editorial classification: NEEDS_REVIEW: Receiver instruction images have empty alt; no inferred image description."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:15:33.345Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/r6dsm-manual/attachment/20190715173114999",
@@ -6055,15 +6197,21 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/921"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-productions-manual/rc4gs-manual",
       "canonical": "https://happinesea.com/radiolink-productions-manual/rc4gs-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS取扱説明書(日本語版)―V2対応",
-        "Probe failed: TimeoutError"
-      ]
+        "Probe failed: TimeoutError",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:38.507Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
@@ -6098,7 +6246,7 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
-      "migration_status": "MIGRATE",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg",
@@ -6114,7 +6262,13 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2020/05/manual_title-300x150.jpg"
       ],
-      "notes": ["Source title: RC6GS取扱説明書(日本語版)"]
+      "notes": [
+        "Source title: RC6GS取扱説明書(日本語版)",
+        "Editorial classification: BLOCKED: Unsupported Amazon iframe and dynamic download widget; verified download transform remains necessary."
+      ],
+      "compatibility_class": "BLOCKED",
+      "http_observed_at": "2026-10-07T10:15:16.324Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-q-and-a",
@@ -6147,9 +6301,9 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/1594"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-q-and-a",
       "canonical": "https://happinesea.com/radiolink-q-and-a",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -6166,7 +6320,15 @@
         "https://happinesea.com/wp-content/uploads/2020/03/48377577_2100216346975769_63900592149364736_o-292x160.jpg",
         "https://happinesea.com/wp-content/uploads/2020/03/48377577_2100216346975769_63900592149364736_o-235x129.jpg"
       ],
-      "notes": ["Source title: Radiolink製品：良くあるご質問(Q＆A)"]
+      "notes": [
+        "Source title: Radiolink製品：良くあるご質問(Q＆A)",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:09.204Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq",
@@ -6201,9 +6363,9 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/1604"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-q-and-a/radiolink-wheeler-faq",
       "canonical": "https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -6217,8 +6379,14 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
       "notes": [
-        "Source title: Radiolink製品：ホイラータイププロポ関連の良くある質問(Q&amp;A)"
-      ]
+        "Source title: Radiolink製品：ホイラータイププロポ関連の良くある質問(Q&amp;A)",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:14:58.101Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-q-and-a/rssi-test",
@@ -6272,8 +6440,12 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
       "notes": [
-        "Source title: Radiolink製品：ホイラータイプ送信機RSSI値確認方法"
-      ]
+        "Source title: Radiolink製品：ホイラータイプ送信機RSSI値確認方法",
+        "Editorial classification: NEEDS_REVIEW: Two instruction images have empty alt; source content requires explicit image review."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:14:51.611Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/2016091547.html",
@@ -9757,7 +9929,7 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/radiolink/rc4gs",
-      "migration_status": "MIGRATE",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/11/2525666.png",
@@ -9796,7 +9968,13 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2157-2-Position-Switch-Setting-of-RC8X-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2153-T16DT12D-Self-Centering-Throttle-Stick-Adjustment-81x76.jpg"
       ],
-      "notes": ["Source title: RC4GS"]
+      "notes": [
+        "Source title: RC4GS",
+        "Editorial classification: BLOCKED: Inline script plus unreviewed images/GIF; no sanitizer bypass or silent removal."
+      ],
+      "compatibility_class": "BLOCKED",
+      "http_observed_at": "2026-10-07T10:15:15.297Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink/rc4gs/attachment/3100721",
@@ -10612,7 +10790,13 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2157-2-Position-Switch-Setting-of-RC8X-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2153-T16DT12D-Self-Centering-Throttle-Stick-Adjustment-81x76.jpg"
       ],
-      "notes": ["Source title: RC8Xファームウェアアップデートガイド"]
+      "notes": [
+        "Source title: RC8Xファームウェアアップデートガイド",
+        "Editorial classification: NEEDS_REVIEW: Instruction image alt is empty; do not infer alt or omit the image."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:14:51.458Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/rc8x_firmewar_upgarde/attachment/rc8xupdate",
@@ -10631,18 +10815,26 @@
     {
       "legacy_url": "https://happinesea.com/sample-page",
       "content_type": "page",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST page 2",
         "sitemap https://happinesea.com/page-sitemap.xml",
         "https://happinesea.com/wp-json/wp/v2/pages/2"
       ],
-      "target_route": null,
+      "target_route": "/sample-page",
       "canonical": "https://happinesea.com/sample-page",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Source title: サンプルページ"]
+      "notes": [
+        "Source title: サンプルページ",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:44.795Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/sample-page-2",
@@ -10653,12 +10845,20 @@
         "sitemap https://happinesea.com/page-sitemap.xml",
         "https://happinesea.com/wp-json/wp/v2/pages/241"
       ],
-      "target_route": null,
+      "target_route": "/sample-page-2",
       "canonical": "https://happinesea.com/sample-page-2",
-      "migration_status": "MIGRATE",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Source title: Sample Page"]
+      "notes": [
+        "Source title: Sample Page",
+        "Editorial classification: MIGRATE_STATIC: Source text and links retained in static publication copy.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:15:43.217Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/snapcrab_noname_2020-3-16_16-17-58_no-00",
@@ -10895,7 +11095,13 @@
         "https://happinesea.com/wp-content/uploads/2016/09/pokemon-1543353_640-1-300x200.jpg",
         "https://happinesea.com/wp-content/uploads/2016/09/imac-apple-mockup-app-38544-1-300x199.jpeg"
       ],
-      "notes": ["Source title: Style Guide"]
+      "notes": [
+        "Source title: Style Guide",
+        "Editorial classification: NEEDS_REVIEW: Legacy theme demonstration has image dependencies; retain URL pending asset/publication-purpose review."
+      ],
+      "compatibility_class": "NEEDS_REVIEW",
+      "http_observed_at": "2026-10-07T10:15:53.152Z",
+      "content_type_header": "text/html; charset=UTF-8"
     },
     {
       "legacy_url": "https://happinesea.com/tag/%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab",
@@ -12543,14 +12749,19 @@
     {
       "legacy_url": "https://happinesea.com/ufaq",
       "content_type": "faq",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": ["sitemap https://happinesea.com/ufaq-sitemap.xml"],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq",
+      "canonical": "https://happinesea.com/ufaq",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:17:50.635Z",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/faq-rc4gs-rc6gs-telemetry",
@@ -12562,15 +12773,21 @@
         "rendered https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa",
         "https://happinesea.com/wp-json/wp/v2/ufaq/1622"
       ],
-      "target_route": null,
+      "target_route": "/ufaq/faq-rc4gs-rc6gs-telemetry",
       "canonical": "https://happinesea.com/ufaq/faq-rc4gs-rc6gs-telemetry",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS/RC6GSはテレメトリー機能がありますか？",
-        "Probe failed: TimeoutError"
-      ]
+        "Probe failed: TimeoutError",
+        "Editorial classification: MIGRATE_STATIC: Source question and answer rendered statically; removed only plugin toggle controls.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:16:32.422Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa",
@@ -12581,9 +12798,9 @@
         "sitemap https://happinesea.com/ufaq-sitemap.xml",
         "https://happinesea.com/wp-json/wp/v2/ufaq/1603"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/radiolink%E3%81%AE%E3%83%9B%E3%82%A4%E3%83%A9%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E3%83%97%E3%83%AD%E3%83%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%83%90%E3%83%83%E3%83%86%E3%83%AA",
+      "canonical": "https://happinesea.com/ufaq/radiolinkのホイラータイププロポはどのようなバッテリ",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -12597,8 +12814,14 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
       "notes": [
-        "Source title: Radiolinkのホイラータイププロポはどのようなバッテリー、電源を使えるか。電圧の範囲は？"
-      ]
+        "Source title: Radiolinkのホイラータイププロポはどのようなバッテリー、電源を使えるか。電圧の範囲は？",
+        "Editorial classification: MIGRATE_STATIC: Source question and answer rendered statically; removed only plugin toggle controls.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:16:39.049Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/radiolink%E3%81%AE%E3%83%9B%E3%82%A4%E3%83%A9%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E3%83%97%E3%83%AD%E3%83%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%83%90%E3%83%83%E3%83%86%E3%83%AA",
@@ -12607,12 +12830,15 @@
       "source": [
         "rendered https://happinesea.com/ufaq/radiolink%e3%81%ae%e3%83%9b%e3%82%a4%e3%83%a9%e3%83%bc%e3%82%bf%e3%82%a4%e3%83%97%e3%83%97%e3%83%ad%e3%83%9d%e3%81%af%e3%81%a9%e3%81%ae%e3%82%88%e3%81%86%e3%81%aa%e3%83%90%e3%83%83%e3%83%86%e3%83%aa"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/radiolink%E3%81%AE%E3%83%9B%E3%82%A4%E3%83%A9%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E3%83%97%E3%83%AD%E3%83%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%83%90%E3%83%83%E3%83%86%E3%83%AA",
+      "canonical": "https://happinesea.com/ufaq/radiolinkのホイラータイププロポはどのようなバッテリ",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "compatibility_class": "READY_AS_IS",
+      "http_observed_at": "2026-10-07T10:17:50.655Z",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f",
@@ -12624,9 +12850,9 @@
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
         "https://happinesea.com/wp-json/wp/v2/ufaq/1625"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/rc4gs-rc6gs%E3%81%A8%E4%BA%A4%E6%8F%9B%E6%80%A7%E3%81%82%E3%82%8B%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82%E4%BB%96%E7%A4%BE%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gsと交換性ある受信機は何ですか。他社の受信機",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -12640,8 +12866,14 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
       "notes": [
-        "Source title: RC4GS/RC6GSと交換性ある受信機は何ですか。他社の受信機と交換性がありますか。"
-      ]
+        "Source title: RC4GS/RC6GSと交換性ある受信機は何ですか。他社の受信機と交換性がありますか。",
+        "Editorial classification: MIGRATE_STATIC: Source question and answer rendered statically; removed only plugin toggle controls.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:16:22.339Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%A8%E4%BA%A4%E6%8F%9B%E6%80%A7%E3%81%82%E3%82%8B%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82%E4%BB%96%E7%A4%BE%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F",
@@ -12650,12 +12882,15 @@
       "source": [
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/rc4gs-rc6gs%E3%81%A8%E4%BA%A4%E6%8F%9B%E6%80%A7%E3%81%82%E3%82%8B%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82%E4%BB%96%E7%A4%BE%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gsと交換性ある受信機は何ですか。他社の受信機",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "compatibility_class": "READY_AS_IS",
+      "http_observed_at": "2026-10-07T10:17:56.143Z",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e3%80%81%e3%83%88%e3%83%a9%e3%82%af%e3%82%b5%e3%82%b9traxxas%e7%ad%89%e3%80%81%e3%83%84%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%82%bf%e3%82%92%e6%93%8d%e7%b8%a6%e3%81%a7%e3%81%8d",
@@ -12667,15 +12902,21 @@
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
         "https://happinesea.com/wp-json/wp/v2/ufaq/1623"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e3%80%81%e3%83%88%e3%83%a9%e3%82%af%e3%82%b5%e3%82%b9traxxas%e7%ad%89%e3%80%81%e3%83%84%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%82%bf%e3%82%92%e6%93%8d%e7%b8%a6%e3%81%a7%e3%81%8d",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/rc4gs-rc6gs%E3%81%AF%E3%80%81%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B5%E3%82%B9traxxas%E7%AD%89%E3%80%81%E3%83%84%E3%82%A4%E3%83%B3%E3%83%A2%E3%83%BC%E3%82%BF%E3%82%92%E6%93%8D%E7%B8%A6%E3%81%A7%E3%81%8D",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gsは、トラクサスtraxxas等、ツインモータを操縦でき",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RC4GS/RC6GSは、トラクサス(TRAXXAS)等、ツインモータを操縦できますか？",
-        "Probe failed: TimeoutError"
-      ]
+        "Probe failed: TimeoutError",
+        "Editorial classification: MIGRATE_STATIC: Source question and answer rendered statically; removed only plugin toggle controls.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:16:32.181Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
@@ -12687,9 +12928,9 @@
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%a8%e4%ba%a4%e6%8f%9b%e6%80%a7%e3%81%82%e3%82%8b%e5%8f%97%e4%bf%a1%e6%a9%9f%e3%81%af%e4%bd%95%e3%81%a7%e3%81%99%e3%81%8b%e3%80%82%e4%bb%96%e7%a4%be%e3%81%ae%e5%8f%97%e4%bf%a1%e6%a9%9f",
         "https://happinesea.com/wp-json/wp/v2/ufaq/1624"
       ],
-      "target_route": null,
-      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f",
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/rc4gs-rc6gs%E3%81%AF%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%95%B0%E3%81%AF%EF%BC%9F",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gsは保存データで数は？",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -12702,7 +12943,15 @@
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2153-T16DT12D-Self-Centering-Throttle-Stick-Adjustment-81x76.jpg",
         "https://happinesea.com/wp-content/uploads/2025/04/yt-2138-How-to-Set-T16DT12D-to-Control-A560-81x76.jpg"
       ],
-      "notes": ["Source title: RC4GS/RC6GSは保存データで数は？"]
+      "notes": [
+        "Source title: RC4GS/RC6GSは保存データで数は？",
+        "Editorial classification: MIGRATE_STATIC: Source question and answer rendered statically; removed only plugin toggle controls.",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "MIGRATE_STATIC",
+      "http_observed_at": "2026-10-07T10:16:22.365Z",
+      "content_type_header": "text/html; charset=UTF-8",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%AF%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%95%B0%E3%81%AF%EF%BC%9F",
@@ -12711,24 +12960,32 @@
       "source": [
         "rendered https://happinesea.com/ufaq/rc4gs-rc6gs%e3%81%af%e4%bf%9d%e5%ad%98%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a7%e6%95%b0%e3%81%af%ef%bc%9f"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/rc4gs-rc6gs%E3%81%AF%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%95%B0%E3%81%AF%EF%BC%9F",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gsは保存データで数は？",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "compatibility_class": "READY_AS_IS",
+      "http_observed_at": "2026-10-07T10:17:56.147Z",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/ufaq/ufaq-category/faq-wheeler",
       "content_type": "faq",
       "current_status": 200,
       "source": ["sitemap https://happinesea.com/ufaq-category-sitemap.xml"],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/ufaq/ufaq-category/faq-wheeler",
+      "canonical": "https://happinesea.com/ufaq/ufaq-category/faq-wheeler",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:17:58.856Z",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/woocommerce-placeholder",
@@ -22732,9 +22989,356 @@
       "sha256": "8275d32fbec16d7f59a9d4404ac7a33968530a661b050810cceb06ac3cb1d0ba",
       "content_type_header": "image/jpeg",
       "received_bytes": 9821
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-videos/page/2",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-videos/page/2",
+      "canonical": "https://happinesea.com/category/radiolink-videos/page/2",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:18:59.189Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-videos/page/3",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-videos/page/3",
+      "canonical": "https://happinesea.com/category/radiolink-videos/page/3",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:07.942Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-videos/",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-videos",
+      "canonical": "https://happinesea.com/category/radiolink-videos",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:10.675Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/page/2",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support/page/2",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/2",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:15.848Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/page/5",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support/page/5",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/5",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:21.195Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support",
+      "canonical": "https://happinesea.com/category/radiolink-support",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:23.342Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/page/3",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support/page/3",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/3",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:29.880Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/page/4",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support/page/4",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/4",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:36.081Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/rc4gs-manual/page/3",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support/rc4gs-manual/page/3",
+      "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual/page/3",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:41.433Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/radiolink-support/rc4gs-manual/",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/radiolink-support/rc4gs-manual",
+      "canonical": "https://happinesea.com/category/radiolink-support/rc4gs-manual",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:46.232Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/news/page/2",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/news/page/2",
+      "canonical": "https://happinesea.com/category/news/page/2",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:51.298Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/news/page/4",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/news/page/4",
+      "canonical": "https://happinesea.com/category/news/page/4",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:19:53.759Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/news/",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/news",
+      "canonical": "https://happinesea.com/category/news",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:02.524Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/category/news/page/3",
+      "content_type": "category_archive",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/category/news/page/3",
+      "canonical": "https://happinesea.com/category/news/page/3",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:14.173Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/page/2",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog/page/2",
+      "canonical": "https://happinesea.com/blog/page/2",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:17.664Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/page/7",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog/page/7",
+      "canonical": "https://happinesea.com/blog/page/7",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:21.255Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog",
+      "canonical": "https://happinesea.com/blog",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:23.812Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/page/3",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog/page/3",
+      "canonical": "https://happinesea.com/blog/page/3",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:34.873Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/page/6",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog/page/6",
+      "canonical": "https://happinesea.com/blog/page/6",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:41.362Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/page/4",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog/page/4",
+      "canonical": "https://happinesea.com/blog/page/4",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:44.312Z",
+      "static_output": "VERIFIED"
+    },
+    {
+      "legacy_url": "https://happinesea.com/blog/page/5",
+      "content_type": "page",
+      "current_status": 200,
+      "source": ["Public legacy editorial compatibility capture"],
+      "target_route": "/blog/page/5",
+      "canonical": "https://happinesea.com/blog/page/5",
+      "migration_status": "READY",
+      "redirect_required": false,
+      "asset_dependencies": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "compatibility_class": "ARCHIVE_COMPAT",
+      "http_observed_at": "2026-10-07T10:20:48.091Z",
+      "static_output": "VERIFIED"
     }
   ],
-  "reconciled_at": "2026-10-07T06:13:17.373Z",
+  "reconciled_at": "2026-10-07T10:37:35.359Z",
   "migration": {
     "migrated_articles": 33,
     "insight_articles": 28,
@@ -22742,7 +23346,7 @@
     "exact_legacy_html_routes": 33
   },
   "compatibility": {
-    "verified_pages": 14,
+    "verified_pages": 58,
     "drawing_ids": [1716, 1726, 1734, 1742, 1891],
     "verified_unique_asset_paths": 34,
     "blocked": 4,

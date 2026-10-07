@@ -2,6 +2,31 @@ import { sanitizeArticleHtml } from './wordpress-publication.mjs';
 import { createHash } from 'node:crypto';
 import { readFile, rename, rmdir, stat } from 'node:fs/promises';
 import { join, resolve, sep } from 'node:path';
+import { sameCanonical } from './legacy-public-surface.mjs';
+
+// Caller must verify the static outputs before supplying verifiedPages.
+export function reconcileObservedVariants(entries, verifiedPages) {
+  for (const entry of entries) {
+    if (
+      entry.current_status !== 200 ||
+      !['READY_AS_IS', 'MIGRATE_STATIC', 'ARCHIVE_COMPAT'].includes(
+        entry.compatibility_class,
+      )
+    )
+      continue;
+    if (
+      !verifiedPages.some(
+        (page) =>
+          page.target_route === entry.target_route &&
+          entry.canonical &&
+          sameCanonical(page.canonical, entry.canonical),
+      )
+    )
+      continue;
+    entry.migration_status = 'READY';
+    entry.static_output = 'VERIFIED';
+  }
+}
 
 export function downloadFilename(value) {
   const name = decodeURIComponent(value ?? '');
