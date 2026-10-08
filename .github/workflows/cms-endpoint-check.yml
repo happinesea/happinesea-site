@@ -1,0 +1,25 @@
+name: CMS endpoint check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Verify live CMS API and public identity
+        run: node --test tests/cms-api.integration.mjs
+      - name: Validate source and build from CMS
+        run: npm run validate
+      - name: Ensure existing article publication output is unchanged
+        run: git diff --exit-code -- src/data/wordpress-insights.json public/assets/insights/wordpress

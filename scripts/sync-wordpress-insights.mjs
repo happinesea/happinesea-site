@@ -165,7 +165,7 @@ for (const article of articles) {
 await writeJson(dataPath, output);
 await writeJson(reportPath, {
   contract_version: manifest.contract_version,
-  source_endpoint: manifest.source_endpoint,
+  source_endpoint: sourceEndpoint,
   expected_count: manifest.expected_count,
   received_count: output.length,
   article_ids: output.map(({ contract }) => contract.id),

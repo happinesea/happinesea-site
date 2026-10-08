@@ -1,6 +1,6 @@
 {
   "contract_version": "0.1",
-  "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
+  "source_endpoint": "https://cms.happinesea.com/wp-json/wp/v2/posts",
   "expected_count": 87,
   "received_count": 87,
   "article_ids": [

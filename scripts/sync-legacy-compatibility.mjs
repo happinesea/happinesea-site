@@ -19,6 +19,13 @@ import {
 import { publicUrls } from './lib/legacy-public-surface.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const manifest = JSON.parse(
+  await readFile(
+    join(root, 'src/data/wordpress-insight-manifest.json'),
+    'utf8',
+  ),
+);
+const endpoint = process.env.WORDPRESS_API_URL ?? manifest.source_endpoint;
 const audit = JSON.parse(
   await readFile(join(root, 'src/data/legacy-public-surface.json'), 'utf8'),
 );
@@ -199,7 +206,7 @@ for (const id of [233, 141, 1716, 1726, 1734, 1742, 1891]) {
     continue;
   }
   const post = await fetchJson(
-    `https://happinesea.com/wp-json/wp/v2/${id === 233 || id === 141 ? 'pages' : 'posts'}/${id}`,
+    new URL(`${id === 233 || id === 141 ? 'pages' : 'posts'}/${id}`, endpoint),
   );
   if (post.status !== 'publish')
     throw new Error(`unpublished legacy content: ${id}`);
