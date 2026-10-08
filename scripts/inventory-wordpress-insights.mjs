@@ -11,6 +11,8 @@ import {
   fetchJson,
   fetchWithRetry,
   htmlText,
+  reviewedArticleHtml,
+  resolveInventoryDecision,
 } from './lib/wordpress-publication.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -22,6 +24,12 @@ const manifest = JSON.parse(
 );
 const outputPath = join(root, 'src/data/wordpress-insight-inventory.json');
 const endpoint = process.env.WORDPRESS_API_URL ?? manifest.source_endpoint;
+const decisions = JSON.parse(
+  await readFile(
+    join(root, 'src/data/wordpress-phase6-decisions.json'),
+    'utf8',
+  ),
+);
 
 async function fetchPaged(path, parameters = {}) {
   const values = [];
@@ -103,7 +111,9 @@ const mappingById = new Map(manifest.articles.map((item) => [item.id, item]));
 
 const articles = posts.map((post) => {
   const mapping = mappingById.get(post.id);
-  const markup = analyzePostMarkup(post.content?.rendered);
+  const markup = analyzePostMarkup(
+    reviewedArticleHtml(post.content?.rendered, mapping?.content_review),
+  );
   const featured = mediaById.get(post.featured_media);
   const readiness = classifyInventoryPost(
     {
@@ -113,7 +123,13 @@ const articles = posts.map((post) => {
     },
     mapping,
   );
-  if (post.featured_media && !featured) {
+  if (
+    mapping?.featured_image_recovery &&
+    (featured ||
+      mapping.featured_image_recovery.media_id !== post.featured_media)
+  )
+    throw new Error(`featured recovery drift: ${post.id}`);
+  if (post.featured_media && !featured && !mapping?.featured_image_recovery) {
     readiness.status = 'BLOCKED';
     readiness.reasons.push('featured image metadata unavailable');
   }
@@ -146,7 +162,11 @@ const articles = posts.map((post) => {
     unresolved_links: markup.unresolved_links,
     content_type: mapping?.content_type ?? null,
     route: mapping?.route ?? null,
-    readiness,
+    readiness: resolveInventoryDecision(
+      post,
+      readiness,
+      decisions.articles.find(({ id }) => id === post.id),
+    ),
   };
 });
 

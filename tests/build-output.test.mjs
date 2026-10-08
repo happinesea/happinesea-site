@@ -358,7 +358,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 58);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 87);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
@@ -373,14 +373,15 @@ test('insights index exposes all editorial topics', async () => {
 test('WordPress insight batch emits sanitized static routes with local images and legacy canonicals', async () => {
   const contentImageReviews = (
     await Promise.all(
-      [3, 4].map(
+      [
+        'wordpress-phase6-review-batch3',
+        'wordpress-phase6-review-batch4',
+        'wordpress-phase6-completion-review',
+      ].map(
         async (batch) =>
           JSON.parse(
             await readFile(
-              new URL(
-                `./fixtures/wordpress-phase6-review-batch${batch}.json`,
-                import.meta.url,
-              ),
+              new URL(`./fixtures/${batch}.json`, import.meta.url),
               'utf8',
             ),
           ).articles,
@@ -421,7 +422,7 @@ test('WordPress insight batch emits sanitized static routes with local images an
       if (reviewed?.featured_image_review)
         assert.ok(
           html.includes(
-            `alt="${reviewed.source_record._embedded['wp:featuredmedia'][0].alt_text || reviewed.featured_image_review.alt}"`,
+            `alt="${reviewed.source_record._embedded['wp:featuredmedia'][0]?.alt_text || reviewed.featured_image_review.alt}"`,
           ),
         );
       else
@@ -432,10 +433,7 @@ test('WordPress insight batch emits sanitized static routes with local images an
             : /<img[^>]+alt(?:="")?(?:\s|>)/,
         );
     }
-    if (
-      [2005, 1635, 1].includes(article.contract.id) ||
-      contentImageReviews.some((item) => item.id === article.contract.id)
-    )
+    if (!article.content_html.includes('<iframe'))
       assert.doesNotMatch(html, /<iframe\b/);
     else assert.match(html, /https:\/\/www\.youtube\.com\/embed\//);
     assert.doesNotMatch(html, /happinesea\.com\/wp-(?:json|content)/);

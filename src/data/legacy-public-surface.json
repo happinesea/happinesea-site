@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "7f92e88a52d356eca679e7ab5c9c2538e338fd02",
+  "baseline_commit": "e5a75f1c19e99e844d3e8f7a70b8b87068c9654d",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -55,16 +55,16 @@
       "page": 141,
       "post": 92
     },
-    "preserved_routes": 192,
+    "preserved_routes": 223,
     "redirect_required": 0,
-    "blocked": 14,
+    "blocked": 16,
     "old_domain_only_assets": 621,
-    "broken_links": 3,
+    "broken_links": 4,
     "missing_downloads": 0,
-    "unverified": 1187,
+    "unverified": 1071,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1184,
+    "unresolved_surfaces": 1153,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -1735,17 +1735,21 @@
     {
       "legacy_url": "https://happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
       "content_type": "download_endpoint",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2051",
         "sitemap https://happinesea.com/wpdmpro-sitemap.xml"
       ],
-      "target_route": null,
-      "canonical": null,
-      "migration_status": "NEEDS_REVIEW",
+      "target_route": "/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
+      "canonical": "https://happinesea.com/download/cool9030、ブラシモーター用esc日本語マニュアル",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": ["Probe failed: TimeoutError"]
+      "notes": [
+        "Probe failed: TimeoutError",
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
@@ -2643,7 +2647,7 @@
     {
       "legacy_url": "https://happinesea.com/experience/20200312114.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 114",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2668,9 +2672,9 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/experience/20200312114.html",
       "canonical": "https://happinesea.com/experience/20200312114.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1.jpg",
@@ -2680,8 +2684,12 @@
       ],
       "notes": [
         "Source title: 基礎知識：ラジコンとドローンの違いは？",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /experience/20200312114.html; byte-identical to /insights/power-of-capturing-the-moment-in-mobile-devices/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/power-of-capturing-the-moment-in-mobile-devices/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/experience/20200312114.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/experience/20200312114.html/attachment/jim-butcher_photoby_dave_nelson",
@@ -2776,7 +2784,7 @@
     {
       "legacy_url": "https://happinesea.com/experience/20200313375.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 375",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2804,15 +2812,19 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/experience/20200313375.html",
       "canonical": "https://happinesea.com/experience/20200313375.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: DJI Mavic Miniで逮捕注意？！200g未満でも適用される法規制とは",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /experience/20200313375.html; byte-identical to /insights/dji-mavic-mini%e3%81%a7%e9%80%ae%e6%8d%95%e6%b3%a8%e6%84%8f%ef%bc%9f%ef%bc%81200g%e6%9c%aa%e6%ba%80%e3%81%a7%e3%82%82%e9%81%a9%e7%94%a8%e3%81%95%e3%82%8c%e3%82%8b%e6%b3%95%e8%a6%8f%e5%88%b6%e3%81%a8/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/dji-mavic-mini%e3%81%a7%e9%80%ae%e6%8d%95%e6%b3%a8%e6%84%8f%ef%bc%9f%ef%bc%81200g%e6%9c%aa%e6%ba%80%e3%81%a7%e3%82%82%e9%81%a9%e7%94%a8%e3%81%95%e3%82%8c%e3%82%8b%e6%b3%95%e8%a6%8f%e5%88%b6%e3%81%a8/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/experience/20200313375.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/experience/20200313375.html/attachment/1477961400-g_400-w_g",
@@ -2831,15 +2843,15 @@
     {
       "legacy_url": "https://happinesea.com/experience/202101011382.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1382",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/experience/202101011382.html",
       "canonical": "https://happinesea.com/experience/202101011382.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/01/psehani_2.png",
@@ -2854,8 +2866,12 @@
       ],
       "notes": [
         "Source title: Radiolink(ラジオリンク)製品のPSEマークについて",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /experience/202101011382.html; byte-identical to /insights/radiolink%e3%83%a9%e3%82%b8%e3%82%aa%e3%83%aa%e3%83%b3%e3%82%af%e8%a3%bd%e5%93%81%e3%81%aepse%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/radiolink%e3%83%a9%e3%82%b8%e3%82%aa%e3%83%aa%e3%83%b3%e3%82%af%e8%a3%bd%e5%93%81%e3%81%aepse%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/experience/202101011382.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/experience/202101011382.html/attachment/pse1",
@@ -2888,15 +2904,15 @@
     {
       "legacy_url": "https://happinesea.com/experience/202106101577.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1577",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/experience/202106101577.html",
       "canonical": "https://happinesea.com/experience/202106101577.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-300x225.jpg",
@@ -2912,8 +2928,12 @@
       ],
       "notes": [
         "Source title: タミヤ 1/350ドイツ海軍 ビスマルク級戦艦 テルピッツをラジコン(RC)改造(1)",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /experience/202106101577.html; byte-identical to /insights/%e3%82%bf%e3%83%9f%e3%83%a4-1-350%e3%83%89%e3%82%a4%e3%83%84%e6%b5%b7%e8%bb%8d-%e3%83%93%e3%82%b9%e3%83%9e%e3%83%ab%e3%82%af%e7%b4%9a%e6%88%a6%e8%89%a6-%e3%83%86%e3%83%ab%e3%83%94%e3%83%83%e3%83%84/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e3%82%bf%e3%83%9f%e3%83%a4-1-350%e3%83%89%e3%82%a4%e3%83%84%e6%b5%b7%e8%bb%8d-%e3%83%93%e3%82%b9%e3%83%9e%e3%83%ab%e3%82%af%e7%b4%9a%e6%88%a6%e8%89%a6-%e3%83%86%e3%83%ab%e3%83%94%e3%83%83%e3%83%84/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/experience/202106101577.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/experience/202106101577.html/attachment/dscn4613_convert_20100401225511",
@@ -2974,7 +2994,7 @@
     {
       "legacy_url": "https://happinesea.com/experience/202107081627.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1627",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -2982,13 +3002,16 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/experience/202107081627.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: タミヤ 1/350ドイツ海軍 ビスマルク級戦艦 テルピッツをラジコン(RC)改造(2)",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed"
-      ]
+        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed",
+        "Phase 6 final decision: A source body image has neither src nor attachment identity. Advertisement identity can be resolved, but the missing image cannot be restored or removed without owner decision. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+      ],
+      "http_final_url": "https://happinesea.com/experience/202107081627.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/experience/202107081627.html/attachment/%e3%83%86%e3%83%ab%e3%83%94%e3%83%83%e3%83%84",
@@ -3007,7 +3030,7 @@
     {
       "legacy_url": "https://happinesea.com/experience/202112281857.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1857",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -3037,13 +3060,16 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/experience/202112281857.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: 冬休みに遊びたい「RC」5選",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed"
-      ]
+        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed",
+        "Phase 6 final decision: Five Amazon-only product advertisements have no verified ordinary source links; ad host DNS fails. Product-name/ASIN-derived substitution is prohibited. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+      ],
+      "http_final_url": "https://happinesea.com/experience/202112281857.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/experience/202112281857.html/attachment/41-8dfaojul-_ac_",
@@ -3368,7 +3394,7 @@
     {
       "legacy_url": "https://happinesea.com/news/20200317107.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 107",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -3396,15 +3422,19 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/20200317107.html",
       "canonical": "https://happinesea.com/news/20200317107.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: 小惑星探査機「はやぶさ２」観測成果論文のNature誌掲載",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/20200317107.html; byte-identical to /insights/use-of-drone-to-minimize-the-violence-in-highways/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/use-of-drone-to-minimize-the-violence-in-highways/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/20200317107.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/20200317107.html/attachment/20200317-1_01",
@@ -3507,7 +3537,7 @@
     {
       "legacy_url": "https://happinesea.com/news/20200525943.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1947",
         "REST post 943",
@@ -3536,9 +3566,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/20200525943.html",
       "canonical": "https://happinesea.com/news/20200525943.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1.png",
@@ -3548,8 +3578,12 @@
       ],
       "notes": [
         "Source title: 飛行機のエンジン停止したら何が起こるか？単に動力が失うことではない",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/20200525943.html; byte-identical to /insights/%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%81%ae%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%b3%e5%81%9c%e6%ad%a2%e3%81%97%e3%81%9f%e3%82%89%e4%bd%95%e3%81%8c%e8%b5%b7%e3%81%93%e3%82%8b%e3%81%8b%ef%bc%9f%e5%8d%98%e3%81%ab/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%81%ae%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%b3%e5%81%9c%e6%ad%a2%e3%81%97%e3%81%9f%e3%82%89%e4%bd%95%e3%81%8c%e8%b5%b7%e3%81%93%e3%82%8b%e3%81%8b%ef%bc%9f%e5%8d%98%e3%81%ab/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/20200525943.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/20200525943.html/attachment/20170908233941-1",
@@ -3582,7 +3616,7 @@
     {
       "legacy_url": "https://happinesea.com/news/20200528977.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 977",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -3610,15 +3644,19 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/20200528977.html",
       "canonical": "https://happinesea.com/news/20200528977.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: 技適マークのない無線機器を利用できる制度で「Web申請」がスタート！アカウントを作ればWebで手続き完結（注意点あり）",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/20200528977.html; byte-identical to /insights/%e6%8a%80%e9%81%a9%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ae%e3%81%aa%e3%81%84%e7%84%a1%e7%b7%9a%e6%a9%9f%e5%99%a8%e3%82%92%e5%88%a9%e7%94%a8%e3%81%a7%e3%81%8d%e3%82%8b%e5%88%b6%e5%ba%a6%e3%81%a7%e3%80%8cwe/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e6%8a%80%e9%81%a9%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ae%e3%81%aa%e3%81%84%e7%84%a1%e7%b7%9a%e6%a9%9f%e5%99%a8%e3%82%92%e5%88%a9%e7%94%a8%e3%81%a7%e3%81%8d%e3%82%8b%e5%88%b6%e5%ba%a6%e3%81%a7%e3%80%8cwe/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/20200528977.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202006281075.html",
@@ -3695,7 +3733,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202006301090.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1090",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -3723,9 +3761,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202006301090.html",
       "canonical": "https://happinesea.com/news/202006301090.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/06/image.png",
@@ -3735,8 +3773,12 @@
       ],
       "notes": [
         "Source title: 北斗衛星測位システム(中国版GPS)の仕組み",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202006301090.html; byte-identical to /insights/%e5%8c%97%e6%96%97%e8%a1%9b%e6%98%9f%e6%b8%ac%e4%bd%8d%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e4%b8%ad%e5%9b%bd%e7%89%88gps%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e5%8c%97%e6%96%97%e8%a1%9b%e6%98%9f%e6%b8%ac%e4%bd%8d%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e4%b8%ad%e5%9b%bd%e7%89%88gps%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202006301090.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202006301090.html/attachment/00",
@@ -3783,7 +3825,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202007101118.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1118",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -3811,9 +3853,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202007101118.html",
       "canonical": "https://happinesea.com/news/202007101118.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/07/15-638.jpg",
@@ -3823,8 +3865,12 @@
       ],
       "notes": [
         "Source title: F35など、ステルス機は、本当にレーダーから見えないのでしょうか",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202007101118.html; byte-identical to /insights/f35%e3%81%aa%e3%81%a9%e3%80%81%e3%82%b9%e3%83%86%e3%83%ab%e3%82%b9%e6%a9%9f%e3%81%af%e3%80%81%e6%9c%ac%e5%bd%93%e3%81%ab%e3%83%ac%e3%83%bc%e3%83%80%e3%83%bc%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/f35%e3%81%aa%e3%81%a9%e3%80%81%e3%82%b9%e3%83%86%e3%83%ab%e3%82%b9%e6%a9%9f%e3%81%af%e3%80%81%e6%9c%ac%e5%bd%93%e3%81%ab%e3%83%ac%e3%83%bc%e3%83%80%e3%83%bc%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202007101118.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202007101118.html/attachment/15-638",
@@ -3871,7 +3917,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202012011350.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1350",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -3899,9 +3945,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202012011350.html",
       "canonical": "https://happinesea.com/news/202012011350.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1024x684.png",
@@ -3912,8 +3958,12 @@
       ],
       "notes": [
         "Source title: ボーイング737MAXにおける飛行トラブルと、航空便を利用時の737マックス機を避ける方法",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202012011350.html; byte-identical to /insights/%e3%83%9c%e3%83%bc%e3%82%a4%e3%83%b3%e3%82%b0737max%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e9%a3%9b%e8%a1%8c%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab%e3%81%a8%e3%80%81%e8%88%aa%e7%a9%ba%e4%be%bf%e3%82%92/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e3%83%9c%e3%83%bc%e3%82%a4%e3%83%b3%e3%82%b0737max%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e9%a3%9b%e8%a1%8c%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab%e3%81%a8%e3%80%81%e8%88%aa%e7%a9%ba%e4%be%bf%e3%82%92/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202012011350.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202012011350.html/attachment/574f312052bcd063018c6472-w640",
@@ -3932,7 +3982,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202101171413.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST post 1413",
@@ -3961,9 +4011,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202101171413.html",
       "canonical": "https://happinesea.com/news/202101171413.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/01/2019.png",
@@ -4015,13 +4065,17 @@
       ],
       "notes": [
         "Source title: 日本玩具協会、Googleトレンドベース、日本RC市場の傾向を推測",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202101171413.html; byte-identical to /insights/%e6%97%a5%e6%9c%ac%e7%8e%a9%e5%85%b7%e5%8d%94%e4%bc%9a%e3%80%81google%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%83%99%e3%83%bc%e3%82%b9%e3%80%81%e6%97%a5%e6%9c%acrc%e5%b8%82%e5%a0%b4%e3%81%ae%e5%82%be/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e6%97%a5%e6%9c%ac%e7%8e%a9%e5%85%b7%e5%8d%94%e4%bc%9a%e3%80%81google%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%83%99%e3%83%bc%e3%82%b9%e3%80%81%e6%97%a5%e6%9c%acrc%e5%b8%82%e5%a0%b4%e3%81%ae%e5%82%be/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202101171413.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202102101500.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1500",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4049,9 +4103,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202102101500.html",
       "canonical": "https://happinesea.com/news/202102101500.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/02/300px-Swimming_Pool_Interferometry.jpg",
@@ -4061,8 +4115,12 @@
       ],
       "notes": [
         "Source title: スペクトラム拡散の仕組みから理解する、Radiolink社のAT10Ⅱは何故、耐干渉性能が優れてるか",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202102101500.html; byte-identical to /insights/%e3%82%b9%e3%83%9a%e3%82%af%e3%83%88%e3%83%a9%e3%83%a0%e6%8b%a1%e6%95%a3%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%8b%e3%82%89%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b%e3%80%81radiolink%e7%a4%be%e3%81%aeat/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e3%82%b9%e3%83%9a%e3%82%af%e3%83%88%e3%83%a9%e3%83%a0%e6%8b%a1%e6%95%a3%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%8b%e3%82%89%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b%e3%80%81radiolink%e7%a4%be%e3%81%aeat/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202102101500.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202102101500.html/attachment/2-4",
@@ -4123,7 +4181,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202106091559.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1559",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4151,9 +4209,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202106091559.html",
       "canonical": "https://happinesea.com/news/202106091559.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/06/sugiura03.png",
@@ -4162,8 +4220,12 @@
       ],
       "notes": [
         "Source title: JAXAの火星ドローンになぜか、違和感を覚えた",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202106091559.html; byte-identical to /insights/jaxa%e3%81%ae%e7%81%ab%e6%98%9f%e3%83%89%e3%83%ad%e3%83%bc%e3%83%b3%e3%81%ab%e3%81%aa%e3%81%9c%e3%81%8b%e3%80%81%e9%81%95%e5%92%8c%e6%84%9f%e3%82%92%e8%a6%9a%e3%81%88%e3%81%9f/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/jaxa%e3%81%ae%e7%81%ab%e6%98%9f%e3%83%89%e3%83%ad%e3%83%bc%e3%83%b3%e3%81%ab%e3%81%aa%e3%81%9c%e3%81%8b%e3%80%81%e9%81%95%e5%92%8c%e6%84%9f%e3%82%92%e8%a6%9a%e3%81%88%e3%81%9f/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202106091559.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202106091559.html/attachment/sugiura02",
@@ -4244,9 +4306,9 @@
         "content 1664",
         "rendered https://happinesea.com/radiolink-productions-manual/byme-a-manual"
       ],
-      "target_route": null,
+      "target_route": "/news/202109281673.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2020/03/cropped-EtP4tr79_400x400-32x32.jpg",
@@ -4271,15 +4333,18 @@
         "https://happinesea.com/wp-content/uploads/2021/12/yt-1839-Radiolink-Fixed-Wing-A560-Vertical-Flight-360x197.jpg",
         "https://happinesea.com/wp-content/uploads/2021/12/yt-1839-Radiolink-Fixed-Wing-A560-Vertical-Flight-292x160.jpg"
       ],
-      "notes": [],
+      "notes": [
+        "Compatibility verified: exact source canonical retained; local static HTML and assets verified. Source HTTP observation retained from capture."
+      ],
       "http_observed_at": "2026-10-07T10:55:37.557Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "bd8298cdbaea468a87cfdce17b2f0129bbcb8910cd14ea5f3cb1bcc596dc1667"
+      "sha256": "bd8298cdbaea468a87cfdce17b2f0129bbcb8910cd14ea5f3cb1bcc596dc1667",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202111151758.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1758",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4307,9 +4372,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202111151758.html",
       "canonical": "https://happinesea.com/news/202111151758.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/11/2021111002.png",
@@ -4339,8 +4404,12 @@
       ],
       "notes": [
         "Source title: Googleトレンドベース、日本RC市場の傾向を推測",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202111151758.html; byte-identical to /insights/google%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%83%99%e3%83%bc%e3%82%b9%e3%80%81%e6%97%a5%e6%9c%acrc%e5%b8%82%e5%a0%b4%e3%81%ae%e5%82%be%e5%90%91%e3%82%92%e6%8e%a8%e6%b8%ac/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/google%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%83%99%e3%83%bc%e3%82%b9%e3%80%81%e6%97%a5%e6%9c%acrc%e5%b8%82%e5%a0%b4%e3%81%ae%e5%82%be%e5%90%91%e3%82%92%e6%8e%a8%e6%b8%ac/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202111151758.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202111151758.html/attachment/2021111002",
@@ -4572,7 +4641,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202203221895.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1895",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4602,7 +4671,7 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/news/202203221895.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2022/03/202203221.png",
@@ -4622,8 +4691,11 @@
       ],
       "notes": [
         "Source title: 極超音速ミサイルの仕組みと特徴",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed; body image alt not reviewed",
+        "Phase 6 final decision: Amazon DF-17 search scripts have no source ordinary search/product URL; ad host DNS fails. Safe equivalent requires owner-provided source or explicit removal approval. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+      ],
+      "http_final_url": "https://happinesea.com/news/202203221895.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202203221895.html/attachment/190110_railgun-w1280",
@@ -4698,7 +4770,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202203271947.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1947",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4726,9 +4798,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202203271947.html",
       "canonical": "https://happinesea.com/news/202203271947.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2022/03/Techinsight_20220322_866691_1.jpg",
@@ -4750,8 +4822,12 @@
       ],
       "notes": [
         "Source title: 中国、東方航空(MU5735)異様な転落 事故 を解説",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202203271947.html; byte-identical to /insights/%e4%b8%ad%e5%9b%bd%e3%80%81%e6%9d%b1%e6%96%b9%e8%88%aa%e7%a9%bamu5735%e7%95%b0%e6%a7%98%e3%81%aa%e8%bb%a2%e8%90%bd-%e4%ba%8b%e6%95%85-%e3%82%92%e8%a7%a3%e8%aa%ac/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e4%b8%ad%e5%9b%bd%e3%80%81%e6%9d%b1%e6%96%b9%e8%88%aa%e7%a9%bamu5735%e7%95%b0%e6%a7%98%e3%81%aa%e8%bb%a2%e8%90%bd-%e4%ba%8b%e6%95%85-%e3%82%92%e8%a7%a3%e8%aa%ac/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202203271947.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202203271947.html/attachment/202203271",
@@ -4840,7 +4916,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202203311998.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1998",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4870,13 +4946,16 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/news/202203311998.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "BLOCKED",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: エイプリルフール 限定無料 キャンペーン ?!",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed"
-      ]
+        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed",
+        "Phase 6 final decision: Three Amazon-only manual advertisements; no verified ordinary URL for B09GYM5NCC. ASIN-derived links and removal are not approved. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+      ],
+      "http_final_url": "https://happinesea.com/news/202203311998.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202203311998.html/attachment/sp_i_serialization_cp_01_r",
@@ -4952,7 +5031,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202207252012.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 2012",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -4980,9 +5059,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202207252012.html",
       "canonical": "https://happinesea.com/news/202207252012.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2.jpg",
@@ -5005,8 +5084,12 @@
       ],
       "notes": [
         "Source title: 中国のロケット輸送システム、長征シリーズを一通り把握",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202207252012.html; byte-identical to /insights/%e4%b8%ad%e5%9b%bd%e3%81%ae%e3%83%ad%e3%82%b1%e3%83%83%e3%83%88%e8%bc%b8%e9%80%81%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%80%81%e9%95%b7%e5%be%81%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba%e3%82%92%e4%b8%80/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e4%b8%ad%e5%9b%bd%e3%81%ae%e3%83%ad%e3%82%b1%e3%83%83%e3%83%88%e8%bc%b8%e9%80%81%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%80%81%e9%95%b7%e5%be%81%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba%e3%82%92%e4%b8%80/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202207252012.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202207252012.html/attachment/%e4%b8%8b%e8%bc%89",
@@ -5081,7 +5164,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202211112051.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 2051",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -5109,17 +5192,21 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202211112051.html",
       "canonical": "https://happinesea.com/news/202211112051.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg"
       ],
       "notes": [
         "Source title: COOL9030 ブラシモーターESCの日本語マニュアルをリリースしました。",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202211112051.html; byte-identical to /insights/cool9030-%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bcesc%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/cool9030-%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bcesc%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202211112051.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202212202074.html",
@@ -5170,7 +5257,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202301102079.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 2079",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -5198,15 +5285,19 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202301102079.html",
       "canonical": "https://happinesea.com/news/202301102079.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: RadioLink RC8X と DJI FPV ゴーグル、ヘッドトラッキング設定",
-        "Article readiness NEEDS_TRANSFORM: unresolved WordPress link placeholder; content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202301102079.html; byte-identical to /insights/head-track-setup-on-radiolink-rc8x-dji-fpv-goggles/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/head-track-setup-on-radiolink-rc8x-dji-fpv-goggles/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202301102079.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202301102081.html",
@@ -5257,7 +5348,7 @@
     {
       "legacy_url": "https://happinesea.com/news/202305302086.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 2086",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -5285,9 +5376,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202305302086.html",
       "canonical": "https://happinesea.com/news/202305302086.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2023/05/a66b71b2-e20e-4e3f-b1ef-99bf5f7bcd63_471x655.png",
@@ -5303,8 +5394,12 @@
       ],
       "notes": [
         "Source title: 中国の次世代ステルス垂直/短距離離着陸戦闘機関連の特許は公開された",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /news/202305302086.html; byte-identical to /insights/%e4%b8%ad%e5%9b%bd%e3%81%ae%e6%ac%a1%e4%b8%96%e4%bb%a3%e3%82%b9%e3%83%86%e3%83%ab%e3%82%b9%e5%9e%82%e7%9b%b4-%e7%9f%ad%e8%b7%9d%e9%9b%a2%e9%9b%a2%e7%9d%80%e9%99%b8%e6%88%a6%e9%97%98%e6%a9%9f%e9%96%a2/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/%e4%b8%ad%e5%9b%bd%e3%81%ae%e6%ac%a1%e4%b8%96%e4%bb%a3%e3%82%b9%e3%83%86%e3%83%ab%e3%82%b9%e5%9e%82%e7%9b%b4-%e7%9f%ad%e8%b7%9d%e9%9b%a2%e9%9b%a2%e7%9d%80%e9%99%b8%e6%88%a6%e9%97%98%e6%a9%9f%e9%96%a2/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/news/202305302086.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/news/202305302086.html/attachment/641",
@@ -6865,43 +6960,51 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-support/202209232035.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 2035",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/202209232035.html",
       "canonical": "https://happinesea.com/radiolink-support/202209232035.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg"
       ],
       "notes": [
         "Source title: RC6GS V3取扱説明書をリリースしました。",
-        "Article readiness BLOCKED: content mapping not approved; featured image alt not reviewed; featured image metadata unavailable"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/202209232035.html; byte-identical to /insights/rc6gs-v3%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/rc6gs-v3%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/202209232035.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1673",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/news/202109281673.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/byme-a-manual/202109281673.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Byme-A固定翼飛行機フライトコントローラー：前書き",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/byme-a-manual/202109281673.html; byte-identical to /insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e5%89%8d%e6%9b%b8%e3%81%8d/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e5%89%8d%e6%9b%b8%e3%81%8d/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
@@ -6915,9 +7018,9 @@
         "rendered https://happinesea.com/radiolink-productions-manual/byme-a-manual",
         "rendered https://happinesea.com/news/202109281673.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/byme-a-manual/202109281675.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/1.png",
@@ -6926,11 +7029,14 @@
       ],
       "notes": [
         "Source title: Byme-A固定翼飛行機フライトコントローラー：スペック情報",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
+        "Exact legacy HTML verified: /radiolink-support/byme-a-manual/202109281675.html; byte-identical to /insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e3%82%b9%e3%83%9a%e3%83%83/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
-      "http_observed_at": "2026-10-07T10:55:43.577Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "4d36f4fc0eac3747c000fc8a9ab06983dea7474b3172b90e39b17f5cd62655bf"
+      "sha256": "4d36f4fc0eac3747c000fc8a9ab06983dea7474b3172b90e39b17f5cd62655bf",
+      "publication_route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e3%82%b9%e3%83%9a%e3%83%83/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html/attachment/1",
@@ -6957,9 +7063,9 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/radiolink-productions-manual/byme-a-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/byme-a-manual/202109291679.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/2.png",
@@ -6979,11 +7085,14 @@
       ],
       "notes": [
         "Source title: Byme-A固定翼飛行機フライトコントローラー：初期設定",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
+        "Exact legacy HTML verified: /radiolink-support/byme-a-manual/202109291679.html; byte-identical to /insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e5%88%9d%e6%9c%9f%e8%a8%ad/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
-      "http_observed_at": "2026-10-07T10:55:45.979Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "ca803a56788df0ef3d731f081db04caf31adaeb416ef3102b5e69ea57945473d"
+      "sha256": "ca803a56788df0ef3d731f081db04caf31adaeb416ef3102b5e69ea57945473d",
+      "publication_route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e5%88%9d%e6%9c%9f%e8%a8%ad/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html/attachment/2",
@@ -7038,9 +7147,9 @@
         "sitemap https://happinesea.com/post-sitemap.xml",
         "rendered https://happinesea.com/radiolink-productions-manual/byme-a-manual"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/byme-a-manual/202109291682.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/17.png",
@@ -7050,11 +7159,14 @@
       ],
       "notes": [
         "Source title: Byme-A固定翼飛行機フライトコントローラー：機体の校正(キャリブレーション)",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
+        "Exact legacy HTML verified: /radiolink-support/byme-a-manual/202109291682.html; byte-identical to /insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e6%a9%9f%e4%bd%93%e3%81%ae/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
-      "http_observed_at": "2026-10-07T10:55:49.159Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "ebc60a620aac229db599514cb93452c000321d858b874df08eee9610433f4642"
+      "sha256": "ebc60a620aac229db599514cb93452c000321d858b874df08eee9610433f4642",
+      "publication_route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e6%a9%9f%e4%bd%93%e3%81%ae/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html/attachment/17",
@@ -7096,9 +7208,9 @@
         "rendered https://happinesea.com/radiolink-productions-manual/byme-a-manual",
         "rendered https://happinesea.com/news/202109281673.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/byme-a-manual/202109291687.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/7.png",
@@ -7117,11 +7229,14 @@
       ],
       "notes": [
         "Source title: Byme-A固定翼飛行機フライトコントローラー：サーボの設定",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
+        "Exact legacy HTML verified: /radiolink-support/byme-a-manual/202109291687.html; byte-identical to /insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%9c/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
-      "http_observed_at": "2026-10-07T10:55:57.762Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "8170663577fa0b618ffc23a53563dd5084933cd69ecbd6987194c6566d3dfb62"
+      "sha256": "8170663577fa0b618ffc23a53563dd5084933cd69ecbd6987194c6566d3dfb62",
+      "publication_route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%9c/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html/attachment/10",
@@ -7223,9 +7338,9 @@
         "rendered https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/byme-a-manual/202110011691.html",
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/11.png",
@@ -7250,11 +7365,14 @@
       ],
       "notes": [
         "Source title: Byme-A固定翼飛行機フライトコントローラー：飛行モードの説明",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed; body image alt not reviewed"
+        "Exact legacy HTML verified: /radiolink-support/byme-a-manual/202110011691.html; byte-identical to /insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e9%a3%9b%e8%a1%8c%e3%83%a2/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
-      "http_observed_at": "2026-10-07T10:56:02.009Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "sha256": "7b7209dfa738787c74512d6d0d2b554720c036154ce5eae48f58ed29c444c309"
+      "sha256": "7b7209dfa738787c74512d6d0d2b554720c036154ce5eae48f58ed29c444c309",
+      "publication_route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e9%a3%9b%e8%a1%8c%e3%83%a2/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html/attachment/11",
@@ -7618,7 +7736,7 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 905",
         "frontend src/data/wordpress-insight-inventory.json",
@@ -7631,8 +7749,11 @@
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink Mini Pix取扱説明書―マルチコプター編",
-        "Article readiness BLOCKED: unsupported iframe; content mapping not approved; featured image alt not reviewed"
-      ]
+        "Article readiness BLOCKED: unsupported iframe; content mapping not approved; featured image alt not reviewed",
+        "Phase 6 final decision: Source relocation target /minipix-manual-multicopter returns HTTP 404. No verified equivalent content for that historical target; similarly named current manual is not substituted. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+      ],
+      "http_final_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html/attachment/snapcrab_noname_2020-5-11_14-40-32_no-00",
@@ -7651,21 +7772,25 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 911",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/minipix-manual/20200511911.html",
       "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink Mini Pix取扱説明書―マルチコプター編:1． Mini Pixの概要",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-support/minipix-manual/20200511911.html; byte-identical to /insights/radiolink-mini-pix%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e2%80%95%e3%83%9e%e3%83%ab%e3%83%81%e3%82%b3%e3%83%97%e3%82%bf%e3%83%bc%e7%b7%a81%ef%bc%8e-mini-pix%e3%81%ae%e6%a6%82%e8%a6%81/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/radiolink-mini-pix%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e2%80%95%e3%83%9e%e3%83%ab%e3%83%81%e3%82%b3%e3%83%97%e3%82%bf%e3%83%bc%e7%b7%a81%ef%bc%8e-mini-pix%e3%81%ae%e6%a6%82%e8%a6%81/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html/attachment/61d-15p3lsl-_ac_sl1000_",
@@ -9798,21 +9923,25 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202105071544.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1544",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-videos/202105071544.html",
       "canonical": "https://happinesea.com/radiolink-videos/202105071544.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink RC4GS送信機のアップグレード方法 手順",
-        "Article readiness BLOCKED: unsupported iframe; content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-videos/202105071544.html; byte-identical to /insights/radiolink-rc4gs%e9%80%81%e4%bf%a1%e6%a9%9f%e3%81%ae%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e6%96%b9%e6%b3%95-%e6%89%8b%e9%a0%86/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/radiolink-rc4gs%e9%80%81%e4%bf%a1%e6%a9%9f%e3%81%ae%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e6%96%b9%e6%b3%95-%e6%89%8b%e9%a0%86/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-videos/202105071544.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202105071546.html",
@@ -9838,21 +9967,25 @@
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202105071548.html",
       "content_type": "post",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST post 1548",
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-videos/202105071548.html",
       "canonical": "https://happinesea.com/radiolink-videos/202105071548.html",
-      "migration_status": "NEEDS_REVIEW",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink Mini PIX フライトコントローラーを開封します。",
-        "Article readiness NEEDS_REVIEW: content mapping not approved; featured image alt not reviewed"
-      ]
+        "Exact legacy HTML verified: /radiolink-videos/202105071548.html; byte-identical to /insights/radiolink-mini-pix-%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%e3%82%92%e9%96%8b%e5%b0%81%e3%81%97%e3%81%be%e3%81%99%e3%80%82/, canonical retained, no redirect. Source HTTP status is a separate observation."
+      ],
+      "publication_route": "/insights/radiolink-mini-pix-%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%e3%82%92%e9%96%8b%e5%b0%81%e3%81%97%e3%81%be%e3%81%99%e3%80%82/",
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/radiolink-videos/202105071548.html",
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-videos/202111271774.html",
@@ -13190,7 +13323,8 @@
       "sha256": "c62ac892f6e1862637c3eda2536ac20d072a5fdfa60bd7d844e520018e924041",
       "content_type_header": "image/svg+xml",
       "received_bytes": 3336,
-      "http_observed_at": "2026-10-07T10:54:41.008Z"
+      "http_observed_at": "2026-10-07T10:54:41.008Z",
+      "http_final_url": "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg",
@@ -13349,7 +13483,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 114",
         "REST media 108",
@@ -13360,7 +13494,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/F%C3%A9lix_Nadar_1820-1910_portraits_Charles_Baudelaire_2-1.jpg",
@@ -13401,7 +13536,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/hayabusa2.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 572",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -13411,7 +13546,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2016/09/hayabusa2.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/hotel-389256_1280-1-1.jpg",
@@ -14292,7 +14428,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/quadricopter-451754_1280-2.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 114",
         "REST media 111",
@@ -14303,7 +14439,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2016/09/quadricopter-451754_1280-2.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2016/09/reflection-pad-gaming-gamepad-2.jpg",
@@ -15003,7 +15140,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/1477961400.g_400-w_g.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 376",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -15013,7 +15150,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/03/1477961400.g_400-w_g.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/18-512.png",
@@ -15416,7 +15554,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1382",
         "content 196",
@@ -15427,7 +15565,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/R6FG-300x122.png",
@@ -15797,7 +15936,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/03/unnamed.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 283",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -15807,7 +15946,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/03/unnamed.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/04/de11012c3776344ed23d95ee2724e862-300x152.png",
@@ -15888,7 +16028,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 943",
         "REST media 957",
@@ -15899,7 +16039,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/20190715173114999.jpg",
@@ -15916,7 +16057,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/61D-15P3lsL._AC_SL1000_.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 913",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -15926,7 +16067,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/05/61D-15P3lsL._AC_SL1000_.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/61kiqYc8r1L._AC_SL1000_.jpg",
@@ -15988,7 +16130,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/maxresdefault.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 966",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -15998,7 +16140,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/05/maxresdefault.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/minipix_parts.png",
@@ -16039,7 +16182,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/SnapCrab_NoName_2020-5-11_14-40-32_No-00.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 899",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -16049,7 +16192,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/05/SnapCrab_NoName_2020-5-11_14-40-32_No-00.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/05/SnapCrab_NoName_2020-5-11_14-41-22_No-00.png",
@@ -16078,7 +16222,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/06/00.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1091",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -16088,7 +16232,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/06/00.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/06/004_manualttenanda.png",
@@ -16129,7 +16274,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/06/image-1.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1090",
         "REST media 1100",
@@ -16140,7 +16285,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/06/image-1.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/06/image-300x238.png",
@@ -16157,7 +16303,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/06/image.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1090",
         "REST media 1096",
@@ -16168,7 +16314,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/06/image.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/06/R6DSM_1.jpg",
@@ -16840,7 +16987,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/07/15-638.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1118",
         "REST media 1124",
@@ -16851,7 +16998,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/07/15-638.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/07/1c13cd70-229x300.png",
@@ -16868,7 +17016,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/07/1c13cd70.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1118",
         "REST media 1123",
@@ -16879,12 +17027,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/07/1c13cd70.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/07/https___imgix-proxy.n8s.jp_DSXMZO6136869010072020EAF001-PN1-2.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1120",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -16894,7 +17043,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/07/https___imgix-proxy.n8s.jp_DSXMZO6136869010072020EAF001-PN1-2.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/11/2525666-1024x161.png",
@@ -17516,7 +17666,8 @@
       "http_observed_at": "2026-10-07T10:54:40.871Z",
       "content_type_header": "image/jpeg",
       "sha256": "9d9acb0954e167d6c5f33569ab6641f45b50c510d1a6c5dc75d1dd8061369585",
-      "static_output": "VERIFIED"
+      "static_output": "VERIFIED",
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/11/rc6gs_banner_1091_443.jpg",
@@ -17558,7 +17709,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/12/574f312052bcd063018c6472-w640.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1353",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -17568,12 +17719,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/12/574f312052bcd063018c6472-w640.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1024x684.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1350",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -17583,7 +17735,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1024x684.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1536x1026.png",
@@ -17864,7 +18017,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2019.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "REST media 1434",
@@ -17875,12 +18028,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2019.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_1-1024x529.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -17890,7 +18044,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_1-1024x529.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_1-300x155.png",
@@ -17931,7 +18086,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_10-1024x390.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -17941,7 +18096,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_10-1024x390.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_10-300x114.png",
@@ -17982,7 +18138,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_11-1024x394.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -17992,7 +18148,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_11-1024x394.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_11-300x115.png",
@@ -18033,7 +18190,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_2-1024x542.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18043,7 +18200,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_2-1024x542.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_2-300x159.png",
@@ -18084,7 +18242,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_3-1024x542.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18094,7 +18252,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_3-1024x542.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_3-300x159.png",
@@ -18135,7 +18294,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1-1024x546.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18145,7 +18304,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1-1024x546.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1-300x160.png",
@@ -18174,7 +18334,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "REST media 1420",
@@ -18185,12 +18345,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1024x547.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 404,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18200,12 +18361,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1024x547.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_5-1024x542.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18215,7 +18377,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_5-1024x542.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_5-300x159.png",
@@ -18268,7 +18431,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_7-1024x574.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18278,7 +18441,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_7-1024x574.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_7-300x168.png",
@@ -18343,7 +18507,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_8-1024x607.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18353,7 +18517,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_8-1024x607.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_8-300x178.png",
@@ -18394,7 +18559,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_9-1024x390.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1413",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18404,7 +18569,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_9-1024x390.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_9-300x114.png",
@@ -18496,7 +18662,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/PSE1.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1383",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18506,7 +18672,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/PSE1.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/psehani_2-300x234.png",
@@ -18523,7 +18690,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/01/psehani_2.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1382",
         "REST media 1384",
@@ -18534,12 +18701,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/01/psehani_2.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/02/2.4.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1505",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18549,7 +18717,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/02/2.4.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/02/2827490-300x168.jpg",
@@ -18578,7 +18747,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/02/2827490.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1500",
         "REST media 1502",
@@ -18589,12 +18758,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/02/2827490.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/02/300px-Swimming_Pool_Interferometry.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1500",
         "REST media 1510",
@@ -18605,7 +18775,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/02/300px-Swimming_Pool_Interferometry.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/02/fc91bf1c5b462916d920c83b874cff0a.docx",
@@ -18679,7 +18850,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/05/yt-1544-9427435693fd9d8a50e2c0b2e9bf19c1.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1545",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18689,7 +18860,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/05/yt-1544-9427435693fd9d8a50e2c0b2e9bf19c1.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/05/yt-1546-3d09e36c3fe786d56e1f3279c6984bdc.jpg",
@@ -18709,7 +18881,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/05/yt-1548-0167e09a584f28e50162e03f31bf7ef4.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1549",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18719,12 +18891,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/05/yt-1548-0167e09a584f28e50162e03f31bf7ef4.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-300x225.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1577",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18734,7 +18907,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-300x225.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-768x576.jpg",
@@ -18763,7 +18937,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/sugiura02.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1561",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18773,7 +18947,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/06/sugiura02.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/sugiura03-300x170.png",
@@ -18802,7 +18977,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/sugiura03.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1559",
         "REST media 1560",
@@ -18813,12 +18988,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/06/sugiura03.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/tirpitz.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1578",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18828,12 +19004,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/06/tirpitz.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-1024x385.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1577",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18843,7 +19020,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-1024x385.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-300x113.jpg",
@@ -18884,7 +19062,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-160x300.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1577",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18894,7 +19072,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-160x300.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-545x1024.jpg",
@@ -18923,7 +19102,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/07/05d7d047b25eef1967d590ede82f2acf.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1632",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -18933,7 +19112,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/07/05d7d047b25eef1967d590ede82f2acf.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/08/52f531d6abf35f011c55b1285ea49380.docx",
@@ -19094,7 +19274,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/1.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1675",
         "REST media 1649",
@@ -19105,7 +19285,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/1.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/10-235x129.png",
@@ -19194,7 +19375,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/10.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1687",
         "REST media 1656",
@@ -19205,7 +19386,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/10.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/11-252x300.png",
@@ -19234,7 +19416,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/11.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1691",
         "REST media 1657",
@@ -19245,7 +19427,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/11.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/12-235x129.png",
@@ -19286,7 +19469,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/12.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1691",
         "REST media 1658",
@@ -19297,7 +19480,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/12.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/13-300x219.png",
@@ -19326,7 +19510,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/13.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1691",
         "REST media 1659",
@@ -19337,7 +19521,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/13.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/14-300x128.png",
@@ -19366,7 +19551,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/14.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1691",
         "REST media 1660",
@@ -19377,7 +19562,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/14.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/15-300x83.png",
@@ -19406,7 +19592,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/15.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1691",
         "REST media 1661",
@@ -19417,7 +19603,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/15.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/16-300x72.png",
@@ -19446,7 +19633,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/16.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1691",
         "REST media 1662",
@@ -19457,7 +19644,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/16.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/17-300x83.png",
@@ -19474,7 +19662,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/17.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1682",
         "REST media 1683",
@@ -19485,7 +19673,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/17.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/18-300x137.png",
@@ -19502,7 +19691,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/18.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1682",
         "REST media 1684",
@@ -19513,7 +19702,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/18.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/2-235x129.png",
@@ -19590,7 +19780,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/2.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1679",
         "REST media 1650",
@@ -19601,7 +19791,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/2.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/3-300x177.png",
@@ -19630,7 +19821,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/3.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1679",
         "REST media 1651",
@@ -19641,7 +19832,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/3.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/4-300x168.png",
@@ -19682,7 +19874,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/4.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1679",
         "REST media 1652",
@@ -19693,7 +19885,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/4.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/7-300x99.png",
@@ -19722,7 +19915,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/7.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1687",
         "REST media 1653",
@@ -19733,7 +19926,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/7.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/8-300x93.png",
@@ -19762,7 +19956,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/8.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1687",
         "REST media 1654",
@@ -19773,7 +19967,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/8.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/9-300x93.png",
@@ -19802,7 +19997,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/9.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1687",
         "REST media 1655",
@@ -19813,7 +20008,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/09/9.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/09/book-209x300.jpg",
@@ -20230,7 +20426,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111002.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST media 1751",
@@ -20241,7 +20437,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111002.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111003-1024x406.png",
@@ -20282,7 +20479,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111003.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST media 1752",
@@ -20293,7 +20490,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111003.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111004-1024x397.png",
@@ -20334,7 +20532,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111004.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST media 1753",
@@ -20345,7 +20543,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111004.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111005.png",
@@ -20398,7 +20597,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111006.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST media 1755",
@@ -20409,7 +20608,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111006.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111007-1024x406.png",
@@ -20450,7 +20650,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111007.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST media 1756",
@@ -20461,7 +20661,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111007.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111008-1024x401.png",
@@ -20502,7 +20703,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111008.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1758",
         "REST media 1757",
@@ -20513,7 +20714,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/11/2021111008.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/11/RC4GS.docx",
@@ -20617,7 +20819,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/12/41-8dFAOjuL._AC_.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1874",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -20627,7 +20829,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2021/12/41-8dFAOjuL._AC_.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2021/12/yt-1798-3D-Helicopter-Flying-A-ALIGN-550L-Helicopter-controlled-by-Radiolink-AT9S.jpg",
@@ -21038,7 +21241,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1895",
         "REST media 1924",
@@ -21049,7 +21252,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203221-235x129.png",
@@ -21090,7 +21294,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203221.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1895",
         "REST media 1901",
@@ -21101,7 +21305,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/202203221.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203271-1024x376.png",
@@ -21166,7 +21371,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203271.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1947",
         "REST media 1959",
@@ -21177,7 +21382,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/202203271.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203271.xlsx",
@@ -21233,7 +21439,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203272.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1947",
         "REST media 1958",
@@ -21244,7 +21450,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/202203272.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203273-1024x696.png",
@@ -21297,7 +21504,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/202203273.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1947",
         "REST media 1971",
@@ -21308,7 +21515,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/202203273.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/52f531d6abf35f011c55b1285ea49380.docx",
@@ -21361,7 +21569,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/B-1791-Aircraft-Image.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1984",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -21371,7 +21579,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/B-1791-Aircraft-Image.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/d7ec2d3fea4756bc1642e0f10c180cf5.xlsx",
@@ -21481,7 +21690,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614.webp",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1895",
         "REST media 1907",
@@ -21492,7 +21701,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614.webp"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/RC4GS.docx",
@@ -21569,7 +21779,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/sp_i_serialization_cp_01_r.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 2002",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -21579,12 +21789,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/sp_i_serialization_cp_01_r.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/Techinsight_20220322_866691_1.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 1947",
         "REST media 1949",
@@ -21595,12 +21806,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/Techinsight_20220322_866691_1.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/03/top_image.jpeg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 1898",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -21610,7 +21822,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/03/top_image.jpeg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/06/20220609.png",
@@ -21678,7 +21891,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2012",
         "REST media 2023",
@@ -21689,12 +21902,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/8f7258d08cf2a96ce418ac6dc118c30f.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2012",
         "REST media 2022",
@@ -21705,7 +21919,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/07/8f7258d08cf2a96ce418ac6dc118c30f.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/image15-1024x496.png",
@@ -21746,7 +21961,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/image15.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2012",
         "REST media 2021",
@@ -21757,12 +21972,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/07/image15.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/rocket.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 2020",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -21772,7 +21988,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/07/rocket.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-1024x576.png",
@@ -21849,7 +22066,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering.png",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2012",
         "REST media 2024",
@@ -21860,12 +22077,13 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/11/71eEehtmhsL._AC_SL1500_.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 2049",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -21875,7 +22093,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2022/11/71eEehtmhsL._AC_SL1500_.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2022/11/cool9030_manual_jp.pdf",
@@ -21974,7 +22193,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/01/yt-2079-Head-Track-Setup-on-RadioLink-RC8X-DJI-FPV-Goggles.jpg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "REST media 2080",
         "frontend src/data/wordpress-insight-inventory.json"
@@ -21984,7 +22203,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2023/01/yt-2079-Head-Track-Setup-on-RadioLink-RC8X-DJI-FPV-Goggles.jpg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/01/yt-2081-RadioLink-New-Arrival-8CH-RC8X-Transmitter.jpg",
@@ -22056,7 +22276,8 @@
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2023/05/a66b71b2-e20e-4e3f-b1ef-99bf5f7bcd63_471x655.png"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/05/bf83a98234df4779b6257e67a5796bfc-300x195.jpeg",
@@ -22086,7 +22307,8 @@
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2023/05/bf83a98234df4779b6257e67a5796bfc.jpeg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/05/d8451a1eda5946a58c6ad62573d66fb9-300x196.jpeg",
@@ -22116,7 +22338,8 @@
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2023/05/d8451a1eda5946a58c6ad62573d66fb9.jpeg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-1024x638.jpeg",
@@ -22133,7 +22356,8 @@
       "asset_dependencies": [],
       "notes": [
         "Source reachable; bytes/rights/local compatibility path not yet reviewed."
-      ]
+      ],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-1024x638.jpeg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-300x187.jpeg",
@@ -22166,7 +22390,7 @@
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53.jpeg",
       "content_type": "image",
-      "current_status": "UNVERIFIED",
+      "current_status": 200,
       "source": [
         "content 2086",
         "REST media 2092",
@@ -22177,7 +22401,8 @@
       "migration_status": "NEEDS_REVIEW",
       "redirect_required": false,
       "asset_dependencies": [],
-      "notes": []
+      "notes": [],
+      "http_final_url": "https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53.jpeg"
     },
     {
       "legacy_url": "https://happinesea.com/wp-content/uploads/2023/05/FxFArZvWcAEL5vr-1.png",
@@ -23673,15 +23898,15 @@
       "content_type_header": "image/png"
     }
   ],
-  "reconciled_at": "2026-10-07T21:06:03.996Z",
+  "reconciled_at": "2026-10-08T02:04:23.990Z",
   "migration": {
-    "migrated_articles": 63,
-    "insight_articles": 58,
+    "migrated_articles": 92,
+    "insight_articles": 87,
     "drawing_articles": 5,
-    "exact_legacy_html_routes": 63
+    "exact_legacy_html_routes": 92
   },
   "compatibility": {
-    "verified_pages": 68,
+    "verified_pages": 70,
     "drawing_ids": [1716, 1726, 1734, 1742, 1891],
     "verified_unique_asset_paths": 60,
     "blocked": 4,

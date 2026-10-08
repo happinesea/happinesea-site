@@ -141,11 +141,11 @@ test('reconciled snapshot records all merged article aliases without redirects o
     );
   const snapshot = load('legacy-public-surface');
   const manifest = load('wordpress-insight-manifest');
-  assert.equal(manifest.expected_count, 58);
-  assert.equal(snapshot.migration?.insight_articles, 58);
+  assert.equal(manifest.expected_count, 87);
+  assert.equal(snapshot.migration?.insight_articles, 87);
   assert.equal(snapshot.migration?.drawing_articles, 5);
-  assert.equal(snapshot.migration?.migrated_articles, 63);
-  assert.equal(snapshot.migration?.exact_legacy_html_routes, 63);
+  assert.equal(snapshot.migration?.migrated_articles, 92);
+  assert.equal(snapshot.migration?.exact_legacy_html_routes, 92);
   assert.equal(snapshot.summary.redirect_required, 0);
   for (const article of manifest.articles) {
     const entry = snapshot.entries.find(

@@ -2412,6 +2412,53 @@
       "target_route": "/rc4gs-manual",
       "hero": null,
       "status": "READY"
+    },
+    {
+      "source_url": "https://happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": null,
+      "received_bytes": 191514,
+      "sha256": "7e69d12aeb0c4c13bbb1adc3acf5380642845cbe8442c8e194efa729ab024ba9",
+      "filename": null,
+      "final_url": "https://happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
+      "redirected": false,
+      "observed_at": "2026-10-07T23:01:04.119Z",
+      "canonical": "https://happinesea.com/download/cool9030、ブラシモーター用esc日本語マニュアル",
+      "title": "COOL9030、ブラシモーター用ESC日本語マニュアル",
+      "type": "download_endpoint",
+      "download_id": "2047",
+      "download_target": "/wp-content/uploads/2022/11/cool9030_manual_jp.pdf",
+      "target_route": "/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
+      "body_images": [],
+      "body_links": [{ "url": "#", "http_status": "UNVERIFIED" }],
+      "content_html": "<a rel=\"nofollow\" href=\"/wp-content/uploads/2022/11/cool9030_manual_jp.pdf\">Download</a>\n\n\n<ul>\n<li>\nVersion\n20221128\n</li>\n<li>\nDownload\n31\n</li>\n<li>\nFile Size\n2 MB\n</li>\n<li>\nFile Count\n1\n</li>\n<li>\nCreate Date\n2022年11月11日\n</li>\n<li>\nLast Updated\n2022年11月29日\n</li>\n</ul>\n\n\nCOOL9030、ブラシモーター用ESC日本語マニュアル\n<p>COOL9030 ブラシモーター用ESCの日本語マニュアル</p>",
+      "hero": null
+    },
+    {
+      "source_url": "https://happinesea.com/news/202109281673.html",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": null,
+      "received_bytes": 194626,
+      "sha256": "472dfb048c584a19b754ce587d50e30308e28b3766936d435650131bc2c9036e",
+      "filename": null,
+      "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "redirected": true,
+      "observed_at": "2026-10-07T23:01:21.627Z",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "title": "Byme-A固定翼飛行機フライトコントローラー：前書き",
+      "type": "article_compatibility",
+      "target_route": "/news/202109281673.html",
+      "body_images": [],
+      "body_links": [],
+      "content_html": "<p>Byme-Aは３D固定翼飛行機(F3P)、トレーナー、及び、スケールRC飛行機を含めて、様々なストレート・ウィング飛行機モデルに適用可能なフライトコントローラーとして、SBUS、及び、PPM信号をサポートします。</p>\n<p>Byme-Aは3軸ジャイロ、3軸加速度センサーと、全ての姿勢制御アルゴリズム、デジタルフィルターを備えているので、飛行機の操縦は簡単になります。<br />\n飛行モードは安定モード、ホバリングモード、ジャイロモード、アクロバットモード、及び、マニュアルモード、5つあります。</p>",
+      "hero": {
+        "src": "/assets/insights/wordpress/1673-1a3b9d3df7dd.webp",
+        "alt": "Byme-Aの接続端子、LED、サーボリバースボタンの位置を示した図。",
+        "width": 995,
+        "height": 339
+      }
     }
   ],
   "assets": [

@@ -2,15 +2,15 @@
   "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
   "expected_count": 97,
   "status_counts": {
-    "READY": 58,
-    "NEEDS_REVIEW": 28,
-    "NEEDS_TRANSFORM": 6,
-    "BLOCKED": 5
+    "READY": 87,
+    "NEEDS_REVIEW": 3,
+    "NEEDS_TRANSFORM": 0,
+    "BLOCKED": 7
   },
   "embed_hosts": {
     "www.youtube.com": 32,
-    "rcm-fe.amazon-adsystem.com": 10,
-    "happinesea.com": 2
+    "rcm-fe.amazon-adsystem.com": 9,
+    "happinesea.com": 1
   },
   "articles": [
     {
@@ -234,15 +234,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e4%b8%ad%e5%9b%bd%e3%81%ae%e6%ac%a1%e4%b8%96%e4%bb%a3%e3%82%b9%e3%83%86%e3%83%ab%e3%82%b9%e5%9e%82%e7%9b%b4-%e7%9f%ad%e8%b7%9d%e9%9b%a2%e9%9b%a2%e7%9d%80%e9%99%b8%e6%88%a6%e9%97%98%e6%a9%9f%e9%96%a2/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -300,16 +297,13 @@
       ],
       "shortcodes": [],
       "script_count": 0,
-      "unresolved_links": 1,
-      "content_type": null,
-      "route": null,
+      "unresolved_links": 0,
+      "content_type": "insight",
+      "route": "/insights/head-track-setup-on-radiolink-rc8x-dji-fpv-goggles/",
       "readiness": {
-        "status": "NEEDS_TRANSFORM",
-        "reasons": [
-          "unresolved WordPress link placeholder",
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -457,14 +451,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/cool9030-%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bcesc%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -487,15 +479,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/rc6gs-v3%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e3%82%92%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/",
       "readiness": {
-        "status": "BLOCKED",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "featured image metadata unavailable"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -535,15 +524,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e4%b8%ad%e5%9b%bd%e3%81%ae%e3%83%ad%e3%82%b1%e3%83%83%e3%83%88%e8%bc%b8%e9%80%81%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%80%81%e9%95%b7%e5%be%81%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba%e3%82%92%e4%b8%80/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -613,12 +599,14 @@
       "content_type": null,
       "route": null,
       "readiness": {
-        "status": "NEEDS_TRANSFORM",
+        "status": "BLOCKED",
         "reasons": [
           "legacy script or advertising embed",
           "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+          "featured image alt not reviewed",
+          "Three Amazon-only manual advertisements; no verified ordinary URL for B09GYM5NCC. ASIN-derived links and removal are not approved."
+        ],
+        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
       }
     },
     {
@@ -658,15 +646,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e4%b8%ad%e5%9b%bd%e3%80%81%e6%9d%b1%e6%96%b9%e8%88%aa%e7%a9%bamu5735%e7%95%b0%e6%a7%98%e3%81%aa%e8%bb%a2%e8%90%bd-%e4%ba%8b%e6%95%85-%e3%82%92%e8%a7%a3%e8%aa%ac/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -708,13 +693,15 @@
       "content_type": null,
       "route": null,
       "readiness": {
-        "status": "NEEDS_TRANSFORM",
+        "status": "BLOCKED",
         "reasons": [
           "legacy script or advertising embed",
           "content mapping not approved",
           "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+          "body image alt not reviewed",
+          "Amazon DF-17 search scripts have no source ordinary search/product URL; ad host DNS fails. Safe equivalent requires owner-provided source or explicit removal approval."
+        ],
+        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
       }
     },
     {
@@ -839,12 +826,14 @@
       "content_type": null,
       "route": null,
       "readiness": {
-        "status": "NEEDS_TRANSFORM",
+        "status": "BLOCKED",
         "reasons": [
           "legacy script or advertising embed",
           "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+          "featured image alt not reviewed",
+          "Five Amazon-only product advertisements have no verified ordinary source links; ad host DNS fails. Product-name/ASIN-derived substitution is prohibited."
+        ],
+        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
       }
     },
     {
@@ -1218,15 +1207,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/google%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%83%99%e3%83%bc%e3%82%b9%e3%80%81%e6%97%a5%e6%9c%acrc%e5%b8%82%e5%a0%b4%e3%81%ae%e5%82%be%e5%90%91%e3%82%92%e6%8e%a8%e6%b8%ac/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1423,15 +1409,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e9%a3%9b%e8%a1%8c%e3%83%a2/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1471,15 +1454,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%9c/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1511,15 +1491,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e6%a9%9f%e4%bd%93%e3%81%ae/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1555,15 +1532,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e5%88%9d%e6%9c%9f%e8%a8%ad/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1591,15 +1565,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e3%82%b9%e3%83%9a%e3%83%83/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1622,14 +1593,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/byme-a%e5%9b%ba%e5%ae%9a%e7%bf%bc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%ef%bc%9a%e5%89%8d%e6%9b%b8%e3%81%8d/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1690,12 +1659,14 @@
       "content_type": null,
       "route": null,
       "readiness": {
-        "status": "NEEDS_TRANSFORM",
+        "status": "BLOCKED",
         "reasons": [
           "legacy script or advertising embed",
           "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+          "featured image alt not reviewed",
+          "A source body image has neither src nor attachment identity. Advertisement identity can be resolved, but the missing image cannot be restored or removed without owner decision."
+        ],
+        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
       }
     },
     {
@@ -1732,26 +1703,16 @@
           "alt": ""
         }
       ],
-      "embeds": [
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=happinesea00-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS1=1&amp;detail=1&amp;asins=B0009RQLB6&amp;linkId=9cc4fe39df9f0600574c8d2bf38fb3dd&amp;bc1=ffffff&amp;lt1=_top&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        }
-      ],
+      "embeds": [],
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e3%82%bf%e3%83%9f%e3%83%a4-1-350%e3%83%89%e3%82%a4%e3%83%84%e6%b5%b7%e8%bb%8d-%e3%83%93%e3%82%b9%e3%83%9e%e3%83%ab%e3%82%af%e7%b4%9a%e6%88%a6%e8%89%a6-%e3%83%86%e3%83%ab%e3%83%94%e3%83%83%e3%83%84/",
       "readiness": {
-        "status": "NEEDS_TRANSFORM",
-        "reasons": [
-          "legacy script or advertising embed",
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -1779,15 +1740,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/jaxa%e3%81%ae%e7%81%ab%e6%98%9f%e3%83%89%e3%83%ad%e3%83%bc%e3%83%b3%e3%81%ab%e3%81%aa%e3%81%9c%e3%81%8b%e3%80%81%e9%81%95%e5%92%8c%e6%84%9f%e3%82%92%e8%a6%9a%e3%81%88%e3%81%9f/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1811,25 +1769,17 @@
           "src": "https://www.youtube.com/embed/vZmu18fC_sY?feature=oembed",
           "host": "www.youtube.com",
           "classification": "A"
-        },
-        {
-          "src": "https://happinesea.com/radiolink-support/20200313160.html/embed#?secret=cxPgWpM1r4",
-          "host": "happinesea.com",
-          "classification": "D"
         }
       ],
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/radiolink-rc4gs%e9%80%81%e4%bf%a1%e6%a9%9f%e3%81%ae%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e6%96%b9%e6%b3%95-%e6%89%8b%e9%a0%86/",
       "readiness": {
-        "status": "BLOCKED",
-        "reasons": [
-          "unsupported iframe",
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -1888,14 +1838,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/radiolink-mini-pix-%e3%83%95%e3%83%a9%e3%82%a4%e3%83%88%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc%e3%82%92%e9%96%8b%e5%b0%81%e3%81%97%e3%81%be%e3%81%99%e3%80%82/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -1962,15 +1910,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e3%82%b9%e3%83%9a%e3%82%af%e3%83%88%e3%83%a9%e3%83%a0%e6%8b%a1%e6%95%a3%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%8b%e3%82%89%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b%e3%80%81radiolink%e7%a4%be%e3%81%aeat/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2034,7 +1979,7 @@
           "alt": ""
         },
         {
-          "source_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1024x547.png",
+          "source_url": "https://happinesea.com/wp-content/uploads/2021/01/2020_4-1.png",
           "alt": ""
         }
       ],
@@ -2042,15 +1987,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e6%97%a5%e6%9c%ac%e7%8e%a9%e5%85%b7%e5%8d%94%e4%bc%9a%e3%80%81google%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%83%99%e3%83%bc%e3%82%b9%e3%80%81%e6%97%a5%e6%9c%acrc%e5%b8%82%e5%a0%b4%e3%81%ae%e5%82%be/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -2086,15 +2028,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/radiolink%e3%83%a9%e3%82%b8%e3%82%aa%e3%83%aa%e3%83%b3%e3%82%af%e8%a3%bd%e5%93%81%e3%81%aepse%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -2122,15 +2061,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e3%83%9c%e3%83%bc%e3%82%a4%e3%83%b3%e3%82%b0737max%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e9%a3%9b%e8%a1%8c%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab%e3%81%a8%e3%80%81%e8%88%aa%e7%a9%ba%e4%be%bf%e3%82%92/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2162,15 +2098,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/f35%e3%81%aa%e3%81%a9%e3%80%81%e3%82%b9%e3%83%86%e3%83%ab%e3%82%b9%e6%a9%9f%e3%81%af%e3%80%81%e6%9c%ac%e5%bd%93%e3%81%ab%e3%83%ac%e3%83%bc%e3%83%80%e3%83%bc%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2202,15 +2135,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e5%8c%97%e6%96%97%e8%a1%9b%e6%98%9f%e6%b8%ac%e4%bd%8d%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e4%b8%ad%e5%9b%bd%e7%89%88gps%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2414,14 +2344,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e6%8a%80%e9%81%a9%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ae%e3%81%aa%e3%81%84%e7%84%a1%e7%b7%9a%e6%a9%9f%e5%99%a8%e3%82%92%e5%88%a9%e7%94%a8%e3%81%a7%e3%81%8d%e3%82%8b%e5%88%b6%e5%ba%a6%e3%81%a7%e3%80%8cwe/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2449,15 +2377,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e9%a3%9b%e8%a1%8c%e6%a9%9f%e3%81%ae%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%b3%e5%81%9c%e6%ad%a2%e3%81%97%e3%81%9f%e3%82%89%e4%bd%95%e3%81%8c%e8%b5%b7%e3%81%93%e3%82%8b%e3%81%8b%ef%bc%9f%e5%8d%98%e3%81%ab/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2480,14 +2405,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/radiolink-mini-pix%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e2%80%95%e3%83%9e%e3%83%ab%e3%83%81%e3%82%b3%e3%83%97%e3%82%bf%e3%83%bc%e7%b7%a81%ef%bc%8e-mini-pix%e3%81%ae%e6%a6%82%e8%a6%81/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -2523,8 +2446,10 @@
         "reasons": [
           "unsupported iframe",
           "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+          "featured image alt not reviewed",
+          "Source relocation target /minipix-manual-multicopter returns HTTP 404. No verified equivalent content for that historical target; similarly named current manual is not substituted."
+        ],
+        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
       }
     },
     {
@@ -3028,14 +2953,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/use-of-drone-to-minimize-the-violence-in-highways/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -3187,14 +3110,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/dji-mavic-mini%e3%81%a7%e9%80%ae%e6%8d%95%e6%b3%a8%e6%84%8f%ef%bc%9f%ef%bc%81200g%e6%9c%aa%e6%ba%80%e3%81%a7%e3%82%82%e9%81%a9%e7%94%a8%e3%81%95%e3%82%8c%e3%82%8b%e6%b3%95%e8%a6%8f%e5%88%b6%e3%81%a8/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {
@@ -3261,15 +3182,12 @@
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/power-of-capturing-the-moment-in-mobile-devices/",
       "readiness": {
-        "status": "NEEDS_REVIEW",
-        "reasons": [
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed"
-        ]
+        "status": "READY",
+        "reasons": [],
+        "decision": "READY_AND_MIGRATE"
       }
     },
     {

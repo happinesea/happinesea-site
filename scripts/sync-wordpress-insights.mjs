@@ -12,9 +12,10 @@ import {
   extractRemoteArticleImages,
   fetchImage,
   fetchPublishedPosts,
-  htmlText,
+  metadataText,
   normalizePost,
   reviewedFeaturedImageAlt,
+  reviewedArticleHtml,
   validateContracts,
 } from './lib/wordpress-publication.mjs';
 
@@ -103,6 +104,13 @@ if (
 const posts = await fetchPublishedPosts(sourceEndpoint, ids);
 const postById = new Map(posts.map((post) => [post.id, post]));
 
+// Reject source drift before replacing the previous generated asset set.
+for (const mapping of activeMappings)
+  reviewedArticleHtml(
+    postById.get(mapping.id)?.content?.rendered,
+    mapping.content_review,
+  );
+
 await mkdir(assetDir, { recursive: true });
 for (const name of await readdir(assetDir)) {
   if (/^\d+(?:-body-\d+)?-[a-f0-9]{12}\.(?:gif|webp)$/.test(name))
@@ -114,7 +122,9 @@ for (const mapping of activeMappings) {
   const post = postById.get(mapping.id);
   const bodyAssets = new Map();
   let imageIndex = 0;
-  for (const image of extractRemoteArticleImages(post.content?.rendered)) {
+  for (const image of extractRemoteArticleImages(
+    reviewedArticleHtml(post.content?.rendered, mapping.content_review),
+  )) {
     if (bodyAssets.has(image.src)) continue;
     imageIndex += 1;
     const asset = await downloadAsset(
@@ -140,7 +150,7 @@ for (const article of articles) {
     ...article,
     slug: article.contract.slug,
     title: article.contract.title,
-    description: htmlText(article.contract.excerpt),
+    description: metadataText(article.contract.excerpt),
     published_at: article.contract.published_at,
     updated_at: article.contract.modified_at,
     content_status: 'published',

@@ -1,6 +1,7 @@
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import sanitizeHtml from 'sanitize-html';
+import { createHash } from 'node:crypto';
 
 const YOUTUBE_HOSTS = new Set([
   'youtube.com',
@@ -24,6 +25,90 @@ export function htmlText(value) {
   return sanitizeHtml(value ?? '', { allowedTags: [], allowedAttributes: {} })
     .replaceAll(/\s+/g, ' ')
     .trim();
+}
+
+export function metadataText(value) {
+  const stripped = htmlText(value);
+  let text = '';
+  // Read the parser's decoded text, not its HTML-escaped output. Astro escapes it at render time.
+  sanitizeHtml(`<div>${stripped}</div>`, {
+    allowedTags: ['div'],
+    exclusiveFilter: (frame) => {
+      text = frame.text;
+      return false;
+    },
+  });
+  return text.replaceAll(/\s+/g, ' ').trim();
+}
+
+export function stableReviewedHtml(html) {
+  return html
+    .replaceAll(/<[^>]+>/g, (tag) =>
+      tag
+        .replaceAll(
+          /(\bdata-downloadurl=["'][^"']*[?&]refresh=)[^"'&]*/g,
+          '$1WPDM_REFRESH',
+        )
+        .replaceAll(
+          /\bclass=(["'])(.*?)\1/g,
+          (_attribute, quote, value) =>
+            `class=${quote}${value.replaceAll(/\bwp-block-gallery-\d+\b/g, 'wp-block-gallery-INSTANCE')}${quote}`,
+        ),
+    )
+    .replaceAll(/<p>(?=<div class='w3eden'>)/g, '')
+    .replaceAll(/\n<\/div><\/p>/g, '\n</div>');
+}
+
+export function reviewedArticleHtml(input, review) {
+  let value = String(input ?? '');
+  if (!review) return value;
+  const stable = (html) =>
+    review.stable_content_sha256 ? stableReviewedHtml(html) : html;
+  if (
+    createHash('sha256').update(stable(value)).digest('hex') !==
+    (review.stable_content_sha256 ?? review.source_content_sha256)
+  )
+    throw new Error(`source review drift: ${review.source_content_sha256}`);
+  value = stable(value);
+  for (const { from, to } of review.replacements ?? []) {
+    if (
+      typeof from !== 'string' ||
+      !from ||
+      typeof to !== 'string' ||
+      value.split(stable(from)).length !== 2
+    )
+      throw new Error('source replacement drift');
+    value = value.replace(stable(from), () => to);
+  }
+  return value;
+}
+
+export function resolveInventoryDecision(post, readiness, decision) {
+  if (!decision) return readiness;
+  if (
+    decision.id !== post.id ||
+    decision.slug !== post.slug ||
+    decision.source_url !== post.link
+  )
+    throw new Error('publication decision drift');
+  reviewedArticleHtml(post.content?.rendered, decision);
+  if (
+    decision.decision === 'BLOCKED_WITH_EXPLICIT_REASON' &&
+    decision.reason?.trim()
+  )
+    return {
+      status: 'BLOCKED',
+      reasons: [...readiness.reasons, decision.reason],
+      decision: decision.decision,
+    };
+  if (
+    !['READY_AND_MIGRATE', 'TRANSFORM_AND_MIGRATE'].includes(
+      decision.decision,
+    ) ||
+    readiness.status !== 'READY'
+  )
+    throw new Error('publication decision preflight not ready');
+  return { ...readiness, decision: decision.decision };
 }
 
 export function extractRemoteArticleImages(input) {
@@ -127,6 +212,9 @@ export function classifyInventoryPost(
 
 export function localizeArticleImages(input, assets = new Map(), reviews = []) {
   const value = String(input ?? '');
+  for (const [tag] of value.matchAll(/<img\b[^>]*>/gi))
+    if (!/\bsrc=["'][^"']+["']/i.test(tag))
+      throw new Error('image source missing');
   for (const { src, alt } of extractRemoteArticleImages(value)) {
     const review = reviews.find(({ source_url }) => source_url === src);
     if (review && !assets.get(src)?.sha256)
@@ -217,6 +305,8 @@ export function sanitizeArticleHtml(
       'blockquote',
       'strong',
       'em',
+      'sup',
+      'sub',
       'a',
       'img',
       'figure',
@@ -292,12 +382,17 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
   if (mapping.route !== `/insights/${mapping.slug}/`)
     throw new Error(`invalid route mapping for post ${post.id}`);
 
-  const title = htmlText(post.title?.rendered);
+  const title = metadataText(post.title?.rendered);
   if (!title) throw new Error(`missing title for post ${post.id}`);
   const excerpt = sanitizeArticleHtml(post.excerpt?.rendered);
-  const content = sanitizeArticleHtml(post.content?.rendered, bodyAssets, {
-    imageReviews: mapping.body_image_reviews ?? [],
-  });
+  const content = sanitizeArticleHtml(
+    reviewedArticleHtml(post.content?.rendered, mapping.content_review),
+    bodyAssets,
+    {
+      imageReviews: mapping.body_image_reviews ?? [],
+      preserveAnchors: Boolean(mapping.preserve_anchors),
+    },
+  );
   if (!excerpt) throw new Error(`missing excerpt for post ${post.id}`);
   if (!content) throw new Error(`missing content for post ${post.id}`);
 
@@ -311,7 +406,24 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
     .map((term) => term.slug);
   if (!category.length) throw new Error(`missing category for post ${post.id}`);
 
-  const media = post._embedded?.['wp:featuredmedia']?.[0];
+  const sourceMedia = post._embedded?.['wp:featuredmedia']?.[0];
+  const recovery = mapping.featured_image_recovery;
+  if (
+    recovery &&
+    (!mapping.content_review ||
+      !Number.isSafeInteger(recovery.media_id) ||
+      recovery.media_id !== post.featured_media ||
+      sourceMedia?.source_url ||
+      recovery.source_url !== mapping.featured_image_review?.source_url)
+  )
+    throw new Error('featured recovery drift');
+  const media = recovery
+    ? {
+        source_url: recovery.source_url,
+        alt_text: '',
+        media_details: { width: recovery.width, height: recovery.height },
+      }
+    : sourceMedia;
   const width = Number(media?.media_details?.width);
   const height = Number(media?.media_details?.height);
   const featuredImage = media
@@ -322,7 +434,14 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
         source_url: media.source_url,
       }
     : null;
-  if (media && (!media.source_url || width < 1 || height < 1)) {
+  if (
+    media &&
+    (!media.source_url ||
+      !Number.isSafeInteger(width) ||
+      !Number.isSafeInteger(height) ||
+      width < 1 ||
+      height < 1)
+  ) {
     throw new Error(`invalid featured image for post ${post.id}`);
   }
   const featuredImageAlt = reviewedFeaturedImageAlt(
