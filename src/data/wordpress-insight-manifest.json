@@ -1839,5 +1839,13 @@
       ]
     }
   ],
-  "withdrawals": []
+  "withdrawals": [
+    {
+      "id": 1627,
+      "canonical": "https://happinesea.com/experience/202107081627.html",
+      "reason": "Owner approved retirement of the entire unfinished, unneeded article; no body preservation, image restoration or migration.",
+      "approved_at": "2026-10-09",
+      "legacy_disposition": "HTTP_404_NO_REDIRECT"
+    }
+  ]
 }

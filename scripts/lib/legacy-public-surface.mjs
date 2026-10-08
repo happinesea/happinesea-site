@@ -63,7 +63,8 @@ export function cutoverSummary(entries) {
   const unresolved = count(
     (entry) =>
       entry.migration_status !== 'READY' &&
-      entry.migration_status !== 'EXTERNAL_KEEP',
+      entry.migration_status !== 'EXTERNAL_KEEP' &&
+      entry.migration_status !== 'REMOVED_WITH_APPROVAL',
   );
   return {
     total_urls: entries.length,

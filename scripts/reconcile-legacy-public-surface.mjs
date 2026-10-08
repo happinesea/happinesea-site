@@ -4,6 +4,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { format } from 'prettier';
 import { cutoverSummary } from './lib/legacy-public-surface.mjs';
+import { publicationPosts } from './lib/wordpress-publication.mjs';
 
 export async function reconcileArticleRoutes(
   snapshot,
@@ -11,6 +12,7 @@ export async function reconcileArticleRoutes(
   dist,
   baseline,
 ) {
+  publicationPosts([], manifest.withdrawals);
   const active = manifest.articles.filter(
     ({ id }) => !manifest.withdrawals.some((item) => item.id === id),
   );
@@ -77,6 +79,22 @@ export async function reconcileArticleRoutes(
     entry.notes.push(
       `Exact legacy HTML verified: ${path}; byte-identical to ${article.route}, canonical retained, no redirect. Source HTTP status is a separate observation.`,
     );
+  }
+  for (const withdrawal of manifest.withdrawals) {
+    const entry = snapshot.entries.find(
+      ({ legacy_url }) => legacy_url === withdrawal.canonical,
+    );
+    if (!entry || entry.canonical !== withdrawal.canonical)
+      throw new Error('missing or drifted withdrawal legacy URL');
+    if (withdrawal.legacy_disposition !== 'HTTP_404_NO_REDIRECT')
+      throw new Error('unsupported withdrawal legacy disposition');
+    Object.assign(entry, {
+      migration_status: 'REMOVED_WITH_APPROVAL',
+      owner_approved_at: withdrawal.approved_at,
+      legacy_disposition: withdrawal.legacy_disposition,
+      target_route: null,
+      redirect_required: false,
+    });
   }
   snapshot.baseline_commit = baseline;
   snapshot.reconciled_at = new Date().toISOString();

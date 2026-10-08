@@ -1,15 +1,25 @@
 {
-  "source_endpoint": "https://happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 97,
+  "source_endpoint": "https://cms.happinesea.com/wp-json/wp/v2/posts",
+  "source_count": 97,
+  "expected_count": 96,
+  "withdrawals": [
+    {
+      "id": 1627,
+      "canonical": "https://happinesea.com/experience/202107081627.html",
+      "reason": "Owner approved retirement of the entire unfinished, unneeded article; no body preservation, image restoration or migration.",
+      "approved_at": "2026-10-09",
+      "legacy_disposition": "HTTP_404_NO_REDIRECT"
+    }
+  ],
   "status_counts": {
     "READY": 87,
     "NEEDS_REVIEW": 3,
     "NEEDS_TRANSFORM": 0,
-    "BLOCKED": 7
+    "BLOCKED": 6
   },
   "embed_hosts": {
-    "www.youtube.com": 32,
-    "rcm-fe.amazon-adsystem.com": 9,
+    "www.youtube.com": 31,
+    "rcm-fe.amazon-adsystem.com": 8,
     "happinesea.com": 1
   },
   "articles": [
@@ -1619,55 +1629,6 @@
       "content_type": "insight",
       "route": "/insights/yahoo%e3%82%b7%e3%83%a7%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0%e3%81%a7%e3%80%81%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92/",
       "readiness": { "status": "READY", "reasons": [] }
-    },
-    {
-      "id": 1627,
-      "title": "タミヤ 1/350ドイツ海軍 ビスマルク級戦艦 テルピッツをラジコン(RC)改造(2)",
-      "slug": "%e3%82%bf%e3%83%9f%e3%83%a4-1-350%e3%83%89%e3%82%a4%e3%83%84%e6%b5%b7%e8%bb%8d-%e3%83%93%e3%82%b9%e3%83%9e%e3%83%ab%e3%82%af%e7%b4%9a%e6%88%a6%e8%89%a6-%e3%83%86%e3%83%ab%e3%83%94%e3%83%83%e3%83%84-2",
-      "canonical": "https://happinesea.com/experience/202107081627.html",
-      "published_at": "2021-07-08T05:06:07",
-      "modified_at": "2021-12-01T01:49:25",
-      "category": ["experience"],
-      "tags": [
-        "rc%e6%94%b9%e9%80%a0",
-        "%e3%83%86%e3%83%ab%e3%83%93%e3%83%83%e3%83%84",
-        "%e3%83%93%e3%82%b9%e3%83%9e%e3%83%ab%e3%82%af",
-        "%e6%88%a6%e8%89%a6"
-      ],
-      "featured_image": {
-        "source_url": "https://happinesea.com/wp-content/uploads/2021/07/05d7d047b25eef1967d590ede82f2acf.jpg",
-        "alt": "",
-        "width": 1001,
-        "height": 751
-      },
-      "body_images": [],
-      "embeds": [
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=happinesea00-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS1=1&amp;detail=1&amp;asins=B0009RQLB6&amp;linkId=5f65f0e1a205c20a1fd8d716a533dad2&amp;bc1=ffffff&amp;lt1=_top&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "https://www.youtube.com/embed/Kb0FA4bNHLU?feature=oembed",
-          "host": "www.youtube.com",
-          "classification": "A"
-        }
-      ],
-      "shortcodes": [],
-      "script_count": 0,
-      "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
-      "readiness": {
-        "status": "BLOCKED",
-        "reasons": [
-          "legacy script or advertising embed",
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "A source body image has neither src nor attachment identity. Advertisement identity can be resolved, but the missing image cannot be restored or removed without owner decision."
-        ],
-        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
-      }
     },
     {
       "id": 1577,

@@ -1,5 +1,7 @@
 # Phase 6 全残件の最終判定
 
+2026-10-09追記：1627はowner-approved removalへ確定した。以下はPR #32時点の記録であり、現在は移行92／publication scope96／廃止1／残BLOCKED4。[1627の現行判断](article-1627-owner-retirement.md)を優先する。
+
 2026-10-08。PR #31 merge後の `origin/main` (`e5a75f1c19e99e844d3e8f7a70b8b87068c9654d`) をbaselineとする。このbranchの候補状態であり、mainへのmerge・domain切替完了を意味しない。
 
 ## 判定と移行数

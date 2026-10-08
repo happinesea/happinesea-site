@@ -1,5 +1,7 @@
 # Domain Cutover Readiness Gate
 
+2026-10-09追記：B04（記事1627）は記事全体の廃止・旧URLの404をownerが承認したため解決。他の15 blocker groupは未解決、Domain CutoverはNOT READY。以下のHTTP/countは当時の実deployment観測であり、[1627の現行判断](article-1627-owner-retirement.md)と区別する。
+
 ## 判定と対象
 
 **Domain Cutover = NOT READY**。これはDNS切替の実施・承認ではない。

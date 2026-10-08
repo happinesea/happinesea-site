@@ -57,14 +57,14 @@
     },
     "preserved_routes": 223,
     "redirect_required": 0,
-    "blocked": 16,
+    "blocked": 15,
     "old_domain_only_assets": 621,
     "broken_links": 4,
     "missing_downloads": 0,
     "unverified": 1071,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1153,
+    "unresolved_surfaces": 1152,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -3002,13 +3002,15 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/experience/202107081627.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "REMOVED_WITH_APPROVAL",
+      "owner_approved_at": "2026-10-09",
+      "legacy_disposition": "HTTP_404_NO_REDIRECT",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: タミヤ 1/350ドイツ海軍 ビスマルク級戦艦 テルピッツをラジコン(RC)改造(2)",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed",
-        "Phase 6 final decision: A source body image has neither src nor attachment identity. Advertisement identity can be resolved, but the missing image cannot be restored or removed without owner decision. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+        "Owner approved retirement of the entire unfinished, unneeded article on 2026-10-09. No body preservation, image restoration or migration.",
+        "Cutover disposition: existing static 404, no redirect or replacement canonical. current_status 200 is the historical WordPress source observation, not target publication status. Attachment/media URLs are not implicitly retired."
       ],
       "http_final_url": "https://happinesea.com/experience/202107081627.html",
       "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"

@@ -19,6 +19,26 @@ test('CMS endpoint is absent from public HTML and browser JavaScript', async () 
   }
 });
 
+test('owner-retired 1627 emits no legacy article or invented redirect', async () => {
+  await assert.rejects(route('experience/202107081627.html'), {
+    code: 'ENOENT',
+  });
+  const manifest = JSON.parse(
+    await readFile(
+      new URL('../src/data/wordpress-insight-manifest.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  const withdrawal = manifest.withdrawals.find((x) => x.id === 1627);
+  assert.ok(withdrawal);
+  assert.equal(
+    manifest.articles.some((x) => x.id === 1627),
+    false,
+  );
+  assert.doesNotMatch(await route('sitemap-0.xml'), /202107081627\.html/);
+  assert.doesNotMatch(await route('404.html'), /rel="canonical"/);
+});
+
 test('localized article body images include the Pages base on all article and linked compatibility routes', async () => {
   const articles = JSON.parse(
     await readFile(

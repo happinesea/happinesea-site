@@ -11,6 +11,7 @@ import {
   fetchJson,
   fetchWithRetry,
   htmlText,
+  publicationPosts,
   reviewedArticleHtml,
   resolveInventoryDecision,
 } from './lib/wordpress-publication.mjs';
@@ -81,6 +82,7 @@ const posts = await fetchPaged(endpoint, {
   _fields:
     'id,slug,link,date_gmt,modified_gmt,status,title,featured_media,categories,tags,content',
 });
+const activePosts = publicationPosts(posts, manifest.withdrawals);
 const [categories, tags] = await Promise.all([
   fetchPaged(new URL('categories', endpoint), {
     per_page: '100',
@@ -96,7 +98,7 @@ const termMaps = {
   tags: new Map(tags.map(({ id, slug }) => [id, slug])),
 };
 const mediaIds = [
-  ...new Set(posts.map(({ featured_media: id }) => id).filter(Boolean)),
+  ...new Set(activePosts.map(({ featured_media: id }) => id).filter(Boolean)),
 ];
 const media = [];
 for (let index = 0; index < mediaIds.length; index += 20) {
@@ -109,7 +111,7 @@ for (let index = 0; index < mediaIds.length; index += 20) {
 const mediaById = new Map(media.map((item) => [item.id, item]));
 const mappingById = new Map(manifest.articles.map((item) => [item.id, item]));
 
-const articles = posts.map((post) => {
+const articles = activePosts.map((post) => {
   const mapping = mappingById.get(post.id);
   const markup = analyzePostMarkup(
     reviewedArticleHtml(post.content?.rendered, mapping?.content_review),
@@ -181,9 +183,9 @@ if (previous) {
   const withdrawnCount = previous.articles.filter(
     ({ id }) => !articles.some((article) => article.id === id),
   ).length;
-  if (posts.length !== previous.expected_count - withdrawnCount) {
+  if (articles.length !== previous.expected_count - withdrawnCount) {
     throw new Error(
-      `published article count changed: ${previous.expected_count} -> ${posts.length}`,
+      `publication inventory count changed: ${previous.expected_count} -> ${articles.length}`,
     );
   }
 }
@@ -206,7 +208,9 @@ const statusCounts = Object.fromEntries(
 );
 const output = {
   source_endpoint: endpoint,
-  expected_count: posts.length,
+  source_count: posts.length,
+  expected_count: articles.length,
+  withdrawals: manifest.withdrawals,
   status_counts: statusCounts,
   embed_hosts: Object.fromEntries(
     [
@@ -227,4 +231,6 @@ await writeFile(
   outputPath,
   await format(JSON.stringify(output), { parser: 'json' }),
 );
-console.log(`Inventoried ${articles.length} published WordPress articles.`);
+console.log(
+  `Inventoried ${posts.length} source posts; ${articles.length} publication candidates.`,
+);

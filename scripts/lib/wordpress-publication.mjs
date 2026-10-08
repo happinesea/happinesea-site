@@ -537,6 +537,24 @@ export function assertManifestContinuity(articles, mappings, withdrawals) {
   }
 }
 
+export function publicationPosts(posts, withdrawals) {
+  const ids = new Set();
+  for (const withdrawal of withdrawals) {
+    const post = posts.find(({ id }) => id === withdrawal.id);
+    if (
+      !Number.isInteger(withdrawal.id) ||
+      ids.has(withdrawal.id) ||
+      !withdrawal.reason?.trim() ||
+      Number.isNaN(Date.parse(withdrawal.approved_at)) ||
+      !/^https:\/\/happinesea\.com\//.test(withdrawal.canonical) ||
+      (post && post.link !== withdrawal.canonical)
+    )
+      throw new Error(`invalid withdrawal for article ${withdrawal.id}`);
+    ids.add(withdrawal.id);
+  }
+  return posts.filter(({ id }) => !ids.has(id));
+}
+
 export function assertInventoryContinuity(current, previous, withdrawals) {
   const currentById = new Map(current.map((article) => [article.id, article]));
   const withdrawn = new Map(withdrawals.map((item) => [item.id, item]));
