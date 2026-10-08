@@ -190,6 +190,7 @@ for (const page of previous.pages.filter((page) =>
     'category_archive',
     'blog_archive',
     'faq_archive',
+    'manual_rebuild_notice',
   ].includes(page.type),
 )) {
   pages.push({ ...page, source_html: page.content_html });

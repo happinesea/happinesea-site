@@ -55,13 +55,14 @@
     },
     {
       "id": 1998,
-      "decision": "BLOCKED_WITH_EXPLICIT_REASON",
-      "reason": "Three Amazon-only manual advertisements; no verified ordinary URL for B09GYM5NCC. ASIN-derived links and removal are not approved.",
-      "owner_decision_needed": true,
-      "cutover_impact": "Exact article URL cannot be published safely; domain cutover remains closed.",
+      "decision": "TRANSFORM_AND_MIGRATE",
+      "reason": "Owner approved removal of legacy Amazon advertising only; source prose and images retained.",
+      "owner_decision_needed": false,
+      "cutover_impact": null,
       "source_url": "https://happinesea.com/news/202203311998.html",
       "slug": "%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab-%e9%99%90%e5%ae%9a%e7%84%a1%e6%96%99-%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3",
-      "source_content_sha256": "d8d9f5f32559534624f35a5bc8e4f09cc4abd4a820b38a4f04d0e11e3f70f961"
+      "source_content_sha256": "d8d9f5f32559534624f35a5bc8e4f09cc4abd4a820b38a4f04d0e11e3f70f961",
+      "approved_at": "2026-10-09"
     },
     {
       "id": 1947,
@@ -75,23 +76,25 @@
     },
     {
       "id": 1895,
-      "decision": "BLOCKED_WITH_EXPLICIT_REASON",
-      "reason": "Amazon DF-17 search scripts have no source ordinary search/product URL; ad host DNS fails. Safe equivalent requires owner-provided source or explicit removal approval.",
-      "owner_decision_needed": true,
-      "cutover_impact": "Exact article URL cannot be published safely; domain cutover remains closed.",
+      "decision": "TRANSFORM_AND_MIGRATE",
+      "reason": "Owner approved removal of legacy Amazon advertising only; source prose and images retained.",
+      "owner_decision_needed": false,
+      "cutover_impact": null,
       "source_url": "https://happinesea.com/news/202203221895.html",
       "slug": "%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e7%89%b9%e5%be%b4",
-      "source_content_sha256": "07d4e7e9c1a3489a4dc694f9d1100973c9d05e0a95721620215e03caa9cd6936"
+      "source_content_sha256": "07d4e7e9c1a3489a4dc694f9d1100973c9d05e0a95721620215e03caa9cd6936",
+      "approved_at": "2026-10-09"
     },
     {
       "id": 1857,
-      "decision": "BLOCKED_WITH_EXPLICIT_REASON",
-      "reason": "Five Amazon-only product advertisements have no verified ordinary source links; ad host DNS fails. Product-name/ASIN-derived substitution is prohibited.",
-      "owner_decision_needed": true,
-      "cutover_impact": "Exact article URL cannot be published safely; domain cutover remains closed.",
+      "decision": "TRANSFORM_AND_MIGRATE",
+      "reason": "Owner approved removal of legacy Amazon advertising only; source prose and images retained.",
+      "owner_decision_needed": false,
+      "cutover_impact": null,
       "source_url": "https://happinesea.com/experience/202112281857.html",
       "slug": "%e5%86%ac%e4%bc%91%e3%81%bf%e3%81%ab%e9%81%8a%e3%81%b3%e3%81%9f%e3%81%84%e3%80%8crc%e3%80%8d5%e9%81%b8",
-      "source_content_sha256": "047957f1469e8f04ac2a7ae2ce058114e18db6ec571cc160839e968855adf37c"
+      "source_content_sha256": "047957f1469e8f04ac2a7ae2ce058114e18db6ec571cc160839e968855adf37c",
+      "approved_at": "2026-10-09"
     },
     {
       "id": 1758,
@@ -308,13 +311,15 @@
     },
     {
       "id": 905,
-      "decision": "BLOCKED_WITH_EXPLICIT_REASON",
-      "reason": "Source relocation target /minipix-manual-multicopter returns HTTP 404. No verified equivalent content for that historical target; similarly named current manual is not substituted.",
-      "owner_decision_needed": true,
-      "cutover_impact": "Exact article URL cannot be published safely; domain cutover remains closed.",
+      "decision": "DEFER_TO_MANUAL_REBUILD",
+      "reason": "Owner confirmed an unfinished Mini Pix multicopter manual concept. Rebuild a formal manual later; no inferred redirect to a different manual.",
+      "owner_decision_needed": false,
+      "cutover_impact": "Exact legacy URL serves a noindex rebuild notice, not a completed manual.",
       "source_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
       "slug": "radiolink-mini-pix%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8%e2%80%95%e3%83%9e%e3%83%ab%e3%83%81%e3%82%b3%e3%83%97%e3%82%bf%e3%83%bc%e7%b7%a8",
-      "source_content_sha256": "eaa47c161e98aeefe1a1add71bece1e1fe1515a75287bfc1d3f8bf6b58abefa5"
+      "source_content_sha256": "eaa47c161e98aeefe1a1add71bece1e1fe1515a75287bfc1d3f8bf6b58abefa5",
+      "approved_at": "2026-10-09",
+      "legacy_disposition": "STATIC_MANUAL_REBUILD_NOTICE"
     },
     {
       "id": 107,

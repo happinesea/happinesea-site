@@ -1,0 +1,85 @@
+{
+  "baseline": "e3a45df08fe06f827ceecd67c5f15f50516fda58",
+  "approvals": [
+    {
+      "id": 1998,
+      "decision": "TRANSFORM_AND_MIGRATE",
+      "approved_at": "2026-10-09",
+      "source_url": "https://happinesea.com/news/202203311998.html",
+      "source_content_sha256": "d8d9f5f32559534624f35a5bc8e4f09cc4abd4a820b38a4f04d0e11e3f70f961",
+      "removal_count": 3,
+      "removals": [
+        {
+          "sha256": "d991ed7feeca8dbdbea93b561ece0186a3f8c6fec773a26572af61641920fed5",
+          "literal": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B08NVHK22H&amp;linkId=136591b62577e0908bec4c98baed89d7\"></iframe>"
+        },
+        {
+          "sha256": "f962140f4d0d747540fbef443613a5b98a917766389b0bfd81c5b95957502093",
+          "literal": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B086JQW9LQ&amp;linkId=0042e032602886a3a1cbffc178a87e63\"></iframe>"
+        },
+        {
+          "sha256": "829f8ab9e8cf1dbd752c1c9a0d22b65352dd902742564f4078b124eaf82cc2d3",
+          "literal": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B09GYM5NCC&amp;linkId=fb3b7a0206daed5db8b396e7529e4632\"></iframe>"
+        }
+      ],
+      "image_review_source": "tests/fixtures/wordpress-phase6-completion-review.json"
+    },
+    {
+      "id": 1895,
+      "decision": "TRANSFORM_AND_MIGRATE",
+      "approved_at": "2026-10-09",
+      "source_url": "https://happinesea.com/news/202203221895.html",
+      "source_content_sha256": "07d4e7e9c1a3489a4dc694f9d1100973c9d05e0a95721620215e03caa9cd6936",
+      "removal_count": 2,
+      "removals": [
+        {
+          "sha256": "95925ac37dfd5eaf627ef3cf048c0b5f91c30d3e5e46c34414ae32418e62d208",
+          "literal": "<script type=\"text/javascript\">amzn_assoc_ad_type =\"responsive_search_widget\"; amzn_assoc_tracking_id =\"happinesea0f-22\"; amzn_assoc_marketplace =\"amazon\"; amzn_assoc_region =\"JP\"; amzn_assoc_placement =\"\"; amzn_assoc_search_type = \"search_widget\";amzn_assoc_width =\"auto\"; amzn_assoc_height =\"auto\"; amzn_assoc_default_search_category =\"\"; amzn_assoc_default_search_key =\"DF-17\";amzn_assoc_theme =\"light\"; amzn_assoc_bg_color =\"FFFFFF\"; </script>"
+        },
+        {
+          "sha256": "5ba62f1299c7118c5b6f85be55320bd0bfd7a920714ef5d14e03522844fad052",
+          "literal": "<script src=\"//z-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;Operation=GetScript&amp;ID=OneJS&amp;WS=1&amp;Marketplace=JP\"></script>"
+        }
+      ],
+      "image_review_source": "tests/fixtures/wordpress-phase6-completion-review.json"
+    },
+    {
+      "id": 1857,
+      "decision": "TRANSFORM_AND_MIGRATE",
+      "approved_at": "2026-10-09",
+      "source_url": "https://happinesea.com/experience/202112281857.html",
+      "source_content_sha256": "047957f1469e8f04ac2a7ae2ce058114e18db6ec571cc160839e968855adf37c",
+      "removal_count": 5,
+      "removals": [
+        {
+          "sha256": "8241e5e94b91d504f757f1f98fcf79f3c612b3072b0b5f7e870d3ea9c4d30d32",
+          "literal": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B07GX4RGDV&#038;linkId=2ce23f64594c335d2d63e32148fe0d80&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>"
+        },
+        {
+          "sha256": "938e97dd7b30338f4b5c201ba8803f1aed12ed96700417dddd9ba12f5f6566b1",
+          "literal": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B0893BR34Y&#038;linkId=07c918409089d93b31db7ddd0cfaaa60&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>"
+        },
+        {
+          "sha256": "2791c079a71758da3a5e5f1e1f6f97299771cbbb8898554d3a3ec8f3b654e0e3",
+          "literal": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B07Q3D9ZFS&#038;linkId=bbc77019caf155638943150f9166a2f1&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>"
+        },
+        {
+          "sha256": "aa4b3ed42738d870b33a6bfdaafe0d64d0ef9c467e2ef7d481c5b22fe28e4628",
+          "literal": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B09CMMLZ77&#038;linkId=92bf393df7a097ae67c0c69d795e4028&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>"
+        },
+        {
+          "sha256": "784326c0c389df952690519194d922f59c8923651eac229ff89b4e340335ed32",
+          "literal": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B09P1M7V4J&#038;linkId=b81c371a4b28247427957c8e72a9f262&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>"
+        }
+      ],
+      "image_review_source": "tests/fixtures/wordpress-phase6-completion-review.json"
+    }
+  ],
+  "deferred": {
+    "id": 905,
+    "decision": "DEFER_TO_MANUAL_REBUILD",
+    "source_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
+    "source_content_sha256": "eaa47c161e98aeefe1a1add71bece1e1fe1515a75287bfc1d3f8bf6b58abefa5",
+    "owner_approved_at": "2026-10-09"
+  }
+}

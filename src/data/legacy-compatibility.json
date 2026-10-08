@@ -2459,6 +2459,22 @@
         "width": 995,
         "height": 339
       }
+    },
+    {
+      "id": 905,
+      "type": "manual_rebuild_notice",
+      "http_status": 200,
+      "observation_note": "Inherited source HTTP status from the existing legacy inventory, not a fresh source capture. The static notice is owner-approved replacement content.",
+      "source_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
+      "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
+      "source_content_sha256": "eaa47c161e98aeefe1a1add71bece1e1fe1515a75287bfc1d3f8bf6b58abefa5",
+      "target_route": "/radiolink-support/minipix-manual/20200511905.html",
+      "title": "Mini Pixマニュアルは再編中です",
+      "content_html": "<p>Mini Pixマニュアルは再編中です。現在、このページでは正式なマニュアル本文を公開していません。</p>",
+      "noindex": true,
+      "status": "DEFERRED_NOTICE",
+      "owner_approved_at": "2026-10-09",
+      "decision": "DEFER_TO_MANUAL_REBUILD"
     }
   ],
   "assets": [

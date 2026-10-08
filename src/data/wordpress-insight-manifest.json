@@ -1,7 +1,7 @@
 {
   "contract_version": "0.1",
   "source_endpoint": "https://cms.happinesea.com/wp-json/wp/v2/posts",
-  "expected_count": 87,
+  "expected_count": 90,
   "articles": [
     {
       "id": 2187,
@@ -1837,6 +1837,123 @@
           "alt": "空中を飛行するカメラ付きマルチコプターの写真。"
         }
       ]
+    },
+    {
+      "id": 1998,
+      "content_type": "insight",
+      "topic": "業界動向",
+      "article_kind": "article",
+      "slug": "%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab-%e9%99%90%e5%ae%9a%e7%84%a1%e6%96%99-%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3",
+      "route": "/insights/%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab-%e9%99%90%e5%ae%9a%e7%84%a1%e6%96%99-%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
+      "canonical": "https://happinesea.com/news/202203311998.html",
+      "content_review": {
+        "source_content_sha256": "d8d9f5f32559534624f35a5bc8e4f09cc4abd4a820b38a4f04d0e11e3f70f961",
+        "replacements": [
+          {
+            "from": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B08NVHK22H&amp;linkId=136591b62577e0908bec4c98baed89d7\"></iframe>",
+            "to": ""
+          },
+          {
+            "from": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B086JQW9LQ&amp;linkId=0042e032602886a3a1cbffc178a87e63\"></iframe>",
+            "to": ""
+          },
+          {
+            "from": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B09GYM5NCC&amp;linkId=fb3b7a0206daed5db8b396e7529e4632\"></iframe>",
+            "to": ""
+          }
+        ]
+      },
+      "preserve_anchors": false,
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2022/03/sp_i_serialization_cp_01_r.jpg",
+        "sha256": "4673da0580680fec8e7df1006aa61fe3c8cc3e5f5d64a1114422f6a2c5991251",
+        "alt": "無料キャンペーンの案内画像。"
+      }
+    },
+    {
+      "id": 1895,
+      "content_type": "insight",
+      "topic": "業界動向",
+      "article_kind": "article",
+      "slug": "%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e7%89%b9%e5%be%b4",
+      "route": "/insights/%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e7%89%b9%e5%be%b4/",
+      "canonical": "https://happinesea.com/news/202203221895.html",
+      "content_review": {
+        "source_content_sha256": "07d4e7e9c1a3489a4dc694f9d1100973c9d05e0a95721620215e03caa9cd6936",
+        "replacements": [
+          {
+            "from": "<script type=\"text/javascript\">amzn_assoc_ad_type =\"responsive_search_widget\"; amzn_assoc_tracking_id =\"happinesea0f-22\"; amzn_assoc_marketplace =\"amazon\"; amzn_assoc_region =\"JP\"; amzn_assoc_placement =\"\"; amzn_assoc_search_type = \"search_widget\";amzn_assoc_width =\"auto\"; amzn_assoc_height =\"auto\"; amzn_assoc_default_search_category =\"\"; amzn_assoc_default_search_key =\"DF-17\";amzn_assoc_theme =\"light\"; amzn_assoc_bg_color =\"FFFFFF\"; </script>",
+            "to": ""
+          },
+          {
+            "from": "<script src=\"//z-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;Operation=GetScript&amp;ID=OneJS&amp;WS=1&amp;Marketplace=JP\"></script>",
+            "to": ""
+          }
+        ]
+      },
+      "preserve_anchors": false,
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2022/03/top_image.jpeg",
+        "sha256": "903aca13edc8ac5b431dd883679a1f9cd9a9ccd00abcfccf411046041b4ba96c",
+        "alt": "DF-17と表示されたミサイルと車両の写真。"
+      },
+      "body_image_reviews": [
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2022/03/202203221.png",
+          "sha256": "da78c256a2776aa1602f641c845fa8dfeaf12e784d800eead9a9b420a623151a",
+          "alt": "巡航ミサイル・弾道ミサイル・銭学森弾道・スネーク弾道の飛行経路を比較した図。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614.webp",
+          "sha256": "0639e156d1397d12ece04818e93c8b3b866893337bc3a97eea6819832c145ba2",
+          "alt": "航空機の胴体下に搭載されたミサイルを赤い円で囲んだ写真。"
+        },
+        {
+          "source_url": "https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280.jpg",
+          "sha256": "76ee5887e1bffaa606c16afad2ea9014e77f4e44051133fc157a7e84d6ce3e68",
+          "alt": "装置の先端部分を赤い円で囲んだ写真。"
+        }
+      ]
+    },
+    {
+      "id": 1857,
+      "content_type": "insight",
+      "topic": "技術解説",
+      "article_kind": "article",
+      "slug": "%e5%86%ac%e4%bc%91%e3%81%bf%e3%81%ab%e9%81%8a%e3%81%b3%e3%81%9f%e3%81%84%e3%80%8crc%e3%80%8d5%e9%81%b8",
+      "route": "/insights/%e5%86%ac%e4%bc%91%e3%81%bf%e3%81%ab%e9%81%8a%e3%81%b3%e3%81%9f%e3%81%84%e3%80%8crc%e3%80%8d5%e9%81%b8/",
+      "canonical": "https://happinesea.com/experience/202112281857.html",
+      "content_review": {
+        "source_content_sha256": "047957f1469e8f04ac2a7ae2ce058114e18db6ec571cc160839e968855adf37c",
+        "replacements": [
+          {
+            "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B07GX4RGDV&#038;linkId=2ce23f64594c335d2d63e32148fe0d80&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>",
+            "to": ""
+          },
+          {
+            "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B0893BR34Y&#038;linkId=07c918409089d93b31db7ddd0cfaaa60&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>",
+            "to": ""
+          },
+          {
+            "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B07Q3D9ZFS&#038;linkId=bbc77019caf155638943150f9166a2f1&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>",
+            "to": ""
+          },
+          {
+            "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B09CMMLZ77&#038;linkId=92bf393df7a097ae67c0c69d795e4028&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>",
+            "to": ""
+          },
+          {
+            "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B09P1M7V4J&#038;linkId=b81c371a4b28247427957c8e72a9f262&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr\">\n    </iframe>",
+            "to": ""
+          }
+        ]
+      },
+      "preserve_anchors": false,
+      "featured_image_review": {
+        "source_url": "https://happinesea.com/wp-content/uploads/2021/12/41-8dFAOjuL._AC_.jpg",
+        "sha256": "0ac3cb9f7e1be3b5a0309a5903c8b397bcf63e936d8df46f8bb9170df5d8ee4f",
+        "alt": "小型のRCヘリコプターと送信機の製品写真。"
+      }
     }
   ],
   "withdrawals": [

@@ -6,6 +6,12 @@ import * as wp from '../../scripts/lib/wordpress-publication.mjs';
 const read = (p) =>
   JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'));
 const review = read('../fixtures/wordpress-phase6-completion-review.json');
+const resolutions = read('../../src/data/wordpress-owner-resolutions.json');
+const resolvedIds = new Set([
+  1627,
+  resolutions.deferred.id,
+  ...resolutions.approvals.map((x) => x.id),
+]);
 
 test('every remaining source has a final evidence-bound decision and only approved copies are published', () => {
   const published = read('../../src/data/wordpress-insights.json');
@@ -14,11 +20,14 @@ test('every remaining source has a final evidence-bound decision and only approv
   assert.equal(new Set(review.articles.map((x) => x.id)).size, 34);
   assert.deepEqual(
     decisions.articles
-      .filter((x) => x.id !== 1627)
+      .filter((x) => !resolvedIds.has(x.id))
       .map((x) => [x.id, x.decision]),
-    review.articles.filter((x) => x.id !== 1627).map((x) => [x.id, x.decision]),
+    review.articles
+      .filter((x) => !resolvedIds.has(x.id))
+      .map((x) => [x.id, x.decision]),
   );
   for (const source of review.articles) {
+    if (resolvedIds.has(source.id)) continue;
     assert.equal(
       createHash('sha256')
         .update(source.source_record.content.rendered)
@@ -114,7 +123,7 @@ test('Byme-A publishes all six exact chapter routes but does not silently publis
   );
 });
 
-test('96 active posts are migrated or explicitly blocked; 1627 is owner-withdrawn', () => {
+test('96 active posts are migrated or explicitly deferred; 1627 is owner-withdrawn', () => {
   const inventory = read('../../src/data/wordpress-insight-inventory.json');
   const compatibility = read('../../src/data/legacy-compatibility.json');
   const published = read('../../src/data/wordpress-insights.json');
@@ -127,7 +136,7 @@ test('96 active posts are migrated or explicitly blocked; 1627 is owner-withdraw
     ...published.map((x) => x.contract.id),
     ...drawings.map((x) => x.id),
   ]);
-  assert.equal(completed.size, 92);
+  assert.equal(completed.size, 95);
   for (const drawing of drawings)
     assert.equal(
       drawing.canonical,
@@ -136,10 +145,10 @@ test('96 active posts are migrated or explicitly blocked; 1627 is owner-withdraw
   const remaining = inventory.articles.filter((x) => !completed.has(x.id));
   assert.deepEqual(
     remaining.map((x) => x.id).sort((a, b) => a - b),
-    [905, 1857, 1895, 1998],
+    [905],
   );
   for (const article of remaining) {
-    assert.equal(article.readiness.status, 'BLOCKED');
-    assert.equal(article.readiness.decision, 'BLOCKED_WITH_EXPLICIT_REASON');
+    assert.equal(article.readiness.status, 'DEFERRED');
+    assert.equal(article.readiness.decision, 'DEFER_TO_MANUAL_REBUILD');
   }
 });

@@ -12,16 +12,13 @@
     }
   ],
   "status_counts": {
-    "READY": 87,
+    "READY": 90,
     "NEEDS_REVIEW": 3,
     "NEEDS_TRANSFORM": 0,
-    "BLOCKED": 6
+    "BLOCKED": 2,
+    "DEFERRED": 1
   },
-  "embed_hosts": {
-    "www.youtube.com": 31,
-    "rcm-fe.amazon-adsystem.com": 8,
-    "happinesea.com": 1
-  },
+  "embed_hosts": { "www.youtube.com": 31, "happinesea.com": 1 },
   "articles": [
     {
       "id": 2187,
@@ -586,37 +583,16 @@
         "height": 380
       },
       "body_images": [],
-      "embeds": [
-        {
-          "src": "//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B08NVHK22H&amp;linkId=136591b62577e0908bec4c98baed89d7",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B086JQW9LQ&amp;linkId=0042e032602886a3a1cbffc178a87e63",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=happinesea0f-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B09GYM5NCC&amp;linkId=fb3b7a0206daed5db8b396e7529e4632",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        }
-      ],
+      "embeds": [],
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab-%e9%99%90%e5%ae%9a%e7%84%a1%e6%96%99-%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
       "readiness": {
-        "status": "BLOCKED",
-        "reasons": [
-          "legacy script or advertising embed",
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "Three Amazon-only manual advertisements; no verified ordinary URL for B09GYM5NCC. ASIN-derived links and removal are not approved."
-        ],
-        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -698,20 +674,14 @@
       ],
       "embeds": [],
       "shortcodes": [],
-      "script_count": 2,
+      "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e7%89%b9%e5%be%b4/",
       "readiness": {
-        "status": "BLOCKED",
-        "reasons": [
-          "legacy script or advertising embed",
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "body image alt not reviewed",
-          "Amazon DF-17 search scripts have no source ordinary search/product URL; ad host DNS fails. Safe equivalent requires owner-provided source or explicit removal approval."
-        ],
-        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -803,47 +773,16 @@
         "height": 374
       },
       "body_images": [],
-      "embeds": [
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B07GX4RGDV&#038;linkId=2ce23f64594c335d2d63e32148fe0d80&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B0893BR34Y&#038;linkId=07c918409089d93b31db7ddd0cfaaa60&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B07Q3D9ZFS&#038;linkId=bbc77019caf155638943150f9166a2f1&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B09CMMLZ77&#038;linkId=92bf393df7a097ae67c0c69d795e4028&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        },
-        {
-          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_br_asin_til&#038;t=happinesea0f-22&#038;m=amazon&#038;o=9&#038;p=8&#038;l=as1&#038;IS1=1&#038;detail=1&#038;asins=B09P1M7V4J&#038;linkId=b81c371a4b28247427957c8e72a9f262&#038;bc1=ffffff&amp;lt1=_top&#038;fc1=333333&#038;lc1=0066c0&#038;bg1=ffffff&#038;f=ifr",
-          "host": "rcm-fe.amazon-adsystem.com",
-          "classification": "C"
-        }
-      ],
+      "embeds": [],
       "shortcodes": [],
       "script_count": 0,
       "unresolved_links": 0,
-      "content_type": null,
-      "route": null,
+      "content_type": "insight",
+      "route": "/insights/%e5%86%ac%e4%bc%91%e3%81%bf%e3%81%ab%e9%81%8a%e3%81%b3%e3%81%9f%e3%81%84%e3%80%8crc%e3%80%8d5%e9%81%b8/",
       "readiness": {
-        "status": "BLOCKED",
-        "reasons": [
-          "legacy script or advertising embed",
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "Five Amazon-only product advertisements have no verified ordinary source links; ad host DNS fails. Product-name/ASIN-derived substitution is prohibited."
-        ],
-        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
+        "status": "READY",
+        "reasons": [],
+        "decision": "TRANSFORM_AND_MIGRATE"
       }
     },
     {
@@ -2403,14 +2342,11 @@
       "content_type": null,
       "route": null,
       "readiness": {
-        "status": "BLOCKED",
+        "status": "DEFERRED",
         "reasons": [
-          "unsupported iframe",
-          "content mapping not approved",
-          "featured image alt not reviewed",
-          "Source relocation target /minipix-manual-multicopter returns HTTP 404. No verified equivalent content for that historical target; similarly named current manual is not substituted."
+          "Owner confirmed an unfinished Mini Pix multicopter manual concept. Rebuild a formal manual later; no inferred redirect to a different manual."
         ],
-        "decision": "BLOCKED_WITH_EXPLICIT_REASON"
+        "decision": "DEFER_TO_MANUAL_REBUILD"
       }
     },
     {

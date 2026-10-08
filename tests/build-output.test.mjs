@@ -392,7 +392,7 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 87);
+  assert.equal((html.match(/<article class=/g) ?? []).length, 90);
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,
