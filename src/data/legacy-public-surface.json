@@ -2,7 +2,7 @@
   "version": "0.1",
   "observed_at": "2026-10-04T16:11:03.375Z",
   "source_origin": "https://happinesea.com",
-  "baseline_commit": "e5a75f1c19e99e844d3e8f7a70b8b87068c9654d",
+  "baseline_commit": "e3a45df08fe06f827ceecd67c5f15f50516fda58",
   "discovery": {
     "posts": 97,
     "pages": 22,
@@ -55,16 +55,16 @@
       "page": 141,
       "post": 92
     },
-    "preserved_routes": 223,
+    "preserved_routes": 227,
     "redirect_required": 0,
-    "blocked": 15,
+    "blocked": 11,
     "old_domain_only_assets": 621,
     "broken_links": 4,
     "missing_downloads": 0,
     "unverified": 1071,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1152,
+    "unresolved_surfaces": 1148,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -3060,18 +3060,20 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/experience/202112281857.html",
       "canonical": "https://happinesea.com/experience/202112281857.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: 冬休みに遊びたい「RC」5選",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed",
-        "Phase 6 final decision: Five Amazon-only product advertisements have no verified ordinary source links; ad host DNS fails. Product-name/ASIN-derived substitution is prohibited. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+        "Owner approval 2026-10-09: remove exactly five reviewed Amazon advertising iframes; publish unchanged article text and image. Literal and source hashes remain fail-closed.",
+        "Exact legacy HTML verified: /experience/202112281857.html; byte-identical to /insights/%e5%86%ac%e4%bc%91%e3%81%bf%e3%81%ab%e9%81%8a%e3%81%b3%e3%81%9f%e3%81%84%e3%80%8crc%e3%80%8d5%e9%81%b8/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
       "http_final_url": "https://happinesea.com/experience/202112281857.html",
-      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z",
+      "publication_route": "/insights/%e5%86%ac%e4%bc%91%e3%81%bf%e3%81%ab%e9%81%8a%e3%81%b3%e3%81%9f%e3%81%84%e3%80%8crc%e3%80%8d5%e9%81%b8/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/experience/202112281857.html/attachment/41-8dfaojul-_ac_",
@@ -4671,9 +4673,9 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202203221895.html",
       "canonical": "https://happinesea.com/news/202203221895.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2022/03/202203221.png",
@@ -4693,11 +4695,13 @@
       ],
       "notes": [
         "Source title: 極超音速ミサイルの仕組みと特徴",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed; body image alt not reviewed",
-        "Phase 6 final decision: Amazon DF-17 search scripts have no source ordinary search/product URL; ad host DNS fails. Safe equivalent requires owner-provided source or explicit removal approval. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+        "Owner approval 2026-10-09: remove exactly two reviewed Amazon search advertising scripts; publish unchanged article text and images. Literal and source hashes remain fail-closed.",
+        "Exact legacy HTML verified: /news/202203221895.html; byte-identical to /insights/%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e7%89%b9%e5%be%b4/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
       "http_final_url": "https://happinesea.com/news/202203221895.html",
-      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z",
+      "publication_route": "/insights/%e6%a5%b5%e8%b6%85%e9%9f%b3%e9%80%9f%e3%83%9f%e3%82%b5%e3%82%a4%e3%83%ab%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e7%89%b9%e5%be%b4/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202203221895.html/attachment/190110_railgun-w1280",
@@ -4946,18 +4950,20 @@
         "rendered https://happinesea.com/radiolink",
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html"
       ],
-      "target_route": null,
+      "target_route": "/news/202203311998.html",
       "canonical": "https://happinesea.com/news/202203311998.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: エイプリルフール 限定無料 キャンペーン ?!",
-        "Article readiness NEEDS_TRANSFORM: legacy script or advertising embed; content mapping not approved; featured image alt not reviewed",
-        "Phase 6 final decision: Three Amazon-only manual advertisements; no verified ordinary URL for B09GYM5NCC. ASIN-derived links and removal are not approved. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+        "Owner approval 2026-10-09: remove exactly three reviewed Amazon advertising iframes; publish unchanged article text and image. Literal and source hashes remain fail-closed.",
+        "Exact legacy HTML verified: /news/202203311998.html; byte-identical to /insights/%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab-%e9%99%90%e5%ae%9a%e7%84%a1%e6%96%99-%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/, canonical retained, no redirect. Source HTTP status is a separate observation."
       ],
       "http_final_url": "https://happinesea.com/news/202203311998.html",
-      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z",
+      "publication_route": "/insights/%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab-%e9%99%90%e5%ae%9a%e7%84%a1%e6%96%99-%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/news/202203311998.html/attachment/sp_i_serialization_cp_01_r",
@@ -7744,18 +7750,19 @@
         "frontend src/data/wordpress-insight-inventory.json",
         "sitemap https://happinesea.com/post-sitemap.xml"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-support/minipix-manual/20200511905.html",
       "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
         "Source title: Radiolink Mini Pix取扱説明書―マルチコプター編",
-        "Article readiness BLOCKED: unsupported iframe; content mapping not approved; featured image alt not reviewed",
-        "Phase 6 final decision: Source relocation target /minipix-manual-multicopter returns HTTP 404. No verified equivalent content for that historical target; similarly named current manual is not substituted. Owner decision: true Cutover impact: Exact article URL cannot be published safely; domain cutover remains closed."
+        "Owner approved exact static noindex manual-rebuild notice. This is not a migrated manual; no inferred redirect."
       ],
       "http_final_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
-      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z"
+      "phase6_reviewed_at": "2026-10-07T22:55:39.428Z",
+      "article_disposition": "DEFER_TO_MANUAL_REBUILD",
+      "publication_kind": "manual_rebuild_notice"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html/attachment/snapcrab_noname_2020-5-11_14-40-32_no-00",
@@ -23900,15 +23907,17 @@
       "content_type_header": "image/png"
     }
   ],
-  "reconciled_at": "2026-10-08T02:04:23.990Z",
+  "reconciled_at": "2026-10-08T21:58:48.271Z",
   "migration": {
-    "migrated_articles": 92,
-    "insight_articles": 87,
+    "insight_articles": 90,
     "drawing_articles": 5,
-    "exact_legacy_html_routes": 92
+    "migrated_articles": 95,
+    "exact_legacy_html_routes": 95,
+    "withdrawn_articles": 1,
+    "deferred_articles": 1
   },
   "compatibility": {
-    "verified_pages": 70,
+    "verified_pages": 71,
     "drawing_ids": [1716, 1726, 1734, 1742, 1891],
     "verified_unique_asset_paths": 60,
     "blocked": 4,

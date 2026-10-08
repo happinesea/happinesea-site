@@ -201,10 +201,12 @@ for (const key of ['id', 'slug', 'canonical']) {
 }
 
 const statusCounts = Object.fromEntries(
-  ['READY', 'NEEDS_REVIEW', 'NEEDS_TRANSFORM', 'BLOCKED'].map((status) => [
-    status,
-    articles.filter(({ readiness }) => readiness.status === status).length,
-  ]),
+  ['READY', 'NEEDS_REVIEW', 'NEEDS_TRANSFORM', 'BLOCKED', 'DEFERRED'].map(
+    (status) => [
+      status,
+      articles.filter(({ readiness }) => readiness.status === status).length,
+    ],
+  ),
 );
 const output = {
   source_endpoint: endpoint,

@@ -93,6 +93,15 @@ export function resolveInventoryDecision(post, readiness, decision) {
     throw new Error('publication decision drift');
   reviewedArticleHtml(post.content?.rendered, decision);
   if (
+    decision.decision === 'DEFER_TO_MANUAL_REBUILD' &&
+    decision.reason?.trim()
+  )
+    return {
+      status: 'DEFERRED',
+      reasons: [decision.reason],
+      decision: decision.decision,
+    };
+  if (
     decision.decision === 'BLOCKED_WITH_EXPLICIT_REASON' &&
     decision.reason?.trim()
   )

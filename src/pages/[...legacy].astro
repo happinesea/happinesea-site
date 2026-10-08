@@ -45,6 +45,7 @@ const content = page.content_html.replaceAll(
   title={page.title}
   description={page.title}
   canonicalUrlOverride={page.canonical}
+  robots={page.noindex ? 'noindex,follow' : undefined}
 >
   <article class="mx-auto max-w-4xl px-5 py-6 [overflow-wrap:anywhere] lg:px-8">
     <Breadcrumbs
