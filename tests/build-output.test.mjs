@@ -1,9 +1,23 @@
 import assert from 'node:assert/strict';
-import { access, readFile } from 'node:fs/promises';
+import { access, readFile, readdir } from 'node:fs/promises';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
+
+test('CMS endpoint is absent from public HTML and browser JavaScript', async () => {
+  const dist = fileURLToPath(new URL('../dist/', import.meta.url));
+  for (const path of await readdir(dist, { recursive: true })) {
+    if (!/\.(?:html|js)$/.test(path)) continue;
+    assert.doesNotMatch(
+      await readFile(join(dist, path), 'utf8'),
+      /cms\.happinesea\.com/i,
+      path,
+    );
+  }
+});
 
 test('localized article body images include the Pages base on all article and linked compatibility routes', async () => {
   const articles = JSON.parse(

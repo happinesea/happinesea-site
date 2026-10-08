@@ -24,6 +24,7 @@ const manifest = JSON.parse(
     'utf8',
   ),
 );
+const endpoint = process.env.WORDPRESS_API_URL ?? manifest.source_endpoint;
 const articleInventory = JSON.parse(
   await readFile(
     join(root, 'src/data/wordpress-insight-inventory.json'),
@@ -60,7 +61,7 @@ async function paged(type, fields) {
   let total = 0,
     pages = 1;
   for (let page = 1; page <= pages; page++) {
-    const url = new URL(`/wp-json/wp/v2/${type}`, origin);
+    const url = new URL(type, endpoint);
     url.searchParams.set('per_page', '100');
     url.searchParams.set('page', String(page));
     url.searchParams.set('_fields', fields);
