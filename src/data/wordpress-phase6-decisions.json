@@ -165,10 +165,12 @@
     },
     {
       "id": 1627,
-      "decision": "BLOCKED_WITH_EXPLICIT_REASON",
-      "reason": "A source body image has neither src nor attachment identity. Advertisement identity can be resolved, but the missing image cannot be restored or removed without owner decision.",
-      "owner_decision_needed": true,
-      "cutover_impact": "Exact article URL cannot be published safely; domain cutover remains closed.",
+      "decision": "OWNER_APPROVED_REMOVAL",
+      "reason": "Owner approved retirement of the entire unfinished, unneeded article; no body preservation, image restoration or migration.",
+      "owner_decision_needed": false,
+      "approved_at": "2026-10-09",
+      "legacy_disposition": "HTTP_404_NO_REDIRECT",
+      "cutover_impact": "Approved disappearance of this article URL; existing static 404, no inferred redirect. Other cutover blockers remain.",
       "source_url": "https://happinesea.com/experience/202107081627.html",
       "slug": "%e3%82%bf%e3%83%9f%e3%83%a4-1-350%e3%83%89%e3%82%a4%e3%83%84%e6%b5%b7%e8%bb%8d-%e3%83%93%e3%82%b9%e3%83%9e%e3%83%ab%e3%82%af%e7%b4%9a%e6%88%a6%e8%89%a6-%e3%83%86%e3%83%ab%e3%83%94%e3%83%83%e3%83%84-2",
       "source_content_sha256": "76b1178b510c82ab7269421b252794ce6447c8fc8f9d9f2a9ff295c9d4cf5dba"

@@ -13,8 +13,10 @@ test('every remaining source has a final evidence-bound decision and only approv
   assert.equal(review.articles.length, 34);
   assert.equal(new Set(review.articles.map((x) => x.id)).size, 34);
   assert.deepEqual(
-    decisions.articles.map((x) => [x.id, x.decision]),
-    review.articles.map((x) => [x.id, x.decision]),
+    decisions.articles
+      .filter((x) => x.id !== 1627)
+      .map((x) => [x.id, x.decision]),
+    review.articles.filter((x) => x.id !== 1627).map((x) => [x.id, x.decision]),
   );
   for (const source of review.articles) {
     assert.equal(
@@ -112,12 +114,14 @@ test('Byme-A publishes all six exact chapter routes but does not silently publis
   );
 });
 
-test('all 97 posts are either statically migrated or explicitly blocked, including the five already-published drawings', () => {
+test('96 active posts are migrated or explicitly blocked; 1627 is owner-withdrawn', () => {
   const inventory = read('../../src/data/wordpress-insight-inventory.json');
   const compatibility = read('../../src/data/legacy-compatibility.json');
   const published = read('../../src/data/wordpress-insights.json');
   const drawings = compatibility.pages.filter((x) => x.type === 'drawing');
-  assert.equal(inventory.articles.length, 97);
+  assert.equal(inventory.articles.length, 96);
+  assert.equal(inventory.withdrawals.length, 1);
+  assert.equal(inventory.withdrawals[0].id, 1627);
   assert.equal(drawings.length, 5);
   const completed = new Set([
     ...published.map((x) => x.contract.id),
@@ -132,7 +136,7 @@ test('all 97 posts are either statically migrated or explicitly blocked, includi
   const remaining = inventory.articles.filter((x) => !completed.has(x.id));
   assert.deepEqual(
     remaining.map((x) => x.id).sort((a, b) => a - b),
-    [905, 1627, 1857, 1895, 1998],
+    [905, 1857, 1895, 1998],
   );
   for (const article of remaining) {
     assert.equal(article.readiness.status, 'BLOCKED');
