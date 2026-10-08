@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-08T02:39:46.180Z",
+  "records": [
+    {
+      "url": "https://happinesea.github.io/happinesea-site/robots.txt",
+      "observed_at": "2026-10-08T02:39:45.601Z",
+      "status": 200,
+      "sha256": "fea93794e50f97049ff4b2c4172c1be4bf2455286a5fb1013c49917e4c135f0c",
+      "robots_text": "User-agent: *\nAllow: /\nSitemap: https://happinesea.github.io/happinesea-site/sitemap-index.xml\n",
+      "loc_count": 0,
+      "availability_in_sitemap": false,
+      "meta_robots": [],
+      "canonical": []
+    },
+    {
+      "url": "https://happinesea.github.io/happinesea-site/sitemap-index.xml",
+      "observed_at": "2026-10-08T02:39:45.797Z",
+      "status": 200,
+      "sha256": "defaddfb313a200a820ba289e0f0c6e9328c12ea7c5f32c18123955376fbb85b",
+      "robots_text": null,
+      "loc_count": 1,
+      "availability_in_sitemap": false,
+      "meta_robots": [],
+      "canonical": []
+    },
+    {
+      "url": "https://happinesea.github.io/happinesea-site/sitemap-0.xml",
+      "observed_at": "2026-10-08T02:39:45.995Z",
+      "status": 200,
+      "sha256": "df2e7d07d8b3f847931a8e62e17755f35ddc99f4dd8f5d36df1f0eba2d2f1d50",
+      "robots_text": null,
+      "loc_count": 175,
+      "availability_in_sitemap": true,
+      "meta_robots": [],
+      "canonical": []
+    },
+    {
+      "url": "https://happinesea.github.io/happinesea-site/insights/aircraft-engine-stop/",
+      "observed_at": "2026-10-08T02:39:46.180Z",
+      "status": 200,
+      "sha256": "a2d18cc42154fd62439aee62bd95098cd8be32a24f7d71cb87abd73402556b5f",
+      "robots_text": null,
+      "loc_count": 0,
+      "availability_in_sitemap": true,
+      "meta_robots": [],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://happinesea.github.io/happinesea-site/insights/aircraft-engine-stop/\">"
+      ]
+    }
+  ]
+}

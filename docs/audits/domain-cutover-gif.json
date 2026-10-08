@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-10-08T02:31:19.186Z",
+  "observations": [
+    {
+      "url": "https://happinesea.github.io/happinesea-site/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "received_bytes": 59038,
+      "sha256": "949525884a8dc562fe0ca3864a1d165b781dc1fddec3e56ecb08fc8027475854",
+      "expected_sha256": "949525884a8dc562fe0ca3864a1d165b781dc1fddec3e56ecb08fc8027475854",
+      "bytes_match": true,
+      "width": 607,
+      "height": 368,
+      "frames": 1,
+      "decode": "PASS"
+    },
+    {
+      "url": "https://happinesea.github.io/happinesea-site/wp-content/uploads/2020/11/3100755.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "received_bytes": 241554,
+      "sha256": "06534a96a20f1747025da96776f7da65c73ea3aa14e4b18e30c23b71b4ab54f1",
+      "expected_sha256": "06534a96a20f1747025da96776f7da65c73ea3aa14e4b18e30c23b71b4ab54f1",
+      "bytes_match": true,
+      "width": 1920,
+      "height": 780,
+      "frames": 32,
+      "decode": "PASS"
+    }
+  ]
+}
