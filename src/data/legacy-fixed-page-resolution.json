@@ -88,7 +88,7 @@
       "previous_classification": "BLOCKED",
       "disposition": "BLOCKED",
       "cutover_blocker": true,
-      "reason": "BLOCKED: six real chapter links are retained in source evidence; all are HTTP 200, but these articles are not yet statically migrated. The first news path redirects to a support path. Amazon iframe B09GYM5NCC is unreachable and no ordinary product link could be independently confirmed; no ASIN-derived URL is invented and no iframe is silently removed.",
+      "reason": "BLOCKED: all six Byme-A chapters now have exact static legacy aliases, including the first news-path variant. Amazon iframe B09GYM5NCC still has no independently confirmed ordinary product link; no ASIN-derived URL or silent removal is permitted.",
       "target_route": null,
       "redirect_approved": false,
       "removal_approved": false,
@@ -96,7 +96,7 @@
       "equivalence": {
         "result": "NO_EQUIVALENT_ASTRO_MANUAL",
         "existing_route": null,
-        "gap": "Keep the Byme-A chapter index and cover. Amazon iframe ASIN B09GYM5NCC requires an independently confirmed ordinary product link; iframe request failed. Six legacy chapter links remain outside this page scope. Do not replace with the RC8X-only manual index."
+        "gap": "The six original chapter destinations are statically preserved. The parent index/cover and its Amazon section must remain unpublished until an exact ordinary product link or explicit owner-approved alternative is established; the RC8X manual index is not an equivalent replacement."
       },
       "image_sources": [
         "https://happinesea.com/wp-content/uploads/2021/09/book.jpg"
@@ -114,42 +114,42 @@
           "http_status": 200,
           "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
           "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
-          "local_route_status": "UNMIGRATED_DEPENDENCY"
+          "local_route_status": "EXACT_STATIC_VERIFIED"
         },
         {
           "source_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
           "http_status": 200,
           "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
           "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
-          "local_route_status": "UNMIGRATED_DEPENDENCY"
+          "local_route_status": "EXACT_STATIC_VERIFIED"
         },
         {
           "source_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
           "http_status": 200,
           "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
           "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
-          "local_route_status": "UNMIGRATED_DEPENDENCY"
+          "local_route_status": "EXACT_STATIC_VERIFIED"
         },
         {
           "source_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
           "http_status": 200,
           "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
           "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
-          "local_route_status": "UNMIGRATED_DEPENDENCY"
+          "local_route_status": "EXACT_STATIC_VERIFIED"
         },
         {
           "source_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
           "http_status": 200,
           "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
           "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
-          "local_route_status": "UNMIGRATED_DEPENDENCY"
+          "local_route_status": "EXACT_STATIC_VERIFIED"
         },
         {
           "source_url": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
           "http_status": 200,
           "final_url": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
           "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
-          "local_route_status": "UNMIGRATED_DEPENDENCY"
+          "local_route_status": "EXACT_STATIC_VERIFIED"
         }
       ],
       "follow_up_dependencies": [
@@ -222,7 +222,8 @@
           "bytes": 197190,
           "sha256": "4733eac6fac33a6ef31f61b89b07303917cbe3a91745007e131d3cfca631d8ed"
         }
-      ]
+      ],
+      "phase6_reassessed_at": "2026-10-08T02:01:55.220Z"
     },
     {
       "id": 1405,

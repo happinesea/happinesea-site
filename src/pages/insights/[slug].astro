@@ -107,8 +107,8 @@ const description = isPublished
           {isWordpress ? (
             <Fragment
               set:html={wordpressData!.content_html.replaceAll(
-                /\bsrc="(\/assets\/insights\/wordpress\/[^"]+)"/g,
-                (_, src: string) => `src="${withBase(src)}"`,
+                /\b(href|src)="(\/(?:assets\/insights\/wordpress|downloads|wp-content)\/[^"]+)"/g,
+                (_, attr: string, src: string) => `${attr}="${withBase(src)}"`,
               )}
             />
           ) : (
