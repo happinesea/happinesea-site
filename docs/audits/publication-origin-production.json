@@ -1,7 +1,7 @@
 {
   "mode": "production",
-  "observed_at": "2026-10-09T13:05:38.905Z",
-  "evidence_scope": "local/staging HTTP; no production deployment",
+  "observed_at": "2026-10-09T13:56:36.332Z",
+  "evidence_scope": "deployed production HTTP compared to artifact",
   "public_base": "https://happinesea.com/",
   "html_count": 303,
   "canonicals_checked": 302,

@@ -10,6 +10,8 @@ const snapshot = JSON.parse(
 const files = JSON.parse(
   readFileSync('src/data/static-downloads.json', 'utf8'),
 ).files;
+const publicationBase =
+  process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
 const targets = [
   ...data.aliases.map((a: { target_route: string; canonical: string }) => ({
     route: a.target_route,
@@ -65,7 +67,7 @@ for (const target of targets) {
       if (url.hostname === 'happinesea.com') {
         const local =
           new URL(page.url()).origin +
-          '/happinesea-site' +
+          publicationBase +
           url.pathname +
           url.search;
         expect((await request.get(local)).status(), href).toBe(200);

@@ -2,6 +2,8 @@ import { test, expect } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import inventory from '../../src/data/static-downloads.json' with { type: 'json' };
 import legacy from '../../src/data/legacy-compatibility.json' with { type: 'json' };
+const publicationBase =
+  process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
 
 test('Radiolink hub keeps catalogue and has working information entrances', async ({
   page,
@@ -75,7 +77,7 @@ test('downloads are exact static bytes and query pages remain navigable without 
     for (const link of await links.all()) {
       await expect(link).toHaveAttribute(
         'href',
-        `/happinesea-site${file!.target_route}`,
+        `${publicationBase}${file!.target_route}`,
       );
     }
     expect(new URL(page.url()).searchParams.get('wpdmdl')).toBe(
