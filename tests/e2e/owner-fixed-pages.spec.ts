@@ -40,8 +40,16 @@ test('privacy policy retains every formal paragraph with conditional supplements
       .every((text, i) => text === baseline[i]);
   }, source.privacy_policy.content_html);
   expect(retained).toBe(true);
+  const production = process.env.PUBLICATION_MODE === 'production';
   await expect(page.locator('[data-legacy-body]')).toContainText(
-    '現在導入していません',
+    production && process.env.ANALYTICS_ENABLED === 'true'
+      ? 'Google Analytics 4を利用しています'
+      : 'Google Analytics 4によるアクセス解析を行っていません',
+  );
+  await expect(page.locator('[data-legacy-body]')).toContainText(
+    production && process.env.ADSENSE_ENABLED === 'true'
+      ? 'Google AdSenseを利用しています'
+      : 'Google AdSenseによる広告配信を行っていません',
   );
   expect(
     await page

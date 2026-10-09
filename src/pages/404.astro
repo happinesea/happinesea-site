@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { SITE_NAME } from '../lib/site';
+import GoogleServices from '../components/GoogleServices.astro';
 
 const home = import.meta.env.BASE_URL;
 ---
@@ -12,6 +13,7 @@ const home = import.meta.env.BASE_URL;
     <meta name="viewport" content="width=device-width" />
     <meta name="robots" content="noindex" />
     <title>ページが見つかりません | {SITE_NAME}</title>
+    <GoogleServices />
   </head>
   <body class="grid min-h-screen place-items-center bg-slate-50 px-6 text-slate-800">
     <main class="max-w-xl text-center">

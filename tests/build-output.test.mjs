@@ -7,6 +7,43 @@ import test from 'node:test';
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 
+test('every public page receives exactly one enabled Google bootstrap, including Starlight and legacy aliases', async () => {
+  const dist = fileURLToPath(new URL('../dist/', import.meta.url));
+  const production = process.env.PUBLICATION_MODE === 'production';
+  const analytics = production && process.env.ANALYTICS_ENABLED === 'true';
+  const adsense = production && process.env.ADSENSE_ENABLED === 'true';
+  for (const path of await readdir(dist, { recursive: true })) {
+    if (!path.endsWith('.html')) continue;
+    const html = await readFile(join(dist, path), 'utf8');
+    assert.equal(
+      html.split('G-R5SC3Z7WHL').length - 1,
+      Number(analytics),
+      path,
+    );
+    assert.equal(
+      html.split('ca-pub-9916217226323909').length - 1,
+      Number(adsense),
+      path,
+    );
+    assert.equal(
+      (html.match(/<script\b[^>]*data-google-publication/g) ?? []).length,
+      Number(analytics || adsense),
+      path,
+    );
+    assert.doesNotMatch(
+      html,
+      /<script\b[^>]*src="https:\/\/(?:www\.googletagmanager|pagead2\.googlesyndication)\.com/,
+      path,
+    );
+    if (!analytics && !adsense)
+      assert.doesNotMatch(
+        html,
+        /googletagmanager|pagead2\.googlesyndication/,
+        path,
+      );
+  }
+});
+
 test('CMS endpoint is absent from public HTML and browser JavaScript', async () => {
   const dist = fileURLToPath(new URL('../dist/', import.meta.url));
   for (const path of await readdir(dist, { recursive: true })) {
@@ -264,10 +301,8 @@ test('RC8X product page follows the official product flow without commercial cla
   assert.doesNotMatch(html, />情報源</);
   assert.doesNotMatch(html, /"@type":"(?:Offer|AggregateRating)"/);
   assert.doesNotMatch(html, /"offers"|"aggregateRating"/);
-  assert.doesNotMatch(
-    html,
-    /pagead2\.googlesyndication|data-ad-client|data-ad-slot/,
-  );
+  assert.doesNotMatch(html, /data-ad-client|data-ad-slot/);
+  // Auto Ads may load in the head; manual ad slots remain prohibited.
 });
 
 for (const product of [

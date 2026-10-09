@@ -1,6 +1,7 @@
 ---
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import GoogleServices from '../components/GoogleServices.astro';
 import { SITE_DESCRIPTION, SITE_NAME } from '../lib/site';
 import { canonicalUrl } from '../lib/urls';
 import '../styles/global.css';
@@ -36,8 +37,6 @@ if (new URL(canonical).protocol !== 'https:') {
 }
 const pageTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
 const ogImage = image ? canonicalUrl(image, Astro.site) : undefined;
-const adsenseClientId = import.meta.env.PUBLIC_ADSENSE_CLIENT_ID;
-const loadAdsense = /^ca-pub-\d+$/.test(adsenseClientId ?? '');
 const encodedJsonLd = jsonLd
   ? JSON.stringify(jsonLd).replaceAll('<', '\\u003c').replaceAll('>', '\\u003e')
   : undefined;
@@ -68,13 +67,7 @@ const encodedJsonLd = jsonLd
     {encodedJsonLd && (
       <script type="application/ld+json" set:html={encodedJsonLd} />
     )}
-    {loadAdsense && (
-      <script
-        async
-        crossorigin="anonymous"
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
-      />
-    )}
+    <GoogleServices />
     <slot name="head" />
   </head>
   <body class="min-h-screen bg-white text-slate-800 antialiased">
