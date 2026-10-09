@@ -1,5 +1,7 @@
 # Publication origin preparation
 
+Owner execution order, Actions selector design, live-verification prerequisites and rollback are documented in [Domain Cutover runbook](domain-cutover-runbook.md). Neither document authorizes execution.
+
 Default/unset `PUBLICATION_MODE` and explicit `staging` retain `site=https://happinesea.github.io`, `base=/happinesea-site`. Only explicit `PUBLICATION_MODE=production` uses `site=https://happinesea.com`, `base=/`. Unknown values fail closed.
 
 Set the variable in the **build process environment**, not a browser/public runtime variable or a `.env` file. This PR does not alter Actions, Pages settings, CNAME, DNS or actual deployment. Merging it alone leaves current staging deployment unchanged.
