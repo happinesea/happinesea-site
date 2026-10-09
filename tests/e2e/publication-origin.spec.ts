@@ -23,6 +23,12 @@ for (const route of [
   }, info) => {
     const errors: string[] = [];
     const cms: string[] = [];
+    // Never send real Analytics/advertising traffic during deployed-browser QA.
+    await page.route(
+      /googletagmanager\.com|google-analytics\.com|googlesyndication\.com|doubleclick\.net/,
+      (route) =>
+        route.fulfill({ contentType: 'application/javascript', body: '' }),
+    );
     page.on('pageerror', (e) => errors.push(e.message));
     page.on('console', (m) => {
       if (m.type() === 'error') errors.push(m.text());

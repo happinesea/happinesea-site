@@ -36,6 +36,7 @@ export default defineConfig({
       ],
       customCss: ['./src/styles/global.css', './src/styles/starlight.css'],
       components: {
+        Head: './src/components/manuals/Head.astro',
         SiteTitle: './src/components/manuals/SiteTitle.astro',
       },
     }),

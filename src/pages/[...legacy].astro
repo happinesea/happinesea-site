@@ -7,6 +7,10 @@ import { withBase } from '../lib/urls';
 import downloads from '../data/static-downloads.json';
 import cutover from '../data/cutover-compatibility.json';
 import { applyApprovedLinkEdits } from '../../scripts/lib/legacy-compatibility.mjs';
+import {
+  googleServiceFlags,
+  updateGooglePrivacy,
+} from '../lib/google-services.mjs';
 
 export function getStaticPaths() {
   return snapshot.pages.map((page) => ({
@@ -32,7 +36,12 @@ const knownRoutes = new Set([
   ...downloads.files.map((item) => item.target_route),
 ]);
 const content = applyApprovedLinkEdits(
-  page.content_html,
+  page.id === 3
+    ? updateGooglePrivacy(
+        page.content_html,
+        googleServiceFlags(import.meta.env.DEV ? {} : process.env),
+      )
+    : page.content_html,
   page.target_route,
   cutover.link_edits,
 ).replaceAll(

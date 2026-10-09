@@ -1,0 +1,20 @@
+---
+import {
+  googleServiceFlags,
+  startGoogleService,
+} from '../lib/google-services.mjs';
+const flags = googleServiceFlags(import.meta.env.DEV ? {} : process.env);
+const bootstrap = startGoogleService.toString();
+const calls = [
+  flags.analytics ? "start('G-R5SC3Z7WHL', 'analytics');" : '',
+  flags.adsense ? "start('ca-pub-9916217226323909', 'adsense');" : '',
+].join('\n');
+---
+
+{(flags.analytics || flags.adsense) && (
+  <script
+    is:inline
+    data-google-publication
+    set:html={`{ const start = (${bootstrap}); ${calls} }`}
+  />
+)}

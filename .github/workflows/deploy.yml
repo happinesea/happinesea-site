@@ -61,6 +61,8 @@ jobs:
     if: always() && needs.check.result == 'success' && (needs.approve-production.result == 'success' || needs.approve-production.result == 'skipped')
     env:
       PUBLICATION_MODE: ${{ needs.check.outputs.mode }}
+      ANALYTICS_ENABLED: ${{ vars.ANALYTICS_ENABLED }}
+      ADSENSE_ENABLED: ${{ vars.ADSENSE_ENABLED }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -81,6 +83,8 @@ jobs:
         run: node scripts/publication-deployment.mjs guard
       - name: Build selected static publication
         run: npm run build
+      - name: Verify production-only Google service gates in all HTML
+        run: node --test --test-name-pattern="every public page receives" tests/build-output.test.mjs
       - name: Verify artifact origin, routes, assets and download hashes
         env:
           E2E_BASE_URL: ${{ needs.check.outputs.mode == 'production' && 'http://127.0.0.1:4343/' || 'http://127.0.0.1:4343/happinesea-site/' }}
