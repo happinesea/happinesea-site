@@ -3,9 +3,14 @@ import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 
+const publicationMode = process.env.PUBLICATION_MODE || 'staging';
+if (!['staging', 'production'].includes(publicationMode))
+  throw new TypeError(`Unknown PUBLICATION_MODE: ${publicationMode}`);
+const production = publicationMode === 'production';
+
 export default defineConfig({
-  site: 'https://happinesea.github.io',
-  base: '/happinesea-site',
+  site: production ? 'https://happinesea.com' : 'https://happinesea.github.io',
+  base: production ? '/' : '/happinesea-site',
   output: 'static',
   trailingSlash: 'always',
   integrations: [
