@@ -672,9 +672,31 @@ export async function fetchPublishedPosts(endpoint, ids, fetchImpl = fetch) {
   return posts;
 }
 
-export async function fetchImage(url, fetchImpl = fetch) {
+export function resolveBuildTimeSourceUrl(sourceUrl) {
+  const url = new URL(sourceUrl);
+  if (
+    url.origin !== 'https://happinesea.com' ||
+    !url.pathname.startsWith('/wp-content/uploads/') ||
+    url.username ||
+    url.password
+  )
+    return sourceUrl;
+  url.hostname = 'cms.happinesea.com';
+  return url.href;
+}
+
+export function assertBuildTimeSourceHash(sourceUrl, bytes, expectedHash) {
+  if (resolveBuildTimeSourceUrl(sourceUrl) === sourceUrl) return;
+  if (
+    !/^[a-f0-9]{64}$/.test(expectedHash ?? '') ||
+    createHash('sha256').update(bytes).digest('hex') !== expectedHash
+  )
+    throw new Error(`source asset hash missing or changed: ${sourceUrl}`);
+}
+
+export async function fetchImage(url, fetchImpl = fetch, expectedHash) {
   const response = await fetchWithRetry(
-    url,
+    resolveBuildTimeSourceUrl(url),
     { headers: { accept: 'image/*', 'user-agent': 'happinesea-build/0.1' } },
     fetchImpl,
   );
@@ -687,7 +709,9 @@ export async function fetchImage(url, fetchImpl = fetch) {
       `invalid image content type ${contentType ?? '(missing)'}: ${url}`,
     );
   }
-  return { contentType, bytes: Buffer.from(await response.arrayBuffer()) };
+  const bytes = Buffer.from(await response.arrayBuffer());
+  assertBuildTimeSourceHash(url, bytes, expectedHash);
+  return { contentType, bytes };
 }
 
 export { YOUTUBE_HOSTS };

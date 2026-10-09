@@ -37,9 +37,21 @@ const schema = JSON.parse(
 const assetDir = join(root, 'public/assets/insights/wordpress');
 const sourceEndpoint =
   process.env.WORDPRESS_API_URL ?? manifest.source_endpoint;
+const previousArticles = JSON.parse(await readFile(dataPath, 'utf8'));
+const previousSourceHashes = new Map(
+  previousArticles.flatMap((article) =>
+    [...article.body_assets, ...(article.hero ? [article.hero] : [])].map(
+      (asset) => [asset.source_url, asset.sha256],
+    ),
+  ),
+);
 
 async function downloadAsset(url, prefix) {
-  const { contentType, bytes: source } = await fetchImage(url);
+  const { contentType, bytes: source } = await fetchImage(
+    url,
+    undefined,
+    previousSourceHashes.get(url),
+  );
   const metadata = await sharp(source, { animated: true }).metadata();
   if (!metadata.width || !metadata.height)
     throw new Error(`image decode failed: ${url}`);
@@ -112,10 +124,6 @@ for (const mapping of activeMappings)
   );
 
 await mkdir(assetDir, { recursive: true });
-for (const name of await readdir(assetDir)) {
-  if (/^\d+(?:-body-\d+)?-[a-f0-9]{12}\.(?:gif|webp)$/.test(name))
-    await unlink(join(assetDir, name));
-}
 
 const articles = [];
 for (const mapping of activeMappings) {
@@ -163,6 +171,21 @@ for (const article of articles) {
 }
 
 await writeJson(dataPath, output);
+// Keep the previous assets until every source hash and publication gate passes.
+const retainedAssets = new Set(
+  output.flatMap((article) =>
+    [...article.body_assets, ...(article.hero ? [article.hero] : [])].map(
+      (asset) => asset.src.split('/').at(-1),
+    ),
+  ),
+);
+for (const name of await readdir(assetDir)) {
+  if (
+    /^\d+(?:-body-\d+)?-[a-f0-9]{12}\.(?:gif|webp)$/.test(name) &&
+    !retainedAssets.has(name)
+  )
+    await unlink(join(assetDir, name));
+}
 await writeJson(reportPath, {
   contract_version: manifest.contract_version,
   source_endpoint: sourceEndpoint,
