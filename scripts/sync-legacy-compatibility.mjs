@@ -14,6 +14,8 @@ import {
   extractRemoteArticleImages,
   fetchJson,
   fetchWithRetry,
+  resolveBuildTimeSourceUrl,
+  assertBuildTimeSourceHash,
   htmlText,
 } from './lib/wordpress-publication.mjs';
 import { publicUrls } from './lib/legacy-public-surface.mjs';
@@ -87,8 +89,12 @@ async function get(url) {
       },
     };
   }
-  const response = await fetchWithRetry(url, {});
+  const response = await fetchWithRetry(resolveBuildTimeSourceUrl(url), {});
   const bytes = Buffer.from(await response.arrayBuffer());
+  const reviewed = previous.assets.find(
+    (asset) => asset.source_url === url.replace(/&refresh=[^&]+/, ''),
+  );
+  assertBuildTimeSourceHash(url, bytes, reviewed?.sha256);
   const record = {
     source_url: url.replace(/&refresh=[^&]+/, ''),
     http_status: response.status,
