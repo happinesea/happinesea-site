@@ -1,7 +1,7 @@
 {
   "mode": "staging",
-  "observed_at": "2026-10-09T04:56:50.543Z",
-  "evidence_scope": "local static HTTP; no production deployment",
+  "observed_at": "2026-10-09T05:35:17.777Z",
+  "evidence_scope": "local/staging HTTP; no production deployment",
   "public_base": "https://happinesea.github.io/happinesea-site/",
   "html_count": 303,
   "canonicals_checked": 302,
