@@ -2,6 +2,8 @@ import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
+import { sitemapSerializer } from './scripts/lib/sitemap.mjs';
+import { fileURLToPath } from 'node:url';
 
 const publicationMode = process.env.PUBLICATION_MODE || 'staging';
 if (!['staging', 'production'].includes(publicationMode))
@@ -14,7 +16,13 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   integrations: [
-    sitemap(),
+    sitemap({
+      // Aliases are finalized after Astro; the post-build gate verifies canonical targets.
+      serialize: sitemapSerializer(
+        fileURLToPath(new URL('./dist/', import.meta.url)),
+        production ? 'https://happinesea.com/' : 'https://happinesea.github.io/happinesea-site/',
+      ),
+    }),
     starlight({
       title: 'happinesea hobby マニュアル',
       disable404Route: true,

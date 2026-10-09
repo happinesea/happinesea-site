@@ -3,9 +3,40 @@ import { access, readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
+import { verifySitemap } from '../scripts/lib/sitemap.mjs';
 
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
+
+test('sitemap lists only self-canonical generated public URLs and excludes deferred/withdrawn articles', async () => {
+  const base =
+    process.env.PUBLICATION_MODE === 'production'
+      ? 'https://happinesea.com/'
+      : 'https://happinesea.github.io/happinesea-site/';
+  await verifySitemap(
+    fileURLToPath(new URL('../dist/', import.meta.url)),
+    base,
+  );
+  const xml = await route('sitemap-0.xml');
+  assert.doesNotMatch(
+    xml,
+    /202107081627\.html|20200511905\.html|cms\.happinesea\.com/,
+  );
+  if (process.env.PUBLICATION_MODE === 'production') {
+    assert.doesNotMatch(xml, /happinesea\.github\.io|\/happinesea-site\//);
+    const manifest = JSON.parse(
+      await readFile(
+        new URL('../src/data/wordpress-insight-manifest.json', import.meta.url),
+        'utf8',
+      ),
+    );
+    for (const article of manifest.articles)
+      assert(
+        xml.includes(`<loc>${article.canonical}</loc>`),
+        article.canonical,
+      );
+  }
+});
 
 test('every public page receives exactly one enabled Google bootstrap, including Starlight and legacy aliases', async () => {
   const dist = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -636,20 +667,21 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
   }
 });
 
-test('robots and sitemap stay on the standard project Pages URL', async () => {
+test('robots and sitemap use the selected publication origin', async () => {
   const robots = await route('robots.txt');
   const sitemap = await route('sitemap-index.xml');
 
   assert.match(robots, /^User-agent: \*$/m);
   assert.match(robots, /^Allow: \/$/m);
-  assert.match(
+  const base =
+    process.env.PUBLICATION_MODE === 'production'
+      ? 'https://happinesea.com/'
+      : 'https://happinesea.github.io/happinesea-site/';
+  assert.equal(
     robots,
-    /^Sitemap: https:\/\/happinesea\.github\.io\/happinesea-site\/sitemap-index\.xml$/m,
+    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\n`,
   );
-  assert.match(
-    sitemap,
-    /https:\/\/happinesea\.github\.io\/happinesea-site\/sitemap-0\.xml/,
-  );
+  assert(sitemap.includes(`<loc>${base}sitemap-0.xml</loc>`));
   await assert.rejects(access(new URL('../CNAME', import.meta.url)));
 });
 

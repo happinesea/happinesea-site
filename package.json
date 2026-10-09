@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run wordpress:sync && astro build && node scripts/copy-wordpress-aliases.mjs && node scripts/finalize-legacy-compatibility.mjs",
+    "build": "npm run wordpress:sync && astro build && node scripts/copy-wordpress-aliases.mjs && node scripts/finalize-legacy-compatibility.mjs && node scripts/verify-sitemap.mjs",
     "preview": "astro preview",
     "test": "node --test tests/unit/*.test.mjs",
     "check": "astro check",
@@ -48,6 +48,7 @@
     "prettier-plugin-astro": "1.1.0",
     "sanitize-html": "^2.18.0",
     "sharp": "0.35.5",
+    "sitemap": "9.0.1",
     "typescript": "6.0.3",
     "typescript-eslint": "8.70.1"
   }
