@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { readFile, readdir, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { format } from 'prettier';
@@ -23,6 +23,7 @@ const hash = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const load = async (path) => JSON.parse(await readFile(path, 'utf8'));
 const checks = new Set();
 const expectedHtml = new Map();
+const artifactHtml = new Map();
 const expectedCanonicals = new Map();
 for (const page of (await load('src/data/legacy-compatibility.json')).pages)
   expectedCanonicals.set(
@@ -98,6 +99,7 @@ for (const entry of await readdir(dist, { recursive: true })) {
   const page = new URL(path.replace(/index\.html$/, ''), base);
   checks.add(page.href);
   expectedHtml.set(page.href, hash(Buffer.from(text)));
+  artifactHtml.set(page.href, Buffer.from(text));
   for (const ref of references(text, page)) {
     const url = new URL(ref.url);
     if (ref.kind === 'metadata') continue;
@@ -130,12 +132,48 @@ await Promise.all(
       const url = queue[next++];
       const response = await fetch(url);
       const bytes = Buffer.from(await response.arrayBuffer());
-      if (expectedHtml.has(url))
+      if (expectedHtml.has(url)) {
+        assert.equal(response.status, 200, `deployed HTML HTTP status: ${url}`);
+        if (hash(bytes) !== expectedHtml.get(url)) {
+          const prefix = `test-results/artifact-mismatches/${hash(url)}`;
+          await mkdir('test-results/artifact-mismatches', { recursive: true });
+          await writeFile(`${prefix}.expected.html`, artifactHtml.get(url));
+          await writeFile(`${prefix}.received.html`, bytes);
+          await writeFile(
+            `${prefix}.json`,
+            JSON.stringify(
+              {
+                url,
+                observed_at: new Date().toISOString(),
+                status: response.status,
+                expected_sha256: expectedHtml.get(url),
+                received_sha256: hash(bytes),
+                headers: Object.fromEntries(
+                  [
+                    'cache-control',
+                    'etag',
+                    'last-modified',
+                    'age',
+                    'x-cache',
+                    'x-cache-hits',
+                    'x-proxy-cache',
+                    'x-served-by',
+                    'date',
+                  ].map((name) => [name, response.headers.get(name)]),
+                ),
+              },
+              null,
+              2,
+            ),
+          );
+          console.error(`Exact HTML mismatch evidence: ${prefix}`);
+        }
         assert.equal(
           hash(bytes),
           expectedHtml.get(url),
           `deployed HTML differs from artifact: ${url}`,
         );
+      }
       if (response.status !== 200)
         failures.push({ url, status: response.status });
     }

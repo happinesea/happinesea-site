@@ -160,6 +160,13 @@ jobs:
           mkdir -p dist
           tar -xf .cache/deployed-artifact/artifact.tar -C dist
           node scripts/verify-publication-origin.mjs dist
+      - name: Preserve exact HTML mismatch evidence
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: deployed-html-mismatch
+          path: test-results/artifact-mismatches/
+          if-no-files-found: warn
       - name: Capture deployed Pages in real browser
         run: npx playwright test tests/e2e/publication-origin.spec.ts --project=desktop --project=mobile
       - name: Upload browser screenshots
