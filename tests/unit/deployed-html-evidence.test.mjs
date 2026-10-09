@@ -10,13 +10,20 @@ import { createHash } from 'node:crypto';
 
 const run = promisify(execFile);
 const hash = (text) => createHash('sha256').update(text).digest('hex');
-const html = '<link rel="canonical" href="https://happinesea.com/">expected';
+const html =
+  '<html><head><link rel="canonical" href="https://happinesea.com/"></head><body>expected</body></html>';
 
 async function verify(t, { status = 200, body = html, canonical = html } = {}) {
   const dist = await mkdtemp(join(tmpdir(), 'html-evidence-test-'));
   await writeFile(join(dist, 'index.html'), canonical);
-  for (const name of ['sitemap-index.xml', 'sitemap-0.xml'])
-    await writeFile(join(dist, name), '<loc>https://happinesea.com/</loc>');
+  await writeFile(
+    join(dist, 'sitemap-index.xml'),
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://happinesea.com/sitemap-0.xml</loc></sitemap></sitemapindex>',
+  );
+  await writeFile(
+    join(dist, 'sitemap-0.xml'),
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://happinesea.com/</loc></url></urlset>',
+  );
   await writeFile(
     join(dist, 'robots.txt'),
     'User-agent: *\nAllow: /\nSitemap: https://happinesea.com/sitemap-index.xml\n',
@@ -83,7 +90,8 @@ test('download hash mismatch remains fatal', async (t) => {
 
 test('canonical origin violation remains fatal before fetching', async (t) => {
   const { failure } = await verify(t, {
-    canonical: '<link rel="canonical" href="https://wrong.example/">',
+    canonical:
+      '<html><head><link rel="canonical" href="https://wrong.example/"></head></html>',
   });
   assert.match(failure.stderr, /wrong.example/);
 });

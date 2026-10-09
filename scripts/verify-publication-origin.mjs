@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { format } from 'prettier';
 import { references } from './audit-domain-cutover.mjs';
 import { assertSafeRuntime } from './lib/publication-origin.mjs';
+import { verifySitemap } from './lib/sitemap.mjs';
 
 assert(
   ['staging', 'production', undefined, ''].includes(
@@ -112,17 +113,7 @@ for (const entry of await readdir(dist, { recursive: true })) {
       checks.add(ref.url.split('#')[0]);
   }
 }
-for (const name of ['sitemap-index.xml', 'sitemap-0.xml']) {
-  const xml = await readFile(`${dist}/${name}`, 'utf8');
-  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  assert(urls.length > 0, `empty sitemap: ${name}`);
-  for (const url of urls)
-    assert(url.startsWith(publicBase), `sitemap origin: ${url}`);
-}
-assert.equal(
-  await readFile(`${dist}/robots.txt`, 'utf8'),
-  `User-agent: *\nAllow: /\nSitemap: ${publicBase}sitemap-index.xml\n`,
-);
+await verifySitemap(dist, publicBase);
 const failures = [];
 const queue = [...checks];
 let next = 0;
