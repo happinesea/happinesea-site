@@ -55,16 +55,16 @@
       "page": 141,
       "post": 92
     },
-    "preserved_routes": 228,
+    "preserved_routes": 229,
     "redirect_required": 0,
-    "blocked": 9,
+    "blocked": 8,
     "old_domain_only_assets": 621,
     "broken_links": 4,
     "missing_downloads": 0,
     "unverified": 1071,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1146,
+    "unresolved_surfaces": 1145,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -5746,22 +5746,21 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/3"
       ],
-      "target_route": null,
+      "target_route": "/privacy-policy",
       "canonical": "https://happinesea.com/privacy-policy",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [],
       "notes": [
-        "Source title: プライバシーポリシー",
-        "Editorial classification: NEEDS_REVIEW: Legacy privacy policy describes WordPress comments/login/cookies; keep source unchanged pending owner review of applicability.",
-        "Deferred page resolution: BLOCKED. The published privacy policy states WordPress comments, login and cookies. Preserve source evidence; applicability to the static public frontend and current contact details requires owner confirmation. No legal statements are rewritten or removed."
+        "Formal legal baseline retained. Five supplementary sections only; no deletion or meaning change."
       ],
       "compatibility_class": "NEEDS_REVIEW",
       "http_observed_at": "2026-10-07T10:15:38.765Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "cutover_disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "cutover_reason": "BLOCKED: owner confirmation is required before a replacement privacy policy is public. Separate candidates for site identity, image EXIF/download guidance and external embeds from WordPress-specific comment/Gravatar/login/profile/cookie/data-retention claims, empty form/analytics/sharing sections and current contact details. No legal applicability is decided or source clause silently removed."
+      "cutover_disposition": "TRANSFORM_AND_PUBLISH",
+      "cutover_blocker": false,
+      "cutover_reason": "Authoritative policy retained verbatim with owner-approved additive applicability clarification.",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/product/202112141804.html",
@@ -23916,7 +23915,7 @@
     "deferred_articles": 1
   },
   "compatibility": {
-    "verified_pages": 72,
+    "verified_pages": 73,
     "drawing_ids": [1716, 1726, 1734, 1742, 1891],
     "verified_unique_asset_paths": 61,
     "blocked": 4,
