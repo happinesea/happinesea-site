@@ -107,22 +107,23 @@ test('preserved downloads return the actual recorded bytes', async ({
   }
 });
 
-test('known legacy download queries hand off only to their verified local file', async ({
+test('known legacy download queries show direct links without automatic handoff', async ({
   page,
   request,
 }) => {
   for (const item of snapshot.pages.filter(
     (item: { type: string }) => item.type === 'download_endpoint',
   )) {
-    // Chromium download navigations emit a request/download, not a page response.
-    const handoff = page.waitForRequest(
-      (request) =>
-        decodeURIComponent(new URL(request.url()).pathname) ===
-        `/happinesea-site${item.download_target}`,
-    );
     await page.goto(`.${item.target_route}?wpdmdl=${item.download_id}`, {
-      waitUntil: 'commit',
+      waitUntil: 'load',
     });
-    expect((await request.get((await handoff).url())).status()).toBe(200);
+    expect(new URL(page.url()).searchParams.get('wpdmdl')).toBe(
+      item.download_id,
+    );
+    const href = await page
+      .locator('a[data-download-sha256]')
+      .first()
+      .getAttribute('href');
+    expect((await request.get(href!)).status()).toBe(200);
   }
 });

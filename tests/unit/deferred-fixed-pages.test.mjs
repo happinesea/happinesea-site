@@ -73,7 +73,7 @@ test('deferred page copies retain source text, links, reviewed image bytes and c
   }
   assert.equal(
     resolution.pages.find((page) => page.id === 1160).equivalence.result,
-    'NOT_EQUIVALENT',
+    'OWNER_APPROVED_NEW_AUTHORITATIVE_LANDING',
   );
   assert.equal(
     resolution.pages.find((page) => page.id === 1160).redirect_approved,

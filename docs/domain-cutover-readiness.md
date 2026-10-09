@@ -1,5 +1,7 @@
 # Domain Cutover Readiness Gate
 
+2026-10-09追加判断：[Radiolink hub / static downloads](radiolink-static-downloads.md)では、旧landing再現不要というowner承認に基づき `/radiolink` を新しい正本の総合入口に変更した。B12のquery-to-binary互換はowner承認により不要となり、静的案内と直接downloadへ置換する。UNKNOWN 4件、RC6GS archive、root/cutover設定などは未解決。以下は過去のdeployment観測であり、このbranchのローカルQAとは区別する。Domain Cutover = NOT READY。
+
 2026-10-09追記：B04（記事1627）は記事全体の廃止・旧URLの404をownerが承認したため解決。他の15 blocker groupは未解決、Domain CutoverはNOT READY。以下のHTTP/countは当時の実deployment観測であり、[1627の現行判断](article-1627-owner-retirement.md)と区別する。
 
 ## 判定と対象

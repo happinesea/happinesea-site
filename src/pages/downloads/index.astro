@@ -1,0 +1,50 @@
+---
+import inventory from '../../data/static-downloads.json';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
+const groups = [
+  { name: 'Radiolink', prefix: '/downloads/radiolink/' },
+  { name: '設計図', prefix: '/downloads/drawings/' },
+];
+const metadata = (file: (typeof inventory.files)[number]) =>
+  [
+    file.target_route.split('.').at(-1)?.toUpperCase(),
+    file.legacy_routes[0].match(/uploads\/(\d{4}\/\d{2})/)?.[1] ??
+      '公開ファイル',
+    file.sha256.slice(0, 12),
+  ].join(' · ');
+---
+
+<BaseLayout
+  title="ダウンロード"
+  description="Radiolinkのマニュアル・ファームウェアと設計図の公開ファイル。"
+>
+  <article class="mx-auto max-w-4xl px-5 py-12 [overflow-wrap:anywhere] lg:px-8">
+    <h1 class="text-4xl font-bold text-slate-950">ダウンロード</h1>
+    <p class="mt-6 leading-7 text-slate-600">
+      ファイル名と形式を確認してダウンロードしてください。同名のファイルは、保存時期と識別番号で区別しています。
+    </p>
+    {groups.map((group) => (
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold">{group.name}</h2>
+        <ul class="mt-6 divide-y divide-slate-200">
+          {inventory.files
+            .filter((file) => file.target_route.startsWith(group.prefix))
+            .map((file) => (
+              <li class="py-5">
+                <a
+                  href={withBase(file.target_route)}
+                  download
+                  data-download-sha256={file.sha256}
+                  class="font-semibold text-teal-800 underline underline-offset-4"
+                >
+                  {file.legacy_routes[0].split('/').at(-1)}
+                </a>
+                <p class="mt-2 text-sm text-slate-500">{metadata(file)}</p>
+              </li>
+            ))}
+        </ul>
+      </section>
+    ))}
+  </article>
+</BaseLayout>
