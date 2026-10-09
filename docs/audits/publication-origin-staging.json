@@ -1,0 +1,18 @@
+{
+  "mode": "staging",
+  "observed_at": "2026-10-09T04:56:50.543Z",
+  "evidence_scope": "local static HTTP; no production deployment",
+  "public_base": "https://happinesea.github.io/happinesea-site/",
+  "html_count": 303,
+  "canonicals_checked": 302,
+  "open_graph_urls_checked": 302,
+  "first_party_http_checks": 830,
+  "broken_links_assets": 0,
+  "canonical_conflicts": 0,
+  "cms_runtime_references": 0,
+  "download_http_hash_checks": 43,
+  "manual_aliases": 23,
+  "article_aliases": 90,
+  "staging_origin_residuals": null,
+  "staging_prefix_residuals": null
+}
