@@ -103,14 +103,15 @@ source article). This PR does not clear owner CMP/settings, live deployment,
 Realtime, AdSense recognition or domain-cutover verification gates. Overall site
 migration is **not COMPLETE** until those operations and checks are complete.
 
-## Verification and outstanding source-fetch blocker
+## Verification on the PR #46 merged baseline
 
-- Unit tests: 89 passed; Astro check: zero errors/warnings/hints; lint and format
+- Unit tests: 92 passed; Astro check: zero errors/warnings/hints; lint and format
   passed. Staging build-output tests: 27 passed.
-- Fresh static staging and production builds used the existing approved publication
-  snapshot/assets. With both flags true, all 303 HTML files have no IDs/bootstrap
+- Full `npm run validate` fetched the live CMS inventory and reviewed image bytes,
+  then generated staging output successfully. Production reused that freshly
+  validated source set. With both flags true, all 303 HTML files have no IDs/bootstrap
   in staging, and exactly one of each ID and one guarded bootstrap in production.
-  Production with both flags unset also has zero IDs/bootstrap.
+  Prior implementation checks also verified zero IDs/bootstrap with both flags unset.
 - Existing publication-origin verifier passed for each mode: 303 HTML, 302
   canonical/OpenGraph pairs, 830 first-party HTTP checks, 43 download HTTP/hash
   checks, 23 manual aliases and 90 exact article aliases. Broken links/assets,
@@ -124,20 +125,28 @@ migration is **not COMPLETE** until those operations and checks are complete.
   YouTube frame's independent advertising traffic and concurrent output-directory
   interference; external frames were isolated and final runs used separate output
   directories. Production/home and privacy screenshots were inspected.
-- GA4-only / AdSense-disabled production build: all 303 HTML gate assertions
+- Prior GA4-only / AdSense-disabled production build: all 303 HTML gate assertions
   passed and 14 desktop/mobile browser tests passed; the exact public-origin test
   requested only the intercepted GA loader, not AdSense.
-- Independent read-only review: four findings fixed; no remaining P0/P1/P2.
+- Original implementation independent read-only review: four findings fixed;
+  no remaining P0/P1/P2. Rebase range-diff confirms unchanged implementation.
 
-**`npm run validate` did not pass.** Live CMS inventory succeeded (97 source posts,
-96 publication candidates), but the unchanged WordPress synchronization failed on
-`https://happinesea.com/wp-content/uploads/2020/06/rc4gs_manul_6.png` with HTTP 404.
-The identical path on `https://cms.happinesea.com` returned HTTP 200 / `image/png`.
-No CMS endpoint/image-fetch logic or source gate was modified to bypass this.
-Images deleted by the failed synchronization were restored from the branch's
-unchanged committed assets before snapshot-based frontend verification.
+PR #46 is merged in baseline `5d55bc4`; **source asset blocker = RESOLVED**.
+Its exact HTTPS public uploads-to-CMS build-time resolver, pinned SHA-256 checks
+and safe asset pruning remain unchanged by this PR. Original source/provenance
+URLs remain intact; no old frontend upload fetch is reintroduced. The reported
+RC4GS image fetch succeeds with reviewed SHA-256
+`399b796be62e30222b870b0d63cc6ae8e48160350a423248a3ff34a11529f30d`.
 
-Normal build/CI can remain blocked by this source URL. A separate bounded asset
-fetch/cutover task must verify source identity/hash and address this dependency;
-this PR does not claim live full-build success. Production deployment and service
-receipt, owner CMP/settings and migration/cutover completion remain unverified.
+Revalidation includes two live CMS API tests and 36 desktop/mobile browser tests
+per publication mode. Relative to the merged baseline, all 95 article outputs
+have zero unexpected differences after excluding the intentional Google head
+bootstrap and generated CSS bundle filename. The CSS difference is solely an
+unused `.isolate` utility; existing article markup does not use it. Publication
+data, localized image bytes and downloads remain unchanged. Privacy changes are
+the separately tested formal-baseline-preserving supplements described above.
+
+Remaining blockers are GA4/AdSense owner consent/settings and actual post-deploy
+verification. No production deployment, CMP/settings change or real service
+measurement was performed. Overall migration is not COMPLETE until those gates
+are satisfied.
