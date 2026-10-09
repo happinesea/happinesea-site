@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { capturePublicationScreenshot } from './helpers/publication-screenshot.mjs';
 
 const production = process.env.PUBLICATION_MODE === 'production';
 const publicBase = production
@@ -13,6 +14,8 @@ for (const route of [
   'radiolink/',
   'radiolink/rc8x/',
   'manuals/rc8x/',
+  'manuals/rc8x/chapter-01/',
+  'manuals/rc8x/chapter-02/',
   'downloads/',
   'drawinglibrary/',
   'drone-rc-glossary/',
@@ -60,9 +63,9 @@ for (const route of [
     ).toBe(false);
     expect(errors).toEqual([]);
     expect(cms).toEqual([]);
-    await page.screenshot({
-      path: `test-results/screenshots/${production ? 'production' : 'staging'}-${info.project.name}-${route.replaceAll('/', '_') || 'home'}.png`,
-      fullPage: true,
-    });
+    await capturePublicationScreenshot(
+      page,
+      `test-results/screenshots/${production ? 'production' : 'staging'}-${info.project.name}-${route.replaceAll('/', '_') || 'home'}.png`,
+    );
   });
 }
