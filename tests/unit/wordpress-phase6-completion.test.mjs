@@ -98,7 +98,7 @@ test('every remaining source has a final evidence-bound decision and only approv
   }
 });
 
-test('Byme-A publishes all six exact chapter routes but does not silently publish the unresolved parent advertisement', () => {
+test('Byme-A publishes six exact chapter routes and the separately owner-approved ad-free parent', () => {
   const published = read('../../src/data/wordpress-insights.json');
   for (const id of [1673, 1675, 1679, 1682, 1687, 1691])
     assert.ok(
@@ -110,8 +110,11 @@ test('Byme-A publishes all six exact chapter routes but does not silently publis
     compatibility.pages.some(
       (x) => x.target_route === '/radiolink-productions-manual/byme-a-manual',
     ),
-    false,
+    true,
   );
+  const parent = compatibility.pages.find((x) => x.id === 1664);
+  assert.doesNotMatch(parent.content_html, /amazon|<iframe|<script/i);
+  // This fixture records the historical decision, not the later owner approval.
   assert.equal(review.byme_a_parent.decision, 'BLOCKED_WITH_EXPLICIT_REASON');
   const download = compatibility.pages.find(
     (x) => x.title === 'COOL9030、ブラシモーター用ESC日本語マニュアル',
