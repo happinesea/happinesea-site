@@ -2475,6 +2475,20 @@
       "status": "DEFERRED_NOTICE",
       "owner_approved_at": "2026-10-09",
       "decision": "DEFER_TO_MANUAL_REBUILD"
+    },
+    {
+      "id": 1664,
+      "type": "fixed_page",
+      "title": "Byme-A固定翼飛行機フライトコントローラー操作マニュアル",
+      "source_url": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
+      "canonical": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
+      "target_route": "/radiolink-productions-manual/byme-a-manual",
+      "http_status": 200,
+      "source_content_sha256": "1140245c3003d0268a7951f3d5da49c85ff6fccd0e2284dacbf39341c30dfc1f",
+      "content_html": "<p>Byme-A操作マニュアルの各章は、以下の目次からご覧ください。</p>\n<p></p>\n\n\n<figure><img src=\"/wp-content/uploads/2021/09/book.jpg\" alt=\"Byme-A操作マニュアルの表紙。\" width=\"696\" height=\"1000\" loading=\"lazy\" decoding=\"async\" /></figure>\n\n\n<p>目次：</p>\n<ul>\n<li><a href=\"https://happinesea.com/news/202109281673.html\">前書き</a></li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html\">スペック情報</a></li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html\">初期設定 </a></li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html\">機体の校正(キャリブレーション)</a>\n<ul>\n<li>機体校正方法</li>\n<li>送信機の設定</li>\n</ul>\n</li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html\">サーボの設定</a>\n<ul>\n<li>①マニュアルモード</li>\n<li>②安定モード</li>\n<li>サーボリバースの設定</li>\n</ul>\n</li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html\">飛行モードの説明</a>\n<ul>\n<li>安定モード</li>\n<li>ホバリングモード</li>\n<li>ジャイロモード</li>\n<li>アクロバットモード</li>\n<li>マニュアルモード</li>\n<li>ジャイロ感度</li>\n</ul>\n</li>\n</ul>",
+      "hero": null,
+      "status": "READY",
+      "owner_approved_at": "2026-10-09"
     }
   ],
   "assets": [
@@ -3472,6 +3486,20 @@
       "height": 914,
       "kind": "image",
       "observed_at": "2026-10-07T11:26:02.996Z"
+    },
+    {
+      "source_url": "https://happinesea.com/wp-content/uploads/2021/09/book.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "received_bytes": 18874,
+      "sha256": "84b4dc5a8dde375ace2a1b7f3a3a11de3268861f41d225307f144b05d0f9ee77",
+      "final_url": "https://happinesea.com/wp-content/uploads/2021/09/book.jpg",
+      "redirected": false,
+      "observed_at": "2026-10-09T00:11:49.879Z",
+      "kind": "image",
+      "target_route": "/wp-content/uploads/2021/09/book.jpg",
+      "width": 696,
+      "height": 1000
     }
   ],
   "blocked": [

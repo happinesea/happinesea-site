@@ -1,0 +1,69 @@
+{
+  "byme_a": {
+    "id": 1664,
+    "source_url": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
+    "observed_at": "2026-10-09T00:11:49.891Z",
+    "content_html": "<p>Byme-A操作マニュアルの最新情報は、Kindle版⇒WEB版の順で更新します。Kindle版のDLページ：</p>\n<p><iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=happinesea0f-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS1=1&amp;detail=1&amp;asins=B09GYM5NCC&amp;linkId=71462c398f8cb7bcde4ebce74105223d&amp;bc1=ffffff&amp;lt1=_top&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr\">\n    </iframe></p>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large\"><img decoding=\"async\" loading=\"lazy\" width=\"696\" height=\"1000\" src=\"https://happinesea.com/wp-content/uploads/2021/09/book.jpg\" alt=\"\" class=\"wp-image-1663\" srcset=\"https://happinesea.com/wp-content/uploads/2021/09/book.jpg 696w, https://happinesea.com/wp-content/uploads/2021/09/book-209x300.jpg 209w\" sizes=\"(max-width: 696px) 100vw, 696px\" /></figure></div>\n\n\n<p>目次：</p>\n<ul>\n<li><a href=\"https://happinesea.com/news/202109281673.html\">前書き</a></li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html\">スペック情報</a></li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html\">初期設定&nbsp;</a></li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html\">機体の校正(キャリブレーション)</a>\n<ul>\n<li>機体校正方法</li>\n<li>送信機の設定</li>\n</ul>\n</li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html\">サーボの設定</a>\n<ul>\n<li>①マニュアルモード</li>\n<li>②安定モード</li>\n<li>サーボリバースの設定</li>\n</ul>\n</li>\n<li><a href=\"https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html\">飛行モードの説明</a>\n<ul>\n<li>安定モード</li>\n<li>ホバリングモード</li>\n<li>ジャイロモード</li>\n<li>アクロバットモード</li>\n<li>マニュアルモード</li>\n<li>ジャイロ感度</li>\n</ul>\n</li>\n</ul>",
+    "source_content_sha256": "1140245c3003d0268a7951f3d5da49c85ff6fccd0e2284dacbf39341c30dfc1f",
+    "content_review": {
+      "source_content_sha256": "1140245c3003d0268a7951f3d5da49c85ff6fccd0e2284dacbf39341c30dfc1f",
+      "replacements": [
+        {
+          "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=happinesea0f-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS1=1&amp;detail=1&amp;asins=B09GYM5NCC&amp;linkId=71462c398f8cb7bcde4ebce74105223d&amp;bc1=ffffff&amp;lt1=_top&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr\">\n    </iframe>",
+          "to": ""
+        },
+        {
+          "from": "<p>Byme-A操作マニュアルの最新情報は、Kindle版⇒WEB版の順で更新します。Kindle版のDLページ：</p>",
+          "to": "<p>Byme-A操作マニュアルの各章は、以下の目次からご覧ください。</p>"
+        }
+      ]
+    },
+    "chapter_urls": [
+      "https://happinesea.com/news/202109281673.html",
+      "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
+      "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
+      "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
+      "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
+      "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html"
+    ],
+    "image": {
+      "source_url": "https://happinesea.com/wp-content/uploads/2021/09/book.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "received_bytes": 18874,
+      "sha256": "84b4dc5a8dde375ace2a1b7f3a3a11de3268861f41d225307f144b05d0f9ee77",
+      "final_url": "https://happinesea.com/wp-content/uploads/2021/09/book.jpg",
+      "redirected": false,
+      "observed_at": "2026-10-09T00:11:49.879Z",
+      "kind": "image",
+      "target_route": "/wp-content/uploads/2021/09/book.jpg",
+      "width": 696,
+      "height": 1000
+    }
+  },
+  "privacy_policy": {
+    "id": 3,
+    "source_url": "https://happinesea.com/privacy-policy",
+    "source_api": "https://cms.happinesea.com/wp-json/wp/v2/pages/3",
+    "observed_at": "2026-10-09T00:11:49.891Z",
+    "modified_at": "2020-03-15T11:38:23",
+    "content_html": "\n<h2 class=\"wp-block-heading\">私たちについて</h2>\n\n\n\n<p>私たちのサイトアドレスは https://happinesea.com です。</p>\n\n\n\n<h2 class=\"wp-block-heading\">このサイトが収集する個人データと収集の理由</h2>\n\n\n\n<h3 class=\"wp-block-heading\">コメント</h3>\n\n\n\n<p>訪問者がこのサイトにコメントを残す際、コメントフォームに表示されているデータ、そしてスパム検出に役立てるための IP アドレスとブラウザーユーザーエージェント文字列を収集します。</p>\n\n\n\n<p>メールアドレスから作成される匿名化された (「ハッシュ」とも呼ばれる) 文字列は、あなたが Gravatar サービスを使用中かどうか確認するため同サービスに提供されることがあります。同サービスのプライバシーポリシーは https://automattic.com/privacy/ にあります。コメントが承認されると、プロフィール画像がコメントとともに一般公開されます。</p>\n\n\n\n<h3 class=\"wp-block-heading\">メディア</h3>\n\n\n\n<p>サイトに画像をアップロードする際、位置情報 (EXIF GPS) を含む画像をアップロードするべきではありません。サイトの訪問者は、サイトから画像をダウンロードして位置データを抽出することができます。</p>\n\n\n\n<h3 class=\"wp-block-heading\">お問い合わせフォーム</h3>\n\n\n\n<h3 class=\"wp-block-heading\">Cookie</h3>\n\n\n\n<p>サイトにコメントを残す際、お名前、メールアドレス、サイトを Cookie に保存することにオプトインできます。これはあなたの便宜のためであり、他のコメントを残す際に詳細情報を再入力する手間を省きます。この Cookie は1年間保持されます。</p>\n\n\n\n<p>ログインページを訪問すると、お使いのブラウザーが Cookie を受け入れられるかを判断するために一時 Cookie を設定します。この Cookie は個人データを含んでおらず、ブラウザーを閉じると廃棄されます。</p>\n\n\n\n<p>ログインの際さらに、ログイン情報と画面表示情報を保持するため、私たちはいくつかの Cookie を設定します。ログイン Cookie は2日間、画面表示オプション Cookie は1年間保持されます。「ログイン状態を保存する」を選択した場合、ログイン情報は2週間維持されます。ログアウトするとログイン Cookie は消去されます。</p>\n\n\n\n<p>もし投稿を編集または公開すると、さらなる Cookie がブラウザーに保存されます。この Cookie は個人データを含まず、単に変更した投稿の ID を示すものです。1日で有効期限が切れます。</p>\n\n\n\n<h3 class=\"wp-block-heading\">他サイトからの埋め込みコンテンツ</h3>\n\n\n\n<p>このサイトの投稿には埋め込みコンテンツ (動画、画像、投稿など) が含まれます。他サイトからの埋め込みコンテンツは、訪問者がそのサイトを訪れた場合とまったく同じように振る舞います。</p>\n\n\n\n<p>これらのサイトは、あなたのデータの収集、Cookie の使用、サードパーティによる追加トラッキングの埋め込み、埋め込みコンテンツとのやりとりの監視を行うことがあります。アカウントを使ってそのサイトにログイン中の場合、埋め込みコンテンツとのやりとりのトラッキングも含まれます。</p>\n\n\n\n<h3 class=\"wp-block-heading\">アナリティクス</h3>\n\n\n\n<h2 class=\"wp-block-heading\">あなたのデータの共有先</h2>\n\n\n\n<h2 class=\"wp-block-heading\">データを保存する期間</h2>\n\n\n\n<p>あなたがコメントを残すと、コメントとそのメタデータが無期限に保持されます。これは、モデレーションキューにコメントを保持しておく代わりに、フォローアップのコメントを自動的に認識し承認できるようにするためです。</p>\n\n\n\n<p>このサイトに登録したユーザーがいる場合、その方がユーザープロフィールページで提供した個人情報を保存します。すべてのユーザーは自分の個人情報を表示、編集、削除することができます (ただしユーザー名は変更することができません)。サイト管理者もそれらの情報を表示、編集できます。</p>\n\n\n\n<h2 class=\"wp-block-heading\">データに対するあなたの権利</h2>\n\n\n\n<p>このサイトのアカウントを持っているか、サイトにコメントを残したことがある場合、私たちが保持するあなたについての個人データ (提供したすべてのデータを含む) をエクスポートファイルとして受け取るリクエストを行うことができます。また、個人データの消去リクエストを行うこともできます。これには、管理、法律、セキュリティ目的のために保持する義務があるデータは含まれません。</p>\n\n\n\n<h2 class=\"wp-block-heading\">あなたのデータの送信先</h2>\n\n\n\n<p>訪問者によるコメントは、自動スパム検出サービスを通じて確認を行う場合があります。</p>\n\n\n\n<h2 class=\"wp-block-heading\">連絡先情報</h2>\n\n\n\n<p>〒274-0825<br>千葉県船橋市前原西4-33-13<br>happinesea</p>\n",
+    "source_content_sha256": "d2be68ae99f6c5b49327ffcd50cc85244c54a0fcad2af72b1e641ba53a31b3e3",
+    "sections": [
+      "私たちについて",
+      "このサイトが収集する個人データと収集の理由",
+      "コメント",
+      "メディア",
+      "お問い合わせフォーム",
+      "Cookie",
+      "他サイトからの埋め込みコンテンツ",
+      "アナリティクス",
+      "あなたのデータの共有先",
+      "データを保存する期間",
+      "データに対するあなたの権利",
+      "あなたのデータの送信先",
+      "連絡先情報"
+    ],
+    "disposition": "AUTHORITATIVE_BASELINE_CAPTURED_APPLICABILITY_OWNER_CONFIRM"
+  }
+}

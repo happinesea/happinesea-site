@@ -55,16 +55,16 @@
       "page": 141,
       "post": 92
     },
-    "preserved_routes": 227,
+    "preserved_routes": 228,
     "redirect_required": 0,
-    "blocked": 11,
+    "blocked": 9,
     "old_domain_only_assets": 621,
     "broken_links": 4,
     "missing_downloads": 0,
     "unverified": 1071,
     "canonical_conflicts": 0,
     "orphan_page_candidates": 379,
-    "unresolved_surfaces": 1148,
+    "unresolved_surfaces": 1146,
     "domain_cutover": "NOT READY"
   },
   "entries": [
@@ -6025,9 +6025,9 @@
         "rendered https://happinesea.com/radiolink-support/manual/20200317175.html",
         "https://happinesea.com/wp-json/wp/v2/pages/1664"
       ],
-      "target_route": null,
+      "target_route": "/radiolink-productions-manual/byme-a-manual",
       "canonical": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
-      "migration_status": "BLOCKED",
+      "migration_status": "READY",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2021/09/book.jpg",
@@ -6045,16 +6045,15 @@
         "https://happinesea.com/wp-content/uploads/2020/05/manual_title-300x150.jpg"
       ],
       "notes": [
-        "Source title: Byme-A固定翼飛行機フライトコントローラー操作マニュアル",
-        "Editorial classification: BLOCKED: Unsupported Amazon iframe and unreviewed image; no silent advertisement/embed removal.",
-        "Deferred page resolution: TRANSFORM_REQUIRED. Keep the Byme-A chapter index and cover. Amazon iframe ASIN B09GYM5NCC requires an independently confirmed ordinary product link; iframe request failed. Six legacy chapter links remain outside this page scope. Do not replace with the RC8X-only manual index."
+        "Owner-approved Amazon removal and six-chapter static index. Source/removed literals are hash-reviewed; article state unchanged."
       ],
       "compatibility_class": "BLOCKED",
       "http_observed_at": "2026-10-07T10:14:57.955Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "cutover_disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "cutover_reason": "BLOCKED: six real chapter links are retained in source evidence; all are HTTP 200, but these articles are not yet statically migrated. The first news path redirects to a support path. Amazon iframe B09GYM5NCC is unreachable and no ordinary product link could be independently confirmed; no ASIN-derived URL is invented and no iframe is silently removed."
+      "cutover_disposition": "TRANSFORM_AND_PUBLISH",
+      "cutover_blocker": false,
+      "cutover_reason": "Owner-approved advertisement removal; six already migrated chapters are retained as an exact static index.",
+      "static_output": "VERIFIED"
     },
     {
       "legacy_url": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
@@ -11386,7 +11385,7 @@
       ],
       "target_route": null,
       "canonical": "https://happinesea.com/style-guide",
-      "migration_status": "BLOCKED",
+      "migration_status": "REMOVED_WITH_APPROVAL",
       "redirect_required": false,
       "asset_dependencies": [
         "https://happinesea.com/wp-content/uploads/2016/09/pokemon-1543353_640-1.jpg",
@@ -11401,16 +11400,16 @@
         "https://happinesea.com/wp-content/uploads/2016/09/imac-apple-mockup-app-38544-1-300x199.jpeg"
       ],
       "notes": [
-        "Source title: Style Guide",
-        "Editorial classification: NEEDS_REVIEW: Legacy theme demonstration has image dependencies; retain URL pending asset/publication-purpose review.",
-        "Deferred page resolution: TRANSFORM_REQUIRED. Preserve the legacy theme demonstration unless removal is explicitly authorized. Gallery image alternatives, six attachment destinations and style/anchor fidelity need a bounded static gallery representation. No removal approval exists."
+        "Owner approved withdrawal of this old theme demo; no inferred redirect or replacement. Historical source HTTP observation is retained."
       ],
       "compatibility_class": "NEEDS_REVIEW",
       "http_observed_at": "2026-10-07T10:15:53.152Z",
       "content_type_header": "text/html; charset=UTF-8",
-      "cutover_disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "cutover_reason": "BLOCKED: literal Paperback theme typography/demo content, not hobby knowledge or current design-system documentation. No new primary navigation is justified. Existing public URL still requires retention or explicit removal approval; neither is silently decided. Six gallery attachment links redirect to real original images at paths nested below future legacy .html article paths. Alias/collision compatibility must be resolved before retention publication; no redirect/removal performed."
+      "cutover_disposition": "REMOVE_WITH_EXPLICIT_APPROVAL",
+      "cutover_blocker": false,
+      "cutover_reason": "Owner approved theme-demo withdrawal with HTTP 404 and no inferred redirect.",
+      "legacy_disposition": "HTTP_404_NO_REDIRECT",
+      "owner_approved_at": "2026-10-09"
     },
     {
       "legacy_url": "https://happinesea.com/tag/%e3%82%a8%e3%82%a4%e3%83%97%e3%83%aa%e3%83%ab%e3%83%95%e3%83%bc%e3%83%ab",
@@ -23917,9 +23916,9 @@
     "deferred_articles": 1
   },
   "compatibility": {
-    "verified_pages": 71,
+    "verified_pages": 72,
     "drawing_ids": [1716, 1726, 1734, 1742, 1891],
-    "verified_unique_asset_paths": 60,
+    "verified_unique_asset_paths": 61,
     "blocked": 4,
     "query_downloads": "BROWSER_ONLY; NON_JS_HTTP_COMPATIBILITY_OPEN"
   }

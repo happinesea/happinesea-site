@@ -86,17 +86,17 @@
       "title": "Byme-A固定翼飛行機フライトコントローラー操作マニュアル",
       "source_api": "https://happinesea.com/wp-json/wp/v2/pages/1664",
       "previous_classification": "BLOCKED",
-      "disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "reason": "BLOCKED: all six Byme-A chapters now have exact static legacy aliases, including the first news-path variant. Amazon iframe B09GYM5NCC still has no independently confirmed ordinary product link; no ASIN-derived URL or silent removal is permitted.",
-      "target_route": null,
+      "disposition": "TRANSFORM_AND_PUBLISH",
+      "cutover_blocker": false,
+      "reason": "Owner approved removal of the Amazon advertisement and associated Kindle advertising introduction; exact six-chapter index and reviewed cover retained.",
+      "target_route": "/radiolink-productions-manual/byme-a-manual",
       "redirect_approved": false,
-      "removal_approved": false,
-      "publication_status": "NOT_PUBLISHED",
+      "removal_approved": true,
+      "publication_status": "VERIFIED_STATIC",
       "equivalence": {
         "result": "NO_EQUIVALENT_ASTRO_MANUAL",
         "existing_route": null,
-        "gap": "The six original chapter destinations are statically preserved. The parent index/cover and its Amazon section must remain unpublished until an exact ordinary product link or explicit owner-approved alternative is established; the RC8X manual index is not an equivalent replacement."
+        "gap": "Owner approved an ad-free parent index retaining its original cover and all six statically preserved chapter destinations. Site-wide manual architecture integration remains separate."
       },
       "image_sources": [
         "https://happinesea.com/wp-content/uploads/2021/09/book.jpg"
@@ -223,7 +223,22 @@
           "sha256": "4733eac6fac33a6ef31f61b89b07303917cbe3a91745007e131d3cfca631d8ed"
         }
       ],
-      "phase6_reassessed_at": "2026-10-08T02:01:55.220Z"
+      "phase6_reassessed_at": "2026-10-08T02:01:55.220Z",
+      "owner_approved_at": "2026-10-09",
+      "content_review": {
+        "source_content_sha256": "1140245c3003d0268a7951f3d5da49c85ff6fccd0e2284dacbf39341c30dfc1f",
+        "replacements": [
+          {
+            "from": "<iframe style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=happinesea0f-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS1=1&amp;detail=1&amp;asins=B09GYM5NCC&amp;linkId=71462c398f8cb7bcde4ebce74105223d&amp;bc1=ffffff&amp;lt1=_top&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr\">\n    </iframe>",
+            "to": ""
+          },
+          {
+            "from": "<p>Byme-A操作マニュアルの最新情報は、Kindle版⇒WEB版の順で更新します。Kindle版のDLページ：</p>",
+            "to": "<p>Byme-A操作マニュアルの各章は、以下の目次からご覧ください。</p>"
+          }
+        ]
+      },
+      "follow_up": "Integrate Byme-A into the site-wide manual system in a separate architecture task; do not alter the existing six chapters."
     },
     {
       "id": 1405,
@@ -573,13 +588,13 @@
       "title": "Style Guide",
       "source_api": "https://happinesea.com/wp-json/wp/v2/pages/207",
       "previous_classification": "NEEDS_REVIEW",
-      "disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "reason": "BLOCKED: literal Paperback theme typography/demo content, not hobby knowledge or current design-system documentation. No new primary navigation is justified. Existing public URL still requires retention or explicit removal approval; neither is silently decided. Six gallery attachment links redirect to real original images at paths nested below future legacy .html article paths. Alias/collision compatibility must be resolved before retention publication; no redirect/removal performed.",
+      "disposition": "REMOVE_WITH_EXPLICIT_APPROVAL",
+      "cutover_blocker": false,
+      "reason": "Owner approved withdrawal of the obsolete theme demonstration. No replacement or inferred redirect.",
       "target_route": null,
       "redirect_approved": false,
-      "removal_approved": false,
-      "publication_status": "NOT_PUBLISHED",
+      "removal_approved": true,
+      "publication_status": "WITHDRAWN",
       "equivalence": {
         "result": "LEGACY_THEME_DEMO_NO_EQUIVALENT",
         "existing_route": null,
@@ -766,7 +781,9 @@
           "bytes": 17343,
           "sha256": "5ee1175d4ce93203f5189437543ecb68415cd3694eccd978ed33583b533bcc35"
         }
-      ]
+      ],
+      "owner_approved_at": "2026-10-09",
+      "legacy_disposition": "HTTP_404_NO_REDIRECT"
     },
     {
       "id": 14,
@@ -1785,14 +1802,15 @@
     "pages": 11,
     "preserve_static": 4,
     "map_to_existing_route": 1,
-    "transform_and_publish": 2,
-    "blocked": 4,
-    "remaining_cutover_blockers": 6,
+    "transform_and_publish": 3,
+    "blocked": 2,
+    "withdrawn_with_approval": 1,
+    "remaining_cutover_blockers": 4,
     "targeted_pages": 6,
-    "targeted_remaining_cutover_blockers": 5,
-    "newly_cutover_ready": 1,
+    "targeted_remaining_cutover_blockers": 3,
+    "newly_cutover_ready": 2,
     "domain_cutover": "NOT_READY",
-    "verified_static_pages": 6,
-    "verified_local_images": 25
+    "verified_static_pages": 7,
+    "verified_local_images": 26
   }
 }
