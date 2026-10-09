@@ -1,6 +1,6 @@
 # Domain Cutover execution runbook
 
-Status: **preparation only; execution requires separate owner approval**. This PR changes documentation only. It does not configure DNS, CNAME, Pages, HTTPS, Actions variables or deployments. Merging it leaves staging unchanged.
+Status: **wiring prepared; execution requires separate owner approval**. The workflow changes do not configure DNS, CNAME, Pages, HTTPS, environment protections or deploy production. A main push defaults to staging; production requires a manual dispatch and protected environment approvals.
 
 Public frontend: Astro static HTML on GitHub Pages. Editing/build-time CMS: `https://cms.happinesea.com`. WordPress `home` / `siteurl` remain `https://happinesea.com`; do not change them to the CMS hostname. CMS outage must fail a new build, not replace a working deployment with an empty site.
 
@@ -31,44 +31,40 @@ Export the original apex/www DNS records and TTL, including AAAA/ALIAS/ANAME and
 
 Stop if CMS API redirects to an apex `/wp-json/` endpoint, source gates fail, downloads differ, approved routes disappear, active deployments are unknown, or rollback evidence is missing. Archive staging artifact and verify it can be restored before proceeding. A green deploy plus deployed browser/HTTP checks is required; a historical or local-only pass is insufficient.
 
-## 2. Actions production-mode design (not installed by this PR)
+## 2. Actions production-mode wiring
 
-Chosen selector: owner-managed **repository configuration variable** `PUBLICATION_MODE`, with explicit workflow `env` injection. Absent/`staging` retains staging. Only `production` selects root production; Astro rejects other values. A repository variable alone does not reach a build process.
+Selector: `workflow_dispatch` input `publication_mode`, default `staging`. Automatic main push also selects staging. Only an explicit manual **main** dispatch can select production. No repository variable can implicitly enable production. Invalid input fails closed.
 
-In a future separately reviewed workflow change, add this to the existing `build` job:
+The build job explicitly injects the validated selection into its process environment:
 
 ```yaml
 env:
-  PUBLICATION_MODE: ${{ vars.PUBLICATION_MODE || 'staging' }}
+  PUBLICATION_MODE: ${{ needs.check.outputs.mode }}
 ```
 
-The existing `withastro/action@v6` step inherits job environment and runs `npm run build`; that command retains CMS sync, Astro build, exact alias copying and compatibility finalization. Do not bypass CMS/source validation or replace it with only `astro build`. Do not inject `site` / `base` CLI overrides.
+The workflow runs `npm run build` directly, retaining CMS sync, Astro build, exact alias copying and compatibility finalization. It serves that artifact locally and checks origin/base/canonical/OG/sitemap/robots, all first-party references, HTML bytes, manual aliases and download hashes before uploading it as `github-pages` (7-day retention). No source gates or site/base overrides are bypassed.
 
-The same future change must give `browser-check` the same job-level selector and update its capture step as follows (replace the currently hardcoded staging URL/test command, not just the build job):
+Production sequence:
 
-```yaml
-- name: Verify deployed publication origin in real browser
-  env:
-    E2E_BASE_URL: ${{ env.PUBLICATION_MODE == 'production' && 'https://happinesea.com/' || 'https://happinesea.github.io/happinesea-site/' }}
-  run: npx playwright test tests/e2e/publication-origin.spec.ts --project=desktop --project=mobile
-```
+- Preflight reads `production-cutover` environment through GitHub API. Missing environment, unreadable rules or no required reviewer stops before approval/build. A branch policy alone is insufficient.
+- `approve-production` pauses in that protected environment before production build.
+- Build rechecks protection, builds and verifies static output, then uploads the verified artifact.
+- `deploy` pauses in `production-cutover` again so owner can inspect the uploaded artifact/run/SHA before releasing the deployment. It rechecks protection before `deploy-pages`.
+- `browser-check` downloads that run's exact artifact, compares deployed HTML/downloads/aliases against it and captures desktop/mobile with the selected public base.
 
-Use the existing `github-pages` environment for deploy, but separately configure owner approval/required reviewers if supported before enabling production. The current branch-only policy is not an approval gate. There must be a **real pause before `deploy-pages`** while the owner verifies the actual uploaded artifact. If environment approval is unavailable, the future workflow must separate build/upload from an explicitly owner-dispatched deploy of that same run's artifact. A written approval plus an immediately deploying workflow is not an equivalent pause: do not run the current workflow in production under that fallback. Freeze main pushes and stop queued/running deploys in either case.
+Owner must create/configure **`production-cutover`** with owner-designated required reviewers, a main-only deployment branch policy and appropriate admin-bypass/self-review restrictions before execution. This PR does not create it. If protection is unavailable, stop; do not replace the gate with an immediately deploying workflow. Staging retains the existing `github-pages` environment.
 
-Why not a one-run production input alone: the next automatic main push would revert to staging at the custom domain. Persist the owner-approved selector after cutover so subsequent builds retain production. Owner authorization is for this explicit persistent setting and deployment, not merely this documentation PR. During rollback restore staging explicitly. Do not reuse an old queued run: it may have captured the prior selector.
+After cutover, a default staging run cannot overwrite a custom-domain site: its build/deploy guard requires Pages `cname=null`. Subsequent production publications require fresh manual dispatch and approvals, not an implicit persistent selector. Restore DNS/Pages settings before staging rollback. Freeze main pushes and drain old queued/running runs during the window; old pre-wiring runs do not acquire these guards retroactively.
 
-Future workflow-change acceptance: unset/staging/production/invalid selector tests; staging automatic build unchanged; build process logs mode (not credentials); browser origin matches mode; **the actual run's uploaded production artifact** passes the existing local verifier before deployment; deployment pauses for owner approval; artifact recovery is tested. Until that change is merged and verified, the current workflow **cannot** select production via a repository variable. No workflow dispatch or variable mutation was performed here.
+The verifier now permits HTTPS same-origin static runtime assets only when verifying actual production base. Local/staging checks still reject old-origin runtime assets; CMS, PHP/REST and legacy query runtime dependencies remain forbidden. Every generated HTML response must match the approved artifact bytes. No production workflow dispatch or protection-setting mutation is part of this PR's QA.
 
-Also require an independently reviewed deployed-HTTP verifier adjustment before execution: the current `verify-publication-origin.mjs` intentionally rejects runtime URLs on `happinesea.com` as old-origin dependencies, so it is usable against **local preview only**, not against the future live production base. Distinguish legitimate same-origin static assets after cutover from CMS/PHP dependencies without weakening the latter prohibition. Do not waive a failing guard or label the current verifier live-production-ready. This prerequisite is documented here, not silently changed in a runbook PR.
-
-After workflow wiring, only in the approved window, owner commands are:
+Only in the approved window, after merging/validating wiring and configuring protection, owner command:
 
 ```powershell
-gh variable set PUBLICATION_MODE --repo happinesea/happinesea-site --body production
-gh workflow run deploy.yml --repo happinesea/happinesea-site --ref main
+gh workflow run deploy.yml --repo happinesea/happinesea-site --ref main -f publication_mode=production
 ```
 
-These are **deploying operations**, not preflight commands. First install/test the actual deployment pause described above, drain/cancel older runs and freeze main pushes. Record the resulting run ID/SHA and mode; approve deployment only after artifact verification. Retain default staging until the owner explicitly performs the switch.
+This is a **deploying operation**, not a preflight command. Drain/cancel older runs and freeze main pushes. Record the resulting run ID/SHA and mode. Approve build first, then verify the uploaded artifact before approving deploy. Letting its artifact expire requires a fresh reviewed run, not bypassing verification.
 
 ## 3. Build/artifact gate before public switching
 
@@ -77,7 +73,7 @@ In an isolated checkout of the approved SHA, run staging `npm run validate` with
 ```powershell
 $env:PUBLICATION_MODE='production'
 npm run build
-npm run preview -- --host 127.0.0.1 --port 4343
+python -m http.server 4343 --bind 127.0.0.1 --directory dist
 ```
 
 In a second PowerShell terminal in the same checkout:
@@ -89,7 +85,7 @@ node scripts/verify-publication-origin.mjs dist
 npx playwright test tests/e2e/publication-origin.spec.ts --project=desktop --project=mobile
 ```
 
-Require zero staging-origin/project-prefix residuals; production canonical/OG/sitemap/robots consistency; zero broken first-party links/assets, image failures and CMS runtime requests; legacy canonical fidelity; exact download hashes. The verifier checks the built filesystem as well as HTTP: keep the matching `dist` for deployed checks. Its JSON evidence may be regenerated locally; do not unintentionally commit audit timestamps/data during execution. Existing `test:dist` assertions are staging-specific, so do not run production `npm run validate` and treat that mismatch as permission to weaken tests.
+Require zero staging-origin/project-prefix residuals; production canonical/OG/sitemap/robots consistency; zero broken first-party links/assets, image failures and CMS runtime requests; legacy canonical fidelity; exact download hashes. Serve actual static output: Astro preview's route manifest can miss aliases written by the post-build finalizer. Actions uses runner Python's static server; staging wraps `dist` under a temporary `happinesea-site` directory. The verifier checks the built filesystem as well as HTTP: keep the matching `dist` for deployed checks. Its JSON evidence may be regenerated locally; do not unintentionally commit audit timestamps/data during execution. Existing `test:dist` assertions are staging-specific, so do not run production `npm run validate` and treat that mismatch as permission to weaken tests.
 
 Build and approve the root artifact **before** changing DNS. Production deployment changes the one Pages site's serving artifact; it is not an independent preview slot. Saving a custom domain can also change github.io redirect behavior. There is no guaranteed zero-downtime/atomic switch: allow a short Pages transition and DNS-cache mixed routing; schedule and communicate the window.
 
@@ -108,11 +104,11 @@ Serve the extracted `site` directory with an approved local static HTTP server (
 ## 4. Pages custom domain, DNS, HTTPS — owner execution order
 
 1. Verify domain ownership in GitHub first, following the current [domain-verification instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages). This may require an approved TXT change. Keep the verification record.
-2. Freeze pushes/deploys; complete the production artifact gate. Under approval deploy the verified production/root artifact and confirm the exact deployment SHA. Coordinate this with the following steps; project-base Pages may temporarily not render correctly.
+2. Freeze pushes/deploys; approve production build and complete the uploaded artifact gate. **Keep the second, deploy approval paused** while performing the following owner steps. Record the exact run/SHA; do not approve first deployment while apex still serves WordPress, because the immediate post-deploy byte checks would correctly fail against the old frontend.
 3. Repository Settings → Pages: retain **GitHub Actions** publishing, set custom domain to `happinesea.com`. Do this **before** pointing DNS at Pages. A custom Actions workflow does not require a source `CNAME` file; do not add one as a substitute for Pages settings.
 4. Change only apex web-serving records to the current [GitHub Pages DNS values](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). Current documented A values: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. Reconfirm immediately before execution. Use an appropriate provider-supported ALIAS/ANAME alternative if approved. Remove conflicting apex web records, including stale AAAA; if IPv6 is enabled, use the documented Pages AAAA set. Do not touch CMS, MX, mail or unrelated TXT. No wildcard DNS.
 5. Decide www scope explicitly: if preserving www access, point `www` CNAME to `happinesea.github.io` (no repository path), with apex as preferred custom domain. Preserve the original www value for rollback; do not assume it was previously configured.
-6. Verify authoritative and public-resolver A/AAAA answers and independent CMS A/API. DNS propagation is not instantaneous. Wait for Pages DNS verification and certificate readiness; do not use `curl -k` to declare TLS valid. Enable Enforce HTTPS when available. Certificate readiness can take up to 24 hours; investigate conflicting DNS/CAA if it fails rather than disabling security permanently.
+6. Verify authoritative and public-resolver A/AAAA answers and independent CMS A/API. DNS propagation is not instantaneous. Wait for Pages DNS verification and certificate readiness; do not use `curl -k` to declare TLS valid. Enable Enforce HTTPS when available. Certificate readiness can take up to 24 hours; investigate conflicting DNS/CAA if it fails rather than disabling security permanently. Once DNS/TLS are ready, release the second approval to deploy the already verified root artifact. Existing staging content can be unsuitable at the custom domain during this maintenance transition; do not claim zero downtime. Confirm exact deployed SHA. If resolver propagation causes only the post-deploy check to fail, rerun only failed `browser-check` after convergence using the same retained artifact, not the whole production deployment/approvals.
 7. Only declare success after actual public HTTPS and all gates below pass. Keep old hosting available until the rollback window closes.
 
 These ordering/TLS constraints follow [GitHub custom-domain guidance](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) and [HTTPS guidance](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https). Recheck them at execution time.
@@ -126,10 +122,11 @@ curl.exe --fail --show-error --location https://happinesea.com/sitemap-index.xml
 curl.exe --show-error --head http://happinesea.com/
 $env:PUBLICATION_MODE='production'
 $env:E2E_BASE_URL='https://happinesea.com/'
+node scripts/verify-publication-origin.mjs dist
 npx playwright test tests/e2e/publication-origin.spec.ts --project=desktop --project=mobile
 ```
 
-Use `dist` from the **deployed SHA/mode**, not a stale local build. After the prerequisite live-verifier fix has passed separate tests, run its deployed HTTP gate against this base as well; the current local-only verifier must not be used as live success evidence. Record final URL, status and redirects as well as canonical; HTTP must lead to valid HTTPS on the intended origin, not merely end at some 200 response. Read root HTML canonical, OG URL, every sitemap loc and robots sitemap entry. Require `https://happinesea.com` with root base; legacy canonical slash/`.html` exceptions stay source-owned. Verify 404 withdrawal behavior with redirects disabled, not as broken-live-route failures.
+Use `dist` extracted from the **actual deployed artifact**, not a separately rebuilt snapshot. Record final URL, status and redirects as well as canonical; HTTP must lead to valid HTTPS on the intended origin, not merely end at some 200 response. Read root HTML canonical, OG URL, every sitemap loc and robots sitemap entry. Require `https://happinesea.com` with root base; legacy canonical slash/`.html` exceptions stay source-owned. Verify 404 withdrawal behavior with redirects disabled, not as broken-live-route failures.
 
 Representative routes: `/`, `/insights/`, `/radiolink/`, `/radiolink/rc8x/`, `/manuals/rc8x/`, `/drawinglibrary/`, `/drone-rc-glossary/`, `/privacy-policy`, `/radiolink-productions-manual/byme-a-manual`, `/downloads/`. Also test exact `.html` aliases from `src/data/wordpress-insight-manifest.json`, manual aliases/firmware/download-tag entries from `src/data/cutover-compatibility.json`, and all Byme-A chapter links. Take desktop/mobile captures and inspect them. Meaningful hash anchors remain navigable; query-download URLs render static guidance/direct links, **not** PHP or automatic download responses.
 
@@ -143,9 +140,11 @@ Rollback immediately on TLS failure beyond the approved window, wrong artifact/m
 
 1. Restore original apex/www DNS records from the preflight export; retain CMS independent records and old WordPress vhost/TLS. Confirm old WordPress frontend via its original host/IP and normal certificate, then from public resolvers as caches expire. Do not change WordPress home/siteurl.
 2. Once apex is no longer intended to point to Pages, remove the Pages custom domain and restore saved staging settings. Leave domain verification TXT intact; avoid removing the custom domain while live DNS still points to an unclaimed Pages host. Mixed resolver caches may persist, so domain ownership verification and the retained production artifact limit this transition risk.
-3. Restore `PUBLICATION_MODE=staging` in the owner-controlled repository variable. Restore the verified staging artifact through the approved workflow/artifact-recovery procedure, on an allowed protected ref. Never redeploy an old run without confirming its mode/SHA; a CMS/source gate failure is not a reason to skip gates. If a rebuild fails, use the previously tested artifact recovery path rather than an empty site.
+3. Dispatch `gh workflow run deploy.yml --repo happinesea/happinesea-site --ref main -f publication_mode=staging` after Pages custom domain removal; its guard prevents project-base output at a still-configured custom domain. This rebuilds/verifies before staging deployment. Never redeploy an old run without confirming its mode/SHA; a CMS/source gate failure is not a reason to skip gates. If rebuilding fails, restored WordPress hosting remains the public fallback; keep Pages' existing artifact and use the separately rehearsed artifact recovery procedure rather than an empty site. This workflow has no unvalidated arbitrary-artifact deploy input.
 4. Verify staging at `https://happinesea.github.io/happinesea-site/`, previous WordPress apex frontend, TLS, CMS API, canonicals, downloads and representative routes. Keep automatic deploys frozen until settings/artifact/selector agree. Record rollback run IDs and residual DNS caches; restore normal automation only after owner sign-off.
 
 ## Preparation verification
 
-This is a docs-only change from PR #42 main. No application, workflow, taxonomy, CMS fetch, content, canonical or asset bytes change. The YAML fragments are proposed future patches, **not active configuration**. Commands affecting variables, dispatch, DNS and Pages were not executed. Testing in this PR verifies documentation formatting, existing mode tests and diff boundaries; full two-mode/public cutover validation must be rerun against the final approved deployment SHA in the window.
+This wiring changes workflow guards and verification, not UI, taxonomy, CMS fetch, content, canonical or asset bytes. DNS, CNAME, Pages settings and production deployments were not changed. Production dry-run QA exercises local build/HTTP verification and fail-closed policy tests, not hosted approvals or production deploy. Real environment approvals and public cutover validation remain owner operations against the final approved SHA.
+
+Wiring QA: `npm run validate` passed (86 unit tests, 26 build-output tests), actionlint passed, and both mode static HTTP verifiers passed 303 HTML / 302 canonical-OG pairs / 830 references / 43 download URL hashes / 23 manual aliases / 90 article aliases. Production staging-origin/prefix residuals were zero. Desktop/mobile passed 16 cases in each mode; staging was rerun serially after a local Python-server parallel connection-capacity failure. Production frontend dry-run reused the live-validated CMS snapshot and verified an extracted tar artifact, with no production publication. The actual missing `production-cutover` environment was read-only checked and rejected by CLI preflight; protection was not created or changed. Independent review has no outstanding P0/P1/P2 findings. Initial Astro-preview alias failures were resolved by using static serving, not filtering failed routes. Generated QA artifacts were moved out of the source tree before the final repository-level validation.

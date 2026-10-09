@@ -3,7 +3,14 @@ import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { format } from 'prettier';
 import { references } from './audit-domain-cutover.mjs';
+import { assertSafeRuntime } from './lib/publication-origin.mjs';
 
+assert(
+  ['staging', 'production', undefined, ''].includes(
+    process.env.PUBLICATION_MODE,
+  ),
+  'Invalid PUBLICATION_MODE',
+);
 const production = process.env.PUBLICATION_MODE === 'production';
 const mode = production ? 'production' : 'staging';
 const dist = process.argv[2] ?? 'dist';
@@ -15,6 +22,7 @@ const publicBase = production
 const hash = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const load = async (path) => JSON.parse(await readFile(path, 'utf8'));
 const checks = new Set();
+const expectedHtml = new Map();
 const expectedCanonicals = new Map();
 for (const page of (await load('src/data/legacy-compatibility.json')).pages)
   expectedCanonicals.set(
@@ -88,17 +96,12 @@ for (const entry of await readdir(dist, { recursive: true })) {
     ogCount++;
   }
   const page = new URL(path.replace(/index\.html$/, ''), base);
+  checks.add(page.href);
+  expectedHtml.set(page.href, hash(Buffer.from(text)));
   for (const ref of references(text, page)) {
     const url = new URL(ref.url);
     if (ref.kind === 'metadata') continue;
-    assert(
-      !(
-        ref.kind === 'runtime' &&
-        (/cms\.happinesea\.com|\/wp-json\//.test(ref.url) ||
-          /^(www\.)?happinesea\.com$/.test(url.hostname))
-      ),
-      `old-origin runtime: ${path}`,
-    );
+    assertSafeRuntime(ref, base, mode);
     if (/^(www\.)?happinesea\.com$/.test(url.hostname))
       checks.add(
         new URL('.' + url.pathname + url.search, base).href.split('#')[0],
@@ -126,7 +129,13 @@ await Promise.all(
     while (next < queue.length) {
       const url = queue[next++];
       const response = await fetch(url);
-      await response.arrayBuffer();
+      const bytes = Buffer.from(await response.arrayBuffer());
+      if (expectedHtml.has(url))
+        assert.equal(
+          hash(bytes),
+          expectedHtml.get(url),
+          `deployed HTML differs from artifact: ${url}`,
+        );
       if (response.status !== 200)
         failures.push({ url, status: response.status });
     }
@@ -158,7 +167,10 @@ for (const alias of aliases) {
 const result = {
   mode,
   observed_at: new Date().toISOString(),
-  evidence_scope: 'local static HTTP; no production deployment',
+  evidence_scope:
+    new URL(base).hostname === 'happinesea.com'
+      ? 'deployed production HTTP compared to artifact'
+      : 'local/staging HTTP; no production deployment',
   public_base: publicBase,
   html_count: htmlCount,
   canonicals_checked: canonicalCount,

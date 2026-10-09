@@ -5,6 +5,13 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      publication_mode:
+        description: Publication mode (production requires owner environment approval)
+        type: choice
+        options: [staging, production]
+        default: staging
+        required: true
 
 concurrency:
   group: pages
@@ -12,13 +19,24 @@ concurrency:
 
 permissions:
   contents: read
+  actions: read
+  pages: read
 
 jobs:
   check:
+    outputs:
+      mode: ${{ steps.selection.outputs.mode }}
+      base_url: ${{ steps.selection.outputs.base_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+      - name: Fail closed on invalid or unprotected production selection
+        id: selection
+        env:
+          INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publication-deployment.mjs select
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
@@ -29,8 +47,20 @@ jobs:
       - name: Validate source
         run: npm run test && npm run check && npm run lint && npm run format:check
 
-  build:
+  approve-production:
     needs: check
+    if: needs.check.outputs.mode == 'production'
+    environment: production-cutover
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record owner approval before production build
+        run: echo 'Production build approved for this manual main run'
+
+  build:
+    needs: [check, approve-production]
+    if: always() && needs.check.result == 'success' && (needs.approve-production.result == 'success' || needs.approve-production.result == 'skipped')
+    env:
+      PUBLICATION_MODE: ${{ needs.check.outputs.mode }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -44,27 +74,65 @@ jobs:
         run: npm ci
       - name: Fetch and optimize verified official product assets
         run: npm run assets:sync -- src/data/publication-assets/rc8x.json
-      - name: Install, build, and upload site
-        uses: withastro/action@v6
+      - name: Recheck production protection before building
+        env:
+          INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publication-deployment.mjs guard
+      - name: Build selected static publication
+        run: npm run build
+      - name: Verify artifact origin, routes, assets and download hashes
+        env:
+          E2E_BASE_URL: ${{ needs.check.outputs.mode == 'production' && 'http://127.0.0.1:4343/' || 'http://127.0.0.1:4343/happinesea-site/' }}
+        run: |
+          preview_root="$GITHUB_WORKSPACE/dist"
+          if [ "$PUBLICATION_MODE" = staging ]; then
+            mkdir -p "$RUNNER_TEMP/publication-preview"
+            ln -s "$GITHUB_WORKSPACE/dist" "$RUNNER_TEMP/publication-preview/happinesea-site"
+            preview_root="$RUNNER_TEMP/publication-preview"
+          fi
+          python3 -m http.server 4343 --bind 127.0.0.1 --directory "$preview_root" > /tmp/publication-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          for attempt in {1..60}; do
+            if curl --fail --silent "$E2E_BASE_URL" > /dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/verify-publication-origin.mjs dist
+      - name: Upload verified Pages artifact
+        uses: actions/upload-pages-artifact@v5
         with:
-          node-version: 24
+          path: dist
+          retention-days: 7
 
   deploy:
-    needs: build
+    needs: [check, build]
     permissions:
       pages: write
       id-token: write
+      contents: read
+      actions: read
     environment:
-      name: github-pages
+      name: ${{ needs.check.outputs.mode == 'production' && 'production-cutover' || 'github-pages' }}
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Recheck mode/protection and prevent staging at a custom domain
+        env:
+          INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publication-deployment.mjs guard
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
 
   browser-check:
-    needs: deploy
+    needs: [check, deploy]
+    env:
+      PUBLICATION_MODE: ${{ needs.check.outputs.mode }}
+      E2E_BASE_URL: ${{ needs.check.outputs.base_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -78,10 +146,18 @@ jobs:
         run: npm ci
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
+      - name: Download the exact deployed Pages artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: github-pages
+          path: .cache/deployed-artifact
+      - name: Compare deployed HTML, downloads and aliases to the artifact
+        run: |
+          mkdir -p dist
+          tar -xf .cache/deployed-artifact/artifact.tar -C dist
+          node scripts/verify-publication-origin.mjs dist
       - name: Capture deployed Pages in real browser
-        env:
-          E2E_BASE_URL: https://happinesea.github.io/happinesea-site/
-        run: npx playwright test tests/e2e/visual.spec.ts --project=desktop --project=mobile
+        run: npx playwright test tests/e2e/publication-origin.spec.ts --project=desktop --project=mobile
       - name: Upload browser screenshots
         uses: actions/upload-artifact@v6
         with:
