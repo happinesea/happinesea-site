@@ -4,6 +4,7 @@ import articles from '../data/wordpress-insights.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { withBase } from '../lib/urls';
+import downloads from '../data/static-downloads.json';
 
 export function getStaticPaths() {
   return snapshot.pages.map((page) => ({
@@ -31,6 +32,12 @@ const content = page.content_html.replaceAll(
   (match: string, attr: string, value: string) => {
     if (value.startsWith('#')) return match;
     const url = new URL(value, snapshot.source_origin);
+    const file = downloads.files.find((item) =>
+      item.legacy_routes.includes(decodeURIComponent(url.pathname)),
+    );
+    if (attr === 'href' && url.origin === snapshot.source_origin && file) {
+      return `href="${withBase(file.target_route)}" download data-download-sha256="${file.sha256}"`;
+    }
     if (
       url.origin !== snapshot.source_origin ||
       !knownRoutes.has(decodeURIComponent(url.pathname))
@@ -86,15 +93,3 @@ const content = page.content_html.replaceAll(
     )}
   </article>
 </BaseLayout>
-
-{page.type === 'download_endpoint' && <script
-  define:vars={{
-    downloadId: page.download_id,
-    downloadTarget: page.download_target
-      ? withBase(page.download_target)
-      : undefined,
-  }}
->
-  const requestedId = new URLSearchParams(location.search).get('wpdmdl');
-  if (requestedId === downloadId) location.replace(downloadTarget);
-</script>}

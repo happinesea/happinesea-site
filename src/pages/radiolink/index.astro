@@ -4,6 +4,40 @@ import CatalogueProductCard from '../../components/CatalogueProductCard.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import catalogue from '../../data/product-catalogue.json';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
+
+const entrances = [
+  {
+    title: '製品を探す',
+    href: '/radiolink/#products',
+    description: '送信機・受信機から関連アクセサリーまで。',
+  },
+  {
+    title: 'マニュアル',
+    href: '/manuals/',
+    description: '製品の設定や使い方を確認する。',
+  },
+  {
+    title: 'サポート・FAQ',
+    href: '/support/',
+    description: 'よくある質問や問い合わせ先を探す。',
+  },
+  {
+    title: 'メーカー更新情報',
+    href: '/radiolink/updates/',
+    description: 'ファームウェアなどの更新情報を確認する。',
+  },
+  {
+    title: 'RC・ドローンの記事',
+    href: '/insights/',
+    description: '使い方や技術に関する記事を読む。',
+  },
+  {
+    title: 'ダウンロード',
+    href: '/downloads/',
+    description: 'マニュアル・ファームウェア・設計図を取得する。',
+  },
+];
 
 const categoryOrder = [
   '送信機',
@@ -33,23 +67,45 @@ const groups = categoryOrder.map((category) => ({
 ---
 
 <BaseLayout
-  title="Radiolink製品"
-  description="Radiolinkの送信機、受信機、フライトコントローラー、機体、関連アクセサリーをカテゴリから探せる製品一覧です。"
+  title="Radiolink情報"
+  description="happinesea hobbyのRadiolink情報。製品、マニュアル、サポート、更新情報や使い方の記事を探せます。"
+  canonicalUrlOverride="https://happinesea.com/radiolink"
 >
   <section class="border-b border-slate-200 bg-slate-50">
     <div class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
       <SectionHeading
         eyebrow="Radiolink"
-        title="Radiolink製品"
+        title="Radiolink情報"
         level="h1"
-        description="送信機、受信機、フライトコントローラー、機体、関連アクセサリーなど、Radiolink製品をカテゴリ別に紹介します。"
+        description="製品を選ぶ、設定を調べる、使い方を知る。happinesea hobbyのRadiolink関連情報をここから探せます。"
       />
+      <nav
+        aria-label="Radiolink関連情報"
+        data-radiolink-hub
+        class="mt-10 grid gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        {entrances.map((item) => (
+          <div class="border-t border-slate-300 pt-6">
+            <a
+              href={withBase(item.href)}
+              class="text-lg font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+            >
+              {item.title}
+            </a>
+            <p class="mt-2 text-sm leading-7 text-slate-600">
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </nav>
     </div>
   </section>
   <section
+    id="products"
     class="mx-auto max-w-[var(--site-max-width)] px-5 py-10 lg:px-8 lg:py-14"
     data-product-catalogue
   >
+    <h2 class="mb-6 text-3xl font-bold text-slate-950">Radiolink製品一覧</h2>
     <CategoryFilter total={catalogue.length} />
     <div class="space-y-16 lg:space-y-20">
       {groups.map(({ category, id, products }) => (

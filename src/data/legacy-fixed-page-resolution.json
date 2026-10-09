@@ -293,7 +293,7 @@
       "previous_classification": "BLOCKED",
       "disposition": "TRANSFORM_AND_PUBLISH",
       "cutover_blocker": true,
-      "reason": "TRANSFORM_AND_PUBLISH with remaining cutover gate: V1/V2 Kindle href and ASIN B08NVHK22H are retained; Amazon iframe explicitly becomes the same observed ordinary link (HTTP 404 to this client). V3 widget explicitly becomes the exact original PDF, confirmed as a 47-page RC6GS V3 manual by cover/render and query-source checksum. Existing query compatibility is browser-only, not HTTP-only; download-tag archive remains outside this task. Do not substitute another RC6GS file.",
+      "reason": "V1/V2 Kindle and exact V3 PDF remain separate. Owner approved static query guidance with direct download links; binary query-response compatibility is no longer required. Download-tag archive and historical external source availability remain separate unresolved items.",
       "target_route": "/radiolink-productions-manual/rc6gs-manual",
       "redirect_approved": false,
       "removal_approved": false,
@@ -301,7 +301,7 @@
       "equivalence": {
         "result": "NO_EQUIVALENT_ASTRO_MANUAL",
         "existing_route": null,
-        "gap": "V1/V2 Kindle and exact V3 PDF remain separate in the verified static manual. The observed download endpoint and local PDF work in browsers; HTTP-only query semantics and the download-tag archive remain unresolved. The V1/V2 Amazon link returned 404 to this client. PDF identity was checked by source checksum and rendered V3 cover, not a full technical editorial review."
+        "gap": "V1/V2 Kindle and exact V3 PDF remain separate. Owner approved static query guidance; binary query responses are no longer required. Download-tag archive and historical external Amazon source availability remain unresolved. PDF identity was checked by source checksum and rendered V3 cover, not a full technical editorial review."
       },
       "image_sources": [
         "https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg"
@@ -326,7 +326,7 @@
           "http_status": 200,
           "final_url": "https://happinesea.com/download/rc6gs-v3-manual?wpdmdl=2032&refresh=6ac62475a259c1791370357",
           "canonical": null,
-          "local_route_status": "BROWSER_HANDOFF_ONLY_HTTP_COMPATIBILITY_PENDING"
+          "local_route_status": "OWNER_APPROVED_STATIC_GUIDANCE"
         },
         {
           "source_url": "https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=happinesea0f-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B08NVHK22H&linkId=50d401f2261bb2bbff503daff89bcb1e&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr",
@@ -448,17 +448,17 @@
       "title": "Radiolinkラインナップ",
       "source_api": "https://happinesea.com/wp-json/wp/v2/pages/1160",
       "previous_classification": "NEEDS_REVIEW",
-      "disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "reason": "BLOCKED: source RC4GS V2/RC6GS V2 landing is not equivalent to the Git-owned catalogue. Old RC4GS information now has its exact route, but RC6GS V2 banner and short /rc4gs-manual remain unmatched. No catalogue overwrite, relocation or redirect is authorized by inference.",
-      "target_route": null,
+      "disposition": "MAP_TO_EXISTING_ROUTE",
+      "cutover_blocker": false,
+      "reason": "Owner approved the new Git-owned Radiolink information hub as authoritative; legacy UI/content equivalence is not required. Same path, no redirect. Existing 83-product catalogue is preserved.",
+      "target_route": "/radiolink",
       "redirect_approved": false,
       "removal_approved": false,
-      "publication_status": "NOT_PUBLISHED",
+      "publication_status": "VERIFIED_STATIC",
       "equivalence": {
-        "result": "NOT_EQUIVALENT",
+        "result": "OWNER_APPROVED_NEW_AUTHORITATIVE_LANDING",
         "existing_route": "/radiolink/",
-        "gap": "The occupied Git-owned /radiolink/ catalogue is not equivalent to the old RC4GS V2/RC6GS V2 landing and its manual link. Do not overwrite, redirect or silently discard it. A reviewed legacy representation and ownership-safe access from the existing route are required in a separate implementation decision."
+        "gap": "Owner explicitly waived old landing equivalence; the new authoritative hub uses the same path without redirect."
       },
       "image_sources": [
         "https://happinesea.com/wp-content/uploads/2020/11/2525666-1024x161.png",
@@ -1823,16 +1823,16 @@
   "summary": {
     "pages": 11,
     "preserve_static": 4,
-    "map_to_existing_route": 1,
+    "map_to_existing_route": 2,
     "transform_and_publish": 4,
-    "blocked": 1,
+    "blocked": 0,
     "withdrawn_with_approval": 1,
-    "remaining_cutover_blockers": 3,
+    "remaining_cutover_blockers": 2,
     "targeted_pages": 6,
-    "targeted_remaining_cutover_blockers": 2,
-    "newly_cutover_ready": 1,
+    "targeted_remaining_cutover_blockers": 1,
+    "newly_cutover_ready": 2,
     "domain_cutover": "NOT_READY",
-    "verified_static_pages": 8,
+    "verified_static_pages": 9,
     "verified_local_images": 26
   }
 }

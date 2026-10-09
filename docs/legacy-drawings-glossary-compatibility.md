@@ -1,5 +1,7 @@
 # Legacy drawings and glossary compatibility
 
+Historical query behavior below has been superseded by the owner-approved decision in `radiolink-static-downloads.md`: query URLs show static guidance and direct file links, without automatic download/navigation. Exact binary query responses are no longer a cutover requirement. The original static file URLs are retained.
+
 Baseline: `origin/main` `73b30ef0cf6cf0baf2a90288b9a8b4d177f63069` (PR #24 merged).
 Publication copies preserve upstream ownership; they are not new canonical masters.
 Source receipts, HTTP/MIME/length/SHA-256, final URL and target route are in

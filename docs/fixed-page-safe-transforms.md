@@ -1,5 +1,7 @@
 # Six fixed-page cutover decisions after PR #28
 
+Historical record: the table and query handoff findings below describe the PR #29 state, not current blockers. Later owner decisions are recorded in `owner-fixed-page-resolution.md` and `radiolink-static-downloads.md`. The new Radiolink hub is authoritative; query-to-binary semantics are no longer required, and query pages now provide static guidance and direct links. RC6GS download-tag archive remains a separate unresolved item.
+
 Baseline: `5df74c4b18cdb51e2ab6eb52535e1a13cc822efb`. Public observations: 2026-10-07. This is Phase 6 compatibility work, not domain release or article migration.
 
 | Source page        | Final disposition     | Static publication / remaining gate                                                                                                                                                                                                                                                                                                                                                                                       |

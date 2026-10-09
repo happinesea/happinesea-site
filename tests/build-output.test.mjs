@@ -126,7 +126,7 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);
-  assert.match(html, /Radiolink製品をカテゴリ別に紹介します。/);
+  assert.match(html, /data-radiolink-hub/);
   assert.doesNotMatch(html, /公式ページで確認した83商品/);
   assert.doesNotMatch(html, /詳細ページがない商品/);
   assert.doesNotMatch(html, /詳細ページ準備中/);
@@ -581,12 +581,16 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
     assert.match(html, /<title>[^<]*happinesea hobby[^<]*<\/title>/, path);
     assert.match(
       html,
-      /<link rel="canonical" href="https:\/\/happinesea\.github\.io\/happinesea-site\//,
+      path === 'radiolink/index.html'
+        ? /<link rel="canonical" href="https:\/\/happinesea\.com\/radiolink"/
+        : /<link rel="canonical" href="https:\/\/happinesea\.github\.io\/happinesea-site\//,
       path,
     );
     assert.match(
       html,
-      /<meta property="og:url" content="https:\/\/happinesea\.github\.io\/happinesea-site\//,
+      path === 'radiolink/index.html'
+        ? /<meta property="og:url" content="https:\/\/happinesea\.com\/radiolink"/
+        : /<meta property="og:url" content="https:\/\/happinesea\.github\.io\/happinesea-site\//,
       path,
     );
     for (const [, value] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
