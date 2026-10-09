@@ -11,10 +11,10 @@ test('permanent download inventory publishes verified bytes without losing legac
     readFileSync('src/data/legacy-compatibility.json', 'utf8'),
   );
   const receipts = legacy.assets.filter((asset) => asset.kind === 'download');
-  assert.equal(inventory.files.length, 18);
+  assert.equal(inventory.files.length, 19);
   assert.equal(
     new Set(inventory.files.map((file) => file.target_route)).size,
-    18,
+    19,
   );
   for (const receipt of receipts) {
     const file = inventory.files.find((item) => item.sha256 === receipt.sha256);
@@ -35,7 +35,8 @@ test('permanent download inventory publishes verified bytes without losing legac
   }
   assert.equal(inventory.unknown.length, 4);
   for (const item of inventory.unknown) {
-    assert.equal(item.status, 'OWNER_DECISION_REQUIRED');
+    assert.equal(item.status, 'OWNER_APPROVED_DO_NOT_PUBLISH');
+    assert.equal(item.cutover_blocker, false);
     assert.equal(
       existsSync(`public${new URL(item.source_url).pathname}`),
       false,

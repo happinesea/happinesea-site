@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-10-09T04:33:14.230Z",
+  "evidence_scope": "Local HTTP static output, not a Pages deployment claim",
+  "baseline_commit": "efe10bba091ef92d007d079434b43f147b18d7f1",
+  "static_base": "http://127.0.0.1:4341/happinesea-site/",
+  "generated_html_files": 303,
+  "first_party_references_checked": 830,
+  "old_origin_navigation_counterparts_checked": 98,
+  "broken_first_party_links": [],
+  "runtime_cms_references": 0,
+  "old_origin_runtime_references": 0,
+  "manual_aliases_byte_exact": 23,
+  "changed_existing_html": [
+    "blog/page/3/index.html",
+    "category/experience/index.html",
+    "download/c-17輸送機スケールrc飛行機設計図cadファイル付/index.html",
+    "download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図/index.html",
+    "download/rc6gs-v3-manual/index.html",
+    "download/rcスケール機：f4dスカイレイ、スチレンボード飛行/index.html",
+    "download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2/index.html",
+    "download/rcスケール機：サーブ-35-ドラケン、スチレンボード/index.html",
+    "downloads/index.html",
+    "radiolink-productions-manual/index.html",
+    "radiolink-productions-manual/minipix-manual-multicopter/index.html",
+    "radiolink-productions-manual/rc4gs-manual/index.html",
+    "sample-page/index.html"
+  ],
+  "changed_article_html": [],
+  "canonical_conflicts": 0,
+  "resolved_targets": 35,
+  "beyond_root_base_canonical_technical_blockers": 0
+}

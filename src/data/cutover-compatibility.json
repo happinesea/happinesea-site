@@ -1,0 +1,188 @@
+{
+  "version": "0.1",
+  "baseline_commit": "efe10bba091ef92d007d079434b43f147b18d7f1",
+  "observed_at": "2026-10-09T04:18:15.518Z",
+  "aliases": [
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/mini-pix%E8%A3%BD%E5%93%81%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/20200511911.html",
+      "target_route": "/radiolink-support/mini-pix%E8%A3%BD%E5%93%81%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/20200511911.html",
+      "source_route": "/radiolink-support/minipix-manual/20200511911.html",
+      "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200315199.html",
+      "target_route": "/radiolink-support/manual/20200315199.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200315199.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200315199.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200316196.html",
+      "target_route": "/radiolink-support/manual/20200316196.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200316196.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316196.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200317175.html",
+      "target_route": "/radiolink-support/manual/20200317175.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200317175.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200317175.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200319234.html",
+      "target_route": "/radiolink-support/manual/20200319234.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200319234.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319234.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200319121.html",
+      "target_route": "/radiolink-support/manual/20200319121.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200319121.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319121.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200319129.html",
+      "target_route": "/radiolink-support/manual/20200319129.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200319129.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200319129.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200323185.html",
+      "target_route": "/radiolink-support/manual/20200323185.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200323185.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200323185.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200324100.html",
+      "target_route": "/radiolink-support/manual/20200324100.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200324100.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200324100.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020033030.html",
+      "target_route": "/radiolink-support/manual/2020033030.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020033030.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033030.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020033192.html",
+      "target_route": "/radiolink-support/manual/2020033192.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020033192.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020033192.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040885.html",
+      "target_route": "/radiolink-support/manual/2020040885.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040885.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040885.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040877.html",
+      "target_route": "/radiolink-support/manual/2020040877.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040877.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040877.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040870.html",
+      "target_route": "/radiolink-support/manual/2020040870.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040870.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040870.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040962.html",
+      "target_route": "/radiolink-support/manual/2020040962.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040962.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040962.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040754.html",
+      "target_route": "/radiolink-support/manual/2020040754.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040754.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040754.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200409169.html",
+      "target_route": "/radiolink-support/manual/20200409169.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200409169.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409169.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040939.html",
+      "target_route": "/radiolink-support/manual/2020040939.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040939.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040939.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/2020040910.html",
+      "target_route": "/radiolink-support/manual/2020040910.html",
+      "source_route": "/radiolink-support/rc4gs-manual/2020040910.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/2020040910.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200409850.html",
+      "target_route": "/radiolink-support/manual/20200409850.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200409850.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409850.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200316191.html",
+      "target_route": "/radiolink-support/manual/20200316191.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200316191.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200316191.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200409854.html",
+      "target_route": "/radiolink-support/manual/20200409854.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200409854.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200409854.html"
+    },
+    {
+      "legacy_url": "https://happinesea.com/radiolink-support/manual/20200410863.html",
+      "target_route": "/radiolink-support/manual/20200410863.html",
+      "source_route": "/radiolink-support/rc4gs-manual/20200410863.html",
+      "canonical": "https://happinesea.com/radiolink-support/rc4gs-manual/20200410863.html"
+    }
+  ],
+  "link_edits": [
+    {
+      "route": "/radiolink-productions-manual",
+      "links": [
+        "https://happinesea.com/r6dsm-manual",
+        "https://happinesea.com/minipix-manual-multicopter"
+      ],
+      "reason": "Owner approved broken-link removal; retain labels, no guessed manual substitute.",
+      "content_sha256": "3e31a33893b446b180361f0f891ea7f9f4f67a3e70d9a354eeccf60ceef873af"
+    },
+    {
+      "route": "/category/experience",
+      "links": ["https://happinesea.com/experience/202107081627.html"],
+      "reason": "Owner-retired article remains absent; remove archive link only.",
+      "content_sha256": "83f3f061fb0c1e119f867394c89aa7c5b8afd21cf54c70a57135700752417816"
+    },
+    {
+      "route": "/blog/page/3",
+      "links": ["https://happinesea.com/experience/202107081627.html"],
+      "reason": "Owner-retired article remains absent; remove archive link only.",
+      "content_sha256": "1b8e360406bfc116a5f883676f66088db4489c0a6643f1623669025b69474810"
+    },
+    {
+      "route": "/sample-page",
+      "links": ["https://happinesea.com/wp-admin/"],
+      "reason": "Owner approved removal of obsolete CMS management navigation.",
+      "content_sha256": "09ab4e0f115a8f33fcb46270c6839292612e2f193d104619c949d64fd0439383"
+    }
+  ],
+  "new_routes": [
+    "/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+    "/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+    "/download/document-tag/rc6gs",
+    "/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+    "/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+    "/download/rc4gs-v6-0-1fhss-rx",
+    "/download/rc4gs-firmware-v3-0-8"
+  ],
+  "japanese_firmware_sha256": "1a7dec9ec4990dff69e1312f9f6c99bab3e6b8702a80f67b5edb1ac11a7cf024",
+  "owner_decisions": {
+    "management_navigation": "REMOVE_LINK_ONLY",
+    "unreferenced_files": "DO_NOT_PUBLISH_NOT_A_CUTOVER_BLOCKER"
+  }
+}

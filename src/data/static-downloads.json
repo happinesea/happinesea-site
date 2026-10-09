@@ -238,32 +238,50 @@
       "source_urls": [
         "https://happinesea.com/download/rc6gs-v3-manual?wpdmdl=2032&refresh=6ac62ad6de5e11791371990"
       ]
+    },
+    {
+      "status": "KEEP",
+      "sha256": "1a7dec9ec4990dff69e1312f9f6c99bab3e6b8702a80f67b5edb1ac11a7cf024",
+      "content_type": "application/zip",
+      "received_bytes": 75113,
+      "target_route": "/downloads/radiolink/RC4GS_firmware_V6.0.1-2019.7.8_jp-1a7dec9ec499.zip",
+      "legacy_routes": [],
+      "source_urls": [
+        "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx?wpdmdl=394&refresh=6ac86b1bbdc6a1791519515"
+      ],
+      "source_page": "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
+      "source_final_url": "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx?wpdmdl=394&refresh=6ac86b1bbdc6a1791519515",
+      "observed_at": "2026-10-09T04:18:15.518Z"
     }
   ],
   "unknown": [
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2020/03/log_file_2020-03-11__03-47-23.txt",
       "sha256": "ba6c1fb7955237bcc603222358cc7f2b7da7d4cdf82419ec15382a3e1bad7942",
-      "status": "OWNER_DECISION_REQUIRED",
-      "reason": "Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
+      "status": "OWNER_APPROVED_DO_NOT_PUBLISH",
+      "cutover_blocker": false,
+      "reason": "Owner decision: unreferenced log/spreadsheet; do not publish and do not block cutover."
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2021/12/3efdbee22b1f6a9d22a8826a9df9e1c0.xlsx",
       "sha256": "74d9ad101523730bdc50ab53f494cbc58739df9502d183dad267321d4aa5b145",
-      "status": "OWNER_DECISION_REQUIRED",
-      "reason": "Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
+      "status": "OWNER_APPROVED_DO_NOT_PUBLISH",
+      "cutover_blocker": false,
+      "reason": "Owner decision: unreferenced log/spreadsheet; do not publish and do not block cutover."
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/03/202203271.xlsx",
       "sha256": "e96da07bb526fe4792dec08740d090462f95a630cc1d6108353bd087512e97a6",
-      "status": "OWNER_DECISION_REQUIRED",
-      "reason": "Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
+      "status": "OWNER_APPROVED_DO_NOT_PUBLISH",
+      "cutover_blocker": false,
+      "reason": "Owner decision: unreferenced log/spreadsheet; do not publish and do not block cutover."
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/03/d7ec2d3fea4756bc1642e0f10c180cf5.xlsx",
       "sha256": "d58d1c46828ade2f68634edb124f67479aa1ae6c1f7267f2d1af86a6db527ed0",
-      "status": "OWNER_DECISION_REQUIRED",
-      "reason": "Public republication purpose/privacy not approved: spreadsheet or operational log requires owner review."
+      "status": "OWNER_APPROVED_DO_NOT_PUBLISH",
+      "cutover_blocker": false,
+      "reason": "Owner decision: unreferenced log/spreadsheet; do not publish and do not block cutover."
     }
   ]
 }
