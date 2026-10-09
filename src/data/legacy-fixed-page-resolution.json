@@ -527,17 +527,17 @@
       "title": "プライバシーポリシー",
       "source_api": "https://happinesea.com/wp-json/wp/v2/pages/3",
       "previous_classification": "NEEDS_REVIEW",
-      "disposition": "BLOCKED",
-      "cutover_blocker": true,
-      "reason": "BLOCKED: owner confirmation is required before a replacement privacy policy is public. Separate candidates for site identity, image EXIF/download guidance and external embeds from WordPress-specific comment/Gravatar/login/profile/cookie/data-retention claims, empty form/analytics/sharing sections and current contact details. No legal applicability is decided or source clause silently removed.",
-      "target_route": null,
+      "disposition": "TRANSFORM_AND_PUBLISH",
+      "cutover_blocker": false,
+      "reason": "Owner approved full authoritative baseline retention and additive narrow applicability explanation; no clause deletion or meaning change.",
+      "target_route": "/privacy-policy",
       "redirect_approved": false,
       "removal_approved": false,
-      "publication_status": "NOT_PUBLISHED",
+      "publication_status": "VERIFIED_STATIC",
       "equivalence": {
-        "result": "POLICY_APPLICABILITY_UNCONFIRMED",
-        "existing_route": null,
-        "gap": "The published privacy policy states WordPress comments, login and cookies. Preserve source evidence; applicability to the static public frontend and current contact details requires owner confirmation. No legal statements are rewritten or removed."
+        "result": "AUTHORITATIVE_BASELINE_WITH_APPROVED_SUPPLEMENTS",
+        "existing_route": "/privacy-policy",
+        "gap": "Owner approved full original clauses and postal contact retention, plus narrow function applicability and conditional future-service supplements. No remaining privacy publication decision."
       },
       "image_sources": [],
       "links": [],
@@ -549,8 +549,8 @@
             "メディア",
             "他サイトからの埋め込みコンテンツ"
           ],
-          "state": "OWNER_CONFIRM",
-          "question": "Confirm site identity, EXIF guidance and actual externally embedded services for the static public frontend; no automatic legal approval."
+          "state": "OWNER_APPROVED",
+          "decision": "Retain authoritative site identity, EXIF and embed clauses verbatim; no new assertion of external services."
         },
         {
           "source_sections": [
@@ -560,8 +560,8 @@
             "データに対するあなたの権利",
             "あなたのデータの送信先"
           ],
-          "state": "CMS_VS_PUBLIC_FRONTEND_OWNER_CONFIRM",
-          "question": "Distinguish retained WordPress editing/user data from public static-site visitors; confirm whether any public comments/login/Gravatar actually remain."
+          "state": "OWNER_APPROVED",
+          "decision": "Retain all original clauses and existing-data rights/retention; append narrow applicability for functions if provided/used, noting absent visitor functions."
         },
         {
           "source_sections": [
@@ -570,10 +570,32 @@
             "あなたのデータの共有先",
             "連絡先情報"
           ],
-          "state": "OWNER_CONFIRM",
-          "question": "Confirm contact address, existing contact services and actual collection. Empty source sections do not authorize invented commitments or Analytics implementation."
+          "state": "OWNER_APPROVED",
+          "decision": "Retain the original postal contact and empty headings; add no invented collection or sharing commitments. Analytics/AdSense require policy review if introduced."
         }
-      ]
+      ],
+      "owner_approved_at": "2026-10-09",
+      "legal_diff": {
+        "retained": [
+          "私たちについて",
+          "このサイトが収集する個人データと収集の理由",
+          "コメント",
+          "メディア",
+          "お問い合わせフォーム",
+          "Cookie",
+          "他サイトからの埋め込みコンテンツ",
+          "アナリティクス",
+          "あなたのデータの共有先",
+          "データを保存する期間",
+          "データに対するあなたの権利",
+          "あなたのデータの送信先",
+          "連絡先情報"
+        ],
+        "added": 5,
+        "deleted": 0,
+        "meaning_changed": 0
+      },
+      "source_content_sha256": "d2be68ae99f6c5b49327ffcd50cc85244c54a0fcad2af72b1e641ba53a31b3e3"
     },
     {
       "id": 207,
@@ -1802,15 +1824,15 @@
     "pages": 11,
     "preserve_static": 4,
     "map_to_existing_route": 1,
-    "transform_and_publish": 3,
-    "blocked": 2,
+    "transform_and_publish": 4,
+    "blocked": 1,
     "withdrawn_with_approval": 1,
-    "remaining_cutover_blockers": 4,
+    "remaining_cutover_blockers": 3,
     "targeted_pages": 6,
-    "targeted_remaining_cutover_blockers": 3,
-    "newly_cutover_ready": 2,
+    "targeted_remaining_cutover_blockers": 2,
+    "newly_cutover_ready": 1,
     "domain_cutover": "NOT_READY",
-    "verified_static_pages": 7,
+    "verified_static_pages": 8,
     "verified_local_images": 26
   }
 }
