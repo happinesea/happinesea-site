@@ -212,7 +212,22 @@ async function audit() {
     (manifest.withdrawals ?? []).map((a) => pathKey(a.canonical)),
   );
   retired.add('/style-guide');
-  const unknown = new Set(compatibility.blocked.map((a) => key(a.source_url)));
+  const decisions = JSON.parse(
+    await readFile('src/data/cutover-compatibility.json', 'utf8'),
+  );
+  const unpublished = new Set(
+    downloads.unknown
+      .filter((a) => a.cutover_blocker === false)
+      .map((a) => key(a.source_url)),
+  );
+  for (const url of unpublished) retired.add(pathKey(url));
+  if (decisions.owner_decisions.management_navigation === 'REMOVE_LINK_ONLY')
+    retired.add('/wp-admin');
+  const unknown = new Set(
+    compatibility.blocked
+      .filter((a) => !unpublished.has(key(a.source_url)))
+      .map((a) => key(a.source_url)),
+  );
   const queryGuidancePaths = new Set(
     compatibility.pages
       .filter((p) => p.download_id)
@@ -267,7 +282,9 @@ async function audit() {
         : exactStatic || localized);
     const classification = classifyCurrent({
       retired: retired.has(pathKey(url)),
-      ownerUnknown: unknown.has(url) || pathKey(url) === '/wp-admin',
+      ownerUnknown:
+        unknown.has(url) ||
+        (pathKey(url) === '/wp-admin' && !retired.has('/wp-admin')),
       resolved,
       referenced: references.length > 0,
       derivative: /-\d+x\d+\.[a-z]+$/i.test(direct),

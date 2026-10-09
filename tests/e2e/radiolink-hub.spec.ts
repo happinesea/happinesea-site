@@ -69,7 +69,7 @@ test('downloads are exact static bytes and query pages remain navigable without 
     const links = page.locator('a[data-download-sha256]');
     expect(await links.count()).toBeGreaterThan(0);
     const file = inventory.files.find((file) =>
-      file.legacy_routes.includes(endpoint.download_target!),
+      file.legacy_routes.some((route) => route === endpoint.download_target),
     );
     expect(file).toBeDefined();
     for (const link of await links.all()) {

@@ -5,6 +5,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { withBase } from '../lib/urls';
 import downloads from '../data/static-downloads.json';
+import cutover from '../data/cutover-compatibility.json';
+import { applyApprovedLinkEdits } from '../../scripts/lib/legacy-compatibility.mjs';
 
 export function getStaticPaths() {
   return snapshot.pages.map((page) => ({
@@ -26,14 +28,22 @@ const knownRoutes = new Set([
     decodeURIComponent(new URL(item.canonical).pathname),
   ),
   ...articles.flatMap((item) => item.body_assets.map((asset) => asset.src)),
+  ...cutover.aliases.map((item) => decodeURIComponent(item.target_route)),
+  ...downloads.files.map((item) => item.target_route),
 ]);
-const content = page.content_html.replaceAll(
+const content = applyApprovedLinkEdits(
+  page.content_html,
+  page.target_route,
+  cutover.link_edits,
+).replaceAll(
   /\b(href|src)="([^"]+)"/g,
   (match: string, attr: string, value: string) => {
     if (value.startsWith('#')) return match;
     const url = new URL(value, snapshot.source_origin);
     const file = downloads.files.find((item) =>
-      item.legacy_routes.includes(decodeURIComponent(url.pathname)),
+      item.legacy_routes.some(
+        (route) => route === decodeURIComponent(url.pathname),
+      ),
     );
     if (attr === 'href' && url.origin === snapshot.source_origin && file) {
       return `href="${withBase(file.target_route)}" download data-download-sha256="${file.sha256}"`;

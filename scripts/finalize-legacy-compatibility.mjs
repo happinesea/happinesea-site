@@ -1,6 +1,9 @@
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { finalizeLegacyOutputs } from './lib/legacy-compatibility.mjs';
+import {
+  finalizeLegacyOutputs,
+  copyVerifiedAliases,
+} from './lib/legacy-compatibility.mjs';
 
 const snapshot = JSON.parse(
   await readFile(
@@ -10,6 +13,16 @@ const snapshot = JSON.parse(
 );
 await finalizeLegacyOutputs(
   snapshot,
+  fileURLToPath(new URL('../dist/', import.meta.url)),
+);
+const cutover = JSON.parse(
+  await readFile(
+    new URL('../src/data/cutover-compatibility.json', import.meta.url),
+    'utf8',
+  ),
+);
+await copyVerifiedAliases(
+  cutover.aliases,
   fileURLToPath(new URL('../dist/', import.meta.url)),
 );
 console.log(

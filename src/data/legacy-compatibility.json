@@ -2523,6 +2523,125 @@
         "deleted": 0,
         "meaning_changed": 0
       }
+    },
+    {
+      "source_url": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "source_final_url": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "source_sha256": "174279d693bcfddd0705a10eae4d566baf561bef14da1ed820f3410c79acc3d1",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "type": "download_tag_archive",
+      "title": "スケール機",
+      "canonical": "https://happinesea.com/download/document-tag/スケール機",
+      "target_route": "/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "status": "READY",
+      "content_html": "<p>スケール機の公開ダウンロード情報。</p><ul><li><a href=\"https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C\">RCスケール機：F4Dスカイレイ、スチレンボード飛行機</a></li><li><a href=\"https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3\">Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図</a></li><li><a href=\"https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98\">C-17輸送機スケールRC飛行機設計図(CADファイル付)</a></li><li><a href=\"https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89\">RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機</a></li></ul>",
+      "member_routes": [
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+        "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89"
+      ],
+      "hero": null
+    },
+    {
+      "source_url": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "source_final_url": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "source_sha256": "87f15ccd13c75481924efdfdb3a5ac071755e75b56c5657301096280599710e9",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "type": "download_tag_archive",
+      "title": "スチレンボード",
+      "canonical": "https://happinesea.com/download/document-tag/スチレンボード",
+      "target_route": "/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "status": "READY",
+      "content_html": "<p>スチレンボードの公開ダウンロード情報。</p><ul><li><a href=\"https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C\">RCスケール機：F4Dスカイレイ、スチレンボード飛行機</a></li><li><a href=\"https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3\">Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図</a></li><li><a href=\"https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98\">C-17輸送機スケールRC飛行機設計図(CADファイル付)</a></li><li><a href=\"https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89\">RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機</a></li></ul>",
+      "member_routes": [
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+        "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89"
+      ],
+      "hero": null
+    },
+    {
+      "source_url": "https://happinesea.com/download/document-tag/rc6gs",
+      "source_final_url": "https://happinesea.com/download/document-tag/rc6gs",
+      "source_sha256": "6ba2e2c5ff6cb2ca4b53ef75b5374d847344a3d4efc51b374a9e48b4a56eddd6",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "type": "download_tag_archive",
+      "title": "RC6GS",
+      "canonical": "https://happinesea.com/download/document-tag/rc6gs",
+      "target_route": "/download/document-tag/rc6gs",
+      "status": "READY",
+      "content_html": "<p>RC6GSの公開ダウンロード情報。</p><ul><li><a href=\"https://happinesea.com/download/rc6gs-v3-manual\">RC6GS V3 R/C プロポセット取扱説明書</a></li></ul>",
+      "member_routes": ["/download/rc6gs-v3-manual"],
+      "hero": null
+    },
+    {
+      "source_url": "https://happinesea.com/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "source_final_url": "https://happinesea.com/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "source_sha256": "adf8f63f07299339d907e2d51ffcb4c3fa885accd5e272221319b32da7260768",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "type": "download_tag_archive",
+      "title": "RCスケール機",
+      "canonical": "https://happinesea.com/download/document-tag/rcスケール機",
+      "target_route": "/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "status": "READY",
+      "content_html": "<p>RCスケール機の公開ダウンロード情報。</p><ul><li><a href=\"https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2\">RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機</a></li></ul>",
+      "member_routes": [
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2"
+      ],
+      "hero": null
+    },
+    {
+      "source_url": "https://happinesea.com/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+      "source_final_url": "https://happinesea.com/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+      "source_sha256": "750b336ac54fb510c029a9a095b91473bd43850a6c7647554337fbf707c663b9",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "type": "download_tag_archive",
+      "title": "発泡スチロール",
+      "canonical": "https://happinesea.com/download/document-tag/発泡スチロール",
+      "target_route": "/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+      "status": "READY",
+      "content_html": "<p>発泡スチロールの公開ダウンロード情報。</p><ul><li><a href=\"https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2\">RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機</a></li></ul>",
+      "member_routes": [
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2"
+      ],
+      "hero": null
+    },
+    {
+      "source_url": "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
+      "source_sha256": "b5f0e0106304bad23834f1fb8d67b593dc89e24b30b78d95521a1e7d7c9c9de1",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "title": "RC4GS-V6.0.1(FHSS-RX)",
+      "canonical": "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
+      "target_route": "/download/rc4gs-v6-0-1fhss-rx",
+      "type": "firmware_download",
+      "status": "READY",
+      "hero": null,
+      "content_html": "<p>日本語変更履歴を含むファームウェアパッケージ。</p><p><a href=\"/downloads/radiolink/RC4GS_firmware_V6.0.1-2019.7.8_jp-1a7dec9ec499.zip\" download data-download-sha256=\"1a7dec9ec4990dff69e1312f9f6c99bab3e6b8702a80f67b5edb1ac11a7cf024\">ZIPをダウンロード</a></p>",
+      "download_target": "/downloads/radiolink/RC4GS_firmware_V6.0.1-2019.7.8_jp-1a7dec9ec499.zip",
+      "download_id": 394
+    },
+    {
+      "source_url": "https://happinesea.com/download/rc4gs-firmware-v3-0-8",
+      "source_sha256": "a8d903898e3ea1fcaf65255b912c123c14af9b55dff1ce5e9233d22c499bb0c2",
+      "observed_at": "2026-10-09T04:18:15.518Z",
+      "http_status": 200,
+      "title": "RC4GS V3.0.8",
+      "canonical": "https://happinesea.com/download/rc4gs-firmware-v3-0-8",
+      "target_route": "/download/rc4gs-firmware-v3-0-8",
+      "type": "firmware_download",
+      "status": "READY",
+      "hero": null,
+      "content_html": "<p>ファームウェアの公開ZIPファイル。</p><p><a href=\"/downloads/radiolink/RC4GS-firmware-V3.0.8-ed0e198286a7.zip\" download data-download-sha256=\"ed0e198286a74a53f9252a22cfc2ba9b92f3c3b4072e5d3894956e0a55a6f532\">ZIPをダウンロード</a></p>",
+      "download_target": "/downloads/radiolink/RC4GS-firmware-V3.0.8-ed0e198286a7.zip",
+      "download_id": 398
     }
   ],
   "assets": [

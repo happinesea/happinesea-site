@@ -1,7 +1,16 @@
 import { sanitizeArticleHtml } from './wordpress-publication.mjs';
 import { createHash } from 'node:crypto';
-import { readFile, rename, rmdir, stat } from 'node:fs/promises';
-import { join, resolve, sep } from 'node:path';
+import {
+  readFile,
+  rename,
+  rmdir,
+  stat,
+  access,
+  mkdir,
+  copyFile,
+} from 'node:fs/promises';
+import { constants } from 'node:fs';
+import { join, resolve, sep, dirname } from 'node:path';
 import { sameCanonical } from './legacy-public-surface.mjs';
 
 // Caller must verify the static outputs before supplying verifiedPages.
@@ -98,6 +107,64 @@ export function prepareLegacyHtml(html, images, downloads) {
     },
   );
   return sanitizeArticleHtml(value, images, { preserveAnchors: true });
+}
+
+export function applyApprovedLinkEdits(html, route, edits) {
+  const edit = edits.find((item) => item.route === route);
+  if (!edit) return html;
+  if (createHash('sha256').update(html).digest('hex') !== edit.content_sha256)
+    throw new Error(`approved link source drift: ${route}`);
+  const found = new Set();
+  const output = html.replaceAll(
+    /<a\b[^>]*\bhref="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,
+    (match, href, label) => {
+      if (!edit.links.includes(href)) return match;
+      found.add(href);
+      return label;
+    },
+  );
+  if (edit.links.some((href) => !found.has(href)))
+    throw new Error(`approved link literal drift: ${route}`);
+  return output;
+}
+
+export async function copyVerifiedAliases(aliases, dist) {
+  const file = (route) => {
+    const decoded = decodeURIComponent(route);
+    if (
+      !decoded.startsWith('/') ||
+      !decoded.endsWith('.html') ||
+      decoded.includes('\\') ||
+      decoded.split('/').includes('..')
+    )
+      throw new Error(`unsafe alias path: ${route}`);
+    const result = resolve(dist, `.${decoded}`);
+    if (!result.startsWith(resolve(dist) + sep))
+      throw new Error('unsafe alias path');
+    return result;
+  };
+  const destinations = new Set();
+  const plan = [];
+  for (const alias of aliases) {
+    const source = file(alias.source_route);
+    const target = file(alias.target_route);
+    if (destinations.has(target)) throw new Error('alias collision');
+    destinations.add(target);
+    const html = await readFile(source, 'utf8');
+    if (!html.includes(`<link rel="canonical" href="${alias.canonical}"`))
+      throw new Error(`alias canonical drift: ${alias.target_route}`);
+    try {
+      await access(target);
+      throw new Error(`alias collision: ${alias.target_route}`);
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+    }
+    plan.push({ source, target });
+  }
+  for (const { source, target } of plan) {
+    await mkdir(dirname(target), { recursive: true });
+    await copyFile(source, target, constants.COPYFILE_EXCL);
+  }
 }
 
 export async function finalizeLegacyOutputs(snapshot, dist) {
