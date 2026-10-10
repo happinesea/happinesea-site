@@ -5,6 +5,10 @@ import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import { verifySitemap } from '../scripts/lib/sitemap.mjs';
 import { manualCanonical } from '../scripts/lib/rc4gs-v2-manual.mjs';
+import {
+  headingText,
+  pageHeading,
+} from '../scripts/lib/manual-semantic-structure.mjs';
 const rc4gsManual = JSON.parse(
   await readFile(
     new URL('../src/data/manuals/rc4gs-v2.json', import.meta.url),
@@ -16,6 +20,106 @@ const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 const publicationBase =
   process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
+
+test('all public manual headings and TOCs are semantic, including V2 and RC8X full chapters', async () => {
+  const inventory = JSON.parse(
+    await readFile(
+      new URL('../src/data/manuals/existing-ja.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  const paths = (
+    await readdir(new URL('../dist/manuals/', import.meta.url), {
+      recursive: true,
+    })
+  ).filter((path) => path.endsWith('.html'));
+  assert(
+    paths.some((path) =>
+      path.replaceAll('\\', '/').includes('rc4gs-v2/chapter-01/'),
+    ),
+  );
+  assert(
+    paths.some((path) =>
+      path.replaceAll('\\', '/').includes('rc8x/chapter-02/'),
+    ),
+  );
+  for (const path of paths) {
+    const html = await route(`manuals/${path.replaceAll('\\', '/')}`);
+    for (const heading of html.matchAll(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/g))
+      assert(
+        !pageHeading.test(headingText(heading[2])),
+        `${path}: page placeholder heading`,
+      );
+    for (const toc of html.matchAll(
+      /<(?:starlight-toc|mobile-starlight-toc)\b[^>]*>([\s\S]*?)<\/(?:starlight-toc|mobile-starlight-toc)>/g,
+    ))
+      for (const link of toc[1].matchAll(/<a\b[^>]*>([\s\S]*?)<\/a>/g))
+        assert(
+          !pageHeading.test(headingText(link[1])),
+          `${path}: page placeholder TOC`,
+        );
+    const manual = inventory.manuals.find(
+      (manual) =>
+        `manuals${manual.route.slice('/manuals'.length)}index.html` ===
+        `manuals/${path.replaceAll('\\', '/')}`,
+    );
+    if (!manual) continue;
+    const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+    assert.equal(new Set(ids).size, ids.length, `${path}: duplicate anchor ID`);
+    const baseline = JSON.parse(
+      await readFile(
+        new URL('fixtures/manual-semantic-baseline.json', import.meta.url),
+        'utf8',
+      ),
+    );
+    for (const id of baseline.manuals.find((entry) => entry.id === manual.id)
+      .heading_anchors)
+      assert(
+        html.includes(`id="${id}"`),
+        `${path}: lost published heading anchor ${id}`,
+      );
+    for (const semantic of manual.semantic_sections.filter(
+      (section) => section.title,
+    )) {
+      assert(
+        html.includes(`id="${semantic.id}"`),
+        `${path}: missing stable heading anchor`,
+      );
+      assert(
+        [
+          ...html.matchAll(
+            new RegExp(
+              `<h${semantic.depth}\\b[^>]*>([\\s\\S]*?)<\\/h${semantic.depth}>`,
+              'g',
+            ),
+          ),
+        ].some(
+          (match) =>
+            headingText(match[1]).replace(/#+$/, '').trim() === semantic.title,
+        ),
+        `${path}: missing real semantic heading ${semantic.title}`,
+      );
+      for (const toc of html.matchAll(
+        /<(?:starlight-toc|mobile-starlight-toc)\b[^>]*>([\s\S]*?)<\/(?:starlight-toc|mobile-starlight-toc)>/g,
+      ))
+        assert(
+          [...toc[1].matchAll(/<a\b[^>]*>([\s\S]*?)<\/a>/g)].some(
+            (link) => headingText(link[1]) === semantic.title,
+          ),
+          `${path}: semantic TOC entry missing ${semantic.title}`,
+        );
+    }
+    assert.equal(
+      [...html.matchAll(/data-manual-figure/g)].length,
+      manual.sections.reduce(
+        (sum, section) =>
+          sum +
+          [...section.content_html.matchAll(/data-manual-figure/g)].length,
+        0,
+      ),
+    );
+  }
+});
 
 test('only evidence-cleared manual routes and corrected assets are generated', async () => {
   const inventory = JSON.parse(

@@ -6,6 +6,8 @@ import { sitemapSerializer } from './scripts/lib/sitemap.mjs';
 import { fileURLToPath } from 'node:url';
 import existingJapaneseManuals from './src/data/manuals/existing-ja.json' with { type: 'json' };
 import { verifyExistingJapaneseManuals } from './scripts/lib/existing-ja-manuals.mjs';
+import { satteri } from '@astrojs/markdown-satteri';
+import { semanticHeadingPunctuation } from './scripts/lib/manual-semantic-structure.mjs';
 
 verifyExistingJapaneseManuals(existingJapaneseManuals, new URL('./public/', import.meta.url));
 
@@ -15,6 +17,9 @@ if (!['staging', 'production'].includes(publicationMode))
 const production = publicationMode === 'production';
 
 export default defineConfig({
+  markdown: {
+    processor: satteri({ hastPlugins: [semanticHeadingPunctuation(existingJapaneseManuals.manuals)] }),
+  },
   site: production ? 'https://happinesea.com' : 'https://happinesea.github.io',
   base: production ? '/' : '/happinesea-site',
   output: 'static',
