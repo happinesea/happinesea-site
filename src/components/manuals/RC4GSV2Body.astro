@@ -1,0 +1,101 @@
+---
+import manual from '../../data/manuals/rc4gs-v2.json';
+import articles from '../../data/wordpress-insights.json';
+import legacy from '../../data/legacy-compatibility.json';
+import downloads from '../../data/static-downloads.json';
+import { withBase } from '../../lib/urls';
+import {
+  migratedManualTarget,
+  verifyRc4gsManual,
+} from '../../../scripts/lib/rc4gs-v2-manual.mjs';
+
+interface Props {
+  id: number;
+  part?: number;
+}
+verifyRc4gsManual(manual, articles);
+const { id, part } = Astro.props;
+const section = manual.sections.find((entry) => entry.id === id);
+if (!section) throw new Error(`Unknown RC4GS V2 section ${id}`);
+const parts = section.content_html.split(/<h2>.*?<\/h2>/s);
+if (part !== undefined && (id !== 196 || parts.length !== 4 || !parts[part]))
+  throw new Error('RC4GS receiver structure drift');
+const body = (
+  part === undefined ? section.content_html : parts[part]
+).replaceAll(
+  /\b(href|src)="([^"]+)"/g,
+  (match, attr: string, value: string) => {
+    if (value.startsWith('#')) return match;
+    const url = new URL(value, 'https://happinesea.com');
+    const mapped =
+      attr === 'href' ? migratedManualTarget(value, manual) : undefined;
+    if (mapped) return `href="${withBase(mapped)}"`;
+    if (url.origin !== 'https://happinesea.com') return match;
+    const legacyPage = legacy.pages.find(
+      (item) => item.target_route === url.pathname,
+    );
+    if (
+      attr === 'href' &&
+      legacyPage &&
+      'download_target' in legacyPage &&
+      typeof legacyPage.download_target === 'string'
+    ) {
+      const firmware = downloads.files.find(
+        (item) => item.target_route === legacyPage.download_target,
+      );
+      if (!firmware)
+        throw new Error(`Missing verified firmware file: ${url.pathname}`);
+      return `href="${withBase(firmware.target_route)}" download data-download-sha256="${firmware.sha256}"`;
+    }
+    const file = downloads.files.find((item) =>
+      item.legacy_routes.some(
+        (route) => route === decodeURIComponent(url.pathname),
+      ),
+    );
+    if (file && attr === 'href')
+      return `href="${withBase(file.target_route)}" download data-download-sha256="${file.sha256}"`;
+    const known =
+      value.startsWith('/assets/') ||
+      legacy.pages.some((item) => item.target_route === url.pathname) ||
+      downloads.files.some((item) => item.target_route === url.pathname);
+    return known
+      ? `${attr}="${withBase(url.pathname + (legacyPage && !url.pathname.endsWith('.html') && !url.pathname.endsWith('/') ? '/' : '') + url.search + url.hash)}"`
+      : match;
+  },
+);
+---
+
+{section.caution && (
+  <aside class="rc4gs-caution" aria-label="記述の確認が必要な箇所">
+    <strong>操作前に確認してください</strong>
+    <p>{section.caution}</p>
+  </aside>
+)}
+<div
+  class="rc4gs-body"
+  data-rc4gs-section={section.number}
+  data-source-id={id}
+  set:html={body}
+/>
+<style>
+  .rc4gs-caution {
+    border-left: 4px solid #b45309;
+    background: #fffbeb;
+    color: #78350f;
+    padding: 1rem;
+    margin-block: 1rem;
+  }
+  .rc4gs-body {
+    overflow-wrap: anywhere;
+  }
+  .rc4gs-body :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+  .rc4gs-body :global(iframe) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+</style>

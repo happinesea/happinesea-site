@@ -6,6 +6,11 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { withBase } from '../lib/urls';
 import downloads from '../data/static-downloads.json';
 import cutover from '../data/cutover-compatibility.json';
+import manual from '../data/manuals/rc4gs-v2.json';
+import {
+  manualCanonical,
+  migratedManualTarget,
+} from '../../scripts/lib/rc4gs-v2-manual.mjs';
 import { applyApprovedLinkEdits } from '../../scripts/lib/legacy-compatibility.mjs';
 import {
   googleServiceFlags,
@@ -22,6 +27,7 @@ export function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const manualTarget = migratedManualTarget(page.canonical, manual);
 const knownRoutes = new Set([
   ...snapshot.pages.flatMap((item) => {
     const route = decodeURIComponent(item.target_route);
@@ -49,6 +55,8 @@ const content = applyApprovedLinkEdits(
   (match: string, attr: string, value: string) => {
     if (value.startsWith('#')) return match;
     const url = new URL(value, snapshot.source_origin);
+    const target = attr === 'href' && migratedManualTarget(url.href, manual);
+    if (target) return `href="${withBase(target)}"`;
     const file = downloads.files.find((item) =>
       item.legacy_routes.some(
         (route) => route === decodeURIComponent(url.pathname),
@@ -70,7 +78,7 @@ const content = applyApprovedLinkEdits(
 <BaseLayout
   title={page.title}
   description={page.title}
-  canonicalUrlOverride={page.canonical}
+  canonicalUrlOverride={manualCanonical(page.canonical, manual)}
   robots={page.noindex ? 'noindex,follow' : undefined}
 >
   <article class="mx-auto max-w-4xl px-5 py-6 [overflow-wrap:anywhere] lg:px-8">
@@ -80,6 +88,12 @@ const content = applyApprovedLinkEdits(
     <h1 class="my-8 text-4xl leading-tight font-bold tracking-tight text-slate-950">
       {page.title}
     </h1>
+    {manualTarget && (
+      <p class="my-6 rounded-lg border border-teal-200 bg-teal-50 p-4">
+        <a href={withBase(manualTarget)}>RC4GS V2 日本語マニュアルを読む</a> —
+        新しいマニュアルの目次から各章をご覧いただけます。
+      </p>
+    )}
     {page.hero && (
       <img
         class="mb-10 h-auto max-h-[32rem] w-full object-contain"

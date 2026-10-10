@@ -31,6 +31,14 @@ export default defineConfig({
       },
       sidebar: [
         {
+          label: 'RC4GS V2',
+          items: [
+            { label: 'はじめに・目次', slug: 'manuals/rc4gs-v2' },
+            { label: '第1章 送信機と受信機', slug: 'manuals/rc4gs-v2/chapter-01' },
+            { label: '第2章 機能', slug: 'manuals/rc4gs-v2/chapter-02' },
+          ],
+        },
+        {
           label: 'RC8X',
           items: [
             { label: 'はじめに', slug: 'manuals/rc8x' },

@@ -4,6 +4,13 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import { verifySitemap } from '../scripts/lib/sitemap.mjs';
+import { manualCanonical } from '../scripts/lib/rc4gs-v2-manual.mjs';
+const rc4gsManual = JSON.parse(
+  await readFile(
+    new URL('../src/data/manuals/rc4gs-v2.json', import.meta.url),
+    'utf8',
+  ),
+);
 
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
@@ -32,7 +39,9 @@ test('sitemap lists only self-canonical generated public URLs and excludes defer
     );
     for (const article of manifest.articles)
       assert(
-        xml.includes(`<loc>${article.canonical}</loc>`),
+        xml.includes(
+          `<loc>${manualCanonical(article.canonical, rc4gsManual)}</loc>`,
+        ),
         article.canonical,
       );
   }
@@ -509,7 +518,9 @@ test('WordPress insight batch emits sanitized static routes with local images an
     );
     assert.match(
       html,
-      new RegExp(`<link rel="canonical" href="${article.canonical}"`),
+      new RegExp(
+        `<link rel="canonical" href="${manualCanonical(article.canonical, rc4gsManual)}"`,
+      ),
     );
     if (!article.hero) {
       assert.equal(article.hero, null);
