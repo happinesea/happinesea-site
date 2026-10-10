@@ -62,6 +62,23 @@ export function stableReviewedHtml(html) {
 export function reviewedArticleHtml(input, review) {
   let value = String(input ?? '');
   if (!review) return value;
+  const variant = review.source_variants?.find(
+    ({ source_content_sha256, stable_content_sha256 }) =>
+      createHash('sha256')
+        .update(stable_content_sha256 ? stableReviewedHtml(value) : value)
+        .digest('hex') === (stable_content_sha256 ?? source_content_sha256),
+  );
+  // A literal, hash-pinned CMS rendering review must still reproduce the original source hash.
+  for (const { from, to } of variant?.replacements ?? []) {
+    if (
+      typeof from !== 'string' ||
+      !from ||
+      typeof to !== 'string' ||
+      value.split(from).length !== 2
+    )
+      throw new Error('source replacement drift');
+    value = value.replace(from, () => to);
+  }
   const stable = (html) =>
     review.stable_content_sha256 ? stableReviewedHtml(html) : html;
   if (
@@ -432,7 +449,10 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
         alt_text: '',
         media_details: { width: recovery.width, height: recovery.height },
       }
-    : sourceMedia;
+    : sourceMedia && {
+        ...sourceMedia,
+        source_url: publicationSourceAssetUrl(sourceMedia.source_url),
+      };
   const width = Number(media?.media_details?.width);
   const height = Number(media?.media_details?.height);
   const featuredImage = media
@@ -683,6 +703,17 @@ export function resolveBuildTimeSourceUrl(sourceUrl) {
     return sourceUrl;
   url.hostname = 'cms.happinesea.com';
   return url.href;
+}
+
+export function publicationSourceAssetUrl(sourceUrl) {
+  if (!sourceUrl) return sourceUrl;
+  const url = new URL(sourceUrl);
+  if (url.origin !== 'https://cms.happinesea.com') return sourceUrl;
+  url.hostname = 'happinesea.com';
+  // Only the existing uploads fetch mapping establishes this provenance identity.
+  return resolveBuildTimeSourceUrl(url.href) === sourceUrl
+    ? url.href
+    : sourceUrl;
 }
 
 export function assertBuildTimeSourceHash(sourceUrl, bytes, expectedHash) {

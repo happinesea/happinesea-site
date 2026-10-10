@@ -850,7 +850,30 @@
       "canonical": "https://happinesea.com/news/202305302086.html",
       "content_review": {
         "source_content_sha256": "ccbeadcfaac96cc3a65f1974c4d5527d478f65cff1a81ca392f0e2ee19f5bdfd",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "3051fda07ebd24d970860ee85cc68ad76cbdab3ac403dfa57bf5058bccd304ed",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2023/05/a66b71b2-e20e-4e3f-b1ef-99bf5f7bcd63_471x655.png 471w, https://cms.happinesea.com/wp-content/uploads/2023/05/a66b71b2-e20e-4e3f-b1ef-99bf5f7bcd63_471x655-216x300.png 216w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2023/05/a66b71b2-e20e-4e3f-b1ef-99bf5f7bcd63_471x655.png 471w, https://happinesea.com/wp-content/uploads/2023/05/a66b71b2-e20e-4e3f-b1ef-99bf5f7bcd63_471x655-216x300.png 216w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-1024x638.jpeg 1024w, https://cms.happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-300x187.jpeg 300w, https://cms.happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-768x479.jpeg 768w, https://cms.happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53.jpeg 1280w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-1024x638.jpeg 1024w, https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-300x187.jpeg 300w, https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53-768x479.jpeg 768w, https://happinesea.com/wp-content/uploads/2023/05/fd8831e424e0478dbeaf88581ddc8b53.jpeg 1280w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2023/05/d8451a1eda5946a58c6ad62573d66fb9.jpeg 660w, https://cms.happinesea.com/wp-content/uploads/2023/05/d8451a1eda5946a58c6ad62573d66fb9-300x196.jpeg 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2023/05/d8451a1eda5946a58c6ad62573d66fb9.jpeg 660w, https://happinesea.com/wp-content/uploads/2023/05/d8451a1eda5946a58c6ad62573d66fb9-300x196.jpeg 300w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2023/05/bf83a98234df4779b6257e67a5796bfc.jpeg 660w, https://cms.happinesea.com/wp-content/uploads/2023/05/bf83a98234df4779b6257e67a5796bfc-300x195.jpeg 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2023/05/bf83a98234df4779b6257e67a5796bfc.jpeg 660w, https://happinesea.com/wp-content/uploads/2023/05/bf83a98234df4779b6257e67a5796bfc-300x195.jpeg 300w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -959,7 +982,18 @@
             "evidence_url": "https://happinesea.com/download/rc6gs-v3-manual?wpdmdl=2032"
           }
         ],
-        "stable_content_sha256": "f5771333458a1dc84720d01b29df59057aecdffd8471195523860cdadc00e245"
+        "stable_content_sha256": "f5771333458a1dc84720d01b29df59057aecdffd8471195523860cdadc00e245",
+        "source_variants": [
+          {
+            "stable_content_sha256": "1329420701b7dc0e773204f1dd6ae5b86e14260dbcfc268961834aca2027200f",
+            "replacements": [
+              {
+                "from": "src=\"https://cms.happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg\"",
+                "to": "src=\"https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -992,7 +1026,26 @@
       "canonical": "https://happinesea.com/news/202207252012.html",
       "content_review": {
         "source_content_sha256": "35a559e32d299bb265acdeb81abd43b75bafad194cdd4382d1ce6bcc7a5cc8b5",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "0b937786981624ae5df3b67091db786fe999ef0e75d7d05112803df9d6ea41c9",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2.jpg 1200w, https://cms.happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-215x300.jpg 215w, https://cms.happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-733x1024.jpg 733w, https://cms.happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-768x1073.jpg 768w, https://cms.happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-1099x1536.jpg 1099w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2.jpg 1200w, https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-215x300.jpg 215w, https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-733x1024.jpg 733w, https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-768x1073.jpg 768w, https://happinesea.com/wp-content/uploads/2022/07/1200px-Fusee_V2-1099x1536.jpg 1099w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/07/image15.png 1080w, https://cms.happinesea.com/wp-content/uploads/2022/07/image15-300x145.png 300w, https://cms.happinesea.com/wp-content/uploads/2022/07/image15-1024x496.png 1024w, https://cms.happinesea.com/wp-content/uploads/2022/07/image15-768x372.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/07/image15.png 1080w, https://happinesea.com/wp-content/uploads/2022/07/image15-300x145.png 300w, https://happinesea.com/wp-content/uploads/2022/07/image15-1024x496.png 1024w, https://happinesea.com/wp-content/uploads/2022/07/image15-768x372.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering.png 1718w, https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-300x169.png 300w, https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-1024x576.png 1024w, https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-768x432.png 768w, https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-1536x865.png 1536w, https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-960x539.png 960w, https://cms.happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-480x270.png 480w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering.png 1718w, https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-300x169.png 300w, https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-1024x576.png 1024w, https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-768x432.png 768w, https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-1536x865.png 1536w, https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-960x539.png 960w, https://happinesea.com/wp-content/uploads/2022/07/Tianzhou_Rendering-480x270.png 480w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1033,7 +1086,26 @@
       "canonical": "https://happinesea.com/news/202203271947.html",
       "content_review": {
         "source_content_sha256": "985a7790374f8ca1eb7b86e2c4dcb677b58c3445bd766655eed7b17caec6d280",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "977b9479eea9a668be618eeb02d3c6941de5b3bde93a9b630a9e97895b3034bb",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/03/202203272.png 1414w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203272-300x225.png 300w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203272-1024x769.png 1024w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203272-768x577.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/03/202203272.png 1414w, https://happinesea.com/wp-content/uploads/2022/03/202203272-300x225.png 300w, https://happinesea.com/wp-content/uploads/2022/03/202203272-1024x769.png 1024w, https://happinesea.com/wp-content/uploads/2022/03/202203272-768x577.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/03/202203271.png 2917w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203271-300x110.png 300w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203271-1024x376.png 1024w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203271-768x282.png 768w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203271-1536x563.png 1536w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203271-2048x751.png 2048w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/03/202203271.png 2917w, https://happinesea.com/wp-content/uploads/2022/03/202203271-300x110.png 300w, https://happinesea.com/wp-content/uploads/2022/03/202203271-1024x376.png 1024w, https://happinesea.com/wp-content/uploads/2022/03/202203271-768x282.png 768w, https://happinesea.com/wp-content/uploads/2022/03/202203271-1536x563.png 1536w, https://happinesea.com/wp-content/uploads/2022/03/202203271-2048x751.png 2048w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/03/202203273.png 1574w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203273-300x204.png 300w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203273-1024x696.png 1024w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203273-768x522.png 768w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203273-1536x1044.png 1536w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/03/202203273.png 1574w, https://happinesea.com/wp-content/uploads/2022/03/202203273-300x204.png 300w, https://happinesea.com/wp-content/uploads/2022/03/202203273-1024x696.png 1024w, https://happinesea.com/wp-content/uploads/2022/03/202203273-768x522.png 768w, https://happinesea.com/wp-content/uploads/2022/03/202203273-1536x1044.png 1536w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1074,7 +1146,38 @@
       "canonical": "https://happinesea.com/news/202111151758.html",
       "content_review": {
         "source_content_sha256": "b8953d93c06b2b1002ff4272e7a9008eac32e161600edfd7d87e4911fa7eb504",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "518f46f133432363f2223589bda97c8f21288591ee44886c3f6c3b61b84e9d98",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/11/2021111002.png 1236w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111002-300x149.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111002-1024x509.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111002-768x382.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/11/2021111002.png 1236w, https://happinesea.com/wp-content/uploads/2021/11/2021111002-300x149.png 300w, https://happinesea.com/wp-content/uploads/2021/11/2021111002-1024x509.png 1024w, https://happinesea.com/wp-content/uploads/2021/11/2021111002-768x382.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/11/2021111003.png 1200w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111003-300x119.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111003-1024x406.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111003-768x305.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/11/2021111003.png 1200w, https://happinesea.com/wp-content/uploads/2021/11/2021111003-300x119.png 300w, https://happinesea.com/wp-content/uploads/2021/11/2021111003-1024x406.png 1024w, https://happinesea.com/wp-content/uploads/2021/11/2021111003-768x305.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/11/2021111004.png 1216w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111004-300x116.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111004-1024x397.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111004-768x298.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/11/2021111004.png 1216w, https://happinesea.com/wp-content/uploads/2021/11/2021111004-300x116.png 300w, https://happinesea.com/wp-content/uploads/2021/11/2021111004-1024x397.png 1024w, https://happinesea.com/wp-content/uploads/2021/11/2021111004-768x298.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/11/2021111006.png 1200w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111006-300x119.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111006-1024x406.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111006-768x305.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/11/2021111006.png 1200w, https://happinesea.com/wp-content/uploads/2021/11/2021111006-300x119.png 300w, https://happinesea.com/wp-content/uploads/2021/11/2021111006-1024x406.png 1024w, https://happinesea.com/wp-content/uploads/2021/11/2021111006-768x305.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/11/2021111007.png 1200w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111007-300x119.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111007-1024x406.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111007-768x305.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/11/2021111007.png 1200w, https://happinesea.com/wp-content/uploads/2021/11/2021111007-300x119.png 300w, https://happinesea.com/wp-content/uploads/2021/11/2021111007-1024x406.png 1024w, https://happinesea.com/wp-content/uploads/2021/11/2021111007-768x305.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/11/2021111008.png 1216w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111008-300x117.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111008-1024x401.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/11/2021111008-768x301.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/11/2021111008.png 1216w, https://happinesea.com/wp-content/uploads/2021/11/2021111008-300x117.png 300w, https://happinesea.com/wp-content/uploads/2021/11/2021111008-1024x401.png 1024w, https://happinesea.com/wp-content/uploads/2021/11/2021111008-768x301.png 768w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1125,7 +1228,38 @@
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
       "content_review": {
         "source_content_sha256": "adb7e7a2aecfceaea90d63c158617d59903ab13c29f41a39061b320439f0ce81",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "43edade8f47ae9875db0be5ef2e01211588833f19a945bd321ddc59c92fdbfce",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/11.png 797w, https://cms.happinesea.com/wp-content/uploads/2021/09/11-252x300.png 252w, https://cms.happinesea.com/wp-content/uploads/2021/09/11-768x913.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/11.png 797w, https://happinesea.com/wp-content/uploads/2021/09/11-252x300.png 252w, https://happinesea.com/wp-content/uploads/2021/09/11-768x913.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/12.png 901w, https://cms.happinesea.com/wp-content/uploads/2021/09/12-300x163.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/12-768x417.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/09/12-235x129.png 235w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/12.png 901w, https://happinesea.com/wp-content/uploads/2021/09/12-300x163.png 300w, https://happinesea.com/wp-content/uploads/2021/09/12-768x417.png 768w, https://happinesea.com/wp-content/uploads/2021/09/12-235x129.png 235w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/13.png 929w, https://cms.happinesea.com/wp-content/uploads/2021/09/13-300x219.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/13-768x560.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/13.png 929w, https://happinesea.com/wp-content/uploads/2021/09/13-300x219.png 300w, https://happinesea.com/wp-content/uploads/2021/09/13-768x560.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/14.png 810w, https://cms.happinesea.com/wp-content/uploads/2021/09/14-300x128.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/14-768x327.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/14.png 810w, https://happinesea.com/wp-content/uploads/2021/09/14-300x128.png 300w, https://happinesea.com/wp-content/uploads/2021/09/14-768x327.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/15.png 818w, https://cms.happinesea.com/wp-content/uploads/2021/09/15-300x83.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/15-768x211.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/15.png 818w, https://happinesea.com/wp-content/uploads/2021/09/15-300x83.png 300w, https://happinesea.com/wp-content/uploads/2021/09/15-768x211.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/16.png 834w, https://cms.happinesea.com/wp-content/uploads/2021/09/16-300x72.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/16-768x184.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/16.png 834w, https://happinesea.com/wp-content/uploads/2021/09/16-300x72.png 300w, https://happinesea.com/wp-content/uploads/2021/09/16-768x184.png 768w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1176,7 +1310,30 @@
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
       "content_review": {
         "source_content_sha256": "b43bd084f0dcfc3fe42fe02bcebe6e009a2a00909acdcf55482f05d28d8048c9",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "dec1b32036a6b1e8f0ca54ac3eec0da6d5d2a38111ca54b09b04ab6132b21981",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/7.png 871w, https://cms.happinesea.com/wp-content/uploads/2021/09/7-300x99.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/7-768x254.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/7.png 871w, https://happinesea.com/wp-content/uploads/2021/09/7-300x99.png 300w, https://happinesea.com/wp-content/uploads/2021/09/7-768x254.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/8.png 929w, https://cms.happinesea.com/wp-content/uploads/2021/09/8-300x93.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/8-768x238.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/8.png 929w, https://happinesea.com/wp-content/uploads/2021/09/8-300x93.png 300w, https://happinesea.com/wp-content/uploads/2021/09/8-768x238.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/9.png 929w, https://cms.happinesea.com/wp-content/uploads/2021/09/9-300x93.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/9-768x238.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/9.png 929w, https://happinesea.com/wp-content/uploads/2021/09/9-300x93.png 300w, https://happinesea.com/wp-content/uploads/2021/09/9-768x238.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/10.png 949w, https://cms.happinesea.com/wp-content/uploads/2021/09/10-300x277.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/10-768x709.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/09/10-81x76.png 81w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/10.png 949w, https://happinesea.com/wp-content/uploads/2021/09/10-300x277.png 300w, https://happinesea.com/wp-content/uploads/2021/09/10-768x709.png 768w, https://happinesea.com/wp-content/uploads/2021/09/10-81x76.png 81w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1217,7 +1374,22 @@
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
       "content_review": {
         "source_content_sha256": "57367300c4c80144e61d985b9968a83d6a5840405b607541ddff3f0a6f0939f3",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "9fdddb7eaa79c7e29aa9763f0ae78567fa45beb4883b92b408d89a5e6d356e0c",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/17.png 728w, https://cms.happinesea.com/wp-content/uploads/2021/09/17-300x83.png 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/17.png 728w, https://happinesea.com/wp-content/uploads/2021/09/17-300x83.png 300w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/18.png 585w, https://cms.happinesea.com/wp-content/uploads/2021/09/18-300x137.png 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/18.png 585w, https://happinesea.com/wp-content/uploads/2021/09/18-300x137.png 300w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1248,7 +1420,26 @@
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
       "content_review": {
         "source_content_sha256": "e851e5c7976b990b7d3576f17362a3efe50da0d428b59313d1cc5e5899c2a3e1",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "3ade4553ab17ce34e8aa348c420fcf64e9f26f93e9d51089547c92bdb59ad548",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/2.png 814w, https://cms.happinesea.com/wp-content/uploads/2021/09/2-300x164.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/2-768x421.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/09/2-750x410.png 750w, https://cms.happinesea.com/wp-content/uploads/2021/09/2-360x197.png 360w, https://cms.happinesea.com/wp-content/uploads/2021/09/2-292x160.png 292w, https://cms.happinesea.com/wp-content/uploads/2021/09/2-235x129.png 235w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/2.png 814w, https://happinesea.com/wp-content/uploads/2021/09/2-300x164.png 300w, https://happinesea.com/wp-content/uploads/2021/09/2-768x421.png 768w, https://happinesea.com/wp-content/uploads/2021/09/2-750x410.png 750w, https://happinesea.com/wp-content/uploads/2021/09/2-360x197.png 360w, https://happinesea.com/wp-content/uploads/2021/09/2-292x160.png 292w, https://happinesea.com/wp-content/uploads/2021/09/2-235x129.png 235w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/3.png 814w, https://cms.happinesea.com/wp-content/uploads/2021/09/3-300x177.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/3-768x452.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/3.png 814w, https://happinesea.com/wp-content/uploads/2021/09/3-300x177.png 300w, https://happinesea.com/wp-content/uploads/2021/09/3-768x452.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/4.png 956w, https://cms.happinesea.com/wp-content/uploads/2021/09/4-300x168.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/4-768x431.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/09/4-480x270.png 480w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/4.png 956w, https://happinesea.com/wp-content/uploads/2021/09/4-300x168.png 300w, https://happinesea.com/wp-content/uploads/2021/09/4-768x431.png 768w, https://happinesea.com/wp-content/uploads/2021/09/4-480x270.png 480w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1284,7 +1475,18 @@
       "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
       "content_review": {
         "source_content_sha256": "f46a68ae3b7fa65ccb989c0d3179b1af91221ac7ea0de343bccb4eb34cba7004",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "3ec8b9db3354ada26fb7b4e88db7f49097267cd4d3ebdb73deca4569394481fd",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/09/1.png 995w, https://cms.happinesea.com/wp-content/uploads/2021/09/1-300x102.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/09/1-768x262.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/09/1.png 995w, https://happinesea.com/wp-content/uploads/2021/09/1-300x102.png 300w, https://happinesea.com/wp-content/uploads/2021/09/1-768x262.png 768w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1336,6 +1538,25 @@
             "reason": "Non-YouTube iframe becomes an explicit ordinary source link; source text and YouTube retained.",
             "evidence_url": "https://amzn.to/3g7G7p6"
           }
+        ],
+        "source_variants": [
+          {
+            "source_content_sha256": "7627f05f8482a4e445bf41f0954badd868c3c7a07369fb4279bd64d13b5a6dbd",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-300x225.jpg 300w, https://cms.happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-768x576.jpg 768w, https://cms.happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511.jpg 850w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-300x225.jpg 300w, https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511-768x576.jpg 768w, https://happinesea.com/wp-content/uploads/2021/06/DSCN4613_convert_20100401225511.jpg 850w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-160x300.jpg 160w, https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-545x1024.jpg 545w, https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903.jpg 604w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-160x300.jpg 160w, https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903-545x1024.jpg 545w, https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181903.jpg 604w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-1024x385.jpg 1024w, https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-300x113.jpg 300w, https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-768x289.jpg 768w, https://cms.happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853.jpg 1286w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-1024x385.jpg 1024w, https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-300x113.jpg 300w, https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853-768x289.jpg 768w, https://happinesea.com/wp-content/uploads/2021/06/WeChat-Image_20210610181853.jpg 1286w\""
+              }
+            ]
+          }
         ]
       },
       "preserve_anchors": false,
@@ -1372,7 +1593,18 @@
       "canonical": "https://happinesea.com/news/202106091559.html",
       "content_review": {
         "source_content_sha256": "c5b58bba9605b7607b474d74b78fe8c61bef657036135d3c9d93f60a65d96e67",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "7ae1d91c7823621e52721c51cd60ea094307dacd72421df4a7a5882613d308aa",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/06/sugiura03.png 822w, https://cms.happinesea.com/wp-content/uploads/2021/06/sugiura03-300x170.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/06/sugiura03-768x435.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/06/sugiura03.png 822w, https://happinesea.com/wp-content/uploads/2021/06/sugiura03-300x170.png 300w, https://happinesea.com/wp-content/uploads/2021/06/sugiura03-768x435.png 768w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1443,7 +1675,18 @@
       "canonical": "https://happinesea.com/news/202102101500.html",
       "content_review": {
         "source_content_sha256": "b8ff4a5d327b10fdae7871d2cea9d85ceaa6a04d160bdf52e3a73ef07e315ecf",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "0cfb21fff29748bfb1fa6dec38298502fff894ed08ac45cc7ca910a871f6b53c",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/02/2827490.jpg 660w, https://cms.happinesea.com/wp-content/uploads/2021/02/2827490-300x168.jpg 300w, https://cms.happinesea.com/wp-content/uploads/2021/02/2827490-480x270.jpg 480w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/02/2827490.jpg 660w, https://happinesea.com/wp-content/uploads/2021/02/2827490-300x168.jpg 300w, https://happinesea.com/wp-content/uploads/2021/02/2827490-480x270.jpg 480w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1480,6 +1723,57 @@
             "to": "src=\"https://happinesea.com/wp-content/uploads/2021/01/2020_4-1.png\"",
             "reason": "Broken derivative has class wp-image-1420. Public media/1420 resolves to the original also used as this article featured image; restore that authoritative attachment rather than guessing from filename.",
             "evidence_url": "https://happinesea.com/wp-json/wp/v2/media/1420"
+          }
+        ],
+        "source_variants": [
+          {
+            "source_content_sha256": "dcc111542d62e8df465079a97a55db80409f03c8f2065ad09202d6f066bc705d",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2019.png 788w, https://cms.happinesea.com/wp-content/uploads/2021/01/2019-271x300.png 271w, https://cms.happinesea.com/wp-content/uploads/2021/01/2019-768x849.png 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2019.png 788w, https://happinesea.com/wp-content/uploads/2021/01/2019-271x300.png 271w, https://happinesea.com/wp-content/uploads/2021/01/2019-768x849.png 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_5-1024x542.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_5-300x159.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_5-768x407.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_5.png 1156w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_5-1024x542.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_5-300x159.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_5-768x407.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_5.png 1156w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_3-1024x542.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_3-300x159.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_3-768x406.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_3.png 1174w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_3-1024x542.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_3-300x159.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_3-768x406.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_3.png 1174w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_8-1024x607.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_8-300x178.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_8-768x456.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_8.png 1165w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_8-1024x607.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_8-300x178.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_8-768x456.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_8.png 1165w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_11-1024x394.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_11-300x115.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_11-768x295.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_11.png 1165w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_11-1024x394.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_11-300x115.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_11-768x295.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_11.png 1165w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_10-1024x390.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_10-300x114.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_10-768x293.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_10.png 1165w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_10-1024x390.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_10-300x114.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_10-768x293.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_10.png 1165w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_9-1024x390.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_9-300x114.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_9-768x293.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_9.png 1165w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_9-1024x390.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_9-300x114.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_9-768x293.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_9.png 1165w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_7-1024x574.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_7-300x168.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_7-768x430.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_7-960x539.png 960w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_7-480x270.png 480w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_7.png 1165w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_7-1024x574.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_7-300x168.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_7-768x430.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_7-960x539.png 960w, https://happinesea.com/wp-content/uploads/2021/01/2020_7-480x270.png 480w, https://happinesea.com/wp-content/uploads/2021/01/2020_7.png 1165w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_1-1024x529.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_1-300x155.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_1-768x397.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_1.png 1178w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_1-1024x529.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_1-300x155.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_1-768x397.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_1.png 1178w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_2-1024x542.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_2-300x159.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_2-768x406.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_2.png 1174w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_2-1024x542.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_2-300x159.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_2-768x406.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_2.png 1174w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/2020_4-1-1024x546.png 1024w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_4-1-300x160.png 300w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_4-1-768x410.png 768w, https://cms.happinesea.com/wp-content/uploads/2021/01/2020_4-1.png 1164w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/2020_4-1-1024x546.png 1024w, https://happinesea.com/wp-content/uploads/2021/01/2020_4-1-300x160.png 300w, https://happinesea.com/wp-content/uploads/2021/01/2020_4-1-768x410.png 768w, https://happinesea.com/wp-content/uploads/2021/01/2020_4-1.png 1164w\""
+              }
+            ]
           }
         ]
       },
@@ -1570,7 +1864,26 @@
             "evidence_url": "https://www.eilconsulting.com/check_PSE.html"
           }
         ],
-        "stable_content_sha256": "cbd6346d7c8d7a217818c119d3e89ee984c30a799cc8ccc89f2c3b3a4131dcf7"
+        "stable_content_sha256": "cbd6346d7c8d7a217818c119d3e89ee984c30a799cc8ccc89f2c3b3a4131dcf7",
+        "source_variants": [
+          {
+            "stable_content_sha256": "e06d23b29ec34d4d9d80d9841fb9c787167ee0f511e651a8f176d2eff2452a6c",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2021/01/psehani_2.png 469w, https://cms.happinesea.com/wp-content/uploads/2021/01/psehani_2-300x234.png 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2021/01/psehani_2.png 469w, https://happinesea.com/wp-content/uploads/2021/01/psehani_2-300x234.png 300w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_.jpg 970w, https://cms.happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_-291x300.jpg 291w, https://cms.happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_-768x792.jpg 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_.jpg 970w, https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_-291x300.jpg 291w, https://happinesea.com/wp-content/uploads/2020/11/61usvsb3GL._AC_SL1000_-768x792.jpg 768w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png 1024w, https://cms.happinesea.com/wp-content/uploads/2020/03/R6FG-300x122.png 300w, https://cms.happinesea.com/wp-content/uploads/2020/03/R6FG-768x312.png 768w, https://cms.happinesea.com/wp-content/uploads/2020/03/R6FG.png 1079w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/03/R6FG-1024x417.png 1024w, https://happinesea.com/wp-content/uploads/2020/03/R6FG-300x122.png 300w, https://happinesea.com/wp-content/uploads/2020/03/R6FG-768x312.png 768w, https://happinesea.com/wp-content/uploads/2020/03/R6FG.png 1079w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1606,7 +1919,18 @@
       "canonical": "https://happinesea.com/news/202012011350.html",
       "content_review": {
         "source_content_sha256": "f72ac4aa46cf249a9b1f7153820a42047cdab79be0bf5a7f0c07bcef4e83ff25",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "bdde38d1698041893d078505699c3d85c2a83229d62a1b473f7dc802c90702c3",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1024x684.png 1024w, https://cms.happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-300x200.png 300w, https://cms.happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-768x513.png 768w, https://cms.happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1536x1026.png 1536w, https://cms.happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-2048x1368.png 2048w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1024x684.png 1024w, https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-300x200.png 300w, https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-768x513.png 768w, https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-1536x1026.png 1536w, https://happinesea.com/wp-content/uploads/2020/12/B3-ET661_201808_GR_20190816164005-2048x1368.png 2048w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1632,7 +1956,22 @@
       "canonical": "https://happinesea.com/news/202007101118.html",
       "content_review": {
         "source_content_sha256": "47e1e804a294aeb5c8fa24136c688b4c3d6b085f120e58d423b61a1cfb2fce2f",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "0ab14dd3355a19fd010670baeb4dccbfed64f2f079bc52c3b60ea4f5a105003f",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/07/15-638.jpg 638w, https://cms.happinesea.com/wp-content/uploads/2020/07/15-638-300x225.jpg 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/07/15-638.jpg 638w, https://happinesea.com/wp-content/uploads/2020/07/15-638-300x225.jpg 300w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/07/1c13cd70.png 399w, https://cms.happinesea.com/wp-content/uploads/2020/07/1c13cd70-229x300.png 229w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/07/1c13cd70.png 399w, https://happinesea.com/wp-content/uploads/2020/07/1c13cd70-229x300.png 229w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1663,7 +2002,22 @@
       "canonical": "https://happinesea.com/news/202006301090.html",
       "content_review": {
         "source_content_sha256": "1267d1bade746740c8efaff0914d8d0c25c3a438fb91e67f11159843ca520b08",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "e39109403a2b2e80d1051ec243ca8ba2630addd1721056c5b71d40266b4e1751",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/06/image.png 576w, https://cms.happinesea.com/wp-content/uploads/2020/06/image-300x238.png 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/06/image.png 576w, https://happinesea.com/wp-content/uploads/2020/06/image-300x238.png 300w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/06/image-1.png 577w, https://cms.happinesea.com/wp-content/uploads/2020/06/image-1-300x244.png 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/06/image-1.png 577w, https://happinesea.com/wp-content/uploads/2020/06/image-1-300x244.png 300w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1715,7 +2069,18 @@
       "canonical": "https://happinesea.com/news/20200525943.html",
       "content_review": {
         "source_content_sha256": "8a6b4a15ea7a1d5b5c2b536f546008603d65c3a247f39e1f20c4fa85f15e1be4",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "8dadd4db61a53ba2acfa94eebbe227b6038eb96b1ee856cd6d5e6e25d703c43b",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2020/05/20170908233941-1.png 800w, https://cms.happinesea.com/wp-content/uploads/2020/05/20170908233941-1-300x169.png 300w, https://cms.happinesea.com/wp-content/uploads/2020/05/20170908233941-1-768x432.png 768w, https://cms.happinesea.com/wp-content/uploads/2020/05/20170908233941-1-480x270.png 480w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1.png 800w, https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1-300x169.png 300w, https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1-768x432.png 768w, https://happinesea.com/wp-content/uploads/2020/05/20170908233941-1-480x270.png 480w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1817,7 +2182,22 @@
       "canonical": "https://happinesea.com/experience/20200312114.html",
       "content_review": {
         "source_content_sha256": "031d64a218c0c156a75a858c412f8d287dd0e15f25787418b83ac92ddf57850b",
-        "replacements": []
+        "replacements": [],
+        "source_variants": [
+          {
+            "source_content_sha256": "d4aeabbdf8ac845ebae303bc030eb21927fd27b1236b79d61847b0d622454423",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1.jpg 640w, https://cms.happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1-300x200.jpg 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1.jpg 640w, https://happinesea.com/wp-content/uploads/2016/09/drone-905955_640-1-300x200.jpg 300w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2016/09/quadricopter-451754_1280-2.jpg 750w, https://cms.happinesea.com/wp-content/uploads/2016/09/quadricopter-451754_1280-2-300x200.jpg 300w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2016/09/quadricopter-451754_1280-2.jpg 750w, https://happinesea.com/wp-content/uploads/2016/09/quadricopter-451754_1280-2-300x200.jpg 300w\""
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -1888,6 +2268,25 @@
           {
             "from": "<script src=\"//z-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;Operation=GetScript&amp;ID=OneJS&amp;WS=1&amp;Marketplace=JP\"></script>",
             "to": ""
+          }
+        ],
+        "source_variants": [
+          {
+            "source_content_sha256": "55927e888e7132468451f82aa011be77e6215a8db30ae42f20861bcd8580c1a6",
+            "replacements": [
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/03/202203221.png 603w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203221-300x166.png 300w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203221-292x160.png 292w, https://cms.happinesea.com/wp-content/uploads/2022/03/202203221-235x129.png 235w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/03/202203221.png 603w, https://happinesea.com/wp-content/uploads/2022/03/202203221-300x166.png 300w, https://happinesea.com/wp-content/uploads/2022/03/202203221-292x160.png 292w, https://happinesea.com/wp-content/uploads/2022/03/202203221-235x129.png 235w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614.webp 1280w, https://cms.happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-300x169.webp 300w, https://cms.happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-1024x576.webp 1024w, https://cms.happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-768x432.webp 768w, https://cms.happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-960x539.webp 960w, https://cms.happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-480x270.webp 480w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614.webp 1280w, https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-300x169.webp 300w, https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-1024x576.webp 1024w, https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-768x432.webp 768w, https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-960x539.webp 960w, https://happinesea.com/wp-content/uploads/2022/03/img_967022a2595fb8121898c090e6c21d32344614-480x270.webp 480w\""
+              },
+              {
+                "from": "srcset=\"https://cms.happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280.jpg 1280w, https://cms.happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280-300x152.jpg 300w, https://cms.happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280-1024x518.jpg 1024w, https://cms.happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280-768x389.jpg 768w\"",
+                "to": "srcset=\"https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280.jpg 1280w, https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280-300x152.jpg 300w, https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280-1024x518.jpg 1024w, https://happinesea.com/wp-content/uploads/2022/03/190110_railgun-w1280-768x389.jpg 768w\""
+              }
+            ]
           }
         ]
       },
