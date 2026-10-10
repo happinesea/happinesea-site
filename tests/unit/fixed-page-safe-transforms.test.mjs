@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import sanitizeHtml from 'sanitize-html';
 const load = (path) =>
@@ -62,7 +62,7 @@ test('RC4GS V2 static copy retains every source image, motion bytes and content 
     assert.ok(page.content_html.includes(`alt="${alt}"`));
 });
 
-test('RC6GS manual keeps V1/V2 Kindle separate from the exact V3 source PDF and query endpoint', () => {
+test('RC6GS legacy receipt retains V1/V2 identity while unsafe V3 download is safety-blocked', () => {
   const snapshot = load('src/data/legacy-compatibility.json');
   const page = snapshot.pages.find((p) => p.id === 1344);
   assert.ok(page, 'RC6GS manual missing');
@@ -78,14 +78,9 @@ test('RC6GS manual keeps V1/V2 Kindle separate from the exact V3 source PDF and 
     asset.sha256,
     '9d2c5485f2ebce5226fcf20b75a33bcc169a6305e3e3d51767aa80b0058c6737',
   );
+  assert.equal(asset.publication_status, 'BLOCKED_SAFETY_REVIEW');
   assert.equal(
-    createHash('sha256')
-      .update(
-        readFileSync(
-          new URL(`../../public${asset.target_route}`, import.meta.url),
-        ),
-      )
-      .digest('hex'),
-    asset.sha256,
+    existsSync(new URL(`../../public${asset.target_route}`, import.meta.url)),
+    false,
   );
 });

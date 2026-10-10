@@ -12,6 +12,7 @@ import {
   migratedManualTarget,
 } from '../../scripts/lib/rc4gs-v2-manual.mjs';
 import { applyApprovedLinkEdits } from '../../scripts/lib/legacy-compatibility.mjs';
+import { rewriteSafetyBlockedDownloads } from '../../scripts/lib/existing-ja-manuals.mjs';
 import {
   googleServiceFlags,
   updateGooglePrivacy,
@@ -41,15 +42,19 @@ const knownRoutes = new Set([
   ...cutover.aliases.map((item) => decodeURIComponent(item.target_route)),
   ...downloads.files.map((item) => item.target_route),
 ]);
-const content = applyApprovedLinkEdits(
-  page.id === 3
-    ? updateGooglePrivacy(
-        page.content_html,
-        googleServiceFlags(import.meta.env.DEV ? {} : process.env),
-      )
-    : page.content_html,
-  page.target_route,
-  cutover.link_edits,
+const content = rewriteSafetyBlockedDownloads(
+  applyApprovedLinkEdits(
+    page.id === 3
+      ? updateGooglePrivacy(
+          page.content_html,
+          googleServiceFlags(import.meta.env.DEV ? {} : process.env),
+        )
+      : page.content_html,
+    page.target_route,
+    cutover.link_edits,
+  ),
+  downloads.files,
+  withBase('/downloads/') + '#manual-safety-review',
 ).replaceAll(
   /\b(href|src)="([^"]+)"/g,
   (match: string, attr: string, value: string) => {
@@ -88,6 +93,20 @@ const content = applyApprovedLinkEdits(
     <h1 class="my-8 text-4xl leading-tight font-bold tracking-tight text-slate-950">
       {page.title}
     </h1>
+    {downloads.files.some(
+      (file) =>
+        file.status === 'BLOCKED_SAFETY_REVIEW' &&
+        [file.target_route, ...file.legacy_routes].some((route) =>
+          page.content_html.includes(route),
+        ),
+    ) && (
+      <p class="my-6 border-l-4 border-amber-600 p-4">
+        このページで案内していた一部のマニュアルは、受信機の版と操作手順の確認が必要なため配信を停止しています。
+        <a href={withBase('/downloads/') + '#manual-safety-review'}>
+          配信状況を確認する
+        </a>
+      </p>
+    )}
     {manualTarget && (
       <p class="my-6 rounded-lg border border-teal-200 bg-teal-50 p-4">
         <a href={withBase(manualTarget)}>RC4GS V2 日本語マニュアルを読む</a> —

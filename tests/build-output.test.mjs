@@ -14,6 +14,42 @@ const rc4gsManual = JSON.parse(
 
 const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
+const publicationBase =
+  process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
+
+test('only evidence-cleared manual routes and corrected assets are generated', async () => {
+  const inventory = JSON.parse(
+    await readFile(
+      new URL('../src/data/manuals/existing-ja.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  for (const manual of inventory.manuals) {
+    const output = new URL(`../dist${manual.route}index.html`, import.meta.url);
+    if (manual.publication_status === 'BLOCKED_SAFETY_REVIEW') {
+      await assert.rejects(access(output));
+      await assert.rejects(
+        access(
+          new URL(
+            `../dist/assets/radiolink/${manual.product}/manuals/${manual.route.split('/')[2]}/`,
+            import.meta.url,
+          ),
+        ),
+      );
+    } else {
+      await access(output);
+    }
+  }
+  const quick = await route('manuals/rc6gs-v3-quick-reference/index.html');
+  assert.match(quick, /figure-006\.svg/);
+  assert.doesNotMatch(
+    quick,
+    /figure-005\.png|figure-006\.png|2回早打ち→ジャイロON\/OFF/,
+  );
+  assert.match(quick, /送信機の電源をいったんOFFにし、再びON/);
+  assert.match(await route('manuals/rc4gs-v2/index.html'), /RC4GS/);
+  assert.match(await route('manuals/rc4gs-v3/index.html'), /RC4GS V3/);
+});
 
 test('sitemap lists only self-canonical generated public URLs and excludes deferred/withdrawn articles', async () => {
   const base =
@@ -135,10 +171,15 @@ test('localized article body images include the Pages base on all article and li
       const html = await route(path);
       for (const image of article.body_assets)
         assert.ok(
-          html.includes(`src="/happinesea-site${image.src}"`),
+          html.includes(`src="${publicationBase}${image.src}"`),
           `body image base missing: ${path} ${image.src}`,
         );
-      assert.doesNotMatch(html, /src="\/assets\/insights\/wordpress\//);
+      assert.doesNotMatch(
+        html,
+        publicationBase
+          ? /src="\/assets\/insights\/wordpress\//
+          : /src="\/happinesea-site\/assets\/insights\/wordpress\//,
+      );
     }
   }
 });
@@ -162,8 +203,8 @@ test('home puts articles and hobby resources before Radiolink', async () => {
   assert.match(html, />ニュース・航空知識</);
   assert.match(html, /happinesea hobby/);
   assert.match(html, /夢を現実に！/);
-  assert.match(html, /href="\/happinesea-site\/drawinglibrary\/"/);
-  assert.match(html, /href="\/happinesea-site\/drone-rc-glossary\/"/);
+  assert.ok(html.includes(`href="${publicationBase}/drawinglibrary/"`));
+  assert.ok(html.includes(`href="${publicationBase}/drone-rc-glossary/"`));
   assert.doesNotMatch(
     html,
     /業界・技術|Products &amp; Support|Industry &amp; Technology|日本代理店/,
@@ -171,7 +212,7 @@ test('home puts articles and hobby resources before Radiolink', async () => {
   assert.match(html, /data-home-resource="manuals"/);
   assert.match(html, /data-home-resource="support"/);
   assert.match(html, /data-home-resource="updates"/);
-  assert.match(html, /href="\/happinesea-site\/manuals\/"/);
+  assert.ok(html.includes(`href="${publicationBase}/manuals/"`));
   assert.doesNotMatch(html, /実装済み|公開サンプル|検証用/);
 });
 
@@ -209,7 +250,7 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.doesNotMatch(html, /詳細ページ準備中/);
   assert.doesNotMatch(
     html,
-    /href="\/happinesea-site\/radiolink\/(?:turbo-pix|at10-ii)\/"/,
+    new RegExp(`href="${publicationBase}/radiolink/(?:turbo-pix|at10-ii)/"`),
   );
 });
 
@@ -259,7 +300,7 @@ test('RC8X product page follows the official product flow without commercial cla
     assert.match(html, new RegExp(`data-product-section="${section}"`));
   }
   assert.match(html, /data-product-nav/);
-  assert.match(html, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.ok(html.includes(`href="${publicationBase}/manuals/rc8x/"`));
   assert.match(html, />日本語マニュアル</);
   assert.match(html, />英語マニュアル</);
   assert.match(html, /Radiolink公式・外部サイト/);
@@ -428,8 +469,8 @@ test('support and product update routes are distinct public targets', async () =
 
   assert.match(support, /RC8X サポート/);
   assert.match(support, /href="https:\/\/line\.me\/R\/ti\/p\/%40662zyrsb"/);
-  assert.match(support, /href="\/happinesea-site\/radiolink\/rc8x\/"/);
-  assert.match(support, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.ok(support.includes(`href="${publicationBase}/radiolink/rc8x/"`));
+  assert.ok(support.includes(`href="${publicationBase}/manuals/rc8x/"`));
   assert.doesNotMatch(support, /構成サンプル|公開中のFAQはありません/);
   assert.match(updates, /Radiolink更新情報/);
   assert.match(updates, /data-content-kind="product_update"/);
@@ -442,7 +483,7 @@ test('manuals category provides a public entry point without review language', a
   const chapterTwo = await route('manuals/rc8x/chapter-02/index.html');
 
   assert.match(category, /data-manual-index/);
-  assert.match(category, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.ok(category.includes(`href="${publicationBase}/manuals/rc8x/"`));
   assert.match(category, /現在は概要、第1章、第2章を掲載しています。/);
   for (const html of [category, manual, chapterOne, chapterTwo]) {
     assert.doesNotMatch(
@@ -526,7 +567,7 @@ test('WordPress insight batch emits sanitized static routes with local images an
       assert.equal(article.hero, null);
       if (article.body_assets.length === 0) assert.doesNotMatch(html, /<img\b/);
     } else {
-      assert.match(html, new RegExp(`/happinesea-site${article.hero.src}`));
+      assert.ok(html.includes(`src="${publicationBase}${article.hero.src}"`));
       const reviewed = contentImageReviews.find(
         (item) => item.id === article.contract.id,
       );
@@ -587,7 +628,7 @@ test('non-published insight route stays available without internal copy', async 
   const html = await route('insights/aircraft-engine-stop/index.html');
 
   assert.match(html, /この記事は現在お読みいただけません。/);
-  assert.match(html, /href="\/happinesea-site\/insights\/"/);
+  assert.ok(html.includes(`href="${publicationBase}/insights/"`));
   assert.doesNotMatch(html, /公開サンプル|検証用|構成サンプル|記事画像準備中/);
   assert.doesNotMatch(html, /"@type":"TechArticle"/);
 });
@@ -606,16 +647,18 @@ test('Starlight manual retains navigation features under the project base', asyn
   assert.match(index, /pagination-links/);
   assert.match(index, /sl-menu-button/);
   assert.match(index, /happinesea/);
-  assert.match(index, /href="\/happinesea-site\/"/);
-  assert.match(index, /href="\/happinesea-site\/manuals\/rc8x\/chapter-01\/"/);
-  assert.match(next, /href="\/happinesea-site\/manuals\/rc8x\/"/);
+  assert.ok(index.includes(`href="${publicationBase}/"`));
+  assert.ok(
+    index.includes(`href="${publicationBase}/manuals/rc8x/chapter-01/"`),
+  );
+  assert.ok(next.includes(`href="${publicationBase}/manuals/rc8x/"`));
   const productHref = index.match(/href="([^"]+)">RC8X商品ページへ戻る/)?.[1];
   assert.equal(
     new URL(
       productHref,
-      'https://happinesea.github.io/happinesea-site/manuals/rc8x/',
+      `https://happinesea.com${publicationBase}/manuals/rc8x/`,
     ).pathname,
-    '/happinesea-site/radiolink/rc8x/',
+    `${publicationBase}/radiolink/rc8x/`,
   );
 });
 
@@ -627,7 +670,9 @@ test('RC8X manual chapters place official figures and videos in relevant section
     const html = await route(path);
     assert.match(html, /data-manual-section=/);
     assert.match(html, /data-manual-figure(?:=|\s|>)/);
-    assert.match(html, /\/happinesea-site\/assets\/radiolink\/rc8x\/manual\//);
+    assert.ok(
+      html.includes(`${publicationBase}/assets/radiolink/rc8x/manual/`),
+    );
     assert.match(html, /data-manual-video(?:=|\s|>)/);
     assert.match(html, /youtube-nocookie\.com\/embed\//);
   }
@@ -656,23 +701,26 @@ test('all public routes emit project-base canonical and Open Graph URLs', async 
   for (const path of routes) {
     const html = await route(path);
     assert.match(html, /<title>[^<]*happinesea hobby[^<]*<\/title>/, path);
-    assert.match(
-      html,
+    const origin = publicationBase
+      ? 'https://happinesea.github.io/happinesea-site/'
+      : 'https://happinesea.com/';
+    const canonical =
       path === 'radiolink/index.html'
-        ? /<link rel="canonical" href="https:\/\/happinesea\.com\/radiolink"/
-        : /<link rel="canonical" href="https:\/\/happinesea\.github\.io\/happinesea-site\//,
-      path,
-    );
-    assert.match(
-      html,
-      path === 'radiolink/index.html'
-        ? /<meta property="og:url" content="https:\/\/happinesea\.com\/radiolink"/
-        : /<meta property="og:url" content="https:\/\/happinesea\.github\.io\/happinesea-site\//,
+        ? 'https://happinesea.com/radiolink'
+        : origin + path.replace(/index\.html$/, '');
+    assert.ok(html.includes(`<link rel="canonical" href="${canonical}"`), path);
+    assert.ok(
+      html.includes(`<meta property="og:url" content="${canonical}"`),
       path,
     );
     for (const [, value] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
       if (value.startsWith('/')) {
-        assert.ok(value.startsWith('/happinesea-site/'), `${path}: ${value}`);
+        assert.ok(
+          publicationBase
+            ? value.startsWith(publicationBase + '/')
+            : !value.startsWith('/happinesea-site/'),
+          `${path}: ${value}`,
+        );
       }
     }
   }

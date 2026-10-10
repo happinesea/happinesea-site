@@ -30,7 +30,11 @@ const metadata = (file: (typeof inventory.files)[number]) =>
         <h2 class="text-2xl font-bold">{group.name}</h2>
         <ul class="mt-6 divide-y divide-slate-200">
           {inventory.files
-            .filter((file) => file.target_route.startsWith(group.prefix))
+            .filter(
+              (file) =>
+                file.target_route.startsWith(group.prefix) &&
+                file.status !== 'BLOCKED_SAFETY_REVIEW',
+            )
             .map((file) => (
               <li class="py-5">
                 <a
@@ -49,5 +53,21 @@ const metadata = (file: (typeof inventory.files)[number]) =>
         </ul>
       </section>
     ))}
+    <section id="manual-safety-review" class="mt-12">
+      <h2 class="text-2xl font-bold">マニュアルの配信について</h2>
+      <p class="mt-4 leading-7">
+        以下の旧資料は、受信機の版と操作手順の確認が必要なため配信を停止しています。別の世代のマニュアルで代用しないでください。
+      </p>
+      <ul class="mt-4 list-disc pl-6">
+        {inventory.files
+          .filter((file) => file.status === 'BLOCKED_SAFETY_REVIEW')
+          .map((file) => (
+            <li>
+              {file.legacy_routes[0]?.split('/').at(-1)}（識別番号：
+              {file.sha256.slice(0, 12)}）
+            </li>
+          ))}
+      </ul>
+    </section>
   </article>
 </BaseLayout>

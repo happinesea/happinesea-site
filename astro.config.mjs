@@ -4,6 +4,10 @@ import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 import { sitemapSerializer } from './scripts/lib/sitemap.mjs';
 import { fileURLToPath } from 'node:url';
+import existingJapaneseManuals from './src/data/manuals/existing-ja.json' with { type: 'json' };
+import { verifyExistingJapaneseManuals } from './scripts/lib/existing-ja-manuals.mjs';
+
+verifyExistingJapaneseManuals(existingJapaneseManuals, new URL('./public/', import.meta.url));
 
 const publicationMode = process.env.PUBLICATION_MODE || 'staging';
 if (!['staging', 'production'].includes(publicationMode))
@@ -30,6 +34,11 @@ export default defineConfig({
         root: { label: '日本語', lang: 'ja' },
       },
       sidebar: [
+        ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map((manual) => ({
+          label: manual.title,
+          items: [{ label: 'はじめに・本文', slug: manual.route.slice(1, -1) }],
+          collapsed: true,
+        })),
         {
           label: 'RC4GS V2',
           items: [
