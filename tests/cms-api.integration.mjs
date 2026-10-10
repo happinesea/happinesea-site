@@ -23,13 +23,13 @@ const cmsFetch = async (url, options) => {
   return response;
 };
 
-test('live CMS REST root retains the public WordPress identity', async () => {
+test('live CMS REST root separates the CMS siteurl from the public home', async () => {
   const root = await fetchJson(
     new URL('/wp-json/', manifest.source_endpoint),
     cmsFetch,
   );
   assert.equal(root.name, 'happinesea hobby');
-  assert.equal(root.url, 'https://happinesea.com');
+  assert.equal(root.url, 'https://cms.happinesea.com');
   assert.equal(root.home, 'https://happinesea.com');
 });
 

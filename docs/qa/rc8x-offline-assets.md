@@ -13,7 +13,7 @@ Latest main baseline: `17ed350` (RC4GS V2 publication merged). Actions run `3802
 - Missing file/record/variant, skipped status, changed hash/size/dimension/format/GIF frames or manifest drift fail closed. BMP has source-byte/header checks; browser QA covers actual BMP decode. JPEG/PNG original hashes remain provenance, not hashes of WebP/AVIF output.
 - RC4GS V2 text/images, article data, CMS endpoint, DNS and production configuration are untouched. No merge or production deploy.
 
-## QA and known separate failure
+## Initial QA before CMS rendering review
 
 The unit test serves real PNG/GIF/BMP bytes, runs the actual sync, then closes the source server and verifies with fetch blocked. It also checks source drift rejection before overwrite and negative saved-file/manifest/variant/status/dimension tests. The offline build fixture blocks all fetch/TCP; Astro telemetry is disabled only for that test run. Existing stored publication data is used for the direct Astro/static finalization QA, not as a deployment fallback.
 
@@ -28,4 +28,4 @@ Observed QA:
 - Production-mode local artifact verifier: HTML306, canonical/OG305, first-party HTTP830, download hash43, manual aliases23, article aliases90. Broken links/assets0, canonical conflicts0, CMS runtime references0, staging origin/prefix residual0.
 - Staging HTML306 files match the same source baseline's previous artifact byte-for-byte (including all95 article outputs and RC4GS V2). No content/URL/image alteration.
 
-Owner must resolve the existing live source gate through normal review before deployment. No production run is dispatched by this task.
+The subsequently reviewed CMS identity/srcset differences are documented in [CMS identity and source-rendering review](cms-identity-source-rendering-review.md). The normal live `npm run validate` now passes without changing the original source hashes or public article outputs. No production run is dispatched by this task.

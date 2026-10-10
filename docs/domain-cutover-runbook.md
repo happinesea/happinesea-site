@@ -2,7 +2,7 @@
 
 Status: **wiring prepared; execution requires separate owner approval**. The workflow changes do not configure DNS, CNAME, Pages, HTTPS, environment protections or deploy production. A main push defaults to staging; production requires a manual dispatch and protected environment approvals.
 
-Public frontend: Astro static HTML on GitHub Pages. Editing/build-time CMS: `https://cms.happinesea.com`. WordPress `home` / `siteurl` remain `https://happinesea.com`; do not change them to the CMS hostname. CMS outage must fail a new build, not replace a working deployment with an empty site.
+Public frontend: Astro static HTML on GitHub Pages. Editing/build-time CMS: `https://cms.happinesea.com`. WordPress `home` remains `https://happinesea.com`; the owner-approved `siteurl` is `https://cms.happinesea.com`. Do not change either setting during cutover. CMS outage must fail a new build, not replace a working deployment with an empty site.
 
 ## 1. Preflight and evidence
 
@@ -25,7 +25,7 @@ $cms = Invoke-RestMethod https://cms.happinesea.com/wp-json/
 $cms | Select-Object name,url,home
 ```
 
-Confirm `/wp-json/` is 200 JSON, `name=happinesea hobby`, `url/home=https://happinesea.com`. REST metadata alone does not prove database options: the owner must also read `wp option get home` and `wp option get siteurl` in the established WordPress profile/document root, as its normal execution user. Resolve that path from the existing server setup; do not guess it or change either option. Check a real CMS posts API fetch and existing source-hash review gates.
+Confirm `/wp-json/` is 200 JSON, `name=happinesea hobby`, `url=https://cms.happinesea.com`, `home=https://happinesea.com`. REST metadata alone does not prove database options: the owner must also read `wp option get home` and `wp option get siteurl` in the established WordPress profile/document root, as its normal execution user. Resolve that path from the existing server setup; do not guess it or change either option. Check a real CMS posts API fetch and existing source-hash review gates.
 
 Export the original apex/www DNS records and TTL, including AAAA/ALIAS/ANAME and any relevant CAA records, and Pages settings. Preserve mail/TXT records, CMS DNS/TLS/vhost and old WordPress frontend/TLS for rollback. CMS must resolve independently of apex: do not leave `cms` as a CNAME to `happinesea.com`. Lowering TTL is itself a separately approved DNS operation, sufficiently before the window; it cannot invalidate existing caches immediately.
 

@@ -12,6 +12,7 @@ import {
   fetchWithRetry,
   htmlText,
   publicationPosts,
+  publicationSourceAssetUrl,
   reviewedArticleHtml,
   resolveInventoryDecision,
 } from './lib/wordpress-publication.mjs';
@@ -113,6 +114,7 @@ const mappingById = new Map(manifest.articles.map((item) => [item.id, item]));
 
 const articles = activePosts.map((post) => {
   const mapping = mappingById.get(post.id);
+  const decision = decisions.articles.find(({ id }) => id === post.id);
   const markup = analyzePostMarkup(
     reviewedArticleHtml(post.content?.rendered, mapping?.content_review),
   );
@@ -148,7 +150,7 @@ const articles = activePosts.map((post) => {
     tags: post.tags.map((id) => termMaps.tags.get(id) ?? `unknown-${id}`),
     featured_image: featured
       ? {
-          source_url: featured.source_url,
+          source_url: publicationSourceAssetUrl(featured.source_url),
           alt: featured.alt_text,
           width: featured.media_details?.width ?? null,
           height: featured.media_details?.height ?? null,
@@ -167,7 +169,10 @@ const articles = activePosts.map((post) => {
     readiness: resolveInventoryDecision(
       post,
       readiness,
-      decisions.articles.find(({ id }) => id === post.id),
+      decision && {
+        ...decision,
+        source_variants: mapping?.content_review?.source_variants,
+      },
     ),
   };
 });
