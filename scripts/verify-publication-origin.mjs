@@ -5,6 +5,10 @@ import { format } from 'prettier';
 import { references } from './audit-domain-cutover.mjs';
 import { assertSafeRuntime } from './lib/publication-origin.mjs';
 import { verifySitemap } from './lib/sitemap.mjs';
+import { manualCanonical } from './lib/rc4gs-v2-manual.mjs';
+const rc4gsManual = JSON.parse(
+  await readFile('src/data/manuals/rc4gs-v2.json', 'utf8'),
+);
 
 assert(
   ['staging', 'production', undefined, ''].includes(
@@ -30,18 +34,18 @@ for (const page of (await load('src/data/legacy-compatibility.json')).pages)
   expectedCanonicals.set(
     decodeURIComponent(page.target_route).replace(/^\//, '') +
       (page.target_route.endsWith('.html') ? '' : '/index.html'),
-    page.canonical,
+    manualCanonical(page.canonical, rc4gsManual),
   );
 const manifest = await load('src/data/wordpress-insight-manifest.json');
 for (const article of manifest.articles) {
   checks.add(new URL('.' + new URL(article.canonical).pathname, base).href);
   expectedCanonicals.set(
     `insights/${decodeURIComponent(article.slug)}/index.html`,
-    article.canonical,
+    manualCanonical(article.canonical, rc4gsManual),
   );
   expectedCanonicals.set(
     new URL(article.canonical).pathname.slice(1),
-    article.canonical,
+    manualCanonical(article.canonical, rc4gsManual),
   );
 }
 expectedCanonicals.set(

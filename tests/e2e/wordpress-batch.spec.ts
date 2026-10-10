@@ -1,5 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
+import manual from '../../src/data/manuals/rc4gs-v2.json' with { type: 'json' };
+import { manualCanonical } from '../../scripts/lib/rc4gs-v2-manual.mjs';
 
 const manifest = JSON.parse(
   readFileSync(
@@ -40,7 +42,7 @@ for (const article of manifest.articles) {
     await expect(page.locator('h1')).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      article.canonical,
+      manualCanonical(article.canonical, manual),
     );
     for (const image of await page.locator('img').all()) {
       expect(
@@ -87,7 +89,7 @@ for (const article of manifest.articles) {
         (item: { url: string }) => item.url === href,
       );
       expect(await linkedResponse.text()).toContain(
-        `href="${evidence.canonical}"`,
+        `href="${manualCanonical(evidence.canonical, manual)}"`,
       );
     }
     expect(errors).toEqual([]);
@@ -107,7 +109,7 @@ for (const article of manifest.articles) {
     await expect(page.locator('h1')).toHaveText(title!);
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      article.canonical,
+      manualCanonical(article.canonical, manual),
     );
     await expect(page.locator('meta[http-equiv="refresh"]')).toHaveCount(0);
     expect(errors).toEqual([]);

@@ -1,0 +1,70 @@
+---
+title: RC4GS V2 日本語マニュアル
+description: RC4GS V2の送信機・受信機と各機能の日本語取扱説明書。
+product: rc4gs-v2
+slug: manuals/rc4gs-v2
+status: published
+source:
+  kind: canonical_public
+  url: https://happinesea.com/radiolink-productions-manual/rc4gs-manual
+sidebar:
+  order: 1
+---
+
+import manual from '../../../../data/manuals/rc4gs-v2.json';
+import { withBase } from '../../../../lib/urls';
+
+本マニュアルは、happinesea hobbyが掲載してきたRC4GS V2対応の日本語取扱説明書です。happinesea hobbyはメーカー公式ではない技術・サポート情報サイトです。
+
+**対象はRC4GS V2です。RC4GS V3以降の仕様・操作には適用しないでください。** ファームウェアや受信機によって表示・機能が異なる場合があります。
+
+<img
+  src={withBase(manual.cover.src)}
+  alt={manual.cover.alt}
+  width={manual.cover.width}
+  height={manual.cover.height}
+/>
+
+## ご利用前に
+
+旧文面に含まれる技術的な不整合は、推測で修正していません。該当節に注意を付けています。確認が必要と記載された操作は、実機の表示とメーカーのV2資料で確認してから行ってください。
+
+RC4GS V3以降の取扱説明書は、[メーカーのダウンロードページ](https://radiolink.com/rc4gsv3_manual_download)で確認してください。
+
+## 目次
+
+- [第1章 RC4GS V2送信機と受信機](./chapter-01/)
+  - [1.1 送信機](./chapter-01/#s-1-1)
+  - [1.2 受信機（R6FG）](./chapter-01/#s-1-2)
+    - [1.2.1 送信機と受信機のバインディング](./chapter-01/#s-1-2-1)
+    - [1.2.2 受信機の動作モード](./chapter-01/#s-1-2-2)
+    - [1.2.3 ジャイロ機能の設定と調整](./chapter-01/#s-1-2-3)
+  - [1.3 RC4GSファームウェアアップグレード手順](./chapter-01/#s-1-3)
+  - [1.4 電波状況（RSSI）の確認](./chapter-01/#s-1-4)
+  - [1.5 テレメトリー情報の確認](./chapter-01/#s-1-5)
+- [第2章 RC4GS V2の機能](./chapter-02/)
+  - [2.1 画面表示](./chapter-02/#s-2-1)
+  - [2.2 言語選択](./chapter-02/#s-2-2)
+  - [2.3 モデルの選択](./chapter-02/#s-2-3)
+  - [2.4 エンドポイント（EPA）](./chapter-02/#s-2-4)
+  - [2.5 ステアリングカーブ（STEXP）](./chapter-02/#s-2-5)
+  - [2.6 ステアリングスピード（STSPD）](./chapter-02/#s-2-6)
+  - [2.7 スロットルカーブ（THEXP）](./chapter-02/#s-2-7)
+  - [2.8 スロットルスピード（THSPD）](./chapter-02/#s-2-8)
+  - [2.9 A.B.S.機能（A.B.S.）](./chapter-02/#s-2-9)
+  - [2.10 スロットルアクセレーション（ACCEL）](./chapter-02/#s-2-10)
+  - [2.11 アイドルアップ（IDLUP）](./chapter-02/#s-2-11)
+  - [2.12 サブトリム（SUBTR）](./chapter-02/#s-2-12)
+  - [2.13 サーボリバース機能（REV）](./chapter-02/#s-2-13)
+  - [2.14 デュアルレート（D/R）](./chapter-02/#s-2-14)
+  - [2.15 ブレーキレート機能（ATL）](./chapter-02/#s-2-15)
+  - [2.16 プログラムミキシング（PMIX）](./chapter-02/#s-2-16)
+    - [2.16.1 混合制御の説明](./chapter-02/#s-2-16-1)
+    - [2.16.2 設定前の受信機の準備](./chapter-02/#s-2-16-2)
+    - [2.16.3 混合制御の設定](./chapter-02/#s-2-16-3)
+  - [2.17 予備チャンネル（AUX）](./chapter-02/#s-2-17)
+  - [2.18 モデルネーム（NAME）](./chapter-02/#s-2-18)
+  - [2.19 ローバッテリー警告（ALARM）](./chapter-02/#s-2-19)
+  - [2.20 ジャイロ感度（GYRO）](./chapter-02/#s-2-20)
+  - [2.21 フェイルセーフ（F/S）](./chapter-02/#s-2-21)
+  - [2.22 リセット機能（RESET）](./chapter-02/#s-2-22)

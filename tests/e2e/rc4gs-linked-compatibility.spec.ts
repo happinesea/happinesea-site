@@ -1,5 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
+import manual from '../../src/data/manuals/rc4gs-v2.json' with { type: 'json' };
+import { manualCanonical } from '../../scripts/lib/rc4gs-v2-manual.mjs';
 const review = JSON.parse(
   readFileSync(
     new URL('../fixtures/wordpress-phase6-review-batch4.json', import.meta.url),
@@ -28,7 +30,7 @@ for (const path of [
     await expect(page.locator('h1')).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      evidence.canonical,
+      manualCanonical(evidence.canonical, manual),
     );
     for (const image of await page.locator('img').all()) {
       await image.scrollIntoViewIfNeeded();

@@ -1,6 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { expect, test } from '@playwright/test';
+import manual from '../../src/data/manuals/rc4gs-v2.json' with { type: 'json' };
+import { manualCanonical } from '../../scripts/lib/rc4gs-v2-manual.mjs';
 
 const snapshot = JSON.parse(
   readFileSync(
@@ -32,7 +34,7 @@ for (const item of snapshot.pages) {
     await expect(page.locator('h1')).toHaveText(item.title);
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      item.canonical,
+      manualCanonical(item.canonical, manual),
     );
     for (const image of await page.locator('img').all()) {
       await image.scrollIntoViewIfNeeded();

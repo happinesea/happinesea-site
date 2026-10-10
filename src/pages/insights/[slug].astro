@@ -10,6 +10,11 @@ import {
 } from '../../lib/structured-data';
 import { canonicalUrl, withBase } from '../../lib/urls';
 import { SITE_NAME } from '../../lib/site';
+import manual from '../../data/manuals/rc4gs-v2.json';
+import {
+  manualCanonical,
+  migratedManualTarget,
+} from '../../../scripts/lib/rc4gs-v2-manual.mjs';
 
 interface Props {
   article: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
@@ -44,7 +49,11 @@ const Content = staticArticle
   : undefined;
 const isPublished = data.content_status === 'published';
 const routeUrl = canonicalUrl(`/insights/${data.slug}/`);
-const articleUrl = wordpressData?.canonical ?? routeUrl;
+const manualTarget =
+  wordpressData && migratedManualTarget(wordpressData.canonical, manual);
+const articleUrl = wordpressData
+  ? manualCanonical(wordpressData.canonical, manual)
+  : routeUrl;
 const kind =
   data.article_kind === 'technical_explainer' ? 'TechArticle' : 'Article';
 const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -69,13 +78,21 @@ const jsonLd = isPublished
 const description = isPublished
   ? data.description
   : 'この記事は現在お読みいただけません。ニュース・航空知識の一覧から、ほかの記事をご覧ください。';
+const wordpressBody = wordpressData?.content_html.replaceAll(
+  /href="([^"]+)"/g,
+  (match, value: string) => {
+    if (!manualTarget) return match;
+    const target = migratedManualTarget(value, manual);
+    return target ? `href="${withBase(target)}"` : match;
+  },
+);
 ---
 
 <BaseLayout
   title={data.title}
   description={description}
   canonicalPath={`/insights/${data.slug}/`}
-  canonicalUrlOverride={wordpressData?.canonical}
+  canonicalUrlOverride={wordpressData ? articleUrl : undefined}
   image={wordpressData?.hero?.src}
   type={isPublished ? 'article' : 'website'}
   jsonLd={jsonLd}
@@ -91,6 +108,12 @@ const description = isPublished
     />
     {isPublished ? (
       <>
+        {manualTarget && (
+          <p class="my-6 rounded-lg border border-teal-200 bg-teal-50 p-4">
+            <a href={withBase(manualTarget)}>RC4GS V2 日本語マニュアルを読む</a>{' '}
+            — このページの内容は新しいマニュアルへ移しました。
+          </p>
+        )}
         <ArticleHero article={data} />
 
         <section
@@ -106,7 +129,7 @@ const description = isPublished
         >
           {isWordpress ? (
             <Fragment
-              set:html={wordpressData!.content_html.replaceAll(
+              set:html={wordpressBody!.replaceAll(
                 /\b(href|src)="(\/(?:assets\/insights\/wordpress|downloads|wp-content)\/[^"]+)"/g,
                 (_, attr: string, src: string) => `${attr}="${withBase(src)}"`,
               )}
@@ -128,7 +151,17 @@ const description = isPublished
           <p>編集: {SITE_NAME}</p>
           {isWordpress && (
             <p>
-              <a href={wordpressData!.canonical}>元の記事を見る</a>
+              <a
+                href={
+                  manualTarget
+                    ? withBase(manualTarget)
+                    : wordpressData!.canonical
+                }
+              >
+                {manualTarget
+                  ? 'RC4GS V2 日本語マニュアルを見る'
+                  : '元の記事を見る'}
+              </a>
             </p>
           )}
         </footer>
