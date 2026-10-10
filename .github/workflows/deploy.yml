@@ -74,8 +74,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Fetch and optimize verified official product assets
-        run: npm run assets:sync -- src/data/publication-assets/rc8x.json
+      - name: Verify saved official product assets without external fetch
+        run: npm run assets:verify -- src/data/publication-assets/rc8x.json
       - name: Recheck production protection before building
         env:
           INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
