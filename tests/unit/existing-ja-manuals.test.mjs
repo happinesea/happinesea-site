@@ -106,8 +106,12 @@ test('all eleven existing Japanese source files resolve to distinct reviewed pub
       );
       assert(section.source_locator);
       assert(
-        page.includes(section.id),
-        `${manual.id} missing source section link`,
+        manual.semantic_sections.some((semantic) =>
+          [semantic.heading, ...semantic.blocks].some(
+            (block) => block?.source_section === section.id,
+          ),
+        ),
+        `${manual.id} missing source range`,
       );
       assert(
         !/<script\b|<iframe\b|\son\w+=|javascript:/i.test(section.content_html),
@@ -117,11 +121,7 @@ test('all eleven existing Japanese source files resolve to distinct reviewed pub
           manual.assets.some((asset) => asset.src === match[1]),
           `unregistered image ${match[1]}`,
         );
-      for (const match of section.content_html.matchAll(/id="([^"]+)"/g))
-        assert(
-          page.includes(`#${match[1]}`),
-          `unlinked source heading ${match[1]}`,
-        );
+      assert(page.includes('LegacyJapaneseBody'));
     }
   }
   assert.equal(

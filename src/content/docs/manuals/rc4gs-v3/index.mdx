@@ -4,6 +4,8 @@ description: RC4GS V3 日本語取扱説明書。既存日本語資料の本文�
 product: rc4gs
 slug: manuals/rc4gs-v3
 status: published
+tableOfContents:
+  maxHeadingLevel: 4
 source:
   kind: canonical_public
 ---
@@ -23,333 +25,420 @@ happinesea hobbyは、メーカー公式ではない技術・サポート情報�
 
 ## 目次
 
-- [取扱説明書 RC4GS V3 5CH（1ページ）](#section-001)
-  - [取扱説明書 RC4GS V3 5CH](#section-001-取扱説明書-rc4gs-v3-5ch)
-  - [プロポセット・RCシステム](#section-001-プロポセット-rcシステム)
-  - [RCカー・ボート・クローラー・ロボット対応](#section-001-rcカー-ボート-クローラー-ロボット対応)
-  - [V6.7.5](#section-001-v6-7-5)
-  - [□ R 210-171557 CE FCC RoHS](#section-001-r-210-171557-ce-fcc-rohs)
-- [原資料（2ページ）](#section-002)
-- [原資料（3ページ）](#section-003)
-- [CONTENTS 目次（4ページ）](#section-004)
-  - [CONTENTS 目次](#section-004-contents-目次)
-- [原資料（5ページ）](#section-005)
-- [I. RC4GS V3 システム紹介（6ページ）](#section-006)
-  - [I. RC4GS V3 システム紹介](#section-006-i-rc4gs-v3-システム紹介)
+- [I. RC4GS V3 システム紹介](#section-006-i-rc4gs-v3-システム紹介)
   - [1.1 送信機](#section-006-1-1-送信機)
-- [1.2 受信機R6FG(スタンダードパック)（7ページ）](#section-007)
   - [1.2 受信機R6FG(スタンダードパック)](#section-007-1-2-受信機r6fg-スタンダードパック)
-- [1.2.1 R6FG スペック（8ページ）](#section-008)
-  - [1.2.1 R6FG スペック](#section-008-1-2-1-r6fg-スペック)
-  - [1.2.2 受信機の設置およびバインディング](#section-008-1-2-2-受信機の設置およびバインディング)
-- [1.2.3 動作モード（9ページ）](#section-009)
-  - [1.2.3 動作モード](#section-009-1-2-3-動作モード)
-  - [1.2.4 ジャイロのセットアップ](#section-009-1-2-4-ジャイロのセットアップ)
-  - [1.2.5 電波/RSSI リアルタイム・リターン](#section-009-1-2-5-電波-rssi-リアルタイム-リターン)
-- [1.2.6 モデルバッテリー及び受信機電圧のテレメトリ（10ページ）](#section-010)
-  - [1.2.6 モデルバッテリー及び受信機電圧のテレメトリ](#section-010-1-2-6-モデルバッテリー及び受信機電圧のテレメトリ)
-- [II. RC4GS V3 機能（11ページ）](#section-011)
-  - [II. RC4GS V3 機能](#section-011-ii-rc4gs-v3-機能)
+    - [1.2.1 R6FG スペック](#section-008-1-2-1-r6fg-スペック)
+    - [1.2.2 受信機の設置およびバインディング](#section-008-1-2-2-受信機の設置およびバインディング)
+    - [1.2.3 動作モード](#section-009-1-2-3-動作モード)
+    - [1.2.4 ジャイロのセットアップ](#section-009-1-2-4-ジャイロのセットアップ)
+    - [1.2.5 電波/RSSI リアルタイム・リターン](#section-009-1-2-5-電波-rssi-リアルタイム-リターン)
+    - [1.2.6 モデルバッテリー及び受信機電圧のテレメトリ](#section-010-1-2-6-モデルバッテリー及び受信機電圧のテレメトリ)
+- [II. RC4GS V3 機能](#section-011-ii-rc4gs-v3-機能)
   - [2.0 LCD 表示](#section-011-2-0-lcd-表示)
-- [2.1 "LANGUAGE"言語選択（12ページ）](#section-012)
   - [2.1 "LANGUAGE"言語選択](#section-012-2-1-language-言語選択)
   - [2.2 "MODEL"モデル選択](#section-012-2-2-model-モデル選択)
-- [2.3 "EPA" エンド・ポイント・アジャスト（13ページ）](#section-013)
   - [2.3 "EPA" エンド・ポイント・アジャスト](#section-013-2-3-epa-エンド-ポイント-アジャスト)
   - [2.4 "STEXP" ステアリング・カーブ](#section-013-2-4-stexp-ステアリング-カーブ)
-- [2.5 "STSPD" ステアリング・スピード（14ページ）](#section-014)
   - [2.5 "STSPD" ステアリング・スピード](#section-014-2-5-stspd-ステアリング-スピード)
   - [2.6 "THEXP" スロットル・カーブ](#section-014-2-6-thexp-スロットル-カーブ)
-  - [• 5ポイントスロットルカーブ • シングルポイント • EXPカーブ • ブレーキ・インデックス・カーブ • エレベーション・カーブ](#section-014-5ポイントスロットルカーブ-シングルポイント-expカーブ-ブレーキ-インデックス-カーブ-エレベーション-カーブ)
-- [2.7"THSPD"スロットル・スピード（15ページ）](#section-015)
   - [2.7"THSPD"スロットル・スピード](#section-015-2-7-thspd-スロットル-スピード)
-- [2.8 "A.B.S"機能（16ページ）](#section-016)
   - [2.8 "A.B.S"機能](#section-016-2-8-a-b-s-機能)
-- [2.9 "ACCEL"スロットル・アクセレーション（17ページ）](#section-017)
   - [2.9 "ACCEL"スロットル・アクセレーション](#section-017-2-9-accel-スロットル-アクセレーション)
-- [2.10 "IDLUP"アイドル・アップ（18ページ）](#section-018)
   - [2.10 "IDLUP"アイドル・アップ](#section-018-2-10-idlup-アイドル-アップ)
-  - [2.10.1 エンジン始動時のアイドルアップ](#section-018-2-10-1-エンジン始動時のアイドルアップ)
-  - [2.10.2 "TH-LOCK"スロットル・ロック](#section-018-2-10-2-th-lock-スロットル-ロック)
+    - [2.10.1 エンジン始動時のアイドルアップ](#section-018-2-10-1-エンジン始動時のアイドルアップ)
+    - [2.10.2 "TH-LOCK"スロットル・ロック](#section-018-2-10-2-th-lock-スロットル-ロック)
   - [2.11 "SUB-TRIM" サブトリム、サーボセンター位置調整](#section-018-2-11-sub-trim-サブトリム-サーボセンター位置調整)
   - [2.12 "REVERSE"サーボ・リバース](#section-018-2-12-reverse-サーボ-リバース)
-- [2.13 "D/R" （ステアリング/スロットル）デュアル・レート（19ページ）](#section-019)
   - [2.13 "D/R" （ステアリング/スロットル）デュアル・レート](#section-019-2-13-d-r-ステアリング-スロットル-デュアル-レート)
   - [2.14 "ATL"、ブレーキ・アジャスター](#section-019-2-14-atl-ブレーキ-アジャスター)
   - [2.15/16 "PMIX01/02"プログラマブル・ミックスによる混合制御](#section-019-2-15-16-pmix01-02-プログラマブル-ミックスによる混合制御)
-  - [2.15.1 PMIX01](#section-019-2-15-1-pmix01)
-- [2.16.1 PMIX02（20ページ）](#section-020)
-  - [2.16.1 PMIX02](#section-020-2-16-1-pmix02)
-  - [2.16.2 混合制御説明](#section-020-2-16-2-混合制御説明)
-- [2.16.3 混合制御セットアップ前のリバースセットアップ（21ページ）](#section-021)
-  - [2.16.3 混合制御セットアップ前のリバースセットアップ](#section-021-2-16-3-混合制御セットアップ前のリバースセットアップ)
-- [原資料（22ページ）](#section-022)
-- [原資料（23ページ）](#section-023)
-- [2.17 "AUX-CH"補助チャンネル（24ページ）](#section-024)
+    - [2.15.1 PMIX01](#section-019-2-15-1-pmix01)
+    - [2.16.1 PMIX02](#section-020-2-16-1-pmix02)
+    - [2.16.2 混合制御説明](#section-020-2-16-2-混合制御説明)
+    - [2.16.3 混合制御セットアップ前のリバースセットアップ](#section-021-2-16-3-混合制御セットアップ前のリバースセットアップ)
   - [2.17 "AUX-CH"補助チャンネル](#section-024-2-17-aux-ch-補助チャンネル)
-- [2.18 "NAME"：モデル名（25ページ）](#section-025)
   - [2.18 "NAME"：モデル名](#section-025-2-18-name-モデル名)
   - [2.19 ALARM(アラーム-低電圧及び信号強度)（1.2.5 及び1.2.6 ご参照）](#section-025-2-19-alarm-アラーム-低電圧及び信号強度-1-2-5-及び1-2-6-ご参照)
-- [2.20 “GYRO”ジャイロ（26ページ）](#section-026)
   - [2.20 “GYRO”ジャイロ](#section-026-2-20-gyro-ジャイロ)
   - [2.21 ”F/S”フェイルセーフ機能](#section-026-2-21-f-s-フェイルセーフ機能)
   - [2.22 “ID SEED”ID シード｟子ID（救援用）｠](#section-026-2-22-id-seed-id-シード-子id-救援用)
   - [2.23 DSC ポート設定](#section-026-2-23-dsc-ポート設定)
-- [2.24 TIMER タイマー（27ページ）](#section-027)
   - [2.24 TIMER タイマー](#section-027-2-24-timer-タイマー)
-- [2.25 “RESET”工場出荷時リセット（28ページ）](#section-028)
   - [2.25 “RESET”工場出荷時リセット](#section-028-2-25-reset-工場出荷時リセット)
 
-<span id="section-001"></span>
-
-## 取扱説明書 RC4GS V3 5CH（1ページ）
-
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-001"
+  section="manual-introduction"
 />
 
-<span id="section-002"></span>
+<span id="section-006-i-rc4gs-v3-システム紹介"></span>
 
-## 原資料（2ページ）
+## I. RC4GS V3 システム紹介
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-002"
+  section="section-006-i-rc4gs-v3-システム紹介"
 />
 
-<span id="section-003"></span>
+<span id="section-006-1-1-送信機"></span>
 
-## 原資料（3ページ）
+### 1.1 送信機
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-003"
+  section="section-006-1-1-送信機"
 />
 
-<span id="section-004"></span>
+<span id="section-007-1-2-受信機r6fg-スタンダードパック"></span>
 
-## CONTENTS 目次（4ページ）
+### 1.2 受信機R6FG(スタンダードパック)
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-004"
+  section="section-007-1-2-受信機r6fg-スタンダードパック"
 />
 
-<span id="section-005"></span>
+<span id="section-008-1-2-1-r6fg-スペック"></span>
 
-## 原資料（5ページ）
+#### 1.2.1 R6FG スペック
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-005"
+  section="section-008-1-2-1-r6fg-スペック"
 />
 
-<span id="section-006"></span>
+<span id="section-008-1-2-2-受信機の設置およびバインディング"></span>
 
-## I. RC4GS V3 システム紹介（6ページ）
+#### 1.2.2 受信機の設置およびバインディング
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-006"
+  section="section-008-1-2-2-受信機の設置およびバインディング"
 />
 
-<span id="section-007"></span>
+<span id="section-009-1-2-3-動作モード"></span>
 
-## 1.2 受信機R6FG(スタンダードパック)（7ページ）
+#### 1.2.3 動作モード
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-007"
+  section="section-009-1-2-3-動作モード"
 />
 
-<span id="section-008"></span>
+<span id="section-009-1-2-4-ジャイロのセットアップ"></span>
 
-## 1.2.1 R6FG スペック（8ページ）
+#### 1.2.4 ジャイロのセットアップ
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-008"
+  section="section-009-1-2-4-ジャイロのセットアップ"
 />
 
-<span id="section-009"></span>
+<span id="section-009-1-2-5-電波-rssi-リアルタイム-リターン"></span>
 
-## 1.2.3 動作モード（9ページ）
+#### 1.2.5 電波/RSSI リアルタイム・リターン
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-009"
+  section="section-009-1-2-5-電波-rssi-リアルタイム-リターン"
 />
 
-<span id="section-010"></span>
+<span id="section-010-1-2-6-モデルバッテリー及び受信機電圧のテレメトリ"></span>
 
-## 1.2.6 モデルバッテリー及び受信機電圧のテレメトリ（10ページ）
+#### 1.2.6 モデルバッテリー及び受信機電圧のテレメトリ
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-010"
+  section="section-010-1-2-6-モデルバッテリー及び受信機電圧のテレメトリ"
 />
 
-<span id="section-011"></span>
+<span id="section-011-ii-rc4gs-v3-機能"></span>
 
-## II. RC4GS V3 機能（11ページ）
+## II. RC4GS V3 機能
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-011"
+  section="section-011-ii-rc4gs-v3-機能"
 />
 
-<span id="section-012"></span>
+<span id="section-011-2-0-lcd-表示"></span>
 
-## 2.1 "LANGUAGE"言語選択（12ページ）
+### 2.0 LCD 表示
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-012"
+  section="section-011-2-0-lcd-表示"
 />
 
-<span id="section-013"></span>
+<span id="section-012-2-1-language-言語選択"></span>
 
-## 2.3 "EPA" エンド・ポイント・アジャスト（13ページ）
+### 2.1 "LANGUAGE"言語選択
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-013"
+  section="section-012-2-1-language-言語選択"
 />
 
-<span id="section-014"></span>
+<span id="section-012-2-2-model-モデル選択"></span>
 
-## 2.5 "STSPD" ステアリング・スピード（14ページ）
+### 2.2 "MODEL"モデル選択
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-014"
+  section="section-012-2-2-model-モデル選択"
 />
 
-<span id="section-015"></span>
+<span id="section-013-2-3-epa-エンド-ポイント-アジャスト"></span>
 
-## 2.7"THSPD"スロットル・スピード（15ページ）
+### 2.3 "EPA" エンド・ポイント・アジャスト
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-015"
+  section="section-013-2-3-epa-エンド-ポイント-アジャスト"
 />
 
-<span id="section-016"></span>
+<span id="section-013-2-4-stexp-ステアリング-カーブ"></span>
 
-## 2.8 "A.B.S"機能（16ページ）
+### 2.4 "STEXP" ステアリング・カーブ
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-016"
+  section="section-013-2-4-stexp-ステアリング-カーブ"
 />
 
-<span id="section-017"></span>
+<span id="section-014-2-5-stspd-ステアリング-スピード"></span>
 
-## 2.9 "ACCEL"スロットル・アクセレーション（17ページ）
+### 2.5 "STSPD" ステアリング・スピード
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-017"
+  section="section-014-2-5-stspd-ステアリング-スピード"
 />
 
-<span id="section-018"></span>
+<span id="section-014-2-6-thexp-スロットル-カーブ"></span>
 
-## 2.10 "IDLUP"アイドル・アップ（18ページ）
+### 2.6 "THEXP" スロットル・カーブ
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-018"
+  section="section-014-2-6-thexp-スロットル-カーブ"
 />
 
-<span id="section-019"></span>
+<span id="section-015-2-7-thspd-スロットル-スピード"></span>
 
-## 2.13 "D/R" （ステアリング/スロットル）デュアル・レート（19ページ）
+### 2.7"THSPD"スロットル・スピード
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-019"
+  section="section-015-2-7-thspd-スロットル-スピード"
 />
 
-<span id="section-020"></span>
+<span id="section-016-2-8-a-b-s-機能"></span>
 
-## 2.16.1 PMIX02（20ページ）
+### 2.8 "A.B.S"機能
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-020"
+  section="section-016-2-8-a-b-s-機能"
 />
 
-<span id="section-021"></span>
+<span id="section-017-2-9-accel-スロットル-アクセレーション"></span>
 
-## 2.16.3 混合制御セットアップ前のリバースセットアップ（21ページ）
+### 2.9 "ACCEL"スロットル・アクセレーション
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-021"
+  section="section-017-2-9-accel-スロットル-アクセレーション"
 />
 
-<span id="section-022"></span>
+<span id="section-018-2-10-idlup-アイドル-アップ"></span>
 
-## 原資料（22ページ）
+### 2.10 "IDLUP"アイドル・アップ
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-022"
+  section="section-018-2-10-idlup-アイドル-アップ"
 />
 
-<span id="section-023"></span>
+<span id="section-018-2-10-1-エンジン始動時のアイドルアップ"></span>
 
-## 原資料（23ページ）
+#### 2.10.1 エンジン始動時のアイドルアップ
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-023"
+  section="section-018-2-10-1-エンジン始動時のアイドルアップ"
 />
 
-<span id="section-024"></span>
+<span id="section-018-2-10-2-th-lock-スロットル-ロック"></span>
 
-## 2.17 "AUX-CH"補助チャンネル（24ページ）
+#### 2.10.2 "TH-LOCK"スロットル・ロック
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-024"
+  section="section-018-2-10-2-th-lock-スロットル-ロック"
 />
 
-<span id="section-025"></span>
+<span id="section-018-2-11-sub-trim-サブトリム-サーボセンター位置調整"></span>
 
-## 2.18 "NAME"：モデル名（25ページ）
+### 2.11 "SUB-TRIM" サブトリム、サーボセンター位置調整
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-025"
+  section="section-018-2-11-sub-trim-サブトリム-サーボセンター位置調整"
 />
 
-<span id="section-026"></span>
+<span id="section-018-2-12-reverse-サーボ-リバース"></span>
 
-## 2.20 “GYRO”ジャイロ（26ページ）
+### 2.12 "REVERSE"サーボ・リバース
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-026"
+  section="section-018-2-12-reverse-サーボ-リバース"
 />
 
-<span id="section-027"></span>
+<span id="section-019-2-13-d-r-ステアリング-スロットル-デュアル-レート"></span>
 
-## 2.24 TIMER タイマー（27ページ）
+### 2.13 "D/R" （ステアリング/スロットル）デュアル・レート
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-027"
+  section="section-019-2-13-d-r-ステアリング-スロットル-デュアル-レート"
 />
 
-<span id="section-028"></span>
+<span id="section-019-2-14-atl-ブレーキ-アジャスター"></span>
 
-## 2.25 “RESET”工場出荷時リセット（28ページ）
+### 2.14 "ATL"、ブレーキ・アジャスター
 
 <LegacyJapaneseBody
   manual="repo-rc4gs-v3-ja-instruction_manual"
-  section="section-028"
+  section="section-019-2-14-atl-ブレーキ-アジャスター"
+/>
+
+<span id="section-019-2-15-16-pmix01-02-プログラマブル-ミックスによる混合制御"></span>
+
+### 2.15/16 "PMIX01/02"プログラマブル・ミックスによる混合制御
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-019-2-15-16-pmix01-02-プログラマブル-ミックスによる混合制御"
+/>
+
+<span id="section-019-2-15-1-pmix01"></span>
+
+#### 2.15.1 PMIX01
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-019-2-15-1-pmix01"
+/>
+
+<span id="section-020-2-16-1-pmix02"></span>
+
+#### 2.16.1 PMIX02
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-020-2-16-1-pmix02"
+/>
+
+<span id="section-020-2-16-2-混合制御説明"></span>
+
+#### 2.16.2 混合制御説明
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-020-2-16-2-混合制御説明"
+/>
+
+<span id="section-021-2-16-3-混合制御セットアップ前のリバースセットアップ"></span>
+
+#### 2.16.3 混合制御セットアップ前のリバースセットアップ
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-021-2-16-3-混合制御セットアップ前のリバースセットアップ"
+/>
+
+<span id="section-024-2-17-aux-ch-補助チャンネル"></span>
+
+### 2.17 "AUX-CH"補助チャンネル
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-024-2-17-aux-ch-補助チャンネル"
+/>
+
+<span id="section-025-2-18-name-モデル名"></span>
+
+### 2.18 "NAME"：モデル名
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-025-2-18-name-モデル名"
+/>
+
+<span id="section-025-2-19-alarm-アラーム-低電圧及び信号強度-1-2-5-及び1-2-6-ご参照"></span>
+
+### 2.19 ALARM(アラーム-低電圧及び信号強度)（1.2.5 及び1.2.6 ご参照）
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-025-2-19-alarm-アラーム-低電圧及び信号強度-1-2-5-及び1-2-6-ご参照"
+/>
+
+<span id="section-026-2-20-gyro-ジャイロ"></span>
+
+### 2.20 “GYRO”ジャイロ
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-026-2-20-gyro-ジャイロ"
+/>
+
+<span id="section-026-2-21-f-s-フェイルセーフ機能"></span>
+
+### 2.21 ”F/S”フェイルセーフ機能
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-026-2-21-f-s-フェイルセーフ機能"
+/>
+
+<span id="section-026-2-22-id-seed-id-シード-子id-救援用"></span>
+
+### 2.22 “ID SEED”ID シード｟子ID（救援用）｠
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-026-2-22-id-seed-id-シード-子id-救援用"
+/>
+
+<span id="section-026-2-23-dsc-ポート設定"></span>
+
+### 2.23 DSC ポート設定
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-026-2-23-dsc-ポート設定"
+/>
+
+<span id="section-027-2-24-timer-タイマー"></span>
+
+### 2.24 TIMER タイマー
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-027-2-24-timer-タイマー"
+/>
+
+<span id="section-028-2-25-reset-工場出荷時リセット"></span>
+
+### 2.25 “RESET”工場出荷時リセット
+
+<LegacyJapaneseBody
+  manual="repo-rc4gs-v3-ja-instruction_manual"
+  section="section-028-2-25-reset-工場出荷時リセット"
 />
 
 ## 関連マニュアル

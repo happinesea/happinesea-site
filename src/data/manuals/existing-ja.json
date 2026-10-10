@@ -789,7 +789,972 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": []
+      "technical_changes": [],
+      "semantic_sections": [
+        {
+          "id": "manual-introduction",
+          "title": null,
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 0,
+              "end": 810
+            },
+            {
+              "source_section": "section-002",
+              "start": 0,
+              "end": 1995
+            },
+            {
+              "source_section": "section-003",
+              "start": 0,
+              "end": 1683
+            },
+            {
+              "source_section": "section-004",
+              "start": 0,
+              "end": 8054
+            },
+            {
+              "source_section": "section-005",
+              "start": 0,
+              "end": 1820
+            },
+            {
+              "source_section": "section-006",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-006-i-rc4gs-v3-システム紹介",
+          "title": "I. RC4GS V3 システム紹介",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-006",
+            "start": 45,
+            "end": 107
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 107,
+              "end": 316
+            }
+          ]
+        },
+        {
+          "id": "section-006-1-1-送信機",
+          "title": "1.1 送信機",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 316,
+            "end": 357
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 357,
+              "end": 656
+            },
+            {
+              "source_section": "section-007",
+              "start": 0,
+              "end": 2050
+            }
+          ]
+        },
+        {
+          "id": "section-007-1-2-受信機r6fg-スタンダードパック",
+          "title": "1.2 受信機R6FG(スタンダードパック)",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-007",
+            "start": 2050,
+            "end": 2120
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 2120,
+              "end": 2557
+            },
+            {
+              "source_section": "section-008",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-008-1-2-1-r6fg-スペック",
+          "title": "1.2.1 R6FG スペック",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-008",
+            "start": 45,
+            "end": 102
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 102,
+              "end": 278
+            }
+          ]
+        },
+        {
+          "id": "section-008-1-2-2-受信機の設置およびバインディング",
+          "title": "1.2.2 受信機の設置およびバインディング",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-008",
+            "start": 278,
+            "end": 349
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 349,
+              "end": 1988
+            },
+            {
+              "source_section": "section-009",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-009-1-2-3-動作モード",
+          "title": "1.2.3 動作モード",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-009",
+            "start": 45,
+            "end": 94
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 94,
+              "end": 247
+            }
+          ]
+        },
+        {
+          "id": "section-009-1-2-4-ジャイロのセットアップ",
+          "title": "1.2.4 ジャイロのセットアップ",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-009",
+            "start": 247,
+            "end": 308
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 308,
+              "end": 847
+            }
+          ]
+        },
+        {
+          "id": "section-009-1-2-5-電波-rssi-リアルタイム-リターン",
+          "title": "1.2.5 電波/RSSI リアルタイム・リターン",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-009",
+            "start": 847,
+            "end": 924
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 924,
+              "end": 1600
+            },
+            {
+              "source_section": "section-010",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-010-1-2-6-モデルバッテリー及び受信機電圧のテレメトリ",
+          "title": "1.2.6 モデルバッテリー及び受信機電圧のテレメトリ",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-010",
+            "start": 45,
+            "end": 126
+          },
+          "blocks": [
+            {
+              "source_section": "section-010",
+              "start": 126,
+              "end": 1063
+            },
+            {
+              "source_section": "section-011",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-011-ii-rc4gs-v3-機能",
+          "title": "II. RC4GS V3 機能",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-011",
+            "start": 45,
+            "end": 101
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 101,
+              "end": 102
+            }
+          ]
+        },
+        {
+          "id": "section-011-2-0-lcd-表示",
+          "title": "2.0 LCD 表示",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 102,
+            "end": 149
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 149,
+              "end": 1610
+            },
+            {
+              "source_section": "section-012",
+              "start": 0,
+              "end": 973
+            }
+          ]
+        },
+        {
+          "id": "section-012-2-1-language-言語選択",
+          "title": "2.1 \"LANGUAGE\"言語選択",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-012",
+            "start": 973,
+            "end": 1045
+          },
+          "blocks": [
+            {
+              "source_section": "section-012",
+              "start": 1045,
+              "end": 1215
+            }
+          ]
+        },
+        {
+          "id": "section-012-2-2-model-モデル選択",
+          "title": "2.2 \"MODEL\"モデル選択",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-012",
+            "start": 1215,
+            "end": 1283
+          },
+          "blocks": [
+            {
+              "source_section": "section-012",
+              "start": 1283,
+              "end": 1722
+            },
+            {
+              "source_section": "section-013",
+              "start": 0,
+              "end": 354
+            }
+          ]
+        },
+        {
+          "id": "section-013-2-3-epa-エンド-ポイント-アジャスト",
+          "title": "2.3 \"EPA\" エンド・ポイント・アジャスト",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-013",
+            "start": 354,
+            "end": 437
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 437,
+              "end": 1614
+            }
+          ]
+        },
+        {
+          "id": "section-013-2-4-stexp-ステアリング-カーブ",
+          "title": "2.4 \"STEXP\" ステアリング・カーブ",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-013",
+            "start": 1614,
+            "end": 1693
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 1693,
+              "end": 2065
+            },
+            {
+              "source_section": "section-014",
+              "start": 0,
+              "end": 423
+            }
+          ]
+        },
+        {
+          "id": "section-014-2-5-stspd-ステアリング-スピード",
+          "title": "2.5 \"STSPD\" ステアリング・スピード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-014",
+            "start": 423,
+            "end": 504
+          },
+          "blocks": [
+            {
+              "source_section": "section-014",
+              "start": 504,
+              "end": 785
+            }
+          ]
+        },
+        {
+          "id": "section-014-2-6-thexp-スロットル-カーブ",
+          "title": "2.6 \"THEXP\" スロットル・カーブ",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-014",
+            "start": 785,
+            "end": 862
+          },
+          "blocks": [
+            {
+              "source_section": "section-014",
+              "start": 862,
+              "end": 1625
+            },
+            {
+              "source_section": "section-015",
+              "start": 0,
+              "end": 941
+            }
+          ]
+        },
+        {
+          "id": "section-015-2-7-thspd-スロットル-スピード",
+          "title": "2.7\"THSPD\"スロットル・スピード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-015",
+            "start": 941,
+            "end": 1018
+          },
+          "blocks": [
+            {
+              "source_section": "section-015",
+              "start": 1018,
+              "end": 1678
+            },
+            {
+              "source_section": "section-016",
+              "start": 0,
+              "end": 337
+            }
+          ]
+        },
+        {
+          "id": "section-016-2-8-a-b-s-機能",
+          "title": "2.8 \"A.B.S\"機能",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-016",
+            "start": 337,
+            "end": 399
+          },
+          "blocks": [
+            {
+              "source_section": "section-016",
+              "start": 399,
+              "end": 1618
+            },
+            {
+              "source_section": "section-017",
+              "start": 0,
+              "end": 814
+            }
+          ]
+        },
+        {
+          "id": "section-017-2-9-accel-スロットル-アクセレーション",
+          "title": "2.9 \"ACCEL\"スロットル・アクセレーション",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-017",
+            "start": 814,
+            "end": 900
+          },
+          "blocks": [
+            {
+              "source_section": "section-017",
+              "start": 900,
+              "end": 1633
+            },
+            {
+              "source_section": "section-018",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-018-2-10-idlup-アイドル-アップ",
+          "title": "2.10 \"IDLUP\"アイドル・アップ",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-018",
+            "start": 45,
+            "end": 121
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 121,
+              "end": 122
+            }
+          ]
+        },
+        {
+          "id": "section-018-2-10-1-エンジン始動時のアイドルアップ",
+          "title": "2.10.1 エンジン始動時のアイドルアップ",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-018",
+            "start": 122,
+            "end": 193
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 193,
+              "end": 395
+            }
+          ]
+        },
+        {
+          "id": "section-018-2-10-2-th-lock-スロットル-ロック",
+          "title": "2.10.2 \"TH-LOCK\"スロットル・ロック",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-018",
+            "start": 395,
+            "end": 481
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 481,
+              "end": 896
+            }
+          ]
+        },
+        {
+          "id": "section-018-2-11-sub-trim-サブトリム-サーボセンター位置調整",
+          "title": "2.11 \"SUB-TRIM\" サブトリム、サーボセンター位置調整",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-018",
+            "start": 896,
+            "end": 997
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 997,
+              "end": 1218
+            }
+          ]
+        },
+        {
+          "id": "section-018-2-12-reverse-サーボ-リバース",
+          "title": "2.12 \"REVERSE\"サーボ・リバース",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-018",
+            "start": 1218,
+            "end": 1298
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 1298,
+              "end": 1918
+            },
+            {
+              "source_section": "section-019",
+              "start": 0,
+              "end": 84
+            }
+          ]
+        },
+        {
+          "id": "section-019-2-13-d-r-ステアリング-スロットル-デュアル-レート",
+          "title": "2.13 \"D/R\" （ステアリング/スロットル）デュアル・レート",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-019",
+            "start": 84,
+            "end": 184
+          },
+          "blocks": [
+            {
+              "source_section": "section-019",
+              "start": 184,
+              "end": 841
+            }
+          ]
+        },
+        {
+          "id": "section-019-2-14-atl-ブレーキ-アジャスター",
+          "title": "2.14 \"ATL\"、ブレーキ・アジャスター",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-019",
+            "start": 841,
+            "end": 920
+          },
+          "blocks": [
+            {
+              "source_section": "section-019",
+              "start": 920,
+              "end": 1070
+            }
+          ]
+        },
+        {
+          "id": "section-019-2-15-16-pmix01-02-プログラマブル-ミックスによる混合制御",
+          "title": "2.15/16 \"PMIX01/02\"プログラマブル・ミックスによる混合制御",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-019",
+            "start": 1070,
+            "end": 1182
+          },
+          "blocks": [
+            {
+              "source_section": "section-019",
+              "start": 1182,
+              "end": 1317
+            }
+          ]
+        },
+        {
+          "id": "section-019-2-15-1-pmix01",
+          "title": "2.15.1 PMIX01",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-019",
+            "start": 1317,
+            "end": 1370
+          },
+          "blocks": [
+            {
+              "source_section": "section-019",
+              "start": 1370,
+              "end": 2026
+            },
+            {
+              "source_section": "section-020",
+              "start": 0,
+              "end": 1126
+            }
+          ]
+        },
+        {
+          "id": "section-020-2-16-1-pmix02",
+          "title": "2.16.1 PMIX02",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-020",
+            "start": 1126,
+            "end": 1179
+          },
+          "blocks": [
+            {
+              "source_section": "section-020",
+              "start": 1179,
+              "end": 1263
+            }
+          ]
+        },
+        {
+          "id": "section-020-2-16-2-混合制御説明",
+          "title": "2.16.2 混合制御説明",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-020",
+            "start": 1263,
+            "end": 1316
+          },
+          "blocks": [
+            {
+              "source_section": "section-020",
+              "start": 1316,
+              "end": 1730
+            },
+            {
+              "source_section": "section-021",
+              "start": 0,
+              "end": 467
+            }
+          ]
+        },
+        {
+          "id": "section-021-2-16-3-混合制御セットアップ前のリバースセットアップ",
+          "title": "2.16.3 混合制御セットアップ前のリバースセットアップ",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-021",
+            "start": 467,
+            "end": 552
+          },
+          "blocks": [
+            {
+              "source_section": "section-021",
+              "start": 552,
+              "end": 1074
+            },
+            {
+              "source_section": "section-022",
+              "start": 0,
+              "end": 651
+            },
+            {
+              "source_section": "section-023",
+              "start": 0,
+              "end": 852
+            },
+            {
+              "source_section": "section-024",
+              "start": 0,
+              "end": 264
+            }
+          ]
+        },
+        {
+          "id": "section-024-2-17-aux-ch-補助チャンネル",
+          "title": "2.17 \"AUX-CH\"補助チャンネル",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-024",
+            "start": 264,
+            "end": 340
+          },
+          "blocks": [
+            {
+              "source_section": "section-024",
+              "start": 340,
+              "end": 1372
+            },
+            {
+              "source_section": "section-025",
+              "start": 0,
+              "end": 315
+            }
+          ]
+        },
+        {
+          "id": "section-025-2-18-name-モデル名",
+          "title": "2.18 \"NAME\"：モデル名",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-025",
+            "start": 315,
+            "end": 382
+          },
+          "blocks": [
+            {
+              "source_section": "section-025",
+              "start": 382,
+              "end": 562
+            }
+          ]
+        },
+        {
+          "id": "section-025-2-19-alarm-アラーム-低電圧及び信号強度-1-2-5-及び1-2-6-ご参照",
+          "title": "2.19 ALARM(アラーム-低電圧及び信号強度)（1.2.5 及び1.2.6 ご参照）",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-025",
+            "start": 562,
+            "end": 677
+          },
+          "blocks": [
+            {
+              "source_section": "section-025",
+              "start": 677,
+              "end": 1607
+            },
+            {
+              "source_section": "section-026",
+              "start": 0,
+              "end": 45
+            }
+          ]
+        },
+        {
+          "id": "section-026-2-20-gyro-ジャイロ",
+          "title": "2.20 “GYRO”ジャイロ",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-026",
+            "start": 45,
+            "end": 101
+          },
+          "blocks": [
+            {
+              "source_section": "section-026",
+              "start": 101,
+              "end": 396
+            }
+          ]
+        },
+        {
+          "id": "section-026-2-21-f-s-フェイルセーフ機能",
+          "title": "2.21 ”F/S”フェイルセーフ機能",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-026",
+            "start": 396,
+            "end": 460
+          },
+          "blocks": [
+            {
+              "source_section": "section-026",
+              "start": 460,
+              "end": 849
+            }
+          ]
+        },
+        {
+          "id": "section-026-2-22-id-seed-id-シード-子id-救援用",
+          "title": "2.22 “ID SEED”ID シード｟子ID（救援用）｠",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-026",
+            "start": 849,
+            "end": 933
+          },
+          "blocks": [
+            {
+              "source_section": "section-026",
+              "start": 933,
+              "end": 1096
+            }
+          ]
+        },
+        {
+          "id": "section-026-2-23-dsc-ポート設定",
+          "title": "2.23 DSC ポート設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-026",
+            "start": 1096,
+            "end": 1151
+          },
+          "blocks": [
+            {
+              "source_section": "section-026",
+              "start": 1151,
+              "end": 1545
+            },
+            {
+              "source_section": "section-027",
+              "start": 0,
+              "end": 822
+            }
+          ]
+        },
+        {
+          "id": "section-027-2-24-timer-タイマー",
+          "title": "2.24 TIMER タイマー",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-027",
+            "start": 822,
+            "end": 879
+          },
+          "blocks": [
+            {
+              "source_section": "section-027",
+              "start": 879,
+              "end": 1550
+            },
+            {
+              "source_section": "section-028",
+              "start": 0,
+              "end": 1081
+            }
+          ]
+        },
+        {
+          "id": "section-028-2-25-reset-工場出荷時リセット",
+          "title": "2.25 “RESET”工場出荷時リセット",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-028",
+            "start": 1081,
+            "end": 1149
+          },
+          "blocks": [
+            {
+              "source_section": "section-028",
+              "start": 1149,
+              "end": 1672
+            }
+          ]
+        }
+      ],
+      "structure_review": {
+        "policy": "Explicit source headings; source page boundaries are immutable evidence segments, not document hierarchy.",
+        "offset_unit": "UTF-16 code units in original content_html",
+        "promoted_source_labels": [],
+        "technical_changes": "NONE"
+      },
+      "legacy_heading_anchors": [
+        {
+          "id": "取扱説明書-rc4gs-v3-5ch1ページ",
+          "source_section": "section-001"
+        },
+        {
+          "id": "原資料2ページ",
+          "source_section": "section-002"
+        },
+        {
+          "id": "原資料3ページ",
+          "source_section": "section-003"
+        },
+        {
+          "id": "contents-目次4ページ",
+          "source_section": "section-004"
+        },
+        {
+          "id": "原資料5ページ",
+          "source_section": "section-005"
+        },
+        {
+          "id": "i-rc4gs-v3-システム紹介6ページ",
+          "source_section": "section-006"
+        },
+        {
+          "id": "12-受信機r6fgスタンダードパック7ページ",
+          "source_section": "section-007"
+        },
+        {
+          "id": "121-r6fg-スペック8ページ",
+          "source_section": "section-008"
+        },
+        {
+          "id": "123-動作モード9ページ",
+          "source_section": "section-009"
+        },
+        {
+          "id": "126-モデルバッテリー及び受信機電圧のテレメトリ10ページ",
+          "source_section": "section-010"
+        },
+        {
+          "id": "ii-rc4gs-v3-機能11ページ",
+          "source_section": "section-011"
+        },
+        {
+          "id": "21-language言語選択12ページ",
+          "source_section": "section-012"
+        },
+        {
+          "id": "23-epa-エンドポイントアジャスト13ページ",
+          "source_section": "section-013"
+        },
+        {
+          "id": "25-stspd-ステアリングスピード14ページ",
+          "source_section": "section-014"
+        },
+        {
+          "id": "27thspdスロットルスピード15ページ",
+          "source_section": "section-015"
+        },
+        {
+          "id": "28-abs機能16ページ",
+          "source_section": "section-016"
+        },
+        {
+          "id": "29-accelスロットルアクセレーション17ページ",
+          "source_section": "section-017"
+        },
+        {
+          "id": "210-idlupアイドルアップ18ページ",
+          "source_section": "section-018"
+        },
+        {
+          "id": "213-dr-ステアリングスロットルデュアルレート19ページ",
+          "source_section": "section-019"
+        },
+        {
+          "id": "2161-pmix0220ページ",
+          "source_section": "section-020"
+        },
+        {
+          "id": "2163-混合制御セットアップ前のリバースセットアップ21ページ",
+          "source_section": "section-021"
+        },
+        {
+          "id": "原資料22ページ",
+          "source_section": "section-022"
+        },
+        {
+          "id": "原資料23ページ",
+          "source_section": "section-023"
+        },
+        {
+          "id": "217-aux-ch補助チャンネル24ページ",
+          "source_section": "section-024"
+        },
+        {
+          "id": "218-nameモデル名25ページ",
+          "source_section": "section-025"
+        },
+        {
+          "id": "220-gyroジャイロ26ページ",
+          "source_section": "section-026"
+        },
+        {
+          "id": "224-timer-タイマー27ページ",
+          "source_section": "section-027"
+        },
+        {
+          "id": "225-reset工場出荷時リセット28ページ",
+          "source_section": "section-028"
+        }
+      ]
     },
     {
       "id": "repo-rc6gs-v3-ja-instruction_manual",
@@ -1164,6 +2129,133 @@
           "before": "日本語全文参照・ダウンロードQR",
           "after": "原文の全文参照は保持し、未検証QR画像のみ非配信。適用版確認中の説明を隣接表示。",
           "reason": "Unverified destination must not expose the safety-blocked full manual; no substitute URL invented."
+        }
+      ],
+      "semantic_sections": [
+        {
+          "id": "manual-introduction",
+          "title": null,
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 0,
+              "end": 442
+            }
+          ]
+        },
+        {
+          "id": "section-001-heading-01",
+          "title": "RC6GS V3 送信機の概要",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-001",
+            "start": 442,
+            "end": 494
+          },
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 494,
+              "end": 933
+            }
+          ]
+        },
+        {
+          "id": "section-001-heading-02",
+          "title": "送信機画面表示",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-001",
+            "start": 933,
+            "end": 977
+          },
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 977,
+              "end": 1197
+            }
+          ]
+        },
+        {
+          "id": "section-001-heading-03",
+          "title": "機能一覧",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-001",
+            "start": 1197,
+            "end": 1238
+          },
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 1238,
+              "end": 2359
+            }
+          ]
+        },
+        {
+          "id": "section-001-heading-04",
+          "title": "R7FG受信機",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-001",
+            "start": 2359,
+            "end": 2403
+          },
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 2403,
+              "end": 3305
+            }
+          ]
+        },
+        {
+          "id": "section-001-heading-05",
+          "title": "R7FG受信機動作モード",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-001",
+            "start": 3305,
+            "end": 3354
+          },
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 3354,
+              "end": 6786
+            }
+          ]
+        },
+        {
+          "id": "section-001-heading-06",
+          "title": "受信機アンテナ―の扱いについて",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-001",
+            "start": 6786,
+            "end": 6838
+          },
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 6838,
+              "end": 7508
+            }
+          ]
+        }
+      ],
+      "structure_review": {
+        "policy": "Explicit source headings; source page boundaries are immutable evidence segments, not document hierarchy.",
+        "offset_unit": "UTF-16 code units in original content_html",
+        "promoted_source_labels": [],
+        "technical_changes": "NONE"
+      },
+      "legacy_heading_anchors": [
+        {
+          "id": "はじめに",
+          "source_section": "section-001"
         }
       ]
     },
@@ -1565,7 +2657,581 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": []
+      "technical_changes": [],
+      "semantic_sections": [
+        {
+          "id": "manual-introduction",
+          "title": null,
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 0,
+              "end": 692
+            }
+          ]
+        },
+        {
+          "id": "section-002-ご注意",
+          "title": "ご注意",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-002",
+            "start": 0,
+            "end": 33
+          },
+          "blocks": [
+            {
+              "source_section": "section-002",
+              "start": 33,
+              "end": 731
+            }
+          ]
+        },
+        {
+          "id": "section-002-付属品リスト",
+          "title": "付属品リスト",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-002",
+            "start": 731,
+            "end": 770
+          },
+          "blocks": [
+            {
+              "source_section": "section-002",
+              "start": 770,
+              "end": 1221
+            }
+          ]
+        },
+        {
+          "id": "section-003-スペック情報",
+          "title": "スペック情報",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-003",
+            "start": 0,
+            "end": 39
+          },
+          "blocks": [
+            {
+              "source_section": "section-003",
+              "start": 39,
+              "end": 1916
+            },
+            {
+              "source_section": "section-004",
+              "start": 0,
+              "end": 1947
+            },
+            {
+              "source_section": "section-005",
+              "start": 0,
+              "end": 629
+            }
+          ]
+        },
+        {
+          "id": "section-005-rc8x-送信機",
+          "title": "RC8X 送信機",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-005",
+            "start": 629,
+            "end": 672
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 672,
+              "end": 900
+            }
+          ]
+        },
+        {
+          "id": "section-006-ボタンとスイッチの表記等の説明",
+          "title": "ボタンとスイッチの表記等の説明",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-006",
+            "start": 0,
+            "end": 57
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 57,
+              "end": 1319
+            }
+          ]
+        },
+        {
+          "id": "section-006-topic-2",
+          "title": "3 段階スイッチの設定について",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 1319,
+            "end": 1341
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 1341,
+              "end": 1636
+            },
+            {
+              "source_section": "section-007",
+              "start": 0,
+              "end": 306
+            }
+          ]
+        },
+        {
+          "id": "section-007-メニュー",
+          "title": "メニュー",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-007",
+            "start": 306,
+            "end": 341
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 341,
+              "end": 342
+            }
+          ]
+        },
+        {
+          "id": "section-007-topic-2",
+          "title": "電源を入れる",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-007",
+            "start": 342,
+            "end": 355
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 355,
+              "end": 1265
+            }
+          ]
+        },
+        {
+          "id": "section-008-topic-1",
+          "title": "ローバッテリーアラームの設定：",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-008",
+            "start": 0,
+            "end": 22
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 22,
+              "end": 382
+            }
+          ]
+        },
+        {
+          "id": "section-008-r8fg-受信機",
+          "title": "R8FG 受信機",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-008",
+            "start": 382,
+            "end": 425
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 425,
+              "end": 831
+            }
+          ]
+        },
+        {
+          "id": "section-009-topic-1",
+          "title": "送信機と受信機のバインディング",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-009",
+            "start": 0,
+            "end": 22
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 22,
+              "end": 399
+            }
+          ]
+        },
+        {
+          "id": "section-009-topic-2",
+          "title": "バインディング操作手順：",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-009",
+            "start": 399,
+            "end": 418
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 418,
+              "end": 766
+            }
+          ]
+        },
+        {
+          "id": "section-009-topic-3",
+          "title": "受信機設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-009",
+            "start": 766,
+            "end": 778
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 778,
+              "end": 779
+            }
+          ]
+        },
+        {
+          "id": "section-009-topic-4",
+          "title": "受信機の選択(プロトコルの選択)：",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-009",
+            "start": 779,
+            "end": 803
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 803,
+              "end": 1264
+            },
+            {
+              "source_section": "section-010",
+              "start": 0,
+              "end": 95
+            }
+          ]
+        },
+        {
+          "id": "section-010-topic-1",
+          "title": "サーボ速度の設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-010",
+            "start": 95,
+            "end": 110
+          },
+          "blocks": [
+            {
+              "source_section": "section-010",
+              "start": 110,
+              "end": 1649
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-1",
+          "title": "受信機のコネクターの接続について",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 0,
+            "end": 23
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 23,
+              "end": 282
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-2",
+          "title": "受信機、サーボとESC の接続例",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 282,
+            "end": 305
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 305,
+              "end": 344
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-3",
+          "title": "電圧のテレメトリーについて",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 344,
+            "end": 364
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 364,
+              "end": 839
+            },
+            {
+              "source_section": "section-012",
+              "start": 0,
+              "end": 198
+            }
+          ]
+        },
+        {
+          "id": "section-012-topic-1",
+          "title": "受信機の動作モード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-012",
+            "start": 198,
+            "end": 214
+          },
+          "blocks": [
+            {
+              "source_section": "section-012",
+              "start": 214,
+              "end": 1144
+            }
+          ]
+        },
+        {
+          "id": "section-012-topic-2",
+          "title": "動作モードの設定について",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-012",
+            "start": 1144,
+            "end": 1163
+          },
+          "blocks": [
+            {
+              "source_section": "section-012",
+              "start": 1163,
+              "end": 1538
+            }
+          ]
+        },
+        {
+          "id": "section-012-topic-3",
+          "title": "動作モードを表すLED の色",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-012",
+            "start": 1538,
+            "end": 1559
+          },
+          "blocks": [
+            {
+              "source_section": "section-012",
+              "start": 1559,
+              "end": 2074
+            },
+            {
+              "source_section": "section-013",
+              "start": 0,
+              "end": 76
+            }
+          ]
+        },
+        {
+          "id": "section-013-topic-1",
+          "title": "受信機のジャイロ機能について",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-013",
+            "start": 76,
+            "end": 97
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 97,
+              "end": 194
+            }
+          ]
+        },
+        {
+          "id": "section-013-topic-2",
+          "title": "ジャイロ機能の使用方法",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-013",
+            "start": 194,
+            "end": 212
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 212,
+              "end": 758
+            }
+          ]
+        },
+        {
+          "id": "section-013-topic-3",
+          "title": "ジャイロのリバース",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-013",
+            "start": 758,
+            "end": 774
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 774,
+              "end": 1103
+            }
+          ]
+        },
+        {
+          "id": "section-013-topic-4",
+          "title": "ジャイロのゲイン調整",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-013",
+            "start": 1103,
+            "end": 1120
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 1120,
+              "end": 1501
+            },
+            {
+              "source_section": "section-014",
+              "start": 0,
+              "end": 154
+            }
+          ]
+        },
+        {
+          "id": "section-014-topic-1",
+          "title": "外部電源のローバッテリーアラーム設定について",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-014",
+            "start": 154,
+            "end": 183
+          },
+          "blocks": [
+            {
+              "source_section": "section-014",
+              "start": 183,
+              "end": 1114
+            }
+          ]
+        }
+      ],
+      "structure_review": {
+        "policy": "Explicit source headings; source page boundaries are immutable evidence segments, not document hierarchy.",
+        "offset_unit": "UTF-16 code units in original content_html",
+        "promoted_source_labels": [
+          "3 段階スイッチの設定について",
+          "電源を入れる",
+          "ローバッテリーアラームの設定：",
+          "送信機と受信機のバインディング",
+          "バインディング操作手順：",
+          "受信機設定",
+          "受信機の選択(プロトコルの選択)：",
+          "サーボ速度の設定",
+          "受信機のコネクターの接続について",
+          "受信機、サーボとESC の接続例",
+          "電圧のテレメトリーについて",
+          "受信機の動作モード",
+          "動作モードの設定について",
+          "動作モードを表すLED の色",
+          "受信機のジャイロ機能について",
+          "ジャイロ機能の使用方法",
+          "ジャイロのリバース",
+          "ジャイロのゲイン調整",
+          "外部電源のローバッテリーアラーム設定について"
+        ],
+        "technical_changes": "NONE"
+      },
+      "legacy_heading_anchors": [
+        {
+          "id": "rc8x1ページ",
+          "source_section": "section-001"
+        },
+        {
+          "id": "ご注意2ページ",
+          "source_section": "section-002"
+        },
+        {
+          "id": "スペック情報3ページ",
+          "source_section": "section-003"
+        },
+        {
+          "id": "原資料4ページ",
+          "source_section": "section-004"
+        },
+        {
+          "id": "rc8x-送信機5ページ",
+          "source_section": "section-005"
+        },
+        {
+          "id": "ボタンとスイッチの表記等の説明6ページ",
+          "source_section": "section-006"
+        },
+        {
+          "id": "メニュー7ページ",
+          "source_section": "section-007"
+        },
+        {
+          "id": "r8fg-受信機8ページ",
+          "source_section": "section-008"
+        },
+        {
+          "id": "原資料9ページ",
+          "source_section": "section-009"
+        },
+        {
+          "id": "原資料10ページ",
+          "source_section": "section-010"
+        },
+        {
+          "id": "原資料11ページ",
+          "source_section": "section-011"
+        },
+        {
+          "id": "原資料12ページ",
+          "source_section": "section-012"
+        },
+        {
+          "id": "原資料13ページ",
+          "source_section": "section-013"
+        },
+        {
+          "id": "原資料14ページ",
+          "source_section": "section-014"
+        }
+      ]
     },
     {
       "id": "repo-t8fb-ja-instruction_manual",
@@ -2455,7 +4121,1169 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": []
+      "technical_changes": [],
+      "semantic_sections": [
+        {
+          "id": "manual-introduction",
+          "title": null,
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 0,
+              "end": 255
+            },
+            {
+              "source_section": "section-002",
+              "start": 0,
+              "end": 5130
+            },
+            {
+              "source_section": "section-003",
+              "start": 0,
+              "end": 1583
+            }
+          ]
+        },
+        {
+          "id": "section-004-はじめにお読みください",
+          "title": "はじめにお読みください",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-004",
+            "start": 0,
+            "end": 49
+          },
+          "blocks": [
+            {
+              "source_section": "section-004",
+              "start": 49,
+              "end": 1287
+            }
+          ]
+        },
+        {
+          "id": "section-005-スペック情報",
+          "title": "スペック情報",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-005",
+            "start": 0,
+            "end": 39
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 39,
+              "end": 40
+            }
+          ]
+        },
+        {
+          "id": "section-005-1-t8fb-とr8ef-の導入",
+          "title": "1．T8FB とR8EF の導入",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-005",
+            "start": 40,
+            "end": 99
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 99,
+              "end": 2107
+            },
+            {
+              "source_section": "section-006",
+              "start": 0,
+              "end": 241
+            }
+          ]
+        },
+        {
+          "id": "section-006-付属品",
+          "title": "付属品",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 241,
+            "end": 274
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 274,
+              "end": 275
+            }
+          ]
+        },
+        {
+          "id": "section-006-topic-2",
+          "title": "1．1．T8FB 送信機",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 275,
+            "end": 294
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 294,
+              "end": 647
+            }
+          ]
+        },
+        {
+          "id": "section-007-topic-1",
+          "title": "1．1．1．T8FB のボタンとスイッチ",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-007",
+            "start": 0,
+            "end": 27
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 27,
+              "end": 684
+            }
+          ]
+        },
+        {
+          "id": "section-007-topic-2",
+          "title": "1．1．2．T8FB の裏側",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-007",
+            "start": 684,
+            "end": 705
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 705,
+              "end": 788
+            }
+          ]
+        },
+        {
+          "id": "section-007-topic-3",
+          "title": "1．1．3．送信機バッテリー",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-007",
+            "start": 788,
+            "end": 809
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 809,
+              "end": 1080
+            },
+            {
+              "source_section": "section-008",
+              "start": 0,
+              "end": 448
+            }
+          ]
+        },
+        {
+          "id": "section-008-topic-1",
+          "title": "1．2．R8EF 受信機",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-008",
+            "start": 448,
+            "end": 467
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 467,
+              "end": 468
+            }
+          ]
+        },
+        {
+          "id": "section-008-topic-2",
+          "title": "1．2．1．受信機モードと信号スイッチ",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-008",
+            "start": 468,
+            "end": 494
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 494,
+              "end": 578
+            }
+          ]
+        },
+        {
+          "id": "section-008-topic-3",
+          "title": "1．2．2．動作モード",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-008",
+            "start": 578,
+            "end": 596
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 596,
+              "end": 942
+            },
+            {
+              "source_section": "section-009",
+              "start": 0,
+              "end": 330
+            },
+            {
+              "source_section": "section-010",
+              "start": 0,
+              "end": 39
+            }
+          ]
+        },
+        {
+          "id": "section-010-topic-1",
+          "title": "SBUS&PPM とPWM 動作モードの切替え",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-010",
+            "start": 39,
+            "end": 73
+          },
+          "blocks": [
+            {
+              "source_section": "section-010",
+              "start": 73,
+              "end": 141
+            }
+          ]
+        },
+        {
+          "id": "section-010-topic-2",
+          "title": "1．2．3．受信機設定ガイド",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-010",
+            "start": 141,
+            "end": 162
+          },
+          "blocks": [
+            {
+              "source_section": "section-010",
+              "start": 162,
+              "end": 1130
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-1",
+          "title": "1．2．4．バインディング",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-011",
+            "start": 0,
+            "end": 20
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 20,
+              "end": 586
+            }
+          ]
+        },
+        {
+          "id": "section-011-2-パラメータ設定アプリ",
+          "title": "2．パラメータ設定アプリ",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-011",
+            "start": 586,
+            "end": 637
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 637,
+              "end": 638
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-3",
+          "title": "2．1．スマートフォンアプリの設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 638,
+            "end": 662
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 662,
+              "end": 663
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-4",
+          "title": "2．1．1．スマートフォンアプリのインストール",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-011",
+            "start": 663,
+            "end": 693
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 693,
+              "end": 1348
+            },
+            {
+              "source_section": "section-012",
+              "start": 0,
+              "end": 33
+            }
+          ]
+        },
+        {
+          "id": "section-012-topic-1",
+          "title": "2．1．2．スマートフォンアプリとの接続",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-012",
+            "start": 33,
+            "end": 60
+          },
+          "blocks": [
+            {
+              "source_section": "section-012",
+              "start": 60,
+              "end": 867
+            },
+            {
+              "source_section": "section-013",
+              "start": 0,
+              "end": 239
+            }
+          ]
+        },
+        {
+          "id": "section-013-topic-1",
+          "title": "2．1．3．スマートフォンアプリのパラメータ設定メニュー",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-013",
+            "start": 239,
+            "end": 274
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 274,
+              "end": 1459
+            },
+            {
+              "source_section": "section-014",
+              "start": 0,
+              "end": 1074
+            }
+          ]
+        },
+        {
+          "id": "section-014-topic-1",
+          "title": "2．2．コンピューターアプリの設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-014",
+            "start": 1074,
+            "end": 1098
+          },
+          "blocks": [
+            {
+              "source_section": "section-014",
+              "start": 1098,
+              "end": 1099
+            }
+          ]
+        },
+        {
+          "id": "section-014-topic-2",
+          "title": "2．2．1．コンピューターアプリのインストール",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-014",
+            "start": 1099,
+            "end": 1129
+          },
+          "blocks": [
+            {
+              "source_section": "section-014",
+              "start": 1129,
+              "end": 1551
+            },
+            {
+              "source_section": "section-015",
+              "start": 0,
+              "end": 231
+            }
+          ]
+        },
+        {
+          "id": "section-015-topic-1",
+          "title": "2．2．2．コンピューターアプリとの接続",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-015",
+            "start": 231,
+            "end": 258
+          },
+          "blocks": [
+            {
+              "source_section": "section-015",
+              "start": 258,
+              "end": 1111
+            },
+            {
+              "source_section": "section-016",
+              "start": 0,
+              "end": 857
+            }
+          ]
+        },
+        {
+          "id": "section-016-3-アプリの機能設定",
+          "title": "3．アプリの機能設定",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-016",
+            "start": 857,
+            "end": 904
+          },
+          "blocks": [
+            {
+              "source_section": "section-016",
+              "start": 904,
+              "end": 905
+            }
+          ]
+        },
+        {
+          "id": "section-016-topic-2",
+          "title": "3．1．サーボメニュー",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-016",
+            "start": 905,
+            "end": 923
+          },
+          "blocks": [
+            {
+              "source_section": "section-016",
+              "start": 923,
+              "end": 1370
+            },
+            {
+              "source_section": "section-017",
+              "start": 0,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "id": "section-017-topic-1",
+          "title": "3．2．基本メニュー",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-017",
+            "start": 21,
+            "end": 38
+          },
+          "blocks": [
+            {
+              "source_section": "section-017",
+              "start": 38,
+              "end": 39
+            }
+          ]
+        },
+        {
+          "id": "section-017-topic-2",
+          "title": "3．2．1．リバース",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-017",
+            "start": 39,
+            "end": 56
+          },
+          "blocks": [
+            {
+              "source_section": "section-017",
+              "start": 56,
+              "end": 478
+            },
+            {
+              "source_section": "section-018",
+              "start": 0,
+              "end": 131
+            }
+          ]
+        },
+        {
+          "id": "section-018-topic-1",
+          "title": "3．2．2．サブトリム",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-018",
+            "start": 131,
+            "end": 149
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 149,
+              "end": 485
+            },
+            {
+              "source_section": "section-019",
+              "start": 0,
+              "end": 324
+            }
+          ]
+        },
+        {
+          "id": "section-019-topic-1",
+          "title": "3．2．3．エンドポイント調整(EPA)",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-019",
+            "start": 324,
+            "end": 351
+          },
+          "blocks": [
+            {
+              "source_section": "section-019",
+              "start": 351,
+              "end": 837
+            },
+            {
+              "source_section": "section-020",
+              "start": 0,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "id": "section-020-topic-1",
+          "title": "3．2．4．フェイルセーフ(F/S)",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-020",
+            "start": 21,
+            "end": 46
+          },
+          "blocks": [
+            {
+              "source_section": "section-020",
+              "start": 46,
+              "end": 582
+            },
+            {
+              "source_section": "section-021",
+              "start": 0,
+              "end": 259
+            }
+          ]
+        },
+        {
+          "id": "section-021-topic-1",
+          "title": "3．2．5．遅延",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-021",
+            "start": 259,
+            "end": 274
+          },
+          "blocks": [
+            {
+              "source_section": "section-021",
+              "start": 274,
+              "end": 567
+            },
+            {
+              "source_section": "section-022",
+              "start": 0,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "id": "section-022-topic-1",
+          "title": "3．3．アドバンスメニュー",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-022",
+            "start": 21,
+            "end": 41
+          },
+          "blocks": [
+            {
+              "source_section": "section-022",
+              "start": 41,
+              "end": 42
+            }
+          ]
+        },
+        {
+          "id": "section-022-topic-2",
+          "title": "3．3．1．D/R(デュアルレート)",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-022",
+            "start": 42,
+            "end": 67
+          },
+          "blocks": [
+            {
+              "source_section": "section-022",
+              "start": 67,
+              "end": 1226
+            },
+            {
+              "source_section": "section-023",
+              "start": 0,
+              "end": 42
+            }
+          ]
+        },
+        {
+          "id": "section-023-topic-1",
+          "title": "3．3．2．姿勢",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-023",
+            "start": 42,
+            "end": 57
+          },
+          "blocks": [
+            {
+              "source_section": "section-023",
+              "start": 57,
+              "end": 630
+            },
+            {
+              "source_section": "section-024",
+              "start": 0,
+              "end": 343
+            }
+          ]
+        },
+        {
+          "id": "section-024-topic-1",
+          "title": "3．3．3．エレボン",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-024",
+            "start": 343,
+            "end": 360
+          },
+          "blocks": [
+            {
+              "source_section": "section-024",
+              "start": 360,
+              "end": 898
+            },
+            {
+              "source_section": "section-025",
+              "start": 0,
+              "end": 213
+            }
+          ]
+        },
+        {
+          "id": "section-025-topic-1",
+          "title": "3．3．4．V テール",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-025",
+            "start": 213,
+            "end": 231
+          },
+          "blocks": [
+            {
+              "source_section": "section-025",
+              "start": 231,
+              "end": 651
+            },
+            {
+              "source_section": "section-026",
+              "start": 0,
+              "end": 250
+            }
+          ]
+        },
+        {
+          "id": "section-026-topic-1",
+          "title": "3．4．PROG.MIX メニュー",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-026",
+            "start": 250,
+            "end": 274
+          },
+          "blocks": [
+            {
+              "source_section": "section-026",
+              "start": 274,
+              "end": 275
+            }
+          ]
+        },
+        {
+          "id": "section-026-topic-2",
+          "title": "3．4．1．PROG.MIX",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-026",
+            "start": 275,
+            "end": 296
+          },
+          "blocks": [
+            {
+              "source_section": "section-026",
+              "start": 296,
+              "end": 779
+            },
+            {
+              "source_section": "section-027",
+              "start": 0,
+              "end": 534
+            }
+          ]
+        },
+        {
+          "id": "section-027-topic-1",
+          "title": "3．4．2．TH/CURE",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-027",
+            "start": 534,
+            "end": 554
+          },
+          "blocks": [
+            {
+              "source_section": "section-027",
+              "start": 554,
+              "end": 947
+            },
+            {
+              "source_section": "section-028",
+              "start": 0,
+              "end": 128
+            }
+          ]
+        },
+        {
+          "id": "section-028-topic-1",
+          "title": "3．4．3．DR/CURE",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-028",
+            "start": 128,
+            "end": 148
+          },
+          "blocks": [
+            {
+              "source_section": "section-028",
+              "start": 148,
+              "end": 184
+            }
+          ]
+        },
+        {
+          "id": "section-028-topic-2",
+          "title": "3．5．システムメニュー",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-028",
+            "start": 184,
+            "end": 203
+          },
+          "blocks": [
+            {
+              "source_section": "section-028",
+              "start": 203,
+              "end": 467
+            }
+          ]
+        },
+        {
+          "id": "section-029-topic-1",
+          "title": "3．5．1．補助チャンネル",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-029",
+            "start": 0,
+            "end": 20
+          },
+          "blocks": [
+            {
+              "source_section": "section-029",
+              "start": 20,
+              "end": 603
+            }
+          ]
+        },
+        {
+          "id": "section-029-topic-2",
+          "title": "3．5．2．アラーム",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-029",
+            "start": 603,
+            "end": 620
+          },
+          "blocks": [
+            {
+              "source_section": "section-029",
+              "start": 620,
+              "end": 1036
+            },
+            {
+              "source_section": "section-030",
+              "start": 0,
+              "end": 991
+            }
+          ]
+        },
+        {
+          "id": "section-031-topic-1",
+          "title": "3．5．3．バージョンモード",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-031",
+            "start": 0,
+            "end": 21
+          },
+          "blocks": [
+            {
+              "source_section": "section-031",
+              "start": 21,
+              "end": 846
+            }
+          ]
+        },
+        {
+          "id": "section-032-topic-1",
+          "title": "3．5．4．リセット",
+          "depth": 4,
+          "heading": {
+            "source_section": "section-032",
+            "start": 0,
+            "end": 17
+          },
+          "blocks": [
+            {
+              "source_section": "section-032",
+              "start": 17,
+              "end": 177
+            }
+          ]
+        },
+        {
+          "id": "section-032-4-ファームウェアのアップグレード",
+          "title": "4．ファームウェアのアップグレード",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-032",
+            "start": 177,
+            "end": 238
+          },
+          "blocks": [
+            {
+              "source_section": "section-032",
+              "start": 238,
+              "end": 239
+            }
+          ]
+        },
+        {
+          "id": "section-032-topic-3",
+          "title": "4．1．ファームウェアバージョン",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-032",
+            "start": 239,
+            "end": 262
+          },
+          "blocks": [
+            {
+              "source_section": "section-032",
+              "start": 262,
+              "end": 592
+            },
+            {
+              "source_section": "section-033",
+              "start": 0,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "id": "section-033-topic-1",
+          "title": "4．2．ファームウェアアップグレードの手順について",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-033",
+            "start": 21,
+            "end": 53
+          },
+          "blocks": [
+            {
+              "source_section": "section-033",
+              "start": 53,
+              "end": 169
+            }
+          ]
+        },
+        {
+          "id": "section-033-5-t8fb-ジョイスティックの校正",
+          "title": "5．T8FB ジョイスティックの校正",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-033",
+            "start": 169,
+            "end": 232
+          },
+          "blocks": [
+            {
+              "source_section": "section-033",
+              "start": 232,
+              "end": 764
+            },
+            {
+              "source_section": "section-034",
+              "start": 0,
+              "end": 151
+            }
+          ]
+        },
+        {
+          "id": "section-034-topic-1",
+          "title": "技術サポートについて",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-034",
+            "start": 151,
+            "end": 168
+          },
+          "blocks": [
+            {
+              "source_section": "section-034",
+              "start": 168,
+              "end": 933
+            }
+          ]
+        }
+      ],
+      "structure_review": {
+        "policy": "Explicit source headings; source page boundaries are immutable evidence segments, not document hierarchy.",
+        "offset_unit": "UTF-16 code units in original content_html",
+        "promoted_source_labels": [
+          "1．1．T8FB 送信機",
+          "1．1．1．T8FB のボタンとスイッチ",
+          "1．1．2．T8FB の裏側",
+          "1．1．3．送信機バッテリー",
+          "1．2．R8EF 受信機",
+          "1．2．1．受信機モードと信号スイッチ",
+          "1．2．2．動作モード",
+          "SBUS&PPM とPWM 動作モードの切替え",
+          "1．2．3．受信機設定ガイド",
+          "1．2．4．バインディング",
+          "2．1．スマートフォンアプリの設定",
+          "2．1．1．スマートフォンアプリのインストール",
+          "2．1．2．スマートフォンアプリとの接続",
+          "2．1．3．スマートフォンアプリのパラメータ設定メニュー",
+          "2．2．コンピューターアプリの設定",
+          "2．2．1．コンピューターアプリのインストール",
+          "2．2．2．コンピューターアプリとの接続",
+          "3．1．サーボメニュー",
+          "3．2．基本メニュー",
+          "3．2．1．リバース",
+          "3．2．2．サブトリム",
+          "3．2．3．エンドポイント調整(EPA)",
+          "3．2．4．フェイルセーフ(F/S)",
+          "3．2．5．遅延",
+          "3．3．アドバンスメニュー",
+          "3．3．1．D/R(デュアルレート)",
+          "3．3．2．姿勢",
+          "3．3．3．エレボン",
+          "3．3．4．V テール",
+          "3．4．PROG.MIX メニュー",
+          "3．4．1．PROG.MIX",
+          "3．4．2．TH/CURE",
+          "3．4．3．DR/CURE",
+          "3．5．システムメニュー",
+          "3．5．1．補助チャンネル",
+          "3．5．2．アラーム",
+          "3．5．3．バージョンモード",
+          "3．5．4．リセット",
+          "4．1．ファームウェアバージョン",
+          "4．2．ファームウェアアップグレードの手順について",
+          "技術サポートについて"
+        ],
+        "technical_changes": "NONE"
+      },
+      "legacy_heading_anchors": [
+        {
+          "id": "t8fb-取扱説明書1ページ",
+          "source_section": "section-001"
+        },
+        {
+          "id": "目次2ページ",
+          "source_section": "section-002"
+        },
+        {
+          "id": "原資料3ページ",
+          "source_section": "section-003"
+        },
+        {
+          "id": "はじめにお読みください4ページ",
+          "source_section": "section-004"
+        },
+        {
+          "id": "スペック情報5ページ",
+          "source_section": "section-005"
+        },
+        {
+          "id": "付属品6ページ",
+          "source_section": "section-006"
+        },
+        {
+          "id": "原資料7ページ",
+          "source_section": "section-007"
+        },
+        {
+          "id": "原資料8ページ",
+          "source_section": "section-008"
+        },
+        {
+          "id": "原資料9ページ",
+          "source_section": "section-009"
+        },
+        {
+          "id": "原資料10ページ",
+          "source_section": "section-010"
+        },
+        {
+          "id": "2パラメータ設定アプリ11ページ",
+          "source_section": "section-011"
+        },
+        {
+          "id": "原資料12ページ",
+          "source_section": "section-012"
+        },
+        {
+          "id": "原資料13ページ",
+          "source_section": "section-013"
+        },
+        {
+          "id": "原資料14ページ",
+          "source_section": "section-014"
+        },
+        {
+          "id": "原資料15ページ",
+          "source_section": "section-015"
+        },
+        {
+          "id": "3アプリの機能設定16ページ",
+          "source_section": "section-016"
+        },
+        {
+          "id": "原資料17ページ",
+          "source_section": "section-017"
+        },
+        {
+          "id": "原資料18ページ",
+          "source_section": "section-018"
+        },
+        {
+          "id": "原資料19ページ",
+          "source_section": "section-019"
+        },
+        {
+          "id": "原資料20ページ",
+          "source_section": "section-020"
+        },
+        {
+          "id": "原資料21ページ",
+          "source_section": "section-021"
+        },
+        {
+          "id": "原資料22ページ",
+          "source_section": "section-022"
+        },
+        {
+          "id": "原資料23ページ",
+          "source_section": "section-023"
+        },
+        {
+          "id": "原資料24ページ",
+          "source_section": "section-024"
+        },
+        {
+          "id": "原資料25ページ",
+          "source_section": "section-025"
+        },
+        {
+          "id": "原資料26ページ",
+          "source_section": "section-026"
+        },
+        {
+          "id": "原資料27ページ",
+          "source_section": "section-027"
+        },
+        {
+          "id": "原資料28ページ",
+          "source_section": "section-028"
+        },
+        {
+          "id": "原資料29ページ",
+          "source_section": "section-029"
+        },
+        {
+          "id": "原資料30ページ",
+          "source_section": "section-030"
+        },
+        {
+          "id": "原資料31ページ",
+          "source_section": "section-031"
+        },
+        {
+          "id": "4ファームウェアのアップグレード32ページ",
+          "source_section": "section-032"
+        },
+        {
+          "id": "5t8fb-ジョイスティックの校正33ページ",
+          "source_section": "section-033"
+        },
+        {
+          "id": "原資料34ページ",
+          "source_section": "section-034"
+        }
+      ]
     },
     {
       "id": "repo-byme-a-v2-ja-instruction_manual",
@@ -2969,7 +5797,572 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": []
+      "technical_changes": [],
+      "semantic_sections": [
+        {
+          "id": "manual-introduction",
+          "title": null,
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 0,
+              "end": 378
+            },
+            {
+              "source_section": "section-002",
+              "start": 0,
+              "end": 3787
+            }
+          ]
+        },
+        {
+          "id": "section-003-免責事項",
+          "title": "免責事項",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-003",
+            "start": 0,
+            "end": 35
+          },
+          "blocks": [
+            {
+              "source_section": "section-003",
+              "start": 35,
+              "end": 725
+            }
+          ]
+        },
+        {
+          "id": "section-003-警告-注意事項",
+          "title": "警告・注意事項",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-003",
+            "start": 725,
+            "end": 766
+          },
+          "blocks": [
+            {
+              "source_section": "section-003",
+              "start": 766,
+              "end": 1370
+            },
+            {
+              "source_section": "section-004",
+              "start": 0,
+              "end": 289
+            }
+          ]
+        },
+        {
+          "id": "section-004-概要",
+          "title": "概要",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-004",
+            "start": 289,
+            "end": 320
+          },
+          "blocks": [
+            {
+              "source_section": "section-004",
+              "start": 320,
+              "end": 666
+            }
+          ]
+        },
+        {
+          "id": "section-004-スペック情報",
+          "title": "スペック情報",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-004",
+            "start": 666,
+            "end": 705
+          },
+          "blocks": [
+            {
+              "source_section": "section-004",
+              "start": 705,
+              "end": 1089
+            }
+          ]
+        },
+        {
+          "id": "section-005-機体への取り付け",
+          "title": "機体への取り付け",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-005",
+            "start": 0,
+            "end": 43
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 43,
+              "end": 453
+            }
+          ]
+        },
+        {
+          "id": "section-006-フライトモードの設定",
+          "title": "フライトモードの設定",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-006",
+            "start": 0,
+            "end": 47
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 47,
+              "end": 693
+            },
+            {
+              "source_section": "section-007",
+              "start": 0,
+              "end": 123
+            }
+          ]
+        },
+        {
+          "id": "section-007-電源on-とジャイロのセルフテスト",
+          "title": "電源ON とジャイロのセルフテスト",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-007",
+            "start": 123,
+            "end": 184
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 184,
+              "end": 563
+            }
+          ]
+        },
+        {
+          "id": "section-007-校正",
+          "title": "校正",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-007",
+            "start": 563,
+            "end": 594
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 594,
+              "end": 1044
+            },
+            {
+              "source_section": "section-008",
+              "start": 0,
+              "end": 627
+            },
+            {
+              "source_section": "section-009",
+              "start": 0,
+              "end": 203
+            }
+          ]
+        },
+        {
+          "id": "section-009-ジャイロ位相",
+          "title": "ジャイロ位相",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-009",
+            "start": 203,
+            "end": 242
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 242,
+              "end": 243
+            }
+          ]
+        },
+        {
+          "id": "section-009-topic-2",
+          "title": "ジャイロ位相テスト",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-009",
+            "start": 243,
+            "end": 259
+          },
+          "blocks": [
+            {
+              "source_section": "section-009",
+              "start": 259,
+              "end": 819
+            },
+            {
+              "source_section": "section-010",
+              "start": 0,
+              "end": 94
+            }
+          ]
+        },
+        {
+          "id": "section-010-topic-1",
+          "title": "ジャイロ位相校正",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-010",
+            "start": 94,
+            "end": 109
+          },
+          "blocks": [
+            {
+              "source_section": "section-010",
+              "start": 109,
+              "end": 456
+            },
+            {
+              "source_section": "section-011",
+              "start": 0,
+              "end": 727
+            }
+          ]
+        },
+        {
+          "id": "section-011-送信機の設定",
+          "title": "送信機の設定",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-011",
+            "start": 727,
+            "end": 766
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 766,
+              "end": 767
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-2",
+          "title": "モデルタイプの設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 767,
+            "end": 783
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 783,
+              "end": 879
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-3",
+          "title": "送信機位相設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 879,
+            "end": 893
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 893,
+              "end": 1044
+            }
+          ]
+        },
+        {
+          "id": "section-011-topic-4",
+          "title": "送信機位相テスト",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-011",
+            "start": 1044,
+            "end": 1059
+          },
+          "blocks": [
+            {
+              "source_section": "section-011",
+              "start": 1059,
+              "end": 1377
+            },
+            {
+              "source_section": "section-012",
+              "start": 0,
+              "end": 541
+            },
+            {
+              "source_section": "section-013",
+              "start": 0,
+              "end": 171
+            }
+          ]
+        },
+        {
+          "id": "section-013-6-種の飛行モード",
+          "title": "6 種の飛行モード",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-013",
+            "start": 171,
+            "end": 216
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 216,
+              "end": 292
+            }
+          ]
+        },
+        {
+          "id": "section-013-topic-2",
+          "title": "安定モード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-013",
+            "start": 292,
+            "end": 304
+          },
+          "blocks": [
+            {
+              "source_section": "section-013",
+              "start": 304,
+              "end": 736
+            },
+            {
+              "source_section": "section-014",
+              "start": 0,
+              "end": 224
+            },
+            {
+              "source_section": "section-015",
+              "start": 0,
+              "end": 52
+            }
+          ]
+        },
+        {
+          "id": "section-015-topic-1",
+          "title": "ホバリングモード(マルチコプター)",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-015",
+            "start": 52,
+            "end": 76
+          },
+          "blocks": [
+            {
+              "source_section": "section-015",
+              "start": 76,
+              "end": 526
+            },
+            {
+              "source_section": "section-016",
+              "start": 0,
+              "end": 382
+            }
+          ]
+        },
+        {
+          "id": "section-017-topic-1",
+          "title": "ホバリングモード(固定翼)",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-017",
+            "start": 0,
+            "end": 20
+          },
+          "blocks": [
+            {
+              "source_section": "section-017",
+              "start": 20,
+              "end": 537
+            },
+            {
+              "source_section": "section-018",
+              "start": 0,
+              "end": 47
+            }
+          ]
+        },
+        {
+          "id": "section-018-topic-1",
+          "title": "ジャイロモード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-018",
+            "start": 47,
+            "end": 61
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 61,
+              "end": 264
+            }
+          ]
+        },
+        {
+          "id": "section-018-topic-2",
+          "title": "アクロバットモード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-018",
+            "start": 264,
+            "end": 280
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 280,
+              "end": 456
+            }
+          ]
+        },
+        {
+          "id": "section-018-topic-3",
+          "title": "マニュアルモード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-018",
+            "start": 456,
+            "end": 471
+          },
+          "blocks": [
+            {
+              "source_section": "section-018",
+              "start": 471,
+              "end": 935
+            }
+          ]
+        },
+        {
+          "id": "section-019-ジャイロ感度",
+          "title": "ジャイロ感度",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-019",
+            "start": 0,
+            "end": 39
+          },
+          "blocks": [
+            {
+              "source_section": "section-019",
+              "start": 39,
+              "end": 414
+            }
+          ]
+        }
+      ],
+      "structure_review": {
+        "policy": "Explicit source headings; source page boundaries are immutable evidence segments, not document hierarchy.",
+        "offset_unit": "UTF-16 code units in original content_html",
+        "promoted_source_labels": [
+          "ジャイロ位相テスト",
+          "ジャイロ位相校正",
+          "モデルタイプの設定",
+          "送信機位相設定",
+          "送信機位相テスト",
+          "安定モード",
+          "ホバリングモード(マルチコプター)",
+          "ホバリングモード(固定翼)",
+          "ジャイロモード",
+          "アクロバットモード",
+          "マニュアルモード"
+        ],
+        "technical_changes": "NONE"
+      },
+      "legacy_heading_anchors": [
+        {
+          "id": "byme-a1ページ",
+          "source_section": "section-001"
+        },
+        {
+          "id": "目次2ページ",
+          "source_section": "section-002"
+        },
+        {
+          "id": "免責事項3ページ",
+          "source_section": "section-003"
+        },
+        {
+          "id": "概要4ページ",
+          "source_section": "section-004"
+        },
+        {
+          "id": "機体への取り付け5ページ",
+          "source_section": "section-005"
+        },
+        {
+          "id": "フライトモードの設定6ページ",
+          "source_section": "section-006"
+        },
+        {
+          "id": "電源on-とジャイロのセルフテスト7ページ",
+          "source_section": "section-007"
+        },
+        {
+          "id": "原資料8ページ",
+          "source_section": "section-008"
+        },
+        {
+          "id": "ジャイロ位相9ページ",
+          "source_section": "section-009"
+        },
+        {
+          "id": "原資料10ページ",
+          "source_section": "section-010"
+        },
+        {
+          "id": "送信機の設定11ページ",
+          "source_section": "section-011"
+        },
+        {
+          "id": "原資料12ページ",
+          "source_section": "section-012"
+        },
+        {
+          "id": "6-種の飛行モード13ページ",
+          "source_section": "section-013"
+        },
+        {
+          "id": "原資料14ページ",
+          "source_section": "section-014"
+        },
+        {
+          "id": "原資料15ページ",
+          "source_section": "section-015"
+        },
+        {
+          "id": "原資料16ページ",
+          "source_section": "section-016"
+        },
+        {
+          "id": "原資料17ページ",
+          "source_section": "section-017"
+        },
+        {
+          "id": "原資料18ページ",
+          "source_section": "section-018"
+        },
+        {
+          "id": "ジャイロ感度19ページ",
+          "source_section": "section-019"
+        }
+      ]
     },
     {
       "id": "repo-byme-d-ja-instruction_manual",
@@ -3327,7 +6720,287 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": []
+      "technical_changes": [],
+      "semantic_sections": [
+        {
+          "id": "manual-introduction",
+          "title": null,
+          "blocks": [
+            {
+              "source_section": "section-001",
+              "start": 0,
+              "end": 445
+            }
+          ]
+        },
+        {
+          "id": "section-002-免責事項",
+          "title": "免責事項",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-002",
+            "start": 0,
+            "end": 35
+          },
+          "blocks": [
+            {
+              "source_section": "section-002",
+              "start": 35,
+              "end": 1083
+            }
+          ]
+        },
+        {
+          "id": "section-002-警告-注意事項",
+          "title": "警告・注意事項",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-002",
+            "start": 1083,
+            "end": 1124
+          },
+          "blocks": [
+            {
+              "source_section": "section-002",
+              "start": 1124,
+              "end": 1672
+            }
+          ]
+        },
+        {
+          "id": "section-003-概要",
+          "title": "概要",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-003",
+            "start": 0,
+            "end": 31
+          },
+          "blocks": [
+            {
+              "source_section": "section-003",
+              "start": 31,
+              "end": 571
+            }
+          ]
+        },
+        {
+          "id": "section-004-スペック情報",
+          "title": "スペック情報",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-004",
+            "start": 0,
+            "end": 39
+          },
+          "blocks": [
+            {
+              "source_section": "section-004",
+              "start": 39,
+              "end": 201
+            }
+          ]
+        },
+        {
+          "id": "section-005-機体への取り付け",
+          "title": "機体への取り付け",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-005",
+            "start": 0,
+            "end": 43
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 43,
+              "end": 547
+            }
+          ]
+        },
+        {
+          "id": "section-005-送信機の設定",
+          "title": "送信機の設定",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-005",
+            "start": 547,
+            "end": 586
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 586,
+              "end": 909
+            }
+          ]
+        },
+        {
+          "id": "section-005-通電時の校正",
+          "title": "通電時の校正",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-005",
+            "start": 909,
+            "end": 948
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 948,
+              "end": 1034
+            }
+          ]
+        },
+        {
+          "id": "section-005-姿勢の校正",
+          "title": "姿勢の校正",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-005",
+            "start": 1034,
+            "end": 1071
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 1071,
+              "end": 2226
+            }
+          ]
+        },
+        {
+          "id": "section-005-サーボの位相",
+          "title": "サーボの位相",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-005",
+            "start": 2226,
+            "end": 2265
+          },
+          "blocks": [
+            {
+              "source_section": "section-005",
+              "start": 2265,
+              "end": 3135
+            }
+          ]
+        },
+        {
+          "id": "section-006-フライトモードの設定",
+          "title": "フライトモードの設定",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-006",
+            "start": 0,
+            "end": 47
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 47,
+              "end": 133
+            }
+          ]
+        },
+        {
+          "id": "section-006-安定モード",
+          "title": "安定モード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 133,
+            "end": 170
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 170,
+              "end": 1652
+            }
+          ]
+        },
+        {
+          "id": "section-006-ジャイロモード",
+          "title": "ジャイロモード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 1652,
+            "end": 1693
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 1693,
+              "end": 2004
+            }
+          ]
+        },
+        {
+          "id": "section-006-マニュアルモード",
+          "title": "マニュアルモード",
+          "depth": 3,
+          "heading": {
+            "source_section": "section-006",
+            "start": 2004,
+            "end": 2047
+          },
+          "blocks": [
+            {
+              "source_section": "section-006",
+              "start": 2047,
+              "end": 2172
+            }
+          ]
+        },
+        {
+          "id": "section-007-モーターセフティロック",
+          "title": "モーターセフティロック",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-007",
+            "start": 0,
+            "end": 49
+          },
+          "blocks": [
+            {
+              "source_section": "section-007",
+              "start": 49,
+              "end": 495
+            }
+          ]
+        },
+        {
+          "id": "section-008-ジャイロ感度",
+          "title": "ジャイロ感度",
+          "depth": 2,
+          "heading": {
+            "source_section": "section-008",
+            "start": 0,
+            "end": 39
+          },
+          "blocks": [
+            {
+              "source_section": "section-008",
+              "start": 39,
+              "end": 165
+            }
+          ]
+        }
+      ],
+      "structure_review": {
+        "policy": "Explicit source headings; source page boundaries are immutable evidence segments, not document hierarchy.",
+        "offset_unit": "UTF-16 code units in original content_html",
+        "promoted_source_labels": [],
+        "technical_changes": "NONE"
+      },
+      "legacy_heading_anchors": [
+        {
+          "id": "はじめに",
+          "source_section": "section-001"
+        }
+      ]
     }
   ]
 }

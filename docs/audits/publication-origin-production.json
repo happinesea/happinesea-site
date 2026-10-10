@@ -1,6 +1,6 @@
 {
   "mode": "production",
-  "observed_at": "2026-10-10T16:11:45.369Z",
+  "observed_at": "2026-10-10T23:14:29.817Z",
   "evidence_scope": "local/staging HTTP; no production deployment",
   "public_base": "https://happinesea.com/",
   "html_count": 312,

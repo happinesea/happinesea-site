@@ -2,6 +2,7 @@
 import inventory from '../../data/manuals/existing-ja.json';
 import { withBase } from '../../lib/urls';
 import { createHash } from 'node:crypto';
+import { renderSemanticSection } from '../../../scripts/lib/manual-semantic-structure.mjs';
 
 interface Props {
   manual: string;
@@ -10,18 +11,21 @@ interface Props {
 const manual = inventory.manuals.find(
   (entry) => entry.id === Astro.props.manual,
 );
-const section = manual?.sections.find(
+const section = manual?.semantic_sections?.find(
   (entry) => entry.id === Astro.props.section,
 );
-if (!section) throw new Error('Unknown existing Japanese manual section');
-if (
-  createHash('sha256').update(section.content_html).digest('hex') !==
-  section.sha256
-)
-  throw new Error('Existing Japanese manual publication hash mismatch');
-const body = section.content_html.replaceAll(
+if (!manual || !section)
+  throw new Error('Unknown existing Japanese manual section');
+for (const source of manual.sections) {
+  if (
+    createHash('sha256').update(source.content_html).digest('hex') !==
+    source.sha256
+  )
+    throw new Error('Existing Japanese manual publication hash mismatch');
+}
+const body = renderSemanticSection(manual, section.id).replaceAll(
   /<img src="(\/assets\/[^"]+)"([^>]+)>/g,
-  (_, src: string, attributes: string) =>
+  (_: string, src: string, attributes: string) =>
     `<a href="${withBase(src)}" aria-label="図を原寸で開く"><img src="${withBase(src)}"${attributes}></a>`,
 );
 ---
@@ -29,7 +33,7 @@ const body = section.content_html.replaceAll(
 <div
   class="legacy-ja-manual"
   data-japanese-manual={Astro.props.manual}
-  data-source-section={section.id}
+  data-semantic-section={section.id}
   set:html={body}
 />
 

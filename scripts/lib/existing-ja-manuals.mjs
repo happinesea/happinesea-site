@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import { verifySemanticStructure } from './manual-semantic-structure.mjs';
 
 const hash = (value) => createHash('sha256').update(value).digest('hex');
 
@@ -114,6 +115,7 @@ export function verifyExistingJapaneseManuals(inventory, publicDirectory) {
       'publication_copy',
       `Unknown manual status: ${manual.id}`,
     );
+    verifySemanticStructure(manual);
     for (const asset of manual.assets) {
       assert(
         /^\/assets\/radiolink\/[a-z0-9-]+\/manuals\/[a-z0-9-]+\/[a-z0-9.-]+$/.test(
