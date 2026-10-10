@@ -20,6 +20,13 @@ test('permanent download inventory publishes verified bytes without losing legac
     const file = inventory.files.find((item) => item.sha256 === receipt.sha256);
     assert.ok(file, receipt.target_route);
     assert.ok(file.legacy_routes.includes(receipt.target_route));
+    if (file.status === 'BLOCKED_SAFETY_REVIEW') {
+      assert.equal(receipt.publication_status, 'BLOCKED_SAFETY_REVIEW');
+      assert(file.reason && file.evidence_review);
+      for (const route of [file.target_route, receipt.target_route])
+        assert(!existsSync(`public${route}`));
+      continue;
+    }
     assert.match(
       file.target_route,
       /^\/downloads\/(radiolink|drawings)\/[^/]+\.(pdf|zip|docx)$/,

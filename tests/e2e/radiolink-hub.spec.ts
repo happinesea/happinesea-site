@@ -55,6 +55,10 @@ test('downloads are exact static bytes and query pages remain navigable without 
   for (const file of inventory.files) {
     for (const route of [file.target_route, ...file.legacy_routes]) {
       const response = await request.get(`.${route}`);
+      if (file.status === 'BLOCKED_SAFETY_REVIEW') {
+        expect(response.status(), route).toBe(404);
+        continue;
+      }
       expect(response.status(), route).toBe(200);
       expect(
         createHash('sha256')
@@ -69,11 +73,16 @@ test('downloads are exact static bytes and query pages remain navigable without 
     const route = `.${endpoint.target_route}?wpdmdl=${endpoint.download_id}`;
     await page.goto(route);
     const links = page.locator('a[data-download-sha256]');
-    expect(await links.count()).toBeGreaterThan(0);
     const file = inventory.files.find((file) =>
       file.legacy_routes.some((route) => route === endpoint.download_target),
     );
     expect(file).toBeDefined();
+    if (file!.status === 'BLOCKED_SAFETY_REVIEW') {
+      await expect(links).toHaveCount(0);
+      await expect(page.locator('[data-safety-withheld-download]')).toHaveCount(
+        2,
+      );
+    } else expect(await links.count()).toBeGreaterThan(0);
     for (const link of await links.all()) {
       await expect(link).toHaveAttribute(
         'href',

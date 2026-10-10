@@ -37,12 +37,12 @@
       ],
       "open_items": [
         {
-          "id": "r6fg-startup-and-revision",
-          "evidence": {
-            "path": "sources/en/r6fg_manual.pdf",
-            "sha256": "8f761d195cc4efc9d9838bd6b5ea7dc499568f78b622de84a7834e09f8b7d340",
-            "physical_pages": [1, 2]
-          }
+          "id": "authoritative-evidence-1",
+          "reason": "Exact manufacturer RC4GS generation identity for this 4CH/10-model document."
+        },
+        {
+          "id": "authoritative-evidence-2",
+          "reason": "R6FG receiver revision/manufacture date and applicable gyro-forward procedure; applicable receiver supply voltage."
         }
       ],
       "figure_representation": "original embedded image bytes; text labels retained in source paragraph order",
@@ -51,7 +51,25 @@
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
       "technical_changes": [],
-      "blocker": "R6FG manufacturer source physical page 1 requires transmitter ON before receiver ON, contradicting this Japanese transmitter-OFF receiver-start instruction. Gyro-forward procedure lacks the receiver revision boundary stated in English physical page 2. No public route is generated until resolved."
+      "blocker": "Exact manufacturer RC4GS generation identity for this 4CH/10-model document. R6FG receiver revision/manufacture date and applicable gyro-forward procedure; applicable receiver supply voltage.",
+      "technical_correction_candidates": [],
+      "safety_review": {
+        "decision": "PUBLICATION_BLOCKED_BY_UNRESOLVED_AUTHORITATIVE_EVIDENCE",
+        "applicability_established": false,
+        "receiver": "R6FG; revision unknown",
+        "authoritative_sources": [
+          {
+            "path": "sources/en/r6fg_manual.pdf",
+            "sha256": "8f761d195cc4efc9d9838bd6b5ea7dc499568f78b622de84a7834e09f8b7d340",
+            "physical_pages": [1, 2, 3]
+          }
+        ],
+        "missing_evidence": [
+          "Exact manufacturer RC4GS generation identity for this 4CH/10-model document.",
+          "R6FG receiver revision/manufacture date and applicable gyro-forward procedure; applicable receiver supply voltage."
+        ],
+        "evidence_matrix": "docs/existing-ja-manuals-safety-evidence.md"
+      }
     },
     {
       "id": "repo-rc4gs-v3-ja-instruction_manual",
@@ -812,18 +830,12 @@
       ],
       "open_items": [
         {
-          "id": "r7fg-repower-wording",
-          "section": "section-012",
-          "reason": "Japanese receiver-start sentence conflicts with the transmitter-repower binding check in English physical page 9. Original wording retained with a safety notice; upstream technical review needed.",
-          "evidence": {
-            "path": "sources/en/r7fg_manual.pdf",
-            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
-            "physical_page": 9
-          }
+          "id": "authoritative-evidence-1",
+          "reason": "R7FG V1.2 manufacturer manual or manufacturer applicability statement resolving 4.6–10V diagram / 3–12V table, gyro-forward command and phase blink count."
         },
         {
-          "id": "r7fg-led-wording",
-          "reason": "Running prose says green+red gyro LED while the four-mode table says red or purple. Do not infer receiver revision. Follow the matching manufacturer receiver manual; upstream review needed."
+          "id": "authoritative-evidence-2",
+          "reason": "Correct identity-matched RC6GS V3 full manufacturer manual; stored rc6gsv3_manual.pdf is RC4GS V3 (IDENTITY_REVIEW_REQUIRED)."
         }
       ],
       "page_count": 46,
@@ -832,33 +844,26 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": [
-        {
-          "section": "section-011",
-          "before": "テレメトリーポートから、受信機の電力を供給すること。",
-          "after": "テレメトリーポートから受信機に電力を供給してはいけません。",
-          "occurrences": 1,
-          "evidence": {
+      "technical_changes": [],
+      "blocker": "R7FG V1.2 manufacturer manual or manufacturer applicability statement resolving 4.6–10V diagram / 3–12V table, gyro-forward command and phase blink count. Correct identity-matched RC6GS V3 full manufacturer manual; stored rc6gsv3_manual.pdf is RC4GS V3 (IDENTITY_REVIEW_REQUIRED).",
+      "technical_correction_candidates": [],
+      "safety_review": {
+        "decision": "PUBLICATION_BLOCKED_BY_UNRESOLVED_AUTHORITATIVE_EVIDENCE",
+        "applicability_established": false,
+        "receiver": "R7FG V1.2 illustrated",
+        "authoritative_sources": [
+          {
             "path": "sources/en/r7fg_manual.pdf",
             "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
-            "physical_page": 7,
-            "literal": "The port cannot be used to power the receiver."
+            "physical_pages": [4, 7, 8, 9]
           }
-        },
-        {
-          "section": "section-011",
-          "before": "2回早打ち→ジャイロON/OFF切替え",
-          "after": "2回早打ち→ジャイロフェーズ切替え",
-          "occurrences": 2,
-          "evidence": {
-            "path": "sources/en/r7fg_manual.pdf",
-            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
-            "physical_page": 7,
-            "literal": "Short press ID SET twice quickly to change the gyro phase"
-          }
-        }
-      ],
-      "blocker": "R7FG gyro forward command and phase indicator count conflict with manufacturer source without receiver revision evidence. Receiver-start sentence is not a safe ordinary startup instruction. No public route or download is generated until resolved."
+        ],
+        "missing_evidence": [
+          "R7FG V1.2 manufacturer manual or manufacturer applicability statement resolving 4.6–10V diagram / 3–12V table, gyro-forward command and phase blink count.",
+          "Correct identity-matched RC6GS V3 full manufacturer manual; stored rc6gsv3_manual.pdf is RC4GS V3 (IDENTITY_REVIEW_REQUIRED)."
+        ],
+        "evidence_matrix": "docs/existing-ja-manuals-safety-evidence.md"
+      }
     },
     {
       "id": "repo-rc6gs-v3-quick-reference-ja-quick_reference",
@@ -868,7 +873,7 @@
       "language": "ja",
       "title": "RC6GS V3 日本語クイックリファレンス",
       "route": "/manuals/rc6gs-v3-quick-reference/",
-      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "publication_status": "publication_copy",
       "knowledge_status": "NOT_VALIDATED",
       "sources": [
         {
@@ -878,57 +883,289 @@
           "paired": false
         }
       ],
-      "assets": [],
-      "sections": [],
-      "editorial_changes": [],
-      "open_items": [
+      "assets": [
         {
-          "id": "r7fg-repower-wording",
-          "section": "section-001",
-          "reason": "Japanese receiver-start sentence conflicts with the transmitter-repower binding check in English physical page 9. Original wording retained with a safety notice; upstream technical review needed.",
-          "evidence": {
-            "path": "sources/en/r7fg_manual.pdf",
-            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
-            "physical_page": 9
-          }
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-001.png",
+          "sha256": "b8bbf89520e0fb7ed5884515bc60c063920314ce706f68cb99c972f620b2b9e5",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId7",
+            "part": "media/image7.png",
+            "paragraph": 6
+          },
+          "bytes": 170261
         },
         {
-          "id": "r7fg-led-wording",
-          "reason": "Running prose says green+red gyro LED while the four-mode table says red or purple. Do not infer receiver revision. Follow the matching manufacturer receiver manual; upstream review needed."
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-002.png",
+          "sha256": "999e1257ca4a0b7a3d0f85d7a3b8a388efea8073a8f0a1b56a508fbf65b3a655",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId8",
+            "part": "media/image1.png",
+            "paragraph": 11
+          },
+          "bytes": 305470
+        },
+        {
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-003.png",
+          "sha256": "0c994f2aa51ffdd500e57d85dbeb461b694ccbfd0b60222333602eb01ab6d4fb",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId9",
+            "part": "media/image8.png",
+            "paragraph": 12
+          },
+          "bytes": 198849
+        },
+        {
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-004.png",
+          "sha256": "ed11441053fbf7bfdc8bbf2b177674291d8ba7bc2e45b5baae09c0cbfaf65864",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId10",
+            "part": "media/image4.png",
+            "paragraph": 14
+          },
+          "bytes": 186693
+        },
+        {
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-006.svg",
+          "sha256": "8778da5d5e8ff728c7d226ec07dfcc9a5f0deeb286c6567d1a5cf820b28517da",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId12",
+            "part": "media/image6.png",
+            "paragraph": 47
+          },
+          "bytes": 337798,
+          "source_sha256": "8c76c76c0f12e0d6deb877686bce929eef53596b23fa9b918efc6836e2d4ce94",
+          "derivation": "SVG label-only correction CH6/CH7, manufacturer evidence in technical_changes"
+        },
+        {
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-007.png",
+          "sha256": "1aa793786a57975f7bef4a7fe243760f0fe0f6d82eddc9d242755f9d33cac2f8",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId13",
+            "part": "media/image3.png",
+            "paragraph": 54
+          },
+          "bytes": 347818
+        },
+        {
+          "src": "/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-008.png",
+          "sha256": "7ae219d4b19d51b0a23ce93658084d9c3cc5aefcb0513796722fd0b023926bc8",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "relationship": "rId14",
+            "part": "media/image2.png",
+            "paragraph": 185
+          },
+          "bytes": 13339
         }
       ],
-      "figure_representation": "original embedded image bytes; text labels retained in source paragraph order",
+      "sections": [
+        {
+          "id": "section-001",
+          "title": "はじめに",
+          "content_html": "<p>RC6GS V3</p>\n<p>7チャンネルRCシステム<br/>操作マニュアル</p>\n<p>クイックリファレンス</p>\n<p>適応モデル：RC カー/船/ロボット</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-001.png\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"645\" height=\"627\" loading=\"lazy\"/></figure><p><br/></p>\n<p>Radiolink 2.4GHz 7CHピストルグリッププロポセットRC6GS V3をご購入いただき、誠にありがとうございます。RC6GS V3はデフォルト7チャンネル送信機と、R7FGジャイロ内蔵、高圧サーボ対応の受信機で稼働します。</p>\n<h3 id=\"section-001-heading-01\">RC6GS V3 送信機の概要</h3>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-002.png\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"828\" height=\"700\" loading=\"lazy\"/></figure><p></p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-003.png\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"779\" height=\"572\" loading=\"lazy\"/></figure><p></p>\n<h3 id=\"section-001-heading-02\">送信機画面表示</h3>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-004.png\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"937\" height=\"323\" loading=\"lazy\"/></figure><p></p>\n<h3 id=\"section-001-heading-03\">機能一覧</h3>\n<div class=\"manual-table\"><table><tbody><tr><td><p>言語選択</p></td><td><p>モデル選択</p></td></tr><tr><td><p>エンドポイント (EPA)</p></td><td><p>ステアリングカーブ(STEXP)</p></td></tr><tr><td><p>ステアリングスピード(STSPD)</p></td><td><p>スロットルカーブ (THEXP)</p></td></tr><tr><td><p>スロットルスピード (THSPD)</p></td><td><p>A.B.S.機能 (A.B.S.)</p></td></tr><tr><td><p>スロットルアクセレーション (ACCEL)</p></td><td><p>アイドルアップ (IDLUP)</p></td></tr><tr><td><p>サブトリム (SUB-TRIM)</p></td><td><p>サーボリバース機能 (REVERSE)</p></td></tr><tr><td><p>デュアルレート (D/R)</p></td><td><p>ブレーキレート機能 (ATL)</p></td></tr><tr><td><p>プログラムミキシング (PMIX01/02)</p></td><td><p>予備チャンネル (AUX-CH)</p></td></tr><tr><td><p>モデルネーム (NAME)</p></td><td><p>アラーム(ローバッテリー、電波)</p></td></tr><tr><td><p>ジャイロ感度(GYRO)</p></td><td><p>フェイルセーフ(F/S)x</p></td></tr><tr><td><p>IDシード(ID SEED)</p></td><td><p>アウトプット機能 (DSC)</p></td></tr><tr><td><p>タイマー設定(TIMER)</p></td><td><p>リセット機能 (RESET)</p></td></tr></tbody></table></div>\n<p>※各機能の詳細については、「RC6GS R/C プロポセット取扱説明書(V3対応)」をご参照ください。</p>\n<aside aria-label=\"原資料の参照先\">原資料のダウンロードQRコードは、接続先を確認できていないため掲載していません。参照されている日本語全文資料も、受信機の適用版を確認中のため、このサイトでは公開していません。</aside>\n<p> RC6GS V3マニュアルダウンロードページ</p>\n<h3 id=\"section-001-heading-04\">R7FG受信機</h3>\n<p>RC6GSのプロポセットには、ジャイロ機能付きのR7FG 2.4GHz 7チャンネル受信機が標準で付属しております。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-006.svg\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"1042\" height=\"476\" loading=\"lazy\"/></figure><p></p>\n<p>以下の手順で、送信機と受信機のバインディングを行います。</p>\n<p>送信機と受信機を30-50cmの距離に置く</p>\n<p>送信機と受信機の電源をONにする</p>\n<p>R7FGにあるバインディングボタンを1秒以上長押し→離して、受信機のLEDライトが緑点滅したらバインディングが開始する意味を表します。</p>\n<p>LEDの緑で常に点灯になれば、バインディング完了となります。<br/></p>\n<p>NOTE：<br/>初期状態のデフォルト設定ではジャイロがOFFになります。R7FGは電源投入時に静止状態を保つことが重要です。LED色が緑の場合は通常モード、赤または赤と青（紫）はジャイロの動作モードで、赤が点灯しない場合、ジャイロ機能が動作していない事を表します。バインドが成功しなかった場合、LEDが緑で点滅します。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-007.png\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"1288\" height=\"612\" loading=\"lazy\"/></figure><p></p>\n<p>R7FG受信機の接続例</p>\n<h3 id=\"section-001-heading-05\">R7FG受信機動作モード</h3>\n<p>R7FGは以下4つの動作モードがあります。</p>\n<p>モード1：PWM出力（デフォルトでは工場出荷時の設定、ジャイロなし）</p>\n<p>LEDが緑で点灯する場合、チャネル1〜7は標準PWMを出力します。<br/>バインディングボタンを1回短く押すと、モード1→モード2に変わり、1秒以内に3回押して、モード3に変わります。</p>\n<p>モード2：PWM + PPM + SBUS出力（ジャイロなし）</p>\n<p>LEDが青で点灯する場合、チャネル1～5は標準PWMを出力し、チャネル6はPPMを出力し、チャネル7はSBUSを出力します。</p>\n<p>バインディングボタンを1回短く押すと、モード2→モード1に変わり、1秒以内に3回押して、モード4に変わります。</p>\n<p>モード3：PWM出力+ジャイロ</p>\n<p>LEDが赤で点灯する場合、チャネル1～7は標準PWMを出力、且つ、ジャイロ機能もオンになります。<br/>バインディングボタンを1回短く押してモード3→モード4に変更し、1秒以内に3回押してモード1に変更します。</p>\n<p>※バインディングボタンを1秒間に2回短く押すと、ジャイロフェーズが変更されます。</p>\n<p>モード4：PWM + PPM+SBUS出力+ジャイロ</p>\n<p>LEDが赤と青の両方で点灯する場合、チャネル1～チャネル5は標準PWMを出力し、チャネル6はPPMを出力し、チャネル7はSBUSを出力し、且つ、ジャイロ機能もオンになります。</p>\n<p>バインディングボタンを1回短く押してモード4→モード3に変更し、1秒以内に3回押してモード2に変更します。<br/>バインディングボタンを1秒間に2回短く押すと、ジャイロフェーズが変更されます。</p>\n<div class=\"manual-table\"><table><tbody><tr><td colspan=\"7\"><p>R7FG動作モード</p></td></tr><tr><td colspan=\"2\"><p>動作モード</p></td><td><p>Mode 1</p></td><td><p>Mode 2</p></td><td><p>Mode 3</p></td><td><p>Mode 4</p></td><td><p>補足</p></td></tr><tr><td colspan=\"2\"><p>LED色</p></td><td><p>緑</p></td><td><p>ブルー</p></td><td><p>赤</p></td><td><p>紫<br/>(赤＆ブルー)</p></td><td><p>-</p></td></tr><tr><td colspan=\"2\"><p>ジャイロ</p></td><td><p>無</p></td><td><p>無</p></td><td><p>有</p></td><td><p>有</p></td><td><p></p></td></tr><tr><td><p>チャンネル</p></td><td><p>テレメトリー</p></td><td colspan=\"5\"><p>モデルの電圧をテレメトリーポートに接続する。</p><p>テレメトリーポートから受信機に電力を供給してはいけません。-</p></td></tr><tr><td><p></p></td><td><p>1</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>ステアリング</p></td></tr><tr><td><p></p></td><td><p>2</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>スロットル</p></td></tr><tr><td><p></p></td><td><p>3</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>AUX</p></td></tr><tr><td><p></p></td><td><p>4</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>AUX</p></td></tr><tr><td><p></p></td><td><p>5</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>PWM</p></td><td><p>AUX</p></td></tr><tr><td><p></p></td><td><p>6/PPM</p></td><td><p>PWM</p></td><td><p>PPM</p></td><td><p>PWM</p></td><td><p>PPM</p></td><td><p>AUX</p></td></tr><tr><td><p></p></td><td><p>7/S.BUS</p></td><td><p>PWM</p></td><td><p>S.BUS</p></td><td><p>PWM</p></td><td><p>S.BUS</p></td><td><p>AUX</p></td></tr><tr><td colspan=\"2\"><p>出力信号切替え</p><p>(バインディングボタンの操作)</p></td><td><p>1回押下→Mode2変更</p></td><td><p>1回押下→Mode1変更</p></td><td><p>1回押下→Mode4変更</p></td><td><p>1回押下→Mode 3変更</p></td><td><p>Mode2(ブルー)、Mode4(紫)モードでは、チャンネル6はPPM信号を出力し、チャンネル7はS.BUS出力します。</p><p>※PPM/S.BUS出力時、フライトコントローラーと接続用であり、直接サーボに繋がりません。<br/></p><p></p><p></p></td></tr><tr><td colspan=\"2\"><p></p></td><td><p>3回押下→Mode3変更</p></td><td><p>3回押下→Mode4変更</p></td><td><p>2回早打ち→ジャイロフェーズ切替え</p></td><td><p>2回早打ち→ジャイロフェーズ切替え</p></td><td><p></p></td></tr><tr><td colspan=\"2\"><p></p></td><td><p>素早く4回短押し→Mode4変更</p></td><td><p>素早く4回短押し→Mode3変更</p></td><td><p>3回押下→Mode1変更</p><p>素早く4回短押し→Mode2変更</p></td><td><p>3回押下→Mode2変更</p><p>素早く4回短押し→Mode1変更</p></td><td><p></p></td></tr></tbody></table></div>\n<p>通常の動作モードでは緑のLEDが点灯します。ジャイロ機能が動作しない。</p>\n<p>ジャイロモードでは、赤または赤と青（紫）のLEDが点灯します。</p>\n<p>ジャイロ機能のON/OFFの切り替えには、バインディングボタンを、1秒以内に素早く3回連続押します。</p>\n<p>LEDライトの赤になれば、ジャイロ機能がONになっています。</p>\n<p>ジャイロ機能ONにすることで、急激な加速や、制動を行う際に、直線を保つようにしてくれます。</p>\n<p>ジャイロ機能を利用するには、受信機の設定以外に、感度の設定なども、送信機から行えます。詳しくはジャイロ機能の設定について、ご参照ください。</p>\n<h3 id=\"section-001-heading-06\">受信機アンテナ―の扱いについて</h3>\n<p>2本のアンテナを、図のように、90度の角度に保って下さい。<br/></p><figure data-manual-figure><img src=\"/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-008.png\" alt=\"RC6GS V3 日本語クイックリファレンス はじめにの図（原資料の挿図）\" width=\"372\" height=\"240\" loading=\"lazy\"/></figure><p></p>\n<p>大型R/C飛行機など、金属の部品が電波に大きく影響する可能性があるため、成るべく、胴体の両辺からはみだすようにし、どんな姿勢でも電波のよく届く状態を保つよう、心掛けして、設置すること。</p>\n<p>アンテナ―は金属や、カーボンなどの導電性のある材料から、少なくとも12mmで離すこと。</p>\n<p>小さい半径でアンテナを曲げないこと。</p>\n<p>可能な限り、モーター、ESC等、ノイズの発生しやすい部品から離れるところに設置すること。</p>\n<p>バインディングボタンを1秒以上長押しし、緑のLEDが点滅するとバインディングが始まります。点滅が止まると完了です。</p>\n<p>７．強い衝撃から受信機を守るために、スポンジなどの緩衝材で梱包して設置することをお勧めします。</p>\n<p>上記の作業後、送信機の電源をいったんOFFにし、再びONにして、受信機と正しくバインドされていることを確認してください。</p>",
+          "sha256": "189b7e55ece8c96454caa6cb70ec87fccb022cedeb24eb48d4dc82e213cecb8e",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraph_range": [1, 193],
+            "locator_policy": "All w:body descendant w:p in document order, including table paragraphs; not Word page numbers."
+          }
+        }
+      ],
+      "editorial_changes": [],
+      "open_items": [],
+      "figure_representation": "Six original DOCX image byte streams and one source-preserving SVG with two evidence-backed port-label corrections; one unverified download QR explicitly withheld.",
       "source_choice": "DOCX latest visible OOXML text, without deleted revisions, comments or fallback duplication",
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
       "technical_changes": [
         {
-          "section": "section-001",
           "before": "テレメトリーポートから、受信機の電力を供給すること。",
           "after": "テレメトリーポートから受信機に電力を供給してはいけません。",
           "occurrences": 1,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [99]
+          },
+          "reason": "Manufacturer explicitly prohibits powering the receiver from this port.",
           "evidence": {
             "path": "sources/en/r7fg_manual.pdf",
             "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
-            "physical_page": 7,
-            "literal": "The port cannot be used to power the receiver."
-          }
+            "physical_pages": [7],
+            "section": "4 Telemetry port"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
         },
         {
-          "section": "section-001",
           "before": "2回早打ち→ジャイロON/OFF切替え",
           "after": "2回早打ち→ジャイロフェーズ切替え",
           "occurrences": 2,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [162, 163]
+          },
+          "reason": "Two quick presses change phase; three change gyro ON/OFF.",
           "evidence": {
             "path": "sources/en/r7fg_manual.pdf",
             "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
-            "physical_page": 7,
-            "literal": "Short press ID SET twice quickly to change the gyro phase"
-          }
+            "physical_pages": [7, 8],
+            "section": "4 Mode 3/4; 5.3 Gyro phase"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "4回押下→",
+          "after": "素早く4回短押し→",
+          "occurrences": 4,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [166, 167, 169, 171]
+          },
+          "reason": "Four presses must be short and quick; no unsupported one-second threshold added.",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [7],
+            "section": "4 Signal Switch table"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "R7FGのジャイロ設定時に、静止状態を保つ事が非常に重要です。",
+          "after": "R7FGは電源投入時に静止状態を保つことが重要です。",
+          "occurrences": 1,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [53]
+          },
+          "reason": "Self-check takes place when powering on, not only during gyro setup.",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [4],
+            "section": "1.2 Note"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "LED色が緑の場合は通常モード、緑+赤はジャイロの動作モードで、",
+          "after": "LED色が緑の場合は通常モード、赤または赤と青（紫）はジャイロの動作モードで、",
+          "occurrences": 1,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [53]
+          },
+          "reason": "Explicit four-mode definitions distinguish red and red+blue (purple).",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [7, 8],
+            "section": "4 Mode 3/4"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "ジャイロモードが動作する時に緑と赤のLEDが同時に点灯します。",
+          "after": "ジャイロモードでは、赤または赤と青（紫）のLEDが点灯します。",
+          "occurrences": 1,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [175]
+          },
+          "reason": "Green+red is not the indicated gyro mode.",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [7, 8],
+            "section": "4 Mode 3/4"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "バインディングボタンを1秒ほど押し続けると作動します。動作する場合、緑、又は、赤いLEDランプが点灯します。",
+          "after": "バインディングボタンを1秒以上長押しし、緑のLEDが点滅するとバインディングが始まります。点滅が止まると完了です。",
+          "occurrences": 1,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [190]
+          },
+          "reason": "Long press starts binding rather than generic operation.",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [4],
+            "section": "1.2 Binding steps 3–4"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "また、受信機を正しく動作させるために、送信機の電源をOFFした状態で、受信機の電源をつけるようにしてください。",
+          "after": "上記の作業後、送信機の電源をいったんOFFにし、再びONにして、受信機と正しくバインドされていることを確認してください。",
+          "occurrences": 1,
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [193]
+          },
+          "reason": "Source describes transmitter repower for a binding check, not receiver startup.",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [9],
+            "section": "7 Antenna installation final paragraph"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
+        },
+        {
+          "before": "図CH6拡張 / CH7拡張(PPM/SBUS)",
+          "after": "図CH6拡張(PPM) / CH7拡張(SBUS)",
+          "source_locator": {
+            "file": "docx/RC6GSクイックガイド.docx",
+            "paragraphs": [47],
+            "part": "word/media/image6.png",
+            "sha256": "8c76c76c0f12e0d6deb877686bce929eef53596b23fa9b918efc6836e2d4ce94"
+          },
+          "reason": "Same R7FG V1.4 manufacturer diagram and output modes identify separate PPM/SBUS ports.",
+          "evidence": {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [4, 7, 8],
+            "section": "1.1 receiver diagram; 4 output modes"
+          },
+          "applicability": "RC6GS V3 / illustrated R7FG V1.4"
         }
       ],
-      "blocker": "R7FG gyro forward command and phase indicator count conflict with manufacturer source without receiver revision evidence. Receiver-start sentence is not a safe ordinary startup instruction. No public route or download is generated until resolved."
+      "safety_review": {
+        "decision": "AUTHORITATIVE_EVIDENCE_CLEARED",
+        "applicability_established": true,
+        "receiver": "R7FG V1.4 illustrated; publication receiver instructions limited to this revision",
+        "authoritative_sources": [
+          {
+            "path": "sources/en/r7fg_manual.pdf",
+            "sha256": "bdd1fd570649a2ecccbca3305ccd01f7eb8e5945115e4436312068ea9c688b67",
+            "physical_pages": [4, 7, 8, 9]
+          }
+        ],
+        "missing_evidence": [],
+        "evidence_matrix": "docs/existing-ja-manuals-safety-evidence.md"
+      },
+      "reference_changes": [
+        {
+          "source_locator": {
+            "paragraphs": [40, 42, 43],
+            "part": "word/media/image5.png"
+          },
+          "source_sha256": "5e1034bd8419e45bd38355d992ce8c09861adbc6e1610f7b07b87c24677e5ec3",
+          "before": "日本語全文参照・ダウンロードQR",
+          "after": "原文の全文参照は保持し、未検証QR画像のみ非配信。適用版確認中の説明を隣接表示。",
+          "reason": "Unverified destination must not expose the safety-blocked full manual; no substitute URL invented."
+        }
+      ]
     },
     {
       "id": "repo-rc8x-quick-reference-ja-quick_reference",

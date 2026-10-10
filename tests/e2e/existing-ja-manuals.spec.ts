@@ -78,6 +78,13 @@ for (const manual of inventory.manuals.filter(
     const firstFigure = page.locator('[data-manual-figure]').first();
     await firstFigure.scrollIntoViewIfNeeded();
     await page.screenshot({ path: info.outputPath('manual-figure.png') });
+    const correctedFigure = page.locator('img[src$="figure-006.svg"]');
+    if (await correctedFigure.count()) {
+      await correctedFigure.scrollIntoViewIfNeeded();
+      await page.screenshot({
+        path: info.outputPath('corrected-receiver.png'),
+      });
+    }
     const table = page.locator('.manual-table').first();
     if (await table.count()) {
       await table.scrollIntoViewIfNeeded();
@@ -96,8 +103,26 @@ test('manual directory keeps V2, V3 and quick references separate', async ({
     '/manuals/rc4gs-v3/',
     '/manuals/rc8x/',
     '/manuals/rc8x-quick-reference/',
+    '/manuals/rc6gs-v3-quick-reference/',
   ])
     await expect(page.locator(`main a[href$="${route}"]`)).toHaveCount(1);
-  await expect(page.locator('main a[href*="rc6gs-v3"]')).toHaveCount(0);
+  await expect(page.locator('main a[href$="/manuals/rc6gs-v3/"]')).toHaveCount(
+    0,
+  );
   await expect(page.locator('main a[href*="rc4gs-legacy"]')).toHaveCount(0);
 });
+
+for (const manual of inventory.manuals.filter(
+  (manual) => manual.publication_status === 'BLOCKED_SAFETY_REVIEW',
+)) {
+  test(`safety-excluded manual has no generated route ${manual.route}`, async ({
+    request,
+    baseURL,
+  }) => {
+    expect(
+      (
+        await request.get(new URL(manual.route.slice(1), baseURL).href)
+      ).status(),
+    ).toBe(404);
+  });
+}

@@ -151,7 +151,7 @@
       ]
     },
     {
-      "status": "REPLACE",
+      "status": "BLOCKED_SAFETY_REVIEW",
       "sha256": "685c3a37b3f0b4bcab647ee0e43114bc94f93986b7d2c48927701b649dac461f",
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "received_bytes": 3807513,
@@ -159,10 +159,12 @@
       "legacy_routes": ["/wp-content/uploads/2021/08/RC6GS.docx"],
       "source_urls": [
         "https://happinesea.com/wp-content/uploads/2021/08/RC6GS.docx"
-      ]
+      ],
+      "reason": "Receiver power/startup or gyro instructions conflict with preserved manufacturer evidence; applicable receiver revision requires authoritative resolution.",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
-      "status": "REPLACE",
+      "status": "BLOCKED_SAFETY_REVIEW",
       "sha256": "8f79e335a5bc49900fcb596664ec2ef8bbc22998fa41edee769e771980513a7e",
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "received_bytes": 3683732,
@@ -174,10 +176,12 @@
       "source_urls": [
         "https://happinesea.com/wp-content/uploads/2021/11/RC4GS.docx",
         "https://happinesea.com/wp-content/uploads/2022/03/RC4GS.docx"
-      ]
+      ],
+      "reason": "Receiver power/startup or gyro instructions conflict with preserved manufacturer evidence; applicable receiver revision requires authoritative resolution.",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
-      "status": "REPLACE",
+      "status": "BLOCKED_SAFETY_REVIEW",
       "sha256": "c10f047394ca95516c4399b9e5c0fbee8de91d057e04a2b373709687d9602c1e",
       "content_type": "application/pdf",
       "received_bytes": 1403246,
@@ -189,10 +193,12 @@
       "source_urls": [
         "https://happinesea.com/wp-content/uploads/2021/11/RC4GS.pdf",
         "https://happinesea.com/wp-content/uploads/2022/03/RC4GS.pdf"
-      ]
+      ],
+      "reason": "Receiver power/startup or gyro instructions conflict with preserved manufacturer evidence; applicable receiver revision requires authoritative resolution.",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
-      "status": "REPLACE",
+      "status": "BLOCKED_SAFETY_REVIEW",
       "sha256": "c5602f2eb671821e166dcffde8de8bfdca73979a84f0fcce0bf13a99d5e8ccd1",
       "content_type": "application/pdf",
       "received_bytes": 1385086,
@@ -204,10 +210,12 @@
       "source_urls": [
         "https://happinesea.com/wp-content/uploads/2021/11/RC6GS.pdf",
         "https://happinesea.com/wp-content/uploads/2022/03/RC6GS.pdf"
-      ]
+      ],
+      "reason": "Receiver power/startup or gyro instructions conflict with preserved manufacturer evidence; applicable receiver revision requires authoritative resolution.",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
-      "status": "REPLACE",
+      "status": "BLOCKED_SAFETY_REVIEW",
       "sha256": "ff6642fc734f075915e3b88b34db0c22247834624f1765c90661356af7afb023",
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "received_bytes": 3847026,
@@ -215,7 +223,9 @@
       "legacy_routes": ["/wp-content/uploads/2022/03/RC6GS.docx"],
       "source_urls": [
         "https://happinesea.com/wp-content/uploads/2022/03/RC6GS.docx"
-      ]
+      ],
+      "reason": "Receiver power/startup or gyro instructions conflict with preserved manufacturer evidence; applicable receiver revision requires authoritative resolution.",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "status": "REPLACE",
@@ -229,7 +239,7 @@
       ]
     },
     {
-      "status": "REPLACE",
+      "status": "BLOCKED_SAFETY_REVIEW",
       "sha256": "9d2c5485f2ebce5226fcf20b75a33bcc169a6305e3e3d51767aa80b0058c6737",
       "content_type": "application/pdf",
       "received_bytes": 9946163,
@@ -237,7 +247,9 @@
       "legacy_routes": ["/downloads/rc6gs-v3-manual-2032.pdf"],
       "source_urls": [
         "https://happinesea.com/download/rc6gs-v3-manual?wpdmdl=2032&refresh=6ac62ad6de5e11791371990"
-      ]
+      ],
+      "reason": "Receiver power/startup or gyro instructions conflict with preserved manufacturer evidence; applicable receiver revision requires authoritative resolution.",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "status": "KEEP",
