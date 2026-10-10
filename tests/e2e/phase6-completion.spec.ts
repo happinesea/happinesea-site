@@ -7,6 +7,7 @@ const read = (name: string) =>
 const evidence = read('../fixtures/wordpress-phase6-completion-review.json');
 const published = read('../../src/data/wordpress-insights.json');
 const compatibility = read('../../src/data/legacy-compatibility.json');
+const downloads = read('../../src/data/static-downloads.json');
 
 for (const reviewed of evidence.articles.filter(
   (item: { decision: string }) =>
@@ -115,6 +116,10 @@ test('verified download bytes and the two additional legacy entrances remain ava
     );
     expect(asset, path).toBeTruthy();
     const response = await request.get(`.${path}`);
+    if (asset.publication_status === 'BLOCKED_SAFETY_REVIEW') {
+      expect(response.status()).toBe(404);
+      continue;
+    }
     expect(response.status()).toBe(200);
     expect(response.headers()['content-type']).toBe('application/pdf');
     expect(
@@ -141,15 +146,40 @@ test('verified download bytes and the two additional legacy entrances remain ava
       fullPage: true,
     });
     if (record.type === 'download_endpoint') {
-      const handoff = page.waitForRequest((request) =>
-        request
-          .url()
-          .endsWith('/wp-content/uploads/2022/11/cool9030_manual_jp.pdf'),
+      const endpoint = compatibility.pages.find(
+        (item: { target_route: string }) =>
+          item.target_route === record.target_route,
       );
-      await page.goto(`.${record.target_route}?wpdmdl=2047`, {
-        waitUntil: 'commit',
+      expect(endpoint).toBeDefined();
+      const file = downloads.files.find((item: { legacy_routes: string[] }) =>
+        item.legacy_routes.includes(endpoint.download_target),
+      );
+      expect(file).toBeDefined();
+      const automaticDownloads: string[] = [];
+      page.on('request', (request) => {
+        const pathname = new URL(request.url()).pathname;
+        if (
+          [file.target_route, ...file.legacy_routes].some((path: string) =>
+            pathname.endsWith(path),
+          )
+        )
+          automaticDownloads.push(request.url());
       });
-      expect((await request.get((await handoff).url())).status()).toBe(200);
+      await page.goto(`.${record.target_route}?wpdmdl=2047`, {
+        waitUntil: 'networkidle',
+      });
+      const link = page.locator('a[data-download-sha256]').first();
+      await expect(link).toHaveAttribute('data-download-sha256', file.sha256);
+      const href = await link.getAttribute('href');
+      expect(href).toBeTruthy();
+      const response = await request.get(href!);
+      expect(response.status()).toBe(200);
+      expect(
+        createHash('sha256')
+          .update(await response.body())
+          .digest('hex'),
+      ).toBe(file.sha256);
+      expect(automaticDownloads).toEqual([]);
     }
   }
 });

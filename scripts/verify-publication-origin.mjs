@@ -180,6 +180,14 @@ let downloadCount = 0;
 for (const file of downloads.files)
   for (const route of [file.target_route, ...file.legacy_routes]) {
     const response = await fetch(new URL('.' + route, base));
+    if (file.status === 'BLOCKED_SAFETY_REVIEW') {
+      assert.equal(
+        response.status,
+        404,
+        `Safety-blocked download exposed: ${route}`,
+      );
+      continue;
+    }
     assert.equal(response.status, 200, route);
     assert.equal(
       hash(Buffer.from(await response.arrayBuffer())),

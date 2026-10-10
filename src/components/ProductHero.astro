@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { LINE_URL } from '../lib/site';
 import { withBase } from '../lib/urls';
 import ResponsiveMedia from './ResponsiveMedia.astro';
+import existingJapaneseManuals from '../data/manuals/existing-ja.json';
 
 interface Props {
   product: CollectionEntry<'products'>['data'];
@@ -15,6 +16,7 @@ interface Props {
 
 const { product, copy } = Astro.props;
 const internalManual = product.manuals.find(({ href }) => href.startsWith('/manuals/'));
+const japaneseManuals = existingJapaneseManuals.manuals.filter((manual) => manual.product === product.slug && manual.publication_status === 'publication_copy');
 const media = {
   src: product.media.hero.src ?? undefined,
   alt: product.media.hero.alt,
@@ -49,6 +51,9 @@ const media = {
           日本語マニュアル
         </a>
       )}
+      {japaneseManuals.map((manual) => (
+        <a class="inline-flex items-center rounded-full border border-slate-300 px-5 py-3 text-sm font-bold text-slate-900 no-underline" href={withBase(manual.route)}>{manual.title}</a>
+      ))}
       <a
         class="inline-flex items-center gap-1 text-sm font-semibold text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-teal-800"
         href={product.manual_url}

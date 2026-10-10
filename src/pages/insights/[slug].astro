@@ -11,6 +11,8 @@ import {
 import { canonicalUrl, withBase } from '../../lib/urls';
 import { SITE_NAME } from '../../lib/site';
 import manual from '../../data/manuals/rc4gs-v2.json';
+import downloads from '../../data/static-downloads.json';
+import { rewriteSafetyBlockedDownloads } from '../../../scripts/lib/existing-ja-manuals.mjs';
 import {
   manualCanonical,
   migratedManualTarget,
@@ -78,14 +80,17 @@ const jsonLd = isPublished
 const description = isPublished
   ? data.description
   : 'この記事は現在お読みいただけません。ニュース・航空知識の一覧から、ほかの記事をご覧ください。';
-const wordpressBody = wordpressData?.content_html.replaceAll(
-  /href="([^"]+)"/g,
-  (match, value: string) => {
+const wordpressBody =
+  wordpressData &&
+  rewriteSafetyBlockedDownloads(
+    wordpressData.content_html,
+    downloads.files,
+    withBase('/downloads/') + '#manual-safety-review',
+  ).replaceAll(/href="([^"]+)"/g, (match, value: string) => {
     if (!manualTarget) return match;
     const target = migratedManualTarget(value, manual);
     return target ? `href="${withBase(target)}"` : match;
-  },
-);
+  });
 ---
 
 <BaseLayout

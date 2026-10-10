@@ -2431,7 +2431,12 @@
       "download_target": "/wp-content/uploads/2022/11/cool9030_manual_jp.pdf",
       "target_route": "/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
       "body_images": [],
-      "body_links": [{ "url": "#", "http_status": "UNVERIFIED" }],
+      "body_links": [
+        {
+          "url": "#",
+          "http_status": "UNVERIFIED"
+        }
+      ],
       "content_html": "<a rel=\"nofollow\" href=\"/wp-content/uploads/2022/11/cool9030_manual_jp.pdf\">Download</a>\n\n\n<ul>\n<li>\nVersion\n20221128\n</li>\n<li>\nDownload\n31\n</li>\n<li>\nFile Size\n2 MB\n</li>\n<li>\nFile Count\n1\n</li>\n<li>\nCreate Date\n2022年11月11日\n</li>\n<li>\nLast Updated\n2022年11月29日\n</li>\n</ul>\n\n\nCOOL9030、ブラシモーター用ESC日本語マニュアル\n<p>COOL9030 ブラシモーター用ESCの日本語マニュアル</p>",
       "hero": null
     },
@@ -2851,7 +2856,9 @@
       "target_route": "/wp-content/uploads/2021/08/RC6GS.docx",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1640"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip",
@@ -2899,7 +2906,9 @@
       "target_route": "/wp-content/uploads/2021/11/RC4GS.docx",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1748"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2021/11/RC4GS.pdf",
@@ -2915,7 +2924,9 @@
       "target_route": "/wp-content/uploads/2021/11/RC4GS.pdf",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1749"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2021/11/RC6GS.pdf",
@@ -2931,7 +2942,9 @@
       "target_route": "/wp-content/uploads/2021/11/RC6GS.pdf",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1768"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/03/52f531d6abf35f011c55b1285ea49380.docx",
@@ -2995,7 +3008,9 @@
       "target_route": "/wp-content/uploads/2022/03/RC4GS.docx",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1942"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/03/RC4GS.pdf",
@@ -3011,7 +3026,9 @@
       "target_route": "/wp-content/uploads/2022/03/RC4GS.pdf",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1944"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/03/RC6GS.docx",
@@ -3027,7 +3044,9 @@
       "target_route": "/wp-content/uploads/2022/03/RC6GS.docx",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1941"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/03/RC6GS.pdf",
@@ -3043,7 +3062,9 @@
       "target_route": "/wp-content/uploads/2022/03/RC6GS.pdf",
       "observed_at": "2026-10-07T05:11:08.141Z",
       "source": ["REST media 1945"],
-      "source_page": null
+      "source_page": null,
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/11/cool9030_manual_jp.pdf",
@@ -3625,7 +3646,9 @@
       "sha256": "9d2c5485f2ebce5226fcf20b75a33bcc169a6305e3e3d51767aa80b0058c6737",
       "kind": "download",
       "download_id": "2032",
-      "observed_at": "2026-10-07T11:25:59.522Z"
+      "observed_at": "2026-10-07T11:25:59.522Z",
+      "publication_status": "BLOCKED_SAFETY_REVIEW",
+      "evidence_review": "docs/existing-ja-manuals-safety-evidence.md"
     },
     {
       "source_url": "https://happinesea.com/wp-content/uploads/2022/09/RC6GS_V3_title-1.png",

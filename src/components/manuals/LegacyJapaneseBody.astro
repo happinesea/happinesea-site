@@ -1,0 +1,67 @@
+---
+import inventory from '../../data/manuals/existing-ja.json';
+import { withBase } from '../../lib/urls';
+import { createHash } from 'node:crypto';
+
+interface Props {
+  manual: string;
+  section: string;
+}
+const manual = inventory.manuals.find(
+  (entry) => entry.id === Astro.props.manual,
+);
+const section = manual?.sections.find(
+  (entry) => entry.id === Astro.props.section,
+);
+if (!section) throw new Error('Unknown existing Japanese manual section');
+if (
+  createHash('sha256').update(section.content_html).digest('hex') !==
+  section.sha256
+)
+  throw new Error('Existing Japanese manual publication hash mismatch');
+const body = section.content_html.replaceAll(
+  /<img src="(\/assets\/[^"]+)"([^>]+)>/g,
+  (_, src: string, attributes: string) =>
+    `<a href="${withBase(src)}" aria-label="図を原寸で開く"><img src="${withBase(src)}"${attributes}></a>`,
+);
+---
+
+<div
+  class="legacy-ja-manual"
+  data-japanese-manual={Astro.props.manual}
+  data-source-section={section.id}
+  set:html={body}
+/>
+
+<style>
+  .legacy-ja-manual {
+    overflow-wrap: anywhere;
+  }
+  .legacy-ja-manual :global(img) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+  }
+  .legacy-ja-manual :global(figure) {
+    margin: 1.5rem 0;
+  }
+  .legacy-ja-manual :global(figcaption) {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-3);
+    text-align: center;
+  }
+  .legacy-ja-manual :global(.manual-table) {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .legacy-ja-manual :global(td) {
+    vertical-align: top;
+    min-width: 5rem;
+  }
+  .legacy-ja-manual :global(aside) {
+    border-inline-start: 0.25rem solid #b45309;
+    padding: 1rem;
+    margin-block: 1rem;
+  }
+</style>

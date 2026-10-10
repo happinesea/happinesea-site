@@ -200,6 +200,15 @@ export async function finalizeLegacyOutputs(snapshot, dist) {
       throw new Error(`canonical drift: ${page.target_route}`);
   }
   for (const asset of snapshot.assets) {
+    if (asset.publication_status === 'BLOCKED_SAFETY_REVIEW') {
+      try {
+        await access(file(asset.target_route));
+      } catch (error) {
+        if (error.code === 'ENOENT') continue;
+        throw error;
+      }
+      throw new Error(`Safety-blocked asset exposed: ${asset.target_route}`);
+    }
     const bytes = await readFile(file(asset.target_route));
     if (createHash('sha256').update(bytes).digest('hex') !== asset.sha256)
       throw new Error(`asset checksum drift: ${asset.target_route}`);

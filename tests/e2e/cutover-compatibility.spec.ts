@@ -1,6 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { expect, test } from '@playwright/test';
+import { manualCanonical } from '../../scripts/lib/rc4gs-v2-manual.mjs';
+import manual from '../../src/data/manuals/rc4gs-v2.json' with { type: 'json' };
 const data = JSON.parse(
   readFileSync('src/data/cutover-compatibility.json', 'utf8'),
 );
@@ -49,7 +51,7 @@ for (const target of targets) {
     await expect(page.locator('h1')).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      target.canonical,
+      manualCanonical(target.canonical, manual),
     );
     for (const image of await page.locator('img').all()) {
       await image.scrollIntoViewIfNeeded();
@@ -100,6 +102,10 @@ test('new ZIP and prior static downloads remain byte exact; retired and removed 
   for (const file of files)
     for (const route of [file.target_route, ...file.legacy_routes]) {
       const response = await request.get(`.${route}`);
+      if (file.status === 'BLOCKED_SAFETY_REVIEW') {
+        expect(response.status(), route).toBe(404);
+        continue;
+      }
       expect(response.status(), route).toBe(200);
       expect(
         createHash('sha256')

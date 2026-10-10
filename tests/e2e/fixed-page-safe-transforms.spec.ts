@@ -12,7 +12,7 @@ test('RC4GS V2 retains all images and animated GIF at the legacy route', async (
   await expect(page.locator('[data-legacy-body] script')).toHaveCount(0);
 });
 
-test('RC6GS ordinary Kindle link and V3 PDF remain separate, with browser query compatibility', async ({
+test('RC6GS Kindle identity and query endpoint remain without exposing safety-blocked V3 PDF', async ({
   page,
   request,
 }) => {
@@ -21,21 +21,22 @@ test('RC6GS ordinary Kindle link and V3 PDF remain separate, with browser query 
   await expect(
     page.locator('[data-legacy-body] a[href*="amazon.co.jp/dp/B08NVHK22H"]'),
   ).toHaveCount(2);
-  const pdf = page.locator(
-    '[data-legacy-body] a[href$="rc6gs-v3-manual-2032.pdf"]',
-  );
-  await expect(pdf).toHaveCount(1);
-  const response = await request.get((await pdf.getAttribute('href')) ?? '');
-  expect(response.status()).toBe(200);
-  expect(response.headers()['content-type']).toContain('application/pdf');
-  expect((await response.body()).length).toBe(9946163);
+  await expect(
+    page.locator('[data-legacy-body] a[data-safety-withheld-download]'),
+  ).toHaveCount(1);
+  expect(
+    (await request.get('./downloads/rc6gs-v3-manual-2032.pdf')).status(),
+  ).toBe(404);
   await page.goto('./download/rc6gs-v3-manual');
   await expect(page.locator('[data-legacy-body]')).toContainText('20220927');
-  const handoff = page.waitForRequest((request) =>
-    request.url().endsWith('/downloads/rc6gs-v3-manual-2032.pdf'),
-  );
   await page.goto('./download/rc6gs-v3-manual?wpdmdl=2032', {
-    waitUntil: 'commit',
+    waitUntil: 'load',
   });
-  expect((await request.get((await handoff).url())).status()).toBe(200);
+  await expect(page.locator('a[data-download-sha256]')).toHaveCount(0);
+  await expect(page.locator('[data-safety-withheld-download]')).toHaveCount(2);
+  await expect(
+    page.locator('[data-safety-withheld-download][download]'),
+  ).toHaveCount(0);
+  expect(new URL(page.url()).searchParams.get('wpdmdl')).toBe('2032');
+  await expect(page.locator('meta[http-equiv="refresh"]')).toHaveCount(0);
 });
