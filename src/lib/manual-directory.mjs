@@ -1,5 +1,6 @@
 import catalogue from '../data/product-catalogue.json' with { type: 'json' };
 import inventory from '../data/manuals/existing-ja.json' with { type: 'json' };
+import official from '../data/manuals/official-links.json' with { type: 'json' };
 
 // Catalogue variants supply imagery/category only; manual editions stay explicit.
 const models = [
@@ -7,45 +8,47 @@ const models = [
     id: 'rc4gs',
     name: 'RC4GS',
     catalogue: 'rc4gs-v3',
-    official: 'rc4gsv3_manual',
-    edition: 'V3',
   },
   {
     id: 'rc6gs',
     name: 'RC6GS',
     catalogue: 'rc6gs-v3',
-    official: 'rc6gsv3_manual',
-    edition: 'V3',
   },
   {
     id: 'rc8x',
     name: 'RC8X',
     catalogue: 'rc8x',
-    official: 'rc8x_manual',
-    edition: '',
   },
   {
     id: 't8fb',
     name: 'T8FB',
     catalogue: 't8fb-bt',
-    official: 't8fb_bt_manual',
-    edition: 'BT',
   },
   {
     id: 'byme-a',
     name: 'Byme-A',
     catalogue: 'byme-a',
-    official: 'bymea_manual',
-    edition: '',
   },
   {
     id: 'byme-d',
     name: 'Byme-D',
     catalogue: 'byme-d',
-    official: 'bymed_manual',
-    edition: '',
   },
 ];
+
+models.push(
+  ...catalogue
+    .filter(
+      (product) =>
+        !models.some((model) => model.catalogue === product.slug) &&
+        official.links.some((link) => link.product === product.slug),
+    )
+    .map((product) => ({
+      id: product.slug,
+      name: product.name,
+      catalogue: product.slug,
+    })),
+);
 
 export const manualCards = models.map((model) => {
   const product = catalogue.find((product) => product.slug === model.catalogue);
@@ -73,16 +76,20 @@ export const manualCards = models.map((model) => {
   if (model.id === 'rc8x')
     links.unshift({
       href: '/manuals/rc8x/',
-      label: '取扱説明書（概要・第1章・第2章）',
+      label: '取扱説明書',
       external: false,
       id: 'rc8x',
     });
-  links.push({
-    href: `https://www.radiolink.com/${model.official}`,
-    label: `英語版取扱説明書${model.edition ? `（${model.edition}）` : ''}（公式サイト）`,
-    external: true,
-    id: `${model.id}-official`,
-  });
+  links.push(
+    ...official.links
+      .filter((link) => link.product === model.catalogue)
+      .map((link, index) => ({
+        href: link.url,
+        label: `英語版${model.id === 'a560' ? '組立説明書' : '取扱説明書'}${link.edition ? `（${link.edition}）` : ''}（公式サイト）`,
+        external: true,
+        id: `${model.id}-official-${index}`,
+      })),
+  );
   return {
     id: model.id,
     name: model.name,

@@ -159,7 +159,7 @@ test('category navigation exposes the public entry points', async ({
   await page.goto('./manuals/');
   await expect(
     page.locator('[data-manual-card="rc8x"]').getByRole('link', {
-      name: '取扱説明書（概要・第1章・第2章）',
+      name: '取扱説明書',
       exact: true,
     }),
   ).toHaveAttribute('href', '/happinesea-site/manuals/rc8x/');

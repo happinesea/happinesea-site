@@ -1,0 +1,415 @@
+{
+  "verified_on": "2026-10-11",
+  "links": [
+    {
+      "product": "at10-ii",
+      "url": "https://www.radiolink.com/at10ii_manuals",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "at9s-pro",
+      "url": "https://www.radiolink.com/at9spro_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "t16d",
+      "url": "https://www.radiolink.com/t16d_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "t12d",
+      "url": "https://www.radiolink.com/t12d_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "t8fb-bt",
+      "url": "https://www.radiolink.com/t8fb_bt_manual",
+      "source_page": "https://www.radiolink.com/online_manuals",
+      "edition": "BT"
+    },
+    {
+      "product": "t8s-bt",
+      "url": "https://www.radiolink.com/t8s_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "trainer-cable",
+      "url": "https://www.radiolink.com/trainer_cable_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "twc",
+      "url": "https://www.radiolink.com/typec_trainer_cable_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "rc8p",
+      "url": "https://www.radiolink.com/rc8p_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "rc8x",
+      "url": "https://www.radiolink.com/rc8x_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "rc6gs-v3",
+      "url": "https://www.radiolink.com/rc6gsv3_manual",
+      "source_page": "https://www.radiolink.com/online_manuals",
+      "edition": "V3"
+    },
+    {
+      "product": "rc6gs-v3",
+      "url": "https://www.radiolink.com/rc6gsv2_manual",
+      "source_page": "https://www.radiolink.com/online_manuals",
+      "edition": "V2"
+    },
+    {
+      "product": "rc4gs-v3",
+      "url": "https://www.radiolink.com/rc4gsv3_manual",
+      "source_page": "https://www.radiolink.com/online_manuals",
+      "edition": "V3"
+    },
+    {
+      "product": "rc4gs-v3",
+      "url": "https://www.radiolink.com/en/rc4gsv2_manual",
+      "source_page": "https://www.radiolink.com/rc4gsv2_manual",
+      "edition": "V2"
+    },
+    {
+      "product": "2-4g-nano-1w",
+      "url": "https://www.radiolink.com/ATA_ELRS_1W_2.4GHz_long-range_module_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "915mhz-1w",
+      "url": "https://www.radiolink.com/ATA_ELRS_1W_915MHz_long-range_module_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "2-4g-micro-1w",
+      "url": "https://www.radiolink.com/2.4GHz_ELRS_Micro_Long_range_Module_User_Manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "pix6",
+      "url": "https://www.radiolink.com/pix6_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "crossflight-ce",
+      "url": "https://www.radiolink.com/crossflightce_multicopter_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "crossflight",
+      "url": "https://www.radiolink.com/crossflight_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f405",
+      "url": "https://www.radiolink.com/f405_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f722",
+      "url": "https://www.radiolink.com/en/f722_manual",
+      "source_page": "https://www.radiolink.com/f722_manual"
+    },
+    {
+      "product": "crossrace-pro",
+      "url": "https://www.radiolink.com/crossracepro_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "crossrace",
+      "url": "https://www.radiolink.com/crossrace_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "mini-pix",
+      "url": "https://www.radiolink.com/minipix_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "pixhawk",
+      "url": "https://www.radiolink.com/pixhawk_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "byme-db",
+      "url": "https://www.radiolink.com/bymedb_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "byme-a",
+      "url": "https://www.radiolink.com/bymea_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "byme-d",
+      "url": "https://www.radiolink.com/bymed_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "divit",
+      "url": "https://www.radiolink.com/divit_manual",
+      "source_page": "https://www.radiolink.com/divit"
+    },
+    {
+      "product": "sui04",
+      "url": "https://www.radiolink.com/sui04_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "su04",
+      "url": "https://www.radiolink.com/su04_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "rtk-f9p",
+      "url": "https://www.radiolink.com/rtkf9p_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "ant-b10",
+      "url": "https://www.radiolink.com/basestation_manual",
+      "source_page": "https://www.radiolink.com/basestation"
+    },
+    {
+      "product": "se100-m10n",
+      "url": "https://www.radiolink.com/se100_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "ts100-m10n",
+      "url": "https://www.radiolink.com/ts100v2_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "ts100-m8n",
+      "url": "https://www.radiolink.com/ts100_m8n_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "ld-a40",
+      "url": "https://www.radiolink.com/lda40_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "ld-b20",
+      "url": "https://www.radiolink.com/ldb20_user_manual",
+      "source_page": "https://www.radiolink.com/ld_b20_drone_soccer"
+    },
+    {
+      "product": "d16pro-200",
+      "url": "https://www.radiolink.com/d16pro_200_drone_soccer_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "bds200",
+      "url": "https://www.radiolink.com/bds200_drone_soccer_user_manaul",
+      "source_page": "https://www.radiolink.com/bds200_drone_soccer"
+    },
+    {
+      "product": "vds200",
+      "url": "https://www.radiolink.com/vds200_drone_soccer_manaul",
+      "source_page": "https://www.radiolink.com/vds200"
+    },
+    {
+      "product": "f108",
+      "url": "https://www.radiolink.com/f108_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "wolf-qav250",
+      "url": "https://www.radiolink.com/qav250_gps_FPV_user_manaul",
+      "source_page": "https://www.radiolink.com/qav250_gps_FPV"
+    },
+    {
+      "product": "m435",
+      "url": "https://www.radiolink.com/m435_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f330",
+      "url": "https://www.radiolink.com/f330_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f450",
+      "url": "https://www.radiolink.com/f450_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f121",
+      "url": "https://www.radiolink.com/f121_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f121-pro",
+      "url": "https://www.radiolink.com/f121pro_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "f125",
+      "url": "https://www.radiolink.com/f125_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "a560",
+      "url": "https://www.radiolink.com/a560_assembly_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "su27",
+      "url": "https://www.radiolink.com/su27_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "d460",
+      "url": "https://www.radiolink.com/d460_rtf_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "cb86-plus",
+      "url": "https://www.radiolink.com/cb86plus_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "cm120",
+      "url": "https://www.radiolink.com/cm120_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "re15a-2s",
+      "url": "https://www.radiolink.com/15a_esc_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "am32-70a",
+      "url": "https://www.radiolink.com/am32_70a_4in1_esc_user_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "cl9030",
+      "url": "https://www.radiolink.com/cool9030_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r12ds",
+      "url": "https://www.radiolink.com/r12ds_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r12dse",
+      "url": "https://www.radiolink.com/r12dse_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r9ds",
+      "url": "https://www.radiolink.com/r9ds_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r6ds",
+      "url": "https://www.radiolink.com/r6ds_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r6dsm",
+      "url": "https://www.radiolink.com/r6dsm_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "prm-01",
+      "url": "https://www.radiolink.com/prm01_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "prm-03",
+      "url": "https://www.radiolink.com/prm03_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r16f",
+      "url": "https://www.radiolink.com/r16f_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r16sm",
+      "url": "https://www.radiolink.com/r16sm_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r12f",
+      "url": "https://www.radiolink.com/r12f_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r8fgh",
+      "url": "https://www.radiolink.com/r8fgh_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r8ef",
+      "url": "https://www.radiolink.com/r8ef_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r8fg",
+      "url": "https://www.radiolink.com/r8fg_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r8fm",
+      "url": "https://www.radiolink.com/r8fm_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r8sm",
+      "url": "https://www.radiolink.com/r8sm_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r8xm",
+      "url": "https://www.radiolink.com/r8xm_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r7fg",
+      "url": "https://www.radiolink.com/r7fg_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r6fg",
+      "url": "https://www.radiolink.com/r6fg_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r6f",
+      "url": "https://www.radiolink.com/r6f_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "r4fgm",
+      "url": "https://www.radiolink.com/r4fgm_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "er16-2-4g",
+      "url": "https://www.radiolink.com/er16_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "elrs-915mhz",
+      "url": "https://www.radiolink.com/elrs_915mhz_manual",
+      "source_page": "https://www.radiolink.com/online_manuals"
+    },
+    {
+      "product": "turbo-pix",
+      "url": "https://www.radiolink.com/turbopix_manual",
+      "source_page": "https://radiolink.com/turbopix"
+    }
+  ]
+}
