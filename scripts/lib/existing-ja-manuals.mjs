@@ -91,7 +91,14 @@ export function verifyExistingJapaneseManuals(inventory, publicDirectory) {
             ),
           `Technical correction lacks authoritative evidence: ${manual.id}`,
         );
-        if (!blocked && !correction.source_locator.part) {
+        // Page-located snapshots are checked by exact sequential replay below.
+        const replayed = manual.sections.some(
+          (section) =>
+            section.original_content_html !== undefined &&
+            Number.isInteger(section.source_locator.page) &&
+            section.source_locator.page === correction.source_locator.page,
+        );
+        if (!blocked && !correction.source_locator.part && !replayed) {
           const text = manual.sections
             .map((section) => section.content_html)
             .join('\n');
@@ -136,6 +143,34 @@ export function verifyExistingJapaneseManuals(inventory, publicDirectory) {
       );
     }
     for (const section of manual.sections) {
+      if (section.original_content_html !== undefined) {
+        assert.equal(
+          hash(section.original_content_html),
+          section.original_sha256,
+          `Original Japanese manual evidence changed: ${manual.id}/${section.id}`,
+        );
+        let reviewed = section.original_content_html;
+        const corrections = [
+          ...manual.technical_changes.filter(
+            (change) =>
+              Number.isInteger(section.source_locator.page) &&
+              change.source_locator.page === section.source_locator.page,
+          ),
+          ...(manual.publication_changes ?? []),
+        ];
+        for (const change of corrections) {
+          assert(
+            reviewed.includes(change.before),
+            'Reviewed source literal missing',
+          );
+          reviewed = reviewed.replaceAll(change.before, change.after);
+        }
+        assert.equal(
+          reviewed,
+          section.content_html,
+          `Unreviewed Japanese manual change: ${manual.id}/${section.id}`,
+        );
+      }
       assert.equal(
         hash(section.content_html),
         section.sha256,

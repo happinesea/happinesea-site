@@ -100,6 +100,9 @@ test('all six semantic outlines preserve every original reading segment, source 
   const baseline = JSON.parse(
     readFileSync(new URL('tests/fixtures/manual-semantic-baseline.json', root)),
   );
+  const rc6gsReview = JSON.parse(
+    readFileSync(new URL('tests/fixtures/rc6gs-publication-review.json', root)),
+  );
   for (const manual of inventory.manuals) {
     const previous = baseline.manuals.find((entry) => entry.id === manual.id);
     for (const key of [
@@ -115,7 +118,7 @@ test('all six semantic outlines preserve every original reading segment, source 
         createHash('sha256')
           .update(JSON.stringify(manual[key] ?? null))
           .digest('hex'),
-        previous.hashes[key],
+        rc6gsReview[manual.id]?.[key] ?? previous.hashes[key],
         `${manual.id} changed ${key}`,
       );
     if (manual.publication_status !== 'publication_copy') continue;

@@ -128,13 +128,13 @@ test('all eleven existing Japanese source files resolve to distinct reviewed pub
     inventory.manuals.filter(
       (manual) => manual.publication_status === 'publication_copy',
     ).length,
-    6,
+    7,
   );
   assert.equal(
     inventory.manuals.filter(
       (manual) => manual.publication_status === 'BLOCKED_SAFETY_REVIEW',
     ).length,
-    2,
+    1,
   );
   const receiverTable = inventory.manuals
     .find((manual) => manual.product === 'rc8x')

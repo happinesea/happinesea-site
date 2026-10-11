@@ -1,5 +1,7 @@
 # 既存日本語資料：安全指示と適用版の証拠照合
 
+この文書は初回公開時の照合記録です。RC6GS V3全文版とQuick Referenceの最新判定は、[再照合・整合性マトリクス](rc6gs-full-quick-consistency.md)を参照してください。以下の当時のBLOCK判定は履歴として保持します。RC4GS世代未記載資料と旧安全未承認downloadの保留は継続しています。
+
 ## 原資料と適用範囲
 
 正本は `happinesea/RadiolinkManual` commit `93539ca634b4138bb1d8e75fd0b081fd24d8fd0a`。日本語資料は `references/radiolink-existing-ja/` 配下。PDFのページは物理ページ、DOCXのP番号は `w:body` 内の全 `w:p`（表セルを含む）の文書順番号で、Wordの組版ページではありません。削除履歴やコメントは本文証拠に使用しません。
