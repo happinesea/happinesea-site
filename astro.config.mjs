@@ -8,6 +8,7 @@ import existingJapaneseManuals from './src/data/manuals/existing-ja.json' with {
 import { verifyExistingJapaneseManuals } from './scripts/lib/existing-ja-manuals.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
 import { semanticHeadingPunctuation } from './scripts/lib/manual-semantic-structure.mjs';
+import { manualSidebar } from './scripts/lib/manual-navigation.mjs';
 
 verifyExistingJapaneseManuals(existingJapaneseManuals, new URL('./public/', import.meta.url));
 
@@ -39,11 +40,7 @@ export default defineConfig({
         root: { label: '日本語', lang: 'ja' },
       },
       sidebar: [
-        ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map((manual) => ({
-          label: manual.title,
-          items: [{ label: 'はじめに・本文', slug: manual.route.slice(1, -1) }],
-          collapsed: true,
-        })),
+        ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map(manualSidebar),
         {
           label: 'RC4GS V2',
           items: [

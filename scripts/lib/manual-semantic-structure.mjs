@@ -137,9 +137,13 @@ function sourceAnchors(manual, sourceId) {
     .join('');
 }
 
-export function semanticMarkdown(manual) {
-  return manual.semantic_sections
-    .map((section) => {
+export function semanticMarkdown(
+  manual,
+  sections = manual.semantic_sections,
+  firstHeading = true,
+) {
+  return sections
+    .map((section, index) => {
       const heading = section.heading;
       const alias =
         heading?.start === 0
@@ -148,7 +152,7 @@ export function semanticMarkdown(manual) {
       const title =
         section.title === null
           ? ''
-          : `${alias}<span id="${section.id}"></span>\n\n${'#'.repeat(section.depth)} ${section.title.replace(/([*_[\\])/g, '\\$1')}\n\n`;
+          : `${alias}<span id="${section.id}"></span>\n\n${index === 0 && !firstHeading ? '' : `${'#'.repeat(section.depth)} ${section.title.replace(/([*_[\\])/g, '\\$1')}\n\n`}`;
       return `${title}<LegacyJapaneseBody manual="${manual.id}" section="${section.id}" />`;
     })
     .join('\n\n');
@@ -163,7 +167,8 @@ export function semanticHeadingPunctuation(manuals) {
       visit(node, ctx) {
         const manual = manuals.find(
           (entry) =>
-            entry.route.slice(1, -1) === ctx.data.astro?.frontmatter.slug,
+            entry.route.slice(1, -1) === ctx.data.astro?.frontmatter.slug ||
+            ctx.data.astro?.frontmatter.slug?.startsWith(entry.route.slice(1)),
         );
         if (!manual?.semantic_sections) return;
         const text = ctx.textContent(node);

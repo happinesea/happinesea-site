@@ -12,6 +12,7 @@ import {
 } from '../../scripts/lib/manual-semantic-structure.mjs';
 import { createHash } from 'node:crypto';
 import { createSatteriMarkdownProcessor } from '@astrojs/markdown-satteri';
+import { manualChapters } from '../../scripts/lib/manual-navigation.mjs';
 
 const root = new URL('../../', import.meta.url);
 const inventory = JSON.parse(
@@ -159,18 +160,40 @@ test('all six semantic outlines preserve every original reading segment, source 
       );
     for (const match of original.matchAll(/id="([^"]+)"/g))
       assert(rendered.includes(`id="${match[1]}"`));
-    const mdx = readFileSync(
+    const intro = readFileSync(
       new URL(`src/content/docs${manual.route}index.mdx`, root),
       'utf8',
     );
-    assert(
-      mdx
-        .replace(/\s/g, '')
-        .includes(semanticMarkdown(manual).replace(/\s/g, '')),
-      'MDX is stale relative to reviewed semantic outline',
-    );
-    for (const match of mdx.matchAll(/^#{1,6} (.+)$/gm))
-      assert(!pageHeading.test(match[1]));
+    const chapters = manualChapters(manual);
+    const pages = [
+      {
+        mdx: intro,
+        sections: manual.semantic_sections.slice(
+          0,
+          manual.semantic_sections.indexOf(chapters[0].sections[0]),
+        ),
+      },
+      ...chapters.map((chapter) => ({
+        mdx: readFileSync(
+          new URL(`src/content/docs${chapter.route.slice(0, -1)}.mdx`, root),
+          'utf8',
+        ),
+        sections: chapter.sections,
+        firstHeading: false,
+      })),
+    ];
+    for (const { mdx, sections, firstHeading } of pages) {
+      assert(
+        mdx
+          .replace(/\s/g, '')
+          .includes(
+            semanticMarkdown(manual, sections, firstHeading).replace(/\s/g, ''),
+          ),
+        'MDX is stale relative to reviewed semantic outline',
+      );
+      for (const match of mdx.matchAll(/^#{1,6} (.+)$/gm))
+        assert(!pageHeading.test(match[1]));
+    }
   }
 });
 
