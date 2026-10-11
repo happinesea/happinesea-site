@@ -1,26 +1,26 @@
 ---
 interface Props {
   total: number;
+  categories?: readonly string[];
+  label?: string;
 }
 
-const { total } = Astro.props;
-const categories = [
-  '送信機',
-  '受信機',
-  'フライトコントローラー',
-  'GPS・RTK・センサー',
-  '機体',
-  '電源・ESC',
-  'モジュール・アクセサリー',
-] as const;
+const { total, label = '製品カテゴリで絞り込む' } = Astro.props;
+const categories =
+  Astro.props.categories ??
+  ([
+    '送信機',
+    '受信機',
+    'フライトコントローラー',
+    'GPS・RTK・センサー',
+    '機体',
+    '電源・ESC',
+    'モジュール・アクセサリー',
+  ] as const);
 ---
 
 <div class="my-8" data-category-controls>
-  <div
-    class="flex flex-wrap gap-2"
-    role="group"
-    aria-label="製品カテゴリで絞り込む"
-  >
+  <div class="flex flex-wrap gap-2" role="group" aria-label={label}>
     <button
       class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:border-teal-600 hover:text-teal-800"
       type="button"

@@ -158,7 +158,10 @@ test('category navigation exposes the public entry points', async ({
 
   await page.goto('./manuals/');
   await expect(
-    page.getByRole('link', { name: 'RC8Xマニュアルを見る' }),
+    page.locator('[data-manual-card="rc8x"]').getByRole('link', {
+      name: '取扱説明書',
+      exact: true,
+    }),
   ).toHaveAttribute('href', '/happinesea-site/manuals/rc8x/');
 
   await page.goto('./support/');
