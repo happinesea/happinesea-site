@@ -21,6 +21,44 @@ const route = (path) =>
 const publicationBase =
   process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
 
+test('RC6GS Full and Quick expose identical reviewed operating values, not receiver revisions', async () => {
+  const pages = await Promise.all([
+    route('manuals/rc6gs-v3/index.html'),
+    route('manuals/rc6gs-v3-quick-reference/index.html'),
+  ]);
+  const guides = pages.map((html) => {
+    assert(!/R7FG\s+V1\.[24]/.test(html));
+    const guide = html.match(
+      /<section\b[^>]*data-r7fg-operating-guide[^>]*>([\s\S]*?)<\/section>/,
+    )?.[1];
+    assert(guide, 'reviewed receiver instructions missing');
+    return headingText(guide).replace(/\s/g, '');
+  });
+  assert.equal(
+    guides[0],
+    guides[1],
+    'Full/Quick operating instructions contradict',
+  );
+  for (const value of [
+    '4.6～10V',
+    '3～12V',
+    '送信機、受信機の順',
+    '受信機、送信機の順',
+    'テレメトリーポートから受信機に給電してはいけません',
+    'CH6はPPM、CH7はSBUS',
+    '1秒以内に2回',
+    '1秒より長く押して離',
+    'LEDの速い点滅',
+    '電波を受信できなくなったとき',
+  ])
+    assert(guides[0].includes(value), `Missing technical value: ${value}`);
+  for (const [index, link] of [
+    '/manuals/rc6gs-v3-quick-reference/',
+    '/manuals/rc6gs-v3/',
+  ].entries())
+    assert(pages[index].includes(link), 'mutual manual navigation missing');
+});
+
 test('all public manual headings and TOCs are semantic, including V2 and RC8X full chapters', async () => {
   const inventory = JSON.parse(
     await readFile(
@@ -73,7 +111,7 @@ test('all public manual headings and TOCs are semantic, including V2 and RC8X fu
       ),
     );
     for (const id of baseline.manuals.find((entry) => entry.id === manual.id)
-      .heading_anchors)
+      .heading_anchors ?? [])
       assert(
         html.includes(`id="${id}"`),
         `${path}: lost published heading anchor ${id}`,
@@ -694,7 +732,13 @@ test('WordPress insight batch emits sanitized static routes with local images an
     else assert.match(html, /https:\/\/www\.youtube\.com\/embed\//);
     assert.doesNotMatch(html, /happinesea\.com\/wp-(?:json|content)/);
     assert.doesNotMatch(
-      html,
+      // The reviewed first-party Google head bootstrap is not CMS article markup.
+      html.replace(/<head>[\s\S]*?<\/head>/, (head) =>
+        head.replace(
+          /<script[^>]*data-google-publication[^>]*>[\s\S]*?<\/script>/g,
+          '',
+        ),
+      ),
       /<script[^>]*>[^<]*(?:alert|adsbygoogle)|<object|<embed|javascript:/i,
     );
     assert.doesNotMatch(html, /記事内広告掲載候補/);

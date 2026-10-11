@@ -1,0 +1,85 @@
+---
+// Both documents share the same evidence-reviewed, device-label conditions.
+---
+
+<section data-r7fg-operating-guide>
+  <aside aria-label="受信機の電源と端子を確認">
+    <p>
+      受信機の電源電圧は、本体に表示された範囲を守ってください。4.6–10V/DCと表示されたものは4.6～10V、3.0–12V/DCと表示されたものは3～12Vです。表示を確認できない場合は給電せず、対応するメーカー資料で確認してください。
+    </p>
+    <p>
+      電源を入れるときは、送信機、受信機の順にしてください。受信機は電源投入時に静止させてください。電源を切るときは、受信機、送信機の順にしてください。テレメトリーポートから受信機に給電してはいけません。
+    </p>
+  </aside>
+
+  <p>
+    R7FGには次の端子構成があります。LEDの色だけでは区別できません。本体の定格表示と対応する端子仕様を確認してください。端子仕様を確認できない場合は、下表の操作を行わず、メーカーの対応資料で確認してください。
+  </p>
+
+  <div class="manual-table">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">構成</th>
+          <th scope="col">ジャイロOFF</th>
+          <th scope="col">ジャイロON</th>
+          <th scope="col">出力の切替え</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">4.6–10V/DC表示・CH7 PPM/SBUS共用</th>
+          <td>緑：CH1～6はPWM、CH7はPPM。青：CH1～6はPWM、CH7はSBUS。</td>
+          <td>
+            緑と赤（橙）：CH1～6はPWM、CH7はPPM。赤と青（紫）：CH1～6はPWM、CH7はSBUS。
+          </td>
+          <td>ID SETを1回短押しして、CH7のPPM/SBUSを切り替えます。</td>
+        </tr>
+        <tr>
+          <th scope="row">3.0–12V/DC表示・CH6 PPM／CH7 SBUS個別</th>
+          <td>緑：CH1～7はPWM。青：CH1～5はPWM、CH6はPPM、CH7はSBUS。</td>
+          <td>
+            赤：CH1～7はPWM。赤と青（紫）：CH1～5はPWM、CH6はPPM、CH7はSBUS。
+          </td>
+          <td>
+            ID
+            SETを1回短押しして、PWMのみの出力とPPM/SBUS併用の出力を切り替えます。
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    どちらの構成も、ID
+    SETを1秒以内に3回短く押してジャイロのON/OFFを切り替えます。ジャイロを有効にした状態で、モデルが走行しないように確保し、ステアリングを操作せず車体を左右に回してください。車体を左へ回すと前輪が右へ、右へ回すと前輪が左へ補正されることを確認します。補正方向が逆の場合は、ID
+    SETを1秒以内に2回短く押し、同じ確認を繰り返してください。点滅回数ではなく、実際の補正方向を確認してください。
+  </p>
+  <p>
+    バインディングでは、送信機と受信機を約50cm離し、送信機、受信機の順に電源を入れます。ID
+    SETを1秒より長く押して離してください。LEDの速い点滅がバインディング中を示します。点滅が止まって常時点灯し、送信機画面に電波マークが表示され、送信機でサーボを操作できることを確認してください。
+  </p>
+  <p>
+    走行前にF/S（フェイルセーフ）を設定してください。電波を受信できなくなったときの各チャンネルの出力位置を設定する機能です。走行できない状態で動作を確認してください。
+  </p>
+  <p>
+    以降のCH6 PPM／CH7
+    SBUSの動作モード表と4回短押しの説明は、3.0–12V/DC表示・個別出力の構成を対象にしています。4.6–10V/DC表示・CH7共用構成には適用しないでください。
+  </p>
+</section>
+
+<style>
+  aside {
+    border-inline-start: 0.25rem solid #b45309;
+    padding: 1rem;
+  }
+  .manual-table {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  th,
+  td {
+    vertical-align: top;
+    min-width: 9rem;
+  }
+</style>

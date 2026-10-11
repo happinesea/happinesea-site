@@ -157,7 +157,7 @@ test('manual directory keeps V2, V3 and quick references separate', async ({
   ])
     await expect(page.locator(`main a[href$="${route}"]`)).toHaveCount(1);
   await expect(page.locator('main a[href$="/manuals/rc6gs-v3/"]')).toHaveCount(
-    0,
+    1,
   );
   await expect(page.locator('main a[href*="rc4gs-legacy"]')).toHaveCount(0);
 });

@@ -1,0 +1,16 @@
+{
+  "repo-rc6gs-v3-ja-instruction_manual": {
+    "sections": "7c63ea5d249da39da6ea7887de79d0c126346b6f79b5608709c0f59173f3f208",
+    "assets": "9181a6ccacb3fc1c6b69c3aee322727ae143fec2a771bdecf8cd99ad006e00dd",
+    "technical_changes": "373ddf60e4ad9a84a0a819e7d51b33ec7a08f1623c4d6c3c5fb28acb849e95ef",
+    "safety_review": "660afed04edec9b5c40fa6cfc704c46dd5b82f9e0d9f88b6cc450fb41f8dcf0f",
+    "publication_status": "f18da9a68c680fac060299d325adf1817bca1f3b697445760cc765351e1a9995"
+  },
+  "repo-rc6gs-v3-quick-reference-ja-quick_reference": {
+    "sections": "ba39233d91bc7ff22e4b3b2a712ee0a7b91e3c46c7857306f8128382e656a19b",
+    "assets": "babc5390df26566da49248ac7a7cb47767ca7a579ac350a8591fb9a6768ee0f9",
+    "technical_changes": "34787285fe36769dfdc47054ea3513d683d1f9eb6def9cb00789aa92d8ef891e",
+    "safety_review": "7f4df5c1a719f34607507b7ca26ffb268d302bb2c57639eef038f91034659ccd",
+    "publication_status": "f18da9a68c680fac060299d325adf1817bca1f3b697445760cc765351e1a9995"
+  }
+}
