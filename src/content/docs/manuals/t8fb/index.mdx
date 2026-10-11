@@ -21,521 +21,234 @@ happinesea hobbyは、メーカー公式ではない技術・サポート情報�
 
 資料の発行日・改訂日は確認できていません。ファイル名の日付は、発行日として扱っていません。
 
+import ManualAnchorCompatibility from '../../../../components/manuals/ManualAnchorCompatibility.astro';
+
 ## 目次
 
-- [はじめにお読みください](#section-004-はじめにお読みください)
-- [スペック情報](#section-005-スペック情報)
-- [1．T8FB とR8EF の導入](#section-005-1-t8fb-とr8ef-の導入)
-  - [付属品](#section-006-付属品)
-  - [1．1．T8FB 送信機](#section-006-topic-2)
-    - [1．1．1．T8FB のボタンとスイッチ](#section-007-topic-1)
-    - [1．1．2．T8FB の裏側](#section-007-topic-2)
-    - [1．1．3．送信機バッテリー](#section-007-topic-3)
-  - [1．2．R8EF 受信機](#section-008-topic-1)
-    - [1．2．1．受信機モードと信号スイッチ](#section-008-topic-2)
-    - [1．2．2．動作モード](#section-008-topic-3)
-    - [SBUS&PPM とPWM 動作モードの切替え](#section-010-topic-1)
-    - [1．2．3．受信機設定ガイド](#section-010-topic-2)
-    - [1．2．4．バインディング](#section-011-topic-1)
-- [2．パラメータ設定アプリ](#section-011-2-パラメータ設定アプリ)
-  - [2．1．スマートフォンアプリの設定](#section-011-topic-3)
-    - [2．1．1．スマートフォンアプリのインストール](#section-011-topic-4)
-    - [2．1．2．スマートフォンアプリとの接続](#section-012-topic-1)
-    - [2．1．3．スマートフォンアプリのパラメータ設定メニュー](#section-013-topic-1)
-  - [2．2．コンピューターアプリの設定](#section-014-topic-1)
-    - [2．2．1．コンピューターアプリのインストール](#section-014-topic-2)
-    - [2．2．2．コンピューターアプリとの接続](#section-015-topic-1)
-- [3．アプリの機能設定](#section-016-3-アプリの機能設定)
-  - [3．1．サーボメニュー](#section-016-topic-2)
-  - [3．2．基本メニュー](#section-017-topic-1)
-    - [3．2．1．リバース](#section-017-topic-2)
-    - [3．2．2．サブトリム](#section-018-topic-1)
-    - [3．2．3．エンドポイント調整(EPA)](#section-019-topic-1)
-    - [3．2．4．フェイルセーフ(F/S)](#section-020-topic-1)
-    - [3．2．5．遅延](#section-021-topic-1)
-  - [3．3．アドバンスメニュー](#section-022-topic-1)
-    - [3．3．1．D/R(デュアルレート)](#section-022-topic-2)
-    - [3．3．2．姿勢](#section-023-topic-1)
-    - [3．3．3．エレボン](#section-024-topic-1)
-    - [3．3．4．V テール](#section-025-topic-1)
-  - [3．4．PROG.MIX メニュー](#section-026-topic-1)
-    - [3．4．1．PROG.MIX](#section-026-topic-2)
-    - [3．4．2．TH/CURE](#section-027-topic-1)
-    - [3．4．3．DR/CURE](#section-028-topic-1)
-  - [3．5．システムメニュー](#section-028-topic-2)
-    - [3．5．1．補助チャンネル](#section-029-topic-1)
-    - [3．5．2．アラーム](#section-029-topic-2)
-    - [3．5．3．バージョンモード](#section-031-topic-1)
-    - [3．5．4．リセット](#section-032-topic-1)
-- [4．ファームウェアのアップグレード](#section-032-4-ファームウェアのアップグレード)
-  - [4．1．ファームウェアバージョン](#section-032-topic-3)
-  - [4．2．ファームウェアアップグレードの手順について](#section-033-topic-1)
-- [5．T8FB ジョイスティックの校正](#section-033-5-t8fb-ジョイスティックの校正)
-- [技術サポートについて](#section-034-topic-1)
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-01/#section-004-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB%E3%81%8A%E8%AA%AD%E3%81%BF%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84',
+    )}
+  >
+    はじめにお読みください
+  </a>
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-02/#section-005-%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E6%83%85%E5%A0%B1',
+    )}
+  >
+    スペック情報
+  </a>
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-03/#section-005-1-t8fb-%E3%81%A8r8ef-%E3%81%AE%E5%B0%8E%E5%85%A5',
+    )}
+  >
+    1．T8FB とR8EF の導入
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/t8fb/chapter-03/#section-006-%E4%BB%98%E5%B1%9E%E5%93%81',
+    )}
+  >
+    付属品
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-006-topic-2')}>
+    1．1．T8FB 送信機
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-007-topic-1')}>
+    1．1．1．T8FB のボタンとスイッチ
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-007-topic-2')}>
+    1．1．2．T8FB の裏側
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-007-topic-3')}>
+    1．1．3．送信機バッテリー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-008-topic-1')}>
+    1．2．R8EF 受信機
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-008-topic-2')}>
+    1．2．1．受信機モードと信号スイッチ
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-008-topic-3')}>
+    1．2．2．動作モード
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-010-topic-1')}>
+    SBUS&PPM とPWM 動作モードの切替え
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-010-topic-2')}>
+    1．2．3．受信機設定ガイド
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-03/#section-011-topic-1')}>
+    1．2．4．バインディング
+  </a>
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-04/#section-011-2-%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E8%A8%AD%E5%AE%9A%E3%82%A2%E3%83%97%E3%83%AA',
+    )}
+  >
+    2．パラメータ設定アプリ
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-011-topic-3')}>
+    2．1．スマートフォンアプリの設定
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-011-topic-4')}>
+    2．1．1．スマートフォンアプリのインストール
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-012-topic-1')}>
+    2．1．2．スマートフォンアプリとの接続
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-013-topic-1')}>
+    2．1．3．スマートフォンアプリのパラメータ設定メニュー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-014-topic-1')}>
+    2．2．コンピューターアプリの設定
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-014-topic-2')}>
+    2．2．1．コンピューターアプリのインストール
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-04/#section-015-topic-1')}>
+    2．2．2．コンピューターアプリとの接続
+  </a>
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-05/#section-016-3-%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E6%A9%9F%E8%83%BD%E8%A8%AD%E5%AE%9A',
+    )}
+  >
+    3．アプリの機能設定
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-016-topic-2')}>
+    3．1．サーボメニュー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-017-topic-1')}>
+    3．2．基本メニュー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-017-topic-2')}>
+    3．2．1．リバース
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-018-topic-1')}>
+    3．2．2．サブトリム
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-019-topic-1')}>
+    3．2．3．エンドポイント調整(EPA)
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-020-topic-1')}>
+    3．2．4．フェイルセーフ(F/S)
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-021-topic-1')}>
+    3．2．5．遅延
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-022-topic-1')}>
+    3．3．アドバンスメニュー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-022-topic-2')}>
+    3．3．1．D/R(デュアルレート)
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-023-topic-1')}>
+    3．3．2．姿勢
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-024-topic-1')}>
+    3．3．3．エレボン
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-025-topic-1')}>
+    3．3．4．V テール
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-026-topic-1')}>
+    3．4．PROG.MIX メニュー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-026-topic-2')}>
+    3．4．1．PROG.MIX
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-027-topic-1')}>
+    3．4．2．TH/CURE
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-028-topic-1')}>
+    3．4．3．DR/CURE
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-028-topic-2')}>
+    3．5．システムメニュー
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-029-topic-1')}>
+    3．5．1．補助チャンネル
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-029-topic-2')}>
+    3．5．2．アラーム
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-031-topic-1')}>
+    3．5．3．バージョンモード
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-05/#section-032-topic-1')}>
+    3．5．4．リセット
+  </a>
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-06/#section-032-4-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89',
+    )}
+  >
+    4．ファームウェアのアップグレード
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-06/#section-032-topic-3')}>
+    4．1．ファームウェアバージョン
+  </a>
+  -
+  <a href={withBase('/manuals/t8fb/chapter-06/#section-033-topic-1')}>
+    4．2．ファームウェアアップグレードの手順について
+  </a>
+- <a
+    href={withBase(
+      '/manuals/t8fb/chapter-07/#section-033-5-t8fb-%E3%82%B8%E3%83%A7%E3%82%A4%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE%E6%A0%A1%E6%AD%A3',
+    )}
+  >
+    5．T8FB ジョイスティックの校正
+  </a>
+- <a href={withBase('/manuals/t8fb/chapter-08/#section-034-topic-1')}>
+    技術サポートについて
+  </a>
 
 <LegacyJapaneseBody
   manual="repo-t8fb-ja-instruction_manual"
   section="manual-introduction"
 />
 
-<span id="section-004"></span>
-<span id="はじめにお読みください4ページ"></span>
-
-<span id="section-004-はじめにお読みください"></span>
-
-## はじめにお読みください
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-004-はじめにお読みください"
-/>
-
-<span id="section-005"></span>
-<span id="スペック情報5ページ"></span>
-
-<span id="section-005-スペック情報"></span>
-
-## スペック情報
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-005-スペック情報"
-/>
-
-<span id="section-005-1-t8fb-とr8ef-の導入"></span>
-
-## 1．T8FB とR8EF の導入
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-005-1-t8fb-とr8ef-の導入"
-/>
-
-<span id="section-006-付属品"></span>
-
-### 付属品
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-006-付属品"
-/>
-
-<span id="section-006-topic-2"></span>
-
-### 1．1．T8FB 送信機
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-006-topic-2"
-/>
-
-<span id="section-007"></span>
-<span id="原資料7ページ"></span>
-
-<span id="section-007-topic-1"></span>
-
-#### 1．1．1．T8FB のボタンとスイッチ
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-007-topic-1"
-/>
-
-<span id="section-007-topic-2"></span>
-
-#### 1．1．2．T8FB の裏側
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-007-topic-2"
-/>
-
-<span id="section-007-topic-3"></span>
-
-#### 1．1．3．送信機バッテリー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-007-topic-3"
-/>
-
-<span id="section-008-topic-1"></span>
-
-### 1．2．R8EF 受信機
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-008-topic-1"
-/>
-
-<span id="section-008-topic-2"></span>
-
-#### 1．2．1．受信機モードと信号スイッチ
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-008-topic-2"
-/>
-
-<span id="section-008-topic-3"></span>
-
-#### 1．2．2．動作モード
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-008-topic-3"
-/>
-
-<span id="section-010-topic-1"></span>
-
-#### SBUS&PPM とPWM 動作モードの切替え
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-010-topic-1"
-/>
-
-<span id="section-010-topic-2"></span>
-
-#### 1．2．3．受信機設定ガイド
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-010-topic-2"
-/>
-
-<span id="section-011"></span>
-<span id="2パラメータ設定アプリ11ページ"></span>
-
-<span id="section-011-topic-1"></span>
-
-#### 1．2．4．バインディング
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-011-topic-1"
-/>
-
-<span id="section-011-2-パラメータ設定アプリ"></span>
-
-## 2．パラメータ設定アプリ
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-011-2-パラメータ設定アプリ"
-/>
-
-<span id="section-011-topic-3"></span>
-
-### 2．1．スマートフォンアプリの設定
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-011-topic-3"
-/>
-
-<span id="section-011-topic-4"></span>
-
-#### 2．1．1．スマートフォンアプリのインストール
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-011-topic-4"
-/>
-
-<span id="section-012-topic-1"></span>
-
-#### 2．1．2．スマートフォンアプリとの接続
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-012-topic-1"
-/>
-
-<span id="section-013-topic-1"></span>
-
-#### 2．1．3．スマートフォンアプリのパラメータ設定メニュー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-013-topic-1"
-/>
-
-<span id="section-014-topic-1"></span>
-
-### 2．2．コンピューターアプリの設定
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-014-topic-1"
-/>
-
-<span id="section-014-topic-2"></span>
-
-#### 2．2．1．コンピューターアプリのインストール
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-014-topic-2"
-/>
-
-<span id="section-015-topic-1"></span>
-
-#### 2．2．2．コンピューターアプリとの接続
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-015-topic-1"
-/>
-
-<span id="section-016-3-アプリの機能設定"></span>
-
-## 3．アプリの機能設定
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-016-3-アプリの機能設定"
-/>
-
-<span id="section-016-topic-2"></span>
-
-### 3．1．サーボメニュー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-016-topic-2"
-/>
-
-<span id="section-017-topic-1"></span>
-
-### 3．2．基本メニュー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-017-topic-1"
-/>
-
-<span id="section-017-topic-2"></span>
-
-#### 3．2．1．リバース
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-017-topic-2"
-/>
-
-<span id="section-018-topic-1"></span>
-
-#### 3．2．2．サブトリム
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-018-topic-1"
-/>
-
-<span id="section-019-topic-1"></span>
-
-#### 3．2．3．エンドポイント調整(EPA)
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-019-topic-1"
-/>
-
-<span id="section-020-topic-1"></span>
-
-#### 3．2．4．フェイルセーフ(F/S)
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-020-topic-1"
-/>
-
-<span id="section-021-topic-1"></span>
-
-#### 3．2．5．遅延
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-021-topic-1"
-/>
-
-<span id="section-022-topic-1"></span>
-
-### 3．3．アドバンスメニュー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-022-topic-1"
-/>
-
-<span id="section-022-topic-2"></span>
-
-#### 3．3．1．D/R(デュアルレート)
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-022-topic-2"
-/>
-
-<span id="section-023-topic-1"></span>
-
-#### 3．3．2．姿勢
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-023-topic-1"
-/>
-
-<span id="section-024-topic-1"></span>
-
-#### 3．3．3．エレボン
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-024-topic-1"
-/>
-
-<span id="section-025-topic-1"></span>
-
-#### 3．3．4．V テール
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-025-topic-1"
-/>
-
-<span id="section-026-topic-1"></span>
-
-### 3．4．PROG.MIX メニュー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-026-topic-1"
-/>
-
-<span id="section-026-topic-2"></span>
-
-#### 3．4．1．PROG.MIX
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-026-topic-2"
-/>
-
-<span id="section-027-topic-1"></span>
-
-#### 3．4．2．TH/CURE
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-027-topic-1"
-/>
-
-<span id="section-028-topic-1"></span>
-
-#### 3．4．3．DR/CURE
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-028-topic-1"
-/>
-
-<span id="section-028-topic-2"></span>
-
-### 3．5．システムメニュー
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-028-topic-2"
-/>
-
-<span id="section-029"></span>
-<span id="原資料29ページ"></span>
-
-<span id="section-029-topic-1"></span>
-
-#### 3．5．1．補助チャンネル
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-029-topic-1"
-/>
-
-<span id="section-029-topic-2"></span>
-
-#### 3．5．2．アラーム
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-029-topic-2"
-/>
-
-<span id="section-031"></span>
-<span id="原資料31ページ"></span>
-
-<span id="section-031-topic-1"></span>
-
-#### 3．5．3．バージョンモード
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-031-topic-1"
-/>
-
-<span id="section-032"></span>
-<span id="4ファームウェアのアップグレード32ページ"></span>
-
-<span id="section-032-topic-1"></span>
-
-#### 3．5．4．リセット
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-032-topic-1"
-/>
-
-<span id="section-032-4-ファームウェアのアップグレード"></span>
-
-## 4．ファームウェアのアップグレード
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-032-4-ファームウェアのアップグレード"
-/>
-
-<span id="section-032-topic-3"></span>
-
-### 4．1．ファームウェアバージョン
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-032-topic-3"
-/>
-
-<span id="section-033-topic-1"></span>
-
-### 4．2．ファームウェアアップグレードの手順について
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-033-topic-1"
-/>
-
-<span id="section-033-5-t8fb-ジョイスティックの校正"></span>
-
-## 5．T8FB ジョイスティックの校正
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-033-5-t8fb-ジョイスティックの校正"
-/>
-
-<span id="section-034-topic-1"></span>
-
-## 技術サポートについて
-
-<LegacyJapaneseBody
-  manual="repo-t8fb-ja-instruction_manual"
-  section="section-034-topic-1"
-/>
+<ManualAnchorCompatibility manual="repo-t8fb-ja-instruction_manual" />

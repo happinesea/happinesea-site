@@ -1,0 +1,40 @@
+---
+import { withBase } from '../../lib/urls';
+import inventory from '../../data/manuals/existing-ja.json';
+import { manualAnchorTargets } from '../../../scripts/lib/manual-navigation.mjs';
+interface Props {
+  manual: string;
+}
+const manual = inventory.manuals.find(
+  (entry) => entry.id === Astro.props.manual,
+);
+if (!manual) throw new Error('Unknown manual anchor compatibility');
+const anchors = manualAnchorTargets(manual);
+---
+
+<div data-manual-anchor-compatibility hidden>
+  {Object.entries(anchors).map(([id, href]) => (
+    <a id={id} href={withBase(href)}>
+      該当箇所へ
+    </a>
+  ))}
+</div>
+
+<script>
+  function followManualAnchor() {
+    let id;
+    try {
+      id = decodeURIComponent(location.hash.slice(1));
+    } catch {
+      return;
+    }
+    const target = document.getElementById(id);
+    if (
+      target instanceof HTMLAnchorElement &&
+      target.closest('[data-manual-anchor-compatibility]')
+    )
+      location.replace(target.href);
+  }
+  followManualAnchor();
+  window.addEventListener('hashchange', followManualAnchor);
+</script>

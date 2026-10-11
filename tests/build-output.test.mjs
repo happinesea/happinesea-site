@@ -9,6 +9,10 @@ import {
   headingText,
   pageHeading,
 } from '../scripts/lib/manual-semantic-structure.mjs';
+import {
+  manualChapters,
+  manualSidebar,
+} from '../scripts/lib/manual-navigation.mjs';
 const rc4gsManual = JSON.parse(
   await readFile(
     new URL('../src/data/manuals/rc4gs-v2.json', import.meta.url),
@@ -102,8 +106,30 @@ test('all public manual headings and TOCs are semantic, including V2 and RC8X fu
         `manuals/${path.replaceAll('\\', '/')}`,
     );
     if (!manual) continue;
-    const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
-    assert.equal(new Set(ids).size, ids.length, `${path}: duplicate anchor ID`);
+    const chapters = manualChapters(manual);
+    const chapterPages = await Promise.all(
+      chapters.map((chapter) => route(`${chapter.route.slice(1)}index.html`)),
+    );
+    const pages = [html, ...chapterPages];
+    const all = pages.join('\n');
+    for (const page of pages) {
+      const ids = [...page.matchAll(/\bid="([^"]+)"/g)].map(
+        (match) => match[1],
+      );
+      assert.equal(
+        new Set(ids).size,
+        ids.length,
+        `${path}: duplicate anchor ID`,
+      );
+    }
+    for (const item of manualSidebar(manual).items) {
+      assert(
+        html.includes(`${publicationBase}/${item.slug}/`),
+        `${path}: missing sidebar link`,
+      );
+      await route(`${item.slug}/index.html`);
+      assert(!pageHeading.test(item.label));
+    }
     const baseline = JSON.parse(
       await readFile(
         new URL('fixtures/manual-semantic-baseline.json', import.meta.url),
@@ -120,16 +146,13 @@ test('all public manual headings and TOCs are semantic, including V2 and RC8X fu
       (section) => section.title,
     )) {
       assert(
-        html.includes(`id="${semantic.id}"`),
+        all.includes(`id="${semantic.id}"`),
         `${path}: missing stable heading anchor`,
       );
       assert(
         [
-          ...html.matchAll(
-            new RegExp(
-              `<h${semantic.depth}\\b[^>]*>([\\s\\S]*?)<\\/h${semantic.depth}>`,
-              'g',
-            ),
+          ...all.matchAll(
+            new RegExp(`<h[1-6]\\b[^>]*>([\\s\\S]*?)<\\/h[1-6]>`, 'g'),
           ),
         ].some(
           (match) =>
@@ -137,7 +160,25 @@ test('all public manual headings and TOCs are semantic, including V2 and RC8X fu
         ),
         `${path}: missing real semantic heading ${semantic.title}`,
       );
-      for (const toc of html.matchAll(
+      const sectionPage = pages.find((page) =>
+        page.includes(`data-semantic-section="${semantic.id}"`),
+      );
+      assert(sectionPage, 'semantic body missing');
+      if (chapters.some((chapter) => chapter.sections[0].id === semantic.id)) {
+        assert.equal(
+          [
+            ...sectionPage.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/g),
+          ].filter(
+            (match) =>
+              headingText(match[1]).replace(/#+$/, '').trim() ===
+              semantic.title,
+          ).length,
+          1,
+          'chapter title is duplicated',
+        );
+        continue;
+      }
+      for (const toc of sectionPage.matchAll(
         /<(?:starlight-toc|mobile-starlight-toc)\b[^>]*>([\s\S]*?)<\/(?:starlight-toc|mobile-starlight-toc)>/g,
       ))
         assert(
@@ -148,7 +189,7 @@ test('all public manual headings and TOCs are semantic, including V2 and RC8X fu
         );
     }
     assert.equal(
-      [...html.matchAll(/data-manual-figure/g)].length,
+      [...all.matchAll(/data-manual-figure/g)].length,
       manual.sections.reduce(
         (sum, section) =>
           sum +
@@ -182,7 +223,16 @@ test('only evidence-cleared manual routes and corrected assets are generated', a
       await access(output);
     }
   }
-  const quick = await route('manuals/rc6gs-v3-quick-reference/index.html');
+  const quick = (
+    await Promise.all([
+      route('manuals/rc6gs-v3-quick-reference/index.html'),
+      ...Array.from({ length: 6 }, (_, index) =>
+        route(
+          `manuals/rc6gs-v3-quick-reference/chapter-0${index + 1}/index.html`,
+        ),
+      ),
+    ])
+  ).join('\n');
   assert.match(quick, /figure-006\.svg/);
   assert.doesNotMatch(
     quick,

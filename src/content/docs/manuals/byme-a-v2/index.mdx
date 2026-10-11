@@ -23,255 +23,142 @@ happinesea hobbyは、メーカー公式ではない技術・サポート情報�
 
 資料の発行日・改訂日は確認できていません。ファイル名の日付は、発行日として扱っていません。
 
+import ManualAnchorCompatibility from '../../../../components/manuals/ManualAnchorCompatibility.astro';
+
 ## 目次
 
-- [免責事項](#section-003-免責事項)
-- [警告・注意事項](#section-003-警告-注意事項)
-- [概要](#section-004-概要)
-- [スペック情報](#section-004-スペック情報)
-- [機体への取り付け](#section-005-機体への取り付け)
-- [フライトモードの設定](#section-006-フライトモードの設定)
-- [電源ON とジャイロのセルフテスト](#section-007-電源on-とジャイロのセルフテスト)
-- [校正](#section-007-校正)
-- [ジャイロ位相](#section-009-ジャイロ位相)
-  - [ジャイロ位相テスト](#section-009-topic-2)
-  - [ジャイロ位相校正](#section-010-topic-1)
-- [送信機の設定](#section-011-送信機の設定)
-  - [モデルタイプの設定](#section-011-topic-2)
-  - [送信機位相設定](#section-011-topic-3)
-  - [送信機位相テスト](#section-011-topic-4)
-- [6 種の飛行モード](#section-013-6-種の飛行モード)
-  - [安定モード](#section-013-topic-2)
-  - [ホバリングモード(マルチコプター)](#section-015-topic-1)
-  - [ホバリングモード(固定翼)](#section-017-topic-1)
-  - [ジャイロモード](#section-018-topic-1)
-  - [アクロバットモード](#section-018-topic-2)
-  - [マニュアルモード](#section-018-topic-3)
-- [ジャイロ感度](#section-019-ジャイロ感度)
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-01/#section-003-%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85',
+    )}
+  >
+    免責事項
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-02/#section-003-%E8%AD%A6%E5%91%8A-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85',
+    )}
+  >
+    警告・注意事項
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-03/#section-004-%E6%A6%82%E8%A6%81',
+    )}
+  >
+    概要
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-04/#section-004-%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E6%83%85%E5%A0%B1',
+    )}
+  >
+    スペック情報
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-05/#section-005-%E6%A9%9F%E4%BD%93%E3%81%B8%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91',
+    )}
+  >
+    機体への取り付け
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-06/#section-006-%E3%83%95%E3%83%A9%E3%82%A4%E3%83%88%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AE%E8%A8%AD%E5%AE%9A',
+    )}
+  >
+    フライトモードの設定
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-07/#section-007-%E9%9B%BB%E6%BA%90on-%E3%81%A8%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E3%81%AE%E3%82%BB%E3%83%AB%E3%83%95%E3%83%86%E3%82%B9%E3%83%88',
+    )}
+  >
+    電源ON とジャイロのセルフテスト
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-08/#section-007-%E6%A0%A1%E6%AD%A3',
+    )}
+  >
+    校正
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-09/#section-009-%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E4%BD%8D%E7%9B%B8',
+    )}
+  >
+    ジャイロ位相
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-09/#section-009-topic-2')}>
+    ジャイロ位相テスト
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-09/#section-010-topic-1')}>
+    ジャイロ位相校正
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-10/#section-011-%E9%80%81%E4%BF%A1%E6%A9%9F%E3%81%AE%E8%A8%AD%E5%AE%9A',
+    )}
+  >
+    送信機の設定
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-10/#section-011-topic-2')}>
+    モデルタイプの設定
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-10/#section-011-topic-3')}>
+    送信機位相設定
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-10/#section-011-topic-4')}>
+    送信機位相テスト
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-11/#section-013-6-%E7%A8%AE%E3%81%AE%E9%A3%9B%E8%A1%8C%E3%83%A2%E3%83%BC%E3%83%89',
+    )}
+  >
+    6 種の飛行モード
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-11/#section-013-topic-2')}>
+    安定モード
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-11/#section-015-topic-1')}>
+    ホバリングモード(マルチコプター)
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-11/#section-017-topic-1')}>
+    ホバリングモード(固定翼)
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-11/#section-018-topic-1')}>
+    ジャイロモード
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-11/#section-018-topic-2')}>
+    アクロバットモード
+  </a>
+  -
+  <a href={withBase('/manuals/byme-a-v2/chapter-11/#section-018-topic-3')}>
+    マニュアルモード
+  </a>
+- <a
+    href={withBase(
+      '/manuals/byme-a-v2/chapter-12/#section-019-%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E6%84%9F%E5%BA%A6',
+    )}
+  >
+    ジャイロ感度
+  </a>
 
 <LegacyJapaneseBody
   manual="repo-byme-a-v2-ja-instruction_manual"
   section="manual-introduction"
 />
 
-<span id="section-003"></span>
-<span id="免責事項3ページ"></span>
-
-<span id="section-003-免責事項"></span>
-
-## 免責事項
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-003-免責事項"
-/>
-
-<span id="section-003-警告-注意事項"></span>
-
-## 警告・注意事項
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-003-警告-注意事項"
-/>
-
-<span id="section-004-概要"></span>
-
-## 概要
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-004-概要"
-/>
-
-<span id="section-004-スペック情報"></span>
-
-## スペック情報
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-004-スペック情報"
-/>
-
-<span id="section-005"></span>
-<span id="機体への取り付け5ページ"></span>
-
-<span id="section-005-機体への取り付け"></span>
-
-## 機体への取り付け
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-005-機体への取り付け"
-/>
-
-<span id="section-006"></span>
-<span id="フライトモードの設定6ページ"></span>
-
-<span id="section-006-フライトモードの設定"></span>
-
-## フライトモードの設定
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-006-フライトモードの設定"
-/>
-
-<span id="section-007-電源on-とジャイロのセルフテスト"></span>
-
-## 電源ON とジャイロのセルフテスト
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-007-電源on-とジャイロのセルフテスト"
-/>
-
-<span id="section-007-校正"></span>
-
-## 校正
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-007-校正"
-/>
-
-<span id="section-009-ジャイロ位相"></span>
-
-## ジャイロ位相
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-009-ジャイロ位相"
-/>
-
-<span id="section-009-topic-2"></span>
-
-### ジャイロ位相テスト
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-009-topic-2"
-/>
-
-<span id="section-010-topic-1"></span>
-
-### ジャイロ位相校正
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-010-topic-1"
-/>
-
-<span id="section-011-送信機の設定"></span>
-
-## 送信機の設定
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-011-送信機の設定"
-/>
-
-<span id="section-011-topic-2"></span>
-
-### モデルタイプの設定
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-011-topic-2"
-/>
-
-<span id="section-011-topic-3"></span>
-
-### 送信機位相設定
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-011-topic-3"
-/>
-
-<span id="section-011-topic-4"></span>
-
-### 送信機位相テスト
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-011-topic-4"
-/>
-
-<span id="section-013-6-種の飛行モード"></span>
-
-## 6 種の飛行モード
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-013-6-種の飛行モード"
-/>
-
-<span id="section-013-topic-2"></span>
-
-### 安定モード
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-013-topic-2"
-/>
-
-<span id="section-015-topic-1"></span>
-
-### ホバリングモード(マルチコプター)
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-015-topic-1"
-/>
-
-<span id="section-017"></span>
-<span id="原資料17ページ"></span>
-
-<span id="section-017-topic-1"></span>
-
-### ホバリングモード(固定翼)
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-017-topic-1"
-/>
-
-<span id="section-018-topic-1"></span>
-
-### ジャイロモード
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-018-topic-1"
-/>
-
-<span id="section-018-topic-2"></span>
-
-### アクロバットモード
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-018-topic-2"
-/>
-
-<span id="section-018-topic-3"></span>
-
-### マニュアルモード
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-018-topic-3"
-/>
-
-<span id="section-019"></span>
-<span id="ジャイロ感度19ページ"></span>
-
-<span id="section-019-ジャイロ感度"></span>
-
-## ジャイロ感度
-
-<LegacyJapaneseBody
-  manual="repo-byme-a-v2-ja-instruction_manual"
-  section="section-019-ジャイロ感度"
-/>
+<ManualAnchorCompatibility manual="repo-byme-a-v2-ja-instruction_manual" />

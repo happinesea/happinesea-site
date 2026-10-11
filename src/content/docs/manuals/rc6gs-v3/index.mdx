@@ -24,58 +24,192 @@ happinesea hobbyはメーカー公式ではない技術・サポート情報サ�
 
 <R7FGOperatingGuide />
 
+import ManualAnchorCompatibility from '../../../../components/manuals/ManualAnchorCompatibility.astro';
+
 ## 目次
 
-- [はじめにお読みください](#section-004-heading-03)
-- [2.4GHzシステムを安全にご使用いただくための基本的な注意事項](#section-004-heading-04)
-- [修理・アフターサービスについて](#section-004-heading-06)
-
-- [第1章 RC6GS V3システムの紹介](#section-006-heading-01)
-  - [1.1．送信機](#section-006-heading-02)
-    - [1.1.1．RC6GS V3各部の名称](#section-007-heading-01)
-  - [1.2．受信機](#section-009-heading-01)
-    - [1.2.1．送信機、受信機のバインディング](#section-009-heading-02)
-    - [1.2.2．受信機の動作モード](#section-010-heading-03)
-    - [1.2.3．ジャイロ機能の設定と調整](#section-011-heading-01)
-    - [(1) ジャイロの有効](#section-011-heading-02)
-    - [(2) ジャイロの感度の調整](#section-011-heading-03)
-    - [(3) ジャイロの補正方向の確認](#section-011-heading-04)
-    - [(4) ジャイロの逆設定](#section-011-heading-05)
-    - [受信機アンテナの扱いについて：](#section-012-heading-01)
-  - [1.3．電波状況(RSSI)の確認](#section-013-heading-01)
-  - [1.4．テレメトリー情報の確認](#section-013-heading-02)
-- [第2章 RC6GS 機能](#section-014-heading-01)
-  - [2.1．画面表示](#section-014-heading-02)
-  - [2.2．言語選択(LANGUAGE)](#section-015-heading-01)
-  - [2.3．モデルの選択(MODEL)](#section-016-heading-01)
-  - [2.4．エンドポイント (EPA)](#section-016-heading-02)
-  - [2.5．ステアリングカーブ(STEXP)](#section-018-heading-01)
-  - [2.6．ステアリングスピード(STSPD)](#section-019-heading-01)
-  - [2.7．スロットルカーブ (THEXP)](#section-019-heading-02)
-  - [2.8．スロットルスピード (THSPD)](#section-022-heading-01)
-  - [2.9．A.B.S.機能 (A.B.S.)](#section-023-heading-01)
-  - [2.10．スロットルアクセレーション (ACCEL)](#section-026-heading-01)
-  - [2.11．アイドルアップ (IDLUP)](#section-028-heading-01)
-    - [2．11.1．アイドルアップを利用したエンジンスタート](#section-028-heading-02)
-    - [2．11.2．スロットルロック(TH-LOCK)](#section-028-heading-03)
-  - [2.12．サブトリム (SUB-TRIM)](#section-029-heading-01)
-  - [2.13．サーボリバース機能 (REVERSE)](#section-030-heading-01)
-  - [2.14．ステアリング/スロットル デュアルレート (D/R)](#section-031-heading-01)
-  - [2.15．ブレーキレート機能 (ATL)](#section-032-heading-01)
-  - [2.16．プログラムMIX (PMIX01/02)](#section-033-heading-01)
-    - [2.16.1．PMIX01/PMIX02](#section-033-heading-02)
-    - [2.16.2．プログラムミキシングのために混合制御の説明](#section-034-heading-01)
-    - [2.16.3．混合制御(ミックスコントロール)設定前の受信機の準備について](#section-035-heading-01)
-    - [2.16.4．混合制御(ミックスコントロール)設定](#section-036-heading-01)
-  - [2.17．予備チャンネル (AUX-CH)](#section-038-heading-01)
-  - [2.18．モデルネーム (NAME)](#section-038-heading-02)
-  - [2.19．アラーム(ローバッテリー、電波)](#section-038-heading-03)
-  - [2.20．ジャイロ感度(GYRO)](#section-039-heading-01)
-  - [2.21．フェイルセーフ(F/S)](#section-040-heading-01)
-  - [2.22．IDシード(ID SEED)](#section-041-heading-01)
-  - [2.23．アウトプット機能 (DSC)](#section-042-heading-01)
-  - [2.24． タイマー設定(TIMER)](#section-044-heading-01)
-  - [2.25．リセット機能 (RESET)](#section-046-heading-01)
+- <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-006-heading-01')}>
+    第1章 RC6GS V3システムの紹介
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-006-heading-02')}>
+    1.1．送信機
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-007-heading-01')}>
+    1.1.1．RC6GS V3各部の名称
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-009-heading-01')}>
+    1.2．受信機
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-009-heading-02')}>
+    1.2.1．送信機、受信機のバインディング
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-010-heading-03')}>
+    1.2.2．受信機の動作モード
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-011-heading-01')}>
+    1.2.3．ジャイロ機能の設定と調整
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-011-heading-02')}>
+    (1) ジャイロの有効
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-011-heading-03')}>
+    (2) ジャイロの感度の調整
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-011-heading-04')}>
+    (3) ジャイロの補正方向の確認
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-011-heading-05')}>
+    (4) ジャイロの逆設定
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-012-heading-01')}>
+    受信機アンテナの扱いについて：
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-013-heading-01')}>
+    1.3．電波状況(RSSI)の確認
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-01/#section-013-heading-02')}>
+    1.4．テレメトリー情報の確認
+  </a>
+- <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-014-heading-01')}>
+    第2章 RC6GS 機能
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-014-heading-02')}>
+    2.1．画面表示
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-015-heading-01')}>
+    2.2．言語選択(LANGUAGE)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-016-heading-01')}>
+    2.3．モデルの選択(MODEL)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-016-heading-02')}>
+    2.4．エンドポイント (EPA)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-018-heading-01')}>
+    2.5．ステアリングカーブ(STEXP)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-019-heading-01')}>
+    2.6．ステアリングスピード(STSPD)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-019-heading-02')}>
+    2.7．スロットルカーブ (THEXP)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-022-heading-01')}>
+    2.8．スロットルスピード (THSPD)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-023-heading-01')}>
+    2.9．A.B.S.機能 (A.B.S.)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-026-heading-01')}>
+    2.10．スロットルアクセレーション (ACCEL)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-028-heading-01')}>
+    2.11．アイドルアップ (IDLUP)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-028-heading-02')}>
+    2．11.1．アイドルアップを利用したエンジンスタート
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-028-heading-03')}>
+    2．11.2．スロットルロック(TH-LOCK)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-029-heading-01')}>
+    2.12．サブトリム (SUB-TRIM)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-030-heading-01')}>
+    2.13．サーボリバース機能 (REVERSE)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-031-heading-01')}>
+    2.14．ステアリング/スロットル デュアルレート (D/R)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-032-heading-01')}>
+    2.15．ブレーキレート機能 (ATL)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-033-heading-01')}>
+    2.16．プログラムMIX (PMIX01/02)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-033-heading-02')}>
+    2.16.1．PMIX01/PMIX02
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-034-heading-01')}>
+    2.16.2．プログラムミキシングのために混合制御の説明
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-035-heading-01')}>
+    2.16.3．混合制御(ミックスコントロール)設定前の受信機の準備について
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-036-heading-01')}>
+    2.16.4．混合制御(ミックスコントロール)設定
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-038-heading-01')}>
+    2.17．予備チャンネル (AUX-CH)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-038-heading-02')}>
+    2.18．モデルネーム (NAME)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-038-heading-03')}>
+    2.19．アラーム(ローバッテリー、電波)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-039-heading-01')}>
+    2.20．ジャイロ感度(GYRO)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-040-heading-01')}>
+    2.21．フェイルセーフ(F/S)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-041-heading-01')}>
+    2.22．IDシード(ID SEED)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-042-heading-01')}>
+    2.23．アウトプット機能 (DSC)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-044-heading-01')}>
+    2.24． タイマー設定(TIMER)
+  </a>
+  -
+  <a href={withBase('/manuals/rc6gs-v3/chapter-02/#section-046-heading-01')}>
+    2.25．リセット機能 (RESET)
+  </a>
 
 <LegacyJapaneseBody
   manual="repo-rc6gs-v3-ja-instruction_manual"
@@ -109,454 +243,4 @@ happinesea hobbyはメーカー公式ではない技術・サポート情報サ�
   section="section-004-heading-06"
 />
 
-<span id="section-006-heading-01"></span>
-
-## 第1章 RC6GS V3システムの紹介
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-006-heading-01"
-/>
-
-<span id="section-006-heading-02"></span>
-
-### 1.1．送信機
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-006-heading-02"
-/>
-
-<span id="section-007"></span>
-
-<span id="section-007-heading-01"></span>
-
-#### 1.1.1．RC6GS V3各部の名称
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-007-heading-01"
-/>
-
-<span id="section-009"></span>
-
-<span id="section-009-heading-01"></span>
-
-### 1.2．受信機
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-009-heading-01"
-/>
-
-<span id="section-009-heading-02"></span>
-
-#### 1.2.1．送信機、受信機のバインディング
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-009-heading-02"
-/>
-
-<span id="section-010-heading-03"></span>
-
-#### 1.2.2．受信機の動作モード
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-010-heading-03"
-/>
-
-<span id="section-011-heading-01"></span>
-
-#### 1.2.3．ジャイロ機能の設定と調整
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-011-heading-01"
-/>
-
-<span id="section-011-heading-02"></span>
-
-#### (1) ジャイロの有効
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-011-heading-02"
-/>
-
-<span id="section-011-heading-03"></span>
-
-#### (2) ジャイロの感度の調整
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-011-heading-03"
-/>
-
-<span id="section-011-heading-04"></span>
-
-#### (3) ジャイロの補正方向の確認
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-011-heading-04"
-/>
-
-<span id="section-011-heading-05"></span>
-
-#### (4) ジャイロの逆設定
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-011-heading-05"
-/>
-
-<span id="section-012-heading-01"></span>
-
-#### 受信機アンテナの扱いについて：
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-012-heading-01"
-/>
-
-<span id="section-013"></span>
-
-<span id="section-013-heading-01"></span>
-
-### 1.3．電波状況(RSSI)の確認
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-013-heading-01"
-/>
-
-<span id="section-013-heading-02"></span>
-
-### 1.4．テレメトリー情報の確認
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-013-heading-02"
-/>
-
-<span id="section-014"></span>
-
-<span id="section-014-heading-01"></span>
-
-## 第2章 RC6GS 機能
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-014-heading-01"
-/>
-
-<span id="section-014-heading-02"></span>
-
-### 2.1．画面表示
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-014-heading-02"
-/>
-
-<span id="section-015-heading-01"></span>
-
-### 2.2．言語選択(LANGUAGE)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-015-heading-01"
-/>
-
-<span id="section-016-heading-01"></span>
-
-### 2.3．モデルの選択(MODEL)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-016-heading-01"
-/>
-
-<span id="section-016-heading-02"></span>
-
-### 2.4．エンドポイント (EPA)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-016-heading-02"
-/>
-
-<span id="section-018"></span>
-
-<span id="section-018-heading-01"></span>
-
-### 2.5．ステアリングカーブ(STEXP)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-018-heading-01"
-/>
-
-<span id="section-019"></span>
-
-<span id="section-019-heading-01"></span>
-
-### 2.6．ステアリングスピード(STSPD)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-019-heading-01"
-/>
-
-<span id="section-019-heading-02"></span>
-
-### 2.7．スロットルカーブ (THEXP)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-019-heading-02"
-/>
-
-<span id="section-022-heading-01"></span>
-
-### 2.8．スロットルスピード (THSPD)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-022-heading-01"
-/>
-
-<span id="section-023-heading-01"></span>
-
-### 2.9．A.B.S.機能 (A.B.S.)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-023-heading-01"
-/>
-
-<span id="section-026-heading-01"></span>
-
-### 2.10．スロットルアクセレーション (ACCEL)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-026-heading-01"
-/>
-
-<span id="section-028"></span>
-
-<span id="section-028-heading-01"></span>
-
-### 2.11．アイドルアップ (IDLUP)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-028-heading-01"
-/>
-
-<span id="section-028-heading-02"></span>
-
-#### 2．11.1．アイドルアップを利用したエンジンスタート
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-028-heading-02"
-/>
-
-<span id="section-028-heading-03"></span>
-
-#### 2．11.2．スロットルロック(TH-LOCK)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-028-heading-03"
-/>
-
-<span id="section-029"></span>
-
-<span id="section-029-heading-01"></span>
-
-### 2.12．サブトリム (SUB-TRIM)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-029-heading-01"
-/>
-
-<span id="section-030"></span>
-
-<span id="section-030-heading-01"></span>
-
-### 2.13．サーボリバース機能 (REVERSE)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-030-heading-01"
-/>
-
-<span id="section-031"></span>
-
-<span id="section-031-heading-01"></span>
-
-### 2.14．ステアリング/スロットル デュアルレート (D/R)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-031-heading-01"
-/>
-
-<span id="section-032"></span>
-
-<span id="section-032-heading-01"></span>
-
-### 2.15．ブレーキレート機能 (ATL)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-032-heading-01"
-/>
-
-<span id="section-033"></span>
-
-<span id="section-033-heading-01"></span>
-
-### 2.16．プログラムMIX (PMIX01/02)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-033-heading-01"
-/>
-
-<span id="section-033-heading-02"></span>
-
-#### 2.16.1．PMIX01/PMIX02
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-033-heading-02"
-/>
-
-<span id="section-034-heading-01"></span>
-
-#### 2.16.2．プログラムミキシングのために混合制御の説明
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-034-heading-01"
-/>
-
-<span id="section-035"></span>
-
-<span id="section-035-heading-01"></span>
-
-#### 2.16.3．混合制御(ミックスコントロール)設定前の受信機の準備について
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-035-heading-01"
-/>
-
-<span id="section-036-heading-01"></span>
-
-#### 2.16.4．混合制御(ミックスコントロール)設定
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-036-heading-01"
-/>
-
-<span id="section-038"></span>
-
-<span id="section-038-heading-01"></span>
-
-### 2.17．予備チャンネル (AUX-CH)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-038-heading-01"
-/>
-
-<span id="section-038-heading-02"></span>
-
-### 2.18．モデルネーム (NAME)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-038-heading-02"
-/>
-
-<span id="section-038-heading-03"></span>
-
-### 2.19．アラーム(ローバッテリー、電波)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-038-heading-03"
-/>
-
-<span id="section-039-heading-01"></span>
-
-### 2.20．ジャイロ感度(GYRO)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-039-heading-01"
-/>
-
-<span id="section-040"></span>
-
-<span id="section-040-heading-01"></span>
-
-### 2.21．フェイルセーフ(F/S)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-040-heading-01"
-/>
-
-<span id="section-041"></span>
-
-<span id="section-041-heading-01"></span>
-
-### 2.22．IDシード(ID SEED)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-041-heading-01"
-/>
-
-<span id="section-042"></span>
-
-<span id="section-042-heading-01"></span>
-
-### 2.23．アウトプット機能 (DSC)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-042-heading-01"
-/>
-
-<span id="section-044"></span>
-
-<span id="section-044-heading-01"></span>
-
-### 2.24． タイマー設定(TIMER)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-044-heading-01"
-/>
-
-<span id="section-046"></span>
-
-<span id="section-046-heading-01"></span>
-
-### 2.25．リセット機能 (RESET)
-
-<LegacyJapaneseBody
-  manual="repo-rc6gs-v3-ja-instruction_manual"
-  section="section-046-heading-01"
-/>
+<ManualAnchorCompatibility manual="repo-rc6gs-v3-ja-instruction_manual" />

@@ -25,291 +25,217 @@ happinesea hobbyは、メーカー公式ではない技術・サポート情報�
 
 資料の発行日・改訂日は確認できていません。ファイル名の日付は、発行日として扱っていません。
 
+import ManualAnchorCompatibility from '../../../../components/manuals/ManualAnchorCompatibility.astro';
+
 ## 目次
 
-- [ご注意](#section-002-ご注意)
-- [付属品リスト](#section-002-付属品リスト)
-- [スペック情報](#section-003-スペック情報)
-- [RC8X 送信機](#section-005-rc8x-送信機)
-- [ボタンとスイッチの表記等の説明](#section-006-ボタンとスイッチの表記等の説明)
-  - [3 段階スイッチの設定について](#section-006-topic-2)
-- [メニュー](#section-007-メニュー)
-- [電源を入れる](#section-007-topic-2)
-  - [ローバッテリーアラームの設定：](#section-008-topic-1)
-- [R8FG 受信機](#section-008-r8fg-受信機)
-  - [送信機と受信機のバインディング](#section-009-topic-1)
-    - [バインディング操作手順：](#section-009-topic-2)
-  - [受信機設定](#section-009-topic-3)
-    - [受信機の選択(プロトコルの選択)：](#section-009-topic-4)
-  - [サーボ速度の設定](#section-010-topic-1)
-  - [受信機のコネクターの接続について](#section-011-topic-1)
-  - [受信機、サーボとESC の接続例](#section-011-topic-2)
-  - [電圧のテレメトリーについて](#section-011-topic-3)
-  - [受信機の動作モード](#section-012-topic-1)
-    - [動作モードの設定について](#section-012-topic-2)
-    - [動作モードを表すLED の色](#section-012-topic-3)
-  - [受信機のジャイロ機能について](#section-013-topic-1)
-    - [ジャイロ機能の使用方法](#section-013-topic-2)
-    - [ジャイロのリバース](#section-013-topic-3)
-    - [ジャイロのゲイン調整](#section-013-topic-4)
-  - [外部電源のローバッテリーアラーム設定について](#section-014-topic-1)
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-01/#section-002-%E3%81%94%E6%B3%A8%E6%84%8F',
+    )}
+  >
+    ご注意
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-02/#section-002-%E4%BB%98%E5%B1%9E%E5%93%81%E3%83%AA%E3%82%B9%E3%83%88',
+    )}
+  >
+    付属品リスト
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-03/#section-003-%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%E6%83%85%E5%A0%B1',
+    )}
+  >
+    スペック情報
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-04/#section-005-rc8x-%E9%80%81%E4%BF%A1%E6%A9%9F',
+    )}
+  >
+    RC8X 送信機
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-05/#section-006-%E3%83%9C%E3%82%BF%E3%83%B3%E3%81%A8%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%AE%E8%A1%A8%E8%A8%98%E7%AD%89%E3%81%AE%E8%AA%AC%E6%98%8E',
+    )}
+  >
+    ボタンとスイッチの表記等の説明
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-05/#section-006-topic-2',
+    )}
+  >
+    3 段階スイッチの設定について
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-06/#section-007-%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC',
+    )}
+  >
+    メニュー
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-07/#section-007-topic-2',
+    )}
+  >
+    電源を入れる
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-07/#section-008-topic-1',
+    )}
+  >
+    ローバッテリーアラームの設定：
+  </a>
+- <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-008-r8fg-%E5%8F%97%E4%BF%A1%E6%A9%9F',
+    )}
+  >
+    R8FG 受信機
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-009-topic-1',
+    )}
+  >
+    送信機と受信機のバインディング
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-009-topic-2',
+    )}
+  >
+    バインディング操作手順：
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-009-topic-3',
+    )}
+  >
+    受信機設定
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-009-topic-4',
+    )}
+  >
+    受信機の選択(プロトコルの選択)：
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-010-topic-1',
+    )}
+  >
+    サーボ速度の設定
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-011-topic-1',
+    )}
+  >
+    受信機のコネクターの接続について
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-011-topic-2',
+    )}
+  >
+    受信機、サーボとESC の接続例
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-011-topic-3',
+    )}
+  >
+    電圧のテレメトリーについて
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-012-topic-1',
+    )}
+  >
+    受信機の動作モード
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-012-topic-2',
+    )}
+  >
+    動作モードの設定について
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-012-topic-3',
+    )}
+  >
+    動作モードを表すLED の色
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-013-topic-1',
+    )}
+  >
+    受信機のジャイロ機能について
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-013-topic-2',
+    )}
+  >
+    ジャイロ機能の使用方法
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-013-topic-3',
+    )}
+  >
+    ジャイロのリバース
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-013-topic-4',
+    )}
+  >
+    ジャイロのゲイン調整
+  </a>
+  -
+  <a
+    href={withBase(
+      '/manuals/rc8x-quick-reference/chapter-08/#section-014-topic-1',
+    )}
+  >
+    外部電源のローバッテリーアラーム設定について
+  </a>
 
 <LegacyJapaneseBody
   manual="repo-rc8x-quick-reference-ja-quick_reference"
   section="manual-introduction"
 />
 
-<span id="section-002"></span>
-<span id="ご注意2ページ"></span>
-
-<span id="section-002-ご注意"></span>
-
-## ご注意
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-002-ご注意"
-/>
-
-<span id="section-002-付属品リスト"></span>
-
-## 付属品リスト
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-002-付属品リスト"
-/>
-
-<span id="section-003"></span>
-<span id="スペック情報3ページ"></span>
-
-<span id="section-003-スペック情報"></span>
-
-## スペック情報
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-003-スペック情報"
-/>
-
-<span id="section-005-rc8x-送信機"></span>
-
-## RC8X 送信機
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-005-rc8x-送信機"
-/>
-
-<span id="section-006"></span>
-<span id="ボタンとスイッチの表記等の説明6ページ"></span>
-
-<span id="section-006-ボタンとスイッチの表記等の説明"></span>
-
-## ボタンとスイッチの表記等の説明
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-006-ボタンとスイッチの表記等の説明"
-/>
-
-<span id="section-006-topic-2"></span>
-
-### 3 段階スイッチの設定について
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-006-topic-2"
-/>
-
-<span id="section-007-メニュー"></span>
-
-## メニュー
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-007-メニュー"
-/>
-
-<span id="section-007-topic-2"></span>
-
-## 電源を入れる
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-007-topic-2"
-/>
-
-<span id="section-008"></span>
-<span id="r8fg-受信機8ページ"></span>
-
-<span id="section-008-topic-1"></span>
-
-### ローバッテリーアラームの設定：
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-008-topic-1"
-/>
-
-<span id="section-008-r8fg-受信機"></span>
-
-## R8FG 受信機
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-008-r8fg-受信機"
-/>
-
-<span id="section-009"></span>
-<span id="原資料9ページ"></span>
-
-<span id="section-009-topic-1"></span>
-
-### 送信機と受信機のバインディング
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-009-topic-1"
-/>
-
-<span id="section-009-topic-2"></span>
-
-#### バインディング操作手順：
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-009-topic-2"
-/>
-
-<span id="section-009-topic-3"></span>
-
-### 受信機設定
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-009-topic-3"
-/>
-
-<span id="section-009-topic-4"></span>
-
-#### 受信機の選択(プロトコルの選択)：
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-009-topic-4"
-/>
-
-<span id="section-010-topic-1"></span>
-
-### サーボ速度の設定
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-010-topic-1"
-/>
-
-<span id="section-011"></span>
-<span id="原資料11ページ"></span>
-
-<span id="section-011-topic-1"></span>
-
-### 受信機のコネクターの接続について
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-011-topic-1"
-/>
-
-<span id="section-011-topic-2"></span>
-
-### 受信機、サーボとESC の接続例
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-011-topic-2"
-/>
-
-<span id="section-011-topic-3"></span>
-
-### 電圧のテレメトリーについて
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-011-topic-3"
-/>
-
-<span id="section-012-topic-1"></span>
-
-### 受信機の動作モード
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-012-topic-1"
-/>
-
-<span id="section-012-topic-2"></span>
-
-#### 動作モードの設定について
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-012-topic-2"
-/>
-
-<span id="section-012-topic-3"></span>
-
-#### 動作モードを表すLED の色
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-012-topic-3"
-/>
-
-<span id="section-013-topic-1"></span>
-
-### 受信機のジャイロ機能について
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-013-topic-1"
-/>
-
-<span id="section-013-topic-2"></span>
-
-#### ジャイロ機能の使用方法
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-013-topic-2"
-/>
-
-<span id="section-013-topic-3"></span>
-
-#### ジャイロのリバース
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-013-topic-3"
-/>
-
-<span id="section-013-topic-4"></span>
-
-#### ジャイロのゲイン調整
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-013-topic-4"
-/>
-
-<span id="section-014-topic-1"></span>
-
-### 外部電源のローバッテリーアラーム設定について
-
-<LegacyJapaneseBody
-  manual="repo-rc8x-quick-reference-ja-quick_reference"
-  section="section-014-topic-1"
-/>
+<ManualAnchorCompatibility manual="repo-rc8x-quick-reference-ja-quick_reference" />
 
 <p>
   <a href={withBase('/manuals/rc8x/')}>RC8X 日本語マニュアル</a>
