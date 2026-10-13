@@ -89,6 +89,7 @@ const known = new Set(
   catalog.downloads.filter((d) => !d.source_path).map((d) => d.sha256),
 );
 const receipt = [];
+const thumbnailChoices = [];
 const digest = (data) => createHash('sha256').update(data).digest('hex');
 for (const file of staged) {
   if (
@@ -137,8 +138,25 @@ for (const file of staged) {
   });
 }
 for (const record of catalog.records.filter((r) => !r.existing)) {
-  const file = catalog.downloads.find((d) => record.downloads.includes(d.id));
+  const choices = record.downloads.map((id) =>
+    catalog.downloads.find((d) => d.id === id),
+  );
+  const file =
+    choices.find((d) => previews[d.source_path]?.status === 'RENDERED') ??
+    choices[0];
   const preview = previews[file.source_path];
+  thumbnailChoices.push({
+    record_id: record.id,
+    source_download_id: preview?.status === 'RENDERED' ? file.id : null,
+    url:
+      preview?.status === 'RENDERED'
+        ? record.preview_url
+        : '/images/drawings/placeholder.svg',
+    status:
+      preview?.status === 'RENDERED'
+        ? 'DERIVED_LOCAL_ONLY'
+        : 'GENERIC_FALLBACK',
+  });
   if (
     preview?.status === 'RENDERED' &&
     preview.filename === file.sha256 + '.png'
@@ -179,6 +197,7 @@ await writeLocalArtifact(
       localOnly: true,
       rights: 'REVIEW_REQUIRED',
       files: receipt,
+      thumbnail_choices: thumbnailChoices,
       totalBytes: receipt.reduce((n, f) => n + f.bytes, 0),
     },
     null,

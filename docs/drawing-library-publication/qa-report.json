@@ -684,7 +684,7 @@
   },
   "manual_smoke": 20,
   "overflow": 0,
-  "owner_artifact_bytes": 351049643,
+  "owner_artifact_bytes": 349898147,
   "owner_candidate_records": 37,
   "owner_record_filter_checks": {
     "fighter_tag": 19,
@@ -706,5 +706,229 @@
   },
   "source_binary_additions": 0,
   "source_unchanged": 71,
+  "thumbnail_choices": [
+    {
+      "record_id": "drawing-boeing-airliner-unidentified",
+      "source_download_id": "download-9a2384c22d0510f7e1cb1d1637efd945266553da4f8607cee7d1abd5f5430ab0",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679.png"
+    },
+    {
+      "record_id": "drawing-breeze2005-unidentified",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-cessna-unidentified",
+      "source_download_id": "download-e129b2fcd03f48a2e87d6695be8f624b09e9ac894fd903e33f3ca8ac5c66348a",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32.png"
+    },
+    {
+      "record_id": "drawing-cessna182",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-color330-unidentified",
+      "source_download_id": "download-4c9ae0b1554407012aff3fcf1446d17865aa3e5a71acd45d176656f189f2743b",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c.png"
+    },
+    {
+      "record_id": "drawing-f-15",
+      "source_download_id": "download-8c7c648113d63924855298a68e7f6203e80c1687959a4a8b117be680ecc31814",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3.png"
+    },
+    {
+      "record_id": "drawing-f-18",
+      "source_download_id": "download-7d4bc9075c8a23d5fd9aa7b4397137a93dab41026bbe5ffba51eacd0d3d23590",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134.png"
+    },
+    {
+      "record_id": "drawing-f-22",
+      "source_download_id": "download-fed99438152a00780cfc748dad1ab09f49a70c66c11531183cf4cec907d73f3e",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/36b5ca4573dbacd96c2a9c6156b348dd75cfdb28eb50b783b21fcfc3a352bd6f.png"
+    },
+    {
+      "record_id": "drawing-f117",
+      "source_download_id": "download-137dbd0d410d4b63adf6e67b1a719100f5840c3141fc8479b8d67369546491ba",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f.png"
+    },
+    {
+      "record_id": "drawing-f16",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-f4u",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-floatplane-unidentified",
+      "source_download_id": "download-304986dee19263143a89d27ee82d9f24395a89fa47432f01a4834f361d874801",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed.png"
+    },
+    {
+      "record_id": "drawing-fuel-cad-unidentified",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-j-20",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-j10",
+      "source_download_id": "download-9cc5cde92f5ba353b3ff17fd11f063564457a69eab70095faf7e8084e5b3c53a",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/d7b4d6e3b292095dd75f5b6bdbddd2448ee1d0b4d18cc2d47df1c9333685e308.png"
+    },
+    {
+      "record_id": "drawing-jas-39",
+      "source_download_id": "download-298eeaa767e98a6257fd0c584e3f5f20eff3a2f8f623bc7dfcd06f1fbd8b4fc7",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd.png"
+    },
+    {
+      "record_id": "drawing-jet-engine-manual",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-kj66-engine",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-laser200",
+      "source_download_id": "download-a60c9dbcf87e202aee0fb6b01805ef39976b5a8d53d60f1ba2b081cf7dd3bb2d",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782.png"
+    },
+    {
+      "record_id": "drawing-light-aircraft-no1",
+      "source_download_id": "download-87c88ef27c95d0caef79a9687760742e88e37e2d631ffac29d42072346fcec65",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785.png"
+    },
+    {
+      "record_id": "drawing-light-helicopter",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-microjet-engine",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-mig-29",
+      "source_download_id": "download-514f8a3eae5b85dbe277a33314ab3a4fd930d6b998a80dcec038a2e9d224534b",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/ed903b0d1a183a15cd55c090bba964b76401d839e36909e2d3175bc412620aae.png"
+    },
+    {
+      "record_id": "drawing-mig21",
+      "source_download_id": "download-786fcb9c46216f7401a44a4c374fda28559fd7bf792b3c7345918a4632f223f9",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a.png"
+    },
+    {
+      "record_id": "drawing-mig25",
+      "source_download_id": "download-d8cd593b93e8c263867fd6840dcc00c92932af5d7db7918439940eb4ab8dcd1e",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b.png"
+    },
+    {
+      "record_id": "drawing-mirage2000",
+      "source_download_id": "download-a24cbd27d22c55ea6c1715a4e38d138af18eede4b48bf0220f136d6727fc3ea7",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b.png"
+    },
+    {
+      "record_id": "drawing-model-beginner-materials",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-p51",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-paper-aircraft",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-piper-j3-cub",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-printed-plans-unidentified",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-pulse-engine-manual",
+      "source_download_id": "download-125afbb8678d9db6e1578d4551cfb3af67f6dabe5750e116756aa98058e4bf24",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e.png"
+    },
+    {
+      "record_id": "drawing-rotorcraft-unidentified",
+      "source_download_id": "download-b8a4adfd0e161cded4b196cb8f2cbbcc725a82838bd8e8b8feaf2a2326e49a67",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024.png"
+    },
+    {
+      "record_id": "drawing-sr71",
+      "source_download_id": "download-3e89c1d5d2d3d6abae83384117852ea486e54b9acf87b67d0c74a20855da588e",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2.png"
+    },
+    {
+      "record_id": "drawing-su-27",
+      "source_download_id": null,
+      "status": "GENERIC_FALLBACK",
+      "url": "/images/drawings/placeholder.svg"
+    },
+    {
+      "record_id": "drawing-su-47",
+      "source_download_id": "download-c4e25ddc211b9b38412c936583fc3e33fe61735b96c0d0dffd2c079e16e493b1",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9.png"
+    },
+    {
+      "record_id": "drawing-su37",
+      "source_download_id": "download-0a72374f380c7a32d60c62290fc2f7f24cd01b1b7eaeb46c54599a7e4d22a55b",
+      "status": "DERIVED_LOCAL_ONLY",
+      "url": "/images/drawings/staged/186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c.png"
+    }
+  ],
   "unit": 164
 }

@@ -31,10 +31,12 @@ Remove the owner environment variable before ordinary validation/build. Owner ou
 
 ## Storage
 
-Assessment A technically remains feasible after rights approval. Public assets currently132576276 bytes; staged originals203320048 bytes; observed final preparation artifact351049643 bytes (~334.79 MiB). Existing Git loose objects152.34 MiB plus pack156.13 KiB; projected raw asset growth is at most193.90 MiB for selected unique originals, plus derived thumbnails. No LFS/migration introduced. Git history already exists; loose-object numbers are a local measurement, not a compressed-clone forecast. Update artifact measurement at the final approved build.
+Assessment A technically remains feasible after rights approval. Public assets currently132576276 bytes; staged originals203320048 bytes; observed final preparation artifact349898147 bytes (~333.69 MiB). Existing Git loose objects152.34 MiB plus pack156.13 KiB; projected raw asset growth is at most193.90 MiB for selected unique originals, plus derived thumbnails. No LFS/migration introduced. Git history already exists; loose-object numbers are a local measurement, not a compressed-clone forecast. Update artifact measurement at the final approved build.
 
 [GitHub file limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) blocks files above100 MiB; [Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) and [upload-pages-artifact](https://github.com/actions/upload-pages-artifact) document the1GB site/artifact ceiling. Current prepared output is below these limits. Continued growth warrants reassessment.
 
 Ruling: public-repository rights boundary prevents unapproved binaries being committed merely because the PR is Draft. Page generation and local staging complete technical preparation; promotion needs a separately reviewed asset/rights manifest. No merge or deploy in this task.
 
 Split RAR downloads share one ASCII basename and preserve .part1.rar/.part2.rar suffixes. The record title covers the logical part set; every original filename remains unchanged in metadata. Existing maintenance covers 12 legacy routes (5 engineering articles /7 packages).
+
+Thumbnail selection checks every active download within a record before using generic fallback. The local staging receipt records actual source download IDs; candidate image URIs remain stable per record. Promote the selected thumbnail map/fallback together with approved metadata/assets.
