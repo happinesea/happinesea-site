@@ -7847,5 +7847,6 @@
       "headings": 51
     }
   ],
-  "canonical_hash_basis": "utf8_lf_text"
+  "canonical_hash_basis": "utf8_lf_text",
+  "publication_build_commit": "386c2b932ce2f989649f4c4420afae58e9f08f83"
 }

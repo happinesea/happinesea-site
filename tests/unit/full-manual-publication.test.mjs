@@ -36,7 +36,7 @@ for (const product of inventory.products) {
       );
       assert.match(content, /status: manufacturer_review/);
       assert.match(content, /content: noindex, nofollow/);
-      assert.match(content, /tableOfContents:\n  maxHeadingLevel: 4/);
+      assert.match(content, /tableOfContents:\n {2}maxHeadingLevel: 4/);
     }
     assert.equal(
       (text.match(/<ManualFigure\s/g) ?? []).length,
