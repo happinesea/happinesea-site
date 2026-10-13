@@ -25,6 +25,92 @@ const route = (path) =>
 const publicationBase =
   process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
 
+test('latest full manuals have complete local figures, tables, videos and resolvable links', async () => {
+  const inventory = JSON.parse(
+    await readFile(
+      new URL('../docs/rc8x-rc8p-publication-inventory.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  for (const product of inventory.products) {
+    let figures = 0,
+      tables = 0,
+      videos = 0;
+    for (const page of product.pages) {
+      const html = await route(`${page.route.slice(1)}index.html`);
+      if (page.route === '/manuals/rc8x/chapter-01/') {
+        const text = headingText(html);
+        for (const value of [
+          'L*W*H',
+          '121*163*209mm',
+          '92*52*14.5mm',
+          '35*24*13.5mm',
+          '250mA±10mA@8.4V',
+          '3.7V*2=7.4V',
+        ])
+          assert(
+            text.includes(value),
+            `Missing literal specification: ${value}`,
+          );
+        assert.doesNotMatch(html, /href="mailto:10mA@8\.4V"/);
+      }
+      if (page.route === '/manuals/rc8x/chapter-02/')
+        for (const value of ['L*1', 'L*4', '3.7V*2S=7.4V', 'HA3.0*12mm'])
+          assert(
+            headingText(html).includes(value),
+            `Missing literal instruction: ${value}`,
+          );
+      figures += [...html.matchAll(/data-source-figure="([^"]+)"/g)].length;
+      tables += (html.match(/<table\b/g) ?? []).length;
+      videos += (html.match(/youtube-nocookie\.com\/embed\//g) ?? []).length;
+      assert.doesNotMatch(
+        html,
+        /href="https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//,
+      );
+      for (const anchor of page.legacy_anchors)
+        assert(
+          html.includes(`id="${anchor.id}"`),
+          `${page.route}#${anchor.id}`,
+        );
+      const toc =
+        html.match(/<starlight-toc[^>]*>([\s\S]*?)<\/starlight-toc>/)?.[1] ??
+        '';
+      for (const section of product.sections.filter(
+        (section) =>
+          section.route === page.route &&
+          section.section.split('.').length === 4,
+      ))
+        assert(
+          headingText(toc).includes(section.section),
+          `${page.route}: missing deep TOC section ${section.section}`,
+        );
+      for (const [, value] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
+        const url = new URL(
+          value.replaceAll('&amp;', '&'),
+          `https://local.test${publicationBase}${page.route}`,
+        );
+        if (url.origin !== 'https://local.test') continue;
+        let path = decodeURIComponent(
+          url.pathname.slice(publicationBase.length),
+        ).replace(/^\//, '');
+        if (path.endsWith('/')) path += 'index.html';
+        await access(new URL(`../dist/${path}`, import.meta.url));
+        if (url.hash && path.endsWith('.html')) {
+          const target = await route(path);
+          const id = decodeURIComponent(url.hash.slice(1));
+          assert(
+            target.includes(`id="${id}"`),
+            `${page.route}: broken ${value}`,
+          );
+        }
+      }
+    }
+    assert.equal(figures, product.figure_placements);
+    assert.equal(tables, product.tables);
+    assert.equal(videos, product.videos.length);
+  }
+});
+
 test('RC6GS Full and Quick expose identical reviewed operating values, not receiver revisions', async () => {
   const pages = await Promise.all([
     route('manuals/rc6gs-v3/index.html'),
@@ -647,7 +733,9 @@ for (const product of [
       assert.doesNotMatch(html, />標準モード</);
       assert.doesNotMatch(html, />長距離モード</);
     }
-    assert.doesNotMatch(html, new RegExp(`/manuals/${product.slug}/`));
+    if (product.slug === 'rc8p')
+      assert.ok(html.includes(`href="${publicationBase}/manuals/rc8p/"`));
+    else assert.doesNotMatch(html, new RegExp(`/manuals/${product.slug}/`));
     assert.doesNotMatch(html, />情報源</);
     assert.doesNotMatch(html, /メーカー確認中/);
     assert.doesNotMatch(html, /公式公開情報を基に作成しています/);
@@ -676,7 +764,7 @@ test('manuals category provides a public entry point without review language', a
 
   assert.match(category, /data-manual-index/);
   assert.ok(category.includes(`href="${publicationBase}/manuals/rc8x/"`));
-  assert.match(category, /現在は概要、第1章、第2章を掲載しています。/);
+  assert.match(category, /日本語完全版の取扱説明書を掲載しています。/);
   for (const html of [category, manual, chapterOne, chapterTwo]) {
     assert.doesNotMatch(
       html,
@@ -866,10 +954,10 @@ test('RC8X manual chapters place official figures and videos in relevant section
     'manuals/rc8x/chapter-02/index.html',
   ]) {
     const html = await route(path);
-    assert.match(html, /data-manual-section=/);
+    assert.match(html, /data-source-figure=/);
     assert.match(html, /data-manual-figure(?:=|\s|>)/);
     assert.ok(
-      html.includes(`${publicationBase}/assets/radiolink/rc8x/manual/`),
+      html.includes(`${publicationBase}/assets/radiolink/rc8x/full-manual/`),
     );
     assert.match(html, /data-manual-video(?:=|\s|>)/);
     assert.match(html, /youtube-nocookie\.com\/embed\//);

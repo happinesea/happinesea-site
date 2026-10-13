@@ -1,0 +1,629 @@
+---
+title: 第1章 RC8P 送信機とR8FG受信機
+description: 第1章 RC8P 送信機とR8FG受信機の操作方法と設定
+product: rc8p
+slug: manuals/rc8p/chapter-01
+status: manufacturer_review
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import ManualVideo from '../../../../components/manuals/ManualVideo.astro';
+
+<span id="section-1.1"></span>
+
+## 1.1 安全上の注意
+
+1. 雨天の屋外で操作したり、水たまりの中を走行したり、視界が制限される場所で使用したりしないでください。水や雪などの水分がシステムのいずれかの部品に入ると、誤動作や操縦不能が発生するおそれがあります。
+
+2. 人や道路の近くでは操作しないでください。
+
+3. 本製品は玩具ではなく、14歳未満のお子様には適していません。大人は製品をお子様の手の届かない場所に保管し、お子様がいる場所で操作するときは十分注意してください。
+
+4. 使用時は地域の法令および規則を厳守してください。
+
+5. 送信機と受信機の電源を入れる前に、送信機のスロットルトリガーがニュートラル位置にあることを必ず確認してください。電源を切る前に、エンジンが停止していること、またはモーターが停止していることを必ず確認してください。
+
+6. 先に受信機と制御機器の電源を切り、その後で送信機の電源を切ってください。逆の順序で操作すると、操縦不能や事故の原因になります。
+
+7. 長期間使用しない場合は、必ずバッテリーを取り外してください。長期間装着したまま、または過放電したバッテリーは液漏れや腐食が起こりやすく、送信機の基板や金属接点を損傷し、短絡や部品故障などの安全上の危険を生じるおそれがあります。
+
+8. 注記: RC8PのType-Cポートの入力電圧は5 Vです。Type-CポートでRC8Pを充電または給電する場合、入力電圧は5 Vを超えないようにしてください。超えると基板が損傷します。
+
+<span id="section-1.2"></span>
+
+## 1.2 RC8Pの概要
+
+<span id="section-1.2.1"></span>
+
+### 1.2.1 仕様
+
+| 項目                 | 仕様                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| 送信機寸法           | 124.32 × 147.39 mm（4.89 × 5.8 in）                                                  |
+| 重量                 | 193 g（6.81 oz）                                                                     |
+| バッテリーケース     | 18 × 65 mm、18650バッテリー1本を装着済み                                             |
+| アンテナ             | 内蔵アンテナ                                                                         |
+| チャンネル           | 完全比例8チャンネル。8チャンネルすべてのスイッチをカスタマイズ可能                   |
+| 周波数               | 2.4 GHz ISM帯（2400 MHz～2483.5 MHz）                                                |
+| スペクトラム拡散     | FHSS、67チャンネル疑似ランダム周波数ホッピング                                       |
+| OS / GUI             | FreeRTOS + LVGL GUI                                                                  |
+| 音声通知             | カスタマイズ可能な音声通知                                                           |
+| 応答遅延             | 3 ms、4 ms、14 msから選択                                                            |
+| チャンネル分解能     | 4096、通常ジッター0.25 µs                                                            |
+| 変調方式             | GFSK                                                                                 |
+| チャンネル帯域幅     | 400 kHz                                                                              |
+| チャンネル間隔       | 1200 kHz                                                                             |
+| 送信出力             | &lt;100 mW（20 dBm）                                                                 |
+| 隣接チャンネル除去比 | >36 dBm                                                                              |
+| 伝送速度             | 38 kbps                                                                              |
+| 受信感度             | -104 dBm                                                                             |
+| PWM出力範囲          | 875～2125                                                                            |
+| フレーム周期         | 15 ms / フレーム                                                                     |
+| 動作電圧             | 3.4～4.2 V                                                                           |
+| 動作電流             | 230 mA（±15 mA）@4.2 V DC                                                            |
+| Type-Cポート         | 入力5 V、入力電流500 mA。PCまたはモバイルバッテリーから充電可能                      |
+| 操作距離             | 600 m（1968.5 ft。最大値、障害物および干渉のない場所での試験値）                     |
+| 対応モデル           | 車（クローラー、ドラッグレーシングカー、戦車、キャタピラーを含む）、ボート、ロボット |
+| 信号                 | PWM、SBUS、PPM                                                                       |
+| トレーナー信号       | PPM                                                                                  |
+| トレーナー機能       | 無線および有線トレーナーモードに対応                                                 |
+| 低電圧アラーム       | 送信機、受信機、モデルバッテリー、RSSIの低電圧/低値アラームをカスタマイズ可能        |
+| 保存モデル数         | 30                                                                                   |
+| Sub ID数             | 16                                                                                   |
+| 画面                 | 2.4インチ、16色、320 × 240ピクセル                                                   |
+| 対応受信機           | R8FG、R16F、R16SM、R12F、R8FGH、R8EF、R8FM、R8SM、R8XM、R7FG、R6FG、R6F、R4FGM       |
+| 動作温度             | -30～85 °C                                                                           |
+
+RC8PはPhoenixなどの従来型シミュレーターに加え、シミュレーター機能を内蔵しています。Type-CケーブルでPCに接続することで、外付けドングルなしにTRYP FPV、AeroFly、Uncrashed、Liftoff、FPV LOGIC、VelocidroneなどのオープンソースシミュレーターをmacOSおよびWindowsで使用できます。
+
+#### R8FG受信機の仕様
+
+| 項目             | 仕様                                                                                          |
+| ---------------- | --------------------------------------------------------------------------------------------- |
+| 寸法             | 35 × 24 × 13.5 mm（1.38 × 0.94 × 0.53 in）                                                    |
+| アンテナ長       | 205 mm（8.07 in）                                                                             |
+| 重量             | 10.5 g（0.37 oz）                                                                             |
+| チャンネル       | 8チャンネル                                                                                   |
+| 信号             | SBUS + PWM                                                                                    |
+| 動作電圧         | 3～12 V                                                                                       |
+| 動作電流         | 35 mA（5 V）                                                                                  |
+| 周波数帯         | 2.4 GHz ISM帯（2400 MHz～2483.5 MHz）                                                         |
+| スペクトラム拡散 | FHSS、67チャンネル疑似ランダム周波数ホッピング                                                |
+| 分解能           | 4096、1段階あたり0.25 µs                                                                      |
+| テレメトリー     | モデルバッテリー電圧、RSSI、受信機電圧のリアルタイムテレメトリーを内蔵                        |
+| ジャイロ         | 内蔵ジャイロ、感度を調整可能                                                                  |
+| 防滴性能         | IPX4                                                                                          |
+| 対応モデル       | 車（クローラー、戦車、キャタピラーを含む）、ボート、ロボット                                  |
+| 応答遅延         | R8FG V2.1、または製造日2023年4月26日以降のR8FGでは3 ms、4 ms、14 msを選択可能                 |
+| 操作距離         | 600 m                                                                                         |
+| 対応送信機       | RC8X、RC8P、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS、RC4GS、T16D、T12D、T12S、T8FB、T8S |
+
+<span id="section-1.2.2"></span>
+
+### 1.2.2 同梱品
+
+RC8P送信機 ×1、R8FG受信機 ×1、18650バッテリー ×1、モデル電圧テレメトリーケーブル ×1、ストラップ ×1、Type-Cケーブル ×1、2.0 mm六角レンチ ×1、マニュアル ×1、梱包箱 ×1。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-009.webp"
+  width={1280}
+  height={1280}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I08"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-010.webp"
+  width={1280}
+  height={1280}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I01"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-011.webp"
+  width={1000}
+  height={1000}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I02"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-012.webp"
+  width={600}
+  height={600}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I03"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-013.webp"
+  width={1000}
+  height={1000}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I06"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-014.webp"
+  width={1280}
+  height={1280}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I04"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-015.webp"
+  width={1000}
+  height={1000}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I07"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-016.webp"
+  width={941}
+  height={1312}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I09"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-017.webp"
+  width={1280}
+  height={1278}
+  alt="RC8P 1.2.2"
+  caption="RC8P 1.2.2"
+  figureId="RC8P-P006-I05"
+/>
+
+RC8Pには複数のケースカラーがありますが、機能は同じです。本マニュアルでは白色のRC8Pを例に使用しています。
+
+<span id="section-1.2.3"></span>
+
+### 1.2.3 RC8Pの概要
+
+製品図の各部名称は次のとおりです。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-018.webp"
+  width={4231}
+  height={1928}
+  alt="RC8P 1.2.3"
+  caption="RC8P 1.2.3"
+  figureId="RC8P-P007-I02"
+/>
+
+| 図中の名称                        | 日本語の名称・用途                                                                                               |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Scroll key                        | スクロールキー。スクロールして選択し、押して確定します。                                                         |
+| Return/Exit button                | 戻る/終了ボタン                                                                                                  |
+| PS2 push switch / PS1 push switch | PS2 / PS1プッシュスイッチ                                                                                        |
+| Power button                      | 電源ボタン。長押しでRC8Pの電源をオン/オフし、短く押すと「MONITOR」を表示します。                                 |
+| Lanyard hole                      | ストラップ取り付け穴                                                                                             |
+| Battery                           | バッテリー                                                                                                       |
+| 2.4" High-brightness color screen | 2.4インチ高輝度カラー画面                                                                                        |
+| Steering wheel                    | ステアリングホイール                                                                                             |
+| DL1/PS3 code switch/push switch   | DL1/PS3コードスイッチ/プッシュスイッチ                                                                           |
+| VR knob switch                    | VRノブスイッチ                                                                                                   |
+| Throttle trigger                  | スロットルトリガー                                                                                               |
+| SWA / SWB (3 position switch)     | SWA / SWB（3ポジションスイッチ）                                                                                 |
+| Hex screw                         | 六角ねじ                                                                                                         |
+| Speaker                           | スピーカー                                                                                                       |
+| Type-C port                       | Type-Cポート。ファームウェア更新、データコピー、シミュレーター、トレーナー、RC8Pへの給電および充電に使用します。 |
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-019.webp"
+  width={4231}
+  height={1991}
+  alt="RC8P 1.2.3"
+  caption="RC8P 1.2.3"
+  figureId="RC8P-P007-I01"
+/>
+
+<span id="section-1.2.4"></span>
+
+### 1.2.4 RC8Pの電源
+
+RC8Pの動作電圧は3.4～4.2 Vで、18650バッテリーが付属します。バッテリーを装着して送信機の電源を入れます。Type-CケーブルでPCまたはモバイルバッテリーに接続して充電できます。Type-Cポートの入力は5 Vなので、充電または一時的な給電に5 Vを超える電圧を使用しないでください。
+
+Type-Cケーブルを接続すると、電源ボタンの赤色ランプは充電中、青色ランプは充電完了を示します。バッテリーを装着せずに接続した場合、電源ボタンは赤と青で交互に点滅します（青は長く、赤は短く点滅します）。バッテリーカバーを矢印方向へ平らにスライドして放すと、カバーが開きます。18650バッテリーは、突起のあるプラス端子を外側に向けて装着し、カバーを押し下げて矢印方向へスライドして閉じます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-020.webp"
+  width={1625}
+  height={1090}
+  alt="RC8P 1.2.4"
+  caption="RC8P 1.2.4"
+  figureId="RC8P-P008-I01"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-021.webp"
+  width={1630}
+  height={1083}
+  alt="RC8P 1.2.4"
+  caption="RC8P 1.2.4"
+  figureId="RC8P-P008-I02"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-022.webp"
+  width={143}
+  height={143}
+  alt="RC8P 1.2.4"
+  caption="RC8P 1.2.4"
+  figureId="RC8P-P008-I03"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-023.webp"
+  width={1598}
+  height={1104}
+  alt="RC8P 1.2.4"
+  caption="RC8P 1.2.4"
+  figureId="RC8P-P008-I04"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-024.webp"
+  width={1632}
+  height={1095}
+  alt="RC8P 1.2.4"
+  caption="RC8P 1.2.4"
+  figureId="RC8P-P008-I05"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-025.webp"
+  width={143}
+  height={143}
+  alt="RC8P 1.2.4"
+  caption="RC8P 1.2.4"
+  figureId="RC8P-P008-I07"
+/>
+
+<span id="section-1.2.5"></span>
+
+### 1.2.5 送信機の基本操作
+
+1. RC8Pへ給電します。18650バッテリーが1本付属しています。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-026.webp"
+  width={3364}
+  height={2005}
+  alt="RC8P 1.2.5"
+  caption="RC8P 1.2.5"
+  figureId="RC8P-P008-I06"
+/>
+
+2. 電源ボタンを長押ししてRC8Pの電源を入れます。設定メニューで電源ボタンを短く押すと「MONITOR」を表示し、もう一度押すと設定メニューに戻ります。
+
+3. スクロールキーを短く押すとメニューに入ります。上下にスクロールしてカーソルを移動するか、機能の設定値を変更し、スクロールキーを押して確定します。
+
+4. 終了ボタンを押すと戻る/終了します。ホーム画面で終了ボタンを1回押すと「MONITOR」を表示します。
+
+<span id="section-1.2.6"></span>
+
+### 1.2.6 RC8Pの電源を入れる
+
+電源ボタンを長押ししてRC8Pの電源を入れます。スクロールキーを短く押すと設定メニューに入ります。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-027.webp"
+  width={1216}
+  height={1778}
+  alt="RC8P 1.2.6"
+  caption="RC8P 1.2.6"
+  figureId="RC8P-P009-I01"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-028.webp"
+  width={2632}
+  height={1778}
+  alt="RC8P 1.2.6"
+  caption="RC8P 1.2.6"
+  figureId="RC8P-P009-I02"
+/>
+
+ホーム画面の図には、モデル名、Trainer/Condition/Sub IDの交互表示、受信信号強度、送信機電圧、スロットル、ステアリング、タイマー、受信機電圧、RSSI、モデル電圧、スロットルトリム、ステアリングトリムが示されています。設定メニューの図には「SYSTEM SETTING」「MODEL」「REVERSE」「AUX CH」「SW AUDIO」「END POINTS」が表示されています。
+
+<span id="section-1.2.7"></span>
+
+### 1.2.7 言語選択
+
+スクロールキーを短く押してメニューに入れます。表示言語が中国語の場合、スクロールキーを上下に操作して「系统设置」を選択します。スクロールキーを短く押してシステム設定画面に入り、「语言:中文」から英語へ変更します。UI文字列は原本表示を保持します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-029.webp"
+  width={479}
+  height={348}
+  alt="RC8P 1.2.7"
+  caption="RC8P 1.2.7"
+  figureId="RC8P-P009-I03"
+/>
+
+<span id="section-1.2.8"></span>
+
+### 1.2.8 送信機低電圧アラーム
+
+送信機バッテリーの低電圧アラームは初期値3.6 Vです。バッテリー電圧が3.6 V未満になると、RC8Pは音声で低電圧を通知します。電源オフ電圧の初期値は3.3 Vで、3.3 Vに達するとRC8Pは自動的に電源を切ります。アラーム値は必要に応じて設定できます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-030.webp"
+  width={478}
+  height={350}
+  alt="RC8P 1.2.8"
+  caption="RC8P 1.2.8"
+  figureId="RC8P-P009-I04"
+/>
+
+設定方法: スクロールキーを短く押し、システム設定（SYSTEM SETTING）→バッテリーアラーム（BATTERY ALARM）を選択します。
+
+<span id="section-1.3"></span>
+
+## 1.3 R8FGの概要
+
+<span id="section-1.3.1"></span>
+
+### 1.3.1 R8FGの特長
+
+RC8P送信機には、2.4 GHz・8チャンネル、ジャイロ内蔵、高電圧サーボ対応のR8FG受信機が付属します。FHSSおよび67チャンネル疑似ランダム周波数ホッピングにより、優れた耐干渉性能を備えます。R8FGはPWMおよびSBUS信号を出力できます。
+
+::: note
+注記: R8FGのジャイロ機能は初期状態で無効です（緑色ランプ）。有効にする方法は「1.3.5 R8FGのジャイロ機能」を参照してください。
+:::
+
+受信機図の`Signal / VCC / GND`は信号/電源/グランドを示します。CH1はステアリング、CH2はスロットル、CH3～CH7は補助、CH8は補助/SBUSです。`Reserved (No function)`は予約部（機能なし）、`Binding Button (ID SET)`はバインドボタン、`Telemetry Port of Model Battery Voltage`はモデルバッテリー電圧のテレメトリーポートです。別図の`Antenna`はアンテナ、`Coaxial Cable`は同軸ケーブルを示します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-031.webp"
+  width={2474}
+  height={1243}
+  alt="RC8P 1.3.1"
+  caption="RC8P 1.3.1"
+  figureId="RC8P-P010-I01"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-032.webp"
+  width={2475}
+  height={652}
+  alt="RC8P 1.3.1"
+  caption="RC8P 1.3.1"
+  figureId="RC8P-P010-I02"
+/>
+
+操作前にRSSIテストを実施し、受信機アンテナを点検してください。R8FGの灰色線は同軸ケーブル、先端の長さ約4～5 cmの透明線はアンテナです。透明線が破損すると操作距離に直接影響するため、速やかに交換してください。
+
+<span id="section-1.3.2"></span>
+
+### 1.3.2 バインド
+
+RC8Pと付属のR8FGは初期状態でバインド済みです。RC8PとR8FGの電源を入れ、画面上部に電波塔が表示されればバインド済みです。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-033.webp"
+  width={479}
+  height={436}
+  alt="RC8P 1.3.2"
+  caption="RC8P 1.3.2"
+  figureId="RC8P-P010-I03"
+/>
+
+新しい受信機を使用する場合は、受信機ごとのIDコードを送信機に登録するため、使用前にバインドします。バインド後、IDコードは送信機に保存されるため、再バインドは不要です。
+
+1. 送信機と受信機を約60 cmまで近づけます。近すぎると信号が遮断され、バインド失敗や信号喪失の原因になることがあります。
+
+2. 送信機と受信機の電源を入れます。R8FGのLEDがゆっくり点滅します。
+
+3. 受信機側面の黒いバインドボタン（ID SET）を1秒を超えて押して放します。LEDが速く点滅し、バインド中であることを示します。
+
+4. LEDが点滅を止めて点灯状態になるとバインド完了です。送信機LCD上部に電波塔が表示されます。失敗した場合はLEDがゆっくり点滅し続けるため、手順を繰り返してください。
+
+R8FG以外のR7FG、R6FGなどを使用する場合は、RF設定メニューで「FHSS V1」を選択してからバインドします。通信プロトコルを誤って選ぶとバインドに失敗します。詳細は「2.7 RF設定」を参照してください。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-034.webp"
+  width={478}
+  height={387}
+  alt="RC8P 1.3.2"
+  caption="RC8P 1.3.2"
+  figureId="RC8P-P011-I06"
+/>
+
+<ManualVideo youtubeId="uDIiyr9tmYA" title="R8FGのバインド解説動画" />
+
+<span id="section-1.3.3"></span>
+
+### 1.3.3 受信機の接続
+
+受信機用ケーブルには白/赤/黒線、または黄/赤/茶線があります。明るい色の線が信号線、暗い色の線がグランド線、中央の線が5 V電源です。受信機ラベルの表示に合わせて接続してください。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-035.webp"
+  width={700}
+  height={300}
+  alt="RC8P 1.3.3"
+  caption="RC8P 1.3.3"
+  figureId="RC8P-P011-I01"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-036.webp"
+  width={700}
+  height={300}
+  alt="RC8P 1.3.3"
+  caption="RC8P 1.3.3"
+  figureId="RC8P-P011-I02"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8x/full-manual/image-057.webp"
+  width={118}
+  height={29}
+  alt="RC8P 1.3.3"
+  caption="RC8P 1.3.3"
+  figureId="RC8P-P011-I04"
+/>
+
+RadioLink受信機の各チャンネルには逆接保護があります。ただし、受信機を別バッテリーで給電する場合に極性を逆にしても受信機は損傷しませんが、サーボを接続しているとサーボが損傷します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-038.webp"
+  width={475}
+  height={206}
+  alt="RC8P 1.3.3"
+  caption="RC8P 1.3.3"
+  figureId="RC8P-P011-I05"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-039.webp"
+  width={3467}
+  height={1865}
+  alt="RC8P 1.3.3"
+  caption="RC8P 1.3.3"
+  figureId="RC8P-P011-I03"
+/>
+
+R8FGはモデルバッテリー電圧、受信機電圧、RSSIをテレメトリーできます。ケーブルをESC、バッテリー、R8FGのTELEMETRYポートへ接続します。最大8S（33.6 V）のモデルバッテリー電圧に対応します。TELEMETRYポートはモデル電圧の測定専用で、受信機への給電には使用できません。逆接すると異常な電圧テレメトリーになるため、プラス/マイナスを図どおりに接続してください。
+
+接続図のとおり、バッテリー用ケーブルのオス側をESCへ、メス側をバッテリーへ接続し、JSTコネクターの線をR8FGのTELEMETRY（+ / -）へ接続します。追加モジュールは不要です。
+
+接続後、RC8P画面にモデルバッテリー電圧が表示されます。アラーム設定（ALARM）メニューで「EXT VOLT」を設定します。モデルバッテリー電圧がEXT VOLT未満になると送信機が警告します。値はバッテリーの種類と機器の要件に応じて設定できます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-040.webp"
+  width={479}
+  height={426}
+  alt="RC8P 1.3.3"
+  caption="RC8P 1.3.3"
+  figureId="RC8P-P012-I01"
+/>
+
+<span id="section-1.3.4"></span>
+
+### 1.3.4 R8FGの動作モード
+
+R8FGには通常PWM、PWM+SBUS、PWM+ジャイロ、PWM+SBUS+ジャイロの4動作モードがあります。
+
+| 項目      | PWM | PWM+SBUS | PWM+ジャイロ | PWM+SBUS+ジャイロ | 用途         |
+| --------- | --- | -------- | ------------ | ----------------- | ------------ |
+| LED表示色 | 緑  | 青       | 赤           | 青/紫             | —            |
+| CH1       | PWM | PWM      | PWM          | PWM               | ステアリング |
+| CH2       | PWM | PWM      | PWM          | PWM               | スロットル   |
+| CH3       | PWM | PWM      | PWM          | PWM               | 補助         |
+| CH4       | PWM | PWM      | PWM          | PWM               | 補助         |
+| CH5       | PWM | PWM      | PWM          | PWM               | 補助         |
+| CH6       | PWM | PWM      | PWM          | PWM               | 補助         |
+| CH7       | PWM | PWM      | PWM          | PWM               | 補助         |
+| CH8       | PWM | S.BUS    | PWM          | S.BUS             | 補助         |
+
+TELEMETRYポート（+ / -）は2S～8Sモデルバッテリー電圧の測定専用です。受信機への給電には使用できません。
+
+- ジャイロのオン/オフ: 2秒以内にバインドボタンを3回短く押します。
+
+- ジャイロ位相: 2秒以内にバインドボタンを2回短く押します。
+
+- SBUSのオン/オフ: バインドボタンを1回短く押します。
+
+<ManualVideo youtubeId="uDIiyr9tmYA" title="動作モードの解説動画" />
+
+<span id="section-1.3.5"></span>
+
+### 1.3.5 R8FGのジャイロ機能
+
+R8FGはソフトウェアフィルターとPIDアルゴリズムを備えた内蔵ジャイロにより、車体の安定性を補正します。初期状態ではジャイロはオフです。電源投入時は自己チェックのためR8FGを動かさないでください。赤色LEDが消灯している場合はジャイロが無効です。バインドボタンを1秒未満の間隔で3回押すと赤色LEDが3回点滅し、ジャイロが有効になります。
+
+ジャイロ有効時、送信機を操作していなくてもサーボが補正のために振動することがあります。振動が続く場合は、サーボをSBUSチャンネルからPWMチャンネルへ接続し直すか、ジャイロ（GYRO）メニューで感度を下げてください。
+
+ジャイロ補正が不要な場合はジャイロをオフにできます。通常のサーボはPWM入力のみに対応するため、受信機を動かしていないのにサーボが振動し続ける場合は、接続チャンネルとジャイロ感度を確認してください。
+
+車を右または左へ向け、ジャイロの方向を確認します。車を右へ向けたときホイールが左へ動き、左へ向けたとき右へ動けば正方向です。逆の場合はバインドボタンを2回押し、赤色LEDが2回点滅することを確認します。
+
+ジャイロ有効後、ジャイロメニューで感度を調整できます。Encoder（スクロールキー）、VRノブ、DL1を割り当てられます。100%が最大感度、0%が感度ゼロです。詳細は「2.15 ジャイロ」を参照してください。
+
+<span id="section-1.3.6"></span>
+
+### 1.3.6 受信機アンテナの取り付け
+
+アンテナを誤って取り付けると信号品質が低下します。
+
+1. 2本のアンテナを重ねないでください。互いに90°の角度にします。
+
+<ManualFigure
+  src="/assets/radiolink/rc8x/full-manual/image-065.webp"
+  width={606}
+  height={332}
+  alt="RC8P 1.3.6"
+  caption="RC8P 1.3.6"
+  figureId="RC8P-P013-I01"
+/>
+
+2. 金属物の近くに置かないでください。導体板の反射で信号が大きく劣化します。
+
+3. 地面と平行にせず、地面に対して垂直に配置してください。
+
+4. 大型モデルではモデルの両側にアンテナを配置してください。
+
+5. 金属導体およびカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+
+6. モーター、ESCなどの干渉源から離してください。
+
+7. 取り付け時はスポンジやフォームを使用して振動を防いでください。
+
+8. 受信機は精密電子部品を含むため、強い振動と高温を避けてください。
+
+9. R/C用の防振フォームまたはゴム布で受信機を保護してください。受信機を密閉したビニール袋に入れると、操縦不能の原因となり得る湿気やほこりを防げます。
+
+受信機アンテナの取り付けの詳細: https://www.radiolink.com/receiver_antenna_installation
+
+<span id="section-1.3.7"></span>
+
+### 1.3.7 RSSIテスト
+
+車やボートの操作距離が短い場合は、次の手順でRSSI値を確認します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-042.webp"
+  width={479}
+  height={535}
+  alt="RC8P 1.3.7"
+  caption="RC8P 1.3.7"
+  figureId="RC8P-P014-I02"
+/>
+
+1. 送信機と受信機の電源を同時に入れます。接続できない場合は再バインドします。接続されると送信機画面に電波塔が表示され、ホーム画面にRSSI値が表示されます。RSSI値は送信機と受信機の距離に応じて変化します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-043.webp"
+  width={2276}
+  height={1378}
+  alt="RC8P 1.3.7"
+  caption="RC8P 1.3.7"
+  figureId="RC8P-P014-I01"
+/>
+
+2. 送信機と受信機のアンテナを平行にし、約60 cm離して両方をまっすぐにします。RSSIが0～-30 dBmの範囲なら正常です。0に近いほど信号が強いことを示します。
+
+異常な信号強度の場合は、送信機と受信機のアンテナが損傷していないか確認してください。損傷していれば交換します。損傷がない場合は受信機を交換して送信機または受信機の故障を確認してください。それでも解決しない場合は `after_service@radiolink.com.cn` へ連絡してください。

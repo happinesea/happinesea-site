@@ -17,3 +17,14 @@
 .header {
   border-bottom-color: var(--site-border);
 }
+
+.sl-markdown-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.sl-markdown-content img {
+  max-width: 100%;
+  height: auto;
+}

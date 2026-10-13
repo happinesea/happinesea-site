@@ -1,0 +1,54 @@
+{
+  "source_repository": "happinesea/RadiolinkManual",
+  "source_commit": "8b523d6e0fb0c2b5a5beec80906f43e6cd87c634",
+  "site_base_commit": "b837b83271a53dbb32c316513c47c5086bf627f6",
+  "publication_build_commit": "47ba52ef3c3ccc53ce7469e1cf46f09aeb165be6",
+  "publication_status": "manufacturer_review",
+  "verdict": "RC8X_RC8P_WEB_MANUAL_PUBLICATION_READY_WITH_OPEN_ITEMS",
+  "translation_content_change": 0,
+  "unit": {
+    "passed": 134,
+    "failed": 0
+  },
+  "built_output": {
+    "per_mode_passed": 32,
+    "failed": 0
+  },
+  "browser": {
+    "new_staging": 22,
+    "new_production": 22,
+    "existing_manual": 28,
+    "failed": 0,
+    "console_errors": 0,
+    "horizontal_overflow": 0,
+    "third_party_player_response": "fixture"
+  },
+  "assets": {
+    "files": 299,
+    "placements": 331,
+    "missing": 0,
+    "broken": 0,
+    "external_radiolink_runtime_images": 0,
+    "shared_files": 9
+  },
+  "videos": {
+    "source_occurrences": 14,
+    "blocks": 14,
+    "unique_ids": 10,
+    "raw_link_presentations": 0,
+    "invalid_id_syntax": 0,
+    "live_playback": "NOT_CHECKED"
+  },
+  "legacy_anchors": 137,
+  "independent_review": {
+    "P0": 0,
+    "P1": 0
+  },
+  "merge": false,
+  "deploy": false,
+  "links": {
+    "occurrences": 1860,
+    "unique_local_targets": 732,
+    "broken": 0
+  }
+}

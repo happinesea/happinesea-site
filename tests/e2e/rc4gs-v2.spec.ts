@@ -108,9 +108,11 @@ test('all legacy manual mappings remain accessible with the new canonical destin
   baseURL,
 }) => {
   for (const mapping of manual.mappings) {
-    const response = await request.get(
-      new URL('.' + mapping.legacy_path, baseURL).href,
-    );
+    // Astro preview serves directory routes at their configured trailing-slash URL.
+    const legacyPath = mapping.legacy_path.endsWith('.html')
+      ? mapping.legacy_path
+      : `${mapping.legacy_path.replace(/\/$/, '')}/`;
+    const response = await request.get(new URL('.' + legacyPath, baseURL).href);
     expect(response.status(), mapping.legacy_path).toBe(200);
     const canonical = 'https://happinesea.com' + mapping.target.split('#')[0];
     expect(await response.text(), mapping.legacy_path).toContain(

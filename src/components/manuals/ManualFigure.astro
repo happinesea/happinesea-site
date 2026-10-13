@@ -5,13 +5,23 @@ interface Props {
   src: string;
   alt: string;
   caption: string;
+  width?: number;
+  height?: number;
+  figureId?: string;
 }
 
-const { src, alt, caption } = Astro.props;
+const { src, alt, caption, width, height, figureId } = Astro.props;
 ---
 
-<figure data-manual-figure class="manual-figure">
-  <img src={withBase(src)} alt={alt} loading="lazy" decoding="async" />
+<figure data-manual-figure data-source-figure={figureId} class="manual-figure">
+  <img
+    src={withBase(src)}
+    alt={alt}
+    width={width}
+    height={height}
+    loading="lazy"
+    decoding="async"
+  />
   <figcaption>{caption}</figcaption>
 </figure>
 

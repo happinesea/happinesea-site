@@ -1,0 +1,522 @@
+---
+title: 第2章 RC8P 基本機能
+description: 第2章 RC8P 基本機能の操作方法と設定
+product: rc8p
+slug: manuals/rc8p/chapter-02
+status: manufacturer_review
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import ManualVideo from '../../../../components/manuals/ManualVideo.astro';
+
+本章ではメニュー内の全機能を説明します。
+
+<span id="section-2.1"></span>
+
+## 2.1 システム設定（SYSTEM SETTING）
+
+システム機能を設定します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-044.webp"
+  width={479}
+  height={636}
+  alt="RC8P 2.1"
+  caption="RC8P 2.1"
+  figureId="RC8P-P015-I01"
+/>
+
+| UI                                     | 内容                                                                                                                                                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 言語（LANGUAGE）                       | メニュー言語。中国語と英語に対応します。                                                                                                                                                              |
+| 音量（VOLUME）                         | 音量。0%（ミュート）、25%、50%、75%、100%から設定します。100%が最大音量です。                                                                                                                         |
+| バッテリーアラーム（BATTERY ALARM）    | 送信機バッテリーの警告電圧。初期値は3.6 Vです。                                                                                                                                                       |
+| 電源オフ電圧（PWR OFF）                | 送信機の電源オフ電圧。到達すると自動的に電源を切ります。初期値は3.3 Vです。                                                                                                                           |
+| 電圧補正（VOLT ADJ）                   | 表示電圧と実測電圧に差がある場合の補正。範囲は-5 V～+5 Vです。                                                                                                                                        |
+| 画面輝度（BRIGHTNESS）                 | 画面輝度。10%～100%です。                                                                                                                                                                             |
+| 無操作アラーム（IDLE ALARM）           | 操作がないときの警告時間。最大1時間です。                                                                                                                                                             |
+| バックライト点灯時間（BACKLIGHT TIME） | 無操作時にバックライトを点灯する時間。NULLは消灯しない設定で、最大1時間です。                                                                                                                         |
+| 自動電源オフ（AUTO SHUTDOWN）          | 無操作時に自動電源オフする時間。NULLは自動電源オフなしで、最大1時間です。                                                                                                                             |
+| 起動アニメーション（BOOT ANIMATION）   | 起動アニメーションのオン/オフ。                                                                                                                                                                       |
+| システム設定リセット（SYSTEM RESET）   | 言語以外のシステム設定を初期化します。画面の「SYSTEM RESET」を選び、「Are you sure to reset system?」で「Yes」を選択します。                                                                          |
+| 工場出荷設定リセット（FACTORY RESET）  | 言語以外の送信機設定と全モデルデータを初期化します。現在のモデルだけを消去する場合はモデル管理（MODEL）メニューでリセットしてください。消去したモデルデータは復元できないため、十分注意してください。 |
+
+バッテリーアラームは設定電圧を下回ると鳴ります。無操作アラームは、長時間の待機によるバッテリーの過放電を防ぐために使用できます。「Factory Reset」を選択すると確認画面が表示されます。「Yes」を選択して約1分待つと全設定が初期化されます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-045.webp"
+  width={478}
+  height={590}
+  alt="RC8P 2.1"
+  caption="RC8P 2.1"
+  figureId="RC8P-P016-I01"
+/>
+
+<span id="section-2.2"></span>
+
+## 2.2 モデル管理（MODEL）
+
+モデル管理用メニューです。RC8Pは最大30組のモデルデータを保存できます。`COPY/PASTE` はモデルデータを複製します。元モデルの名前もコピーされるため、新しいモデル名を変更して区別してください。`RENAME` は選択モデルの名前を変更します。`RESET` は現在のモデルの全設定を初期値に戻します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-046.webp"
+  width={476}
+  height={474}
+  alt="RC8P 2.2"
+  caption="RC8P 2.2"
+  figureId="RC8P-P016-I02"
+/>
+
+使用するモデルはいつでも選択できます。たとえばモデル1をモデル2へ複製する場合、モデル1を選択して「COPY」を実行し、モデル2を選択して「PASTE」を実行します。
+
+<span id="section-2.3"></span>
+
+## 2.3 リバース（REVERSE）
+
+各チャンネルの出力方向を反転します。モデルの動作方向が要求方向と逆の場合、変更するチャンネルへカーソルを移動し、スクロールキーを短く押して方向を切り替えます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-047.webp"
+  width={478}
+  height={630}
+  alt="RC8P 2.3"
+  caption="RC8P 2.3"
+  figureId="RC8P-P017-I04"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-048.webp"
+  width={476}
+  height={636}
+  alt="RC8P 2.3"
+  caption="RC8P 2.3"
+  figureId="RC8P-P017-I01"
+/>
+
+<span id="section-2.4"></span>
+
+## 2.4 AUXチャンネル（AUX CH）
+
+CH1～CH8を操作する入力を割り当てます。`ST`（ステアリングホイール）、`TH`（スロットルトリガー）、`SWA`、`SWB`、`VR`、`PS1`、`PS2`、`PS3`、`DL1`を選択できます。`NULL`は未割り当てです。
+
+<span id="section-2.5"></span>
+
+## 2.5 スイッチ音声（SW AUDIO）
+
+`SWA`、`SWB`、`PS1`、`PS2`、`PS3`、`TH`に音声通知を割り当てます。各スイッチ位置で異なる音声を通知できます。音声ファイルの作成方法は第4章を参照してください。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-049.webp"
+  width={478}
+  height={413}
+  alt="RC8P 2.5"
+  caption="RC8P 2.5"
+  figureId="RC8P-P017-I02"
+/>
+
+<span id="section-2.6"></span>
+
+## 2.6 エンドポイント調整（END POINTS）
+
+各チャンネルのサーボ出力移動量を左右それぞれ調整します。構造や操作量に合わせて移動量を小さくするなど、モデルを調整するために使用します。各チャンネルの設定範囲は0～120です。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-050.webp"
+  width={478}
+  height={632}
+  alt="RC8P 2.6"
+  caption="RC8P 2.6"
+  figureId="RC8P-P017-I03"
+/>
+
+<span id="section-2.7"></span>
+
+## 2.7 RF設定（RF SETTING）
+
+受信機プロトコルとサーボ速度を設定します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-051.webp"
+  width={478}
+  height={536}
+  alt="RC8P 2.7"
+  caption="RC8P 2.7"
+  figureId="RC8P-P018-I02"
+/>
+
+- `PROTOCOL`: `FHSS V1` または `FHSS V2`。
+
+- `SERVO SPEED`: FHSS V2選択時の14 ms、4 ms、3 ms。14 msはアナログサーボ、4 msと3 msはデジタルサーボ用です。使用受信機がデジタルサーボに対応するか確認してください。
+
+| プロトコル | PWM出力分解能 | サーボ出力                    | 対応受信機                                                                                   |
+| ---------- | ------------: | ----------------------------- | -------------------------------------------------------------------------------------------- |
+| FHSS V1    |          2048 | 14 ms                         | RC8Pに対応する全受信機                                                                       |
+| FHSS V2    |          4096 | 3 ms / 4 ms / 14 msを選択可能 | R16F、R16SM、R12F、R8FGH、R8FG V2.1以降、R4FGM V2.1以降、製造日2023年4月26日以降のR8FG/R4FGM |
+
+FHSS V2はFHSS V1よりPWM出力分解能が高く、より精密な操作ができます。プロトコル切替後は送信機と受信機を再バインドしてください。
+
+<span id="section-2.8"></span>
+
+## 2.8 サブID（Sub ID）
+
+複数受信機をRC8Pにバインドできます。Sub IDをオフにすると複数モデルを同時に操作できます。オンにすると選択したSub IDのモデルだけを操作し、他のモデルは待機します。Sub IDは16組です。
+
+各IDは1台の受信機に対応します。最初にSub IDを設定し、バインド済みの送信機と全受信機を同時に電源オンにして使用します。たとえばトラックと車をバインドし、車をトラックの荷台まで走らせた後、トラックの受信機IDへ切り替えて車を目的地へ運べます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-052.webp"
+  width={480}
+  height={391}
+  alt="RC8P 2.8"
+  caption="RC8P 2.8"
+  figureId="RC8P-P018-I01"
+/>
+
+設定: Sub IDスイッチをオンにし、モデルに対応する番号を選択してバインドし、パラメーターを設定します。オンにすると上部タスクバーにID番号が表示されます。Trainer、Condition、Sub IDを同時に有効にした場合は表示が交互に切り替わります。
+
+<span id="section-2.9"></span>
+
+## 2.9 アラーム設定（ALARM）
+
+RSSI、受信機電圧、外部バッテリー電圧のアラームを設定します。`RX VOL ALARM` の初期値は3.6 V、`EXT VOL ALARM` の初期値は6.6 V、`RSSI` の初期値は-80 dBmです。値は使用条件に応じて変更できます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-053.webp"
+  width={477}
+  height={424}
+  alt="RC8P 2.9"
+  caption="RC8P 2.9"
+  figureId="RC8P-P019-I01"
+/>
+
+それぞれの値が設定したアラーム値に達すると、送信機が警告します。RSSIのアラーム値は必要な操作距離に応じて設定できます。
+
+<span id="section-2.10"></span>
+
+## 2.10 トリム（TRIMS）
+
+機械的な誤差を補正し、各チャンネルのニュートラル位置を調整します。初期値は0、範囲は-100～100です。チャンネルを選択すると、DL1コードスイッチでそのチャンネルのトリムを調整できます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-054.webp"
+  width={477}
+  height={628}
+  alt="RC8P 2.10"
+  caption="RC8P 2.10"
+  figureId="RC8P-P019-I02"
+/>
+
+<span id="section-2.11"></span>
+
+## 2.11 フェイルセーフ（FAIL SAFE）
+
+送信機信号を受信できないときのサーボ位置を設定します。CH1（ステアリング）とCH2（スロットル）の初期値は0です。信号が失われるとスロットル出力を停止し、ステアリングサーボは最後の指令位置を保持します。スロットルを0以外に設定すると、信号喪失時も固定値を出力し続けるため、モデルが制御不能に前進または後退するおそれがあります。スロットルの値を変更するときは特に注意してください。設定範囲は-120～+120です。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-055.webp"
+  width={480}
+  height={635}
+  alt="RC8P 2.11"
+  caption="RC8P 2.11"
+  figureId="RC8P-P019-I03"
+/>
+
+<span id="section-2.12"></span>
+
+## 2.12 チャンネル速度（CH SPEED）
+
+特定チャンネルの出力速度を調整します。たとえばクレーンのブームをゆっくり動かせます。`SWITCH` はOFF/ONまたはSWA、SWB、PS1、PS2、PS3に割り当てられます。遅延時間は0～10秒です。0秒は遅延なし、10秒は最小から最大まで10秒かかります。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-056.webp"
+  width={478}
+  height={631}
+  alt="RC8P 2.12"
+  caption="RC8P 2.12"
+  figureId="RC8P-P019-I04"
+/>
+
+初期値は0秒です。OFF/ONでは機能を常時無効/有効にし、物理スイッチを割り当てるとそのスイッチで切り替えられます。
+
+<span id="section-2.13"></span>
+
+## 2.13 チャンネルホールド（CHANNEL HOLD）
+
+チャンネル出力を固定値にします。有効にするとスイッチ位置にかかわらず出力が固定位置へ移動します。クローラーのスロットル（CH2）を一定速度にするクルーズコントロールとして使用できます。`HOLD` の範囲は-100～+100です。`CH1-8` で固定するチャンネルを選び、右側のサーボバーで出力を確認します。`SWITCH STATUS` は有効/無効を示します。
+
+`SWITCH` はOFF/ONで常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。`HOLD` の正負はサーボの反対方向を示します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-057.webp"
+  width={479}
+  height={387}
+  alt="RC8P 2.13"
+  caption="RC8P 2.13"
+  figureId="RC8P-P020-I02"
+/>
+
+<span id="section-2.14"></span>
+
+## 2.14 コンディション（CONDITIONS）
+
+1モデルにつき3つの条件を設定できます。`COND 1/2/3` はSWAまたはSWBで切り替え、優先順位は3>2>1です。ジャイロ、エンドポイント調整、ブレーキカーブ、RF設定、ステアリングカーブ、スロットル速度、ABS、スロットルカーブを条件スイッチで切り替えられます。対象機能の画面でも有効にしないと条件スイッチは機能しません。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-058.webp"
+  width={476}
+  height={612}
+  alt="RC8P 2.14"
+  caption="RC8P 2.14"
+  figureId="RC8P-P020-I01"
+/>
+
+例としてSWAの上/中/下にCOND 1/2/3を割り当て、THROTTLE CURVEを有効にし、各位置で別のスロットルカーブを設定します。現在の条件番号は上部タスクバーに表示されます。
+
+原本の設定例では、`COND 1/2/3`に`SWA_UP/SWA_MID/SWA_DOWN`を割り当て、詳細設定内のスロットルカーブ画面へ進みます。SWAを上、中、下にしてそれぞれのカーブを設定し、SWAで切り替えます。Trainer、Condition、Sub IDがすべて有効な場合、上部タスクバーの表示は交互に切り替わります。
+
+<span id="section-2.15"></span>
+
+## 2.15 ジャイロ（GYRO）
+
+内蔵ジャイロの感度を調整します。受信機にジャイロが内蔵され、ジャイロ機能が有効であることを確認してください。`SOURCE` はEncoder（スクロールキー）、VRノブ、DL1から選択します。`RATE` は0%～100%で、100%が最大感度、0%はジャイロオフです。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-059.webp"
+  width={477}
+  height={467}
+  alt="RC8P 2.15"
+  caption="RC8P 2.15"
+  figureId="RC8P-P021-I02"
+/>
+
+本機能はFHSS V2受信機（R8FGH、R8FG V2.1以降、R4FGM V2.1以降、製造日2023年4月26日以降のR8FG/R4FGM）に対応します。FHSS V1受信機（R7FG、R6FGなど）ではGYROメニューは機能しません。その場合はEND POINTSでCH8の左右を120にし、AUX CHでCH8をVRまたはDL1へ割り当てて感度を調整します。
+
+<span id="section-2.16"></span>
+
+## 2.16 ステアリングカーブ（STEERING CURVE）
+
+ステアリングサーボの感度を変更し、直線または非直線の動作にします。`EXP` は-100～+100です。負の値ではニュートラル付近の感度が下がり、端部の感度が上がります。正の値では逆になります。`Rate` は実際の出力と元の値の比率で、-100～+100です。`SWITCH STATUS` は有効/無効を示します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-060.webp"
+  width={479}
+  height={621}
+  alt="RC8P 2.16"
+  caption="RC8P 2.16"
+  figureId="RC8P-P021-I01"
+/>
+
+`SWITCH` はOFF/ONで常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。EXPは負の値の絶対値が大きいほどニュートラル付近の感度が低く、正の値が大きいほど高くなります。Rateが50なら実際のステアリング出力は50%となり、Rateの正負はサーボの反対方向を示します。
+
+<span id="section-2.17"></span>
+
+## 2.17 スロットルカーブ（THROTTLE CURVE）
+
+スロットルの感度を変更します。`TYPE` は`EXP`と`CRV`です。EXPは曲線的に増加する制御、CRVは複数点の曲線です。EXPの範囲は-100～+100、Rateは0～100です。CRVでは最小点から最大点まで5点を設定し、各点の出力値を指定します。`SWITCH STATUS` は有効/無効を示します。
+
+`SWITCH` はOFF/ONで常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。EXPが負の場合、その絶対値が大きいほど低スロットル域の感度が下がり、高スロットル域の感度が上がります。正の場合、値が大きいほど低スロットル域の感度が上がり、高スロットル域の感度が下がります。Rateは実際の出力と元の値の比率で、50ならスロットル出力は50%です。CRVで点1を0、点2を25に設定した場合、それぞれの点の移動量は0、25になります。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-061.webp"
+  width={480}
+  height={630}
+  alt="RC8P 2.17"
+  caption="RC8P 2.17"
+  figureId="RC8P-P022-I01"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-062.webp"
+  width={477}
+  height={631}
+  alt="RC8P 2.17"
+  caption="RC8P 2.17"
+  figureId="RC8P-P022-I02"
+/>
+
+<span id="section-2.18"></span>
+
+## 2.18 ブレーキカーブ（BRAKE CURVE）
+
+ブレーキの感度を変更します。`EXP` は-100～+100で、負の値では初期制動の感度が下がり終端の感度が上がり、正の値では逆になります。`Rate` は0～100です。スイッチと状態表示はSTEERING CURVEと同じです。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-063.webp"
+  width={478}
+  height={631}
+  alt="RC8P 2.18"
+  caption="RC8P 2.18"
+  figureId="RC8P-P022-I03"
+/>
+
+`SWITCH` はOFF/ONで常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。EXPの負の値の絶対値が大きいほど初期制動の感度が低くなり、正の値が大きいほど初期制動の感度が高くなります。Rateは実際のブレーキ出力と元のサーボ値の比率で、50なら実際の出力は50%です。`SWITCH STATUS` は現在の有効/無効を表示します。
+
+<span id="section-2.19"></span>
+
+## 2.19 ABS機能（A.B.S.）
+
+減速時にタイヤが完全にロックするのを防ぐパルスブレーキです。`THR RETURN` はブレーキ戻し量で、0はABSなし、50はトリガー操作量の50%を戻し、100はニュートラルへ戻します。Brake CurveのRateの影響を受けます。`DELAY` はABS開始遅延（0で即時、50で約0.7秒、100で約1.4秒）、`CYCLE` はパルス間隔、`ON` はABS開始トリガー位置、`RATE` はブレーキ適用時間とサイクルの比率です。正の値では適用時間が長く解除時間が短くなり、負の値では逆になります。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-064.webp"
+  width={479}
+  height={631}
+  alt="RC8P 2.19"
+  caption="RC8P 2.19"
+  figureId="RC8P-P023-I01"
+/>
+
+タイヤがロックすると方向を十分に制御できなくなるため、ABSはその時間を短くし、車体の向きを滑らかに変えるために使用します。`SWITCH` はOFF/ONで常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。CYCLEの値が大きいほどパルス間隔が長く、小さいほど短くなります。RATEの例は+3で適用時間が長く、-3で解除時間が長くなります。`SWITCH STATUS` は現在の有効/無効を表示します。
+
+<span id="section-2.20"></span>
+
+## 2.20 プログラマブルミキシング（PROGRAMMABLE MIX）
+
+4組のミキシングを設定し、1つのスイッチで2チャンネルを同時に操作できます。`MASTER` は制御側、`SLAVE` は制御される側です。`LEFT RATE` と`RIGHT RATE` はスレーブの左右端点比率で、-100～100です。正の値はマスターと同方向、負の値は逆方向です。`MIX STATUS` は有効/無効を示します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-065.webp"
+  width={477}
+  height={628}
+  alt="RC8P 2.20"
+  caption="RC8P 2.20"
+  figureId="RC8P-P023-I02"
+/>
+
+`MIX SELECT` で4組を個別に設定し、それぞれに制御スイッチを割り当てられます。`SWITCH` はOFF/ONで常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。LEFT RATEが50ならスレーブの左端点はマスターの50%、RIGHT RATEが50なら右端点は50%になります。
+
+<span id="section-2.21"></span>
+
+## 2.21 トレーナー（TRAINER）
+
+Type-Cポート経由のPPM信号入力/出力を有効にします。モードはHead track、Trainer、Studentです。Head trackはヘッドトラッキング入力、Trainerはコーチ送信機、Studentは生徒送信機として使用します。`POWER` は無線トレーナーケーブル使用時に生徒送信機受信機へ給電する設定で、ONでは電源ボタンが青く点灯します。`CAPTURE` は200 msごとのCH1 PPM入力値を表示し、無効な入力は`--`です。`MIN/MID/MAX` でPPMの最小、ニュートラル、最大パルス幅を調整します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-066.webp"
+  width={478}
+  height={628}
+  alt="RC8P 2.21"
+  caption="RC8P 2.21"
+  figureId="RC8P-P024-I02"
+/>
+
+`SWITCH` はOFF/ONでPPMを常時無効/有効にするか、SWA、SWB、PS1、PS2、PS3に割り当てられます。有効にすると現在のモードが上部タスクバーに表示され、Trainer、Condition、Sub IDがすべて有効な場合は交互に表示されます。Trainerでは生徒送信機と交代でモデルを操作します。`POWER` はRC8Pをコーチ送信機としてRadioLink無線トレーナーケーブルと組み合わせる場合に設定し、ONでType-Cから生徒送信機の受信機へ給電、OFFで給電を停止します。トレーナー機能を使用するときはPOWERをONにします。
+
+TrainerのCAPTUREでは、生徒送信機のCH1入力を確認し、CH1の操作部を動かしてMIN/MID/MAXを調整することで対応させます。Head trackでは、PPM信号が正しく出力されているかの確認とMIDの設定基準に使用します。接続機器とPPMのニュートラル、最大、最小値が一致しない場合、MIN/MID/MAXで入力および出力のパルス幅を調整します。
+
+<span id="section-2.22"></span>
+
+## 2.22 校正（CALIBRATION）
+
+ホイール、トリガー、VRノブに機械的なずれが生じた場合に補正します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-067.webp"
+  width={478}
+  height={626}
+  alt="RC8P 2.22"
+  caption="RC8P 2.22"
+  figureId="RC8P-P024-I01"
+/>
+
+1. スクロールキーを短く押して校正を開始します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-068.webp"
+  width={478}
+  height={633}
+  alt="RC8P 2.22"
+  caption="RC8P 2.22"
+  figureId="RC8P-P025-I01"
+/>
+
+2. ホイールとスロットルトリガーをニュートラル、VRノブを中央にしてスクロールキーを押します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-069.webp"
+  width={3930}
+  height={1270}
+  alt="RC8P 2.22"
+  caption="RC8P 2.22"
+  figureId="RC8P-P025-I04"
+/>
+
+3. ホイールを時計回りの端、反時計回りの端の順に回し、自動的にニュートラルへ戻します。トリガーをフルスロットル、ブレーキ位置へ動かし、自動的にニュートラルへ戻します。ロータリーノブも時計回りの端、反時計回りの端の順に回します。完了後、スクロールキーを押して確定します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-070.webp"
+  width={478}
+  height={634}
+  alt="RC8P 2.22"
+  caption="RC8P 2.22"
+  figureId="RC8P-P025-I02"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-071.webp"
+  width={478}
+  height={621}
+  alt="RC8P 2.22"
+  caption="RC8P 2.22"
+  figureId="RC8P-P025-I03"
+/>
+
+4. 校正成功後、スクロールキーを短く押して終了します。
+
+<span id="section-2.23"></span>
+
+## 2.23 タイマー（TIMER）
+
+タイマーを設定します。`TYPE` はUP（0から加算）またはDOWN（設定値から減算）です。`TIME` はアラーム時刻で、UPでは設定値到達時、DOWNでは0到達時に通知します。`ON/OFF` にSWA、SWB、PS1、PS2、PS3、THRを割り当てられます。THRを使う場合は`THR HOLD`を設定し、スロットル値がその値を超えると開始、下回ると停止します。`RESET` にはリセット用スイッチを割り当てられます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-072.webp"
+  width={478}
+  height={503}
+  alt="RC8P 2.23"
+  caption="RC8P 2.23"
+  figureId="RC8P-P026-I01"
+/>
+
+ON/OFFはOFF/ONで常時無効/有効にすることもできます。RESETはOFF/ONでリセットを無効/有効にするか、SWA、SWB、PS1、PS2、PS3を割り当てられます。
+
+<span id="section-2.24"></span>
+
+## 2.24 センサー音声通知（SENSOR BROADCAST）
+
+RSSI、RX Vol、EXT Vol、BAT Volのテレメトリー音声通知を設定します。通知スイッチはSWA、SWB、PS1、PS2、PS3です。OFFで通知しません。通知をONにすると現在のテレメトリー情報を音声で通知します。例としてSWA_UPに設定しSWAを上へ倒すと、RSSI、受信機電圧、外部電圧、送信機電圧を順に通知します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-073.webp"
+  width={478}
+  height={481}
+  alt="RC8P 2.24"
+  caption="RC8P 2.24"
+  figureId="RC8P-P026-I02"
+/>
+
+画面の白い点が左側ならオフ、右側ならオンです。
+
+<span id="section-2.25"></span>
+
+## 2.25 スイッチ設定（SWITCH SETTING）
+
+PS1、PS2、PS3をモーメンタリー、ラッチ、3ポジションとして設定します。モーメンタリーは押している間だけ最大/最小、離すと反対側へ戻ります。ラッチは押すたびに2位置を切り替えます。3ポジションは押すたびに最大/最小、0、反対側へ切り替えます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-074.webp"
+  width={479}
+  height={331}
+  alt="RC8P 2.25"
+  caption="RC8P 2.25"
+  figureId="RC8P-P026-I03"
+/>

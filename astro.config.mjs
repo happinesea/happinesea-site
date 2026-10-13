@@ -52,12 +52,25 @@ export default defineConfig({
         {
           label: 'RC8X',
           items: [
-            { label: 'はじめに', slug: 'manuals/rc8x' },
+            { label: 'はじめに・目次', slug: 'manuals/rc8x' },
             {
               label: '第1章 リモートコントロールシステム',
               slug: 'manuals/rc8x/chapter-01',
             },
             { label: '第2章 基本機能', slug: 'manuals/rc8x/chapter-02' },
+            { label: 'サポート・ご購入のお礼', slug: 'manuals/rc8x/back-matter' },
+          ],
+        },
+        {
+          label: 'RC8P',
+          collapsed: true,
+          items: [
+            { label: 'はじめに・目次', slug: 'manuals/rc8p' },
+            { label: '第1章 送信機とR8FG受信機', slug: 'manuals/rc8p/chapter-01' },
+            { label: '第2章 基本機能', slug: 'manuals/rc8p/chapter-02' },
+            { label: '第3章 ファームウェア更新', slug: 'manuals/rc8p/chapter-03' },
+            { label: '第4章 カスタムスイッチ音声', slug: 'manuals/rc8p/chapter-04' },
+            { label: 'サポート・ご購入のお礼', slug: 'manuals/rc8p/back-matter' },
           ],
         },
       ],
