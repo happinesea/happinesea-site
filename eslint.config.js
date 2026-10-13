@@ -6,6 +6,7 @@ export default [
   {
     ignores: [
       '.astro/**',
+      '.superpowers/**',
       'dist/**',
       'node_modules/**',
       'playwright-report/**',

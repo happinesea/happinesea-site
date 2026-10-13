@@ -1,15 +1,26 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import CategoryFilter from '../../components/CategoryFilter.astro';
+import DrawingTagFilter from '../../components/DrawingTagFilter.astro';
 import DrawingLibraryCard from '../../components/DrawingLibraryCard.astro';
 import snapshot from '../../data/legacy-compatibility.json';
-import downloads from '../../data/static-downloads.json';
-import { publicDrawings } from '../../lib/drawing-library-index.mjs';
+import {
+  publicationRecords,
+  recordImage,
+} from '../../lib/drawing-publication.mjs';
 import { withBase } from '../../lib/urls';
 const library = snapshot.pages.find((page) => page.type === 'drawing_library');
 if (!library) throw new Error('existing drawing library metadata missing');
-const drawings = publicDrawings(snapshot, downloads);
+const records = publicationRecords();
+const drawings = records.map((r) => ({
+  title: r.title_ja,
+  category: r.category,
+  tags: r.tags,
+  description: r.summary_ja,
+  href: r.route,
+  hero: { src: recordImage(r), alt: r.title_ja, width: 640, height: 400 },
+}));
+const tags = [...new Set(records.flatMap((r) => r.tags))].sort();
 ---
 
 <BaseLayout
@@ -40,11 +51,7 @@ const drawings = publicDrawings(snapshot, downloads);
     class="mx-auto max-w-[var(--site-max-width)] px-5 py-10 lg:px-8 lg:py-14"
     aria-label="設計図一覧"
   >
-    <CategoryFilter
-      total={drawings.length}
-      categories={['機体の設計図', 'エンジン・製作資料']}
-      label="設計図カテゴリで絞り込む"
-    />
+    <DrawingTagFilter total={drawings.length} tags={tags} />
     <div
       class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
       data-product-catalogue

@@ -32,12 +32,9 @@ test('drawing public index has only six existing cards and working filters/links
   expect(await page.locator('link[rel=canonical]').getAttribute('href')).toBe(
     'https://happinesea.com/drawinglibrary',
   );
-  await page
-    .getByRole('button', { name: 'エンジン・製作資料', exact: true })
-    .click();
-  await expect(page.locator('[data-drawing-card]:visible')).toHaveCount(0);
-  await expect(page.locator('[data-result-count]')).toHaveText('0件を表示');
-  await page.getByRole('button', { name: '機体の設計図', exact: true }).click();
+  await page.getByRole('button', { name: '戦闘機', exact: true }).click();
+  await expect(page.locator('[data-drawing-card]:visible')).toHaveCount(3);
+  await page.getByRole('button', { name: 'すべて', exact: true }).click();
   await expect(page.locator('[data-drawing-card]:visible')).toHaveCount(6);
   for (const image of await page.locator('[data-drawing-card] img').all()) {
     await image.scrollIntoViewIfNeeded();
@@ -102,10 +99,10 @@ test('local owner review displays every case and combines category/status filter
     page.locator('[data-panel="files"] [data-panel-count]'),
   ).toHaveText('77件を表示 / 77件');
   await expect(page.locator('.summary-card').first()).toContainText(
-    '31 records · 69 files · 権利確認待ち 69',
+    '38 records · 69 files · 権利確認待ち 69',
   );
   await expect(page.locator('.summary-card').last()).toContainText(
-    '2 records · 8 files · 権利確認待ち 8',
+    '5 records · 8 files · 権利確認待ち 8',
   );
   await mkdir(screenshotDir, { recursive: true });
   const shot = async (name: string) =>
@@ -158,7 +155,7 @@ test('local owner review displays every case and combines category/status filter
   await page.locator('[data-filter="status"]').selectOption('grouping');
   await expect(
     page.locator('[data-panel="files"] [data-file-card]:visible'),
-  ).toHaveCount(77);
+  ).toHaveCount(8);
   await page.locator('[data-filter="status"]').selectOption('rights');
   await expect(
     page.locator('[data-panel="files"] [data-file-card]:visible'),
@@ -171,6 +168,11 @@ test('local owner review displays every case and combines category/status filter
   await expect(
     page.locator('[data-panel="files"] [data-file-card]:visible'),
   ).toHaveCount(30);
+  await page.locator('[data-reset]').click();
+  await page.locator('[data-filter="tag"]').selectOption('スチレンボード');
+  await expect(
+    page.locator('[data-panel="files"] [data-file-card]:visible'),
+  ).toHaveCount(6);
   await page.locator('[data-reset]').click();
   const images = await page
     .locator('[data-panel="files"] img')
@@ -214,16 +216,19 @@ test('existing drawing detail has tags under title and a download button', async
     if (message.type() === 'error') errors.push(message.text());
   });
   await page.goto('./drawinglibrary/');
-  await page.locator('[data-drawing-card] h2 a').first().click();
-  const tags = page.locator('[data-drawing-tags]');
-  await expect(tags).toContainText('RCスケール機');
-  await expect(tags.locator('a')).toHaveCount(2);
+  await page
+    .locator('[data-drawing-card] h2 a')
+    .filter({ hasText: 'F-14 Tomcat' })
+    .click();
+  const tags = page.locator('div[data-drawing-tags]');
+  await expect(tags).toContainText('軍用機');
+  await expect(tags).toContainText('戦闘機');
   expect(await tags.evaluate((el) => el.previousElementSibling?.tagName)).toBe(
     'H1',
   );
   await expect(page.locator('[data-legacy-body] a[download]')).toHaveCount(0);
   const button = page.locator('[data-drawing-download]');
-  await expect(button).toHaveText('設計図をダウンロード');
+  await expect(button).toHaveText('設計図・資料をダウンロード');
   await expect(button).toHaveAttribute('href', /\/downloads\/drawings\//);
   await expect(button).toBeVisible();
   expect(

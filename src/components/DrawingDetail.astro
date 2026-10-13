@@ -1,0 +1,69 @@
+---
+import { withBase } from '../lib/urls';
+import { recordDownloads, recordImage } from '../lib/drawing-publication.mjs';
+const { record } = Astro.props;
+const downloads = recordDownloads(record);
+---
+
+<div data-drawing-detail data-drawing-id={record.id}>
+  <img
+    class="my-8 h-auto max-h-[28rem] w-full object-contain"
+    src={withBase(recordImage(record))}
+    alt={`${record.title_ja}の資料画像`}
+    width="640"
+    height="400"
+  />
+  <h1 class="mt-8 text-3xl font-bold leading-tight text-slate-950">
+    {record.title_ja}
+  </h1>
+  <div class="my-5 flex flex-wrap gap-2" data-drawing-tags>
+    {record.tags.map((tag: string) => (
+      <span class="rounded-full bg-teal-50 px-3 py-1 text-sm text-teal-800">
+        {tag}
+      </span>
+    ))}
+  </div>
+  {record.title_original !== record.title_ja && (
+    <p class="text-sm text-slate-500">原題：{record.title_original}</p>
+  )}
+  <p class="my-6 leading-8 text-slate-600">{record.summary_ja}</p>
+  {downloads.some((file) => file.source_path !== null) && (
+    <p class="my-5 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+      公開準備用プレビューです。再配布権の承認待ちで、production公開対象には含まれません。
+    </p>
+  )}
+  {downloads.map((file) => (
+    <section
+      class="my-6 rounded-xl border border-slate-200 p-5"
+      data-download-info
+    >
+      <h2 class="font-bold [overflow-wrap:anywhere]">
+        {file.filename_original}
+      </h2>
+      <p class="my-3 text-sm text-slate-600">
+        {file.extension.slice(1).toUpperCase()} ·{' '}
+        {(file.bytes / 1048576).toFixed(2)} MiB
+      </p>
+      <details class="mb-5 text-sm text-slate-500">
+        <summary>ファイルのSHA-256</summary>
+        <code class="block [overflow-wrap:anywhere]">{file.sha256}</code>
+      </details>
+      <a
+        class="inline-flex rounded-lg bg-teal-700 px-5 py-3 font-bold text-white hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
+        href={withBase(file.target_url)}
+        download
+        data-drawing-download
+        data-drawing-id={record.id}
+        data-drawing-tags={record.tags.join('|')}
+        data-download-sha256={file.sha256}
+      >
+        設計図・資料をダウンロード
+      </a>
+    </section>
+  ))}
+  {record.grouping_status === 'REVIEW_REQUIRED' && (
+    <p class="my-5 text-sm text-slate-600">
+      分割・入れ子の資料を含みます。各ファイルを保持し、関係が未確認の資料は統合していません。
+    </p>
+  )}
+</div>

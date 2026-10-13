@@ -16,8 +16,12 @@ const publicationMode = process.env.PUBLICATION_MODE || 'staging';
 if (!['staging', 'production'].includes(publicationMode))
   throw new TypeError(`Unknown PUBLICATION_MODE: ${publicationMode}`);
 const production = publicationMode === 'production';
+const ownerDrawings = process.env.DRAWING_OWNER_PREVIEW === '1';
+if (ownerDrawings && (production || process.env.CI)) throw new Error('Owner drawing preview is local-only');
+const buildOutput = new URL(ownerDrawings ? './.superpowers/drawing-publication-build/' : './dist/', import.meta.url);
 
 export default defineConfig({
+  outDir: fileURLToPath(buildOutput),
   markdown: {
     processor: satteri({ hastPlugins: [semanticHeadingPunctuation(existingJapaneseManuals.manuals)] }),
   },
@@ -29,7 +33,7 @@ export default defineConfig({
     sitemap({
       // Aliases are finalized after Astro; the post-build gate verifies canonical targets.
       serialize: sitemapSerializer(
-        fileURLToPath(new URL('./dist/', import.meta.url)),
+        fileURLToPath(buildOutput),
         production ? 'https://happinesea.com/' : 'https://happinesea.github.io/happinesea-site/',
       ),
     }),
