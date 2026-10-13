@@ -24,11 +24,12 @@
     "third_party_player_response": "fixture"
   },
   "assets": {
-    "files": 308,
+    "files": 299,
     "placements": 331,
     "missing": 0,
     "broken": 0,
-    "external_radiolink_runtime_images": 0
+    "external_radiolink_runtime_images": 0,
+    "shared_files": 9
   },
   "videos": {
     "source_occurrences": 14,
@@ -47,7 +48,7 @@
   "deploy": false,
   "links": {
     "occurrences": 1860,
-    "unique_local_targets": 741,
+    "unique_local_targets": 732,
     "broken": 0
   }
 }

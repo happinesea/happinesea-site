@@ -21,10 +21,10 @@ Draft PRのレビュー対象です。メーカー承認、公開承認、検索
 
 ## Web publication
 
-| Product | Route          | Pages | Numbered sections | Body headings | Figure placements / saved files | Tables | Video blocks | Status                                 |
-| ------- | -------------- | ----- | ----------------- | ------------- | ------------------------------- | ------ | ------------ | -------------------------------------- |
-| RC8X    | /manuals/rc8x/ | 4     | 114               | 138           | 229 / 210                       | 7      | 12           | manufacturer_review / noindex,nofollow |
-| RC8P    | /manuals/rc8p/ | 6     | 43                | 51            | 102 / 98                        | 6      | 2            | manufacturer_review / noindex,nofollow |
+| Product | Route          | Pages | Numbered sections | Body headings | Figure placements / unique referenced files | Tables | Video blocks | Status                                 |
+| ------- | -------------- | ----- | ----------------- | ------------- | ------------------------------------------- | ------ | ------------ | -------------------------------------- |
+| RC8X    | /manuals/rc8x/ | 4     | 114               | 138           | 229 / 210                                   | 7      | 12           | manufacturer_review / noindex,nofollow |
+| RC8P    | /manuals/rc8p/ | 6     | 43                | 51            | 102 / 98                                    | 6      | 2            | manufacturer_review / noindex,nofollow |
 
 RC8Xはfront matter、Chapter I/II、back matterです。114 numbered sectionsを保持し、架空のChapter IIIはありません。RC8Pは入口、Chapter 1–4、support/Thanksです。RC8Pの43 numbered headingsに加え、ファームウェア/音声の手順と非番号見出しも収録しています。Body headingsは入口の目次などを含むH2–H4実測値です。
 
@@ -36,7 +36,7 @@ RC8Xはfront matter、Chapter I/II、back matterです。114 numbered sections�
 
 Translation content change = 0。技術値、UI literals、警告本文、適用条件と未解決の英語原本の矛盾を保持しています。HTMLコメント、mapping-only figure guide、原本の印刷ページ番号付き目次は利用者向け章立てに使わず、semantic目次とinline図に置き換えました。
 
-英語正本PDFの全331 image placementsを登録済みlayout mapのslot/section順に配置。upstreamの`english_manual_layout.raw_image`を使用し、SMask、白背景、原画像の回転/反転を保持。再描画・OCR・生成画像・ダウンサンプリングはありません。Lossless WebP、native dimensions、SHA-256を保存し、重複placementは同じlocal assetを再利用します。RuntimeのRadiolink画像URL依存は0です。
+英語正本PDFの全331 image placementsを登録済みlayout mapのslot/section順に配置。upstreamの`english_manual_layout.raw_image`を使用し、SMask、白背景、原画像の回転/反転を保持。再描画・OCR・生成画像・ダウンサンプリングはありません。Lossless WebP、native dimensions、SHA-256を保存し、重複placementは同じlocal assetを再利用します。RC8Pで同一byteだった9画像はRC8Xの保存assetを共有参照し、保存ファイルは全体299件（RC8X 210、RC8P新規89、RC8P参照先98）です。source figure IDs、出典PDF、寸法、配置を保持し、共有先のhash一致を検証します。RuntimeのRadiolink画像URL依存は0です。
 
 既存`ManualFigure`へ寸法とsource-figure identifierを追加し、`ManualVideo`をそのまま再利用。既存Starlight calloutにcanonicalの注意/警告ラベルと本文を保持。表は13件ともHTML table、画像化なし。tableのみ横スクロールを許容し、page overflowは0です。
 
@@ -77,8 +77,8 @@ RC8X: 12 references / 10 unique video IDs。RC8P: 2 references / 1 unique ID（R
 | New full-manual browser scenarios | PASS   | 22 staging + 22 production = 44; desktop/mobile, 10 manual routes, index and both product links    |
 | Existing manual regression        | PASS   | 28 desktop/mobile scenarios; 26 passed plus corrected preview directory-request test's 2 passed    |
 | Total scoped browser scenarios    | PASS   | 72                                                                                                 |
-| Local HTML references             | PASS   | 1860 reference occurrences / 741 unique local targets; all resolve, including fragments            |
-| Image assets                      | PASS   | 308 exact saved-file hashes, 331 rendered placements; all decode on both devices                   |
+| Local HTML references             | PASS   | 1860 reference occurrences / 732 unique local targets; all resolve, including fragments            |
+| Image assets                      | PASS   | 299 exact saved-file hashes, 331 rendered placements; all decode on both devices                   |
 | Videos                            | PASS   | 14 expected blocks, valid IDs, responsive 16:9, lazy iframe, no autoplay                           |
 | Legacy fragments                  | PASS   | 137 old RC8X anchors + new stable section anchors                                                  |
 | Missing / broken local assets     | PASS   | 0                                                                                                  |

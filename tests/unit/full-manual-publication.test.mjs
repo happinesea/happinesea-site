@@ -15,6 +15,14 @@ for (const product of inventory.products) {
   test(`${product.product}: complete canonical chapters, figures, tables and source hashes`, () => {
     assert.equal(inventory.publication_status, 'manufacturer_review');
     assert.equal(Object.keys(product.canonical_files).length, 5);
+    assert.equal(
+      new Set(
+        inventory.products.flatMap((item) =>
+          item.assets.map((asset) => asset.src),
+        ),
+      ).size,
+      299,
+    );
     assert.equal(product.pages.length, product.product === 'rc8x' ? 4 : 6);
     assert.equal(
       product.figure_placements,
@@ -54,7 +62,16 @@ for (const product of inventory.products) {
         asset.sha256,
       );
       assert(asset.width > 0 && asset.height > 0);
-      assert(asset.src.startsWith(`/assets/radiolink/${product.product}/`));
+      if (!asset.src.startsWith(`/assets/radiolink/${product.product}/`)) {
+        assert.equal(product.product, 'rc8p');
+        const shared = inventory.products[0].assets.find(
+          (candidate) => candidate.src === asset.src,
+        );
+        assert(shared, 'unregistered cross-product image');
+        assert.equal(asset.sha256, shared.sha256);
+        assert.equal(asset.width, shared.width);
+        assert.equal(asset.height, shared.height);
+      }
     }
     for (const section of product.sections)
       assert(text.includes(`id="${section.anchor}"`));

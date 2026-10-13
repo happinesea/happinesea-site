@@ -5693,7 +5693,9 @@
       "figure_placements": 229,
       "unique_assets": 210,
       "tables": 7,
-      "headings": 138
+      "headings": 138,
+      "saved_asset_files": 210,
+      "reused_asset_files": 0
     },
     {
       "product": "rc8p",
@@ -5714,7 +5716,7 @@
         {
           "route": "/manuals/rc8p/chapter-01/",
           "path": "src/content/docs/manuals/rc8p/chapter-01.mdx",
-          "sha256": "45d98f1e76a383e461262313700a39e82e7d6c425acf13a34cbd91add79217ac",
+          "sha256": "78e32ed4c2d45a640ec952c35c764ffd629bb3dc5fafe72d061ceecf341d513f",
           "tables": 4,
           "legacy_anchors": [],
           "figures": [
@@ -5869,7 +5871,7 @@
         {
           "route": "/manuals/rc8p/chapter-04/",
           "path": "src/content/docs/manuals/rc8p/chapter-04.mdx",
-          "sha256": "9878817f92e6409c1897707aee1d46c2271c3fb8073d921c8b9d772819b42115",
+          "sha256": "4e354a2ac7d5845a351e0f4090c8b22307b6173371baa99a507c81ac27034da7",
           "tables": 0,
           "legacy_anchors": [],
           "figures": [
@@ -5910,7 +5912,7 @@
         {
           "route": "/manuals/rc8p/",
           "path": "src/content/docs/manuals/rc8p/index.mdx",
-          "sha256": "80c18465b4af8e680873e2b746420e295e5d87f5d74e3af1cba559e82c6b6e07",
+          "sha256": "3f35554bcce033798a8d3b799cf55d0ae9685a116daa2f716ff80febd175c74b",
           "tables": 0,
           "legacy_anchors": [],
           "figures": [
@@ -5960,7 +5962,7 @@
           "xref": 10,
           "bbox": [494.4, 786.12, 512.52, 811.32],
           "transform": [18.12, 0, 0, 25.2, 494.4, 786.12],
-          "src": "/assets/radiolink/rc8p/full-manual/image-003.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-003.webp",
           "width": 166,
           "height": 230,
           "sha256": "198acccbfcaacd41213ff7bf5791e5d91ef7ab5bb92a359429a2da58ac5c629d",
@@ -5973,7 +5975,7 @@
           "xref": 8,
           "bbox": [462.72, 788.16, 483.72, 809.4],
           "transform": [21, 0, 0, 21.24, 462.72, 788.16],
-          "src": "/assets/radiolink/rc8p/full-manual/image-004.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-005.webp",
           "width": 136,
           "height": 137,
           "sha256": "734981922153d0fcc5974f3d5ff076fe897687d101b859451a56903635eb8ec0",
@@ -5986,7 +5988,7 @@
           "xref": 14,
           "bbox": [431.16, 788.52, 453.72, 806.28],
           "transform": [22.56, 0, 0, 17.76, 431.16, 788.52],
-          "src": "/assets/radiolink/rc8p/full-manual/image-005.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-006.webp",
           "width": 230,
           "height": 180,
           "sha256": "444e53c39065579ed47267e3be22dfe4cc85f11786acf1d0dbb3193442d9d961",
@@ -5999,7 +6001,7 @@
           "xref": 15,
           "bbox": [519.6, 789, 553.32, 809.04],
           "transform": [33.72, 0, 0, 20.04, 519.6, 789],
-          "src": "/assets/radiolink/rc8p/full-manual/image-006.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-004.webp",
           "width": 640,
           "height": 380,
           "sha256": "060f390d5f613f95a382c45d5bcd4a5c9a3475273bfa43fbd052f50c335ff995",
@@ -6012,7 +6014,7 @@
           "xref": 11,
           "bbox": [404.76, 789.72, 424.92, 805.68],
           "transform": [20.16, 0, 0, 15.96, 404.76, 789.72],
-          "src": "/assets/radiolink/rc8p/full-manual/image-007.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-008.webp",
           "width": 230,
           "height": 180,
           "sha256": "4b382279e193527351be4256b7d55ea58de3b06a4f5cf2cf19f2d47ade924a0f",
@@ -6025,7 +6027,7 @@
           "xref": 13,
           "bbox": [355.2, 791.4, 395.76, 806.04],
           "transform": [40.56, 0, 0, 14.64, 355.2, 791.4],
-          "src": "/assets/radiolink/rc8p/full-manual/image-008.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-007.webp",
           "width": 500,
           "height": 180,
           "sha256": "eb097872f87ca13f08ad816717c17fa4bf2a1e8f75390fea56d3f88bc50b2036",
@@ -6402,7 +6404,7 @@
           "xref": 290,
           "bbox": [289.68, 343.92, 325.08, 352.44],
           "transform": [35.4, 0, 0, 8.52, 289.68, 343.92],
-          "src": "/assets/radiolink/rc8p/full-manual/image-037.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-057.webp",
           "width": 118,
           "height": 29,
           "sha256": "98b6fe9bfb104ae549e9cadc73c2ccc677097f57f3cc88fc46dda89ca40d7d03",
@@ -6454,7 +6456,7 @@
           "xref": 307,
           "bbox": [379.56, 673.32, 557.28, 770.64],
           "transform": [177.72, 0, 0, 97.32, 379.56, 673.32],
-          "src": "/assets/radiolink/rc8p/full-manual/image-041.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-065.webp",
           "width": 606,
           "height": 332,
           "sha256": "3ce5a51ad10a9b9f352f636793496757f73c0e8bdd255a290efd0088370cc7f6",
@@ -7065,7 +7067,7 @@
           "xref": 422,
           "bbox": [208.56, 594.48, 386.04, 737.04],
           "transform": [177.48, 0, 0, 142.56, 208.56, 594.48],
-          "src": "/assets/radiolink/rc8p/full-manual/image-087.webp",
+          "src": "/assets/radiolink/rc8x/full-manual/image-204.webp",
           "width": 461,
           "height": 370,
           "sha256": "460538f9d645cdab0418c3d64d6eb45c4016e28f03db56e9c16fa4d53c27ed30",
@@ -7844,7 +7846,9 @@
       "figure_placements": 102,
       "unique_assets": 98,
       "tables": 6,
-      "headings": 51
+      "headings": 51,
+      "saved_asset_files": 89,
+      "reused_asset_files": 9
     }
   ],
   "canonical_hash_basis": "utf8_lf_text",
