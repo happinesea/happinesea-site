@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DrawingDetail from '../../components/DrawingDetail.astro';
+import { publicationRecords } from '../../lib/drawing-publication.mjs';
+import { withBase } from '../../lib/urls';
+export function getStaticPaths() {
+  return publicationRecords()
+    .filter((record) => !record.existing)
+    .map((record) => ({ params: { slug: record.slug }, props: { record } }));
+}
+const { record } = Astro.props;
+---
+
+<BaseLayout
+  title={record.title_ja}
+  description={record.summary_ja}
+  robots="noindex,nofollow"
+>
+  <article class="mx-auto max-w-4xl px-5 py-8 lg:px-8">
+    <Breadcrumbs
+      items={[
+        { label: 'ホーム', href: withBase('/') },
+        { label: '設計図ライブラリ', href: withBase('/drawinglibrary/') },
+        { label: record.title_ja },
+      ]}
+    />
+    <DrawingDetail record={record} />
+    <p class="my-8">
+      <a class="text-teal-800 underline" href={withBase('/drawinglibrary/')}>
+        設計図ライブラリへ戻る
+      </a>
+    </p>
+  </article>
+</BaseLayout>

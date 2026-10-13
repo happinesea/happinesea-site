@@ -1,0 +1,710 @@
+{
+  "additional_legacy_suite": {
+    "baseline_reproduction_tests_failed": 2,
+    "production_source_urls_changed": 0,
+    "reason": "Astro preview directory URL without trailing slash and intentionally BLOCKED_SAFETY_REVIEW download expectations",
+    "status": "BASELINE_FAILURE_REPRODUCED"
+  },
+  "baseline": "934dc99265771f595a94481ec8619379100d13a9",
+  "build_output": 35,
+  "checks": [
+    {
+      "id": "drawing-boeing-airliner-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/boeing-airliner-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-breeze2005-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/breeze2005-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-c-17",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-cessna-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/cessna-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-cessna182",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/cessna182/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-color330-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/color330-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-draken",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f-14",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f-15",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f-15/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f-18",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f-18/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f-22",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f-22/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f117",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f117/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f16",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f16/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f4d",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-f4u",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f4u/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-floatplane-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/floatplane-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-fuel-cad-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/fuel-cad-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-j-20",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/j-20/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-j10",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/j10/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-jas-39",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/jas-39/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-jet-engine-manual",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/jet-engine-manual/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-kj66-engine",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/kj66-engine/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-laser200",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/laser200/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-light-aircraft-no1",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/light-aircraft-no1/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-light-helicopter",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/light-helicopter/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-microjet-engine",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/microjet-engine/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-mig-29",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mig-29/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-mig21",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mig21/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-mig25",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mig25/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-mirage2000",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mirage2000/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-model-beginner-materials",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/model-beginner-materials/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-p51",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/p51/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-paper-aircraft",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/paper-aircraft/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-piper-j3-cub",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/piper-j3-cub/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-pitts-park-flyer",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-printed-plans-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/printed-plans-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-pulse-engine-manual",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/pulse-engine-manual/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-rotorcraft-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/rotorcraft-unidentified/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-sr71",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/sr71/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-su-27",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/su-27/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-su-47",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/su-47/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-su37",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/su37/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-fighter-ultralight",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3/",
+      "viewport": 1440
+    },
+    {
+      "id": "drawing-boeing-airliner-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/boeing-airliner-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-breeze2005-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/breeze2005-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-c-17",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-cessna-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/cessna-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-cessna182",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/cessna182/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-color330-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/color330-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-draken",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f-14",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f-15",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f-15/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f-18",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f-18/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f-22",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f-22/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f117",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f117/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f16",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f16/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f4d",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-f4u",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/f4u/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-floatplane-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/floatplane-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-fuel-cad-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/fuel-cad-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-j-20",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/j-20/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-j10",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/j10/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-jas-39",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/jas-39/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-jet-engine-manual",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/jet-engine-manual/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-kj66-engine",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/kj66-engine/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-laser200",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/laser200/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-light-aircraft-no1",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/light-aircraft-no1/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-light-helicopter",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/light-helicopter/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-microjet-engine",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/microjet-engine/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-mig-29",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mig-29/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-mig21",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mig21/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-mig25",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mig25/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-mirage2000",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/mirage2000/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-model-beginner-materials",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/model-beginner-materials/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-p51",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/p51/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-paper-aircraft",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/paper-aircraft/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-piper-j3-cub",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/piper-j3-cub/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-pitts-park-flyer",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-printed-plans-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/printed-plans-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-pulse-engine-manual",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/pulse-engine-manual/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-rotorcraft-unidentified",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/rotorcraft-unidentified/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-sr71",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/sr71/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-su-27",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/su-27/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-su-47",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/su-47/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-su37",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/drawinglibrary/su37/",
+      "viewport": 390
+    },
+    {
+      "id": "drawing-fighter-ultralight",
+      "status": 200,
+      "url": "http://127.0.0.1:4410/happinesea-site/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3/",
+      "viewport": 390
+    }
+  ],
+  "consoleErrors": 0,
+  "downloadHashes": 53,
+  "drawing_playwright": 6,
+  "image404": 0,
+  "independent_review_unresolved": 0,
+  "legacy_drawing": {
+    "brokenInternalLinks": 0,
+    "checks": 24,
+    "consoleErrors": 0,
+    "overflow": 0,
+    "results": [
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110181716.html",
+        "route": "/engineering-drawing/202110181716.html",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110181726.html",
+        "route": "/engineering-drawing/202110181726.html",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110191734.html",
+        "route": "/engineering-drawing/202110191734.html",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110211742.html",
+        "route": "/engineering-drawing/202110211742.html",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202201171891.html",
+        "route": "/engineering-drawing/202201171891.html",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2",
+        "route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+        "route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+        "route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+        "route": "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+        "route": "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+        "route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2",
+        "route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+        "status": 200,
+        "viewport": 1440
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110181716.html",
+        "route": "/engineering-drawing/202110181716.html",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110181726.html",
+        "route": "/engineering-drawing/202110181726.html",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110191734.html",
+        "route": "/engineering-drawing/202110191734.html",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202110211742.html",
+        "route": "/engineering-drawing/202110211742.html",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/engineering-drawing/202201171891.html",
+        "route": "/engineering-drawing/202201171891.html",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2",
+        "route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+        "route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+        "route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+        "route": "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+        "route": "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+        "route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+        "status": 200,
+        "viewport": 390
+      },
+      {
+        "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2",
+        "route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+        "status": 200,
+        "viewport": 390
+      }
+    ]
+  },
+  "manual_smoke": 20,
+  "overflow": 0,
+  "owner_artifact_bytes": 351049643,
+  "owner_candidate_records": 37,
+  "owner_record_filter_checks": {
+    "fighter_tag": 19,
+    "records": 43,
+    "remaining_grouping": 5,
+    "rights": 77,
+    "viewports": 2
+  },
+  "pageChecks": 86,
+  "public_records": 6,
+  "publication_right_pending_files": 77,
+  "python": 14,
+  "sitemap": {
+    "existing_alias_duplicate_html": 152,
+    "new_candidates": 0,
+    "new_canonical_conflicts": 0,
+    "production_urls": 193,
+    "staging_urls": 62
+  },
+  "source_binary_additions": 0,
+  "source_unchanged": 71,
+  "unit": 164
+}

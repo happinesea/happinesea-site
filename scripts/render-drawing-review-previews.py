@@ -36,7 +36,7 @@ def member_bytes(path, row):
     if any(not m['safe'] or not safe_member(m['name']) or m.get('encrypted') for m in members):
         raise ValueError('Unsafe/encrypted archive')
     candidates = [m for m in members if m['extension'] in FORMATS and m['bytes'] <= LIMIT]
-    candidates.sort(key=lambda m: (m['extension'] != '.pdf', not any(t in m['name'].lower() for t in ['plan', 'parts', '图', '設計']), m['name']))
+    candidates.sort(key=lambda m: (m['extension'] == '.pdf', not any(t in m['name'].lower() for t in ['plan', 'parts', '图', '設計']), m['name']))
     if not candidates:
         raise ValueError('No supported outer member; nested archives are not opened')
     member = candidates[0]
@@ -91,6 +91,8 @@ def render_preview(source, cache, row):
             raise ValueError('Unsupported source format')
         with fitz.open(stream=data, filetype=extension.lstrip('.')) as document:
             page = document[0]
+            if page.rect.width <= 0 or page.rect.height <= 0 or page.rect.width * page.rect.height > 40_000_000:
+                raise ValueError('Preview dimensions limit')
             scale = min(1200 / page.rect.width, 800 / page.rect.height, 2)
             image = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
             filename = row['sha256'] + '.png'

@@ -19,13 +19,19 @@ function update() {
         values.origin === 'all' || row.dataset.origin === values.origin;
       const status =
         values.status === 'all' ||
-        ['grouping', 'rights'].includes(values.status) ||
+        values.status === 'rights' ||
+        (values.status === 'grouping' &&
+          row.dataset.groupingReview === 'true') ||
         (values.status === 'title'
           ? row.dataset.titleReview === 'true'
           : (row.dataset.duplicates ?? row.dataset.duplicate)
               .split('|')
               .includes(values.status));
-      row.hidden = !(category && origin && status);
+      const tag =
+        !values.tag ||
+        values.tag === 'all' ||
+        (row.dataset.tags ?? '').split('|').includes(values.tag);
+      row.hidden = !(category && origin && status && tag);
     }
     panel.querySelector('[data-panel-count]').textContent =
       `${cases.filter((row) => !row.hidden).length}件を表示 / ${cases.length}件`;

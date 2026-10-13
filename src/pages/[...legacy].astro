@@ -3,6 +3,8 @@ import snapshot from '../data/legacy-compatibility.json';
 import articles from '../data/wordpress-insights.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DrawingDetail from '../components/DrawingDetail.astro';
+import { packageRecord } from '../lib/drawing-publication.mjs';
 import { withBase } from '../lib/urls';
 import downloads from '../data/static-downloads.json';
 import cutover from '../data/cutover-compatibility.json';
@@ -80,26 +82,7 @@ let content = rewriteSafetyBlockedDownloads(
     return `${attr}="${withBase(url.pathname + url.search + (url.hash || (value.endsWith('#') ? '#' : '')))}"`;
   },
 );
-const drawingFile =
-  page.type === 'download_endpoint' &&
-  downloads.files.find(
-    (file) =>
-      file.status === 'REPLACE' &&
-      file.target_route.startsWith('/downloads/drawings/') &&
-      file.legacy_routes.some((route) => route === page.download_target),
-  );
-let drawingTags = '';
-if (drawingFile) {
-  content = content
-    .replace(
-      /<a\b[^>]*href="[^"]*\/download\/document-tag\/[^"]*"[^>]*>[\s\S]*?<\/a>/gi,
-      (tag) => {
-        drawingTags += tag;
-        return '';
-      },
-    )
-    .replace(/<a\b[^>]*\sdownload(?:\s|>)[\s\S]*?<\/a>/gi, '');
-}
+const drawingRecord = packageRecord(page);
 ---
 
 <BaseLayout
@@ -112,78 +95,64 @@ if (drawingFile) {
     <Breadcrumbs
       items={[{ label: 'ホーム', href: withBase('/') }, { label: page.title }]}
     />
-    <h1 class="my-8 text-4xl leading-tight font-bold tracking-tight text-slate-950">
-      {page.title}
-    </h1>
-    {drawingTags && (
-      <div
-        class="mb-8 flex flex-wrap gap-3 text-sm [&_a]:rounded-full [&_a]:bg-teal-50 [&_a]:px-3 [&_a]:py-1 [&_a]:text-teal-800"
-        data-drawing-tags
-        set:html={drawingTags}
-      />
-    )}
-    {downloads.files.some(
-      (file) =>
-        file.status === 'BLOCKED_SAFETY_REVIEW' &&
-        [file.target_route, ...file.legacy_routes].some((route) =>
-          page.content_html.includes(route),
-        ),
-    ) && (
-      <p class="my-6 border-l-4 border-amber-600 p-4">
-        このページで案内していた一部のマニュアルは、受信機の版と操作手順の確認が必要なため配信を停止しています。
-        <a href={withBase('/downloads/') + '#manual-safety-review'}>
-          配信状況を確認する
-        </a>
-      </p>
-    )}
-    {manualTarget && (
-      <p class="my-6 rounded-lg border border-teal-200 bg-teal-50 p-4">
-        <a href={withBase(manualTarget)}>RC4GS V2 日本語マニュアルを読む</a> —
-        新しいマニュアルの目次から各章をご覧いただけます。
-      </p>
-    )}
-    {page.hero && (
-      <img
-        class="mb-10 h-auto max-h-[32rem] w-full object-contain"
-        src={withBase(page.hero.src)}
-        alt={page.hero.alt}
-        width={page.hero.width}
-        height={page.hero.height}
-      />
-    )}
-    <div
-      class="prose prose-slate max-w-none [&_a]:text-teal-800 [&_a]:underline [&_h2]:mt-8 [&_h3]:mt-8 [&_img]:h-auto [&_img]:max-w-full [&_li]:my-2 [&_p]:my-4 [&_table]:w-full [&_table]:table-fixed [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_td]:align-top"
-      data-legacy-body
-      set:html={content}
-    />
-    {drawingFile && (
-      <div class="mt-8">
-        <a
-          class="inline-flex rounded-lg bg-teal-700 px-5 py-3 font-bold text-white hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
-          href={withBase(drawingFile.target_route)}
-          download
-          data-download-sha256={drawingFile.sha256}
-          data-drawing-download
-        >
-          設計図をダウンロード
-        </a>
-      </div>
-    )}
-    {page.type === 'drawing_library' && (
-      <ul class="mt-10 space-y-3 border-t border-slate-200 pt-6">
-        {snapshot.pages
-          .filter((item) => item.type === 'drawing')
-          .map((item) => (
-            <li>
-              <a
-                class="text-teal-800 underline"
-                href={withBase(item.target_route)}
-              >
-                {item.title}
-              </a>
-            </li>
-          ))}
-      </ul>
+    {drawingRecord ? (
+      <DrawingDetail record={{ ...drawingRecord, title_ja: page.title }} />
+    ) : (
+      <>
+        <h1 class="my-8 text-4xl leading-tight font-bold tracking-tight text-slate-950">
+          {page.title}
+        </h1>
+        {downloads.files.some(
+          (file) =>
+            file.status === 'BLOCKED_SAFETY_REVIEW' &&
+            [file.target_route, ...file.legacy_routes].some((route) =>
+              page.content_html.includes(route),
+            ),
+        ) && (
+          <p class="my-6 border-l-4 border-amber-600 p-4">
+            このページで案内していた一部のマニュアルは、受信機の版と操作手順の確認が必要なため配信を停止しています。
+            <a href={withBase('/downloads/') + '#manual-safety-review'}>
+              配信状況を確認する
+            </a>
+          </p>
+        )}
+        {manualTarget && (
+          <p class="my-6 rounded-lg border border-teal-200 bg-teal-50 p-4">
+            <a href={withBase(manualTarget)}>RC4GS V2 日本語マニュアルを読む</a>{' '}
+            — 新しいマニュアルの目次から各章をご覧いただけます。
+          </p>
+        )}
+        {page.hero && (
+          <img
+            class="mb-10 h-auto max-h-[32rem] w-full object-contain"
+            src={withBase(page.hero.src)}
+            alt={page.hero.alt}
+            width={page.hero.width}
+            height={page.hero.height}
+          />
+        )}
+        <div
+          class="prose prose-slate max-w-none [&_a]:text-teal-800 [&_a]:underline [&_h2]:mt-8 [&_h3]:mt-8 [&_img]:h-auto [&_img]:max-w-full [&_li]:my-2 [&_p]:my-4 [&_table]:w-full [&_table]:table-fixed [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_td]:align-top"
+          data-legacy-body
+          set:html={content}
+        />
+        {page.type === 'drawing_library' && (
+          <ul class="mt-10 space-y-3 border-t border-slate-200 pt-6">
+            {snapshot.pages
+              .filter((item) => item.type === 'drawing')
+              .map((item) => (
+                <li>
+                  <a
+                    class="text-teal-800 underline"
+                    href={withBase(item.target_route)}
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+          </ul>
+        )}
+      </>
     )}
   </article>
 </BaseLayout>

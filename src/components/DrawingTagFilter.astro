@@ -1,0 +1,76 @@
+---
+const { total, tags } = Astro.props;
+const mainTags = ['戦闘機', 'ジェット機', 'スチレンボード', 'CAD'].filter((t) =>
+  tags.includes(t),
+);
+---
+
+<div class="my-8" data-drawing-tag-controls>
+  <div
+    class="flex flex-wrap gap-2"
+    role="group"
+    aria-label="設計図のタグで絞り込む"
+  >
+    {['すべて', ...mainTags].map((tag) => (
+      <button
+        class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700"
+        data-tag-filter={tag}
+        type="button"
+        aria-pressed={tag === 'すべて'}
+      >
+        {tag}
+      </button>
+    ))}
+  </div>
+  <label class="mt-4 block text-sm text-slate-600">
+    すべてのタグ
+    <select
+      class="ml-3 max-w-full rounded-lg border border-slate-300 px-3 py-2"
+      data-tag-select
+    >
+      <option value="すべて">すべて</option>
+      {tags.map((tag: string) => (
+        <option value={tag}>{tag}</option>
+      ))}
+    </select>
+  </label>
+  <p class="mt-4 text-sm text-slate-600" aria-live="polite" data-result-count>
+    {total}件を表示
+  </p>
+</div>
+<style>
+  button[aria-pressed='true'] {
+    background: #0f172a;
+    color: white;
+    border-color: #0f172a;
+  }
+</style>
+<script>
+  const controls = document.querySelector('[data-drawing-tag-controls]');
+  const cards = document.querySelectorAll<HTMLElement>('[data-drawing-card]');
+  const select =
+    controls?.querySelector<HTMLSelectElement>('[data-tag-select]');
+  const buttons =
+    controls?.querySelectorAll<HTMLButtonElement>('[data-tag-filter]');
+  function filter(tag: string) {
+    let visible = 0;
+    for (const card of cards) {
+      card.hidden =
+        tag !== 'すべて' && !card.dataset.drawingTags?.split('|').includes(tag);
+      if (!card.hidden) visible++;
+    }
+    buttons?.forEach((button) =>
+      button.setAttribute(
+        'aria-pressed',
+        String(button.dataset.tagFilter === tag),
+      ),
+    );
+    if (select) select.value = tag;
+    const count = controls?.querySelector('[data-result-count]');
+    if (count) count.textContent = `${visible}件を表示`;
+  }
+  buttons?.forEach((button) =>
+    button.addEventListener('click', () => filter(button.dataset.tagFilter!)),
+  );
+  select?.addEventListener('change', () => filter(select.value));
+</script>

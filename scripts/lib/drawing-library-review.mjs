@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { publicDrawings } from '../../src/lib/drawing-library-index.mjs';
 import { validateRecords } from './drawing-library.mjs';
+import { catalog } from '../../src/lib/drawing-publication.mjs';
 
 export { publicDrawings };
 const escape = (value) =>
@@ -190,6 +191,27 @@ export function buildReviewModel(data) {
     files.length !== 77
   )
     throw new Error('Phase 1 review counts changed; inspect before review');
+  model.publication = catalog;
+  for (const file of model.files) {
+    const record = catalog.records.find(
+      (r) =>
+        r.source_paths.includes(file.source_path) ||
+        r.downloads.includes(file.id),
+    );
+    file.category = record?.category ?? file.category;
+    file.tags = record?.tags ?? [];
+    file.tagConfidence = record?.tag_confidence ?? [];
+    file.resolution =
+      catalog.dedup_decisions.find((d) => d.download_id === file.id)
+        ?.decision ?? file.duplicate_status;
+    file.resolvedGrouping = record?.grouping_status ?? file.grouping_status;
+  }
+  model.currentCategories = categories.map((category) => ({
+    category,
+    records: catalog.records.filter((r) => r.category === category).length,
+    files: model.files.filter((f) => f.category === category).length,
+    reviewRequired: model.files.filter((f) => f.category === category).length,
+  }));
   return model;
 }
 
@@ -234,7 +256,7 @@ const metadata = (pairs) =>
 const preview = (file) =>
   `<img class="preview" loading="lazy" width="640" height="400" src="/preview/${escape(file.id)}" alt="${escape(file.title)}の資料プレビュー"/><p class="preview-note" data-preview-note="${escape(file.id)}">先頭の安全な図面・画像のみ。読めない資料は未確認表示。</p>`;
 const fileAttrs = (file) =>
-  `data-category="${escape(file.category)}" data-origin="${file.origin}" data-duplicate="${file.duplicate_status}" data-title-review="${file.titleReview}"`;
+  `data-grouping-review="${file.resolvedGrouping === 'REVIEW_REQUIRED'}" data-tags="${escape((file.tags ?? []).join('|'))}" data-category="${escape(file.category)}" data-origin="${file.origin}" data-duplicate="${file.duplicate_status}" data-title-review="${file.titleReview}"`;
 const fileCard = (
   file,
 ) => `<article class="card" data-file-card="${file.id}" ${fileAttrs(file)}>
@@ -248,6 +270,14 @@ const fileCard = (
     ['duplicate', file.duplicate_status],
     ['grouping', file.grouping_status],
     ['publication right', file.publication_right],
+    [
+      'tags / confidence',
+      (file.tagConfidence ?? [])
+        .map((t) => `${t.tag} (${t.confidence}; ${t.evidence})`)
+        .join(' / '),
+    ],
+    ['current resolution', file.resolution ?? file.duplicate_status],
+    ['current grouping', file.resolvedGrouping ?? file.grouping_status],
   ])}
   <details><summary>SHA-256</summary><code>${file.sha256}</code></details><div class="links">${relatedLinks(file)}
   ${file.source_path ? `<a href="/source/${file.id}">元資料を開く（local）</a>` : ''}</div></div></article>`;
@@ -289,7 +319,8 @@ export function renderReview(model) {
   return `<!doctype html><html lang="ja"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex,nofollow"/><title>設計図 Owner Review（local only）</title><link rel="icon" href="data:,"/><link rel="stylesheet" href="/review.css"/><script src="/review.js" defer></script></head><body>
     <header><div class="shell"><p class="eyebrow">LOCAL ONLY · OWNER VISUAL REVIEW</p><h1>設計図の公開前レビュー</h1><p>候補の分類・重複・名称を確認する画面です。選択や表示操作で承認・公開状態は変わりません。</p>
     <div class="stats">${[
-      ['record', model.summary.records],
+      ['Phase1 record', model.summary.records],
+      ['現在record', catalog.records.length],
       ['download', 77],
       ['exact', 20],
       ['probable', 9],
@@ -301,9 +332,10 @@ export function renderReview(model) {
           `<div><strong>${count}</strong><span>${label}</span></div>`,
       )
       .join('')}</div></div></header>
-    <main class="shell"><section class="category-summary" aria-label="カテゴリ集計"><h2>カテゴリ別の確認状況</h2><div class="summary-grid">${model.categories.map((c) => `<div class="summary-card"><h3>${escape(c.category)}</h3><p>${c.records} records · ${c.files} files · 権利確認待ち ${c.reviewRequired}</p></div>`).join('')}</div><p>recordは33提案、fileはsource71＋既存6です。全件の公開権・groupingは確認待ちです。</p></section>
+    <main class="shell"><section class="category-summary" aria-label="カテゴリ集計"><h2>カテゴリ別の確認状況</h2><div class="summary-grid">${(model.currentCategories ?? model.categories).map((c) => `<div class="summary-card"><h3>${escape(c.category)}</h3><p>${c.records} records · ${c.files} files · 権利確認待ち ${c.reviewRequired}</p></div>`).join('')}</div><p>recordは43公開準備（Phase1原提案33を含む）、fileはsource71＋既存6です。公開権は全件確認待ちです。最新grouping結果は下の公開準備recordと各fileのcurrent groupingを確認してください。</p></section>
     <nav class="tabs" aria-label="レビュー種別">${[
       ['files', '全ファイル 77'],
+      ['records', '公開準備 records 43'],
       ['exact', 'Exact 20'],
       ['probable', 'Probable 9'],
       ['groups', 'Grouping 42'],
@@ -315,20 +347,45 @@ export function renderReview(model) {
           `<button type="button" data-view="${id}" aria-pressed="${id === 'files'}">${label}</button>`,
       )
       .join('')}</nav>
-    <div class="filters"><label>カテゴリ<select data-filter="category"><option value="all">すべて</option>${categories.map((c) => `<option>${escape(c)}</option>`).join('')}</select></label>
+    <div class="filters"><label>タグ<select data-filter="tag"><option value="all">すべて</option>${catalog.tags.map((t) => `<option>${escape(t.tag)}</option>`).join('')}</select></label><label>カテゴリ<select data-filter="category"><option value="all">すべて</option>${categories.map((c) => `<option>${escape(c)}</option>`).join('')}</select></label>
       <label>既存・新規<select data-filter="origin"><option value="all">すべて</option><option value="existing">既存・既存関連</option><option value="new">新規候補</option></select></label>
       <label>確認対象<select data-filter="status"><option value="all">すべて</option><option value="EXACT_DUPLICATE">exact duplicate</option><option value="PROBABLE_DUPLICATE">probable duplicate</option><option value="grouping">grouping review required</option><option value="title">title review required</option><option value="rights">publication right review</option></select></label>
       <button type="button" data-reset>全条件を解除</button></div>
+    ${panel(
+      'records',
+      '公開準備：43 records（既存6＋新規37）',
+      catalog.records
+        .map((record) => {
+          const file = model.files.find((f) => f.id === record.downloads[0]);
+          return `<article class="case" data-record-case="${escape(record.id)}" ${fileAttrs({ ...file, tags: record.tags })}><h3>${escape(record.title_ja)}</h3><p>${escape(record.title_original)}</p>${file ? preview(file) : ''}${metadata(
+            [
+              ['category', record.category],
+              [
+                'tags',
+                record.tag_confidence
+                  .map((t) => `${t.tag} (${t.confidence}; ${t.evidence})`)
+                  .join(' / '),
+              ],
+              ['downloads', record.downloads.length],
+              ['grouping', record.grouping_status],
+              ['rights', record.publication_right],
+              ['source', record.source_paths.join(' / ')],
+              ['publication status', record.publication_status],
+            ],
+          )}<a href="http://127.0.0.1:4410/happinesea-site${escape(record.route.replace(/\/$/, '') + '/')}" target="_blank" rel="noreferrer">公開準備detail（local）</a></article>`;
+        })
+        .join(''),
+    )}
     ${panel('files', '全ファイル', `<div class="cards">${model.files.map(fileCard).join('')}</div>`)}
     ${panel('exact', 'Exact duplicate：20件の対応関係', '<p>file全体とarchive memberの一致を区別します。20件はsource間のSHA group数ではなく、照合するsource fileの件数です。</p>' + model.exact.map((r) => duplicateCard(r, true)).join(''))}
     ${panel('probable', 'Probable duplicate：9件を個別に確認', '<p>CRC・容量・filename・部分一致は候補です。自動mergeや除外は行いません。</p>' + model.probable.map((r) => duplicateCard(r, false)).join(''))}
     ${panel(
       'groups',
-      'Grouping：42候補・自動確定なし',
+      'Grouping：42候補・37整理済み／5確認待ち',
       model.groups
         .map(
           (g) =>
-            `<article class="case" data-group-case="${escape(g.task0_candidate_group)}" ${fileAttrs({ ...g.files[0], duplicate_status: [...new Set(g.files.map((f) => f.duplicate_status))].join('|'), titleReview: g.files.some((f) => f.titleReview) })}><p class="eyebrow">REVIEW_REQUIRED</p><h3>${escape(g.title)}</h3><p>現在の候補: ${escape(g.suggested_relation)}</p><p class="small">検討候補: SAME_AIRCRAFT_DIFFERENT_VERSION / SAME_AIRCRAFT_DIFFERENT_DESIGN / SAME_PACKAGE_SPLIT / UNKNOWN_RELATION</p><div class="group-files">${g.files
+            `<article class="case" data-group-case="${escape(g.task0_candidate_group)}" ${fileAttrs({ ...g.files[0], duplicate_status: [...new Set(g.files.map((f) => f.duplicate_status))].join('|'), titleReview: g.files.some((f) => f.titleReview) })}><p class="eyebrow">${escape(g.files[0].resolvedGrouping)}</p><h3>${escape(g.title)}</h3><p>現在の候補: ${escape(g.suggested_relation)}</p><p class="small">検討候補: SAME_AIRCRAFT_DIFFERENT_VERSION / SAME_AIRCRAFT_DIFFERENT_DESIGN / SAME_PACKAGE_SPLIT / UNKNOWN_RELATION</p><div class="group-files">${g.files
               .map(
                 (f) =>
                   `<div>${preview(f)}<h4>${escape(f.originalTitle)}</h4>${metadata(

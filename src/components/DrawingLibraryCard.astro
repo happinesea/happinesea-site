@@ -4,6 +4,7 @@ interface Props {
   drawing: {
     title: string;
     category: string;
+    tags: string[];
     description: string;
     href: string;
     hero: { src: string; alt: string; width: number; height: number } | null;
@@ -17,6 +18,7 @@ const detailHref = withBase(`${drawing.href.replace(/\/$/, '')}/`);
   class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
   data-drawing-card
   data-product-category={drawing.category}
+  data-drawing-tags={drawing.tags.join('|')}
 >
   <a
     href={detailHref}
@@ -37,7 +39,11 @@ const detailHref = withBase(`${drawing.href.replace(/\/$/, '')}/`);
     )}
   </a>
   <div class="flex flex-1 flex-col border-t border-slate-100 p-5">
-    <p class="text-xs font-bold text-teal-700">{drawing.category}</p>
+    <div class="flex flex-wrap gap-2 text-xs text-teal-700">
+      {drawing.tags.map((tag) => (
+        <span class="rounded-full bg-teal-50 px-2 py-1">{tag}</span>
+      ))}
+    </div>
     <h2 class="mt-2 text-xl leading-8 font-bold text-slate-950">
       <a href={detailHref} class="hover:text-teal-800">
         {drawing.title}
