@@ -21,3 +21,6 @@ src/pages/radiolink/*slug*.astro
 
 # Task 0 JSON receipts are deterministic Python output; validate/replay with audit tests.
 docs/drawing-library-task0/*.json
+
+# Phase 1 proposals use a deterministic serializer; validated by the importer.
+src/data/drawing-library/*.json
