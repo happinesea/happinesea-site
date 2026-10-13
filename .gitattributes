@@ -1,1 +1,6 @@
 public/assets/radiolink/rc6gs/manuals/rc6gs-v3-quick-reference/figure-006.svg text eol=lf
+docs/drawing-library-task0/** text eol=lf
+scripts/drawing_audit.py text eol=lf
+scripts/observe_drawing_sources.py text eol=lf
+scripts/plan_drawing_records.py text eol=lf
+tests/drawing_audit_test.py text eol=lf

@@ -18,3 +18,6 @@ src/components/ResponsiveMedia.astro
 src/content/docs/manuals/rc8x/index.md
 src/layouts/BaseLayout.astro
 src/pages/radiolink/*slug*.astro
+
+# Task 0 JSON receipts are deterministic Python output; validate/replay with audit tests.
+docs/drawing-library-task0/*.json

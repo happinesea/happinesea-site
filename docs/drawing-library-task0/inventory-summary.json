@@ -1,0 +1,156 @@
+{
+  "total_files": 71,
+  "total_bytes": 230404265,
+  "unique_binary_count": 71,
+  "unique_binary_bytes": 230404265,
+  "new_unique_binary_count": 70,
+  "new_unique_binary_bytes": 224191706,
+  "max_file_bytes": 50332469,
+  "extensions": {
+    ".gif": {
+      "files": 2,
+      "bytes": 297573
+    },
+    ".jpg": {
+      "files": 3,
+      "bytes": 73581
+    },
+    ".pdf": {
+      "files": 12,
+      "bytes": 6072312
+    },
+    ".rar": {
+      "files": 44,
+      "bytes": 190889898
+    },
+    ".zip": {
+      "files": 10,
+      "bytes": 33070901
+    }
+  },
+  "types": {
+    "archive": 54,
+    "image": 5,
+    "pdf": 12
+  },
+  "archive_statuses": {
+    "LISTED": 52,
+    "LISTING_FAILED": 1,
+    "MULTIVOLUME_REVIEW": 1
+  },
+  "directories": [
+    ".",
+    "F-14",
+    "F-14/F-14 tomcat設計図",
+    "F-14/F-14 tomcat設計図/Fixed Wing Conversion",
+    "F-14/F-14 tomcat設計図/Scale 100%",
+    "F-14/F-14 tomcat設計図/Scale 60%",
+    "F-14/F-14 tomcat設計図/Scale 75%"
+  ],
+  "largest_files_top20": [
+    {
+      "relative_path": "微型喷气式发动机详细制作图纸.rar",
+      "bytes": 50332469,
+      "sha256": "068cbdc21a4b9db961924b3d2a0ace4b6b3314705b27fa4f53e3bef861a779e8"
+    },
+    {
+      "relative_path": "航模喷气发动机制作手册.part1.rar",
+      "bytes": 31457280,
+      "sha256": "a472a6e30fd1b2eaf9d2a3ceea4bc783a2ff7dc4558923542c5b6ddaac40e230"
+    },
+    {
+      "relative_path": "航模喷气发动机制作手册.part2.rar",
+      "bytes": 24523575,
+      "sha256": "591db461d9b2b9ab44eaaeb4b1b584d30bf537ceccf0659ca1e41f96cd5ec704"
+    },
+    {
+      "relative_path": "kj663D涡喷.zip",
+      "bytes": 10126438,
+      "sha256": "6c07f7cd0cd651b8e21e0a400c143a3e5c436449a4895faa14173089ea2a582c"
+    },
+    {
+      "relative_path": "kj663D涡喷.rar",
+      "bytes": 6973758,
+      "sha256": "d165429686bdf247cc040501d3ed8fc5bbcf0c514ac1f1cf03031bbde910680b"
+    },
+    {
+      "relative_path": "微风2005.rar",
+      "bytes": 6911392,
+      "sha256": "b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d"
+    },
+    {
+      "relative_path": "laser200.rar",
+      "bytes": 6412390,
+      "sha256": "df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782"
+    },
+    {
+      "relative_path": "轻型飞机图纸Piper J-3 Cub.rar",
+      "bytes": 6302334,
+      "sha256": "caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図.zip",
+      "bytes": 6212559,
+      "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062"
+    },
+    {
+      "relative_path": "喷绘飞机图纸.rar",
+      "bytes": 5752074,
+      "sha256": "237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61"
+    },
+    {
+      "relative_path": "F-14.rar",
+      "bytes": 5682309,
+      "sha256": "4392632fe0a71377904ad059153ac0273c3616d9f03a60bb6ea3fe4fce283d96"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+      "bytes": 5385246,
+      "sha256": "5d974b144332ec8674bb47c4b4ce5b0c10bf173fe817bb34a185bf83adb5c022"
+    },
+    {
+      "relative_path": "F14A.rar",
+      "bytes": 4168846,
+      "sha256": "20ce174f24bf1f00bb9356b0962aaa9fa19df632c11b7d6be0b595c39af66109"
+    },
+    {
+      "relative_path": "航模脉冲式发动机制作手册.zip",
+      "bytes": 3872525,
+      "sha256": "1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e"
+    },
+    {
+      "relative_path": "F-18.zip",
+      "bytes": 3477836,
+      "sha256": "4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134"
+    },
+    {
+      "relative_path": "米格 29.rar",
+      "bytes": 3241193,
+      "sha256": "0de9311fd7de8fcbc5bb98dce4c66a3252ebc9793af19615b35c79cb5360b7b3"
+    },
+    {
+      "relative_path": "kj66涡轮发动机制作蓝图.rar",
+      "bytes": 3150844,
+      "sha256": "8a4d661ed26accf40564f8ddbd5618e5ebd06631c538dab9936626b66e353281"
+    },
+    {
+      "relative_path": "波音客机.rar",
+      "bytes": 3034350,
+      "sha256": "6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679"
+    },
+    {
+      "relative_path": "c-17运输机.zip",
+      "bytes": 2934217,
+      "sha256": "56936609460b12edd34489675d5905338adf8cbd123338bfdbd35a4e114f8717"
+    },
+    {
+      "relative_path": "SU-47.rar",
+      "bytes": 2885506,
+      "sha256": "f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9"
+    }
+  ],
+  "exact_sha256_groups": [],
+  "normalized_filename_groups": [],
+  "existing_download_count": 6,
+  "existing_download_bytes": 11412849
+}

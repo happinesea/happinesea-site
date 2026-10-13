@@ -1,0 +1,398 @@
+{
+  "baseline_commit": "b837b83271a53dbb32c316513c47c5086bf627f6",
+  "source_root_ref": "DRAWING_SOURCE",
+  "source_root_original_name": "全部飞机图纸",
+  "source_file_count": 71,
+  "source_inventory_sha256": "8fefdd4eace0d748029265697bab724ddfa66d3a047aee91d5d9686a3487bf58",
+  "inputs": [
+    {
+      "path": "src/data/legacy-compatibility.json",
+      "worktree_sha256": "3106a8e9561aea06dac30e5aedba2fc855cd0eb7d21244fdcd7adf06b2298cd6",
+      "baseline_blob_sha256": "cb5b00036bdbe1a21bef8f248f21fbc6aea2e37749907363027a04fcafa09009"
+    },
+    {
+      "path": "src/data/static-downloads.json",
+      "worktree_sha256": "343d18ac2fff62d7f716a26af7d3c0ab90ab7c6085c91de17def8020945c9dec",
+      "baseline_blob_sha256": "3faa6c02dd96239d2ac2dd9d1af0a4286710f9c7891f0c6f1fd97a08d85e13e5"
+    }
+  ],
+  "tools": [
+    {
+      "path": "scripts/drawing_audit.py",
+      "sha256": "a1266b516c76a1e7b13cde67c01455676ff2419860cc90b9d4eb537099014549"
+    },
+    {
+      "path": "scripts/plan_drawing_records.py",
+      "sha256": "73cdf9433deb0d6db35197e03b55df5a8c3a20d946918ef47d38ea5dd621f9f7"
+    },
+    {
+      "path": "scripts/observe_drawing_sources.py",
+      "sha256": "7bc0dd7bef4c1b3b35f3ffb023ec489412a206ac5524bab0296d442ec74e26c8"
+    },
+    {
+      "path": "tests/drawing_audit_test.py",
+      "sha256": "53464def62288abea73ca9d278592c6a55e162659241bf773bdd4aab3a703e5f"
+    }
+  ],
+  "archive_reader": {
+    "zip": "Python 3.10 zipfile",
+    "rar": "rarfile 4.2 header parser; no unrar"
+  },
+  "source_manifest": [
+    {
+      "relative_path": "1号轻型飞机.zip",
+      "bytes": 2519367,
+      "sha256": "36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785"
+    },
+    {
+      "relative_path": "3d双翼机.rar",
+      "bytes": 240330,
+      "sha256": "139f073fca606752f3cf5b80f0b20dd67c261a38ee520bab228aba222d5280b8"
+    },
+    {
+      "relative_path": "Draken.zip",
+      "bytes": 197680,
+      "sha256": "df6272e1492b3df5ce8ea87250ed0c280ab4c615fdfb14f3a6938bbcaacff30f"
+    },
+    {
+      "relative_path": "F-14.rar",
+      "bytes": 5682309,
+      "sha256": "4392632fe0a71377904ad059153ac0273c3616d9f03a60bb6ea3fe4fce283d96"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図.zip",
+      "bytes": 6212559,
+      "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+      "bytes": 89671,
+      "sha256": "a6a2524af434ce16b3623069c211b5959c516ce22a74f823a901c2900f99f0d5"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+      "bytes": 29261,
+      "sha256": "d915e29a0ca30bae8a8c4e47f0043b78db98fecfd7cb02b950a89324a1ea5c67"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+      "bytes": 21593,
+      "sha256": "e54b37f6ce7d32286627ebe99bfe7c045973d7a0b3561f422e6280bb3799f83f"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+      "bytes": 22727,
+      "sha256": "c153b8a4a24f1e80d3813d6378bcab97cec034cc4cde26bfde6555b4f45dd9b2"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+      "bytes": 250274,
+      "sha256": "71fae149bea102c2622f7e58d3f8af0e4e4ba647ea15fdc0506adc1081324af0"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+      "bytes": 47299,
+      "sha256": "6ab0592d3202bb5f121add603f4cc69e4df3c38dbbbca44d15571a61699524e8"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+      "bytes": 5385246,
+      "sha256": "5d974b144332ec8674bb47c4b4ce5b0c10bf173fe817bb34a185bf83adb5c022"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+      "bytes": 21912,
+      "sha256": "d53517f0c691fd6c940c70645758bac5fc464dcab169e20f493c3508ee22af09"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+      "bytes": 26740,
+      "sha256": "02a5def0614cc8e3dc554b1350346ae9561ad030ec0d5ddd13f134e538878bbe"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+      "bytes": 6796,
+      "sha256": "6978bbb8a28b63ad8f7cc195a5e6e406fa6bf69a9b334cd0cf86764e1237d8cc"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+      "bytes": 74147,
+      "sha256": "f0fd3dd888d91522c657fd2ebc68a7236549b12a177d2607b8c37f0b837a2881"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+      "bytes": 71588,
+      "sha256": "9f51d1efed4c7b9b674fbc2d4a902ed4cc158616f946b37338dbfec9900b5f33"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+      "bytes": 89653,
+      "sha256": "48e026097d4bff6572f57b315087af54b796bc90f624dfa144271240686034ce"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+      "bytes": 58288,
+      "sha256": "6b9abc392206e312ed967c7bfb689d80b7ed0f31aa56eb9aabd2d32ecf10ee62"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+      "bytes": 93978,
+      "sha256": "34038b720cdc52360e005a002a5aed2dfa4827c0246db63fa5a7433415c78c08"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+      "bytes": 71614,
+      "sha256": "ca446f966643bae1f10892e354de2e0512d431ed77c734648891258f2b613b8e"
+    },
+    {
+      "relative_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+      "bytes": 82679,
+      "sha256": "b0c8094181ce5cb29ece2420beaab6f1291c4d91ffff49a00bc98b2114a04322"
+    },
+    {
+      "relative_path": "F-15.rar",
+      "bytes": 2831432,
+      "sha256": "6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3"
+    },
+    {
+      "relative_path": "F-18.zip",
+      "bytes": 3477836,
+      "sha256": "4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134"
+    },
+    {
+      "relative_path": "F117.rar",
+      "bytes": 573065,
+      "sha256": "911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f"
+    },
+    {
+      "relative_path": "F14A.rar",
+      "bytes": 4168846,
+      "sha256": "20ce174f24bf1f00bb9356b0962aaa9fa19df632c11b7d6be0b595c39af66109"
+    },
+    {
+      "relative_path": "F16.rar",
+      "bytes": 1728224,
+      "sha256": "dc1d63eacdcfa8447afa6d17406d26e1dc8b716a09e16c96c795cbf3a61bb0d8"
+    },
+    {
+      "relative_path": "F22.rar",
+      "bytes": 2283823,
+      "sha256": "0d62e9762b54f7410ac400ffa275328806fbcd92bcec47dcb9d082c071dbdffb"
+    },
+    {
+      "relative_path": "F4D.rar",
+      "bytes": 931363,
+      "sha256": "5e3ec67f3470f7d0432d728f96823877196fe53d3c5c80bb79986857a1503202"
+    },
+    {
+      "relative_path": "J10.rar",
+      "bytes": 2014697,
+      "sha256": "fb50b03bdb40bd9d38d6e15650745eb6db3fc210cb93822c56b03f981e13a9d1"
+    },
+    {
+      "relative_path": "JAS-39鹰狮.rar",
+      "bytes": 2285723,
+      "sha256": "b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd"
+    },
+    {
+      "relative_path": "MiG-29.rar",
+      "bytes": 141027,
+      "sha256": "ed903b0d1a183a15cd55c090bba964b76401d839e36909e2d3175bc412620aae"
+    },
+    {
+      "relative_path": "P51图纸.rar",
+      "bytes": 103200,
+      "sha256": "e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3"
+    },
+    {
+      "relative_path": "SR71.rar",
+      "bytes": 396866,
+      "sha256": "9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2"
+    },
+    {
+      "relative_path": "SU-47.rar",
+      "bytes": 2885506,
+      "sha256": "f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9"
+    },
+    {
+      "relative_path": "c-17运输机.zip",
+      "bytes": 2934217,
+      "sha256": "56936609460b12edd34489675d5905338adf8cbd123338bfdbd35a4e114f8717"
+    },
+    {
+      "relative_path": "f-22像真机.zip",
+      "bytes": 2841981,
+      "sha256": "e8e8a7e2fc62fc6fe2dda031a0c1947167b864c4f8e4938fd65b3f2c36d5faad"
+    },
+    {
+      "relative_path": "j-20 三维图 CAD图.rar",
+      "bytes": 322860,
+      "sha256": "8e0f7b0163dc2e8c430f7777241984c2426187c8e355329c7985115572d60b50"
+    },
+    {
+      "relative_path": "kj663D涡喷.rar",
+      "bytes": 6973758,
+      "sha256": "d165429686bdf247cc040501d3ed8fc5bbcf0c514ac1f1cf03031bbde910680b"
+    },
+    {
+      "relative_path": "kj663D涡喷.zip",
+      "bytes": 10126438,
+      "sha256": "6c07f7cd0cd651b8e21e0a400c143a3e5c436449a4895faa14173089ea2a582c"
+    },
+    {
+      "relative_path": "kj66涡轮发动机制作蓝图.rar",
+      "bytes": 3150844,
+      "sha256": "8a4d661ed26accf40564f8ddbd5618e5ebd06631c538dab9936626b66e353281"
+    },
+    {
+      "relative_path": "laser200.rar",
+      "bytes": 6412390,
+      "sha256": "df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782"
+    },
+    {
+      "relative_path": "su-27图纸.rar",
+      "bytes": 115777,
+      "sha256": "070a61ec9683d9a2fb30bafb21db5adbb2022f0614997fb3d22004f31c86189e"
+    },
+    {
+      "relative_path": "su37.rar",
+      "bytes": 99575,
+      "sha256": "186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c"
+    },
+    {
+      "relative_path": "二战F4U模型飞机图纸.rar",
+      "bytes": 59358,
+      "sha256": "3562872b0f355532858b9129e0394a2cc54da26d0d609881a4a1444553dd1c68"
+    },
+    {
+      "relative_path": "函道幻影2000.rar",
+      "bytes": 1952579,
+      "sha256": "e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b"
+    },
+    {
+      "relative_path": "喷绘版－SU27.rar",
+      "bytes": 443529,
+      "sha256": "1ad18fd0bc5a681543999d6f7a0f24270808f446f43049622307dcdfd389e9e9"
+    },
+    {
+      "relative_path": "喷绘飞机图纸.rar",
+      "bytes": 5752074,
+      "sha256": "237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61"
+    },
+    {
+      "relative_path": "塞斯纳182.rar",
+      "bytes": 171475,
+      "sha256": "b816aaaaf3e9f2a585e095c5791fad4b02de3ef11dfa7d28d2dbaf506447156c"
+    },
+    {
+      "relative_path": "彩色330.rar",
+      "bytes": 685344,
+      "sha256": "f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c"
+    },
+    {
+      "relative_path": "微型喷气式发动机详细制作图纸.rar",
+      "bytes": 50332469,
+      "sha256": "068cbdc21a4b9db961924b3d2a0ace4b6b3314705b27fa4f53e3bef861a779e8"
+    },
+    {
+      "relative_path": "微风2005.rar",
+      "bytes": 6911392,
+      "sha256": "b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d"
+    },
+    {
+      "relative_path": "旋翼机.rar",
+      "bytes": 2623947,
+      "sha256": "b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024"
+    },
+    {
+      "relative_path": "歼10.rar",
+      "bytes": 1619525,
+      "sha256": "d7b4d6e3b292095dd75f5b6bdbddd2448ee1d0b4d18cc2d47df1c9333685e308"
+    },
+    {
+      "relative_path": "歼20.rar",
+      "bytes": 755261,
+      "sha256": "baf8d87d7f268a1c313363c2fdd8c0e6be6bfbc341f4a3db30c6aa6ffccb74e1"
+    },
+    {
+      "relative_path": "水上飞机图纸.rar",
+      "bytes": 231572,
+      "sha256": "4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed"
+    },
+    {
+      "relative_path": "油动CAD格式飞机图纸.rar",
+      "bytes": 120841,
+      "sha256": "21b62c8398a94358709d88dee0493ea20c29d8ac61618aaf6682a8be0715347d"
+    },
+    {
+      "relative_path": "波音客机.rar",
+      "bytes": 3034350,
+      "sha256": "6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679"
+    },
+    {
+      "relative_path": "简单的F22图纸.rar",
+      "bytes": 458741,
+      "sha256": "3aa28b4da237289b1dfa212f6ad5b62d43bd7d97fd3f5f951b8d886acccb9692"
+    },
+    {
+      "relative_path": "简单的f22.rar",
+      "bytes": 1052073,
+      "sha256": "36b5ca4573dbacd96c2a9c6156b348dd75cfdb28eb50b783b21fcfc3a352bd6f"
+    },
+    {
+      "relative_path": "米格 29.rar",
+      "bytes": 3241193,
+      "sha256": "0de9311fd7de8fcbc5bb98dce4c66a3252ebc9793af19615b35c79cb5360b7b3"
+    },
+    {
+      "relative_path": "米格21.zip",
+      "bytes": 611563,
+      "sha256": "bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a"
+    },
+    {
+      "relative_path": "米格25.zip",
+      "bytes": 276735,
+      "sha256": "54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b"
+    },
+    {
+      "relative_path": "纸飞机.rar",
+      "bytes": 1603972,
+      "sha256": "cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25"
+    },
+    {
+      "relative_path": "航模喷气发动机制作手册.part1.rar",
+      "bytes": 31457280,
+      "sha256": "a472a6e30fd1b2eaf9d2a3ceea4bc783a2ff7dc4558923542c5b6ddaac40e230"
+    },
+    {
+      "relative_path": "航模喷气发动机制作手册.part2.rar",
+      "bytes": 24523575,
+      "sha256": "591db461d9b2b9ab44eaaeb4b1b584d30bf537ceccf0659ca1e41f96cd5ec704"
+    },
+    {
+      "relative_path": "航模脉冲式发动机制作手册.zip",
+      "bytes": 3872525,
+      "sha256": "1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e"
+    },
+    {
+      "relative_path": "航模赠品.rar",
+      "bytes": 64963,
+      "sha256": "ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069"
+    },
+    {
+      "relative_path": "赛斯纳.rar",
+      "bytes": 1830082,
+      "sha256": "be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32"
+    },
+    {
+      "relative_path": "轻型直升机.rar",
+      "bytes": 2320354,
+      "sha256": "da276d766dd0a4994168107700795599f84a51fd70631d72f95bd19e84acd524"
+    },
+    {
+      "relative_path": "轻型飞机图纸Piper J-3 Cub.rar",
+      "bytes": 6302334,
+      "sha256": "caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615"
+    }
+  ]
+}

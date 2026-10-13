@@ -1,0 +1,2275 @@
+[
+  {
+    "id": "drawing-boeing-airliner-unidentified",
+    "slug": "boeing-airliner-unidentified",
+    "title_ja": "ボーイング旅客機（型式未確認）",
+    "title_original": "波音客机",
+    "title_original_variants": [
+      "波音客机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/boeing-airliner-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-9a2384c22d0510f7e1cb1d1637efd945266553da4f8607cee7d1abd5f5430ab0",
+        "original_filename": "波音客机.rar",
+        "file_format": "rar",
+        "file_size": 3034350,
+        "sha256": "6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679",
+        "source_local_path": "波音客机.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-breeze2005-unidentified",
+    "slug": "breeze2005-unidentified",
+    "title_ja": "微风2005（名称未確認）",
+    "title_original": "微风2005",
+    "title_original_variants": [
+      "微风2005"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "微风2005.rar",
+      "archive_member": "微风2005/主副翼拼接图（自己拼的）凑合肯定比原来的好.bmp",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/breeze2005-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-5a141a319b90926cbce59718e14339d460cefa83021c208d6d3aec4a942e44ef",
+        "original_filename": "微风2005.rar",
+        "file_format": "rar",
+        "file_size": 6911392,
+        "sha256": "b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d",
+        "source_local_path": "微风2005.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-c-17",
+    "slug": "c-17",
+    "title_ja": "C-17輸送機スケールRC飛行機設計図(CADファイル付)",
+    "title_original": "c-17运输机",
+    "title_original_variants": [
+      "c-17运输机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": "/wp-content/uploads/2021/10/7ea9e89dfe81625de6cff93c38cde4df-1.jpg",
+      "width": 992,
+      "height": 712,
+      "alt": "滑走路上のC-17輸送機"
+    },
+    "canonical_route_candidate": "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+    "legacy_wordpress_ids": [
+      1734
+    ],
+    "legacy_package_ids": [
+      "1733"
+    ],
+    "legacy_urls": [
+      "https://happinesea.com/engineering-drawing/202110191734.html",
+      "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付"
+    ],
+    "downloads": [
+      {
+        "file_id": "file-ab8b38908d7734d52162f62b10c8ceaf15d2ef0f29be0feea3ec35a3c2838c21",
+        "original_filename": "c-17运输机.zip",
+        "file_format": "zip",
+        "file_size": 2934217,
+        "sha256": "56936609460b12edd34489675d5905338adf8cbd123338bfdbd35a4e114f8717",
+        "source_local_path": "c-17运输机.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-cessna-unidentified",
+    "slug": "cessna-unidentified",
+    "title_ja": "赛斯纳（セスナ候補・型式未確認）",
+    "title_original": "赛斯纳",
+    "title_original_variants": [
+      "赛斯纳"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "赛斯纳.rar",
+      "archive_member": "182SHEET2.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/cessna-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-e129b2fcd03f48a2e87d6695be8f624b09e9ac894fd903e33f3ca8ac5c66348a",
+        "original_filename": "赛斯纳.rar",
+        "file_format": "rar",
+        "file_size": 1830082,
+        "sha256": "be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32",
+        "source_local_path": "赛斯纳.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-cessna182",
+    "slug": "cessna182",
+    "title_ja": "セスナ182（候補）",
+    "title_original": "塞斯纳182",
+    "title_original_variants": [
+      "塞斯纳182"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/cessna182/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-e5ca9e1552b907ddc7344819cc8ea8e91ff88f8987360b70c69819d557d20a3c",
+        "original_filename": "塞斯纳182.rar",
+        "file_format": "rar",
+        "file_size": 171475,
+        "sha256": "b816aaaaf3e9f2a585e095c5791fad4b02de3ef11dfa7d28d2dbaf506447156c",
+        "source_local_path": "塞斯纳182.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-color330-unidentified",
+    "slug": "color330-unidentified",
+    "title_ja": "カラー330（名称未確認）",
+    "title_original": "彩色330",
+    "title_original_variants": [
+      "彩色330"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "彩色330.rar",
+      "archive_member": "彩色330.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/color330-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-4c9ae0b1554407012aff3fcf1446d17865aa3e5a71acd45d176656f189f2743b",
+        "original_filename": "彩色330.rar",
+        "file_format": "rar",
+        "file_size": 685344,
+        "sha256": "f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c",
+        "source_local_path": "彩色330.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-draken",
+    "slug": "draken",
+    "title_ja": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機",
+    "title_original": "Draken",
+    "title_original_variants": [
+      "Draken"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": "/wp-content/uploads/2021/10/77142_1.jpg",
+      "width": 1000,
+      "height": 604,
+      "alt": "サーブ35ドラケン"
+    },
+    "canonical_route_candidate": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+    "legacy_wordpress_ids": [
+      1742
+    ],
+    "legacy_package_ids": [
+      "1740"
+    ],
+    "legacy_urls": [
+      "https://happinesea.com/engineering-drawing/202110211742.html",
+      "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード"
+    ],
+    "downloads": [
+      {
+        "file_id": "file-3655ffe370f3d8bd0777b6362b95c02e505e359d89eac2060f9840d1bc1aec65",
+        "original_filename": "Draken.zip",
+        "file_format": "zip",
+        "file_size": 197680,
+        "sha256": "df6272e1492b3df5ce8ea87250ed0c280ab4c615fdfb14f3a6938bbcaacff30f",
+        "source_local_path": "Draken.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f-14",
+    "slug": "f-14",
+    "title_ja": "RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機",
+    "title_original": "F-14",
+    "title_original_variants": [
+      "F-14",
+      "F-14 tomcat設計図",
+      "F-14 Park Jet (Parts Templates Tiled A4)",
+      "F-14 tomcat設計図1",
+      "F-14 tomcat設計図2",
+      "F-14 tomcat設計図3",
+      "F-14_Decals_Page_1",
+      "F-14_Decals_Page_2",
+      "F-14_Park_Jet_Construction_Guide",
+      "F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A",
+      "F-14 Fixed Wing Conversion Parts (Tiled) Rev A",
+      "Mid sweep wing plan",
+      "F-14 Park Jet (Assembly Drawing)",
+      "F-14 Park Jet (Parts Templates Non-Tiled)",
+      "F-14 Park Jet (Parts Templates Tiled)",
+      "F-14 Park Jet Parts Templates Non-Tiled 60 percent",
+      "F-14 Park Jet Parts Templates Tiled 60 percent",
+      "F-14 Park Jet (Parts Templates 75 Non-tiled)",
+      "F-14 Park Jet (Parts Templates 75 Tiled)",
+      "F14A"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": "/wp-content/uploads/2025/05/5af21b0c87d83b8aca7b2e864f82861e.jpg",
+      "width": 480,
+      "height": 360,
+      "alt": "飛行中のF-14模型飛行機"
+    },
+    "canonical_route_candidate": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "legacy_urls": [
+      "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2"
+    ],
+    "downloads": [
+      {
+        "file_id": "file-12d0dcf4494f0727f18f1e8cea561990b38470110ecaa59ac283a53433968fed",
+        "original_filename": "F-14.rar",
+        "file_format": "rar",
+        "file_size": 5682309,
+        "sha256": "4392632fe0a71377904ad059153ac0273c3616d9f03a60bb6ea3fe4fce283d96",
+        "source_local_path": "F-14.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-27787f2c12626c6ecd090ee45cede43665793b27a9c45c7e00245be438662e16",
+        "original_filename": "F-14 tomcat設計図.zip",
+        "file_format": "zip",
+        "file_size": 6212559,
+        "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+        "source_local_path": "F-14/F-14 tomcat設計図.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-7a273d9ad1071e976744e2392109f1612a91dcb74136a0483c0cb4e7eeb62f26",
+        "original_filename": "F-14 Park Jet (Parts Templates Tiled A4).pdf",
+        "file_format": "pdf",
+        "file_size": 89671,
+        "sha256": "a6a2524af434ce16b3623069c211b5959c516ce22a74f823a901c2900f99f0d5",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-3953263e9e0b1f2fa2e644c3d14a52634ae6ff55c24c4b2cf38b6cc274567d3b",
+        "original_filename": "F-14 tomcat設計図1.jpg",
+        "file_format": "jpg",
+        "file_size": 29261,
+        "sha256": "d915e29a0ca30bae8a8c4e47f0043b78db98fecfd7cb02b950a89324a1ea5c67",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-b896d7b92635e7c48812ad71e00391f258c089d2973974366cf47a1f6c24e6c7",
+        "original_filename": "F-14 tomcat設計図2.jpg",
+        "file_format": "jpg",
+        "file_size": 21593,
+        "sha256": "e54b37f6ce7d32286627ebe99bfe7c045973d7a0b3561f422e6280bb3799f83f",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-63bf08cda05d21f53916015b9240ff7966e88d3bb3a03ec9813bc77b6fe0514e",
+        "original_filename": "F-14 tomcat設計図3.jpg",
+        "file_format": "jpg",
+        "file_size": 22727,
+        "sha256": "c153b8a4a24f1e80d3813d6378bcab97cec034cc4cde26bfde6555b4f45dd9b2",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-d714de8d83811c892e7950f95e2d1babe7fe46a8c6dfddf345b6629576e5864f",
+        "original_filename": "F-14_Decals_Page_1.gif",
+        "file_format": "gif",
+        "file_size": 250274,
+        "sha256": "71fae149bea102c2622f7e58d3f8af0e4e4ba647ea15fdc0506adc1081324af0",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-93c92788070c5770bca2c463a99656a78bb04bcbca7918b08bac518bdf6c118c",
+        "original_filename": "F-14_Decals_Page_2.gif",
+        "file_format": "gif",
+        "file_size": 47299,
+        "sha256": "6ab0592d3202bb5f121add603f4cc69e4df3c38dbbbca44d15571a61699524e8",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-61e632ad9594d9f8f9c0099f34ce7e5cd7d45667024ad521f4a832208c670152",
+        "original_filename": "F-14_Park_Jet_Construction_Guide.pdf",
+        "file_format": "pdf",
+        "file_size": 5385246,
+        "sha256": "5d974b144332ec8674bb47c4b4ce5b0c10bf173fe817bb34a185bf83adb5c022",
+        "source_local_path": "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-856a84a4a6533166404caba8115921171858da625c0dcc01d7e88e2ffeaf9c0c",
+        "original_filename": "F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+        "file_format": "pdf",
+        "file_size": 21912,
+        "sha256": "d53517f0c691fd6c940c70645758bac5fc464dcab169e20f493c3508ee22af09",
+        "source_local_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-62696f9ae7a0dfd40cbffaba66b7e2a02caa0833bc60d436577adb1a55254a59",
+        "original_filename": "F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+        "file_format": "pdf",
+        "file_size": 26740,
+        "sha256": "02a5def0614cc8e3dc554b1350346ae9561ad030ec0d5ddd13f134e538878bbe",
+        "source_local_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-8394c271adebb374561a315d6d72e133ff4e4a77ca82ff2a1d508a697a6466a2",
+        "original_filename": "Mid sweep wing plan.pdf",
+        "file_format": "pdf",
+        "file_size": 6796,
+        "sha256": "6978bbb8a28b63ad8f7cc195a5e6e406fa6bf69a9b334cd0cf86764e1237d8cc",
+        "source_local_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-093018f0a85a7830aa08f75cab7f4a8e55b6fafa3d3da1b34df7b2d61f12f030",
+        "original_filename": "F-14 Park Jet (Assembly Drawing).pdf",
+        "file_format": "pdf",
+        "file_size": 74147,
+        "sha256": "f0fd3dd888d91522c657fd2ebc68a7236549b12a177d2607b8c37f0b837a2881",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-72d60289506a0860d0c1f21751bd38a8aa4667103587cbd695dbd867514dc9d6",
+        "original_filename": "F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+        "file_format": "pdf",
+        "file_size": 71588,
+        "sha256": "9f51d1efed4c7b9b674fbc2d4a902ed4cc158616f946b37338dbfec9900b5f33",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-c7a7f2634a5aa18304f62976972b5680de081b011ac0338b3b5bf056bc46da0f",
+        "original_filename": "F-14 Park Jet (Parts Templates Tiled).pdf",
+        "file_format": "pdf",
+        "file_size": 89653,
+        "sha256": "48e026097d4bff6572f57b315087af54b796bc90f624dfa144271240686034ce",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-cefe1aaf3023fdb0321502a9152507155f0f37f0c1ef79bf06388f85fb042f09",
+        "original_filename": "F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+        "file_format": "pdf",
+        "file_size": 58288,
+        "sha256": "6b9abc392206e312ed967c7bfb689d80b7ed0f31aa56eb9aabd2d32ecf10ee62",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-2eaaf982ea9d246351fe968d93e96bf446fbc885de6e9ad448fd8f3d52c02645",
+        "original_filename": "F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+        "file_format": "pdf",
+        "file_size": 93978,
+        "sha256": "34038b720cdc52360e005a002a5aed2dfa4827c0246db63fa5a7433415c78c08",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-56850eeba60584803a70549b08fe25a4298dc6e0fed100e5109bd7291f746fc0",
+        "original_filename": "F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+        "file_format": "pdf",
+        "file_size": 71614,
+        "sha256": "ca446f966643bae1f10892e354de2e0512d431ed77c734648891258f2b613b8e",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-2249c6b9ff703771a77fc16ca78e73b36319a172f559ff259421f0f613237b7e",
+        "original_filename": "F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+        "file_format": "pdf",
+        "file_size": 82679,
+        "sha256": "b0c8094181ce5cb29ece2420beaab6f1291c4d91ffff49a00bc98b2114a04322",
+        "source_local_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-6e6f2e84e6f8665b65bb0d125da05d8f5f76de0952b20669fbfde08f18436e05",
+        "original_filename": "F14A.rar",
+        "file_format": "rar",
+        "file_size": 4168846,
+        "sha256": "20ce174f24bf1f00bb9356b0962aaa9fa19df632c11b7d6be0b595c39af66109",
+        "source_local_path": "F14A.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f-15",
+    "slug": "f-15",
+    "title_ja": "F-15",
+    "title_original": "F-15",
+    "title_original_variants": [
+      "F-15"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/f-15/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-8c7c648113d63924855298a68e7f6203e80c1687959a4a8b117be680ecc31814",
+        "original_filename": "F-15.rar",
+        "file_format": "rar",
+        "file_size": 2831432,
+        "sha256": "6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3",
+        "source_local_path": "F-15.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f-18",
+    "slug": "f-18",
+    "title_ja": "F-18",
+    "title_original": "F-18",
+    "title_original_variants": [
+      "F-18"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "F-18.zip",
+      "archive_member": "Shumate F-18/blueangel_large.gif",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/f-18/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-7d4bc9075c8a23d5fd9aa7b4397137a93dab41026bbe5ffba51eacd0d3d23590",
+        "original_filename": "F-18.zip",
+        "file_format": "zip",
+        "file_size": 3477836,
+        "sha256": "4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134",
+        "source_local_path": "F-18.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f-22",
+    "slug": "f-22",
+    "title_ja": "F22",
+    "title_original": "F22",
+    "title_original_variants": [
+      "F22",
+      "f-22像真机",
+      "简单的F22图纸",
+      "简单的f22"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "简单的F22图纸.rar",
+      "archive_member": "简单的F22图纸/f22 2.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/f-22/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-6fa464aadd6f315963612f4742170dc8037dddedfb58505e81ef9021eacd90de",
+        "original_filename": "F22.rar",
+        "file_format": "rar",
+        "file_size": 2283823,
+        "sha256": "0d62e9762b54f7410ac400ffa275328806fbcd92bcec47dcb9d082c071dbdffb",
+        "source_local_path": "F22.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-fed99438152a00780cfc748dad1ab09f49a70c66c11531183cf4cec907d73f3e",
+        "original_filename": "f-22像真机.zip",
+        "file_format": "zip",
+        "file_size": 2841981,
+        "sha256": "e8e8a7e2fc62fc6fe2dda031a0c1947167b864c4f8e4938fd65b3f2c36d5faad",
+        "source_local_path": "f-22像真机.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-bc7650867c843b505a40cad741d2063e28b8363aa79fb891780849cb2a460d21",
+        "original_filename": "简单的F22图纸.rar",
+        "file_format": "rar",
+        "file_size": 458741,
+        "sha256": "3aa28b4da237289b1dfa212f6ad5b62d43bd7d97fd3f5f951b8d886acccb9692",
+        "source_local_path": "简单的F22图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-4f08c5a0edef7e2430e83416d71319ace5dcb78bf70b10a01d77ceaf022036d2",
+        "original_filename": "简单的f22.rar",
+        "file_format": "rar",
+        "file_size": 1052073,
+        "sha256": "36b5ca4573dbacd96c2a9c6156b348dd75cfdb28eb50b783b21fcfc3a352bd6f",
+        "source_local_path": "简单的f22.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f117",
+    "slug": "f117",
+    "title_ja": "F117",
+    "title_original": "F117",
+    "title_original_variants": [
+      "F117"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/f117/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-137dbd0d410d4b63adf6e67b1a719100f5840c3141fc8479b8d67369546491ba",
+        "original_filename": "F117.rar",
+        "file_format": "rar",
+        "file_size": 573065,
+        "sha256": "911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f",
+        "source_local_path": "F117.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f16",
+    "slug": "f16",
+    "title_ja": "F16",
+    "title_original": "F16",
+    "title_original_variants": [
+      "F16"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "F16.rar",
+      "archive_member": "F16/F16喷印图.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/f16/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-29fc46c8292b57b2a0f25e766bf03848cb45b3b2627d30016471878ee30743c9",
+        "original_filename": "F16.rar",
+        "file_format": "rar",
+        "file_size": 1728224,
+        "sha256": "dc1d63eacdcfa8447afa6d17406d26e1dc8b716a09e16c96c795cbf3a61bb0d8",
+        "source_local_path": "F16.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f4d",
+    "slug": "f4d",
+    "title_ja": "RCスケール機：F4Dスカイレイ、スチレンボード飛行機",
+    "title_original": "F4D",
+    "title_original_variants": [
+      "F4D"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": "/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029.jpg",
+      "width": 1729,
+      "height": 1080,
+      "alt": "飛行中のF4Dスカイレイ"
+    },
+    "canonical_route_candidate": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+    "legacy_wordpress_ids": [
+      1891
+    ],
+    "legacy_package_ids": [
+      "1886"
+    ],
+    "legacy_urls": [
+      "https://happinesea.com/engineering-drawing/202201171891.html",
+      "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行"
+    ],
+    "downloads": [
+      {
+        "file_id": "file-e288865b4be5bcf489cabdaeb03e8f46c5b2b457bda64dc09d3fe4909f28d6da",
+        "original_filename": "F4D.rar",
+        "file_format": "rar",
+        "file_size": 931363,
+        "sha256": "5e3ec67f3470f7d0432d728f96823877196fe53d3c5c80bb79986857a1503202",
+        "source_local_path": "F4D.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-f4u",
+    "slug": "f4u",
+    "title_ja": "第二次世界大戦期 F4U模型機の設計図",
+    "title_original": "二战F4U模型飞机图纸",
+    "title_original_variants": [
+      "二战F4U模型飞机图纸"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/f4u/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-9c0cace9fd49838abca566233752ad904281e90e7076f0c30d91ee56cfcfee55",
+        "original_filename": "二战F4U模型飞机图纸.rar",
+        "file_format": "rar",
+        "file_size": 59358,
+        "sha256": "3562872b0f355532858b9129e0394a2cc54da26d0d609881a4a1444553dd1c68",
+        "source_local_path": "二战F4U模型飞机图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-floatplane-unidentified",
+    "slug": "floatplane-unidentified",
+    "title_ja": "水上機の設計図（機種未確認）",
+    "title_original": "水上飞机图纸",
+    "title_original_variants": [
+      "水上飞机图纸"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/floatplane-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-304986dee19263143a89d27ee82d9f24395a89fa47432f01a4834f361d874801",
+        "original_filename": "水上飞机图纸.rar",
+        "file_format": "rar",
+        "file_size": 231572,
+        "sha256": "4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed",
+        "source_local_path": "水上飞机图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-fuel-cad-unidentified",
+    "slug": "fuel-cad-unidentified",
+    "title_ja": "エンジン動力機のCAD設計図（機種未確認）",
+    "title_original": "油动CAD格式飞机图纸",
+    "title_original_variants": [
+      "油动CAD格式飞机图纸"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/fuel-cad-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-160f70a68d582d304b607f62d21aa4cf343e866e44d5f02cae8cc89bb1a6f304",
+        "original_filename": "油动CAD格式飞机图纸.rar",
+        "file_format": "rar",
+        "file_size": 120841,
+        "sha256": "21b62c8398a94358709d88dee0493ea20c29d8ac61618aaf6682a8be0715347d",
+        "source_local_path": "油动CAD格式飞机图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-j-20",
+    "slug": "j-20",
+    "title_ja": "j-20 3D図・CAD図",
+    "title_original": "j-20 三维图 CAD图",
+    "title_original_variants": [
+      "j-20 三维图 CAD图",
+      "歼20"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "歼20.rar",
+      "archive_member": "歼20.bmp",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/j-20/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-0b2a60dd15b0c7656baceafcb10f0f48724e431372a9f79151604830175be698",
+        "original_filename": "j-20 三维图 CAD图.rar",
+        "file_format": "rar",
+        "file_size": 322860,
+        "sha256": "8e0f7b0163dc2e8c430f7777241984c2426187c8e355329c7985115572d60b50",
+        "source_local_path": "j-20 三维图 CAD图.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-3d4cc4127641a91ea167639f7f0e76ccc54ab952ada04d8b0246cd781d5a6298",
+        "original_filename": "歼20.rar",
+        "file_format": "rar",
+        "file_size": 755261,
+        "sha256": "baf8d87d7f268a1c313363c2fdd8c0e6be6bfbc341f4a3db30c6aa6ffccb74e1",
+        "source_local_path": "歼20.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-j10",
+    "slug": "j10",
+    "title_ja": "J10",
+    "title_original": "J10",
+    "title_original_variants": [
+      "J10",
+      "歼10"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/j10/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-9cc5cde92f5ba353b3ff17fd11f063564457a69eab70095faf7e8084e5b3c53a",
+        "original_filename": "J10.rar",
+        "file_format": "rar",
+        "file_size": 2014697,
+        "sha256": "fb50b03bdb40bd9d38d6e15650745eb6db3fc210cb93822c56b03f981e13a9d1",
+        "source_local_path": "J10.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-9b79765084f07f90130d88f2aa4f07fb05fe8e49a1f7a92d05b500a3d28aae0d",
+        "original_filename": "歼10.rar",
+        "file_format": "rar",
+        "file_size": 1619525,
+        "sha256": "d7b4d6e3b292095dd75f5b6bdbddd2448ee1d0b4d18cc2d47df1c9333685e308",
+        "source_local_path": "歼10.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-jas-39",
+    "slug": "jas-39",
+    "title_ja": "JAS-39 グリペン（候補）",
+    "title_original": "JAS-39鹰狮",
+    "title_original_variants": [
+      "JAS-39鹰狮"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "JAS-39鹰狮.rar",
+      "archive_member": "JAS-39/Gripen Decals.gif",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/jas-39/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-298eeaa767e98a6257fd0c584e3f5f20eff3a2f8f623bc7dfcd06f1fbd8b4fc7",
+        "original_filename": "JAS-39鹰狮.rar",
+        "file_format": "rar",
+        "file_size": 2285723,
+        "sha256": "b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd",
+        "source_local_path": "JAS-39鹰狮.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-jet-engine-manual",
+    "slug": "jet-engine-manual",
+    "title_ja": "模型用ジェットエンジン製作手引き（分割1）",
+    "title_original": "航模喷气发动机制作手册.part1",
+    "title_original_variants": [
+      "航模喷气发动机制作手册.part1",
+      "航模喷气发动机制作手册.part2"
+    ],
+    "category": "エンジン・製作資料",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/jet-engine-manual/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-3c77fa3a85321dd06f758beefd65c74223cfa45a3d5919d2628a8eedf869d200",
+        "original_filename": "航模喷气发动机制作手册.part1.rar",
+        "file_format": "rar",
+        "file_size": 31457280,
+        "sha256": "a472a6e30fd1b2eaf9d2a3ceea4bc783a2ff7dc4558923542c5b6ddaac40e230",
+        "source_local_path": "航模喷气发动机制作手册.part1.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "REVIEW_REQUIRED",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-8af56cb3a8c963274b410eb61e3ec8a49029b8a9471948a92efd0113319ae172",
+        "original_filename": "航模喷气发动机制作手册.part2.rar",
+        "file_format": "rar",
+        "file_size": 24523575,
+        "sha256": "591db461d9b2b9ab44eaaeb4b1b584d30bf537ceccf0659ca1e41f96cd5ec704",
+        "source_local_path": "航模喷气发动机制作手册.part2.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "REVIEW_REQUIRED",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-kj66-engine",
+    "slug": "kj66-engine",
+    "title_ja": "kj66 3D ターボジェット資料",
+    "title_original": "kj663D涡喷",
+    "title_original_variants": [
+      "kj663D涡喷",
+      "kj663D涡喷",
+      "kj66涡轮发动机制作蓝图"
+    ],
+    "category": "エンジン・製作資料",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "kj66涡轮发动机制作蓝图.rar",
+      "archive_member": "kj66涡轮发动机制作蓝图/200511242126370es4.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/kj66-engine/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-ee9599f57efc83635ae0e1743eff8629d1130307d822d61ba5b6153cbefb2025",
+        "original_filename": "kj663D涡喷.rar",
+        "file_format": "rar",
+        "file_size": 6973758,
+        "sha256": "d165429686bdf247cc040501d3ed8fc5bbcf0c514ac1f1cf03031bbde910680b",
+        "source_local_path": "kj663D涡喷.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-a3ddd8ba03aa01399707d0ee426f4733a26e2f9ce5b907e8593ae939b7b3d247",
+        "original_filename": "kj663D涡喷.zip",
+        "file_format": "zip",
+        "file_size": 10126438,
+        "sha256": "6c07f7cd0cd651b8e21e0a400c143a3e5c436449a4895faa14173089ea2a582c",
+        "source_local_path": "kj663D涡喷.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-fedff1b02ed34540837647e5659973f645732c03f3bbc7e9049c1be195545d3a",
+        "original_filename": "kj66涡轮发动机制作蓝图.rar",
+        "file_format": "rar",
+        "file_size": 3150844,
+        "sha256": "8a4d661ed26accf40564f8ddbd5618e5ebd06631c538dab9936626b66e353281",
+        "source_local_path": "kj66涡轮发动机制作蓝图.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "EXACT_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-laser200",
+    "slug": "laser200",
+    "title_ja": "laser200",
+    "title_original": "laser200",
+    "title_original_variants": [
+      "laser200"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/laser200/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-a60c9dbcf87e202aee0fb6b01805ef39976b5a8d53d60f1ba2b081cf7dd3bb2d",
+        "original_filename": "laser200.rar",
+        "file_format": "rar",
+        "file_size": 6412390,
+        "sha256": "df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782",
+        "source_local_path": "laser200.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-light-aircraft-no1",
+    "slug": "light-aircraft-no1",
+    "title_ja": "1号軽飛行機（資料名）",
+    "title_original": "1号轻型飞机",
+    "title_original_variants": [
+      "1号轻型飞机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "1号轻型飞机.zip",
+      "archive_member": "2008729132928.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/light-aircraft-no1/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-87c88ef27c95d0caef79a9687760742e88e37e2d631ffac29d42072346fcec65",
+        "original_filename": "1号轻型飞机.zip",
+        "file_format": "zip",
+        "file_size": 2519367,
+        "sha256": "36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785",
+        "source_local_path": "1号轻型飞机.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-light-helicopter",
+    "slug": "light-helicopter",
+    "title_ja": "軽量ヘリコプター（Furia資料候補）",
+    "title_original": "轻型直升机",
+    "title_original_variants": [
+      "轻型直升机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/light-helicopter/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-c0154703eedaf4f425c0138b8299512208488803f012de13f0ef420fd84d13eb",
+        "original_filename": "轻型直升机.rar",
+        "file_format": "rar",
+        "file_size": 2320354,
+        "sha256": "da276d766dd0a4994168107700795599f84a51fd70631d72f95bd19e84acd524",
+        "source_local_path": "轻型直升机.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-microjet-engine",
+    "slug": "microjet-engine",
+    "title_ja": "小型ジェットエンジンの詳細製作図",
+    "title_original": "微型喷气式发动机详细制作图纸",
+    "title_original_variants": [
+      "微型喷气式发动机详细制作图纸"
+    ],
+    "category": "エンジン・製作資料",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/microjet-engine/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-5f77712030c6d884fdd1ad2497fc4da1ef7bced3fd5080adec09e7bec07cdf23",
+        "original_filename": "微型喷气式发动机详细制作图纸.rar",
+        "file_format": "rar",
+        "file_size": 50332469,
+        "sha256": "068cbdc21a4b9db961924b3d2a0ace4b6b3314705b27fa4f53e3bef861a779e8",
+        "source_local_path": "微型喷气式发动机详细制作图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-mig-29",
+    "slug": "mig-29",
+    "title_ja": "MiG-29",
+    "title_original": "MiG-29",
+    "title_original_variants": [
+      "MiG-29",
+      "米格 29"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/mig-29/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-08d38051505cc45fe781bd1b049402adadf58e3338a576ed82b7ee30392af7a0",
+        "original_filename": "MiG-29.rar",
+        "file_format": "rar",
+        "file_size": 141027,
+        "sha256": "ed903b0d1a183a15cd55c090bba964b76401d839e36909e2d3175bc412620aae",
+        "source_local_path": "MiG-29.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-514f8a3eae5b85dbe277a33314ab3a4fd930d6b998a80dcec038a2e9d224534b",
+        "original_filename": "米格 29.rar",
+        "file_format": "rar",
+        "file_size": 3241193,
+        "sha256": "0de9311fd7de8fcbc5bb98dce4c66a3252ebc9793af19615b35c79cb5360b7b3",
+        "source_local_path": "米格 29.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-mig21",
+    "slug": "mig21",
+    "title_ja": "MiG-21（候補）",
+    "title_original": "米格21",
+    "title_original_variants": [
+      "米格21"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/mig21/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-786fcb9c46216f7401a44a4c374fda28559fd7bf792b3c7345918a4632f223f9",
+        "original_filename": "米格21.zip",
+        "file_format": "zip",
+        "file_size": 611563,
+        "sha256": "bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a",
+        "source_local_path": "米格21.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-mig25",
+    "slug": "mig25",
+    "title_ja": "MiG-25（候補）",
+    "title_original": "米格25",
+    "title_original_variants": [
+      "米格25"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/mig25/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-d8cd593b93e8c263867fd6840dcc00c92932af5d7db7918439940eb4ab8dcd1e",
+        "original_filename": "米格25.zip",
+        "file_format": "zip",
+        "file_size": 276735,
+        "sha256": "54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b",
+        "source_local_path": "米格25.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-mirage2000",
+    "slug": "mirage2000",
+    "title_ja": "幻影2000（原題：函道幻影2000）",
+    "title_original": "函道幻影2000",
+    "title_original_variants": [
+      "函道幻影2000"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "函道幻影2000.rar",
+      "archive_member": "函道幻影2000.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/mirage2000/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-a24cbd27d22c55ea6c1715a4e38d138af18eede4b48bf0220f136d6727fc3ea7",
+        "original_filename": "函道幻影2000.rar",
+        "file_format": "rar",
+        "file_size": 1952579,
+        "sha256": "e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b",
+        "source_local_path": "函道幻影2000.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-model-beginner-materials",
+    "slug": "model-beginner-materials",
+    "title_ja": "模型関連の付属資料（原題：航模赠品）",
+    "title_original": "航模赠品",
+    "title_original_variants": [
+      "航模赠品"
+    ],
+    "category": "エンジン・製作資料",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/model-beginner-materials/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-2e17200f3c8bb2238edca15fa2b55289ef6118055e8b38cde52dd7151ac1051f",
+        "original_filename": "航模赠品.rar",
+        "file_format": "rar",
+        "file_size": 64963,
+        "sha256": "ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069",
+        "source_local_path": "航模赠品.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-p51",
+    "slug": "p51",
+    "title_ja": "P51 設計図",
+    "title_original": "P51图纸",
+    "title_original_variants": [
+      "P51图纸"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/p51/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-aa4cb8027dfa1cd42654728c9fca097ccb1809e565cc4b82af207eca2cd8b42f",
+        "original_filename": "P51图纸.rar",
+        "file_format": "rar",
+        "file_size": 103200,
+        "sha256": "e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3",
+        "source_local_path": "P51图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-paper-aircraft",
+    "slug": "paper-aircraft",
+    "title_ja": "紙飛行機の資料",
+    "title_original": "纸飞机",
+    "title_original_variants": [
+      "纸飞机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/paper-aircraft/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-eca6a1b8eb26edf79d2ce762b6249947131c7a42406e7f90c2fb22a16e7118a7",
+        "original_filename": "纸飞机.rar",
+        "file_format": "rar",
+        "file_size": 1603972,
+        "sha256": "cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25",
+        "source_local_path": "纸飞机.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-piper-j3-cub",
+    "slug": "piper-j3-cub",
+    "title_ja": "Piper J-3 Cub 軽飛行機の設計図",
+    "title_original": "轻型飞机图纸Piper J-3 Cub",
+    "title_original_variants": [
+      "轻型飞机图纸Piper J-3 Cub"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/piper-j3-cub/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-92da6cb683ee8a51d339056b1fa9bbd7af20bad91963755ba4999b409db8764d",
+        "original_filename": "轻型飞机图纸Piper J-3 Cub.rar",
+        "file_format": "rar",
+        "file_size": 6302334,
+        "sha256": "caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615",
+        "source_local_path": "轻型飞机图纸Piper J-3 Cub.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-pitts-park-flyer",
+    "slug": "pitts-park-flyer",
+    "title_ja": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
+    "title_original": "3d双翼机",
+    "title_original_variants": [
+      "3d双翼机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "赤と白のPitts複葉機"
+    },
+    "canonical_route_candidate": "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+    "legacy_wordpress_ids": [
+      1726
+    ],
+    "legacy_package_ids": [
+      "1724"
+    ],
+    "legacy_urls": [
+      "https://happinesea.com/engineering-drawing/202110181726.html",
+      "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図"
+    ],
+    "downloads": [
+      {
+        "file_id": "file-017c265561adc9de0b43407b920ecc707b72480f018d43bdd4d844fc63872453",
+        "original_filename": "3d双翼机.rar",
+        "file_format": "rar",
+        "file_size": 240330,
+        "sha256": "139f073fca606752f3cf5b80f0b20dd67c261a38ee520bab228aba222d5280b8",
+        "source_local_path": "3d双翼机.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "PROBABLE_DUPLICATE",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-printed-plans-unidentified",
+    "slug": "printed-plans-unidentified",
+    "title_ja": "印刷用飛行機設計図（機種未確認）",
+    "title_original": "喷绘飞机图纸",
+    "title_original_variants": [
+      "喷绘飞机图纸"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "喷绘飞机图纸.rar",
+      "archive_member": "csl 桔红 820X1250mm.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/printed-plans-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-cac67ac891504f526b163d2154a2e87a9e0d824e409ed090940bf7b356e656fd",
+        "original_filename": "喷绘飞机图纸.rar",
+        "file_format": "rar",
+        "file_size": 5752074,
+        "sha256": "237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61",
+        "source_local_path": "喷绘飞机图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-pulse-engine-manual",
+    "slug": "pulse-engine-manual",
+    "title_ja": "模型用パルスエンジン製作資料",
+    "title_original": "航模脉冲式发动机制作手册",
+    "title_original_variants": [
+      "航模脉冲式发动机制作手册"
+    ],
+    "category": "エンジン・製作資料",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "航模脉冲式发动机制作手册.zip",
+      "archive_member": "200202253887567[1].jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/pulse-engine-manual/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-125afbb8678d9db6e1578d4551cfb3af67f6dabe5750e116756aa98058e4bf24",
+        "original_filename": "航模脉冲式发动机制作手册.zip",
+        "file_format": "zip",
+        "file_size": 3872525,
+        "sha256": "1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e",
+        "source_local_path": "航模脉冲式发动机制作手册.zip",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-rotorcraft-unidentified",
+    "slug": "rotorcraft-unidentified",
+    "title_ja": "回転翼機（形式未確認）",
+    "title_original": "旋翼机",
+    "title_original_variants": [
+      "旋翼机"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/rotorcraft-unidentified/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-b8a4adfd0e161cded4b196cb8f2cbbcc725a82838bd8e8b8feaf2a2326e49a67",
+        "original_filename": "旋翼机.rar",
+        "file_format": "rar",
+        "file_size": 2623947,
+        "sha256": "b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024",
+        "source_local_path": "旋翼机.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-sr71",
+    "slug": "sr71",
+    "title_ja": "SR71",
+    "title_original": "SR71",
+    "title_original_variants": [
+      "SR71"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/sr71/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-3e89c1d5d2d3d6abae83384117852ea486e54b9acf87b67d0c74a20855da588e",
+        "original_filename": "SR71.rar",
+        "file_format": "rar",
+        "file_size": 396866,
+        "sha256": "9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2",
+        "source_local_path": "SR71.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-su-27",
+    "slug": "su-27",
+    "title_ja": "su-27 設計図",
+    "title_original": "su-27图纸",
+    "title_original_variants": [
+      "su-27图纸",
+      "喷绘版－SU27"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "su-27图纸.rar",
+      "archive_member": "su-27图纸/40c928ace5767a7e9d170b883b0b0415.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/su-27/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-847fada55c7b0b9e97ca15621528621729387c9f522afd590be18cfa24830388",
+        "original_filename": "su-27图纸.rar",
+        "file_format": "rar",
+        "file_size": 115777,
+        "sha256": "070a61ec9683d9a2fb30bafb21db5adbb2022f0614997fb3d22004f31c86189e",
+        "source_local_path": "su-27图纸.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      },
+      {
+        "file_id": "file-fbe5c8eec7e07db80b7bc6d1331d44b2e37469d45d1a1d073adce4aecd368b10",
+        "original_filename": "喷绘版－SU27.rar",
+        "file_format": "rar",
+        "file_size": 443529,
+        "sha256": "1ad18fd0bc5a681543999d6f7a0f24270808f446f43049622307dcdfd389e9e9",
+        "source_local_path": "喷绘版－SU27.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-su-47",
+    "slug": "su-47",
+    "title_ja": "SU-47",
+    "title_original": "SU-47",
+    "title_original_variants": [
+      "SU-47"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": {
+      "src": null,
+      "source_local_path": "SU-47.rar",
+      "archive_member": "SU-47/3veiw.GIF",
+      "status": "REVIEW_REQUIRED"
+    },
+    "canonical_route_candidate": "/drawinglibrary/su-47/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-c4e25ddc211b9b38412c936583fc3e33fe61735b96c0d0dffd2c079e16e493b1",
+        "original_filename": "SU-47.rar",
+        "file_format": "rar",
+        "file_size": 2885506,
+        "sha256": "f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9",
+        "source_local_path": "SU-47.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  },
+  {
+    "id": "drawing-su37",
+    "slug": "su37",
+    "title_ja": "su37",
+    "title_original": "su37",
+    "title_original_variants": [
+      "su37"
+    ],
+    "category": "機体の設計図",
+    "description_ja": null,
+    "description_note": "概要は資料内容・RC適用範囲を確認後に1〜3文で作成する。",
+    "featured_image_candidate": null,
+    "canonical_route_candidate": "/drawinglibrary/su37/",
+    "legacy_wordpress_ids": [],
+    "legacy_package_ids": [],
+    "legacy_urls": [],
+    "downloads": [
+      {
+        "file_id": "file-0a72374f380c7a32d60c62290fc2f7f24cd01b1b7eaeb46c54599a7e4d22a55b",
+        "original_filename": "su37.rar",
+        "file_format": "rar",
+        "file_size": 99575,
+        "sha256": "186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c",
+        "source_local_path": "su37.rar",
+        "source_root_ref": "DRAWING_SOURCE",
+        "href": null,
+        "dedup_status": "NEW_CONTENT",
+        "publication_status": "REVIEW_REQUIRED"
+      }
+    ],
+    "content_status": "draft",
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": {
+      "status": "UNKNOWN",
+      "author": null,
+      "license": null,
+      "source_class": "OWNER_SUPPLIED_LOCATION",
+      "evidence_url": null
+    },
+    "record_status": "NEW_CONTENT",
+    "grouping_note": "同一機体のvariant候補をまとめた暫定record。設計同一・公開許諾の証明ではない。"
+  }
+]

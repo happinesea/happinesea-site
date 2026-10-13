@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-10-13T10:36:41.341093+00:00",
+  "source_sha256_replay": "PASS: 71 files",
+  "source_size_mtime_unchanged": "PASS: 71 files",
+  "deterministic_generated_json": "PASS: byte-identical regenerated outputs",
+  "audit_tests": {
+    "command": "python -B -m unittest discover -s tests -p drawing_audit_test.py",
+    "passed": 8,
+    "failed": 0
+  },
+  "existing_unit_tests": {
+    "command": "npm run test",
+    "passed": 130,
+    "failed": 0
+  },
+  "ledger_integrity": "PASS: 71 rows mapped once into 42 unique IDs/slugs; all rights held; no active download href",
+  "git_diff_check": "PASS",
+  "archive_traversal": "PASS: synthetic ZIP unsafe entries detected without extraction",
+  "unicode_paths": "PASS: real Chinese/Japanese corpus and synthetic filename collisions",
+  "runtime_build_browser_qa": "NOT RUN: no runtime route/template or binary publication change; Phase 6 covers these",
+  "remote_scope": "41 public GET requests; wpdmpro REST unavailable, public library subset only",
+  "source_binaries_copied": 0,
+  "wordpress_mutations": 0,
+  "deploys": 0,
+  "portable_newlines": "PASS: LF generated JSON and scoped Git attributes"
+}

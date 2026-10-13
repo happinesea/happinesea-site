@@ -1,0 +1,874 @@
+{
+  "method": "Public unauthenticated GET only; metadata and hashes, no HTML/binary copies",
+  "records": [
+    {
+      "url": "https://cms.happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+      "observed_at": "2026-10-13T08:12:42.987529+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 192437,
+      "sha256": "9cec501ff124ba274fd09b1c52a8ca4bb1f21b75b4ccb4138bc9524f3ae8bac6",
+      "title": "C-17輸送機スケールRC飛行機設計図(CADファイル付) - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1733",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "observed_at": "2026-10-13T08:12:34.041475+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 189191,
+      "sha256": "caa223dab1430e9b039e43031bde8ed43131ebcd5ba8a2978c0a2e549cc9fd21",
+      "title": "FIGHTER ULTRALIGHT軽飛行機設計図 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1712",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/at9spro_screen_driver",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
+        "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+      "observed_at": "2026-10-13T08:12:43.901000+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 189320,
+      "sha256": "1c14222cc228e49e8a6ee020c1ba7941f9dd903c70fe2bae7f2d432fba3834fd",
+      "title": "FIGHTER ULTRALIGHT軽飛行機設計図 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1717",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "observed_at": "2026-10-13T08:12:34.557510+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 192610,
+      "sha256": "693a334d7d6fdf3b5fe57b47f43687b47406e83d0c07fabf59c96dfa424d2f69",
+      "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1724",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "observed_at": "2026-10-13T08:12:43.321548+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 192528,
+      "sha256": "3bac65310cc68c137a596dd1cf16b610ffcbe6d7c8c5fd6c764d247f7dd6866a",
+      "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1740",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+        "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+      "observed_at": "2026-10-13T08:12:33.619372+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 196497,
+      "sha256": "4a3ed5c358cea67aba8a229e85f6844636d15eef334c87666c363e1a8c0b2326",
+      "title": "RCスケール機：F4Dスカイレイ、スチレンボード飛行機 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1886",
+        "42"
+      ],
+      "drawing_links": [
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C#respond",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "https://happinesea.com/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/download/rc6gs-v3-manual",
+        "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+      "observed_at": "2026-10-13T08:12:33.189210+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 195755,
+      "sha256": "c5dc0ca6ff258c0d282d56ab998b99e41836ac338ccd64191453e603d45276bb",
+      "title": "RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "2168",
+        "42"
+      ],
+      "drawing_links": [
+        "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2#respond",
+        "https://happinesea.com/download/document-tag/%e7%99%ba%e6%b3%a1%e3%82%b9%e3%83%81%e3%83%ad%e3%83%bc%e3%83%ab",
+        "https://happinesea.com/download/document-tag/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc8x-firmwares-v1-1-7happinesea%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%8c%96%e3%83%91%e3%83%83%e3%82%b1%e3%83%bc%e3%82%b8%e5%90%ab%e3%82%80",
+        "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/drawinglibrary",
+      "observed_at": "2026-10-13T08:12:14.495993+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/drawinglibrary",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 187154,
+      "sha256": "de69fe5746255a2dec14d3a26047a3e6ad41d8c809fe6c287a5bf43d387b018d",
+      "title": "設計図ライブラリ - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "233",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c-2",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/engineering-drawing/202110181716.html",
+      "observed_at": "2026-10-13T08:12:14.890660+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/engineering-drawing/202110181716.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 195124,
+      "sha256": "409ed7bfa3a76b82489cf341d8ace565d416a87ce8042edd54d8affc66e1b8c0",
+      "title": "FIGHTER ULTRALIGHT軽飛行機設計図をアップしました。 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1716",
+        "1717",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181716.html/feed",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/engineering-drawing/202110181726.html",
+      "observed_at": "2026-10-13T08:12:19.222336+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/engineering-drawing/202110181726.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 195457,
+      "sha256": "0a1bc1f670aa19d3f1fd92f08e89b284894bc3ec4682994e8742add7383ffc57",
+      "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1724",
+        "1726",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html/feed",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/engineering-drawing/202110191734.html",
+      "observed_at": "2026-10-13T08:12:19.519708+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/engineering-drawing/202110191734.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 195496,
+      "sha256": "5dd36e156d932813e57b957585458dcfb2283815a3750f3f1e867708be2e77da",
+      "title": "C-17輸送機設計図(CAD付き) - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1733",
+        "1734",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html/feed",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/engineering-drawing/202110211742.html",
+      "observed_at": "2026-10-13T08:12:23.614451+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/engineering-drawing/202110211742.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 195322,
+      "sha256": "8a3099a2aeae91313ab372b3cbaf7b204a54bf720d44be9395996bba9e36f9f1",
+      "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1740",
+        "1742",
+        "42"
+      ],
+      "drawing_links": [
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html/feed",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/engineering-drawing/202201171891.html",
+      "observed_at": "2026-10-13T08:12:25.027963+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/engineering-drawing/202201171891.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 169498,
+      "sha256": "4fc1488a03385eea84e614bee4c33d3858920b77734df3058bc6acb7981741ab",
+      "title": "RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。 - happinesea hobby",
+      "wordpress_ids_in_html": [
+        "1886",
+        "1891",
+        "42"
+      ],
+      "drawing_links": [
+        "/engineering-drawing/202201171891.html#respond",
+        "https://happinesea.com/download/download-category/firmware",
+        "https://happinesea.com/download/radiolink-t8fb%e3%83%97%e3%83%ad%e3%83%9d%e3%82%bb%e3%83%83%e3%83%88%e5%8f%96%e6%89%b1%e8%aa%ac%e6%98%8e%e6%9b%b8",
+        "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+        "https://happinesea.com/engineering-drawing/202110181716.html",
+        "https://happinesea.com/engineering-drawing/202110181726.html",
+        "https://happinesea.com/engineering-drawing/202110191734.html",
+        "https://happinesea.com/engineering-drawing/202110211742.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html",
+        "https://happinesea.com/engineering-drawing/202201171891.html#respond",
+        "https://happinesea.com/engineering-drawing/202201171891.html/feed"
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/categories?slug=engineering-drawing",
+      "observed_at": "2026-10-13T08:12:47.384444+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/categories?slug=engineering-drawing",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 5395,
+      "sha256": "3aa32fa64c702f3e05486e52c282faf7c73e5eab7f364f1f67d6947ce5c1bac8",
+      "wordpress_records": [
+        {
+          "id": 17,
+          "slug": "engineering-drawing",
+          "link": "https://happinesea.com/category/engineering-drawing",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/pages/233",
+      "observed_at": "2026-10-13T08:12:14.495993+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/pages/233",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 11190,
+      "sha256": "1fb11702f274eb4e671f764f1cc7a5dcf8a2995d139c2a9e3400e903d774b137",
+      "wordpress_records": [
+        {
+          "id": 233,
+          "slug": "drawinglibrary",
+          "link": "https://happinesea.com/drawinglibrary",
+          "modified": "2025-05-20T15:53:58",
+          "type": "page",
+          "title": "設計図ライブラリ",
+          "content_links": [
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c-2",
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+            "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+            "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+            "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1716",
+      "observed_at": "2026-10-13T08:12:15.362722+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1716",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 11266,
+      "sha256": "f5ccdec3b22c72067dd29586333dc6cdf3ab518cedbe8b1ef16cf68023488bb5",
+      "wordpress_records": [
+        {
+          "id": 1716,
+          "slug": "fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3%e3%82%92%e3%82%a2%e3%83%83%e3%83%97%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82",
+          "link": "https://happinesea.com/engineering-drawing/202110181716.html",
+          "modified": "2021-10-21T09:14:16",
+          "type": "post",
+          "title": "FIGHTER ULTRALIGHT軽飛行機設計図をアップしました。",
+          "content_links": [
+            "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
+            "#"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1726",
+      "observed_at": "2026-10-13T08:12:19.380826+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1726",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 10570,
+      "sha256": "55bdfbe248f71714537bb0af7ccf801a294c916716881bb3cb7e2f46da9aa579",
+      "wordpress_records": [
+        {
+          "id": 1726,
+          "slug": "pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+          "link": "https://happinesea.com/engineering-drawing/202110181726.html",
+          "modified": "2021-10-21T09:14:16",
+          "type": "post",
+          "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
+          "content_links": [
+            "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+            "#"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1734",
+      "observed_at": "2026-10-13T08:12:19.753179+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1734",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 10499,
+      "sha256": "80408a902cc293a1d40bb2fe6a5ff7b348ed25ba2851998ce00b872ce8ae2082",
+      "wordpress_records": [
+        {
+          "id": 1734,
+          "slug": "c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e4%bb%98%e3%81%8d",
+          "link": "https://happinesea.com/engineering-drawing/202110191734.html",
+          "modified": "2021-10-21T09:14:16",
+          "type": "post",
+          "title": "C-17輸送機設計図(CAD付き)",
+          "content_links": [
+            "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+            "#"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1742",
+      "observed_at": "2026-10-13T08:12:24.906399+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1742",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 11655,
+      "sha256": "9b00fad8b38c04b252523c29d1093305386822c08758117dba277657341a755a",
+      "wordpress_records": [
+        {
+          "id": 1742,
+          "slug": "rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+          "link": "https://happinesea.com/engineering-drawing/202110211742.html",
+          "modified": "2022-01-17T09:43:33",
+          "type": "post",
+          "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。",
+          "content_links": [
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+            "#"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1891",
+      "observed_at": "2026-10-13T08:12:25.257639+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/posts/1891",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 11595,
+      "sha256": "78cea0b29f247e8f45010aabef06fe20f9766574d08bb034c6fe69e947a751bb",
+      "wordpress_records": [
+        {
+          "id": 1891,
+          "slug": "rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4skyray%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b",
+          "link": "https://happinesea.com/engineering-drawing/202201171891.html",
+          "modified": "2022-01-17T09:44:11",
+          "type": "post",
+          "title": "RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。",
+          "content_links": [
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+            "#"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/posts?categories=17&per_page=100&page=1",
+      "observed_at": "2026-10-13T08:12:49.691799+00:00",
+      "http_status": 200,
+      "final_url": "https://cms.happinesea.com/wp-json/wp/v2/posts?categories=17&per_page=100&page=1",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 55623,
+      "sha256": "3d2e81be7dc029b8d205ec139bbfb4e93b275d84f26887366413474cf3aed0bf",
+      "wordpress_records": [
+        {
+          "id": 1891,
+          "slug": "rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4skyray%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b",
+          "link": "https://happinesea.com/engineering-drawing/202201171891.html",
+          "modified": "2022-01-17T09:44:11",
+          "type": "post",
+          "title": "RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。",
+          "content_links": [
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+            "#"
+          ]
+        },
+        {
+          "id": 1742,
+          "slug": "rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+          "link": "https://happinesea.com/engineering-drawing/202110211742.html",
+          "modified": "2022-01-17T09:43:33",
+          "type": "post",
+          "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。",
+          "content_links": [
+            "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+            "#"
+          ]
+        },
+        {
+          "id": 1734,
+          "slug": "c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e4%bb%98%e3%81%8d",
+          "link": "https://happinesea.com/engineering-drawing/202110191734.html",
+          "modified": "2021-10-21T09:14:16",
+          "type": "post",
+          "title": "C-17輸送機設計図(CAD付き)",
+          "content_links": [
+            "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+            "#"
+          ]
+        },
+        {
+          "id": 1726,
+          "slug": "pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+          "link": "https://happinesea.com/engineering-drawing/202110181726.html",
+          "modified": "2021-10-21T09:14:16",
+          "type": "post",
+          "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
+          "content_links": [
+            "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+            "#"
+          ]
+        },
+        {
+          "id": 1716,
+          "slug": "fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3%e3%82%92%e3%82%a2%e3%83%83%e3%83%97%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82",
+          "link": "https://happinesea.com/engineering-drawing/202110181716.html",
+          "modified": "2021-10-21T09:14:16",
+          "type": "post",
+          "title": "FIGHTER ULTRALIGHT軽飛行機設計図をアップしました。",
+          "content_links": [
+            "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
+            "#"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.happinesea.com/wp-json/wp/v2/wpdmpro?per_page=100",
+      "observed_at": "2026-10-13T08:12:47.395052+00:00",
+      "http_status": 404,
+      "error": "HTTPError"
+    },
+    {
+      "url": "https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+      "observed_at": "2026-10-13T08:12:42.870056+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8344,
+      "sha256": "1b2249ad674db790b66e8abe5cd9d745c767e7be694aa7eb7a7717c9f15f2fad",
+      "title": "C-17輸送機スケールRC飛行機設計図(CADファイル付) | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+        "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "observed_at": "2026-10-13T08:12:33.641104+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 7860,
+      "sha256": "563273a753bac72ca32434b3e2edc783887ebccee91aef32a69bac33d4a562aa",
+      "title": "FIGHTER ULTRALIGHT軽飛行機設計図 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+        "https://happinesea.com/download/fighter-ultralight軽飛行機設計図"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+      "observed_at": "2026-10-13T08:12:43.651410+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 7864,
+      "sha256": "d48e9c891b6cfbcbb60c9b0b75b1f1e78c2a054323c6aa3df52f395a1fb39ec6",
+      "title": "FIGHTER ULTRALIGHT軽飛行機設計図 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+        "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "observed_at": "2026-10-13T08:12:34.110125+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8484,
+      "sha256": "31eff076678374ccc79fe63fedaf2a7fea42d657341288ca11f4e2c994c35f1d",
+      "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "observed_at": "2026-10-13T08:12:43.202542+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8409,
+      "sha256": "dab5b28720adf74723aa7b8af9eb556650e1cd598f9947bba3154b998e14a548",
+      "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "/downloads/drawings/Draken-b9ad56c9eecf.zip",
+        "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+      "observed_at": "2026-10-13T08:12:33.561928+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8403,
+      "sha256": "922f44b4140bcf329fb6a95c7075a4957f37b0c0c9ffcc5e3f2374c53b23d080",
+      "title": "RCスケール機：F4Dスカイレイ、スチレンボード飛行機 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/document-tag/%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "/download/document-tag/%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "/downloads/drawings/F4D-bb86cd50d911.zip",
+        "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+      "observed_at": "2026-10-13T08:12:33.170728+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8815,
+      "sha256": "f60221ba0b5a81b0efe419a1c5b70176940d3e93481204170c440914b042543d",
+      "title": "RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/document-tag/%e7%99%ba%e6%b3%a1%e3%82%b9%e3%83%81%e3%83%ad%e3%83%bc%e3%83%ab",
+        "/download/document-tag/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f",
+        "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+      "observed_at": "2026-10-13T08:12:46.373514+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+      "content_type": "application/x-zip-compressed",
+      "bytes": 2934006,
+      "sha256": "e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+      "matches_registered_download_sha256": true
+    },
+    {
+      "url": "https://happinesea.com/downloads/drawings/Draken-b9ad56c9eecf.zip",
+      "observed_at": "2026-10-13T08:12:47.256309+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/downloads/drawings/Draken-b9ad56c9eecf.zip",
+      "content_type": "application/x-zip-compressed",
+      "bytes": 197718,
+      "sha256": "b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+      "matches_registered_download_sha256": true
+    },
+    {
+      "url": "https://happinesea.com/downloads/drawings/F4D-bb86cd50d911.zip",
+      "observed_at": "2026-10-13T08:12:45.318275+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/downloads/drawings/F4D-bb86cd50d911.zip",
+      "content_type": "application/x-zip-compressed",
+      "bytes": 932818,
+      "sha256": "bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+      "matches_registered_download_sha256": true
+    },
+    {
+      "url": "https://happinesea.com/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+      "observed_at": "2026-10-13T08:12:45.699131+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+      "content_type": "application/pdf",
+      "bytes": 888705,
+      "sha256": "cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+      "matches_registered_download_sha256": true
+    },
+    {
+      "url": "https://happinesea.com/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+      "observed_at": "2026-10-13T08:12:46.089195+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+      "content_type": "application/x-zip-compressed",
+      "bytes": 247043,
+      "sha256": "7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+      "matches_registered_download_sha256": true
+    },
+    {
+      "url": "https://happinesea.com/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+      "observed_at": "2026-10-13T08:12:44.111020+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+      "content_type": "application/x-zip-compressed",
+      "bytes": 6212559,
+      "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+      "matches_registered_download_sha256": true
+    },
+    {
+      "url": "https://happinesea.com/drawinglibrary",
+      "observed_at": "2026-10-13T08:12:14.495993+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/drawinglibrary/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 10426,
+      "sha256": "9105d7152d42e47bcc5de077652d3bb8f47949ce89b59f85fae16e99242ed1ef",
+      "title": "設計図ライブラリ | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+        "/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+        "/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c-2",
+        "/engineering-drawing/202110181716.html",
+        "/engineering-drawing/202110181726.html",
+        "/engineering-drawing/202110191734.html",
+        "/engineering-drawing/202110211742.html",
+        "/engineering-drawing/202201171891.html"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/engineering-drawing/202110181716.html",
+      "observed_at": "2026-10-13T08:12:14.496994+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/engineering-drawing/202110181716.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8433,
+      "sha256": "2470187d665c144f79fac3344dba119437251923b07a51b49aaf64d1aa92ccb9",
+      "title": "FIGHTER ULTRALIGHT軽飛行機設計図をアップしました。 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2",
+        "/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+        "https://happinesea.com/engineering-drawing/202110181716.html"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/engineering-drawing/202110181726.html",
+      "observed_at": "2026-10-13T08:12:18.466873+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/engineering-drawing/202110181726.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8421,
+      "sha256": "f3f656ac2153c30aaf4e819b90049046fe3a048607316ca9135b1a66b77e5839",
+      "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3",
+        "/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "https://happinesea.com/engineering-drawing/202110181726.html"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/engineering-drawing/202110191734.html",
+      "observed_at": "2026-10-13T08:12:19.479402+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/engineering-drawing/202110191734.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8235,
+      "sha256": "e2bd8f4e1ed3432d098dcd107060468b4008e3857cb2306c66243d62d9cbb8c1",
+      "title": "C-17輸送機設計図(CAD付き) | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98",
+        "/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+        "https://happinesea.com/engineering-drawing/202110191734.html"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/engineering-drawing/202110211742.html",
+      "observed_at": "2026-10-13T08:12:23.371594+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/engineering-drawing/202110211742.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8626,
+      "sha256": "12c766cb2e4fca2a4d737f01a855002b51d2ee146db4010af8e39a00a22a05e3",
+      "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89",
+        "/downloads/drawings/Draken-b9ad56c9eecf.zip",
+        "https://happinesea.com/engineering-drawing/202110211742.html"
+      ]
+    },
+    {
+      "url": "https://happinesea.com/engineering-drawing/202201171891.html",
+      "observed_at": "2026-10-13T08:12:24.909406+00:00",
+      "http_status": 200,
+      "final_url": "https://happinesea.com/engineering-drawing/202201171891.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8699,
+      "sha256": "17b64026fead9f38f301e6fbb9da9b9510e4dcfa38808a69cf9ecb4e003ae30e",
+      "title": "RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。 | happinesea hobby",
+      "wordpress_ids_in_html": [],
+      "drawing_links": [
+        "/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c",
+        "/downloads/drawings/F4D-bb86cd50d911.zip",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ]
+    }
+  ]
+}

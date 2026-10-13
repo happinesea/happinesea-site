@@ -1,0 +1,51 @@
+{
+  "source_record_candidates": 42,
+  "existing_source_record_matches": 5,
+  "unmatched_existing_records": [
+    {
+      "id": "drawing-fighter-ultralight",
+      "package_ids": [
+        "1712",
+        "1717"
+      ],
+      "title": "FIGHTER ULTRALIGHT",
+      "reason": "ローカルに確実な一致なし。1号轻型飞机と同定しない。"
+    }
+  ],
+  "estimated_new_pages": 37,
+  "estimated_library_records_including_existing": 43,
+  "file_dedup_status_counts": {
+    "EXACT_DUPLICATE": 20,
+    "EXISTING_PAGE_NEEDS_REFRESH": 1,
+    "NEW_CONTENT": 39,
+    "PROBABLE_DUPLICATE": 9,
+    "REVIEW_REQUIRED": 2
+  },
+  "source_files_matching_existing_records": 24,
+  "source_probable_duplicate_pairs": [
+    [
+      "F-14.rar",
+      "F-14/F-14 tomcat設計図.zip"
+    ],
+    [
+      "J10.rar",
+      "歼10.rar"
+    ],
+    [
+      "简单的F22图纸.rar",
+      "简单的f22.rar"
+    ]
+  ],
+  "category_record_counts": {
+    "エンジン・製作資料": 5,
+    "機体の設計図": 37
+  },
+  "all_source_publication_review_required": 71,
+  "current_public_asset_bytes": 98584428,
+  "current_tracked_file_bytes": 118427305,
+  "conservative_repository_payload_growth_bytes": 224191706,
+  "projected_tracked_payload_bytes": 342619011,
+  "projected_public_assets_bytes": 322776134,
+  "storage_recommendation": "A",
+  "storage_note": "現資料量はrepository内で技術的に可能。権利・nested archive・variant選別後のみ追加。履歴容量・将来増加・trafficは別途監視。"
+}

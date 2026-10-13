@@ -1,0 +1,32 @@
+[
+  {
+    "target_route": "/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg",
+    "bytes": 3336,
+    "sha256": "c62ac892f6e1862637c3eda2536ac20d072a5fdfa60bd7d844e520018e924041"
+  },
+  {
+    "target_route": "/wp-content/plugins/download-manager/assets/file-type-icons/zip.svg",
+    "bytes": 1961,
+    "sha256": "2fde18ca3152d069ac7557524ff0a21d49389b15a71f7a44750774fcb8053e9e"
+  },
+  {
+    "target_route": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-2.jpg",
+    "bytes": 35891,
+    "sha256": "f27752d66c8fb2332cb5d491ce47c06d4e0a036af9fea64e3b69925c14d5e049"
+  },
+  {
+    "target_route": "/wp-content/uploads/2025/05/5af21b0c87d83b8aca7b2e864f82861e.jpg",
+    "bytes": 9715,
+    "sha256": "28d689f6be94bd3414e540eb406183d8141d15f47252568d51d3f3297262d3be"
+  },
+  {
+    "target_route": "/wp-content/uploads/2025/05/b6d02ee8ddb426fad9e5f2f243af4261.jpg",
+    "bytes": 9821,
+    "sha256": "8275d32fbec16d7f59a9d4404ac7a33968530a661b050810cceb06ac3cb1d0ba"
+  },
+  {
+    "target_route": "/wp-content/uploads/2025/05/bd092ec83d848f9adc1f7b707d133d4e.jpg",
+    "bytes": 18835,
+    "sha256": "45c2e95f7e034965ed9d0a84a875acd5a4953c06f840f5b059b6982f2b00017c"
+  }
+]

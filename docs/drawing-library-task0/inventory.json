@@ -1,0 +1,4276 @@
+[
+  {
+    "relative_path": "1号轻型飞机.zip",
+    "original_filename": "1号轻型飞机.zip",
+    "extension": ".zip",
+    "bytes": 2519367,
+    "sha256": "36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "2008729132928.jpg",
+          "bytes": 75540,
+          "extension": ".jpg",
+          "crc32": "95a0969a",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a32054b547bcd99a97ef5608a1918d00e1b86466fc8938567578d57528cd273e"
+        },
+        {
+          "name": "2008729132940.jpg",
+          "bytes": 94753,
+          "extension": ".jpg",
+          "crc32": "32ef1d27",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c8e846aab8fe894c2e31cbe225ebda92f83df2a95ac1d4a9a229c81af5ca1536"
+        },
+        {
+          "name": "2008729132951.jpg",
+          "bytes": 83078,
+          "extension": ".jpg",
+          "crc32": "85ce0be1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8f54312c1fa221f01daee2a480b774ad089174b83aeb3a8ab2651347218bc408"
+        },
+        {
+          "name": "200872913301.jpg",
+          "bytes": 91138,
+          "extension": ".jpg",
+          "crc32": "22d8a7ac",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c15d4ed1faa028ce1ef79b89092513b426319b4076d9a172594cd293ad584238"
+        },
+        {
+          "name": "200881214414.gif",
+          "bytes": 54732,
+          "extension": ".gif",
+          "crc32": "582f1fd7",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c9872facd4ff4219c450362ad6a07cafefc20feefc379b0857bb691ef92a5403"
+        },
+        {
+          "name": "200881214425.jpg",
+          "bytes": 75540,
+          "extension": ".jpg",
+          "crc32": "95a0969a",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a32054b547bcd99a97ef5608a1918d00e1b86466fc8938567578d57528cd273e"
+        },
+        {
+          "name": "200881214440.jpg",
+          "bytes": 94753,
+          "extension": ".jpg",
+          "crc32": "32ef1d27",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c8e846aab8fe894c2e31cbe225ebda92f83df2a95ac1d4a9a229c81af5ca1536"
+        },
+        {
+          "name": "200881214451.jpg",
+          "bytes": 83078,
+          "extension": ".jpg",
+          "crc32": "85ce0be1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8f54312c1fa221f01daee2a480b774ad089174b83aeb3a8ab2651347218bc408"
+        },
+        {
+          "name": "20088121452.jpg",
+          "bytes": 91138,
+          "extension": ".jpg",
+          "crc32": "22d8a7ac",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c15d4ed1faa028ce1ef79b89092513b426319b4076d9a172594cd293ad584238"
+        },
+        {
+          "name": "200882295711.jpg",
+          "bytes": 91241,
+          "extension": ".jpg",
+          "crc32": "048361d8",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "798394deb49955e7f70a471760945cc5c4dec7c6a6a4fad8f14cdc2df56049c2"
+        },
+        {
+          "name": "200882295722.jpg",
+          "bytes": 86210,
+          "extension": ".jpg",
+          "crc32": "9fc8e856",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a570e37ddfaa584c3e71c9dce9082f9d918a8556b165fee369f3a77ddb1fd944"
+        },
+        {
+          "name": "200882295738.jpg",
+          "bytes": 89905,
+          "extension": ".jpg",
+          "crc32": "ff31a54a",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c00c280c1ce943803fe520c9c8a37d224fe52e296a2026ccb209a3013059d568"
+        },
+        {
+          "name": "200882295748.jpg",
+          "bytes": 93502,
+          "extension": ".jpg",
+          "crc32": "66648c69",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "7c0f3985184b02c4da2241f7c09590e821f19dcff26a178b94c59f103b0a1800"
+        },
+        {
+          "name": "200882295759.jpg",
+          "bytes": 64647,
+          "extension": ".jpg",
+          "crc32": "afd75eee",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c05380d52647fb1d9964b0f345cfb90115222d03ae73a5efa115987787f606b4"
+        },
+        {
+          "name": "200882295812.jpg",
+          "bytes": 91484,
+          "extension": ".jpg",
+          "crc32": "6630dabc",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "bb8996c9c150bb0d2e164a5feaa19c3e762f5f5454d2e893b0a66878ba0dfb50"
+        },
+        {
+          "name": "2008827151531.jpg",
+          "bytes": 100692,
+          "extension": ".jpg",
+          "crc32": "f2b48ab3",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "1956dd4070809ca6faffded130c24e1ca12590e077f576e6357f70fd1bd3f639"
+        },
+        {
+          "name": "2008827151549.jpg",
+          "bytes": 91204,
+          "extension": ".jpg",
+          "crc32": "f3cb93b1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "90bbe053e84e31493e01bb48caa21602936ff41d1c9a33baf996dbe8513be1b7"
+        },
+        {
+          "name": "2008827151624.jpg",
+          "bytes": 92138,
+          "extension": ".jpg",
+          "crc32": "05fa6105",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "baf60cd1b0b5d36f556c6325ee32a7321faa0e95059271701f299c02a35e4340"
+        },
+        {
+          "name": "2008827151640.jpg",
+          "bytes": 82711,
+          "extension": ".jpg",
+          "crc32": "cc010501",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "15830e139c6329d5917cb835c9d25b86c0f6ae580cbf23a53d3eed61e6b1dfcb"
+        },
+        {
+          "name": "200882715168.jpg",
+          "bytes": 104687,
+          "extension": ".jpg",
+          "crc32": "86f3421f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "faf47ae75c50ae76f750afe88f2a32b1d8de1505b2525a37c50c7d04935abf2e"
+        },
+        {
+          "name": "2008827151916.jpg",
+          "bytes": 71971,
+          "extension": ".jpg",
+          "crc32": "4573ac0d",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "468d34ac0e3fa32eadced9dbf47585d11cb67fd1f272e820ef7055d6f56d314a"
+        },
+        {
+          "name": "2008827151929.jpg",
+          "bytes": 124469,
+          "extension": ".jpg",
+          "crc32": "50cc7970",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8f8455022592d74e62abe7f422e9edda52c57173da2bf93c2ec4f5cccf2c14a1"
+        },
+        {
+          "name": "2008827151943.jpg",
+          "bytes": 82679,
+          "extension": ".jpg",
+          "crc32": "3e0c5edf",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "2e1832360064c991d10c36c9347e1399c09fe28151d2548913d58e023f1e1cea"
+        },
+        {
+          "name": "2008827151957.jpg",
+          "bytes": 96982,
+          "extension": ".jpg",
+          "crc32": "d66a05ec",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "64e4d51936bb202077cb816c14cf040af4be40ea14a9f2402c54600c0c2c74bd"
+        },
+        {
+          "name": "200882715209.jpg",
+          "bytes": 90767,
+          "extension": ".jpg",
+          "crc32": "e6adcf74",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "31b655e19a5fc1434f5c13c6ed5364122aabf6a705a200455f470209ce8f0b41"
+        },
+        {
+          "name": "2008828171123.jpg",
+          "bytes": 55612,
+          "extension": ".jpg",
+          "crc32": "5e55b01f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8e6a04a655951a88bbb66500790bd30f678d3d8e70ca609485f1e402be1646b4"
+        },
+        {
+          "name": "2008828171137.jpg",
+          "bytes": 181611,
+          "extension": ".jpg",
+          "crc32": "afd64026",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "0efb79768fd6d108f380ffd57f13f3b0df6b7bc0e0913cca09ad089e1d62f479"
+        },
+        {
+          "name": "2008828171152.jpg",
+          "bytes": 168031,
+          "extension": ".jpg",
+          "crc32": "1b86e9ae",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a0d7cd33591ba6b53400def2d5244c0cac76768d90f057a3b77b170b7f07e6ec"
+        },
+        {
+          "name": "2008828171225.jpg",
+          "bytes": 119791,
+          "extension": ".jpg",
+          "crc32": "6d371db0",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "740a4ae1ac6ace3e569707963b4fd071f3e7fe0c5539f23de59b7422d4f60fa4"
+        },
+        {
+          "name": "2008828171237.jpg",
+          "bytes": 103842,
+          "extension": ".jpg",
+          "crc32": "62aebba4",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "91d817143d6477e08c8539b56d7cef88f5d23c06c0b635962316464e1df2358b"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".gif": 1,
+        ".jpg": 29
+      }
+    }
+  },
+  {
+    "relative_path": "3d双翼机.rar",
+    "original_filename": "3d双翼机.rar",
+    "extension": ".rar",
+    "bytes": 240330,
+    "sha256": "139f073fca606752f3cf5b80f0b20dd67c261a38ee520bab228aba222d5280b8",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "3d双翼机/pitts.pdf",
+          "bytes": 132299,
+          "extension": ".pdf",
+          "crc32": "2411cca6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "3d双翼机/pittstiled.pdf",
+          "bytes": 161364,
+          "extension": ".pdf",
+          "crc32": "fa91725e",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 2
+      }
+    }
+  },
+  {
+    "relative_path": "Draken.zip",
+    "original_filename": "Draken.zip",
+    "extension": ".zip",
+    "bytes": 197680,
+    "sha256": "df6272e1492b3df5ce8ea87250ed0c280ab4c615fdfb14f3a6938bbcaacff30f",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "Draken/Draken Tiled A4.pdf",
+          "bytes": 60868,
+          "extension": ".pdf",
+          "crc32": "32413eaf",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8e666de70aa14ce8f1243c5d067a74aa6a804040064b0c8e26070ef2af4c8577"
+        },
+        {
+          "name": "Draken/Draken Tiled Letter.pdf",
+          "bytes": 62353,
+          "extension": ".pdf",
+          "crc32": "de2a090b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "076f89db644c0fd62c788e279437a9b143d5f77fa6416faa2e8f10da4b3b6a5a"
+        },
+        {
+          "name": "Draken/Draken_26_parts_A0_v2.pdf",
+          "bytes": 49180,
+          "extension": ".pdf",
+          "crc32": "91c2e109",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b9c05ab16418eba5f53d4a0781a7fa6c30ecc7f9cf0c2e03be4b3c5e2be4f5bb"
+        },
+        {
+          "name": "Draken/decals.jpg",
+          "bytes": 39069,
+          "extension": ".jpg",
+          "crc32": "7e9ca744",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e9a0f03c9c7826cdbc52b39a98e235abd6b933c383c8a64b5002e5d9b3134ccc"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".jpg": 1,
+        ".pdf": 3
+      }
+    }
+  },
+  {
+    "relative_path": "F-14.rar",
+    "original_filename": "F-14.rar",
+    "extension": ".rar",
+    "bytes": 5682309,
+    "sha256": "4392632fe0a71377904ad059153ac0273c3616d9f03a60bb6ea3fe4fce283d96",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+          "bytes": 89671,
+          "extension": ".pdf",
+          "crc32": "04032cd6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14 tomcat航模图纸1.jpg",
+          "bytes": 29261,
+          "extension": ".jpg",
+          "crc32": "d1e040f4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14 tomcat航模图纸2.jpg",
+          "bytes": 21593,
+          "extension": ".jpg",
+          "crc32": "f2e25cec",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14 tomcat航模图纸3.jpg",
+          "bytes": 22727,
+          "extension": ".jpg",
+          "crc32": "10d2c1b6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14_Decals_Page_1.gif",
+          "bytes": 250274,
+          "extension": ".gif",
+          "crc32": "1fee833f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14_Decals_Page_2.gif",
+          "bytes": 47299,
+          "extension": ".gif",
+          "crc32": "6742eeb0",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/F-14_Park_Jet_Construction_Guide.pdf",
+          "bytes": 5385246,
+          "extension": ".pdf",
+          "crc32": "3db03d89",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+          "bytes": 21912,
+          "extension": ".pdf",
+          "crc32": "10223c9a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+          "bytes": 26740,
+          "extension": ".pdf",
+          "crc32": "45264a7b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+          "bytes": 6796,
+          "extension": ".pdf",
+          "crc32": "fb73ea7b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+          "bytes": 74147,
+          "extension": ".pdf",
+          "crc32": "7e105c21",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+          "bytes": 71588,
+          "extension": ".pdf",
+          "crc32": "f7eec42f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+          "bytes": 89653,
+          "extension": ".pdf",
+          "crc32": "aff371d6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+          "bytes": 58288,
+          "extension": ".pdf",
+          "crc32": "f7fba9f8",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+          "bytes": 93978,
+          "extension": ".pdf",
+          "crc32": "1e253c29",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+          "bytes": 71614,
+          "extension": ".pdf",
+          "crc32": "4dad6ed0",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "ok F-14 tomcat航模图纸/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+          "bytes": 82679,
+          "extension": ".pdf",
+          "crc32": "9eff1ed1",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".gif": 2,
+        ".jpg": 3,
+        ".pdf": 12
+      }
+    }
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図.zip",
+    "original_filename": "F-14 tomcat設計図.zip",
+    "extension": ".zip",
+    "bytes": 6212559,
+    "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+    "parent_directory": "F-14",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+          "bytes": 89671,
+          "extension": ".pdf",
+          "crc32": "04032cd6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a6a2524af434ce16b3623069c211b5959c516ce22a74f823a901c2900f99f0d5"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+          "bytes": 29261,
+          "extension": ".jpg",
+          "crc32": "d1e040f4",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d915e29a0ca30bae8a8c4e47f0043b78db98fecfd7cb02b950a89324a1ea5c67"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+          "bytes": 21593,
+          "extension": ".jpg",
+          "crc32": "f2e25cec",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e54b37f6ce7d32286627ebe99bfe7c045973d7a0b3561f422e6280bb3799f83f"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+          "bytes": 22727,
+          "extension": ".jpg",
+          "crc32": "10d2c1b6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c153b8a4a24f1e80d3813d6378bcab97cec034cc4cde26bfde6555b4f45dd9b2"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+          "bytes": 250274,
+          "extension": ".gif",
+          "crc32": "1fee833f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "71fae149bea102c2622f7e58d3f8af0e4e4ba647ea15fdc0506adc1081324af0"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+          "bytes": 47299,
+          "extension": ".gif",
+          "crc32": "6742eeb0",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6ab0592d3202bb5f121add603f4cc69e4df3c38dbbbca44d15571a61699524e8"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+          "bytes": 5385246,
+          "extension": ".pdf",
+          "crc32": "3db03d89",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "5d974b144332ec8674bb47c4b4ce5b0c10bf173fe817bb34a185bf83adb5c022"
+        },
+        {
+          "name": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+          "bytes": 21912,
+          "extension": ".pdf",
+          "crc32": "10223c9a",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d53517f0c691fd6c940c70645758bac5fc464dcab169e20f493c3508ee22af09"
+        },
+        {
+          "name": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+          "bytes": 26740,
+          "extension": ".pdf",
+          "crc32": "45264a7b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "02a5def0614cc8e3dc554b1350346ae9561ad030ec0d5ddd13f134e538878bbe"
+        },
+        {
+          "name": "F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+          "bytes": 6796,
+          "extension": ".pdf",
+          "crc32": "fb73ea7b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6978bbb8a28b63ad8f7cc195a5e6e406fa6bf69a9b334cd0cf86764e1237d8cc"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+          "bytes": 74147,
+          "extension": ".pdf",
+          "crc32": "7e105c21",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "f0fd3dd888d91522c657fd2ebc68a7236549b12a177d2607b8c37f0b837a2881"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+          "bytes": 71588,
+          "extension": ".pdf",
+          "crc32": "f7eec42f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "9f51d1efed4c7b9b674fbc2d4a902ed4cc158616f946b37338dbfec9900b5f33"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+          "bytes": 89653,
+          "extension": ".pdf",
+          "crc32": "aff371d6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "48e026097d4bff6572f57b315087af54b796bc90f624dfa144271240686034ce"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+          "bytes": 58288,
+          "extension": ".pdf",
+          "crc32": "f7fba9f8",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6b9abc392206e312ed967c7bfb689d80b7ed0f31aa56eb9aabd2d32ecf10ee62"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+          "bytes": 93978,
+          "extension": ".pdf",
+          "crc32": "1e253c29",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "34038b720cdc52360e005a002a5aed2dfa4827c0246db63fa5a7433415c78c08"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+          "bytes": 71614,
+          "extension": ".pdf",
+          "crc32": "4dad6ed0",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "ca446f966643bae1f10892e354de2e0512d431ed77c734648891258f2b613b8e"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+          "bytes": 82679,
+          "extension": ".pdf",
+          "crc32": "9eff1ed1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b0c8094181ce5cb29ece2420beaab6f1291c4d91ffff49a00bc98b2114a04322"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".gif": 2,
+        ".jpg": 3,
+        ".pdf": 12
+      }
+    }
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+    "original_filename": "F-14 Park Jet (Parts Templates Tiled A4).pdf",
+    "extension": ".pdf",
+    "bytes": 89671,
+    "sha256": "a6a2524af434ce16b3623069c211b5959c516ce22a74f823a901c2900f99f0d5",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+    "original_filename": "F-14 tomcat設計図1.jpg",
+    "extension": ".jpg",
+    "bytes": 29261,
+    "sha256": "d915e29a0ca30bae8a8c4e47f0043b78db98fecfd7cb02b950a89324a1ea5c67",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "image"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+    "original_filename": "F-14 tomcat設計図2.jpg",
+    "extension": ".jpg",
+    "bytes": 21593,
+    "sha256": "e54b37f6ce7d32286627ebe99bfe7c045973d7a0b3561f422e6280bb3799f83f",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "image"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+    "original_filename": "F-14 tomcat設計図3.jpg",
+    "extension": ".jpg",
+    "bytes": 22727,
+    "sha256": "c153b8a4a24f1e80d3813d6378bcab97cec034cc4cde26bfde6555b4f45dd9b2",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "image"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+    "original_filename": "F-14_Decals_Page_1.gif",
+    "extension": ".gif",
+    "bytes": 250274,
+    "sha256": "71fae149bea102c2622f7e58d3f8af0e4e4ba647ea15fdc0506adc1081324af0",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "image"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+    "original_filename": "F-14_Decals_Page_2.gif",
+    "extension": ".gif",
+    "bytes": 47299,
+    "sha256": "6ab0592d3202bb5f121add603f4cc69e4df3c38dbbbca44d15571a61699524e8",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "image"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+    "original_filename": "F-14_Park_Jet_Construction_Guide.pdf",
+    "extension": ".pdf",
+    "bytes": 5385246,
+    "sha256": "5d974b144332ec8674bb47c4b4ce5b0c10bf173fe817bb34a185bf83adb5c022",
+    "parent_directory": "F-14/F-14 tomcat設計図",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+    "original_filename": "F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+    "extension": ".pdf",
+    "bytes": 21912,
+    "sha256": "d53517f0c691fd6c940c70645758bac5fc464dcab169e20f493c3508ee22af09",
+    "parent_directory": "F-14/F-14 tomcat設計図/Fixed Wing Conversion",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+    "original_filename": "F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+    "extension": ".pdf",
+    "bytes": 26740,
+    "sha256": "02a5def0614cc8e3dc554b1350346ae9561ad030ec0d5ddd13f134e538878bbe",
+    "parent_directory": "F-14/F-14 tomcat設計図/Fixed Wing Conversion",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+    "original_filename": "Mid sweep wing plan.pdf",
+    "extension": ".pdf",
+    "bytes": 6796,
+    "sha256": "6978bbb8a28b63ad8f7cc195a5e6e406fa6bf69a9b334cd0cf86764e1237d8cc",
+    "parent_directory": "F-14/F-14 tomcat設計図/Fixed Wing Conversion",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+    "original_filename": "F-14 Park Jet (Assembly Drawing).pdf",
+    "extension": ".pdf",
+    "bytes": 74147,
+    "sha256": "f0fd3dd888d91522c657fd2ebc68a7236549b12a177d2607b8c37f0b837a2881",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 100%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+    "original_filename": "F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+    "extension": ".pdf",
+    "bytes": 71588,
+    "sha256": "9f51d1efed4c7b9b674fbc2d4a902ed4cc158616f946b37338dbfec9900b5f33",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 100%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+    "original_filename": "F-14 Park Jet (Parts Templates Tiled).pdf",
+    "extension": ".pdf",
+    "bytes": 89653,
+    "sha256": "48e026097d4bff6572f57b315087af54b796bc90f624dfa144271240686034ce",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 100%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+    "original_filename": "F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+    "extension": ".pdf",
+    "bytes": 58288,
+    "sha256": "6b9abc392206e312ed967c7bfb689d80b7ed0f31aa56eb9aabd2d32ecf10ee62",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 60%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+    "original_filename": "F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+    "extension": ".pdf",
+    "bytes": 93978,
+    "sha256": "34038b720cdc52360e005a002a5aed2dfa4827c0246db63fa5a7433415c78c08",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 60%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+    "original_filename": "F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+    "extension": ".pdf",
+    "bytes": 71614,
+    "sha256": "ca446f966643bae1f10892e354de2e0512d431ed77c734648891258f2b613b8e",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 75%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+    "original_filename": "F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+    "extension": ".pdf",
+    "bytes": 82679,
+    "sha256": "b0c8094181ce5cb29ece2420beaab6f1291c4d91ffff49a00bc98b2114a04322",
+    "parent_directory": "F-14/F-14 tomcat設計図/Scale 75%",
+    "is_archive": false,
+    "type": "pdf"
+  },
+  {
+    "relative_path": "F-15.rar",
+    "original_filename": "F-15.rar",
+    "extension": ".rar",
+    "bytes": 2831432,
+    "sha256": "6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F-15/F-15Manual.pdf",
+          "bytes": 2589482,
+          "extension": ".pdf",
+          "crc32": "99ccedec",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F-15/F15_parts.pdf",
+          "bytes": 84905,
+          "extension": ".pdf",
+          "crc32": "b0b2d810",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F-15/F15_parts_Tiled.pdf",
+          "bytes": 130950,
+          "extension": ".pdf",
+          "crc32": "0a14d88e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F-15/F15_plans.pdf",
+          "bytes": 93585,
+          "extension": ".pdf",
+          "crc32": "79e1b196",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F-15/F15_plans_Tiled.pdf",
+          "bytes": 187437,
+          "extension": ".pdf",
+          "crc32": "565fbb31",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 5
+      }
+    }
+  },
+  {
+    "relative_path": "F-18.zip",
+    "original_filename": "F-18.zip",
+    "extension": ".zip",
+    "bytes": 3477836,
+    "sha256": "4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "Shumate F-18/F-18_Park_Jet_Construction_Guide_Rev_A.pdf",
+          "bytes": 3018923,
+          "extension": ".pdf",
+          "crc32": "e54cce56",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b41dd79538361c4747d85e8c4f68d6e81057f1e0a32c88c583f61d5935891a72"
+        },
+        {
+          "name": "Shumate F-18/Scale 100%/F-18_Park_Jet_%28Part_Templates_Non-Tiled%29_Rev_A.pdf",
+          "bytes": 54519,
+          "extension": ".pdf",
+          "crc32": "9f2c9dd2",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b284c08cb86752ab76b8b97c785bc89eaf161894465f8479fdf809c649a08b4d"
+        },
+        {
+          "name": "Shumate F-18/Scale 100%/F-18_Park_Jet_%28Part_Templates_Tiled%29_Rev_A.pdf",
+          "bytes": 61989,
+          "extension": ".pdf",
+          "crc32": "7a6fc97d",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e124f512ac9dd655e52dfe1f8b9557e763cfd208a80ece4e9fcf9597ba6bc0b1"
+        },
+        {
+          "name": "Shumate F-18/Scale 77%/F-18_Parkflyer_%28Part_Templates_Tiled_75%29.pdf",
+          "bytes": 56743,
+          "extension": ".pdf",
+          "crc32": "8fae2df1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d51408ec83f24fa7fad47a86b0e3b259530070e209a8a3a297d12f25870bb2e6"
+        },
+        {
+          "name": "Shumate F-18/Scale 77%/F-18_Pocket_Jet_%28Part_Templates_Non-Tiled%29.pdf",
+          "bytes": 53537,
+          "extension": ".pdf",
+          "crc32": "96b16a8f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e2a3dd1928004d9702e2a775bb725e3f995835559d1036371306c1f022470cc2"
+        },
+        {
+          "name": "Shumate F-18/Scale 77%/F-18_Pocket_Jet_%28Part_Templates_Tiled%29.pdf",
+          "bytes": 59222,
+          "extension": ".pdf",
+          "crc32": "6491643a",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b668f2e48cc80f8e0edaef767c8aeb7746dc900f7df9b1cf428fdff1f4a6f771"
+        },
+        {
+          "name": "Shumate F-18/blueangel_large.gif",
+          "bytes": 324738,
+          "extension": ".gif",
+          "crc32": "f494f6d1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "06c27a610c58f691140e8f9c3c753a709d32a0b97a305cd3ec51b42a70331c0c"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".gif": 1,
+        ".pdf": 6
+      }
+    }
+  },
+  {
+    "relative_path": "F117.rar",
+    "original_filename": "F117.rar",
+    "extension": ".rar",
+    "bytes": 573065,
+    "sha256": "911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F117/15.pdf",
+          "bytes": 62454,
+          "extension": ".pdf",
+          "crc32": "8a6ddd4e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F117/2009040374176929.pdf",
+          "bytes": 401422,
+          "extension": ".pdf",
+          "crc32": "28c253dd",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F117/3.pdf",
+          "bytes": 54305,
+          "extension": ".pdf",
+          "crc32": "d337a436",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F117/F-117A Tiled with borders (Rev4).pdf",
+          "bytes": 101310,
+          "extension": ".pdf",
+          "crc32": "8263fa97",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 4
+      }
+    }
+  },
+  {
+    "relative_path": "F14A.rar",
+    "original_filename": "F14A.rar",
+    "extension": ".rar",
+    "bytes": 4168846,
+    "sha256": "20ce174f24bf1f00bb9356b0962aaa9fa19df632c11b7d6be0b595c39af66109",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F14/01.jpg",
+          "bytes": 151247,
+          "extension": ".jpg",
+          "crc32": "ccb3e3c6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/02.jpg",
+          "bytes": 182529,
+          "extension": ".jpg",
+          "crc32": "4ddde796",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/03.jpg",
+          "bytes": 171324,
+          "extension": ".jpg",
+          "crc32": "d8885d23",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/04.jpg",
+          "bytes": 182275,
+          "extension": ".jpg",
+          "crc32": "7b69a1e8",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/05.jpg",
+          "bytes": 144288,
+          "extension": ".jpg",
+          "crc32": "2a799d64",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/06.jpg",
+          "bytes": 186919,
+          "extension": ".jpg",
+          "crc32": "6b298d22",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/07.jpg",
+          "bytes": 194719,
+          "extension": ".jpg",
+          "crc32": "c0f42aef",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/08.jpg",
+          "bytes": 135026,
+          "extension": ".jpg",
+          "crc32": "dcc93568",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/09.jpg",
+          "bytes": 141786,
+          "extension": ".jpg",
+          "crc32": "0a61dbfb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/10.jpg",
+          "bytes": 109557,
+          "extension": ".jpg",
+          "crc32": "bada7499",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/11.jpg",
+          "bytes": 171542,
+          "extension": ".jpg",
+          "crc32": "17415d37",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/12.jpg",
+          "bytes": 163606,
+          "extension": ".jpg",
+          "crc32": "eebdf26a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/13.jpg",
+          "bytes": 147290,
+          "extension": ".jpg",
+          "crc32": "5bb050e2",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/14.jpg",
+          "bytes": 144729,
+          "extension": ".jpg",
+          "crc32": "a3e03159",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/15.jpg",
+          "bytes": 100398,
+          "extension": ".jpg",
+          "crc32": "ff049b3e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/16.jpg",
+          "bytes": 143654,
+          "extension": ".jpg",
+          "crc32": "e3ecbced",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/17.jpg",
+          "bytes": 113625,
+          "extension": ".jpg",
+          "crc32": "4698d94e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/18.jpg",
+          "bytes": 223342,
+          "extension": ".jpg",
+          "crc32": "43a8cee4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/19.jpg",
+          "bytes": 217606,
+          "extension": ".jpg",
+          "crc32": "14b74cf6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/20.jpg",
+          "bytes": 284601,
+          "extension": ".jpg",
+          "crc32": "f2efbb45",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/21.jpg",
+          "bytes": 169026,
+          "extension": ".jpg",
+          "crc32": "d6dcd2cb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/22.jpg",
+          "bytes": 158380,
+          "extension": ".jpg",
+          "crc32": "4e05afaf",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/23.jpg",
+          "bytes": 152969,
+          "extension": ".jpg",
+          "crc32": "9230dc23",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/24.jpg",
+          "bytes": 171252,
+          "extension": ".jpg",
+          "crc32": "5380f06a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/25.jpg",
+          "bytes": 150870,
+          "extension": ".jpg",
+          "crc32": "446003b1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F14/Thumbs.db",
+          "bytes": 84480,
+          "extension": ".db",
+          "crc32": "6a901cef",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".db": 1,
+        ".jpg": 25
+      }
+    }
+  },
+  {
+    "relative_path": "F16.rar",
+    "original_filename": "F16.rar",
+    "extension": ".rar",
+    "bytes": 1728224,
+    "sha256": "dc1d63eacdcfa8447afa6d17406d26e1dc8b716a09e16c96c795cbf3a61bb0d8",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F16/16-1.pdf",
+          "bytes": 556361,
+          "extension": ".pdf",
+          "crc32": "d1ebbcb2",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F16/16-2.pdf",
+          "bytes": 560529,
+          "extension": ".pdf",
+          "crc32": "94b055a7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F16/F16喷印图.jpg",
+          "bytes": 295184,
+          "extension": ".jpg",
+          "crc32": "854e66a0",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F16/Tbird Transparency - Rudders - Final.TIF",
+          "bytes": 75956,
+          "extension": ".tif",
+          "crc32": "5b75c59b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F16/f16c_1-HJ.pdf",
+          "bytes": 206173,
+          "extension": ".pdf",
+          "crc32": "9d996225",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F16/f16c_2.pdf",
+          "bytes": 195440,
+          "extension": ".pdf",
+          "crc32": "6baaa342",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 1,
+        ".pdf": 4,
+        ".tif": 1
+      }
+    }
+  },
+  {
+    "relative_path": "F22.rar",
+    "original_filename": "F22.rar",
+    "extension": ".rar",
+    "bytes": 2283823,
+    "sha256": "0d62e9762b54f7410ac400ffa275328806fbcd92bcec47dcb9d082c071dbdffb",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F22/F-22制做步骤.doc",
+          "bytes": 1611264,
+          "extension": ".doc",
+          "crc32": "6a4813a4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F22/像真F-22.pdf",
+          "bytes": 929388,
+          "extension": ".pdf",
+          "crc32": "2037fc52",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".doc": 1,
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "F4D.rar",
+    "original_filename": "F4D.rar",
+    "extension": ".rar",
+    "bytes": 931363,
+    "sha256": "5e3ec67f3470f7d0432d728f96823877196fe53d3c5c80bb79986857a1503202",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F4D/F4D Skyray - Easybuild - V1.1 - Full.pdf",
+          "bytes": 873484,
+          "extension": ".pdf",
+          "crc32": "712498c3",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "F4D/F4D Skyray - Easybuild - V1.1 - Tiled A4.pdf",
+          "bytes": 112569,
+          "extension": ".pdf",
+          "crc32": "a5fc1046",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 2
+      }
+    }
+  },
+  {
+    "relative_path": "J10.rar",
+    "original_filename": "J10.rar",
+    "extension": ".rar",
+    "bytes": 2014697,
+    "sha256": "fb50b03bdb40bd9d38d6e15650745eb6db3fc210cb93822c56b03f981e13a9d1",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "J10/J10Final.pdf",
+          "bytes": 396547,
+          "extension": ".pdf",
+          "crc32": "52a3b5c7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "J10/J10FinalLined.pdf",
+          "bytes": 401536,
+          "extension": ".pdf",
+          "crc32": "45316b34",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "J10/J10Instr.pdf",
+          "bytes": 1323907,
+          "extension": ".pdf",
+          "crc32": "fafdb69a",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 3
+      }
+    }
+  },
+  {
+    "relative_path": "JAS-39鹰狮.rar",
+    "original_filename": "JAS-39鹰狮.rar",
+    "extension": ".rar",
+    "bytes": 2285723,
+    "sha256": "b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "JAS-39/Gripen Decals.gif",
+          "bytes": 75408,
+          "extension": ".gif",
+          "crc32": "b75c81cb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Assembly Drawing Tiled).pdf",
+          "bytes": 62202,
+          "extension": ".pdf",
+          "crc32": "d6d0eb9f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Assembly Drawing).jpg",
+          "bytes": 89702,
+          "extension": ".jpg",
+          "crc32": "beabf70c",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Parts Template Non-Tiled).pdf",
+          "bytes": 58976,
+          "extension": ".pdf",
+          "crc32": "1b7682cb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Parts Template Tiled).pdf",
+          "bytes": 65064,
+          "extension": ".pdf",
+          "crc32": "bc5ac149",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Parts Templates 120 Nontiled).pdf",
+          "bytes": 63304,
+          "extension": ".pdf",
+          "crc32": "d0ef8514",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Parts Templates 120 Tiled).pdf",
+          "bytes": 76985,
+          "extension": ".pdf",
+          "crc32": "b2fa10bc",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Parts Templates 77 Tiled).pdf",
+          "bytes": 62359,
+          "extension": ".pdf",
+          "crc32": "67e76f4e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen Park Jet (Parts Templates).jpg",
+          "bytes": 67827,
+          "extension": ".jpg",
+          "crc32": "3e53dbc4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/Gripen200-A4.pdf",
+          "bytes": 104204,
+          "extension": ".pdf",
+          "crc32": "87c9da6c",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/St%2011%20Zeichen%20Rund%20Farbig.gif",
+          "bytes": 75447,
+          "extension": ".gif",
+          "crc32": "e55c8d41",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/conf helvetica-01.gif",
+          "bytes": 903,
+          "extension": ".gif",
+          "crc32": "ad334efb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/gripen-decal-1.jpg",
+          "bytes": 89577,
+          "extension": ".jpg",
+          "crc32": "336a6dab",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/gripen-decal-2.jpg",
+          "bytes": 101190,
+          "extension": ".jpg",
+          "crc32": "ef11a215",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "JAS-39/gripen-guide.pdf",
+          "bytes": 1444791,
+          "extension": ".pdf",
+          "crc32": "a8d02ff6",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".gif": 3,
+        ".jpg": 4,
+        ".pdf": 8
+      }
+    }
+  },
+  {
+    "relative_path": "MiG-29.rar",
+    "original_filename": "MiG-29.rar",
+    "extension": ".rar",
+    "bytes": 141027,
+    "sha256": "ed903b0d1a183a15cd55c090bba964b76401d839e36909e2d3175bc412620aae",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "MiG-29.xls",
+          "bytes": 236032,
+          "extension": ".xls",
+          "crc32": "2fe04c52",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".xls": 1
+      }
+    }
+  },
+  {
+    "relative_path": "P51图纸.rar",
+    "original_filename": "P51图纸.rar",
+    "extension": ".rar",
+    "bytes": 103200,
+    "sha256": "e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "两张P51的CAD图纸/p51_vendetta/Vendetta 1.dxf",
+          "bytes": 749337,
+          "extension": ".dxf",
+          "crc32": "f2389e1d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "两张P51的CAD图纸/p51_vendetta/Vendetta 2.dxf",
+          "bytes": 331144,
+          "extension": ".dxf",
+          "crc32": "554a058f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "两张P51的CAD图纸/p51_vendetta/Vendetta 3.dxf",
+          "bytes": 92070,
+          "extension": ".dxf",
+          "crc32": "1c2f5cad",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".dxf": 3
+      }
+    }
+  },
+  {
+    "relative_path": "SR71.rar",
+    "original_filename": "SR71.rar",
+    "extension": ".rar",
+    "bytes": 396866,
+    "sha256": "9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "JTechLaser SR-71 Decals.pdf",
+          "bytes": 95793,
+          "extension": ".pdf",
+          "crc32": "e3a81ca6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SR-71 Tiled A4.pdf",
+          "bytes": 160258,
+          "extension": ".pdf",
+          "crc32": "69764178",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SR-71[1].pdf",
+          "bytes": 151909,
+          "extension": ".pdf",
+          "crc32": "cd253856",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 3
+      }
+    }
+  },
+  {
+    "relative_path": "SU-47.rar",
+    "original_filename": "SU-47.rar",
+    "extension": ".rar",
+    "bytes": 2885506,
+    "sha256": "f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "SU-47/3veiw.GIF",
+          "bytes": 19135,
+          "extension": ".gif",
+          "crc32": "10178ae7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2317.jpg",
+          "bytes": 39337,
+          "extension": ".jpg",
+          "crc32": "cbed2648",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2355.jpg",
+          "bytes": 54943,
+          "extension": ".jpg",
+          "crc32": "4335563b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2357.jpg",
+          "bytes": 61363,
+          "extension": ".jpg",
+          "crc32": "40c58e4d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2362.jpg",
+          "bytes": 74014,
+          "extension": ".jpg",
+          "crc32": "fb7ace05",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2367.jpg",
+          "bytes": 67879,
+          "extension": ".jpg",
+          "crc32": "aff3a4d9",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2369.jpg",
+          "bytes": 83600,
+          "extension": ".jpg",
+          "crc32": "509e38e5",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2371.jpg",
+          "bytes": 46630,
+          "extension": ".jpg",
+          "crc32": "53b5b00d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2377.jpg",
+          "bytes": 57777,
+          "extension": ".jpg",
+          "crc32": "d5a11921",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2378.jpg",
+          "bytes": 78606,
+          "extension": ".jpg",
+          "crc32": "73462b3f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2379.jpg",
+          "bytes": 59615,
+          "extension": ".jpg",
+          "crc32": "7ccf580c",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2380.jpg",
+          "bytes": 55789,
+          "extension": ".jpg",
+          "crc32": "5bbb7e90",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2386.jpg",
+          "bytes": 53280,
+          "extension": ".jpg",
+          "crc32": "90531fe5",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/123_2387.jpg",
+          "bytes": 75885,
+          "extension": ".jpg",
+          "crc32": "54b02514",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/124_2405.jpg",
+          "bytes": 77962,
+          "extension": ".jpg",
+          "crc32": "73f391f3",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/124_2413.jpg",
+          "bytes": 49692,
+          "extension": ".jpg",
+          "crc32": "6d7b04df",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/124_2459.jpg",
+          "bytes": 65656,
+          "extension": ".jpg",
+          "crc32": "e82fc8f9",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Assembly/Thumbs.db",
+          "bytes": 52736,
+          "extension": ".db",
+          "crc32": "3f31323e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-1-2.tif",
+          "bytes": 209352,
+          "extension": ".tif",
+          "crc32": "92e8a626",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-1.tif",
+          "bytes": 203704,
+          "extension": ".tif",
+          "crc32": "6079441d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-2-2.tif",
+          "bytes": 200548,
+          "extension": ".tif",
+          "crc32": "7214029b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-2.tif",
+          "bytes": 194844,
+          "extension": ".tif",
+          "crc32": "767f84a8",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-3-2.tif",
+          "bytes": 40184,
+          "extension": ".tif",
+          "crc32": "b299ea4b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-3.tif",
+          "bytes": 41836,
+          "extension": ".tif",
+          "crc32": "52e82acb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-4-2.tif",
+          "bytes": 37552,
+          "extension": ".tif",
+          "crc32": "e4d81075",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-4.tif",
+          "bytes": 38088,
+          "extension": ".tif",
+          "crc32": "88638141",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-5-2.tif",
+          "bytes": 276348,
+          "extension": ".tif",
+          "crc32": "bd6f3767",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-5.tif",
+          "bytes": 289560,
+          "extension": ".tif",
+          "crc32": "16a64fbb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-6-2.tif",
+          "bytes": 31636,
+          "extension": ".tif",
+          "crc32": "07be2af6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-6.tif",
+          "bytes": 32880,
+          "extension": ".tif",
+          "crc32": "d3fd2afb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-7-2.tif",
+          "bytes": 95828,
+          "extension": ".tif",
+          "crc32": "5bf76ef9",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-7.tif",
+          "bytes": 98984,
+          "extension": ".tif",
+          "crc32": "c2ecaf96",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-8.tif",
+          "bytes": 47856,
+          "extension": ".tif",
+          "crc32": "08dfdb20",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/SU-47-Berkut-9.tif",
+          "bytes": 47048,
+          "extension": ".tif",
+          "crc32": "a3b2649d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Decals/Thumbs.db",
+          "bytes": 39936,
+          "extension": ".db",
+          "crc32": "f963cae6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47 Parts 3mm Depron A4.pdf",
+          "bytes": 11873,
+          "extension": ".pdf",
+          "crc32": "fe7e6e7f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47 Parts 3mm Depron.pdf",
+          "bytes": 17875,
+          "extension": ".pdf",
+          "crc32": "510ba18d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47 Parts 6mm Depron A4.pdf",
+          "bytes": 33628,
+          "extension": ".pdf",
+          "crc32": "185d0375",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47 Parts 6mm Depron.pdf",
+          "bytes": 65511,
+          "extension": ".pdf",
+          "crc32": "314a17ce",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47_Picture/SU-47-Berkut-10.jpg",
+          "bytes": 428741,
+          "extension": ".jpg",
+          "crc32": "aebd89df",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47_Picture/SU-47-Berkut-11.jpg",
+          "bytes": 420678,
+          "extension": ".jpg",
+          "crc32": "35caf2a1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47_Picture/SU-47-Berkut-12.jpg",
+          "bytes": 342286,
+          "extension": ".jpg",
+          "crc32": "33fc8e8f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47_Picture/SU-47-Berkut-9.jpg",
+          "bytes": 290251,
+          "extension": ".jpg",
+          "crc32": "7690ded1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47_Picture/Su-47.jpg",
+          "bytes": 226004,
+          "extension": ".jpg",
+          "crc32": "c143023a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/SU-47_Picture/Thumbs.db",
+          "bytes": 20480,
+          "extension": ".db",
+          "crc32": "ab268670",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "SU-47/Thumbs.db",
+          "bytes": 5120,
+          "extension": ".db",
+          "crc32": "66f8ffb9",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".db": 4,
+        ".gif": 1,
+        ".jpg": 21,
+        ".pdf": 4,
+        ".tif": 16
+      }
+    }
+  },
+  {
+    "relative_path": "c-17运输机.zip",
+    "original_filename": "c-17运输机.zip",
+    "extension": ".zip",
+    "bytes": 2934217,
+    "sha256": "56936609460b12edd34489675d5905338adf8cbd123338bfdbd35a4e114f8717",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "C-17-Formers-Sheet-1.pdf",
+          "bytes": 339335,
+          "extension": ".pdf",
+          "crc32": "0a92cdf2",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a76c70d0ef89432b4d274d92eb3b30a0dbdc315314fa0fab7630cb2b0ce6c0f0"
+        },
+        {
+          "name": "C-17-retract-housing.pdf",
+          "bytes": 51408,
+          "extension": ".pdf",
+          "crc32": "0fe5995d",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "3ce1a85524e5ad816619e99a147ba99b173ae69afd01ebfd48f1d077337f186d"
+        },
+        {
+          "name": "C17-Fuselage-line%20drawing.pdf",
+          "bytes": 34825,
+          "extension": ".pdf",
+          "crc32": "ac3823b9",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "0fb956dd8793924d3c9ee332cdd2beb9c41b2615bd9673d22893f54709efc8d2"
+        },
+        {
+          "name": "C17-Fuselage2.pdf",
+          "bytes": 69228,
+          "extension": ".pdf",
+          "crc32": "d0b16c92",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "61027775e11e1d40ad6245a3ace3b8f5cfb8315dd0713220c0bb0aa938cf6c74"
+        },
+        {
+          "name": "C17_Globemaster_1.tif",
+          "bytes": 688640,
+          "extension": ".tif",
+          "crc32": "f33b2721",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "4b9f8b930ed1791381abb0fc11d68cb0ce255a1971f89943f13aa99c7001e0a4"
+        },
+        {
+          "name": "C17_Globemaster_2.tif",
+          "bytes": 687208,
+          "extension": ".tif",
+          "crc32": "427197f9",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "81506db06ed7441203a9ad8f86670665fb278f624e3e22f87fff2ed7fce9c92e"
+        },
+        {
+          "name": "md17-3v.dwg",
+          "bytes": 941150,
+          "extension": ".dwg",
+          "crc32": "96764785",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "75eaa218f1b885f7d004435ee588d0e6454621a9d71f52e4733f8b0d51f644de"
+        },
+        {
+          "name": "╓╞╫≈╣²│╠═╝╜Γ.doc",
+          "bytes": 493568,
+          "extension": ".doc",
+          "crc32": "223544e3",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b9d6231ca915b3cf157ece078ba01503ff6e4d93eb58c2b203df833d8df64100"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".doc": 1,
+        ".dwg": 1,
+        ".pdf": 4,
+        ".tif": 2
+      }
+    }
+  },
+  {
+    "relative_path": "f-22像真机.zip",
+    "original_filename": "f-22像真机.zip",
+    "extension": ".zip",
+    "bytes": 2841981,
+    "sha256": "e8e8a7e2fc62fc6fe2dda031a0c1947167b864c4f8e4938fd65b3f2c36d5faad",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F-22 Construction Guide Scratchbuild Rev A.pdf",
+          "bytes": 2586469,
+          "extension": ".pdf",
+          "crc32": "d317aec3",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e3acb98b45e5544468a25861ff81cafc675752e86244970997313a24004415d5"
+        },
+        {
+          "name": "F-22 Park Jet (Assembly Drawing Non-Tiled).pdf",
+          "bytes": 67646,
+          "extension": ".pdf",
+          "crc32": "eb839a2b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d16fa0a7e00ac24540da63a8a1fc75d062a8be3d09b45cedf53377a061b2231d"
+        },
+        {
+          "name": "F-22 Park Jet (Assembly Drawing Tiled).pdf",
+          "bytes": 74083,
+          "extension": ".pdf",
+          "crc32": "639c1734",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "840be9cdc344d8cde691d2519f8cf9643782f1fe976aaf7a4b38b63cae215389"
+        },
+        {
+          "name": "F-22 Park Jet (Parts Templates Non-Tiled).pdf",
+          "bytes": 87365,
+          "extension": ".pdf",
+          "crc32": "93cdc5d7",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "48c47fd0f4e7c9f47a3e22250390415c520eff94469618440a94a363b506ef26"
+        },
+        {
+          "name": "F-22 Park Jet (Parts Templates Tiled).pdf",
+          "bytes": 96798,
+          "extension": ".pdf",
+          "crc32": "b5eb807f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c4ad2e9669fe436d7809938ad3b61f17cd35b60bfe99e8c0cf4d31e64391f267"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".pdf": 5
+      }
+    }
+  },
+  {
+    "relative_path": "j-20 三维图 CAD图.rar",
+    "original_filename": "j-20 三维图 CAD图.rar",
+    "extension": ".rar",
+    "bytes": 322860,
+    "sha256": "8e0f7b0163dc2e8c430f7777241984c2426187c8e355329c7985115572d60b50",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "j-20 三维图 CAD图.dwg",
+          "bytes": 378752,
+          "extension": ".dwg",
+          "crc32": "4ea7a1f6",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".dwg": 1
+      }
+    }
+  },
+  {
+    "relative_path": "kj663D涡喷.rar",
+    "original_filename": "kj663D涡喷.rar",
+    "extension": ".rar",
+    "bytes": 6973758,
+    "sha256": "d165429686bdf247cc040501d3ed8fc5bbcf0c514ac1f1cf03031bbde910680b",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "jet3v2.STEP",
+          "bytes": 22626433,
+          "extension": ".step",
+          "crc32": "df42aae7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_1 Verdichtermutter.dwg",
+          "bytes": 106769,
+          "extension": ".dwg",
+          "crc32": "52de0d7f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_10 Distanzring 3.dwg",
+          "bytes": 438550,
+          "extension": ".dwg",
+          "crc32": "f4da7c0e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_11 Laufrad Version1.dwg",
+          "bytes": 208133,
+          "extension": ".dwg",
+          "crc32": "c61c8055",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_11 Laufrad Version2.dwg",
+          "bytes": 129251,
+          "extension": ".dwg",
+          "crc32": "809f44a5",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_2 Verdichterrad.dwg",
+          "bytes": 104501,
+          "extension": ".dwg",
+          "crc32": "36c9c582",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_3 Pa醨stift.dwg",
+          "bytes": 46768,
+          "extension": ".dwg",
+          "crc32": "8fa72b5e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_4 Distanzring1.dwg",
+          "bytes": 74745,
+          "extension": ".dwg",
+          "crc32": "30f86b3d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_6 Welle Version1.dwg",
+          "bytes": 875188,
+          "extension": ".dwg",
+          "crc32": "2c8c14f1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/1_6 Welle Version2.dwg",
+          "bytes": 881985,
+          "extension": ".dwg",
+          "crc32": "e055a400",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/2 Wellentunnel.dwg",
+          "bytes": 1130975,
+          "extension": ".dwg",
+          "crc32": "b4c2258d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/3_1 Einstr攎d乻e.dwg",
+          "bytes": 63427,
+          "extension": ".dwg",
+          "crc32": "7dbf83a0",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/3_1 Sensorbefestigung.dwg",
+          "bytes": 98238,
+          "extension": ".dwg",
+          "crc32": "56546aa4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/3_2 Ring.dwg",
+          "bytes": 88134,
+          "extension": ".dwg",
+          "crc32": "ea326ff6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/3_3 Deckel.dwg",
+          "bytes": 93875,
+          "extension": ".dwg",
+          "crc32": "a3423f93",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/4 Verdichterleitsystem.dwg",
+          "bytes": 64247,
+          "extension": ".dwg",
+          "crc32": "29cae4f3",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/5 Brennaus.dwg",
+          "bytes": 131142,
+          "extension": ".dwg",
+          "crc32": "3c619c29",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/5 Brenninn.dwg",
+          "bytes": 111619,
+          "extension": ".dwg",
+          "crc32": "ef990cb1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/5 Brennkammer.dwg",
+          "bytes": 88740,
+          "extension": ".dwg",
+          "crc32": "94eaceb6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/5 Deckel Roh-hint.dwg",
+          "bytes": 132415,
+          "extension": ".dwg",
+          "crc32": "5c4aa337",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/5 Gl乭kerzenfassung.dwg",
+          "bytes": 91740,
+          "extension": ".dwg",
+          "crc32": "9b2d73b1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/5 Halterungsb乬el.dwg",
+          "bytes": 85029,
+          "extension": ".dwg",
+          "crc32": "ab3900e6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/6 Geh剈se.dwg",
+          "bytes": 91047,
+          "extension": ".dwg",
+          "crc32": "f2bfacda",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/7 LA-Au醗nring danach.dwg",
+          "bytes": 83856,
+          "extension": ".dwg",
+          "crc32": "3286b3b0",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/7 LA-Au醗nring vorher.dwg",
+          "bytes": 95609,
+          "extension": ".dwg",
+          "crc32": "c403fba6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/7 LA-Erodiereinstellungen.dwg",
+          "bytes": 111788,
+          "extension": ".dwg",
+          "crc32": "7268e18d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/7 LA-Innenring.dwg",
+          "bytes": 90636,
+          "extension": ".dwg",
+          "crc32": "5366452f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/7 LA-Schaufel.dwg",
+          "bytes": 150796,
+          "extension": ".dwg",
+          "crc32": "53dca5f9",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/7 LA-Zusammenstellung.dwg",
+          "bytes": 141243,
+          "extension": ".dwg",
+          "crc32": "35105843",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/8 D乻enmantel Halter.dwg",
+          "bytes": 123752,
+          "extension": ".dwg",
+          "crc32": "f7442c5b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/8 D乻enmantel.dwg",
+          "bytes": 69862,
+          "extension": ".dwg",
+          "crc32": "9145ed6d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/8 Konus.dwg",
+          "bytes": 70956,
+          "extension": ".dwg",
+          "crc32": "62e2f2cd",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj-66[DWG]/Zusammenstellung mit St乧kliste.dwg",
+          "bytes": 641580,
+          "extension": ".dwg",
+          "crc32": "eb6a989d",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".dwg": 32,
+        ".step": 1
+      }
+    }
+  },
+  {
+    "relative_path": "kj663D涡喷.zip",
+    "original_filename": "kj663D涡喷.zip",
+    "extension": ".zip",
+    "bytes": 10126438,
+    "sha256": "6c07f7cd0cd651b8e21e0a400c143a3e5c436449a4895faa14173089ea2a582c",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "kj663D╬╨┼τ.rar",
+          "bytes": 6973758,
+          "extension": ".rar",
+          "crc32": "a18b3d43",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d165429686bdf247cc040501d3ed8fc5bbcf0c514ac1f1cf03031bbde910680b"
+        },
+        {
+          "name": "kj66╬╨┬╓╖ó╢»╗·╓╞╫≈└╢═╝.rar",
+          "bytes": 3150844,
+          "extension": ".rar",
+          "crc32": "dfc2a6b0",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8a4d661ed26accf40564f8ddbd5618e5ebd06631c538dab9936626b66e353281"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".rar": 2
+      }
+    }
+  },
+  {
+    "relative_path": "kj66涡轮发动机制作蓝图.rar",
+    "original_filename": "kj66涡轮发动机制作蓝图.rar",
+    "extension": ".rar",
+    "bytes": 3150844,
+    "sha256": "8a4d661ed26accf40564f8ddbd5618e5ebd06631c538dab9936626b66e353281",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242126370es4.jpg",
+          "bytes": 80636,
+          "extension": ".jpg",
+          "crc32": "cd0e85e0",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242126371yv4.jpg",
+          "bytes": 73888,
+          "extension": ".jpg",
+          "crc32": "1c8c46c7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242126382ud4.jpg",
+          "bytes": 102688,
+          "extension": ".jpg",
+          "crc32": "13cb10f8",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242126394zb8.jpg",
+          "bytes": 52233,
+          "extension": ".jpg",
+          "crc32": "969ee7b1",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242132580ny6.jpg",
+          "bytes": 230211,
+          "extension": ".jpg",
+          "crc32": "0c5b2417",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242132591zw9.jpg",
+          "bytes": 336380,
+          "extension": ".jpg",
+          "crc32": "67542c19",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242132592ai8.jpg",
+          "bytes": 191453,
+          "extension": ".jpg",
+          "crc32": "fbe50fab",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242133003ox6.jpg",
+          "bytes": 196130,
+          "extension": ".jpg",
+          "crc32": "3ef2405f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242133014ud5.jpg",
+          "bytes": 174050,
+          "extension": ".jpg",
+          "crc32": "bab10bdc",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242136400in1.jpg",
+          "bytes": 34606,
+          "extension": ".jpg",
+          "crc32": "1dee772e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242136401jv8.jpg",
+          "bytes": 103541,
+          "extension": ".jpg",
+          "crc32": "4badd09b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242136412pv1.jpg",
+          "bytes": 114585,
+          "extension": ".jpg",
+          "crc32": "81544113",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242136413tg6.jpg",
+          "bytes": 71956,
+          "extension": ".jpg",
+          "crc32": "abef3992",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242136424lu0.jpg",
+          "bytes": 75008,
+          "extension": ".jpg",
+          "crc32": "6f7b515d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242141400xq0.jpg",
+          "bytes": 75008,
+          "extension": ".jpg",
+          "crc32": "6f7b515d",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242141401et8.jpg",
+          "bytes": 76379,
+          "extension": ".jpg",
+          "crc32": "7c82e499",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242141412nt1.jpg",
+          "bytes": 72723,
+          "extension": ".jpg",
+          "crc32": "50c93137",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242141413mm1.jpg",
+          "bytes": 190158,
+          "extension": ".jpg",
+          "crc32": "142700b4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242141424kz0.jpg",
+          "bytes": 135548,
+          "extension": ".jpg",
+          "crc32": "80ad607b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242146450rm1.jpg",
+          "bytes": 132158,
+          "extension": ".jpg",
+          "crc32": "f69999dc",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242146471if6.jpg",
+          "bytes": 113094,
+          "extension": ".jpg",
+          "crc32": "7d866baf",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242146472eb5.jpg",
+          "bytes": 87494,
+          "extension": ".jpg",
+          "crc32": "8d1829e6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242146473nf3.jpg",
+          "bytes": 67425,
+          "extension": ".jpg",
+          "crc32": "255164f4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242146484hg9.jpg",
+          "bytes": 87836,
+          "extension": ".jpg",
+          "crc32": "2b25574e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/200511242153500yb2.jpg",
+          "bytes": 72882,
+          "extension": ".jpg",
+          "crc32": "3adcaab3",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "kj66涡轮发动机制作蓝图/kj66喷射引擎照片的细节.doc",
+          "bytes": 422912,
+          "extension": ".doc",
+          "crc32": "41cad8c3",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".doc": 1,
+        ".jpg": 25
+      }
+    }
+  },
+  {
+    "relative_path": "laser200.rar",
+    "original_filename": "laser200.rar",
+    "extension": ".rar",
+    "bytes": 6412390,
+    "sha256": "df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "laser200/01_FuseLeme_Folha 1 de 3.dxf",
+          "bytes": 1140704,
+          "extension": ".dxf",
+          "crc32": "af378cc7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "laser200/02_AsaEstab_Folha 2 de 3.dxf",
+          "bytes": 1200355,
+          "extension": ".dxf",
+          "crc32": "3791b484",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "laser200/03_Deta_Folha 3de 3.dxf",
+          "bytes": 1695871,
+          "extension": ".dxf",
+          "crc32": "58d3afba",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "laser200/MANUALORIENTATIVOrevisado_2edigao_LASER200_FOTOS.pdf",
+          "bytes": 6106352,
+          "extension": ".pdf",
+          "crc32": "9c70f2b8",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".dxf": 3,
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "su-27图纸.rar",
+    "original_filename": "su-27图纸.rar",
+    "extension": ".rar",
+    "bytes": 115777,
+    "sha256": "070a61ec9683d9a2fb30bafb21db5adbb2022f0614997fb3d22004f31c86189e",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "su-27图纸/40c928ace5767a7e9d170b883b0b0415.jpg",
+          "bytes": 23363,
+          "extension": ".jpg",
+          "crc32": "988daf16",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "su-27图纸/T1HRFRXd0bXXcaxFZ._111204.jpg_310x310[1].jpg",
+          "bytes": 28538,
+          "extension": ".jpg",
+          "crc32": "2936d645",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "su-27图纸/Thumbs.db",
+          "bytes": 7680,
+          "extension": ".db",
+          "crc32": "857ae71a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "su-27图纸/bottomview-su27.DWG",
+          "bytes": 41748,
+          "extension": ".dwg",
+          "crc32": "c938c4dc",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "su-27图纸/sideview-su27.DWG",
+          "bytes": 36552,
+          "extension": ".dwg",
+          "crc32": "6e8c53bb",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "su-27图纸/su27-24-ikarus.jpg",
+          "bytes": 18820,
+          "extension": ".jpg",
+          "crc32": "abfa8806",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "su-27图纸/topview-su27.DWG",
+          "bytes": 39780,
+          "extension": ".dwg",
+          "crc32": "0d9c7164",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".db": 1,
+        ".dwg": 3,
+        ".jpg": 3
+      }
+    }
+  },
+  {
+    "relative_path": "su37.rar",
+    "original_filename": "su37.rar",
+    "extension": ".rar",
+    "bytes": 99575,
+    "sha256": "186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "su37/su37.pdf",
+          "bytes": 102897,
+          "extension": ".pdf",
+          "crc32": "80a4ff8a",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "二战F4U模型飞机图纸.rar",
+    "original_filename": "二战F4U模型飞机图纸.rar",
+    "extension": ".rar",
+    "bytes": 59358,
+    "sha256": "3562872b0f355532858b9129e0394a2cc54da26d0d609881a4a1444553dd1c68",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "二战F4U模型飞机图纸/Chance_Vought_Corsair_F4U.rar",
+          "bytes": 59105,
+          "extension": ".rar",
+          "crc32": "b6ec9ff6",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".rar": 1
+      }
+    }
+  },
+  {
+    "relative_path": "函道幻影2000.rar",
+    "original_filename": "函道幻影2000.rar",
+    "extension": ".rar",
+    "bytes": 1952579,
+    "sha256": "e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "函道幻影2000.jpg",
+          "bytes": 2126201,
+          "extension": ".jpg",
+          "crc32": "599bcc04",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 1
+      }
+    }
+  },
+  {
+    "relative_path": "喷绘版－SU27.rar",
+    "original_filename": "喷绘版－SU27.rar",
+    "extension": ".rar",
+    "bytes": 443529,
+    "sha256": "1ad18fd0bc5a681543999d6f7a0f24270808f446f43049622307dcdfd389e9e9",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "图纸－SU27.jpg",
+          "bytes": 567986,
+          "extension": ".jpg",
+          "crc32": "9a9f2ee3",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 1
+      }
+    }
+  },
+  {
+    "relative_path": "喷绘飞机图纸.rar",
+    "original_filename": "喷绘飞机图纸.rar",
+    "extension": ".rar",
+    "bytes": 5752074,
+    "sha256": "237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "csl 桔红 820X1250mm.jpg",
+          "bytes": 2494724,
+          "extension": ".jpg",
+          "crc32": "a3afb211",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "csl 紫蓝 820X1250mm.jpg",
+          "bytes": 3916609,
+          "extension": ".jpg",
+          "crc32": "660258e2",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 2
+      }
+    }
+  },
+  {
+    "relative_path": "塞斯纳182.rar",
+    "original_filename": "塞斯纳182.rar",
+    "extension": ".rar",
+    "bytes": 171475,
+    "sha256": "b816aaaaf3e9f2a585e095c5791fad4b02de3ef11dfa7d28d2dbaf506447156c",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "塞斯纳182.pdf",
+          "bytes": 173582,
+          "extension": ".pdf",
+          "crc32": "95e87c9e",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "彩色330.rar",
+    "original_filename": "彩色330.rar",
+    "extension": ".rar",
+    "bytes": 685344,
+    "sha256": "f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "彩色330.jpg",
+          "bytes": 1269809,
+          "extension": ".jpg",
+          "crc32": "df421231",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 1
+      }
+    }
+  },
+  {
+    "relative_path": "微型喷气式发动机详细制作图纸.rar",
+    "original_filename": "微型喷气式发动机详细制作图纸.rar",
+    "extension": ".rar",
+    "bytes": 50332469,
+    "sha256": "068cbdc21a4b9db961924b3d2a0ace4b6b3314705b27fa4f53e3bef861a779e8",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "微型喷气式发动机详细制作图纸/WP008.rar",
+          "bytes": 50332226,
+          "extension": ".rar",
+          "crc32": "25d52007",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".rar": 1
+      }
+    }
+  },
+  {
+    "relative_path": "微风2005.rar",
+    "original_filename": "微风2005.rar",
+    "extension": ".rar",
+    "bytes": 6911392,
+    "sha256": "b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "微风2005/Thumbs.db",
+          "bytes": 5120,
+          "extension": ".db",
+          "crc32": "ed41cc45",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/主副翼.pdf",
+          "bytes": 182990,
+          "extension": ".pdf",
+          "crc32": "906aa059",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/主副翼拼接图（自己拼的）凑合肯定比原来的好.bmp",
+          "bytes": 720438,
+          "extension": ".bmp",
+          "crc32": "f4fbcb8a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/垂尾.pdf",
+          "bytes": 33078,
+          "extension": ".pdf",
+          "crc32": "6b1bf3c2",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/平尾.pdf",
+          "bytes": 61778,
+          "extension": ".pdf",
+          "crc32": "7e9a3b76",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/微风2005制作流程截图.doc",
+          "bytes": 7041386,
+          "extension": ".doc",
+          "crc32": "c80c78e5",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/微风2005总体图纸.pdf",
+          "bytes": 96243,
+          "extension": ".pdf",
+          "crc32": "4b76938a",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/机身.pdf",
+          "bytes": 121998,
+          "extension": ".pdf",
+          "crc32": "827881bc",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/机身加强片.pdf",
+          "bytes": 85862,
+          "extension": ".pdf",
+          "crc32": "1c9cb317",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/翼肋.pdf",
+          "bytes": 47414,
+          "extension": ".pdf",
+          "crc32": "28411e8f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/翼肋2.pdf",
+          "bytes": 30211,
+          "extension": ".pdf",
+          "crc32": "928587c6",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "微风2005/起落架钢丝.pdf",
+          "bytes": 14844,
+          "extension": ".pdf",
+          "crc32": "94e926eb",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".bmp": 1,
+        ".db": 1,
+        ".doc": 1,
+        ".pdf": 9
+      }
+    }
+  },
+  {
+    "relative_path": "旋翼机.rar",
+    "original_filename": "旋翼机.rar",
+    "extension": ".rar",
+    "bytes": 2623947,
+    "sha256": "b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "旋翼机.pdf",
+          "bytes": 3082866,
+          "extension": ".pdf",
+          "crc32": "c7b506c2",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "歼10.rar",
+    "original_filename": "歼10.rar",
+    "extension": ".rar",
+    "bytes": 1619525,
+    "sha256": "d7b4d6e3b292095dd75f5b6bdbddd2448ee1d0b4d18cc2d47df1c9333685e308",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "歼10/歼10.pdf",
+          "bytes": 396547,
+          "extension": ".pdf",
+          "crc32": "52a3b5c7",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "歼10/歼10[1].1.pdf",
+          "bytes": 1323907,
+          "extension": ".pdf",
+          "crc32": "fafdb69a",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 2
+      }
+    }
+  },
+  {
+    "relative_path": "歼20.rar",
+    "original_filename": "歼20.rar",
+    "extension": ".rar",
+    "bytes": 755261,
+    "sha256": "baf8d87d7f268a1c313363c2fdd8c0e6be6bfbc341f4a3db30c6aa6ffccb74e1",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "歼20.bmp",
+          "bytes": 11510966,
+          "extension": ".bmp",
+          "crc32": "a6cb13de",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".bmp": 1
+      }
+    }
+  },
+  {
+    "relative_path": "水上飞机图纸.rar",
+    "original_filename": "水上飞机图纸.rar",
+    "extension": ".rar",
+    "bytes": 231572,
+    "sha256": "4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "drake/drakeFFF.pdf",
+          "bytes": 267331,
+          "extension": ".pdf",
+          "crc32": "164293a5",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "油动CAD格式飞机图纸.rar",
+    "original_filename": "油动CAD格式飞机图纸.rar",
+    "extension": ".rar",
+    "bytes": 120841,
+    "sha256": "21b62c8398a94358709d88dee0493ea20c29d8ac61618aaf6682a8be0715347d",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "油动CAD格式飞机图纸/foxie.zip",
+          "bytes": 121053,
+          "extension": ".zip",
+          "crc32": "6f4be083",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".zip": 1
+      }
+    }
+  },
+  {
+    "relative_path": "波音客机.rar",
+    "original_filename": "波音客机.rar",
+    "extension": ".rar",
+    "bytes": 3034350,
+    "sha256": "6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "bo/british-airways_e_a4.pdf",
+          "bytes": 1751525,
+          "extension": ".pdf",
+          "crc32": "137e4a73",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "bo/british-airways_i_e_a4.pdf",
+          "bytes": 1362429,
+          "extension": ".pdf",
+          "crc32": "757a0232",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 2
+      }
+    }
+  },
+  {
+    "relative_path": "简单的F22图纸.rar",
+    "original_filename": "简单的F22图纸.rar",
+    "extension": ".rar",
+    "bytes": 458741,
+    "sha256": "3aa28b4da237289b1dfa212f6ad5b62d43bd7d97fd3f5f951b8d886acccb9692",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "简单的F22图纸/Thumbs.db",
+          "bytes": 23552,
+          "extension": ".db",
+          "crc32": "21be6729",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "简单的F22图纸/blu_f22_x1_p1_tiled_A4.pdf",
+          "bytes": 100535,
+          "extension": ".pdf",
+          "crc32": "477344d4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "简单的F22图纸/f22 2.jpg",
+          "bytes": 41619,
+          "extension": ".jpg",
+          "crc32": "b178c104",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "简单的F22图纸/f22.jpg",
+          "bytes": 212100,
+          "extension": ".jpg",
+          "crc32": "d8fc3de3",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "简单的F22图纸/plane-blu_f-22_001.jpg",
+          "bytes": 42379,
+          "extension": ".jpg",
+          "crc32": "528df1d9",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "简单的F22图纸/plane-blu_f-22_002.jpg",
+          "bytes": 129341,
+          "extension": ".jpg",
+          "crc32": "30e98938",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".db": 1,
+        ".jpg": 4,
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "简单的f22.rar",
+    "original_filename": "简单的f22.rar",
+    "extension": ".rar",
+    "bytes": 1052073,
+    "sha256": "36b5ca4573dbacd96c2a9c6156b348dd75cfdb28eb50b783b21fcfc3a352bd6f",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "blu_f22_x1_p1_tiled_A4.pdf",
+          "bytes": 100535,
+          "extension": ".pdf",
+          "crc32": "477344d4",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "f22 2.jpg",
+          "bytes": 41619,
+          "extension": ".jpg",
+          "crc32": "b178c104",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "f22.jpg",
+          "bytes": 1153657,
+          "extension": ".jpg",
+          "crc32": "2713994b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "plane-blu_f-22_001.jpg",
+          "bytes": 42379,
+          "extension": ".jpg",
+          "crc32": "528df1d9",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 3,
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "米格 29.rar",
+    "original_filename": "米格 29.rar",
+    "extension": ".rar",
+    "bytes": 3241193,
+    "sha256": "0de9311fd7de8fcbc5bb98dce4c66a3252ebc9793af19615b35c79cb5360b7b3",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "MIG 29/mig29.pdf",
+          "bytes": 36052,
+          "extension": ".pdf",
+          "crc32": "dd446241",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "MIG 29/mig_29_UB_33inWS.pdf",
+          "bytes": 2038379,
+          "extension": ".pdf",
+          "crc32": "9c57fa1e",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "MIG 29/mig_29_UB_33inWS_tiled_.pdf",
+          "bytes": 2296987,
+          "extension": ".pdf",
+          "crc32": "af3b3b59",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 3
+      }
+    }
+  },
+  {
+    "relative_path": "米格21.zip",
+    "original_filename": "米格21.zip",
+    "extension": ".zip",
+    "bytes": 611563,
+    "sha256": "bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "Beanie MIG 21/A4 Size/MiG-21%20beanie%20plans%20v2.2%20page1%20tiled%20in%20A4.pdf",
+          "bytes": 127531,
+          "extension": ".pdf",
+          "crc32": "d0134213",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "17a625fa6f26734251cd88e4db74bad88c66a77bfb4701de451282cc24c26e5c"
+        },
+        {
+          "name": "Beanie MIG 21/A4 Size/MiG-21%20beanie%20plans%20v2.2%20page2%20tiled%20in%20A4.pdf",
+          "bytes": 95791,
+          "extension": ".pdf",
+          "crc32": "e1b1703e",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e8ea81e270da70a70d08903b160b3621ec5f2f88b2bf704ef49790e48aa51d5e"
+        },
+        {
+          "name": "Beanie MIG 21/MiG-21%20beanie%20scout%20sheet%20v2.2%20page1.pdf",
+          "bytes": 74933,
+          "extension": ".pdf",
+          "crc32": "91e9922c",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c936b24d61951f28c0ccc606b5b84a83d8b50ee589044fb95b614328a39ed4f6"
+        },
+        {
+          "name": "Beanie MIG 21/MiG-21%20beanie%20scout%20sheet%20v2.2%20page2.pdf",
+          "bytes": 75045,
+          "extension": ".pdf",
+          "crc32": "90641801",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "aacde58da4c0dbb784ce89a36e3d4b0b3f014eb48a34ef6f9c4db3112ccb1c4a"
+        },
+        {
+          "name": "Beanie MIG 21/Scale 81%/MiG-21beanie-81-1-13th-v2-3-tiled.pdf",
+          "bytes": 82690,
+          "extension": ".pdf",
+          "crc32": "8ade0ef3",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "53a3a51862a9932baebf79acb5e5844688f061fdf76748b899f8430e94d9aae4"
+        },
+        {
+          "name": "Beanie MIG 21/Tiled/MiG-21%20beanie%20plans%20v2.2%20page1%20tiled.pdf",
+          "bytes": 130312,
+          "extension": ".pdf",
+          "crc32": "06f6b623",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "89d317fd97aff26a5ee2e91cdca932987b6bb12c673f02effe35551277dc97e8"
+        },
+        {
+          "name": "Beanie MIG 21/Tiled/MiG-21%20beanie%20plans%20v2.2%20page2%20tiled.pdf",
+          "bytes": 100862,
+          "extension": ".pdf",
+          "crc32": "2a51b2cd",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e7f90a5196ccf6850447125d79f2cd3f9594faf77ea1ca2fefdbd474f493ca00"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".pdf": 7
+      }
+    }
+  },
+  {
+    "relative_path": "米格25.zip",
+    "original_filename": "米格25.zip",
+    "extension": ".zip",
+    "bytes": 276735,
+    "sha256": "54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "Beanie MIG 25/A4 Size/MiG-25 plans - WS32in - v2.0 - pg1 in A4 tiled.pdf",
+          "bytes": 89604,
+          "extension": ".pdf",
+          "crc32": "23e15c31",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c5b3a42869e8c44ce9dfd87f922f9cbf4df41b663ffb11f9b33b626a39c169c0"
+        },
+        {
+          "name": "Beanie MIG 25/A4 Size/MiG-25 plans - WS32in - v2.0 - pg2 in A4 tiled.pdf",
+          "bytes": 67665,
+          "extension": ".pdf",
+          "crc32": "5bf3f33e",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "3dc7200d9133fd943530ae55386f0ba732008a10096be67a18e07e76a0a97b7a"
+        },
+        {
+          "name": "Beanie MIG 25/MiG-25_100%_decals_in_pdf.pdf",
+          "bytes": 7519,
+          "extension": ".pdf",
+          "crc32": "46bfcb77",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d3207e2bdd14f935d44928ea4bd47aeb3df2c8feba915574599d521918348964"
+        },
+        {
+          "name": "Beanie MIG 25/MiG-25_plans_-_WS32in_-_v2.1_-_pg1.pdf",
+          "bytes": 97712,
+          "extension": ".pdf",
+          "crc32": "8793261e",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "77605187ec7bb149bacb3f309b96b00ee109f359f580945129b18ed19451fbeb"
+        },
+        {
+          "name": "Beanie MIG 25/MiG-25_plans_-_WS32in_-_v2.1_-_pg2.pdf",
+          "bytes": 69226,
+          "extension": ".pdf",
+          "crc32": "e1bbaefd",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "65a888aa4d6affd4b93de1be3c626072e0921cf77ee404c8da7b64f275decbd2"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".pdf": 5
+      }
+    }
+  },
+  {
+    "relative_path": "纸飞机.rar",
+    "original_filename": "纸飞机.rar",
+    "extension": ".rar",
+    "bytes": 1603972,
+    "sha256": "cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "2010012163133289/KT纸飞机.ppt",
+          "bytes": 960512,
+          "extension": ".ppt",
+          "crc32": "d59ae60b",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "2010012163133289/纸飞机.doc",
+          "bytes": 878080,
+          "extension": ".doc",
+          "crc32": "a2d8e813",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".doc": 1,
+        ".ppt": 1
+      }
+    }
+  },
+  {
+    "relative_path": "航模喷气发动机制作手册.part1.rar",
+    "original_filename": "航模喷气发动机制作手册.part1.rar",
+    "extension": ".rar",
+    "bytes": 31457280,
+    "sha256": "a472a6e30fd1b2eaf9d2a3ceea4bc783a2ff7dc4558923542c5b6ddaac40e230",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "MULTIVOLUME_REVIEW",
+      "members": [
+        {
+          "name": "航模喷气发动机制作手册.pdf",
+          "bytes": 56004078,
+          "extension": ".pdf",
+          "crc32": "184323d6",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "航模喷气发动机制作手册.part2.rar",
+    "original_filename": "航模喷气发动机制作手册.part2.rar",
+    "extension": ".rar",
+    "bytes": 24523575,
+    "sha256": "591db461d9b2b9ab44eaaeb4b1b584d30bf537ceccf0659ca1e41f96cd5ec704",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTING_FAILED",
+      "members": [],
+      "reader": "rarfile-4.2",
+      "reason": "NeedFirstVolume",
+      "extension_counts": {}
+    }
+  },
+  {
+    "relative_path": "航模脉冲式发动机制作手册.zip",
+    "original_filename": "航模脉冲式发动机制作手册.zip",
+    "extension": ".zip",
+    "bytes": 3872525,
+    "sha256": "1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "200202253887567[1].jpg",
+          "bytes": 138417,
+          "extension": ".jpg",
+          "crc32": "71a0ac23",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "250532f13352fc97117d0c91a8958e883a9497f2525a74faf1865d33f49ef74e"
+        },
+        {
+          "name": "IMG_8020.jpg",
+          "bytes": 116707,
+          "extension": ".jpg",
+          "crc32": "aca1cb63",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "2d61062fd73325b1a1ed391c701df0decb4aa6e93ad6847d5f767d2015d62575"
+        },
+        {
+          "name": "aerojet.JPG",
+          "bytes": 156161,
+          "extension": ".jpg",
+          "crc32": "70e69cae",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6eb6581438cd4b96956558a36ecf25ebc2c15a1b9768391d6f65ef15c0fa6e2d"
+        },
+        {
+          "name": "alpha.gif",
+          "bytes": 37249,
+          "extension": ".gif",
+          "crc32": "9d455d46",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "31b761db19dc93d157d0b7a4ad2461db5cec6ecb7392e86d69a9b1f81735039d"
+        },
+        {
+          "name": "atom_1.jpg",
+          "bytes": 80382,
+          "extension": ".jpg",
+          "crc32": "5173b9d2",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "5411e643b6adf0a169f00fa348203f005d9a824859795365bf63db2109464aa2"
+        },
+        {
+          "name": "atom_2.jpg",
+          "bytes": 152989,
+          "extension": ".jpg",
+          "crc32": "3f5e38d4",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "77e49836df63cc19c2398fdce623219878f27cd262c7a99e5b21d48ff668bffe"
+        },
+        {
+          "name": "atomrender.jpg",
+          "bytes": 15496,
+          "extension": ".jpg",
+          "crc32": "ecf090b9",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d4ddd883c17568413890a74fbd9fca40f4ecd4864941c15111c6c9f4e1cca2d5"
+        },
+        {
+          "name": "dyna_2.gif",
+          "bytes": 42095,
+          "extension": ".gif",
+          "crc32": "0ec0bc49",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6f1d2066632f44fff56d4fbed50bbec9598034b021f2f0362aeb8e9d6badf5bf"
+        },
+        {
+          "name": "hugo_havn_2.jpg",
+          "bytes": 18044,
+          "extension": ".jpg",
+          "crc32": "e1f52e2d",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "3df81aaea5f55aa078a52beccc170f26cfaf2b45267be8ef4c80ac93211234b9"
+        },
+        {
+          "name": "inlet.jpg",
+          "bytes": 70418,
+          "extension": ".jpg",
+          "crc32": "52583ce6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "76c4316640ea83457a2b978fdd90466959b4c2f731b29c1150fdaaf4686d9e41"
+        },
+        {
+          "name": "jet5.jpg",
+          "bytes": 61065,
+          "extension": ".jpg",
+          "crc32": "cf090810",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "9c1417c912e520e6e7b09b27d7116cd81e8477f7f63c544ff075fffc02d0c3ce"
+        },
+        {
+          "name": "mybra A-5m.JPG",
+          "bytes": 119586,
+          "extension": ".jpg",
+          "crc32": "450c04fc",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c6a987773fdd452649c494982e53c29669d38678d2b2a9c4ba6aecaa9487b068"
+        },
+        {
+          "name": "paco3.jpg",
+          "bytes": 12110,
+          "extension": ".jpg",
+          "crc32": "ff9c515d",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e6b31334e6eac07bf1e57b1854eafe0d4ef905b9ca6c551b8dfd9ac19bb41be0"
+        },
+        {
+          "name": "pulsejet4.gif",
+          "bytes": 70763,
+          "extension": ".gif",
+          "crc32": "adaf5d3b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "57b5cb51e3c387fc70e45316bc17c143194cd1e7fc58d91ad0ae7c0f3d606a40"
+        },
+        {
+          "name": "rot-puls.jpg",
+          "bytes": 531460,
+          "extension": ".jpg",
+          "crc32": "ccc6327c",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "06acea78c9ec6efae7454caf51473b108c6ea62c35431c75ed8c279402e013fc"
+        },
+        {
+          "name": "tempest.JPG",
+          "bytes": 148857,
+          "extension": ".jpg",
+          "crc32": "c57d7b67",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c9819b025e5968c5fe33312a53ab5a52747f0a0abe8ab1164981c172f44c18b9"
+        },
+        {
+          "name": "tuned-intake.jpg",
+          "bytes": 14023,
+          "extension": ".jpg",
+          "crc32": "c03e779b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b07671a0ac5a345705372ee16b1fc655e341db9e33bd3b0fb38dd36ae4d13c35"
+        },
+        {
+          "name": "urban.gif",
+          "bytes": 10426,
+          "extension": ".gif",
+          "crc32": "e0ed9419",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "01f9cf442fc7633e0f6b0fb8785c938836feb7e572fc4962671dca33de4eff8f"
+        },
+        {
+          "name": "zanin.gif",
+          "bytes": 15332,
+          "extension": ".gif",
+          "crc32": "292d8a58",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c791c72c6488c91e99605f2db40b273484d3d1587be78be40e4f029e2d0304c4"
+        },
+        {
+          "name": "┬÷│σ┬╝╧α.MPG",
+          "bytes": 882688,
+          "extension": ".mpg",
+          "crc32": "d805cc37",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "f75a632740bce4a80a215533e549dc907a6908591fd4dddc777f8e531240c464"
+        },
+        {
+          "name": "║╜─ú┬÷│σ╩╜╖ó╢»╗·╓╞╫≈╩╓▓ß.doc",
+          "bytes": 481792,
+          "extension": ".doc",
+          "crc32": "97761790",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b30ea99778fa0f6ead62d07e164fb9cfbcd274c36015079ec2b769d1b37bc6c0"
+        },
+        {
+          "name": "║╜─ú┬÷│σ╩╜╖ó╢»╗·╓╞╫≈╩╓▓ß[1].doc",
+          "bytes": 470016,
+          "extension": ".doc",
+          "crc32": "6832dfc2",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "ad1dfa638f4c8e1ff773c814309b27a5e2930629518be691fa57c32e182443c9"
+        },
+        {
+          "name": "║╜─ú┬÷│σ╩╜╖ó╢»╗·╓╞╫≈╩╓▓ß[2].doc",
+          "bytes": 470016,
+          "extension": ".doc",
+          "crc32": "6832dfc2",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "ad1dfa638f4c8e1ff773c814309b27a5e2930629518be691fa57c32e182443c9"
+        },
+        {
+          "name": "╫░┼Σ▓╩═╝.jpg",
+          "bytes": 81003,
+          "extension": ".jpg",
+          "crc32": "d6fec2fb",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b9f536ad11e6851696c2921aaa6dc1c9c322f75573a61aaa0d5d6d7c41453a27"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".doc": 3,
+        ".gif": 5,
+        ".jpg": 15,
+        ".mpg": 1
+      }
+    }
+  },
+  {
+    "relative_path": "航模赠品.rar",
+    "original_filename": "航模赠品.rar",
+    "extension": ".rar",
+    "bytes": 64963,
+    "sha256": "ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "航模赠品/航模基础知识.doc",
+          "bytes": 66048,
+          "extension": ".doc",
+          "crc32": "9dc11bff",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "航模赠品/航模新手在购买东西时必须懂得的几点.doc",
+          "bytes": 16384,
+          "extension": ".doc",
+          "crc32": "3cb40c9f",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "航模赠品/螺旋桨拉力计算.doc",
+          "bytes": 60928,
+          "extension": ".doc",
+          "crc32": "2c6561ca",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".doc": 3
+      }
+    }
+  },
+  {
+    "relative_path": "赛斯纳.rar",
+    "original_filename": "赛斯纳.rar",
+    "extension": ".rar",
+    "bytes": 1830082,
+    "sha256": "be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "182SHEET2.jpg",
+          "bytes": 751274,
+          "extension": ".jpg",
+          "crc32": "c12e5955",
+          "safe": true,
+          "encrypted": false
+        },
+        {
+          "name": "2010020505929652.jpg",
+          "bytes": 2093900,
+          "extension": ".jpg",
+          "crc32": "f4bf19b1",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".jpg": 2
+      }
+    }
+  },
+  {
+    "relative_path": "轻型直升机.rar",
+    "original_filename": "轻型直升机.rar",
+    "extension": ".rar",
+    "bytes": 2320354,
+    "sha256": "da276d766dd0a4994168107700795599f84a51fd70631d72f95bd19e84acd524",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "[Aviation][轻型][直升机]Furia Ultralight Helicopter Plans.pdf",
+          "bytes": 2604453,
+          "extension": ".pdf",
+          "crc32": "f2ce6fda",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  },
+  {
+    "relative_path": "轻型飞机图纸Piper J-3 Cub.rar",
+    "original_filename": "轻型飞机图纸Piper J-3 Cub.rar",
+    "extension": ".rar",
+    "bytes": 6302334,
+    "sha256": "caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615",
+    "parent_directory": ".",
+    "is_archive": true,
+    "type": "archive",
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "轻型飞机图纸Piper J-3 Cub.pdf",
+          "bytes": 7094471,
+          "extension": ".pdf",
+          "crc32": "78742289",
+          "safe": true,
+          "encrypted": false
+        }
+      ],
+      "reader": "rarfile-4.2",
+      "extension_counts": {
+        ".pdf": 1
+      }
+    }
+  }
+]

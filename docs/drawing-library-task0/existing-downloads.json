@@ -1,0 +1,477 @@
+[
+  {
+    "status": "REPLACE",
+    "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+    "content_type": "application/zip",
+    "received_bytes": 6212559,
+    "target_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+    "legacy_routes": [
+      "/assets/legacy-downloads/2168/d29b41480f9c051a1113334ae83dd8a3.zip"
+    ],
+    "source_urls": [
+      "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c-2?wpdmdl=2168"
+    ],
+    "bytes": 6212559,
+    "original_filenames": [
+      "d29b41480f9c051a1113334ae83dd8a3.zip"
+    ],
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+          "bytes": 89671,
+          "extension": ".pdf",
+          "crc32": "04032cd6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a6a2524af434ce16b3623069c211b5959c516ce22a74f823a901c2900f99f0d5"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+          "bytes": 29261,
+          "extension": ".jpg",
+          "crc32": "d1e040f4",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d915e29a0ca30bae8a8c4e47f0043b78db98fecfd7cb02b950a89324a1ea5c67"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+          "bytes": 21593,
+          "extension": ".jpg",
+          "crc32": "f2e25cec",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e54b37f6ce7d32286627ebe99bfe7c045973d7a0b3561f422e6280bb3799f83f"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+          "bytes": 22727,
+          "extension": ".jpg",
+          "crc32": "10d2c1b6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "c153b8a4a24f1e80d3813d6378bcab97cec034cc4cde26bfde6555b4f45dd9b2"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+          "bytes": 250274,
+          "extension": ".gif",
+          "crc32": "1fee833f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "71fae149bea102c2622f7e58d3f8af0e4e4ba647ea15fdc0506adc1081324af0"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+          "bytes": 47299,
+          "extension": ".gif",
+          "crc32": "6742eeb0",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6ab0592d3202bb5f121add603f4cc69e4df3c38dbbbca44d15571a61699524e8"
+        },
+        {
+          "name": "F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+          "bytes": 5385246,
+          "extension": ".pdf",
+          "crc32": "3db03d89",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "5d974b144332ec8674bb47c4b4ce5b0c10bf173fe817bb34a185bf83adb5c022"
+        },
+        {
+          "name": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+          "bytes": 21912,
+          "extension": ".pdf",
+          "crc32": "10223c9a",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "d53517f0c691fd6c940c70645758bac5fc464dcab169e20f493c3508ee22af09"
+        },
+        {
+          "name": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+          "bytes": 26740,
+          "extension": ".pdf",
+          "crc32": "45264a7b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "02a5def0614cc8e3dc554b1350346ae9561ad030ec0d5ddd13f134e538878bbe"
+        },
+        {
+          "name": "F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+          "bytes": 6796,
+          "extension": ".pdf",
+          "crc32": "fb73ea7b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6978bbb8a28b63ad8f7cc195a5e6e406fa6bf69a9b334cd0cf86764e1237d8cc"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+          "bytes": 74147,
+          "extension": ".pdf",
+          "crc32": "7e105c21",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "f0fd3dd888d91522c657fd2ebc68a7236549b12a177d2607b8c37f0b837a2881"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+          "bytes": 71588,
+          "extension": ".pdf",
+          "crc32": "f7eec42f",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "9f51d1efed4c7b9b674fbc2d4a902ed4cc158616f946b37338dbfec9900b5f33"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+          "bytes": 89653,
+          "extension": ".pdf",
+          "crc32": "aff371d6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "48e026097d4bff6572f57b315087af54b796bc90f624dfa144271240686034ce"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+          "bytes": 58288,
+          "extension": ".pdf",
+          "crc32": "f7fba9f8",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6b9abc392206e312ed967c7bfb689d80b7ed0f31aa56eb9aabd2d32ecf10ee62"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+          "bytes": 93978,
+          "extension": ".pdf",
+          "crc32": "1e253c29",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "34038b720cdc52360e005a002a5aed2dfa4827c0246db63fa5a7433415c78c08"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+          "bytes": 71614,
+          "extension": ".pdf",
+          "crc32": "4dad6ed0",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "ca446f966643bae1f10892e354de2e0512d431ed77c734648891258f2b613b8e"
+        },
+        {
+          "name": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+          "bytes": 82679,
+          "extension": ".pdf",
+          "crc32": "9eff1ed1",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b0c8094181ce5cb29ece2420beaab6f1291c4d91ffff49a00bc98b2114a04322"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".gif": 2,
+        ".jpg": 3,
+        ".pdf": 12
+      }
+    },
+    "package_ids": [
+      "2168"
+    ]
+  },
+  {
+    "status": "REPLACE",
+    "sha256": "bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+    "content_type": "application/zip",
+    "received_bytes": 932818,
+    "target_route": "/downloads/drawings/F4D-bb86cd50d911.zip",
+    "legacy_routes": [
+      "/wp-content/uploads/2022/01/F4D.zip"
+    ],
+    "source_urls": [
+      "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9af4d%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%ac%e3%82%a4%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c?wpdmdl=1886",
+      "https://happinesea.com/wp-content/uploads/2022/01/F4D.zip"
+    ],
+    "bytes": 932818,
+    "original_filenames": [
+      "F4D.zip"
+    ],
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "F4D/F4D Skyray - Easybuild - V1.1 - Full.pdf",
+          "bytes": 873484,
+          "extension": ".pdf",
+          "crc32": "712498c3",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "6b3489143e94397eaf979d1515796d8ae631a9069565b458582a2b555abf2f3d"
+        },
+        {
+          "name": "F4D/F4D Skyray - Easybuild - V1.1 - Tiled A4.pdf",
+          "bytes": 112569,
+          "extension": ".pdf",
+          "crc32": "a5fc1046",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "aa117113d1224f5419c35f4cb5a4da52f57937ff1c6a1b954afc8a7bfab7ed80"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".pdf": 2
+      }
+    },
+    "package_ids": [
+      "1886"
+    ]
+  },
+  {
+    "status": "REPLACE",
+    "sha256": "cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+    "content_type": "application/pdf",
+    "received_bytes": 888705,
+    "target_route": "/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+    "legacy_routes": [
+      "/wp-content/uploads/2021/10/Fighter.pdf"
+    ],
+    "source_urls": [
+      "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3?wpdmdl=1712",
+      "https://happinesea.com/download/fighter-ultralight%e8%bb%bd%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3-2?wpdmdl=1717",
+      "https://happinesea.com/wp-content/uploads/2021/10/Fighter.pdf"
+    ],
+    "bytes": 888705,
+    "original_filenames": [
+      "Fighter.pdf"
+    ],
+    "package_ids": [
+      "1712",
+      "1717"
+    ]
+  },
+  {
+    "status": "REPLACE",
+    "sha256": "7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+    "content_type": "application/zip",
+    "received_bytes": 247043,
+    "target_route": "/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+    "legacy_routes": [
+      "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip"
+    ],
+    "source_urls": [
+      "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3?wpdmdl=1724",
+      "https://happinesea.com/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip"
+    ],
+    "bytes": 247043,
+    "original_filenames": [
+      "Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip"
+    ],
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "Pitts S-2C or Ultimate Pitts Park Flyer/pitts.pdf",
+          "bytes": 132299,
+          "extension": ".pdf",
+          "crc32": "2411cca6",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e9613a4347c222de4b25cfc8e2f8b84e61389660ef03619e764b7b9c397e49c2"
+        },
+        {
+          "name": "Pitts S-2C or Ultimate Pitts Park Flyer/pittstiled.pdf",
+          "bytes": 161364,
+          "extension": ".pdf",
+          "crc32": "fa91725e",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "1b848d4c0dd6a72ffa90a26defb471e2ebf72fd551e46c70791c05403e4d462f"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".pdf": 2
+      }
+    },
+    "package_ids": [
+      "1724"
+    ]
+  },
+  {
+    "status": "REPLACE",
+    "sha256": "e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+    "content_type": "application/zip",
+    "received_bytes": 2934006,
+    "target_route": "/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+    "legacy_routes": [
+      "/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip"
+    ],
+    "source_urls": [
+      "https://happinesea.com/download/c-17%e8%bc%b8%e9%80%81%e6%a9%9f%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%abrc%e9%a3%9b%e8%a1%8c%e6%a9%9f%e8%a8%ad%e8%a8%88%e5%9b%b3cad%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bb%98?wpdmdl=1733",
+      "https://happinesea.com/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip"
+    ],
+    "bytes": 2934006,
+    "original_filenames": [
+      "2e27a9c6e14b306407c066e01109eba8.zip"
+    ],
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "C-17ùAæùï@/C-17-Formers-Sheet-1.pdf",
+          "bytes": 339335,
+          "extension": ".pdf",
+          "crc32": "0a92cdf2",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "a76c70d0ef89432b4d274d92eb3b30a0dbdc315314fa0fab7630cb2b0ce6c0f0"
+        },
+        {
+          "name": "C-17ùAæùï@/C-17-retract-housing.pdf",
+          "bytes": 51408,
+          "extension": ".pdf",
+          "crc32": "0fe5995d",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "3ce1a85524e5ad816619e99a147ba99b173ae69afd01ebfd48f1d077337f186d"
+        },
+        {
+          "name": "C-17ùAæùï@/C17-Fuselage-line%20drawing.pdf",
+          "bytes": 34825,
+          "extension": ".pdf",
+          "crc32": "ac3823b9",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "0fb956dd8793924d3c9ee332cdd2beb9c41b2615bd9673d22893f54709efc8d2"
+        },
+        {
+          "name": "C-17ùAæùï@/C17-Fuselage2.pdf",
+          "bytes": 69228,
+          "extension": ".pdf",
+          "crc32": "d0b16c92",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "61027775e11e1d40ad6245a3ace3b8f5cfb8315dd0713220c0bb0aa938cf6c74"
+        },
+        {
+          "name": "C-17ùAæùï@/C17_Globemaster_1.tif",
+          "bytes": 688640,
+          "extension": ".tif",
+          "crc32": "f33b2721",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "4b9f8b930ed1791381abb0fc11d68cb0ce255a1971f89943f13aa99c7001e0a4"
+        },
+        {
+          "name": "C-17ùAæùï@/C17_Globemaster_2.tif",
+          "bytes": 687208,
+          "extension": ".tif",
+          "crc32": "427197f9",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "81506db06ed7441203a9ad8f86670665fb278f624e3e22f87fff2ed7fce9c92e"
+        },
+        {
+          "name": "C-17ùAæùï@/c-17ì∞É¼ùß.doc",
+          "bytes": 493568,
+          "extension": ".doc",
+          "crc32": "223544e3",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b9d6231ca915b3cf157ece078ba01503ff6e4d93eb58c2b203df833d8df64100"
+        },
+        {
+          "name": "C-17ùAæùï@/md17-3v.dwg",
+          "bytes": 941150,
+          "extension": ".dwg",
+          "crc32": "96764785",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "75eaa218f1b885f7d004435ee588d0e6454621a9d71f52e4733f8b0d51f644de"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".doc": 1,
+        ".dwg": 1,
+        ".pdf": 4,
+        ".tif": 2
+      }
+    },
+    "package_ids": [
+      "1733"
+    ]
+  },
+  {
+    "status": "REPLACE",
+    "sha256": "b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+    "content_type": "application/zip",
+    "received_bytes": 197718,
+    "target_route": "/downloads/drawings/Draken-b9ad56c9eecf.zip",
+    "legacy_routes": [
+      "/wp-content/uploads/2021/10/Draken.zip"
+    ],
+    "source_urls": [
+      "https://happinesea.com/download/rc%e3%82%b9%e3%82%b1%e3%83%bc%e3%83%ab%e6%a9%9f%ef%bc%9a%e3%82%b5%e3%83%bc%e3%83%96-35-%e3%83%89%e3%83%a9%e3%82%b1%e3%83%b3%e3%80%81%e3%82%b9%e3%83%81%e3%83%ac%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%89?wpdmdl=1740",
+      "https://happinesea.com/wp-content/uploads/2021/10/Draken.zip"
+    ],
+    "bytes": 197718,
+    "original_filenames": [
+      "Draken.zip"
+    ],
+    "archive": {
+      "status": "LISTED",
+      "members": [
+        {
+          "name": "Draken/Draken Tiled A4âTâCâY.pdf",
+          "bytes": 60868,
+          "extension": ".pdf",
+          "crc32": "32413eaf",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "8e666de70aa14ce8f1243c5d067a74aa6a804040064b0c8e26070ef2af4c8577"
+        },
+        {
+          "name": "Draken/Draken Tiled Letter_âîâ^ü[âTâCâY.pdf",
+          "bytes": 62353,
+          "extension": ".pdf",
+          "crc32": "de2a090b",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "076f89db644c0fd62c788e279437a9b143d5f77fa6416faa2e8f10da4b3b6a5a"
+        },
+        {
+          "name": "Draken/Draken_26_parts_A0_v2.pdf",
+          "bytes": 49180,
+          "extension": ".pdf",
+          "crc32": "91c2e109",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "b9c05ab16418eba5f53d4a0781a7fa6c30ecc7f9cf0c2e03be4b3c5e2be4f5bb"
+        },
+        {
+          "name": "Draken/decals.jpg",
+          "bytes": 39069,
+          "extension": ".jpg",
+          "crc32": "7e9ca744",
+          "safe": true,
+          "encrypted": false,
+          "sha256": "e9a0f03c9c7826cdbc52b39a98e235abd6b933c383c8a64b5002e5d9b3134ccc"
+        }
+      ],
+      "reader": "python.zipfile",
+      "extension_counts": {
+        ".jpg": 1,
+        ".pdf": 3
+      }
+    },
+    "package_ids": [
+      "1740"
+    ]
+  }
+]
