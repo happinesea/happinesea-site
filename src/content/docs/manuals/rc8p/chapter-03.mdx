@@ -1,0 +1,170 @@
+---
+title: 第3章 RC8P ファームウェア更新
+description: 第3章 RC8P ファームウェア更新の操作方法と設定
+product: rc8p
+slug: manuals/rc8p/chapter-03
+status: manufacturer_review
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import ManualVideo from '../../../../components/manuals/ManualVideo.astro';
+
+RC8Pは新機能の追加や現行機能の改善のため、ファームウェアを更新します。
+
+1. **最新ファームウェアをダウンロードする**
+
+`https://www.radiolink.com.cn/rc8p_firmware` から最新パッケージをダウンロードします。公式サイトのパッケージはZIP形式です。PCへダウンロードした後、先に解凍してください。解凍後の`Firmware`フォルダーには.mac形式の最新ファームウェアが入っています。パッケージによっては音声ファイル用の`sounds`フォルダーも含まれます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-075.webp"
+  width={94}
+  height={91}
+  alt="RC8P 3.step1"
+  caption="RC8P 3.step1"
+  figureId="RC8P-P027-I05"
+/>
+
+2. **送信機を準備する**
+
+RC8Pの電源を切り、付属のType-CケーブルでPCへ接続します。Returnボタンを押したまま、電源ボタンも同時に長押ししてRC8Pを起動します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-076.webp"
+  width={2896}
+  height={1235}
+  alt="RC8P 3.step2"
+  caption="RC8P 3.step2"
+  figureId="RC8P-P027-I01"
+/>
+
+3. **USBモードに入る**
+
+画面に`BOOT MODE`が表示されます。「USB」を選択してスクロールキーを押します。`USB MODE`が表示され、PCがRC8Pのディスクを認識します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-077.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step3"
+  caption="RC8P 3.step3"
+  figureId="RC8P-P027-I03"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-078.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step3"
+  caption="RC8P 3.step3"
+  figureId="RC8P-P027-I02"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-079.webp"
+  width={107}
+  height={107}
+  alt="RC8P 3.step3"
+  caption="RC8P 3.step3"
+  figureId="RC8P-P027-I04"
+/>
+
+4. **ファームウェアをコピーする**
+
+PCに表示されたRC8Pのリムーバブルディスクを開きます。図では`Firmware`、`model`、`sounds`、`sys model`の4フォルダーが表示されます。`Firmware`フォルダー内の古いファームウェアを削除し、新しいファームウェアをコピーします。パッケージに`sounds`フォルダーがある場合、ユーザー作成音声をPCへバックアップしてから古い音声を削除し、パッケージの新しい音声を`sounds`へコピーし、バックアップした音声をRC8Pの`sounds`へ戻します。ユーザー作成音声がない場合は、古い`sounds`フォルダーを削除して新しいフォルダーをコピーできます。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-080.webp"
+  width={319}
+  height={91}
+  alt="RC8P 3.step4"
+  caption="RC8P 3.step4"
+  figureId="RC8P-P028-I01"
+/>
+
+5. **アップグレードモードに入る**
+
+コピー完了後、Returnボタンまたはスクロールキーを短く押してUSBモードを終了します。`BOOT MODE`で`UPG`を選択し、スクロールキーを押します。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-077.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step5"
+  caption="RC8P 3.step5"
+  figureId="RC8P-P028-I03"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-081.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step5"
+  caption="RC8P 3.step5"
+  figureId="RC8P-P028-I02"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-082.webp"
+  width={107}
+  height={107}
+  alt="RC8P 3.step5"
+  caption="RC8P 3.step5"
+  figureId="RC8P-P028-I04"
+/>
+
+6. **ファームウェアを更新する**
+
+`Upgrade MODE`で`YES`を選択し、スクロールキーを押します。更新率が画面に表示されます。更新中はUSB接続を外したり、RC8Pの電源を切ったりしないでください。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-083.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step6"
+  caption="RC8P 3.step6"
+  figureId="RC8P-P028-I06"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-084.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step6"
+  caption="RC8P 3.step6"
+  figureId="RC8P-P028-I05"
+/>
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-085.webp"
+  width={107}
+  height={107}
+  alt="RC8P 3.step6"
+  caption="RC8P 3.step6"
+  figureId="RC8P-P028-I07"
+/>
+
+7. **更新成功を確認する**
+
+画面に`Firmware upgrade successful!`と表示されれば成功です。
+
+<ManualFigure
+  src="/assets/radiolink/rc8p/full-manual/image-086.webp"
+  width={1006}
+  height={1280}
+  alt="RC8P 3.step7"
+  caption="RC8P 3.step7"
+  figureId="RC8P-P029-I02"
+/>
+
+8. **更新モードを終了する**
+
+Returnボタンを短く押して更新モードを終了します。RC8Pは自動的に電源を切ります。電源ボタンを長押しして起動すると、通常使用できます。

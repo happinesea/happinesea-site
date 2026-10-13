@@ -26,7 +26,7 @@ test('manual directory groups editions, filters models and keeps official links 
     rc8x.getByRole('link', { name: '取扱説明書', exact: true }),
   ).toHaveCount(1);
   await expect(rc8x).toContainText(
-    '現在は概要、第1章、第2章を掲載しています。',
+    '日本語完全版の取扱説明書を掲載しています。',
   );
   const rc4gs = page.locator('[data-manual-card="rc4gs"]');
   await expect(

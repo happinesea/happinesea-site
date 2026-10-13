@@ -73,12 +73,12 @@ export const manualCards = models.map((model) => {
       external: false,
       id: 'rc4gs-v2',
     });
-  if (model.id === 'rc8x')
+  if (['rc8x', 'rc8p'].includes(model.id))
     links.unshift({
-      href: '/manuals/rc8x/',
+      href: `/manuals/${model.id}/`,
       label: '取扱説明書',
       external: false,
-      id: 'rc8x',
+      id: model.id,
     });
   links.push(
     ...official.links
@@ -94,10 +94,9 @@ export const manualCards = models.map((model) => {
     id: model.id,
     name: model.name,
     category: product.category,
-    description:
-      model.id === 'rc8x'
-        ? '現在は概要、第1章、第2章を掲載しています。'
-        : `${product.subcategoryLabel}の操作方法と設定を確認できます。`,
+    description: ['rc8x', 'rc8p'].includes(model.id)
+      ? '日本語完全版の取扱説明書を掲載しています。'
+      : `${product.subcategoryLabel}の操作方法と設定を確認できます。`,
     image: product.image,
     imageLabel: product.name,
     links,

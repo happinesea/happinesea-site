@@ -389,9 +389,21 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "147.5×124.5×80mm", "status": "verified" },
-      { "label": "重量", "value": "193g", "status": "verified" },
-      { "label": "チャンネル", "value": "8チャンネル", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "147.5×124.5×80mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "193g",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "8チャンネル",
+        "status": "verified"
+      },
       {
         "label": "周波数帯",
         "value": "2.4GHz（2400–2483.5MHz）",
@@ -407,21 +419,41 @@
         "value": "3ms / 4ms / 14ms",
         "status": "verified"
       },
-      { "label": "PWM分解能", "value": "4096、0.25μs", "status": "verified" },
-      { "label": "送信出力", "value": "100mW未満", "status": "verified" },
+      {
+        "label": "PWM分解能",
+        "value": "4096、0.25μs",
+        "status": "verified"
+      },
+      {
+        "label": "送信出力",
+        "value": "100mW未満",
+        "status": "verified"
+      },
       {
         "label": "地上通信距離",
         "value": "最大600m（メーカー試験条件）",
         "status": "verified"
       },
-      { "label": "動作電圧", "value": "3.4–4.2V", "status": "verified" },
+      {
+        "label": "動作電圧",
+        "value": "3.4–4.2V",
+        "status": "verified"
+      },
       {
         "label": "バッテリー",
         "value": "18650リチウムイオン電池 2500mAh×1",
         "status": "verified"
       },
-      { "label": "動作電流", "value": "230mA±15mA@4.2V", "status": "verified" },
-      { "label": "Type-C入力", "value": "5V・500mA", "status": "verified" },
+      {
+        "label": "動作電流",
+        "value": "230mA±15mA@4.2V",
+        "status": "verified"
+      },
+      {
+        "label": "Type-C入力",
+        "value": "5V・500mA",
+        "status": "verified"
+      },
       {
         "label": "画面",
         "value": "2.4インチ・320×240・16-bitカラー",
@@ -432,7 +464,11 @@
         "value": "30グループ",
         "status": "verified"
       },
-      { "label": "サブID", "value": "16グループ", "status": "verified" },
+      {
+        "label": "サブID",
+        "value": "16グループ",
+        "status": "verified"
+      },
       {
         "label": "R8FG寸法 / 重量",
         "value": "35×24×13.5mm / 10.5g",
@@ -457,7 +493,13 @@
       },
       "gallery": []
     },
-    "manuals": [],
+    "manuals": [
+      {
+        "title": "RC8P 日本語取扱説明書",
+        "href": "/manuals/rc8p/",
+        "status": "manufacturer_review"
+      }
+    ],
     "firmware": [
       {
         "title": "RC8P Firmware V1.0.5",
@@ -467,7 +509,10 @@
         "note": "公式ページのLatest Firmware。更新履歴の日付は2026-09-05です。"
       }
     ],
-    "support": { "href": "/support/", "faq_count": 4 },
+    "support": {
+      "href": "/support/",
+      "faq_count": 4
+    },
     "relations": {
       "products": [],
       "receivers": [
@@ -563,8 +608,16 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "174.3×206.9×106.9mm", "status": "verified" },
-      { "label": "重量", "value": "536g", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "174.3×206.9×106.9mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "536g",
+        "status": "verified"
+      },
       {
         "label": "チャンネル",
         "value": "12フルプロポーショナルチャンネル",
@@ -585,15 +638,31 @@
         "value": "3ms / 4ms / 14ms",
         "status": "verified"
       },
-      { "label": "PWM分解能", "value": "4096、0.25μs", "status": "verified" },
-      { "label": "送信出力", "value": "100mW未満", "status": "verified" },
-      { "label": "動作電圧", "value": "7.4–18V", "status": "verified" },
+      {
+        "label": "PWM分解能",
+        "value": "4096、0.25μs",
+        "status": "verified"
+      },
+      {
+        "label": "送信出力",
+        "value": "100mW未満",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "7.4–18V",
+        "status": "verified"
+      },
       {
         "label": "Type-C",
         "value": "5V・500mA入力 / 4.6–5V・最大1A出力",
         "status": "verified"
       },
-      { "label": "動作電流", "value": "100mA±10mA@8.4V", "status": "verified" },
+      {
+        "label": "動作電流",
+        "value": "100mA±10mA@8.4V",
+        "status": "verified"
+      },
       {
         "label": "画面",
         "value": "2.8インチ・320×240・16-bitカラー",
@@ -604,8 +673,16 @@
         "value": "50グループ",
         "status": "verified"
       },
-      { "label": "サブID", "value": "16グループ", "status": "verified" },
-      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" },
+      {
+        "label": "サブID",
+        "value": "16グループ",
+        "status": "verified"
+      },
+      {
+        "label": "動作温度",
+        "value": "-30〜85℃",
+        "status": "verified"
+      },
       {
         "label": "R12F寸法 / 重量",
         "value": "35.6×25×13.6mm / 11.8g",
@@ -645,7 +722,10 @@
         "note": "公式ファームウェアページのLatest Firmware。ページ掲載日と配布ファイル日付の差は確認対象です。"
       }
     ],
-    "support": { "href": "/support/", "faq_count": 6 },
+    "support": {
+      "href": "/support/",
+      "faq_count": 6
+    },
     "relations": {
       "products": [],
       "receivers": [
@@ -715,12 +795,36 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "45×32×15 mm", "status": "verified" },
-      { "label": "重量", "value": "17 g", "status": "verified" },
-      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
-      { "label": "チャンネル", "value": "16チャンネル", "status": "verified" },
-      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
-      { "label": "動作電流", "value": "50±10 mA@5 V", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "45×32×15 mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "17 g",
+        "status": "verified"
+      },
+      {
+        "label": "アンテナ長",
+        "value": "205 mm",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "16チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "3〜12 V",
+        "status": "verified"
+      },
+      {
+        "label": "動作電流",
+        "value": "50±10 mA@5 V",
+        "status": "verified"
+      },
       {
         "label": "信号出力",
         "value": "SBUS + CRSF + PWM",
@@ -736,7 +840,11 @@
         "value": "FHSS・67チャンネル",
         "status": "verified"
       },
-      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "分解能",
+        "value": "4096、0.25 μs",
+        "status": "verified"
+      },
       {
         "label": "空中通信距離",
         "value": "最大4000 m（メーカー試験条件）",
@@ -752,8 +860,16 @@
         "value": "3 ms / 4 ms / 14 ms",
         "status": "verified"
       },
-      { "label": "防滴等級", "value": "IPX4", "status": "verified" },
-      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" }
+      {
+        "label": "防滴等級",
+        "value": "IPX4",
+        "status": "verified"
+      },
+      {
+        "label": "動作温度",
+        "value": "-30〜85℃",
+        "status": "verified"
+      }
     ],
     "media": {
       "hero": {
@@ -778,8 +894,14 @@
         "note": "公式ページの掲載日と更新履歴の日付に差があるため、配布バージョンのみ表示しています。"
       }
     ],
-    "support": { "href": "/support/", "faq_count": 3 },
-    "relations": { "products": [], "receivers": [] },
+    "support": {
+      "href": "/support/",
+      "faq_count": 3
+    },
+    "relations": {
+      "products": [],
+      "receivers": []
+    },
     "official_url": "https://www.radiolink.com/r16f",
     "firmware_url": "https://www.radiolink.com/r16f_firmwares",
     "manual_url": "https://www.radiolink.com/r16f_manual",
@@ -819,12 +941,36 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "35.6×25×13.6 mm", "status": "verified" },
-      { "label": "重量", "value": "11.8 g", "status": "verified" },
-      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
-      { "label": "チャンネル", "value": "12チャンネル", "status": "verified" },
-      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
-      { "label": "動作電流", "value": "37±3 mA@5 V", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "35.6×25×13.6 mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "11.8 g",
+        "status": "verified"
+      },
+      {
+        "label": "アンテナ長",
+        "value": "205 mm",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "12チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "3〜12 V",
+        "status": "verified"
+      },
+      {
+        "label": "動作電流",
+        "value": "37±3 mA@5 V",
+        "status": "verified"
+      },
       {
         "label": "信号出力",
         "value": "SBUS + CRSF + PWM",
@@ -840,7 +986,11 @@
         "value": "FHSS・67チャンネル",
         "status": "verified"
       },
-      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "分解能",
+        "value": "4096、0.25 μs",
+        "status": "verified"
+      },
       {
         "label": "空中通信距離",
         "value": "最大4000 m（メーカー試験条件）",
@@ -856,7 +1006,11 @@
         "value": "公式ページ間でV1.6 / V1.7の表記差あり",
         "status": "review_required"
       },
-      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" }
+      {
+        "label": "動作温度",
+        "value": "-30〜85℃",
+        "status": "verified"
+      }
     ],
     "media": {
       "hero": {
@@ -881,8 +1035,14 @@
         "note": "公式ページの掲載日と更新履歴の日付に差があるため、配布バージョンのみ表示しています。"
       }
     ],
-    "support": { "href": "/support/", "faq_count": 3 },
-    "relations": { "products": [], "receivers": [] },
+    "support": {
+      "href": "/support/",
+      "faq_count": 3
+    },
+    "relations": {
+      "products": [],
+      "receivers": []
+    },
     "official_url": "https://www.radiolink.com/r12f",
     "firmware_url": "https://www.radiolink.com/r12f_firmwares",
     "manual_url": "https://www.radiolink.com/r12f_manual",
@@ -926,13 +1086,41 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "35×24×13.5 mm", "status": "verified" },
-      { "label": "重量", "value": "10.5 g", "status": "verified" },
-      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
-      { "label": "チャンネル", "value": "8チャンネル", "status": "verified" },
-      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
-      { "label": "動作電流", "value": "35 mA@5 V", "status": "verified" },
-      { "label": "信号出力", "value": "SBUS + PWM", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "35×24×13.5 mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "10.5 g",
+        "status": "verified"
+      },
+      {
+        "label": "アンテナ長",
+        "value": "205 mm",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "8チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "3〜12 V",
+        "status": "verified"
+      },
+      {
+        "label": "動作電流",
+        "value": "35 mA@5 V",
+        "status": "verified"
+      },
+      {
+        "label": "信号出力",
+        "value": "SBUS + PWM",
+        "status": "verified"
+      },
       {
         "label": "周波数帯",
         "value": "2.4 GHz（2400〜2483.5 MHz）",
@@ -958,7 +1146,11 @@
         "value": "最大8S（33.6 V）",
         "status": "verified"
       },
-      { "label": "防滴等級", "value": "IPX4", "status": "verified" }
+      {
+        "label": "防滴等級",
+        "value": "IPX4",
+        "status": "verified"
+      }
     ],
     "media": {
       "hero": {
@@ -975,8 +1167,14 @@
     },
     "manuals": [],
     "firmware": [],
-    "support": { "href": "/support/", "faq_count": 3 },
-    "relations": { "products": [], "receivers": [] },
+    "support": {
+      "href": "/support/",
+      "faq_count": 3
+    },
+    "relations": {
+      "products": [],
+      "receivers": []
+    },
     "official_url": "https://www.radiolink.com/r8fg",
     "manual_url": "https://www.radiolink.com/r8fg_manual",
     "last_checked_at": "2026-10-01"
@@ -1013,12 +1211,36 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "35×22×14 mm", "status": "verified" },
-      { "label": "重量", "value": "6 g", "status": "verified" },
-      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
-      { "label": "チャンネル", "value": "7チャンネル", "status": "verified" },
-      { "label": "動作電圧", "value": "3〜12 V", "status": "verified" },
-      { "label": "動作電流", "value": "30 mA", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "35×22×14 mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "6 g",
+        "status": "verified"
+      },
+      {
+        "label": "アンテナ長",
+        "value": "205 mm",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "7チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "3〜12 V",
+        "status": "verified"
+      },
+      {
+        "label": "動作電流",
+        "value": "30 mA",
+        "status": "verified"
+      },
       {
         "label": "信号出力",
         "value": "PWM + PPM + SBUS",
@@ -1034,7 +1256,11 @@
         "value": "FHSS・67チャンネル",
         "status": "verified"
       },
-      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "分解能",
+        "value": "4096、0.25 μs",
+        "status": "verified"
+      },
       {
         "label": "地上通信距離",
         "value": "最大600 m（メーカー試験条件）",
@@ -1045,7 +1271,11 @@
         "value": "最大8S（33.6 V）",
         "status": "verified"
       },
-      { "label": "防滴等級", "value": "IPX4", "status": "verified" }
+      {
+        "label": "防滴等級",
+        "value": "IPX4",
+        "status": "verified"
+      }
     ],
     "media": {
       "hero": {
@@ -1062,8 +1292,14 @@
     },
     "manuals": [],
     "firmware": [],
-    "support": { "href": "/support/", "faq_count": 3 },
-    "relations": { "products": [], "receivers": [] },
+    "support": {
+      "href": "/support/",
+      "faq_count": 3
+    },
+    "relations": {
+      "products": [],
+      "receivers": []
+    },
     "official_url": "https://www.radiolink.com/r7fg",
     "manual_url": "https://www.radiolink.com/r7fg_manual",
     "last_checked_at": "2026-10-01"
@@ -1102,13 +1338,41 @@
       }
     ],
     "specifications": [
-      { "label": "寸法", "value": "35×20×13 mm", "status": "verified" },
-      { "label": "重量", "value": "6 g", "status": "verified" },
-      { "label": "アンテナ長", "value": "205 mm", "status": "verified" },
-      { "label": "チャンネル", "value": "6チャンネル", "status": "verified" },
-      { "label": "動作電圧", "value": "3〜15 V DC", "status": "verified" },
-      { "label": "動作電流", "value": "30 mA@5 V", "status": "verified" },
-      { "label": "信号出力", "value": "PWM", "status": "verified" },
+      {
+        "label": "寸法",
+        "value": "35×20×13 mm",
+        "status": "verified"
+      },
+      {
+        "label": "重量",
+        "value": "6 g",
+        "status": "verified"
+      },
+      {
+        "label": "アンテナ長",
+        "value": "205 mm",
+        "status": "verified"
+      },
+      {
+        "label": "チャンネル",
+        "value": "6チャンネル",
+        "status": "verified"
+      },
+      {
+        "label": "動作電圧",
+        "value": "3〜15 V DC",
+        "status": "verified"
+      },
+      {
+        "label": "動作電流",
+        "value": "30 mA@5 V",
+        "status": "verified"
+      },
+      {
+        "label": "信号出力",
+        "value": "PWM",
+        "status": "verified"
+      },
       {
         "label": "テレメトリー",
         "value": "RSSI・受信機電圧（商品ページと表記差あり）",
@@ -1124,13 +1388,21 @@
         "value": "FHSS・67チャンネル",
         "status": "verified"
       },
-      { "label": "分解能", "value": "4096、0.25 μs", "status": "verified" },
+      {
+        "label": "分解能",
+        "value": "4096、0.25 μs",
+        "status": "verified"
+      },
       {
         "label": "地上通信距離",
         "value": "最大400 m（メーカー試験条件）",
         "status": "verified"
       },
-      { "label": "動作温度", "value": "-30〜85℃", "status": "verified" }
+      {
+        "label": "動作温度",
+        "value": "-30〜85℃",
+        "status": "verified"
+      }
     ],
     "media": {
       "hero": {
@@ -1147,8 +1419,14 @@
     },
     "manuals": [],
     "firmware": [],
-    "support": { "href": "/support/", "faq_count": 3 },
-    "relations": { "products": [], "receivers": [] },
+    "support": {
+      "href": "/support/",
+      "faq_count": 3
+    },
+    "relations": {
+      "products": [],
+      "receivers": []
+    },
     "official_url": "https://www.radiolink.com/r6fg",
     "manual_url": "https://www.radiolink.com/r6fg_manual",
     "last_checked_at": "2026-10-01"

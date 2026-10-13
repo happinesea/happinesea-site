@@ -242,7 +242,7 @@ for (const [model, path] of [
     ).toBeVisible();
     await expect(
       page.getByRole('link', { name: '日本語マニュアル' }),
-    ).toHaveCount(0);
+    ).toHaveCount(model === 'RC8P' ? 1 : 0);
 
     const sources = await page
       .locator('img[src]')

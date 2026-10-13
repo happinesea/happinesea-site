@@ -1,9 +1,11 @@
 ---
-title: 第1章 RC8X リモートコントロールシステム
-description: RC8X 日本語マニュアル 第1章
+title: 第1章 RC8X 送信機とR8FG受信機
+description: 第1章 RC8X 送信機とR8FG受信機の操作方法と設定
 product: rc8x
 slug: manuals/rc8x/chapter-01
 status: manufacturer_review
+tableOfContents:
+  maxHeadingLevel: 4
 source:
   kind: publication_contract
 head:
@@ -11,36 +13,50 @@ head:
     attrs:
       name: robots
       content: noindex, nofollow
-sidebar:
-  order: 2
 ---
 
-import ManualSection from '../../../../components/manuals/ManualSection.astro';
+import ManualFigure from "../../../../components/manuals/ManualFigure.astro";
+import ManualVideo from "../../../../components/manuals/ManualVideo.astro";
 
-> **掲載内容について**: 本文は公式日本語PDFを基に構成しています。製品のFirmwareや仕様更新により、画面表示や操作手順が異なる場合があります。
+<span id="section-1.1"></span>
 
 ## 1.1 安全上の注意
+
+<span id="section-1.1.1"></span>
 
 ### 1.1.1 送信機の安全ガイドライン
 
 1. 雨天時の屋外走行、水たまりを通る走行、視界が悪い状態での使用はしないでください。水や雪などの水分がシステムの構成部品に入ると、動作異常や制御不能が発生するおそれがあります。
+
 2. 人や道路の近くでは使用しないでください。
+
 3. 本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方は本製品をお子様の手の届かない場所に保管し、お子様がいる場所で使用する場合は十分注意してください。
+
 4. 受信機を接続する前に、トリムレバーが0位置にあり、バッテリーが適切に充電されていることを必ず確認してください。
+
 5. 送信機と受信機の電源スイッチを入れる前に、送信機のスロットルトリガーがニュートラル位置にあることを必ず確認してください。電源スイッチを切る前に、エンジンが停止している、またはモーターが停止していることを必ず確認してください。
+
 6. モデルを操作する準備ができたら、必ず送信機の電源スイッチを入れてから、受信機またはスピードコントローラーの電源スイッチを入れてください。操作を終了する準備ができたら、必ず受信機またはスピードコントローラーの電源スイッチを切ってから、送信機の電源スイッチを切ってください。逆の順序で電源を入れたり切ったりすると、モデルが予期せず暴走し、非常に危険な状態になるおそれがあります。
+
 7. 走行前に、各機能でサーボが設定済みの位置へ動くことを確認してください。スロットルトリガーを操作し、ステアリングホイールを操作して、モーターとサーボが設定済みの位置へ動くか確認してください。モデルを調整するときは、エンジンが動作していないことを確認してください。予期せず制御不能となり、危険な状態になるおそれがあります。
+
 8. RC8Xは7.0V-17Vの範囲外では絶対に電源を入れないでください。使用できる電源は、単4形乾電池8本、2S-4S LiPoバッテリー、または6S Ni-MHバッテリーです。
+
 9. USBポートでRC8Xを充電しないでください。RC8X左側のType-Cポートは、ファームウェア更新、データコピー、5.8G映像伝送モジュールへの給電、およびRC8Xへの一時的な給電に使用します。RC8Xのバッテリー充電には使用できません。
+
+<span id="section-1.1.2"></span>
 
 ### 1.1.2 SDカードの安全ガイドライン
 
 1. 送信機の電源が入っているとき、特に送信機がデータを読み込んでいるときは、Micro SDカードを抜き差ししないでください。SDカードの破損またはデータ消失につながるおそれがあります。
+
 2. RC8Xを通常使用するにはSDカードを挿入する必要があります。使用前にSDカードが挿入されていることを確認してください。
+
+<span id="section-1.2"></span>
 
 ## 1.2 RC8Xの概要
 
-<ManualSection id="rc8x-ch1-overview" />
+<span id="section-1.2.1"></span>
 
 ### 1.2.1 特長
 
@@ -56,19 +72,21 @@ RC8Xは最大16台のバインド済み受信機から任意のIDを指定でき
 
 RC8Xはステアリングカーブ、スロットルカーブ、ブレーキカーブなどを備えています。クローラー、タンク、無限軌道車、ショートコーストラック、ドリフトカー、ガソリンカー、ミニカー、モンスタートラック、オフロードカー、GPカー、EPカーなどの各種RCカー、および単発・双発モデルを含む各種ボートに適した送信機です。
 
+<span id="section-1.2.2"></span>
+
 ### 1.2.2 仕様
 
 #### RC8X送信機
 
 | 項目 | 仕様 |
 | --- | --- |
-| 寸法 L*W*H | 121*163*209mm（4.76"*6.42"*8.23"） |
+| 寸法 L\*W\*H | 121\*163\*209mm（4.76"\*6.42"\*8.23"） |
 | 重量 | 438.5g（15.47oz） |
 | モデルタイプ | カー（クローラー、タンク、無限軌道車などを含む）/ ボート / ロボット |
 | チャンネル | 8チャンネル |
-| 画面 | 4.3インチ、800*480、フルカラー、バックライト付きIPSタッチスクリーン |
+| 画面 | 4.3インチ、800\*480、フルカラー、バックライト付きIPSタッチスクリーン |
 | 操作距離 | 600m（1968.5ft）（障害物や干渉のない場所で試験した最大到達距離） |
-| 動作電流 | 250mA±10mA@8.4V（IPS画面点灯時）<br />190mA±10mA@8.4V（IPS画面消灯時） |
+| 動作電流 | `250mA±10mA@8.4V`（IPS画面点灯時）<br />`190mA±10mA@8.4V`（IPS画面消灯時） |
 | 動作電圧 | 7-17V DC（単4形乾電池8本、2S-4S LiPoバッテリー、または6S Ni-MHバッテリー） |
 | Type-Cポート電圧・電流 | 入力電圧：5V（RC8XはType-Cケーブルでコンピューターまたはモバイルバッテリーから給電可能）<br />入力電流：最大500mA<br />出力電圧：4.6V-5.0V<br />出力電流：最大1A |
 | DSCポート電圧 | 入力電圧：0-5V<br />出力電圧：0-3.3V |
@@ -81,7 +99,7 @@ RC8Xはステアリングカーブ、スロットルカーブ、ブレーキカ�
 | 応答遅延 | 3ms、4ms、14msから選択可能 |
 | メニュー | フォント、デスクトップ、システムテーマなどをカスタマイズ可能 |
 | ローバッテリーアラーム | 送信機低電圧、受信機低電圧、モデル用バッテリー低電圧、低RSSIアラームをカスタマイズ可能 |
-| バッテリーケース寸法 | L*W*H = 92*52*14.5mm（3.62"*2.05"*0.57"） |
+| バッテリーケース寸法 | L\*W\*H = 92\*52\*14.5mm（3.62"\*2.05"\*0.57"） |
 | モデルメモリー | 200モデル |
 | サブID | 16 |
 | 対応受信機 | R8FG（標準）、R8FGH、R7FG、R6FG、R6F、R8EF、R8F、R8FM、R8SM、R8XM、R4F、R4FGM |
@@ -94,7 +112,7 @@ RC8Xはステアリングカーブ、スロットルカーブ、ブレーキカ�
 
 | 項目 | 仕様 |
 | --- | --- |
-| 寸法 | L*W*H = 35*24*13.5mm（1.38"*0.94"*0.53"） |
+| 寸法 | L\*W\*H = 35\*24\*13.5mm（1.38"\*0.94"\*0.53"） |
 | 重量 | 10.5g（0.37oz） |
 | アンテナ長 | 205mm（8.07"） |
 | チャンネル | 8チャンネル |
@@ -108,9 +126,9 @@ RC8Xはステアリングカーブ、スロットルカーブ、ブレーキカ�
 | 応答遅延 | RC8Xとバインドした場合、3ms、4ms、14msから選択可能（R8FG V2.1、または工場出荷日が2023/4/26以降のR8FG） |
 | 対応送信機 | RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS、RC4GS、T8FB、T8S |
 
-### 1.2.3 パッケージ内容
+<span id="section-1.2.3"></span>
 
-<ManualSection id="rc8x-ch1-package" />
+### 1.2.3 パッケージ内容
 
 | 内容物 | 数量 |
 | --- | --- |
@@ -128,25 +146,62 @@ RC8Xはステアリングカーブ、スロットルカーブ、ブレーキカ�
 | アクセサリーボックス | 1 |
 | キャリングバッグ | 1 |
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-009.webp" width={179} height={179} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I04" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-010.webp" width={150} height={150} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I03" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-011.webp" width={220} height={222} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I08" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-012.webp" width={237} height={237} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I09" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-013.webp" width={136} height={136} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I02" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-014.webp" width={156} height={156} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I01" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-015.webp" width={210} height={210} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I10" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-016.webp" width={190} height={190} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I06" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-017.webp" width={182} height={182} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I07" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-018.webp" width={157} height={47} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I05" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-019.webp" width={210} height={210} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I12" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-020.webp" width={200} height={200} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I11" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-021.webp" width={197} height={197} alt="RC8X 1.2.3" caption="RC8X 1.2.3" figureId="RC8X-P008-I13" />
+
+<span id="section-1.2.4"></span>
+
 ### 1.2.4 ボタンの概要
+
+原図の部位名：SD card slot＝SDカードスロット、Built-in antenna＝内蔵アンテナ、LCD Touch screen＝LCDタッチスクリーン、Steering wheel＝ステアリングホイール、Socket head cap screw (2.0mm)＝六角穴付きネジ（2.0 mm）、DSC port for simulator/FPV head track (3.5mm)＝シミュレーター/FPVヘッドトラック用DSCポート（3.5 mm）、Earphone jack (3.5mm)＝イヤホンジャック（3.5 mm）、Throttle trigger＝スロットルトリガー、Grip handle＝グリップ、TPU grip handle＝TPU製グリップ、Battery tray＝バッテリートレイ、Hook＝フック、FPV monitor holder port(M6)＝FPVモニターホルダー取付穴（M6）です。USB Type-C portの用途は次の本文を参照してください。PS1/PS2/PS4/PS5、DL1/PS3、VR、DT1-DT4、HOMEの機能は1.2.5の表を参照してください。LEDは側面LED、DT4はブレーキレート（ATL）/3ポジションスイッチ、DT3はステアリングレート/3ポジションスイッチを示します。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-022.webp" width={1350} height={920} alt="RC8X 1.2.4" caption="RC8X 1.2.4" figureId="RC8X-P009-I01" />
 
 RC8XのUSB Type-Cポートは、ファームウェア更新、データコピー、5.8G映像伝送モジュールへの給電だけでなく、RC8Xへの一時的な給電にも使用できます。RC8Xのバッテリーが切れた場合やシミュレーターを使用する場合は、モバイルバッテリーやコンピューターなどの給電機器をUSB Type-Cポートに接続してRC8Xへ5Vを給電し、HOMEボタンを長押ししてRC8Xの電源を入れます。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-023.webp" width={1350} height={760} alt="RC8X 1.2.4" caption="RC8X 1.2.4" figureId="RC8X-P009-I02" />
+
+::: note
 注：
+:::
 
 1. USB Type-CポートでRC8Xへ給電する場合は、過放電を防ぐため、バッテリートレイ内のバッテリーを取り外してください。
+
 2. RC8XのType-Cポートの最大入力電圧は5Vです。
 
-### 1.2.5 ボタン名称
+<span id="section-1.2.5"></span>
 
-<ManualSection id="rc8x-ch1-controls" />
+### 1.2.5 ボタン名称
 
 | スイッチ/ノブ | 正式名称 | 機能 | 操作 |
 | --- | --- | --- | --- |
 | DT1 | Digital Trim 1 | 初期設定：ステアリングトリム | ボタンを前後に押して値を調整します。ボタンを押して工場出荷時設定に戻します。4つのDTボタンは、設定により4つの3ポジションスイッチとして使用できます。詳しくは1.2.7「3ポジションスイッチ」を参照してください。 |
 | DT2 | Digital Trim 2 | 初期設定：スロットルトリム | DT1と同じです。 |
 | DT3 | Digital Trim 3 | 初期設定：デュアルレート | DT1と同じです。 |
-| DT4 | Digital Trim 4 | 初期設定：ブレーキ1レート（ATL*） | DT1と同じです。 |
+| DT4 | Digital Trim 4 | 初期設定：ブレーキ1レート（ATL\*） | DT1と同じです。 |
 | DL1/PS3 | Digital Dial 1 / Push Switch 3 | コードスイッチ、ジャイロゲイン。PS3の初期設定はバックライトON/OFFで、プログラム可能です。 | ダイヤルを反時計回り/時計回りに回して値を調整します。プッシュスイッチを押して有効にします。 |
 | PS1 | Push Switch 1 | 初期設定：CH4制御。プログラム可能です。 | ロックスイッチまたはジョグスイッチとしてプログラム可能です。 |
 | PS2 | Push Switch 2 | 初期設定：CH5制御。プログラム可能です。 | 左右両側にPS2スイッチがあり、右利き・左利きのユーザーが使いやすい配置です。 |
@@ -157,87 +212,157 @@ RC8XのUSB Type-Cポートは、ファームウェア更新、データコピー
 | SS | Steering switch | 初期設定ではステアリングスイッチがチャンネル1を制御し、車両を左右に曲げます。チャンネル1と他の機能を同時に制御するよう割り当てることもできます。 | ステアリングホイールを操作します。 |
 | TS | Trigger switch | 初期設定ではトリガースイッチがチャンネル2を制御し、車両を前進または後退させます。チャンネル2と他の機能を同時に制御するよう割り当てることもできます。 | スロットルトリガーを操作します。 |
 
+<span id="section-1.2.6"></span>
+
 ### 1.2.6 2ポジションスイッチ
 
 PS1、PS2、PS3、PS4、PS5、Steering switch、Trigger switchは、設定により2ポジションスイッチとして使用できます。設定方法は次のとおりです。
 
 1. 「Channel Setting」メニューで、設定するチャンネルに対してPS1/PS2/PS3/PS4/PS5/Steering switch/Trigger switchのいずれかを選択します（チャンネル4-7のスイッチは、初期設定ではPS1/PS2/PS4/PS5です。下図参照）。
+
 2. 「Switch select」メニューに入り、対応するスイッチの「Type」を「lock」に設定します。これにより、スイッチを1回押すとチャンネル出力が初期値から最大値（または最小値）へ移動します。もう一度押すと、最小値（または最大値）へ移動します。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-024.webp" width={412} height={639} alt="RC8X 1.2.6" caption="RC8X 1.2.6" figureId="RC8X-P011-I02" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-025.webp" width={405} height={590} alt="RC8X 1.2.6" caption="RC8X 1.2.6" figureId="RC8X-P011-I01" />
+
 3. 設定後、そのスイッチを2ポジションスイッチとして使用できます。ホーム画面に戻り、対応するスイッチを押してサーボ表示を確認してください。
 
-注：「Type」を「jog」に設定すると、スイッチを押している間は値が最大値（または最小値）になり、離すと元の値に戻ります。例：PS1の「Type」が「jog」の場合、PS1を押している間はサーボ値が+100になり、離すと-100に戻ります。スイッチ設定の詳細は2.2.7「Switch Select」を参照してください。
+::: note
+注：「Type」を「jog」に設定すると、スイッチを押している間は値が最大値（または最小値）になり、離すと元の値に戻ります。例：PS1の「Type」が「jog」の場合、PS1を押している間はサーボ値が+100になり、離すと-100に戻ります。スイッチ設定の詳細は2.2.8「Switch select」を参照してください（原文の参照番号は2.2.7ですが、同名の設定節は2.2.8です）。
+:::
+
+<span id="section-1.2.7"></span>
 
 ### 1.2.7 3ポジションスイッチ
 
-<ManualSection id="rc8x-ch1-three-position" />
-
 4つのDTボタンは、設定により4つの3ポジションスイッチとして使用できます。設定方法は次のとおりです。
 
+<ManualVideo youtubeId="6YpKuzUdwQQ" title="3ポジションスイッチ設定チュートリアル" />
+
 1. 「Channel Setting」メニューで、設定するチャンネルに任意のDTボタンを選択します（例：チャンネル4、DT1）。
+
 2. 「Trim/Dial select」メニューに入り、対応するDTボタンのステップを100に設定します。これにより、DTボタンを切り替えるたびに舵角量が直接100になります。必要に応じて異なる値を設定することもできます。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-026.webp" width={383} height={388} alt="RC8X 1.2.7" caption="RC8X 1.2.7" figureId="RC8X-P012-I01" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-027.webp" width={412} height={321} alt="RC8X 1.2.7" caption="RC8X 1.2.7" figureId="RC8X-P012-I02" />
+
 3. 設定後、DTボタンを3ポジションスイッチとして使用できます。ホーム画面に戻り、対応するDTボタンを切り替えてサーボ表示を確認してください。
 
+<span id="section-1.2.8"></span>
+
 ### 1.2.8 送信機の電源を入れる前の準備
+
+<span id="section-1.2.8.1"></span>
 
 #### 1.2.8.1 送信機の電源
 
 RC8Xは7.2V-17Vの広い動作電圧に対応し、さまざまなバッテリー構成で使用できます。単4形乾電池8本、6S Ni-MHバッテリー、または2S-4S LiPoバッテリーを使用できます。ユニバーサルJSTコネクターとRadioLinkの電圧保護ソフトウェアにより、逆極性接続から重要部品を保護します。
 
+::: caution
 注意：バッテリーを誤って逆接続した状態で、同時にUSBケーブルからRC8Xへ給電すると、送信機が損傷します。
+:::
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-028.webp" width={472} height={550} alt="RC8X 1.2.8.1" caption="RC8X 1.2.8.1" figureId="RC8X-P012-I03" />
 
 ##### 単4形乾電池
 
 1. 右図に従い、矢印の方向へスライドして送信機のバッテリーカバーを取り外します。
+
 2. 新しい単4形乾電池8本を入れます。極性表示に注意してください。
+
 3. 単4形乾電池8本が緩んでいないことを確認します。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-029.webp" width={667} height={502} alt="RC8X 1.2.8.1" caption="RC8X 1.2.8.1" figureId="RC8X-P012-I04" />
+
 4. バッテリーカバーをケースに戻してスライドします。
 
 ##### LiPoバッテリー
 
 1. 右図に従い、矢印の方向へスライドして送信機のバッテリーカバーを取り外します。
+
 2. バッテリーボックスを取り外します。
+
 3. LiPoバッテリーを接続します。極性表示に注意してください。
+
 4. バッテリーカバーをケースに戻してスライドします。
 
 LiPoバッテリーで給電する場合は、RC8Xに付属しているバッテリーボックスを取り外す必要があります。バッテリーボックスの取り外し方法は、次の2つを参照してください。
 
 a. バッテリーボックスの片側を親指で押し下げると、反対側が自動的に持ち上がり、バッテリーボックスを取り出せます。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-030.webp" width={672} height={390} alt="RC8X 1.2.8.1" caption="RC8X 1.2.8.1" figureId="RC8X-P013-I01" />
+
 b. ピンセットなどの工具でバッテリーボックスの片側を上方向へこじって取り外します。
 
 バッテリーボックスをバッテリートレイに戻す場合は、バッテリーケースの切り欠きがPS4スイッチ方向を向くようにしてください。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-031.webp" width={685} height={397} alt="RC8X 1.2.8.1" caption="RC8X 1.2.8.1" figureId="RC8X-P013-I02" />
+
+::: caution
 注意：RC8Xにバッテリーを接続していても電源が入らない場合は、次を確認してください。
+:::
 
 1. 単4形乾電池が逆極性で接続されていないか。
+
 2. バッテリーボックスが逆極性で接続されていないか。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-032.webp" width={671} height={394} alt="RC8X 1.2.8.1" caption="RC8X 1.2.8.1" figureId="RC8X-P013-I03" />
+
 3. LiPoバッテリーが逆極性で接続されていないか。
+
 4. 単4形乾電池が十分に充電されているか。
+
 5. 入力電圧が5V未満の場合、送信機の電源は入りません。
+
+<span id="section-1.2.8.2"></span>
 
 #### 1.2.8.2 送信機の電源を入れる
 
 HOMEボタンを約1.5秒長押しすると、RC8XにRadioLinkロゴが表示され、同時に「welcome to RadioLink」の音声が鳴ります。ホーム画面には下図の情報が表示されます。
 
 1. 現在のモデル名。「Model select」メニューでは合計200モデルから選択できます。走行前に、画面のモデル名が実際のモデルと一致していることを確認してください。モデル名が実際のモデルと一致していない場合、サーボの動き、ステアリングサーボの動作、ニュートラル位置設定が誤り、車両を損傷するおそれがあります。
+
 2. 受信機の信号強度。送信機と受信機のバインドが成功すると、送信機画面上部に受信機の信号強度が表示されます。
+
 3. 送信機バッテリー電圧。
+
 4. CH1-CH8のサーボ動作。送信機がサーボへ送っている指令をリアルタイムのバーグラフで表示します。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-033.webp" width={480} height={695} alt="RC8X 1.2.8.2" caption="RC8X 1.2.8.2" figureId="RC8X-P014-I04" />
+
 5. ミキシング機能。対応するミキシング機能がONの場合、機能ブロックの背景色は青になります。OFFの場合、機能ブロックの背景色はグレーになります。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-034.webp" width={46} height={46} alt="RC8X 1.2.8.2" caption="RC8X 1.2.8.2" figureId="RC8X-P014-I03" />
+
 6. T1：Total timer。送信機の累計稼働時間を記録します。送信機の電源を切っても時間の累積には影響しません。<br />T2：Click to time。T2タイマーの機能ブロックをクリックして、計時の開始、停止、リセットを行います。1回クリックで計時開始、2回クリックで計時停止、3回クリックでリセットです。タイマーの設定手順は2.6.2「Timer」を参照してください。
-7. テレメトリー。<br />RX：受信機の現在の入力電圧。<br />EXT：車両またはボートの現在の入力電圧。<br />RSSI：受信機の信号強度。「NULL」は信号喪失、または送信機と受信機のバインド失敗を示します。送信機と受信機の距離が約60cmのとき、RSSIが0から-30dBmの範囲であれば正常です。RSSIデータは0に近いほど信号が良好です。RSSIの試験手順は1.3.7「RSSI Testing」を参照してください。
+
+7. テレメトリー。<br />RX：受信機の現在の入力電圧。<br />EXT：車両またはボートの現在の入力電圧。<br />RSSI：受信機の信号強度。「NULL」は信号喪失、または送信機と受信機のバインド失敗を示します。送信機と受信機の距離が約60cmのとき、RSSIが0から30dBmの範囲であれば正常と原文に記載されています。RSSIデータは0に近いほど信号が良好です。RSSIの試験手順は1.3.7「RSSI Testing」を参照してください。
+
 8. ボタン名、機能名、状態。DT1/DT2/DT3/DT4/DL1が表す機能と値はホーム画面で確認できます。
+
 9. 設定メニューへ入ります。このボタンを押すと、すべてのパラメーター設定メニューに入ります。
+
+::: note
+注：英語原本のこの箇所は「0 to 30dBm」、RSSI試験の1.3.7および2.3.1は「0 to -30dBm」と記載され、符号が一致していません。旧日本語訳の負の値への統一を取り消し、各節の原文値と確認事項を保持します。
+:::
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-035.webp" width={334} height={607} alt="RC8X 1.2.8.2" caption="RC8X 1.2.8.2" figureId="RC8X-P014-I01" />
+
+<span id="section-1.2.8.3"></span>
 
 #### 1.2.8.3 言語選択
 
 メニュー画面は、簡体字中国語、繁体字中国語、英語、日本語、スペイン語、ドイツ語、ロシア語、フランス語、韓国語、ポーランド語を含む複数言語に対応しています。RC8Xのメニュー言語は初期設定で英語です。言語は「Information」メニューで変更できます。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-036.webp" width={51} height={51} alt="RC8X 1.2.8.3" caption="RC8X 1.2.8.3" figureId="RC8X-P014-I02" />
+
 RC8Xの電源を入れ、RC8X左下のボタンをクリックして「System menu」に入り、「Language」の下にある青い選択ボックスをクリックして、使用する言語を選択します。
 
-### 1.2.9 アイコンの概要
+<span id="section-1.2.9"></span>
 
-<ManualSection id="rc8x-ch1-home" />
+### 1.2.9 アイコンの概要
 
 | アイコンの機能 | アイコンの機能 |
 | --- | --- |
@@ -249,29 +374,77 @@ RC8Xの電源を入れ、RC8X左下のボタンをクリックして「System me
 | 「Mixing setting」 | 値をリセットする |
 | 「Tools menu」 |  |
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-037.webp" width={88} height={87} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I01" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-038.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I02" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-039.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I03" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-040.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I04" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-041.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I06" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-042.webp" width={55} height={53} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I05" />
+
 上記のアイコンをクリックすると各メニューに入ります。各メニュー内の各機能をクリックして設定します（各メニュー配下の機能はマニュアルの目次を確認してください）。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-043.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I07" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-044.webp" width={38} height={35} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I08" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-045.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I09" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-046.webp" width={32} height={29} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I10" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-047.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I11" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-048.webp" width={61} height={51} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I12" />
 
 例：「End point」の設定方法は？
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-049.webp" width={60} height={60} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I13" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-037.webp" width={88} height={87} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I18" />
+
 回答：RC8Xの電源を入れてホーム画面に入ります。RC8X左下のボタンをクリックして「System menu」に入ります。「Basic menu」に入り、「End point」をクリックしてメニューに入り、チャンネル1からチャンネル8のエンドポイントを調整します。「-」をクリックすると値が減り、「+」をクリックすると値が増えます。「Reset」をクリックすると、現在値が工場出荷時の初期値に戻ります。設定が終わったら、戻るアイコンをクリックして前のメニューへ戻るか、電源ボタンを短押ししてホーム画面へ戻ります。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-042.webp" width={55} height={53} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I14" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-050.webp" width={43} height={43} alt="RC8X 1.2.9" caption="RC8X 1.2.9" figureId="RC8X-P015-I15" />
+
+<span id="section-1.2.10"></span>
 
 ### 1.2.10 送信機低電圧アラーム
 
 送信機のローバッテリー電圧アラームは、初期設定で6.8Vです。送信機バッテリーの電圧が6.8V未満になると、送信機は「transmitter voltage low」の音声で警告します。警告を聞いたらバッテリーを交換してください。送信機ローバッテリー電圧アラームの値は、RC8Xに使用するバッテリーに合わせて「Battery」メニューで設定できます。
 
-設定手順：RC8Xの電源を入れ、RC8X左下のボタンをクリックして「System menu」に入ります。RC8X左側のアイコンをクリックして「Information」メニューに入り、「Battery」をクリックします。「Alarm voltage」の右側にある青い選択ボックスをクリックしてアラーム値を変更し、「-」で数値を下げ、「+」で数値を上げます。RC8Xの電源に2S LiPoバッテリーを使用する場合、アラーム電圧は7.4V（2S LiPoバッテリーでは3.7V*2=7.4V）未満にしないでください。3S LiPoバッテリーでは11.1V未満、4S LiPoバッテリーでは14.8V未満にしないでください。
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-051.webp" width={386} height={637} alt="RC8X 1.2.10" caption="RC8X 1.2.10" figureId="RC8X-P015-I19" />
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-036.webp" width={51} height={51} alt="RC8X 1.2.10" caption="RC8X 1.2.10" figureId="RC8X-P015-I16" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-052.webp" width={39} height={35} alt="RC8X 1.2.10" caption="RC8X 1.2.10" figureId="RC8X-P015-I17" />
+
+設定手順：RC8Xの電源を入れ、RC8X左下のボタンをクリックして「System menu」に入ります。RC8X左側のアイコンをクリックして「Information」メニューに入り、「Battery」をクリックします。「Alarm voltage」の右側にある青い選択ボックスをクリックしてアラーム値を変更し、「-」で数値を下げ、「+」で数値を上げます。RC8Xの電源に2S LiPoバッテリーを使用する場合、アラーム電圧は7.4V（2S LiPoバッテリーでは3.7V\*2=7.4V）未満にしないでください。3S LiPoバッテリーでは11.1V未満、4S LiPoバッテリーでは14.8V未満にしないでください。
+
+::: caution
 注意：「Battery」メニュー内の他のパラメーター設定手順は、2.1.5「Battery (Transmitter Battery Voltage)」を参照してください。
+:::
+
+<span id="section-1.2.11"></span>
 
 ### 1.2.11 対応受信機
 
 RC8Xには初期状態でR8FG受信機が付属しています。RC8Xは、RadioLink R8FGH、R7FG、R6FG、R6F、R8EF、R8F、R8FM、R8SM、R8XM、R4F、R4FGM受信機にも対応しています。
 
-注：RadioLink無線制御システムはオープンソース化されていないため、RadioLink送信機はRadioLink受信機のみに対応し、RadioLink受信機はRadioLink送信機のみに対応します。
+::: note
+注：RadioLink送受信機の通信仕様は公開されていないため、RadioLink送信機はRadioLink受信機のみに対応し、RadioLink受信機はRadioLink送信機のみに対応します。
+:::
+
+<span id="section-1.3"></span>
 
 ## 1.3 受信機の概要
 
-<ManualSection id="rc8x-ch1-receiver" />
+<span id="section-1.3.1"></span>
 
 ### 1.3.1 R8FGの特長
 
@@ -279,54 +452,101 @@ RC8Xには、2.4GHz 8チャンネル受信機のR8FGが付属しています。R
 
 R8FGのジャイロ機能（緑LED）は初期設定でOFFです。ジャイロ機能をONにする場合は、1.3.5「R8FGのジャイロ機能」の設定手順に従ってください。
 
+<span id="section-1.3.2"></span>
+
 ### 1.3.2 バインド
 
-<ManualSection id="rc8x-ch1-bind" />
-
 RC8XとR8FGは、初期状態でバインド済みです。RC8XとR8FGの電源を入れ、画面上部に下図のような信号アイコンが表示されれば、送信機と受信機のバインドが完了していることを示します。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-053.webp" width={376} height={147} alt="RC8X 1.3.2" caption="RC8X 1.3.2" figureId="RC8X-P016-I01" />
 
 ただし、RC8X用に新しい受信機を購入した場合は、各受信機に個別のIDコードがあるため、使用前に送信機とバインドする必要があります。バインドが完了するとIDコードは送信機に保存され、再バインドは不要です。
 
 バインド手順：
 
 1. 送信機と受信機を近づけます（約60cm）。注：送信機と受信機の距離が近いと信号が遮られ、バインド失敗または信号喪失につながる場合があります。
+
 2. 送信機と受信機の両方の電源を入れると、R8FGのLEDがゆっくり点滅し始めます。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-054.webp" width={390} height={409} alt="RC8X 1.3.2" caption="RC8X 1.3.2" figureId="RC8X-P016-I02" />
+
 3. 受信機側面に黒いバインドボタン（ID SET）があります。このボタンを1秒以上押してから離すと、LEDが速く点滅し、バインド処理中であることを示します。
+
 4. LEDの点滅が止まり点灯状態になると、バインド完了です。送信機のLCD画面上部に信号アイコンが表示されます（上図参照）。成功しない場合は、LEDがゆっくり点滅し続けて通知します。上記手順を繰り返してください。
 
+<ManualVideo youtubeId="jQoF1mJWu6o" title="RC8Xバインドチュートリアル" />
+
+::: note
 注：使用している受信機がR8FGではなく、R7FG、R6FGなど他の受信機の場合は、RC8Xの「Basic Menu」-「Receiver setting」で「FHSS V1」を選択してからバインドしてください（右図参照）。ここで「Receiver List」をクリックすると、受信機がFHSS V1またはFHSS V2のどちらに属するか確認できます。受信機の通信プロトコルを誤って選択すると、バインドに失敗します。
+:::
+
+<span id="section-1.3.3"></span>
 
 ### 1.3.3 受信機の接続
 
-<ManualSection id="rc8x-ch1-connect" />
+<span id="section-1.3.3.1"></span>
 
 #### 1.3.3.1 ケーブル接続
 
+原図のラベル：Signal＝信号、VCC＝電源、GND＝グランド、Reserved (No function)＝予約端子（機能なし）、Channel1(Steering)＝チャンネル1（ステアリング）、Channel2(Throttle)＝チャンネル2（スロットル）、Channel3-7(Auxiliary)＝チャンネル3-7（補助）、Channel8(Auxiliary)/SBUS＝チャンネル8（補助）/SBUS、Binding Button (ID SET)＝バインドボタン、Telemetry Port of Model Battery Voltage＝モデル用バッテリー電圧のテレメトリーポート、Antenna＝アンテナ、Coaxial Cable＝同軸ケーブルです。端子の信号/電源/グランドの位置は原図で確認してください。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-055.webp" width={277} height={119} alt="RC8X 1.3.3.1" caption="RC8X 1.3.3.1" figureId="RC8X-P017-I01" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-056.webp" width={268} height={115} alt="RC8X 1.3.3.1" caption="RC8X 1.3.3.1" figureId="RC8X-P017-I02" />
+
 図1 / 図2
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-057.webp" width={118} height={29} alt="RC8X 1.3.3.1" caption="RC8X 1.3.3.1" figureId="RC8X-P017-I05" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-058.webp" width={1000} height={500} alt="RC8X 1.3.3.1" caption="RC8X 1.3.3.1" figureId="RC8X-P017-I03" />
 
 受信機用の接続ケーブルは上図のとおりです。一般的な配線は、白/赤/黒のケーブル（図1）または黄/赤/茶のケーブル（図2）です。どちらのサーボケーブルも、明るい色の線が信号線、暗い色の線がGND線、中央が5V電源線で、3本の線は図中の表示に対応します。
 
+::: note
 注：RadioLink受信機はすべて逆極性接続保護設計です。受信機を別バッテリーで給電する場合、バッテリーの極性を逆に接続しても受信機は損傷しません。ただし、その状態でサーボを接続していると、サーボが損傷します。
+:::
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-059.webp" width={1000} height={270} alt="RC8X 1.3.3.1" caption="RC8X 1.3.3.1" figureId="RC8X-P017-I04" />
+
+::: note
 注：モデルを操作する前に、次の安全確認を行ってください。
+:::
 
 1. RSSI試験（Received Signal Strength Indicator）。試験方法は本マニュアル1.3.7「RSSI Testing」を参照してください。
+
 2. アンテナ点検：R8FGの灰色の線は同軸ケーブルで、先端の長さ約4-5cmの透明な線がアンテナです。透明な線が切れたり損傷したりすると、操作距離に直接影響します。異常が見つかった場合は、速やかに受信機アンテナを交換してください。
+
+<span id="section-1.3.3.2"></span>
 
 #### 1.3.3.2 テレメトリー用R8FGの正しい接続方法
 
+原図のラベル：Motor＝モーター、Battery＝バッテリー、ESC＝ESC、Receiver＝受信機、Servo＝サーボ、Connecting Wires of Vehicle Voltage Return＝モデル電圧を返送する接続ケーブル、Power Supply for Receiver＝受信機への給電です。電圧検出用ケーブルと受信機への給電線は図で別に示されています。
+
 R8FGは、モデル用バッテリー電圧、受信機電圧、RSSIのテレメトリーに対応しています。ケーブルをESC、バッテリー、およびR8FG受信機のTelemetryポートへ接続すると、モデル電圧が表示されます。最大8Sバッテリー（33.6V）のテレメトリーに対応します。バッテリーケーブルのオス側をESCへ、メス側をバッテリーへ接続し、JSTヘッド付きのケーブルをR8FGのTelemetry（+-）へ接続するだけで、モデル用バッテリー電圧テレメトリーを簡単に使用できます。追加モジュールは不要です。接続に成功すると、返送されたモデル電圧が返送フライト情報画面に表示されます。接続は下図のとおりです。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-060.webp" width={1459} height={784} alt="RC8X 1.3.3.2" caption="RC8X 1.3.3.2" figureId="RC8X-P018-I01" />
+
+::: caution
 注意：
+:::
 
 1. R8FGの8チャンネルすべてに逆極性保護回路が設計されており、重要部品を逆極性接続から保護します。ただし、R8FGに付属するバッテリー接続用JSTコネクターは逆極性接続できません。逆接続すると、誤った電圧値がテレメトリー表示されます。
+
 2. Telemetryポートはモデル電圧テレメトリー専用です。受信機への給電には使用できません。
+
+<span id="section-1.3.3.3"></span>
 
 #### 1.3.3.3 モデル低電圧アラーム設定
 
 モデル用バッテリー低電圧アラームは、初期設定で6.6Vです。モデル用バッテリー電圧が6.6V未満になると、送信機は「low engine battery voltage」の音声で警告します。警告を聞いたらバッテリーを交換してください。低エンジンバッテリー電圧アラームの値は、モデルに使用するバッテリーに合わせて「Telemetry」メニューで設定できます。
 
-設定手順：RC8Xの電源を入れ、RC8X左下のボタンをクリックして「System menu」に入ります。「Telemetry」メニューに入り、「Sensor setting」をクリックします。「EXT voltage」という青い選択ボックスをクリックしてアラーム値を変更し、「-」で数値を下げ、「+」で数値を上げます。モデルの電源に3S LiPoバッテリーを使用する場合、アラーム電圧は11.1V（3S LiPoバッテリーでは3.7V*3=11.1V）未満にしないでください。4S LiPoバッテリーでは14.8V未満にしないでください。
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-061.webp" width={382} height={430} alt="RC8X 1.3.3.3" caption="RC8X 1.3.3.3" figureId="RC8X-P018-I04" />
+
+設定手順：RC8Xの電源を入れ、RC8X左下のボタンをクリックして「System menu」に入ります。「Telemetry」メニューに入り、「Sensor setting」をクリックします。「EXT voltage」という青い選択ボックスをクリックしてアラーム値を変更し、「-」で数値を下げ、「+」で数値を上げます。モデルの電源に3S LiPoバッテリーを使用する場合、アラーム電圧は11.1V（3S LiPoバッテリーでは3.7V\*3=11.1V）未満にしないでください。4S LiPoバッテリーでは14.8V未満にしないでください。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-036.webp" width={51} height={51} alt="RC8X 1.3.3.3" caption="RC8X 1.3.3.3" figureId="RC8X-P018-I02" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-062.webp" width={34} height={33} alt="RC8X 1.3.3.3" caption="RC8X 1.3.3.3" figureId="RC8X-P018-I03" />
 
 Reset：「Reset」をクリックすると、アラーム電圧値は6.6Vに戻ります。
 
@@ -336,15 +556,17 @@ Current：初期値は0です。RC8Xと受信機のバインドに成功し、�
 
 Alarm type：アラーム音の種類です。初期設定では警告音なしです。設定した値よりモデル用バッテリー電圧が低くなったときにRC8Xからバッテリー交換を警告させたい場合は、音声読み上げと20種類の警告音から選択できます。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-050.webp" width={43} height={43} alt="RC8X 1.3.3.3" caption="RC8X 1.3.3.3" figureId="RC8X-P019-I01" />
+
 Vibration type：初期設定は「Inhibit」です。「Mode1」「Mode2」「Mode3」を選択できます。
 
-Alarm voltage：モデル用バッテリー低電圧アラームです。初期設定は6.6Vです。最小6V、最大60Vまで設定できます。モデル用バッテリー低電圧は、使用するバッテリーに応じて設定します。「-」で数値を下げ、「+」で数値を上げます。モデルの電源に3S LiPoバッテリーを使用する場合、アラーム電圧は11.1V（3S LiPoバッテリーでは3.7V*3=11.1V）未満にしないでください。4S LiPoバッテリーでは14.8V未満にしないでください。
+Alarm voltage：モデル用バッテリー低電圧アラームです。初期設定は6.6Vです。最小6V、最大60Vまで設定できます。モデル用バッテリー低電圧は、使用するバッテリーに応じて設定します。「-」で数値を下げ、「+」で数値を上げます。モデルの電源に3S LiPoバッテリーを使用する場合、アラーム電圧は11.1V（3S LiPoバッテリーでは3.7V\*3=11.1V）未満にしないでください。4S LiPoバッテリーでは14.8V未満にしないでください。
 
 Alarm interval：アラームの間隔です。モデル用バッテリー電圧が設定したアラーム電圧を下回った場合、初期設定では10秒ごとに1回警告します。アラーム間隔はカスタマイズできます。
 
-### 1.3.4 R8FGの動作モード
+<span id="section-1.3.4"></span>
 
-<ManualSection id="rc8x-ch1-mode" />
+### 1.3.4 R8FGの動作モード
 
 R8FGはジャイロを内蔵しており、PWM信号だけでなくSBUS信号も出力できます。通常PWMモード、PWM+SBUSモード、PWM+Gyroモード、PWM+SBUS+Gyroモードの4つの動作モードがあります。各モードに対応するチャンネル信号は次のとおりです。
 
@@ -366,12 +588,16 @@ R8FGはジャイロを内蔵しており、PWM信号だけでなくSBUS信号も
 動作モードの設定：
 
 1. ジャイロON/OFF：バインドボタンを2秒以内に3回短押しすると、ジャイロのON/OFFが切り替わり、LED表示色もそれに応じて切り替わります。
+
 2. ジャイロ位相切替：バインドボタンを2秒以内に2回短押しすると、ジャイロ位相が切り替わります。
+
 3. SBUS ON/OFF：バインドボタンを1回短押しすると、SBUSのON/OFFが切り替わり、LED表示色もそれに応じて切り替わります。
 
-### 1.3.5 R8FGのジャイロ機能
+<ManualVideo youtubeId="uDIiyr9tmYA" title="R8FG動作モードチュートリアル" />
 
-<ManualSection id="rc8x-ch1-gyro" />
+<span id="section-1.3.5"></span>
+
+### 1.3.5 R8FGのジャイロ機能
 
 R8FGはジャイロを内蔵しています。内蔵高性能ジャイロはソフトウェアフィルターとPIDアルゴリズムを採用し、感度を適時かつ正確に補正して安定性を高めます。さまざまなモデルや走行環境に柔軟に対応し、ドリフトカーでも本格的な性能を発揮できます。
 
@@ -381,13 +607,18 @@ R8FGのジャイロ機能は初期設定でOFFです。R8FG内蔵ジャイロは
 
 バインドボタンを3回押す（間隔は1秒未満）と、赤LEDが3回点滅し、ジャイロが有効になったことを示します。
 
+::: caution
 注意：
+:::
 
 受信機に接続したサーボが、送信機を操作していないのに小刻みに動き続けることがあります。これは、ジャイロ機能がONの場合、ジャイロがサーボのステアリング舵角を自動補正するためです。この機能が不要な場合は、ジャイロ機能をOFFにできます。
 
 受信機を動かしていないのにサーボが動き続ける場合、原因は次の2つが考えられます。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-063.webp" width={384} height={404} alt="RC8X 1.3.5" caption="RC8X 1.3.5" figureId="RC8X-P020-I01" />
+
 1. サーボが受信機のSBUSチャンネルに接続されています。標準サーボはPWM信号入力のみ対応のため、他のPWMチャンネルへ接続し直してください。
+
 2. ジャイロ感度が高すぎます。DL1ノブスイッチを回してジャイロ感度の値を下げてください。
 
 #### 2. ジャイロリバース
@@ -402,7 +633,13 @@ DL1/PS3ノブスイッチを回すと、画面上部に黄色背景のツール�
 
 DL1/PS3を他の機能の制御に使いたい場合は、「Channel setting」メニューでPS1など別のスイッチをGain switchとして設定できます。
 
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-036.webp" width={51} height={51} alt="RC8X 1.3.5" caption="RC8X 1.3.5" figureId="RC8X-P021-I01" />
+
 設定手順：RC8Xの電源を入れてホーム画面に入り、RC8X左下のボタンをクリックして「System menu」に入ります。「Mixing menu」に入り、「Gyro mixing」という青い選択ボックスをクリックします。右上の1/2をクリックし、「Gain switch」でジャイロ感度を制御するスイッチを割り当てます。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-064.webp" width={50} height={48} alt="RC8X 1.3.5" caption="RC8X 1.3.5" figureId="RC8X-P021-I02" />
+
+<span id="section-1.3.6"></span>
 
 ### 1.3.6 受信機アンテナの取り付け
 
@@ -411,30 +648,46 @@ DL1/PS3を他の機能の制御に使いたい場合は、「Channel setting」�
 受信機アンテナの取り付けは信号品質にどのように影響するのでしょうか。アンテナ取り付け時によくある誤りは次のとおりです。
 
 1. 受信機の2本のアンテナは重ねないでください。互いに干渉します。2本のアンテナは90度の角度を保ってください（右図参照）。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-065.webp" width={606} height={332} alt="RC8X 1.3.6" caption="RC8X 1.3.6" figureId="RC8X-P021-I03" />
+
 2. アンテナを金属物の近くに置かないでください。導体面の反射により信号が大きく悪化します。
+
 3. アンテナを地面と平行にしないでください。地面に対して垂直に配置してください。
+
 4. 大型モデルには、信号放射に影響する金属部品が含まれる場合があります。この場合、あらゆる状況で最良の信号状態を確保するため、アンテナをモデルの両側に配置してください。
+
 5. アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+
 6. アンテナはモーター、ESC、その他の干渉源になり得るものから離してください。
+
 7. 受信機の取り付け時は、振動を防ぐためスポンジまたはフォーム材の使用を推奨します。
+
 8. 受信機には高精度の電子部品が含まれています。強い振動と高温を避けるよう注意してください。
+
 9. 受信機を保護するため、RC用のフォームやゴムクロスなど専用の防振材で包んでください。受信機を密閉性の高いプラスチック袋に入れると、湿気やほこりを避けることができ、これらによる制御不能を防ぐ助けになります。
 
 受信機アンテナの取り付け方法の詳細は、次のリンクを参照してください。
 
 https://www.radiolink.com/newsinfo/886600.html
 
-### 1.3.7 RSSI試験
+<span id="section-1.3.7"></span>
 
-<ManualSection id="rc8x-ch1-rssi" />
+### 1.3.7 RSSI試験
 
 車両またはボートの操作距離が短い場合は、この手順を参照して送信機を試験してください。この手順では、送信機のRSSI値の試験手順と、RSSI値が異常な場合の対処方法を説明します。
 
 1. 送信機の電源を入れ、同時に受信機へ給電します。送信機と受信機が接続されます（接続されない場合は再度バインドが必要です）。送信機画面に信号アイコンが表示されれば、バインド成功を示します。RSSI値はTelemetryツールチップに表示され、送信機と受信機の距離に応じて変化し続けます（右図参照）。
+
 2. 受信機アンテナと送信機アンテナを平行にし、送信機と受信機を約60cm離して、両方のアンテナをまっすぐにします。RSSI値が0から-30dBmの範囲であれば正常です。値が0に近いほど信号は強くなります（下図参照）。
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-066.webp" width={380} height={408} alt="RC8X 1.3.7" caption="RC8X 1.3.7" figureId="RC8X-P022-I02" />
 
 RSSI試験方法のチュートリアル：
 
+<ManualVideo youtubeId="RA0NasTZS90" title="RC8X 1.3.7 チュートリアル" />
+
+<ManualFigure src="/assets/radiolink/rc8x/full-manual/image-067.webp" width={667} height={376} alt="RC8X 1.3.7" caption="RC8X 1.3.7" figureId="RC8X-P022-I01" />
 
 異常な信号強度への対処：
 
