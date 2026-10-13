@@ -19,12 +19,14 @@ import {
 } from '../lib/google-services.mjs';
 
 export function getStaticPaths() {
-  return snapshot.pages.map((page) => ({
-    params: {
-      legacy: decodeURIComponent(page.target_route).replace(/^\//, ''),
-    },
-    props: { page },
-  }));
+  return snapshot.pages
+    .filter((page) => page.type !== 'drawing_library')
+    .map((page) => ({
+      params: {
+        legacy: decodeURIComponent(page.target_route).replace(/^\//, ''),
+      },
+      props: { page },
+    }));
 }
 
 const { page } = Astro.props;

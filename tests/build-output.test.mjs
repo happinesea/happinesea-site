@@ -111,6 +111,41 @@ test('latest full manuals have complete local figures, tables, videos and resolv
   }
 });
 
+test('drawing index exposes only six existing files and local owner review is absent from production', async () => {
+  const html = await route('drawinglibrary/index.html');
+  assert.equal((html.match(/data-drawing-card/g) ?? []).length, 6);
+  assert.match(html, /6件を表示/);
+  assert.match(html, /data-category-filter="機体の設計図"/);
+  assert.match(html, /data-category-filter="エンジン・製作資料"/);
+  assert.match(html, /href="https:\/\/happinesea.com\/drawinglibrary"/);
+  assert.doesNotMatch(
+    html,
+    /REVIEW_REQUIRED|source_path|drawing-library-review|OWNER_APPROVED/,
+  );
+  await assert.rejects(
+    access(new URL('../dist/drawing-library-review/', import.meta.url)),
+    /ENOENT/,
+  );
+  const proposed = JSON.parse(
+    await readFile(
+      new URL(
+        '../src/data/drawing-library/records.proposed.json',
+        import.meta.url,
+      ),
+      'utf8',
+    ),
+  );
+  for (const record of proposed.filter((r) => !r.legacy.canonical_url)) {
+    assert.ok(!html.includes(record.title_original));
+    await assert.rejects(
+      access(
+        new URL(`../dist/drawinglibrary/${record.slug}/`, import.meta.url),
+      ),
+      /ENOENT/,
+    );
+  }
+});
+
 test('RC6GS Full and Quick expose identical reviewed operating values, not receiver revisions', async () => {
   const pages = await Promise.all([
     route('manuals/rc6gs-v3/index.html'),
