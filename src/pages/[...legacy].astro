@@ -19,12 +19,14 @@ import {
 } from '../lib/google-services.mjs';
 
 export function getStaticPaths() {
-  return snapshot.pages.map((page) => ({
-    params: {
-      legacy: decodeURIComponent(page.target_route).replace(/^\//, ''),
-    },
-    props: { page },
-  }));
+  return snapshot.pages
+    .filter((page) => page.type !== 'drawing_library')
+    .map((page) => ({
+      params: {
+        legacy: decodeURIComponent(page.target_route).replace(/^\//, ''),
+      },
+      props: { page },
+    }));
 }
 
 const { page } = Astro.props;
@@ -42,7 +44,7 @@ const knownRoutes = new Set([
   ...cutover.aliases.map((item) => decodeURIComponent(item.target_route)),
   ...downloads.files.map((item) => item.target_route),
 ]);
-const content = rewriteSafetyBlockedDownloads(
+let content = rewriteSafetyBlockedDownloads(
   applyApprovedLinkEdits(
     page.id === 3
       ? updateGooglePrivacy(
@@ -78,6 +80,26 @@ const content = rewriteSafetyBlockedDownloads(
     return `${attr}="${withBase(url.pathname + url.search + (url.hash || (value.endsWith('#') ? '#' : '')))}"`;
   },
 );
+const drawingFile =
+  page.type === 'download_endpoint' &&
+  downloads.files.find(
+    (file) =>
+      file.status === 'REPLACE' &&
+      file.target_route.startsWith('/downloads/drawings/') &&
+      file.legacy_routes.some((route) => route === page.download_target),
+  );
+let drawingTags = '';
+if (drawingFile) {
+  content = content
+    .replace(
+      /<a\b[^>]*href="[^"]*\/download\/document-tag\/[^"]*"[^>]*>[\s\S]*?<\/a>/gi,
+      (tag) => {
+        drawingTags += tag;
+        return '';
+      },
+    )
+    .replace(/<a\b[^>]*\sdownload(?:\s|>)[\s\S]*?<\/a>/gi, '');
+}
 ---
 
 <BaseLayout
@@ -93,6 +115,13 @@ const content = rewriteSafetyBlockedDownloads(
     <h1 class="my-8 text-4xl leading-tight font-bold tracking-tight text-slate-950">
       {page.title}
     </h1>
+    {drawingTags && (
+      <div
+        class="mb-8 flex flex-wrap gap-3 text-sm [&_a]:rounded-full [&_a]:bg-teal-50 [&_a]:px-3 [&_a]:py-1 [&_a]:text-teal-800"
+        data-drawing-tags
+        set:html={drawingTags}
+      />
+    )}
     {downloads.files.some(
       (file) =>
         file.status === 'BLOCKED_SAFETY_REVIEW' &&
@@ -127,6 +156,19 @@ const content = rewriteSafetyBlockedDownloads(
       data-legacy-body
       set:html={content}
     />
+    {drawingFile && (
+      <div class="mt-8">
+        <a
+          class="inline-flex rounded-lg bg-teal-700 px-5 py-3 font-bold text-white hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
+          href={withBase(drawingFile.target_route)}
+          download
+          data-download-sha256={drawingFile.sha256}
+          data-drawing-download
+        >
+          設計図をダウンロード
+        </a>
+      </div>
+    )}
     {page.type === 'drawing_library' && (
       <ul class="mt-10 space-y-3 border-t border-slate-200 pt-6">
         {snapshot.pages

@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CategoryFilter from '../../components/CategoryFilter.astro';
+import DrawingLibraryCard from '../../components/DrawingLibraryCard.astro';
+import snapshot from '../../data/legacy-compatibility.json';
+import downloads from '../../data/static-downloads.json';
+import { publicDrawings } from '../../lib/drawing-library-index.mjs';
+import { withBase } from '../../lib/urls';
+const library = snapshot.pages.find((page) => page.type === 'drawing_library');
+if (!library) throw new Error('existing drawing library metadata missing');
+const drawings = publicDrawings(snapshot, downloads);
+---
+
+<BaseLayout
+  title={library.title}
+  description="模型づくりに役立つ設計図や製作資料を探せます。図面の形式と内容を確認してダウンロードできます。"
+  canonicalUrlOverride={library.canonical}
+>
+  <section class="border-b border-slate-200 bg-slate-50">
+    <div class="mx-auto max-w-[var(--site-max-width)] px-5 pt-7 pb-12 lg:px-8 lg:pb-16">
+      <Breadcrumbs
+        items={[
+          { label: 'ホーム', href: withBase('/') },
+          { label: library.title },
+        ]}
+      />
+      <p class="mt-10 text-xs font-bold tracking-widest text-teal-700">
+        DRAWING LIBRARY
+      </p>
+      <h1 class="mt-3 text-3xl leading-tight font-bold text-slate-950 sm:text-4xl">
+        {library.title}
+      </h1>
+      <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600">
+        模型づくりのアイデアを、図面から。機体の設計図や製作資料をまとめています。形式と内容を確認して、ご利用ください。
+      </p>
+    </div>
+  </section>
+  <section
+    class="mx-auto max-w-[var(--site-max-width)] px-5 py-10 lg:px-8 lg:py-14"
+    aria-label="設計図一覧"
+  >
+    <CategoryFilter
+      total={drawings.length}
+      categories={['機体の設計図', 'エンジン・製作資料']}
+      label="設計図カテゴリで絞り込む"
+    />
+    <div
+      class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      data-product-catalogue
+      data-drawing-catalogue
+    >
+      {drawings.map((drawing) => (
+        <DrawingLibraryCard drawing={drawing} />
+      ))}
+    </div>
+    <p class="mt-10 text-sm leading-7 text-slate-500">
+      掲載資料の内容や利用条件は、各ページでご確認ください。
+    </p>
+  </section>
+</BaseLayout>

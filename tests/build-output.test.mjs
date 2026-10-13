@@ -111,6 +111,41 @@ test('latest full manuals have complete local figures, tables, videos and resolv
   }
 });
 
+test('drawing index exposes only six existing files and local owner review is absent from production', async () => {
+  const html = await route('drawinglibrary/index.html');
+  assert.equal((html.match(/data-drawing-card/g) ?? []).length, 6);
+  assert.match(html, /6件を表示/);
+  assert.match(html, /data-category-filter="機体の設計図"/);
+  assert.match(html, /data-category-filter="エンジン・製作資料"/);
+  assert.match(html, /href="https:\/\/happinesea.com\/drawinglibrary"/);
+  assert.doesNotMatch(
+    html,
+    /REVIEW_REQUIRED|source_path|drawing-library-review|OWNER_APPROVED/,
+  );
+  await assert.rejects(
+    access(new URL('../dist/drawing-library-review/', import.meta.url)),
+    /ENOENT/,
+  );
+  const proposed = JSON.parse(
+    await readFile(
+      new URL(
+        '../src/data/drawing-library/records.proposed.json',
+        import.meta.url,
+      ),
+      'utf8',
+    ),
+  );
+  for (const record of proposed.filter((r) => !r.legacy.canonical_url)) {
+    assert.ok(!html.includes(record.title_original));
+    await assert.rejects(
+      access(
+        new URL(`../dist/drawinglibrary/${record.slug}/`, import.meta.url),
+      ),
+      /ENOENT/,
+    );
+  }
+});
+
 test('RC6GS Full and Quick expose identical reviewed operating values, not receiver revisions', async () => {
   const pages = await Promise.all([
     route('manuals/rc6gs-v3/index.html'),
@@ -1040,4 +1075,44 @@ test('structured data contains only backed product and article types', async () 
   assert.match(product, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(unpublishedArticle, /"@type":"TechArticle"/);
   assert.doesNotMatch(product, /"offers"|"aggregateRating"|"review"/);
+});
+
+test('existing drawing packages move tags below title and keep one button download', async () => {
+  const snapshot = JSON.parse(
+    await readFile(
+      new URL('../src/data/legacy-compatibility.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  const downloads = JSON.parse(
+    await readFile(
+      new URL('../src/data/static-downloads.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  const files = downloads.files.filter(
+    (f) =>
+      f.status === 'REPLACE' &&
+      f.target_route.startsWith('/downloads/drawings/'),
+  );
+  const packages = snapshot.pages.filter(
+    (p) =>
+      p.type === 'download_endpoint' &&
+      files.some((f) => f.legacy_routes.includes(p.download_target)),
+  );
+  assert.equal(packages.length, 7);
+  for (const p of packages) {
+    const html = await route(
+      decodeURIComponent(p.target_route).replace(/^\//, '') + '/index.html',
+    );
+    assert.equal((html.match(/data-drawing-download/g) ?? []).length, 1);
+    assert.match(html, /設計図をダウンロード/);
+    assert.match(html, /data-download-sha256/);
+    if (p.content_html.includes('/download/document-tag/')) {
+      assert.ok(html.indexOf('</h1>') < html.indexOf('data-drawing-tags'));
+      assert.ok(
+        html.indexOf('data-drawing-tags') < html.indexOf('data-legacy-body'),
+      );
+    }
+  }
 });
