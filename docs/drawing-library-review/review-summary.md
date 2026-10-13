@@ -87,3 +87,25 @@ Next work after owner decisions: Phase 3 detail template; Phase 4 existing-page
 maintenance; Phase 5 approved unique imports; Phase 6 full publication QA.
 
 Owner visual feedback: removed the two auxiliary card actions; moved existing drawing tags below the title; replaced the plain detail Download link with a styled normal link. Existing seven package routes (six files) covered by built-output assertions. Astro check/lint/format and targeted build gates rerun after this UI change; no WordPress sync needed.
+
+## Latest-main rebase QA
+
+Rebased onto `80bb294c9795c886ffda472175fa1916a00c83a2` (RC8X/RC8P full manual publication).
+Previous PR head: `a670394fe95a0c64a13af6eca7066714d2ce68fe`.
+Rebased implementation head: `a5fc9a6c9acc960476fd1fb9ca657270983dc2e1`.
+One conflict in `tests/build-output.test.mjs`: retained the complete latest-main
+full-manual test and the drawing tests. No manual content/assets/routes,
+canonical metadata, GA4, CMS, deploy workflow, sitemap or robots source changes
+relative to latest main.
+
+Fresh QA: `npm run validate` passed (157 unit / 34 built-output); Astro 0 errors,
+lint and format passed. Python 11 passed. Drawing Playwright desktop/mobile 6
+passed, retaining all four owner feedback changes and all review counts.
+RC8X/RC8P manual smoke passed all 10 routes at desktop/mobile (20 checks), with
+correct canonicals, decoded visible images, zero console errors, overflow,
+local resource errors and runtime CMS references. Separate production build
+keeps the six existing cards and excludes owner review/new candidate routes.
+Source 71 paths/bytes/mtime/SHA unchanged before/after this QA; existing download
+and metadata files have zero diff from latest main. New binaries: zero.
+Independent read-only review: unresolved P0/P1/P2 zero; fresh full-manual and
+drawing build regressions also passed. No merge or production deploy performed.
