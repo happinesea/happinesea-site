@@ -1076,3 +1076,43 @@ test('structured data contains only backed product and article types', async () 
   assert.doesNotMatch(unpublishedArticle, /"@type":"TechArticle"/);
   assert.doesNotMatch(product, /"offers"|"aggregateRating"|"review"/);
 });
+
+test('existing drawing packages move tags below title and keep one button download', async () => {
+  const snapshot = JSON.parse(
+    await readFile(
+      new URL('../src/data/legacy-compatibility.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  const downloads = JSON.parse(
+    await readFile(
+      new URL('../src/data/static-downloads.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  const files = downloads.files.filter(
+    (f) =>
+      f.status === 'REPLACE' &&
+      f.target_route.startsWith('/downloads/drawings/'),
+  );
+  const packages = snapshot.pages.filter(
+    (p) =>
+      p.type === 'download_endpoint' &&
+      files.some((f) => f.legacy_routes.includes(p.download_target)),
+  );
+  assert.equal(packages.length, 7);
+  for (const p of packages) {
+    const html = await route(
+      decodeURIComponent(p.target_route).replace(/^\//, '') + '/index.html',
+    );
+    assert.equal((html.match(/data-drawing-download/g) ?? []).length, 1);
+    assert.match(html, /設計図をダウンロード/);
+    assert.match(html, /data-download-sha256/);
+    if (p.content_html.includes('/download/document-tag/')) {
+      assert.ok(html.indexOf('</h1>') < html.indexOf('data-drawing-tags'));
+      assert.ok(
+        html.indexOf('data-drawing-tags') < html.indexOf('data-legacy-body'),
+      );
+    }
+  }
+});

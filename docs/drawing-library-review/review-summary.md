@@ -45,8 +45,8 @@ must be opened locally, not deployed.
 
 `/drawinglibrary/` projects only the six existing static-download records and
 reuses `CategoryFilter`. Desktop has three columns; mobile has one. Cards have
-existing featured images, Japanese titles, short overviews, detail links and
-normal download links. Existing canonical values, package IDs, aliases,
+existing featured images, Japanese titles, short overviews, title links to details. Download buttons appear on existing detail pages,
+with existing tags directly below the title. Existing canonical values, package IDs, aliases,
 FIGHTER relationships and the F-14 old F4D slug remain unchanged. Detail links
 use the same directory with a trailing slash for local Astro preview navigation.
 No redirect rule was changed. No GA4 configuration was changed.
@@ -58,8 +58,8 @@ this PR has not been merged or deployed.
 ## Verification
 
 - `npm run validate`: unit, Astro check, lint, format, build and built-output tests.
-- Final unit: 153 passing; built-output: 32 passing; Python: 11 passing.
-- Playwright: public index and owner review, desktop/mobile, four passing cases.
+- Final unit: 153 passing; built-output: 33 passing; Python: 11 passing.
+- Playwright: public index and owner review, desktop/mobile, six passing cases.
 - Browser checks: zero console errors, overflow, image 404s and broken index internal links; all 77 review previews respond and decode.
 - Exact/probable/group/title/category/filter counts verified against Phase 1 data.
 - Source replay: all 71 file paths, bytes, modification times and SHA-256 unchanged before/after rendering.
@@ -85,3 +85,5 @@ proposals, not authorization to replace existing published files.
 
 Next work after owner decisions: Phase 3 detail template; Phase 4 existing-page
 maintenance; Phase 5 approved unique imports; Phase 6 full publication QA.
+
+Owner visual feedback: removed the two auxiliary card actions; moved existing drawing tags below the title; replaced the plain detail Download link with a styled normal link. Existing seven package routes (six files) covered by built-output assertions. Astro check/lint/format and targeted build gates rerun after this UI change; no WordPress sync needed.

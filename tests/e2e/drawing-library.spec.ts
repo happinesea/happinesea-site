@@ -24,6 +24,10 @@ test('drawing public index has only six existing cards and working filters/links
   const response = await page.goto('./drawinglibrary/');
   expect(response?.status()).toBe(200);
   await expect(page.locator('[data-drawing-card]')).toHaveCount(6);
+  await expect(page.locator('[data-drawing-card] a[download]')).toHaveCount(0);
+  await expect(
+    page.getByText('設計図・資料を見る', { exact: true }),
+  ).toHaveCount(0);
   await expect(page.locator('[data-result-count]')).toHaveText('6件を表示');
   expect(await page.locator('link[rel=canonical]').getAttribute('href')).toBe(
     'https://happinesea.com/drawinglibrary',
@@ -199,4 +203,41 @@ test('local owner review displays every case and combines category/status filter
       await request.get(new URL('/source/../../outside.pdf', reviewUrl!).href)
     ).status(),
   ).toBe(404);
+});
+
+test('existing drawing detail has tags under title and a download button', async ({
+  page,
+}, info) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  page.on('console', (message) => {
+    if (message.type() === 'error') errors.push(message.text());
+  });
+  await page.goto('./drawinglibrary/');
+  await page.locator('[data-drawing-card] h2 a').first().click();
+  const tags = page.locator('[data-drawing-tags]');
+  await expect(tags).toContainText('RCスケール機');
+  await expect(tags.locator('a')).toHaveCount(2);
+  expect(await tags.evaluate((el) => el.previousElementSibling?.tagName)).toBe(
+    'H1',
+  );
+  await expect(page.locator('[data-legacy-body] a[download]')).toHaveCount(0);
+  const button = page.locator('[data-drawing-download]');
+  await expect(button).toHaveText('設計図をダウンロード');
+  await expect(button).toHaveAttribute('href', /\/downloads\/drawings\//);
+  await expect(button).toBeVisible();
+  expect(
+    await page.evaluate(
+      () =>
+        document.documentElement.scrollWidth -
+        document.documentElement.clientWidth,
+    ),
+  ).toBe(0);
+  expect(errors).toEqual([]);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({
+    path: join(screenshotDir, `drawing-detail-${info.project.name}.png`),
+    fullPage: true,
+    scale: 'css',
+  });
 });
