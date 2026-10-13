@@ -1,0 +1,51 @@
+[
+  {
+    "relative_path": ".",
+    "title_original": "全部飞机图纸",
+    "title_ja_candidate": "飛行機の設計図一式",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  },
+  {
+    "relative_path": "F-14",
+    "title_original": "F-14",
+    "title_ja_candidate": "F-14",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図",
+    "title_original": "F-14 tomcat設計図",
+    "title_ja_candidate": "F-14 tomcat設計図",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion",
+    "title_original": "Fixed Wing Conversion",
+    "title_ja_candidate": "固定翼への変更資料",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%",
+    "title_original": "Scale 100%",
+    "title_ja_candidate": "倍率100%",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 60%",
+    "title_original": "Scale 60%",
+    "title_ja_candidate": "倍率60%",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 75%",
+    "title_original": "Scale 75%",
+    "title_ja_candidate": "倍率75%",
+    "confidence": "high",
+    "notes": "名称・型式・倍率を保持。分類階層の新設を意味しない。"
+  }
+]

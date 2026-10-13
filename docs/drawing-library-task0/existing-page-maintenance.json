@@ -1,0 +1,341 @@
+[
+  {
+    "type": "drawing_library",
+    "id": 233,
+    "download_id": null,
+    "title": "設計図ライブラリ",
+    "target_route": "/drawinglibrary",
+    "canonical": "https://happinesea.com/drawinglibrary",
+    "download_target": null,
+    "hero": null,
+    "observed_at": null,
+    "record_candidate_ids": [],
+    "maintenance_action": "REDESIGN_INDEX_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "drawing",
+    "id": 1716,
+    "download_id": null,
+    "title": "FIGHTER ULTRALIGHT軽飛行機設計図をアップしました。",
+    "target_route": "/engineering-drawing/202110181716.html",
+    "canonical": "https://happinesea.com/engineering-drawing/202110181716.html",
+    "download_target": null,
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
+      "width": 607,
+      "height": 368,
+      "alt": "FIGHTER ULTRALIGHTの外観図"
+    },
+    "observed_at": "2026-10-07T05:20:33.762Z",
+    "record_candidate_ids": [
+      "drawing-fighter-ultralight"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "drawing",
+    "id": 1726,
+    "download_id": null,
+    "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
+    "target_route": "/engineering-drawing/202110181726.html",
+    "canonical": "https://happinesea.com/engineering-drawing/202110181726.html",
+    "download_target": null,
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "赤と白のPitts複葉機"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-pitts-park-flyer"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "drawing",
+    "id": 1734,
+    "download_id": null,
+    "title": "C-17輸送機設計図(CAD付き)",
+    "target_route": "/engineering-drawing/202110191734.html",
+    "canonical": "https://happinesea.com/engineering-drawing/202110191734.html",
+    "download_target": null,
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/7ea9e89dfe81625de6cff93c38cde4df-1.jpg",
+      "width": 992,
+      "height": 712,
+      "alt": "滑走路上のC-17輸送機"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-c-17"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "drawing",
+    "id": 1742,
+    "download_id": null,
+    "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機の設計図をアップしました。",
+    "target_route": "/engineering-drawing/202110211742.html",
+    "canonical": "https://happinesea.com/engineering-drawing/202110211742.html",
+    "download_target": null,
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/77142_1.jpg",
+      "width": 1000,
+      "height": 604,
+      "alt": "サーブ35ドラケン"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-draken"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "drawing",
+    "id": 1891,
+    "download_id": null,
+    "title": "RCスケール機：F4Dスカイレイ(Skyray)、スチレンボード飛行機の設計図をアップしました。",
+    "target_route": "/engineering-drawing/202201171891.html",
+    "canonical": "https://happinesea.com/engineering-drawing/202201171891.html",
+    "download_target": null,
+    "hero": {
+      "src": "/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029.jpg",
+      "width": 1729,
+      "height": 1080,
+      "alt": "飛行中のF4Dスカイレイ"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-f4d"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "2168",
+    "title": "RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機",
+    "target_route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+    "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2",
+    "download_target": "/assets/legacy-downloads/2168/d29b41480f9c051a1113334ae83dd8a3.zip",
+    "hero": {
+      "src": "/wp-content/uploads/2025/05/5af21b0c87d83b8aca7b2e864f82861e.jpg",
+      "width": 480,
+      "height": 360,
+      "alt": "飛行中のF-14模型飛行機"
+    },
+    "observed_at": "2026-10-07T05:23:58.527Z",
+    "record_candidate_ids": [
+      "drawing-f-14"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "F-14の旧slugにF4Dがある。titleとpackage 2168で識別し、URLを変更しない。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "1886",
+    "title": "RCスケール機：F4Dスカイレイ、スチレンボード飛行機",
+    "target_route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+    "canonical": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+    "download_target": "/wp-content/uploads/2022/01/F4D.zip",
+    "hero": {
+      "src": "/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029.jpg",
+      "width": 1729,
+      "height": 1080,
+      "alt": "飛行中のF4Dスカイレイ"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-f4d"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "1712",
+    "title": "FIGHTER ULTRALIGHT軽飛行機設計図",
+    "target_route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+    "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+    "download_target": "/wp-content/uploads/2021/10/Fighter.pdf",
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
+      "width": 607,
+      "height": 368,
+      "alt": "FIGHTER ULTRALIGHTの外観図"
+    },
+    "observed_at": "2026-10-07T05:21:37.155Z",
+    "record_candidate_ids": [
+      "drawing-fighter-ultralight"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "1712/1717は同じFighter PDFを共有。両URL維持、1record・1downloadで扱う。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "1724",
+    "title": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
+    "target_route": "/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+    "canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+    "download_target": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip",
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "赤と白のPitts複葉機"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-pitts-park-flyer"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "1733",
+    "title": "C-17輸送機スケールRC飛行機設計図(CADファイル付)",
+    "target_route": "/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+    "canonical": "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+    "download_target": "/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip",
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/7ea9e89dfe81625de6cff93c38cde4df-1.jpg",
+      "width": 992,
+      "height": 712,
+      "alt": "滑走路上のC-17輸送機"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-c-17"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "1740",
+    "title": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機",
+    "target_route": "/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+    "canonical": "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+    "download_target": "/wp-content/uploads/2021/10/Draken.zip",
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/77142_1.jpg",
+      "width": 1000,
+      "height": 604,
+      "alt": "サーブ35ドラケン"
+    },
+    "observed_at": null,
+    "record_candidate_ids": [
+      "drawing-draken"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_endpoint",
+    "id": null,
+    "download_id": "1717",
+    "title": "FIGHTER ULTRALIGHT軽飛行機設計図",
+    "target_route": "/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+    "canonical": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2",
+    "download_target": "/wp-content/uploads/2021/10/Fighter.pdf",
+    "hero": {
+      "src": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
+      "width": 607,
+      "height": 368,
+      "alt": "FIGHTER ULTRALIGHTの外観図"
+    },
+    "observed_at": "2026-10-07T05:21:46.787Z",
+    "record_candidate_ids": [
+      "drawing-fighter-ultralight"
+    ],
+    "maintenance_action": "REFRESH_EXISTING_KEEP_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "1712/1717は同じFighter PDFを共有。両URL維持、1record・1downloadで扱う。"
+  },
+  {
+    "type": "download_tag_archive",
+    "id": null,
+    "download_id": null,
+    "title": "スケール機",
+    "target_route": "/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+    "canonical": "https://happinesea.com/download/document-tag/スケール機",
+    "download_target": null,
+    "hero": null,
+    "observed_at": "2026-10-09T04:18:15.518Z",
+    "record_candidate_ids": [],
+    "maintenance_action": "PRESERVE_TAG_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_tag_archive",
+    "id": null,
+    "download_id": null,
+    "title": "スチレンボード",
+    "target_route": "/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+    "canonical": "https://happinesea.com/download/document-tag/スチレンボード",
+    "download_target": null,
+    "hero": null,
+    "observed_at": "2026-10-09T04:18:15.518Z",
+    "record_candidate_ids": [],
+    "maintenance_action": "PRESERVE_TAG_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_tag_archive",
+    "id": null,
+    "download_id": null,
+    "title": "RCスケール機",
+    "target_route": "/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+    "canonical": "https://happinesea.com/download/document-tag/rcスケール機",
+    "download_target": null,
+    "hero": null,
+    "observed_at": "2026-10-09T04:18:15.518Z",
+    "record_candidate_ids": [],
+    "maintenance_action": "PRESERVE_TAG_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  },
+  {
+    "type": "download_tag_archive",
+    "id": null,
+    "download_id": null,
+    "title": "発泡スチロール",
+    "target_route": "/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+    "canonical": "https://happinesea.com/download/document-tag/発泡スチロール",
+    "download_target": null,
+    "hero": null,
+    "observed_at": "2026-10-09T04:18:15.518Z",
+    "record_candidate_ids": [],
+    "maintenance_action": "PRESERVE_TAG_ROUTE",
+    "publication_rights_status": "NOT_ESTABLISHED_BY_EXISTING_PUBLICATION",
+    "notes": "既存公開URLとdownload aliasを保ち、本文・画像・権利・参照リンクを再確認する。"
+  }
+]

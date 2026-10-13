@@ -1,0 +1,1686 @@
+[
+  {
+    "relative_path": "1号轻型飞机.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-87c88ef27c95d0caef79a9687760742e88e37e2d631ffac29d42072346fcec65",
+    "record_candidate_id": "drawing-light-aircraft-no1",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "3d双翼机.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "ARCHIVE_MANIFEST_CRC_SIZE_BASENAME",
+        "existing_route": "/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "package_ids": [
+          "1724"
+        ]
+      },
+      {
+        "kind": "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+        "existing_route": "/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "package_ids": [
+          "1724"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-017c265561adc9de0b43407b920ecc707b72480f018d43bdd4d844fc63872453",
+    "record_candidate_id": "drawing-pitts-park-flyer",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "1724"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "Draken.zip",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "NORMALIZED_FILENAME",
+        "existing_route": "/downloads/drawings/Draken-b9ad56c9eecf.zip",
+        "package_ids": [
+          "1740"
+        ]
+      },
+      {
+        "kind": "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+        "existing_route": "/downloads/drawings/Draken-b9ad56c9eecf.zip",
+        "package_ids": [
+          "1740"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-3655ffe370f3d8bd0777b6362b95c02e505e359d89eac2060f9840d1bc1aec65",
+    "record_candidate_id": "drawing-draken",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "1740"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [
+      {
+        "path": "F-14/F-14 tomcat設計図.zip",
+        "reasons": [
+          "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+          "PARTIAL_ARCHIVE_CRC_SIZE_OVERLAP"
+        ]
+      }
+    ],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-12d0dcf4494f0727f18f1e8cea561990b38470110ecaa59ac283a53433968fed",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図.zip",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXACT",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "package_ids": [
+          "2168"
+        ]
+      },
+      {
+        "kind": "ARCHIVE_MANIFEST_CRC_SIZE_BASENAME",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "package_ids": [
+          "2168"
+        ]
+      },
+      {
+        "kind": "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [
+      {
+        "path": "F-14.rar",
+        "reasons": [
+          "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+          "PARTIAL_ARCHIVE_CRC_SIZE_OVERLAP"
+        ]
+      }
+    ],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-27787f2c12626c6ecd090ee45cede43665793b27a9c45c7e00245be438662e16",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-7a273d9ad1071e976744e2392109f1612a91dcb74136a0483c0cb4e7eeb62f26",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14 tomcat設計図1.jpg"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-3953263e9e0b1f2fa2e644c3d14a52634ae6ff55c24c4b2cf38b6cc274567d3b",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14 tomcat設計図2.jpg"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-b896d7b92635e7c48812ad71e00391f258c089d2973974366cf47a1f6c24e6c7",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14 tomcat設計図3.jpg"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-63bf08cda05d21f53916015b9240ff7966e88d3bb3a03ec9813bc77b6fe0514e",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14_Decals_Page_1.gif"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-d714de8d83811c892e7950f95e2d1babe7fe46a8c6dfddf345b6629576e5864f",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14_Decals_Page_2.gif"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-93c92788070c5770bca2c463a99656a78bb04bcbca7918b08bac518bdf6c118c",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-61e632ad9594d9f8f9c0099f34ce7e5cd7d45667024ad521f4a832208c670152",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-856a84a4a6533166404caba8115921171858da625c0dcc01d7e88e2ffeaf9c0c",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-62696f9ae7a0dfd40cbffaba66b7e2a02caa0833bc60d436577adb1a55254a59",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-8394c271adebb374561a315d6d72e133ff4e4a77ca82ff2a1d508a697a6466a2",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-093018f0a85a7830aa08f75cab7f4a8e55b6fafa3d3da1b34df7b2d61f12f030",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-72d60289506a0860d0c1f21751bd38a8aa4667103587cbd695dbd867514dc9d6",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-c7a7f2634a5aa18304f62976972b5680de081b011ac0338b3b5bf056bc46da0f",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-cefe1aaf3023fdb0321502a9152507155f0f37f0c1ef79bf06388f85fb042f09",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-2eaaf982ea9d246351fe968d93e96bf446fbc885de6e9ad448fd8f3d52c02645",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-56850eeba60584803a70549b08fe25a4298dc6e0fed100e5109bd7291f746fc0",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "SHA256_EXISTING_ARCHIVE_MEMBER",
+        "existing_route": "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "member": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "F-14/F-14 tomcat設計図.zip",
+        "member": "F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-2249c6b9ff703771a77fc16ca78e73b36319a172f559ff259421f0f613237b7e",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-15.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-8c7c648113d63924855298a68e7f6203e80c1687959a4a8b117be680ecc31814",
+    "record_candidate_id": "drawing-f-15",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F-18.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-7d4bc9075c8a23d5fd9aa7b4397137a93dab41026bbe5ffba51eacd0d3d23590",
+    "record_candidate_id": "drawing-f-18",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F117.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-137dbd0d410d4b63adf6e67b1a719100f5840c3141fc8479b8d67369546491ba",
+    "record_candidate_id": "drawing-f117",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F14A.rar",
+    "dedup_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "evidence": [
+      {
+        "kind": "TITLE_MODEL_VARIANT_CANDIDATE",
+        "notes": "原題を保持。F-14の資料variant候補であり設計同一は未確認。",
+        "package_ids": [
+          "2168"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-6e6f2e84e6f8665b65bb0d125da05d8f5f76de0952b20669fbfde08f18436e05",
+    "record_candidate_id": "drawing-f-14",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "2168"
+    ],
+    "archive_review_notes": [
+      "Exclude OS thumbnail cache in future publication"
+    ]
+  },
+  {
+    "relative_path": "F16.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-29fc46c8292b57b2a0f25e766bf03848cb45b3b2627d30016471878ee30743c9",
+    "record_candidate_id": "drawing-f16",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F22.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-6fa464aadd6f315963612f4742170dc8037dddedfb58505e81ef9021eacd90de",
+    "record_candidate_id": "drawing-f-22",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "F4D.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "ARCHIVE_MANIFEST_CRC_SIZE_BASENAME",
+        "existing_route": "/downloads/drawings/F4D-bb86cd50d911.zip",
+        "package_ids": [
+          "1886"
+        ]
+      },
+      {
+        "kind": "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+        "existing_route": "/downloads/drawings/F4D-bb86cd50d911.zip",
+        "package_ids": [
+          "1886"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-e288865b4be5bcf489cabdaeb03e8f46c5b2b457bda64dc09d3fe4909f28d6da",
+    "record_candidate_id": "drawing-f4d",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "1886"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "J10.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [
+      {
+        "path": "歼10.rar",
+        "reasons": [
+          "PARTIAL_ARCHIVE_CRC_SIZE_OVERLAP"
+        ]
+      }
+    ],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-9cc5cde92f5ba353b3ff17fd11f063564457a69eab70095faf7e8084e5b3c53a",
+    "record_candidate_id": "drawing-j10",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "JAS-39鹰狮.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-298eeaa767e98a6257fd0c584e3f5f20eff3a2f8f623bc7dfcd06f1fbd8b4fc7",
+    "record_candidate_id": "drawing-jas-39",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "MiG-29.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-08d38051505cc45fe781bd1b049402adadf58e3338a576ed82b7ee30392af7a0",
+    "record_candidate_id": "drawing-mig-29",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "P51图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-aa4cb8027dfa1cd42654728c9fca097ccb1809e565cc4b82af207eca2cd8b42f",
+    "record_candidate_id": "drawing-p51",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "SR71.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-3e89c1d5d2d3d6abae83384117852ea486e54b9acf87b67d0c74a20855da588e",
+    "record_candidate_id": "drawing-sr71",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "SU-47.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-c4e25ddc211b9b38412c936583fc3e33fe61735b96c0d0dffd2c079e16e493b1",
+    "record_candidate_id": "drawing-su-47",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Exclude OS thumbnail cache in future publication",
+      "Exclude OS thumbnail cache in future publication",
+      "Exclude OS thumbnail cache in future publication",
+      "Exclude OS thumbnail cache in future publication"
+    ]
+  },
+  {
+    "relative_path": "c-17运输机.zip",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [
+      {
+        "kind": "ARCHIVE_CONTENT_CRC_SIZE_MULTISET",
+        "existing_route": "/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+        "package_ids": [
+          "1733"
+        ]
+      }
+    ],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-ab8b38908d7734d52162f62b10c8ceaf15d2ef0f29be0feea3ec35a3c2838c21",
+    "record_candidate_id": "drawing-c-17",
+    "existing_record_match": true,
+    "maintenance_action": "REFRESH_EXISTING_PAGE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "legacy_package_ids": [
+      "1733"
+    ],
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "f-22像真机.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-fed99438152a00780cfc748dad1ab09f49a70c66c11531183cf4cec907d73f3e",
+    "record_candidate_id": "drawing-f-22",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "j-20 三维图 CAD图.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-0b2a60dd15b0c7656baceafcb10f0f48724e431372a9f79151604830175be698",
+    "record_candidate_id": "drawing-j-20",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "kj663D涡喷.rar",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "kj663D涡喷.zip",
+        "member": "kj663D╬╨┼τ.rar"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-ee9599f57efc83635ae0e1743eff8629d1130307d822d61ba5b6153cbefb2025",
+    "record_candidate_id": "drawing-kj66-engine",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "kj663D涡喷.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-a3ddd8ba03aa01399707d0ee426f4733a26e2f9ce5b907e8593ae939b7b3d247",
+    "record_candidate_id": "drawing-kj66-engine",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Nested archive not recursively inspected: kj663D╬╨┼τ.rar",
+      "Nested archive not recursively inspected: kj66╬╨┬╓╖ó╢»╗·╓╞╫≈└╢═╝.rar"
+    ]
+  },
+  {
+    "relative_path": "kj66涡轮发动机制作蓝图.rar",
+    "dedup_status": "EXACT_DUPLICATE",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [
+      {
+        "archive_path": "kj663D涡喷.zip",
+        "member": "kj66╬╨┬╓╖ó╢»╗·╓╞╫≈└╢═╝.rar"
+      }
+    ],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-fedff1b02ed34540837647e5659973f645732c03f3bbc7e9049c1be195545d3a",
+    "record_candidate_id": "drawing-kj66-engine",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "laser200.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-a60c9dbcf87e202aee0fb6b01805ef39976b5a8d53d60f1ba2b081cf7dd3bb2d",
+    "record_candidate_id": "drawing-laser200",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "su-27图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-847fada55c7b0b9e97ca15621528621729387c9f522afd590be18cfa24830388",
+    "record_candidate_id": "drawing-su-27",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Exclude OS thumbnail cache in future publication"
+    ]
+  },
+  {
+    "relative_path": "su37.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-0a72374f380c7a32d60c62290fc2f7f24cd01b1b7eaeb46c54599a7e4d22a55b",
+    "record_candidate_id": "drawing-su37",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "二战F4U模型飞机图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-9c0cace9fd49838abca566233752ad904281e90e7076f0c30d91ee56cfcfee55",
+    "record_candidate_id": "drawing-f4u",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Nested archive not recursively inspected: 二战F4U模型飞机图纸/Chance_Vought_Corsair_F4U.rar"
+    ]
+  },
+  {
+    "relative_path": "函道幻影2000.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-a24cbd27d22c55ea6c1715a4e38d138af18eede4b48bf0220f136d6727fc3ea7",
+    "record_candidate_id": "drawing-mirage2000",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "喷绘版－SU27.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-fbe5c8eec7e07db80b7bc6d1331d44b2e37469d45d1a1d073adce4aecd368b10",
+    "record_candidate_id": "drawing-su-27",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "喷绘飞机图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-cac67ac891504f526b163d2154a2e87a9e0d824e409ed090940bf7b356e656fd",
+    "record_candidate_id": "drawing-printed-plans-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "塞斯纳182.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-e5ca9e1552b907ddc7344819cc8ea8e91ff88f8987360b70c69819d557d20a3c",
+    "record_candidate_id": "drawing-cessna182",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "彩色330.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-4c9ae0b1554407012aff3fcf1446d17865aa3e5a71acd45d176656f189f2743b",
+    "record_candidate_id": "drawing-color330-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "微型喷气式发动机详细制作图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-5f77712030c6d884fdd1ad2497fc4da1ef7bced3fd5080adec09e7bec07cdf23",
+    "record_candidate_id": "drawing-microjet-engine",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Nested archive not recursively inspected: 微型喷气式发动机详细制作图纸/WP008.rar"
+    ]
+  },
+  {
+    "relative_path": "微风2005.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-5a141a319b90926cbce59718e14339d460cefa83021c208d6d3aec4a942e44ef",
+    "record_candidate_id": "drawing-breeze2005-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Exclude OS thumbnail cache in future publication"
+    ]
+  },
+  {
+    "relative_path": "旋翼机.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-b8a4adfd0e161cded4b196cb8f2cbbcc725a82838bd8e8b8feaf2a2326e49a67",
+    "record_candidate_id": "drawing-rotorcraft-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "歼10.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [
+      {
+        "path": "J10.rar",
+        "reasons": [
+          "PARTIAL_ARCHIVE_CRC_SIZE_OVERLAP"
+        ]
+      }
+    ],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-9b79765084f07f90130d88f2aa4f07fb05fe8e49a1f7a92d05b500a3d28aae0d",
+    "record_candidate_id": "drawing-j10",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "歼20.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-3d4cc4127641a91ea167639f7f0e76ccc54ab952ada04d8b0246cd781d5a6298",
+    "record_candidate_id": "drawing-j-20",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "水上飞机图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-304986dee19263143a89d27ee82d9f24395a89fa47432f01a4834f361d874801",
+    "record_candidate_id": "drawing-floatplane-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "油动CAD格式飞机图纸.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-160f70a68d582d304b607f62d21aa4cf343e866e44d5f02cae8cc89bb1a6f304",
+    "record_candidate_id": "drawing-fuel-cad-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Nested archive not recursively inspected: 油动CAD格式飞机图纸/foxie.zip"
+    ]
+  },
+  {
+    "relative_path": "波音客机.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-9a2384c22d0510f7e1cb1d1637efd945266553da4f8607cee7d1abd5f5430ab0",
+    "record_candidate_id": "drawing-boeing-airliner-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "简单的F22图纸.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [
+      {
+        "path": "简单的f22.rar",
+        "reasons": [
+          "PARTIAL_ARCHIVE_CRC_SIZE_OVERLAP"
+        ]
+      }
+    ],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-bc7650867c843b505a40cad741d2063e28b8363aa79fb891780849cb2a460d21",
+    "record_candidate_id": "drawing-f-22",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": [
+      "Exclude OS thumbnail cache in future publication"
+    ]
+  },
+  {
+    "relative_path": "简单的f22.rar",
+    "dedup_status": "PROBABLE_DUPLICATE",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [
+      {
+        "path": "简单的F22图纸.rar",
+        "reasons": [
+          "PARTIAL_ARCHIVE_CRC_SIZE_OVERLAP"
+        ]
+      }
+    ],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-4f08c5a0edef7e2430e83416d71319ace5dcb78bf70b10a01d77ceaf022036d2",
+    "record_candidate_id": "drawing-f-22",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "米格 29.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-514f8a3eae5b85dbe277a33314ab3a4fd930d6b998a80dcec038a2e9d224534b",
+    "record_candidate_id": "drawing-mig-29",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "米格21.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-786fcb9c46216f7401a44a4c374fda28559fd7bf792b3c7345918a4632f223f9",
+    "record_candidate_id": "drawing-mig21",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "米格25.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-d8cd593b93e8c263867fd6840dcc00c92932af5d7db7918439940eb4ab8dcd1e",
+    "record_candidate_id": "drawing-mig25",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "纸飞机.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-eca6a1b8eb26edf79d2ce762b6249947131c7a42406e7f90c2fb22a16e7118a7",
+    "record_candidate_id": "drawing-paper-aircraft",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "航模喷气发动机制作手册.part1.rar",
+    "dedup_status": "REVIEW_REQUIRED",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-3c77fa3a85321dd06f758beefd65c74223cfa45a3d5919d2628a8eedf869d200",
+    "record_candidate_id": "drawing-jet-engine-manual",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "航模喷气发动机制作手册.part2.rar",
+    "dedup_status": "REVIEW_REQUIRED",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-8af56cb3a8c963274b410eb61e3ec8a49029b8a9471948a92efd0113319ae172",
+    "record_candidate_id": "drawing-jet-engine-manual",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "航模脉冲式发动机制作手册.zip",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-125afbb8678d9db6e1578d4551cfb3af67f6dabe5750e116756aa98058e4bf24",
+    "record_candidate_id": "drawing-pulse-engine-manual",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "航模赠品.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-2e17200f3c8bb2238edca15fa2b55289ef6118055e8b38cde52dd7151ac1051f",
+    "record_candidate_id": "drawing-model-beginner-materials",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "赛斯纳.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-e129b2fcd03f48a2e87d6695be8f624b09e9ac894fd903e33f3ca8ac5c66348a",
+    "record_candidate_id": "drawing-cessna-unidentified",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "轻型直升机.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-c0154703eedaf4f425c0138b8299512208488803f012de13f0ef420fd84d13eb",
+    "record_candidate_id": "drawing-light-helicopter",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  },
+  {
+    "relative_path": "轻型飞机图纸Piper J-3 Cub.rar",
+    "dedup_status": "NEW_CONTENT",
+    "evidence": [],
+    "source_exact_peers": [],
+    "source_probable_peers": [],
+    "source_archive_member_matches": [],
+    "publication_status": "REVIEW_REQUIRED",
+    "publication_rights": "UNKNOWN",
+    "rights_note": "Owner-supplied location is not redistribution permission",
+    "file_id": "file-92da6cb683ee8a51d339056b1fa9bbd7af20bad91963755ba4999b409db8764d",
+    "record_candidate_id": "drawing-piper-j3-cub",
+    "existing_record_match": false,
+    "maintenance_action": "HOLD_NEW_CANDIDATE",
+    "grouping_status": "CANDIDATE_NOT_DESIGN_IDENTITY_PROOF",
+    "archive_review_notes": []
+  }
+]
