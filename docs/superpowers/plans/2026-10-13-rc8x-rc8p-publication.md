@@ -10,6 +10,6 @@ Architecture: reuse Starlight chapter routes, ManualFigure and ManualVideo. Extr
 - [x] Add completeness, local asset, video and fragment regression tests; run native validation and both publication builds.
 - [x] Check desktop/mobile manuals, index, images, tables, videos and existing manuals in Playwright.
 - [x] Obtain independent read-only review; fix P0/P1.
-- [ ] Create a Draft PR with exact evidence. No merge or deployment.
+- [x] Create a Draft PR with exact evidence. No merge or deployment.
 
 Review focus: missing or duplicate canonical text, wrong product figures, source page headings, lost warning severity, legacy anchors, accidental review-state promotion, mobile overflow.

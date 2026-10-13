@@ -9,7 +9,7 @@ Draft PRのレビュー対象です。メーカー承認、公開承認、検索
 - Source repository: `happinesea/RadiolinkManual`
 - RadiolinkManual origin/main: `8b523d6e0fb0c2b5a5beec80906f43e6cd87c634`
 - happinesea-site origin/main baseline: `b837b83271a53dbb32c316513c47c5086bf627f6`
-- Publication build content commit: `386c2b932ce2f989649f4c4420afae58e9f08f83`
+- Publication build content commit: `47ba52ef3c3ccc53ce7469e1cf46f09aeb165be6`
 - Branch: `codex/rc8x-rc8p-full-manual-publication`
 - Canonical/hash basis: UTF-8, LF normalized text. Image hashes are exact saved bytes.
 - 詳細なファイルhash、PDF image placement/xref/transform、section、動画、旧anchor、同期分類は [inventory](./rc8x-rc8p-publication-inventory.json) に記録。既存provenanceのsource_repository/source_commit/sources/sha256を再利用し、新しいcontract schemaは追加していません。
@@ -277,4 +277,4 @@ KEEPはcanonical本文が既存siteに既に一致する箇所です。図、動
 | 2.25              | missing       | 2.25 スイッチ設定（SWITCH SETTING）               | ADD    |
 | front/back matter | missing       | intro, semantic TOC, support and Thanks           | ADD    |
 
-PRはDraftとして作成し、merge/deployは行いません。最終PR URL、head SHA、CI、mergeabilityはPRと最終回答に記録します。
+Draft PR: https://github.com/happinesea/happinesea-site/pull/58。merge/deployは行っていません。最終head SHA、CI、mergeabilityはPRと最終回答で確認します。
