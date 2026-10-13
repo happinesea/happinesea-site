@@ -1,0 +1,210 @@
+[
+  {
+    "confidence": "medium",
+    "download_id": "download-87c88ef27c95d0caef79a9687760742e88e37e2d631ffac29d42072346fcec65",
+    "notes": "名称を直訳。FIGHTER ULTRALIGHTとは同定しない。",
+    "source_path": "1号轻型飞机.zip",
+    "title_ja_candidate": "1号軽飛行機（資料名）",
+    "title_original": "1号轻型飞机"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-017c265561adc9de0b43407b920ecc707b72480f018d43bdd4d844fc63872453",
+    "notes": "pitts.pdfのCRC・容量が既存Pitts packageと一致。3Dは保持。",
+    "source_path": "3d双翼机.rar",
+    "title_ja_candidate": "3D複葉機（Pitts資料の候補）",
+    "title_original": "3d双翼机"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-6e6f2e84e6f8665b65bb0d125da05d8f5f76de0952b20669fbfde08f18436e05",
+    "notes": "原題を保持。F-14の資料variant候補であり設計同一は未確認。",
+    "source_path": "F14A.rar",
+    "title_ja_candidate": "F14A",
+    "title_original": "F14A"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-298eeaa767e98a6257fd0c584e3f5f20eff3a2f8f623bc7dfcd06f1fbd8b4fc7",
+    "notes": "memberのGripenを根拠に表示名候補。型式を保持。",
+    "source_path": "JAS-39鹰狮.rar",
+    "title_ja_candidate": "JAS-39 グリペン（候補）",
+    "title_original": "JAS-39鹰狮"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-ee9599f57efc83635ae0e1743eff8629d1130307d822d61ba5b6153cbefb2025",
+    "notes": "kj66と3Dの区切りはmember jet3v2.STEPからの候補。型式確定は要確認。",
+    "source_path": "kj663D涡喷.rar",
+    "title_ja_candidate": "kj66 3D ターボジェット資料",
+    "title_original": "kj663D涡喷"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-a3ddd8ba03aa01399707d0ee426f4733a26e2f9ce5b907e8593ae939b7b3d247",
+    "notes": "内部2RARのSHAは単独RARと一致。内部filenameはencoding未確認。",
+    "source_path": "kj663D涡喷.zip",
+    "title_ja_candidate": "kj66 エンジン資料セット（候補）",
+    "title_original": "kj663D涡喷"
+  },
+  {
+    "confidence": "low",
+    "download_id": "download-a24cbd27d22c55ea6c1715a4e38d138af18eede4b48bf0220f136d6727fc3ea7",
+    "notes": "函道を涵道の誤字と確定しない。ダクテッドファン表記も要確認。",
+    "source_path": "函道幻影2000.rar",
+    "title_ja_candidate": "幻影2000（原題：函道幻影2000）",
+    "title_original": "函道幻影2000"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-fbe5c8eec7e07db80b7bc6d1331d44b2e37469d45d1a1d073adce4aecd368b10",
+    "notes": "喷绘は大型印刷等の候補。su-27のvariantとして要確認。",
+    "source_path": "喷绘版－SU27.rar",
+    "title_ja_candidate": "SU27 印刷用図面（候補）",
+    "title_original": "喷绘版－SU27"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-cac67ac891504f526b163d2154a2e87a9e0d824e409ed090940bf7b356e656fd",
+    "notes": "memberに820X1250mmと2配色。用途は候補。",
+    "source_path": "喷绘飞机图纸.rar",
+    "title_ja_candidate": "印刷用飛行機設計図（機種未確認）",
+    "title_original": "喷绘飞机图纸"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-e5ca9e1552b907ddc7344819cc8ea8e91ff88f8987360b70c69819d557d20a3c",
+    "notes": "音訳と182を保持。メーカー出典未確認。",
+    "source_path": "塞斯纳182.rar",
+    "title_ja_candidate": "セスナ182（候補）",
+    "title_original": "塞斯纳182"
+  },
+  {
+    "confidence": "low",
+    "download_id": "download-4c9ae0b1554407012aff3fcf1446d17865aa3e5a71acd45d176656f189f2743b",
+    "notes": "330を特定の機種名へ展開しない。",
+    "source_path": "彩色330.rar",
+    "title_ja_candidate": "カラー330（名称未確認）",
+    "title_original": "彩色330"
+  },
+  {
+    "confidence": "low",
+    "download_id": "download-5a141a319b90926cbce59718e14339d460cefa83021c208d6d3aec4a942e44ef",
+    "notes": "微风は原題のまま保持。意訳で固有名を変えない。",
+    "source_path": "微风2005.rar",
+    "title_ja_candidate": "微风2005（名称未確認）",
+    "title_original": "微风2005"
+  },
+  {
+    "confidence": "low",
+    "download_id": "download-b8a4adfd0e161cded4b196cb8f2cbbcc725a82838bd8e8b8feaf2a2326e49a67",
+    "notes": "ヘリコプター・ジャイロ等を確定しない。",
+    "source_path": "旋翼机.rar",
+    "title_ja_candidate": "回転翼機（形式未確認）",
+    "title_original": "旋翼机"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-9b79765084f07f90130d88f2aa4f07fb05fe8e49a1f7a92d05b500a3d28aae0d",
+    "notes": "J10 archiveと2member CRC・容量一致。原題を保持。",
+    "source_path": "歼10.rar",
+    "title_ja_candidate": "歼10（J-10候補）",
+    "title_original": "歼10"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-3d4cc4127641a91ea167639f7f0e76ccc54ab952ada04d8b0246cd781d5a6298",
+    "notes": "CAD archiveとの同一設計は未確認。原題を保持。",
+    "source_path": "歼20.rar",
+    "title_ja_candidate": "歼20（J-20候補）",
+    "title_original": "歼20"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-304986dee19263143a89d27ee82d9f24395a89fa47432f01a4834f361d874801",
+    "notes": "member drakeFFF.pdfを保存。機種を推測確定しない。",
+    "source_path": "水上飞机图纸.rar",
+    "title_ja_candidate": "水上機の設計図（機種未確認）",
+    "title_original": "水上飞机图纸"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-160f70a68d582d304b607f62d21aa4cf343e866e44d5f02cae8cc89bb1a6f304",
+    "notes": "油动は燃料動力の候補。内部foxie.zipは未調査。",
+    "source_path": "油动CAD格式飞机图纸.rar",
+    "title_ja_candidate": "エンジン動力機のCAD設計図（機種未確認）",
+    "title_original": "油动CAD格式飞机图纸"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-9a2384c22d0510f7e1cb1d1637efd945266553da4f8607cee7d1abd5f5430ab0",
+    "notes": "737等の型式を付加しない。",
+    "source_path": "波音客机.rar",
+    "title_ja_candidate": "ボーイング旅客機（型式未確認）",
+    "title_original": "波音客机"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-bc7650867c843b505a40cad741d2063e28b8363aa79fb891780849cb2a460d21",
+    "notes": "Thumbs.dbを含む。別簡易F22との統合は要確認。",
+    "source_path": "简单的F22图纸.rar",
+    "title_ja_candidate": "F22 簡易設計図（候補）",
+    "title_original": "简单的F22图纸"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-4f08c5a0edef7e2430e83416d71319ace5dcb78bf70b10a01d77ceaf022036d2",
+    "notes": "別の簡易F22 archiveと3member一致、画像1件は異なる。variantを保持。",
+    "source_path": "简单的f22.rar",
+    "title_ja_candidate": "f22 簡易版（候補）",
+    "title_original": "简单的f22"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-514f8a3eae5b85dbe277a33314ab3a4fd930d6b998a80dcec038a2e9d224534b",
+    "notes": "member mig29.pdfを根拠に候補。MiG-29.xlsとは同じ設計と確定しない。",
+    "source_path": "米格 29.rar",
+    "title_ja_candidate": "MiG 29（候補）",
+    "title_original": "米格 29"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-786fcb9c46216f7401a44a4c374fda28559fd7bf792b3c7345918a4632f223f9",
+    "notes": "member MiG-21表記を根拠に候補。",
+    "source_path": "米格21.zip",
+    "title_ja_candidate": "MiG-21（候補）",
+    "title_original": "米格21"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-d8cd593b93e8c263867fd6840dcc00c92932af5d7db7918439940eb4ab8dcd1e",
+    "notes": "member MiG-25表記を根拠に候補。",
+    "source_path": "米格25.zip",
+    "title_ja_candidate": "MiG-25（候補）",
+    "title_original": "米格25"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-2e17200f3c8bb2238edca15fa2b55289ef6118055e8b38cde52dd7151ac1051f",
+    "notes": "memberは基礎知識・購入時の知識・プロペラ推力計算。赠品の意味は付属品候補。",
+    "source_path": "航模赠品.rar",
+    "title_ja_candidate": "模型関連の付属資料（原題：航模赠品）",
+    "title_original": "航模赠品"
+  },
+  {
+    "confidence": "low",
+    "download_id": "download-e129b2fcd03f48a2e87d6695be8f624b09e9ac894fd903e33f3ca8ac5c66348a",
+    "notes": "member 182SHEET2.jpgだけで182型と確定しない。塞斯纳182とは同定保留。",
+    "source_path": "赛斯纳.rar",
+    "title_ja_candidate": "赛斯纳（セスナ候補・型式未確認）",
+    "title_original": "赛斯纳"
+  },
+  {
+    "confidence": "medium",
+    "download_id": "download-c0154703eedaf4f425c0138b8299512208488803f012de13f0ef420fd84d13eb",
+    "notes": "member名にFuria Ultralight Helicopter。実機用か模型用か要確認。",
+    "source_path": "轻型直升机.rar",
+    "title_ja_candidate": "軽量ヘリコプター（Furia資料候補）",
+    "title_original": "轻型直升机"
+  }
+]

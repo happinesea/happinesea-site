@@ -1,0 +1,493 @@
+[
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "波音客机.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-boeing-airliner-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "微风2005.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-breeze2005-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "c-17运输机.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-c-17"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "赛斯纳.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-cessna-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "塞斯纳182.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-cessna182"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "彩色330.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-color330-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "Draken.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-draken"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F-14.rar",
+      "F-14/F-14 tomcat設計図.zip",
+      "F-14/F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf",
+      "F-14/F-14 tomcat設計図/F-14 tomcat設計図1.jpg",
+      "F-14/F-14 tomcat設計図/F-14 tomcat設計図2.jpg",
+      "F-14/F-14 tomcat設計図/F-14 tomcat設計図3.jpg",
+      "F-14/F-14 tomcat設計図/F-14_Decals_Page_1.gif",
+      "F-14/F-14 tomcat設計図/F-14_Decals_Page_2.gif",
+      "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf",
+      "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf",
+      "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf",
+      "F-14/F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf",
+      "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf",
+      "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf",
+      "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf",
+      "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf",
+      "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf",
+      "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf",
+      "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf",
+      "F14A.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f-14"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F-15.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f-15"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F-18.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f-18"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F22.rar",
+      "f-22像真机.zip",
+      "简单的F22图纸.rar",
+      "简单的f22.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f-22"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F117.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f117"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F16.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f16"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "F4D.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f4d"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "二战F4U模型飞机图纸.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-f4u"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "水上飞机图纸.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-floatplane-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "油动CAD格式飞机图纸.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-fuel-cad-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "j-20 三维图 CAD图.rar",
+      "歼20.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-j-20"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "J10.rar",
+      "歼10.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-j10"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "JAS-39鹰狮.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-jas-39"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "航模喷气发动机制作手册.part1.rar",
+      "航模喷气发动机制作手册.part2.rar"
+    ],
+    "suggested_relation": "SAME_PACKAGE_SPLIT",
+    "task0_candidate_group": "drawing-jet-engine-manual"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "kj663D涡喷.rar",
+      "kj663D涡喷.zip",
+      "kj66涡轮发动机制作蓝图.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-kj66-engine"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "laser200.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-laser200"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "1号轻型飞机.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-light-aircraft-no1"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "轻型直升机.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-light-helicopter"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "微型喷气式发动机详细制作图纸.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-microjet-engine"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "MiG-29.rar",
+      "米格 29.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-mig-29"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "米格21.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-mig21"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "米格25.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-mig25"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "函道幻影2000.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-mirage2000"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "航模赠品.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-model-beginner-materials"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "P51图纸.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-p51"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "纸飞机.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-paper-aircraft"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "轻型飞机图纸Piper J-3 Cub.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-piper-j3-cub"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "3d双翼机.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-pitts-park-flyer"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "喷绘飞机图纸.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-printed-plans-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "航模脉冲式发动机制作手册.zip"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-pulse-engine-manual"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "旋翼机.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-rotorcraft-unidentified"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "SR71.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-sr71"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "su-27图纸.rar",
+      "喷绘版－SU27.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-su-27"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "SU-47.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-su-47"
+  },
+  {
+    "grouping_review_required": true,
+    "grouping_status": "REVIEW_REQUIRED",
+    "notes": "Candidate only. Same model name, CRC overlap, nested/split containers do not authorize automatic grouping.",
+    "owner_decision_required": true,
+    "source_paths": [
+      "su37.rar"
+    ],
+    "suggested_relation": "UNKNOWN_RELATION",
+    "task0_candidate_group": "drawing-su37"
+  }
+]

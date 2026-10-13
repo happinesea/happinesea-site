@@ -1,0 +1,242 @@
+[
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-017c265561adc9de0b43407b920ecc707b72480f018d43bdd4d844fc63872453",
+    "duplicate_status": "PROBABLE_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-pitts-park-flyer"
+    ],
+    "owner_decision_required": true,
+    "source_path": "3d双翼机.rar"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-3655ffe370f3d8bd0777b6362b95c02e505e359d89eac2060f9840d1bc1aec65",
+    "duplicate_status": "PROBABLE_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-draken"
+    ],
+    "owner_decision_required": true,
+    "source_path": "Draken.zip"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-12d0dcf4494f0727f18f1e8cea561990b38470110ecaa59ac283a53433968fed",
+    "duplicate_status": "PROBABLE_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14.rar"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-27787f2c12626c6ecd090ee45cede43665793b27a9c45c7e00245be438662e16",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図.zip"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-7a273d9ad1071e976744e2392109f1612a91dcb74136a0483c0cb4e7eeb62f26",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14 Park Jet (Parts Templates Tiled A4).pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-3953263e9e0b1f2fa2e644c3d14a52634ae6ff55c24c4b2cf38b6cc274567d3b",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図1.jpg"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-b896d7b92635e7c48812ad71e00391f258c089d2973974366cf47a1f6c24e6c7",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図2.jpg"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-63bf08cda05d21f53916015b9240ff7966e88d3bb3a03ec9813bc77b6fe0514e",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14 tomcat設計図3.jpg"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-d714de8d83811c892e7950f95e2d1babe7fe46a8c6dfddf345b6629576e5864f",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_1.gif"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-93c92788070c5770bca2c463a99656a78bb04bcbca7918b08bac518bdf6c118c",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14_Decals_Page_2.gif"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-61e632ad9594d9f8f9c0099f34ce7e5cd7d45667024ad521f4a832208c670152",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/F-14_Park_Jet_Construction_Guide.pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-856a84a4a6533166404caba8115921171858da625c0dcc01d7e88e2ffeaf9c0c",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Non-Tiled) Rev A.pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-62696f9ae7a0dfd40cbffaba66b7e2a02caa0833bc60d436577adb1a55254a59",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/F-14 Fixed Wing Conversion Parts (Tiled) Rev A.pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-8394c271adebb374561a315d6d72e133ff4e4a77ca82ff2a1d508a697a6466a2",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Fixed Wing Conversion/Mid sweep wing plan.pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-093018f0a85a7830aa08f75cab7f4a8e55b6fafa3d3da1b34df7b2d61f12f030",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Assembly Drawing).pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-72d60289506a0860d0c1f21751bd38a8aa4667103587cbd695dbd867514dc9d6",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Non-Tiled).pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-c7a7f2634a5aa18304f62976972b5680de081b011ac0338b3b5bf056bc46da0f",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 100%/F-14 Park Jet (Parts Templates Tiled).pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-cefe1aaf3023fdb0321502a9152507155f0f37f0c1ef79bf06388f85fb042f09",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Non-Tiled 60 percent.pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-2eaaf982ea9d246351fe968d93e96bf446fbc885de6e9ad448fd8f3d52c02645",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 60%/F-14 Park Jet Parts Templates Tiled 60 percent.pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-56850eeba60584803a70549b08fe25a4298dc6e0fed100e5109bd7291f746fc0",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Non-tiled).pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-2249c6b9ff703771a77fc16ca78e73b36319a172f559ff259421f0f613237b7e",
+    "duplicate_status": "EXACT_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F-14/F-14 tomcat設計図/Scale 75%/F-14 Park Jet (Parts Templates 75 Tiled).pdf"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-6e6f2e84e6f8665b65bb0d125da05d8f5f76de0952b20669fbfde08f18436e05",
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "existing_record_ids": [
+      "drawing-f-14"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F14A.rar"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-e288865b4be5bcf489cabdaeb03e8f46c5b2b457bda64dc09d3fe4909f28d6da",
+    "duplicate_status": "PROBABLE_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-f4d"
+    ],
+    "owner_decision_required": true,
+    "source_path": "F4D.rar"
+  },
+  {
+    "action": "REFRESH_PROPOSAL_ONLY",
+    "download_id": "download-ab8b38908d7734d52162f62b10c8ceaf15d2ef0f29be0feea3ec35a3c2838c21",
+    "duplicate_status": "PROBABLE_DUPLICATE",
+    "existing_record_ids": [
+      "drawing-c-17"
+    ],
+    "owner_decision_required": true,
+    "source_path": "c-17运输机.zip"
+  }
+]

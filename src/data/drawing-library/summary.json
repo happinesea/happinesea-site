@@ -1,0 +1,22 @@
+{
+  "binary_copies": 0,
+  "downloads": 77,
+  "existing_records": 6,
+  "grouping_unresolved": 42,
+  "mode": "DRY_RUN",
+  "new_record_proposals": 27,
+  "public_outputs": 0,
+  "publication_right_counts": {
+    "REVIEW_REQUIRED": 77
+  },
+  "records": 33,
+  "source_downloads": 71,
+  "source_duplicate_status_counts": {
+    "EXACT_DUPLICATE": 20,
+    "EXISTING_PAGE_NEEDS_REFRESH": 1,
+    "PROBABLE_DUPLICATE": 9,
+    "REVIEW_REQUIRED": 6,
+    "UNIQUE": 35
+  },
+  "title_review": 26
+}

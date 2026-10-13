@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:happinesea:drawing-library:v0.1",
+  "type": "array",
+  "items": { "$ref": "#/$defs/record" },
+  "$defs": {
+    "sha": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "publication_status": {
+      "enum": ["DRAFT", "REVIEW_REQUIRED", "READY", "PUBLISHED", "BLOCKED"]
+    },
+    "publication_right": {
+      "enum": [
+        "REVIEW_REQUIRED",
+        "OWNER_APPROVED",
+        "THIRD_PARTY_APPROVED",
+        "BLOCKED",
+        "UNKNOWN"
+      ]
+    },
+    "duplicate_status": {
+      "enum": [
+        "UNIQUE",
+        "EXACT_DUPLICATE",
+        "PROBABLE_DUPLICATE",
+        "EXISTING_PAGE_NEEDS_REFRESH",
+        "REVIEW_REQUIRED"
+      ]
+    },
+    "grouping_status": {
+      "enum": [
+        "CONFIRMED_SINGLE",
+        "SAME_AIRCRAFT_DIFFERENT_VERSION",
+        "SAME_AIRCRAFT_DIFFERENT_DESIGN",
+        "SAME_PACKAGE_SPLIT",
+        "UNKNOWN_RELATION",
+        "REVIEW_REQUIRED"
+      ]
+    },
+    "nullable_string": { "type": ["string", "null"] },
+    "strings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {
+          "enum": [
+            "EXISTING_BINARY",
+            "EXISTING_ARCHIVE_MEMBER",
+            "EXISTING_IMAGE",
+            "SOURCE_BINARY",
+            "SOURCE_ARCHIVE_MEMBER",
+            "CONTAINS_EXISTING_BINARY"
+          ]
+        },
+        "id": { "type": "string", "minLength": 1 },
+        "url": { "type": "string" },
+        "member": { "type": "string" }
+      }
+    },
+    "member": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "bytes", "extension", "safe"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "extension": { "type": "string" },
+        "safe": { "type": "boolean" },
+        "encrypted": { "type": "boolean" },
+        "crc32": { "type": ["string", "null"], "pattern": "^[a-f0-9]{8}$" },
+        "sha256": { "$ref": "#/$defs/sha" }
+      }
+    },
+    "download": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "source_path",
+        "filename_original",
+        "filename_public_candidate",
+        "extension",
+        "mime_or_type",
+        "bytes",
+        "sha256",
+        "archive_type",
+        "publication_right",
+        "duplicate_status",
+        "mapped_record_id"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "source_path": { "$ref": "#/$defs/nullable_string" },
+        "filename_original": { "type": "string", "minLength": 1 },
+        "filename_public_candidate": { "$ref": "#/$defs/nullable_string" },
+        "extension": { "type": "string", "pattern": "^\\.[a-z0-9]+$" },
+        "mime_or_type": { "type": "string", "minLength": 1 },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "sha256": { "$ref": "#/$defs/sha" },
+        "archive_type": {
+          "enum": [null, "zip", "rar", "7z", "tar", "gz", "bz2", "xz"]
+        },
+        "archive_members": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/member" }
+        },
+        "publication_right": { "$ref": "#/$defs/publication_right" },
+        "duplicate_status": { "$ref": "#/$defs/duplicate_status" },
+        "duplicate_of": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/relation" }
+        },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "mapped_record_id": { "$ref": "#/$defs/nullable_string" }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "slug",
+        "title_ja",
+        "title_original",
+        "category",
+        "summary_ja",
+        "publication_status",
+        "publication_right",
+        "duplicate_status",
+        "grouping_status",
+        "downloads",
+        "legacy",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^drawing-[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "title_ja": { "type": "string", "minLength": 1 },
+        "title_original": { "type": "string", "minLength": 1 },
+        "category": { "enum": ["機体の設計図", "エンジン・製作資料"] },
+        "subcategory": { "type": "string" },
+        "summary_ja": { "$ref": "#/$defs/nullable_string" },
+        "publication_status": { "$ref": "#/$defs/publication_status" },
+        "publication_right": { "$ref": "#/$defs/publication_right" },
+        "duplicate_status": { "$ref": "#/$defs/duplicate_status" },
+        "grouping_status": { "$ref": "#/$defs/grouping_status" },
+        "featured_image": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["src", "alt", "status"],
+          "properties": {
+            "src": { "type": "string" },
+            "alt": { "type": "string" },
+            "status": { "const": "REVIEW_REQUIRED" }
+          }
+        },
+        "downloads": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/download" }
+        },
+        "legacy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "wordpress_ids",
+            "legacy_urls",
+            "existing_download_urls",
+            "canonical_url"
+          ],
+          "properties": {
+            "wordpress_id": { "type": "string", "pattern": "^[1-9][0-9]*$" },
+            "wordpress_ids": { "$ref": "#/$defs/strings" },
+            "legacy_urls": { "$ref": "#/$defs/strings" },
+            "existing_download_urls": { "$ref": "#/$defs/strings" },
+            "canonical_url": { "$ref": "#/$defs/nullable_string" }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "task0_inventory_id",
+            "source_relative_path",
+            "source_sha256",
+            "source_size",
+            "title_confidence",
+            "dedup_confidence",
+            "classification_notes"
+          ],
+          "properties": {
+            "task0_inventory_id": { "type": "string", "minLength": 1 },
+            "source_relative_path": { "$ref": "#/$defs/nullable_string" },
+            "source_sha256": { "$ref": "#/$defs/sha" },
+            "source_size": { "type": "integer", "minimum": 0 },
+            "title_confidence": { "enum": ["high", "medium", "low"] },
+            "dedup_confidence": {
+              "enum": ["exact", "probable", "unverified", "none"]
+            },
+            "classification_notes": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

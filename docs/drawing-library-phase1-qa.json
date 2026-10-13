@@ -1,0 +1,61 @@
+{
+  "baseline_commit": "589bc9bffc3447a6cb2926ec6c8915d909223ec7",
+  "source": {
+    "files": 71,
+    "bytes": 230404265,
+    "size_mtime_sha_unchanged": true,
+    "sha256_replay": "PASS"
+  },
+  "determinism": {
+    "json_byte_identical": true,
+    "stdout_byte_identical": true,
+    "default_writes": 0,
+    "file_sha256": {
+      "downloads.proposed.json": "d680e2608a69c6189907682ceae62680306c7d340cea1f20f912d33a9a0e9c7c",
+      "duplicate-report.json": "93efc7c0783b9f96003f1f12d1783733f25202871307a03e7bfcdd6c86eeb151",
+      "existing-refresh-proposals.json": "2a01333d82eb17c47b0b7cde9a9a03dfdc65f9692804a400de17c1834916a8dd",
+      "grouping-review-queue.json": "c99d704c5a49dd314a30fcb23630a6963fcd0d2ba8bed91a57ead7776d8211b1",
+      "publication-right-review-queue.json": "5238e6668439dacd272a5d4f209ebd11c5d6c1317596cd9d7f56c1324a758198",
+      "records.proposed.json": "891793e68c02355995617801fe2ed0a2edc404d8aa58bc23f7f805026badbeb9",
+      "summary.json": "98135e29c1c12a3119db33607a17c4a9ebbd09147dabd81ec1eaa471efdbafc8",
+      "title-review-queue.json": "e54afeec950bff6dd90090c261a8cb80f329b3172c40b14630cb78443ca9a2dc"
+    }
+  },
+  "tests": {
+    "drawing_unit": 15,
+    "existing_unit": 130,
+    "total_unit": 145,
+    "task0_python": 8,
+    "build_output": 31,
+    "failed": 0
+  },
+  "npm_run_validate": {
+    "exit_code": 0,
+    "test": "PASS",
+    "astro_check": "PASS: 0 errors/warnings",
+    "lint": "PASS",
+    "format": "PASS",
+    "build": "PASS",
+    "dist_tests": "PASS"
+  },
+  "independent_review": {
+    "read_only": true,
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "targeted_tests": 15,
+    "proposal_regeneration": "PASS"
+  },
+  "protection": {
+    "new_binary_in_git": 0,
+    "public_downloads_drawing_changes": 0,
+    "drawing_route_changes": 0,
+    "legacy_canonical_changes": 0,
+    "content_loader_changes": 0,
+    "new_drawing_public_outputs": 0,
+    "note": "Existing whole-site build ran for QA only; no drawing generator, route or deploy changes."
+  },
+  "git_diff_check": "PASS",
+  "merge_performed": false,
+  "deploy_performed": false
+}

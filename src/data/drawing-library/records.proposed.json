@@ -1,0 +1,3417 @@
+[
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 1751525,
+            "crc32": "137e4a73",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "bo/british-airways_e_a4.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 1362429,
+            "crc32": "757a0232",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "bo/british-airways_i_e_a4.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 3034350,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "波音客机.rar",
+        "filename_public_candidate": "drawing-6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679.rar",
+        "id": "download-9a2384c22d0510f7e1cb1d1637efd945266553da4f8607cee7d1abd5f5430ab0",
+        "label": "ボーイング旅客機（型式未確認）",
+        "mapped_record_id": "drawing-boeing-airliner-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "737等の型式を付加しない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679",
+        "source_path": "波音客机.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-boeing-airliner-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "737等の型式を付加しない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "波音客机.rar",
+      "source_sha256": "6deba270ea69b22a9f147eae9d5ab870fd788427918d71126250de8cf1f0c679",
+      "source_size": 3034350,
+      "task0_inventory_id": "file-9a2384c22d0510f7e1cb1d1637efd945266553da4f8607cee7d1abd5f5430ab0",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "boeing-airliner-unidentified",
+    "summary_ja": null,
+    "title_ja": "ボーイング旅客機（型式未確認）",
+    "title_original": "波音客机"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 5120,
+            "crc32": "ed41cc45",
+            "encrypted": false,
+            "extension": ".db",
+            "name": "微风2005/Thumbs.db",
+            "safe": true
+          },
+          {
+            "bytes": 182990,
+            "crc32": "906aa059",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/主副翼.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 720438,
+            "crc32": "f4fbcb8a",
+            "encrypted": false,
+            "extension": ".bmp",
+            "name": "微风2005/主副翼拼接图（自己拼的）凑合肯定比原来的好.bmp",
+            "safe": true
+          },
+          {
+            "bytes": 33078,
+            "crc32": "6b1bf3c2",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/垂尾.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 61778,
+            "crc32": "7e9a3b76",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/平尾.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 7041386,
+            "crc32": "c80c78e5",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "微风2005/微风2005制作流程截图.doc",
+            "safe": true
+          },
+          {
+            "bytes": 96243,
+            "crc32": "4b76938a",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/微风2005总体图纸.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 121998,
+            "crc32": "827881bc",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/机身.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 85862,
+            "crc32": "1c9cb317",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/机身加强片.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 47414,
+            "crc32": "28411e8f",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/翼肋.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 30211,
+            "crc32": "928587c6",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/翼肋2.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 14844,
+            "crc32": "94e926eb",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "微风2005/起落架钢丝.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 6911392,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "微风2005.rar",
+        "filename_public_candidate": "drawing-b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d.rar",
+        "id": "download-5a141a319b90926cbce59718e14339d460cefa83021c208d6d3aec4a942e44ef",
+        "label": "微风2005（名称未確認）",
+        "mapped_record_id": "drawing-breeze2005-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "微风は原題のまま保持。意訳で固有名を変えない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d",
+        "source_path": "微风2005.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-breeze2005-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "微风は原題のまま保持。意訳で固有名を変えない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "微风2005.rar",
+      "source_sha256": "b16ccd5d0d74bbff00161d94aaa420a35f74b136ca3f975580f12f4bd29e181d",
+      "source_size": 6911392,
+      "task0_inventory_id": "file-5a141a319b90926cbce59718e14339d460cefa83021c208d6d3aec4a942e44ef",
+      "title_confidence": "low"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "breeze2005-unidentified",
+    "summary_ja": null,
+    "title_ja": "微风2005（名称未確認）",
+    "title_original": "微风2005"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_type": "zip",
+        "bytes": 2934006,
+        "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "extension": ".zip",
+        "filename_original": "2e27a9c6e14b306407c066e01109eba8.zip",
+        "filename_public_candidate": "2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+        "id": "download-existing-e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+        "label": "2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+        "mapped_record_id": "drawing-c-17",
+        "mime_or_type": "application/zip",
+        "notes": [
+          "Existing public asset; publication is not proof of redistribution rights."
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+        "source_path": null
+      }
+    ],
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "featured_image": {
+      "alt": "滑走路上のC-17輸送機",
+      "src": "/wp-content/uploads/2021/10/7ea9e89dfe81625de6cff93c38cde4df-1.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-c-17",
+    "legacy": {
+      "canonical_url": "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+      "existing_download_urls": [
+        "/downloads/drawings/2e27a9c6e14b306407c066e01109eba8-e5b98e6c78a2.zip",
+        "/wp-content/uploads/2021/10/2e27a9c6e14b306407c066e01109eba8.zip"
+      ],
+      "legacy_urls": [
+        "https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+        "https://happinesea.com/download/c-17輸送機スケールrc飛行機設計図cadファイル付",
+        "https://happinesea.com/engineering-drawing/202110191734.html"
+      ],
+      "wordpress_id": "1733",
+      "wordpress_ids": [
+        "1733",
+        "1734"
+      ]
+    },
+    "provenance": {
+      "classification_notes": [
+        "Derived from unchanged legacy metadata. Existing public page remains outside proposal publication states."
+      ],
+      "dedup_confidence": "exact",
+      "source_relative_path": null,
+      "source_sha256": "e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+      "source_size": 2934006,
+      "task0_inventory_id": "existing-public-e5b98e6c78a24d3d081b561aed3bb25fb209f82a9848b902ab3c1891c75c4997",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "c-17",
+    "summary_ja": null,
+    "title_ja": "C-17輸送機スケールRC飛行機設計図(CADファイル付)",
+    "title_original": "C-17輸送機スケールRC飛行機設計図(CADファイル付)"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 751274,
+            "crc32": "c12e5955",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "182SHEET2.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 2093900,
+            "crc32": "f4bf19b1",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2010020505929652.jpg",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 1830082,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "赛斯纳.rar",
+        "filename_public_candidate": "drawing-be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32.rar",
+        "id": "download-e129b2fcd03f48a2e87d6695be8f624b09e9ac894fd903e33f3ca8ac5c66348a",
+        "label": "赛斯纳（セスナ候補・型式未確認）",
+        "mapped_record_id": "drawing-cessna-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "member 182SHEET2.jpgだけで182型と確定しない。塞斯纳182とは同定保留。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32",
+        "source_path": "赛斯纳.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-cessna-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "member 182SHEET2.jpgだけで182型と確定しない。塞斯纳182とは同定保留。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "赛斯纳.rar",
+      "source_sha256": "be01d4ffa011b5eb5b4de833470bf4768b14a5c7be12af9a04f9bd68f1a1eb32",
+      "source_size": 1830082,
+      "task0_inventory_id": "file-e129b2fcd03f48a2e87d6695be8f624b09e9ac894fd903e33f3ca8ac5c66348a",
+      "title_confidence": "low"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "cessna-unidentified",
+    "summary_ja": null,
+    "title_ja": "赛斯纳（セスナ候補・型式未確認）",
+    "title_original": "赛斯纳"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 173582,
+            "crc32": "95e87c9e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "塞斯纳182.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 171475,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "塞斯纳182.rar",
+        "filename_public_candidate": "drawing-b816aaaaf3e9f2a585e095c5791fad4b02de3ef11dfa7d28d2dbaf506447156c.rar",
+        "id": "download-e5ca9e1552b907ddc7344819cc8ea8e91ff88f8987360b70c69819d557d20a3c",
+        "label": "セスナ182（候補）",
+        "mapped_record_id": "drawing-cessna182",
+        "mime_or_type": "archive",
+        "notes": [
+          "音訳と182を保持。メーカー出典未確認。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "b816aaaaf3e9f2a585e095c5791fad4b02de3ef11dfa7d28d2dbaf506447156c",
+        "source_path": "塞斯纳182.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-cessna182",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "音訳と182を保持。メーカー出典未確認。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "塞斯纳182.rar",
+      "source_sha256": "b816aaaaf3e9f2a585e095c5791fad4b02de3ef11dfa7d28d2dbaf506447156c",
+      "source_size": 171475,
+      "task0_inventory_id": "file-e5ca9e1552b907ddc7344819cc8ea8e91ff88f8987360b70c69819d557d20a3c",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "cessna182",
+    "summary_ja": null,
+    "title_ja": "セスナ182（候補）",
+    "title_original": "塞斯纳182"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 1269809,
+            "crc32": "df421231",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "彩色330.jpg",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 685344,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "彩色330.rar",
+        "filename_public_candidate": "drawing-f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c.rar",
+        "id": "download-4c9ae0b1554407012aff3fcf1446d17865aa3e5a71acd45d176656f189f2743b",
+        "label": "カラー330（名称未確認）",
+        "mapped_record_id": "drawing-color330-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "330を特定の機種名へ展開しない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c",
+        "source_path": "彩色330.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-color330-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "330を特定の機種名へ展開しない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "彩色330.rar",
+      "source_sha256": "f8d6741937d3aae4ce1a0829d9f55ba4e2a9b4866c36e1ba888d0b80edd53e0c",
+      "source_size": 685344,
+      "task0_inventory_id": "file-4c9ae0b1554407012aff3fcf1446d17865aa3e5a71acd45d176656f189f2743b",
+      "title_confidence": "low"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "color330-unidentified",
+    "summary_ja": null,
+    "title_ja": "カラー330（名称未確認）",
+    "title_original": "彩色330"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_type": "zip",
+        "bytes": 197718,
+        "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "extension": ".zip",
+        "filename_original": "Draken.zip",
+        "filename_public_candidate": "Draken-b9ad56c9eecf.zip",
+        "id": "download-existing-b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+        "label": "Draken-b9ad56c9eecf.zip",
+        "mapped_record_id": "drawing-draken",
+        "mime_or_type": "application/zip",
+        "notes": [
+          "Existing public asset; publication is not proof of redistribution rights."
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+        "source_path": null
+      }
+    ],
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "featured_image": {
+      "alt": "サーブ35ドラケン",
+      "src": "/wp-content/uploads/2021/10/77142_1.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-draken",
+    "legacy": {
+      "canonical_url": "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+      "existing_download_urls": [
+        "/downloads/drawings/Draken-b9ad56c9eecf.zip",
+        "/wp-content/uploads/2021/10/Draken.zip"
+      ],
+      "legacy_urls": [
+        "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+        "https://happinesea.com/download/rcスケール機：サーブ-35-ドラケン、スチレンボード",
+        "https://happinesea.com/engineering-drawing/202110211742.html"
+      ],
+      "wordpress_id": "1740",
+      "wordpress_ids": [
+        "1740",
+        "1742"
+      ]
+    },
+    "provenance": {
+      "classification_notes": [
+        "Derived from unchanged legacy metadata. Existing public page remains outside proposal publication states."
+      ],
+      "dedup_confidence": "exact",
+      "source_relative_path": null,
+      "source_sha256": "b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+      "source_size": 197718,
+      "task0_inventory_id": "existing-public-b9ad56c9eecfcd28aa31f2f10d7a07be4d8b35680e3e9da94c79ba0ae111542e",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "draken",
+    "summary_ja": null,
+    "title_ja": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機",
+    "title_original": "RCスケール機：サーブ 35 ドラケン、スチレンボード飛行機"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_type": "zip",
+        "bytes": 6212559,
+        "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "extension": ".zip",
+        "filename_original": "d29b41480f9c051a1113334ae83dd8a3.zip",
+        "filename_public_candidate": "d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "id": "download-existing-a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+        "label": "d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip",
+        "mapped_record_id": "drawing-f-14",
+        "mime_or_type": "application/zip",
+        "notes": [
+          "Existing public asset; publication is not proof of redistribution rights."
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+        "source_path": null
+      }
+    ],
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "featured_image": {
+      "alt": "飛行中のF-14模型飛行機",
+      "src": "/wp-content/uploads/2025/05/5af21b0c87d83b8aca7b2e864f82861e.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-f-14",
+    "legacy": {
+      "canonical_url": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2",
+      "existing_download_urls": [
+        "/assets/legacy-downloads/2168/d29b41480f9c051a1113334ae83dd8a3.zip",
+        "/downloads/drawings/d29b41480f9c051a1113334ae83dd8a3-a8bc76fea37f.zip"
+      ],
+      "legacy_urls": [
+        "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+        "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2"
+      ],
+      "wordpress_id": "2168",
+      "wordpress_ids": [
+        "2168"
+      ]
+    },
+    "provenance": {
+      "classification_notes": [
+        "Derived from unchanged legacy metadata. Existing public page remains outside proposal publication states."
+      ],
+      "dedup_confidence": "exact",
+      "source_relative_path": null,
+      "source_sha256": "a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+      "source_size": 6212559,
+      "task0_inventory_id": "existing-public-a8bc76fea37fc2a13b3a01b1c3a7ad89c8ea64b17a6162cf8f9bf9679e249062",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "f-14",
+    "summary_ja": null,
+    "title_ja": "RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機",
+    "title_original": "RCスケール機：F-14 Tomcat、発泡スチロールRC飛行機"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 2589482,
+            "crc32": "99ccedec",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F-15/F-15Manual.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 84905,
+            "crc32": "b0b2d810",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F-15/F15_parts.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 130950,
+            "crc32": "0a14d88e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F-15/F15_parts_Tiled.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 93585,
+            "crc32": "79e1b196",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F-15/F15_plans.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 187437,
+            "crc32": "565fbb31",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F-15/F15_plans_Tiled.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 2831432,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "F-15.rar",
+        "filename_public_candidate": "drawing-6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3.rar",
+        "id": "download-8c7c648113d63924855298a68e7f6203e80c1687959a4a8b117be680ecc31814",
+        "label": "F-15",
+        "mapped_record_id": "drawing-f-15",
+        "mime_or_type": "archive",
+        "notes": [
+          "型式を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3",
+        "source_path": "F-15.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-f-15",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "型式を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "F-15.rar",
+      "source_sha256": "6c845392f3978db14772c8e4a691f5dfd1c57941ed622b9680be76636a1805c3",
+      "source_size": 2831432,
+      "task0_inventory_id": "file-8c7c648113d63924855298a68e7f6203e80c1687959a4a8b117be680ecc31814",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "f-15",
+    "summary_ja": null,
+    "title_ja": "F-15",
+    "title_original": "F-15"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 3018923,
+            "crc32": "e54cce56",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Shumate F-18/F-18_Park_Jet_Construction_Guide_Rev_A.pdf",
+            "safe": true,
+            "sha256": "b41dd79538361c4747d85e8c4f68d6e81057f1e0a32c88c583f61d5935891a72"
+          },
+          {
+            "bytes": 54519,
+            "crc32": "9f2c9dd2",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Shumate F-18/Scale 100%/F-18_Park_Jet_%28Part_Templates_Non-Tiled%29_Rev_A.pdf",
+            "safe": true,
+            "sha256": "b284c08cb86752ab76b8b97c785bc89eaf161894465f8479fdf809c649a08b4d"
+          },
+          {
+            "bytes": 61989,
+            "crc32": "7a6fc97d",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Shumate F-18/Scale 100%/F-18_Park_Jet_%28Part_Templates_Tiled%29_Rev_A.pdf",
+            "safe": true,
+            "sha256": "e124f512ac9dd655e52dfe1f8b9557e763cfd208a80ece4e9fcf9597ba6bc0b1"
+          },
+          {
+            "bytes": 56743,
+            "crc32": "8fae2df1",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Shumate F-18/Scale 77%/F-18_Parkflyer_%28Part_Templates_Tiled_75%29.pdf",
+            "safe": true,
+            "sha256": "d51408ec83f24fa7fad47a86b0e3b259530070e209a8a3a297d12f25870bb2e6"
+          },
+          {
+            "bytes": 53537,
+            "crc32": "96b16a8f",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Shumate F-18/Scale 77%/F-18_Pocket_Jet_%28Part_Templates_Non-Tiled%29.pdf",
+            "safe": true,
+            "sha256": "e2a3dd1928004d9702e2a775bb725e3f995835559d1036371306c1f022470cc2"
+          },
+          {
+            "bytes": 59222,
+            "crc32": "6491643a",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Shumate F-18/Scale 77%/F-18_Pocket_Jet_%28Part_Templates_Tiled%29.pdf",
+            "safe": true,
+            "sha256": "b668f2e48cc80f8e0edaef767c8aeb7746dc900f7df9b1cf428fdff1f4a6f771"
+          },
+          {
+            "bytes": 324738,
+            "crc32": "f494f6d1",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "Shumate F-18/blueangel_large.gif",
+            "safe": true,
+            "sha256": "06c27a610c58f691140e8f9c3c753a709d32a0b97a305cd3ec51b42a70331c0c"
+          }
+        ],
+        "archive_type": "zip",
+        "bytes": 3477836,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".zip",
+        "filename_original": "F-18.zip",
+        "filename_public_candidate": "drawing-4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134.zip",
+        "id": "download-7d4bc9075c8a23d5fd9aa7b4397137a93dab41026bbe5ffba51eacd0d3d23590",
+        "label": "F-18",
+        "mapped_record_id": "drawing-f-18",
+        "mime_or_type": "archive",
+        "notes": [
+          "型式を保持。F/A-18へ勝手に変更しない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134",
+        "source_path": "F-18.zip"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-f-18",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "型式を保持。F/A-18へ勝手に変更しない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "F-18.zip",
+      "source_sha256": "4b84bf7772ced1e9130c22e4d37a2a2909fbf501b7d57cfc253948af2034b134",
+      "source_size": 3477836,
+      "task0_inventory_id": "file-7d4bc9075c8a23d5fd9aa7b4397137a93dab41026bbe5ffba51eacd0d3d23590",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "f-18",
+    "summary_ja": null,
+    "title_ja": "F-18",
+    "title_original": "F-18"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 62454,
+            "crc32": "8a6ddd4e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F117/15.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 401422,
+            "crc32": "28c253dd",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F117/2009040374176929.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 54305,
+            "crc32": "d337a436",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F117/3.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 101310,
+            "crc32": "8263fa97",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F117/F-117A Tiled with borders (Rev4).pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 573065,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "F117.rar",
+        "filename_public_candidate": "drawing-911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f.rar",
+        "id": "download-137dbd0d410d4b63adf6e67b1a719100f5840c3141fc8479b8d67369546491ba",
+        "label": "F117",
+        "mapped_record_id": "drawing-f117",
+        "mime_or_type": "archive",
+        "notes": [
+          "原題の型式表記を保持。memberのF-117Aはvariantの照合資料。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f",
+        "source_path": "F117.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-f117",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "原題の型式表記を保持。memberのF-117Aはvariantの照合資料。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "F117.rar",
+      "source_sha256": "911d58aa97b89e08bc7e7184b589cc8cba919e5f95b69daa11a6717583f38f8f",
+      "source_size": 573065,
+      "task0_inventory_id": "file-137dbd0d410d4b63adf6e67b1a719100f5840c3141fc8479b8d67369546491ba",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "f117",
+    "summary_ja": null,
+    "title_ja": "F117",
+    "title_original": "F117"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 556361,
+            "crc32": "d1ebbcb2",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F16/16-1.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 560529,
+            "crc32": "94b055a7",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F16/16-2.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 295184,
+            "crc32": "854e66a0",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "F16/F16喷印图.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 75956,
+            "crc32": "5b75c59b",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "F16/Tbird Transparency - Rudders - Final.TIF",
+            "safe": true
+          },
+          {
+            "bytes": 206173,
+            "crc32": "9d996225",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F16/f16c_1-HJ.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 195440,
+            "crc32": "6baaa342",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "F16/f16c_2.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 1728224,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "F16.rar",
+        "filename_public_candidate": "drawing-dc1d63eacdcfa8447afa6d17406d26e1dc8b716a09e16c96c795cbf3a61bb0d8.rar",
+        "id": "download-29fc46c8292b57b2a0f25e766bf03848cb45b3b2627d30016471878ee30743c9",
+        "label": "F16",
+        "mapped_record_id": "drawing-f16",
+        "mime_or_type": "archive",
+        "notes": [
+          "原題の型式表記を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "dc1d63eacdcfa8447afa6d17406d26e1dc8b716a09e16c96c795cbf3a61bb0d8",
+        "source_path": "F16.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-f16",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "原題の型式表記を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "F16.rar",
+      "source_sha256": "dc1d63eacdcfa8447afa6d17406d26e1dc8b716a09e16c96c795cbf3a61bb0d8",
+      "source_size": 1728224,
+      "task0_inventory_id": "file-29fc46c8292b57b2a0f25e766bf03848cb45b3b2627d30016471878ee30743c9",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "f16",
+    "summary_ja": null,
+    "title_ja": "F16",
+    "title_original": "F16"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_type": "zip",
+        "bytes": 932818,
+        "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "extension": ".zip",
+        "filename_original": "F4D.zip",
+        "filename_public_candidate": "F4D-bb86cd50d911.zip",
+        "id": "download-existing-bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+        "label": "F4D-bb86cd50d911.zip",
+        "mapped_record_id": "drawing-f4d",
+        "mime_or_type": "application/zip",
+        "notes": [
+          "Existing public asset; publication is not proof of redistribution rights."
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+        "source_path": null
+      }
+    ],
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "featured_image": {
+      "alt": "飛行中のF4Dスカイレイ",
+      "src": "/wp-content/uploads/2022/01/Douglas_F4D-1_Skyray_of_VMF-115_in_flight_4_April_1957_NNAM.1996.253.7328.029.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-f4d",
+    "legacy": {
+      "canonical_url": "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+      "existing_download_urls": [
+        "/downloads/drawings/F4D-bb86cd50d911.zip",
+        "/wp-content/uploads/2022/01/F4D.zip"
+      ],
+      "legacy_urls": [
+        "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+        "https://happinesea.com/download/rcスケール機：f4dスカイレイ、スチレンボード飛行",
+        "https://happinesea.com/engineering-drawing/202201171891.html"
+      ],
+      "wordpress_id": "1886",
+      "wordpress_ids": [
+        "1886",
+        "1891"
+      ]
+    },
+    "provenance": {
+      "classification_notes": [
+        "Derived from unchanged legacy metadata. Existing public page remains outside proposal publication states."
+      ],
+      "dedup_confidence": "exact",
+      "source_relative_path": null,
+      "source_sha256": "bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+      "source_size": 932818,
+      "task0_inventory_id": "existing-public-bb86cd50d911781cd2e0bbb3ea6c3a7a3c6027e6988cc5d81a1be2aefd563b79",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "f4d",
+    "summary_ja": null,
+    "title_ja": "RCスケール機：F4Dスカイレイ、スチレンボード飛行機",
+    "title_original": "RCスケール機：F4Dスカイレイ、スチレンボード飛行機"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_type": null,
+        "bytes": 888705,
+        "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "extension": ".pdf",
+        "filename_original": "Fighter.pdf",
+        "filename_public_candidate": "Fighter-cc5b0d0cc268.pdf",
+        "id": "download-existing-cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+        "label": "Fighter-cc5b0d0cc268.pdf",
+        "mapped_record_id": "drawing-fighter-ultralight",
+        "mime_or_type": "application/pdf",
+        "notes": [
+          "Existing public asset; publication is not proof of redistribution rights."
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+        "source_path": null
+      }
+    ],
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "featured_image": {
+      "alt": "FIGHTER ULTRALIGHTの外観図",
+      "src": "/wp-content/uploads/2021/10/FIGHTER-ULTRALIGHT-1.gif",
+      "status": "REVIEW_REQUIRED"
+    },
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-fighter-ultralight",
+    "legacy": {
+      "canonical_url": "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+      "existing_download_urls": [
+        "/downloads/drawings/Fighter-cc5b0d0cc268.pdf",
+        "/wp-content/uploads/2021/10/Fighter.pdf"
+      ],
+      "legacy_urls": [
+        "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+        "https://happinesea.com/download/fighter-ultralight軽飛行機設計図",
+        "https://happinesea.com/download/fighter-ultralight軽飛行機設計図-2",
+        "https://happinesea.com/engineering-drawing/202110181716.html"
+      ],
+      "wordpress_id": "1712",
+      "wordpress_ids": [
+        "1712",
+        "1716",
+        "1717"
+      ]
+    },
+    "provenance": {
+      "classification_notes": [
+        "Derived from unchanged legacy metadata. Existing public page remains outside proposal publication states."
+      ],
+      "dedup_confidence": "exact",
+      "source_relative_path": null,
+      "source_sha256": "cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+      "source_size": 888705,
+      "task0_inventory_id": "existing-public-cc5b0d0cc268da62f785d6b89a72c38b5fff854a68d4d9c1264afbe97abf492b",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "fighter-ultralight",
+    "summary_ja": null,
+    "title_ja": "FIGHTER ULTRALIGHT軽飛行機設計図",
+    "title_original": "FIGHTER ULTRALIGHT軽飛行機設計図"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 267331,
+            "crc32": "164293a5",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "drake/drakeFFF.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 231572,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "水上飞机图纸.rar",
+        "filename_public_candidate": "drawing-4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed.rar",
+        "id": "download-304986dee19263143a89d27ee82d9f24395a89fa47432f01a4834f361d874801",
+        "label": "水上機の設計図（機種未確認）",
+        "mapped_record_id": "drawing-floatplane-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "member drakeFFF.pdfを保存。機種を推測確定しない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed",
+        "source_path": "水上飞机图纸.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-floatplane-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "member drakeFFF.pdfを保存。機種を推測確定しない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "水上飞机图纸.rar",
+      "source_sha256": "4131d83cbdf50c85c8e1de2c0ac6b55707c8da071b876502ab93df3f6c29eaed",
+      "source_size": 231572,
+      "task0_inventory_id": "file-304986dee19263143a89d27ee82d9f24395a89fa47432f01a4834f361d874801",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "floatplane-unidentified",
+    "summary_ja": null,
+    "title_ja": "水上機の設計図（機種未確認）",
+    "title_original": "水上飞机图纸"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 75408,
+            "crc32": "b75c81cb",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "JAS-39/Gripen Decals.gif",
+            "safe": true
+          },
+          {
+            "bytes": 62202,
+            "crc32": "d6d0eb9f",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen Park Jet (Assembly Drawing Tiled).pdf",
+            "safe": true
+          },
+          {
+            "bytes": 89702,
+            "crc32": "beabf70c",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "JAS-39/Gripen Park Jet (Assembly Drawing).jpg",
+            "safe": true
+          },
+          {
+            "bytes": 58976,
+            "crc32": "1b7682cb",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen Park Jet (Parts Template Non-Tiled).pdf",
+            "safe": true
+          },
+          {
+            "bytes": 65064,
+            "crc32": "bc5ac149",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen Park Jet (Parts Template Tiled).pdf",
+            "safe": true
+          },
+          {
+            "bytes": 63304,
+            "crc32": "d0ef8514",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen Park Jet (Parts Templates 120 Nontiled).pdf",
+            "safe": true
+          },
+          {
+            "bytes": 76985,
+            "crc32": "b2fa10bc",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen Park Jet (Parts Templates 120 Tiled).pdf",
+            "safe": true
+          },
+          {
+            "bytes": 62359,
+            "crc32": "67e76f4e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen Park Jet (Parts Templates 77 Tiled).pdf",
+            "safe": true
+          },
+          {
+            "bytes": 67827,
+            "crc32": "3e53dbc4",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "JAS-39/Gripen Park Jet (Parts Templates).jpg",
+            "safe": true
+          },
+          {
+            "bytes": 104204,
+            "crc32": "87c9da6c",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/Gripen200-A4.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 75447,
+            "crc32": "e55c8d41",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "JAS-39/St%2011%20Zeichen%20Rund%20Farbig.gif",
+            "safe": true
+          },
+          {
+            "bytes": 903,
+            "crc32": "ad334efb",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "JAS-39/conf helvetica-01.gif",
+            "safe": true
+          },
+          {
+            "bytes": 89577,
+            "crc32": "336a6dab",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "JAS-39/gripen-decal-1.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 101190,
+            "crc32": "ef11a215",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "JAS-39/gripen-decal-2.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 1444791,
+            "crc32": "a8d02ff6",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JAS-39/gripen-guide.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 2285723,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "JAS-39鹰狮.rar",
+        "filename_public_candidate": "drawing-b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd.rar",
+        "id": "download-298eeaa767e98a6257fd0c584e3f5f20eff3a2f8f623bc7dfcd06f1fbd8b4fc7",
+        "label": "JAS-39 グリペン（候補）",
+        "mapped_record_id": "drawing-jas-39",
+        "mime_or_type": "archive",
+        "notes": [
+          "memberのGripenを根拠に表示名候補。型式を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd",
+        "source_path": "JAS-39鹰狮.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-jas-39",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "memberのGripenを根拠に表示名候補。型式を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "JAS-39鹰狮.rar",
+      "source_sha256": "b80670637dd9a15d9187765cb1d31421e82f69217a2ac64bb49681c47a84a0cd",
+      "source_size": 2285723,
+      "task0_inventory_id": "file-298eeaa767e98a6257fd0c584e3f5f20eff3a2f8f623bc7dfcd06f1fbd8b4fc7",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "jas-39",
+    "summary_ja": null,
+    "title_ja": "JAS-39 グリペン（候補）",
+    "title_original": "JAS-39鹰狮"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 1140704,
+            "crc32": "af378cc7",
+            "encrypted": false,
+            "extension": ".dxf",
+            "name": "laser200/01_FuseLeme_Folha 1 de 3.dxf",
+            "safe": true
+          },
+          {
+            "bytes": 1200355,
+            "crc32": "3791b484",
+            "encrypted": false,
+            "extension": ".dxf",
+            "name": "laser200/02_AsaEstab_Folha 2 de 3.dxf",
+            "safe": true
+          },
+          {
+            "bytes": 1695871,
+            "crc32": "58d3afba",
+            "encrypted": false,
+            "extension": ".dxf",
+            "name": "laser200/03_Deta_Folha 3de 3.dxf",
+            "safe": true
+          },
+          {
+            "bytes": 6106352,
+            "crc32": "9c70f2b8",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "laser200/MANUALORIENTATIVOrevisado_2edigao_LASER200_FOTOS.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 6412390,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "laser200.rar",
+        "filename_public_candidate": "drawing-df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782.rar",
+        "id": "download-a60c9dbcf87e202aee0fb6b01805ef39976b5a8d53d60f1ba2b081cf7dd3bb2d",
+        "label": "laser200",
+        "mapped_record_id": "drawing-laser200",
+        "mime_or_type": "archive",
+        "notes": [
+          "固有名を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782",
+        "source_path": "laser200.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-laser200",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "固有名を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "laser200.rar",
+      "source_sha256": "df3ee1b540389c863f88bb4264c24fbe1059f47f6cea6e8436aa5b40a7496782",
+      "source_size": 6412390,
+      "task0_inventory_id": "file-a60c9dbcf87e202aee0fb6b01805ef39976b5a8d53d60f1ba2b081cf7dd3bb2d",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "laser200",
+    "summary_ja": null,
+    "title_ja": "laser200",
+    "title_original": "laser200"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 75540,
+            "crc32": "95a0969a",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008729132928.jpg",
+            "safe": true,
+            "sha256": "a32054b547bcd99a97ef5608a1918d00e1b86466fc8938567578d57528cd273e"
+          },
+          {
+            "bytes": 94753,
+            "crc32": "32ef1d27",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008729132940.jpg",
+            "safe": true,
+            "sha256": "c8e846aab8fe894c2e31cbe225ebda92f83df2a95ac1d4a9a229c81af5ca1536"
+          },
+          {
+            "bytes": 83078,
+            "crc32": "85ce0be1",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008729132951.jpg",
+            "safe": true,
+            "sha256": "8f54312c1fa221f01daee2a480b774ad089174b83aeb3a8ab2651347218bc408"
+          },
+          {
+            "bytes": 91138,
+            "crc32": "22d8a7ac",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200872913301.jpg",
+            "safe": true,
+            "sha256": "c15d4ed1faa028ce1ef79b89092513b426319b4076d9a172594cd293ad584238"
+          },
+          {
+            "bytes": 54732,
+            "crc32": "582f1fd7",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "200881214414.gif",
+            "safe": true,
+            "sha256": "c9872facd4ff4219c450362ad6a07cafefc20feefc379b0857bb691ef92a5403"
+          },
+          {
+            "bytes": 75540,
+            "crc32": "95a0969a",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200881214425.jpg",
+            "safe": true,
+            "sha256": "a32054b547bcd99a97ef5608a1918d00e1b86466fc8938567578d57528cd273e"
+          },
+          {
+            "bytes": 94753,
+            "crc32": "32ef1d27",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200881214440.jpg",
+            "safe": true,
+            "sha256": "c8e846aab8fe894c2e31cbe225ebda92f83df2a95ac1d4a9a229c81af5ca1536"
+          },
+          {
+            "bytes": 83078,
+            "crc32": "85ce0be1",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200881214451.jpg",
+            "safe": true,
+            "sha256": "8f54312c1fa221f01daee2a480b774ad089174b83aeb3a8ab2651347218bc408"
+          },
+          {
+            "bytes": 91138,
+            "crc32": "22d8a7ac",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "20088121452.jpg",
+            "safe": true,
+            "sha256": "c15d4ed1faa028ce1ef79b89092513b426319b4076d9a172594cd293ad584238"
+          },
+          {
+            "bytes": 91241,
+            "crc32": "048361d8",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882295711.jpg",
+            "safe": true,
+            "sha256": "798394deb49955e7f70a471760945cc5c4dec7c6a6a4fad8f14cdc2df56049c2"
+          },
+          {
+            "bytes": 86210,
+            "crc32": "9fc8e856",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882295722.jpg",
+            "safe": true,
+            "sha256": "a570e37ddfaa584c3e71c9dce9082f9d918a8556b165fee369f3a77ddb1fd944"
+          },
+          {
+            "bytes": 89905,
+            "crc32": "ff31a54a",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882295738.jpg",
+            "safe": true,
+            "sha256": "c00c280c1ce943803fe520c9c8a37d224fe52e296a2026ccb209a3013059d568"
+          },
+          {
+            "bytes": 93502,
+            "crc32": "66648c69",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882295748.jpg",
+            "safe": true,
+            "sha256": "7c0f3985184b02c4da2241f7c09590e821f19dcff26a178b94c59f103b0a1800"
+          },
+          {
+            "bytes": 64647,
+            "crc32": "afd75eee",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882295759.jpg",
+            "safe": true,
+            "sha256": "c05380d52647fb1d9964b0f345cfb90115222d03ae73a5efa115987787f606b4"
+          },
+          {
+            "bytes": 91484,
+            "crc32": "6630dabc",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882295812.jpg",
+            "safe": true,
+            "sha256": "bb8996c9c150bb0d2e164a5feaa19c3e762f5f5454d2e893b0a66878ba0dfb50"
+          },
+          {
+            "bytes": 100692,
+            "crc32": "f2b48ab3",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151531.jpg",
+            "safe": true,
+            "sha256": "1956dd4070809ca6faffded130c24e1ca12590e077f576e6357f70fd1bd3f639"
+          },
+          {
+            "bytes": 91204,
+            "crc32": "f3cb93b1",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151549.jpg",
+            "safe": true,
+            "sha256": "90bbe053e84e31493e01bb48caa21602936ff41d1c9a33baf996dbe8513be1b7"
+          },
+          {
+            "bytes": 92138,
+            "crc32": "05fa6105",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151624.jpg",
+            "safe": true,
+            "sha256": "baf60cd1b0b5d36f556c6325ee32a7321faa0e95059271701f299c02a35e4340"
+          },
+          {
+            "bytes": 82711,
+            "crc32": "cc010501",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151640.jpg",
+            "safe": true,
+            "sha256": "15830e139c6329d5917cb835c9d25b86c0f6ae580cbf23a53d3eed61e6b1dfcb"
+          },
+          {
+            "bytes": 104687,
+            "crc32": "86f3421f",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882715168.jpg",
+            "safe": true,
+            "sha256": "faf47ae75c50ae76f750afe88f2a32b1d8de1505b2525a37c50c7d04935abf2e"
+          },
+          {
+            "bytes": 71971,
+            "crc32": "4573ac0d",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151916.jpg",
+            "safe": true,
+            "sha256": "468d34ac0e3fa32eadced9dbf47585d11cb67fd1f272e820ef7055d6f56d314a"
+          },
+          {
+            "bytes": 124469,
+            "crc32": "50cc7970",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151929.jpg",
+            "safe": true,
+            "sha256": "8f8455022592d74e62abe7f422e9edda52c57173da2bf93c2ec4f5cccf2c14a1"
+          },
+          {
+            "bytes": 82679,
+            "crc32": "3e0c5edf",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151943.jpg",
+            "safe": true,
+            "sha256": "2e1832360064c991d10c36c9347e1399c09fe28151d2548913d58e023f1e1cea"
+          },
+          {
+            "bytes": 96982,
+            "crc32": "d66a05ec",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008827151957.jpg",
+            "safe": true,
+            "sha256": "64e4d51936bb202077cb816c14cf040af4be40ea14a9f2402c54600c0c2c74bd"
+          },
+          {
+            "bytes": 90767,
+            "crc32": "e6adcf74",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200882715209.jpg",
+            "safe": true,
+            "sha256": "31b655e19a5fc1434f5c13c6ed5364122aabf6a705a200455f470209ce8f0b41"
+          },
+          {
+            "bytes": 55612,
+            "crc32": "5e55b01f",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008828171123.jpg",
+            "safe": true,
+            "sha256": "8e6a04a655951a88bbb66500790bd30f678d3d8e70ca609485f1e402be1646b4"
+          },
+          {
+            "bytes": 181611,
+            "crc32": "afd64026",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008828171137.jpg",
+            "safe": true,
+            "sha256": "0efb79768fd6d108f380ffd57f13f3b0df6b7bc0e0913cca09ad089e1d62f479"
+          },
+          {
+            "bytes": 168031,
+            "crc32": "1b86e9ae",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008828171152.jpg",
+            "safe": true,
+            "sha256": "a0d7cd33591ba6b53400def2d5244c0cac76768d90f057a3b77b170b7f07e6ec"
+          },
+          {
+            "bytes": 119791,
+            "crc32": "6d371db0",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008828171225.jpg",
+            "safe": true,
+            "sha256": "740a4ae1ac6ace3e569707963b4fd071f3e7fe0c5539f23de59b7422d4f60fa4"
+          },
+          {
+            "bytes": 103842,
+            "crc32": "62aebba4",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "2008828171237.jpg",
+            "safe": true,
+            "sha256": "91d817143d6477e08c8539b56d7cef88f5d23c06c0b635962316464e1df2358b"
+          }
+        ],
+        "archive_type": "zip",
+        "bytes": 2519367,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".zip",
+        "filename_original": "1号轻型飞机.zip",
+        "filename_public_candidate": "drawing-36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785.zip",
+        "id": "download-87c88ef27c95d0caef79a9687760742e88e37e2d631ffac29d42072346fcec65",
+        "label": "1号軽飛行機（資料名）",
+        "mapped_record_id": "drawing-light-aircraft-no1",
+        "mime_or_type": "archive",
+        "notes": [
+          "名称を直訳。FIGHTER ULTRALIGHTとは同定しない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785",
+        "source_path": "1号轻型飞机.zip"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-light-aircraft-no1",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "名称を直訳。FIGHTER ULTRALIGHTとは同定しない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "1号轻型飞机.zip",
+      "source_sha256": "36d278629ae26f84c0b2f273097c239d6af9c424721e78b1ab68a66259336785",
+      "source_size": 2519367,
+      "task0_inventory_id": "file-87c88ef27c95d0caef79a9687760742e88e37e2d631ffac29d42072346fcec65",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "light-aircraft-no1",
+    "summary_ja": null,
+    "title_ja": "1号軽飛行機（資料名）",
+    "title_original": "1号轻型飞机"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 2604453,
+            "crc32": "f2ce6fda",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "[Aviation][轻型][直升机]Furia Ultralight Helicopter Plans.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 2320354,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "轻型直升机.rar",
+        "filename_public_candidate": "drawing-da276d766dd0a4994168107700795599f84a51fd70631d72f95bd19e84acd524.rar",
+        "id": "download-c0154703eedaf4f425c0138b8299512208488803f012de13f0ef420fd84d13eb",
+        "label": "軽量ヘリコプター（Furia資料候補）",
+        "mapped_record_id": "drawing-light-helicopter",
+        "mime_or_type": "archive",
+        "notes": [
+          "member名にFuria Ultralight Helicopter。実機用か模型用か要確認。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "da276d766dd0a4994168107700795599f84a51fd70631d72f95bd19e84acd524",
+        "source_path": "轻型直升机.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-light-helicopter",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "member名にFuria Ultralight Helicopter。実機用か模型用か要確認。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "轻型直升机.rar",
+      "source_sha256": "da276d766dd0a4994168107700795599f84a51fd70631d72f95bd19e84acd524",
+      "source_size": 2320354,
+      "task0_inventory_id": "file-c0154703eedaf4f425c0138b8299512208488803f012de13f0ef420fd84d13eb",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "light-helicopter",
+    "summary_ja": null,
+    "title_ja": "軽量ヘリコプター（Furia資料候補）",
+    "title_original": "轻型直升机"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 127531,
+            "crc32": "d0134213",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/A4 Size/MiG-21%20beanie%20plans%20v2.2%20page1%20tiled%20in%20A4.pdf",
+            "safe": true,
+            "sha256": "17a625fa6f26734251cd88e4db74bad88c66a77bfb4701de451282cc24c26e5c"
+          },
+          {
+            "bytes": 95791,
+            "crc32": "e1b1703e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/A4 Size/MiG-21%20beanie%20plans%20v2.2%20page2%20tiled%20in%20A4.pdf",
+            "safe": true,
+            "sha256": "e8ea81e270da70a70d08903b160b3621ec5f2f88b2bf704ef49790e48aa51d5e"
+          },
+          {
+            "bytes": 74933,
+            "crc32": "91e9922c",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/MiG-21%20beanie%20scout%20sheet%20v2.2%20page1.pdf",
+            "safe": true,
+            "sha256": "c936b24d61951f28c0ccc606b5b84a83d8b50ee589044fb95b614328a39ed4f6"
+          },
+          {
+            "bytes": 75045,
+            "crc32": "90641801",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/MiG-21%20beanie%20scout%20sheet%20v2.2%20page2.pdf",
+            "safe": true,
+            "sha256": "aacde58da4c0dbb784ce89a36e3d4b0b3f014eb48a34ef6f9c4db3112ccb1c4a"
+          },
+          {
+            "bytes": 82690,
+            "crc32": "8ade0ef3",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/Scale 81%/MiG-21beanie-81-1-13th-v2-3-tiled.pdf",
+            "safe": true,
+            "sha256": "53a3a51862a9932baebf79acb5e5844688f061fdf76748b899f8430e94d9aae4"
+          },
+          {
+            "bytes": 130312,
+            "crc32": "06f6b623",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/Tiled/MiG-21%20beanie%20plans%20v2.2%20page1%20tiled.pdf",
+            "safe": true,
+            "sha256": "89d317fd97aff26a5ee2e91cdca932987b6bb12c673f02effe35551277dc97e8"
+          },
+          {
+            "bytes": 100862,
+            "crc32": "2a51b2cd",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 21/Tiled/MiG-21%20beanie%20plans%20v2.2%20page2%20tiled.pdf",
+            "safe": true,
+            "sha256": "e7f90a5196ccf6850447125d79f2cd3f9594faf77ea1ca2fefdbd474f493ca00"
+          }
+        ],
+        "archive_type": "zip",
+        "bytes": 611563,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".zip",
+        "filename_original": "米格21.zip",
+        "filename_public_candidate": "drawing-bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a.zip",
+        "id": "download-786fcb9c46216f7401a44a4c374fda28559fd7bf792b3c7345918a4632f223f9",
+        "label": "MiG-21（候補）",
+        "mapped_record_id": "drawing-mig21",
+        "mime_or_type": "archive",
+        "notes": [
+          "member MiG-21表記を根拠に候補。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a",
+        "source_path": "米格21.zip"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-mig21",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "member MiG-21表記を根拠に候補。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "米格21.zip",
+      "source_sha256": "bc4cd50b8fa57de140ac18fc03138449847b816e199850d1a8e1129d3d62239a",
+      "source_size": 611563,
+      "task0_inventory_id": "file-786fcb9c46216f7401a44a4c374fda28559fd7bf792b3c7345918a4632f223f9",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "mig21",
+    "summary_ja": null,
+    "title_ja": "MiG-21（候補）",
+    "title_original": "米格21"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 89604,
+            "crc32": "23e15c31",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 25/A4 Size/MiG-25 plans - WS32in - v2.0 - pg1 in A4 tiled.pdf",
+            "safe": true,
+            "sha256": "c5b3a42869e8c44ce9dfd87f922f9cbf4df41b663ffb11f9b33b626a39c169c0"
+          },
+          {
+            "bytes": 67665,
+            "crc32": "5bf3f33e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 25/A4 Size/MiG-25 plans - WS32in - v2.0 - pg2 in A4 tiled.pdf",
+            "safe": true,
+            "sha256": "3dc7200d9133fd943530ae55386f0ba732008a10096be67a18e07e76a0a97b7a"
+          },
+          {
+            "bytes": 7519,
+            "crc32": "46bfcb77",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 25/MiG-25_100%_decals_in_pdf.pdf",
+            "safe": true,
+            "sha256": "d3207e2bdd14f935d44928ea4bd47aeb3df2c8feba915574599d521918348964"
+          },
+          {
+            "bytes": 97712,
+            "crc32": "8793261e",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 25/MiG-25_plans_-_WS32in_-_v2.1_-_pg1.pdf",
+            "safe": true,
+            "sha256": "77605187ec7bb149bacb3f309b96b00ee109f359f580945129b18ed19451fbeb"
+          },
+          {
+            "bytes": 69226,
+            "crc32": "e1bbaefd",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "Beanie MIG 25/MiG-25_plans_-_WS32in_-_v2.1_-_pg2.pdf",
+            "safe": true,
+            "sha256": "65a888aa4d6affd4b93de1be3c626072e0921cf77ee404c8da7b64f275decbd2"
+          }
+        ],
+        "archive_type": "zip",
+        "bytes": 276735,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".zip",
+        "filename_original": "米格25.zip",
+        "filename_public_candidate": "drawing-54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b.zip",
+        "id": "download-d8cd593b93e8c263867fd6840dcc00c92932af5d7db7918439940eb4ab8dcd1e",
+        "label": "MiG-25（候補）",
+        "mapped_record_id": "drawing-mig25",
+        "mime_or_type": "archive",
+        "notes": [
+          "member MiG-25表記を根拠に候補。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b",
+        "source_path": "米格25.zip"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-mig25",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "member MiG-25表記を根拠に候補。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "米格25.zip",
+      "source_sha256": "54fdd855989e106bc0b6e611bdab4fd0a1bea5e28736c5b4c4668efd1412e72b",
+      "source_size": 276735,
+      "task0_inventory_id": "file-d8cd593b93e8c263867fd6840dcc00c92932af5d7db7918439940eb4ab8dcd1e",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "mig25",
+    "summary_ja": null,
+    "title_ja": "MiG-25（候補）",
+    "title_original": "米格25"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 2126201,
+            "crc32": "599bcc04",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "函道幻影2000.jpg",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 1952579,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "函道幻影2000.rar",
+        "filename_public_candidate": "drawing-e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b.rar",
+        "id": "download-a24cbd27d22c55ea6c1715a4e38d138af18eede4b48bf0220f136d6727fc3ea7",
+        "label": "幻影2000（原題：函道幻影2000）",
+        "mapped_record_id": "drawing-mirage2000",
+        "mime_or_type": "archive",
+        "notes": [
+          "函道を涵道の誤字と確定しない。ダクテッドファン表記も要確認。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b",
+        "source_path": "函道幻影2000.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-mirage2000",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "函道を涵道の誤字と確定しない。ダクテッドファン表記も要確認。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "函道幻影2000.rar",
+      "source_sha256": "e422bf4247a002daec56a8c0a6d6c3f94a870567bc94220ccfd7f07f87ff280b",
+      "source_size": 1952579,
+      "task0_inventory_id": "file-a24cbd27d22c55ea6c1715a4e38d138af18eede4b48bf0220f136d6727fc3ea7",
+      "title_confidence": "low"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "mirage2000",
+    "summary_ja": null,
+    "title_ja": "幻影2000（原題：函道幻影2000）",
+    "title_original": "函道幻影2000"
+  },
+  {
+    "category": "エンジン・製作資料",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 66048,
+            "crc32": "9dc11bff",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "航模赠品/航模基础知识.doc",
+            "safe": true
+          },
+          {
+            "bytes": 16384,
+            "crc32": "3cb40c9f",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "航模赠品/航模新手在购买东西时必须懂得的几点.doc",
+            "safe": true
+          },
+          {
+            "bytes": 60928,
+            "crc32": "2c6561ca",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "航模赠品/螺旋桨拉力计算.doc",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 64963,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "航模赠品.rar",
+        "filename_public_candidate": "drawing-ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069.rar",
+        "id": "download-2e17200f3c8bb2238edca15fa2b55289ef6118055e8b38cde52dd7151ac1051f",
+        "label": "模型関連の付属資料（原題：航模赠品）",
+        "mapped_record_id": "drawing-model-beginner-materials",
+        "mime_or_type": "archive",
+        "notes": [
+          "memberは基礎知識・購入時の知識・プロペラ推力計算。赠品の意味は付属品候補。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069",
+        "source_path": "航模赠品.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-model-beginner-materials",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "memberは基礎知識・購入時の知識・プロペラ推力計算。赠品の意味は付属品候補。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "航模赠品.rar",
+      "source_sha256": "ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069",
+      "source_size": 64963,
+      "task0_inventory_id": "file-2e17200f3c8bb2238edca15fa2b55289ef6118055e8b38cde52dd7151ac1051f",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "model-beginner-materials",
+    "summary_ja": null,
+    "title_ja": "模型関連の付属資料（原題：航模赠品）",
+    "title_original": "航模赠品"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 749337,
+            "crc32": "f2389e1d",
+            "encrypted": false,
+            "extension": ".dxf",
+            "name": "两张P51的CAD图纸/p51_vendetta/Vendetta 1.dxf",
+            "safe": true
+          },
+          {
+            "bytes": 331144,
+            "crc32": "554a058f",
+            "encrypted": false,
+            "extension": ".dxf",
+            "name": "两张P51的CAD图纸/p51_vendetta/Vendetta 2.dxf",
+            "safe": true
+          },
+          {
+            "bytes": 92070,
+            "crc32": "1c2f5cad",
+            "encrypted": false,
+            "extension": ".dxf",
+            "name": "两张P51的CAD图纸/p51_vendetta/Vendetta 3.dxf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 103200,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "P51图纸.rar",
+        "filename_public_candidate": "drawing-e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3.rar",
+        "id": "download-aa4cb8027dfa1cd42654728c9fca097ccb1809e565cc4b82af207eca2cd8b42f",
+        "label": "P51 設計図",
+        "mapped_record_id": "drawing-p51",
+        "mime_or_type": "archive",
+        "notes": [
+          "型式を保持。memberにVendetta表記があり、詳細の機体同定は要確認。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3",
+        "source_path": "P51图纸.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-p51",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "型式を保持。memberにVendetta表記があり、詳細の機体同定は要確認。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "P51图纸.rar",
+      "source_sha256": "e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3",
+      "source_size": 103200,
+      "task0_inventory_id": "file-aa4cb8027dfa1cd42654728c9fca097ccb1809e565cc4b82af207eca2cd8b42f",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "p51",
+    "summary_ja": null,
+    "title_ja": "P51 設計図",
+    "title_original": "P51图纸"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 960512,
+            "crc32": "d59ae60b",
+            "encrypted": false,
+            "extension": ".ppt",
+            "name": "2010012163133289/KT纸飞机.ppt",
+            "safe": true
+          },
+          {
+            "bytes": 878080,
+            "crc32": "a2d8e813",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "2010012163133289/纸飞机.doc",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 1603972,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "纸飞机.rar",
+        "filename_public_candidate": "drawing-cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25.rar",
+        "id": "download-eca6a1b8eb26edf79d2ce762b6249947131c7a42406e7f90c2fb22a16e7118a7",
+        "label": "紙飛行機の資料",
+        "mapped_record_id": "drawing-paper-aircraft",
+        "mime_or_type": "archive",
+        "notes": [
+          "RC機かは未確認。PPTとDOCを含む。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25",
+        "source_path": "纸飞机.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-paper-aircraft",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "RC機かは未確認。PPTとDOCを含む。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "纸飞机.rar",
+      "source_sha256": "cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25",
+      "source_size": 1603972,
+      "task0_inventory_id": "file-eca6a1b8eb26edf79d2ce762b6249947131c7a42406e7f90c2fb22a16e7118a7",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "paper-aircraft",
+    "summary_ja": null,
+    "title_ja": "紙飛行機の資料",
+    "title_original": "纸飞机"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 7094471,
+            "crc32": "78742289",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "轻型飞机图纸Piper J-3 Cub.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 6302334,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "轻型飞机图纸Piper J-3 Cub.rar",
+        "filename_public_candidate": "drawing-caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615.rar",
+        "id": "download-92da6cb683ee8a51d339056b1fa9bbd7af20bad91963755ba4999b409db8764d",
+        "label": "Piper J-3 Cub 軽飛行機の設計図",
+        "mapped_record_id": "drawing-piper-j3-cub",
+        "mime_or_type": "archive",
+        "notes": [
+          "固有名・型式を保持。実機用か模型用か要確認。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615",
+        "source_path": "轻型飞机图纸Piper J-3 Cub.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-piper-j3-cub",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "固有名・型式を保持。実機用か模型用か要確認。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "轻型飞机图纸Piper J-3 Cub.rar",
+      "source_sha256": "caa32a337a8a7baa270c95a185d01491e45f2562ddc1f88cfb35a5d8be630615",
+      "source_size": 6302334,
+      "task0_inventory_id": "file-92da6cb683ee8a51d339056b1fa9bbd7af20bad91963755ba4999b409db8764d",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "piper-j3-cub",
+    "summary_ja": null,
+    "title_ja": "Piper J-3 Cub 軽飛行機の設計図",
+    "title_original": "轻型飞机图纸Piper J-3 Cub"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_type": "zip",
+        "bytes": 247043,
+        "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+        "extension": ".zip",
+        "filename_original": "Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip",
+        "filename_public_candidate": "Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "id": "download-existing-7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+        "label": "Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "mapped_record_id": "drawing-pitts-park-flyer",
+        "mime_or_type": "application/zip",
+        "notes": [
+          "Existing public asset; publication is not proof of redistribution rights."
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+        "source_path": null
+      }
+    ],
+    "duplicate_status": "EXISTING_PAGE_NEEDS_REFRESH",
+    "featured_image": {
+      "alt": "赤と白のPitts複葉機",
+      "src": "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.jpg",
+      "status": "REVIEW_REQUIRED"
+    },
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-pitts-park-flyer",
+    "legacy": {
+      "canonical_url": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+      "existing_download_urls": [
+        "/downloads/drawings/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer-7df1982881d6.zip",
+        "/wp-content/uploads/2021/10/Pitts-S-2C-or-Ultimate-Pitts-Park-Flyer.zip"
+      ],
+      "legacy_urls": [
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+        "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図",
+        "https://happinesea.com/engineering-drawing/202110181726.html"
+      ],
+      "wordpress_id": "1724",
+      "wordpress_ids": [
+        "1724",
+        "1726"
+      ]
+    },
+    "provenance": {
+      "classification_notes": [
+        "Derived from unchanged legacy metadata. Existing public page remains outside proposal publication states."
+      ],
+      "dedup_confidence": "exact",
+      "source_relative_path": null,
+      "source_sha256": "7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+      "source_size": 247043,
+      "task0_inventory_id": "existing-public-7df1982881d623a2a4bd9e6e91d8fba9439c29b96204f263f00f8b881f667e50",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "pitts-park-flyer",
+    "summary_ja": null,
+    "title_ja": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図",
+    "title_original": "Pitts S-2C or Ultimate Pitts Park Flyerスチレンボード飛行機設計図"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 2494724,
+            "crc32": "a3afb211",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "csl 桔红 820X1250mm.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 3916609,
+            "crc32": "660258e2",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "csl 紫蓝 820X1250mm.jpg",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 5752074,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "喷绘飞机图纸.rar",
+        "filename_public_candidate": "drawing-237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61.rar",
+        "id": "download-cac67ac891504f526b163d2154a2e87a9e0d824e409ed090940bf7b356e656fd",
+        "label": "印刷用飛行機設計図（機種未確認）",
+        "mapped_record_id": "drawing-printed-plans-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "memberに820X1250mmと2配色。用途は候補。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61",
+        "source_path": "喷绘飞机图纸.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-printed-plans-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "memberに820X1250mmと2配色。用途は候補。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "喷绘飞机图纸.rar",
+      "source_sha256": "237a65c7dac7302d506386f166213c3c18c0bfbd31263f80c83f56d024548e61",
+      "source_size": 5752074,
+      "task0_inventory_id": "file-cac67ac891504f526b163d2154a2e87a9e0d824e409ed090940bf7b356e656fd",
+      "title_confidence": "medium"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "printed-plans-unidentified",
+    "summary_ja": null,
+    "title_ja": "印刷用飛行機設計図（機種未確認）",
+    "title_original": "喷绘飞机图纸"
+  },
+  {
+    "category": "エンジン・製作資料",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 138417,
+            "crc32": "71a0ac23",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "200202253887567[1].jpg",
+            "safe": true,
+            "sha256": "250532f13352fc97117d0c91a8958e883a9497f2525a74faf1865d33f49ef74e"
+          },
+          {
+            "bytes": 116707,
+            "crc32": "aca1cb63",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "IMG_8020.jpg",
+            "safe": true,
+            "sha256": "2d61062fd73325b1a1ed391c701df0decb4aa6e93ad6847d5f767d2015d62575"
+          },
+          {
+            "bytes": 156161,
+            "crc32": "70e69cae",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "aerojet.JPG",
+            "safe": true,
+            "sha256": "6eb6581438cd4b96956558a36ecf25ebc2c15a1b9768391d6f65ef15c0fa6e2d"
+          },
+          {
+            "bytes": 37249,
+            "crc32": "9d455d46",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "alpha.gif",
+            "safe": true,
+            "sha256": "31b761db19dc93d157d0b7a4ad2461db5cec6ecb7392e86d69a9b1f81735039d"
+          },
+          {
+            "bytes": 80382,
+            "crc32": "5173b9d2",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "atom_1.jpg",
+            "safe": true,
+            "sha256": "5411e643b6adf0a169f00fa348203f005d9a824859795365bf63db2109464aa2"
+          },
+          {
+            "bytes": 152989,
+            "crc32": "3f5e38d4",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "atom_2.jpg",
+            "safe": true,
+            "sha256": "77e49836df63cc19c2398fdce623219878f27cd262c7a99e5b21d48ff668bffe"
+          },
+          {
+            "bytes": 15496,
+            "crc32": "ecf090b9",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "atomrender.jpg",
+            "safe": true,
+            "sha256": "d4ddd883c17568413890a74fbd9fca40f4ecd4864941c15111c6c9f4e1cca2d5"
+          },
+          {
+            "bytes": 42095,
+            "crc32": "0ec0bc49",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "dyna_2.gif",
+            "safe": true,
+            "sha256": "6f1d2066632f44fff56d4fbed50bbec9598034b021f2f0362aeb8e9d6badf5bf"
+          },
+          {
+            "bytes": 18044,
+            "crc32": "e1f52e2d",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "hugo_havn_2.jpg",
+            "safe": true,
+            "sha256": "3df81aaea5f55aa078a52beccc170f26cfaf2b45267be8ef4c80ac93211234b9"
+          },
+          {
+            "bytes": 70418,
+            "crc32": "52583ce6",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "inlet.jpg",
+            "safe": true,
+            "sha256": "76c4316640ea83457a2b978fdd90466959b4c2f731b29c1150fdaaf4686d9e41"
+          },
+          {
+            "bytes": 61065,
+            "crc32": "cf090810",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "jet5.jpg",
+            "safe": true,
+            "sha256": "9c1417c912e520e6e7b09b27d7116cd81e8477f7f63c544ff075fffc02d0c3ce"
+          },
+          {
+            "bytes": 119586,
+            "crc32": "450c04fc",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "mybra A-5m.JPG",
+            "safe": true,
+            "sha256": "c6a987773fdd452649c494982e53c29669d38678d2b2a9c4ba6aecaa9487b068"
+          },
+          {
+            "bytes": 12110,
+            "crc32": "ff9c515d",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "paco3.jpg",
+            "safe": true,
+            "sha256": "e6b31334e6eac07bf1e57b1854eafe0d4ef905b9ca6c551b8dfd9ac19bb41be0"
+          },
+          {
+            "bytes": 70763,
+            "crc32": "adaf5d3b",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "pulsejet4.gif",
+            "safe": true,
+            "sha256": "57b5cb51e3c387fc70e45316bc17c143194cd1e7fc58d91ad0ae7c0f3d606a40"
+          },
+          {
+            "bytes": 531460,
+            "crc32": "ccc6327c",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "rot-puls.jpg",
+            "safe": true,
+            "sha256": "06acea78c9ec6efae7454caf51473b108c6ea62c35431c75ed8c279402e013fc"
+          },
+          {
+            "bytes": 148857,
+            "crc32": "c57d7b67",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "tempest.JPG",
+            "safe": true,
+            "sha256": "c9819b025e5968c5fe33312a53ab5a52747f0a0abe8ab1164981c172f44c18b9"
+          },
+          {
+            "bytes": 14023,
+            "crc32": "c03e779b",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "tuned-intake.jpg",
+            "safe": true,
+            "sha256": "b07671a0ac5a345705372ee16b1fc655e341db9e33bd3b0fb38dd36ae4d13c35"
+          },
+          {
+            "bytes": 10426,
+            "crc32": "e0ed9419",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "urban.gif",
+            "safe": true,
+            "sha256": "01f9cf442fc7633e0f6b0fb8785c938836feb7e572fc4962671dca33de4eff8f"
+          },
+          {
+            "bytes": 15332,
+            "crc32": "292d8a58",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "zanin.gif",
+            "safe": true,
+            "sha256": "c791c72c6488c91e99605f2db40b273484d3d1587be78be40e4f029e2d0304c4"
+          },
+          {
+            "bytes": 882688,
+            "crc32": "d805cc37",
+            "encrypted": false,
+            "extension": ".mpg",
+            "name": "┬÷│σ┬╝╧α.MPG",
+            "safe": true,
+            "sha256": "f75a632740bce4a80a215533e549dc907a6908591fd4dddc777f8e531240c464"
+          },
+          {
+            "bytes": 481792,
+            "crc32": "97761790",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "║╜─ú┬÷│σ╩╜╖ó╢»╗·╓╞╫≈╩╓▓ß.doc",
+            "safe": true,
+            "sha256": "b30ea99778fa0f6ead62d07e164fb9cfbcd274c36015079ec2b769d1b37bc6c0"
+          },
+          {
+            "bytes": 470016,
+            "crc32": "6832dfc2",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "║╜─ú┬÷│σ╩╜╖ó╢»╗·╓╞╫≈╩╓▓ß[1].doc",
+            "safe": true,
+            "sha256": "ad1dfa638f4c8e1ff773c814309b27a5e2930629518be691fa57c32e182443c9"
+          },
+          {
+            "bytes": 470016,
+            "crc32": "6832dfc2",
+            "encrypted": false,
+            "extension": ".doc",
+            "name": "║╜─ú┬÷│σ╩╜╖ó╢»╗·╓╞╫≈╩╓▓ß[2].doc",
+            "safe": true,
+            "sha256": "ad1dfa638f4c8e1ff773c814309b27a5e2930629518be691fa57c32e182443c9"
+          },
+          {
+            "bytes": 81003,
+            "crc32": "d6fec2fb",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "╫░┼Σ▓╩═╝.jpg",
+            "safe": true,
+            "sha256": "b9f536ad11e6851696c2921aaa6dc1c9c322f75573a61aaa0d5d6d7c41453a27"
+          }
+        ],
+        "archive_type": "zip",
+        "bytes": 3872525,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".zip",
+        "filename_original": "航模脉冲式发动机制作手册.zip",
+        "filename_public_candidate": "drawing-1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e.zip",
+        "id": "download-125afbb8678d9db6e1578d4551cfb3af67f6dabe5750e116756aa98058e4bf24",
+        "label": "模型用パルスエンジン製作資料",
+        "mapped_record_id": "drawing-pulse-engine-manual",
+        "mime_or_type": "archive",
+        "notes": [
+          "手册の直訳は手引きだが内容は画像集。動作・安全性は未検証。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e",
+        "source_path": "航模脉冲式发动机制作手册.zip"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-pulse-engine-manual",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "手册の直訳は手引きだが内容は画像集。動作・安全性は未検証。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "航模脉冲式发动机制作手册.zip",
+      "source_sha256": "1943edfd999f1be727a4950ab2c01a2b9349300d4e8d17988fd41033f17ede9e",
+      "source_size": 3872525,
+      "task0_inventory_id": "file-125afbb8678d9db6e1578d4551cfb3af67f6dabe5750e116756aa98058e4bf24",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "pulse-engine-manual",
+    "summary_ja": null,
+    "title_ja": "模型用パルスエンジン製作資料",
+    "title_original": "航模脉冲式发动机制作手册"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 3082866,
+            "crc32": "c7b506c2",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "旋翼机.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 2623947,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "旋翼机.rar",
+        "filename_public_candidate": "drawing-b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024.rar",
+        "id": "download-b8a4adfd0e161cded4b196cb8f2cbbcc725a82838bd8e8b8feaf2a2326e49a67",
+        "label": "回転翼機（形式未確認）",
+        "mapped_record_id": "drawing-rotorcraft-unidentified",
+        "mime_or_type": "archive",
+        "notes": [
+          "ヘリコプター・ジャイロ等を確定しない。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024",
+        "source_path": "旋翼机.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-rotorcraft-unidentified",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "ヘリコプター・ジャイロ等を確定しない。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "旋翼机.rar",
+      "source_sha256": "b9349fe6d4dca24128debae2245ff554c7532874356dc7a3bcdf1ace04e06024",
+      "source_size": 2623947,
+      "task0_inventory_id": "file-b8a4adfd0e161cded4b196cb8f2cbbcc725a82838bd8e8b8feaf2a2326e49a67",
+      "title_confidence": "low"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "rotorcraft-unidentified",
+    "summary_ja": null,
+    "title_ja": "回転翼機（形式未確認）",
+    "title_original": "旋翼机"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 95793,
+            "crc32": "e3a81ca6",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "JTechLaser SR-71 Decals.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 160258,
+            "crc32": "69764178",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "SR-71 Tiled A4.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 151909,
+            "crc32": "cd253856",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "SR-71[1].pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 396866,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "SR71.rar",
+        "filename_public_candidate": "drawing-9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2.rar",
+        "id": "download-3e89c1d5d2d3d6abae83384117852ea486e54b9acf87b67d0c74a20855da588e",
+        "label": "SR71",
+        "mapped_record_id": "drawing-sr71",
+        "mime_or_type": "archive",
+        "notes": [
+          "型式を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2",
+        "source_path": "SR71.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-sr71",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "型式を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "SR71.rar",
+      "source_sha256": "9cb5559a6db9067eddd658aa1660d781a886fa4e5792c0cf6b960a7ff7ad08c2",
+      "source_size": 396866,
+      "task0_inventory_id": "file-3e89c1d5d2d3d6abae83384117852ea486e54b9acf87b67d0c74a20855da588e",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "sr71",
+    "summary_ja": null,
+    "title_ja": "SR71",
+    "title_original": "SR71"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 19135,
+            "crc32": "10178ae7",
+            "encrypted": false,
+            "extension": ".gif",
+            "name": "SU-47/3veiw.GIF",
+            "safe": true
+          },
+          {
+            "bytes": 39337,
+            "crc32": "cbed2648",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2317.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 54943,
+            "crc32": "4335563b",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2355.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 61363,
+            "crc32": "40c58e4d",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2357.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 74014,
+            "crc32": "fb7ace05",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2362.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 67879,
+            "crc32": "aff3a4d9",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2367.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 83600,
+            "crc32": "509e38e5",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2369.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 46630,
+            "crc32": "53b5b00d",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2371.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 57777,
+            "crc32": "d5a11921",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2377.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 78606,
+            "crc32": "73462b3f",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2378.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 59615,
+            "crc32": "7ccf580c",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2379.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 55789,
+            "crc32": "5bbb7e90",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2380.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 53280,
+            "crc32": "90531fe5",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2386.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 75885,
+            "crc32": "54b02514",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/123_2387.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 77962,
+            "crc32": "73f391f3",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/124_2405.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 49692,
+            "crc32": "6d7b04df",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/124_2413.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 65656,
+            "crc32": "e82fc8f9",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/Assembly/124_2459.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 52736,
+            "crc32": "3f31323e",
+            "encrypted": false,
+            "extension": ".db",
+            "name": "SU-47/Assembly/Thumbs.db",
+            "safe": true
+          },
+          {
+            "bytes": 209352,
+            "crc32": "92e8a626",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-1-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 203704,
+            "crc32": "6079441d",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-1.tif",
+            "safe": true
+          },
+          {
+            "bytes": 200548,
+            "crc32": "7214029b",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-2-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 194844,
+            "crc32": "767f84a8",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 40184,
+            "crc32": "b299ea4b",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-3-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 41836,
+            "crc32": "52e82acb",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-3.tif",
+            "safe": true
+          },
+          {
+            "bytes": 37552,
+            "crc32": "e4d81075",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-4-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 38088,
+            "crc32": "88638141",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-4.tif",
+            "safe": true
+          },
+          {
+            "bytes": 276348,
+            "crc32": "bd6f3767",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-5-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 289560,
+            "crc32": "16a64fbb",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-5.tif",
+            "safe": true
+          },
+          {
+            "bytes": 31636,
+            "crc32": "07be2af6",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-6-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 32880,
+            "crc32": "d3fd2afb",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-6.tif",
+            "safe": true
+          },
+          {
+            "bytes": 95828,
+            "crc32": "5bf76ef9",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-7-2.tif",
+            "safe": true
+          },
+          {
+            "bytes": 98984,
+            "crc32": "c2ecaf96",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-7.tif",
+            "safe": true
+          },
+          {
+            "bytes": 47856,
+            "crc32": "08dfdb20",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-8.tif",
+            "safe": true
+          },
+          {
+            "bytes": 47048,
+            "crc32": "a3b2649d",
+            "encrypted": false,
+            "extension": ".tif",
+            "name": "SU-47/Decals/SU-47-Berkut-9.tif",
+            "safe": true
+          },
+          {
+            "bytes": 39936,
+            "crc32": "f963cae6",
+            "encrypted": false,
+            "extension": ".db",
+            "name": "SU-47/Decals/Thumbs.db",
+            "safe": true
+          },
+          {
+            "bytes": 11873,
+            "crc32": "fe7e6e7f",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "SU-47/SU-47 Parts 3mm Depron A4.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 17875,
+            "crc32": "510ba18d",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "SU-47/SU-47 Parts 3mm Depron.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 33628,
+            "crc32": "185d0375",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "SU-47/SU-47 Parts 6mm Depron A4.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 65511,
+            "crc32": "314a17ce",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "SU-47/SU-47 Parts 6mm Depron.pdf",
+            "safe": true
+          },
+          {
+            "bytes": 428741,
+            "crc32": "aebd89df",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/SU-47_Picture/SU-47-Berkut-10.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 420678,
+            "crc32": "35caf2a1",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/SU-47_Picture/SU-47-Berkut-11.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 342286,
+            "crc32": "33fc8e8f",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/SU-47_Picture/SU-47-Berkut-12.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 290251,
+            "crc32": "7690ded1",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/SU-47_Picture/SU-47-Berkut-9.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 226004,
+            "crc32": "c143023a",
+            "encrypted": false,
+            "extension": ".jpg",
+            "name": "SU-47/SU-47_Picture/Su-47.jpg",
+            "safe": true
+          },
+          {
+            "bytes": 20480,
+            "crc32": "ab268670",
+            "encrypted": false,
+            "extension": ".db",
+            "name": "SU-47/SU-47_Picture/Thumbs.db",
+            "safe": true
+          },
+          {
+            "bytes": 5120,
+            "crc32": "66f8ffb9",
+            "encrypted": false,
+            "extension": ".db",
+            "name": "SU-47/Thumbs.db",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 2885506,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "SU-47.rar",
+        "filename_public_candidate": "drawing-f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9.rar",
+        "id": "download-c4e25ddc211b9b38412c936583fc3e33fe61735b96c0d0dffd2c079e16e493b1",
+        "label": "SU-47",
+        "mapped_record_id": "drawing-su-47",
+        "mime_or_type": "archive",
+        "notes": [
+          "型式を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9",
+        "source_path": "SU-47.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-su-47",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "型式を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "SU-47.rar",
+      "source_sha256": "f10ef544896c6682f7840bac222e52161ce450c032e540492cad49772a6846d9",
+      "source_size": 2885506,
+      "task0_inventory_id": "file-c4e25ddc211b9b38412c936583fc3e33fe61735b96c0d0dffd2c079e16e493b1",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "su-47",
+    "summary_ja": null,
+    "title_ja": "SU-47",
+    "title_original": "SU-47"
+  },
+  {
+    "category": "機体の設計図",
+    "downloads": [
+      {
+        "archive_members": [
+          {
+            "bytes": 102897,
+            "crc32": "80a4ff8a",
+            "encrypted": false,
+            "extension": ".pdf",
+            "name": "su37/su37.pdf",
+            "safe": true
+          }
+        ],
+        "archive_type": "rar",
+        "bytes": 99575,
+        "duplicate_of": [],
+        "duplicate_status": "UNIQUE",
+        "extension": ".rar",
+        "filename_original": "su37.rar",
+        "filename_public_candidate": "drawing-186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c.rar",
+        "id": "download-0a72374f380c7a32d60c62290fc2f7f24cd01b1b7eaeb46c54599a7e4d22a55b",
+        "label": "su37",
+        "mapped_record_id": "drawing-su37",
+        "mime_or_type": "archive",
+        "notes": [
+          "型式を保持。"
+        ],
+        "publication_right": "REVIEW_REQUIRED",
+        "sha256": "186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c",
+        "source_path": "su37.rar"
+      }
+    ],
+    "duplicate_status": "UNIQUE",
+    "grouping_status": "REVIEW_REQUIRED",
+    "id": "drawing-su37",
+    "legacy": {
+      "canonical_url": null,
+      "existing_download_urls": [],
+      "legacy_urls": [],
+      "wordpress_ids": []
+    },
+    "provenance": {
+      "classification_notes": [
+        "型式を保持。",
+        "Single inventory package proposal; logical design grouping remains unconfirmed."
+      ],
+      "dedup_confidence": "unverified",
+      "source_relative_path": "su37.rar",
+      "source_sha256": "186247a23f386704c26d9a7033122a646c5dee9a09ff1ec2767ba413743cd96c",
+      "source_size": 99575,
+      "task0_inventory_id": "file-0a72374f380c7a32d60c62290fc2f7f24cd01b1b7eaeb46c54599a7e4d22a55b",
+      "title_confidence": "high"
+    },
+    "publication_right": "REVIEW_REQUIRED",
+    "publication_status": "REVIEW_REQUIRED",
+    "slug": "su37",
+    "summary_ja": null,
+    "title_ja": "su37",
+    "title_original": "su37"
+  }
+]
