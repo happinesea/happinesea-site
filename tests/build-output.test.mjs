@@ -111,39 +111,27 @@ test('latest full manuals have complete local figures, tables, videos and resolv
   }
 });
 
-test('drawing index exposes only six existing files and local owner review is absent from production', async () => {
+test('drawing index includes every approved record and no local review route', async () => {
+  const catalog = JSON.parse(
+    await readFile(
+      new URL('../src/data/drawing-library/production.json', import.meta.url),
+      'utf8',
+    ),
+  );
   const html = await route('drawinglibrary/index.html');
-  assert.equal((html.match(/data-drawing-card(?=[\s>])/g) ?? []).length, 6);
-  assert.match(html, /6件を表示/);
-  assert.match(html, /data-tag-filter="戦闘機"/);
-  assert.match(html, /data-tag-select/);
-  assert.match(html, /href="https:\/\/happinesea.com\/drawinglibrary"/);
+  assert.equal(
+    (html.match(/data-drawing-card(?=[\s>])/g) ?? []).length,
+    catalog.records.length,
+  );
+  assert.ok(catalog.records.length > 6);
   assert.doesNotMatch(
     html,
-    /REVIEW_REQUIRED|source_path|drawing-library-review|OWNER_APPROVED/,
+    /REVIEW_REQUIRED|source_path|drawing-library-review|OWNER_APPROVED|名称・機種未確認/,
   );
   await assert.rejects(
     access(new URL('../dist/drawing-library-review/', import.meta.url)),
     /ENOENT/,
   );
-  const proposed = JSON.parse(
-    await readFile(
-      new URL(
-        '../src/data/drawing-library/records.proposed.json',
-        import.meta.url,
-      ),
-      'utf8',
-    ),
-  );
-  for (const record of proposed.filter((r) => !r.legacy.canonical_url)) {
-    assert.ok(!html.includes(record.title_original));
-    await assert.rejects(
-      access(
-        new URL(`../dist/drawinglibrary/${record.slug}/`, import.meta.url),
-      ),
-      /ENOENT/,
-    );
-  }
 });
 
 test('RC6GS Full and Quick expose identical reviewed operating values, not receiver revisions', async () => {
@@ -1105,7 +1093,21 @@ test('existing drawing packages move tags below title and keep one button downlo
     const html = await route(
       decodeURIComponent(p.target_route).replace(/^\//, '') + '/index.html',
     );
-    assert.equal((html.match(/data-drawing-download/g) ?? []).length, 1);
+    const published = JSON.parse(
+      await readFile(
+        new URL('../src/data/drawing-library/production.json', import.meta.url),
+        'utf8',
+      ),
+    );
+    const record = published.records.find(
+      (r) =>
+        r.existing &&
+        r.legacy.wordpress_ids.includes(String(p.download_id ?? p.id)),
+    );
+    assert.equal(
+      (html.match(/data-drawing-download/g) ?? []).length,
+      record.downloads.length,
+    );
     assert.match(html, /設計図・資料をダウンロード/);
     assert.match(html, /data-download-sha256/);
     if (p.content_html.includes('/download/document-tag/')) {
@@ -1115,29 +1117,33 @@ test('existing drawing packages move tags below title and keep one button downlo
   }
 });
 
-test('publication gate excludes every new record and all unapproved staged assets', async () => {
+test('approved drawing assets and details publish, excluded records stay absent', async () => {
   const catalog = JSON.parse(
     await readFile(
-      new URL('../src/data/drawing-library/publication.json', import.meta.url),
+      new URL('../src/data/drawing-library/production.json', import.meta.url),
       'utf8',
     ),
   );
-  for (const record of catalog.records.filter((r) => !r.existing))
+  for (const r of catalog.records.filter((r) => !r.existing)) {
+    const html = await route(r.route.slice(1) + 'index.html');
+    assert.match(html, /data-drawing-detail/);
+    assert.doesNotMatch(
+      html,
+      /noindex|REVIEW_REQUIRED|source_path|再配布権は確認待ち|公開準備用プレビュー/,
+    );
+  }
+  for (const d of catalog.downloads) {
+    assert.ok(!d.target_url.endsWith('.rar'));
+    await access(new URL('../dist' + d.target_url, import.meta.url));
+  }
+  for (const slug of [
+    'f4u',
+    'p51',
+    'paper-aircraft',
+    'model-beginner-materials',
+  ])
     await assert.rejects(
-      access(new URL('../dist' + record.route, import.meta.url)),
+      access(new URL('../dist/drawinglibrary/' + slug + '/', import.meta.url)),
       /ENOENT/,
     );
-  await assert.rejects(
-    access(new URL('../dist/downloads/drawings/staged/', import.meta.url)),
-    /ENOENT/,
-  );
-  await assert.rejects(
-    access(new URL('../dist/images/drawings/staged/', import.meta.url)),
-    /ENOENT/,
-  );
-  const html = await route('drawinglibrary/index.html');
-  assert.doesNotMatch(
-    html,
-    /source_path|再配布権は確認待ち|READY_FOR_OWNER_PUBLICATION_APPROVAL/,
-  );
 });

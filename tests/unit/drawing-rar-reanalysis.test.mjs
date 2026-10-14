@@ -36,7 +36,7 @@ test('drawing display removes review notes while retaining meaningful titles and
 
 test('RAR reanalysis is owner-only and leaves the canonical source catalog intact', () => {
   assert.equal(catalog.records.length, 43);
-  assert.equal(publicationRecords({}).length, 6);
+  assert.equal(publicationRecords({}).length, 39);
   assert.equal(reanalysis.archives.length, 44);
   assert.equal(reanalysis.exact_duplicate_replay.length, 20);
   assert.ok(reanalysis.exact_duplicate_replay.every((r) => r.sha_replay));

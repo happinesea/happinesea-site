@@ -18,7 +18,11 @@ const { record } = Astro.props;
 <BaseLayout
   title={drawingDisplayText(record.title_ja)}
   description={drawingDisplayText(record.summary_ja)}
-  robots="noindex,nofollow"
+  robots={
+    record.publication_right === 'OWNER_APPROVED'
+      ? 'index,follow'
+      : 'noindex,nofollow'
+  }
 >
   <article class="mx-auto max-w-4xl px-5 py-8 lg:px-8">
     <Breadcrumbs
