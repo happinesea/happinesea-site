@@ -3,7 +3,6 @@ import { readFile, readdir, lstat, realpath, stat } from 'node:fs/promises';
 import { join, resolve, relative, isAbsolute } from 'node:path';
 import {
   loadInputs,
-  verifySource,
   verifyExistingAssets,
   safeRelativePath,
 } from './lib/drawing-library.mjs';
@@ -14,7 +13,11 @@ import {
 } from './lib/legacy-compatibility.mjs';
 import { manualCanonical } from './lib/rc4gs-v2-manual.mjs';
 import { writeLocalArtifact } from './lib/drawing-stage-safety.mjs';
-import { catalog } from '../src/lib/drawing-publication.mjs';
+import { verifyCurrentSource } from './lib/drawing-rar-source.mjs';
+import {
+  ownerCatalog as catalog,
+  reanalysis,
+} from '../src/lib/drawing-publication.mjs';
 const args = process.argv.slice(2);
 const source = resolve(args[args.indexOf('--source') + 1] ?? '');
 const out = resolve(args[args.indexOf('--out') + 1] ?? '');
@@ -25,6 +28,15 @@ if (
 )
   throw Error('Local owner staging only; --source and --out required');
 const boundary = await realpath('.superpowers');
+const derivedRoot = await realpath('.superpowers/drawing-rar-work');
+const derivedWithin = relative(boundary, derivedRoot);
+if (
+  !derivedWithin ||
+  derivedWithin.startsWith('..') ||
+  isAbsolute(derivedWithin) ||
+  (await lstat('.superpowers/drawing-rar-work')).isSymbolicLink()
+)
+  throw Error('Derived work directory escape/link');
 const output = await realpath(out);
 const within = relative(boundary, output);
 if (!within || within.startsWith('..') || isAbsolute(within))
@@ -32,7 +44,7 @@ if (!within || within.startsWith('..') || isAbsolute(within))
     'Output must be an existing ignored local build under .superpowers',
   );
 const input = await loadInputs(process.cwd());
-await verifySource(source, input.inventory);
+await verifyCurrentSource(source, input.inventory);
 await verifyExistingAssets(process.cwd(), input);
 const root = await realpath(source);
 const sourceRelative = relative(root, output);
@@ -107,12 +119,15 @@ for (const file of staged) {
     )
   )
     throw Error('Unsafe source/target');
-  const path = await realpath(join(root, file.source_path));
-  const rel = relative(root, path);
+  const fileRoot = file.derived_zip_path ? derivedRoot : root;
+  const fileName = file.derived_zip_path ?? file.source_path;
+  if (!safeRelativePath(fileName)) throw Error('Unsafe derived path');
+  const path = await realpath(join(fileRoot, fileName));
+  const rel = relative(fileRoot, path);
   if (
     rel.startsWith('..') ||
     isAbsolute(rel) ||
-    (await lstat(join(root, file.source_path))).isSymbolicLink()
+    (await lstat(join(fileRoot, fileName))).isSymbolicLink()
   )
     throw Error('Source escape');
   const before = await stat(path);
@@ -138,6 +153,38 @@ for (const file of staged) {
   });
 }
 for (const record of catalog.records.filter((r) => !r.existing)) {
+  const recovered = reanalysis.updates.find(
+    (u) => u.record_id === record.id,
+  )?.preview;
+  if (recovered) {
+    if (!/^drawing-[a-z0-9-]+\.png$/.test(recovered.filename))
+      throw Error('Unsafe preview path');
+    const from = join('.superpowers/drawing-rar-work', recovered.filename);
+    const info = await lstat(from);
+    const data = await readFile(from);
+    if (
+      info.isSymbolicLink() ||
+      info.nlink > 1 ||
+      digest(data) !== recovered.thumbnail_sha256
+    )
+      throw Error('Recovered preview drift/link');
+    await writeLocalArtifact(
+      output,
+      join(output, record.preview_url.slice(1)),
+      data,
+      true,
+    );
+    thumbnailChoices.push({
+      record_id: record.id,
+      source_rar_sha256: recovered.source_rar_sha256,
+      source_zip_sha256: recovered.source_zip_sha256,
+      member: recovered.member,
+      member_sha256: recovered.member_sha256,
+      url: record.preview_url,
+      status: 'DERIVED_LOCAL_ONLY',
+    });
+    continue;
+  }
   const choices = record.downloads.map((id) =>
     catalog.downloads.find((d) => d.id === id),
   );

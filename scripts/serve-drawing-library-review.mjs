@@ -3,17 +3,18 @@ import { createHash } from 'node:crypto';
 import { lstat, open, readFile, realpath } from 'node:fs/promises';
 import { isAbsolute, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import {
-  loadInputs,
-  verifySource,
-  verifyExistingAssets,
-} from './lib/drawing-library.mjs';
+import { loadInputs, verifyExistingAssets } from './lib/drawing-library.mjs';
 import {
   allowedReviewHost,
   reviewRequestPath,
   loadReviewModel,
   renderReview,
 } from './lib/drawing-library-review.mjs';
+import { reanalysis } from '../src/lib/drawing-publication.mjs';
+import {
+  verifyCurrentSource,
+  currentSourcePath,
+} from './lib/drawing-rar-source.mjs';
 
 const repo = fileURLToPath(new URL('../', import.meta.url));
 const args = process.argv.slice(2);
@@ -27,12 +28,22 @@ for (let i = 0; i < args.length; i += 1) {
 if (!source || !Number.isInteger(port) || port < 1024 || port > 65535)
   throw new Error('invalid review source/port');
 const input = await loadInputs(repo);
-await verifySource(source, input.inventory);
+await verifyCurrentSource(source, input.inventory);
 await verifyExistingAssets(repo, input);
 const model = await loadReviewModel(repo);
 const files = new Map(model.files.map((f) => [f.id, f]));
 const physicalSource = await realpath(source);
 const cache = join(repo, '.superpowers/drawing-library-review-cache');
+const derivedRoot = await realpath(join(repo, '.superpowers/drawing-rar-work'));
+const derivedBoundary = await realpath(join(repo, '.superpowers'));
+const derivedWithin = relative(derivedBoundary, derivedRoot);
+if (
+  !derivedWithin ||
+  derivedWithin.startsWith('..') ||
+  isAbsolute(derivedWithin) ||
+  (await lstat(join(repo, '.superpowers/drawing-rar-work'))).isSymbolicLink()
+)
+  throw Error('Derived work directory escape/link');
 let previews = {};
 try {
   previews = JSON.parse(await readFile(join(cache, 'previews.json'), 'utf8'));
@@ -80,15 +91,44 @@ const server = createServer(async (request, response) => {
         await readFile(join(repo, 'scripts/drawing-review', path.slice(1))),
       );
     const match = path.match(
-      /^\/(preview|source)\/(download-[a-f0-9]{64}|download-existing-[a-f0-9]{64})$/,
+      /^\/(preview|source|derived)\/(download-[a-f0-9]{64}|download-existing-[a-f0-9]{64})$/,
     );
     const file = match ? files.get(match[2]) : null;
     if (!file)
       return send(response, 404, 'text/plain', 'Unknown review resource');
+    if (match[1] === 'derived') {
+      const derived = file.derived;
+      if (!derived || !/^[a-f0-9]{64}\.zip$/.test(derived.derived_zip_path))
+        return send(response, 404, 'text/plain', 'No derived distribution');
+      const resource = join(derivedRoot, derived.derived_zip_path);
+      const info = await lstat(resource);
+      const body = await readFile(resource);
+      if (
+        info.isSymbolicLink() ||
+        info.nlink > 1 ||
+        body.length !== derived.bytes ||
+        createHash('sha256').update(body).digest('hex') !== derived.sha256
+      )
+        return send(response, 409, 'text/plain', 'Derived ZIP drift');
+      response.setHeader(
+        'Content-Disposition',
+        `attachment; filename="${derived.target_url.split('/').at(-1)}"`,
+      );
+      return send(
+        response,
+        200,
+        'application/zip',
+        request.method === 'HEAD' ? '' : body,
+      );
+    }
     if (match[1] === 'source') {
       if (!file.source_path)
         return send(response, 404, 'text/plain', 'Use existing public page');
-      const path = join(physicalSource, file.source_path);
+      const sourcePath = await currentSourcePath(physicalSource, {
+        relative_path: file.source_path,
+        sha256: file.sha256,
+      });
+      const path = join(physicalSource, sourcePath);
       const within = relative(physicalSource, await realpath(path));
       if (
         within.startsWith('..' + sep) ||
@@ -138,6 +178,31 @@ const server = createServer(async (request, response) => {
           join(repo, 'public', record.featured_image.src.slice(1)),
         ),
       );
+    const recovered = reanalysis.updates.find(
+      (u) => u.record_id === file.rarUpdate?.record_id,
+    )?.preview;
+    if (
+      file.source_path &&
+      recovered &&
+      /^drawing-[a-z0-9-]+\.png$/.test(recovered.filename)
+    ) {
+      const resource = join(derivedRoot, recovered.filename);
+      const info = await lstat(resource);
+      const body = await readFile(resource);
+      if (
+        info.isSymbolicLink() ||
+        info.nlink > 1 ||
+        createHash('sha256').update(body).digest('hex') !==
+          recovered.thumbnail_sha256
+      )
+        return send(response, 409, 'text/plain', 'Recovered preview drift');
+      return send(
+        response,
+        200,
+        'image/png',
+        request.method === 'HEAD' ? '' : body,
+      );
+    }
     const preview = previews[file.source_path];
     if (
       preview?.status === 'RENDERED' &&

@@ -155,7 +155,7 @@ test('local owner review displays every case and combines category/status filter
   await page.locator('[data-filter="status"]').selectOption('grouping');
   await expect(
     page.locator('[data-panel="files"] [data-file-card]:visible'),
-  ).toHaveCount(8);
+  ).toHaveCount(0);
   await page.locator('[data-filter="status"]').selectOption('rights');
   await expect(
     page.locator('[data-panel="files"] [data-file-card]:visible'),
@@ -172,7 +172,7 @@ test('local owner review displays every case and combines category/status filter
   await page.locator('[data-filter="tag"]').selectOption('スチレンボード');
   await expect(
     page.locator('[data-panel="files"] [data-file-card]:visible'),
-  ).toHaveCount(6);
+  ).toHaveCount(8);
   await page.locator('[data-reset]').click();
   const images = await page
     .locator('[data-panel="files"] img')

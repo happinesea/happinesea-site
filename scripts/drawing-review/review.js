@@ -20,6 +20,7 @@ function update() {
       const status =
         values.status === 'all' ||
         values.status === 'rights' ||
+        row.dataset[values.status] === 'true' ||
         (values.status === 'grouping' &&
           row.dataset.groupingReview === 'true') ||
         (values.status === 'title'

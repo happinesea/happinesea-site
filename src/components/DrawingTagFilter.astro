@@ -1,8 +1,6 @@
 ---
 const { total, tags } = Astro.props;
-const mainTags = ['戦闘機', 'ジェット機', 'スチレンボード', 'CAD'].filter((t) =>
-  tags.includes(t),
-);
+const mainTags = tags;
 ---
 
 <div class="my-8" data-drawing-tag-controls>

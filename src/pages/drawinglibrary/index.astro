@@ -7,20 +7,27 @@ import snapshot from '../../data/legacy-compatibility.json';
 import {
   publicationRecords,
   recordImage,
+  drawingDisplayText,
+  drawingDisplayTags,
 } from '../../lib/drawing-publication.mjs';
 import { withBase } from '../../lib/urls';
 const library = snapshot.pages.find((page) => page.type === 'drawing_library');
 if (!library) throw new Error('existing drawing library metadata missing');
 const records = publicationRecords();
 const drawings = records.map((r) => ({
-  title: r.title_ja,
+  title: drawingDisplayText(r.title_ja),
   category: r.category,
-  tags: r.tags,
-  description: r.summary_ja,
+  tags: drawingDisplayTags(r.tags),
+  description: drawingDisplayText(r.summary_ja),
   href: r.route,
-  hero: { src: recordImage(r), alt: r.title_ja, width: 640, height: 400 },
+  hero: {
+    src: recordImage(r),
+    alt: drawingDisplayText(r.title_ja),
+    width: 640,
+    height: 400,
+  },
 }));
-const tags = [...new Set(records.flatMap((r) => r.tags))].sort();
+const tags = [...new Set(drawings.flatMap((drawing) => drawing.tags))].sort();
 ---
 
 <BaseLayout

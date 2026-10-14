@@ -1,5 +1,7 @@
 # Grouping resolution
 
+> PR62 baseline snapshot. Current RAR/ZIP readiness: [RAR publication summary](rar-publication-summary.md), [QA](rar-qa-summary.md), and src/data/drawing-library/rar-reanalysis.json.
+
 元42候補を保持して再判定。31 SINGLE_PACKAGE、6 SAME_MODEL_DOWNLOAD_SET、5 REVIEW_REQUIREDです。同一modelの資料は1recordへまとめ、異なるpackageを別downloadとして保持します。設計やversionの同一性を断定しません。分割RARは1logical recordのpart別downloadで、未検証の結合や展開を行いません。nested archiveは外側containerを保持し、深さ0で判定します。
 
 | Record                               | Decision                | Sources |

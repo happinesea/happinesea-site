@@ -22,7 +22,7 @@ test('publication catalog covers every source with evidence and gates every cand
   assert.equal(lib.publicationRecords({}).length, 6);
   assert.equal(
     lib.publicationRecords({ DRAWING_OWNER_PREVIEW: '1' }).length,
-    43,
+    39,
   );
   assert.throws(
     () => lib.publicationRecords({ DRAWING_OWNER_PREVIEW: '1', CI: 'true' }),
