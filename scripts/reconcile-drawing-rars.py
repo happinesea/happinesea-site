@@ -257,7 +257,7 @@ def main():
                 record['tag_confidence'].append({'tag': tag, 'confidence': 'high', 'evidence': match.group(), 'basis': 'Read member filename/PDF metadata'})
         if members:
             formats = Counter(m['extension'] or '(no extension)' for m in members)
-            record['summary_ja'] = f"{record['title_ja']}に関する資料です。内部の重複payloadを除くと" + '、'.join(f'{e.lstrip(".").upper()} {n}件' for e, n in sorted(formats.items())) + 'が含まれます。原題・内部資料名を保持し、再配布権は確認待ちです。'
+            record['summary_ja'] = f"{record['title_ja']}に関する資料です。収録資料として" + '、'.join(f'{e.lstrip(".").upper()} {n}種類' for e, n in sorted(formats.items())) + 'を確認しました。原題・内部資料名を保持し、再配布権は確認待ちです。'
             if record['slug'] == 'light-helicopter':
                 record['summary_ja'] += '表紙は有人ヘリコプターの製作図として示されています。RC模型用であることは確認できません。'
         updates.append({'record_id': record['id'], 'previous_title': original['title_ja'], 'title_source': title_basis,

@@ -10,7 +10,7 @@
 - Owner43 records ×desktop/mobile =86 page checks passed: image decode, tags beneath title, metadata, download counts, no overflow or console errors.51 download HTTP/size/SHA checks and39 derived ZIP owner-review HTTP/SHA checks passed.
 - Drawing Playwright6 passed desktop/mobile. Existing12 drawing routes ×2 =24 checks passed; titles/canonical/download links preserved.
 - Owner sitemap62 entries, new37 detail pages excluded, duplicate canonical pages0. Normal build still exposes existing6 only.
-- Final ignored owner artifact348695978 bytes (~332.54 MiB). Selected source-only binaries45 /199183120 bytes; future repository growth would be those approved binaries plus approved derived previews. No binary added to Git.
+- Final ignored owner artifact348695344 bytes (~332.54 MiB). Selected source-only binaries45 /199183120 bytes; future repository growth would be those approved binaries plus approved derived previews. No binary added to Git.
 - Independent read-only review found2 safety issues (descendant review propagation and NFC ancestor collision), both fixed and reproduced by tests. Final focused re-review: unresolved P0/P1/P2=0; no source access by reviewer.
 - Representative desktop/mobile screenshots cover recovered FOXIE, FD3 nested package, split Model Jet Engines, Furia/Hornet, CAD-only F4U, unknown Boeing, Office-only paper aircraft and F4D; stored outside Git in the task visualization folder.
 
