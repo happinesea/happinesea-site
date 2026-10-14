@@ -38,15 +38,17 @@ def main():
     parser.add_argument('--source', type=Path, required=True)
     source = parser.parse_args().source.resolve(strict=True)
     before = json.loads((WORK / 'source71-before.json').read_text(encoding='utf8'))
+    exclusions = json.loads((ROOT / 'src/data/drawing-library/owner-exclusions.json').read_text(encoding='utf8'))
+    relocated = {e['source_sha256']: e['current_source_path'] for e in exclusions}
     for row in before.values():
-        path = source / row['current_path']
+        path = source / relocated.get(row['sha256'], row['current_path'])
         stat = path.stat()
         assert stat.st_size == row['bytes'] and stat.st_mtime_ns == row['mtime_ns'], 'Source metadata changed'
         assert sha(path.read_bytes()) == row['sha256'], 'Source SHA changed'
     catalog = json.loads((ROOT / 'src/data/drawing-library/rar-reanalysis.json').read_text(encoding='utf8'))
     converted = []
     for row in catalog['archives']:
-        path = source / 'rar-zip_変換' / row['source_rar_path']
+        path = source / relocated[row['sha256']] if row['sha256'] in relocated else source / 'rar-zip_変換' / row['source_rar_path']
         stat = path.stat()
         assert stat.st_size == row['bytes'] and stat.st_mtime_ns == row['mtime_ns'] and sha(path.read_bytes()) == row['sha256'], 'RAR source changed'
         if row['status'] == 'ANALYZED':

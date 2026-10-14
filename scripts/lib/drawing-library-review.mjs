@@ -6,6 +6,7 @@ import { validateRecords } from './drawing-library.mjs';
 import {
   ownerCatalog as catalog,
   reanalysis,
+  ownerExclusions,
 } from '../../src/lib/drawing-publication.mjs';
 
 export { publicDrawings };
@@ -209,6 +210,11 @@ export function buildReviewModel(data) {
       catalog.dedup_decisions.find((d) => d.download_id === file.id)
         ?.decision ?? file.duplicate_status;
     file.resolvedGrouping = record?.grouping_status ?? file.grouping_status;
+    if (ownerExclusions.some((e) => e.source_sha256 === file.sha256)) {
+      file.resolvedGrouping = 'EXCLUDED_BY_OWNER';
+      file.titleNotes =
+        'Ownerが設計図として不備と判断し除外。元資料は一旦退避に保持。';
+    }
     file.rarUpdate = reanalysis.updates.find((u) => u.record_id === record?.id);
     file.derived = reanalysis.distributions.find(
       (d) => d.download_id === file.id,
@@ -340,10 +346,10 @@ export function renderReview(model) {
           `<div><strong>${count}</strong><span>${label}</span></div>`,
       )
       .join('')}</div></div></header>
-    <main class="shell"><section class="category-summary" aria-label="カテゴリ集計"><h2>カテゴリ別の確認状況</h2><div class="summary-grid">${(model.currentCategories ?? model.categories).map((c) => `<div class="summary-card"><h3>${escape(c.category)}</h3><p>${c.records} records · ${c.files} files · 権利確認待ち ${c.reviewRequired}</p></div>`).join('')}</div><p>recordは43公開準備（Phase1原提案33を含む）、fileはsource71＋既存6です。公開権は全件確認待ちです。最新grouping結果は下の公開準備recordと各fileのcurrent groupingを確認してください。</p></section>
+    <main class="shell"><section class="category-summary" aria-label="カテゴリ集計"><h2>カテゴリ別の確認状況</h2><div class="summary-grid">${(model.currentCategories ?? model.categories).map((c) => `<div class="summary-card"><h3>${escape(c.category)}</h3><p>${c.records} records · ${c.files} files · 権利確認待ち ${c.reviewRequired}</p></div>`).join('')}</div><p>recordは39公開準備（owner除外4件）（Phase1原提案33を含む）、fileはsource71＋既存6です。公開権は全件確認待ちです。最新grouping結果は下の公開準備recordと各fileのcurrent groupingを確認してください。</p></section>
     <nav class="tabs" aria-label="レビュー種別">${[
       ['files', '全ファイル 77'],
-      ['records', '公開準備 records 43'],
+      ['records', `公開準備 records ${catalog.records.length}`],
       ['rar', 'RAR再解析 44'],
       ['exact', 'Exact 20'],
       ['probable', 'Probable 9'],
@@ -362,7 +368,7 @@ export function renderReview(model) {
       <button type="button" data-reset>全条件を解除</button></div>
     ${panel(
       'records',
-      '公開準備：43 records（既存6＋新規37）',
+      `公開準備：${catalog.records.length} records（既存6＋新規${catalog.records.length - 6}）・owner除外4件`,
       catalog.records
         .map((record) => {
           const file = model.files.find((f) => f.id === record.downloads[0]);

@@ -1,7 +1,10 @@
 import { access } from 'node:fs/promises';
 import { join } from 'node:path';
 import { verifySource, safeRelativePath } from './drawing-library.mjs';
-import { reanalysis } from '../../src/lib/drawing-publication.mjs';
+import {
+  reanalysis,
+  ownerExclusions,
+} from '../../src/lib/drawing-publication.mjs';
 
 // The owner moved 44 original RARs before this task; historical paths stay evidence.
 export async function currentSourcePath(root, row) {
@@ -12,6 +15,12 @@ export async function currentSourcePath(root, row) {
     )
   )
     return row.relative_path;
+  const excluded = ownerExclusions.find((e) => e.source_sha256 === row.sha256);
+  if (excluded) {
+    if (!safeRelativePath(excluded.current_source_path))
+      throw Error('Unsafe retired source path');
+    return excluded.current_source_path;
+  }
   const moved = reanalysis.archives.find(
     (a) => a.source_rar_sha256 === row.sha256,
   );

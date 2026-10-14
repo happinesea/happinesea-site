@@ -238,13 +238,18 @@ def main():
         raise ValueError('Linked local artifact')
     version = seven(args.sevenzip, ['i'], 1024 * 1024).decode('utf8').splitlines()[1]
     paths = sorted(source.rglob('*.rar'))
-    before = {str(p.relative_to(source)): fingerprint(p) for p in paths}
+    before = {p.relative_to(source).as_posix(): fingerprint(p) for p in paths}
     previous = work / 'receipt.json'
-    if previous.exists() and json.loads(previous.read_text(encoding='utf8'))['source_before'] != before:
-        raise ValueError('RAR source drift since first inventory')
+    if previous.exists():
+        expected = json.loads(previous.read_text(encoding='utf8'))['source_before']
+        excluded = json.loads((ROOT / 'src/data/drawing-library/owner-exclusions.json').read_text(encoding='utf8'))
+        relocation = {e['source_sha256']: e['current_source_path'].split('/', 1)[1] for e in excluded}
+        expected = {relocation.get(row['sha256'], name.replace('\\', '/')): row for name, row in expected.items()}
+        if expected != before:
+            raise ValueError('RAR source drift since first inventory; only recorded owner relocation is allowed')
     receipt = {'tool': str(args.sevenzip), 'version': version, 'source_before': before, 'archives': []}
     for path in paths:
-        relative = str(path.relative_to(source))
+        relative = path.relative_to(source).as_posix()
         row = {'source_rar_path': relative, 'filename': path.name, **before[relative], 'source_rar_sha256': before[relative]['sha256']}
         if path.is_symlink() or not path.resolve().is_relative_to(source):
             raise ValueError('Linked/escaped source')
@@ -266,7 +271,7 @@ def main():
             row.update(status='REVIEW_REQUIRED', reason=str(error))
         receipt['archives'].append(row)
         print(path.name, row['status'], flush=True)
-    after = {str(p.relative_to(source)): fingerprint(p) for p in sorted(source.rglob('*.rar'))}
+    after = {p.relative_to(source).as_posix(): fingerprint(p) for p in sorted(source.rglob('*.rar'))}
     if before != after:
         raise ValueError('Original RAR changed')
     receipt['source_unchanged'] = True

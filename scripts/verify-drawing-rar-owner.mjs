@@ -34,7 +34,18 @@ for (const viewport of [
       errors.push(r.status() + ' ' + r.url());
   });
   await page.goto(base + '/drawinglibrary/');
-  assert.equal(await page.locator('[data-drawing-card]').count(), 43);
+  assert.equal(await page.locator('[data-drawing-card]').count(), 39);
+  for (const slug of [
+    'f4u',
+    'p51',
+    'paper-aircraft',
+    'model-beginner-materials',
+  ])
+    assert.equal(
+      (await page.request.get(base + '/drawinglibrary/' + slug + '/')).status(),
+      404,
+      slug,
+    );
   assert.equal(
     await page.locator('[data-drawing-card] a[download]').count(),
     0,
@@ -111,12 +122,11 @@ for (const viewport of [
   }
   await page.goto('http://127.0.0.1:4380/drawing-library-review/');
   await page
-    .getByRole('button', { name: '公開準備 records 43', exact: true })
+    .getByRole('button', { name: '公開準備 records 39', exact: true })
     .click();
   for (const status of [
     'rarConverted',
     'imageRecovered',
-    'imageMissing',
     'titleResolved',
     'groupingResolved',
     'probableResolved',
@@ -189,5 +199,5 @@ await writeFile(
   ),
 );
 console.log(
-  `PASS: 86 owner page checks, 51 download SHA checks, ${reanalysis.distributions.length} review ZIP HTTP checks, desktop/mobile review filters`,
+  `PASS: ${checks.length} owner page checks, ${downloads.length} download SHA checks, desktop/mobile review filters`,
 );

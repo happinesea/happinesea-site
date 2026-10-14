@@ -6,6 +6,7 @@ import {
   reanalysis,
   publicationRecords,
   recordDownloads,
+  ownerExclusions,
 } from '../../src/lib/drawing-publication.mjs';
 
 test('RAR reanalysis is owner-only and leaves the canonical source catalog intact', () => {
@@ -29,7 +30,15 @@ test('RAR reanalysis is owner-only and leaves the canonical source catalog intac
   const active = records.flatMap((r) =>
     recordDownloads(r, { DRAWING_OWNER_PREVIEW: '1' }),
   );
-  assert.equal(active.length, 51);
+  assert.equal(active.length, 47);
+  assert.equal(records.length, 39);
+  for (const exclusion of ownerExclusions) {
+    assert.ok(!records.some((r) => r.id === exclusion.record_id));
+    const retired = reanalysis.records.find(
+      (r) => r.id === exclusion.record_id,
+    );
+    assert.ok(active.every((d) => !retired.downloads.includes(d.id)));
+  }
   assert.ok(active.every((d) => d.extension !== '.rar'));
   assert.equal(new Set(active.map((d) => d.sha256)).size, active.length);
   assert.equal(reanalysis.distributions.length, 39);

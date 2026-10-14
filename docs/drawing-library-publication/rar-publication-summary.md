@@ -1,5 +1,7 @@
 # RAR reanalysis publication readiness
 
+> Current owner correction: four unsuitable records excluded; preparation39 records /47 downloads /35 active derived ZIP. Original43-record reanalysis evidence below is retained. See [owner exclusions](owner-exclusions.md).
+
 Baseline: ae194413d80cf759e3a20d0963b41ef702c0ae10. Status: READY_FOR_OWNER_PUBLICATION_APPROVAL. No rights promotion, merge or deploy.
 
 ## Results

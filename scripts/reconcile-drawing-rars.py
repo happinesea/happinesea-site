@@ -301,7 +301,10 @@ def main():
                            'active_downloads': len(active), 'duplicate_zip_payloads': 0}}
     (ROOT / 'src/data/drawing-library/rar-reanalysis.json').write_text(json.dumps(overlay, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf8')
     lines = ['# Missing source previews', '', 'No AI-generated images. These records use the existing generic fallback. Legacy Office/CAD content is inventoried but not executed.', '']
+    excluded_ids = {e['record_id'] for e in read('src/data/drawing-library/owner-exclusions.json')}
     for row in missing:
+        if row['id'] in excluded_ids:
+            continue
         lines.extend([f"## {row['id']} — {row['title']}", '', f"Status: {row['status']}", f"Source archives: {', '.join(row['source_archives']) or 'No RAR source; original source reviewed'}",
                       f"PDF present: {row['pdf_presence']}; image present: {row['image_presence']}; fallback: yes", '',
                       *['- ' + name for name in row['checked_members']], '', row['recommended_owner_action'], ''])

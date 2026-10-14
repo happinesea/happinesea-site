@@ -1,10 +1,23 @@
 import baselineCatalog from '../data/drawing-library/publication.json' with { type: 'json' };
 import reanalysis from '../data/drawing-library/rar-reanalysis.json' with { type: 'json' };
+import ownerExclusions from '../data/drawing-library/owner-exclusions.json' with { type: 'json' };
+export { ownerExclusions };
 export { reanalysis };
 export const ownerCatalog = {
   ...baselineCatalog,
-  records: reanalysis.records,
-  tags: reanalysis.tags,
+  records: reanalysis.records.filter(
+    (record) => !ownerExclusions.some((e) => e.record_id === record.id),
+  ),
+  tags: reanalysis.tags
+    .map((tag) => ({
+      ...tag,
+      records: reanalysis.records.filter(
+        (r) =>
+          r.tags.includes(tag.tag) &&
+          !ownerExclusions.some((e) => e.record_id === r.id),
+      ).length,
+    }))
+    .filter((t) => t.records > 0),
   downloads: baselineCatalog.downloads.map((file) => {
     const derived = reanalysis.distributions.find(
       (d) => d.download_id === file.id,

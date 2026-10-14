@@ -1,0 +1,30 @@
+[
+  {
+    "record_id": "drawing-model-beginner-materials",
+    "status": "EXCLUDED_BY_OWNER",
+    "reason_ja": "設計図として不備があるためownerが除外。元資料はownerが退避済み。",
+    "source_sha256": "ba45daab9a7a9c7a6355add25e458c0f47218c2f2b11ef18d4eb1d3b170b8069",
+    "current_source_path": "rar-zip_変換/一旦退避/航模赠品.rar"
+  },
+  {
+    "record_id": "drawing-p51",
+    "status": "EXCLUDED_BY_OWNER",
+    "reason_ja": "設計図として不備があるためownerが除外。元資料はownerが退避済み。",
+    "source_sha256": "e342b5b988d1404154ca8f34a8028d766eb9ab120fafd8d9a4095c92cf96def3",
+    "current_source_path": "rar-zip_変換/一旦退避/P51图纸.rar"
+  },
+  {
+    "record_id": "drawing-paper-aircraft",
+    "status": "EXCLUDED_BY_OWNER",
+    "reason_ja": "設計図として不備があるためownerが除外。元資料はownerが退避済み。",
+    "source_sha256": "cd7146ae0b90b01bbb98bc7a9a97054bd0fbe5b7a0a57108cad2efdc4071df25",
+    "current_source_path": "rar-zip_変換/一旦退避/纸飞机.rar"
+  },
+  {
+    "record_id": "drawing-f4u",
+    "status": "EXCLUDED_BY_OWNER",
+    "reason_ja": "設計図として不備があるためownerが除外。元資料はownerが退避済み。",
+    "source_sha256": "3562872b0f355532858b9129e0394a2cc54da26d0d609881a4a1444553dd1c68",
+    "current_source_path": "rar-zip_変換/一旦退避/二战F4U模型飞机图纸.rar"
+  }
+]
