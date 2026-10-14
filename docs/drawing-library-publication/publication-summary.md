@@ -1,5 +1,7 @@
 # Publication readiness summary
 
+> PR62 baseline snapshot. Current RAR/ZIP readiness: [RAR publication summary](rar-publication-summary.md), [QA](rar-qa-summary.md), and src/data/drawing-library/rar-reanalysis.json.
+
 Baseline: 934dc99265771f595a94481ec8619379100d13a9. Status: READY_FOR_OWNER_PUBLICATION_APPROVAL.
 
 - Final records: 43 (existing6 / new37).

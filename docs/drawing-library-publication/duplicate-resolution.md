@@ -1,5 +1,7 @@
 # Duplicate resolution
 
+> PR62 baseline snapshot. Current RAR/ZIP readiness: [RAR publication summary](rar-publication-summary.md), [QA](rar-qa-summary.md), and src/data/drawing-library/rar-reanalysis.json.
+
 Exact 20件はoriginal ledgerのSHA/file/member証拠を保持し、active downloadへ再配置しません。既存6 assetsまたは同groupのarchiveをreuseします。
 
 Probable 9件は以下の個別結果です。全document memberのbytes/SHA-256 multisetが一致する場合のみDUPLICATE_CONFIRMED。CRC単独やfilename類似で除外しません。Thumbs.dbと空directoryはdocument identityから除外し、container自体を同byteとは扱いません。

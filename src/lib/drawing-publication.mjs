@@ -1,5 +1,26 @@
-import catalog from '../data/drawing-library/publication.json' with { type: 'json' };
-export { catalog };
+import baselineCatalog from '../data/drawing-library/publication.json' with { type: 'json' };
+import reanalysis from '../data/drawing-library/rar-reanalysis.json' with { type: 'json' };
+export { reanalysis };
+export const ownerCatalog = {
+  ...baselineCatalog,
+  records: reanalysis.records,
+  tags: reanalysis.tags,
+  downloads: baselineCatalog.downloads.map((file) => {
+    const derived = reanalysis.distributions.find(
+      (d) => d.download_id === file.id,
+    );
+    return derived
+      ? {
+          ...file,
+          ...derived,
+          filename_distribution: derived.target_url.split('/').at(-1),
+        }
+      : file;
+  }),
+  dedup_decisions: reanalysis.dedup_decisions,
+};
+export const catalog =
+  process.env.DRAWING_OWNER_PREVIEW === '1' ? ownerCatalog : baselineCatalog;
 export function publicationRecords(env = process.env) {
   if (
     env.DRAWING_OWNER_PREVIEW === '1' &&
@@ -10,7 +31,9 @@ export function publicationRecords(env = process.env) {
     throw new Error(
       'Rights promotion requires an explicit reviewed publication change',
     );
-  return catalog.records.filter(
+  const selected =
+    env.DRAWING_OWNER_PREVIEW === '1' ? ownerCatalog : baselineCatalog;
+  return selected.records.filter(
     (r) => r.existing || env.DRAWING_OWNER_PREVIEW === '1',
   );
 }
@@ -23,9 +46,16 @@ export function packageRecord(page) {
 }
 export function recordDownloads(record, env = process.env) {
   const owner = env.DRAWING_OWNER_PREVIEW === '1';
-  return catalog.downloads.filter(
-    (d) => record.downloads.includes(d.id) && (owner || d.source_path === null),
-  );
+  return (owner ? ownerCatalog : baselineCatalog).downloads
+    .filter(
+      (d) =>
+        record.downloads.includes(d.id) && (owner || d.source_path === null),
+    )
+    .map((file) => ({
+      ...file,
+      filename_distribution:
+        'filename_distribution' in file ? file.filename_distribution : null,
+    }));
 }
 export function recordImage(record) {
   return (

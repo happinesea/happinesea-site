@@ -38,8 +38,17 @@ const downloads = recordDownloads(record);
       data-download-info
     >
       <h2 class="font-bold [overflow-wrap:anywhere]">
-        {file.filename_original}
+        {file.filename_distribution ?? file.filename_original}
       </h2>
+      {file.filename_distribution && (
+        <p class="mt-2 text-sm text-slate-500 [overflow-wrap:anywhere]">
+          原資料：{file.filename_original}（
+          {'source_zip_path' in file
+            ? '内部RARをZIPへ変換'
+            : 'RARからZIPへ変換'}
+          ）
+        </p>
+      )}
       <p class="my-3 text-sm text-slate-600">
         {file.extension.slice(1).toUpperCase()} ·{' '}
         {(file.bytes / 1048576).toFixed(2)} MiB

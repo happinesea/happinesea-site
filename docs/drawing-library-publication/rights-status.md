@@ -1,5 +1,7 @@
 # Rights and production gate
 
+> PR62 baseline snapshot. Current RAR/ZIP readiness: [RAR publication summary](rar-publication-summary.md), [QA](rar-qa-summary.md), and src/data/drawing-library/rar-reanalysis.json.
+
 全77 downloadと全43 recordのpublication_rightはREVIEW_REQUIRED。既存6だけは既存公開証拠で現行公開を維持します。新規37はREADY_FOR_OWNER_PUBLICATION_APPROVALであり、公開承認済みではありません。
 
 通常build／productionは既存6だけ。DRAWING_OWNER_PREVIEW=1はproduction／CIでエラーになり、ignored local outputに限って新規37を生成します。新規detailはnoindex,nofollowでsitemap除外。47 source binaryとderived previewはローカルbuildのみ、Gitへcommitしません。公開repoには安全なmetadata、code、汎用SVGだけを入れます。

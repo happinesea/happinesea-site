@@ -1,5 +1,7 @@
 # QA summary
 
+> PR62 baseline snapshot. Current RAR/ZIP readiness: [RAR publication summary](rar-publication-summary.md), [QA](rar-qa-summary.md), and src/data/drawing-library/rar-reanalysis.json.
+
 Baseline:934dc99265771f595a94481ec8619379100d13a9. No merge/deploy.
 
 - npm run validate passed. Final unit164; Astro0 errors; lint/format passed; built-output35.

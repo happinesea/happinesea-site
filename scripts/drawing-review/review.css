@@ -166,6 +166,10 @@ summary:focus-visible {
   overflow: hidden;
   min-width: 0;
 }
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
 .preview {
   width: 100%;
   height: 190px;

@@ -3,7 +3,10 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { publicDrawings } from '../../src/lib/drawing-library-index.mjs';
 import { validateRecords } from './drawing-library.mjs';
-import { catalog } from '../../src/lib/drawing-publication.mjs';
+import {
+  ownerCatalog as catalog,
+  reanalysis,
+} from '../../src/lib/drawing-publication.mjs';
 
 export { publicDrawings };
 const escape = (value) =>
@@ -199,12 +202,17 @@ export function buildReviewModel(data) {
         r.downloads.includes(file.id),
     );
     file.category = record?.category ?? file.category;
+    file.title = record?.title_ja ?? file.title;
     file.tags = record?.tags ?? [];
     file.tagConfidence = record?.tag_confidence ?? [];
     file.resolution =
       catalog.dedup_decisions.find((d) => d.download_id === file.id)
         ?.decision ?? file.duplicate_status;
     file.resolvedGrouping = record?.grouping_status ?? file.grouping_status;
+    file.rarUpdate = reanalysis.updates.find((u) => u.record_id === record?.id);
+    file.derived = reanalysis.distributions.find(
+      (d) => d.download_id === file.id,
+    );
   }
   model.currentCategories = categories.map((category) => ({
     category,
@@ -256,7 +264,7 @@ const metadata = (pairs) =>
 const preview = (file) =>
   `<img class="preview" loading="lazy" width="640" height="400" src="/preview/${escape(file.id)}" alt="${escape(file.title)}の資料プレビュー"/><p class="preview-note" data-preview-note="${escape(file.id)}">先頭の安全な図面・画像のみ。読めない資料は未確認表示。</p>`;
 const fileAttrs = (file) =>
-  `data-grouping-review="${file.resolvedGrouping === 'REVIEW_REQUIRED'}" data-tags="${escape((file.tags ?? []).join('|'))}" data-category="${escape(file.category)}" data-origin="${file.origin}" data-duplicate="${file.duplicate_status}" data-title-review="${file.titleReview}"`;
+  `data-rar-converted="${Boolean(file.derived)}" data-image-recovered="${Boolean(file.rarUpdate?.image_recovered)}" data-image-missing="${reanalysis.missing_images.some((r) => r.id === file.rarUpdate?.record_id)}" data-title-resolved="${Boolean(file.rarUpdate?.title_resolved)}" data-grouping-resolved="${Boolean(file.rarUpdate?.grouping_resolved)}" data-probable-resolved="${file.duplicate_status === 'PROBABLE_DUPLICATE' && file.resolution !== 'REVIEW_REQUIRED'}" data-grouping-review="${file.resolvedGrouping === 'REVIEW_REQUIRED'}" data-tags="${escape((file.tags ?? []).join('|'))}" data-category="${escape(file.category)}" data-origin="${file.origin}" data-duplicate="${file.duplicate_status}" data-title-review="${file.titleReview}"`;
 const fileCard = (
   file,
 ) => `<article class="card" data-file-card="${file.id}" ${fileAttrs(file)}>
@@ -336,6 +344,7 @@ export function renderReview(model) {
     <nav class="tabs" aria-label="レビュー種別">${[
       ['files', '全ファイル 77'],
       ['records', '公開準備 records 43'],
+      ['rar', 'RAR再解析 44'],
       ['exact', 'Exact 20'],
       ['probable', 'Probable 9'],
       ['groups', 'Grouping 42'],
@@ -349,7 +358,7 @@ export function renderReview(model) {
       .join('')}</nav>
     <div class="filters"><label>タグ<select data-filter="tag"><option value="all">すべて</option>${catalog.tags.map((t) => `<option>${escape(t.tag)}</option>`).join('')}</select></label><label>カテゴリ<select data-filter="category"><option value="all">すべて</option>${categories.map((c) => `<option>${escape(c)}</option>`).join('')}</select></label>
       <label>既存・新規<select data-filter="origin"><option value="all">すべて</option><option value="existing">既存・既存関連</option><option value="new">新規候補</option></select></label>
-      <label>確認対象<select data-filter="status"><option value="all">すべて</option><option value="EXACT_DUPLICATE">exact duplicate</option><option value="PROBABLE_DUPLICATE">probable duplicate</option><option value="grouping">grouping review required</option><option value="title">title review required</option><option value="rights">publication right review</option></select></label>
+      <label>確認対象<select data-filter="status"><option value="all">すべて</option><option value="rarConverted">RAR converted</option><option value="imageRecovered">image recovered</option><option value="imageMissing">image still missing</option><option value="titleResolved">title resolved</option><option value="groupingResolved">grouping resolved</option><option value="probableResolved">probable resolved</option><option value="EXACT_DUPLICATE">exact duplicate</option><option value="PROBABLE_DUPLICATE">probable duplicate</option><option value="grouping">grouping review required</option><option value="title">title review required</option><option value="rights">publication right review</option></select></label>
       <button type="button" data-reset>全条件を解除</button></div>
     ${panel(
       'records',
@@ -367,12 +376,84 @@ export function renderReview(model) {
                   .join(' / '),
               ],
               ['downloads', record.downloads.length],
+              ['derived ZIP', file?.derived?.target_url ?? '—'],
+              [
+                'ZIP bytes / SHA',
+                `${file?.derived?.bytes ?? '—'} / ${file?.derived?.sha256 ?? '—'}`,
+              ],
               ['grouping', record.grouping_status],
+              [
+                'model identity',
+                record.model_identity_status ?? 'Source label retained',
+              ],
               ['rights', record.publication_right],
               ['source', record.source_paths.join(' / ')],
               ['publication status', record.publication_status],
+              [
+                'previous title / title source',
+                `${file?.rarUpdate?.previous_title ?? '—'} / ${file?.rarUpdate?.title_source ?? '—'}`,
+              ],
+              [
+                'previous grouping / new grouping',
+                `${file?.rarUpdate?.previous_grouping ?? '—'} / ${record.grouping_status}`,
+              ],
+              [
+                'thumbnail source',
+                file?.rarUpdate?.preview?.member ??
+                  record.featured_image_status,
+              ],
             ],
           )}<a href="http://127.0.0.1:4410/happinesea-site${escape(record.route.replace(/\/$/, '') + '/')}" target="_blank" rel="noreferrer">公開準備detail（local）</a></article>`;
+        })
+        .join(''),
+    )}
+    ${panel(
+      'rar',
+      'RAR再解析・derived ZIP（local only）',
+      reanalysis.archives
+        .map((archive) => {
+          const file = model.files.find((f) => f.sha256 === archive.sha256);
+          const members = (row) =>
+            row.members
+              ?.filter((m) => !m.directory)
+              .map(
+                (m) =>
+                  `${m.name} · ${m.extension} · ${m.bytes} bytes · ${m.sha256}`,
+              )
+              .join('\n') ?? '';
+          return `<article class="case" ${fileAttrs(file)}><h3>${escape(archive.filename)}</h3>${preview(file)}${metadata(
+            [
+              ['source RAR', archive.source_rar_path],
+              ['source SHA-256', archive.sha256],
+              ['status', archive.status],
+              [
+                'derived ZIP',
+                archive.derived_zip_path ??
+                  'split continuation: first-volume ZIP contains all members',
+              ],
+              [
+                'ZIP bytes / SHA-256',
+                `${archive.derived_zip_bytes ?? '—'} / ${archive.derived_zip_sha256 ?? '—'}`,
+              ],
+              [
+                'current distribution',
+                file.derived
+                  ? 'ZIP配布候補'
+                  : '再利用・重複除外・split evidenceのみ',
+              ],
+              [
+                'previous / new',
+                `${file.rarUpdate?.previous_grouping ?? '—'} / ${file.resolvedGrouping}`,
+              ],
+            ],
+          )}<details><summary>archive members・PDF title・nested inventory</summary><pre>${escape(members(archive))}</pre>${(archive.nested ?? []).map((n) => `<p>${escape(n.member)} · ${escape(n.status)}</p><pre>${escape(members(n))}</pre>`).join('')}<p>${escape(
+            (archive.members ?? [])
+              .filter((m) => m.document_title)
+              .map(
+                (m) => `${m.name}: ${m.document_title}; pages=${m.page_count}`,
+              )
+              .join(' / '),
+          )}</p></details>${file.derived ? `<a href="/derived/${file.id}">derived ZIPを確認（local）</a>` : ''}</article>`;
         })
         .join(''),
     )}
@@ -381,7 +462,7 @@ export function renderReview(model) {
     ${panel('probable', 'Probable duplicate：9件を個別に確認', '<p>CRC・容量・filename・部分一致は候補です。自動mergeや除外は行いません。</p>' + model.probable.map((r) => duplicateCard(r, false)).join(''))}
     ${panel(
       'groups',
-      'Grouping：42候補・37整理済み／5確認待ち',
+      `Grouping：42候補・${42 - catalog.records.filter((r) => r.grouping_status === 'REVIEW_REQUIRED').length}整理済み／${catalog.records.filter((r) => r.grouping_status === 'REVIEW_REQUIRED').length}確認待ち`,
       model.groups
         .map(
           (g) =>
