@@ -1,6 +1,11 @@
 ---
 import { withBase } from '../lib/urls';
-import { recordDownloads, recordImage } from '../lib/drawing-publication.mjs';
+import {
+  recordDownloads,
+  recordImage,
+  drawingDisplayText,
+  drawingDisplayTags,
+} from '../lib/drawing-publication.mjs';
 const { record } = Astro.props;
 const downloads = recordDownloads(record);
 ---
@@ -9,24 +14,23 @@ const downloads = recordDownloads(record);
   <img
     class="my-8 h-auto max-h-[28rem] w-full object-contain"
     src={withBase(recordImage(record))}
-    alt={`${record.title_ja}の資料画像`}
+    alt={`${drawingDisplayText(record.title_ja)}の資料画像`}
     width="640"
     height="400"
   />
   <h1 class="mt-8 text-3xl font-bold leading-tight text-slate-950">
-    {record.title_ja}
+    {drawingDisplayText(record.title_ja)}
   </h1>
   <div class="my-5 flex flex-wrap gap-2" data-drawing-tags>
-    {record.tags.map((tag: string) => (
+    {drawingDisplayTags(record.tags).map((tag: string) => (
       <span class="rounded-full bg-teal-50 px-3 py-1 text-sm text-teal-800">
         {tag}
       </span>
     ))}
   </div>
-  {record.title_original !== record.title_ja && (
-    <p class="text-sm text-slate-500">原題：{record.title_original}</p>
-  )}
-  <p class="my-6 leading-8 text-slate-600">{record.summary_ja}</p>
+  <p class="my-6 leading-8 text-slate-600">
+    {drawingDisplayText(record.summary_ja)}
+  </p>
   {downloads.some((file) => file.source_path !== null) && (
     <p class="my-5 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
       公開準備用プレビューです。再配布権の承認待ちで、production公開対象には含まれません。
@@ -63,7 +67,7 @@ const downloads = recordDownloads(record);
         download
         data-drawing-download
         data-drawing-id={record.id}
-        data-drawing-tags={record.tags.join('|')}
+        data-drawing-tags={drawingDisplayTags(record.tags).join('|')}
         data-download-sha256={file.sha256}
       >
         設計図・資料をダウンロード

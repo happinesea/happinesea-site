@@ -35,6 +35,35 @@ for (const viewport of [
   });
   await page.goto(base + '/drawinglibrary/');
   assert.equal(await page.locator('[data-drawing-card]').count(), 39);
+  const analyzedTags = [...new Set(catalog.records.flatMap((r) => r.tags))]
+    .filter((t) => t !== '名称・機種未確認')
+    .sort();
+  assert.deepEqual(
+    (
+      await page
+        .locator('[data-tag-filter]')
+        .evaluateAll((nodes) => nodes.map((n) => n.dataset.tagFilter))
+    )
+      .filter((t) => t !== 'すべて')
+      .sort(),
+    analyzedTags,
+  );
+  assert.doesNotMatch(
+    await page.locator('[data-drawing-catalogue]').innerText(),
+    /未確認|候補|原題/,
+  );
+  for (const tag of analyzedTags) {
+    await page
+      .locator('[data-tag-filter]')
+      .filter({ hasText: tag })
+      .filter({ hasText: new RegExp('^' + tag + '$') })
+      .click();
+    assert.equal(
+      await page.locator('[data-drawing-card]:visible').count(),
+      catalog.records.filter((r) => r.tags.includes(tag)).length,
+    );
+  }
+  await page.getByRole('button', { name: 'すべて', exact: true }).click();
   for (const slug of [
     'f4u',
     'p51',

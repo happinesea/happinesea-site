@@ -3,6 +3,21 @@ import reanalysis from '../data/drawing-library/rar-reanalysis.json' with { type
 import ownerExclusions from '../data/drawing-library/owner-exclusions.json' with { type: 'json' };
 export { ownerExclusions };
 export { reanalysis };
+// Display notes are removed without changing source titles or review evidence.
+export function drawingDisplayText(value) {
+  return value
+    .replace(/[（(][^）)]*(?:未確認|候補|原題)[^）)]*[）)]/g, '')
+    .replaceAll('微风', '微風')
+    .replaceAll('原題・内部資料名を保持し、', '')
+    .replaceAll(
+      '原題とファイル情報を確認できます。',
+      'ファイル情報を確認できます。',
+    )
+    .trim();
+}
+export function drawingDisplayTags(tags) {
+  return tags.filter((tag) => tag !== '名称・機種未確認');
+}
 export const ownerCatalog = {
   ...baselineCatalog,
   records: reanalysis.records.filter(

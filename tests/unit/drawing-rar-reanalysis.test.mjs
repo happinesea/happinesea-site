@@ -7,7 +7,32 @@ import {
   publicationRecords,
   recordDownloads,
   ownerExclusions,
+  drawingDisplayText,
+  drawingDisplayTags,
 } from '../../src/lib/drawing-publication.mjs';
+test('drawing display removes review notes while retaining meaningful titles and source evidence', () => {
+  assert.equal(
+    drawingDisplayText('JAS-39 グリペン（候補）'),
+    'JAS-39 グリペン',
+  );
+  assert.equal(
+    drawingDisplayText('ボーイング旅客機（型式未確認）'),
+    'ボーイング旅客機',
+  );
+  assert.equal(drawingDisplayText('微风2005（名称未確認）'), '微風2005');
+  assert.equal(
+    drawingDisplayText('セスナ182 図面資料（原題：赛斯纳）'),
+    'セスナ182 図面資料',
+  );
+  assert.equal(
+    drawingDisplayText('C-17設計図(CADファイル付)'),
+    'C-17設計図(CADファイル付)',
+  );
+  assert.deepEqual(drawingDisplayTags(['名称・機種未確認', '民間機']), [
+    '民間機',
+  ]);
+  assert.ok(reanalysis.records.some((r) => r.title_ja.includes('候補')));
+});
 
 test('RAR reanalysis is owner-only and leaves the canonical source catalog intact', () => {
   assert.equal(catalog.records.length, 43);
