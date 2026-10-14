@@ -1,3 +1,16 @@
+export async function decodePublicationImages(page) {
+  return page.locator('img:visible').evaluateAll(async (images) => {
+    // Load offscreen lazy figures without hundreds of scroll/layout round trips.
+    for (const image of images) image.loading = 'eager';
+    return Promise.all(
+      images.map(async (image) => {
+        await image.decode();
+        return image.naturalWidth;
+      }),
+    );
+  });
+}
+
 export async function capturePublicationScreenshot(page, path) {
   for (let attempt = 0; attempt < 2; attempt++) {
     await page.evaluate(

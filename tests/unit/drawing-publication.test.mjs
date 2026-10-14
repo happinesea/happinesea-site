@@ -19,7 +19,7 @@ test('publication catalog covers every source with evidence and gates every cand
   const { catalog } = lib;
   assert.equal(catalog.records.length, 43);
   assert.equal(catalog.downloads.length, 77);
-  assert.equal(lib.publicationRecords({}).length, 6);
+  assert.equal(lib.publicationRecords({}).length, 39);
   assert.equal(
     lib.publicationRecords({ DRAWING_OWNER_PREVIEW: '1' }).length,
     39,

@@ -1,6 +1,8 @@
 import baselineCatalog from '../data/drawing-library/publication.json' with { type: 'json' };
 import reanalysis from '../data/drawing-library/rar-reanalysis.json' with { type: 'json' };
 import ownerExclusions from '../data/drawing-library/owner-exclusions.json' with { type: 'json' };
+import productionCatalog from '../data/drawing-library/production.json' with { type: 'json' };
+export { productionCatalog };
 export { ownerExclusions };
 export { reanalysis };
 // Display notes are removed without changing source titles or review evidence.
@@ -55,18 +57,19 @@ export function publicationRecords(env = process.env) {
     (env.PUBLICATION_MODE === 'production' || env.CI)
   )
     throw new Error('Owner drawing preview is forbidden in production');
-  if (catalog.records.some((r) => r.publication_right !== 'REVIEW_REQUIRED'))
-    throw new Error(
-      'Rights promotion requires an explicit reviewed publication change',
-    );
   const selected =
-    env.DRAWING_OWNER_PREVIEW === '1' ? ownerCatalog : baselineCatalog;
+    env.DRAWING_OWNER_PREVIEW === '1' ? ownerCatalog : productionCatalog;
   return selected.records.filter(
-    (r) => r.existing || env.DRAWING_OWNER_PREVIEW === '1',
+    (r) =>
+      !ownerExclusions.some((e) => e.record_id === r.id) &&
+      (env.DRAWING_OWNER_PREVIEW === '1' ||
+        r.publication_right === 'OWNER_APPROVED'),
   );
 }
 export function packageRecord(page) {
-  return catalog.records.find(
+  return (
+    process.env.DRAWING_OWNER_PREVIEW === '1' ? ownerCatalog : productionCatalog
+  ).records.find(
     (r) =>
       r.existing &&
       r.legacy.wordpress_ids.includes(String(page.download_id ?? page.id)),
@@ -74,11 +77,12 @@ export function packageRecord(page) {
 }
 export function recordDownloads(record, env = process.env) {
   const owner = env.DRAWING_OWNER_PREVIEW === '1';
-  return (owner ? ownerCatalog : baselineCatalog).downloads
+  return (owner ? ownerCatalog : productionCatalog).downloads
     .filter(
       (d) =>
         record.downloads.includes(d.id) && (owner || d.source_path === null),
     )
+    .filter((d) => owner || d.publication_right === 'OWNER_APPROVED')
     .map((file) => ({
       ...file,
       filename_distribution:

@@ -1,6 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
-import { capturePublicationScreenshot } from './helpers/publication-screenshot.mjs';
+import {
+  capturePublicationScreenshot,
+  decodePublicationImages,
+} from './helpers/publication-screenshot.mjs';
 
 const production = process.env.PUBLICATION_MODE === 'production';
 const publicBase = production
@@ -46,14 +49,8 @@ for (const route of [
       .getAttribute('href');
     if (production) expect(canonical).toMatch(/^https:\/\/happinesea\.com\//);
     if (route === '') expect(canonical).toBe(publicBase);
-    for (const image of await page.locator('img:visible').all()) {
-      await image.scrollIntoViewIfNeeded();
-      expect(
-        await image.evaluate((img: HTMLImageElement) =>
-          img.decode().then(() => img.naturalWidth),
-        ),
-      ).toBeGreaterThan(0);
-    }
+    for (const width of await decodePublicationImages(page))
+      expect(width).toBeGreaterThan(0);
     expect(
       await page.evaluate(
         () =>
