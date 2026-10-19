@@ -8,8 +8,10 @@ The default WordPress REST source is now
 `WORDPRESS_API_URL` override remains supported by article inventory/sync and
 is also used by the legacy REST audit/sync callers.
 
-Public article links, canonical URLs, WordPress `home`/`siteurl`, historical
-source evidence, assets, taxonomy, and Publication Contract are unchanged.
+Public article links, canonical URLs, historical source evidence, assets,
+taxonomy, and Publication Contract are unchanged. As of 2026-10-19, WordPress
+`home` and `siteurl` both use `https://cms.happinesea.com`; this is the accepted
+CMS configuration and does not determine Astro publication URLs.
 The sync validation report records the endpoint actually used. WordPress is
 still a build-time source; browser HTML and JavaScript must not reference
 `cms.happinesea.com`.
@@ -20,7 +22,31 @@ new CMS endpoint check workflow verifies the live API and validation on pull
 requests or manual dispatch, with read-only repository permissions and no
 deployment job. No repository Actions variables were present at inspection.
 
-## Verification
+## Source identity and public URL identity (2026-10-19)
+
+The REST root and current API post links belong to the CMS origin. Article
+`contract.source_url` records that input link; `canonical`, `slug`, and `route`
+come from the existing approved manifest. A CMS link is accepted only when its
+HTTPS origin is trusted and its path matches the pinned public canonical.
+Credentials, query/fragment, foreign origins, ID/slug/route drift, changed
+source text, and changed image hashes remain failures. Historical public-origin
+source links remain valid for replay of approved evidence.
+
+Inventory membership stays pinned to existing inventory IDs plus explicitly
+registered manifest IDs. Other new CMS posts do not enter publication or gain
+a canonical through inference. Article 2197 is not registered in this change.
+
+Download Manager renderings for articles 2051 and 2035 now generate CMS-origin
+package links. Their two observed render variants are stable-hash pinned in the
+existing manifest review format. Literal replacements must still reproduce the
+original approved source hash before the existing publication transform runs.
+There is no global CMS URL replacement or relaxed body/media review.
+
+No WordPress configuration, plugin, upload, preview, posting flow, or deployment
+is changed. The sync report and source metadata may reference CMS inputs;
+generated browser content, canonical, sitemap, and runtime requests must not.
+
+## Historical verification
 
 Baseline: `origin/main` at `e04aa16ed59f47b3ce00733c91a0c78e82c37be1`.
 

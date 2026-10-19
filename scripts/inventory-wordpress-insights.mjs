@@ -12,6 +12,7 @@ import {
   fetchWithRetry,
   htmlText,
   publicationPosts,
+  publicationSourceMatches,
   publicationSourceAssetUrl,
   reviewedArticleHtml,
   resolveInventoryDecision,
@@ -26,6 +27,11 @@ const manifest = JSON.parse(
 );
 const outputPath = join(root, 'src/data/wordpress-insight-inventory.json');
 const endpoint = process.env.WORDPRESS_API_URL ?? manifest.source_endpoint;
+const previous = JSON.parse(await readFile(outputPath, 'utf8'));
+const inventoryIds = new Set([
+  ...previous.articles.map(({ id }) => id),
+  ...manifest.articles.map(({ id }) => id),
+]);
 const decisions = JSON.parse(
   await readFile(
     join(root, 'src/data/wordpress-phase6-decisions.json'),
@@ -83,7 +89,8 @@ const posts = await fetchPaged(endpoint, {
   _fields:
     'id,slug,link,date_gmt,modified_gmt,status,title,featured_media,categories,tags,content',
 });
-const activePosts = publicationPosts(posts, manifest.withdrawals);
+// New CMS posts need an explicit manifest entry before entering this pinned inventory.
+const activePosts = publicationPosts(posts, manifest.withdrawals, inventoryIds);
 const [categories, tags] = await Promise.all([
   fetchPaged(new URL('categories', endpoint), {
     per_page: '100',
@@ -115,6 +122,11 @@ const mappingById = new Map(manifest.articles.map((item) => [item.id, item]));
 const articles = activePosts.map((post) => {
   const mapping = mappingById.get(post.id);
   const decision = decisions.articles.find(({ id }) => id === post.id);
+  const canonical =
+    mapping?.canonical ??
+    previous.articles.find(({ id }) => id === post.id)?.canonical;
+  if (!publicationSourceMatches(post.link, canonical))
+    throw new Error(`inventory source identity drift: ${post.id}`);
   const markup = analyzePostMarkup(
     reviewedArticleHtml(post.content?.rendered, mapping?.content_review),
   );
@@ -141,7 +153,7 @@ const articles = activePosts.map((post) => {
     id: post.id,
     title: htmlText(post.title?.rendered),
     slug: post.slug,
-    canonical: post.link,
+    canonical,
     published_at: post.date_gmt,
     modified_at: post.modified_gmt,
     category: post.categories.map(
@@ -177,12 +189,6 @@ const articles = activePosts.map((post) => {
   };
 });
 
-let previous = null;
-try {
-  previous = JSON.parse(await readFile(outputPath, 'utf8'));
-} catch (error) {
-  if (error.code !== 'ENOENT') throw error;
-}
 if (previous) {
   assertInventoryContinuity(articles, previous.articles, manifest.withdrawals);
   const withdrawnCount = previous.articles.filter(

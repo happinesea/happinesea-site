@@ -4,11 +4,11 @@
 
 ## 結果と検証範囲
 
-Gitに保存済みの公開snapshotによるproduction artifactでは、index可能なcanonical **225件すべて登録、漏れ0、sitemap重複0、不正URL0**。HTMLは398件、うち152件は正常なcanonical統合、21件はnoindexまたは404で除外。
+通常のlive CMS同期を含むproduction artifactで、index可能なcanonical **225件すべて登録、漏れ0、sitemap重複0、不正URL0**。HTMLは398件、うち152件は正常なcanonical統合、21件はnoindexまたは404で除外。
 
-**通常のCMS同期を含むproduction build／`npm run validate`は未完了**。既存のwithdrawal identity検証が記事1627で停止する。CMS APIは `https://cms.happinesea.com/experience/202107081627.html` を返す一方、承認済みwithdrawal台帳は `https://happinesea.com/experience/202107081627.html` を指定している。CMS originへの変化を無条件で許容せず、Publication Contract・withdrawal・同期処理は変更していない。この問題は本sitemap修正と独立したbuild blockerであり、CI成功やdeploy readinessは宣言しない。
+初回は記事1627のwithdrawal identity検証で通常buildが停止した。ownerがCMSのhome/siteurl両方を `https://cms.happinesea.com` とする構成を正式に維持すると明示したため、取得元と公開URLを分離して解消した。CMS／旧公開originのHTTPS入力だけを許可し、path不一致・ID／slug／route driftは拒否する。公開canonicalはmanifest／既存台帳に固定し、CMSから推測しない。withdrawalも同じpath identity検証で維持。
 
-通常buildの停止後、Gitの保存済み公開snapshotに対して `astro build` と既存alias後処理、sitemap verifierを実行した。live CMS再同期の成功や現在配信中artifactとの一致を証明するものではない。
+通常`npm run validate`が成功した。90記事の生成データは`contract.source_url`だけCMS入力へ更新し、公開ID／slug／route／canonical・本文・画像は不変。CMS観測98投稿に対し既存inventory96件／公開manifest90件を維持し、新規2197は登録していない。Download Managerのorigin変更は2051・2035の2件だけ既存hash固定variantとして追加し、旧承認本文とのbyte一致と、別の本文変更の拒否を確認した。398 HTML・sitemap・robotsも初回snapshotとbyte一致。現在配信中artifactとの一致やdeploy readinessは別の確認事項。
 
 ## 種類別集計（修正後）
 
@@ -47,7 +47,15 @@ Gitに保存済みの公開snapshotによるproduction artifactでは、index可
 
 ## QAと再現
 
-保存済みsnapshotのproduction artifact:
+通常の検証:
+
+```powershell
+$env:PUBLICATION_MODE='production'
+npm run validate
+node --test tests/cms-api.integration.mjs
+```
+
+初回調査時に使用した保存済みsnapshotのproduction artifact手順（通常buildの代替合格にはしない）:
 
 ```powershell
 $env:PUBLICATION_MODE='production'
@@ -58,13 +66,16 @@ node scripts/verify-sitemap.mjs
 npm run test:dist
 ```
 
-上記はCMS syncを含む通常buildの代替合格ではない。通常コマンドも実行し、失敗をそのまま記録する。
+初回の通常build失敗と、identity分離後の通常build成功を区別して検証した。
 
 - sitemap verifier: XML構文・namespace・index→配下XML参照・全canonical一致・漏れ・重複・origin・robots参照がPASS。225 URL／1 chunk。staging／CMS URL 0。架空のlastmod等0。
 - build-output: 36 PASS。production manifest回帰テストは39 drawing、8商品detail、既存日本語manualと独立章、RC4GS V2各節の章URL、RC8X／RC8P、glossary／FAQ／download、90記事を照合する。
 - unit: 8種類の新規ページをfixtureに追加すると、既存serializerが自動採用。各種類を1件ずつsitemapから抜くmutationで、build gateが全ケース失敗することを確認。noindexは採用されない。
 - 実際に一時Astro pageを追加してbuildし、sitemapが226件になり新規canonicalが自動登録されることも確認。そのpageを削除して再build後、225件に戻りbuild-output 36件が再度PASS。一時pageはcommitしない。
 - sampleの新しいnoindex assertionは修正前artifactでFAIL、修正後でPASSを確認。
-- 通常`npm run validate`: unit 172 PASS、Astro error 0、lint／format PASS。その後のCMS syncで記事1627のidentity不一致によりexit 1。全体PASSではない。
+- 通常production `npm run validate` PASS、Astro error 0、lint／format PASS、build-output 36 PASS。追加testを含む最終unit 175 PASS。live CMS integration 2 PASS。
+- HTTP publication-origin verifier: first-party link/asset 1,449、canonical 397、legacy manual alias 23／article alias 90を検証し、broken link・canonical conflict・CMS runtime・staging残留各0。
+- Drawing39件×desktop/mobile 78、47 download HTTP／SHA、画像・tag・sitemap PASS。複数のbrowser/verifierを同時実行した初回はローカル接続／画像decode失敗を観測し、他のHTTP検証完了後に無変更で再実行してPASS。assertionやtimeoutは緩和していない。
+- 独立read-onlyレビュー: unresolved P0／P1／P2 0。CMS入力分離と2件のhash固定variantを確認。
 
-実装は記事robots条件のみ。`astro.config.mjs`、sitemap生成library、robots、Publication Contract、manual source、legacy URL／301、Google設定、News sitemap、CMS連携、production承認フローは変更しない。Draft PRまでとし、merge・production deployは実施しない。
+実装は記事robots条件とbuild-time CMS identity分離。`astro.config.mjs`、sitemap生成library、robots、Publication Contract schema、manual source、legacy URL／301、Google設定、News sitemap、新規投稿自動採用、WordPress設定／plugin、production承認フローは変更しない。Draft PRまでとし、merge・production deployは実施しない。

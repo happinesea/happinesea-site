@@ -948,7 +948,22 @@
             "evidence_url": "https://happinesea.com/wp-content/uploads/2022/11/cool9030_manual_jp.pdf"
           }
         ],
-        "stable_content_sha256": "e7ee44a0b0e54c4bda96552fcf3b8b30198144b729f6acf0d51ad1ff1438c1ab"
+        "stable_content_sha256": "e7ee44a0b0e54c4bda96552fcf3b8b30198144b729f6acf0d51ad1ff1438c1ab",
+        "source_variants": [
+          {
+            "stable_content_sha256": "5f1b5e4496a9d8e16fa6a6ad36f0123a3b1399a38f4d11810e4ca2a806ca4d9d",
+            "replacements": [
+              {
+                "from": "href='https://cms.happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
+                "to": "href='https://happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab"
+              },
+              {
+                "from": "data-downloadurl=\"https://cms.happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab",
+                "to": "data-downloadurl=\"https://happinesea.com/download/cool9030%e3%80%81%e3%83%96%e3%83%a9%e3%82%b7%e3%83%a2%e3%83%bc%e3%82%bf%e3%83%bc%e7%94%a8esc%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%9e%e3%83%8b%e3%83%a5%e3%82%a2%e3%83%ab"
+              }
+            ]
+          }
+        ]
       },
       "preserve_anchors": false,
       "featured_image_review": {
@@ -987,6 +1002,23 @@
           {
             "stable_content_sha256": "1329420701b7dc0e773204f1dd6ae5b86e14260dbcfc268961834aca2027200f",
             "replacements": [
+              {
+                "from": "src=\"https://cms.happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg\"",
+                "to": "src=\"https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg\""
+              }
+            ]
+          },
+          {
+            "stable_content_sha256": "f612ec840dc33e15e933b516326f8c6e613bd3f46c72788e29b157452a92caff",
+            "replacements": [
+              {
+                "from": "href='https://cms.happinesea.com/download/rc6gs-v3-manual",
+                "to": "href='https://happinesea.com/download/rc6gs-v3-manual"
+              },
+              {
+                "from": "data-downloadurl=\"https://cms.happinesea.com/download/rc6gs-v3-manual",
+                "to": "data-downloadurl=\"https://happinesea.com/download/rc6gs-v3-manual"
+              },
               {
                 "from": "src=\"https://cms.happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg\"",
                 "to": "src=\"https://happinesea.com/wp-content/plugins/download-manager/assets/file-type-icons/pdf.svg\""

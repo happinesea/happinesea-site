@@ -1,7 +1,7 @@
 {
   "baseline": "e77923da81bca51f38398d9a44704b76ff5966a7",
   "publication_base": "https://happinesea.com/",
-  "build_scope": "Git checked-in publication snapshot; live CMS sync fails withdrawal 1627 URL identity check",
+  "build_scope": "Normal production npm run validate with live CMS sync PASS; CMS source and pinned public canonical separated",
   "html": 398,
   "urls": 225,
   "excluded": 20,
@@ -3715,13 +3715,28 @@
     "unpublished_availability_inclusions": 1
   },
   "qa": {
-    "unit_pass": 172,
+    "unit_pass": 175,
     "build_output_pass": 36,
     "astro_errors": 0,
     "lint": "PASS",
     "format": "PASS",
     "xml_robots_canonical": "PASS",
     "actual_new_astro_page_auto_registration": "PASS; temporary page removed",
-    "standard_production_validate": "FAIL: CMS withdrawal article 1627 link identity mismatch"
+    "standard_production_validate": "PASS",
+    "live_cms_integration_pass": 2,
+    "drawing_browser_checks": 78,
+    "download_http_sha_checks": 47,
+    "first_party_http_checks": 1449,
+    "cms_runtime_references": 0,
+    "independent_review_unresolved_p0_p1_p2": 0,
+    "production_origin_browser_pass": 20
+  },
+  "cms": {
+    "observed_posts": 98,
+    "pinned_inventory": 96,
+    "published_manifest": 90,
+    "unregistered_2197_adopted": false,
+    "reviewed_render_variants": [2051, 2035],
+    "public_html_sitemap_robots_byte_unchanged": true
   }
 }

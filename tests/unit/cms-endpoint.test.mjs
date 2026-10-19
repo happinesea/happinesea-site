@@ -4,6 +4,9 @@ import test from 'node:test';
 import {
   fetchPublishedPosts,
   normalizePost,
+  publicationSourceMatches,
+  publicationPosts,
+  reviewedArticleHtml,
 } from '../../scripts/lib/wordpress-publication.mjs';
 
 const manifest = JSON.parse(
@@ -12,6 +15,28 @@ const manifest = JSON.parse(
     'utf8',
   ),
 );
+
+test('pinned CMS download renderings reproduce approved content and reject body drift', async () => {
+  const load = async (path) =>
+    JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
+  const current = await load('../fixtures/cms-rendering-variants.json');
+  const prior = await load(
+    '../fixtures/wordpress-phase6-completion-review.json',
+  );
+  for (const { id, content } of current) {
+    const review = manifest.articles.find((m) => m.id === id).content_review;
+    const old = prior.articles.find((m) => m.id === id).source_record.content
+      .rendered;
+    assert.equal(
+      reviewedArticleHtml(content, review),
+      reviewedArticleHtml(old, review),
+    );
+    assert.throws(
+      () => reviewedArticleHtml(content + '<p>unreviewed change</p>', review),
+      /source review drift/,
+    );
+  }
+});
 
 test('fetches from the CMS hostname without changing public canonical or route', async () => {
   const mapping = {
@@ -26,7 +51,7 @@ test('fetches from the CMS hostname without changing public canonical or route',
   const post = {
     id: 10,
     slug: 'example',
-    link: mapping.canonical,
+    link: 'https://cms.happinesea.com/news/10.html',
     status: 'publish',
     date_gmt: '2026-01-01T00:00:00',
     modified_gmt: '2026-01-02T00:00:00',
@@ -56,7 +81,75 @@ test('fetches from the CMS hostname without changing public canonical or route',
   );
   assert.equal(
     article.contract.source_url,
-    'https://happinesea.com/news/10.html',
+    'https://cms.happinesea.com/news/10.html',
   );
   assert.equal(article.route, '/insights/example/');
+  for (const change of [
+    { id: 11 },
+    { slug: 'other' },
+    { link: 'https://evil.example/news/10.html' },
+  ])
+    assert.throws(() => normalizePost({ ...post, ...change }, mapping));
+  assert.throws(() =>
+    normalizePost(post, { ...mapping, canonical: post.link }),
+  );
+});
+
+test('CMS-origin withdrawals remain excluded and unknown posts are not adopted', () => {
+  const withdrawal = {
+    id: 1627,
+    canonical: 'https://happinesea.com/experience/202107081627.html',
+    reason: 'owner withdrawal',
+    approved_at: '2026-10-09',
+  };
+  const retired = {
+    id: 1627,
+    link: 'https://cms.happinesea.com/experience/202107081627.html',
+  };
+  const approved = { id: 10 };
+  const unregistered = { id: 2197 };
+  assert.deepEqual(
+    publicationPosts(
+      [retired, approved, unregistered],
+      [withdrawal],
+      new Set([10, 1627]),
+    ),
+    [approved],
+  );
+  assert.throws(
+    () =>
+      publicationPosts(
+        [
+          {
+            ...retired,
+            link: 'https://cms.happinesea.com/experience/wrong.html',
+          },
+        ],
+        [withdrawal],
+      ),
+    /invalid withdrawal/,
+  );
+});
+
+test('CMS source identity accepts only the pinned public path on trusted HTTPS origins', () => {
+  const canonical = 'https://happinesea.com/news/10.html';
+  for (const source of [canonical, 'https://cms.happinesea.com/news/10.html'])
+    assert.equal(publicationSourceMatches(source, canonical), true);
+  for (const source of [
+    'http://cms.happinesea.com/news/10.html',
+    'https://evil.example/news/10.html',
+    'https://cms.happinesea.com/news/11.html',
+    'https://cms.happinesea.com/news/10.html?preview=true',
+    'https://cms.happinesea.com/news/10.html#fragment',
+    'https://user@cms.happinesea.com/news/10.html',
+    'not a URL',
+  ])
+    assert.equal(publicationSourceMatches(source, canonical), false);
+  assert.equal(
+    publicationSourceMatches(
+      canonical,
+      canonical.replace('happinesea.com', 'cms.happinesea.com'),
+    ),
+    false,
+  );
 });

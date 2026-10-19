@@ -100,12 +100,36 @@ export function reviewedArticleHtml(input, review) {
   return value;
 }
 
+export function publicationSourceMatches(sourceUrl, canonical) {
+  try {
+    const source = new URL(sourceUrl);
+    const publication = new URL(canonical);
+    return (
+      publication.origin === 'https://happinesea.com' &&
+      !publication.username &&
+      !publication.password &&
+      !publication.search &&
+      !publication.hash &&
+      ['https://cms.happinesea.com', 'https://happinesea.com'].includes(
+        source.origin,
+      ) &&
+      !source.username &&
+      !source.password &&
+      !source.search &&
+      !source.hash &&
+      source.pathname === publication.pathname
+    );
+  } catch {
+    return false;
+  }
+}
+
 export function resolveInventoryDecision(post, readiness, decision) {
   if (!decision) return readiness;
   if (
     decision.id !== post.id ||
     decision.slug !== post.slug ||
-    decision.source_url !== post.link
+    !publicationSourceMatches(post.link, decision.source_url)
   )
     throw new Error('publication decision drift');
   reviewedArticleHtml(post.content?.rendered, decision);
@@ -401,7 +425,7 @@ export function normalizePost(post, mapping, { bodyAssets = new Map() } = {}) {
     throw new Error(`mapping id mismatch for post ${post.id}`);
   if (mapping.content_type !== 'insight')
     throw new Error('invalid content_type');
-  if (mapping.canonical !== post.link)
+  if (!publicationSourceMatches(post.link, mapping.canonical))
     throw new Error(`canonical drift for post ${post.id}`);
   if (mapping.slug !== post.slug)
     throw new Error(`slug drift for post ${post.id}`);
@@ -566,7 +590,7 @@ export function assertManifestContinuity(articles, mappings, withdrawals) {
   }
 }
 
-export function publicationPosts(posts, withdrawals) {
+export function publicationPosts(posts, withdrawals, inventoryIds) {
   const ids = new Set();
   for (const withdrawal of withdrawals) {
     const post = posts.find(({ id }) => id === withdrawal.id);
@@ -576,12 +600,14 @@ export function publicationPosts(posts, withdrawals) {
       !withdrawal.reason?.trim() ||
       Number.isNaN(Date.parse(withdrawal.approved_at)) ||
       !/^https:\/\/happinesea\.com\//.test(withdrawal.canonical) ||
-      (post && post.link !== withdrawal.canonical)
+      (post && !publicationSourceMatches(post.link, withdrawal.canonical))
     )
       throw new Error(`invalid withdrawal for article ${withdrawal.id}`);
     ids.add(withdrawal.id);
   }
-  return posts.filter(({ id }) => !ids.has(id));
+  return posts.filter(
+    ({ id }) => !ids.has(id) && (!inventoryIds || inventoryIds.has(id)),
+  );
 }
 
 export function assertInventoryContinuity(current, previous, withdrawals) {
