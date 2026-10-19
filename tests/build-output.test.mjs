@@ -3,7 +3,11 @@ import { access, readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
-import { verifySitemap } from '../scripts/lib/sitemap.mjs';
+import {
+  canonicalSitemapEntry,
+  sitemapHtml,
+  verifySitemap,
+} from '../scripts/lib/sitemap.mjs';
 import { manualCanonical } from '../scripts/lib/rc4gs-v2-manual.mjs';
 import {
   headingText,
@@ -1053,6 +1057,82 @@ test('robots and sitemap use the selected publication origin', async () => {
   await assert.rejects(access(new URL('../CNAME', import.meta.url)));
 });
 
+test(
+  'production sitemap covers public manifests without promoting review-only pages',
+  {
+    skip: process.env.PUBLICATION_MODE !== 'production',
+  },
+  async () => {
+    const dir = fileURLToPath(new URL('../dist/', import.meta.url));
+    const base = 'https://happinesea.com/';
+    await verifySitemap(dir, base);
+    const load = async (name) =>
+      JSON.parse(
+        await readFile(
+          new URL(`../src/data/${name}.json`, import.meta.url),
+          'utf8',
+        ),
+      );
+    const check = async (path, indexable = true) => {
+      const html = await sitemapHtml(dir, new URL(path, base).href, base);
+      assert.equal(!!canonicalSitemapEntry(html, base), indexable, path);
+    };
+    for (const path of [
+      '/radiolink/',
+      '/manuals/',
+      '/drawinglibrary/',
+      '/downloads/',
+      '/support/',
+      '/insights/',
+      '/',
+    ])
+      await check(path);
+    const productStates = new Map(
+      (await load('products')).map((p) => [p.slug, p.content_status]),
+    );
+    for (const product of (await load('product-catalogue')).filter(
+      (p) => p.detailPath,
+    ))
+      await check(
+        product.detailPath,
+        productStates.get(product.slug) === 'published',
+      );
+    for (const record of (await load('drawing-library/production')).records)
+      await check(record.route);
+    for (const manual of (await load('manuals/existing-ja')).manuals.filter(
+      (m) => m.publication_status === 'publication_copy',
+    )) {
+      await check(manual.route);
+      for (const chapter of manualChapters(manual)) await check(chapter.route);
+    }
+    for (const section of rc4gsManual.sections)
+      await check(section.target.split('#')[0]);
+    const fullManuals = JSON.parse(
+      await readFile(
+        new URL(
+          '../docs/rc8x-rc8p-publication-inventory.json',
+          import.meta.url,
+        ),
+        'utf8',
+      ),
+    );
+    for (const product of fullManuals.products)
+      for (const page of product.pages)
+        await check(page.route, fullManuals.publication_status === 'published');
+    for (const page of (await load('legacy-compatibility')).pages.filter((p) =>
+      ['glossary', 'faq', 'download_endpoint', 'firmware_download'].includes(
+        p.type,
+      ),
+    ))
+      await check(page.target_route);
+    for (const article of (await load('wordpress-insight-manifest')).articles)
+      await check(
+        new URL(manualCanonical(article.canonical, rc4gsManual)).pathname,
+      );
+    await check('/insights/aircraft-engine-stop/', false);
+  },
+);
+
 test('structured data contains only backed product and article types', async () => {
   const product = await route('radiolink/rc8x/index.html');
   const unpublishedArticle = await route(
@@ -1062,6 +1142,7 @@ test('structured data contains only backed product and article types', async () 
   assert.match(product, /"@type":"Product"/);
   assert.match(product, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(unpublishedArticle, /"@type":"TechArticle"/);
+  assert.match(unpublishedArticle, /name="robots" content="noindex, nofollow"/);
   assert.doesNotMatch(product, /"offers"|"aggregateRating"|"review"/);
 });
 

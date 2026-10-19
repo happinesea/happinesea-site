@@ -1,0 +1,3727 @@
+{
+  "baseline": "e77923da81bca51f38398d9a44704b76ff5966a7",
+  "publication_base": "https://happinesea.com/",
+  "build_scope": "Git checked-in publication snapshot; live CMS sync fails withdrawal 1627 URL identity check",
+  "html": 398,
+  "urls": 225,
+  "excluded": 20,
+  "duplicateCanonicalPages": 152,
+  "chunks": 1,
+  "missing": 0,
+  "sitemap_duplicates": 0,
+  "invalid_urls": 0,
+  "groups": [
+    {
+      "category": "サポート",
+      "html": 11,
+      "indexable_html": 11,
+      "indexable_canonicals": 11,
+      "sitemap": 11,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 0,
+      "excluded": 0,
+      "exclusion_reasons": {}
+    },
+    {
+      "category": "その他",
+      "html": 27,
+      "indexable_html": 26,
+      "indexable_canonicals": 26,
+      "sitemap": 26,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 0,
+      "excluded": 1,
+      "exclusion_reasons": {
+        "error_page": 1
+      }
+    },
+    {
+      "category": "ダウンロード案内",
+      "html": 11,
+      "indexable_html": 11,
+      "indexable_canonicals": 11,
+      "sitemap": 11,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 0,
+      "excluded": 0,
+      "exclusion_reasons": {}
+    },
+    {
+      "category": "マニュアル",
+      "html": 164,
+      "indexable_html": 153,
+      "indexable_canonicals": 62,
+      "sitemap": 62,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 91,
+      "excluded": 11,
+      "exclusion_reasons": {
+        "noindex": 11
+      }
+    },
+    {
+      "category": "業界・技術記事",
+      "html": 129,
+      "indexable_html": 128,
+      "indexable_canonicals": 67,
+      "sitemap": 67,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 61,
+      "excluded": 1,
+      "exclusion_reasons": {
+        "noindex": 1
+      }
+    },
+    {
+      "category": "商品",
+      "html": 10,
+      "indexable_html": 2,
+      "indexable_canonicals": 2,
+      "sitemap": 2,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 0,
+      "excluded": 8,
+      "exclusion_reasons": {
+        "noindex": 8
+      }
+    },
+    {
+      "category": "設計図",
+      "html": 45,
+      "indexable_html": 45,
+      "indexable_canonicals": 45,
+      "sitemap": 45,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 0,
+      "excluded": 0,
+      "exclusion_reasons": {}
+    },
+    {
+      "category": "用語集",
+      "html": 1,
+      "indexable_html": 1,
+      "indexable_canonicals": 1,
+      "sitemap": 1,
+      "missing": 0,
+      "sitemap_duplicates": 0,
+      "canonical_alias_html": 0,
+      "excluded": 0,
+      "exclusion_reasons": {}
+    }
+  ],
+  "inventory_checks": {
+    "drawing_records": 39,
+    "product_details": 8,
+    "product_preparing_without_detail": 75,
+    "existing_ja_publication_copies": 7,
+    "wordpress_articles": 90
+  },
+  "pages": [
+    {
+      "file": "404.html",
+      "category": "その他",
+      "canonical": null,
+      "robots": ["robots: noindex"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "error_page"
+    },
+    {
+      "file": "blog/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog",
+      "reason": null
+    },
+    {
+      "file": "blog/page/2/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog/page/2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog/page/2",
+      "reason": null
+    },
+    {
+      "file": "blog/page/3/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog/page/3",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog/page/3",
+      "reason": null
+    },
+    {
+      "file": "blog/page/4/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog/page/4",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog/page/4",
+      "reason": null
+    },
+    {
+      "file": "blog/page/5/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog/page/5",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog/page/5",
+      "reason": null
+    },
+    {
+      "file": "blog/page/6/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog/page/6",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog/page/6",
+      "reason": null
+    },
+    {
+      "file": "blog/page/7/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/blog/page/7",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/blog/page/7",
+      "reason": null
+    },
+    {
+      "file": "category/engineering-drawing/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/engineering-drawing",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/engineering-drawing",
+      "reason": null
+    },
+    {
+      "file": "category/experience/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/experience",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/experience",
+      "reason": null
+    },
+    {
+      "file": "category/news/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/news",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/news",
+      "reason": null
+    },
+    {
+      "file": "category/news/page/2/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/news/page/2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/news/page/2",
+      "reason": null
+    },
+    {
+      "file": "category/news/page/3/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/news/page/3",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/news/page/3",
+      "reason": null
+    },
+    {
+      "file": "category/news/page/4/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/news/page/4",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/news/page/4",
+      "reason": null
+    },
+    {
+      "file": "category/pixhawk/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/pixhawk",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/pixhawk",
+      "reason": null
+    },
+    {
+      "file": "category/product/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/product",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/product",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/at9s-manual/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/at9s-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/at9s-manual",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/byme-a-manual/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/byme-a-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/byme-a-manual",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/minipix-manual/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/minipix-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/minipix-manual",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/page/2/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/page/2",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/page/3/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/3",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/page/3",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/page/4/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/4",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/page/4",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/page/5/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-support/page/5",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-support/page/5",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/rc4gs-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/rc4gs-manual/page/2/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-support/rc4gs-manual/page/3/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-videos/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-videos",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-videos",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-videos/page/2/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-videos/page/2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-videos/page/2",
+      "reason": null
+    },
+    {
+      "file": "category/radiolink-videos/page/3/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/category/radiolink-videos/page/3",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/category/radiolink-videos/page/3",
+      "reason": null
+    },
+    {
+      "file": "download/c-17輸送機スケールrc飛行機設計図cadファイル付/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/c-17%E8%BC%B8%E9%80%81%E6%A9%9F%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%ABrc%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3cad%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BB%98",
+      "reason": null
+    },
+    {
+      "file": "download/cool9030、ブラシモーター用esc日本語マニュアル/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/cool9030%E3%80%81%E3%83%96%E3%83%A9%E3%82%B7%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E7%94%A8esc%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/cool9030%E3%80%81%E3%83%96%E3%83%A9%E3%82%B7%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E7%94%A8esc%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB",
+      "reason": null
+    },
+    {
+      "file": "download/document-tag/rc6gs/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/document-tag/rc6gs",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/document-tag/rc6gs",
+      "reason": null
+    },
+    {
+      "file": "download/document-tag/rcスケール機/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/document-tag/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "reason": null
+    },
+    {
+      "file": "download/document-tag/スケール機/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F",
+      "reason": null
+    },
+    {
+      "file": "download/document-tag/スチレンボード/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/document-tag/%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "reason": null
+    },
+    {
+      "file": "download/document-tag/発泡スチロール/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/document-tag/%E7%99%BA%E6%B3%A1%E3%82%B9%E3%83%81%E3%83%AD%E3%83%BC%E3%83%AB",
+      "reason": null
+    },
+    {
+      "file": "download/fighter-ultralight軽飛行機設計図-2/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3-2",
+      "reason": null
+    },
+    {
+      "file": "download/fighter-ultralight軽飛行機設計図/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/fighter-ultralight%E8%BB%BD%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "reason": null
+    },
+    {
+      "file": "download/pitts-s-2c-or-ultimate-pitts-park-flyerスチレンボード飛行機設計図/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/pitts-s-2c-or-ultimate-pitts-park-flyer%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C%E6%A9%9F%E8%A8%AD%E8%A8%88%E5%9B%B3",
+      "reason": null
+    },
+    {
+      "file": "download/rc4gs-firmware-v3-0-8/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/rc4gs-firmware-v3-0-8",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/rc4gs-firmware-v3-0-8",
+      "reason": null
+    },
+    {
+      "file": "download/rc4gs-v6-0-1fhss-rx/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/rc4gs-v6-0-1fhss-rx",
+      "reason": null
+    },
+    {
+      "file": "download/rc6gs-v3-manual/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/download/rc6gs-v3-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/rc6gs-v3-manual",
+      "reason": null
+    },
+    {
+      "file": "download/rcスケール機：f4dスカイレイ、スチレンボード飛行-2/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C-2",
+      "reason": null
+    },
+    {
+      "file": "download/rcスケール機：f4dスカイレイ、スチレンボード飛行/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9Af4d%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%AC%E3%82%A4%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89%E9%A3%9B%E8%A1%8C",
+      "reason": null
+    },
+    {
+      "file": "download/rcスケール機：サーブ-35-ドラケン、スチレンボード/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/download/rc%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E6%A9%9F%EF%BC%9A%E3%82%B5%E3%83%BC%E3%83%96-35-%E3%83%89%E3%83%A9%E3%82%B1%E3%83%B3%E3%80%81%E3%82%B9%E3%83%81%E3%83%AC%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%89",
+      "reason": null
+    },
+    {
+      "file": "downloads/index.html",
+      "category": "ダウンロード案内",
+      "canonical": "https://happinesea.com/downloads/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/downloads/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/boeing-airliner-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/boeing-airliner-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/boeing-airliner-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/breeze2005-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/breeze2005-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/breeze2005-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/cessna-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/cessna-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/cessna-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/cessna182/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/cessna182/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/cessna182/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/color330-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/color330-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/color330-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/f-15/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/f-15/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/f-15/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/f-18/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/f-18/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/f-18/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/f-22/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/f-22/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/f-22/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/f117/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/f117/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/f117/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/f16/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/f16/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/f16/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/floatplane-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/floatplane-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/floatplane-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/fuel-cad-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/fuel-cad-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/fuel-cad-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/j-20/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/j-20/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/j-20/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/j10/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/j10/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/j10/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/jas-39/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/jas-39/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/jas-39/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/jet-engine-manual/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/jet-engine-manual/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/jet-engine-manual/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/kj66-engine/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/kj66-engine/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/kj66-engine/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/laser200/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/laser200/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/laser200/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/light-aircraft-no1/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/light-aircraft-no1/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/light-aircraft-no1/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/light-helicopter/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/light-helicopter/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/light-helicopter/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/microjet-engine/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/microjet-engine/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/microjet-engine/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/mig-29/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/mig-29/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/mig-29/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/mig21/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/mig21/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/mig21/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/mig25/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/mig25/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/mig25/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/mirage2000/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/mirage2000/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/mirage2000/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/piper-j3-cub/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/piper-j3-cub/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/piper-j3-cub/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/printed-plans-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/printed-plans-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/printed-plans-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/pulse-engine-manual/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/pulse-engine-manual/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/pulse-engine-manual/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/rotorcraft-unidentified/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/rotorcraft-unidentified/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/rotorcraft-unidentified/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/sr71/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/sr71/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/sr71/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/su-27/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/su-27/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/su-27/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/su-47/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/su-47/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/su-47/",
+      "reason": null
+    },
+    {
+      "file": "drawinglibrary/su37/index.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/drawinglibrary/su37/",
+      "robots": ["robots: index,follow"],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drawinglibrary/su37/",
+      "reason": null
+    },
+    {
+      "file": "drone-rc-glossary/index.html",
+      "category": "用語集",
+      "canonical": "https://happinesea.com/drone-rc-glossary",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/drone-rc-glossary",
+      "reason": null
+    },
+    {
+      "file": "engineering-drawing/202110181716.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/engineering-drawing/202110181716.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/engineering-drawing/202110181716.html",
+      "reason": null
+    },
+    {
+      "file": "engineering-drawing/202110181726.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/engineering-drawing/202110181726.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/engineering-drawing/202110181726.html",
+      "reason": null
+    },
+    {
+      "file": "engineering-drawing/202110191734.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/engineering-drawing/202110191734.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/engineering-drawing/202110191734.html",
+      "reason": null
+    },
+    {
+      "file": "engineering-drawing/202110211742.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/engineering-drawing/202110211742.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/engineering-drawing/202110211742.html",
+      "reason": null
+    },
+    {
+      "file": "engineering-drawing/202201171891.html",
+      "category": "設計図",
+      "canonical": "https://happinesea.com/engineering-drawing/202201171891.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/engineering-drawing/202201171891.html",
+      "reason": null
+    },
+    {
+      "file": "experience/20200312114.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/20200312114.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/20200312114.html",
+      "reason": null
+    },
+    {
+      "file": "experience/20200313375.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/20200313375.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/20200313375.html",
+      "reason": null
+    },
+    {
+      "file": "experience/202101011382.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/202101011382.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/202101011382.html",
+      "reason": null
+    },
+    {
+      "file": "experience/202106101577.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/202106101577.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/202106101577.html",
+      "reason": null
+    },
+    {
+      "file": "experience/202112281857.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/202112281857.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/202112281857.html",
+      "reason": null
+    },
+    {
+      "file": "index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/",
+      "reason": null
+    },
+    {
+      "file": "insights/2-22．リセット機能-reset/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/2-position-switch-setting-of-rc8x/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202504222157.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202504222157.html",
+      "reason": null
+    },
+    {
+      "file": "insights/3d-helicopter-flying-a-align-550l-helicopter-controlled-by-radiolink-at9s/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202112071798.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202112071798.html",
+      "reason": null
+    },
+    {
+      "file": "insights/aircraft-engine-stop/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/insights/aircraft-engine-stop/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "insights/beautiful-cities-around-the-world/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/best-home-design-ideas-for-2016/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/best-way-to-have-fun-during-roadtrip/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/boxing-ring-is-rigged-says-tagerine/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "insights/byme-a固定翼飛行機フライトコントローラー：サーボ/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
+      "reason": null
+    },
+    {
+      "file": "insights/byme-a固定翼飛行機フライトコントローラー：スペッ/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
+      "reason": null
+    },
+    {
+      "file": "insights/byme-a固定翼飛行機フライトコントローラー：初期設/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
+      "reason": null
+    },
+    {
+      "file": "insights/byme-a固定翼飛行機フライトコントローラー：前書き/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "reason": null
+    },
+    {
+      "file": "insights/byme-a固定翼飛行機フライトコントローラー：機体の/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
+      "reason": null
+    },
+    {
+      "file": "insights/byme-a固定翼飛行機フライトコントローラー：飛行モ/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
+      "reason": null
+    },
+    {
+      "file": "insights/cool9030-ブラシモーターescの日本語マニュアルをリリー/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202211112051.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202211112051.html",
+      "reason": null
+    },
+    {
+      "file": "insights/dji-mavic-miniで逮捕注意？！200g未満でも適用される法規制と/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/20200313375.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/20200313375.html",
+      "reason": null
+    },
+    {
+      "file": "insights/everything-you-need-to-know-about-em-thruster/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/evolution-in-virtual-gaming/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/f35など、ステルス機は、本当にレーダーから見え/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202007101118.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202007101118.html",
+      "reason": null
+    },
+    {
+      "file": "insights/global-increase-in-the-sales-of-tablet/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/googleトレンドベース、日本rc市場の傾向を推測/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202111151758.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202111151758.html",
+      "reason": null
+    },
+    {
+      "file": "insights/head-track-setup-on-radiolink-rc8x-dji-fpv-goggles/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202301102079.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202301102079.html",
+      "reason": null
+    },
+    {
+      "file": "insights/head-tracking-set-up-on-rc-cars-radiolink-rc6gs-v2-transmitter-and-skyzone-02x-fpv-goggle/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202111301779.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202111301779.html",
+      "reason": null
+    },
+    {
+      "file": "insights/health-benifits-of-yoga/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/hello-world/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202003121.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202003121.html",
+      "reason": null
+    },
+    {
+      "file": "insights/horse-racing-is-disappearing-in-south-africa/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202601202187.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202601202187.html",
+      "reason": null
+    },
+    {
+      "file": "insights/how-to-set-t16d-t12d-to-control-a560/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202504082138.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202504082138.html",
+      "reason": null
+    },
+    {
+      "file": "insights/how-to-set-t16d-t12d-to-control-d460/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202504082135.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202504082135.html",
+      "reason": null
+    },
+    {
+      "file": "insights/how-to-update-firmware-of-radiolink-rc8x/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202212072066.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202212072066.html",
+      "reason": null
+    },
+    {
+      "file": "insights/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/insights/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/insights/",
+      "reason": null
+    },
+    {
+      "file": "insights/jaxaの火星ドローンになぜか、違和感を覚えた/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202106091559.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202106091559.html",
+      "reason": null
+    },
+    {
+      "file": "insights/light-ultra-powerful-laptop/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/lions-of-africa-protesting-against-disney/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "insights/love-for-football-around-the-world/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/power-of-capturing-the-moment-in-mobile-devices/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/20200312114.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/20200312114.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-at10ⅱ開封＆電源付けるまでat10バージョン2/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071534.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071534.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-byme-a-5-flight-modes-airplane-flight-controller/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/product/202112171833.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/product/202112171833.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-byme-a-sbus-pwm-converter-with-6-axis-flight-controller/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/product/202112141804.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/product/202112141804.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-byme-d-connection-and-calibration-tutorial/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202112161829.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202112161829.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-byme-d-gyro-stabilizer-revisited-setup-and-flight/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202112151825.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202112151825.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-fixed-wing-a560-vertical-flight/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202112191839.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202112191839.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-mini-pix-フライトコントローラーを開封します。/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071548.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071548.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-mini-pix取扱説明書―マルチコプター編1．-mini-pixの概要/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-new-arrival-8ch-rc8x-transmitter/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202301102081.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202301102081.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-new-transmitter-rc8x/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202212072058.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202212072058.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-rc4gs-4チャンネル、ジャイロ機能付きプロポセット/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071546.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071546.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-rc4gs送信機のアップグレード方法-手順/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071544.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071544.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolink-rc8x-controls-jdm-98-hydraulic-bulldozer/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202212072062.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202212072062.html",
+      "reason": null
+    },
+    {
+      "file": "insights/radiolinkラジオリンク製品のpseマークについて/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/202101011382.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/202101011382.html",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs-v3、rc6gs-v3の日本語版マニュアルを翻訳中です。/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202206092005.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202206092005.html",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：1-4．電波状況rssiの確認/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：1-5．テレメトリー情報の確認/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：2-16-1．プログラムミキシングのために/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：2-16-3．混合制御ミックスコントロー/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：2-16．プログラムミキシング-pmix/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：2-19．ローバッテリー保護/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：2-21．フェイルセーフ/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc4gs取扱説明書：混合制御ミックスコントロール設/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rc6gs-v3取扱説明書をリリースしました。/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202209232035.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202209232035.html",
+      "reason": null
+    },
+    {
+      "file": "insights/rideing-wave-on-a-bodyboard/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/rubber-powered-copter-ascends-almost-out-of-sight/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202112151810.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202112151810.html",
+      "reason": null
+    },
+    {
+      "file": "insights/scientific-study-of-organisms-in-the-ocean/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/selfie-in-the-space-is-so-fun/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "insights/shooting-passing-dribbling-and-rebounding/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/smart-watch-on-the-go/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/solo-travel-around-the-world/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/starting-new-rc-fpv-car-world-your-partner-radiolink-rc4gs-v2-rc6gs-v2/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202111271774.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202111271774.html",
+      "reason": null
+    },
+    {
+      "file": "insights/t16d-t12d-self-centering-throttle-stick-adjustment/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202504092153.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202504092153.html",
+      "reason": null
+    },
+    {
+      "file": "insights/tips-for-travelling-with-an-infant/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "insights/use-of-drone-to-minimize-the-violence-in-highways/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/20200317107.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/20200317107.html",
+      "reason": null
+    },
+    {
+      "file": "insights/what-is-this-new-sport-that-is-winning-the-world/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/why-should-you-be-eating-organic/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/will-emdrive-thruster-change-in-space-travel/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "insights/yahooショッピングで、マニュアルのまとめページを/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202108131635.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202108131635.html",
+      "reason": null
+    },
+    {
+      "file": "insights/「多機能」「高コスパ」な多チャンネル＜ハイエ/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202212202074.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202212202074.html",
+      "reason": null
+    },
+    {
+      "file": "insights/【戦艦ラジコンに便利な6ch】-2-4ghzプロポセットrc6gs-v2/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/product/202201041876.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/product/202201041876.html",
+      "reason": null
+    },
+    {
+      "file": "insights/エイプリルフール-限定無料-キャンペーン/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202203311998.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202203311998.html",
+      "reason": null
+    },
+    {
+      "file": "insights/スペクトラム拡散の仕組みから理解する、radiolink社のat/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202102101500.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202102101500.html",
+      "reason": null
+    },
+    {
+      "file": "insights/タミヤ-1-350ドイツ海軍-ビスマルク級戦艦-テルピッツ/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/202106101577.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/202106101577.html",
+      "reason": null
+    },
+    {
+      "file": "insights/パトリオットは極超音速ミサイルキンジャールを/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202506242177.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202506242177.html",
+      "reason": null
+    },
+    {
+      "file": "insights/ボーイング737maxにおける飛行トラブルと、航空便を/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202012011350.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202012011350.html",
+      "reason": null
+    },
+    {
+      "file": "insights/ラジコン初心者の方向け【ちょっとした小技？も/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202112231851.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202112231851.html",
+      "reason": null
+    },
+    {
+      "file": "insights/中国、東方航空mu5735異様な転落-事故-を解説/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202203271947.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202203271947.html",
+      "reason": null
+    },
+    {
+      "file": "insights/中国のロケット輸送システム、長征シリーズを一/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202207252012.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202207252012.html",
+      "reason": null
+    },
+    {
+      "file": "insights/中国の次世代ステルス垂直-短距離離着陸戦闘機関/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202305302086.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202305302086.html",
+      "reason": null
+    },
+    {
+      "file": "insights/冬休みに遊びたい「rc」5選/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/experience/202112281857.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/experience/202112281857.html",
+      "reason": null
+    },
+    {
+      "file": "insights/北斗衛星測位システム中国版gpsの仕組み/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202006301090.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202006301090.html",
+      "reason": null
+    },
+    {
+      "file": "insights/技適マークのない無線機器を利用できる制度で「we/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/20200528977.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/20200528977.html",
+      "reason": null
+    },
+    {
+      "file": "insights/日本玩具協会、googleトレンドベース、日本rc市場の傾/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202101171413.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202101171413.html",
+      "reason": null
+    },
+    {
+      "file": "insights/極超音速ミサイルの仕組みと特徴/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202203221895.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202203221895.html",
+      "reason": null
+    },
+    {
+      "file": "insights/飛行機のエンジン停止したら何が起こるか？単に/index.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/20200525943.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/20200525943.html",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-03/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-03/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-03/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-04/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-04/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-04/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-05/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-05/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-05/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-06/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-06/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-06/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-07/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-07/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-07/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-08/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-08/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-08/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-09/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-09/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-09/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-10/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-10/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-10/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-11/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-11/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-11/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/chapter-12/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-12/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/chapter-12/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-a-v2/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-a-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-a-v2/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-03/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-03/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-03/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-04/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-04/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-04/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-05/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-05/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-05/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-06/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-06/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-06/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/chapter-07/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/chapter-07/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/chapter-07/",
+      "reason": null
+    },
+    {
+      "file": "manuals/byme-d/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/byme-d/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/byme-d/",
+      "reason": null
+    },
+    {
+      "file": "manuals/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc4gs-v2/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc4gs-v2/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc4gs-v2/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc4gs-v3/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v3/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v3/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc4gs-v3/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v3/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v3/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc4gs-v3/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v3/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v3/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/chapter-03/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-03/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-03/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/chapter-04/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-04/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-04/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/chapter-05/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-05/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-05/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/chapter-06/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-06/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/chapter-06/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3-quick-reference/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3-quick-reference/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc6gs-v3/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc6gs-v3/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc6gs-v3/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8p/back-matter/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8p/back-matter/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8p/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8p/chapter-01/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8p/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8p/chapter-02/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8p/chapter-03/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8p/chapter-03/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8p/chapter-04/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8p/chapter-04/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8p/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8p/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-03/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-03/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-03/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-04/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-04/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-04/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-05/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-05/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-05/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-06/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-06/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-06/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-07/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-07/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-07/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/chapter-08/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-08/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/chapter-08/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x-quick-reference/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x-quick-reference/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc8x-quick-reference/",
+      "reason": null
+    },
+    {
+      "file": "manuals/rc8x/back-matter/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x/back-matter/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8x/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x/chapter-01/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8x/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x/chapter-02/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/rc8x/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc8x/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "manuals/t8fb/chapter-01/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-02/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-03/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-03/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-03/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-04/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-04/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-04/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-05/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-05/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-05/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-06/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-06/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-06/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-07/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-07/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-07/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/chapter-08/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/chapter-08/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/chapter-08/",
+      "reason": null
+    },
+    {
+      "file": "manuals/t8fb/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/t8fb/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/t8fb/",
+      "reason": null
+    },
+    {
+      "file": "news/202003121.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202003121.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202003121.html",
+      "reason": null
+    },
+    {
+      "file": "news/20200317107.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/20200317107.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/20200317107.html",
+      "reason": null
+    },
+    {
+      "file": "news/20200525943.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/20200525943.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/20200525943.html",
+      "reason": null
+    },
+    {
+      "file": "news/20200528977.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/20200528977.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/20200528977.html",
+      "reason": null
+    },
+    {
+      "file": "news/202006281075.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "news/202006281086.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "news/202006301090.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202006301090.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202006301090.html",
+      "reason": null
+    },
+    {
+      "file": "news/202007101118.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202007101118.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202007101118.html",
+      "reason": null
+    },
+    {
+      "file": "news/202012011350.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202012011350.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202012011350.html",
+      "reason": null
+    },
+    {
+      "file": "news/202101171413.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202101171413.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202101171413.html",
+      "reason": null
+    },
+    {
+      "file": "news/202102101500.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202102101500.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202102101500.html",
+      "reason": null
+    },
+    {
+      "file": "news/202106091559.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202106091559.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202106091559.html",
+      "reason": null
+    },
+    {
+      "file": "news/202108131635.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202108131635.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202108131635.html",
+      "reason": null
+    },
+    {
+      "file": "news/202109281673.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "reason": null
+    },
+    {
+      "file": "news/202111151758.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202111151758.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202111151758.html",
+      "reason": null
+    },
+    {
+      "file": "news/202111301779.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202111301779.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202111301779.html",
+      "reason": null
+    },
+    {
+      "file": "news/202112151810.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202112151810.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202112151810.html",
+      "reason": null
+    },
+    {
+      "file": "news/202112231851.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202112231851.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202112231851.html",
+      "reason": null
+    },
+    {
+      "file": "news/202203221895.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202203221895.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202203221895.html",
+      "reason": null
+    },
+    {
+      "file": "news/202203271947.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202203271947.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202203271947.html",
+      "reason": null
+    },
+    {
+      "file": "news/202203311998.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202203311998.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202203311998.html",
+      "reason": null
+    },
+    {
+      "file": "news/202206092005.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202206092005.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202206092005.html",
+      "reason": null
+    },
+    {
+      "file": "news/202207252012.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202207252012.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202207252012.html",
+      "reason": null
+    },
+    {
+      "file": "news/202211112051.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202211112051.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202211112051.html",
+      "reason": null
+    },
+    {
+      "file": "news/202212202074.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202212202074.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202212202074.html",
+      "reason": null
+    },
+    {
+      "file": "news/202301102079.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202301102079.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202301102079.html",
+      "reason": null
+    },
+    {
+      "file": "news/202301102081.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202301102081.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202301102081.html",
+      "reason": null
+    },
+    {
+      "file": "news/202305302086.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202305302086.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202305302086.html",
+      "reason": null
+    },
+    {
+      "file": "news/202504082135.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202504082135.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202504082135.html",
+      "reason": null
+    },
+    {
+      "file": "news/202504082138.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202504082138.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202504082138.html",
+      "reason": null
+    },
+    {
+      "file": "news/202506242177.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202506242177.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202506242177.html",
+      "reason": null
+    },
+    {
+      "file": "news/202601202187.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/news/202601202187.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/news/202601202187.html",
+      "reason": null
+    },
+    {
+      "file": "page-examples/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/page-examples",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/page-examples",
+      "reason": null
+    },
+    {
+      "file": "privacy-policy/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/privacy-policy",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/privacy-policy",
+      "reason": null
+    },
+    {
+      "file": "product/202112141804.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/product/202112141804.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/product/202112141804.html",
+      "reason": null
+    },
+    {
+      "file": "product/202112171833.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/product/202112171833.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/product/202112171833.html",
+      "reason": null
+    },
+    {
+      "file": "product/202201041876.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/product/202201041876.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/product/202201041876.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/byme-a-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-productions-manual/byme-a-manual",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-productions-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-productions-manual",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/minipix-manual-multicopter/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-productions-manual/minipix-manual-multicopter",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/pixhawk-user-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-productions-manual/pixhawk-user-manual",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/r6dsm-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-productions-manual/r6dsm-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-productions-manual/r6dsm-manual",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/rc4gs-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-productions-manual/rc6gs-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-productions-manual/rc6gs-manual",
+      "reason": null
+    },
+    {
+      "file": "radiolink-q-and-a/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/radiolink-q-and-a",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-q-and-a",
+      "reason": null
+    },
+    {
+      "file": "radiolink-q-and-a/radiolink-wheeler-faq/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-q-and-a/radiolink-wheeler-faq",
+      "reason": null
+    },
+    {
+      "file": "radiolink-q-and-a/rssi-test/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/radiolink-q-and-a/rssi-test",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-q-and-a/rssi-test",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/2016091547.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/20200313160.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/202112151825.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202112151825.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202112151825.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/202112161829.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202112161829.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202112161829.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/202112191839.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202112191839.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202112191839.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/202209232035.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/202209232035.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/202209232035.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/byme-a-manual/202109281673.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281673.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/byme-a-manual/202109281675.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109281675.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/byme-a-manual/202109291679.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291679.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/byme-a-manual/202109291682.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291682.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/byme-a-manual/202109291687.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202109291687.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/byme-a-manual/202110011691.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/byme-a-manual/202110011691.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200315199.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200316191.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200316196.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200317175.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200319121.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200319129.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200319234.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200323185.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200324100.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020033030.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020033192.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040754.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040870.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040877.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040885.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040910.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200409169.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040939.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/2020040962.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200409850.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200409854.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/manual/20200410863.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/mini-pix製品マニュアル/20200511911.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/minipix-manual/20200511905.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511905.html",
+      "robots": ["robots: noindex,follow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink-support/minipix-manual/20200511911.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-support/minipix-manual/20200511911.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200315188.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200315199.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200316191.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200316196.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200317175.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200319121.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200319129.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200319234.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200323185.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200324100.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020033030.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020033192.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040754.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040870.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040877.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040885.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040910.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200409169.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040939.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/2020040962.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200409850.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200409854.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/20200410863.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/202006181050.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/202006181054.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-01/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/202006241058.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/202006281075.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/202006281082.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-support/rc4gs-manual/202006281086.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/chapter-02/",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202105071534.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071534.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071534.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202105071544.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071544.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071544.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202105071546.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071546.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071546.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202105071548.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202105071548.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202105071548.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202111271774.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202111271774.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202111271774.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202112071798.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202112071798.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202112071798.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202212072058.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202212072058.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202212072058.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202212072062.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202212072062.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202212072062.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202212072066.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202212072066.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202212072066.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202504092153.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202504092153.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202504092153.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink-videos/202504222157.html",
+      "category": "業界・技術記事",
+      "canonical": "https://happinesea.com/radiolink-videos/202504222157.html",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink-videos/202504222157.html",
+      "reason": null
+    },
+    {
+      "file": "radiolink/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink",
+      "reason": null
+    },
+    {
+      "file": "radiolink/r12f/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/r12f/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/r16f/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/r16f/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/r6fg/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/r6fg/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/r7fg/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/r7fg/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/r8fg/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/r8fg/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/rc4gs/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/rc4gs",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink/rc4gs",
+      "reason": null
+    },
+    {
+      "file": "radiolink/rc8p/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/rc8p/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/rc8x/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/rc8x/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/t12d/index.html",
+      "category": "商品",
+      "canonical": "https://happinesea.com/radiolink/t12d/",
+      "robots": ["robots: noindex, nofollow"],
+      "indexable": false,
+      "sitemap_canonical": null,
+      "reason": "noindex"
+    },
+    {
+      "file": "radiolink/updates/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/radiolink/updates/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/radiolink/updates/",
+      "reason": null
+    },
+    {
+      "file": "rc4gs-manual/index.html",
+      "category": "マニュアル",
+      "canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/manuals/rc4gs-v2/",
+      "reason": null
+    },
+    {
+      "file": "rc8x_firmewar_upgarde/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/rc8x_firmewar_upgarde",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/rc8x_firmewar_upgarde",
+      "reason": null
+    },
+    {
+      "file": "sample-page-2/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/sample-page-2",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/sample-page-2",
+      "reason": null
+    },
+    {
+      "file": "sample-page/index.html",
+      "category": "その他",
+      "canonical": "https://happinesea.com/sample-page",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/sample-page",
+      "reason": null
+    },
+    {
+      "file": "support/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/support/",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/support/",
+      "reason": null
+    },
+    {
+      "file": "ufaq/faq-rc4gs-rc6gs-telemetry/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq/faq-rc4gs-rc6gs-telemetry",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq/faq-rc4gs-rc6gs-telemetry",
+      "reason": null
+    },
+    {
+      "file": "ufaq/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq",
+      "reason": null
+    },
+    {
+      "file": "ufaq/radiolinkのホイラータイププロポはどのようなバッテリ/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq/radiolink%E3%81%AE%E3%83%9B%E3%82%A4%E3%83%A9%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E3%83%97%E3%83%AD%E3%83%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%83%90%E3%83%83%E3%83%86%E3%83%AA",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq/radiolink%E3%81%AE%E3%83%9B%E3%82%A4%E3%83%A9%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E3%83%97%E3%83%AD%E3%83%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%83%90%E3%83%83%E3%83%86%E3%83%AA",
+      "reason": null
+    },
+    {
+      "file": "ufaq/rc4gs-rc6gsと交換性ある受信機は何ですか。他社の受信機/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%A8%E4%BA%A4%E6%8F%9B%E6%80%A7%E3%81%82%E3%82%8B%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82%E4%BB%96%E7%A4%BE%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%A8%E4%BA%A4%E6%8F%9B%E6%80%A7%E3%81%82%E3%82%8B%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82%E4%BB%96%E7%A4%BE%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F",
+      "reason": null
+    },
+    {
+      "file": "ufaq/rc4gs-rc6gsは、トラクサスtraxxas等、ツインモータを操縦でき/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%AF%E3%80%81%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B5%E3%82%B9traxxas%E7%AD%89%E3%80%81%E3%83%84%E3%82%A4%E3%83%B3%E3%83%A2%E3%83%BC%E3%82%BF%E3%82%92%E6%93%8D%E7%B8%A6%E3%81%A7%E3%81%8D",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%AF%E3%80%81%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B5%E3%82%B9traxxas%E7%AD%89%E3%80%81%E3%83%84%E3%82%A4%E3%83%B3%E3%83%A2%E3%83%BC%E3%82%BF%E3%82%92%E6%93%8D%E7%B8%A6%E3%81%A7%E3%81%8D",
+      "reason": null
+    },
+    {
+      "file": "ufaq/rc4gs-rc6gsは保存データで数は？/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%AF%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%95%B0%E3%81%AF%EF%BC%9F",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq/rc4gs-rc6gs%E3%81%AF%E4%BF%9D%E5%AD%98%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%95%B0%E3%81%AF%EF%BC%9F",
+      "reason": null
+    },
+    {
+      "file": "ufaq/ufaq-category/faq-wheeler/index.html",
+      "category": "サポート",
+      "canonical": "https://happinesea.com/ufaq/ufaq-category/faq-wheeler",
+      "robots": [],
+      "indexable": true,
+      "sitemap_canonical": "https://happinesea.com/ufaq/ufaq-category/faq-wheeler",
+      "reason": null
+    }
+  ],
+  "excluded_error_pages": 1,
+  "total_excluded_html": 21,
+  "before": {
+    "sitemap_urls": 226,
+    "missing": 0,
+    "unpublished_availability_inclusions": 1
+  },
+  "qa": {
+    "unit_pass": 172,
+    "build_output_pass": 36,
+    "astro_errors": 0,
+    "lint": "PASS",
+    "format": "PASS",
+    "xml_robots_canonical": "PASS",
+    "actual_new_astro_page_auto_registration": "PASS; temporary page removed",
+    "standard_production_validate": "FAIL: CMS withdrawal article 1627 link identity mismatch"
+  }
+}
