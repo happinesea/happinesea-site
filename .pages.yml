@@ -37,7 +37,7 @@ content:
       - name: description
         label: 説明文
         type: text
-        required: true
+        description: 空欄なら公開表示時に本文から概要を自動生成します。手入力した説明文を優先します。
       - name: topic
         label: カテゴリ
         type: select
@@ -47,11 +47,17 @@ content:
             [航空・ドローン, RC技術, 法規・制度, 業界動向, 技術解説, 導入事例]
       - name: tags
         label: タグ
-        type: string
-        list: true
+        type: reference
         default: []
+        options:
+          collection: article_tags
+          multiple: true
+          search: name
+          value: '{fields.name}'
+          label: '{fields.name}'
+        description: 既存タグを検索・選択します。新しいタグは「記事タグ」で作成後、ここで選択します。
       - name: hero
-        label: アイキャッチ画像
+        label: 代表画像（一覧・記事冒頭）
         type: object
         required: true
         fields:
@@ -86,17 +92,222 @@ content:
           time: true
           format: "yyyy-MM-dd'T'HH:mm:ssXXX"
       - name: related_products
-        label: 関連製品ID（任意）
-        type: string
-        list: true
+        label: 関連商品
+        type: select
         default: []
+        options:
+          multiple: true
+          placeholder: 商品名・IDで検索
+          values:
+            - value: at10-ii
+              label: AT10 II (at10-ii)
+            - value: at9s-pro
+              label: AT9S Pro (at9s-pro)
+            - value: t16d
+              label: T16D (t16d)
+            - value: t12d
+              label: T12D (t12d)
+            - value: t8fb-bt
+              label: T8FB(BT) (t8fb-bt)
+            - value: t8s-bt
+              label: T8S(BT) (t8s-bt)
+            - value: trainer-cable
+              label: Trainer Cable (trainer-cable)
+            - value: twc
+              label: TWC (twc)
+            - value: rc8p
+              label: RC8P (rc8p)
+            - value: rc8x
+              label: RC8X (rc8x)
+            - value: rc6gs-v3
+              label: RC6GS V3 (rc6gs-v3)
+            - value: rc4gs-v3
+              label: RC4GS V3 (rc4gs-v3)
+            - value: 2-4g-nano-1w
+              label: 2.4G Nano(1W) (2-4g-nano-1w)
+            - value: 915mhz-1w
+              label: 915MHz(1W) (915mhz-1w)
+            - value: 2-4g-micro-1w
+              label: 2.4G Micro(1W) (2-4g-micro-1w)
+            - value: i2c-expansion-board
+              label: I2C Expansion Board (i2c-expansion-board)
+            - value: i2c-transfer-board
+              label: I2C Transfer Board (i2c-transfer-board)
+            - value: pix6
+              label: PIX6 (pix6)
+            - value: crossflight-ce
+              label: CrossFlight-CE (crossflight-ce)
+            - value: crossflight
+              label: CrossFlight (crossflight)
+            - value: f405
+              label: F405 (f405)
+            - value: f722
+              label: F722 (f722)
+            - value: crossrace-pro
+              label: CrossRace Pro (crossrace-pro)
+            - value: crossrace
+              label: CrossRace (crossrace)
+            - value: mini-pix
+              label: Mini Pix (mini-pix)
+            - value: pixhawk
+              label: PIXHAWK (pixhawk)
+            - value: byme-db
+              label: Byme-DB (byme-db)
+            - value: byme-a
+              label: Byme-A (byme-a)
+            - value: byme-d
+              label: Byme-D (byme-d)
+            - value: divit
+              label: DiViT (divit)
+            - value: sui04
+              label: SUI04 (sui04)
+            - value: su04
+              label: SU04 (su04)
+            - value: rtk-f9p
+              label: RTK F9P (rtk-f9p)
+            - value: ant-m7
+              label: ANT-M7 (ant-m7)
+            - value: ant-b10
+              label: ANT-B10 (ant-b10)
+            - value: se100-m10n
+              label: SE100(M10N) (se100-m10n)
+            - value: ts100-m10n
+              label: TS100(M10N) (ts100-m10n)
+            - value: ts100-m8n
+              label: TS100(M8N) (ts100-m8n)
+            - value: ld-a40
+              label: LD-A40 (ld-a40)
+            - value: ld-b20
+              label: LD-B20 (ld-b20)
+            - value: d16pro-200
+              label: D16PRO-200 (d16pro-200)
+            - value: bds200
+              label: BDS200 (bds200)
+            - value: vds200
+              label: VDS200 (vds200)
+            - value: f108
+              label: F108 (f108)
+            - value: wolf-qav250
+              label: Wolf QAV250 (wolf-qav250)
+            - value: m435
+              label: M435 (m435)
+            - value: f330
+              label: F330 (f330)
+            - value: f450
+              label: F450 (f450)
+            - value: f121
+              label: F121 (f121)
+            - value: f121-pro
+              label: F121 Pro (f121-pro)
+            - value: f125
+              label: F125 (f125)
+            - value: a560
+              label: A560 (a560)
+            - value: su27
+              label: SU27 (su27)
+            - value: d460
+              label: D460 (d460)
+            - value: cb86-plus
+              label: CB86-PLUS (cb86-plus)
+            - value: cm210
+              label: CM210 (cm210)
+            - value: cm120
+              label: CM120 (cm120)
+            - value: re15a-2s
+              label: RE15A 2S (re15a-2s)
+            - value: am32-70a
+              label: AM32-70A (am32-70a)
+            - value: cl9030
+              label: CL9030 (cl9030)
+            - value: r12ds
+              label: R12DS (r12ds)
+            - value: r12dse
+              label: R12DSE (r12dse)
+            - value: r9ds
+              label: R9DS (r9ds)
+            - value: r6ds
+              label: R6DS (r6ds)
+            - value: r6dsm
+              label: R6DSM (r6dsm)
+            - value: prm-01
+              label: PRM-01 (prm-01)
+            - value: prm-03
+              label: PRM-03 (prm-03)
+            - value: r16f
+              label: R16F (r16f)
+            - value: r16sm
+              label: R16SM (r16sm)
+            - value: r12f
+              label: R12F (r12f)
+            - value: r8fgh
+              label: R8FGH (r8fgh)
+            - value: r8ef
+              label: R8EF (r8ef)
+            - value: r8fg
+              label: R8FG (r8fg)
+            - value: r8fm
+              label: R8FM (r8fm)
+            - value: r8sm
+              label: R8SM (r8sm)
+            - value: r8xm
+              label: R8XM (r8xm)
+            - value: r7fg
+              label: R7FG (r7fg)
+            - value: r6fg
+              label: R6FG (r6fg)
+            - value: r6f
+              label: R6F (r6f)
+            - value: r4fgm
+              label: R4FGM (r4fgm)
+            - value: er16-2-4g
+              label: ER16(2.4G) (er16-2-4g)
+            - value: elrs-915mhz
+              label: ELRS(915MHz) (elrs-915mhz)
+            - value: turbo-pix
+              label: TURBO PiX (turbo-pix)
+      - name: gallery
+        label: 追加画像（本文の後に表示）
+        type: object
+        list:
+          collapsible:
+            summary: '{fields.alt}'
+        description: 画像を追加し、説明を入力。項目のドラッグで並べ替え、項目メニューから削除できます。本文中への配置は本文エディタの / Image を使います。
+        fields:
+          - name: src
+            label: 画像
+            type: image
+            required: true
+            options:
+              media: article_images
+          - name: alt
+            label: 画像の説明
+            type: string
+            required: true
       - name: body
         label: 本文
         type: rich-text
-        required: true
         options:
           format: markdown
           media: article_images
+          switcher: true
+        description: '文字を選択して書式ツールバーを表示。空の段落で / を入力すると見出し・リスト・画像を挿入できます。Undo: Ctrl/Cmd+Z、Redo: Ctrl/Cmd+Shift+Z。画像を選択するとALTを編集できます。'
+  - name: article_tags
+    label: 記事タグ
+    type: collection
+    path: src/content/article-tags
+    format: yaml
+    filename: '{fields.name}.yml'
+    subfolders: false
+    operations:
+      rename: false
+    view:
+      primary: name
+    fields:
+      - name: name
+        label: タグ名
+        type: string
+        required: true
+        pattern: ^[^\s/\\.][^/\\]*$
 settings:
   hide: true
   content:

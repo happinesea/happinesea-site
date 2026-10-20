@@ -19,6 +19,11 @@ import {
   finalizeCmsArticleImages,
 } from '../../scripts/lib/pages-articles.mjs';
 
+const sampleImage = parse(
+  (await readFile('src/content/articles/pages-cms-example.md', 'utf8')).split(
+    '---',
+  )[1],
+).hero.src;
 const input = {
   content_origin: 'pages-cms',
   slug: 'sample',
@@ -27,7 +32,7 @@ const input = {
   topic: 'RC技術',
   content_status: 'published',
   published_at: '2026-10-20T10:00:00+09:00',
-  hero: { src: '/images/articles/sample.webp', alt: '画像' },
+  hero: { src: sampleImage, alt: '画像' },
 };
 
 test('CMS fields map to existing article data without dropping unmanaged metadata', () => {
@@ -56,7 +61,7 @@ test('drafts are excluded and a filename/slug change cannot silently move a publ
     id: 'draft-secret',
     data: { ...published.data, content_status: 'draft' },
   };
-  assert.deepEqual(publishedCmsArticles([draft, published]), [published]);
+  assert.equal(publishedCmsArticles([draft, published])[0].id, published.id);
   assert.throws(
     () => publishedCmsArticles([{ ...published, id: 'other' }]),
     /filename/,
@@ -70,13 +75,10 @@ test('CMS body image URLs receive the Astro base and reject traversal/external i
   };
   const node = {
     tagName: 'img',
-    properties: { src: '/images/articles/sample.webp', alt: '画像' },
+    properties: { src: sampleImage, alt: '画像' },
   };
   const output = plugin.element.visit(node, ctx);
-  assert.equal(
-    output.properties.src,
-    '/happinesea-site/images/articles/sample.webp',
-  );
+  assert.equal(output.properties.src, '/happinesea-site' + sampleImage);
   assert.throws(() =>
     plugin.element.visit(
       { ...node, properties: { src: '/images/articles/../private.png' } },
@@ -96,13 +98,10 @@ test('real Markdown renderer emits base-aware CMS images and rejects unsafe sour
     hastPlugins: [cmsArticleImages('/happinesea-site')],
   });
   const options = { frontmatter: { content_origin: 'pages-cms' } };
-  const result = await renderer.render(
-    '![image](/images/articles/sample.webp)',
-    options,
-  );
+  const result = await renderer.render(`![image](${sampleImage})`, options);
   assert.match(
     result.code,
-    /src="\/happinesea-site\/images\/articles\/sample.webp"/,
+    new RegExp('src="/happinesea-site' + sampleImage + '"'),
   );
   await assert.rejects(
     renderer.render('![image](https://example.com/image.jpg)', options),
@@ -112,7 +111,10 @@ test('real Markdown renderer emits base-aware CMS images and rejects unsafe sour
 test('Pages CMS exposes only the new collection, merges unmanaged fields, and isolates media', async () => {
   const config = parse(await readFile('.pages.yml', 'utf8'));
   assert.equal(config.settings.content.merge, true);
-  assert.equal(config.content.length, 1);
+  assert.deepEqual(
+    config.content.map((item) => item.name),
+    ['articles', 'article_tags'],
+  );
   assert.equal(config.content[0].path, 'src/content/articles');
   assert.equal(config.content[0].format, 'yaml-frontmatter');
   assert.equal(config.content[0].operations.rename, false);
@@ -144,5 +146,5 @@ test('draft-only images are removed only from the artifact, published references
   await finalizeCmsArticleImages(dir);
   await access(join(dir, 'images/articles/published.png'));
   await assert.rejects(access(join(dir, 'images/articles/draft.png')));
-  await access('public/images/articles/sample.webp');
+  await access('public' + sampleImage);
 });

@@ -4,6 +4,12 @@ import test from 'node:test';
 import { compileFunction } from 'node:vm';
 import { publishedCmsArticles } from '../../scripts/lib/pages-articles.mjs';
 import ts from 'typescript';
+import { parse } from 'yaml';
+const sampleImage = parse(
+  (await readFile('src/content/articles/pages-cms-example.md', 'utf8')).split(
+    '---',
+  )[1],
+).hero.src;
 
 // Execute the real page selection with in-memory collections; no article files change.
 const page = await readFile(
@@ -89,7 +95,7 @@ test('carousel includes published CMS articles and excludes drafts across all co
       topic,
       published_at: new Date(`2026-01-${day}`),
       content_status,
-      hero: { src: '/images/articles/sample.webp', alt: 'image' },
+      hero: { src: sampleImage, alt: 'image' },
     },
   });
   const { latestSlides } = await select(async (name) =>

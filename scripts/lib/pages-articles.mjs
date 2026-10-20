@@ -2,6 +2,18 @@ import { z } from 'astro/zod';
 import { existsSync } from 'node:fs';
 import { readFile, readdir, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
+import { markdownToHtml } from 'satteri';
+import sanitizeHtml from 'sanitize-html';
+import { metadataText } from './wordpress-publication.mjs';
+
+import catalogue from '../../src/data/product-catalogue.json' with { type: 'json' };
+const productIds = new Set(catalogue.map((product) => product.id));
+const unique = (values) => [...new Set(values)];
+// Pages CMS may save YAML timestamps without quotes; Astro then supplies a Date.
+const articleDate = z.union([
+  z.date(),
+  z.iso.datetime({ offset: true }).transform((value) => new Date(value)),
+]);
 
 const articleImage = z
   .string()
@@ -13,7 +25,11 @@ export const cmsArticleSchema = z
     content_origin: z.literal('pages-cms'),
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     title: z.string().trim().min(1),
-    description: z.string().trim().min(1),
+    description: z
+      .string()
+      .trim()
+      .nullish()
+      .transform((value) => value ?? ''),
     topic: z.enum([
       '航空・ドローン',
       'RC技術',
@@ -22,19 +38,22 @@ export const cmsArticleSchema = z
       '技術解説',
       '導入事例',
     ]),
-    tags: z.array(z.string().trim().min(1)).default([]),
+    tags: z.array(z.string().trim().min(1)).default([]).transform(unique),
     hero: z.object({ src: articleImage, alt: z.string().trim().min(1) }),
-    content_status: z.enum(['draft', 'published']).default('draft'),
-    published_at: z.iso
-      .datetime({ offset: true })
-      .transform((value) => new Date(value)),
-    updated_at: z.iso
-      .datetime({ offset: true })
-      .transform((value) => new Date(value))
-      .optional(),
-    related_products: z
-      .array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/))
+    gallery: z
+      .array(z.object({ src: articleImage, alt: z.string().trim().min(1) }))
       .default([]),
+    content_status: z.enum(['draft', 'published']).default('draft'),
+    published_at: articleDate,
+    updated_at: articleDate.optional(),
+    related_products: z
+      .array(
+        z
+          .string()
+          .refine((id) => productIds.has(id), 'Unknown Radiolink product ID'),
+      )
+      .default([])
+      .transform(unique),
   })
   .transform((data) => ({
     ...data,
@@ -47,14 +66,53 @@ export const cmsArticleSchema = z
   }));
 
 export function publishedCmsArticles(entries) {
-  return entries.filter((entry) => {
-    if (entry.data.content_status !== 'published') return false;
-    if (entry.id !== entry.data.slug)
-      throw new Error(`CMS article filename must match slug: ${entry.id}`);
-    // Astro moves this module into prerender chunks; source assets stay at the repo root.
-    if (!existsSync(join('public', entry.data.hero.src.slice(1))))
-      throw new Error(`Missing CMS article image: ${entry.data.hero.src}`);
-    return true;
+  return entries
+    .filter((entry) => {
+      if (entry.data.content_status !== 'published') return false;
+      if (entry.id !== entry.data.slug)
+        throw new Error(`CMS article filename must match slug: ${entry.id}`);
+      // Astro moves this module into prerender chunks; source assets stay at the repo root.
+      if (!existsSync(join('public', entry.data.hero.src.slice(1))))
+        throw new Error(`Missing CMS article image: ${entry.data.hero.src}`);
+      for (const image of entry.data.gallery ?? [])
+        if (!existsSync(join('public', image.src.slice(1))))
+          throw new Error(`Missing CMS gallery image: ${image.src}`);
+      return true;
+    })
+    .map((entry) => ({
+      ...entry,
+      data: {
+        ...entry.data,
+        description:
+          entry.data.description ||
+          articleExcerpt(entry.body) ||
+          entry.data.title,
+      },
+    }));
+}
+
+export function articleExcerpt(body = '') {
+  const html = markdownToHtml(body).html;
+  const text = metadataText(
+    html.replaceAll(/<\/(?:p|h[1-6]|li|blockquote|pre)>/g, '$& '),
+  );
+  return Array.from(text).slice(0, 160).join('');
+}
+
+export function renderCmsArticle(body = '', base = '/') {
+  const html = markdownToHtml(body, {
+    hastPlugins: [cmsArticleImages(base)],
+    data: { astro: { frontmatter: { content_origin: 'pages-cms' } } },
+  }).html;
+  return sanitizeHtml(html, {
+    allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
+    allowedAttributes: {
+      a: ['href', 'title'],
+      img: ['src', 'alt', 'title'],
+      code: ['class'],
+    },
+    allowedSchemes: ['https', 'http', 'mailto'],
+    allowProtocolRelative: false,
   });
 }
 
