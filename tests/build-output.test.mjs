@@ -3,6 +3,7 @@ import { access, readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
+import { parse as parseYaml } from 'yaml';
 import {
   canonicalSitemapEntry,
   sitemapHtml,
@@ -28,6 +29,43 @@ const route = (path) =>
   readFile(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 const publicationBase =
   process.env.PUBLICATION_MODE === 'production' ? '' : '/happinesea-site';
+const cmsArticleSources = await Promise.all(
+  (await readdir(new URL('../src/content/articles/', import.meta.url)))
+    .filter((file) => file.endsWith('.md'))
+    .map(async (file) => {
+      const source = await readFile(
+        new URL(`../src/content/articles/${file}`, import.meta.url),
+        'utf8',
+      );
+      return parseYaml(source.match(/^---\r?\n([\s\S]*?)\r?\n---/)[1]);
+    }),
+);
+
+test('CMS publication state controls HTML, images, index links and sitemap inclusion', async () => {
+  const index = await route('insights/index.html');
+  const home = await route('index.html');
+  const sitemap = await route('sitemap-0.xml');
+  for (const article of cmsArticleSources) {
+    const path = `insights/${article.slug}/index.html`;
+    if (article.content_status !== 'published') {
+      await assert.rejects(
+        access(new URL('../dist/' + path, import.meta.url)),
+        /ENOENT/,
+      );
+      assert.ok(!index.includes(`/insights/${article.slug}/`));
+      assert.ok(!home.includes(`/insights/${article.slug}/`));
+      assert.ok(!sitemap.includes(`/insights/${article.slug}/`));
+      continue;
+    }
+    const html = await route(path);
+    assert.match(html, /data-article-section="body"/);
+    assert.doesNotMatch(html, /name="robots" content="noindex/);
+    assert.ok(html.includes(`src="${publicationBase}${article.hero.src}"`));
+    assert.ok(index.includes(`/insights/${article.slug}/`));
+    assert.ok(sitemap.includes(`/insights/${article.slug}/`));
+    await access(new URL('../dist' + article.hero.src, import.meta.url));
+  }
+});
 
 test('latest full manuals have complete local figures, tables, videos and resolvable links', async () => {
   const inventory = JSON.parse(
@@ -815,7 +853,13 @@ test('insights index exposes all editorial topics', async () => {
   for (const topic of topics) {
     assert.match(html, new RegExp(`data-topic-label="${topic}"`));
   }
-  assert.equal((html.match(/<article class=/g) ?? []).length, 90);
+  const cmsPublished = cmsArticleSources.filter(
+    (data) => data.content_status === 'published',
+  ).length;
+  assert.equal(
+    (html.match(/<article class=/g) ?? []).length,
+    90 + cmsPublished,
+  );
   assert.match(
     html,
     /how-to-change-radiolink-t8fb-stick-mode-joystick-calibration/,

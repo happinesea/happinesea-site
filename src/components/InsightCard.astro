@@ -4,7 +4,10 @@ import { withBase } from '../lib/urls';
 import wordpressInsights from '../data/wordpress-insights.json';
 
 interface Props {
-  insight: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
+  insight:
+    | CollectionEntry<'insights'>
+    | CollectionEntry<'wordpressInsights'>
+    | CollectionEntry<'cmsArticles'>;
 }
 
 const { insight } = Astro.props;

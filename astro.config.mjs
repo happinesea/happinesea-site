@@ -9,6 +9,7 @@ import { verifyExistingJapaneseManuals } from './scripts/lib/existing-ja-manuals
 import { satteri } from '@astrojs/markdown-satteri';
 import { semanticHeadingPunctuation } from './scripts/lib/manual-semantic-structure.mjs';
 import { manualSidebar } from './scripts/lib/manual-navigation.mjs';
+import { cmsArticleImages, finalizeCmsArticleImages } from './scripts/lib/pages-articles.mjs';
 
 verifyExistingJapaneseManuals(existingJapaneseManuals, new URL('./public/', import.meta.url));
 
@@ -23,13 +24,14 @@ const buildOutput = new URL(ownerDrawings ? './.superpowers/drawing-publication-
 export default defineConfig({
   outDir: fileURLToPath(buildOutput),
   markdown: {
-    processor: satteri({ hastPlugins: [semanticHeadingPunctuation(existingJapaneseManuals.manuals)] }),
+    processor: satteri({ hastPlugins: [semanticHeadingPunctuation(existingJapaneseManuals.manuals), cmsArticleImages(production ? '/' : '/happinesea-site')] }),
   },
   site: production ? 'https://happinesea.com' : 'https://happinesea.github.io',
   base: production ? '/' : '/happinesea-site',
   output: 'static',
   trailingSlash: 'always',
   integrations: [
+    {name:'cms-article-assets',hooks:{'astro:build:done': async ({dir})=>finalizeCmsArticleImages(fileURLToPath(dir))}},
     sitemap({
       // Aliases are finalized after Astro; the post-build gate verifies canonical targets.
       serialize: sitemapSerializer(

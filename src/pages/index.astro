@@ -6,12 +6,14 @@ import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/urls';
 import { SITE_NAME, SITE_TAGLINE } from '../lib/site';
+import { publishedCmsArticles } from '../../scripts/lib/pages-articles.mjs';
 
 const insights = [
   ...(await getCollection('insights')).filter(
     ({ data }) => data.content_status === 'published',
   ),
   ...(await getCollection('wordpressInsights')),
+  ...publishedCmsArticles(await getCollection('cmsArticles')),
 ].sort((a, b) => b.data.published_at.valueOf() - a.data.published_at.valueOf());
 const latest = insights[0];
 const latestSlides = insights.slice(0, 5);

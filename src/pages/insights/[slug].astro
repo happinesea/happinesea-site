@@ -10,6 +10,7 @@ import {
 } from '../../lib/structured-data';
 import { canonicalUrl, withBase } from '../../lib/urls';
 import { SITE_NAME } from '../../lib/site';
+import { publishedCmsArticles } from '../../../scripts/lib/pages-articles.mjs';
 import manual from '../../data/manuals/rc4gs-v2.json';
 import downloads from '../../data/static-downloads.json';
 import { rewriteSafetyBlockedDownloads } from '../../../scripts/lib/existing-ja-manuals.mjs';
@@ -19,13 +20,17 @@ import {
 } from '../../../scripts/lib/rc4gs-v2-manual.mjs';
 
 interface Props {
-  article: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
+  article:
+    | CollectionEntry<'insights'>
+    | CollectionEntry<'wordpressInsights'>
+    | CollectionEntry<'cmsArticles'>;
 }
 
 export async function getStaticPaths() {
   const insights = [
     ...(await getCollection('insights')),
     ...(await getCollection('wordpressInsights')),
+    ...publishedCmsArticles(await getCollection('cmsArticles')),
   ];
   const slugs = new Set<string>();
   for (const { data } of insights) {
@@ -45,7 +50,9 @@ const { data } = article;
 const isWordpress = article.collection === 'wordpressInsights';
 const wordpressData =
   article.collection === 'wordpressInsights' ? article.data : undefined;
-const staticArticle = article.collection === 'insights' ? article : undefined;
+const cmsData = article.collection === 'cmsArticles' ? article.data : undefined;
+const staticArticle =
+  article.collection !== 'wordpressInsights' ? article : undefined;
 const Content = staticArticle
   ? (await render(staticArticle)).Content
   : undefined;
@@ -98,7 +105,7 @@ const wordpressBody =
   description={description}
   canonicalPath={`/insights/${data.slug}/`}
   canonicalUrlOverride={wordpressData ? articleUrl : undefined}
-  image={wordpressData?.hero?.src}
+  image={wordpressData?.hero?.src ?? cmsData?.hero.src}
   type={isPublished ? 'article' : 'website'}
   jsonLd={jsonLd}
   robots={
@@ -122,6 +129,15 @@ const wordpressBody =
           </p>
         )}
         <ArticleHero article={data} />
+        {cmsData && cmsData.tags.length > 0 && (
+          <ul class="flex list-none flex-wrap gap-2 p-0" aria-label="タグ">
+            {cmsData.tags.map((tag) => (
+              <li class="rounded-full bg-teal-50 px-3 py-1 text-sm text-teal-800">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        )}
 
         <section
           class="border-y border-slate-200 py-7 text-xl leading-9 text-slate-700"

@@ -1,0 +1,103 @@
+media:
+  - name: article_images
+    label: 記事画像
+    input: public/images/articles
+    output: /images/articles
+    extensions: [png, jpg, jpeg, webp, gif]
+    rename: random
+content:
+  - name: articles
+    label: 一般記事
+    type: collection
+    path: src/content/articles
+    format: yaml-frontmatter
+    subfolders: false
+    filename: '{fields.slug}.md'
+    operations:
+      rename: false
+      delete: false
+    view:
+      primary: title
+      fields: [title, content_status, published_at]
+    fields:
+      - name: content_origin
+        type: string
+        hidden: true
+        default: pages-cms
+      - name: slug
+        label: URL識別子
+        type: string
+        required: true
+        description: 半角英小文字・数字・ハイフン。作成後は変更しないでください。
+        pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+      - name: title
+        label: タイトル
+        type: string
+        required: true
+      - name: description
+        label: 説明文
+        type: text
+        required: true
+      - name: topic
+        label: カテゴリ
+        type: select
+        required: true
+        options:
+          values:
+            [航空・ドローン, RC技術, 法規・制度, 業界動向, 技術解説, 導入事例]
+      - name: tags
+        label: タグ
+        type: string
+        list: true
+        default: []
+      - name: hero
+        label: アイキャッチ画像
+        type: object
+        required: true
+        fields:
+          - name: src
+            label: 画像
+            type: image
+            required: true
+            options:
+              media: article_images
+          - name: alt
+            label: 画像の説明
+            type: string
+            required: true
+      - name: content_status
+        label: 公開状態
+        type: select
+        required: true
+        default: draft
+        options:
+          values:
+            - label: 下書き
+              value: draft
+            - label: 公開
+              value: published
+      - name: published_at
+        label: 公開日時
+        type: date
+        required: true
+        default: ''
+        description: タイムゾーン付き日時。公開状態と日時を確認して保存してください。予約公開機能ではありません。
+        options:
+          time: true
+          format: "yyyy-MM-dd'T'HH:mm:ssXXX"
+      - name: related_products
+        label: 関連製品ID（任意）
+        type: string
+        list: true
+        default: []
+      - name: body
+        label: 本文
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: article_images
+settings:
+  hide: true
+  content:
+    merge: true

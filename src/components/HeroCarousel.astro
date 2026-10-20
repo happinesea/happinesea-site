@@ -5,7 +5,9 @@ import { withBase } from '../lib/urls';
 
 interface Props {
   insights: (
-    CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>
+    | CollectionEntry<'insights'>
+    | CollectionEntry<'wordpressInsights'>
+    | CollectionEntry<'cmsArticles'>
   )[];
 }
 const { insights } = Astro.props;
