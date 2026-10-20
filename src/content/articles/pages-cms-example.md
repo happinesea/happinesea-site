@@ -85,7 +85,7 @@ topic: 航空・ドローン
 tags:
   - ミサイル
 hero:
-  src: /images/articles/sample.webp
+  src: /images/articles/mvgp8zk7-l666b1so.jpeg
   alt: 三つのブロックを線でつないだ説明用の図
 content_status: draft
 published_at: 2026-10-20T01:00:00Z
