@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   fetchJson,
   fetchPublishedPosts,
+  publicationSourceMatches,
 } from '../scripts/lib/wordpress-publication.mjs';
 
 const manifest = JSON.parse(
@@ -23,14 +24,14 @@ const cmsFetch = async (url, options) => {
   return response;
 };
 
-test('live CMS REST root separates the CMS siteurl from the public home', async () => {
+test('live CMS REST home and siteurl belong to the CMS origin', async () => {
   const root = await fetchJson(
     new URL('/wp-json/', manifest.source_endpoint),
     cmsFetch,
   );
   assert.equal(root.name, 'happinesea hobby');
   assert.equal(root.url, 'https://cms.happinesea.com');
-  assert.equal(root.home, 'https://happinesea.com');
+  assert.equal(root.home, 'https://cms.happinesea.com');
 });
 
 test('live CMS returns every approved article with its existing slug and canonical', async () => {
@@ -46,7 +47,10 @@ test('live CMS returns every approved article with its existing slug and canonic
     const post = posts.find(({ id }) => id === mapping.id);
     assert.equal(post.status, 'publish');
     assert.equal(post.slug, mapping.slug);
-    assert.equal(post.link, mapping.canonical);
-    assert.equal(new URL(post.link).origin, 'https://happinesea.com');
+    assert.equal(publicationSourceMatches(post.link, mapping.canonical), true);
+    assert.equal(new URL(post.link).origin, 'https://cms.happinesea.com');
+    // Full source/media normalization is covered by the regular sync/build gate.
+    assert.equal(new URL(mapping.canonical).origin, 'https://happinesea.com');
+    assert.equal(mapping.route, `/insights/${mapping.slug}/`);
   }
 });

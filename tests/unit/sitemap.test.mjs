@@ -73,6 +73,60 @@ test('noindex, CMS, staging and withdrawn/utility pages cannot enter production 
   );
 });
 
+test('all content kinds auto-select new pages and missing canonicals fail the build gate', async (t) => {
+  const dir = await mkdtemp(join(tmpdir(), 'sitemap-content-kinds-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const paths = [
+    'radiolink/new-product/',
+    'manuals/new-manual/chapter-01/',
+    'drawinglibrary/new-drawing/',
+    'downloads/new-guide/',
+    'drone-rc-glossary/',
+    'support/new-faq/',
+    'insights/new-git-article/',
+    'new-static-page/',
+  ];
+  const serialize = sitemapSerializer(dir, base);
+  const entries = [];
+  for (const path of paths) {
+    await mkdir(join(dir, path), { recursive: true });
+    await writeFile(join(dir, path, 'index.html'), html(base + path));
+    entries.push(await serialize({ url: base + path }));
+  }
+  assert.deepEqual(
+    entries.map((entry) => entry.url),
+    paths.map((path) => base + path),
+  );
+  await mkdir(join(dir, 'unpublished'));
+  await writeFile(
+    join(dir, 'unpublished/index.html'),
+    html(base + 'unpublished/', 'noindex'),
+  );
+  assert.equal(await serialize({ url: base + 'unpublished/' }), undefined);
+  await writeFile(
+    join(dir, 'robots.txt'),
+    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\n`,
+  );
+  await writeFile(
+    join(dir, 'sitemap-index.xml'),
+    `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>${base}sitemap-0.xml</loc></sitemap></sitemapindex>`,
+  );
+  const writeSitemap = (items) =>
+    writeFile(
+      join(dir, 'sitemap-0.xml'),
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${items.map(({ url }) => `<url><loc>${url}</loc></url>`).join('')}</urlset>`,
+    );
+  await writeSitemap(entries);
+  assert.equal((await verifySitemap(dir, base)).urls, paths.length);
+  for (const missing of entries) {
+    await writeSitemap(entries.filter((entry) => entry !== missing));
+    await assert.rejects(
+      verifySitemap(dir, base),
+      /Canonical missing from sitemap/,
+    );
+  }
+});
+
 test('finalized sitemap rejects noncanonical aliases, missing targets, duplicates and noindex', async (t) => {
   const dir = await mkdtemp(join(tmpdir(), 'sitemap-test-'));
   t.after(() => rm(dir, { recursive: true, force: true }));

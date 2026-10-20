@@ -47,8 +47,17 @@ test('owner-approved 1627 withdrawal excludes publication without accepting sour
     /source review drift/,
   );
   const inventory = read('wordpress-insight-inventory');
-  assert.equal(inventory.source_count, 97);
+  assert.ok(Number.isInteger(inventory.source_count));
+  // Observing new CMS posts must not change the pinned publication membership.
+  assert.ok(
+    inventory.source_count >=
+      inventory.expected_count + manifest.withdrawals.length,
+  );
   assert.equal(inventory.expected_count, 96);
+  assert.equal(
+    inventory.articles.some((x) => x.id === 2197),
+    false,
+  );
   assert.equal(
     inventory.articles.some((x) => x.id === 1627),
     false,

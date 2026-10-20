@@ -101,7 +101,9 @@ const wordpressBody =
   image={wordpressData?.hero?.src}
   type={isPublished ? 'article' : 'website'}
   jsonLd={jsonLd}
-  robots={wordpressData?.noindex ? 'noindex, nofollow' : undefined}
+  robots={
+    !isPublished || wordpressData?.noindex ? 'noindex, nofollow' : undefined
+  }
 >
   <article class="mx-auto max-w-4xl px-5 py-6 [overflow-wrap:anywhere] lg:px-8">
     <Breadcrumbs
