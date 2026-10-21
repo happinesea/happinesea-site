@@ -12,7 +12,7 @@ published_at: 2026-10-21T01:00:00Z
 editor_note:
   keep: image-ui-check
 ---
-![mobileから新規アップロードした確認図](/images/articles/mvhfgg6y-1w62nacb.webp)
+![mobileからアップロード後に再編集した確認図](/images/articles/mvhfgg6y-1w62nacb.webp)
 
 ![mobileでALTを再編集したアップロード画像](/images/articles/mvhfd8uw-egt6omog.webp)
 
