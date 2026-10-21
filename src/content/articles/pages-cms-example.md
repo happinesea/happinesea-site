@@ -1,6 +1,6 @@
 ---
 content_origin: pages-cms
-slug: pages-cms-example
+slug: china-fourth-generation-air-to-air-missiles-technological-advancements-that-transcend-range
 title: 中国の第4世代空対空ミサイル——射程を超えた技術の進化
 description: 中国の第4世代空対空ミサイルを理解するうえで、射程の延伸だけに注目するのは十分ではない。推進技術、双方向データリンク、外部センサーとの連携が組み合わされることで、ミサイルの誘導方式や運用の自由度そのものが変化している。その代表例がPL-15やPL-17である。
 topic: 航空・ドローン
