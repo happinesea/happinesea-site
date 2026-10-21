@@ -19,4 +19,22 @@ gallery:
     alt: 追加画像2
 editor_note:
   preserve_example: roundtrip-keep
+description: 手動で入力した説明文は保存・再編集・公開表示でも維持します。
 ---
+## Undo確認見出しの確認
+
+**太字**と*斜体*と[参考リンク](https://happinesea.com/)を確認します。
+
+- 箇条書き
+
+1. 番号付きリスト
+
+![本文画像1](/images/articles/mvgp8zk7-l666b1so.jpeg)
+
+![mobileで確認した本文画像3](/images/articles/mvgpanw4-4l8e98xs.png)
+
+画像の間の本文です。
+
+![本文画像2](/images/articles/mvgpanw4-4l8e98xs.png)
+
+追記位置
