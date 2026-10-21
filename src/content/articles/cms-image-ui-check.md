@@ -12,7 +12,7 @@ published_at: 2026-10-21T01:00:00Z
 editor_note:
   keep: image-ui-check
 ---
-
+![アップロードした三つのブロックの確認図](/images/articles/mvhfd8uw-egt6omog.webp)
 
 画像の前にある段落です。
 
