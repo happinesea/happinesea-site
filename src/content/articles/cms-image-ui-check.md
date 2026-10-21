@@ -16,6 +16,6 @@ editor_note:
 
 画像の前にある段落です。
 
-![mobileで段落間へ挿入した画像](/images/articles/mvgpanw4-4l8e98xs.png)
+![mobileで再編集した画像の説明](/images/articles/mvgpanw4-4l8e98xs.png)
 
 画像の後にある段落です。
