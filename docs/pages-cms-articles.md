@@ -63,3 +63,7 @@ hosted Pages CMSでのGUI往復検証結果は本PRに記録する。WordPress�
 - データ移行は不要。新しい任意galleryは未指定なら空配列。既存本文・画像・手入力説明・未管理frontmatterは保持する。rollbackはこの改善commitをrevertすればよく、新規metadataを消す必要はない。
 
 CMS管理MarkdownはGUIのserializerを原本とし、Prettierによる書換を要求しない。schema・Markdown安全化・build-outputテストは従来どおり実行する。
+
+## 本文へ画像を入れる操作
+
+画像挿入は文字選択時のツールバーとは別の入口です。[本文画像の操作手順](pages-cms-body-images.md)の順序で、空段落の半角`/`→**Image**を使用してください。本文のラベルにも入口を表示します。ALTは画像クリック→**ALT**→説明→チェックマーク→記事の**Save**で設定・再編集します。
