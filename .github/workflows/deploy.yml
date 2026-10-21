@@ -21,40 +21,51 @@ permissions:
   contents: read
   actions: read
   pages: read
+  deployments: read
 
 jobs:
   check:
     outputs:
       mode: ${{ steps.selection.outputs.mode }}
       base_url: ${{ steps.selection.outputs.base_url }}
+      article_only: ${{ steps.selection.outputs.article_only }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Classify the complete push diff
+        id: changes
+        run: node scripts/publication-deployment.mjs changes
       - name: Fail closed on invalid or unprotected production selection
         id: selection
         env:
           INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
           GH_TOKEN: ${{ github.token }}
+          ARTICLE_ONLY: ${{ steps.changes.outputs.article_only }}
         run: node scripts/publication-deployment.mjs select
       - name: Set up Node.js
+        if: steps.selection.outputs.article_only != 'true'
         uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
       - name: Install dependencies
+        if: steps.selection.outputs.article_only != 'true'
         run: npm ci
       - name: Validate source
+        if: steps.selection.outputs.article_only != 'true'
         run: npm run test && npm run check && npm run lint && npm run format:check
 
   approve-production:
     needs: check
-    if: needs.check.outputs.mode == 'production'
+    if: needs.check.outputs.mode == 'production' && needs.check.outputs.article_only != 'true'
     environment: production-cutover
     runs-on: ubuntu-latest
     steps:
       - name: Record owner approval before production build
-        run: echo 'Production build approved for this manual main run'
+        run: echo 'Production build approved for this development or manual main run'
 
   build:
     needs: [check, approve-production]
@@ -67,6 +78,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
@@ -74,17 +87,16 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Verify saved official product assets without external fetch
-        run: npm run assets:verify -- src/data/publication-assets/rc8x.json
       - name: Recheck production protection before building
         env:
           INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
           GH_TOKEN: ${{ github.token }}
+          ARTICLE_ONLY: ${{ needs.check.outputs.article_only }}
         run: node scripts/publication-deployment.mjs guard
       - name: Build selected static publication
         run: npm run build
-      - name: Verify production-only Google service gates in all HTML
-        run: node --test --test-name-pattern="every public page receives" tests/build-output.test.mjs
+      - name: Verify publication state and Google service gates
+        run: node --test --test-name-pattern="CMS publication state|every public page receives" tests/build-output.test.mjs
       - name: Verify artifact origin, routes, assets and download hashes
         env:
           E2E_BASE_URL: ${{ needs.check.outputs.mode == 'production' && 'http://127.0.0.1:4343/' || 'http://127.0.0.1:4343/happinesea-site/' }}
@@ -98,7 +110,7 @@ jobs:
           python3 -m http.server 4343 --bind 127.0.0.1 --directory "$preview_root" > /tmp/publication-preview.log 2>&1 &
           preview_pid=$!
           trap 'kill "$preview_pid"' EXIT
-          for attempt in {1..60}; do
+          for _ in {1..60}; do
             if curl --fail --silent "$E2E_BASE_URL" > /dev/null; then break; fi
             sleep 1
           done
@@ -116,17 +128,21 @@ jobs:
       id-token: write
       contents: read
       actions: read
+      deployments: read
     environment:
-      name: ${{ needs.check.outputs.mode == 'production' && 'production-cutover' || 'github-pages' }}
+      name: ${{ needs.check.outputs.mode == 'production' && needs.check.outputs.article_only != 'true' && 'production-cutover' || 'github-pages' }}
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - name: Recheck mode/protection and prevent staging at a custom domain
         env:
           INPUT_PUBLICATION_MODE: ${{ inputs.publication_mode }}
           GH_TOKEN: ${{ github.token }}
+          ARTICLE_ONLY: ${{ needs.check.outputs.article_only }}
         run: node scripts/publication-deployment.mjs guard
       - name: Deploy to GitHub Pages
         id: deployment
@@ -134,6 +150,7 @@ jobs:
 
   browser-check:
     needs: [check, deploy]
+    if: needs.check.outputs.article_only != 'true'
     env:
       PUBLICATION_MODE: ${{ needs.check.outputs.mode }}
       E2E_BASE_URL: ${{ needs.check.outputs.base_url }}

@@ -13,8 +13,8 @@ test('staging never overwrites an assigned custom domain', () => {
   assert.throws(() => requireStagingPages({}));
 });
 
-test('only explicit main manual dispatch can select production', () => {
-  assert.equal(selectMode('push', 'refs/heads/main', ''), 'staging');
+test('main pushes select production; manual staging and main-only protection remain', () => {
+  assert.equal(selectMode('push', 'refs/heads/main', ''), 'production');
   assert.equal(
     selectMode('workflow_dispatch', 'refs/heads/main', ''),
     'staging',
@@ -27,7 +27,14 @@ test('only explicit main manual dispatch can select production', () => {
     selectMode('workflow_dispatch', 'refs/heads/main', 'production'),
     'production',
   );
-  assert.throws(() => selectMode('push', 'refs/heads/main', 'production'));
+  assert.equal(
+    selectMode('push', 'refs/heads/main', 'production'),
+    'production',
+  );
+  assert.throws(() => selectMode('push', 'refs/heads/test', 'production'));
+  assert.throws(() =>
+    selectMode('pull_request', 'refs/heads/main', 'production'),
+  );
   assert.throws(() =>
     selectMode('workflow_dispatch', 'refs/heads/test', 'production'),
   );
