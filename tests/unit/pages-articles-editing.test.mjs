@@ -98,3 +98,20 @@ test('Pages CMS unquoted YAML timestamps are accepted as Dates by Astro', () => 
     cms.cmsArticleSchema.parse({ ...input, published_at: '2026-10-20' }),
   );
 });
+
+test('raw HTML images obey the same path, base and alt boundary as Markdown', () => {
+  const html = cms.renderCmsArticle(
+    `<img src="${sample.hero.src}" alt="HTML画像">`,
+    '/happinesea-site',
+  );
+  assert.ok(html.includes(`src="/happinesea-site${sample.hero.src}"`));
+  assert.throws(() =>
+    cms.renderCmsArticle(
+      '<img src="https://cms.happinesea.com/x.png" alt="x">',
+      '/',
+    ),
+  );
+  assert.throws(() =>
+    cms.renderCmsArticle(`<img src="${sample.hero.src}">`, '/'),
+  );
+});

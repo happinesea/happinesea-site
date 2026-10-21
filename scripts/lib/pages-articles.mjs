@@ -113,6 +113,22 @@ export function renderCmsArticle(body = '', base = '/') {
     },
     allowedSchemes: ['https', 'http', 'mailto'],
     allowProtocolRelative: false,
+    transformTags: {
+      img(tagName, attributes) {
+        // Raw HTML images bypass Markdown HAST visits; enforce the same boundary here.
+        const prefix = base === '/' ? '' : base.replace(/\/$/, '');
+        const original =
+          prefix && attributes.src?.startsWith(prefix + '/')
+            ? attributes.src.slice(prefix.length)
+            : attributes.src;
+        const src = articleImage.parse(original);
+        if (!existsSync(join('public', src.slice(1))))
+          throw new Error(`Missing CMS body image: ${src}`);
+        if (!attributes.alt?.trim())
+          throw new Error('CMS body image needs alt text');
+        return { tagName, attribs: { ...attributes, src: prefix + src } };
+      },
+    },
   });
 }
 
