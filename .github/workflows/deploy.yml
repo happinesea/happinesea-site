@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       publication_mode:
-        description: Publication mode (production requires owner environment approval)
+        description: Publication mode (main merge authorizes production)
         type: choice
         options: [staging, production]
         default: staging
@@ -58,18 +58,8 @@ jobs:
         if: steps.selection.outputs.article_only != 'true'
         run: npm run test && npm run check && npm run lint && npm run format:check
 
-  approve-production:
-    needs: check
-    if: needs.check.outputs.mode == 'production' && needs.check.outputs.article_only != 'true'
-    environment: production-cutover
-    runs-on: ubuntu-latest
-    steps:
-      - name: Record owner approval before production build
-        run: echo 'Production build approved for this development or manual main run'
-
   build:
-    needs: [check, approve-production]
-    if: always() && needs.check.result == 'success' && (needs.approve-production.result == 'success' || needs.approve-production.result == 'skipped')
+    needs: check
     env:
       PUBLICATION_MODE: ${{ needs.check.outputs.mode }}
       ANALYTICS_ENABLED: ${{ vars.ANALYTICS_ENABLED }}
@@ -130,7 +120,7 @@ jobs:
       actions: read
       deployments: read
     environment:
-      name: ${{ needs.check.outputs.mode == 'production' && needs.check.outputs.article_only != 'true' && 'production-cutover' || 'github-pages' }}
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
