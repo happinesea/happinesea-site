@@ -377,15 +377,15 @@ test('one serialized Pages deploy follows a successful verified build; article p
   assert.equal(deploy.concurrency.group, 'pages');
   assert.equal(deploy.concurrency['cancel-in-progress'], false);
   const jobs = deploy.jobs;
-  assert.match(jobs['approve-production'].if, /article_only.*!=.*true/);
-  assert.equal(jobs['approve-production'].environment, 'production-cutover');
+  assert.equal(jobs['approve-production'], undefined);
+  assert.equal(jobs.build.needs, 'check');
   assert.ok(jobs.deploy.needs.includes('build'));
   assert.equal(
     jobs.deploy.if,
     undefined,
     'failed build must keep default success dependency',
   );
-  assert.match(jobs.deploy.environment.name, /article_only/);
+  assert.equal(jobs.deploy.environment.name, 'github-pages');
   assert.match(jobs['browser-check'].if, /article_only.*!=.*true/);
   assert.equal(
     Object.values(jobs)
