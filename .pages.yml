@@ -284,13 +284,13 @@ content:
             type: string
             required: true
       - name: body
-        label: 本文
+        label: 本文（画像挿入：空行で半角 / → Image）
         type: rich-text
         options:
           format: markdown
           media: article_images
           switcher: true
-        description: '文字を選択して書式ツールバーを表示。空の段落で / を入力すると見出し・リスト・画像を挿入できます。Undo: Ctrl/Cmd+Z、Redo: Ctrl/Cmd+Shift+Z。画像を選択するとALTを編集できます。'
+        description: '画像を本文へ入れるには Editor で空行をクリックし、半角 / を入力 → Image → 画像を選択または Upload → Select。挿入した画像をクリック → ALT → 説明を入力 → Save alt text。その後に記事の Save を押します。画像をクリックすればALTを再編集できます。文字選択時の書式ツールバーには画像挿入ボタンはありません。'
   - name: article_tags
     label: 記事タグ
     type: collection

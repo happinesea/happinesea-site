@@ -88,6 +88,10 @@ test('CMS config supports searchable products, tag creation/selection and ordere
   assert.equal(field('gallery').type, 'object');
   assert.ok(field('gallery').list);
   assert.equal(field('gallery').default, undefined);
+  assert.match(field('body').label, /半角.*\/.*Image/);
+  assert.match(field('body').description, /画像をクリック.*ALT/);
+  assert.equal(field('body').options.media, config.media[0].name);
+  assert.equal(field('body').options.format, 'markdown');
 });
 
 test('Pages CMS unquoted YAML timestamps are accepted as Dates by Astro', () => {
