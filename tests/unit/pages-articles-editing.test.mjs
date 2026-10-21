@@ -71,6 +71,8 @@ test('CMS config supports searchable products, tag creation/selection and ordere
   assert.ok(!field('description').required && !field('body').required);
   assert.equal(field('tags').options.collection, 'article_tags');
   assert.equal(field('tags').options.multiple, true);
+  assert.equal(config.content[1].filename, '{fields.id}.yml');
+  assert.equal(config.content[1].fields[0].type, 'uuid');
   assert.equal(
     config.content.find((c) => c.name === 'article_tags').path,
     'src/content/article-tags',

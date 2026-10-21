@@ -64,6 +64,32 @@ test('CMS publication state controls HTML, images, index links and sitemap inclu
     assert.ok(index.includes(`/insights/${article.slug}/`));
     assert.ok(sitemap.includes(`/insights/${article.slug}/`));
     await access(new URL('../dist' + article.hero.src, import.meta.url));
+    let galleryPosition = -1;
+    for (const image of article.gallery ?? []) {
+      const position = html.indexOf(`alt="${image.alt}"`, galleryPosition + 1);
+      assert.ok(
+        position > galleryPosition,
+        'gallery keeps CMS ordering and alt text',
+      );
+      galleryPosition = position;
+      assert.ok(html.includes(`src="${publicationBase}${image.src}"`));
+      await access(new URL('../dist' + image.src, import.meta.url));
+    }
+    for (const id of article.related_products ?? []) {
+      const catalogue = JSON.parse(
+        await readFile(
+          new URL('../src/data/product-catalogue.json', import.meta.url),
+          'utf8',
+        ),
+      );
+      const product = catalogue.find((item) => item.id === id);
+      assert.ok(html.includes(product.name));
+      assert.ok(
+        html.includes(
+          `${publicationBase}${product.detailPath ?? '/radiolink/#products'}`,
+        ),
+      );
+    }
   }
 });
 
