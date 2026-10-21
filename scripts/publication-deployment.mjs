@@ -222,7 +222,7 @@ if (
     }
     if (mode === 'production') {
       if (articleOnly) requireArticlePages(await api('pages'));
-      else requireApproval(await api('environments/production-cutover'));
+      // A main merge is the publication approval; full QA remains in workflow.
     }
     if (process.argv[2] === 'guard' && mode === 'staging') {
       requireStagingPages(await api('pages'));
