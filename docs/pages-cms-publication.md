@@ -43,7 +43,9 @@ mainの通常公開では、直前pushだけでなく、**成功した正式デ�
 
 この変更はDraft PRで検証する。production形式のローカルbuild、一時published／draft原稿と画像、未来の公開日時、失敗する原稿、既存商品・マニュアル・WordPress・設計図・sitemapを検証する。実際のmain merge／GitHub Pages deployはこの作業では行わない。実運用の初回確認はownerがPRを承認・mergeした後に行う。
 
-2026-10-21のローカル検証では、Unit 194件、Astro診断0件、lint／format、actionlint、保存済みWordPressデータからのproductionフロントエンド生成と既存build-output 37件がPASS。限定した公開状態／Googleサービス検証もPASSした。通常sitemapは226件、一時published原稿を含めると227件。draft HTML・専用画像は生成されず、未来日時のpublished原稿は生成された。画像欠落の原稿はbuild失敗となった。既存HTTP成果物検証は1,453参照・28 download hash・23 manual aliasを確認し、リンク／canonical／CMS参照の不整合は0件。
+2026-10-22の検証では、外部fetch／HTTP通信を遮断し（ローカルテスト用HTTPのみ許可）、Astro telemetryを無効にしてproduction `npm run build`と`npm run validate`がPASS。Unit 196件、build-output 37件、Astro診断0件、lint／format／actionlintもPASSした。通常sitemapは226件、一時published原稿を含めると227件。draft HTML・専用画像は生成されず、未来日時のpublished原稿は生成された。画像欠落の原稿はbuild失敗となった。
+
+既存HTTP成果物検証は1,453参照・28 download hash・23 manual aliasを確認し、リンク／canonical／CMS参照の不整合は0件。同じ保存済みデータとGoogleサービス設定で、従来のAstro＋alias／finalizer／sitemap生成処理と新しいオフラインbuildを比較し、HTML／XML 401ファイルがバイト一致した。稼働中productionとの比較やdeployは実行していない。
 
 ## WordPress同期は明示的なメンテナンス操作
 
