@@ -5,6 +5,7 @@ title: CMS編集操作の確認用下書き
 topic: 技術解説
 tags:
   - ミサイル
+  - CMS操作確認
 hero:
   src: /images/articles/mvgp8zk7-l666b1so.jpeg
   alt: 確認用の代表画像
@@ -23,7 +24,9 @@ gallery:
 editor_note:
   preserve_example: roundtrip-keep
 ---
-## 見出しの確認
+
+
+## Undo確認見出しの確認
 
 **太字**と*斜体*と[参考リンク](https://happinesea.com/)を確認します。
 
@@ -32,6 +35,8 @@ editor_note:
 1. 番号付きリスト
 
 ![本文画像1](/images/articles/mvgp8zk7-l666b1so.jpeg)
+
+![途中に追加した本文画像3](/images/articles/mvgpanw4-4l8e98xs.png)
 
 画像の間の本文です。
 
