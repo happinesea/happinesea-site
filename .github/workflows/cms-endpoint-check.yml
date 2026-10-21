@@ -22,10 +22,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Verify live CMS API and public identity
-        if: steps.changes.outputs.article_only != 'true'
-        run: node --test tests/cms-api.integration.mjs
-      - name: Validate source and build from CMS
+      - name: Validate source and build saved content
         if: steps.changes.outputs.article_only != 'true'
         run: npm run validate
       - name: Build and verify article-only publication

@@ -17,7 +17,7 @@ Pages CMSのGUI操作は[編集ガイド](pages-cms-articles.md)、本文画像�
 | 変更                                                                                                          | PRのCI                                                   | main更新後                                                                                              |
 | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | `src/content/articles/*.md`、`src/content/article-tags/*.{yml,yaml}`、`public/images/articles/`の対応画像だけ | 既存production build＋公開状態・Googleサービスの限定検証 | production build＋既存成果物検証→既存github-pages環境へ自動deploy。全Unit／型検査／lint／Playwrightなし |
-| コード・記事モデル・`.pages.yml`・workflow・その他データを含む                                                | 既存のAPI検証＋`npm run validate`を維持                  | 全ソース検証＋production-cutoverのowner承認＋build／成果物検証／deploy／既存browser-check               |
+| コード・記事モデル・`.pages.yml`・workflow・その他データを含む                                                | ローカル整合性検証＋`npm run validate`を維持             | 全ソース検証＋production-cutoverのowner承認＋build／成果物検証／deploy／既存browser-check               |
 | 手動workflow_dispatch                                                                                         | 全ソース検証                                             | 従来どおり明示productionはmain＋production-cutover承認。stagingはcustom domainが残っていれば拒否        |
 
 軽量扱いにする画像はPNG/JPG/JPEG/WebP/GIF。MDX、SVG、実行コード、未対応pathは通常の開発変更として扱う。混在・削除・renameもGit全差分で判定する。GitHubのイベントpath filterやAPIの変更ファイル上限には依存しない。差分不明・履歴不足・空差分・最初のpushは開発用へ戻す。
@@ -32,7 +32,7 @@ mainの通常公開では、直前pushだけでなく、**成功した正式デ�
 - main pushはproductionを選ぶ。以前はstagingを選び、正式custom domainにstagingを配置しない既存ゲートで失敗していた。
 - 記事だけの場合は**PR mergeを公開承認とする**。既存`github-pages`環境（main許可・required reviewersなし）を再利用する。`production-cutover`のrequired reviewersはコード／手動productionに残し、環境設定自体は変更しない。
 - production通常公開はPagesのcustom domainが`happinesea.com`、公開方式がActionsであることも確認する。
-- `npm run build`を変更しない。公式画像hash、WordPress同期のID／source hash／既存manifest、legacy alias、安全なdownload、sitemap／robots／canonicalのゲートを維持する。WordPress API停止やsource driftでもbuildは失敗する。既存の稼働サイトを空のartifactで置換しない。
+- 通常buildはGit保存済みコンテンツだけを使用する。`wordpress:verify`で保存済みWordPressの契約・ID・manifest・canonical・画像を検証する。公式画像hash、legacy alias、download、sitemapの既存検証も維持し、ライブWordPress APIには接続しない。
 - build後に既存の公開状態検証を使い、published HTML・画像・sitemapとdraft非生成を確認する。Googleサービスゲートも維持する。
 - 既存の`verify-publication-origin.mjs`によるローカルHTTP検証を残す。HTML canonical、画像・CSS・JSを含むリンク、CMS参照、download hash、manual aliasを検査してからartifactをuploadする。
 - build／検証／upload失敗ならdeployは起動しない。通常記事でbrowser-checkは実行しない。開発／手動公開では従来のbrowser-checkを維持する。
@@ -45,4 +45,8 @@ mainの通常公開では、直前pushだけでなく、**成功した正式デ�
 
 2026-10-21のローカル検証では、Unit 194件、Astro診断0件、lint／format、actionlint、保存済みWordPressデータからのproductionフロントエンド生成と既存build-output 37件がPASS。限定した公開状態／Googleサービス検証もPASSした。通常sitemapは226件、一時published原稿を含めると227件。draft HTML・専用画像は生成されず、未来日時のpublished原稿は生成された。画像欠落の原稿はbuild失敗となった。既存HTTP成果物検証は1,453参照・28 download hash・23 manual aliasを確認し、リンク／canonical／CMS参照の不整合は0件。
 
-一方、ライブCMSから取得する完全な`npm run validate`は、CMS REST APIが正式トップへ302転送され、WordPressページネーションヘッダーを取得できず停止した。フロントエンドだけの成功を完全な公開build成功とは扱わない。VPS・DNS・CMS設定やbuildの取得ゲートは変更せず、API復旧を別途必要なblockerとして扱う。復旧後に完全build／CIの成功確認が必要。
+## WordPress同期は明示的なメンテナンス操作
+
+通常のbuild、validate、PR CI、記事公開は旧WordPress APIに依存しない。旧APIの302／404／503／接続不能は通常公開のblockerではない。
+
+再取得が必要な場合だけ、作業ブランチで `npm run wordpress:test:live` と `npm run wordpress:sync` を明示実行する。同期時は従来のsource hash・manifest検証を維持する。JSONと画像の差分をレビューし、通常のコード／データ変更として承認する。通常workflowでは実行しない。

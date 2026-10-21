@@ -301,6 +301,71 @@ const workflow = (file) =>
     ),
   );
 
+test('normal builds and CI use saved WordPress content; live operations are explicit', () => {
+  const { scripts } = JSON.parse(
+    readFileSync(new URL('../../package.json', import.meta.url)),
+  );
+  assert.match(scripts.build, /wordpress:verify/);
+  assert.doesNotMatch(
+    scripts.build + scripts.validate,
+    /wordpress:sync|wordpress:inventory|cms-api/,
+  );
+  assert.match(scripts['wordpress:sync'], /wordpress:inventory/);
+  assert.equal(
+    scripts['wordpress:test:live'],
+    'node --test tests/cms-api.integration.mjs',
+  );
+  for (const name of ['deploy.yml', 'cms-endpoint-check.yml']) {
+    assert.doesNotMatch(
+      JSON.stringify(workflow(name)),
+      /cms-api.integration|wordpress:sync|wordpress:inventory/,
+    );
+  }
+});
+
+test('saved WordPress verification rejects altered identity and missing images without fetching', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'saved-wordpress-'));
+  const hook = join(dir, 'hook.mjs');
+  const script = fileURLToPath(
+    new URL('../../scripts/verify-wordpress-snapshot.mjs', import.meta.url),
+  );
+  try {
+    writeFileSync(
+      hook,
+      `
+      import fs from 'node:fs/promises';
+      import { syncBuiltinESMExports } from 'node:module';
+      const original = fs.readFile;
+      globalThis.fetch = () => { throw new Error('Unexpected network'); };
+      fs.readFile = async (path, ...args) => {
+        const result = await original(path, ...args);
+        if (!String(path).endsWith('/src/data/wordpress-insights.json')) return result;
+        const data = JSON.parse(result);
+        if (process.env.SNAPSHOT_FAULT === 'canonical') data[0].canonical = 'https://cms.happinesea.com/wrong';
+        if (process.env.SNAPSHOT_FAULT === 'image') data.find(a => a.hero).hero.src = '/assets/insights/wordpress/missing.webp';
+        return JSON.stringify(data);
+      };
+      syncBuiltinESMExports();
+    `,
+    );
+    for (const fault of ['', 'canonical', 'image']) {
+      const run = () =>
+        execFileSync(
+          process.execPath,
+          ['--import', pathToFileURL(hook).href, script],
+          {
+            env: { ...process.env, SNAPSHOT_FAULT: fault },
+            stdio: 'pipe',
+          },
+        );
+      if (fault) assert.throws(run);
+      else assert.doesNotThrow(run);
+    }
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
 test('one serialized Pages deploy follows a successful verified build; article pushes skip browsers', () => {
   const deploy = workflow('deploy.yml');
   assert.deepEqual(deploy.on.push.branches, ['main']);
