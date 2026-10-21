@@ -33,7 +33,9 @@ Stop if CMS API redirects to an apex `/wp-json/` endpoint, source gates fail, do
 
 ## 2. Actions production-mode wiring
 
-Selector: `workflow_dispatch` input `publication_mode`, default `staging`. Automatic main push also selects staging. Only an explicit manual **main** dispatch can select production. No repository variable can implicitly enable production. Invalid input fails closed.
+For routine article publication, use the [Pages CMS publication workflow](pages-cms-publication.md). Main push selects production; article-only changes that preserve the published code use the existing github-pages environment. Code/mixed changes retain production-cutover approval. The rest of this runbook describes the protected manual cutover/rollback flow.
+
+Manual selector: `workflow_dispatch` input `publication_mode`, default `staging`. Explicit manual production still requires **main** and production-cutover approval. No repository variable can implicitly enable production. Invalid input fails closed.
 
 The build job explicitly injects the validated selection into its process environment:
 

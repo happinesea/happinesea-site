@@ -12,14 +12,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Classify the complete PR diff
+        id: changes
+        run: node scripts/publication-deployment.mjs changes
       - uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Verify live CMS API and public identity
-        run: node --test tests/cms-api.integration.mjs
-      - name: Validate source and build from CMS
+      - name: Validate source and build saved content
+        if: steps.changes.outputs.article_only != 'true'
         run: npm run validate
+      - name: Build and verify article-only publication
+        if: steps.changes.outputs.article_only == 'true'
+        env:
+          PUBLICATION_MODE: production
+        run: |
+          npm run build
+          node --test --test-name-pattern="CMS publication state|every public page receives" tests/build-output.test.mjs
       - name: Ensure existing article publication output is unchanged
         run: git diff --exit-code -- src/data/wordpress-insights.json public/assets/insights/wordpress

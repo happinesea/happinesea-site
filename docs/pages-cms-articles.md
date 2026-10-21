@@ -1,5 +1,7 @@
 # Pages CMS：一般記事の編集
 
+通常の記事公開は[作業ブランチ→PR→main mergeの手順](pages-cms-publication.md)に従う。下記のTask T1の記述は初期実装時の範囲であり、公開workflowの現行方針は同手順を優先する。
+
 Task T1 baseline: `62531c63db18001c30b63dc9e7d79fe82824e3a9`。mainにあった空の`.pages.yml`を再利用する。Pages CMSから編集するcontentは新設`src/content/articles/*.md`と、その記事用タグ`src/content/article-tags/*.yml`だけ。既存WordPress90記事・商品・マニュアル・設計図・download・legacy台帳は編集項目に出さない。
 
 ## データと公開範囲
