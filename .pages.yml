@@ -296,13 +296,16 @@ content:
     type: collection
     path: src/content/article-tags
     format: yaml
-    filename: '{fields.name}.yml'
+    filename: '{fields.id}.yml'
     subfolders: false
     operations:
       rename: false
     view:
       primary: name
     fields:
+      - name: id
+        type: uuid
+        hidden: true
       - name: name
         label: タグ名
         type: string

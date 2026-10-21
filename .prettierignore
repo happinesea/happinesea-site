@@ -24,3 +24,6 @@ docs/drawing-library-task0/*.json
 
 # Phase 1 proposals use a deterministic serializer; validated by the importer.
 src/data/drawing-library/*.json
+
+# Pages CMS owns Markdown serialization; do not rewrite editor output.
+src/content/articles/*.md
