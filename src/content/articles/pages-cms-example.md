@@ -10,8 +10,8 @@ tags:
 hero:
   src: /images/articles/mvgp8zk7-l666b1so.jpeg
   alt: PL-15ミサイルのイメージ
-content_status: draft
-published_at: 2026-10-21T20:00:00Z
+content_status: published
+published_at: 2026-10-20T20:00:00Z
 editor_note:
   preserve_example: この未管理フィールドはGUI保存後も保持します。
 gallery:
