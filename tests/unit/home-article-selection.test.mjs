@@ -2,6 +2,14 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { compileFunction } from 'node:vm';
+import { publishedCmsArticles } from '../../scripts/lib/pages-articles.mjs';
+import ts from 'typescript';
+import { parse } from 'yaml';
+const sampleImage = parse(
+  (await readFile('src/content/articles/pages-cms-example.md', 'utf8')).split(
+    '---',
+  )[1],
+).hero.src;
 
 // Execute the real page selection with in-memory collections; no article files change.
 const page = await readFile(
@@ -9,10 +17,39 @@ const page = await readFile(
   'utf8',
 );
 const frontmatter = page.split('---')[1].replace(/^import .*;\r?\n/gm, '');
-const select = compileFunction(
+const evaluateSelection = compileFunction(
   `return (async () => { ${frontmatter}; return { latest, latestSlides, news, rcArticles }; })();`,
-  ['getCollection'],
+  ['getCollection', 'publishedCmsArticles'],
 );
+const select = (getCollection) =>
+  evaluateSelection(getCollection, publishedCmsArticles);
+
+test('CMS entries with a WordPress-like ID retain their own homepage category', async () => {
+  const component = await readFile(
+    new URL('../../src/components/HomeArticle.astro', import.meta.url),
+    'utf8',
+  );
+  const code = component.split('---')[1].replace(/^import .*;\r?\n/gm, '');
+  const evaluate = compileFunction(
+    ts.transpileModule(code, {
+      compilerOptions: { target: ts.ScriptTarget.ES2022 },
+    }).outputText + '; return categories;',
+    ['Astro', 'wordpressArticles', 'withBase'],
+  );
+  const insight = {
+    id: 'wordpress-2187',
+    collection: 'cmsArticles',
+    data: { slug: 'wordpress-2187', topic: 'RC技術' },
+  };
+  assert.deepEqual(
+    evaluate(
+      { props: { insight } },
+      [{ id: 'wordpress-2187', contract: { category: ['news'] } }],
+      (path) => path,
+    ),
+    ['RC技術'],
+  );
+});
 
 for (const topic of ['業界動向', 'RC技術']) {
   test(`latest ${topic} article appears only in the featured position`, async () => {
@@ -50,13 +87,15 @@ for (const topic of ['業界動向', 'RC技術']) {
   });
 }
 
-test('carousel takes the newest five published articles across both collections without topic exclusions', async () => {
+test('carousel includes published CMS articles and excludes drafts across all collections', async () => {
   const entry = (slug, topic, day, content_status = 'published') => ({
+    id: slug,
     data: {
       slug,
       topic,
       published_at: new Date(`2026-01-${day}`),
       content_status,
+      hero: { src: sampleImage, alt: 'image' },
     },
   });
   const { latestSlides } = await select(async (name) =>
@@ -66,15 +105,20 @@ test('carousel takes the newest five published articles across both collections 
           entry('static-rc', 'RC技術', '04'),
           entry('draft', '業界動向', '07', 'draft'),
         ]
-      : [
-          entry('wp-drone', '航空・ドローン', '05'),
-          entry('wp-news', '業界動向', '03'),
-          entry('wp-rc', 'RC技術', '02'),
-          entry('old', '業界動向', '01'),
-        ],
+      : name === 'wordpressInsights'
+        ? [
+            entry('wp-drone', '航空・ドローン', '05'),
+            entry('wp-news', '業界動向', '03'),
+            entry('wp-rc', 'RC技術', '02'),
+            entry('old', '業界動向', '01'),
+          ]
+        : [
+            entry('cms-public', '技術解説', '08'),
+            entry('cms-draft', '技術解説', '09', 'draft'),
+          ],
   );
   assert.deepEqual(
     latestSlides.map(({ data }) => data.slug),
-    ['static-news', 'wp-drone', 'static-rc', 'wp-news', 'wp-rc'],
+    ['cms-public', 'static-news', 'wp-drone', 'static-rc', 'wp-news'],
   );
 });

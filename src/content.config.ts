@@ -3,6 +3,7 @@ import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
+import { cmsArticleSchema } from '../scripts/lib/pages-articles.mjs';
 
 const productCategory = z.enum([
   '送信機',
@@ -245,6 +246,10 @@ const manualSections = defineCollection({
 });
 
 export const collections = {
+  cmsArticles: defineCollection({
+    loader: glob({ base: './src/content/articles', pattern: '*.md' }),
+    schema: cmsArticleSchema,
+  }),
   products,
   insights,
   wordpressInsights,

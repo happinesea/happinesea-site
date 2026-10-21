@@ -5,7 +5,8 @@ import ResponsiveMedia from './ResponsiveMedia.astro';
 interface Props {
   article:
     | CollectionEntry<'insights'>['data']
-    | CollectionEntry<'wordpressInsights'>['data'];
+    | CollectionEntry<'wordpressInsights'>['data']
+    | CollectionEntry<'cmsArticles'>['data'];
 }
 
 const { article } = Astro.props;

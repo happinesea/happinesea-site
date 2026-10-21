@@ -3,7 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import wordpressArticles from '../data/wordpress-insights.json';
 import { withBase } from '../lib/urls';
 interface Props {
-  insight: CollectionEntry<'insights'> | CollectionEntry<'wordpressInsights'>;
+  insight:
+    | CollectionEntry<'insights'>
+    | CollectionEntry<'wordpressInsights'>
+    | CollectionEntry<'cmsArticles'>;
   slide?: boolean;
   horizontal?: boolean;
 }
@@ -19,7 +22,10 @@ const categoryNames: Record<string, string> = {
   experience: '遊ぶ・学ぶ',
   product: '製品紹介',
 };
-const source = wordpressArticles.find((article) => article.id === insight.id);
+const source =
+  insight.collection === 'wordpressInsights'
+    ? wordpressArticles.find((article) => article.id === insight.id)
+    : undefined;
 const categories = source
   ? source.contract.category.map((category) => {
       const name = categoryNames[category];
