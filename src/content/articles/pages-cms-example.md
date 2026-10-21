@@ -6,13 +6,17 @@ description: 中国の第4世代空対空ミサイルを理解するうえで、
 topic: 航空・ドローン
 tags:
   - ミサイル
+  - 対空ミサイル
 hero:
   src: /images/articles/mvgp8zk7-l666b1so.jpeg
-  alt: 三つのブロックを線でつないだ説明用の図
+  alt: PL-15ミサイルのイメージ
 content_status: draft
 published_at: 2026-10-20T01:00:00Z
 editor_note:
   preserve_example: この未管理フィールドはGUI保存後も保持します。
+gallery:
+  - src: /images/articles/mvhdp3dy-lmcl51ip.jpg
+    alt: 輸出型のPL-15E
 ---
 中国の第4世代空対空ミサイルを理解するうえで、射程の延伸だけに注目するのは十分ではない。推進技術、双方向データリンク、外部センサーとの連携が組み合わされることで、ミサイルの誘導方式や運用の自由度そのものが変化している。
 
