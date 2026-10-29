@@ -12,10 +12,14 @@ if (
 ) {
   throw new Error('Article sharing requires an approved publication URL');
 }
-const xLink = new URL('https://twitter.com/intent/tweet');
-xLink.searchParams.set('text', `${title}\n${shareUrl.href}`);
+const xLink = new URL('https://x.com/intent/tweet');
+xLink.searchParams.set('text', title);
+xLink.searchParams.set('url', shareUrl.href);
 const facebookLink = new URL('https://www.facebook.com/sharer/sharer.php');
 facebookLink.searchParams.set('u', shareUrl.href);
+const lineLink = new URL('https://social-plugins.line.me/lineit/share');
+lineLink.searchParams.set('url', shareUrl.href);
+lineLink.searchParams.set('text', title);
 ---
 
 <nav class="article-share" aria-label="SNS共有">
@@ -25,5 +29,8 @@ facebookLink.searchParams.set('u', shareUrl.href);
   </a>
   <a href={facebookLink.href} target="_blank" rel="noopener noreferrer">
     <span aria-hidden="true">f</span> Facebookで共有
+  </a>
+  <a href={lineLink.href} target="_blank" rel="noopener noreferrer">
+    <span aria-hidden="true">LINE</span> LINEで共有
   </a>
 </nav>
