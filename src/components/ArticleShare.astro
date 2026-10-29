@@ -5,18 +5,25 @@ interface Props {
 }
 
 const { title, url } = Astro.props;
+const shareUrl = new URL(url);
+if (
+  shareUrl.protocol !== 'https:' ||
+  !['happinesea.com', 'happinesea.github.io'].includes(shareUrl.hostname)
+) {
+  throw new Error('Article sharing requires an approved publication URL');
+}
 const xLink = new URL('https://twitter.com/intent/tweet');
-xLink.searchParams.set('text', title);
-xLink.searchParams.set('url', url);
+xLink.searchParams.set('text', `${title}\n${shareUrl.href}`);
 const facebookLink = new URL('https://www.facebook.com/sharer/sharer.php');
-facebookLink.searchParams.set('u', url);
+facebookLink.searchParams.set('u', shareUrl.href);
 ---
 
-<nav aria-label="SNS共有">
+<nav class="article-share" aria-label="SNS共有">
+  <span>この記事を共有</span>
   <a href={xLink.href} target="_blank" rel="noopener noreferrer">
-    𝕏 Xで共有
+    <span aria-hidden="true">𝕏</span> Xで共有
   </a>
   <a href={facebookLink.href} target="_blank" rel="noopener noreferrer">
-    ⓕ Facebookで共有
+    <span aria-hidden="true">f</span> Facebookで共有
   </a>
 </nav>

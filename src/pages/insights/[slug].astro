@@ -141,7 +141,7 @@ const wordpressBody =
           </p>
         )}
         <ArticleHero article={data} />
-        <ArticleShare title={data.title} url={articleUrl} />
+        <ArticleShare title={data.title} url={routeUrl} />
         {cmsData && cmsData.tags.length > 0 && (
           <ul class="flex list-none flex-wrap gap-2 p-0" aria-label="タグ">
             {cmsData.tags.map((tag) => (
