@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import ArticleHero from '../../components/ArticleHero.astro';
+import ArticleShare from '../../components/ArticleShare.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -74,9 +75,6 @@ const manualTarget =
 const articleUrl = wordpressData
   ? manualCanonical(wordpressData.canonical, manual)
   : routeUrl;
-const shareQuery = new URLSearchParams({ text: data.title, url: articleUrl });
-const shareX = `https://twitter.com/intent/tweet?${shareQuery}`;
-const shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`;
 const kind =
   data.article_kind === 'technical_explainer' ? 'TechArticle' : 'Article';
 const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -143,29 +141,7 @@ const wordpressBody =
           </p>
         )}
         <ArticleHero article={data} />
-        <nav aria-label="SNS共有" class="mb-8 flex flex-wrap items-center gap-3">
-          <span class="text-sm font-semibold text-slate-600">記事を共有</span>
-          <a
-            href={shareX}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Xで記事を共有"
-            class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 no-underline hover:border-teal-600"
-          >
-            <span aria-hidden="true" class="text-lg font-bold">𝕏</span>
-            X
-          </a>
-          <a
-            href={shareFacebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebookで記事を共有"
-            class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 no-underline hover:border-teal-600"
-          >
-            <span aria-hidden="true" class="font-bold">f</span>
-            Facebook
-          </a>
-        </nav>
+        <ArticleShare title={data.title} url={articleUrl} />
         {cmsData && cmsData.tags.length > 0 && (
           <ul class="flex list-none flex-wrap gap-2 p-0" aria-label="タグ">
             {cmsData.tags.map((tag) => (
