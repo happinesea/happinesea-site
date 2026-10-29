@@ -12,26 +12,11 @@ const facebookLink = new URL('https://www.facebook.com/sharer/sharer.php');
 facebookLink.searchParams.set('u', url);
 ---
 
-<nav aria-label="SNS共有" class="mb-8 flex flex-wrap items-center gap-3">
-  <span class="text-sm font-semibold text-slate-600">記事を共有</span>
-  <a
-    href={xLink.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Xで記事を共有"
-    class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold no-underline hover:border-teal-600"
-  >
-    <span aria-hidden="true" class="text-lg font-bold">𝕏</span>
-    X
+<nav aria-label="SNS共有">
+  <a href={xLink.href} target="_blank" rel="noopener noreferrer">
+    𝕏 Xで共有
   </a>
-  <a
-    href={facebookLink.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebookで記事を共有"
-    class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold no-underline hover:border-teal-600"
-  >
-    <span aria-hidden="true" class="font-bold">f</span>
-    Facebook
+  <a href={facebookLink.href} target="_blank" rel="noopener noreferrer">
+    ⓕ Facebookで共有
   </a>
 </nav>
