@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run assets:verify -- src/data/publication-assets/rc8x.json && npm run wordpress:verify && astro build && node scripts/copy-wordpress-aliases.mjs && node scripts/finalize-legacy-compatibility.mjs && node scripts/verify-sitemap.mjs",
+    "build": "npm run assets:verify -- src/data/publication-assets/rc8x.json && npm run wordpress:verify && astro build && node scripts/copy-wordpress-aliases.mjs && node scripts/finalize-legacy-compatibility.mjs && node scripts/verify-sitemap.mjs && node scripts/generate-news-sitemap.mjs",
     "preview": "astro preview",
     "test": "node --test tests/unit/*.test.mjs",
     "check": "astro check",
