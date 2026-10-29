@@ -6,7 +6,10 @@ interface Props {
 
 const { title, url } = Astro.props;
 const shareUrl = new URL(url);
-if (shareUrl.protocol !== 'https:' || !['happinesea.com', 'happinesea.github.io'].includes(shareUrl.hostname)) {
+if (
+  shareUrl.protocol !== 'https:' ||
+  !['happinesea.com', 'happinesea.github.io'].includes(shareUrl.hostname)
+) {
   throw new Error('Article sharing requires an approved publication URL');
 }
 const xLink = new URL('https://twitter.com/intent/tweet');
@@ -15,57 +18,12 @@ const facebookLink = new URL('https://www.facebook.com/sharer/sharer.php');
 facebookLink.searchParams.set('u', shareUrl.href);
 ---
 
-<nav aria-label="SNS共有" class="article-share">
-  <span class="share-label">この記事を共有</span>
-  <a href={xLink.href} target="_blank" rel="noopener noreferrer" aria-label="Xでこの記事を共有" class="share-button">
-    <span class="share-icon" aria-hidden="true">𝕏</span>
-    Xで共有
+<nav class="article-share" aria-label="SNS共有">
+  <span>この記事を共有</span>
+  <a href={xLink.href} target="_blank" rel="noopener noreferrer">
+    <span aria-hidden="true">𝕏</span> Xで共有
   </a>
-  <a href={facebookLink.href} target="_blank" rel="noopener noreferrer" aria-label="Facebookでこの記事を共有" class="share-button">
-    <span class="share-icon facebook-icon" aria-hidden="true">f</span>
-    Facebookで共有
+  <a href={facebookLink.href} target="_blank" rel="noopener noreferrer">
+    <span aria-hidden="true">f</span> Facebookで共有
   </a>
 </nav>
-
-<style>
-  .article-share {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem;
-    margin: 0.75rem 0 2rem;
-  }
-  .share-label {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #475569;
-    margin-right: 0.25rem;
-  }
-  .share-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.55rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 9999px;
-    padding: 0.55rem 1rem;
-    min-height: 2.75rem;
-    background: #fff;
-    color: #0f172a;
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .share-button:hover {
-    border-color: #0f766e;
-    background: #f0fdfa;
-  }
-  .share-icon {
-    font-size: 1.25rem;
-    line-height: 1;
-    font-weight: 700;
-  }
-  .facebook-icon {
-    color: #1877f2;
-  }
-</style>
