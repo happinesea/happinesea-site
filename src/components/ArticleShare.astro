@@ -6,8 +6,8 @@ interface Props {
 
 const { title, url } = Astro.props;
 const shareUrl = new URL(url);
-if (shareUrl.protocol !== 'https:' || shareUrl.hostname !== 'happinesea.com') {
-  throw new Error('Article sharing requires a public happinesea.com URL');
+if (shareUrl.protocol !== 'https:' || !['happinesea.com', 'happinesea.github.io'].includes(shareUrl.hostname)) {
+  throw new Error('Article sharing requires an approved publication URL');
 }
 const xLink = new URL('https://twitter.com/intent/tweet');
 xLink.searchParams.set('text', `${title}\n${shareUrl.href}`);
