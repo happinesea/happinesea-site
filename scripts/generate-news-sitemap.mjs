@@ -12,9 +12,9 @@ const escapeXml = (text) => String(text).replaceAll('&', '&amp;').replaceAll('<'
 const entries = [];
 for (const folder of ['src/content/articles', 'src/content/insights']) {
   for (const filename of await readdir(folder)) {
-    if (!/\\.mdx?$/.test(filename)) continue;
+    if (!/\.mdx?$/.test(filename)) continue;
     const raw = await readFile(join(folder, filename), 'utf8');
-    const frontmatter = raw.match(/^---\\s*\\r?\\n([\\s\\S]*?)\\r?\\n---/);
+    const frontmatter = raw.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
     if (!frontmatter) continue;
     const data = YAML.parse(frontmatter[1]);
     if (data.content_status !== 'published') continue;
@@ -30,11 +30,11 @@ for (const folder of ['src/content/articles', 'src/content/insights']) {
 }
 entries.sort((a, b) => b.date.localeCompare(a.date));
 if (entries.length > 1000) throw Error('News sitemap exceeds 1000 entries');
-const xml = '<?xml version="1.0" encoding="UTF-8"?>\\n' +
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\\n' +
+const xml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' +
   entries.map(({ url, title, date }) =>
     '  <url><loc>' + escapeXml(url) + '</loc><news:news><news:publication><news:name>happinesea hobby</news:name><news:language>ja</news:language></news:publication><news:publication_date>' +
-    escapeXml(date) + '</news:publication_date><news:title>' + escapeXml(title) + '</news:title></news:news></url>').join('\\n') +
-  '\\n</urlset>\\n';
+    escapeXml(date) + '</news:publication_date><news:title>' + escapeXml(title) + '</news:title></news:news></url>').join('\n') +
+  '\n</urlset>\n';
 await writeFile('dist/news-sitemap.xml', xml);
 console.log('News sitemap: ' + entries.length + ' recent published articles');
