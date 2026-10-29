@@ -52,7 +52,7 @@ test('CMS entries with a WordPress-like ID retain their own homepage category', 
 });
 
 for (const topic of ['業界動向', 'RC技術']) {
-  test(`latest ${topic} article appears only in the featured position`, async () => {
+  test(`latest ${topic} article appears in the featured and matching topic section`, async () => {
     const article = (slug, articleTopic, date) => ({
       data: {
         slug,
@@ -72,17 +72,17 @@ for (const topic of ['業界動向', 'RC技術']) {
     assert.equal(latest.data.slug, 'latest');
     assert.deepEqual(
       news.map((item) => item.data.slug),
-      ['older-news'],
+      topic === '業界動向' ? ['latest', 'older-news'] : ['older-news'],
     );
     assert.deepEqual(
       rcArticles.map((item) => item.data.slug),
-      ['older-rc'],
+      topic === 'RC技術' ? ['latest', 'older-rc'] : ['older-rc'],
     );
     assert.equal(
       [latest, ...news, ...rcArticles].filter(
         (item) => item.data.slug === 'latest',
       ).length,
-      1,
+      2,
     );
   });
 }
