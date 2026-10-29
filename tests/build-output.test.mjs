@@ -1121,7 +1121,7 @@ test('robots and sitemap use the selected publication origin', async () => {
       : 'https://happinesea.github.io/happinesea-site/';
   assert.equal(
     robots,
-    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\n`,
+    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\nSitemap: ${base}news-sitemap.xml\n`,
   );
   assert(sitemap.includes(`<loc>${base}sitemap-0.xml</loc>`));
   await assert.rejects(access(new URL('../CNAME', import.meta.url)));

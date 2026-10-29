@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import ArticleHero from '../../components/ArticleHero.astro';
+import ArticleShare from '../../components/ArticleShare.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -140,6 +141,7 @@ const wordpressBody =
           </p>
         )}
         <ArticleHero article={data} />
+        <ArticleShare title={data.title} url={articleUrl} />
         {cmsData && cmsData.tags.length > 0 && (
           <ul class="flex list-none flex-wrap gap-2 p-0" aria-label="タグ">
             {cmsData.tags.map((tag) => (

@@ -166,8 +166,8 @@ export async function verifySitemap(dir, base) {
   const robots = await readFile(join(dir, 'robots.txt'), 'utf8');
   assert.deepEqual(
     robots.match(/^Sitemap: .*$/gm),
-    [`Sitemap: ${base}sitemap-index.xml`],
-    'robots sitemap origin/count',
+    [`Sitemap: ${base}sitemap-index.xml`, `Sitemap: ${base}news-sitemap.xml`],
+    'robots sitemap origins/count',
   );
   assert(
     /^User-agent: \*\s+Allow: \/\s/m.test(robots),

@@ -105,7 +105,7 @@ test('all content kinds auto-select new pages and missing canonicals fail the bu
   assert.equal(await serialize({ url: base + 'unpublished/' }), undefined);
   await writeFile(
     join(dir, 'robots.txt'),
-    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\n`,
+    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\nSitemap: ${base}news-sitemap.xml\n`,
   );
   await writeFile(
     join(dir, 'sitemap-index.xml'),
@@ -141,7 +141,7 @@ test('finalized sitemap rejects noncanonical aliases, missing targets, duplicate
   assert.equal(await serialize({ url: `${base}alias/` }), undefined);
   await writeFile(
     join(dir, 'robots.txt'),
-    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\n`,
+    `User-agent: *\nAllow: /\nSitemap: ${base}sitemap-index.xml\nSitemap: ${base}news-sitemap.xml\n`,
   );
   await writeFile(
     join(dir, 'sitemap-index.xml'),

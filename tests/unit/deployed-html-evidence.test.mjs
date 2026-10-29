@@ -26,7 +26,7 @@ async function verify(t, { status = 200, body = html, canonical = html } = {}) {
   );
   await writeFile(
     join(dist, 'robots.txt'),
-    'User-agent: *\nAllow: /\nSitemap: https://happinesea.com/sitemap-index.xml\n',
+    'User-agent: *\nAllow: /\nSitemap: https://happinesea.com/sitemap-index.xml\nSitemap: https://happinesea.com/news-sitemap.xml\n',
   );
   const server = createServer((req, res) => {
     res.writeHead(req.url === '/' ? status : 200, {

@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  url: string;
+}
+
+const { title, url } = Astro.props;
+const xLink = new URL('https://twitter.com/intent/tweet');
+xLink.searchParams.set('text', title);
+xLink.searchParams.set('url', url);
+const facebookLink = new URL('https://www.facebook.com/sharer/sharer.php');
+facebookLink.searchParams.set('u', url);
+---
+
+<nav aria-label="SNS共有">
+  <a href={xLink.href} target="_blank" rel="noopener noreferrer">
+    𝕏 Xで共有
+  </a>
+  <a href={facebookLink.href} target="_blank" rel="noopener noreferrer">
+    ⓕ Facebookで共有
+  </a>
+</nav>
