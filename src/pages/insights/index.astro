@@ -47,9 +47,9 @@ const topics = [
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
     <SectionHeading title="テーマから楽しむ" />
     <ul class="mt-6 flex list-none flex-wrap gap-2 p-0">
-      {topics.map((topic, index) =>
-        insights.some((insight) => insight.data.topic === topic) ? (
-          <li>
+      {topics.map((topic, index) => (
+        <li>
+          {insights.some((insight) => insight.data.topic === topic) ? (
             <a
               class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700 hover:border-teal-600"
               data-topic-label={topic}
@@ -57,9 +57,16 @@ const topics = [
             >
               {topic}
             </a>
-          </li>
-        ) : null,
-      )}
+          ) : (
+            <span
+              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700"
+              data-topic-label={topic}
+            >
+              {topic}
+            </span>
+          )}
+        </li>
+      ))}
     </ul>
 
     {insights.length ? (
