@@ -18,18 +18,12 @@ const insights = [
 const latest = insights[0];
 const latestSlides = insights.slice(0, 5);
 // Presentation groups reuse existing editorial topics; taxonomy is unchanged.
-const rcTopics = ['RC技術', '航空・ドローン'];
+const rcTopics = ['RC技術'];
 const news = insights
-  .filter(
-    ({ data }) =>
-      !rcTopics.includes(data.topic) && data.slug !== latest?.data.slug,
-  )
+  .filter(({ data }) => !rcTopics.includes(data.topic))
   .slice(0, 3);
 const rcArticles = insights
-  .filter(
-    ({ data }) =>
-      rcTopics.includes(data.topic) && data.slug !== latest?.data.slug,
-  )
+  .filter(({ data }) => rcTopics.includes(data.topic))
   .slice(0, 3);
 const resources = [
   { label: '製品を探す', href: '/radiolink/' },

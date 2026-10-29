@@ -47,21 +47,43 @@ const topics = [
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-14 lg:px-8 lg:py-20">
     <SectionHeading title="テーマから楽しむ" />
     <ul class="mt-6 flex list-none flex-wrap gap-2 p-0">
-      {topics.map((topic) => (
-        <li
-          class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700"
-          data-topic-label={topic}
-        >
-          {topic}
+      {topics.map((topic, index) => (
+        <li>
+          {insights.some((insight) => insight.data.topic === topic) ? (
+            <a
+              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700 hover:border-teal-600"
+              data-topic-label={topic}
+              href={`#topic-${index + 1}`}
+            >
+              {topic}
+            </a>
+          ) : (
+            <span
+              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700"
+              data-topic-label={topic}
+            >
+              {topic}
+            </span>
+          )}
         </li>
       ))}
     </ul>
 
     {insights.length ? (
-      <div class="mt-14">
-        {insights.map((insight) => (
-          <InsightCard insight={insight} />
-        ))}
+      <div class="mt-14 space-y-14">
+        {topics.map((topic, index) => {
+          const articles = insights.filter(
+            (insight) => insight.data.topic === topic,
+          );
+          return articles.length ? (
+            <section id={`topic-${index + 1}`} data-topic-group={topic}>
+              <h2 class="mb-3 text-2xl font-bold text-slate-950">{topic}</h2>
+              {articles.map((insight) => (
+                <InsightCard insight={insight} />
+              ))}
+            </section>
+          ) : null;
+        })}
       </div>
     ) : (
       <div
