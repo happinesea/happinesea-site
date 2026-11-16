@@ -1,0 +1,28 @@
+name: Receiver Web validation
+on:
+  pull_request:
+    paths:
+      [
+        'src/**',
+        'public/assets/radiolink/**',
+        'scripts/**',
+        'tests/**',
+        'astro.config.mjs',
+        '.github/workflows/receiver-web-validation.yml',
+      ]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test && npm run check
+      - run: npm run build && npm run test:dist
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test tests/e2e/receiver-web-pilot.spec.ts

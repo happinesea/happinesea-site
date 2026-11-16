@@ -46,6 +46,7 @@ export default defineConfig({
         root: { label: '日本語', lang: 'ja' },
       },
       sidebar: [
+        { label: '受信機 日本語取扱説明書', items: ['r6f','r6dsm','r8sm','r12ds','r8ef'].map((id) => ({label:id.toUpperCase(),slug:`manuals/${id}`})) },
         ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map(manualSidebar),
         {
           label: 'RC4GS V2',

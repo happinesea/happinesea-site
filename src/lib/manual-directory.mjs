@@ -1,6 +1,7 @@
 import catalogue from '../data/product-catalogue.json' with { type: 'json' };
 import inventory from '../data/manuals/existing-ja.json' with { type: 'json' };
 import official from '../data/manuals/official-links.json' with { type: 'json' };
+import receiverManuals from '../data/manuals/receiver-web-pilot.json' with { type: 'json' };
 
 // Catalogue variants supply imagery/category only; manual editions stay explicit.
 const models = [
@@ -81,6 +82,14 @@ export const manualCards = models.map((model) => {
       id: model.id,
     });
   links.push(
+    ...receiverManuals.manuals
+      .filter((m) => m.product_id === model.id)
+      .map((m) => ({
+        href: m.route,
+        label: '日本語取扱説明書（確認待ち箇所あり）',
+        external: false,
+        id: `${model.id}-web-ja-v1`,
+      })),
     ...official.links
       .filter((link) => link.product === model.catalogue)
       .map((link, index) => ({

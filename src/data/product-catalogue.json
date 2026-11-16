@@ -1269,7 +1269,7 @@
     "subcategoryLabel": "ATシリーズ対応受信機",
     "description": "RadiolinkのATシリーズ対応受信機です。",
     "officialUrl": "https://www.radiolink.com/r12ds",
-    "detailPath": null,
+    "detailPath": "/radiolink/r12ds/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/r12ds.webp",
@@ -1353,7 +1353,7 @@
     "subcategoryLabel": "ATシリーズ対応受信機",
     "description": "RadiolinkのATシリーズ対応受信機です。",
     "officialUrl": "https://www.radiolink.com/r6dsm",
-    "detailPath": null,
+    "detailPath": "/radiolink/r6dsm/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/r6dsm.webp",
@@ -1500,7 +1500,7 @@
     "subcategoryLabel": "地上モデル用受信機",
     "description": "Radiolinkの地上モデル向け受信機です。",
     "officialUrl": "https://www.radiolink.com/r8ef",
-    "detailPath": null,
+    "detailPath": "/radiolink/r8ef/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/r8ef.webp",
@@ -1563,7 +1563,7 @@
     "subcategoryLabel": "地上モデル用受信機",
     "description": "Radiolinkの地上モデル向け受信機です。",
     "officialUrl": "https://www.radiolink.com/r8sm",
-    "detailPath": null,
+    "detailPath": "/radiolink/r8sm/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/r8sm.webp",
@@ -1647,7 +1647,7 @@
     "subcategoryLabel": "地上モデル用受信機",
     "description": "Radiolinkの地上モデル向け受信機です。",
     "officialUrl": "https://www.radiolink.com/r6f",
-    "detailPath": null,
+    "detailPath": "/radiolink/r6f/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/r6f.webp",

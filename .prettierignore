@@ -27,3 +27,11 @@ src/data/drawing-library/*.json
 
 # Pages CMS owns Markdown serialization; do not rewrite editor output.
 src/content/articles/*.md
+
+# Source-bound receiver copies are reproduced by the canonical exporter.
+src/content/docs/manuals/r6f/index.mdx
+src/content/docs/manuals/r6dsm/index.mdx
+src/content/docs/manuals/r8sm/index.mdx
+src/content/docs/manuals/r12ds/index.mdx
+src/content/docs/manuals/r8ef/index.mdx
+src/data/manuals/receiver-web-pilot.json

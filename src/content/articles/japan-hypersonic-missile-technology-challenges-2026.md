@@ -18,8 +18,7 @@ hero:
   alt: 25式高速滑空弾
 content_status: draft
 published_at: 2026-11-07T19:42:00Z
-gallery:
-  - {}
+gallery: []
 ---
 # 日本の極超音速ミサイルは本当に完成したのか――2026年の実戦配備、その裏に残る三つの技術的制約
 

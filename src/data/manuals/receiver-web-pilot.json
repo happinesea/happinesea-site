@@ -1,0 +1,690 @@
+{
+  "manuals": [
+    {
+      "product_id": "r6f",
+      "model": "R6F",
+      "route": "/manuals/r6f/",
+      "product_route": "/radiolink/r6f/",
+      "source": {
+        "document_id": "r6f_manual",
+        "repository_path": "sources/en/r6f_manual.pdf",
+        "sha256": "36f543e7af6d65f0c923b5f178a650c47241c1488fc7e67dc82ce4f224196321",
+        "source_url": "https://www.radiolink.com/download/c4d931a0cc50d85319175e2d6cc9911c.pdf",
+        "version": null,
+        "page_count": 2
+      },
+      "canonical_revision": "web-ja-v1.1",
+      "canonical_sha256": "a1f53e70fe787ea801179cca21e872cf5648757cbacc33706f2fccbc7609559e",
+      "mdx_sha256": "892e277d2a8d5f02e79b4b23055958d735bf417059c1f1c2fa170e7f0890bd90",
+      "translation_qa_sha256": "55eae8ce6a689b7e08c6744674fa99d80a2961e01714af21c6a56ea6e08bbefc",
+      "unit_ids": [
+        "r6f-w007",
+        "r6f-w001",
+        "r6f-w002",
+        "r6f-w003",
+        "r6f-w008",
+        "r6f-w004",
+        "r6f-w009",
+        "r6f-w005",
+        "r6f-w006",
+        "r6f-w015",
+        "r6f-w010",
+        "r6f-w011",
+        "r6f-w012",
+        "r6f-w013",
+        "r6f-w014"
+      ],
+      "withheld_unit_ids": [
+        "r6f-w009"
+      ],
+      "source_figures_total": 4,
+      "withheld_figure_ids": [
+        "r6f-p1-f3"
+      ],
+      "figures": [
+        {
+          "figure_id": "r6f-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r6f-p1-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r6f-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            156.64999389648438,
+            158.71995544433594,
+            437.9499816894531,
+            319.01995849609375
+          ],
+          "source_xref": 14,
+          "width": 527,
+          "height": 300,
+          "path": "assets/r6f-p1-f2.jpeg",
+          "sha256": "98c3a99f2bcce5984de0aa90afcb671e612ad0cf7c1e5747b35f360e72bf77c7"
+        },
+        {
+          "figure_id": "r6f-p2-f1",
+          "source_page": 2,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r6f-p2-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        }
+      ],
+      "publication_readiness": "HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "translation_qa_status": "WEB_TRANSLATION_QA_PASSED_WITH_SOURCE_HOLDS",
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "r6dsm",
+      "model": "R6DSM",
+      "route": "/manuals/r6dsm/",
+      "product_route": "/radiolink/r6dsm/",
+      "source": {
+        "document_id": "r6dsm_manual",
+        "repository_path": "sources/en/r6dsm_manual.pdf",
+        "sha256": "fa81d941364cae6f8745964152d825efabba21889b0225e6613434751c0104d1",
+        "source_url": "https://www.radiolink.com/download/8fdcaf19b0a889b91cc22f7c46cccb0f.pdf",
+        "version": null,
+        "page_count": 2
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "bf6b5e999f1e1359684ec7e897dac3b4e8fee1d40027ec4b85ae0924b16d4fa8",
+      "mdx_sha256": "c2773dd6543a6e4942d187cb332d35f16b2d06e23d412ae3994ccfe9b573f2d9",
+      "translation_qa_sha256": "b100ba0ee4d0a184c0422617b6325716b8b7984f40e8476701d9aa1d28672912",
+      "unit_ids": [
+        "r6dsm-w001",
+        "r6dsm-w002",
+        "r6dsm-w006",
+        "r6dsm-w003",
+        "r6dsm-w004",
+        "r6dsm-w005",
+        "r6dsm-w007",
+        "r6dsm-w008",
+        "r6dsm-w009",
+        "r6dsm-w010",
+        "r6dsm-w011",
+        "r6dsm-w012",
+        "r6dsm-w013",
+        "r6dsm-w014",
+        "r6dsm-w015",
+        "r6dsm-w016",
+        "r6dsm-w017"
+      ],
+      "withheld_unit_ids": [
+        "r6dsm-w005"
+      ],
+      "source_figures_total": 2,
+      "withheld_figure_ids": [],
+      "figures": [
+        {
+          "figure_id": "r6dsm-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            90.0,
+            153.95999145507812,
+            505.32000732421875,
+            348.9599914550781
+          ],
+          "source_xref": 13,
+          "width": 1269,
+          "height": 596,
+          "path": "assets/r6dsm-p1-f1.jpeg",
+          "sha256": "9c7b1dd729a2e496d146808beea745fba9db3725b1578fa66152848c81d093de"
+        },
+        {
+          "figure_id": "r6dsm-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            112.91999816894531,
+            588.239990234375,
+            482.4000244140625,
+            756.9599609375
+          ],
+          "source_xref": 20,
+          "width": 1130,
+          "height": 516,
+          "path": "assets/r6dsm-p1-f2.jpeg",
+          "sha256": "58652604a40c8528d3f61afbd7cbdb39056dce561c41aafda3956c9ae23f2ee5"
+        }
+      ],
+      "publication_readiness": "HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "translation_qa_status": "WEB_TRANSLATION_QA_PASSED_WITH_SOURCE_HOLDS",
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "r8sm",
+      "model": "R8SM",
+      "route": "/manuals/r8sm/",
+      "product_route": "/radiolink/r8sm/",
+      "source": {
+        "document_id": "r8sm_manual",
+        "repository_path": "sources/en/r8sm_manual.pdf",
+        "sha256": "de510db909eedba5bea2f67b203a78e97e9e82c746b2a0875493ec5d526f29fc",
+        "source_url": "https://www.radiolink.com/download/6e596270439a179da236fa709580eb9c.pdf",
+        "version": null,
+        "page_count": 4
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "c1e5da678dbee00f493143c0227e9d072d9e1f1463d3658fa5f8d7487686db6a",
+      "mdx_sha256": "094bd25797ef91e7bb4c2496db39e73a441d4091c4ea2ff57fe13dc5f7334373",
+      "translation_qa_sha256": "8b2e1eedc0d64ffe27d76e77164653c9489da541a6da2043076ab64ed8b33c9f",
+      "unit_ids": [
+        "r8sm-w001",
+        "r8sm-w005",
+        "r8sm-w002",
+        "r8sm-w003",
+        "r8sm-w006",
+        "r8sm-w004",
+        "r8sm-w013",
+        "r8sm-w007",
+        "r8sm-w008",
+        "r8sm-w014",
+        "r8sm-w009",
+        "r8sm-w010",
+        "r8sm-w011",
+        "r8sm-w012",
+        "r8sm-w027",
+        "r8sm-w015",
+        "r8sm-w016",
+        "r8sm-w017",
+        "r8sm-w028",
+        "r8sm-w018",
+        "r8sm-w019",
+        "r8sm-w020",
+        "r8sm-w021",
+        "r8sm-w022",
+        "r8sm-w023",
+        "r8sm-w024",
+        "r8sm-w025",
+        "r8sm-w026",
+        "r8sm-w035",
+        "r8sm-w029",
+        "r8sm-w030",
+        "r8sm-w031",
+        "r8sm-w032",
+        "r8sm-w033",
+        "r8sm-w034"
+      ],
+      "withheld_unit_ids": [
+        "r8sm-w033"
+      ],
+      "source_figures_total": 7,
+      "withheld_figure_ids": [],
+      "figures": [
+        {
+          "figure_id": "r8sm-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            70.19999694824219,
+            44.9000129699707,
+            216.0500030517578,
+            74.20001220703125
+          ],
+          "source_xref": 14,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8sm-p1-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8sm-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            33.54999923706055,
+            249.6499786376953,
+            517.4000244140625,
+            481.9499816894531
+          ],
+          "source_xref": 20,
+          "width": 577,
+          "height": 277,
+          "path": "assets/r8sm-p1-f2.jpeg",
+          "sha256": "aa10dabc1d8f68b970faa6bb0f51877053845adcff280891dc661cc8b4f78e37"
+        },
+        {
+          "figure_id": "r8sm-p2-f1",
+          "source_page": 2,
+          "source_bbox": [
+            56.79999923706055,
+            34.4999885559082,
+            202.65000915527344,
+            63.79998779296875
+          ],
+          "source_xref": 14,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8sm-p2-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8sm-p2-f2",
+          "source_page": 2,
+          "source_bbox": [
+            140.25,
+            277.14996337890625,
+            420.0,
+            403.89996337890625
+          ],
+          "source_xref": 33,
+          "width": 373,
+          "height": 169,
+          "path": "assets/r8sm-p2-f2.png",
+          "sha256": "3276d6e6d419f9b243f55f61e4480c38d95cc93187342cfe9f17c18052e514c4"
+        },
+        {
+          "figure_id": "r8sm-p3-f1",
+          "source_page": 3,
+          "source_bbox": [
+            71.80000305175781,
+            41.04997634887695,
+            217.65000915527344,
+            70.3499755859375
+          ],
+          "source_xref": 14,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8sm-p3-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8sm-p3-f2",
+          "source_page": 3,
+          "source_bbox": [
+            70.44999694824219,
+            162.49996948242188,
+            470.4000244140625,
+            354.4999694824219
+          ],
+          "source_xref": 20,
+          "width": 577,
+          "height": 277,
+          "path": "assets/r8sm-p3-f2.jpeg",
+          "sha256": "aa10dabc1d8f68b970faa6bb0f51877053845adcff280891dc661cc8b4f78e37"
+        },
+        {
+          "figure_id": "r8sm-p4-f1",
+          "source_page": 4,
+          "source_bbox": [
+            71.80000305175781,
+            41.04997634887695,
+            217.65000915527344,
+            70.3499755859375
+          ],
+          "source_xref": 14,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8sm-p4-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        }
+      ],
+      "publication_readiness": "HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "translation_qa_status": "WEB_TRANSLATION_QA_PASSED_WITH_SOURCE_HOLDS",
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "r12ds",
+      "model": "R12DS",
+      "route": "/manuals/r12ds/",
+      "product_route": "/radiolink/r12ds/",
+      "source": {
+        "document_id": "r12ds_manual",
+        "repository_path": "sources/en/r12ds_manual.pdf",
+        "sha256": "2b53d848c0f1db993688d8c369402a06087c6dabb30db3a042aef54b5bc8c957",
+        "source_url": "https://www.radiolink.com/download/a51f09b44c4df3c00402beb57933e164.pdf",
+        "version": null,
+        "page_count": 5
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "88a135cfb00c2fbe97311ff8ea0a7591cfb1e64dfcc10b0d0d71439e57e2d20e",
+      "mdx_sha256": "be33a8ad5809e32b07c41f462b84548baf2125cafd52a5ab75296faee252f4b9",
+      "translation_qa_sha256": "f1bc782cce0ae5a04d01dd493038f9245e9c50d069b5feae77458409fcf731ec",
+      "unit_ids": [
+        "r12ds-w001",
+        "r12ds-w002",
+        "r12ds-w003",
+        "r12ds-w004",
+        "r12ds-w005",
+        "r12ds-w006",
+        "r12ds-w007",
+        "r12ds-w008",
+        "r12ds-w009",
+        "r12ds-w010",
+        "r12ds-w011",
+        "r12ds-w012",
+        "r12ds-w013",
+        "r12ds-w014",
+        "r12ds-w015",
+        "r12ds-w016",
+        "r12ds-w017",
+        "r12ds-w018",
+        "r12ds-w019",
+        "r12ds-w020",
+        "r12ds-w021",
+        "r12ds-w022",
+        "r12ds-w023"
+      ],
+      "withheld_unit_ids": [
+        "r12ds-w007",
+        "r12ds-w009",
+        "r12ds-w023"
+      ],
+      "source_figures_total": 7,
+      "withheld_figure_ids": [
+        "r12ds-p1-f2"
+      ],
+      "figures": [
+        {
+          "figure_id": "r12ds-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            90.0,
+            151.8000030517578,
+            509.70001220703125,
+            319.75
+          ],
+          "source_xref": 14,
+          "width": 612,
+          "height": 245,
+          "path": "assets/r12ds-p1-f1.jpeg",
+          "sha256": "c25291547b84e62fcb95ad00d9ccee502473db195cd82abcd43a8a7867134089"
+        },
+        {
+          "figure_id": "r12ds-p2-f1",
+          "source_page": 2,
+          "source_bbox": [
+            90.0,
+            204.8499755859375,
+            516.7000122070312,
+            500.7499694824219
+          ],
+          "source_xref": 25,
+          "width": 731,
+          "height": 507,
+          "path": "assets/r12ds-p2-f1.jpeg",
+          "sha256": "33533ee6bfcde3d849d583ce9aa52fbc8482e47613966fd6b770035adc14a103"
+        },
+        {
+          "figure_id": "r12ds-p3-f1",
+          "source_page": 3,
+          "source_bbox": [
+            109.4000015258789,
+            77.69996643066406,
+            485.1000061035156,
+            283.89996337890625
+          ],
+          "source_xref": 30,
+          "width": 501,
+          "height": 275,
+          "path": "assets/r12ds-p3-f1.png",
+          "sha256": "3568c0e3aa6e653d160280e28f9b872add54222428369189488a20718782635f"
+        },
+        {
+          "figure_id": "r12ds-p3-f2",
+          "source_page": 3,
+          "source_bbox": [
+            90.0,
+            339.29998779296875,
+            504.70001220703125,
+            521.7999877929688
+          ],
+          "source_xref": 31,
+          "width": 984,
+          "height": 433,
+          "path": "assets/r12ds-p3-f2.png",
+          "sha256": "21a96b3cd4a10c22e3823075c8f9eeec8b49df89904cfc3f1f9d5aff0679a4b9"
+        },
+        {
+          "figure_id": "r12ds-p4-f1",
+          "source_page": 4,
+          "source_bbox": [
+            92.5250015258789,
+            78.74996948242188,
+            502.7749938964844,
+            377.2499694824219
+          ],
+          "source_xref": 36,
+          "width": 547,
+          "height": 398,
+          "path": "assets/r12ds-p4-f1.jpeg",
+          "sha256": "33176ea999b71660b7e28a8f416394e01e9edeb1a48590e9e6e76e1caf322652"
+        },
+        {
+          "figure_id": "r12ds-p4-f2",
+          "source_page": 4,
+          "source_bbox": [
+            90.0,
+            437.6999816894531,
+            503.79998779296875,
+            704.5499877929688
+          ],
+          "source_xref": 37,
+          "width": 777,
+          "height": 501,
+          "path": "assets/r12ds-p4-f2.jpeg",
+          "sha256": "71263c3b1c27a61768acc9a027e5636956c4078c1dfacaa1ea3b908a63c83dc2"
+        }
+      ],
+      "publication_readiness": "HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "translation_qa_status": "PASS_WITH_SOURCE_HOLDS",
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "r8ef",
+      "model": "R8EF",
+      "route": "/manuals/r8ef/",
+      "product_route": "/radiolink/r8ef/",
+      "source": {
+        "document_id": "r8ef_manual",
+        "repository_path": "sources/en/r8ef_manual.pdf",
+        "sha256": "9d29dec4e0f27e2e04167c934366fafe2a71dd6e853cb88f508ca3bbe1cf9cf9",
+        "source_url": "https://www.radiolink.com/download/a67e1fc5ba73f3b16b2443ab019c2707.pdf",
+        "version": null,
+        "page_count": 5
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "23cf33809432192fc548e77202ca23e5f559ffe03d10f2f5b713d38203a0fc29",
+      "mdx_sha256": "780cb0bfd9b73e378a04c7703fabb9d7fa924b88157f3ca8bbabc5b9c605c515",
+      "translation_qa_sha256": "38cb60842e0443dad7f87b6702b2c02d160c9348c4658e02d20f593fbf6a83d5",
+      "unit_ids": [
+        "r8ef-w001",
+        "r8ef-w002",
+        "r8ef-w003",
+        "r8ef-w004",
+        "r8ef-w005",
+        "r8ef-w006",
+        "r8ef-w007",
+        "r8ef-w008",
+        "r8ef-w009",
+        "r8ef-w010",
+        "r8ef-w011",
+        "r8ef-w012",
+        "r8ef-w013",
+        "r8ef-w014",
+        "r8ef-w015",
+        "r8ef-w016",
+        "r8ef-w017",
+        "r8ef-w018",
+        "r8ef-w019",
+        "r8ef-w020",
+        "r8ef-w021",
+        "r8ef-w022",
+        "r8ef-w023",
+        "r8ef-w024",
+        "r8ef-w025",
+        "r8ef-w026",
+        "r8ef-w027",
+        "r8ef-w028",
+        "r8ef-w029",
+        "r8ef-w030",
+        "r8ef-w031"
+      ],
+      "withheld_unit_ids": [
+        "r8ef-w004",
+        "r8ef-w013"
+      ],
+      "source_figures_total": 10,
+      "withheld_figure_ids": [
+        "r8ef-p1-f2",
+        "r8ef-p2-f2"
+      ],
+      "figures": [
+        {
+          "figure_id": "r8ef-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8ef-p1-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8ef-p2-f1",
+          "source_page": 2,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8ef-p2-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8ef-p3-f1",
+          "source_page": 3,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8ef-p3-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8ef-p3-f2",
+          "source_page": 3,
+          "source_bbox": [
+            90.0,
+            75.71995544433594,
+            505.29998779296875,
+            324.26995849609375
+          ],
+          "source_xref": 49,
+          "width": 700,
+          "height": 419,
+          "path": "assets/r8ef-p3-f2.jpeg",
+          "sha256": "d15bafd03af88437c9fae8ddebba728b9306b25c27e62bf0cf251b0dd690efa4"
+        },
+        {
+          "figure_id": "r8ef-p3-f3",
+          "source_page": 3,
+          "source_bbox": [
+            189.22000122070312,
+            636.820068359375,
+            226.72000122070312,
+            645.8199462890625
+          ],
+          "source_xref": 50,
+          "width": 50,
+          "height": 12,
+          "path": "assets/r8ef-p3-f3.png",
+          "sha256": "0313efa55890a90b54fbedc652337fc8c22d774fc33dc78e8277351a80e47de7"
+        },
+        {
+          "figure_id": "r8ef-p4-f1",
+          "source_page": 4,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8ef-p4-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        },
+        {
+          "figure_id": "r8ef-p4-f2",
+          "source_page": 4,
+          "source_bbox": [
+            85.5,
+            77.25,
+            515.9500122070312,
+            207.0
+          ],
+          "source_xref": 54,
+          "width": 700,
+          "height": 211,
+          "path": "assets/r8ef-p4-f2.jpeg",
+          "sha256": "7a5daed62bcff0fbf4602bd671feb290da88e063ca7e114febf219ec610c53e2"
+        },
+        {
+          "figure_id": "r8ef-p5-f1",
+          "source_page": 5,
+          "source_bbox": [
+            91.5,
+            41.04998779296875,
+            235.9499969482422,
+            70.04998779296875
+          ],
+          "source_xref": 11,
+          "width": 289,
+          "height": 58,
+          "path": "assets/r8ef-p5-f1.png",
+          "sha256": "4e870de55e1db0ce2f4463a8783a8022ba438bea8a5c921ff5cfcd66e5eac618"
+        }
+      ],
+      "publication_readiness": "HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "translation_qa_status": "PASS_WITH_SOURCE_HOLDS",
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    }
+  ]
+}
