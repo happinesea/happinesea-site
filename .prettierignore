@@ -35,3 +35,11 @@ src/content/docs/manuals/r8sm/index.mdx
 src/content/docs/manuals/r12ds/index.mdx
 src/content/docs/manuals/r8ef/index.mdx
 src/data/manuals/receiver-web-pilot.json
+
+# Source-bound second receiver batch: deterministic upstream serialization.
+src/content/docs/manuals/r8fm/index.mdx
+src/content/docs/manuals/r6ds/index.mdx
+src/content/docs/manuals/r9ds/index.mdx
+src/content/docs/manuals/r12dse/index.mdx
+src/content/docs/manuals/r8xm/index.mdx
+src/data/manuals/receiver-web-batch2.json
