@@ -17,3 +17,11 @@ src/content/docs/manuals/r8sm/** -text whitespace=cr-at-eol
 src/content/docs/manuals/r12ds/** -text whitespace=cr-at-eol
 src/content/docs/manuals/r8ef/** -text whitespace=cr-at-eol
 src/data/manuals/receiver-web-pilot.json -text whitespace=cr-at-eol
+
+# Batch 2 source-bound publication bytes.
+src/content/docs/manuals/r8fm/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r6ds/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r9ds/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r12dse/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r8xm/** -text whitespace=cr-at-eol
+src/data/manuals/receiver-web-batch2.json -text whitespace=cr-at-eol

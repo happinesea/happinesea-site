@@ -31,20 +31,25 @@ test('catalogue images are local official assets and detail links match implemen
 
   assert.deepEqual(implemented.map(({ slug }) => slug).sort(), [
     'r12ds',
+    'r12dse',
     'r12f',
     'r16f',
+    'r6ds',
     'r6dsm',
     'r6f',
     'r6fg',
     'r7fg',
     'r8ef',
     'r8fg',
+    'r8fm',
     'r8sm',
+    'r8xm',
+    'r9ds',
     'rc8p',
     'rc8x',
     't12d',
   ]);
-  assert.equal(pending.length, 70);
+  assert.equal(pending.length, 65);
 
   for (const product of products) {
     assert.match(

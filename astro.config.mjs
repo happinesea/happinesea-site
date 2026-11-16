@@ -1,3 +1,4 @@
+import receiverManuals from './src/lib/receiver-manuals.mjs';
 import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
@@ -46,7 +47,7 @@ export default defineConfig({
         root: { label: '日本語', lang: 'ja' },
       },
       sidebar: [
-        { label: '受信機 日本語取扱説明書', items: ['r6f','r6dsm','r8sm','r12ds','r8ef'].map((id) => ({label:id.toUpperCase(),slug:`manuals/${id}`})) },
+        { label: '受信機 日本語取扱説明書', items: receiverManuals.manuals.map((m) => ({label:m.model,slug:m.route.slice(1,-1)})) },
         ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map(manualSidebar),
         {
           label: 'RC4GS V2',

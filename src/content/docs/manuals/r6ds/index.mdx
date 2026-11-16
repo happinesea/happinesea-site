@@ -1,0 +1,222 @@
+---
+title: R6DS 日本語取扱説明書
+description: Radiolink R6DS の公式英語取扱説明書に対応する日本語版です。
+product: r6ds
+slug: manuals/r6ds
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/58033a6dad0f2c8403ef84c27ee387e4.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r6ds/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R6DS 公式英語取扱説明書（文書版・発行日不明、3頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r6ds-w001" data-translation-unit="r6ds-w001"></span>
+
+## R6DS
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r6ds-w002" data-translation-unit="r6ds-w002"></span>
+
+### （FHSSおよびDSSSスペクトラム拡散方式）
+
+<span id="r6ds-w003" data-translation-unit="r6ds-w003"></span>
+
+<ManualFigure src="/assets/radiolink/r6ds/web-ja-v1/r6ds-p1-f1.jpeg" width={675} height={341} figureId="r6ds-p1-f1" alt={"R6DS受信機の外観。図中のハードウェア表示はV1.2です。"} caption={"R6DS受信機の外観。図中のハードウェア表示はV1.2です。"} />
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r6ds-w004" data-translation-unit="r6ds-w004"></span>
+
+Radiolink R6DSは、DSSSとFHSSのスペクトラム拡散を同時に使用する2.4 GHz・6／10チャンネル受信機です。Radiolink AT9、AT9S、AT9S Pro、AT10およびAT10II送信機で使用します。SBUS、PPMおよびPWM信号を同時に使用できます。
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r6ds-w005" data-translation-unit="r6ds-w005"></span>
+
+### 製品の特長
+
+<span id="r6ds-w006" data-translation-unit="r6ds-w006"></span>
+
+DSSSとFHSSは優れた耐干渉性を発揮し、特に433および映像伝送による干渉に対して有効です。
+
+:::note[原典について]
+原文の「433」には単位がなく、「graph transmission」の具体的な方式も不明です。MHzなどを補っていません。
+:::
+
+<span id="r6ds-w007" data-translation-unit="r6ds-w007"></span>
+
+SBUS、PPMおよびPWM信号を同時に出力します。
+
+<span id="r6ds-w008" data-translation-unit="r6ds-w008"></span>
+
+高速応答：全チャンネルを並列に3 msで応答します。
+
+<span id="r6ds-w009" data-translation-unit="r6ds-w009"></span>
+
+高分解能4096、1ビット当たり0.25 μsにより、各サーボの安定性を確保します。
+
+<span id="r6ds-w010" data-translation-unit="r6ds-w010"></span>
+
+超小型で総重量は3.5 g。ドローンに負担をかけず、軽量ドローンに最適です。
+
+<span id="r6ds-w011" data-translation-unit="r6ds-w011"></span>
+
+軽量ドローン向けに設計され、DJI NAZA、ZERO TECH、PIX、APM、MINI APM、NAZE32、CC3Dなど、すべてのフライトコントローラーに対応します。
+
+<span id="r6ds-w012" data-translation-unit="r6ds-w012"></span>
+
+フライトコントローラーとはケーブル1本で接続でき、設定も簡単です。
+
+<span id="r6ds-w013" data-translation-unit="r6ds-w013"></span>
+
+<ManualFigure src="/assets/radiolink/r6ds/web-ja-v1/r6ds-p1-f2.jpeg" width={530} height={348} figureId="r6ds-p1-f2" alt={"アンテナ、バインドボタンおよび寸法（25 mm × 15 mm）。"} caption={"アンテナ、バインドボタンおよび寸法（25 mm × 15 mm）。"} />
+
+<span id="r6ds-w014" data-translation-unit="r6ds-w014"></span>
+
+### 2つの出力動作モード
+
+<span id="r6ds-w015" data-translation-unit="r6ds-w015"></span>
+
+#### 1. PWM信号動作モード
+
+<span id="r6ds-w016" data-translation-unit="r6ds-w016"></span>
+
+赤色LEDはPWM信号出力を示します。合計6チャンネルです。
+
+<span id="r6ds-w017" data-translation-unit="r6ds-w017"></span>
+
+<ManualFigure src="/assets/radiolink/r6ds/web-ja-v1/r6ds-p2-f1.jpeg" width={708} height={391} figureId="r6ds-p2-f1" alt={"PWM信号動作モード（6チャンネル）の接続先：CH1（エルロン）、CH2（エレベーター）、CH3（スロットル）、CH4（ラダー）、CH5・CH6（補助）。"} caption={"PWM信号動作モード（6チャンネル）の接続先：CH1（エルロン）、CH2（エレベーター）、CH3（スロットル）、CH4（ラダー）、CH5・CH6（補助）。"} />
+
+<span id="r6ds-w018" data-translation-unit="r6ds-w018"></span>
+
+#### 2. SBUS信号動作モード
+
+<span id="r6ds-w019" data-translation-unit="r6ds-w019"></span>
+
+青／紫色LEDはSBUS／PPM信号出力を示します。CH1はPPM信号、CH2はSBUS信号、CH3はCH3のPWM信号（ヘリコプター用）を出力します。同時に、CH4～CH6はCH8～CH10の独立したPWM信号を出力し、合計10チャンネルの信号となります。
+
+<span id="r6ds-w020" data-translation-unit="r6ds-w020"></span>
+
+<ManualFigure src="/assets/radiolink/r6ds/web-ja-v1/r6ds-p2-f2.jpeg" width={866} height={553} figureId="r6ds-p2-f2" alt={"SBUS／PPM出力動作モード。CH1からPPM、CH2からSBUS、CH3からCH3のPWMを出力し、CH4～CH6からCH8～CH10の独立したPWM信号を同時に出力します。合計10チャンネルです。"} caption={"SBUS／PPM出力動作モード。CH1からPPM、CH2からSBUS、CH3からCH3のPWMを出力し、CH4～CH6からCH8～CH10の独立したPWM信号を同時に出力します。合計10チャンネルです。"} />
+
+<span id="r6ds-w021" data-translation-unit="r6ds-w021"></span>
+
+### SBUS／PPM信号とPWM信号の切り替え
+
+<span id="r6ds-w022" data-translation-unit="r6ds-w022"></span>
+
+「ID SET」スイッチを1秒以内に短く2回押すと、信号が通常のPWMからSBUS／PPMに切り替わります。赤色LEDは通常のPWM、青／紫色LEDはSBUS／PPMを示します。
+
+<span id="r6ds-w023" data-translation-unit="r6ds-w023"></span>
+
+### 送信機とのバインド（リンク）方法
+
+<span id="r6ds-w024" data-translation-unit="r6ds-w024"></span>
+
+1. 送信機と受信機を互いに1 m以内に近づけます。
+
+<span id="r6ds-w025" data-translation-unit="r6ds-w025"></span>
+
+2. 送信機の電源を入れてから、R6DSに電源を供給します。
+
+<span id="r6ds-w026" data-translation-unit="r6ds-w026"></span>
+
+3. R6DSをESC、フライトコントローラー、またはサーボに接続します。
+
+<span id="r6ds-w027" data-translation-unit="r6ds-w027"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r6ds-w028" data-translation-unit="r6ds-w028"></span>
+
+### 受信機アンテナの取り付け
+
+<span id="r6ds-w029" data-translation-unit="r6ds-w029"></span>
+
+1. アンテナは必ずできる限り真っすぐに保ってください。そうしないと有効距離が短くなります。
+
+<span id="r6ds-w030" data-translation-unit="r6ds-w030"></span>
+
+2. 大型模型航空機では、金属部品が信号に干渉することがあります。この場合はアンテナを機体の側面に配置します。
+
+<span id="r6ds-w031" data-translation-unit="r6ds-w031"></span>
+
+3. アンテナは、金属やカーボンなどの導電性材料から少なくとも半インチ離してください。アンテナの同軸部分はこの指針に従う必要はありませんが、小さな半径で曲げないでください。
+
+<span id="r6ds-w032" data-translation-unit="r6ds-w032"></span>
+
+4. アンテナは、モーター、ESC、その他のノイズ源からできる限り離してください。
+
+<span id="r6ds-w033" data-translation-unit="r6ds-w033"></span>
+
+5. 模型に取り付ける際は、衝撃を防ぐため、受信機をスポンジや発泡材で包むことができます。
+
+<span id="r6ds-w034" data-translation-unit="r6ds-w034"></span>
+
+上記の手順をすべて完了したら、各機能を設定し、正しく接続された状態で送信機から制御できることを確認します。
+
+<span id="r6ds-w035" data-translation-unit="r6ds-w035"></span>
+
+### 仕様
+
+<span id="r6ds-w036" data-translation-unit="r6ds-w036"></span>
+
+1. チャンネル数：PWMモードでは6チャンネル。SBUS／PPMモードでは10チャンネル。
+
+<span id="r6ds-w037" data-translation-unit="r6ds-w037"></span>
+
+2. 動作電圧：4.8～6 V
+
+<span id="r6ds-w038" data-translation-unit="r6ds-w038"></span>
+
+3. 動作電流：38～45 mA（入力電圧：5 V）
+
+<span id="r6ds-w039" data-translation-unit="r6ds-w039"></span>
+
+4. 寸法：25 × 15 mm
+
+<span id="r6ds-w040" data-translation-unit="r6ds-w040"></span>
+
+5. 重量：3.5 g
+
+<span id="r6ds-w041" data-translation-unit="r6ds-w041"></span>
+
+6. 取り外し可能なアンテナ
+
+<span id="r6ds-w042" data-translation-unit="r6ds-w042"></span>
+
+7. 分解能4096段階、1段階当たり0.25 μs。サーボの舵の振動を抑えます。
+
+<span id="r6ds-w043" data-translation-unit="r6ds-w043"></span>
+
+8. 制御距離：約600 m。実際の制御距離は環境に依存します。

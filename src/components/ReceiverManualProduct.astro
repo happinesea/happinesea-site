@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import catalogue from '../data/product-catalogue.json';
-import manuals from '../data/manuals/receiver-web-pilot.json';
+import manuals from '../lib/receiver-manuals.mjs';
 import { withBase } from '../lib/urls';
 
 const { productId } = Astro.props;
@@ -36,9 +36,17 @@ if (!product || !manual)
         日本語取扱説明書
       </a>
     </p>
-    <p>
-      原典の記載・適用条件に確認待ちの箇所があります。詳細は取扱説明書内の注意を確認してください。
-    </p>
+    {'batch_id' in manual &&
+    manual.batch_id === 'receiver-web-batch2' &&
+    manual.withheld_unit_ids.length === 0 ? (
+      <p>
+        英語原典に対応した日本語本文を掲載しています。挿図は原図のままです。適用条件は本文を確認してください。
+      </p>
+    ) : (
+      <p>
+        原典の記載・適用条件に確認待ちの箇所があります。詳細は取扱説明書内の注意を確認してください。
+      </p>
+    )}
     <p class="mt-4">
       <a href={manual.source.source_url}>公式英語取扱説明書</a>
     </p>

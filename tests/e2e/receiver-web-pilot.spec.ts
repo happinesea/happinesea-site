@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import data from '../../src/data/manuals/receiver-web-pilot.json' with { type: 'json' };
+import data from '../../src/lib/receiver-manuals.mjs';
 
 test.use({
   launchOptions: { executablePath: process.env.BROWSER_EXECUTABLE_PATH },

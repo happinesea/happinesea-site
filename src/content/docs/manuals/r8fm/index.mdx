@@ -1,0 +1,156 @@
+---
+title: R8FM 日本語取扱説明書
+description: Radiolink R8FM の公式英語取扱説明書に対応する日本語版です。
+product: r8fm
+slug: manuals/r8fm
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/838fba1fc9716a81eaebbb53159bf286.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r8fm/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R8FM 公式英語取扱説明書（文書版・発行日不明、2頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r8fm-w001" data-translation-unit="r8fm-w001"></span>
+
+## R8FM
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r8fm-w002" data-translation-unit="r8fm-w002"></span>
+
+### （FHSS）
+
+<span id="r8fm-w003" data-translation-unit="r8fm-w003"></span>
+
+<ManualFigure src="/assets/radiolink/r8fm/web-ja-v1/r8fm-p1-f1.jpeg" width={593} height={397} figureId="r8fm-p1-f1" alt={"R8FM受信機の外観。図中の表示はV1.0、S.B/PPM、+5V、GND、Blue LED--S.BUS、ID SETです。"} caption={"R8FM受信機の外観。図中の表示はV1.0、S.B/PPM、+5V、GND、Blue LED--S.BUS、ID SETです。"} />
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r8fm-w004" data-translation-unit="r8fm-w004"></span>
+
+Radiolink R8FMは、重量2.5 gの2.4 GHz・8チャンネル受信機です。SBUSおよびPPM信号に対応し、Radiolink T8FB送信機で使用します。レーシングドローンに最適です。
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r8fm-w005" data-translation-unit="r8fm-w005"></span>
+
+### 2つの信号動作モード
+
+<span id="r8fm-w006" data-translation-unit="r8fm-w006"></span>
+
+青／紫色LED：S-BUS信号、合計8チャンネル。
+
+<span id="r8fm-w007" data-translation-unit="r8fm-w007"></span>
+
+赤色LED：PPM信号、合計8チャンネル。
+
+<span id="r8fm-w008" data-translation-unit="r8fm-w008"></span>
+
+### S-BUS信号とPPM信号の切り替え
+
+<span id="r8fm-w009" data-translation-unit="r8fm-w009"></span>
+
+「ID SET」スイッチを1秒以内に素早く2回押すと、信号がS-BUSからPPMに切り替わります。赤色LEDはPPM、青／紫色LEDはS-BUSを示します。
+
+<span id="r8fm-w010" data-translation-unit="r8fm-w010"></span>
+
+### 送信機とのバインド（リンク）方法
+
+<span id="r8fm-w011" data-translation-unit="r8fm-w011"></span>
+
+1. 送信機と受信機を互いに1 m以内に近づけます。
+
+<span id="r8fm-w012" data-translation-unit="r8fm-w012"></span>
+
+2. 送信機の電源を入れてから、R8FMに電源を供給します。
+
+<span id="r8fm-w013" data-translation-unit="r8fm-w013"></span>
+
+3. R8FMには黒いボタンがあります。1秒以内にバインドボタンを押し、受信機のランプが点滅し始めたら離します。約8回点滅した後、受信機の信号LEDが点灯し続ければバインド成功です。
+
+:::note[原典について]
+バインド操作の原文「press the binding button in one second」は押下時間／タイミングが曖昧です。暫定訳では「1秒以内に」を保持しました。モーターを制御する受信機操作のため、正式な押下条件の確認まで該当手順をHOLDします。
+:::
+
+<span id="r8fm-w014" data-translation-unit="r8fm-w014"></span>
+
+### 受信機アンテナの取り付け
+
+<span id="r8fm-w015" data-translation-unit="r8fm-w015"></span>
+
+1. アンテナは必ずできる限り真っすぐに保ってください。そうしないと有効距離が短くなります。
+
+<span id="r8fm-w016" data-translation-unit="r8fm-w016"></span>
+
+2. 大型模型航空機では、金属部品が信号に干渉することがあります。この場合はアンテナを機体の側面に配置します。
+
+<span id="r8fm-w017" data-translation-unit="r8fm-w017"></span>
+
+3. アンテナは、金属やカーボンなどの導電性材料から少なくとも半インチ離してください。アンテナの同軸部分はこの指針に従う必要はありませんが、小さな半径で曲げないでください。
+
+<span id="r8fm-w018" data-translation-unit="r8fm-w018"></span>
+
+4. アンテナは、モーター、ESC、その他のノイズ源からできる限り離してください。
+
+<span id="r8fm-w019" data-translation-unit="r8fm-w019"></span>
+
+5. 模型に取り付ける際は、衝撃を防ぐため、受信機をスポンジや発泡材で包むことができます。
+
+<span id="r8fm-w020" data-translation-unit="r8fm-w020"></span>
+
+上記の手順をすべて完了したら、各機能を設定し、正しく接続された状態で送信機から制御できることを確認します。
+
+<span id="r8fm-w021" data-translation-unit="r8fm-w021"></span>
+
+### 仕様
+
+<span id="r8fm-w022" data-translation-unit="r8fm-w022"></span>
+
+1. チャンネル数：8チャンネル
+
+<span id="r8fm-w023" data-translation-unit="r8fm-w023"></span>
+
+2. 動作電圧：4.8～6 V
+
+<span id="r8fm-w024" data-translation-unit="r8fm-w024"></span>
+
+3. 動作電流：30 mA（入力電圧：5 V）
+
+<span id="r8fm-w025" data-translation-unit="r8fm-w025"></span>
+
+4. 寸法：16.0 × 21.5 × 1.0 mm
+
+<span id="r8fm-w026" data-translation-unit="r8fm-w026"></span>
+
+5. 重量：2.5 g
+
+<span id="r8fm-w027" data-translation-unit="r8fm-w027"></span>
+
+6. 分解能2048段階、1段階当たり0.5 μs。サーボの舵の振動を抑えます。
+
+<span id="r8fm-w028" data-translation-unit="r8fm-w028"></span>
+
+7. 制御距離：上空で約2000 m。実際の制御距離は環境に依存します。

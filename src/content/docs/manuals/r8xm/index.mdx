@@ -1,0 +1,439 @@
+---
+title: R8XM 日本語取扱説明書
+description: Radiolink R8XM の公式英語取扱説明書に対応する日本語版です。
+product: r8xm
+slug: manuals/r8xm
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/91dd196cc3e9100f91d18977db44b482.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r8xm/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R8XM 公式英語取扱説明書（文書版・発行日不明、7頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r8xm-w001" data-translation-unit="r8xm-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p1-f1.jpeg" width={289} height={58} figureId="r8xm-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w002" data-translation-unit="r8xm-w002"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w003" data-translation-unit="r8xm-w003"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w004" data-translation-unit="r8xm-w004"></span>
+
+## R8XM
+
+<span id="r8xm-w006" data-translation-unit="r8xm-w006"></span>
+
+（FHSS）
+
+<span id="r8xm-w007" data-translation-unit="r8xm-w007"></span>
+
+### 取扱説明書
+
+:::note[原典について]
+文書の版番号・発行日・対応受信機Revisionは明記されていません。写真のV1.0は製品上の表示であり文書版と推定しません。製造時期の制限は物理4頁に原文どおり保持しています。
+:::
+
+<span id="r8xm-w005" data-translation-unit="r8xm-w005"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8xm-w008" data-translation-unit="r8xm-w008"></span>
+
+対応送信機：T8FB(BT)／T8S(BT)／T8FB(OTG)／T8S(OTG)／RC6GS V3／RC6GS V2／RC6GS／RC4GS V3／RC4GS V2／RC4GS
+
+<span id="r8xm-w009" data-translation-unit="r8xm-w009"></span>
+
+:::caution[注意]
+（フライトコントローラーと組み合わせて使用する必要があります）
+:::
+
+<span id="r8xm-w010" data-translation-unit="r8xm-w010"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p2-f1.jpeg" width={289} height={58} figureId="r8xm-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w011" data-translation-unit="r8xm-w011"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w012" data-translation-unit="r8xm-w012"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w013" data-translation-unit="r8xm-w013"></span>
+
+RadioLinkの8チャンネル受信機R8XMをお買い上げいただき、ありがとうございます。本製品の機能を十分に活用し、安全に使用するため、説明をよく読み、記載された手順に従って機器を設定してください。
+
+<span id="r8xm-w014" data-translation-unit="r8xm-w014"></span>
+
+操作中に問題が発生した場合は、まず本説明書を参照してください。その後、販売代理店に解決方法を問い合わせるか、Facebookページ https://www.facebook.com/radiolinkofficial で関連キーワードを検索してください。また、after_service@radioLink.com.cn に質問をお送りいただくこともできます。できるだけ早く回答します。
+
+<span id="r8xm-w015" data-translation-unit="r8xm-w015"></span>
+
+製造工程の予期しない変更により、本説明書の情報は予告なく変更される場合があります。詳しい情報は、当社ウェブサイト http://www.radiolink.com を確認し、FacebookおよびYouTubeの当社ページをフォローしてください。
+
+<span id="r8xm-w016" data-translation-unit="r8xm-w016"></span>
+
+:::caution[注意]
+安全上の注意
+
+- 悪天候のときは、絶対に模型を操作しないでください。視界が悪いと、方向を見失い、模型を制御できなくなるおそれがあります。
+- 人混みや、法律で使用が禁止されている場所では、絶対に本製品を使用しないでください。
+- 受信機を接続する前に、必ずトリムレバーが0にあり、バッテリーが適切に充電されていることを確認してください。
+- 毎回の使用前に、必ずすべてのサーボとその接続を確認してください。
+- 必ず送信機より先に受信機の電源を切ってください。
+:::
+
+<span id="r8xm-w017" data-translation-unit="r8xm-w017"></span>
+
+### 警告
+
+<span id="r8xm-w018" data-translation-unit="r8xm-w018"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、14歳未満の子どもには適していません。大人は本製品を子どもの手の届かない場所に保管し、子どもがいる場所で操作する際は十分注意してください。
+:::
+
+<span id="r8xm-w019" data-translation-unit="r8xm-w019"></span>
+
+:::caution[注意]
+アンテナやスティックの隙間から送信機内部に水や湿気が入り、模型の動作が不安定になったり、制御不能になったりするおそれがあります。競技などで雨天時の使用が避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="r8xm-w020" data-translation-unit="r8xm-w020"></span>
+
+原典の印刷ページ：1
+
+<span id="r8xm-w021" data-translation-unit="r8xm-w021"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p3-f1.jpeg" width={289} height={58} figureId="r8xm-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w022" data-translation-unit="r8xm-w022"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w023" data-translation-unit="r8xm-w023"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w024" data-translation-unit="r8xm-w024"></span>
+
+### 目次
+
+<span id="r8xm-w025" data-translation-unit="r8xm-w025"></span>
+
+- R8XMの概要 …… 3
+- バインド …… 3
+- 動作モード …… 4
+- アンテナ取り付け上の注意 …… 4
+- リアルタイム内蔵テレメトリー …… 4
+  - RSSIと受信機電圧のテレメトリー …… 4
+  - 機体電圧のテレメトリー …… 4
+  - RSSIおよび低電圧アラームの設定 …… 5
+  - RSSIおよび低電圧アラームの通知音 …… 6
+- 受信機からFPVモニターへのRSSI値の出力 …… 6
+- R8XMの仕様 …… 6
+
+<span id="r8xm-w026" data-translation-unit="r8xm-w026"></span>
+
+原典の印刷ページ：2
+
+<span id="r8xm-w027" data-translation-unit="r8xm-w027"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p4-f1.jpeg" width={289} height={58} figureId="r8xm-p4-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w028" data-translation-unit="r8xm-w028"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w029" data-translation-unit="r8xm-w029"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w030" data-translation-unit="r8xm-w030"></span>
+
+### R8XMの概要
+
+<span id="r8xm-w031" data-translation-unit="r8xm-w031"></span>
+
+RadioLink R8XMは、制御距離4000 mの2.4G・8チャンネル受信機です。PPMおよびSBUS信号出力に対応し、RadioLink送信機T8FB(BT)／T8S(BT)／T8FB(OTG)／T8S(OTG)／RC6GS V3／RC6GS V2／RC6GS／RC4GS V3／RC4GS V2／RC4GSに対応しています（フライトコントローラーと組み合わせて使用する必要があります）。
+
+<span id="r8xm-w032" data-translation-unit="r8xm-w032"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8xm-w033" data-translation-unit="r8xm-w033"></span>
+
+### バインド
+
+<span id="r8xm-w034" data-translation-unit="r8xm-w034"></span>
+
+各受信機には固有のIDコードがあり、使用前に送信機とのバインド（リンク）が必要です。バインドが完了すると、IDコードが送信機に保存され、再度バインドする必要はありません。そのため、新しいR8XMを購入した場合は、送信機で使用するためにバインドを行う必要があります。（注意：R8XMは2016年12月より前に製造されたT8FBには対応していません。）
+
+<span id="r8xm-w035" data-translation-unit="r8xm-w035"></span>
+
+バインド手順
+
+1. 送信機とR8XM受信機を50 cmより離して置きます。
+
+<span id="r8xm-w036" data-translation-unit="r8xm-w036"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8xm-w037" data-translation-unit="r8xm-w037"></span>
+
+3. 受信機側面の「ID SET」を1秒より長く押すと、LED表示が点滅し、バインドが開始したことを示します。
+
+<span id="r8xm-w038" data-translation-unit="r8xm-w038"></span>
+
+4. LED表示の点滅が止まると、バインドは完了です。
+5. 模型のサーボをテストし、送信機で操作できることを確認します。
+
+<span id="r8xm-w039" data-translation-unit="r8xm-w039"></span>
+
+:::caution[注意]
+注意：
+1. R8XMには信号増幅機能があり、テレメトリー範囲は制御範囲と同じ4000 mです。そのため、バインド時には送信機とR8XM受信機を50 cmより離しておくのが最適です。送信機とR8XM受信機が近すぎると信号が遮断されやすく、バインドできません。バインド成功後でも、送信機とR8XM受信機が近すぎる場合（例：50 cm以内）は、信号を失うことがあります。送信機とR8XM受信機をさらに離すと、信号の喪失は自動的に解消します。
+:::
+
+<span id="r8xm-w040" data-translation-unit="r8xm-w040"></span>
+
+原典の印刷ページ：3
+
+<span id="r8xm-w041" data-translation-unit="r8xm-w041"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p5-f1.jpeg" width={289} height={58} figureId="r8xm-p5-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w042" data-translation-unit="r8xm-w042"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w043" data-translation-unit="r8xm-w043"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w044" data-translation-unit="r8xm-w044"></span>
+
+:::caution[注意]
+2. 送信機と受信機の電源が入っているときにR8XMのLED表示がゆっくり点滅する場合は、バインドされていないか、飛行中に受信機が信号を失ったことを示します。
+:::
+
+<span id="r8xm-w045" data-translation-unit="r8xm-w045"></span>
+
+### 動作モード
+
+<span id="r8xm-w046" data-translation-unit="r8xm-w046"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8xm-w047" data-translation-unit="r8xm-w047"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8xm-w048" data-translation-unit="r8xm-w048"></span>
+
+### アンテナ取り付け上の注意
+
+<span id="r8xm-w049" data-translation-unit="r8xm-w049"></span>
+
+信号伝送を最大限に確保するため、以下を強く推奨します。
+
+1. アンテナはできるだけまっすぐにしてください。そうしないと、有効な制御範囲が狭くなります。
+2. 大型模型には、信号の放射に影響する金属部品が含まれる場合があります。その場合は、どのような状況でも良好な信号状態を確保できるよう、アンテナを模型の両側に配置してください。
+3. アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+4. アンテナはモーター、ESC、その他の干渉源となる可能性のあるものから離してください。
+5. 受信機の取り付け時には、振動を防ぐため、スポンジや発泡材の使用を推奨します。
+6. 受信機には高精度の電子部品が含まれています。強い振動や高温を避けるよう注意してください。
+7. 発泡材やゴム布などのR/C用防振材で受信機を包んで保護します。密閉したビニール袋に入れることで、受信機が制御不能になる原因となり得る湿気やほこりを防げます。
+
+<span id="r8xm-w050" data-translation-unit="r8xm-w050"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8xm-w051" data-translation-unit="r8xm-w051"></span>
+
+### リアルタイム内蔵テレメトリー
+
+<span id="r8xm-w052" data-translation-unit="r8xm-w052"></span>
+
+R8XMは、RSSI、受信機電圧、機体電圧のリアルタイム伝送に対応しています。テレメトリー範囲は制御範囲と同じ4000 mです。
+
+<span id="r8xm-w053" data-translation-unit="r8xm-w053"></span>
+
+#### RSSIと受信機電圧のテレメトリー
+
+<span id="r8xm-w054" data-translation-unit="r8xm-w054"></span>
+
+送信機と受信機のバインドが成功すると、RSSIと受信機電圧が表示されます。
+
+<span id="r8xm-w055" data-translation-unit="r8xm-w055"></span>
+
+#### 機体電圧のテレメトリー
+
+<span id="r8xm-w056" data-translation-unit="r8xm-w056"></span>
+
+バッテリーのバランス端子をR8XMのテレメトリーポートに接続すると、機体電圧が表示されます。外付けの動力用バッテリー電圧テレメトリーモジュールは不要で、R8XMは最大6S（25.2 V）のバッテリー電圧テレメトリーに対応します。標準では2Sバッテリー用テレメトリーケーブルが付属しています。3S、4S、5S、6Sなどの別のバッテリーを接続する場合は、テレメトリーケーブルを自身で交換してください。
+
+:::note[原典について]
+バッテリーのテレメトリーは最大6S（25.2 V）ですが受信機の動作電圧は3～6 Vです。機体電圧テレメトリーポートと受信機電源を混同しないことが必要です。接続図と本文は保持し、端子を推測で変更しません。
+:::
+
+<span id="r8xm-w057" data-translation-unit="r8xm-w057"></span>
+
+原典の印刷ページ：4
+
+<span id="r8xm-w058" data-translation-unit="r8xm-w058"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p6-f1.jpeg" width={289} height={58} figureId="r8xm-p6-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w059" data-translation-unit="r8xm-w059"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w060" data-translation-unit="r8xm-w060"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w062" data-translation-unit="r8xm-w062"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p6-f2.jpeg" width={1000} height={750} figureId="r8xm-p6-f2" alt={"ESC、バッテリーJSTコネクター、バッテリーのバランス端子、Byme-Aフライトコントローラー、バッテリー、R8XM受信機の接続例。原画像を保持しています。"} caption={"ESC、バッテリーJSTコネクター、バッテリーのバランス端子、Byme-Aフライトコントローラー、バッテリー、R8XM受信機の接続例。原画像を保持しています。"} />
+
+<span id="r8xm-w063" data-translation-unit="r8xm-w063"></span>
+
+#### RSSIおよび低電圧アラームの設定
+
+<span id="r8xm-w064" data-translation-unit="r8xm-w064"></span>
+
+R8XMをRadioLink T8FB／T8S (BT)送信機と組み合わせて使用する場合、Androidスマートフォン、iPhone、またはコンピューターのパラメーター設定アプリに接続すると、低電圧アラームを設定できます。飛行中の電圧不足によって帰還できなくなることを防ぐための機能です。アプリのダウンロードと詳しい情報については、T8FBまたはT8Sの詳細マニュアルを参照してください。
+T8FBのマニュアル：https://www.radiolink.com/t8fb_bt_manual
+T8Sのマニュアル：https://www.radiolink.com/t8s_manual
+以下は、iPhoneのパラメーター設定アプリの設定画面です。
+
+<span id="r8xm-w065" data-translation-unit="r8xm-w065"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p6-f3.jpeg" width={1308} height={513} figureId="r8xm-p6-f3" alt={"iPhoneのパラメーター設定アプリの画面例。送信機・受信機・外部電圧およびRSSIのアラーム設定欄を示します。画像内の数値は画面例であり、設定値の推奨を追加するものではありません。"} caption={"iPhoneのパラメーター設定アプリの画面例。送信機・受信機・外部電圧およびRSSIのアラーム設定欄を示します。画像内の数値は画面例であり、設定値の推奨を追加するものではありません。"} />
+
+<span id="r8xm-w066" data-translation-unit="r8xm-w066"></span>
+
+原典の印刷ページ：5
+
+<span id="r8xm-w067" data-translation-unit="r8xm-w067"></span>
+
+<ManualFigure src="/assets/radiolink/r8xm/web-ja-v1/r8xm-p7-f1.jpeg" width={289} height={58} figureId="r8xm-p7-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8xm-w068" data-translation-unit="r8xm-w068"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8xm-w069" data-translation-unit="r8xm-w069"></span>
+
+www.radiolink.com
+
+<span id="r8xm-w070" data-translation-unit="r8xm-w070"></span>
+
+#### RSSIおよび低電圧アラームの通知音
+
+<span id="r8xm-w071" data-translation-unit="r8xm-w071"></span>
+
+返信されたRSSI、受信機電圧、機体電圧が、設定したアラーム値を下回ると、送信機がアラーム音を鳴らします。
+
+<span id="r8xm-w072" data-translation-unit="r8xm-w072"></span>
+
+① 送信機の低電圧アラーム：DDDDのビープ音を速く連続して鳴らします。
+
+<span id="r8xm-w073" data-translation-unit="r8xm-w073"></span>
+
+② 受信機の低電圧アラーム：DDDDDの5回のビープ音を1組として、連続して通知します。
+
+<span id="r8xm-w074" data-translation-unit="r8xm-w074"></span>
+
+③ 機体の低電圧アラーム：DDDの3回のビープ音を1組として、連続して通知します。
+
+<span id="r8xm-w075" data-translation-unit="r8xm-w075"></span>
+
+④ RSSI低下アラーム：DDDDの4回のビープ音を1組として、連続して通知します。
+
+<span id="r8xm-w076" data-translation-unit="r8xm-w076"></span>
+
+### 受信機からFPVモニターへのRSSI値の出力
+
+<span id="r8xm-w077" data-translation-unit="r8xm-w077"></span>
+
+RSSI値を受信機からFPVモニターへ出力します。レース、走行、航行中にリアルタイムのRSSIテレメトリーを利用できます。
+
+<span id="r8xm-w078" data-translation-unit="r8xm-w078"></span>
+
+① * 送信機がT8S／T8FBで、フライトコントローラーがF4／F7の場合に、受信機からFPVへRSSI値を出力する方法：
+https://www.radiolink.com/newsinfo/504912.html?templateId=148964
+
+<span id="r8xm-w079" data-translation-unit="r8xm-w079"></span>
+
+② * 送信機がT8FB／T8Sで、フライトコントローラーがMini Pix／TURBO PiX／PIXHAWKの場合に、受信機からFPVへRSSI値を出力する方法：
+https://www.radiolink.com/newsinfo/504919.html?templateId=148964
+
+<span id="r8xm-w080" data-translation-unit="r8xm-w080"></span>
+
+### R8XMの仕様
+
+<span id="r8xm-w081" data-translation-unit="r8xm-w081"></span>
+
+- 型名：R8XM
+- 寸法：22×17 mm（0.87×0.67インチ）
+- 重量：3 g（ケーブルを含む場合4 g）
+- アンテナ長：90 mm
+- チャンネル数：8チャンネル
+- 動作電圧：DC 3～6 V
+- 動作電流：40 mA±5 mA（5 V時）
+- 信号：SBUS／PPM
+- 出力周波数：2.4 GHz ISM帯（2400～2483.5 MHz）
+- スペクトラム拡散方式：FHSS、67チャンネルの疑似ランダム周波数ホッピング
+- 対応模型：レーシングドローン／回転翼機／固定翼機／グライダー／マルチコプター／車／ボート／ロボット（フライトコントローラーと組み合わせて使用する必要があります）
+- 制御距離：空中で4000 m（2.49マイル）。障害物や干渉のない場所で試験した最大範囲で、地域の規制によって異なる場合があります。
+- 伝送：信号、RSSI、受信機電圧、機体電圧のテレメトリー（テレメトリー距離は制御距離と同じ）
+- 機体電圧テレメトリー：2S～6S LiPoバッテリー（7.4～25.2 V）
+- 対応送信機：T8FB(BT)／T8S(BT)／T8FB(OTG)／T8S(OTG)／RC6GS V3／RC6GS V2／RC6GS／RC4GS V3／RC4GS V2／RC4GS（フライトコントローラーと組み合わせて使用する必要があります）
+
+<span id="r8xm-w082" data-translation-unit="r8xm-w082"></span>
+
+RadioLink製品をお選びいただき、重ねてお礼申し上げます。
+
+<span id="r8xm-w083" data-translation-unit="r8xm-w083"></span>
+
+原典の印刷ページ：6

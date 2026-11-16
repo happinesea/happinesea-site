@@ -1,0 +1,206 @@
+---
+title: R9DS 日本語取扱説明書
+description: Radiolink R9DS の公式英語取扱説明書に対応する日本語版です。
+product: r9ds
+slug: manuals/r9ds
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/1ce0897de8389b27de0664cd474c222d.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r9ds/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R9DS 公式英語取扱説明書（文書版・発行日不明、4頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r9ds-w001" data-translation-unit="r9ds-w001"></span>
+
+## R9DS
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r9ds-w002" data-translation-unit="r9ds-w002"></span>
+
+### （FHSSおよびDSSSスペクトラム拡散方式）
+
+<span id="r9ds-w003" data-translation-unit="r9ds-w003"></span>
+
+Radiolink R9DSは、DSSSとFHSSのスペクトラム拡散を同時に使用する2.4 GHz・9チャンネル受信機です。Radiolink AT9、AT9S、AT10およびAT10II送信機で使用します。SBUS信号とPWM信号を同時に使用できます。
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r9ds-w004" data-translation-unit="r9ds-w004"></span>
+
+<ManualFigure src="/assets/radiolink/r9ds/web-ja-v1/r9ds-p1-f1.jpeg" width={1266} height={398} figureId="r9ds-p1-f1" alt={"R9DS受信機の外観。図中のハードウェア表示はV1.3です。"} caption={"R9DS受信機の外観。図中のハードウェア表示はV1.3です。"} />
+
+:::note[原典について]
+文書版・発行日・適用ハードウェアRevisionは明示されていません。製品写真の版表示は文書版の確定根拠とせず、versionはnullを保持します。
+:::
+
+<span id="r9ds-w005" data-translation-unit="r9ds-w005"></span>
+
+### 2つの信号動作モード
+
+<span id="r9ds-w006" data-translation-unit="r9ds-w006"></span>
+
+#### 1. PWM信号動作モード
+
+<span id="r9ds-w007" data-translation-unit="r9ds-w007"></span>
+
+PWM信号出力動作モード：赤色LEDはPWM信号出力を示します。合計9チャンネルです。
+
+<span id="r9ds-w008" data-translation-unit="r9ds-w008"></span>
+
+<ManualFigure src="/assets/radiolink/r9ds/web-ja-v1/r9ds-p1-f2.jpeg" width={874} height={453} figureId="r9ds-p1-f2" alt={"PWM信号動作モード（合計9チャンネル）。バインドLED、テレメトリー接続ポート、アンテナおよびCH1～CH8を示します。CH1：エルロン、CH2：エレベーター、CH3：スロットル、CH4：ラダー、CH5～CH8：補助。"} caption={"PWM信号動作モード（合計9チャンネル）。バインドLED、テレメトリー接続ポート、アンテナおよびCH1～CH8を示します。CH1：エルロン、CH2：エレベーター、CH3：スロットル、CH4：ラダー、CH5～CH8：補助。"} />
+
+<span id="r9ds-w009" data-translation-unit="r9ds-w009"></span>
+
+<ManualFigure src="/assets/radiolink/r9ds/web-ja-v1/r9ds-p2-f1.jpeg" width={899} height={557} figureId="r9ds-p2-f1" alt={"CH9（補助）の接続位置。"} caption={"CH9（補助）の接続位置。"} />
+
+<span id="r9ds-w010" data-translation-unit="r9ds-w010"></span>
+
+<ManualFigure src="/assets/radiolink/r9ds/web-ja-v1/r9ds-p2-f2.jpeg" width={689} height={491} figureId="r9ds-p2-f2" alt={"端子の信号（signal）、電源（VCC）、接地（GND）の位置。"} caption={"端子の信号（signal）、電源（VCC）、接地（GND）の位置。"} />
+
+<span id="r9ds-w011" data-translation-unit="r9ds-w011"></span>
+
+#### 2. SBUS信号動作モード
+
+<span id="r9ds-w012" data-translation-unit="r9ds-w012"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r9ds-w013" data-translation-unit="r9ds-w013"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r9ds-w014" data-translation-unit="r9ds-w014"></span>
+
+### SBUS信号とPWM信号の切り替え
+
+<span id="r9ds-w015" data-translation-unit="r9ds-w015"></span>
+
+「ID SET」スイッチを1秒以内に短く2回押すと、信号が通常のPWMからSBUSに切り替わります。赤色LEDは通常のPWM、青／紫色LEDはSBUS信号を示します。
+
+<span id="r9ds-w016" data-translation-unit="r9ds-w016"></span>
+
+### 送信機とのバインド（リンク）方法
+
+<span id="r9ds-w017" data-translation-unit="r9ds-w017"></span>
+
+1. 送信機と受信機を互いに1 m以内に近づけます。
+
+<span id="r9ds-w018" data-translation-unit="r9ds-w018"></span>
+
+2. 送信機の電源を入れてから、R9DSに電源を供給します。
+
+<span id="r9ds-w019" data-translation-unit="r9ds-w019"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r9ds-w020" data-translation-unit="r9ds-w020"></span>
+
+4. R9DSには黒いボタンがあります。細い棒またはペンを使い、1秒以内にバインドボタンを押し、受信機のランプが点滅し始めたら離します。約8回点滅した後、受信機の信号LEDが点灯し続ければバインド成功です。
+
+:::note[原典について]
+バインド操作の原文「press the binding button in one second」は押下時間／タイミングが曖昧です。暫定訳では「1秒以内に」を保持しました。モーターを制御する受信機操作のため、正式な押下条件の確認まで該当手順をHOLDします。
+:::
+
+<span id="r9ds-w021" data-translation-unit="r9ds-w021"></span>
+
+### 受信機アンテナの取り付け
+
+<span id="r9ds-w022" data-translation-unit="r9ds-w022"></span>
+
+1. アンテナは必ずできる限り真っすぐに保ってください。そうしないと有効距離が短くなります。
+
+<span id="r9ds-w023" data-translation-unit="r9ds-w023"></span>
+
+2. 大型模型航空機では、金属部品が信号に干渉することがあります。この場合はアンテナを機体の側面に配置します。これにより、どの飛行姿勢でも最良のRF信号状態が得られます。
+
+<span id="r9ds-w024" data-translation-unit="r9ds-w024"></span>
+
+3. アンテナは、金属やカーボンなどの導電性材料から少なくとも半インチ離してください。アンテナの同軸部分はこの指針に従う必要はありませんが、小さな半径で曲げないでください。
+
+<span id="r9ds-w025" data-translation-unit="r9ds-w025"></span>
+
+4. アンテナは、モーター、ESC、その他のノイズ源からできる限り離してください。
+
+<span id="r9ds-w026" data-translation-unit="r9ds-w026"></span>
+
+5. 模型に取り付ける際は、衝撃を防ぐため、受信機をスポンジや発泡材で包むことができます。
+
+<span id="r9ds-w027" data-translation-unit="r9ds-w027"></span>
+
+上記の手順をすべて完了したら、各機能を設定し、正しく接続された状態で送信機から制御できることを確認します。
+
+<span id="r9ds-w028" data-translation-unit="r9ds-w028"></span>
+
+### 仕様
+
+<span id="r9ds-w029" data-translation-unit="r9ds-w029"></span>
+
+1. チャンネル数：
+
+9チャンネル：9チャンネルのPWM信号を出力します。赤色LEDが点灯します。
+
+10チャンネル：10チャンネルの信号を出力し、SBUS信号とPWM信号の同時出力に対応します。青色LEDが点灯します。
+
+<span id="r9ds-w030" data-translation-unit="r9ds-w030"></span>
+
+2. 動作電圧：4.8～10 V
+
+<span id="r9ds-w031" data-translation-unit="r9ds-w031"></span>
+
+3. 動作電流：38～45 mA（入力電圧：5 V）
+
+<span id="r9ds-w032" data-translation-unit="r9ds-w032"></span>
+
+4. 寸法：43 × 24 × 15 mm
+
+<span id="r9ds-w033" data-translation-unit="r9ds-w033"></span>
+
+5. 重量：9 g
+
+<span id="r9ds-w034" data-translation-unit="r9ds-w034"></span>
+
+6. 受信機は信号強度および電圧のテレメトリーセンサーを内蔵しています。外付けのエンジン電圧テレメトリーモジュールPRM-01に対応します。また、モジュールPRM-02は、フライトコントローラーAPMまたはPIXと連携して使用すると、GPS情報、速度、電圧などをAT9／AT9S／AT10／AT10IIの画面へ送信できます。
+
+:::note[原典について]
+原文はPRM-01を「engine voltage telemetry module」と記載しています。何の電源電圧を測定するかは本文で特定していません。「エンジン電圧」の原文対応を保持し、動力バッテリーなどと推測して補っていません。
+:::
+
+<span id="r9ds-w035" data-translation-unit="r9ds-w035"></span>
+
+7. 分解能4096段階、1段階当たり0.25 μs。サーボの舵の振動を抑えます。
+
+<span id="r9ds-w036" data-translation-unit="r9ds-w036"></span>
+
+8. 小型受信機で、SBUS信号を使用する場合はケーブル1本だけで接続できます。
