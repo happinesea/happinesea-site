@@ -1,0 +1,215 @@
+---
+title: R8EF 日本語取扱説明書
+description: Radiolink R8EF の公式英語取扱説明書に対応する日本語版です。
+product: r8ef
+slug: manuals/r8ef
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/a67e1fc5ba73f3b16b2443ab019c2707.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r8ef/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink R8EF 公式英語取扱説明書（文書版・発行日不明、5頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r8ef-w001" data-translation-unit="r8ef-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p1-f1.png" width={289} height={58} figureId="r8ef-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8ef-w002" data-translation-unit="r8ef-w002"></span>
+
+Radiolink Electronic Limited
+www.radiolink.com
+
+<span id="r8ef-w003" data-translation-unit="r8ef-w003"></span>
+
+## R8EF
+（FHSS方式）
+
+<span id="r8ef-w004" data-translation-unit="r8ef-w004"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8ef-w005" data-translation-unit="r8ef-w005"></span>
+
+### はじめに
+
+<span id="r8ef-w006" data-translation-unit="r8ef-w006"></span>
+
+Radiolink R8EFはS-BUS、PPM、PWM信号に対応する2.4 GHz・8チャンネル受信機です。Radiolink送信機T8FB、T8S、RC4GS V2、RC6GS V2で使用します。
+
+<span id="r8ef-w007" data-translation-unit="r8ef-w007"></span>
+
+### 目次
+|項目|原典ページ|
+|---|---|
+|はじめに|1|
+|2種類の信号動作モード|2|
+|1. PWM信号出力モード|2|
+|2. S-BUS・PPM信号出力モード|2|
+|3. S-BUS・PPMとPWMの信号切り替え|3|
+|4. 受信機の接続|3|
+|送信機とのバインド方法|4|
+|受信機アンテナの取り付け|4|
+|仕様|5|
+
+<span id="r8ef-w008" data-translation-unit="r8ef-w008"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p2-f1.png" width={289} height={58} figureId="r8ef-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8ef-w009" data-translation-unit="r8ef-w009"></span>
+
+Radiolink Electronic Limited
+www.radiolink.com
+
+<span id="r8ef-w010" data-translation-unit="r8ef-w010"></span>
+
+### 2種類の信号動作モード
+
+<span id="r8ef-w011" data-translation-unit="r8ef-w011"></span>
+
+#### 1. PWM信号出力モード
+
+<span id="r8ef-w012" data-translation-unit="r8ef-w012"></span>
+
+赤色LEDはPWM信号出力を示します。合計8チャンネルです。
+
+<span id="r8ef-w013" data-translation-unit="r8ef-w013"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8ef-w014" data-translation-unit="r8ef-w014"></span>
+
+#### 2. S-BUS・PPM信号出力モード
+
+<span id="r8ef-w015" data-translation-unit="r8ef-w015"></span>
+
+青／紫色LEDはSBUS・PPM信号出力を示します。合計8チャンネルです。S-BUS・PPM信号出力モードでは、SBUS信号とPWM信号を同時に動作させることができます。
+CH1はS-BUS信号、CH2はPPM信号を出力し、CH3～CH8は同時にPWM信号を出力します。
+
+<span id="r8ef-w016" data-translation-unit="r8ef-w016"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p3-f1.png" width={289} height={58} figureId="r8ef-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8ef-w017" data-translation-unit="r8ef-w017"></span>
+
+Radiolink Electronic Limited
+www.radiolink.com
+
+<span id="r8ef-w018" data-translation-unit="r8ef-w018"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p3-f2.jpeg" width={700} height={419} figureId="r8ef-p3-f2" alt={"S-BUS・PPM・PWM出力の接続図。LED＝LED、Antenna＝アンテナ、Binding Button＝バインドボタン。GND(-)＝グランド（－）、VCC(+)＝電源（＋）、Signal＝信号。"} caption={"原典3頁の図"} />
+
+S-BUS・PPM・PWM出力の接続図。LED＝LED、Antenna＝アンテナ、Binding Button＝バインドボタン。GND(-)＝グランド（－）、VCC(+)＝電源（＋）、Signal＝信号。
+|チャンネル|用途・信号|
+|---|---|
+|CH8|補助（Auxiliary）PWM|
+|CH7|補助（Auxiliary）PWM|
+|CH6|補助（Auxiliary）PWM|
+|CH5|補助（Auxiliary）PWM|
+|CH4|ラダー（Rudder）PWM|
+|CH3|スロットル（Throttle）PWM|
+|CH2|PPM|
+|CH1|SBUS|
+
+筐体にはRadioLink、R8EF、V1.1、Blue LED S.BUS&amp;PPM、4.8-10V/DC、2.4GHz、FHSS、CE、FC、RoHS、PPM/CH2、S.BUS/CH1の表記があります。
+
+<span id="r8ef-w019" data-translation-unit="r8ef-w019"></span>
+
+### 3. S-BUS・PPMとPWMの信号切り替え
+1秒以内にID SETスイッチを素早く2回押すと、信号がPWMからS-BUS・PPMへ切り替わります。赤色LEDはPWM、青／紫色LEDはS-BUS・PPM・PWMを示します。
+
+<span id="r8ef-w020" data-translation-unit="r8ef-w020"></span>
+
+### 4. 受信機の接続
+受信機の接続ケーブルは上図のとおりです。一般的なケーブルの線色は白／赤／黒、または黄／赤／茶です。どちらのサーボケーブルも、明るい色の線が信号線、暗い色の線がグランド線、中央が5 V電源です。3本の線は、信号波形・＋・－の各記号に対応します。
+
+<span id="r8ef-w021" data-translation-unit="r8ef-w021"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p3-f3.png" width={50} height={12} figureId="r8ef-p3-f3" alt={"信号波形・＋・－の記号。順に信号、電源プラス、電源マイナスに対応します。"} caption={"信号波形・＋・－の記号。順に信号、電源プラス、電源マイナスに対応します。"} />
+
+<span id="r8ef-w022" data-translation-unit="r8ef-w022"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p4-f1.png" width={289} height={58} figureId="r8ef-p4-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8ef-w023" data-translation-unit="r8ef-w023"></span>
+
+Radiolink Electronic Limited
+www.radiolink.com
+
+<span id="r8ef-w024" data-translation-unit="r8ef-w024"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p4-f2.jpeg" width={700} height={211} figureId="r8ef-p4-f2" alt={"受信機および白／赤／黒、黄／赤／茶ケーブルの配線図。Signal＝信号、Positive＝プラス、Negative＝マイナス。明るい色の線が信号、赤がプラス、暗い色の線がマイナスです。筐体表記：RadioLink、R8EF、V1.3、Blue LED S.BUS&PPM&PWM、4.8-10V/DC、2.4GHz、FHSS、CE、FC、RoHS、CH8～CH3、PPM/CH2、S.BUS/CH1、信号波形・＋・－。"} caption={"受信機および白／赤／黒、黄／赤／茶ケーブルの配線図。Signal＝信号、Positive＝プラス、Negative＝マイナス。明るい色の線が信号、赤がプラス、暗い色の線がマイナスです。筐体表記：RadioLink、R8EF、V1.3、Blue LED S.BUS&PPM&PWM、4.8-10V/DC、2.4GHz、FHSS、CE、FC、RoHS、CH8～CH3、PPM/CH2、S.BUS/CH1、信号波形・＋・－。"} />
+
+<span id="r8ef-w025" data-translation-unit="r8ef-w025"></span>
+
+:::caution[注意]
+注意：
+1. Radiolinkの受信機はすべて逆接続保護を備えています。サーボケーブルを逆向きに差し込むと、受信機は動作しません。
+2. 受信機の動作電圧は4.8～10 Vです。受信機に別のバッテリーから独立して電源を供給する場合、バッテリーの極性を逆に接続しても受信機は破損しませんが、この状態でサーボを接続していると、サーボが破損します。
+:::
+
+<span id="r8ef-w026" data-translation-unit="r8ef-w026"></span>
+
+### 送信機とのバインド（リンク）方法
+1. 送信機と受信機を1 m以内に近づけます。
+2. 送信機の電源を入れてから、R8EFに電源を供給します。
+3. R8EFの黒いバインドボタンを1秒間押し、受信機のLEDが点滅し始めたら放します。約8回点滅した後、受信機の信号LEDが点灯状態になれば、バインド完了です。
+
+:::note[原典について]
+バインドボタンの「in one second」は押下時間の表現が曖昧。1秒間という暫定訳とし実機未確認。
+:::
+
+<span id="r8ef-w027" data-translation-unit="r8ef-w027"></span>
+
+### 受信機アンテナの取り付け
+1. アンテナはできるだけまっすぐに保ちます。曲がっていると有効範囲が狭くなります。
+2. 大型模型航空機では金属部品が信号に干渉する場合があります。この場合はアンテナを機体の側面に配置します。
+3. アンテナは、金属やカーボンなどの導電性材料から少なくとも0.5インチ離してください。アンテナの同軸部分にはこの配置条件は適用されませんが、小さな曲げ半径で曲げないでください。
+
+<span id="r8ef-w028" data-translation-unit="r8ef-w028"></span>
+
+<ManualFigure src="/assets/radiolink/r8ef/web-ja-v1/r8ef-p5-f1.png" width={289} height={58} figureId="r8ef-p5-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8ef-w029" data-translation-unit="r8ef-w029"></span>
+
+Radiolink Electronic Limited
+www.radiolink.com
+
+<span id="r8ef-w030" data-translation-unit="r8ef-w030"></span>
+
+4. アンテナは、モーター、ESC、その他のノイズ源からできるだけ離します。
+5. 機体に取り付けるときは、衝撃を防ぐため受信機をスポンジや発泡材で包むことができます。
+6. 上記の手順をすべて終えたら、各機能を操作し、正しく接続されて送信機で制御できることを確認します。
+
+<span id="r8ef-w031" data-translation-unit="r8ef-w031"></span>
+
+### 仕様
+1. チャンネル数：8チャンネル
+2. 動作電圧：4.8～10 V
+3. 動作電流：30 mA（入力電圧：5 V）
+4. 寸法：48.5 × 21 × 11 mm
+5. 重量：7 g
+6. 分解能4096段階、1段階あたり0.5 μs。サーボの舵の振動を抑えます。
+7. 操縦距離：上空で約2000 m。実際の操縦距離は環境によって異なります。
+
+:::note[原典について]
+「servo anti-shake rudder」の具体的機能は不明。原文の範囲で暫定訳。
+:::

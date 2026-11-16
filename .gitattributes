@@ -9,3 +9,11 @@ src/data/contracts/drawing-library-v0.1.schema.json text eol=lf
 scripts/lib/drawing-library.mjs text eol=lf
 scripts/import-drawing-library.mjs text eol=lf
 tests/unit/drawing-library.test.mjs text eol=lf
+
+# Deterministic receiver publication bytes, bound to upstream canonical hashes.
+src/content/docs/manuals/r6f/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r6dsm/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r8sm/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r12ds/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r8ef/** -text whitespace=cr-at-eol
+src/data/manuals/receiver-web-pilot.json -text whitespace=cr-at-eol

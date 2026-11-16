@@ -607,9 +607,9 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   const html = await route('radiolink/index.html');
 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
-  assert.equal((html.match(/data-detail-available/g) ?? []).length, 8);
-  assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 75);
-  assert.equal((html.match(/詳しい仕様は公式サイトで/g) ?? []).length, 75);
+  assert.equal((html.match(/data-detail-available/g) ?? []).length, 13);
+  assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 70);
+  assert.equal((html.match(/詳しい仕様は公式サイトで/g) ?? []).length, 70);
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);

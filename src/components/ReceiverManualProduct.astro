@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import catalogue from '../data/product-catalogue.json';
+import manuals from '../data/manuals/receiver-web-pilot.json';
+import { withBase } from '../lib/urls';
+
+const { productId } = Astro.props;
+const product = catalogue.find((p) => p.id === productId);
+const manual = manuals.manuals.find((m) => m.product_id === productId);
+if (!product || !manual)
+  throw new Error(`Missing receiver publication: ${productId}`);
+---
+
+<BaseLayout
+  title={`Radiolink ${product.name}`}
+  description={product.description}
+>
+  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-12">
+    <a href={withBase('/radiolink/#receivers')}>受信機一覧へ戻る</a>
+    <h1 class="mt-6 text-3xl font-bold">Radiolink {product.name}</h1>
+    <p class="mt-3">{product.description}</p>
+    <img
+      src={withBase(product.image.src)}
+      width={product.image.width}
+      height={product.image.height}
+      alt={`Radiolink ${product.name}`}
+      class="my-8 max-h-80 w-full object-contain"
+    />
+    <h2 class="text-2xl font-bold">取扱説明書</h2>
+    <p class="my-4">
+      <a
+        href={withBase(manual.route)}
+        class="font-bold text-teal-800 underline"
+        data-receiver-manual-link
+      >
+        日本語取扱説明書
+      </a>
+    </p>
+    <p>
+      原典の記載・適用条件に確認待ちの箇所があります。詳細は取扱説明書内の注意を確認してください。
+    </p>
+    <p class="mt-4">
+      <a href={manual.source.source_url}>公式英語取扱説明書</a>
+    </p>
+    <p class="mt-4">
+      <a href={product.officialUrl} rel="noreferrer" target="_blank">
+        Radiolink公式製品情報
+      </a>
+    </p>
+  </section>
+</BaseLayout>

@@ -30,16 +30,21 @@ test('catalogue images are local official assets and detail links match implemen
   const pending = products.filter(({ detailPath }) => detailPath === null);
 
   assert.deepEqual(implemented.map(({ slug }) => slug).sort(), [
+    'r12ds',
     'r12f',
     'r16f',
+    'r6dsm',
+    'r6f',
     'r6fg',
     'r7fg',
+    'r8ef',
     'r8fg',
+    'r8sm',
     'rc8p',
     'rc8x',
     't12d',
   ]);
-  assert.equal(pending.length, 75);
+  assert.equal(pending.length, 70);
 
   for (const product of products) {
     assert.match(

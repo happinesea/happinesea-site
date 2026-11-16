@@ -1,0 +1,157 @@
+---
+title: R12DS 日本語取扱説明書
+description: Radiolink R12DS の公式英語取扱説明書に対応する日本語版です。
+product: r12ds
+slug: manuals/r12ds
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/a51f09b44c4df3c00402beb57933e164.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r12ds/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink R12DS 公式英語取扱説明書（文書版・発行日不明、5頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r12ds-w001" data-translation-unit="r12ds-w001"></span>
+
+## R12DS
+（FHSSおよびDSSSスペクトラム拡散方式）
+
+<span id="r12ds-w002" data-translation-unit="r12ds-w002"></span>
+
+<ManualFigure src="/assets/radiolink/r12ds/web-ja-v1/r12ds-p1-f1.jpeg" width={612} height={245} figureId="r12ds-p1-f1" alt={"R12DS受信機の外観。筐体表記：RadioLink、R12DS、DSSS/FHSS、Status（状態）、2.4GHz、V1.0、4.6-10V/DC、GND、SDA、SCL、VCC、CE、FC、RoHS。図中の表記であり、日本語が実機に表示されることを示すものではありません。"} caption={"R12DS受信機の外観。筐体表記：RadioLink、R12DS、DSSS/FHSS、Status（状態）、2.4GHz、V1.0、4.6-10V/DC、GND、SDA、SCL、VCC、CE、FC、RoHS。図中の表記であり、日本語が実機に表示されることを示すものではありません。"} />
+
+<span id="r12ds-w003" data-translation-unit="r12ds-w003"></span>
+
+Radiolink R12DSは、DSSSとFHSSスペクトラム拡散方式が同時に動作する2.4 GHz・12チャンネル受信機です。Radiolink送信機AT9、AT9S、AT10、AT10IIに対応します（AT9、AT9S、AT10はファームウェアの更新だけで12チャンネルにアップグレードできます。ファームウェアは http://radiolink.com.cn/doce/at10upgraded.html からダウンロードできます。AT10IIは標準で12チャンネルです）。
+S-BUS信号とPWM信号は同時に動作できます。
+
+<span id="r12ds-w004" data-translation-unit="r12ds-w004"></span>
+
+### 2種類の信号動作モード
+
+<span id="r12ds-w005" data-translation-unit="r12ds-w005"></span>
+
+#### 1. PWM信号出力モード
+
+<span id="r12ds-w006" data-translation-unit="r12ds-w006"></span>
+
+赤色LEDはPWM信号出力を示します。合計11チャンネルです。
+
+<span id="r12ds-w007" data-translation-unit="r12ds-w007"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12ds-w008" data-translation-unit="r12ds-w008"></span>
+
+#### 2. S-BUS信号出力モード
+
+<span id="r12ds-w009" data-translation-unit="r12ds-w009"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12ds-w010" data-translation-unit="r12ds-w010"></span>
+
+<ManualFigure src="/assets/radiolink/r12ds/web-ja-v1/r12ds-p2-f1.jpeg" width={731} height={507} figureId="r12ds-p2-f1" alt={"S-BUSモードの接続図。テレメトリーモジュール接続ポート：PRM-01およびPRM-02対応。antenna＝アンテナ、Binding button＝バインドボタン。"} caption={"原典2頁の図"} />
+
+S-BUSモードの接続図。テレメトリーモジュール接続ポート：PRM-01およびPRM-02対応。antenna＝アンテナ、Binding button＝バインドボタン。
+|列|信号・用途|
+|---|---|
+|1|CH3 (THRO)：スロットル|
+|2|CH4 (RUDD)：ラダー|
+|3～10|CH5～CH12 (AUX)：補助|
+|11|SBUS Signal：S-BUS信号|
+
+青／紫色LED、合計12チャンネル。11列目はSBUS信号、1～10列目はPWM信号を出力します。筐体のRadioLink、R12DS、DSSS/FHSS、Status、2.4GHz、V1.0、GND、SDA、SCL、VCC、4.6-10V/DC、S.BUS、CE、FC、RoHSは原図表記です。
+
+<span id="r12ds-w011" data-translation-unit="r12ds-w011"></span>
+
+### SBUS信号とPPM信号の切り替え
+1秒以内にID SETスイッチを2回短く押すと、信号がPWMからSBUSへ切り替わります。赤色LEDはPWM、青／紫色LEDはSBUSを示します。
+
+:::note[原典について]
+見出しは「SBUS and PPM signal change」だが本文はPWMからSBUSへの切り替え。PPM対応を補完せず原文を維持。
+:::
+
+<span id="r12ds-w012" data-translation-unit="r12ds-w012"></span>
+
+### 送信機とのバインド（リンク）方法
+1. 送信機と受信機を50 cm以内に近づけます。
+2. 送信機の電源を入れてから、R12DSに電源を供給します。
+3. R12DSのCH3をESC、フライトコントローラー、またはサーボに接続します。
+4. R12DSの黒いバインドボタンを、細い棒またはペンで1秒間押し、受信機のLEDが点滅し始めたら放します。約8回点滅した後、受信機の信号LEDが点灯状態になれば、バインド完了です。
+
+:::note[原典について]
+バインドボタンの「in one second」は押下時間の表現が曖昧。1秒間という暫定訳とし実機未確認。
+:::
+
+<span id="r12ds-w013" data-translation-unit="r12ds-w013"></span>
+
+### 受信機アンテナの取り付け
+1. アンテナはできるだけまっすぐに保ちます。曲がっていると有効範囲が狭くなります。
+2. 2本のアンテナを90°に配置します。
+
+<span id="r12ds-w014" data-translation-unit="r12ds-w014"></span>
+
+<ManualFigure src="/assets/radiolink/r12ds/web-ja-v1/r12ds-p3-f1.png" width={501} height={275} figureId="r12ds-p3-f1" alt={"2本のアンテナを90°に配置する例を2種類示しています。図中文字：90°、R12DS。"} caption={"2本のアンテナを90°に配置する例を2種類示しています。図中文字：90°、R12DS。"} />
+
+<span id="r12ds-w015" data-translation-unit="r12ds-w015"></span>
+
+3. 大型模型航空機では、金属部品が信号に干渉する場合があります。この場合はアンテナを機体の両側に配置します。これにより、どの飛行姿勢でも最良の無線信号状態を得られます。
+
+<span id="r12ds-w016" data-translation-unit="r12ds-w016"></span>
+
+<ManualFigure src="/assets/radiolink/r12ds/web-ja-v1/r12ds-p3-f2.png" width={984} height={433} figureId="r12ds-p3-f2" alt={"固定翼機とヘリコプターでのアンテナ配置例。図中のAntennaはアンテナを示します。"} caption={"固定翼機とヘリコプターでのアンテナ配置例。図中のAntennaはアンテナを示します。"} />
+
+<span id="r12ds-w017" data-translation-unit="r12ds-w017"></span>
+
+4. アンテナは、金属やカーボンなどの導電性材料から少なくとも0.5インチ離してください。アンテナの同軸部分にはこの配置条件は適用されませんが、小さな曲げ半径で曲げないでください。
+5. アンテナは、モーター、ESC、その他のノイズ源からできるだけ離します。
+6. Easy Link（ID SET）を1秒間押し続けると、受信機が動作を開始します。
+7. 上記の手順をすべて終えると、LEDインジケーターが赤色で点灯し続けます。
+8. 機体に取り付けるときは、衝撃を防ぐため受信機をスポンジや発泡材で包むことができます。
+上記の手順をすべて終えたら、各機能を操作し、正しく接続されて送信機で制御できることを確認します。
+
+<span id="r12ds-w018" data-translation-unit="r12ds-w018"></span>
+
+### テレメトリーモジュールPRM-01との接続
+
+<span id="r12ds-w019" data-translation-unit="r12ds-w019"></span>
+
+<ManualFigure src="/assets/radiolink/r12ds/web-ja-v1/r12ds-p4-f1.jpeg" width={547} height={398} figureId="r12ds-p4-f1" alt={"R12DS、PRM-01、バッテリーの接続写真。受信機のRadioLink、R12DS、DSSS/FHSS、Status、2.4GHz、V1.0、CE、FC、RoHS、およびモジュールのPRM-01の表記があります。細かな基板印字は原図を参照してください。"} caption={"R12DS、PRM-01、バッテリーの接続写真。受信機のRadioLink、R12DS、DSSS/FHSS、Status、2.4GHz、V1.0、CE、FC、RoHS、およびモジュールのPRM-01の表記があります。細かな基板印字は原図を参照してください。"} />
+
+<span id="r12ds-w020" data-translation-unit="r12ds-w020"></span>
+
+### テレメトリーモジュールPRM-03との接続（中央の製品はRadiolink製フライトコントローラーMini Pix）
+
+<span id="r12ds-w021" data-translation-unit="r12ds-w021"></span>
+
+<ManualFigure src="/assets/radiolink/r12ds/web-ja-v1/r12ds-p4-f2.jpeg" width={777} height={501} figureId="r12ds-p4-f2" alt={"R12DS、中央のMini Pix、およびPRM-03の接続写真。受信機の製品表示に加え、Mini PixにはRadiolink、Mini Pix、V1.0、POWER（電源）、BUZZER（ブザー）、SAFETY（安全）、TELEM1、TELEM2、SBUS/RCIN、GPS、I2C、1～8、＋、－などの端子表記があります。原図の配線と表記を保持しています。日本語の実機表示を意味しません。"} caption={"R12DS、中央のMini Pix、およびPRM-03の接続写真。受信機の製品表示に加え、Mini PixにはRadiolink、Mini Pix、V1.0、POWER（電源）、BUZZER（ブザー）、SAFETY（安全）、TELEM1、TELEM2、SBUS/RCIN、GPS、I2C、1～8、＋、－などの端子表記があります。原図の配線と表記を保持しています。日本語の実機表示を意味しません。"} />
+
+<span id="r12ds-w022" data-translation-unit="r12ds-w022"></span>
+
+### 仕様
+1. チャンネル数：
+
+<span id="r12ds-w023" data-translation-unit="r12ds-w023"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::

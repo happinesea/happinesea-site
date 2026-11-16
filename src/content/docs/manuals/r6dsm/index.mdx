@@ -1,0 +1,132 @@
+---
+title: R6DSM 日本語取扱説明書
+description: Radiolink R6DSM の公式英語取扱説明書に対応する日本語版です。
+product: r6dsm
+slug: manuals/r6dsm
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/8fdcaf19b0a889b91cc22f7c46cccb0f.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r6dsm/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink R6DSM 公式英語取扱説明書（文書版・発行日不明、2頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r6dsm-w001" data-translation-unit="r6dsm-w001"></span>
+
+## R6DSM
+
+:::note[原典について]
+原典の文書版・発行日は不明です。写真上の基板／製品版表示を文書版や対象受信機世代として確定していません。
+:::
+
+<span id="r6dsm-w002" data-translation-unit="r6dsm-w002"></span>
+
+### （FHSSおよびDSSSスペクトラム拡散）
+
+<span id="r6dsm-w006" data-translation-unit="r6dsm-w006"></span>
+
+<ManualFigure src="/assets/radiolink/r6dsm/web-ja-v1/r6dsm-p1-f1.jpeg" width={1269} height={596} figureId="r6dsm-p1-f1" alt={"R6DSM基板の製品写真。基板の印字は「E306R6DSMV13」です。これは写真中の基板印字であり、文書版を示すものとは確定していません。"} caption={"R6DSM基板の製品写真。基板の印字は「E306R6DSMV13」です。これは写真中の基板印字であり、文書版を示すものとは確定していません。"} />
+
+:::note[原典について]
+原典の文書版・発行日は不明です。写真上の基板／製品版表示を文書版や対象受信機世代として確定していません。
+:::
+
+<span id="r6dsm-w003" data-translation-unit="r6dsm-w003"></span>
+
+Radiolink R6DSMは、DSSSとFHSSスペクトラム拡散を同時に使用する2.4G・10チャンネル受信機です。重量は1.5 gで、SBUSおよびPPM信号に対応します。Radiolink送信機AT9、AT9S、AT10、AT10II用で、レーシングドローンに最適です。
+
+:::note[原典について]
+原典の文書版・発行日は不明です。写真上の基板／製品版表示を文書版や対象受信機世代として確定していません。
+:::
+
+<span id="r6dsm-w004" data-translation-unit="r6dsm-w004"></span>
+
+### 製品の特長
+
+<span id="r6dsm-w005" data-translation-unit="r6dsm-w005"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r6dsm-w007" data-translation-unit="r6dsm-w007"></span>
+
+<ManualFigure src="/assets/radiolink/r6dsm/web-ja-v1/r6dsm-p1-f2.jpeg" width={1130} height={516} figureId="r6dsm-p1-f2" alt={"接続図。signal＝信号、VCC＝電源、GND＝グランド、binding button＝バインドボタン。基板の印字は「E306R6DSMV13」です。これは写真中の基板印字であり、文書版を示すものとは確定していません。"} caption={"接続図。signal＝信号、VCC＝電源、GND＝グランド、binding button＝バインドボタン。基板の印字は「E306R6DSMV13」です。これは写真中の基板印字であり、文書版を示すものとは確定していません。"} />
+
+:::note[原典について]
+原典の文書版・発行日は不明です。写真上の基板／製品版表示を文書版や対象受信機世代として確定していません。
+:::
+
+<span id="r6dsm-w008" data-translation-unit="r6dsm-w008"></span>
+
+### 2種類の信号動作モード
+
+<span id="r6dsm-w009" data-translation-unit="r6dsm-w009"></span>
+
+青／紫のLED：SBUS信号、全10チャンネル。
+赤いLEDが常時点灯：PPM信号、全10チャンネル。
+
+<span id="r6dsm-w010" data-translation-unit="r6dsm-w010"></span>
+
+### SBUS／PPM信号の切り替え
+
+<span id="r6dsm-w011" data-translation-unit="r6dsm-w011"></span>
+
+ID SETスイッチを1秒以内に短く2回押すと、信号がSBUSからPPMに切り替わります。赤いLEDはPPM、青／紫のLEDはSBUSを示します。
+
+<span id="r6dsm-w012" data-translation-unit="r6dsm-w012"></span>
+
+### 送信機とのバインド（リンク）方法
+
+<span id="r6dsm-w013" data-translation-unit="r6dsm-w013"></span>
+
+1. 送信機と受信機を1 m以内に近づけます。
+2. 送信機の電源を入れてから、R6DSMの電源を入れます。
+3. R6DSMをESC、フライトコントローラー、またはサーボに接続します。
+4. R6DSMの黒いバインドボタンを1秒以内に押し、受信機のランプが点滅し始めたら離します。約8回点滅した後、受信機の信号LEDが点灯し続ければ、バインド成功です。
+
+:::note[原典について]
+原文の「press ... in one second」は押下時間の表現が曖昧です。「1秒以内」を保持しています。
+:::
+
+<span id="r6dsm-w014" data-translation-unit="r6dsm-w014"></span>
+
+### 受信機アンテナの取り付け
+
+<span id="r6dsm-w015" data-translation-unit="r6dsm-w015"></span>
+
+1. アンテナはできるだけまっすぐにしてください。曲がっていると有効範囲が短くなります。
+2. 大型の模型航空機では金属部品が信号を妨げる場合があります。その場合は、アンテナを模型の側面に配置してください。
+3. アンテナは金属やカーボンなどの導電性材料から少なくとも0.5インチ離してください。アンテナの同軸部分にはこの配置条件を適用する必要はありませんが、小さな曲げ半径で曲げないでください。
+4. アンテナはモーター、ESC、その他のノイズ源からできるだけ離してください。
+5. 受信機を模型に取り付ける際は、衝撃対策としてスポンジや発泡材で包むことができます。
+以上の手順を完了したら、機能を設定し、正しく接続されて送信機で制御できることを確認してください。
+
+<span id="r6dsm-w016" data-translation-unit="r6dsm-w016"></span>
+
+### 仕様
+
+<span id="r6dsm-w017" data-translation-unit="r6dsm-w017"></span>
+
+1. チャンネル数：10チャンネル
+2. 動作電圧：4.8～6 V
+3. 動作電流：38～45 mA（入力電圧：5 V）
+4. 寸法：15×13 mm
+5. 重量：1.5 g
+6. 着脱式アンテナ
+7. 分解能4096、1ステップあたり0.25 μs。サーボの舵の振動を抑えます。
+8. 操作距離：約600 m。実際の操作距離は環境に依存します。

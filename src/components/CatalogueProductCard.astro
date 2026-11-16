@@ -1,6 +1,7 @@
 ---
 import { withBase } from '../lib/urls';
 import japaneseManuals from '../data/manuals/existing-ja.json';
+import receiverManuals from '../data/manuals/receiver-web-pilot.json';
 
 interface CatalogueProduct {
   name: string;
@@ -22,6 +23,9 @@ interface Props {
 }
 
 const { product } = Astro.props;
+const receiverManual = receiverManuals.manuals.find(
+  (m) => m.product_id === product.slug,
+);
 const manualProduct =
   { 't8fb-bt': 't8fb', 'rc6gs-v3': 'rc6gs', 'rc4gs-v3': 'rc4gs' }[
     product.slug
@@ -86,6 +90,16 @@ const manuals = japaneseManuals.manuals.filter(
         Radiolink公式<span class="sr-only">・外部サイト</span>
       </a>
     </div>
+    {receiverManual && (
+      <p class="mt-4 text-sm">
+        <a
+          class="text-teal-800 underline"
+          href={withBase(receiverManual.route)}
+        >
+          日本語取扱説明書
+        </a>
+      </p>
+    )}
     {manuals.length > 0 && (
       <ul class="mt-4 space-y-2 text-sm">
         {manuals.map((manual) => (
