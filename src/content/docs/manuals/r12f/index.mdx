@@ -1,0 +1,579 @@
+---
+title: R12F 日本語取扱説明書
+description: Radiolink R12F の公式英語取扱説明書に対応する日本語版です。
+product: r12f
+slug: manuals/r12f
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/3458728553df3eae9e76cc1271eb4aa0.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r12f/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R12F 公式英語取扱説明書（文書版・発行日不明、11頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r12f-w001" data-translation-unit="r12f-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f1.jpeg" width={600} height={180} figureId="r12f-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r12f-w002" data-translation-unit="r12f-w002"></span>
+
+## R12F
+
+<span id="r12f-w003" data-translation-unit="r12f-w003"></span>
+
+## 取扱説明書
+
+<span id="r12f-w004" data-translation-unit="r12f-w004"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f2.jpeg" width={1076} height={777} figureId="r12f-p1-f2" alt={"R12F製品写真。SBUS、TX、RX、3–12V/DC、BINDなどの原図表示を保持しています。"} caption={"R12F製品写真。SBUS、TX、RX、3–12V/DC、BINDなどの原図表示を保持しています。"} />
+
+<span id="r12f-w005" data-translation-unit="r12f-w005"></span>
+
+12チャンネル受信機
+
+<span id="r12f-w006" data-translation-unit="r12f-w006"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f3.jpeg" width={166} height={230} figureId="r12f-p1-f3" alt={"原典表紙の車輪付きごみ箱に斜線を付したマーク。"} caption={"原典表紙の車輪付きごみ箱に斜線を付したマーク。"} />
+
+<span id="r12f-w007" data-translation-unit="r12f-w007"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f4.jpeg" width={136} height={137} figureId="r12f-p1-f4" alt={"原典表紙の日本向け適合に関するマーク（表示の保持であり、現行製品の適合確認ではありません）。"} caption={"原典表紙の日本向け適合に関するマーク（表示の保持であり、現行製品の適合確認ではありません）。"} />
+
+<span id="r12f-w008" data-translation-unit="r12f-w008"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f5.jpeg" width={640} height={380} figureId="r12f-p1-f5" alt={"原典表紙の14歳以上の年齢表示。"} caption={"原典表紙の14歳以上の年齢表示。"} />
+
+<span id="r12f-w009" data-translation-unit="r12f-w009"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f6.jpeg" width={230} height={180} figureId="r12f-p1-f6" alt={"原典表紙のCEマーク。"} caption={"原典表紙のCEマーク。"} />
+
+<span id="r12f-w010" data-translation-unit="r12f-w010"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f7.jpeg" width={500} height={180} figureId="r12f-p1-f7" alt={"原典表紙のRoHSマーク。"} caption={"原典表紙のRoHSマーク。"} />
+
+<span id="r12f-w011" data-translation-unit="r12f-w011"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p1-f8.jpeg" width={230} height={180} figureId="r12f-p1-f8" alt={"原典表紙のFCCマーク。"} caption={"原典表紙のFCCマーク。"} />
+
+<span id="r12f-w012" data-translation-unit="r12f-w012"></span>
+
+### 目次
+
+<span id="r12f-w013" data-translation-unit="r12f-w013"></span>
+
+1. R12Fの概要……2
+2. 受信機プロトコルの選択……2
+3. バインド……3
+4. 動作モード……4
+5. ファームウェア更新……7
+6. アンテナの取り付け……7
+7. RSSIテスト……8
+8. サブID……9
+9. R12Fの仕様……9
+
+<span id="r12f-w014" data-translation-unit="r12f-w014"></span>
+
+原典印刷ページ：1
+
+<span id="r12f-w015" data-translation-unit="r12f-w015"></span>
+
+### 1. R12Fの概要
+
+<span id="r12f-w016" data-translation-unit="r12f-w016"></span>
+
+RadioLink R12Fは、2.4 GHz FHSSスペクトラム拡散アルゴリズムと67チャンネルの擬似ランダム周波数ホッピングを採用した12チャンネル受信機です。PWM、SBUS、CRSF信号に対応します。高電圧サーボに対応し、ファームウェアの更新で新機能を追加できます。R12FはRadioLink T16D/T12D/T8FB/T8S/RC8X/RC8P/RC6GS V3/RC4GS V3/RC6GS V2/RC4GS V2/RC6GS/RC4GS送信機に対応します。
+
+<span id="r12f-w017" data-translation-unit="r12f-w017"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p3-f1.jpeg" width={641} height={570} figureId="r12f-p3-f1" alt={"R12Fの各チャンネル、信号LED、バインドボタン、ファームウェア更新用Type-Cポートの位置。"} caption={"R12Fの各チャンネル、信号LED、バインドボタン、ファームウェア更新用Type-Cポートの位置。"} />
+
+<span id="r12f-w018" data-translation-unit="r12f-w018"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p3-f2.jpeg" width={1126} height={270} figureId="r12f-p3-f2" alt={"アンテナ、同軸ケーブル、バインドボタンの位置。"} caption={"アンテナ、同軸ケーブル、バインドボタンの位置。"} />
+
+<span id="r12f-w019" data-translation-unit="r12f-w019"></span>
+
+:::caution[注意]
+注意：模型を操作する前に、次の安全確認を行ってください。
+:::
+
+<span id="r12f-w020" data-translation-unit="r12f-w020"></span>
+
+(1) RSSI（受信信号強度表示）テスト。方法は本書の第7章「RSSIテスト」を参照してください。
+
+<span id="r12f-w021" data-translation-unit="r12f-w021"></span>
+
+:::caution[注意]
+(2) アンテナの点検：R12Fの灰色の線は同軸ケーブルで、先端の長さ約4～5 cmの透明な線がアンテナです。透明な線が切れたり損傷したりすると、操縦距離に直接影響します。異常が見つかった場合は、速やかに受信機アンテナを交換してください。
+:::
+
+<span id="r12f-w022" data-translation-unit="r12f-w022"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w023" data-translation-unit="r12f-w023"></span>
+
+### 2. 受信機プロトコルの選択
+
+<span id="r12f-w024" data-translation-unit="r12f-w024"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w025" data-translation-unit="r12f-w025"></span>
+
+原典印刷ページ：2
+
+<span id="r12f-w026" data-translation-unit="r12f-w026"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w027" data-translation-unit="r12f-w027"></span>
+
+注記：
+1. FHSS V2とFHSS V2.1のPWM出力分解能は4096で、より精密な操作が可能です。
+
+<span id="r12f-w028" data-translation-unit="r12f-w028"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w029" data-translation-unit="r12f-w029"></span>
+
+3. プロトコルを切り替えた後は、受信機と送信機を再度バインドしてください。
+
+<span id="r12f-w030" data-translation-unit="r12f-w030"></span>
+
+4. デジタルサーボを使用する場合は、サーボ速度を3 msまたは4 msに選択できます。
+
+<span id="r12f-w031" data-translation-unit="r12f-w031"></span>
+
+### 3. バインド
+
+<span id="r12f-w032" data-translation-unit="r12f-w032"></span>
+
+各受信機には固有のIDコードがあり、使用前に送信機とのバインドが必要です。バインドが完了するとIDコードが送信機に保存されるため、再バインドは不要です。新しく購入したR12Fを送信機で使用するには、バインドを行ってください。
+
+<span id="r12f-w033" data-translation-unit="r12f-w033"></span>
+
+### バインド手順
+
+<span id="r12f-w034" data-translation-unit="r12f-w034"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w035" data-translation-unit="r12f-w035"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w036" data-translation-unit="r12f-w036"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w037" data-translation-unit="r12f-w037"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w038" data-translation-unit="r12f-w038"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w039" data-translation-unit="r12f-w039"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w040" data-translation-unit="r12f-w040"></span>
+
+:::caution[注意]
+注意：送信機と受信機の電源が入っている状態で、バインドに失敗した場合や信号が失われた場合は、受信機のLEDが点滅し続けます。
+:::
+
+<span id="r12f-w041" data-translation-unit="r12f-w041"></span>
+
+原典印刷ページ：3
+
+<span id="r12f-w042" data-translation-unit="r12f-w042"></span>
+
+### 別のバインド方法
+
+<span id="r12f-w043" data-translation-unit="r12f-w043"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r12f-w044" data-translation-unit="r12f-w044"></span>
+
+### 4. 動作モード
+
+<span id="r12f-w045" data-translation-unit="r12f-w045"></span>
+
+R12FはPWM、SBUS、CRSFの3種類の信号出力に対応し、合計4種類の動作モードがあります。
+
+<span id="r12f-w046" data-translation-unit="r12f-w046"></span>
+
+### R12Fの動作モード設定
+
+<span id="r12f-w047" data-translation-unit="r12f-w047"></span>
+
+(1) SBUSのオン／オフ：バインドボタンを1回短く押すと、SBUSのオン／オフが切り替わります。青色LEDはSBUSがオンであることを示し、CH12からSBUS信号を出力します。
+
+<span id="r12f-w048" data-translation-unit="r12f-w048"></span>
+
+(2) CRSFのオン／オフ：2秒以内にバインドボタンを2回短く押すと、CRSFのオン／オフが切り替わります。緑色LEDはCRSFがオンであることを示します。CH10はRXを受信し、CH11はTXを出力します。
+
+<span id="r12f-w049" data-translation-unit="r12f-w049"></span>
+
+### 4種類の動作モードの概要
+
+<span id="r12f-w050" data-translation-unit="r12f-w050"></span>
+
+### (1) PWM動作モード
+
+<span id="r12f-w051" data-translation-unit="r12f-w051"></span>
+
+赤色LEDの常灯はPWM信号出力を示します。合計12チャンネルです。
+
+<span id="r12f-w052" data-translation-unit="r12f-w052"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p5-f1.jpeg" width={600} height={544} figureId="r12f-p5-f1" alt={"PWMモードのLED表示とCH1～CH12のPWM出力。"} caption={"PWMモードのLED表示とCH1～CH12のPWM出力。"} />
+
+<span id="r12f-w053" data-translation-unit="r12f-w053"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p5-f2.jpeg" width={1700} height={1100} figureId="r12f-p5-f2" alt={"PWMモードで受信機、エルロン／エレベーター／ラダーサーボ、バッテリー、ESC、モーターを接続する図。"} caption={"PWMモードで受信機、エルロン／エレベーター／ラダーサーボ、バッテリー、ESC、モーターを接続する図。"} />
+
+<span id="r12f-w054" data-translation-unit="r12f-w054"></span>
+
+原典印刷ページ：4
+
+<span id="r12f-w055" data-translation-unit="r12f-w055"></span>
+
+### (2) PWM＋SBUS動作モード
+
+<span id="r12f-w056" data-translation-unit="r12f-w056"></span>
+
+赤色と青色のLEDの常灯は、PWM＋SBUS信号出力を示します。CH1～CH11はPWM信号、CH12はSBUS信号を出力します。
+
+<span id="r12f-w057" data-translation-unit="r12f-w057"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p6-f1.jpeg" width={600} height={545} figureId="r12f-p6-f1" alt={"PWM＋SBUSモードのLED表示とCH12のSBUS、CH1～CH11のPWM出力。"} caption={"PWM＋SBUSモードのLED表示とCH12のSBUS、CH1～CH11のPWM出力。"} />
+
+<span id="r12f-w058" data-translation-unit="r12f-w058"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p6-f2.jpeg" width={2546} height={1512} figureId="r12f-p6-f2" alt={"PWM＋SBUSモードで受信機とフライトコントローラー、サーボ、ESC、モーター、ブザー、電源モジュール、バッテリーを接続する図。"} caption={"PWM＋SBUSモードで受信機とフライトコントローラー、サーボ、ESC、モーター、ブザー、電源モジュール、バッテリーを接続する図。"} />
+
+<span id="r12f-w059" data-translation-unit="r12f-w059"></span>
+
+### (3) PWM＋CRSF＋SBUS動作モード
+
+<span id="r12f-w060" data-translation-unit="r12f-w060"></span>
+
+赤色、緑色、青色のLEDの常灯は、PWM＋CRSF＋SBUS信号出力を示します。CH1～CH9はPWM信号を出力し、CH10はRXを受信、CH11はTXを出力、CH12はSBUS信号を出力します。
+
+<span id="r12f-w061" data-translation-unit="r12f-w061"></span>
+
+原典印刷ページ：5
+
+<span id="r12f-w062" data-translation-unit="r12f-w062"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p7-f1.jpeg" width={600} height={545} figureId="r12f-p7-f1" alt={"PWM＋CRSF＋SBUSモード。CH12はSBUS、CH10～CH11はCRSF、CH1～CH9はPWM。"} caption={"PWM＋CRSF＋SBUSモード。CH12はSBUS、CH10～CH11はCRSF、CH1～CH9はPWM。"} />
+
+<span id="r12f-w063" data-translation-unit="r12f-w063"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p7-f2.jpeg" width={2680} height={1486} figureId="r12f-p7-f2" alt={"PWM＋CRSF＋SBUSモードの受信機とフライトコントローラー等の接続図。"} caption={"PWM＋CRSF＋SBUSモードの受信機とフライトコントローラー等の接続図。"} />
+
+<span id="r12f-w064" data-translation-unit="r12f-w064"></span>
+
+### (4) PWM＋CRSF動作モード
+
+<span id="r12f-w065" data-translation-unit="r12f-w065"></span>
+
+赤色と緑色のLEDの常灯は、PWM＋CRSF信号出力を示します。CH1～CH9はPWM信号を出力し、CH10はRXを受信、CH11はTXを出力、CH12はPWM信号を出力します。
+
+<span id="r12f-w066" data-translation-unit="r12f-w066"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p7-f3.jpeg" width={600} height={545} figureId="r12f-p7-f3" alt={"PWM＋CRSFモード。CH1～CH9とCH12はPWM、CH10～CH11はCRSF。"} caption={"PWM＋CRSFモード。CH1～CH9とCH12はPWM、CH10～CH11はCRSF。"} />
+
+<span id="r12f-w067" data-translation-unit="r12f-w067"></span>
+
+原典印刷ページ：6
+
+<span id="r12f-w068" data-translation-unit="r12f-w068"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p8-f1.jpeg" width={2680} height={1486} figureId="r12f-p8-f1" alt={"PWM＋CRSFモードの受信機とフライトコントローラー等の接続図。"} caption={"PWM＋CRSFモードの受信機とフライトコントローラー等の接続図。"} />
+
+<span id="r12f-w069" data-translation-unit="r12f-w069"></span>
+
+### 5. ファームウェア更新
+
+<span id="r12f-w070" data-translation-unit="r12f-w070"></span>
+
+R12Fはファームウェア更新に対応しています。更新手順は次のとおりです。
+
+<span id="r12f-w071" data-translation-unit="r12f-w071"></span>
+
+(1) Type-CケーブルをR12FのType-Cポートに接続します。
+
+<span id="r12f-w072" data-translation-unit="r12f-w072"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p8-f2.jpeg" width={1076} height={777} figureId="r12f-p8-f2" alt={"ファームウェア更新用Type-Cポート。"} caption={"ファームウェア更新用Type-Cポート。"} />
+
+<span id="r12f-w073" data-translation-unit="r12f-w073"></span>
+
+(2) R12Fのバインドボタンを押し続けます。
+
+<span id="r12f-w074" data-translation-unit="r12f-w074"></span>
+
+(3) Type-Cケーブルのもう一端をパソコンに接続してから、バインドボタンを離します。
+
+<span id="r12f-w075" data-translation-unit="r12f-w075"></span>
+
+(4) 受信機のLEDが点灯し、パソコンにUSBドライブが表示されます。
+
+<span id="r12f-w076" data-translation-unit="r12f-w076"></span>
+
+(5) R12Fの新しいファームウェアをUSBドライブにコピー＆ペーストすると、更新が完了します。
+
+<span id="r12f-w077" data-translation-unit="r12f-w077"></span>
+
+### 6. アンテナの取り付け
+
+<span id="r12f-w078" data-translation-unit="r12f-w078"></span>
+
+受信機のアンテナを模型に正しく取り付けることが重要です。取り付け方が正しくないと、信号品質が低下します。アンテナの取り付け方が信号品質に与える影響について、よくある取り付け上の誤りを以下に示します。
+
+<span id="r12f-w079" data-translation-unit="r12f-w079"></span>
+
+:::caution[注意]
+(1) アンテナを金属物の近くに配置しないでください。導体面による反射で信号が著しく悪化します。
+:::
+
+<span id="r12f-w080" data-translation-unit="r12f-w080"></span>
+
+:::caution[注意]
+(2) アンテナを地面と平行にしないでください。地面に対して垂直に配置してください。
+:::
+
+<span id="r12f-w081" data-translation-unit="r12f-w081"></span>
+
+(3) 大型の模型には信号の放射に影響する金属部品が含まれる場合があります。その場合は、どのような状況でも最良の信号状態を保つため、アンテナを模型の両側に配置してください。
+
+<span id="r12f-w082" data-translation-unit="r12f-w082"></span>
+
+:::caution[注意]
+(4) アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に折り曲げないでください。
+:::
+
+<span id="r12f-w083" data-translation-unit="r12f-w083"></span>
+
+(5) アンテナをモーター、ESC、その他の干渉源となり得るものから離してください。
+
+<span id="r12f-w084" data-translation-unit="r12f-w084"></span>
+
+原典印刷ページ：7
+
+<span id="r12f-w085" data-translation-unit="r12f-w085"></span>
+
+(6) 受信機の取り付け時は、振動を防ぐためスポンジや発泡材を使用することを推奨します。
+
+<span id="r12f-w086" data-translation-unit="r12f-w086"></span>
+
+:::caution[注意]
+(7) 受信機には高精度な電子部品が含まれています。強い振動や高温を避けてください。
+:::
+
+<span id="r12f-w087" data-translation-unit="r12f-w087"></span>
+
+(8) 受信機を保護するため、RC用の発泡材やゴム布などの専用防振材で包みます。密閉性の高いビニール袋に入れることで、制御不能の原因となり得る湿気やほこりを防げます。
+
+<span id="r12f-w088" data-translation-unit="r12f-w088"></span>
+
+受信機アンテナの取り付けガイドは、次のリンクを参照してください。
+https://www.radiolink.com/receiver_antenna_installation
+
+<span id="r12f-w089" data-translation-unit="r12f-w089"></span>
+
+### 7. RSSIテスト
+
+<span id="r12f-w090" data-translation-unit="r12f-w090"></span>
+
+操縦距離が短い場合は、この手順で送信機と受信機の間のRSSIをテストしてください。送信機のRSSI値のテスト手順と、異常なRSSI値への対処方法を説明します。
+
+<span id="r12f-w091" data-translation-unit="r12f-w091"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p9-f1.jpeg" width={319} height={241} figureId="r12f-p9-f1" alt={"送信機ホーム画面のRSSI表示例。"} caption={"送信機ホーム画面のRSSI表示例。"} />
+
+<span id="r12f-w092" data-translation-unit="r12f-w092"></span>
+
+(1) 送信機と受信機の電源を同時に入れると、両者が接続されます（接続されない場合は再バインドが必要です）。送信機画面に電波塔のアイコンが表示されれば、バインド成功です。ホーム画面にRSSI値が表示され、送信機と受信機の距離に応じて値が変化します（右図参照）。
+
+<span id="r12f-w093" data-translation-unit="r12f-w093"></span>
+
+(2) 受信機と送信機のアンテナを平行にします。両者を約30 cm離し、両アンテナをまっすぐにします。RSSI値が0～−30 dBmの範囲であれば正常です。値が0に近いほど信号が強いことを示します（下図参照）。
+
+<span id="r12f-w094" data-translation-unit="r12f-w094"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p9-f2.jpeg" width={1076} height={760} figureId="r12f-p9-f2" alt={"送受信機を約30 cm離したRSSIテスト配置例。"} caption={"送受信機を約30 cm離したRSSIテスト配置例。"} />
+
+<span id="r12f-w095" data-translation-unit="r12f-w095"></span>
+
+### 信号強度が異常な場合の対処
+
+<span id="r12f-w096" data-translation-unit="r12f-w096"></span>
+
+受信機と送信機のアンテナに損傷がないか確認してください。信号強度の低下の多くはアンテナの損傷が原因です。損傷している場合は交換が必要です。損傷がない場合は、受信機を交換して送受信機の故障を切り分けることができます。解決しない場合は、after_service@radiolink.com.cnにメールでサポートを依頼してください。
+
+<span id="r12f-w097" data-translation-unit="r12f-w097"></span>
+
+原典印刷ページ：8
+
+<span id="r12f-w098" data-translation-unit="r12f-w098"></span>
+
+### 8. サブID（T12D送信機を例として）
+
+<span id="r12f-w099" data-translation-unit="r12f-w099"></span>
+
+RadioLink送信機は複数の受信機とバインドできます。T12Dと複数の受信機をバインドし、T12Dとバインド済みのすべての機器の電源を同時に入れた場合、次の2通りの使用方法があります。
+
+<span id="r12f-w100" data-translation-unit="r12f-w100"></span>
+
+1. サブID機能をオフにすると、T12Dで複数の機器を同時に操作できます。
+
+<span id="r12f-w101" data-translation-unit="r12f-w101"></span>
+
+2. サブID機能をオンにすると、選択したサブIDに応じて特定の機器を操作できます。T12Dには16グループのサブIDがあり、各IDが受信機1台に対応します。先にサブIDを設定しておくと、すべての機器の電源が入っている状態でも、サブID機能でそのうち1台を操作できます。このとき、ほかの機器は待機状態になります。
+
+<span id="r12f-w102" data-translation-unit="r12f-w102"></span>
+
+例：T12Dをトラックと車にバインドして、すべての電源を入れます。まずT12Dで車をトラックの荷台まで走らせ、その後トラックの受信機IDに切り替えて、車を目的地まで運び戻します。
+
+<span id="r12f-w103" data-translation-unit="r12f-w103"></span>
+
+### サブID機能の設定手順
+
+<span id="r12f-w104" data-translation-unit="r12f-w104"></span>
+
+1. サブID機能をオンにします。模型に応じてID番号を設定し、各受信機のバインドとパラメータ設定を完了します。
+
+<span id="r12f-w105" data-translation-unit="r12f-w105"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p10-f1.jpeg" width={636} height={475} figureId="r12f-p10-f1" alt={"T12DのSub ID設定画面。"} caption={"T12DのSub ID設定画面。"} />
+
+:::note[原典について]
+サブIDの原典画面にはFHSS V2.1が表示されていますが、この図はサブID表示の説明用です。確認待ちのプロトコルやチャンネル数を推奨・確定する根拠にはしないでください。
+:::
+
+<span id="r12f-w106" data-translation-unit="r12f-w106"></span>
+
+2. サブIDをオンにすると、対応するID番号がT12Dのメイン画面に表示されます。
+
+<span id="r12f-w107" data-translation-unit="r12f-w107"></span>
+
+注：T16D/T12D送信機では、2ポジションまたは3ポジションスイッチをサブID番号の切り替えに割り当てることができます。詳しくはT16D/T12Dの「CONDITION」機能を参照してください。
+
+<span id="r12f-w108" data-translation-unit="r12f-w108"></span>
+
+### 9. R12Fの仕様
+
+<span id="r12f-w109" data-translation-unit="r12f-w109"></span>
+
+|項目|R12F受信機|
+|---|---|
+|寸法|35.6 × 25 × 13.6 mm|
+|重量|11.8 g（0.42 oz）|
+|チャンネル|12チャンネル|
+|動作電圧|3～12 V|
+|動作電流|37 ± 3 mA（5 V時）|
+|アンテナ長|205 mm（8.07インチ）|
+|信号出力|SBUS＋CRSF＋PWM|
+|出力周波数|2.4 GHz ISM帯（2400～2483.5 MHz）|
+
+<span id="r12f-w110" data-translation-unit="r12f-w110"></span>
+
+原典印刷ページ：9
+
+<span id="r12f-w111" data-translation-unit="r12f-w111"></span>
+
+|項目|仕様（続き）|
+|---|---|
+|スペクトラム拡散|FHSS、67チャンネル擬似ランダム周波数ホッピング|
+|対応模型|回転翼機／固定翼機／グライダー／マルチコプター／車／船／ロボット|
+|操縦距離|空中4000 m（障害物と干渉のない場所で最大距離を測定）|
+|オンライン更新|データ転送用Type-CケーブルでR12Fとパソコンを接続すると、追加機器なしで最新機能を追加できます。|
+|応答遅延|3 ms、4 ms、14 msから選択|
+|動作温度|−30～85 °C|
+|対応送信機|T16D/T12D/T8FB/T8S/RC8X/RC8P/RC6GS V3/RC4GS V3/RC6GS V2/RC4GS V2/RC6GS/RC4GS|
+
+<span id="r12f-w112" data-translation-unit="r12f-w112"></span>
+
+### テクニカルサポート
+
+<span id="r12f-w113" data-translation-unit="r12f-w113"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p11-f1.jpeg" width={300} height={300} figureId="r12f-p11-f1" alt={"R12FユーザーマニュアルへのQRコード。"} caption={"R12FユーザーマニュアルへのQRコード。"} />
+
+<span id="r12f-w114" data-translation-unit="r12f-w114"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p11-f2.jpeg" width={300} height={300} figureId="r12f-p11-f2" alt={"R12F FAQへのQRコード。"} caption={"R12F FAQへのQRコード。"} />
+
+<span id="r12f-w115" data-translation-unit="r12f-w115"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p11-f3.jpeg" width={300} height={300} figureId="r12f-p11-f3" alt={"R12FチュートリアルへのQRコード。"} caption={"R12FチュートリアルへのQRコード。"} />
+
+<span id="r12f-w116" data-translation-unit="r12f-w116"></span>
+
+<ManualFigure src="/assets/radiolink/r12f/web-ja-v1/r12f-p11-f4.jpeg" width={920} height={911} figureId="r12f-p11-f4" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="r12f-w117" data-translation-unit="r12f-w117"></span>
+
+Facebook MessengerでRadioLink RLに連絡／R12Fユーザーマニュアル／R12F FAQ／R12Fチュートリアル
+
+<span id="r12f-w118" data-translation-unit="r12f-w118"></span>
+
+上記の連絡方法で問題が解決しない場合は、技術サポート after_service@radiolink.com.cn にメールで連絡することもできます。本内容は変更される場合があります。最新版は https://www.radiolink.com/r12f_manual からダウンロードしてください。
+
+<span id="r12f-w119" data-translation-unit="r12f-w119"></span>
+
+RadioLink製品をお選びいただき、重ねてありがとうございます。
+
+<span id="r12f-w120" data-translation-unit="r12f-w120"></span>
+
+原典印刷ページ：10

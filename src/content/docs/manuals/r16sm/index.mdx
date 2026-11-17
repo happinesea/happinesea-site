@@ -1,0 +1,649 @@
+---
+title: R16SM 日本語取扱説明書
+description: Radiolink R16SM の公式英語取扱説明書に対応する日本語版です。
+product: r16sm
+slug: manuals/r16sm
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/5d7b59eb7a6b70ca92bb6ff451acbf3b.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r16sm/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R16SM 公式英語取扱説明書（文書版・発行日不明、12頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r16sm-w001" data-translation-unit="r16sm-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p1-f1.jpeg" width={451} height={135} figureId="r16sm-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r16sm-w002" data-translation-unit="r16sm-w002"></span>
+
+## R16SM
+
+<span id="r16sm-w003" data-translation-unit="r16sm-w003"></span>
+
+## 取扱説明書
+
+<span id="r16sm-w004" data-translation-unit="r16sm-w004"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p1-f2.jpeg" width={1300} height={443} figureId="r16sm-p1-f2" alt={"R16SM製品写真。CRSF／SBUSのLED表示、MTX、MRX、GND、VCC、TX、RXの原図表示を保持しています。"} caption={"R16SM製品写真。CRSF／SBUSのLED表示、MTX、MRX、GND、VCC、TX、RXの原図表示を保持しています。"} />
+
+<span id="r16sm-w005" data-translation-unit="r16sm-w005"></span>
+
+リアルタイム・テレメトリー内蔵16チャンネル受信機
+
+<span id="r16sm-w006" data-translation-unit="r16sm-w006"></span>
+
+対応するRadioLink送信機：T16D、T12D、T8FB、T8S、RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS、RC4GS（フライトコントローラーとの併用が必要）
+
+<span id="r16sm-w007" data-translation-unit="r16sm-w007"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p1-f3.jpeg" width={640} height={380} figureId="r16sm-p1-f3" alt={"原典表紙の対象年齢14歳以上のマーク。"} caption={"原典表紙の対象年齢14歳以上のマーク。"} />
+
+<span id="r16sm-w008" data-translation-unit="r16sm-w008"></span>
+
+RadioLinkの16チャンネル受信機R16SMをお買い上げいただき、ありがとうございます。
+
+<span id="r16sm-w009" data-translation-unit="r16sm-w009"></span>
+
+本製品の機能を十分に活用し、安全に使用するため、説明をよく読み、手順に従って設定してください。
+
+<span id="r16sm-w010" data-translation-unit="r16sm-w010"></span>
+
+操作中に問題が生じた場合は、まず本書を参照してください。販売店に相談するか、Facebook公式ページ https://www.facebook.com/radiolinkofficial で関連するキーワードを検索することもできます。after_service@radioLink.com.cnに質問をお送りいただければ、できるだけ早く回答します。
+
+<span id="r16sm-w011" data-translation-unit="r16sm-w011"></span>
+
+製造工程における予期しない変更により、本書の内容は予告なく変更される場合があります。
+
+<span id="r16sm-w012" data-translation-unit="r16sm-w012"></span>
+
+詳しくは http://www.radiolink.com を確認し、FacebookとYouTubeの公式ページもご覧ください。
+
+<span id="r16sm-w013" data-translation-unit="r16sm-w013"></span>
+
+### 安全上の注意
+
+<span id="r16sm-w014" data-translation-unit="r16sm-w014"></span>
+
+:::caution[注意]
+悪天候で模型を操作しないでください。視界不良により方向を見失い、模型を制御できなくなるおそれがあります。
+:::
+
+<span id="r16sm-w015" data-translation-unit="r16sm-w015"></span>
+
+:::caution[注意]
+人混みや、使用が法律で禁止されている場所で使用しないでください。
+:::
+
+<span id="r16sm-w016" data-translation-unit="r16sm-w016"></span>
+
+:::caution[注意]
+受信機を接続する前に、トリムレバーが0であり、バッテリーが十分に充電されていることを必ず確認してください。
+:::
+
+<span id="r16sm-w017" data-translation-unit="r16sm-w017"></span>
+
+:::caution[注意]
+毎回の使用前に、すべてのサーボとその接続を必ず確認してください。
+:::
+
+<span id="r16sm-w018" data-translation-unit="r16sm-w018"></span>
+
+:::caution[注意]
+電源を切るときは、必ず受信機を先に切り、その後に送信機を切ってください。
+:::
+
+<span id="r16sm-w019" data-translation-unit="r16sm-w019"></span>
+
+### 警告
+
+<span id="r16sm-w020" data-translation-unit="r16sm-w020"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、14歳未満の子どもには適していません。大人は子どもの手が届かない場所に保管し、子どもがいる場所で操作する際は十分注意してください。
+:::
+
+<span id="r16sm-w021" data-translation-unit="r16sm-w021"></span>
+
+:::caution[注意]
+アンテナやスティック周辺の隙間から送信機内部に水分が入り、模型の不安定な動作や制御不能を招くおそれがあります。競技などで雨天での使用が避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="r16sm-w022" data-translation-unit="r16sm-w022"></span>
+
+原典印刷ページ：1
+
+<span id="r16sm-w023" data-translation-unit="r16sm-w023"></span>
+
+### 目次
+
+<span id="r16sm-w024" data-translation-unit="r16sm-w024"></span>
+
+1. R16SMの概要……3
+2. 受信機プロトコルの選択……3
+3. バインド……4
+4. 動作モード……4
+5. リアルタイム内蔵テレメトリーとフライトコントローラーへの接続……4
+6. アンテナ取り付け時の注意……9
+7. RSSIテスト……9
+8. R16SMの仕様……10
+
+<span id="r16sm-w025" data-translation-unit="r16sm-w025"></span>
+
+原典印刷ページ：2
+
+<span id="r16sm-w026" data-translation-unit="r16sm-w026"></span>
+
+### 1. R16SMの概要
+
+<span id="r16sm-w027" data-translation-unit="r16sm-w027"></span>
+
+RadioLink R16SMは、操縦距離3000 mの小型16チャンネル受信機です。データ伝送機能を内蔵し、外部センサーなしで豊富な情報を伝送できます。RSSI値と模型のバッテリー電圧のリアルタイム伝送に加え、R16SMをフライトコントローラーおよびGPSに接続し、CRSF動作モードにすると、緯度、経度、速度、機首方位、受信GPS衛星数、距離、PITC、ROLL、YAW、バッテリー電圧、電流、容量、飛行モードなどのOSD情報が送信機画面に表示されます。
+
+<span id="r16sm-w028" data-translation-unit="r16sm-w028"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p4-f1.jpeg" width={2686} height={698} figureId="r16sm-p4-f1" alt={"アンテナとバインドボタンの位置。"} caption={"アンテナとバインドボタンの位置。"} />
+
+<span id="r16sm-w029" data-translation-unit="r16sm-w029"></span>
+
+### 2. 受信機プロトコルの選択
+
+<span id="r16sm-w030" data-translation-unit="r16sm-w030"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w031" data-translation-unit="r16sm-w031"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w032" data-translation-unit="r16sm-w032"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w033" data-translation-unit="r16sm-w033"></span>
+
+注記：
+1. FHSS V2とFHSS V2.1のPWM出力分解能は4096で、より精密な操作が可能です。
+
+<span id="r16sm-w034" data-translation-unit="r16sm-w034"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w035" data-translation-unit="r16sm-w035"></span>
+
+3. プロトコルを切り替えた後は、受信機と送信機を再度バインドしてください。
+
+<span id="r16sm-w036" data-translation-unit="r16sm-w036"></span>
+
+4. デジタルサーボを使用する場合は、サーボ速度を3 msまたは4 msに選択できます。
+
+<span id="r16sm-w037" data-translation-unit="r16sm-w037"></span>
+
+原典印刷ページ：3
+
+<span id="r16sm-w038" data-translation-unit="r16sm-w038"></span>
+
+### 3. バインド
+
+<span id="r16sm-w039" data-translation-unit="r16sm-w039"></span>
+
+各受信機には固有のIDコードがあり、使用前に送信機とバインドする必要があります。バインドが完了するとIDコードが送信機に保存されるため、再バインドは不要です。新しく購入したR16SMを送信機で使用するには、バインドを行ってください。
+
+<span id="r16sm-w040" data-translation-unit="r16sm-w040"></span>
+
+### R16SMのバインド手順
+
+<span id="r16sm-w041" data-translation-unit="r16sm-w041"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w042" data-translation-unit="r16sm-w042"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w043" data-translation-unit="r16sm-w043"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w044" data-translation-unit="r16sm-w044"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w045" data-translation-unit="r16sm-w045"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w046" data-translation-unit="r16sm-w046"></span>
+
+送信機と受信機の電源が入っているとき、R16SMのLEDがゆっくり点滅する場合は、未バインド、または飛行中の信号喪失を示します。
+
+<span id="r16sm-w047" data-translation-unit="r16sm-w047"></span>
+
+### 4. 動作モード
+
+<span id="r16sm-w048" data-translation-unit="r16sm-w048"></span>
+
+R16SMには2種類の動作モードがあります。一方は非反転SBUS信号出力、もう一方はCRSF信号出力です。青色LEDはCRSF信号出力、赤色LEDは非反転SBUS信号出力を示します。バインドボタンを1回短く押すと動作モードが切り替わります。
+
+<span id="r16sm-w049" data-translation-unit="r16sm-w049"></span>
+
+### 5. リアルタイム内蔵テレメトリーとフライトコントローラーへの接続
+
+<span id="r16sm-w050" data-translation-unit="r16sm-w050"></span>
+
+R16SMが伝送できるテレメトリー情報は、SBUS信号出力時とCRSF信号出力時で異なります。CRSF信号出力では、信号強度、RSSI値、動力用バッテリー電圧、経度・緯度、距離、衛星数などのテレメトリーに対応します（下図参照）。SBUS信号出力では、経度・緯度と動力用バッテリー電圧のテレメトリーのみに対応するため、CRSF動作モードを推奨します。注：CRSFプロトコルは受信機電圧のテレメトリーに対応しないため、R16SMも受信機電圧のテレメトリーに対応しません。
+
+<span id="r16sm-w051" data-translation-unit="r16sm-w051"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p5-f1.jpeg" width={640} height={480} figureId="r16sm-p5-f1" alt={"CRSFのテレメトリー表示例。経度（Longitude）、緯度（Latitude）、速度（SPEED）、GPS方位（GPS Heading）、高度（ALT）、GPSの表示。"} caption={"CRSFのテレメトリー表示例。経度（Longitude）、緯度（Latitude）、速度（SPEED）、GPS方位（GPS Heading）、高度（ALT）、GPSの表示。"} />
+
+<span id="r16sm-w052" data-translation-unit="r16sm-w052"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p5-f2.jpeg" width={640} height={480} figureId="r16sm-p5-f2" alt={"CRSFのテレメトリー表示例。PITC、ROLL、YAW、外部電圧（EXT VOL）、外部電流（EXT Current）、容量（Capacity）、バッテリー残量（Battery）、飛行モード（Flight Mode）の表示。"} caption={"CRSFのテレメトリー表示例。PITC、ROLL、YAW、外部電圧（EXT VOL）、外部電流（EXT Current）、容量（Capacity）、バッテリー残量（Battery）、飛行モード（Flight Mode）の表示。"} />
+
+<span id="r16sm-w053" data-translation-unit="r16sm-w053"></span>
+
+原典印刷ページ：4
+
+<span id="r16sm-w054" data-translation-unit="r16sm-w054"></span>
+
+各種フライトコントローラーを使用する場合の、CRSFおよびSBUS動作モードの接続図と設定方法を以下に示します。
+
+<span id="r16sm-w055" data-translation-unit="r16sm-w055"></span>
+
+### (1) RadioLink CrossFlightをR16SMと使用する場合
+
+<span id="r16sm-w056" data-translation-unit="r16sm-w056"></span>
+
+### a. CRSF信号動作モード（青色LED）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w057" data-translation-unit="r16sm-w057"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w058" data-translation-unit="r16sm-w058"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w059" data-translation-unit="r16sm-w059"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w060" data-translation-unit="r16sm-w060"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w061" data-translation-unit="r16sm-w061"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w062" data-translation-unit="r16sm-w062"></span>
+
+原典印刷ページ：5
+
+<span id="r16sm-w063" data-translation-unit="r16sm-w063"></span>
+
+### b. 非反転SBUS信号動作モード（赤色LED）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w064" data-translation-unit="r16sm-w064"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w065" data-translation-unit="r16sm-w065"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w066" data-translation-unit="r16sm-w066"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w067" data-translation-unit="r16sm-w067"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w068" data-translation-unit="r16sm-w068"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w069" data-translation-unit="r16sm-w069"></span>
+
+原典印刷ページ：6
+
+<span id="r16sm-w070" data-translation-unit="r16sm-w070"></span>
+
+### (2) RadioLink F405をR16SMと使用する場合
+
+<span id="r16sm-w071" data-translation-unit="r16sm-w071"></span>
+
+### a. CRSF信号動作モード（青色LED）。接続は下図のとおりです。
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w072" data-translation-unit="r16sm-w072"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w073" data-translation-unit="r16sm-w073"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w074" data-translation-unit="r16sm-w074"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w075" data-translation-unit="r16sm-w075"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w076" data-translation-unit="r16sm-w076"></span>
+
+### b. 非反転SBUS信号動作モード（赤色LED）。接続は下図のとおりです。
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w077" data-translation-unit="r16sm-w077"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w078" data-translation-unit="r16sm-w078"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w079" data-translation-unit="r16sm-w079"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w080" data-translation-unit="r16sm-w080"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w081" data-translation-unit="r16sm-w081"></span>
+
+原典印刷ページ：7
+
+<span id="r16sm-w082" data-translation-unit="r16sm-w082"></span>
+
+### (3) RadioLink F722をR16SMと使用する場合
+
+<span id="r16sm-w083" data-translation-unit="r16sm-w083"></span>
+
+R16SMをF722と使用する場合は、CRSF信号のみを使用でき、LEDは青色になります。接続は下図のとおりです。
+
+<span id="r16sm-w084" data-translation-unit="r16sm-w084"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p9-f1.jpeg" width={2102} height={683} figureId="r16sm-p9-f1" alt={"CRSFモードのR16SMとF722の配線図。T2、R2、4V5、GNDの原図表示を保持。"} caption={"CRSFモードのR16SMとF722の配線図。T2、R2、4V5、GNDの原図表示を保持。"} />
+
+:::note[原典について]
+F722接続図の未接続側に「RTX」のラベルがありますが、製品写真は「MTX」と記載しています。この未使用ラベルを推測で修正せず、実際に線が引かれたT2/R2/4V5/GNDとRX/TX/VCC/GNDの対応とは区別します。
+:::
+
+<span id="r16sm-w085" data-translation-unit="r16sm-w085"></span>
+
+Betaflight/INAV Configuratorでパラメータを設定してください。設定手順は次のとおりです。「Ports」をクリックして使用するシリアルポートを有効にし、「Receiver」をクリックします。「Serial (via UART)」を選び、「CRSF」を選択して「Telemetry」をオンにし、「Save」をクリックします。手順は下図のとおりです。
+
+<span id="r16sm-w086" data-translation-unit="r16sm-w086"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p9-f2.jpeg" width={1456} height={567} figureId="r16sm-p9-f2" alt={"BetaflightのPorts画面。UART2の「Serial RX」を有効にする例。"} caption={"原典9頁の図"} />
+
+BetaflightのPorts画面。UART2の「Serial RX」を有効にする例。
+
+図中の注意：すべての組み合わせが有効とは限りません。フライトコントローラーのファームウェアが無効と判断した場合、シリアルポート設定はリセットされます。内容を理解している場合を除き、最初のシリアルポートのMSPを無効にしないでください。再書き込みや設定の消去が必要になる場合があります。VTXテーブルが正しく設定されていないためVTXを制御できないという警告と、Video Transmitterタブで設定する案内も表示されています。
+
+<span id="r16sm-w087" data-translation-unit="r16sm-w087"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p9-f3.jpeg" width={1457} height={741} figureId="r16sm-p9-f3" alt={"BetaflightのReceiver画面。「Serial (via UART)」、「CRSF」、「Telemetry」、「Save」の順に設定します。"} caption={"原典9頁の図"} />
+
+BetaflightのReceiver画面。「Serial (via UART)」、「CRSF」、「Telemetry」、「Save」の順に設定します。
+
+図中の注意：フェイルセーフが正常に動作することを必ず確認してください。設定はFailsafeタブにあり、Expert Modeが必要です。送信機には最新のファームウェアを使用してください。OpenTXまたはEdgeTXを使用する場合は、送信機のハードウェアADCフィルターを無効にしてください。
+
+基本設定：Receiverを正しく設定し、送信機に合うChannel Mapを選択します。Roll、Pitchなどのグラフが正しく動作することを確認してください。送信機側でチャンネルのエンドポイントまたは範囲を約1000～2000にし、中点を1500に調整します。詳しくはdocumentationを参照してください。受信機用UARTはPortsタブで「Serial Rx」に設定し、正しいデータ形式を選択する必要があります。
+
+<span id="r16sm-w088" data-translation-unit="r16sm-w088"></span>
+
+原典印刷ページ：8
+
+<span id="r16sm-w089" data-translation-unit="r16sm-w089"></span>
+
+T16D/T12Dのテレメトリー情報メニューで「RX CRSF」を選択してください。
+
+<span id="r16sm-w090" data-translation-unit="r16sm-w090"></span>
+
+<ManualFigure src="/assets/radiolink/r16sm/web-ja-v1/r16sm-p10-f1.jpeg" width={640} height={481} figureId="r16sm-p10-f1" alt={"F722の接続時にRX CRSFを選択する送信機画面。"} caption={"F722の接続時にRX CRSFを選択する送信機画面。"} />
+
+<span id="r16sm-w091" data-translation-unit="r16sm-w091"></span>
+
+### 6. アンテナ取り付け時の注意
+
+<span id="r16sm-w092" data-translation-unit="r16sm-w092"></span>
+
+受信機アンテナを模型に正しく取り付けることは非常に重要です。取り付けが正しくないと信号に影響します。取り付け時は、次の要件に注意してください。
+
+<span id="r16sm-w093" data-translation-unit="r16sm-w093"></span>
+
+:::caution[注意]
+(1) 受信機アンテナを折り曲げないでください。
+:::
+
+<span id="r16sm-w094" data-translation-unit="r16sm-w094"></span>
+
+:::caution[注意]
+(2) アンテナを金属物の近くに配置しないでください。金属からの反射により信号が著しく悪化します。
+:::
+
+<span id="r16sm-w095" data-translation-unit="r16sm-w095"></span>
+
+(3) アンテナはできるだけまっすぐにしてください。曲がっていると有効操縦距離が短くなります。
+
+<span id="r16sm-w096" data-translation-unit="r16sm-w096"></span>
+
+(4) 大型の模型には信号の放射に影響する金属部品が含まれる場合があります。その場合は、どのような状況でも最良の信号状態を保つため、アンテナを模型の両側に配置してください。
+
+<span id="r16sm-w097" data-translation-unit="r16sm-w097"></span>
+
+:::caution[注意]
+(5) アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に折り曲げないでください。
+:::
+
+<span id="r16sm-w098" data-translation-unit="r16sm-w098"></span>
+
+(6) アンテナをモーター、ESC、その他の干渉源となり得るものから離してください。
+
+<span id="r16sm-w099" data-translation-unit="r16sm-w099"></span>
+
+(7) 受信機の取り付け時は、振動を防ぐためスポンジや発泡材を使用することを推奨します。
+
+<span id="r16sm-w100" data-translation-unit="r16sm-w100"></span>
+
+:::caution[注意]
+(8) 受信機には高精度な電子部品が含まれています。強い振動や高温を避けてください。
+:::
+
+<span id="r16sm-w101" data-translation-unit="r16sm-w101"></span>
+
+(9) 受信機を保護するため、RC用の発泡材やゴム布などの専用防振材で包みます。密閉性の高いビニール袋に入れることで、制御不能の原因となり得る湿気やほこりを防げます。
+
+<span id="r16sm-w102" data-translation-unit="r16sm-w102"></span>
+
+アンテナの取り付けガイドは、次のリンクを参照してください。
+https://www.radiolink.com/newsinfo/886600.html
+
+<span id="r16sm-w103" data-translation-unit="r16sm-w103"></span>
+
+### 7. RSSIテスト
+
+<span id="r16sm-w104" data-translation-unit="r16sm-w104"></span>
+
+操縦距離が短い場合は、この手順で送信機と受信機の間のRSSIをテストしてください。送信機のRSSI値のテスト手順と、異常なRSSI値への対処方法を説明します。
+
+<span id="r16sm-w105" data-translation-unit="r16sm-w105"></span>
+
+原典印刷ページ：9
+
+<span id="r16sm-w107" data-translation-unit="r16sm-w107"></span>
+
+(1) 送信機と受信機の電源を同時に入れると、両者が接続されます（接続されない場合は再バインドが必要です）。送信機画面に電波塔のアイコンが表示されれば、バインド成功です。ホーム画面にRSSI値が表示され（右図参照）、送信機と受信機の距離に応じて値が変化します。
+
+<span id="r16sm-w108" data-translation-unit="r16sm-w108"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16sm-w109" data-translation-unit="r16sm-w109"></span>
+
+(2) 受信機と送信機のアンテナを平行にします。両者を約60 cm離し、両アンテナをまっすぐにします。RSSI値が0～−30 dBmの範囲であれば正常です。値が0に近いほど信号が強いことを示します。
+
+<span id="r16sm-w110" data-translation-unit="r16sm-w110"></span>
+
+### 信号強度が異常な場合の対処
+
+<span id="r16sm-w111" data-translation-unit="r16sm-w111"></span>
+
+受信機と送信機のアンテナに損傷がないか確認してください。信号強度の低下の多くはアンテナの損傷が原因です。損傷している場合はアンテナを交換する必要があります。損傷がない場合は、受信機を交換して送受信機の故障を切り分けることができます。解決しない場合は、after_service@radiolink.com.cnにメールでサポートを依頼してください。
+
+<span id="r16sm-w112" data-translation-unit="r16sm-w112"></span>
+
+### 8. R16SMの仕様
+
+<span id="r16sm-w113" data-translation-unit="r16sm-w113"></span>
+
+|項目|仕様|
+|---|---|
+|モデル名|R16SM|
+|寸法|22 × 11.3 × 6 mm（0.87 × 0.45 × 0.24インチ）|
+|重量|1.5 g（0.05 oz）|
+|アンテナ長|90 mm（3.54インチ）|
+|チャンネル|16チャンネル|
+|動作電圧|3～12 V|
+|動作電流|45～70 mA（5 V時）|
+|信号出力|SBUS、CRSF|
+|出力周波数|2.4 GHz ISM帯（2400～2483.5 MHz）|
+|スペクトラム拡散|FHSS、67チャンネル擬似ランダム周波数ホッピング|
+|分解能|4096、1段階あたり0.25 μs|
+
+<span id="r16sm-w114" data-translation-unit="r16sm-w114"></span>
+
+対応模型：ヘリコプター、固定翼機、グライダー、マルチコプター、車、船、ロボット（フライトコントローラーとの併用が必要）。
+
+<span id="r16sm-w115" data-translation-unit="r16sm-w115"></span>
+
+操縦距離：空中3000 m（障害物と干渉のない場所で最大距離を測定）。
+
+<span id="r16sm-w116" data-translation-unit="r16sm-w116"></span>
+
+テレメトリー：R16SMはデータ伝送機能を内蔵しています。フライトコントローラーに接続し、CRSF信号を使用すると、緯度・経度、距離、衛星数、機首方位などの情報をリアルタイムに送信機へ伝送できます。
+
+<span id="r16sm-w117" data-translation-unit="r16sm-w117"></span>
+
+原典印刷ページ：10
+
+<span id="r16sm-w118" data-translation-unit="r16sm-w118"></span>
+
+EXTバッテリー入力：フライトコントローラーの入力電圧によります。
+
+<span id="r16sm-w119" data-translation-unit="r16sm-w119"></span>
+
+応答遅延：T16D/T12D/RC8Xとのバインド時は3 ms、4 ms、14 msから選択できます。ほかの送信機とのバインド時は、既定値14 msです。
+
+<span id="r16sm-w120" data-translation-unit="r16sm-w120"></span>
+
+動作温度：−30～85 °C。
+
+<span id="r16sm-w121" data-translation-unit="r16sm-w121"></span>
+
+対応送信機：T16D、T12D、T8FB、T8S、RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS、RC4GS。
+
+<span id="r16sm-w122" data-translation-unit="r16sm-w122"></span>
+
+RadioLink製品をお選びいただき、重ねてありがとうございます。
+
+<span id="r16sm-w123" data-translation-unit="r16sm-w123"></span>
+
+原典印刷ページ：11

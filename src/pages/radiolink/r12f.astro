@@ -2,9 +2,20 @@
 import { getEntry } from 'astro:content';
 import StandardProductPage from '../../components/StandardProductPage.astro';
 import pages from '../../data/standard-product-pages.json';
+import { withBase } from '../../lib/urls';
 
 const product = await getEntry('products', 'r12f');
 if (!product) throw new Error('R12F product data is missing');
 ---
 
-<StandardProductPage product={product} detail={pages.r12f} />
+<StandardProductPage product={product} detail={pages.r12f}>
+  <p slot="manual-link" class="mt-6">
+    <a
+      href={withBase('/manuals/r12f/')}
+      data-receiver-manual-link
+      class="font-bold text-teal-800 underline"
+    >
+      日本語取扱説明書
+    </a>
+  </p>
+</StandardProductPage>

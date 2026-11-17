@@ -28,3 +28,16 @@
   max-width: 100%;
   height: auto;
 }
+
+/* Keep batch 3 table labels readable without changing earlier manual scopes. */
+.sl-markdown-content:has(
+    [data-translation-unit^='r4fgm-'],
+    [data-translation-unit^='er16-'],
+    [data-translation-unit^='r12f-'],
+    [data-translation-unit^='r16sm-'],
+    [data-translation-unit^='r8fgh-']
+  )
+  table
+  :is(th, td):first-child {
+  min-width: 8em;
+}

@@ -25,3 +25,11 @@ src/content/docs/manuals/r9ds/** -text whitespace=cr-at-eol
 src/content/docs/manuals/r12dse/** -text whitespace=cr-at-eol
 src/content/docs/manuals/r8xm/** -text whitespace=cr-at-eol
 src/data/manuals/receiver-web-batch2.json -text whitespace=cr-at-eol
+
+# Batch 3 SHA-bound publication copies.
+src/content/docs/manuals/r4fgm/** -text whitespace=cr-at-eol
+src/content/docs/manuals/er16-2-4g/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r12f/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r16sm/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r8fgh/** -text whitespace=cr-at-eol
+src/data/manuals/receiver-web-batch3.json -text whitespace=cr-at-eol
