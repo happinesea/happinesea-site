@@ -639,7 +639,7 @@
     "subcategoryLabel": "超音波センサー",
     "description": "Radiolinkの超音波センサーです。",
     "officialUrl": "https://www.radiolink.com/sui04",
-    "detailPath": null,
+    "detailPath": "/radiolink/sui04/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/sui04.webp",

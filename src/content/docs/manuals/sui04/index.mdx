@@ -1,0 +1,2381 @@
+---
+title: SUI04 日本語取扱説明書
+description: Radiolink SUI04 の公式英語取扱説明書に対応する日本語版です。
+product: sui04
+slug: manuals/sui04
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/d5c7e73c795a23ac06a40bf2f092b2e2.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/sui04/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink SUI04 公式英語取扱説明書（文書版・発行日不明、35頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="sui04-p01-u01" data-translation-unit="sui04-p01-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p01-f01" data-translation-unit="sui04-p01-f01"></span>
+
+<ManualFigure src="/assets/radiolink/sui04/web-ja-v1/sui04-p1-f1.jpeg" width={289} height={58} figureId="sui04-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="sui04-p01-u02" data-translation-unit="sui04-p01-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p01-u03" data-translation-unit="sui04-p01-u03"></span>
+
+### SUI04
+
+<span id="sui04-p01-u04" data-translation-unit="sui04-p01-u04"></span>
+
+### 超音波センサー
+取扱説明書
+
+<span id="sui04-p01-f02" data-translation-unit="sui04-p01-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p01-u05" data-translation-unit="sui04-p01-u05"></span>
+
+CE FCC ROHS
+
+<span id="sui04-p01-u06" data-translation-unit="sui04-p01-u06"></span>
+
+※本説明書は定期的に更新されます。RadioLink公式ウェブサイトで最新版をダウンロードしてください。
+
+<span id="sui04-p02-u01" data-translation-unit="sui04-p02-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p02-f01" data-translation-unit="sui04-p02-f01"></span>
+
+<ManualFigure src="/assets/radiolink/sui04/web-ja-v1/sui04-p2-f1.jpeg" width={289} height={58} figureId="sui04-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="sui04-p02-u02" data-translation-unit="sui04-p02-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p02-u03" data-translation-unit="sui04-p02-u03"></span>
+
+RadioLink超音波センサーSUI04をお買い上げいただき、ありがとうございます。
+
+<span id="sui04-p02-u04" data-translation-unit="sui04-p02-u04"></span>
+
+本製品の機能を十分に活用し、安全に使用するため、説明書をよく読み、記載された手順に従って機器を設定してください。
+
+<span id="sui04-p02-u05" data-translation-unit="sui04-p02-u05"></span>
+
+操作中に問題が発生した場合は、次のいずれかの方法でオンライン技術サポートを利用できます。
+
+<span id="sui04-p02-u06" data-translation-unit="sui04-p02-u06"></span>
+
+1. after_service@radiolink.com.cn または after_service1@radiolink.com.cn へメールをお送りください。できるだけ早く回答します。
+
+<span id="sui04-p02-u07" data-translation-unit="sui04-p02-u07"></span>
+
+2. Facebookページでメッセージを送るか、YouTubeページにコメントを残してください。
+
+<span id="sui04-p02-u08" data-translation-unit="sui04-p02-u08"></span>
+
+3. 地元の販売代理店で購入した場合は、その代理店にサポートや修理を依頼することもできます。
+
+<span id="sui04-p02-u09" data-translation-unit="sui04-p02-u09"></span>
+
+すべての説明書とファームウェアはRadioLink公式ウェブサイト www.radiolink.com で入手でき、チュートリアルも追加されています。FacebookおよびYouTubeの当社ページをフォローすると、最新情報を確認できます。
+
+<span id="sui04-p02-f02" data-translation-unit="sui04-p02-f02"></span>
+
+<ManualFigure src="/assets/radiolink/sui04/web-ja-v1/sui04-p2-f2.jpeg" width={373} height={169} figureId="sui04-p2-f2" alt={"YouTubeとFacebookの公式ページへのQRコード。"} caption={"YouTubeとFacebookの公式ページへのQRコード。"} />
+
+<span id="sui04-p02-u10" data-translation-unit="sui04-p02-u10"></span>
+
+### 安全上の注意
+
+<span id="sui04-p02-u11" data-translation-unit="sui04-p02-u11"></span>
+
+:::caution[注意]
+●悪天候で模型を操作しないでください。視界不良により方向が分からなくなり、模型を制御できなくなるおそれがあります。
+:::
+
+<span id="sui04-p02-u12" data-translation-unit="sui04-p02-u12"></span>
+
+:::caution[注意]
+●人混みや使用が禁止されている場所では、本製品を使用しないでください。
+:::
+
+<span id="sui04-p02-u13" data-translation-unit="sui04-p02-u13"></span>
+
+:::caution[注意]
+●使用する前に、毎回すべてのサーボと接続を確認してください。
+:::
+
+<span id="sui04-p02-u14" data-translation-unit="sui04-p02-u14"></span>
+
+:::caution[注意]
+●必ず送信機より先に受信機の電源を切ってください。
+:::
+
+<span id="sui04-p02-u15" data-translation-unit="sui04-p02-u15"></span>
+
+:::caution[注意]
+●良好な無線通信を確保するため、高圧電線、通信基地局、送信塔などの干渉がない場所で飛行・走行させてください。
+:::
+
+<span id="sui04-p02-u16" data-translation-unit="sui04-p02-u16"></span>
+
+### 警告
+
+<span id="sui04-p02-u17" data-translation-unit="sui04-p02-u17"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、18歳未満の子供には適していません。大人は子供の手の届かない場所に保管し、子供がいる場所で操作する際は注意してください。
+:::
+
+<span id="sui04-p02-u18" data-translation-unit="sui04-p02-u18"></span>
+
+:::caution[注意]
+アンテナやスティックの隙間から送信機内に水や湿気が入り、模型が不安定になったり制御不能になったりするおそれがあります。競技などで雨天時の使用が避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="sui04-p02-u19" data-translation-unit="sui04-p02-u19"></span>
+
+### FCCに関する声明
+
+<span id="sui04-p02-u20" data-translation-unit="sui04-p02-u20"></span>
+
+本機器は試験により、FCC規則Part 15に基づくClass Bデジタル機器の制限に適合することが確認されています。これらの制限は、住宅内の設置環境で有害な干渉から適切に保護するために定められています。本機器は無線周波数エネルギーを発生・使用し、放射することがあります。説明書に従って設置・使用しない場合、無線通信に有害な干渉を与えるおそれがあります。ただし、特定の設置環境で干渉が発生しないことを保証するものではありません。
+
+<span id="sui04-p03-u01" data-translation-unit="sui04-p03-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p03-f01" data-translation-unit="sui04-p03-f01"></span>
+
+<ManualFigure src="/assets/radiolink/sui04/web-ja-v1/sui04-p3-f1.jpeg" width={289} height={58} figureId="sui04-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="sui04-p03-u02" data-translation-unit="sui04-p03-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p03-u04" data-translation-unit="sui04-p03-u04"></span>
+
+本機器がラジオやテレビの受信に有害な干渉を与える場合（本機器の電源を切ったり入れたりして確認できます）は、次のいずれかの方法で干渉の改善を試みてください。
+
+<span id="sui04-p03-u05" data-translation-unit="sui04-p03-u05"></span>
+
+—受信アンテナの向きや位置を変えます。
+
+<span id="sui04-p03-u06" data-translation-unit="sui04-p03-u06"></span>
+
+—本機器と受信機の距離を離します。
+
+<span id="sui04-p03-u07" data-translation-unit="sui04-p03-u07"></span>
+
+—受信機が接続されている回路とは別の回路のコンセントに、本機器を接続します。
+
+<span id="sui04-p03-u08" data-translation-unit="sui04-p03-u08"></span>
+
+—販売店または経験のあるラジオ・テレビ技術者に相談してください。
+
+<span id="sui04-p03-u09" data-translation-unit="sui04-p03-u09"></span>
+
+本機器はFCC規則Part 15に適合しています。動作は次の2条件に従います。（1）本機器は有害な干渉を引き起こしてはなりません。（2）本機器は、望ましくない動作を引き起こす干渉も含め、受信するすべての干渉を受け入れる必要があります。
+
+<span id="sui04-p03-u10" data-translation-unit="sui04-p03-u10"></span>
+
+:::caution[注意]
+適合性に責任を負う当事者が明示的に承認していない変更・改造を行うと、本機器を操作する権限が無効になる場合があります。
+:::
+
+<span id="sui04-p04-u01" data-translation-unit="sui04-p04-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p04-f01" data-translation-unit="sui04-p04-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u02" data-translation-unit="sui04-p04-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p04-u03" data-translation-unit="sui04-p04-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u04" data-translation-unit="sui04-p04-u04"></span>
+
+### 機能1：障害物回避
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u05" data-translation-unit="sui04-p04-u05"></span>
+
+### I. 対応ファームウェア
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u06" data-translation-unit="sui04-p04-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u07" data-translation-unit="sui04-p04-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u08" data-translation-unit="sui04-p04-u08"></span>
+
+### II. 接続方法
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u09" data-translation-unit="sui04-p04-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-f02" data-translation-unit="sui04-p04-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-f03" data-translation-unit="sui04-p04-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p04-u10" data-translation-unit="sui04-p04-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-u01" data-translation-unit="sui04-p05-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p05-f01" data-translation-unit="sui04-p05-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-u02" data-translation-unit="sui04-p05-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p05-u03" data-translation-unit="sui04-p05-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-u04" data-translation-unit="sui04-p05-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-f02" data-translation-unit="sui04-p05-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-u05" data-translation-unit="sui04-p05-u05"></span>
+
+### 2.2.2 I2C配線基板を介したMINIPIXとの接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-u06" data-translation-unit="sui04-p05-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p05-f03" data-translation-unit="sui04-p05-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u01" data-translation-unit="sui04-p06-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p06-f01" data-translation-unit="sui04-p06-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u02" data-translation-unit="sui04-p06-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p06-u03" data-translation-unit="sui04-p06-u03"></span>
+
+### III. パラメーターの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u04" data-translation-unit="sui04-p06-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u05" data-translation-unit="sui04-p06-u05"></span>
+
+### 設定手順：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u06" data-translation-unit="sui04-p06-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u07" data-translation-unit="sui04-p06-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u08" data-translation-unit="sui04-p06-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u09" data-translation-unit="sui04-p06-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u10" data-translation-unit="sui04-p06-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-f02" data-translation-unit="sui04-p06-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p06-u11" data-translation-unit="sui04-p06-u11"></span>
+
+### 3.2 障害物回避距離と有効／無効の設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u01" data-translation-unit="sui04-p07-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p07-f01" data-translation-unit="sui04-p07-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u02" data-translation-unit="sui04-p07-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p07-u04" data-translation-unit="sui04-p07-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u05" data-translation-unit="sui04-p07-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u06" data-translation-unit="sui04-p07-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u07" data-translation-unit="sui04-p07-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u08" data-translation-unit="sui04-p07-u08"></span>
+
+### MPでのパラメーター設定手順：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u09" data-translation-unit="sui04-p07-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u10" data-translation-unit="sui04-p07-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u11" data-translation-unit="sui04-p07-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u12" data-translation-unit="sui04-p07-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u13" data-translation-unit="sui04-p07-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u14" data-translation-unit="sui04-p07-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-f02" data-translation-unit="sui04-p07-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u15" data-translation-unit="sui04-p07-u15"></span>
+
+### 3.3 送信機による障害物回避の有効／無効の切り替え（任意）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u16" data-translation-unit="sui04-p07-u16"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u17" data-translation-unit="sui04-p07-u17"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p07-u18" data-translation-unit="sui04-p07-u18"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u01" data-translation-unit="sui04-p08-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p08-f01" data-translation-unit="sui04-p08-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u02" data-translation-unit="sui04-p08-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p08-u04" data-translation-unit="sui04-p08-u04"></span>
+
+### フライトコントローラーの設定手順（CH7_OPT）：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u05" data-translation-unit="sui04-p08-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u06" data-translation-unit="sui04-p08-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u07" data-translation-unit="sui04-p08-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u08" data-translation-unit="sui04-p08-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u09" data-translation-unit="sui04-p08-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-f02" data-translation-unit="sui04-p08-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u10" data-translation-unit="sui04-p08-u10"></span>
+
+### 送信機の設定手順
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u11" data-translation-unit="sui04-p08-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u12" data-translation-unit="sui04-p08-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-f03" data-translation-unit="sui04-p08-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u13" data-translation-unit="sui04-p08-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p08-u14" data-translation-unit="sui04-p08-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u01" data-translation-unit="sui04-p09-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p09-f01" data-translation-unit="sui04-p09-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u02" data-translation-unit="sui04-p09-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p09-u03" data-translation-unit="sui04-p09-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u04" data-translation-unit="sui04-p09-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-f02" data-translation-unit="sui04-p09-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u05" data-translation-unit="sui04-p09-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u06" data-translation-unit="sui04-p09-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u07" data-translation-unit="sui04-p09-u07"></span>
+
+### 5. データの確認
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u08" data-translation-unit="sui04-p09-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p09-u09" data-translation-unit="sui04-p09-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u01" data-translation-unit="sui04-p10-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p10-f01" data-translation-unit="sui04-p10-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u02" data-translation-unit="sui04-p10-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p10-f02" data-translation-unit="sui04-p10-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-f03" data-translation-unit="sui04-p10-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u03" data-translation-unit="sui04-p10-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u04" data-translation-unit="sui04-p10-u04"></span>
+
+### 6. 飛行モード
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u05" data-translation-unit="sui04-p10-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-f04" data-translation-unit="sui04-p10-f04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u06" data-translation-unit="sui04-p10-u06"></span>
+
+### 7. 動作条件
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u07" data-translation-unit="sui04-p10-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u08" data-translation-unit="sui04-p10-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u09" data-translation-unit="sui04-p10-u09"></span>
+
+### 飛行試験の手順：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u10" data-translation-unit="sui04-p10-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u11" data-translation-unit="sui04-p10-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u12" data-translation-unit="sui04-p10-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p10-u13" data-translation-unit="sui04-p10-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u01" data-translation-unit="sui04-p11-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p11-f01" data-translation-unit="sui04-p11-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u02" data-translation-unit="sui04-p11-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p11-u04" data-translation-unit="sui04-p11-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u05" data-translation-unit="sui04-p11-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u06" data-translation-unit="sui04-p11-u06"></span>
+
+### 8. 注意事項
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u07" data-translation-unit="sui04-p11-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u08" data-translation-unit="sui04-p11-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u09" data-translation-unit="sui04-p11-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u10" data-translation-unit="sui04-p11-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u11" data-translation-unit="sui04-p11-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u12" data-translation-unit="sui04-p11-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u13" data-translation-unit="sui04-p11-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u14" data-translation-unit="sui04-p11-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u15" data-translation-unit="sui04-p11-u15"></span>
+
+### 9. Mission Plannerのエラー表示
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-u16" data-translation-unit="sui04-p11-u16"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p11-f02" data-translation-unit="sui04-p11-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u01" data-translation-unit="sui04-p12-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p12-f01" data-translation-unit="sui04-p12-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u02" data-translation-unit="sui04-p12-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p12-u03" data-translation-unit="sui04-p12-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-f02" data-translation-unit="sui04-p12-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u04" data-translation-unit="sui04-p12-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u05" data-translation-unit="sui04-p12-u05"></span>
+
+### 機能2：上方向の衝突回避
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u06" data-translation-unit="sui04-p12-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u07" data-translation-unit="sui04-p12-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u08" data-translation-unit="sui04-p12-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-u09" data-translation-unit="sui04-p12-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p12-f03" data-translation-unit="sui04-p12-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-u01" data-translation-unit="sui04-p13-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p13-f01" data-translation-unit="sui04-p13-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-u02" data-translation-unit="sui04-p13-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p13-u03" data-translation-unit="sui04-p13-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-f02" data-translation-unit="sui04-p13-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-u04" data-translation-unit="sui04-p13-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-f03" data-translation-unit="sui04-p13-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-u05" data-translation-unit="sui04-p13-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p13-f04" data-translation-unit="sui04-p13-f04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u01" data-translation-unit="sui04-p14-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p14-f01" data-translation-unit="sui04-p14-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u02" data-translation-unit="sui04-p14-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p14-u03" data-translation-unit="sui04-p14-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u04" data-translation-unit="sui04-p14-u04"></span>
+
+### 機能3：下方向の高度保持
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u05" data-translation-unit="sui04-p14-u05"></span>
+
+### I. 接続方法
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u06" data-translation-unit="sui04-p14-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u07" data-translation-unit="sui04-p14-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u08" data-translation-unit="sui04-p14-u08"></span>
+
+### 1.1 PIXHAWKとの接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u09" data-translation-unit="sui04-p14-u09"></span>
+
+### 1.1.1 PIXHAWKへの単独接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u10" data-translation-unit="sui04-p14-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-f02" data-translation-unit="sui04-p14-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u11" data-translation-unit="sui04-p14-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-f03" data-translation-unit="sui04-p14-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u12" data-translation-unit="sui04-p14-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p14-u13" data-translation-unit="sui04-p14-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u01" data-translation-unit="sui04-p15-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p15-f01" data-translation-unit="sui04-p15-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u02" data-translation-unit="sui04-p15-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p15-f02" data-translation-unit="sui04-p15-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u04" data-translation-unit="sui04-p15-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-f03" data-translation-unit="sui04-p15-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u05" data-translation-unit="sui04-p15-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u06" data-translation-unit="sui04-p15-u06"></span>
+
+### II. パラメーターの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u07" data-translation-unit="sui04-p15-u07"></span>
+
+### 2.1 モジュールの種類の設定：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u08" data-translation-unit="sui04-p15-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u09" data-translation-unit="sui04-p15-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u10" data-translation-unit="sui04-p15-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p15-u11" data-translation-unit="sui04-p15-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u01" data-translation-unit="sui04-p16-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p16-f01" data-translation-unit="sui04-p16-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u02" data-translation-unit="sui04-p16-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p16-f02" data-translation-unit="sui04-p16-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u03" data-translation-unit="sui04-p16-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u04" data-translation-unit="sui04-p16-u04"></span>
+
+### 2.2 設定手順：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u05" data-translation-unit="sui04-p16-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u06" data-translation-unit="sui04-p16-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u07" data-translation-unit="sui04-p16-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u08" data-translation-unit="sui04-p16-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u09" data-translation-unit="sui04-p16-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u10" data-translation-unit="sui04-p16-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-u11" data-translation-unit="sui04-p16-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p16-f03" data-translation-unit="sui04-p16-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u01" data-translation-unit="sui04-p17-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p17-f01" data-translation-unit="sui04-p17-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u02" data-translation-unit="sui04-p17-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p17-u03" data-translation-unit="sui04-p17-u03"></span>
+
+### 2.3 送信機による高度保持機能の有効／無効の切り替え（任意）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u04" data-translation-unit="sui04-p17-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u05" data-translation-unit="sui04-p17-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u06" data-translation-unit="sui04-p17-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u07" data-translation-unit="sui04-p17-u07"></span>
+
+### フライトコントローラーの設定手順（CH8_OPT）：
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u08" data-translation-unit="sui04-p17-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u09" data-translation-unit="sui04-p17-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u10" data-translation-unit="sui04-p17-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u11" data-translation-unit="sui04-p17-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u12" data-translation-unit="sui04-p17-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-f02" data-translation-unit="sui04-p17-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-f03" data-translation-unit="sui04-p17-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u13" data-translation-unit="sui04-p17-u13"></span>
+
+### 送信機の設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u14" data-translation-unit="sui04-p17-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u15" data-translation-unit="sui04-p17-u15"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u16" data-translation-unit="sui04-p17-u16"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p17-u17" data-translation-unit="sui04-p17-u17"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p18-u01" data-translation-unit="sui04-p18-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p18-f01" data-translation-unit="sui04-p18-f01"></span>
+
+<ManualFigure src="/assets/radiolink/sui04/web-ja-v1/sui04-p18-f1.jpeg" width={289} height={58} figureId="sui04-p18-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="sui04-p18-u02" data-translation-unit="sui04-p18-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p18-u04" data-translation-unit="sui04-p18-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p18-u05" data-translation-unit="sui04-p18-u05"></span>
+
+### CrossFlightとSUI04の設定
+
+<span id="sui04-p18-u06" data-translation-unit="sui04-p18-u06"></span>
+
+### 目次
+
+<span id="sui04-p18-u07" data-translation-unit="sui04-p18-u07"></span>
+
+第1章 SUI04とCrossFlightの接続 …… 原典内CrossFlight編1頁
+
+<span id="sui04-p18-u08" data-translation-unit="sui04-p18-u08"></span>
+
+1.1 CrossFlightのGPSポートへの直接接続 …… 同1頁
+
+<span id="sui04-p18-u09" data-translation-unit="sui04-p18-u09"></span>
+
+1.2 I2C変換基板を介したCrossFlightとの接続 …… 同1頁
+
+<span id="sui04-p19-u01" data-translation-unit="sui04-p19-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p19-f01" data-translation-unit="sui04-p19-f01"></span>
+
+<ManualFigure src="/assets/radiolink/sui04/web-ja-v1/sui04-p19-f1.jpeg" width={289} height={58} figureId="sui04-p19-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="sui04-p19-u02" data-translation-unit="sui04-p19-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p19-u03" data-translation-unit="sui04-p19-u03"></span>
+
+第2章 高度保持機能 …… 原典内CrossFlight編2頁
+
+<span id="sui04-p19-u04" data-translation-unit="sui04-p19-u04"></span>
+
+2.1 SUI04のボタン機能 …… 同2頁
+
+<span id="sui04-p19-u05" data-translation-unit="sui04-p19-u05"></span>
+
+2.2 パラメーターの設定 …… 同3頁
+
+<span id="sui04-p19-u06" data-translation-unit="sui04-p19-u06"></span>
+
+2.3 データの確認 …… 同4頁
+
+<span id="sui04-p19-u07" data-translation-unit="sui04-p19-u07"></span>
+
+第3章 障害物回避 …… 同6頁
+
+<span id="sui04-p19-u08" data-translation-unit="sui04-p19-u08"></span>
+
+3.1 ボタンの設定 …… 同6頁
+
+<span id="sui04-p19-u09" data-translation-unit="sui04-p19-u09"></span>
+
+3.2 パラメーターの設定 …… 同6頁
+
+<span id="sui04-p19-u10" data-translation-unit="sui04-p19-u10"></span>
+
+3.3 障害物回避距離と有効／無効の設定 …… 同8頁
+
+<span id="sui04-p19-u11" data-translation-unit="sui04-p19-u11"></span>
+
+3.4 データの表示 …… 同10頁
+
+<span id="sui04-p19-u12" data-translation-unit="sui04-p19-u12"></span>
+
+第4章 上方向の衝突回避 …… 同12頁
+
+<span id="sui04-p19-u13" data-translation-unit="sui04-p19-u13"></span>
+
+4.1 ボタンの設定 …… 同12頁
+
+<span id="sui04-p19-u14" data-translation-unit="sui04-p19-u14"></span>
+
+4.2 パラメーターの設定 …… 同12頁
+
+<span id="sui04-p19-u15" data-translation-unit="sui04-p19-u15"></span>
+
+4.3 データの表示 …… 同14頁
+
+<span id="sui04-p20-u01" data-translation-unit="sui04-p20-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p20-f01" data-translation-unit="sui04-p20-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u02" data-translation-unit="sui04-p20-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p20-u04" data-translation-unit="sui04-p20-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u05" data-translation-unit="sui04-p20-u05"></span>
+
+### 第1章 SUI04とCrossFlightの接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u06" data-translation-unit="sui04-p20-u06"></span>
+
+### 1.1 CrossFlightのGPSポートへの直接接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u07" data-translation-unit="sui04-p20-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-f02" data-translation-unit="sui04-p20-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u08" data-translation-unit="sui04-p20-u08"></span>
+
+### 1.2 I2C変換基板を介したCrossFlightとの接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u09" data-translation-unit="sui04-p20-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p20-u03" data-translation-unit="sui04-p20-u03"></span>
+
+原典内CrossFlight編のページ表記：1
+
+<span id="sui04-p21-u01" data-translation-unit="sui04-p21-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p21-f01" data-translation-unit="sui04-p21-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p21-u02" data-translation-unit="sui04-p21-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p21-f02" data-translation-unit="sui04-p21-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p21-u05" data-translation-unit="sui04-p21-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p21-u06" data-translation-unit="sui04-p21-u06"></span>
+
+### 第2章 高度保持機能
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p21-u07" data-translation-unit="sui04-p21-u07"></span>
+
+### 2.1 SUI04のボタン機能
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p21-u08" data-translation-unit="sui04-p21-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p21-u03" data-translation-unit="sui04-p21-u03"></span>
+
+原典内CrossFlight編のページ表記：2
+
+<span id="sui04-p22-u01" data-translation-unit="sui04-p22-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p22-f01" data-translation-unit="sui04-p22-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u02" data-translation-unit="sui04-p22-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p22-u04" data-translation-unit="sui04-p22-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u05" data-translation-unit="sui04-p22-u05"></span>
+
+### 2.2 パラメーターの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u06" data-translation-unit="sui04-p22-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u07" data-translation-unit="sui04-p22-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u08" data-translation-unit="sui04-p22-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u09" data-translation-unit="sui04-p22-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-f02" data-translation-unit="sui04-p22-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u10" data-translation-unit="sui04-p22-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u11" data-translation-unit="sui04-p22-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u12" data-translation-unit="sui04-p22-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p22-u03" data-translation-unit="sui04-p22-u03"></span>
+
+原典内CrossFlight編のページ表記：3
+
+<span id="sui04-p23-u01" data-translation-unit="sui04-p23-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p23-f01" data-translation-unit="sui04-p23-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p23-u02" data-translation-unit="sui04-p23-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p23-u05" data-translation-unit="sui04-p23-u05"></span>
+
+### 2.3 データの確認
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p23-u06" data-translation-unit="sui04-p23-u06"></span>
+
+### 1. クイック表示で超音波データを確認する
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p23-u07" data-translation-unit="sui04-p23-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p23-f02" data-translation-unit="sui04-p23-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p23-f03" data-translation-unit="sui04-p23-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p23-u03" data-translation-unit="sui04-p23-u03"></span>
+
+原典内CrossFlight編のページ表記：4
+
+<span id="sui04-p24-u01" data-translation-unit="sui04-p24-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p24-f01" data-translation-unit="sui04-p24-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p24-u02" data-translation-unit="sui04-p24-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p24-u04" data-translation-unit="sui04-p24-u04"></span>
+
+### 2. Tuning表示で超音波データを確認する
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p24-u05" data-translation-unit="sui04-p24-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p24-f02" data-translation-unit="sui04-p24-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p24-f03" data-translation-unit="sui04-p24-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p24-u03" data-translation-unit="sui04-p24-u03"></span>
+
+原典内CrossFlight編のページ表記：5
+
+<span id="sui04-p25-u01" data-translation-unit="sui04-p25-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p25-f01" data-translation-unit="sui04-p25-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-u02" data-translation-unit="sui04-p25-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p25-u04" data-translation-unit="sui04-p25-u04"></span>
+
+### 第3章 障害物回避
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-u05" data-translation-unit="sui04-p25-u05"></span>
+
+### 3.1 ボタンの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-u06" data-translation-unit="sui04-p25-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-u07" data-translation-unit="sui04-p25-u07"></span>
+
+### 3.2 パラメーターの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-u08" data-translation-unit="sui04-p25-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-f02" data-translation-unit="sui04-p25-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p25-u03" data-translation-unit="sui04-p25-u03"></span>
+
+原典内CrossFlight編のページ表記：6
+
+<span id="sui04-p26-u01" data-translation-unit="sui04-p26-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p26-f01" data-translation-unit="sui04-p26-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p26-u02" data-translation-unit="sui04-p26-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p26-f02" data-translation-unit="sui04-p26-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p26-u04" data-translation-unit="sui04-p26-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p26-f03" data-translation-unit="sui04-p26-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p26-u05" data-translation-unit="sui04-p26-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p26-f04" data-translation-unit="sui04-p26-f04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p26-u03" data-translation-unit="sui04-p26-u03"></span>
+
+原典内CrossFlight編のページ表記：7
+
+<span id="sui04-p27-u01" data-translation-unit="sui04-p27-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p27-f01" data-translation-unit="sui04-p27-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u02" data-translation-unit="sui04-p27-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p27-u04" data-translation-unit="sui04-p27-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-f02" data-translation-unit="sui04-p27-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u05" data-translation-unit="sui04-p27-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-f03" data-translation-unit="sui04-p27-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u06" data-translation-unit="sui04-p27-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u07" data-translation-unit="sui04-p27-u07"></span>
+
+### 3.3 障害物回避距離と有効／無効の設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u08" data-translation-unit="sui04-p27-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u09" data-translation-unit="sui04-p27-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u10" data-translation-unit="sui04-p27-u10"></span>
+
+### 2. パラメーターの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p27-u03" data-translation-unit="sui04-p27-u03"></span>
+
+原典内CrossFlight編のページ表記：8
+
+<span id="sui04-p28-u01" data-translation-unit="sui04-p28-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p28-f01" data-translation-unit="sui04-p28-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u02" data-translation-unit="sui04-p28-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p28-u04" data-translation-unit="sui04-p28-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-f02" data-translation-unit="sui04-p28-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u05" data-translation-unit="sui04-p28-u05"></span>
+
+### 3. RC7_OPTIONの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u06" data-translation-unit="sui04-p28-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-f03" data-translation-unit="sui04-p28-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u07" data-translation-unit="sui04-p28-u07"></span>
+
+### 4. 送信機の設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u08" data-translation-unit="sui04-p28-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u09" data-translation-unit="sui04-p28-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u10" data-translation-unit="sui04-p28-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u11" data-translation-unit="sui04-p28-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p28-u03" data-translation-unit="sui04-p28-u03"></span>
+
+原典内CrossFlight編のページ表記：9
+
+<span id="sui04-p29-u01" data-translation-unit="sui04-p29-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p29-f01" data-translation-unit="sui04-p29-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p29-u02" data-translation-unit="sui04-p29-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p29-u05" data-translation-unit="sui04-p29-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p29-f02" data-translation-unit="sui04-p29-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p29-u06" data-translation-unit="sui04-p29-u06"></span>
+
+### 3.4 データの表示
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p29-u07" data-translation-unit="sui04-p29-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p29-u03" data-translation-unit="sui04-p29-u03"></span>
+
+原典内CrossFlight編のページ表記：10
+
+<span id="sui04-p30-u01" data-translation-unit="sui04-p30-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p30-f01" data-translation-unit="sui04-p30-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p30-u02" data-translation-unit="sui04-p30-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p30-f02" data-translation-unit="sui04-p30-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p30-u04" data-translation-unit="sui04-p30-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p30-u03" data-translation-unit="sui04-p30-u03"></span>
+
+原典内CrossFlight編のページ表記：11
+
+<span id="sui04-p31-u01" data-translation-unit="sui04-p31-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p31-f01" data-translation-unit="sui04-p31-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u02" data-translation-unit="sui04-p31-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p31-f02" data-translation-unit="sui04-p31-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u04" data-translation-unit="sui04-p31-u04"></span>
+
+### 第4章 上方向の衝突回避
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u05" data-translation-unit="sui04-p31-u05"></span>
+
+### 4.1 ボタンの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u06" data-translation-unit="sui04-p31-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u07" data-translation-unit="sui04-p31-u07"></span>
+
+### 4.2 パラメーターの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u08" data-translation-unit="sui04-p31-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p31-u03" data-translation-unit="sui04-p31-u03"></span>
+
+原典内CrossFlight編のページ表記：12
+
+<span id="sui04-p32-u01" data-translation-unit="sui04-p32-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p32-f01" data-translation-unit="sui04-p32-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p32-u02" data-translation-unit="sui04-p32-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p32-f02" data-translation-unit="sui04-p32-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p32-f03" data-translation-unit="sui04-p32-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p32-u05" data-translation-unit="sui04-p32-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p32-f04" data-translation-unit="sui04-p32-f04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p32-u03" data-translation-unit="sui04-p32-u03"></span>
+
+原典内CrossFlight編のページ表記：13
+
+<span id="sui04-p33-u01" data-translation-unit="sui04-p33-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p33-f01" data-translation-unit="sui04-p33-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-u02" data-translation-unit="sui04-p33-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p33-u04" data-translation-unit="sui04-p33-u04"></span>
+
+### 4.3 データの表示
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-u05" data-translation-unit="sui04-p33-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-u06" data-translation-unit="sui04-p33-u06"></span>
+
+### 1. DataFlash Logsのダウンロード
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-u07" data-translation-unit="sui04-p33-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-f02" data-translation-unit="sui04-p33-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-u08" data-translation-unit="sui04-p33-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p33-u03" data-translation-unit="sui04-p33-u03"></span>
+
+原典内CrossFlight編のページ表記：14
+
+<span id="sui04-p34-u01" data-translation-unit="sui04-p34-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p34-f01" data-translation-unit="sui04-p34-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p34-u02" data-translation-unit="sui04-p34-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p34-f02" data-translation-unit="sui04-p34-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p34-u04" data-translation-unit="sui04-p34-u04"></span>
+
+### 2. ログの確認
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p34-u05" data-translation-unit="sui04-p34-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p34-u03" data-translation-unit="sui04-p34-u03"></span>
+
+原典内CrossFlight編のページ表記：15
+
+<span id="sui04-p35-u01" data-translation-unit="sui04-p35-u01"></span>
+
+Radiolink Electronic Ltd
+
+<span id="sui04-p35-f01" data-translation-unit="sui04-p35-f01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p35-u02" data-translation-unit="sui04-p35-u02"></span>
+
+www.radiolink.com
+
+<span id="sui04-p35-f02" data-translation-unit="sui04-p35-f02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p35-u04" data-translation-unit="sui04-p35-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p35-f03" data-translation-unit="sui04-p35-f03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p35-u05" data-translation-unit="sui04-p35-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="sui04-p35-u03" data-translation-unit="sui04-p35-u03"></span>
+
+原典内CrossFlight編のページ表記：16
