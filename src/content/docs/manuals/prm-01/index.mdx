@@ -1,0 +1,240 @@
+---
+title: PRM-01 日本語取扱説明書
+description: Radiolink PRM-01 の公式英語取扱説明書に対応する日本語版です。
+product: prm-01
+slug: manuals/prm-01
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/9bc51e21d1655db7a8c26233e2cf7e70.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/prm-01/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink PRM-01 公式英語取扱説明書（文書版・発行日不明、5頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="prm01-w001" data-translation-unit="prm01-w001"></span>
+
+<ManualFigure src="/assets/radiolink/prm-01/web-ja-v1/prm01-p1-f1.png" width={289} height={58} figureId="prm01-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm01-w002" data-translation-unit="prm01-w002"></span>
+
+深圳市楽迪電子有限公司（原文：深圳市乐迪电子有限公司）
+
+<span id="prm01-w003" data-translation-unit="prm01-w003"></span>
+
+www.radiolink.com
+
+<span id="prm01-w004" data-translation-unit="prm01-w004"></span>
+
+### リアルタイム機体電圧テレメトリー PRM-01
+
+<span id="prm01-w005" data-translation-unit="prm01-w005"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm01-w006" data-translation-unit="prm01-w006"></span>
+
+取扱説明書
+
+<span id="prm01-w007" data-translation-unit="prm01-w007"></span>
+
+対応受信機：R12DS／R9DS
+
+<span id="prm01-w008" data-translation-unit="prm01-w008"></span>
+
+対応送信機：AT10II／AT10／AT9S Pro／AT9S／AT9
+
+<span id="prm01-w009" data-translation-unit="prm01-w009"></span>
+
+<ManualFigure src="/assets/radiolink/prm-01/web-ja-v1/prm01-p2-f1.png" width={289} height={58} figureId="prm01-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm01-w010" data-translation-unit="prm01-w010"></span>
+
+深圳市楽迪電子有限公司（原文：深圳市乐迪电子有限公司）
+
+<span id="prm01-w011" data-translation-unit="prm01-w011"></span>
+
+www.radiolink.com
+
+<span id="prm01-w012" data-translation-unit="prm01-w012"></span>
+
+目次
+
+<span id="prm01-w013" data-translation-unit="prm01-w013"></span>
+
+はじめに …… 原典3頁
+
+<span id="prm01-w014" data-translation-unit="prm01-w014"></span>
+
+仕様 …… 原典3頁
+
+<span id="prm01-w015" data-translation-unit="prm01-w015"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm01-w016" data-translation-unit="prm01-w016"></span>
+
+設定方法 …… 原典5頁
+
+<span id="prm01-w017" data-translation-unit="prm01-w017"></span>
+
+注意 …… 原典5頁
+
+<span id="prm01-w018" data-translation-unit="prm01-w018"></span>
+
+<ManualFigure src="/assets/radiolink/prm-01/web-ja-v1/prm01-p3-f1.png" width={289} height={58} figureId="prm01-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm01-w019" data-translation-unit="prm01-w019"></span>
+
+深圳市楽迪電子有限公司（原文：深圳市乐迪电子有限公司）
+
+<span id="prm01-w020" data-translation-unit="prm01-w020"></span>
+
+www.radiolink.com
+
+<span id="prm01-w021" data-translation-unit="prm01-w021"></span>
+
+### はじめに
+
+<span id="prm01-w022" data-translation-unit="prm01-w022"></span>
+
+リアルタイム機体電圧テレメトリーPRM-01は、機体のデータをリアルタイムに送信し、機体のシステムに関する重要な情報をユーザーに伝えます。
+
+<span id="prm01-w023" data-translation-unit="prm01-w023"></span>
+
+フライトモジュールPRM-01と組み合わせると、機体電圧が表示されます。
+
+<span id="prm01-w024" data-translation-unit="prm01-w024"></span>
+
+音・メッセージ・振動によるアラームを設定でき、機体電圧が低いときに問題の可能性を知らせます。機体の低電圧アラーム値は変更できます。
+
+<span id="prm01-w025" data-translation-unit="prm01-w025"></span>
+
+### 仕様
+
+<span id="prm01-w026" data-translation-unit="prm01-w026"></span>
+
+① 名称：リアルタイム機体電圧テレメトリーモジュール
+
+<span id="prm01-w027" data-translation-unit="prm01-w027"></span>
+
+② 型番：PRM-01
+
+<span id="prm01-w028" data-translation-unit="prm01-w028"></span>
+
+③ 寸法：33 × 22 × 11 mm（1.3" × 0.87" × 0.43）
+
+:::note[原典について]
+寸法のインチ表記は末尾0.43に単位記号がありません。原文数値を保持し、欠けた単位記号を補いません。
+:::
+
+<span id="prm01-w029" data-translation-unit="prm01-w029"></span>
+
+④ 重量（配線を含む）：7 g（0.25 oz）
+
+<span id="prm01-w030" data-translation-unit="prm01-w030"></span>
+
+⑤ 入力電圧範囲：1S～6S LiPoバッテリー
+
+<span id="prm01-w031" data-translation-unit="prm01-w031"></span>
+
+⑥ 対応受信機：R12DS、R9DS（旧版受信機：R10DS、R10D、R9D）
+
+<span id="prm01-w032" data-translation-unit="prm01-w032"></span>
+
+⑦ 対応送信機：AT10II／AT10／AT9S Pro／AT9S／AT9
+
+<span id="prm01-w033" data-translation-unit="prm01-w033"></span>
+
+⑧ 音・メッセージ・振動によるアラームを設定でき、機体電圧が低いときに問題の可能性を知らせます。機体の低電圧アラーム値は変更できます。
+
+<span id="prm01-w034" data-translation-unit="prm01-w034"></span>
+
+### 接続方法
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm01-w035" data-translation-unit="prm01-w035"></span>
+
+<ManualFigure src="/assets/radiolink/prm-01/web-ja-v1/prm01-p4-f1.png" width={289} height={58} figureId="prm01-p4-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm01-w036" data-translation-unit="prm01-w036"></span>
+
+深圳市楽迪電子有限公司（原文：深圳市乐迪电子有限公司）
+
+<span id="prm01-w037" data-translation-unit="prm01-w037"></span>
+
+www.radiolink.com
+
+<span id="prm01-w038" data-translation-unit="prm01-w038"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm01-w039" data-translation-unit="prm01-w039"></span>
+
+<ManualFigure src="/assets/radiolink/prm-01/web-ja-v1/prm01-p4-f3.jpeg" width={588} height={338} figureId="prm01-p4-f3" alt={"送信機のメイン画面例。受信機電圧は「RX: 4.9v」、外部の機体電圧は「EXT: 11.2v」と表示されています。画面内の表示文字は原画像を保持します。"} caption={"送信機のメイン画面例。受信機電圧は「RX: 4.9v」、外部の機体電圧は「EXT: 11.2v」と表示されています。画面内の表示文字は原画像を保持します。"} />
+
+<span id="prm01-w040" data-translation-unit="prm01-w040"></span>
+
+<ManualFigure src="/assets/radiolink/prm-01/web-ja-v1/prm01-p5-f1.png" width={289} height={58} figureId="prm01-p5-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm01-w041" data-translation-unit="prm01-w041"></span>
+
+深圳市楽迪電子有限公司（原文：深圳市乐迪电子有限公司）
+
+<span id="prm01-w042" data-translation-unit="prm01-w042"></span>
+
+www.radiolink.com
+
+<span id="prm01-w043" data-translation-unit="prm01-w043"></span>
+
+### 設定方法
+
+<span id="prm01-w044" data-translation-unit="prm01-w044"></span>
+
+送信機のメニューで設定するだけです。
+
+<span id="prm01-w045" data-translation-unit="prm01-w045"></span>
+
+Modeボタンを押して基本メニュー（BASIC MENU）を開き、パラメーター（PARAMETER）を選択します。Pushボタンを押して「PARAMETER」メニューを開き、使用するバッテリーに合わせて外部電圧アラーム（EXT-ALARM）の電圧を設定します。
+
+<span id="prm01-w046" data-translation-unit="prm01-w046"></span>
+
+フライトモジュールPRM-01と組み合わせると、送信機のメインメニューに機体電圧が表示されます。
+
+<span id="prm01-w047" data-translation-unit="prm01-w047"></span>
+
+### 注意
+
+<span id="prm01-w048" data-translation-unit="prm01-w048"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::

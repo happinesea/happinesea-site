@@ -660,7 +660,7 @@
     "subcategoryLabel": "超音波センサー",
     "description": "Radiolinkの超音波センサーです。",
     "officialUrl": "https://www.radiolink.com/su04",
-    "detailPath": null,
+    "detailPath": "/radiolink/su04/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/su04.webp",
@@ -1374,7 +1374,7 @@
     "subcategoryLabel": "テレメトリーモジュール",
     "description": "Radiolinkのテレメトリーモジュールです。",
     "officialUrl": "https://www.radiolink.com/prm01",
-    "detailPath": null,
+    "detailPath": "/radiolink/prm-01/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/prm-01.webp",
@@ -1395,7 +1395,7 @@
     "subcategoryLabel": "テレメトリーモジュール",
     "description": "Radiolinkのテレメトリーモジュールです。",
     "officialUrl": "https://www.radiolink.com/prm03",
-    "detailPath": null,
+    "detailPath": "/radiolink/prm-03/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/prm-03.webp",

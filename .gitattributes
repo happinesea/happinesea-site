@@ -41,3 +41,10 @@ src/content/docs/manuals/r8fg/** -text whitespace=cr-at-eol
 src/content/docs/manuals/ts100-m8n/** -text whitespace=cr-at-eol
 src/content/docs/manuals/rtk-f9p/** -text whitespace=cr-at-eol
 src/data/manuals/receiver-web-batch4.json -text whitespace=cr-at-eol
+
+src/data/manuals/receiver-web-batch5.json -text whitespace=cr-at-eol
+src/content/docs/manuals/r6fg/** -text whitespace=cr-at-eol
+src/content/docs/manuals/prm-01/** -text whitespace=cr-at-eol
+src/content/docs/manuals/prm-03/** -text whitespace=cr-at-eol
+src/content/docs/manuals/su04/** -text whitespace=cr-at-eol
+src/content/docs/manuals/sui04/** -text whitespace=cr-at-eol

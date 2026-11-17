@@ -54,3 +54,15 @@
   :is(th, td):first-child {
   min-width: 8em;
 }
+
+.sl-markdown-content:has(
+    [data-translation-unit^='r6fg-'],
+    [data-translation-unit^='prm01-'],
+    [data-translation-unit^='prm03-'],
+    [data-translation-unit^='su04-'],
+    [data-translation-unit^='sui04-']
+  )
+  table
+  :is(th, td):first-child {
+  min-width: 8em;
+}
