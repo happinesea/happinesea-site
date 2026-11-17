@@ -1,0 +1,586 @@
+---
+title: R4FGM 日本語取扱説明書
+description: Radiolink R4FGM の公式英語取扱説明書に対応する日本語版です。
+product: r4fgm
+slug: manuals/r4fgm
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/e4b4ee71651925af30c034e09bc432fd.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r4fgm/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R4FGM 公式英語取扱説明書（文書版・発行日不明、10頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r4fgm-w001" data-translation-unit="r4fgm-w001"></span>
+
+## R4FGM
+
+<span id="r4fgm-w002" data-translation-unit="r4fgm-w002"></span>
+
+（FHSS）
+
+<span id="r4fgm-w003" data-translation-unit="r4fgm-w003"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p1-f1.jpeg" width={800} height={570} figureId="r4fgm-p1-f1" alt={"R4FGM受信機の外観（写真の表示：V2.1、3.0-6V/DC、1～4、信号・＋・－）。"} caption={"R4FGM受信機の外観（写真の表示：V2.1、3.0-6V/DC、1～4、信号・＋・－）。"} />
+
+<span id="r4fgm-w004" data-translation-unit="r4fgm-w004"></span>
+
+## 取扱説明書
+
+<span id="r4fgm-w005" data-translation-unit="r4fgm-w005"></span>
+
+ジャイロ内蔵4チャンネル受信機
+
+<span id="r4fgm-w006" data-translation-unit="r4fgm-w006"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r4fgm-w007" data-translation-unit="r4fgm-w007"></span>
+
+www.radiolink.com
+
+<span id="r4fgm-w008" data-translation-unit="r4fgm-w008"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w009" data-translation-unit="r4fgm-w009"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p2-f1.jpeg" width={289} height={58} figureId="r4fgm-p2-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w010" data-translation-unit="r4fgm-w010"></span>
+
+RadioLinkの4チャンネル小型受信機R4FGMをお買い上げいただき、ありがとうございます。
+
+<span id="r4fgm-w011" data-translation-unit="r4fgm-w011"></span>
+
+本製品の機能を十分に活用し、安全に使用するため、この説明をよく読み、記載された手順に従って設定してください。
+
+<span id="r4fgm-w012" data-translation-unit="r4fgm-w012"></span>
+
+操作中に問題が発生した場合は、まず本書を参照してください。その後、販売店へ解決方法をお問い合わせいただくか、Facebook公式ページ https://www.facebook.com/radiolinkofficial/ およびYouTube公式ページで関連するキーワードを検索してください。また、after_service@radioLink.com.cn 宛てにご質問をお送りいただければ、できるだけ早く回答します。
+
+<span id="r4fgm-w013" data-translation-unit="r4fgm-w013"></span>
+
+製造工程の予期しない変更により、本書に記載する情報は予告なく変更される場合があります。
+
+<span id="r4fgm-w014" data-translation-unit="r4fgm-w014"></span>
+
+## 安全上の注意
+
+<span id="r4fgm-w015" data-translation-unit="r4fgm-w015"></span>
+
+:::caution[注意]
+悪天候時には模型を操縦しないでください。視界不良により方向を見失い、模型を制御できなくなるおそれがあります。
+:::
+
+<span id="r4fgm-w016" data-translation-unit="r4fgm-w016"></span>
+
+:::caution[注意]
+人混みや、使用が法律で禁止されている場所では、本製品を使用しないでください。
+:::
+
+<span id="r4fgm-w017" data-translation-unit="r4fgm-w017"></span>
+
+:::caution[注意]
+受信機を接続する前に、トリムレバーが0で、バッテリーが適切に充電されていることを必ず確認してください。
+:::
+
+<span id="r4fgm-w018" data-translation-unit="r4fgm-w018"></span>
+
+:::caution[注意]
+走行のたびに、すべてのサーボと接続を必ず確認してください。
+:::
+
+<span id="r4fgm-w019" data-translation-unit="r4fgm-w019"></span>
+
+:::caution[注意]
+必ず送信機より先に受信機の電源を切ってください。
+:::
+
+<span id="r4fgm-w020" data-translation-unit="r4fgm-w020"></span>
+
+## 警告
+
+<span id="r4fgm-w021" data-translation-unit="r4fgm-w021"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方は本製品をお子様の手の届かない場所に保管し、お子様のいる場所で操作する場合は十分注意してください。
+:::
+
+<span id="r4fgm-w022" data-translation-unit="r4fgm-w022"></span>
+
+:::caution[注意]
+アンテナやスティックの隙間から送信機内部に水や湿気が入り、模型が不安定になったり、制御不能になったりするおそれがあります。競技などで雨天時の走行が避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="r4fgm-w023" data-translation-unit="r4fgm-w023"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w024" data-translation-unit="r4fgm-w024"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p3-f1.jpeg" width={289} height={58} figureId="r4fgm-p3-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w025" data-translation-unit="r4fgm-w025"></span>
+
+## 目次
+
+<span id="r4fgm-w026" data-translation-unit="r4fgm-w026"></span>
+
+1. R4FGMの概要 …… 2
+
+2. 受信機プロトコルの選択 …… 3
+
+3. サーボ速度の設定 …… 3
+
+4. バインド …… 4
+
+5. 信号とRSSIのテレメトリー …… 5
+
+6. 動作モード …… 6
+
+6.1 標準モード（工場出荷時の初期設定） …… 6
+
+6.2 ジャイロモード …… 6
+
+7. ジャイロ機能 …… 6
+
+7.1 ジャイロを有効にする …… 6
+
+7.2 ジャイロの動作方向 …… 6
+
+7.3 ジャイロ感度の調整 …… 7
+
+8. 仕様 …… 7
+
+9. アンテナ設置時の注意 …… 7
+
+<span id="r4fgm-folio-p3" data-translation-unit="r4fgm-folio-p3"></span>
+
+原典印刷頁：1
+
+<span id="r4fgm-w027" data-translation-unit="r4fgm-w027"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w028" data-translation-unit="r4fgm-w028"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p4-f1.jpeg" width={289} height={58} figureId="r4fgm-p4-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w029" data-translation-unit="r4fgm-w029"></span>
+
+## 1. R4FGMの概要
+
+<span id="r4fgm-w030" data-translation-unit="r4fgm-w030"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w031" data-translation-unit="r4fgm-w031"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p4-f2.jpeg" width={1000} height={500} figureId="r4fgm-p4-f2" alt={"受信機の各部。アンテナ、信号、VCC、GND、チャンネル1（ステアリング）、チャンネル2（スロットル）、チャンネル3・4（補助）、バインドボタン（ID SET）。"} caption={"受信機の各部。アンテナ、信号、VCC、GND、チャンネル1（ステアリング）、チャンネル2（スロットル）、チャンネル3・4（補助）、バインドボタン（ID SET）。"} />
+
+<span id="r4fgm-w032" data-translation-unit="r4fgm-w032"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p4-f3.jpeg" width={2420} height={1700} figureId="r4fgm-p4-f3" alt={"モーター、ESC、バッテリー、受信機用電源、受信機、サーボの接続図。"} caption={"モーター、ESC、バッテリー、受信機用電源、受信機、サーボの接続図。"} />
+
+<span id="r4fgm-folio-p4" data-translation-unit="r4fgm-folio-p4"></span>
+
+原典印刷頁：2
+
+<span id="r4fgm-w033" data-translation-unit="r4fgm-w033"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w034" data-translation-unit="r4fgm-w034"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p5-f1.jpeg" width={289} height={58} figureId="r4fgm-p5-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w035" data-translation-unit="r4fgm-w035"></span>
+
+## 2. 受信機プロトコルの選択
+
+<span id="r4fgm-w036" data-translation-unit="r4fgm-w036"></span>
+
+R4FGMをRC8X送信機と組み合わせる場合は、最初にRC8Xで正しい受信機プロトコルを選択し、その後でバインド（リンク）してください。RC8Xの基本メニュー（Basic Menu）から受信機設定（Receiver setting）を開き、下図のようにFHSS V1またはFHSS V2プロトコルを選択します。FHSS V1受信機のPWM出力分解能は2048、FHSS V2受信機は4096です。分解能が高いほど、サーボの動作角を細かく制御できます。
+
+<span id="r4fgm-w037" data-translation-unit="r4fgm-w037"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p5-f2.jpeg" width={402} height={465} figureId="r4fgm-p5-f2" alt={"受信機設定画面：FHSS V1の選択例。図中のヒントにはFHSS V1のPWM出力分解能2048、FHSS V2は4096、およびR8FG_V1.0はFHSS V2に非対応と表示されています。"} caption={"受信機設定画面：FHSS V1の選択例。図中のヒントにはFHSS V1のPWM出力分解能2048、FHSS V2は4096、およびR8FG_V1.0はFHSS V2に非対応と表示されています。"} />
+
+:::note[原典について]
+原図画面のヒントはR8FG_V1.0を名指ししています。画面を改変せず保持し、その製品名をR4FGMの適用条件へ読み替えていません。本文に記載されたR4FGMの版条件を参照してください。
+:::
+
+<span id="r4fgm-w038" data-translation-unit="r4fgm-w038"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p5-f3.jpeg" width={392} height={461} figureId="r4fgm-p5-f3" alt={"受信機設定画面：FHSS V2の選択例と「Servo Speed 14 ms」。図中のヒントにはFHSS V1のPWM出力分解能2048、FHSS V2は4096、およびR8FG_V1.0はFHSS V2に非対応と表示されています。"} caption={"受信機設定画面：FHSS V2の選択例と「Servo Speed 14 ms」。図中のヒントにはFHSS V1のPWM出力分解能2048、FHSS V2は4096、およびR8FG_V1.0はFHSS V2に非対応と表示されています。"} />
+
+:::note[原典について]
+原図画面のヒントはR8FG_V1.0を名指ししています。画面を改変せず保持し、その製品名をR4FGMの適用条件へ読み替えていません。本文に記載されたR4FGMの版条件を参照してください。
+:::
+
+<span id="r4fgm-w039" data-translation-unit="r4fgm-w039"></span>
+
+:::caution[注意]
+上図の「Receivers List」をクリックし、使用している受信機がFHSS V1とFHSS V2のどちらのプロトコル一覧に含まれるか確認してください。R4FGM V1.0はFHSS V1のみに対応し、FHSS V2には対応しません。R4FGM V2.0以降はFHSS V1とFHSS V2の両方に対応します。模型を操作する前に、受信機のプロトコルが正しく選択されていることを必ず確認してください。正しくない場合、一部の機能は正常に動作しません。
+:::
+
+<span id="r4fgm-w040" data-translation-unit="r4fgm-w040"></span>
+
+## 3. サーボ速度の設定
+
+<span id="r4fgm-w041" data-translation-unit="r4fgm-w041"></span>
+
+RC8XでFHSS V2プロトコルを選択すると、下図のように画面に「Servo Speed」が表示されます。
+
+<span id="r4fgm-w042" data-translation-unit="r4fgm-w042"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p5-f4.jpeg" width={389} height={420} figureId="r4fgm-p5-f4" alt={"サーボ速度設定画面の例。「FHSS V2」が選択され、「Servo Speed」は14 msです。図中のヒントにはR8FG_V1.0の記載があります。"} caption={"サーボ速度設定画面の例。「FHSS V2」が選択され、「Servo Speed」は14 msです。図中のヒントにはR8FG_V1.0の記載があります。"} />
+
+:::note[原典について]
+原図画面のヒントはR8FG_V1.0を名指ししています。画面を改変せず保持し、その製品名をR4FGMの適用条件へ読み替えていません。本文に記載されたR4FGMの版条件を参照してください。
+:::
+
+<span id="r4fgm-w043" data-translation-unit="r4fgm-w043"></span>
+
+サーボ速度の設定方法：
+
+<span id="r4fgm-w044" data-translation-unit="r4fgm-w044"></span>
+
+（1）送信機：この項目を表示するには、RC8XのファームウェアをV1.1.5以降に更新し、FHSS V2プロトコルを選択する必要があります。サーボ速度は14 ms、4 ms、3 msから選択できます。初期設定は14 ms（アナログサーボ速度）で、4 msと3 msはデジタルサーボ速度です。
+
+<span id="r4fgm-folio-p5" data-translation-unit="r4fgm-folio-p5"></span>
+
+原典印刷頁：3
+
+<span id="r4fgm-w045" data-translation-unit="r4fgm-w045"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w046" data-translation-unit="r4fgm-w046"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p6-f1.jpeg" width={289} height={58} figureId="r4fgm-p6-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w047" data-translation-unit="r4fgm-w047"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w048" data-translation-unit="r4fgm-w048"></span>
+
+（3）状態表示：サーボ速度を切り替えたとき、受信機の緑色LEDが2回点滅すると、切り替えが成功したことを示します。切り替え時に受信機の緑色LEDが点滅しない場合は、切り替えに失敗したか、現在の受信機がデジタルサーボに対応していないことを示します。
+
+<span id="r4fgm-w049" data-translation-unit="r4fgm-w049"></span>
+
+## 4. バインド
+
+<span id="r4fgm-w050" data-translation-unit="r4fgm-w050"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w051" data-translation-unit="r4fgm-w051"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w052" data-translation-unit="r4fgm-w052"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w053" data-translation-unit="r4fgm-w053"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w054" data-translation-unit="r4fgm-w054"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w055" data-translation-unit="r4fgm-w055"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w056" data-translation-unit="r4fgm-w056"></span>
+
+注：
+
+<span id="r4fgm-w057" data-translation-unit="r4fgm-w057"></span>
+
+:::caution[注意]
+工場出荷時の初期設定では、ジャイロはOFFです。ジャイロにはセルフテストの動作があるため、電源を入れた際は受信機を静止させておく必要があります。この受信機の表示灯には赤と緑の2色があります。ジャイロがOFFのときは赤色灯が消灯し、ONのときは点灯します。
+:::
+
+<span id="r4fgm-w058" data-translation-unit="r4fgm-w058"></span>
+
+:::caution[注意]
+R4FGMの電源を入れたときに表示灯が点滅する場合は、信号がないか、バインドに成功していないことを示します。受信機を送信機にバインドしてください。
+:::
+
+<span id="r4fgm-folio-p6" data-translation-unit="r4fgm-folio-p6"></span>
+
+原典印刷頁：4
+
+<span id="r4fgm-w059" data-translation-unit="r4fgm-w059"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w060" data-translation-unit="r4fgm-w060"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p7-f1.jpeg" width={289} height={58} figureId="r4fgm-p7-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w061" data-translation-unit="r4fgm-w061"></span>
+
+## 5. 信号とRSSIのテレメトリー
+
+<span id="r4fgm-w062" data-translation-unit="r4fgm-w062"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w063" data-translation-unit="r4fgm-w063"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-w064" data-translation-unit="r4fgm-w064"></span>
+
+RC8XをR4FGMと組み合わせた場合は、バインド成功後、送信機のホーム画面に信号とRSSIが表示されます（下図参照）。
+
+<span id="r4fgm-w065" data-translation-unit="r4fgm-w065"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p7-f2.jpeg" width={433} height={465} figureId="r4fgm-p7-f2" alt={"RC8Xホーム画面の信号強度アイコンとRSSIの表示例。"} caption={"RC8Xホーム画面の信号強度アイコンとRSSIの表示例。"} />
+
+<span id="r4fgm-w066" data-translation-unit="r4fgm-w066"></span>
+
+距離を変えて試験したうえで、RSSIが一定の低い値になったときに警告するよう設定できます。テレメトリー設定（Telemetry setting）の受信機信号（Receiver signal）を開き、RSSIの警告値や警告音の種類などを設定します。
+
+<span id="r4fgm-w067" data-translation-unit="r4fgm-w067"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p7-f3.jpeg" width={471} height={448} figureId="r4fgm-p7-f3" alt={"受信機信号の警告設定画面。現在の信号、警告音の種類、振動、警告値、警告間隔の表示例。"} caption={"受信機信号の警告設定画面。現在の信号、警告音の種類、振動、警告値、警告間隔の表示例。"} />
+
+<span id="r4fgm-w068" data-translation-unit="r4fgm-w068"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r4fgm-folio-p7" data-translation-unit="r4fgm-folio-p7"></span>
+
+原典印刷頁：5
+
+<span id="r4fgm-w069" data-translation-unit="r4fgm-w069"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w070" data-translation-unit="r4fgm-w070"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p8-f1.jpeg" width={289} height={58} figureId="r4fgm-p8-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w071" data-translation-unit="r4fgm-w071"></span>
+
+## 6. 動作モード
+
+<span id="r4fgm-w072" data-translation-unit="r4fgm-w072"></span>
+
+R4FGMには2つの動作モードがあります。工場出荷時の初期設定は、ジャイロを使用せずPWM信号を出力する標準モードです。もう一つはジャイロモードです。
+
+<span id="r4fgm-w073" data-translation-unit="r4fgm-w073"></span>
+
+### 6.1 標準モード（工場出荷時の初期設定）
+
+<span id="r4fgm-w074" data-translation-unit="r4fgm-w074"></span>
+
+緑色表示灯が点灯している場合、Ch1～Ch4は標準PWM信号を出力します。
+
+<span id="r4fgm-w075" data-translation-unit="r4fgm-w075"></span>
+
+### 6.2 ジャイロモード
+
+<span id="r4fgm-w076" data-translation-unit="r4fgm-w076"></span>
+
+R4FGMは、本格的なドリフト走行や小型カー（MINIZ）向けのジャイロを内蔵しています。
+
+<span id="r4fgm-w077" data-translation-unit="r4fgm-w077"></span>
+
+ID SETを1秒未満の間隔で3回短く押すと、赤色表示灯が3回点滅します。赤色LEDの点灯／消灯は、ジャイロ機能のON／OFFを示します。
+
+<span id="r4fgm-w078" data-translation-unit="r4fgm-w078"></span>
+
+進行方向を安定させ、車のスリップを抑えます。高速走行時の横滑りを防ぎ、より安全に旋回できます。
+
+<span id="r4fgm-w079" data-translation-unit="r4fgm-w079"></span>
+
+## 7. ジャイロ機能
+
+<span id="r4fgm-w080" data-translation-unit="r4fgm-w080"></span>
+
+R4FGMに内蔵された本格的なカー用ジャイロは、有効／無効を切り替えられます。有効にすると、競技中の旋回安定性を最大限に高められます。姿勢が乱れた場合も、ジャイロ機能により車をまっすぐ進ませ、正確に旋回させます。
+
+<span id="r4fgm-w081" data-translation-unit="r4fgm-w081"></span>
+
+### 7.1 ジャイロを有効にする
+
+<span id="r4fgm-w082" data-translation-unit="r4fgm-w082"></span>
+
+工場出荷時の初期設定では、ジャイロ機能はOFFです。R4FGMの電源を入れると、ジャイロがセルフチェックを行います。R4FGMには2つの表示灯があり、緑色LEDの常灯はジャイロなしの動作モードを示します。
+
+ID SETを1秒未満の間隔で3回短く押すと、赤色表示灯が3回点滅します。緑色と赤色の両LEDが常灯する状態は、ジャイロありの動作モードです。
+
+<span id="r4fgm-w083" data-translation-unit="r4fgm-w083"></span>
+
+:::caution[注意]
+注意：受信機に接続したサーボが揺れ続けることがありますが、これは正常です。ジャイロ機能をONにしている場合、ジャイロがサーボのステアリング角を自動補正しているためです。この機能が不要であれば、ジャイロ機能をOFFにできます。
+:::
+
+<span id="r4fgm-w084" data-translation-unit="r4fgm-w084"></span>
+
+:::caution[注意]
+受信機を動かしていないのにサーボが揺れ続ける場合は、ジャイロ感度が高すぎる可能性があります。ジャイロ感度を下げてください。
+:::
+
+<span id="r4fgm-w085" data-translation-unit="r4fgm-w085"></span>
+
+### 7.2 ジャイロの動作方向
+
+<span id="r4fgm-w086" data-translation-unit="r4fgm-w086"></span>
+
+模型飛行機と同様に、カー用ジャイロにも動作方向があります。正しい動作方向に設定されている場合にのみ、ジャイロは常に正しい方向へ補正できます。ジャイロの正方向を有効にした状態で模型の車体を回し、車輪が補正されるか確認します。通常、車体を左へ回すと車輪は右へ、車体を右へ回すと車輪は左へ向いて補正します。ジャイロの動作方向が逆の場合は、ID SETを1秒未満の間隔で2回短く押します。赤色表示灯が2回点滅すると、ジャイロの動作方向の設定は完了です。
+
+<span id="r4fgm-folio-p8" data-translation-unit="r4fgm-folio-p8"></span>
+
+原典印刷頁：6
+
+<span id="r4fgm-w087" data-translation-unit="r4fgm-w087"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w088" data-translation-unit="r4fgm-w088"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p9-f1.jpeg" width={289} height={58} figureId="r4fgm-p9-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w089" data-translation-unit="r4fgm-w089"></span>
+
+### 7.3 ジャイロ感度の調整
+
+<span id="r4fgm-w090" data-translation-unit="r4fgm-w090"></span>
+
+ジャイロ感度は、初期設定（工場出荷時設定）ではCH3に割り当てられています。RC6GS／RC4GS送信機を使用する場合は、VRダイヤルでジャイロ感度を調整できます。調整時にはパーセント表示され、値が大きいほど感度が高くなります。VRダイヤル／CH3に別の機能を設定している場合は、送信機のメニュー設定でジャイロ感度を調整できます。RC8X送信機をR4FGMと組み合わせる場合は、感度調整をDL1に設定するか、ジャイロミキシングの設定画面で「-」または「+」をクリックして調整できます。
+
+<span id="r4fgm-w091" data-translation-unit="r4fgm-w091"></span>
+
+## 8. 仕様
+
+<span id="r4fgm-w092" data-translation-unit="r4fgm-w092"></span>
+
+1）寸法：25 × 13 mm
+
+2）重量：3 g
+
+3）アンテナ長：90 mm（3.54インチ）
+
+4）チャンネル数：4チャンネル
+
+5）応答遅延：RC8Xとのバインド時は3 ms、4 ms、14 msを選択でき、その他の送信機とのバインド時は初期値の14 msです。デジタルサーボ速度の3 msまたは4 msを選択するには、RC8XのファームウェアがV1.1.5以降であることを確認し、FHSS V2プロトコルを選択して、この項目を表示させてください。R4FGMはV2.1、または製造日が2023/4/26以降のR4FGMであることが条件です。
+
+6）周波数：2.4 GHz ISM
+
+7）用途：カー／ボート／小型飛行機／グライダー
+
+8）符号化方式：FHSS 67チャンネル擬似ランダム周波数ホッピング
+
+9）電圧範囲：3～6 V
+
+10）動作電流：30 mA @ 5 V
+
+11）テレメトリー：信号／RSSI
+
+12）制御距離：地上400 m
+
+13）対応送信機：RC8X／RC6GS V3／RC4GS V3／RC6GS V2／RC4GS V2／RC6GS／RC4GS／T8FB(BT)／T8S(BT)／T8FB(OTG)／T8S(OTG)
+
+<span id="r4fgm-w093" data-translation-unit="r4fgm-w093"></span>
+
+## 9. アンテナ設置時の注意
+
+<span id="r4fgm-w094" data-translation-unit="r4fgm-w094"></span>
+
+:::caution[注意]
+信号伝送を最大限に確保するため、次の事項を強く推奨します。
+
+- アンテナはできるだけまっすぐにしてください。曲がっていると有効制御距離が短くなります。
+- 大型模型には、信号の放射に影響する金属部品が含まれる場合があります。この場合は、あらゆる状況で良好な信号状態を確保するため、模型の両側にアンテナを配置してください。
+- アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+- アンテナはモーター、ESC、その他の干渉源となる可能性のある機器から離してください。
+- 受信機の取り付け時には、防振のためにスポンジや発泡材の使用を推奨します。
+- 受信機には高精度の電子部品が含まれています。強い振動や高温を避けるよう注意してください。
+:::
+
+<span id="r4fgm-folio-p9" data-translation-unit="r4fgm-folio-p9"></span>
+
+原典印刷頁：7
+
+<span id="r4fgm-w095" data-translation-unit="r4fgm-w095"></span>
+
+RadioLink Electronic Ltd
+www.radiolink.com
+
+<span id="r4fgm-w096" data-translation-unit="r4fgm-w096"></span>
+
+<ManualFigure src="/assets/radiolink/r4fgm/web-ja-v1/r4fgm-p10-f1.jpeg" width={289} height={58} figureId="r4fgm-p10-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="r4fgm-w097" data-translation-unit="r4fgm-w097"></span>
+
+:::caution[注意]
+- 受信機を保護するため、発泡材やゴム布などのR/C用防振材で包んでください。受信機を密閉性の高いビニール袋に入れると、湿気やほこりの侵入を防げます。湿気やほこりは受信機が制御不能になる原因となる場合があります。
+:::
+
+<span id="r4fgm-w098" data-translation-unit="r4fgm-w098"></span>
+
+RadioLink製品をお選びいただき、改めてありがとうございます。
+
+<span id="r4fgm-folio-p10" data-translation-unit="r4fgm-folio-p10"></span>
+
+原典印刷頁：8

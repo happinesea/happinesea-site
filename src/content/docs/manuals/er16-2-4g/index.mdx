@@ -1,0 +1,446 @@
+---
+title: ER16(2.4G) 日本語取扱説明書
+description: Radiolink ER16(2.4G) の公式英語取扱説明書に対応する日本語版です。
+product: er16-2-4g
+slug: manuals/er16-2-4g
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/9228453ed3154110f7ac0b674125e5f4.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/er16-2-4g/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink ER16(2.4G) 公式英語取扱説明書（文書版・発行日不明、10頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="er16-w001" data-translation-unit="er16-w001"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p1-f1.jpeg" width={744} height={372} figureId="er16-p1-f1" alt={"ATA HOBBYのロゴ。"} caption={"ATA HOBBYのロゴ。"} />
+
+<span id="er16-w002" data-translation-unit="er16-w002"></span>
+
+## ER16
+
+<span id="er16-w003" data-translation-unit="er16-w003"></span>
+
+## 取扱説明書
+
+<span id="er16-w004" data-translation-unit="er16-w004"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p1-f2.jpeg" width={1011} height={852} figureId="er16-p1-f2" alt={"ER16受信機の写真（基板の表示：G、V、T、R、W8200_V10）。"} caption={"ER16受信機の写真（基板の表示：G、V、T、R、W8200_V10）。"} />
+
+<span id="er16-w005" data-translation-unit="er16-w005"></span>
+
+ELRS 2.4 GHz・16チャンネル受信機
+
+<span id="er16-w006" data-translation-unit="er16-w006"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p1-f3.jpeg" width={640} height={380} figureId="er16-p1-f3" alt={"14歳以上の年齢表示。"} caption={"14歳以上の年齢表示。"} />
+
+<span id="er16-w007" data-translation-unit="er16-w007"></span>
+
+## 目次
+
+<span id="er16-w008" data-translation-unit="er16-w008"></span>
+
+1. 概要 …… 2
+
+2. 仕様 …… 2
+
+3. LED表示 …… 2
+
+4. バインド …… 2
+
+5. Betaflightフライトコントローラーの設定 …… 3
+
+6. APMフライトコントローラーの設定 …… 4
+
+7. ファームウェアの更新 …… 4
+
+<span id="er16-w009" data-translation-unit="er16-w009"></span>
+
+原典印刷頁：1
+
+<span id="er16-w010" data-translation-unit="er16-w010"></span>
+
+## 1. 概要
+
+<span id="er16-w011" data-translation-unit="er16-w011"></span>
+
+RadioLink ER16受信機は、オープンソースプロジェクトExpressLRSを基に開発された、2.4 GHzの受信機です。ExpressLRS 2.4 GHzモジュールおよび送信機に対応します。LoRa変調技術を採用し、高い受信感度、強い耐干渉性、長い到達距離を特長としています。世界的に開放されている2.4 GHz周波数帯で動作します。
+
+:::note[原典について]
+原典は2.4 GHz帯を世界的に開放された帯域と説明していますが、この記述は日本国内の法令適合や使用許可を確認したことを意味しません。原典の説明と国内での使用可否を区別してください。
+:::
+
+<span id="er16-w012" data-translation-unit="er16-w012"></span>
+
+GitHubのURL：https://github.com/ExpressLRS/ExpressLRS
+
+<span id="er16-w013" data-translation-unit="er16-w013"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p3-f1.jpeg" width={928} height={459} figureId="er16-p3-f1" alt={"背面：アンテナ1・2、GND、5V、UART_TX、UART_RX。アンテナコネクターはIPEX MHF 1。"} caption={"背面：アンテナ1・2、GND、5V、UART_TX、UART_RX。アンテナコネクターはIPEX MHF 1。"} />
+
+<span id="er16-w014" data-translation-unit="er16-w014"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p3-f2.jpeg" width={1044} height={459} figureId="er16-p3-f2" alt={"前面：Wi-Fiアンテナ、LED、ファームウェア更新ボタン、UART_RX、UART_TX、5V、GND。"} caption={"前面：Wi-Fiアンテナ、LED、ファームウェア更新ボタン、UART_RX、UART_TX、5V、GND。"} />
+
+<span id="er16-w015" data-translation-unit="er16-w015"></span>
+
+## 2. 仕様
+
+<span id="er16-w016" data-translation-unit="er16-w016"></span>
+
+- 寸法：20 × 12.5 mm
+- 重量：1.2 g
+- 動作電圧：4～9 V
+- 周波数帯：2.4 GHz ISM
+- テレメトリー出力：22 dBm
+- アンテナコネクター：IPEX MHF 1 × 2
+- 出力プロトコル：CRSF
+- 対応送信機：2.4 GHz ExpressLRSモジュールに対応するすべての送信機
+
+<span id="er16-w017" data-translation-unit="er16-w017"></span>
+
+## 3. LED表示
+
+<span id="er16-w018" data-translation-unit="er16-w018"></span>
+
+- 常灯：バインド成功／送信信号を受信中
+- 素早い2回点滅：バインド状態
+- 遅い点滅：送信信号を受信していない状態
+- 速い点滅：Wi-Fi更新状態
+
+<span id="er16-w019" data-translation-unit="er16-w019"></span>
+
+## 4. バインド
+
+<span id="er16-w020" data-translation-unit="er16-w020"></span>
+
+（1）電源投入の間隔を1.5秒未満にして、ER16受信機の電源を連続して3回入れます。
+
+<span id="er16-w021" data-translation-unit="er16-w021"></span>
+
+（2）受信機の表示灯が2回点滅し、バインド状態に入ったことを示します。
+
+<span id="er16-w022" data-translation-unit="er16-w022"></span>
+
+（3）ExpressLRSの送信機またはモジュールのBINDボタンを押します。
+
+<span id="er16-w023" data-translation-unit="er16-w023"></span>
+
+（4）受信機の表示灯が常灯し、バインド成功を示します。
+
+<span id="er16-w024" data-translation-unit="er16-w024"></span>
+
+（5）バインド成功後、プログラムはペアリングした送信機器を記録します。次回の電源投入時には最後のバインド記録が復元されるため、受信機の電源を入れるたびにバインドする必要はありません。
+
+<span id="er16-w025" data-translation-unit="er16-w025"></span>
+
+原典印刷頁：2
+
+<span id="er16-w026" data-translation-unit="er16-w026"></span>
+
+## 5. Betaflightフライトコントローラーの設定
+
+<span id="er16-w027" data-translation-unit="er16-w027"></span>
+
+（1）ER16をBetaflightフライトコントローラーの任意のシリアルポートへ接続します。以下では、UART6を例に設定を説明します。
+
+<span id="er16-w028" data-translation-unit="er16-w028"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p4-f1.jpeg" width={650} height={176} figureId="er16-p4-f1" alt={"ER16とBetaflightフライトコントローラーの接続図。GND同士、5V同士、ER16のTXとフライトコントローラーのRX、ER16のRXとフライトコントローラーのTXを接続しています。"} caption={"ER16とBetaflightフライトコントローラーの接続図。GND同士、5V同士、ER16のTXとフライトコントローラーのRX、ER16のRXとフライトコントローラーのTXを接続しています。"} />
+
+<span id="er16-w029" data-translation-unit="er16-w029"></span>
+
+（2）フライトコントローラーをパソコンに接続します。Betaflight Configuratorを開いて接続し、ポート（Ports）メニューをクリックして、UART6の「Serial RX」を有効にします。
+
+<span id="er16-w030" data-translation-unit="er16-w030"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p4-f2.jpeg" width={1147} height={510} figureId="er16-p4-f2" alt={"BetaflightのPorts画面。UART6の「Serial Rx」を有効にした例です。"} caption={"原典4頁の図"} />
+
+BetaflightのPorts画面。UART6の「Serial Rx」を有効にした例です。
+
+図中の注意には、すべての組み合わせが有効とは限らないこと、内容を理解せずに最初のシリアルポートのMSPを無効にしないことが示されています。VTXテーブル設定に関する警告もありますが、原画像では右端の文が途中で切れています。
+
+:::note[原典について]
+Ports画面の警告は原画像の右端で切れているため、欠けた文を推測で補っていません。画像は原典の設定例であり、現在のUI版や警告全文を保証するものではありません。
+:::
+
+<span id="er16-w031" data-translation-unit="er16-w031"></span>
+
+（3）受信機（Receiver）メニューをクリックします。受信機モード（Receiver Mode）を「Serial (via UART)」にし、シリアル受信機プロバイダー（Serial Receiver Provider）を「CRSF」に設定します。
+
+<span id="er16-w032" data-translation-unit="er16-w032"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p4-f3.jpeg" width={800} height={231} figureId="er16-p4-f3" alt={"受信機設定画面。「Receiver Mode」は「Serial (via UART)」、「Serial Receiver Provider」は「CRSF」です。"} caption={"原典4頁の図"} />
+
+受信機設定画面。「Receiver Mode」は「Serial (via UART)」、「Serial Receiver Provider」は「CRSF」です。
+
+図中の注意：受信機用UARTはPortsタブで「Serial Rx」に設定する必要があります。下のドロップダウンから正しいデータ形式を選択してください。
+
+<span id="er16-w033" data-translation-unit="er16-w033"></span>
+
+原典印刷頁：3
+
+<span id="er16-w034" data-translation-unit="er16-w034"></span>
+
+## 6. APMフライトコントローラーの設定
+
+<span id="er16-w035" data-translation-unit="er16-w035"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="er16-w036" data-translation-unit="er16-w036"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="er16-w037" data-translation-unit="er16-w037"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="er16-w038" data-translation-unit="er16-w038"></span>
+
+## 7. ファームウェアの更新
+
+<span id="er16-w039" data-translation-unit="er16-w039"></span>
+
+この例では、公式公開ファームウェアをダウンロードした後、ELRSでファームウェアをコンパイルする方法を使用します。初期ファームウェア版はExpressLRS-3.3です。
+
+:::note[原典について]
+原典の初期ファームウェア版はExpressLRS-3.3ですが、後続の展開・コンパイル例はExpressLRS-2.0.1、リリースページ画像はV3.2.1です。いずれも原典の例として保持し、現在の最新版・実機導入版と読み替えていません。送受信機の版を合わせる注意と、3.xxの別Device指定を保持しています。
+:::
+
+<span id="er16-w040" data-translation-unit="er16-w040"></span>
+
+:::caution[注意]
+（1）ELRSの公式ファームウェアをダウンロードします。最新版、または古い版を選択できます。送信機と受信機の版は、同じものにそろえることを推奨します。版が一致しないと、不具合が発生する場合があります。ファームウェアのダウンロード先：
+
+https://github.com/ExpressLRS/ExpressLRS/releases
+:::
+
+<span id="er16-w041" data-translation-unit="er16-w041"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p5-f2.jpeg" width={1366} height={729} figureId="er16-p5-f2" alt={"ExpressLRSリリースページの例（表示版：V3.2.1）。"} caption={"原典5頁の図"} />
+
+ExpressLRSリリースページの例（表示版：V3.2.1）。
+
+図中の重要事項：安全性と機能上の理由から、アーミングにはAUX1を使用します。TXとRXの両方へ書き込んでください。Luaスクリプトはelrsv3.luaへ更新する必要があり、2.xとの後方互換性があります。
+
+:::note[原典について]
+原典の初期ファームウェア版はExpressLRS-3.3ですが、後続の展開・コンパイル例はExpressLRS-2.0.1、リリースページ画像はV3.2.1です。いずれも原典の例として保持し、現在の最新版・実機導入版と読み替えていません。送受信機の版を合わせる注意と、3.xxの別Device指定を保持しています。
+:::
+
+<span id="er16-w042" data-translation-unit="er16-w042"></span>
+
+原典印刷頁：4
+
+<span id="er16-w043" data-translation-unit="er16-w043"></span>
+
+（2）ExpressLRS Configuratorツールをダウンロードします。パソコンのシステムに合うツールを選択してください。ダウンロード先：
+
+https://github.com/ExpressLRS/ExpressLRS-Configurator/releases
+
+<span id="er16-w044" data-translation-unit="er16-w044"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p6-f1.jpeg" width={1362} height={738} figureId="er16-p6-f1" alt={"ExpressLRS Configuratorのダウンロードページの例（表示版：1.5.9）。Windows、Mac OS X、Linux向けのファイルが表示されています。"} caption={"ExpressLRS Configuratorのダウンロードページの例（表示版：1.5.9）。Windows、Mac OS X、Linux向けのファイルが表示されています。"} />
+
+<span id="er16-w045" data-translation-unit="er16-w045"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p6-f2.jpeg" width={744} height={753} figureId="er16-p6-f2" alt={"USB-UART TTL変換ケーブルの例。端子表示はTX、GND、VCC、RXです。"} caption={"USB-UART TTL変換ケーブルの例。端子表示はTX、GND、VCC、RXです。"} />
+
+<span id="er16-w046" data-translation-unit="er16-w046"></span>
+
+（3）ExpressLRS Configuratorをインストールします。
+
+<span id="er16-w047" data-translation-unit="er16-w047"></span>
+
+:::caution[注意]
+（4）右図のようなUSB-UART TTL変換ケーブルを用意します。変換ケーブルは、受信機のT端子とR端子へ交差接続する必要がある点に注意してください。
+:::
+
+<span id="er16-w048" data-translation-unit="er16-w048"></span>
+
+（5）ExpressLRS Configuratorを開きます。「Configurator」を選択し、「LOCAL」をクリックして、オフラインのローカルコンパイルを使用します。
+
+<span id="er16-w049" data-translation-unit="er16-w049"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p6-f3.jpeg" width={1343} height={733} figureId="er16-p6-f3" alt={"ExpressLRS Configuratorの「Configurator」と「LOCAL」の選択例。"} caption={"原典6頁の図"} />
+
+ExpressLRS Configuratorの「Configurator」と「LOCAL」の選択例。
+
+図中の警告「DANGER ZONE」：内容を理解している場合、またはプロジェクト開発者から指示された場合にのみ、これらのソースを使用してください。
+
+<span id="er16-w050" data-translation-unit="er16-w050"></span>
+
+原典印刷頁：5
+
+<span id="er16-w051" data-translation-unit="er16-w051"></span>
+
+（6）ダウンロードしたファームウェアを展開します。ここではExpressLRS-2.0.1を例にします。
+
+:::note[原典について]
+原典の初期ファームウェア版はExpressLRS-3.3ですが、後続の展開・コンパイル例はExpressLRS-2.0.1、リリースページ画像はV3.2.1です。いずれも原典の例として保持し、現在の最新版・実機導入版と読み替えていません。送受信機の版を合わせる注意と、3.xxの別Device指定を保持しています。
+:::
+
+<span id="er16-w052" data-translation-unit="er16-w052"></span>
+
+:::caution[注意]
+（7）「CHOOSE FOLDER」をクリックして、コンパイルするファイルのパスを選択します。必ずsrcフォルダー内へ移動してください。そうしないとコンパイルは成功しません。
+:::
+
+<span id="er16-w053" data-translation-unit="er16-w053"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p7-f1.jpeg" width={1318} height={477} figureId="er16-p7-f1" alt={"「CHOOSE FOLDER」の選択例。パスはExpressLRS-2.0.1のsrcフォルダーです。図中の「DANGER ZONE」は、内容を理解している場合、または開発者に指示された場合にのみ使用するよう警告しています。"} caption={"「CHOOSE FOLDER」の選択例。パスはExpressLRS-2.0.1のsrcフォルダーです。図中の「DANGER ZONE」は、内容を理解している場合、または開発者に指示された場合にのみ使用するよう警告しています。"} />
+
+<span id="er16-w054" data-translation-unit="er16-w054"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p7-f2.jpeg" width={688} height={637} figureId="er16-p7-f2" alt={"srcフォルダーを開き、フォルダーを選択する画面例。"} caption={"srcフォルダーを開き、フォルダーを選択する画面例。"} />
+
+<span id="er16-w055" data-translation-unit="er16-w055"></span>
+
+（8）ハードウェア情報を選択します。「Device category」のドロップダウンメニューで「Matek 2.4GHz」を選択し、「Device」のドロップダウンメニューで「Matek 2400 RX」を選択します。ファームウェアがExpressLRS-3.xxの場合は、「Device」で「Matek 2400 RX R24D」を選択します。
+
+<span id="er16-w056" data-translation-unit="er16-w056"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p7-f3.jpeg" width={1070} height={222} figureId="er16-p7-f3" alt={"ハードウェア選択画面の例。「Device category」は「Matek 2.4 GHz」、「Device」は「Matek 2400 RX」です。"} caption={"ハードウェア選択画面の例。「Device category」は「Matek 2.4 GHz」、「Device」は「Matek 2400 RX」です。"} />
+
+<span id="er16-w057" data-translation-unit="er16-w057"></span>
+
+原典印刷頁：6
+
+<span id="er16-w058" data-translation-unit="er16-w058"></span>
+
+（9）書き込み方法としてシリアルポート（UART）を選択します。ほかのダウンロード方法を、ご自身で試すこともできます。
+
+<span id="er16-w059" data-translation-unit="er16-w059"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p8-f1.jpeg" width={1077} height={150} figureId="er16-p8-f1" alt={"書き込み方法として「UART」を選択した例。"} caption={"書き込み方法として「UART」を選択した例。"} />
+
+<span id="er16-w060" data-translation-unit="er16-w060"></span>
+
+:::caution[注意]
+（10）デバイスオプションを設定します。デュアルアンテナ・ダイバーシティを使用するため、「USE_DIVERSITY」にチェックを入れる必要があります。チェックがない場合は、初期設定のシングルアンテナになります。
+:::
+
+<span id="er16-w061" data-translation-unit="er16-w061"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p8-f2.jpeg" width={1336} height={702} figureId="er16-p8-f2" alt={"デバイスオプション画面。「USE_DIVERSITY」にチェックを入れた例です。"} caption={"デバイスオプション画面。「USE_DIVERSITY」にチェックを入れた例です。"} />
+
+<span id="er16-w062" data-translation-unit="er16-w062"></span>
+
+（11）受信機のファームウェア更新ボタンを押したまま、受信機の電源を入れます。受信機の表示灯が常灯すると、ファームウェア更新モードに入ったことを示します。ほかのモードになった場合は、表示灯が常灯するまで再度試してください。
+
+<span id="er16-w063" data-translation-unit="er16-w063"></span>
+
+（12）コンパイラーがシリアルポート番号を認識します。「Manual serial device selection」で、認識されたシリアルポート番号COMxxを選択します。空欄のままにすることもでき、その場合は後のダウンロード時にツールが自動検出します。
+
+<span id="er16-w064" data-translation-unit="er16-w064"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p8-f3.jpeg" width={1119} height={152} figureId="er16-p8-f3" alt={"シリアルポートの選択例（COM7）。"} caption={"原典8頁の図"} />
+
+シリアルポートの選択例（COM7）。
+
+図中の注意：USE_DIVERSITYにはハードウェアの対応が必要です。必ず両方のアンテナをデバイスへ取り付けてください。RFスイッチを実装していない自作機を除き、ダイバーシティ非対応ハードウェアでも有効のままにできます。
+
+<span id="er16-w065" data-translation-unit="er16-w065"></span>
+
+（13）「BUILD &amp; FLASH」を選択します。
+
+<span id="er16-w066" data-translation-unit="er16-w066"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p8-f4.jpeg" width={1079} height={114} figureId="er16-p8-f4" alt={"「BUILD & FLASH」の選択例。"} caption={"「BUILD & FLASH」の選択例。"} />
+
+<span id="er16-w067" data-translation-unit="er16-w067"></span>
+
+原典印刷頁：7
+
+<span id="er16-w068" data-translation-unit="er16-w068"></span>
+
+（14）プログラムのコンパイルが始まります。時間がかかるため、そのままお待ちください。エラーが発生した場合は、表示される案内に従ってください。
+
+<span id="er16-w069" data-translation-unit="er16-w069"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p9-f1.jpeg" width={1342} height={692} figureId="er16-p9-f1" alt={"ビルド進行画面の例。「Verifying build system」が表示されています。"} caption={"ビルド進行画面の例。「Verifying build system」が表示されています。"} />
+
+<span id="er16-w070" data-translation-unit="er16-w070"></span>
+
+（15）Logsウィンドウには、コンパイルの全過程が表示されます。下図の画面が表示されると、プログラムの受信機へのダウンロードが完了しています。「Result」に緑色の「Success」が表示されます。
+
+<span id="er16-w071" data-translation-unit="er16-w071"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p9-f2.jpeg" width={1033} height={576} figureId="er16-p9-f2" alt={"書き込み完了時のログ例。100%、データハッシュ検証、RTS端子によるハードリセット、SUCCESSが表示されています。"} caption={"書き込み完了時のログ例。100%、データハッシュ検証、RTS端子によるハードリセット、SUCCESSが表示されています。"} />
+
+<span id="er16-w072" data-translation-unit="er16-w072"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p9-f3.jpeg" width={746} height={294} figureId="er16-p9-f3" alt={"結果画面の例。「Result」に緑色の「Success!」が表示されています。"} caption={"結果画面の例。「Result」に緑色の「Success!」が表示されています。"} />
+
+<span id="er16-w073" data-translation-unit="er16-w073"></span>
+
+原典印刷頁：8
+
+<span id="er16-w074" data-translation-unit="er16-w074"></span>
+
+## テクニカルサポート
+
+<span id="er16-w075" data-translation-unit="er16-w075"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p10-f1.jpeg" width={300} height={300} figureId="er16-p10-f1" alt={"ER16取扱説明書のQRコード（原典掲載）。"} caption={"ER16取扱説明書のQRコード（原典掲載）。"} />
+
+<span id="er16-w076" data-translation-unit="er16-w076"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p10-f2.jpeg" width={300} height={300} figureId="er16-p10-f2" alt={"ER16 FAQのQRコード（原典掲載）。"} caption={"ER16 FAQのQRコード（原典掲載）。"} />
+
+<span id="er16-w077" data-translation-unit="er16-w077"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p10-f3.jpeg" width={300} height={300} figureId="er16-p10-f3" alt={"ER16チュートリアルのQRコード（原典掲載）。"} caption={"ER16チュートリアルのQRコード（原典掲載）。"} />
+
+<span id="er16-w078" data-translation-unit="er16-w078"></span>
+
+<ManualFigure src="/assets/radiolink/er16-2-4g/web-ja-v1/er16-p10-f4.jpeg" width={920} height={911} figureId="er16-p10-f4" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="er16-w079" data-translation-unit="er16-w079"></span>
+
+Facebook MessengerでRadioLink RLへ連絡
+
+ER16取扱説明書
+
+ER16 FAQ
+
+ER16チュートリアル
+
+<span id="er16-w080" data-translation-unit="er16-w080"></span>
+
+上記の連絡方法で問題を解決できない場合は、テクニカルサポート after_service@radiolink.com.cn へメールでお問い合わせいただくこともできます。本書の内容は変更される場合があります。最新版は https://www.radiolink.com.cn/er16_manual からダウンロードしてください。
+
+<span id="er16-w081" data-translation-unit="er16-w081"></span>
+
+RadioLink製品をお選びいただき、改めてありがとうございます。
+
+<span id="er16-w082" data-translation-unit="er16-w082"></span>
+
+原典印刷頁：9

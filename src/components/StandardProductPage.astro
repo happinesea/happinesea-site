@@ -74,6 +74,7 @@ const jsonLd = [
       ]}
     />
     <ProductHero product={data} copy={detail.hero} />
+    <slot name="manual-link" />
 
     <nav
       aria-label={`${data.model}ページ内ナビゲーション`}

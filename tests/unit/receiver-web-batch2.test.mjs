@@ -9,7 +9,11 @@ import { manualCards } from '../../src/lib/manual-directory.mjs';
 const sha = (bytes) => crypto.createHash('sha256').update(bytes).digest('hex');
 test('batch2 copies retain independent provenance, untranslated original figures and safe holds', () => {
   assert.equal(batch.manuals.length, 5);
-  assert.equal(all.manuals.length, 10);
+  assert(
+    batch.manuals.every((m) =>
+      all.manuals.some((r) => r.product_id === m.product_id),
+    ),
+  );
   for (const m of batch.manuals) {
     const mdx = fs.readFileSync(
       `src/content/docs/manuals/${m.product_id}/index.mdx`,

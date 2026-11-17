@@ -1,0 +1,665 @@
+---
+title: R8FGH 日本語取扱説明書
+description: Radiolink R8FGH の公式英語取扱説明書に対応する日本語版です。
+product: r8fgh
+slug: manuals/r8fgh
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/800a6430e525fd7934d4e382f85cc168.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r8fgh/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R8FGH 公式英語取扱説明書（文書版・発行日不明、13頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r8fgh-w001" data-translation-unit="r8fgh-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p1-f1.jpeg" width={600} height={180} figureId="r8fgh-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fgh-w002" data-translation-unit="r8fgh-w002"></span>
+
+## R8FGH V1.0
+
+<span id="r8fgh-w003" data-translation-unit="r8fgh-w003"></span>
+
+## 取扱説明書
+
+<span id="r8fgh-w004" data-translation-unit="r8fgh-w004"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p1-f2.jpeg" width={800} height={800} figureId="r8fgh-p1-f2" alt={"R8FGH V1.0の製品写真。製品上のBlue/Purple-S.BUS＋PWM、3.0–12V/DC、Telemetryの表示を保持。"} caption={"R8FGH V1.0の製品写真。製品上のBlue/Purple-S.BUS＋PWM、3.0–12V/DC、Telemetryの表示を保持。"} />
+
+<span id="r8fgh-w005" data-translation-unit="r8fgh-w005"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p1-f3.jpeg" width={640} height={380} figureId="r8fgh-p1-f3" alt={"原典表紙の対象年齢14歳以上のマーク。"} caption={"原典表紙の対象年齢14歳以上のマーク。"} />
+
+<span id="r8fgh-w006" data-translation-unit="r8fgh-w006"></span>
+
+### 目次
+
+<span id="r8fgh-w007" data-translation-unit="r8fgh-w007"></span>
+
+1. R8FGHの概要……3
+2. 受信機プロトコルの選択……3
+3. サーボ速度の設定……4
+4. バインド……4
+5. テレメトリー……5
+5.1 信号とRSSIのテレメトリー……6
+5.2 模型用バッテリーと受信機の電圧テレメトリー……6
+6. サブID……8
+7. 動作モード……9
+7.1 動作モードの設定……9
+7.2 各動作モードのLED表示色……10
+8. ジャイロの概要……10
+8.1 ジャイロ機能……10
+8.2 ジャイロの有効化……10
+8.3 ジャイロのリバース……10
+8.4 ジャイロ感度の調整……10
+9. R8FGHの仕様……11
+10. アンテナ取り付け時の注意……12
+
+<span id="r8fgh-w008" data-translation-unit="r8fgh-w008"></span>
+
+原典印刷ページ：2
+
+<span id="r8fgh-w009" data-translation-unit="r8fgh-w009"></span>
+
+### 1. R8FGHの概要
+
+<span id="r8fgh-w010" data-translation-unit="r8fgh-w010"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w011" data-translation-unit="r8fgh-w011"></span>
+
+R8FGH受信機は、RadioLink RC8X/RC6GS V3/RC4GS V3/RC6GS V2/RC4GS V2/RC6GS（3ポジションスイッチ版）/RC4GS（P.D AFTER 180101の版）/T8FB(BT)/T8S(BT)/T8FB(OTG)/T8S(OTG)送信機に対応します。
+
+<span id="r8fgh-w012" data-translation-unit="r8fgh-w012"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w013" data-translation-unit="r8fgh-w013"></span>
+
+### 2. 受信機プロトコルの選択
+
+<span id="r8fgh-w014" data-translation-unit="r8fgh-w014"></span>
+
+R8FGHをRC8Xと使用する場合は、先にRC8Xで正しい受信機プロトコルを選択し、その後バインドしてください。RC8Xの「Basic Menu」から「Receiver setting」を開き、FHSS V1またはFHSS V2を選択します（下図参照）。R8FGHは両プロトコルに対応します。FHSS V1のPWM出力分解能は2048、FHSS V2は4096です。分解能が高いほどサーボの動作角度を細かく制御できます。このため、R8FGHではFHSS V2の選択を推奨します。
+
+<span id="r8fgh-w015" data-translation-unit="r8fgh-w015"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p3-f2.jpeg" width={402} height={465} figureId="r8fgh-p3-f2" alt={"RC8Xの受信機設定画面。FHSS V1を選択した例。"} caption={"RC8Xの受信機設定画面。FHSS V1を選択した例。"} />
+
+:::note[原典について]
+原典の受信機設定画面のヒントにはR8FG_V1.0と記載されています。R8FGHへ型番を推測で置換せず、他の受信機のUI説明として保持します。本文のR8FGHのプロトコル条件とは区別してください。
+:::
+
+<span id="r8fgh-w016" data-translation-unit="r8fgh-w016"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p3-f3.jpeg" width={392} height={461} figureId="r8fgh-p3-f3" alt={"RC8Xの受信機設定画面。FHSS V2とサーボ速度の表示例。"} caption={"RC8Xの受信機設定画面。FHSS V2とサーボ速度の表示例。"} />
+
+:::note[原典について]
+原典の受信機設定画面のヒントにはR8FG_V1.0と記載されています。R8FGHへ型番を推測で置換せず、他の受信機のUI説明として保持します。本文のR8FGHのプロトコル条件とは区別してください。
+:::
+
+<span id="r8fgh-w017" data-translation-unit="r8fgh-w017"></span>
+
+:::caution[注意]
+注意：受信機プロトコルを切り替えるたびに、R8FGHとRC8Xを再度バインドしてください。
+:::
+
+<span id="r8fgh-w018" data-translation-unit="r8fgh-w018"></span>
+
+原典印刷ページ：3
+
+<span id="r8fgh-w019" data-translation-unit="r8fgh-w019"></span>
+
+### 3. サーボ速度の設定
+
+<span id="r8fgh-w020" data-translation-unit="r8fgh-w020"></span>
+
+RC8XでFHSS V2を選択すると、「Servo Speed」が画面に表示されます（下図参照）。
+
+<span id="r8fgh-w021" data-translation-unit="r8fgh-w021"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p4-f1.jpeg" width={389} height={420} figureId="r8fgh-p4-f1" alt={"サーボ速度の設定画面。"} caption={"サーボ速度の設定画面。"} />
+
+:::note[原典について]
+原典の受信機設定画面のヒントにはR8FG_V1.0と記載されています。R8FGHへ型番を推測で置換せず、他の受信機のUI説明として保持します。本文のR8FGHのプロトコル条件とは区別してください。
+:::
+
+<span id="r8fgh-w022" data-translation-unit="r8fgh-w022"></span>
+
+### サーボ速度の設定方法
+
+<span id="r8fgh-w023" data-translation-unit="r8fgh-w023"></span>
+
+(1) 送信機：RC8XのファームウェアをV1.1.5以降に更新し、FHSS V2を選択すると、この項目が表示されます。サーボ速度は14 ms、4 ms、3 msから選択できます。既定値は14 ms（アナログサーボ用）で、4 msと3 msはデジタルサーボ用です。
+
+<span id="r8fgh-w024" data-translation-unit="r8fgh-w024"></span>
+
+(2) 受信機：デジタルサーボを使用する場合は、サーボ速度を4 msまたは3 msに選択する必要があります。受信機もデジタルサーボに対応している必要があります。R8FGHはデジタルサーボに対応します。
+(3) 状態表示：サーボ速度を切り替えたときに受信機の緑色LEDが1回点滅すれば、切り替え成功です。切り替えても緑色LEDが点滅しない場合は、切り替え失敗を示します。
+
+<span id="r8fgh-w025" data-translation-unit="r8fgh-w025"></span>
+
+### 4. バインド
+
+<span id="r8fgh-w026" data-translation-unit="r8fgh-w026"></span>
+
+各受信機には固有のIDコードがあり、使用前に送信機とのバインドが必要です。バインドが完了するとIDコードが送信機に保存されるため、再バインドは不要です。新しく購入したR8FGHを送信機で使用するには、バインドを行ってください。
+
+<span id="r8fgh-w027" data-translation-unit="r8fgh-w027"></span>
+
+### バインド手順
+
+<span id="r8fgh-w028" data-translation-unit="r8fgh-w028"></span>
+
+(1) RC8Xで受信機プロトコルを選択します（第2章「受信機プロトコルの選択」参照）。注：RC6GS/RC4GS/T8S/T8FBなど、RC8X以外の送信機を使用する場合は、手順(2)に進んでください。
+
+<span id="r8fgh-w029" data-translation-unit="r8fgh-w029"></span>
+
+(2) 送信機と受信機を約60 cmの距離に近づけます。
+
+<span id="r8fgh-w030" data-translation-unit="r8fgh-w030"></span>
+
+(3) 送信機と受信機の電源を入れると、R8FGHのLEDがゆっくり点滅し始めます。
+
+<span id="r8fgh-w031" data-translation-unit="r8fgh-w031"></span>
+
+(4) 受信機側面の黒いバインドボタン（ID SET）を1秒より長く押してから離します。LEDが速く点滅し、バインド処理中であることを示します。
+
+<span id="r8fgh-w032" data-translation-unit="r8fgh-w032"></span>
+
+(5) LEDの点滅が止まり常灯するとバインド完了です。送信機のIPS画面上部に電波塔のアイコンが表示されます（右図参照）。失敗した場合はLEDがゆっくり点滅し続けます。上記の手順を繰り返してください。
+
+<span id="r8fgh-w033" data-translation-unit="r8fgh-w033"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p4-f2.jpeg" width={770} height={300} figureId="r8fgh-p4-f2" alt={"バインド成功後の送信機電波塔アイコンの表示例。"} caption={"バインド成功後の送信機電波塔アイコンの表示例。"} />
+
+<span id="r8fgh-w034" data-translation-unit="r8fgh-w034"></span>
+
+原典印刷ページ：4
+
+<span id="r8fgh-w035" data-translation-unit="r8fgh-w035"></span>
+
+### 注記
+
+<span id="r8fgh-w036" data-translation-unit="r8fgh-w036"></span>
+
+:::caution[注意]
+1. 送信機と受信機の電源が入っている状態で、バインドに失敗した場合や信号が失われた場合は、R8FGHのLEDが点滅し続けます。
+:::
+
+<span id="r8fgh-w037" data-translation-unit="r8fgh-w037"></span>
+
+:::caution[注意]
+2. 送信機と受信機が近すぎると、信号のブロッキングによりバインドに失敗したり、信号が失われたりする場合があります。バインド成功後も、RC8XとR8FGHが近すぎる場合（例えば60 cm以内）、信号のブロッキングにより信号が失われることがあります。両者をさらに離すと、信号喪失は自動的に解消します。
+:::
+
+<span id="r8fgh-w038" data-translation-unit="r8fgh-w038"></span>
+
+### 5. テレメトリー
+
+<span id="r8fgh-w039" data-translation-unit="r8fgh-w039"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w040" data-translation-unit="r8fgh-w040"></span>
+
+この機能を使用するには、RC6GS（3ポジションスイッチ版）をファームウェアRC6GS_RadioLink_bin_1d15_V_6_1_2に更新してください。ダウンロード先：
+https://www.radiolink.com/rc6gs_firmware
+
+<span id="r8fgh-w041" data-translation-unit="r8fgh-w041"></span>
+
+または、RC4GS（2018-01-01より後に製造）をファームウェアRC4GS_RX_RadioLink_bin_2f50_V_6_0_1に更新してください。ダウンロード先：
+https://www.radiolink.com/rc4gs_firmware
+
+<span id="r8fgh-w042" data-translation-unit="r8fgh-w042"></span>
+
+RC8X、RC6GS V3、RC6GS V2、RC4GS V3、RC4GS V2を使用する場合、既定のファームウェアがテレメトリーに対応しています。
+
+<span id="r8fgh-w043" data-translation-unit="r8fgh-w043"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w044" data-translation-unit="r8fgh-w044"></span>
+
+RC8Xのホーム画面：
+
+<span id="r8fgh-w045" data-translation-unit="r8fgh-w045"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w046" data-translation-unit="r8fgh-w046"></span>
+
+原典印刷ページ：5
+
+<span id="r8fgh-w047" data-translation-unit="r8fgh-w047"></span>
+
+### 5.1 信号とRSSIのテレメトリー
+
+<span id="r8fgh-w048" data-translation-unit="r8fgh-w048"></span>
+
+RC8XとR8FGH受信機の電源を入れてバインドします。成功すると、送信機のホーム画面に信号とRSSIが表示されます。
+
+<span id="r8fgh-w049" data-translation-unit="r8fgh-w049"></span>
+
+RC8Xのホーム画面：
+
+<span id="r8fgh-w050" data-translation-unit="r8fgh-w050"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w051" data-translation-unit="r8fgh-w051"></span>
+
+距離を変えてテストした後、RSSIが一定の低い値になったときの警報を設定できます。テレメトリー設定の「Receiver signal」を開き、RSSI警報値や警報音の種類などを設定します。
+
+<span id="r8fgh-w052" data-translation-unit="r8fgh-w052"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p6-f2.jpeg" width={471} height={448} figureId="r8fgh-p6-f2" alt={"Receiver signal警報設定画面。"} caption={"Receiver signal警報設定画面。"} />
+
+<span id="r8fgh-w053" data-translation-unit="r8fgh-w053"></span>
+
+:::caution[注意]
+注意：R8FGHはデュアルアンテナ受信機です。送信機とR8FGHの距離が60 cmの場合、RSSI値が0～−30 dBmの範囲であれば正常です。0に近いほど信号は強くなります。RadioLink送信機のRSSI表示範囲は0～−99 dBmです。RSSIの絶対値が大きいほど信号は弱くなります。例えば、−90 dBmの信号は−75 dBmより弱い信号です。
+:::
+
+<span id="r8fgh-w054" data-translation-unit="r8fgh-w054"></span>
+
+### 5.2 模型用バッテリーと受信機の電圧テレメトリー
+
+<span id="r8fgh-w055" data-translation-unit="r8fgh-w055"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w056" data-translation-unit="r8fgh-w056"></span>
+
+原典印刷ページ：6
+
+<span id="r8fgh-w058" data-translation-unit="r8fgh-w058"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w059" data-translation-unit="r8fgh-w059"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w060" data-translation-unit="r8fgh-w060"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w061" data-translation-unit="r8fgh-w061"></span>
+
+### 注意
+
+<span id="r8fgh-w062" data-translation-unit="r8fgh-w062"></span>
+
+:::caution[注意]
+1. R8FGHの全8チャンネルには逆極性保護回路があり、逆接続から重要部品を保護します。ただし、R8FGHに付属するバッテリー接続用JSTコネクターは逆接続しないでください。逆接続すると、誤った電圧値がテレメトリーで伝送されます。
+:::
+
+<span id="r8fgh-w063" data-translation-unit="r8fgh-w063"></span>
+
+:::caution[注意]
+2. Telemetryポートは模型用バッテリー電圧のテレメトリー専用です。受信機への電源供給には使用できません。
+:::
+
+<span id="r8fgh-w064" data-translation-unit="r8fgh-w064"></span>
+
+原典印刷ページ：7
+
+<span id="r8fgh-w065" data-translation-unit="r8fgh-w065"></span>
+
+### 6. サブID
+
+<span id="r8fgh-w066" data-translation-unit="r8fgh-w066"></span>
+
+RC8Xは複数の受信機とバインドできます。RC8Xと複数の受信機のバインドが成功し、RC8Xとバインド済みのすべての機器の電源を同時に入れた場合、次の2通りの使用方法があります。
+
+<span id="r8fgh-w067" data-translation-unit="r8fgh-w067"></span>
+
+1. サブID機能をオフにすると、RC8Xで複数の機器を同時に操作できます。
+
+<span id="r8fgh-w068" data-translation-unit="r8fgh-w068"></span>
+
+2. サブID機能をオンにすると、選択したサブIDに応じて特定の機器を操作できます。RC8Xには16グループのサブIDがあり、各IDが受信機1台に対応します。先にサブIDを設定しておくと、すべての機器の電源が入っている状態でも、サブID機能でそのうち1台を操作できます。このとき、ほかの機器は待機状態になります。
+
+<span id="r8fgh-w069" data-translation-unit="r8fgh-w069"></span>
+
+例：RC8Xをトラックと車にバインドして、すべての電源を入れます。まずRC8Xで車をトラックの荷台まで走らせ、その後トラックの受信機IDに切り替えて、車を目的地まで運び戻します。
+
+<span id="r8fgh-w070" data-translation-unit="r8fgh-w070"></span>
+
+### サブIDモードの設定手順
+
+<span id="r8fgh-w071" data-translation-unit="r8fgh-w071"></span>
+
+1. 「Subsidiary ID mode」の右側のボタンをタップし、「OFF」から「ON」に切り替えます。車や船に応じてID番号を設定し、各受信機のバインドとパラメータ設定を完了します。
+
+<span id="r8fgh-w072" data-translation-unit="r8fgh-w072"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p8-f1.jpeg" width={385} height={159} figureId="r8fgh-p8-f1" alt={"サブIDモードをONにし、ID_1を選択した設定例。"} caption={"サブIDモードをONにし、ID_1を選択した設定例。"} />
+
+<span id="r8fgh-w073" data-translation-unit="r8fgh-w073"></span>
+
+2. 設定が完了すると、RC8Xのメイン画面に対応するID番号（例：ID_1）が表示されます。「−」または「＋」をタップするとID番号を変更でき、「Reset」をタップするとID_0に戻ります。
+
+<span id="r8fgh-w074" data-translation-unit="r8fgh-w074"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p8-f2.jpeg" width={471} height={177} figureId="r8fgh-p8-f2" alt={"サブID設定後のホーム画面例。"} caption={"サブID設定後のホーム画面例。"} />
+
+<span id="r8fgh-w075" data-translation-unit="r8fgh-w075"></span>
+
+:::caution[注意]
+注意：RC8XでサブID機能を使用する場合は、サブIDを切り替えた後、現在のサブIDの模型の受信機にプロトコルが一致しているか確認してください。誤った受信機プロトコルを選択すると、バインドが失われます。
+:::
+
+<span id="r8fgh-w076" data-translation-unit="r8fgh-w076"></span>
+
+原典印刷ページ：8
+
+<span id="r8fgh-w077" data-translation-unit="r8fgh-w077"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p9-f1.jpeg" width={473} height={658} figureId="r8fgh-p9-f1" alt={"サブIDと受信機プロトコルを確認する画面例。"} caption={"サブIDと受信機プロトコルを確認する画面例。"} />
+
+:::note[原典について]
+原典の受信機設定画面のヒントにはR8FG_V1.0と記載されています。R8FGHへ型番を推測で置換せず、他の受信機のUI説明として保持します。本文のR8FGHのプロトコル条件とは区別してください。
+:::
+
+<span id="r8fgh-w078" data-translation-unit="r8fgh-w078"></span>
+
+### 7. 動作モード
+
+<span id="r8fgh-w079" data-translation-unit="r8fgh-w079"></span>
+
+R8FGHはジャイロを内蔵し、PWM信号だけでなくSBUS信号も出力できます。通常のPWMモード、SBUSモード、ジャイロモード、ジャイロ＋SBUSモードの4種類があります。各モードのチャンネル信号は次のとおりです。
+
+<span id="r8fgh-w080" data-translation-unit="r8fgh-w080"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w081" data-translation-unit="r8fgh-w081"></span>
+
+### 7.1 動作モードの設定
+
+<span id="r8fgh-w082" data-translation-unit="r8fgh-w082"></span>
+
+ジャイロのオン／オフ：2秒以内にバインドボタンを3回短く押すと、ジャイロのオン／オフが切り替わり、LEDの色も切り替わります。
+
+<span id="r8fgh-w083" data-translation-unit="r8fgh-w083"></span>
+
+ジャイロの動作方向の切り替え：2秒以内にバインドボタンを2回短く押すと、ジャイロの動作方向が切り替わります。
+
+<span id="r8fgh-w084" data-translation-unit="r8fgh-w084"></span>
+
+SBUSのオン／オフ：バインドボタンを1回短く押すとSBUSのオン／オフが切り替わり、LEDの色も切り替わります。SBUS信号を有効にすると、CH1～CH7はPWM信号、CH8はSBUS信号を出力します。
+
+<span id="r8fgh-w085" data-translation-unit="r8fgh-w085"></span>
+
+原典印刷ページ：9
+
+<span id="r8fgh-w087" data-translation-unit="r8fgh-w087"></span>
+
+### 7.2 各動作モードのLED表示色
+
+<span id="r8fgh-w088" data-translation-unit="r8fgh-w088"></span>
+
+|動作モード|PWMモード|ジャイロモード|SBUSモード|ジャイロ＋SBUSモード|
+|---|---|---|---|---|
+|表示色|緑|赤|青|赤＋青|
+
+<span id="r8fgh-w089" data-translation-unit="r8fgh-w089"></span>
+
+### 8. ジャイロの概要
+
+<span id="r8fgh-w090" data-translation-unit="r8fgh-w090"></span>
+
+### 8.1 ジャイロ機能
+
+<span id="r8fgh-w091" data-translation-unit="r8fgh-w091"></span>
+
+R8FGHはジャイロを内蔵しています。高性能ジャイロはソフトウェアフィルターとPIDアルゴリズムを採用し、感度を迅速かつ正確に補正して安定性を高めます。さまざまな模型に柔軟に対応し、ドリフトカーでも本格的な性能を発揮できます。
+
+<span id="r8fgh-w092" data-translation-unit="r8fgh-w092"></span>
+
+### 8.2 ジャイロの有効化
+
+<span id="r8fgh-w093" data-translation-unit="r8fgh-w093"></span>
+
+R8FGHのジャイロ機能は既定でオフです。内蔵ジャイロはセルフチェックを行うため、電源を入れるときはR8FGHを静止させておくことが重要です。赤色LEDがジャイロの状態を示し、赤色LEDの消灯はジャイロなしを示します。バインドボタンを3回（各間隔1秒未満）押すと、赤色LEDが3回点滅し、ジャイロが有効になったことを示します。
+
+<span id="r8fgh-w094" data-translation-unit="r8fgh-w094"></span>
+
+:::caution[注意]
+注意：受信機に接続したサーボが動き続けることがありますが、ジャイロ機能がオンの場合、サーボの操舵角を自動的に補正するためで、正常です。この機能が不要な場合は、ジャイロをオフにできます。
+:::
+
+<span id="r8fgh-w095" data-translation-unit="r8fgh-w095"></span>
+
+:::caution[注意]
+受信機を動かしていないのにサーボが動き続ける場合、次の2つの原因があります。
+:::
+
+<span id="r8fgh-w096" data-translation-unit="r8fgh-w096"></span>
+
+:::caution[注意]
+① サーボが受信機のSBUSチャンネルに接続されています。標準サーボはPWM信号入力のみに対応するため、CH1/2/3/4/5/6/7に接続し直してください。
+:::
+
+<span id="r8fgh-w097" data-translation-unit="r8fgh-w097"></span>
+
+:::caution[注意]
+② ジャイロ感度が高すぎます。DL1スイッチを回して感度を下げてください。
+:::
+
+<span id="r8fgh-w098" data-translation-unit="r8fgh-w098"></span>
+
+### 8.3 ジャイロのリバース
+
+<span id="r8fgh-w099" data-translation-unit="r8fgh-w099"></span>
+
+ジャイロを正方向に設定し、車体を左右に向けて動作を確認します。車体を右へ向けると車輪は左へ、車体を左へ向けると車輪は右へ動きます。逆に動作する場合は、バインドボタンを2回押します。赤色LEDが2回点滅し、ジャイロのリバースが修正されます。
+
+<span id="r8fgh-w100" data-translation-unit="r8fgh-w100"></span>
+
+### 8.4 ジャイロ感度の調整
+
+<span id="r8fgh-w101" data-translation-unit="r8fgh-w101"></span>
+
+RC8Xでは、既定でDL1/PS3ノブスイッチが操作するCH8でジャイロ感度を調整します。DL1/PS3ノブを時計回りに回すと感度が上がり、反時計回りで下がります。ノブを回すと画面上部に黄色い背景の案内が表示され、チャンネルの値も変化します。＋100に近いほど感度が高くなります。値が0の場合はジャイロ機能がオフです。他のスイッチを割り当てたり、設定画面で調整したりすることもできます。
+
+<span id="r8fgh-w102" data-translation-unit="r8fgh-w102"></span>
+
+原典印刷ページ：10
+
+<span id="r8fgh-w103" data-translation-unit="r8fgh-w103"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p11-f1.jpeg" width={393} height={399} figureId="r8fgh-p11-f1" alt={"RC8XのGyro mixing画面。感度調整スイッチDL1の割当例。"} caption={"RC8XのGyro mixing画面。感度調整スイッチDL1の割当例。"} />
+
+<span id="r8fgh-w104" data-translation-unit="r8fgh-w104"></span>
+
+RC4GS/RC6GSでは、既定でVRロータリースイッチがジャイロ感度を操作します。調整時は割合が表示され、割合が大きいほど感度が高くなります。VRをほかの機能に割り当てている場合は、メニューのGYRO設定でMODEをSTDに変更すると、Dec(-)とInc(-)ボタンで感度を調整できます。
+
+:::note[原典について]
+原典の感度調整ボタン表記はDec(-)とInc(-)です。Incの符号を推測で訂正せず原表記を保持しています。実機表示は未確認です。
+:::
+
+<span id="r8fgh-w105" data-translation-unit="r8fgh-w105"></span>
+
+### 9. R8FGHの仕様
+
+<span id="r8fgh-w106" data-translation-unit="r8fgh-w106"></span>
+
+|項目|R8FGH受信機|
+|---|---|
+|寸法|長さ × 幅 × 高さ＝35 × 24 × 13.5 mm（1.38 × 0.94 × 0.53インチ）|
+|重量|10.5 g（0.37 oz）|
+|チャンネル|8チャンネル|
+|アンテナ長|205 mm（8.07インチ）|
+|操縦距離|地上600 m（1968.5 ft）。障害物と干渉のない場所で最大距離を測定。|
+|動作電流|35 mA（5 V）|
+|動作電圧|3～12 V|
+|信号出力|SBUS＆PWM|
+
+<span id="r8fgh-w107" data-translation-unit="r8fgh-w107"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r8fgh-w108" data-translation-unit="r8fgh-w108"></span>
+
+|項目|仕様（続き）|
+|---|---|
+|対応模型|車（クローラー／戦車／キャタピラー車を含む）／船／ロボット|
+|ジャイロ|ジャイロ内蔵、感度調整可能|
+|防滴|防水等級IPX4|
+|応答遅延|3 ms、4 ms、14 msから選択|
+|対応送信機|RC8X/RC6GS V3/RC4GS V3/RC6GS V2/RC4GS V2/RC6GS（3ポジションスイッチ版）/RC4GS（P.D AFTER 180101の版）/T8FB(BT)/T8FB(OTG)/T8S(BT)/T8S(OTG)|
+
+<span id="r8fgh-w109" data-translation-unit="r8fgh-w109"></span>
+
+原典印刷ページ：11
+
+<span id="r8fgh-w110" data-translation-unit="r8fgh-w110"></span>
+
+### 10. アンテナ取り付け時の注意
+
+<span id="r8fgh-w111" data-translation-unit="r8fgh-w111"></span>
+
+信号伝送を最大限に活かすため、次の事項を強く推奨します。
+
+<span id="r8fgh-w112" data-translation-unit="r8fgh-w112"></span>
+
+(1) 模型を操作する前にRSSI（受信信号強度表示）をテストしてください。方法は https://www.radiolink.com/newsinfo/561239.html を参照してください。
+
+<span id="r8fgh-w113" data-translation-unit="r8fgh-w113"></span>
+
+:::caution[注意]
+(2) 模型を操作する前に、受信機と送信機のアンテナを確認してください。受信機の灰色の線は同軸ケーブルで、先端の長さ約4～5 cmの透明な線がアンテナです（下図参照）。透明な線が切れたり損傷したりすると、操縦距離に直接影響します。異常が見つかった場合は、速やかに受信機アンテナを交換してください。
+:::
+
+<span id="r8fgh-w114" data-translation-unit="r8fgh-w114"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p12-f1.jpeg" width={1000} height={270} figureId="r8fgh-p12-f1" alt={"アンテナ、同軸ケーブル、バインドボタンの位置。"} caption={"アンテナ、同軸ケーブル、バインドボタンの位置。"} />
+
+<span id="r8fgh-w115" data-translation-unit="r8fgh-w115"></span>
+
+(3) アンテナはできるだけまっすぐにしてください。曲がっていると有効操縦距離が短くなります。
+
+<span id="r8fgh-w116" data-translation-unit="r8fgh-w116"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p12-f2.jpeg" width={700} height={383} figureId="r8fgh-p12-f2" alt={"2本のアンテナを90°の角度に配置する例。"} caption={"2本のアンテナを90°の角度に配置する例。"} />
+
+<span id="r8fgh-w117" data-translation-unit="r8fgh-w117"></span>
+
+(4) 右図のように、2本のアンテナを90°の角度に配置してください。
+
+<span id="r8fgh-w118" data-translation-unit="r8fgh-w118"></span>
+
+(5) 大型の模型には信号の放射に影響する金属部品が含まれる場合があります。その場合は、どのような状況でも最良の信号状態を保つため、アンテナを模型の両側に配置してください。
+
+<span id="r8fgh-w119" data-translation-unit="r8fgh-w119"></span>
+
+:::caution[注意]
+(6) アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に折り曲げないでください。
+:::
+
+<span id="r8fgh-w120" data-translation-unit="r8fgh-w120"></span>
+
+(7) アンテナをモーター、ESC、その他の干渉源となり得るものから離してください。
+
+<span id="r8fgh-w121" data-translation-unit="r8fgh-w121"></span>
+
+(8) 受信機の取り付け時は、振動を防ぐためスポンジや発泡材を使用することを推奨します。
+
+<span id="r8fgh-w122" data-translation-unit="r8fgh-w122"></span>
+
+:::caution[注意]
+(9) 受信機には高精度な電子部品が含まれています。強い振動や高温を避けてください。
+:::
+
+<span id="r8fgh-w123" data-translation-unit="r8fgh-w123"></span>
+
+(10) 受信機を保護するため、RC用の発泡材やゴム布などの専用防振材で包みます。密閉性の高いビニール袋に入れることで、制御不能の原因となり得る湿気やほこりを防げます。
+
+<span id="r8fgh-w124" data-translation-unit="r8fgh-w124"></span>
+
+原典印刷ページ：12
+
+<span id="r8fgh-w125" data-translation-unit="r8fgh-w125"></span>
+
+### テクニカルサポート
+
+<span id="r8fgh-w126" data-translation-unit="r8fgh-w126"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p13-f1.jpeg" width={300} height={300} figureId="r8fgh-p13-f1" alt={"R8FGHユーザーマニュアルへのQRコード。"} caption={"R8FGHユーザーマニュアルへのQRコード。"} />
+
+<span id="r8fgh-w127" data-translation-unit="r8fgh-w127"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p13-f2.jpeg" width={193} height={191} figureId="r8fgh-p13-f2" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="r8fgh-w128" data-translation-unit="r8fgh-w128"></span>
+
+<ManualFigure src="/assets/radiolink/r8fgh/web-ja-v1/r8fgh-p13-f3.jpeg" width={300} height={300} figureId="r8fgh-p13-f3" alt={"R8FGHチュートリアルへのQRコード。"} caption={"R8FGHチュートリアルへのQRコード。"} />
+
+<span id="r8fgh-w129" data-translation-unit="r8fgh-w129"></span>
+
+Facebook MessengerでRadioLink RLに連絡／R8FGHユーザーマニュアル／R8FGHチュートリアル
+
+<span id="r8fgh-w130" data-translation-unit="r8fgh-w130"></span>
+
+上記の情報で問題が解決しない場合は、技術サポート after_service@radioLink.com.cn にメールで連絡することもできます。
+
+<span id="r8fgh-w131" data-translation-unit="r8fgh-w131"></span>
+
+本内容は変更される場合があります。R8FGHの最新版マニュアルは https://www.radiolink.com/r8fgh_manual からダウンロードしてください。
+
+<span id="r8fgh-w132" data-translation-unit="r8fgh-w132"></span>
+
+RadioLink製品をお選びいただき、重ねてありがとうございます。
+
+<span id="r8fgh-w133" data-translation-unit="r8fgh-w133"></span>
+
+原典印刷ページ：13

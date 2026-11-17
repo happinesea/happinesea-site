@@ -1437,8 +1437,8 @@
     "subcategoryLabel": "地上モデル用受信機",
     "description": "Radiolinkの地上モデル向け受信機です。",
     "officialUrl": "https://www.radiolink.com/r16sm",
-    "detailPath": null,
-    "status": "detail_preparing",
+    "detailPath": "/radiolink/r16sm/",
+    "status": "detail_available",
     "image": {
       "src": "/assets/radiolink/catalogue/r16sm.webp",
       "sourceUrl": "https://www.radiolink.com/87abe967e2000b15bf4a6fca1a3b241c.jpg",
@@ -1479,8 +1479,8 @@
     "subcategoryLabel": "地上モデル用受信機",
     "description": "Radiolinkの地上モデル向け受信機です。",
     "officialUrl": "https://www.radiolink.com/r8fgh",
-    "detailPath": null,
-    "status": "detail_preparing",
+    "detailPath": "/radiolink/r8fgh/",
+    "status": "detail_available",
     "image": {
       "src": "/assets/radiolink/catalogue/r8fgh.webp",
       "sourceUrl": "https://www.radiolink.com/fa2c9ddea45ff8695f141e5566fa3fd9.png",
@@ -1668,8 +1668,8 @@
     "subcategoryLabel": "地上モデル用受信機",
     "description": "Radiolinkの地上モデル向け受信機です。",
     "officialUrl": "https://www.radiolink.com/r4fgm",
-    "detailPath": null,
-    "status": "detail_preparing",
+    "detailPath": "/radiolink/r4fgm/",
+    "status": "detail_available",
     "image": {
       "src": "/assets/radiolink/catalogue/r4fgm.webp",
       "sourceUrl": "https://www.radiolink.com/c7f21211dfb277d02014ea19c40afcb2.jpg",
@@ -1689,8 +1689,8 @@
     "subcategoryLabel": "ELRS受信機",
     "description": "RadiolinkのELRS受信機です。",
     "officialUrl": "https://www.radiolink.com/er16",
-    "detailPath": null,
-    "status": "detail_preparing",
+    "detailPath": "/radiolink/er16-2-4g/",
+    "status": "detail_available",
     "image": {
       "src": "/assets/radiolink/catalogue/er16-2-4g.webp",
       "sourceUrl": "https://www.radiolink.com/1d7b62e5034a09f1cadeb05ca2dd739a.jpg",
