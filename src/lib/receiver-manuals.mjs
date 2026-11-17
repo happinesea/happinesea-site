@@ -3,7 +3,14 @@ import batch2 from '../data/manuals/receiver-web-batch2.json' with { type: 'json
 
 import batch3 from '../data/manuals/receiver-web-batch3.json' with { type: 'json' };
 
-const manuals = [...pilot.manuals, ...batch2.manuals, ...batch3.manuals];
+import batch4 from '../data/manuals/receiver-web-batch4.json' with { type: 'json' };
+
+const manuals = [
+  ...pilot.manuals,
+  ...batch2.manuals,
+  ...batch3.manuals,
+  ...batch4.manuals,
+];
 if (new Set(manuals.map((m) => m.product_id)).size !== manuals.length)
   throw new Error('Duplicate receiver manual scope');
 export default { manuals };

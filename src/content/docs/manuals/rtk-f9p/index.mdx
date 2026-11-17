@@ -1,0 +1,406 @@
+---
+title: RTK F9P 日本語取扱説明書
+description: Radiolink RTK F9P の公式英語取扱説明書に対応する日本語版です。
+product: rtk-f9p
+slug: manuals/rtk-f9p
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/174a72f96e7d0b5c02209fdf931f85e7.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/rtk-f9p/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink RTK F9P 公式英語取扱説明書（文書版・発行日不明、11頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="rtkf9p-w001" data-translation-unit="rtkf9p-w001"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p1-f1.jpeg" width={600} height={180} figureId="rtkf9p-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="rtkf9p-w002" data-translation-unit="rtkf9p-w002"></span>
+
+## RTK F9P
+
+<span id="rtkf9p-w003" data-translation-unit="rtkf9p-w003"></span>
+
+センチメートル級GNSSモジュール
+
+<span id="rtkf9p-w004" data-translation-unit="rtkf9p-w004"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p1-f2.jpeg" width={1471} height={1471} figureId="rtkf9p-p1-f2" alt={"RTK F9Pモジュールの外観。PWR、RTK、GPSの表示と、矢印の表示があります。"} caption={"RTK F9Pモジュールの外観。PWR、RTK、GPSの表示と、矢印の表示があります。"} />
+
+<span id="rtkf9p-w005" data-translation-unit="rtkf9p-w005"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p1-f3.jpeg" width={231} height={137} figureId="rtkf9p-p1-f3" alt={"原典の14＋表示。"} caption={"原典の14＋表示。"} />
+
+<span id="rtkf9p-w006" data-translation-unit="rtkf9p-w006"></span>
+
+## 目次
+
+<span id="rtkf9p-w007" data-translation-unit="rtkf9p-w007"></span>
+
+|項目|原典印刷ページ|
+|---|---:|
+|1. はじめに|2|
+|2. 技術パラメータ|2|
+|3. LEDとインターフェース|3|
+|4. ハードウェアの接続|5|
+|4.1 RTK基地局のハードウェア接続|5|
+|4.2 移動局のハードウェア接続|6|
+|5. Mission PlannerでのRTK基地局設定|7|
+|5.1 RTK基地局の構築|7|
+|5.2 RTK測位状態|9|
+
+<span id="rtkf9p-w008" data-translation-unit="rtkf9p-w008"></span>
+
+原典印刷ページ：1
+
+<span id="rtkf9p-w009" data-translation-unit="rtkf9p-w009"></span>
+
+## 1. はじめに
+
+<span id="rtkf9p-w010" data-translation-unit="rtkf9p-w010"></span>
+
+高精度ナビゲーション：ドローンによる地図作成や測量、高精度の離着陸など、多くのドローン用途では、従来のGNSSよりも高い精度が求められます。
+
+<span id="rtkf9p-w011" data-translation-unit="rtkf9p-w011"></span>
+
+RTK F9Pは、RadioLinkの4系統の衛星測位システムに対応するリアルタイムGNSSシステムです。2台のRTK F9Pモジュールを使用し、1台を機体側、もう1台を基地局側に使用します。
+
+<span id="rtkf9p-w012" data-translation-unit="rtkf9p-w012"></span>
+
+## 2. 技術パラメータ
+
+<span id="rtkf9p-w013" data-translation-unit="rtkf9p-w013"></span>
+
+|項目|値|
+|---|---|
+|受信機タイプ|RTK F9P|
+|GNSS|BeiDou、Galileo、GLONASS、GPS／QZSS|
+|同時動作するGNSS数|4|
+|GNSS帯域|GPS L1C/A L2C、GLONASS L1OF L2OF、GALILEO E1B/C E5b、BDS B1I B2I、QZSS L1C/A L2C|
+|ナビゲーション更新レート|最大RTK 20 Hz|
+|測位精度|RTK 0.01 m＋1 ppm CEP|
+|RTKサーベイイン時間|RTK＜10秒|
+|捕捉|コールドスタート24秒|
+|捕捉|アシストスタート2秒|
+|捕捉|再捕捉2秒|
+|感度|トラッキング・ナビゲーション：−167 dBm|
+|感度|コールドスタート：−148 dBm|
+|感度|ホットスタート：−157 dBm|
+|感度|再捕捉：−160 dBm|
+|ジャミング対策|アクティブCW検出・除去、オンボードフィルター|
+|スプーフィング対策|高度なスプーフィング対策アルゴリズム|
+
+:::note[原典について]
+仕様表のサーベイイン時間はRTK＜10秒ですが、後の節は基地局精度への収束に時間が必要で、高精度ほど長くなると説明しています。どの条件にも10秒未満で完了するという保証へ広げず、それぞれの原典記載と測位状態の説明を保持します。
+:::
+
+<span id="rtkf9p-w014" data-translation-unit="rtkf9p-w014"></span>
+
+原典印刷ページ：2
+
+<span id="rtkf9p-w015" data-translation-unit="rtkf9p-w015"></span>
+
+### インターフェース
+
+|項目|値|
+|---|---|
+|シリアル|UART×2|
+|USB|1|
+|アンテナタイプ|複数衛星システム・複数周波数対応アンテナ|
+|タイムパルス|原典表記：0.25hz～10mhzの範囲で設定可能（周波数単位の表記は確認待ち）|
+|プロトコル|NMEA、UBXバイナリ、RTCM 3.x|
+
+### その他の情報
+
+|項目|値|
+|---|---|
+|動作電圧|4.5～6 V|
+|動作温度|−40～＋85 °C|
+|寸法|31.5×48.5×9.3 mm|
+|重量|13 g|
+
+:::note[原典について]
+原典のTime Pulseは0.25hz～10mhzと小文字で記載されています。MHz／mHzへの読み替えを推測で確定せず、原表記を保持しています。周波数単位は確認待ちのため、この値を機器設定へ転用しないでください。本書の基地局・移動局の設定手順では、このタイムパルス値を使用していません。
+:::
+
+<span id="rtkf9p-w016" data-translation-unit="rtkf9p-w016"></span>
+
+## 3. LEDとインターフェース
+
+<span id="rtkf9p-w017" data-translation-unit="rtkf9p-w017"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p4-f1.jpeg" width={2480} height={1539} figureId="rtkf9p-p4-f1" alt={"正面のLED説明図。"} caption={"原典4頁の図"} />
+
+正面のLED説明図。
+
+|LED|状態|原典の説明|
+|---|---|---|
+|PWR|電源灯|Power light|
+|RTK|消灯|RTKに接続していない状態|
+|RTK|点滅|RTK測位成立|
+|GPS|常時点灯|測位未成立|
+|GPS|点滅|GPS測位成功|
+
+原図の正面図を示しています。
+
+:::note[原典について]
+LED図のRTK fixesをRTK測位成立として訳しています。この表示だけでFloat解とFixed解を区別できるとは断定せず、後節のMission Planner上の各測位状態の説明とは区別します。
+:::
+
+<span id="rtkf9p-w018" data-translation-unit="rtkf9p-w018"></span>
+
+原典印刷ページ：3
+
+<span id="rtkf9p-w019" data-translation-unit="rtkf9p-w019"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p5-f1.jpeg" width={2480} height={1947} figureId="rtkf9p-p5-f1" alt={"外周インターフェースの説明図。下側はType-C端子、上側はアンテナ端子です。"} caption={"原典5頁の図"} />
+
+外周インターフェースの説明図。下側はType-C端子、上側はアンテナ端子です。
+
+|側面|インターフェース|原図の上から下への表示順|
+|---|---|---|
+|左側|UART2|TX2、RX2、GND、5V|
+|右側|UART1|GND、SDA、SCL、TX1、RX1、5V|
+
+この表は原図の向きにおけるラベルの順序です。ピン番号は移動局接続節の表を参照します。
+
+<span id="rtkf9p-w020" data-translation-unit="rtkf9p-w020"></span>
+
+原典印刷ページ：4
+
+<span id="rtkf9p-w021" data-translation-unit="rtkf9p-w021"></span>
+
+## 4. ハードウェアの接続
+
+<span id="rtkf9p-w022" data-translation-unit="rtkf9p-w022"></span>
+
+### 4.1 RTK基地局のハードウェア接続
+
+<span id="rtkf9p-w023" data-translation-unit="rtkf9p-w023"></span>
+
+基地局モジュールをType-Cケーブルでパソコンへ接続し、データ通信モジュールの地上側をパソコンの別のUSBポートへ接続します。接続は下図のとおりです。
+
+:::note[原典について]
+原図のデータ通信モジュールには433MHzの表記があります。原典の構成例として保持し、日本国内での使用可否や法令適合を確認したこと、他の無線モジュールとの互換性を承認したことを意味しません。
+:::
+
+<span id="rtkf9p-w024" data-translation-unit="rtkf9p-w024"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p6-f1.jpeg" width={1470} height={832} figureId="rtkf9p-p6-f1" alt={"RTK基地局側の構成例。RTK F9Pを外部アンテナとパソコンへ接続し、地上側データ通信モジュールもパソコンへ接続しています。原図の通信モジュールには「Radio Telemetry」「433MHz」「Ground」と表示されています。"} caption={"RTK基地局側の構成例。RTK F9Pを外部アンテナとパソコンへ接続し、地上側データ通信モジュールもパソコンへ接続しています。原図の通信モジュールには「Radio Telemetry」「433MHz」「Ground」と表示されています。"} />
+
+:::note[原典について]
+原図のデータ通信モジュールには433MHzの表記があります。原典の構成例として保持し、日本国内での使用可否や法令適合を確認したこと、他の無線モジュールとの互換性を承認したことを意味しません。
+:::
+
+<span id="rtkf9p-w025" data-translation-unit="rtkf9p-w025"></span>
+
+:::caution[注意]
+注意：良好な衛星受信状態を得るため、基地局モジュールは屋外の、空が十分に開けた場所へ置いてください。三脚など、安定した高い台の上に設置してください。
+:::
+
+<span id="rtkf9p-w026" data-translation-unit="rtkf9p-w026"></span>
+
+Mission PlannerでRTK基地局を設定する必要があります。詳しくは「5. Mission PlannerでのRTK基地局設定」を参照してください。
+
+<span id="rtkf9p-w027" data-translation-unit="rtkf9p-w027"></span>
+
+原典印刷ページ：5
+
+<span id="rtkf9p-w028" data-translation-unit="rtkf9p-w028"></span>
+
+### 4.2 移動局のハードウェア接続
+
+<span id="rtkf9p-w029" data-translation-unit="rtkf9p-w029"></span>
+
+PIX6への接続
+
+:::note[原典について]
+原図のデータ通信モジュールには433MHzの表記があります。原典の構成例として保持し、日本国内での使用可否や法令適合を確認したこと、他の無線モジュールとの互換性を承認したことを意味しません。
+:::
+
+<span id="rtkf9p-w030" data-translation-unit="rtkf9p-w030"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p7-f1.jpeg" width={1471} height={1192} figureId="rtkf9p-p7-f1" alt={"移動局とPIX6の接続図。RTK F9PはPIX6の「GPS1」、機体側データ通信モジュールは「TELEM2」へ接続され、RTK F9Pには外部アンテナが接続されています。通信モジュールの表示は「Radio Telemetry」「433MHz」「Air」です。"} caption={"移動局とPIX6の接続図。RTK F9PはPIX6の「GPS1」、機体側データ通信モジュールは「TELEM2」へ接続され、RTK F9Pには外部アンテナが接続されています。通信モジュールの表示は「Radio Telemetry」「433MHz」「Air」です。"} />
+
+:::note[原典について]
+原図のデータ通信モジュールには433MHzの表記があります。原典の構成例として保持し、日本国内での使用可否や法令適合を確認したこと、他の無線モジュールとの互換性を承認したことを意味しません。
+:::
+
+<span id="rtkf9p-w031" data-translation-unit="rtkf9p-w031"></span>
+
+### ピン配置
+
+|ピン番号|UART1|
+|---|---|
+|1|5V|
+|2|GPS_RX（UART1_RX）|
+|3|GPS_TX（UART1_TX）|
+|4|SCL|
+|5|SDA|
+|6|GND|
+
+<span id="rtkf9p-w032" data-translation-unit="rtkf9p-w032"></span>
+
+原典印刷ページ：6
+
+<span id="rtkf9p-w033" data-translation-unit="rtkf9p-w033"></span>
+
+## 5. Mission PlannerでのRTK基地局設定
+
+<span id="rtkf9p-w034" data-translation-unit="rtkf9p-w034"></span>
+
+### 5.1 RTK基地局の構築
+
+<span id="rtkf9p-w035" data-translation-unit="rtkf9p-w035"></span>
+
+ArduPilotファームウェアでRTK差分測位システムを構築する場合は、Mission Plannerで基地局の測位設定とデータ転送を行います。基地局の測位設定中は、移動局とドローンを起動する必要はありません。
+
+<span id="rtkf9p-w036" data-translation-unit="rtkf9p-w036"></span>
+
+- Mission Plannerを開きます。
+- 初期設定へ入ります。
+- 「Optional Hardware」をクリックします。
+- 「RTK/GPS Inject」をクリックすると、次のページが表示されます。
+
+<span id="rtkf9p-w037" data-translation-unit="rtkf9p-w037"></span>
+
+注意：使用しているMission Plannerに「RTK/GPS Inject」がない場合は、Mission Plannerを最新版へ更新してください。
+
+:::note[原典について]
+原典のMission Planner画面は1.3.77と1.3.68の例を含みます。画面内の版・例示値・言語表示をそのまま保持し、現在の最新版または日本語実機表示を示すものと読み替えていません。
+:::
+
+<span id="rtkf9p-w038" data-translation-unit="rtkf9p-w038"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p8-f1.jpeg" width={730} height={412} figureId="rtkf9p-p8-f1" alt={"Mission Planner 1.3.77の「RTK/GPS Inject」設定画面例。左側の「Optional Hardware」から開き、ポート、「Connect」、「M8P/F9P autoconfig」、「Restart」を確認できます。図の例はボーレート115200、「SurveyIn Acc(m)」2.5、「Time(s)」40で、「Save Current Pos」も表示されています。これらの数値は原図の例示値です。"} caption={"Mission Planner 1.3.77の「RTK/GPS Inject」設定画面例。左側の「Optional Hardware」から開き、ポート、「Connect」、「M8P/F9P autoconfig」、「Restart」を確認できます。図の例はボーレート115200、「SurveyIn Acc(m)」2.5、「Time(s)」40で、「Save Current Pos」も表示されています。これらの数値は原図の例示値です。"} />
+
+:::note[原典について]
+原典のMission Planner画面は1.3.77と1.3.68の例を含みます。画面内の版・例示値・言語表示をそのまま保持し、現在の最新版または日本語実機表示を示すものと読み替えていません。
+:::
+
+<span id="rtkf9p-w039" data-translation-unit="rtkf9p-w039"></span>
+
+- 左上で基地局のポートを設定します。
+- 「Connect」をクリックします。
+- 「M8P/F9P autoconfig」にチェックを入れます。
+- 「Restart」をクリックします。Mission Plannerは入力したデータをRTK基地局へ転送し、基地局は新たな衛星探索と測位を開始します。
+
+<span id="rtkf9p-w040" data-translation-unit="rtkf9p-w040"></span>
+
+次のページが表示されます。
+
+<span id="rtkf9p-w041" data-translation-unit="rtkf9p-w041"></span>
+
+原典印刷ページ：7
+
+<span id="rtkf9p-w042" data-translation-unit="rtkf9p-w042"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p9-f1.jpeg" width={709} height={452} figureId="rtkf9p-p9-f1" alt={"Mission Plannerの基地局測位中の画面例。タイトルは1.3.68で、右側に「Position is invalid」「In Progress」「Duration」「Observation」「Current Acc」が表示され、下部に衛星ごとの信号強度の縦棒があります。"} caption={"Mission Plannerの基地局測位中の画面例。タイトルは1.3.68で、右側に「Position is invalid」「In Progress」「Duration」「Observation」「Current Acc」が表示され、下部に衛星ごとの信号強度の縦棒があります。"} />
+
+:::note[原典について]
+原典のMission Planner画面は1.3.77と1.3.68の例を含みます。画面内の版・例示値・言語表示をそのまま保持し、現在の最新版または日本語実機表示を示すものと読み替えていません。
+:::
+
+<span id="rtkf9p-w043" data-translation-unit="rtkf9p-w043"></span>
+
+- 「Position is invalid」：基地局がまだ有効な位置を取得していません。
+
+<span id="rtkf9p-w044" data-translation-unit="rtkf9p-w044"></span>
+
+- 「In Progress」：衛星探索が進行中です。
+
+<span id="rtkf9p-w045" data-translation-unit="rtkf9p-w045"></span>
+
+- 「Duration」：現在の衛星探索を実行している秒数です。
+
+<span id="rtkf9p-w046" data-translation-unit="rtkf9p-w046"></span>
+
+- 「Observation」：取得した観測数です。
+
+<span id="rtkf9p-w047" data-translation-unit="rtkf9p-w047"></span>
+
+- 「Current Acc」：現在の基地局が達成できる地理的な絶対精度です。Mission Plannerの下部にある緑の縦棒は、基地局が現在受信している衛星と信号強度を示します。基地局が希望する精度条件に達するまでには、一定の収束時間が必要です。より高い絶対精度が必要な場合は、さらに時間がかかることがあります。
+
+:::note[原典について]
+仕様表のサーベイイン時間はRTK＜10秒ですが、後の節は基地局精度への収束に時間が必要で、高精度ほど長くなると説明しています。どの条件にも10秒未満で完了するという保証へ広げず、それぞれの原典記載と測位状態の説明を保持します。
+:::
+
+<span id="rtkf9p-w048" data-translation-unit="rtkf9p-w048"></span>
+
+ヒント：通常、「Surveyin」を2.5～3.0に設定できます。値が小さいほど待ち時間が長くなります。基地局の精度が2.5 mでも、移動局で解を求めた後にはセンチメートル級の測位精度を得ることができます。RTK基地局の設定が正常に完了すると、Mission Plannerに次のページが表示されます。
+
+:::note[原典について]
+原典は基地局のCurrent Accを絶対精度として説明する一方、基地局2.5mでも移動局でセンチメートル級精度を得られると記載しています。両者を同じ精度指標と推測で統合せず、原典の説明として保持します。実測精度や絶対座標精度を独立に保証したものではありません。
+:::
+
+<span id="rtkf9p-w049" data-translation-unit="rtkf9p-w049"></span>
+
+原典印刷ページ：8
+
+<span id="rtkf9p-w050" data-translation-unit="rtkf9p-w050"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p10-f1.jpeg" width={709} height={452} figureId="rtkf9p-p10-f1" alt={"Mission Plannerの基地局設定完了時の画面例。基地局とGNSSの状態が緑になり、右側に「Position is valid」と経度・緯度が表示されています。原図タイトルは1.3.68です。"} caption={"Mission Plannerの基地局設定完了時の画面例。基地局とGNSSの状態が緑になり、右側に「Position is valid」と経度・緯度が表示されています。原図タイトルは1.3.68です。"} />
+
+:::note[原典について]
+原典のMission Planner画面は1.3.77と1.3.68の例を含みます。画面内の版・例示値・言語表示をそのまま保持し、現在の最新版または日本語実機表示を示すものと読み替えていません。
+:::
+
+<span id="rtkf9p-w051" data-translation-unit="rtkf9p-w051"></span>
+
+基地局の状態を示すインジケーターが緑になり、GPS、Glonass、Beidou、Galileoの各衛星システムの状態も緑になります。右側の欄には「Position is valid」と表示され、現在の経度と緯度が表示されます。
+
+<span id="rtkf9p-w052" data-translation-unit="rtkf9p-w052"></span>
+
+### 5.2 RTK測位状態
+
+<span id="rtkf9p-w053" data-translation-unit="rtkf9p-w053"></span>
+
+ペアになったデータ通信モジュールで同じMission Plannerへ接続すると、基地局のデータがデータ通信モジュールを通じてドローンのRTK移動局へ送られます。Mission Plannerでドローンの現在のGPS状態が「RTK Float」「RTK Fixed」「3D RTK」と表示され、RTK測位状態に入ったことを確認できます。
+
+<span id="rtkf9p-w054" data-translation-unit="rtkf9p-w054"></span>
+
+- 「RTK Float」はフロート解です。
+
+<span id="rtkf9p-w055" data-translation-unit="rtkf9p-w055"></span>
+
+- 「RTK Fixed」は固定解（フィックス解）です。
+
+<span id="rtkf9p-w056" data-translation-unit="rtkf9p-w056"></span>
+
+RTK Fixedはより高い精度を得られますが、周囲の環境について非常に厳しい条件があります。十分に良好な信号状態のときにだけ、RTK Fixed状態へ入ることができます。「3D RTK」は、中国語版Mission PlannerでRTK Float／RTK Fixedをまとめて表示する名称です。
+
+:::note[原典について]
+原典のMission Planner画面は1.3.77と1.3.68の例を含みます。画面内の版・例示値・言語表示をそのまま保持し、現在の最新版または日本語実機表示を示すものと読み替えていません。
+:::
+
+<span id="rtkf9p-w057" data-translation-unit="rtkf9p-w057"></span>
+
+原典印刷ページ：9
+
+<span id="rtkf9p-w058" data-translation-unit="rtkf9p-w058"></span>
+
+<ManualFigure src="/assets/radiolink/rtk-f9p/web-ja-v1/rtkf9p-p11-f1.jpeg" width={636} height={493} figureId="rtkf9p-p11-f1" alt={"中国語UIを含むフライト画面の原典例。赤枠内には「GPS: rtk Fixed」と表示されています。「Stabilize」や「Satcount: 31」も見えます。日本語の実機UIへ置き換えた図ではありません。"} caption={"中国語UIを含むフライト画面の原典例。赤枠内には「GPS: rtk Fixed」と表示されています。「Stabilize」や「Satcount: 31」も見えます。日本語の実機UIへ置き換えた図ではありません。"} />
+
+:::note[原典について]
+原典のMission Planner画面は1.3.77と1.3.68の例を含みます。画面内の版・例示値・言語表示をそのまま保持し、現在の最新版または日本語実機表示を示すものと読み替えていません。
+:::
+
+<span id="rtkf9p-w059" data-translation-unit="rtkf9p-w059"></span>
+
+原典印刷ページ：10

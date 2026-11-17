@@ -51,9 +51,11 @@ test('catalogue images are local official assets and detail links match implemen
     'r9ds',
     'rc8p',
     'rc8x',
+    'rtk-f9p',
     't12d',
+    'ts100-m8n',
   ]);
-  assert.equal(pending.length, 61);
+  assert.equal(pending.length, 59);
 
   for (const product of products) {
     assert.match(

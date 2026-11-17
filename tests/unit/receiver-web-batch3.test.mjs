@@ -14,7 +14,10 @@ test('batch3 copies retain independent provenance, untranslated original figures
       all.manuals.some((r) => r.product_id === m.product_id),
     ),
   );
-  assert.equal(all.manuals.length, 15);
+  assert.equal(
+    new Set(all.manuals.map((m) => m.product_id)).size,
+    all.manuals.length,
+  );
   const er16 = batch.manuals.find((m) => m.product_id === 'er16-2-4g');
   assert.equal(er16.inventory_product_id, 'er16');
   assert.equal(er16.model, 'ER16(2.4G)');

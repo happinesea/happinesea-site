@@ -47,7 +47,7 @@ export default defineConfig({
         root: { label: '日本語', lang: 'ja' },
       },
       sidebar: [
-        { label: '受信機 日本語取扱説明書', items: receiverManuals.manuals.map((m) => ({label:m.model,slug:m.route.slice(1,-1)})) },
+        { label: '受信機・GPS 日本語取扱説明書', items: receiverManuals.manuals.map((m) => ({label:m.model,slug:m.route.slice(1,-1)})) },
         ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map(manualSidebar),
         {
           label: 'RC4GS V2',

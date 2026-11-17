@@ -11,8 +11,14 @@ for (const manual of data.manuals) {
     page,
   }, testInfo) => {
     await page.goto(`manuals/${manual.product_id}/`);
-    await expect(page.locator('h1')).toContainText(manual.model);
-    if ('batch_id' in manual && manual.batch_id === 'receiver-web-batch3')
+    await expect(page.locator('h1')).toHaveText(
+      `${manual.model} 日本語取扱説明書`,
+    );
+    if (
+      'batch_id' in manual &&
+      (manual.batch_id === 'receiver-web-batch3' ||
+        manual.batch_id === 'receiver-web-batch4')
+    )
       await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
         'content',
         /noindex/,
@@ -20,7 +26,11 @@ for (const manual of data.manuals) {
     await expect(page.locator('[data-translation-unit]')).toHaveCount(
       manual.unit_ids.length,
     );
-    if ('batch_id' in manual && manual.batch_id === 'receiver-web-batch3')
+    if (
+      'batch_id' in manual &&
+      (manual.batch_id === 'receiver-web-batch3' ||
+        manual.batch_id === 'receiver-web-batch4')
+    )
       for (const cell of await page
         .locator('table :is(th, td):first-child')
         .all())
@@ -77,7 +87,11 @@ for (const manual of data.manuals) {
     });
     await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
     const screenshot = `.superpowers/receiver-web-qa/${manual.product_id}-${testInfo.project.name}.png`;
-    if ('batch_id' in manual && manual.batch_id === 'receiver-web-batch3')
+    if (
+      'batch_id' in manual &&
+      (manual.batch_id === 'receiver-web-batch3' ||
+        manual.batch_id === 'receiver-web-batch4')
+    )
       await captureManualPage(page, screenshot);
     else
       await page.screenshot({ path: screenshot, fullPage: true, scale: 'css' });
@@ -85,7 +99,11 @@ for (const manual of data.manuals) {
     await expect(page).toHaveURL(
       new RegExp(`/radiolink/${manual.product_id}/$`),
     );
-    if ('batch_id' in manual && manual.batch_id === 'receiver-web-batch3')
+    if (
+      'batch_id' in manual &&
+      (manual.batch_id === 'receiver-web-batch3' ||
+        manual.batch_id === 'receiver-web-batch4')
+    )
       await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
         'content',
         /noindex/,

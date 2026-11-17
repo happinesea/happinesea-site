@@ -1,0 +1,856 @@
+---
+title: R8FG 日本語取扱説明書
+description: Radiolink R8FG の公式英語取扱説明書に対応する日本語版です。
+product: r8fg
+slug: manuals/r8fg
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/45d0575b02f13c576f5d88e1288dd6b0.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r8fg/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R8FG 公式英語取扱説明書（文書版・発行日不明、12頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r8fg-w001" data-translation-unit="r8fg-w001"></span>
+
+## R8FG V2.1
+
+:::note[原典について]
+本書は表紙がR8FG V2.1の受信機単独原典です。本文に明示された旧版・製造日の条件は保持しますが、送信機セット資料や旧Knowledgeの別仕様を混ぜていません。
+:::
+
+<span id="r8fg-w002" data-translation-unit="r8fg-w002"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p1-f1.jpeg" width={800} height={800} figureId="r8fg-p1-f1" alt={"R8FG V2.1の製品写真。Blue/Purple-S.BUS＋PWM、3.0–12V/DC、Telemetryなどの原図表示を保持しています。"} caption={"R8FG V2.1の製品写真。Blue/Purple-S.BUS＋PWM、3.0–12V/DC、Telemetryなどの原図表示を保持しています。"} />
+
+<span id="r8fg-w003" data-translation-unit="r8fg-w003"></span>
+
+## （FHSS）
+
+<span id="r8fg-w004" data-translation-unit="r8fg-w004"></span>
+
+## 取扱説明書
+
+<span id="r8fg-w005" data-translation-unit="r8fg-w005"></span>
+
+双方向通信
+PWM・SBUS信号対応
+ジャイロ内蔵8チャンネル受信機
+
+<span id="r8fg-w006" data-translation-unit="r8fg-w006"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p2-f1.jpeg" width={289} height={58} figureId="r8fg-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w007" data-translation-unit="r8fg-w007"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w008" data-translation-unit="r8fg-w008"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w009" data-translation-unit="r8fg-w009"></span>
+
+RadioLinkの8チャンネル・デュアルアンテナ受信機R8FGをお買い上げいただき、ありがとうございます。
+
+<span id="r8fg-w010" data-translation-unit="r8fg-w010"></span>
+
+本製品の機能を十分に活用し、安全に使用するため、本書をよく読み、記載の手順に従って機器を設定してください。
+
+<span id="r8fg-w011" data-translation-unit="r8fg-w011"></span>
+
+操作中に問題が生じた場合は、以下のいずれかの方法でオンライン技術サポートをご利用ください。
+
+<span id="r8fg-w012" data-translation-unit="r8fg-w012"></span>
+
+1. after_service@radiolink.com.cnへメールを送信してください。できるだけ早く回答します。
+
+<span id="r8fg-w013" data-translation-unit="r8fg-w013"></span>
+
+2. 当社のFacebookページへプライベートメッセージを送信するか、YouTubeページへコメントしてください。
+
+<span id="r8fg-w014" data-translation-unit="r8fg-w014"></span>
+
+3. 販売店で購入した場合は、必要に応じて販売店へサポートや修理を依頼することもできます。
+
+<span id="r8fg-w015" data-translation-unit="r8fg-w015"></span>
+
+すべてのマニュアルとファームウェアは、RadioLink公式サイトwww.radiolink.comに掲載しています。チュートリアルも追加しています。最新情報は当社のFacebookやYouTubeでもご覧いただけます。
+
+<span id="r8fg-w016" data-translation-unit="r8fg-w016"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p2-f2.jpeg" width={300} height={300} figureId="r8fg-p2-f2" alt={"FacebookへのQRコード。"} caption={"FacebookへのQRコード。"} />
+
+<span id="r8fg-w017" data-translation-unit="r8fg-w017"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p2-f3.jpeg" width={300} height={300} figureId="r8fg-p2-f3" alt={"YouTubeへのQRコード。"} caption={"YouTubeへのQRコード。"} />
+
+<span id="r8fg-w018" data-translation-unit="r8fg-w018"></span>
+
+Facebook／YouTube
+
+<span id="r8fg-w019" data-translation-unit="r8fg-w019"></span>
+
+## 安全上の注意
+
+<span id="r8fg-w020" data-translation-unit="r8fg-w020"></span>
+
+:::caution[注意]
+悪天候時は模型を操作しないでください。視界不良により方向が分からなくなり、模型を制御できなくなるおそれがあります。
+:::
+
+<span id="r8fg-w021" data-translation-unit="r8fg-w021"></span>
+
+:::caution[注意]
+人混みや使用が禁止されている場所では、本製品を使用しないでください。
+:::
+
+<span id="r8fg-w022" data-translation-unit="r8fg-w022"></span>
+
+:::caution[注意]
+受信機を接続する前に、トリムレバーが0になっていることと、バッテリーが十分に充電されていることを必ず確認してください。
+:::
+
+<span id="r8fg-w023" data-translation-unit="r8fg-w023"></span>
+
+:::caution[注意]
+走行前には毎回、すべてのサーボと接続を確認してください。
+:::
+
+<span id="r8fg-w024" data-translation-unit="r8fg-w024"></span>
+
+:::caution[注意]
+電源を切るときは、必ず受信機を先に切ってから送信機を切ってください。
+:::
+
+<span id="r8fg-w025" data-translation-unit="r8fg-w025"></span>
+
+## 警告
+
+<span id="r8fg-w026" data-translation-unit="r8fg-w026"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、14歳未満の子どもには適していません。大人は本製品を子どもの手の届かない場所に保管し、子どものいる場所で使用するときは注意してください。
+:::
+
+<span id="r8fg-w027" data-translation-unit="r8fg-w027"></span>
+
+:::caution[注意]
+水や湿気がアンテナやスティックの隙間から送信機内部へ入り、模型の動作が不安定になったり、制御不能になったりするおそれがあります。競技などで雨天時の使用を避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+:::note[原典について]
+この防水注意は原典が送信機を対象として記載しています。受信機の防滴等級IPX4や水没への保証へ読み替えず、原文の対象を保持しています。
+:::
+
+<span id="r8fg-w028" data-translation-unit="r8fg-w028"></span>
+
+原典印刷ページ：1
+
+<span id="r8fg-w029" data-translation-unit="r8fg-w029"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p3-f1.jpeg" width={289} height={58} figureId="r8fg-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w030" data-translation-unit="r8fg-w030"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w031" data-translation-unit="r8fg-w031"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w032" data-translation-unit="r8fg-w032"></span>
+
+## 目次
+
+<span id="r8fg-w033" data-translation-unit="r8fg-w033"></span>
+
+1. R8FGの概要……3
+
+<span id="r8fg-w034" data-translation-unit="r8fg-w034"></span>
+
+2. 受信機プロトコルの選択……3
+
+<span id="r8fg-w035" data-translation-unit="r8fg-w035"></span>
+
+3. サーボスピード設定……4
+
+<span id="r8fg-w036" data-translation-unit="r8fg-w036"></span>
+
+4. バインド……4
+
+<span id="r8fg-w037" data-translation-unit="r8fg-w037"></span>
+
+5. テレメトリー……5
+
+<span id="r8fg-w038" data-translation-unit="r8fg-w038"></span>
+
+5.1 信号とRSSIのテレメトリー……6
+
+<span id="r8fg-w039" data-translation-unit="r8fg-w039"></span>
+
+5.2 模型用バッテリー電圧と受信機電圧のテレメトリー……6
+
+<span id="r8fg-w040" data-translation-unit="r8fg-w040"></span>
+
+6. サブID……7
+
+<span id="r8fg-w041" data-translation-unit="r8fg-w041"></span>
+
+7. 動作モード……8
+
+<span id="r8fg-w042" data-translation-unit="r8fg-w042"></span>
+
+7.1 動作モードの設定……9
+
+<span id="r8fg-w043" data-translation-unit="r8fg-w043"></span>
+
+7.2 動作モードとLED表示色……9
+
+<span id="r8fg-w044" data-translation-unit="r8fg-w044"></span>
+
+8. ジャイロの概要……9
+
+<span id="r8fg-w045" data-translation-unit="r8fg-w045"></span>
+
+8.1 ジャイロ機能……9
+
+<span id="r8fg-w046" data-translation-unit="r8fg-w046"></span>
+
+8.2 ジャイロの有効化……9
+
+<span id="r8fg-w047" data-translation-unit="r8fg-w047"></span>
+
+8.3 ジャイロリバース……9
+
+<span id="r8fg-w048" data-translation-unit="r8fg-w048"></span>
+
+8.4 ジャイロ感度の調整……10
+
+<span id="r8fg-w049" data-translation-unit="r8fg-w049"></span>
+
+9. R8FGの仕様……10
+
+<span id="r8fg-w050" data-translation-unit="r8fg-w050"></span>
+
+10. アンテナ取り付け時の注意……11
+
+<span id="r8fg-w051" data-translation-unit="r8fg-w051"></span>
+
+原典印刷ページ：2
+
+<span id="r8fg-w052" data-translation-unit="r8fg-w052"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p4-f1.jpeg" width={289} height={58} figureId="r8fg-p4-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w053" data-translation-unit="r8fg-w053"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w054" data-translation-unit="r8fg-w054"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w055" data-translation-unit="r8fg-w055"></span>
+
+## 1. R8FGの概要
+
+<span id="r8fg-w056" data-translation-unit="r8fg-w056"></span>
+
+RadioLink R8FGは、防滴仕様の2.4 GHz・8チャンネル受信機です。プロのドリフト走行向けにジャイロを内蔵し、高電圧サーボに対応します。
+
+<span id="r8fg-w057" data-translation-unit="r8fg-w057"></span>
+
+R8FGに対応するRadioLink送信機は、RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS（3ポジションスイッチ版）、RC4GS（製造日P.Dが180101より後の版）、T8FB(BT)、T8S(BT)、T8FB(OTG)、T8S(OTG)です。
+
+<span id="r8fg-w058" data-translation-unit="r8fg-w058"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p4-f2.jpeg" width={1000} height={500} figureId="r8fg-p4-f2" alt={"受信機の端子・各部名称。Reservedは未使用、Signalは信号、VCCは電源、GNDは接地を示します。CH1はステアリング、CH2はスロットル、CH3～CH7は補助、CH8は補助／SBUSです。バインドボタン（ID SET）と模型用バッテリー電圧のTelemetryポートも示しています。"} caption={"受信機の端子・各部名称。Reservedは未使用、Signalは信号、VCCは電源、GNDは接地を示します。CH1はステアリング、CH2はスロットル、CH3～CH7は補助、CH8は補助／SBUSです。バインドボタン（ID SET）と模型用バッテリー電圧のTelemetryポートも示しています。"} />
+
+<span id="r8fg-w059" data-translation-unit="r8fg-w059"></span>
+
+## 2. 受信機プロトコルの選択
+
+<span id="r8fg-w060" data-translation-unit="r8fg-w060"></span>
+
+R8FGをRC8X送信機で使用する場合は、最初にRC8Xで正しい受信機プロトコルを選択してからバインドしてください。RC8Xの「基本メニュー（Basic Menu）」→「受信機設定（Receiver setting）」で、FHSS V1またはFHSS V2を選択します（下図参照）。FHSS V1受信機のPWM出力分解能は2048、FHSS V2受信機は4096です。分解能が高いほど、サーボの動きをより細かい角度で制御できます。
+
+<span id="r8fg-w061" data-translation-unit="r8fg-w061"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p4-f3.jpeg" width={402} height={465} figureId="r8fg-p4-f3" alt={"「Receiver setting」のFHSS V1選択画面。ヒントはFHSS V1のPWM出力分解能2048、FHSS V2は4096で、R8FG_V1.0はFHSS V2非対応と説明しています。"} caption={"「Receiver setting」のFHSS V1選択画面。ヒントはFHSS V1のPWM出力分解能2048、FHSS V2は4096で、R8FG_V1.0はFHSS V2非対応と説明しています。"} />
+
+<span id="r8fg-w062" data-translation-unit="r8fg-w062"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p4-f4.jpeg" width={392} height={461} figureId="r8fg-p4-f4" alt={"「Receiver setting」のFHSS V2選択画面。「Servo Speed」は14 msです。FHSS V1はPWM出力分解能2048、FHSS V2は4096、R8FG_V1.0はFHSS V2非対応というヒントを表示しています。"} caption={"「Receiver setting」のFHSS V2選択画面。「Servo Speed」は14 msです。FHSS V1はPWM出力分解能2048、FHSS V2は4096、R8FG_V1.0はFHSS V2非対応というヒントを表示しています。"} />
+
+<span id="r8fg-w063" data-translation-unit="r8fg-w063"></span>
+
+図の「受信機リスト（Receivers List）」をクリックし、使用する受信機がFHSS V1とFHSS V2のどちらに対応するか確認してください。R8FG V1.0（製造日が2023年2月6日より前）はFHSS V1のみ対応し、FHSS V2には対応しません。R8FG V2.0以降（製造日が2023年2月6日以降）は、FHSS V1とFHSS V2の両方に対応します。模型を操作する前に、受信機プロトコルが正しく選択されていることを確認してください。誤った設定では、一部の機能が正常に動作しません。
+
+:::note[原典について]
+FHSS V2対応の製造日条件（2023年2月6日以降）と、3 ms／4 msデジタルサーボ対応の条件（V2.1または2023年4月26日以降）は別です。原典の版・製造日をそのまま保持し、同一条件として読み替えていません。
+:::
+
+<span id="r8fg-w064" data-translation-unit="r8fg-w064"></span>
+
+原典印刷ページ：3
+
+<span id="r8fg-w065" data-translation-unit="r8fg-w065"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p5-f1.jpeg" width={289} height={58} figureId="r8fg-p5-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w066" data-translation-unit="r8fg-w066"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w067" data-translation-unit="r8fg-w067"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w068" data-translation-unit="r8fg-w068"></span>
+
+## 3. サーボスピード設定
+
+<span id="r8fg-w069" data-translation-unit="r8fg-w069"></span>
+
+RC8XでFHSS V2を選択すると、画面に「サーボスピード（Servo Speed）」が表示されます（下図参照）。
+
+<span id="r8fg-w070" data-translation-unit="r8fg-w070"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p5-f2.jpeg" width={389} height={420} figureId="r8fg-p5-f2" alt={"FHSS V2で「Servo Speed: 14 ms」を表示した受信機設定画面。"} caption={"FHSS V2で「Servo Speed: 14 ms」を表示した受信機設定画面。"} />
+
+<span id="r8fg-w071" data-translation-unit="r8fg-w071"></span>
+
+### サーボスピードの設定方法
+
+<span id="r8fg-w072" data-translation-unit="r8fg-w072"></span>
+
+（1）送信機：RC8XのファームウェアをV1.1.5以降へ更新し、FHSS V2を選択すると、この設定項目が表示されます。サーボスピードは14 ms、4 ms、3 msから選択できます。既定値は14 ms（アナログサーボ用）です。4 msと3 msはデジタルサーボ用です。
+
+<span id="r8fg-w073" data-translation-unit="r8fg-w073"></span>
+
+（2）受信機：デジタルサーボを使用する場合は、4 msまたは3 msを選択する必要があります。使用する受信機がデジタルサーボに対応することを確認してください。R8FG V2.1と、製造日が2023年4月26日以降のR8FGがデジタルサーボに対応します。R8FG V1.0などの旧版はデジタルサーボに対応しません。旧版を使用して4 msや3 msを選択しても、既定の14 msで動作します。
+
+:::note[原典について]
+FHSS V2対応の製造日条件（2023年2月6日以降）と、3 ms／4 msデジタルサーボ対応の条件（V2.1または2023年4月26日以降）は別です。原典の版・製造日をそのまま保持し、同一条件として読み替えていません。
+:::
+
+<span id="r8fg-w074" data-translation-unit="r8fg-w074"></span>
+
+（3）状態表示：サーボスピードを切り替えたとき、受信機の緑LEDが2回点滅すれば、切り替えは成功です。切り替え時に緑LEDが点滅しなければ、切り替えに失敗したか、受信機がデジタルサーボに対応していません。
+
+<span id="r8fg-w075" data-translation-unit="r8fg-w075"></span>
+
+## 4. バインド
+
+<span id="r8fg-w076" data-translation-unit="r8fg-w076"></span>
+
+各受信機には固有のIDコードがあり、使用前に送信機とバインドする必要があります。バインドが完了するとIDコードは送信機に保存され、毎回バインドし直す必要はありません。新しくR8FGを購入した場合は、送信機で使用するためにバインドを行ってください。
+
+<span id="r8fg-w077" data-translation-unit="r8fg-w077"></span>
+
+### バインド手順
+
+<span id="r8fg-w078" data-translation-unit="r8fg-w078"></span>
+
+（1）RC8Xで正しい受信機プロトコルを選択します（「2. 受信機プロトコルの選択」を参照）。注意：RC6GSやRC4GSなど、RC8X以外の送信機を使用する場合は、直接手順2へ進みます。
+
+<span id="r8fg-w079" data-translation-unit="r8fg-w079"></span>
+
+（2）送信機と受信機を約60 cm離して置きます。
+
+<span id="r8fg-w080" data-translation-unit="r8fg-w080"></span>
+
+（3）送信機と受信機の電源を入れると、R8FGのLEDがゆっくり点滅し始めます。
+
+<span id="r8fg-w081" data-translation-unit="r8fg-w081"></span>
+
+（4）受信機の側面にある黒いバインドボタン（ID SET）を1秒より長く押してから離します。LEDが速く点滅し、バインド処理中であることを示します。
+
+<span id="r8fg-w082" data-translation-unit="r8fg-w082"></span>
+
+（5）LEDの点滅が止まり、常時点灯すればバインド完了です。送信機のIPS画面上部に電波マークが表示されます（右図参照）。成功しなかった場合はLEDがゆっくり点滅し続けるため、上記の手順を繰り返してください。
+
+<span id="r8fg-w083" data-translation-unit="r8fg-w083"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p5-f3.jpeg" width={770} height={300} figureId="r8fg-p5-f3" alt={"送信機ホーム画面上部の電波マークの表示位置。原図の画面例です。"} caption={"送信機ホーム画面上部の電波マークの表示位置。原図の画面例です。"} />
+
+<span id="r8fg-w084" data-translation-unit="r8fg-w084"></span>
+
+原典印刷ページ：4
+
+<span id="r8fg-w085" data-translation-unit="r8fg-w085"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p6-f1.jpeg" width={289} height={58} figureId="r8fg-p6-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w086" data-translation-unit="r8fg-w086"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w087" data-translation-unit="r8fg-w087"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w088" data-translation-unit="r8fg-w088"></span>
+
+:::caution[注意]
+注意：
+1. 送信機と受信機の電源が入っている状態で、バインドに失敗するか信号を失うと、R8FGのLEDが点滅し続けて知らせます。
+:::
+
+<span id="r8fg-w089" data-translation-unit="r8fg-w089"></span>
+
+:::caution[注意]
+2. 送信機と受信機が近すぎると、信号のブロックにより、バインドに失敗したり信号を失ったりする場合があります。バインド後も、RC8XとR8FGが例えば60 cm以内など近すぎる場合は、同様に信号を失うことがあります。さらに離すと、信号の喪失は自動的に解消します。
+:::
+
+<span id="r8fg-w090" data-translation-unit="r8fg-w090"></span>
+
+## 5. テレメトリー
+
+<span id="r8fg-w091" data-translation-unit="r8fg-w091"></span>
+
+R8FGは、RSSI、受信機電圧、模型用バッテリー電圧などのリアルタイムの飛行情報を返送できます。
+
+<span id="r8fg-w092" data-translation-unit="r8fg-w092"></span>
+
+この機能を使用するには、RC6GS（3ポジションスイッチ版）を、以下からダウンロードしたファームウェア「RC6GS_RadioLink_bin_1d15_V_6_1_2」へ更新してください。
+https://www.radiolink.com/rc6gs_firmware
+
+<span id="r8fg-w093" data-translation-unit="r8fg-w093"></span>
+
+または、2018年1月1日より後に製造されたRC4GSを、以下からダウンロードしたファームウェア「RC4GS_RX_RadioLink_bin_2f50_V_6_0_1」へ更新してください。
+https://www.radiolink.com/rc4gs_firmware
+
+<span id="r8fg-w094" data-translation-unit="r8fg-w094"></span>
+
+RC8X、RC6GS V3、RC6GS V2、RC4GS V3、RC4GS V2では、既定のファームウェアがテレメトリーに対応しています。
+
+<span id="r8fg-w095" data-translation-unit="r8fg-w095"></span>
+
+RC8XとR8FGの電源を入れます。バインドが成功し、テレメトリーケーブルが正しく接続されていれば、RC8Xのホーム画面に信号とその他のテレメトリー情報が表示されます。
+
+<span id="r8fg-w096" data-translation-unit="r8fg-w096"></span>
+
+RC8Xのホーム画面：
+
+<span id="r8fg-w097" data-translation-unit="r8fg-w097"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p6-f2.jpeg" width={347} height={521} figureId="r8fg-p6-f2" alt={"RC8Xホーム画面のテレメトリー表示例。RX 8.3 V、EXT 12.2 V、RSSI −10 dBmなどを表示しています。DT1はステアリングトリム、DT2はスロットルトリム、DT3はレート切替（Ratio Switch）、DT4はブレーキレート（Brake rate、brake1）、DL1はジャイロゲイン（Gyro gain）の原図表示です。"} caption={"RC8Xホーム画面のテレメトリー表示例。RX 8.3 V、EXT 12.2 V、RSSI −10 dBmなどを表示しています。DT1はステアリングトリム、DT2はスロットルトリム、DT3はレート切替（Ratio Switch）、DT4はブレーキレート（Brake rate、brake1）、DL1はジャイロゲイン（Gyro gain）の原図表示です。"} />
+
+<span id="r8fg-w098" data-translation-unit="r8fg-w098"></span>
+
+原典印刷ページ：5
+
+<span id="r8fg-w099" data-translation-unit="r8fg-w099"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p7-f1.jpeg" width={289} height={58} figureId="r8fg-p7-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w100" data-translation-unit="r8fg-w100"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w101" data-translation-unit="r8fg-w101"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w102" data-translation-unit="r8fg-w102"></span>
+
+### 5.1 信号とRSSIのテレメトリー
+
+<span id="r8fg-w103" data-translation-unit="r8fg-w103"></span>
+
+RC8XとR8FGの電源を入れてバインドします。成功すると、送信機のホーム画面に信号とRSSIが表示されます。
+
+<span id="r8fg-w104" data-translation-unit="r8fg-w104"></span>
+
+RC8Xのホーム画面：
+
+<span id="r8fg-w105" data-translation-unit="r8fg-w105"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p7-f2.jpeg" width={347} height={373} figureId="r8fg-p7-f2" alt={"RC8Xホーム画面でのRSSI表示位置。原図の値はRSSI −10 dBm、RX 8.3 V、EXT 12.2 Vです。"} caption={"RC8Xホーム画面でのRSSI表示位置。原図の値はRSSI −10 dBm、RX 8.3 V、EXT 12.2 Vです。"} />
+
+<span id="r8fg-w106" data-translation-unit="r8fg-w106"></span>
+
+距離を変えて試験した後、RSSIが指定した低い値になったときの警報を設定できます。「テレメトリー設定（Telemetry setting）」→「受信機信号（Receiver signal）」で、RSSI警報値や警報音の種類などを設定します。
+
+<span id="r8fg-w107" data-translation-unit="r8fg-w107"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p7-f3.jpeg" width={471} height={448} figureId="r8fg-p7-f3" alt={"受信機信号（Receiver signal）画面の原典例。現在信号（Current signal）は0 dBm、警報音の種類（Alarm sound type）はNULL、振動タイプ（Vibration type）はInhibit、警報しきい値（Alarm limit）は−40 dBm、警報間隔（Alarm interval）は10 Sと表示されています。画像中の数値は設定画面例です。"} caption={"受信機信号（Receiver signal）画面の原典例。現在信号（Current signal）は0 dBm、警報音の種類（Alarm sound type）はNULL、振動タイプ（Vibration type）はInhibit、警報しきい値（Alarm limit）は−40 dBm、警報間隔（Alarm interval）は10 Sと表示されています。画像中の数値は設定画面例です。"} />
+
+<span id="r8fg-w108" data-translation-unit="r8fg-w108"></span>
+
+:::caution[注意]
+注意：R8FGはデュアルアンテナ受信機です。送信機とR8FGの距離が60 cmのとき、RSSI値が0～−30 dBmの範囲であれば正常です。値が0に近いほど信号が強いことを示します。RadioLink送信機のRSSI値の範囲は0～−99 dBmです。絶対値が大きいほど信号は弱くなります。例えば、−90 dBmのときの信号は、−75 dBmのときより弱くなります。
+:::
+
+<span id="r8fg-w109" data-translation-unit="r8fg-w109"></span>
+
+### 5.2 模型用バッテリー電圧と受信機電圧のテレメトリー
+
+<span id="r8fg-w110" data-translation-unit="r8fg-w110"></span>
+
+受信機電圧に加え、模型用バッテリー電圧（最大8Sリチウムバッテリー、33.6 V）もリアルタイムで返送できます。必要に応じて低電圧警報値を設定できます。「テレメトリー設定（Telemetry setting）」→「模型用バッテリー電圧（Engine battery voltage）」で、警報電圧や警報音の種類などを設定します。通常は1セル当たり3.7 Vを警報値にします。例えば、模型用の車に3Sリチウムバッテリーを使用する場合、警報値は3.7 V×3S＝11.1 Vです。
+
+<span id="r8fg-w111" data-translation-unit="r8fg-w111"></span>
+
+原典印刷ページ：6
+
+<span id="r8fg-w112" data-translation-unit="r8fg-w112"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p8-f1.jpeg" width={289} height={58} figureId="r8fg-p8-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w113" data-translation-unit="r8fg-w113"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w114" data-translation-unit="r8fg-w114"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w115" data-translation-unit="r8fg-w115"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p8-f2.jpeg" width={476} height={439} figureId="r8fg-p8-f2" alt={"模型用バッテリー電圧（Engine battery voltage）画面の原典例。現在電圧（Current voltage）は0.0 V、警報音の種類（Alarm sound type）はNULL、振動タイプ（Vibration type）はInhibit、警報電圧（Alarm voltage）は0.0 V、警報間隔（Alarm interval）は10 Sと表示されています。画像中の値は設定画面例です。"} caption={"模型用バッテリー電圧（Engine battery voltage）画面の原典例。現在電圧（Current voltage）は0.0 V、警報音の種類（Alarm sound type）はNULL、振動タイプ（Vibration type）はInhibit、警報電圧（Alarm voltage）は0.0 V、警報間隔（Alarm interval）は10 Sと表示されています。画像中の値は設定画面例です。"} />
+
+<span id="r8fg-w116" data-translation-unit="r8fg-w116"></span>
+
+図のように、バッテリーケーブルのオス側をESCに、メス側をバッテリーに接続し、JSTコネクター付きの線をR8FG／R7FG／R8FのTelemetry（＋／−）ポートに接続することで、模型用バッテリー電圧を返送できます。追加モジュールは不要です。
+
+<span id="r8fg-w117" data-translation-unit="r8fg-w117"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p8-f3.jpeg" width={1000} height={550} figureId="r8fg-p8-f3" alt={"模型用バッテリー電圧の返送ケーブル接続図。バッテリー、モーター、ESC、サーボ、受信機を示します。Telemetryポートを受信機への給電に使用しない注意と合わせて参照してください。"} caption={"模型用バッテリー電圧の返送ケーブル接続図。バッテリー、モーター、ESC、サーボ、受信機を示します。Telemetryポートを受信機への給電に使用しない注意と合わせて参照してください。"} />
+
+<span id="r8fg-w118" data-translation-unit="r8fg-w118"></span>
+
+:::caution[注意]
+注意：
+1. R8FGの8チャンネルすべてに逆接保護回路があり、重要な部品を逆接から保護します。ただし、付属のバッテリー接続用JSTコネクターは逆極性で接続しないでください。逆接すると、誤った電圧値がテレメトリーで返送されます。
+:::
+
+<span id="r8fg-w119" data-translation-unit="r8fg-w119"></span>
+
+:::caution[注意]
+2. Telemetryポートは模型用バッテリー電圧のテレメトリー専用です。受信機への給電には使用できません。
+:::
+
+<span id="r8fg-w120" data-translation-unit="r8fg-w120"></span>
+
+## 6. サブID
+
+<span id="r8fg-w121" data-translation-unit="r8fg-w121"></span>
+
+RC8Xは複数の受信機とバインドできます。RC8Xと複数の受信機をバインドし、RC8Xとすべての受信機の電源を同時に入れた場合、以下の2通りの使い方があります。
+
+<span id="r8fg-w122" data-translation-unit="r8fg-w122"></span>
+
+1. サブID機能をOFFにすると、RC8Xで複数の機器を同時に操作できます。
+
+<span id="r8fg-w123" data-translation-unit="r8fg-w123"></span>
+
+2. サブID機能をONにすると、選択したサブIDに対応する機器だけをRC8Xで操作できます。RC8Xには16組のサブIDがあり、各IDが1台の受信機に対応します。先にサブIDを設定してください。すべての機器の電源を入れた状態で、サブID機能により1台を操作し、その間、ほかの機器は待機します。
+
+<span id="r8fg-w124" data-translation-unit="r8fg-w124"></span>
+
+例として、RC8Xをトラックと車にバインドして、すべての電源を入れます。まずRC8Xで車をトラックの荷台へ走らせ、次に受信機IDをトラックへ切り替えて、車を目的地まで運びます。
+
+<span id="r8fg-w125" data-translation-unit="r8fg-w125"></span>
+
+原典印刷ページ：7
+
+<span id="r8fg-w126" data-translation-unit="r8fg-w126"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p9-f1.jpeg" width={289} height={58} figureId="r8fg-p9-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w127" data-translation-unit="r8fg-w127"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w128" data-translation-unit="r8fg-w128"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w129" data-translation-unit="r8fg-w129"></span>
+
+### サブIDモードの設定手順
+
+<span id="r8fg-w130" data-translation-unit="r8fg-w130"></span>
+
+1. 「サブIDモード（Subsidiary ID mode）」の右側のボタンをタップし、「OFF」から「ON」に切り替えます。車やボートに合わせてID番号を設定し、各受信機のバインドとパラメータ設定を完了します。
+
+<span id="r8fg-w131" data-translation-unit="r8fg-w131"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p9-f2.jpeg" width={385} height={159} figureId="r8fg-p9-f2" alt={"サブIDモード（Subsidiary ID mode）でサブIDをONにし、サブID設定（Subsidiary ID setting）をID_1にした画面例。"} caption={"サブIDモード（Subsidiary ID mode）でサブIDをONにし、サブID設定（Subsidiary ID setting）をID_1にした画面例。"} />
+
+<span id="r8fg-w132" data-translation-unit="r8fg-w132"></span>
+
+2. サブIDモードの設定が完了すると、RC8Xのメイン画面に対応するID番号（例：ID_1）が表示されます。「−」または「＋」をクリックしてID番号を変更できます。「Reset」をクリックするとID_0に戻ります。
+
+<span id="r8fg-w133" data-translation-unit="r8fg-w133"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p9-f3.jpeg" width={471} height={177} figureId="r8fg-p9-f3" alt={"RC8Xのメイン画面上部にID_1が表示された例。"} caption={"RC8Xのメイン画面上部にID_1が表示された例。"} />
+
+<span id="r8fg-w134" data-translation-unit="r8fg-w134"></span>
+
+## 7. 動作モード
+
+<span id="r8fg-w135" data-translation-unit="r8fg-w135"></span>
+
+R8FGはジャイロを内蔵し、PWM信号とSBUS信号を出力できます。通常のPWM、SBUS、ジャイロ、ジャイロ＋SBUSの4つの動作モードがあります。各モードのチャンネル信号は以下のとおりです。
+
+<span id="r8fg-w136" data-translation-unit="r8fg-w136"></span>
+
+|チャンネル|PWMモード|SBUSモード|ジャイロモード|ジャイロ＋SBUSモード|備考|
+|---|---|---|---|---|---|
+|Telemetry|模型用バッテリー電圧テレメトリーポート（＋／−）|同左|同左|同左|2S～8Sのバッテリー電圧テレメトリー専用。受信機への給電は禁止。|
+|1|PWM|PWM|PWM|PWM|ステアリング|
+|2|PWM|PWM|PWM|PWM|スロットル|
+|3|PWM|PWM|PWM|PWM|補助|
+|4|PWM|PWM|PWM|PWM|補助|
+|5|PWM|PWM|PWM|PWM|補助|
+|6|PWM|PWM|PWM|PWM|補助|
+|7|PWM|PWM|PWM|PWM|補助|
+|8／SBUS|PWM|S.BUS|PWM|S.BUS|補助|
+
+<span id="r8fg-w137" data-translation-unit="r8fg-w137"></span>
+
+原典印刷ページ：8
+
+<span id="r8fg-w138" data-translation-unit="r8fg-w138"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p10-f1.jpeg" width={289} height={58} figureId="r8fg-p10-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w139" data-translation-unit="r8fg-w139"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w140" data-translation-unit="r8fg-w140"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w141" data-translation-unit="r8fg-w141"></span>
+
+### 7.1 動作モードの設定
+
+<span id="r8fg-w142" data-translation-unit="r8fg-w142"></span>
+
+ジャイロのON／OFF：2秒以内にバインドボタンを3回短く押すと、ジャイロのON／OFFが切り替わり、LED表示色もそれに応じて変わります。
+
+<span id="r8fg-w143" data-translation-unit="r8fg-w143"></span>
+
+ジャイロの補正方向切り替え：2秒以内にバインドボタンを2回短く押すと、補正方向が切り替わります。
+
+<span id="r8fg-w144" data-translation-unit="r8fg-w144"></span>
+
+SBUSのON／OFF：バインドボタンを1回短く押すとSBUSのON／OFFが切り替わり、LED表示色もそれに応じて変わります。SBUSを有効にすると、CH1～CH7はPWM、CH8はSBUS信号を出力します。
+
+<span id="r8fg-w145" data-translation-unit="r8fg-w145"></span>
+
+### 7.2 動作モードとLED表示色
+
+<span id="r8fg-w146" data-translation-unit="r8fg-w146"></span>
+
+|動作モード|PWM|ジャイロ|SBUS|ジャイロ＋SBUS|
+|---|---|---|---|---|
+|LED表示色|緑|赤|青|赤＋青|
+
+<span id="r8fg-w147" data-translation-unit="r8fg-w147"></span>
+
+:::caution[注意]
+注意：受信機に給電したとき、送信機とのバインドが成功していない場合や、受信機が信号を失った場合は、LEDがゆっくり点滅します。
+:::
+
+<span id="r8fg-w148" data-translation-unit="r8fg-w148"></span>
+
+## 8. ジャイロの概要
+
+<span id="r8fg-w149" data-translation-unit="r8fg-w149"></span>
+
+### 8.1 ジャイロ機能
+
+<span id="r8fg-w150" data-translation-unit="r8fg-w150"></span>
+
+R8FGはジャイロを内蔵しています。高性能ジャイロはソフトウェアフィルターとPIDアルゴリズムを採用し、迅速かつ正確に感度を補正して安定性を高めます。さまざまな模型に柔軟に対応し、ドリフトカーでもプロ向けの性能を実現します。
+
+<span id="r8fg-w151" data-translation-unit="r8fg-w151"></span>
+
+### 8.2 ジャイロの有効化
+
+<span id="r8fg-w152" data-translation-unit="r8fg-w152"></span>
+
+R8FGのジャイロは、既定でOFFになっています。内蔵ジャイロが自己点検を行うため、電源を入れるときはR8FGを静止させることが重要です。赤LEDはジャイロの状態表示で、消灯はジャイロOFFを示します。バインドボタンを1秒未満の間隔で3回押すと、赤LEDが3回点滅し、ジャイロが有効になったことを示します。
+
+<span id="r8fg-w153" data-translation-unit="r8fg-w153"></span>
+
+:::caution[注意]
+注意：ジャイロがONの場合は、ジャイロがステアリングサーボの角度を自動補正するため、受信機に接続したサーボが揺れ続けることがあります。これは正常な動作です。この機能が不要な場合は、ジャイロをOFFにできます。
+:::
+
+<span id="r8fg-w154" data-translation-unit="r8fg-w154"></span>
+
+:::caution[注意]
+受信機を動かしていないのにサーボが揺れ続ける場合は、以下の2つの原因があります。
+①サーボが受信機のSBUSチャンネルに接続されている：通常のサーボはPWM信号入力にのみ対応するため、CH1／2／3／4／5／6／7のいずれかに接続し直してください。
+②ジャイロ感度が高すぎる：DL1スイッチを回して感度を下げてください。
+:::
+
+<span id="r8fg-w155" data-translation-unit="r8fg-w155"></span>
+
+### 8.3 ジャイロリバース
+
+<span id="r8fg-w156" data-translation-unit="r8fg-w156"></span>
+
+ジャイロを正方向に設定し、車体を左右に向けてジャイロが機能するか確認します。車体を右へ向けると前輪は左へ、車体を左へ向けると前輪は右へ補正されます。動作が逆の場合はバインドボタンを2回押してください。赤LEDが2回点滅し、補正方向が修正されます。
+
+<span id="r8fg-w157" data-translation-unit="r8fg-w157"></span>
+
+原典印刷ページ：9
+
+<span id="r8fg-w158" data-translation-unit="r8fg-w158"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p11-f1.jpeg" width={289} height={58} figureId="r8fg-p11-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w159" data-translation-unit="r8fg-w159"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w160" data-translation-unit="r8fg-w160"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w161" data-translation-unit="r8fg-w161"></span>
+
+### 8.4 ジャイロ感度の調整
+
+<span id="r8fg-w162" data-translation-unit="r8fg-w162"></span>
+
+ジャイロ感度は、既定でDL1／PS3ノブスイッチに割り当てられたCH8で調整します。ノブを時計回りに回すと感度が上がり、反時計回りに回すと下がります。ノブを回すと画面上部に黄色いヒントが表示され、チャンネル値も変わります。値が＋100に近いほど感度が高くなります。値が0の場合はジャイロがOFFであることを示します。
+
+<span id="r8fg-w163" data-translation-unit="r8fg-w163"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p11-f2.jpeg" width={393} height={399} figureId="r8fg-p11-f2" alt={"ジャイロミキシング（Gyro mixing）の2/2ページの例。ゲイン調整スイッチ（Gain switch）にDL1を割り当てています。現在ゲイン（Current gain）、ゲイングループタイプ切替（Gain group type switch）、ゲインタイプ切替（Gain type switch）、ジャイロミキシング切替（Gyro mixing switch）はNULLの原図表示です。"} caption={"ジャイロミキシング（Gyro mixing）の2/2ページの例。ゲイン調整スイッチ（Gain switch）にDL1を割り当てています。現在ゲイン（Current gain）、ゲイングループタイプ切替（Gain group type switch）、ゲインタイプ切替（Gain type switch）、ジャイロミキシング切替（Gyro mixing switch）はNULLの原図表示です。"} />
+
+<span id="r8fg-w164" data-translation-unit="r8fg-w164"></span>
+
+このページで、ほかのスイッチにジャイロの操作や感度調整を割り当てることもできます。
+
+<span id="r8fg-w165" data-translation-unit="r8fg-w165"></span>
+
+## 9. R8FGの仕様
+
+<span id="r8fg-w166" data-translation-unit="r8fg-w166"></span>
+
+|項目|R8FG受信機|
+|---|---|
+|寸法|長さ×幅×高さ＝35×24×13.5 mm（1.38×0.94×0.53インチ）|
+|重量|10.5 g（0.37 oz）|
+|チャンネル数|8チャンネル|
+|アンテナ長|205 mm（8.07インチ）|
+|操縦距離|地上600 m（1968.5 ft）。最大距離は障害物や干渉のない場所で試験。|
+|動作電流|35 mA（5 V）|
+|動作電圧|3～12 V|
+|信号出力|SBUS・PWM|
+|テレメトリー|模型用バッテリー電圧、RSSI、受信機電圧のリアルタイム内蔵テレメトリー|
+|ジャイロ|受信機に内蔵。感度調整可能。|
+|防滴|防水等級IPX4|
+|応答遅延|3 ms、4 ms、14 msから選択可能。3 ms／4 msのデジタルサーボスピードを選択する場合は、R8FG V2.1または製造日が2023年4月26日以降のR8FGであることを確認してください。|
+|対応送信機|RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS（3ポジションスイッチ版）、RC4GS（製造日P.Dが180101より後の版）、T8FB(BT)、T8FB(OTG)、T8S(BT)、T8S(OTG)|
+
+<span id="r8fg-w167" data-translation-unit="r8fg-w167"></span>
+
+原典印刷ページ：10
+
+<span id="r8fg-w168" data-translation-unit="r8fg-w168"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p12-f1.jpeg" width={289} height={58} figureId="r8fg-p12-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r8fg-w169" data-translation-unit="r8fg-w169"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r8fg-w170" data-translation-unit="r8fg-w170"></span>
+
+www.radiolink.com
+
+<span id="r8fg-w171" data-translation-unit="r8fg-w171"></span>
+
+## 10. アンテナ取り付け時の注意
+
+<span id="r8fg-w172" data-translation-unit="r8fg-w172"></span>
+
+信号の伝送を最大限に活かすため、以下を強く推奨します。
+
+<span id="r8fg-w173" data-translation-unit="r8fg-w173"></span>
+
+:::caution[注意]
+1. アンテナはできるだけまっすぐにしてください。曲がっていると有効操縦距離が短くなります。
+:::
+
+<span id="r8fg-w174" data-translation-unit="r8fg-w174"></span>
+
+:::caution[注意]
+2. 下図のように、2本のアンテナを90°の角度に保ってください。
+:::
+
+<span id="r8fg-w175" data-translation-unit="r8fg-w175"></span>
+
+<ManualFigure src="/assets/radiolink/r8fg/web-ja-v1/r8fg-p12-f2.jpeg" width={700} height={383} figureId="r8fg-p12-f2" alt={"2本のアンテナを90°の角度に保つ取り付け例。"} caption={"2本のアンテナを90°の角度に保つ取り付け例。"} />
+
+<span id="r8fg-w176" data-translation-unit="r8fg-w176"></span>
+
+:::caution[注意]
+3. 大型の模型には、信号の放射に影響する金属部品が含まれる場合があります。その場合は、どのような状態でも最良の信号状態を確保できるよう、模型の両側にアンテナを配置してください。
+:::
+
+<span id="r8fg-w177" data-translation-unit="r8fg-w177"></span>
+
+:::caution[注意]
+4. アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+:::
+
+<span id="r8fg-w178" data-translation-unit="r8fg-w178"></span>
+
+:::caution[注意]
+5. アンテナはモーター、ESC、その他の干渉源となり得るものから離してください。
+:::
+
+<span id="r8fg-w179" data-translation-unit="r8fg-w179"></span>
+
+:::caution[注意]
+6. 受信機の取り付けには、振動を抑えるためスポンジや発泡材の使用を推奨します。
+:::
+
+<span id="r8fg-w180" data-translation-unit="r8fg-w180"></span>
+
+:::caution[注意]
+7. 受信機には高精度の電子部品が含まれます。強い振動や高温を避けてください。
+:::
+
+<span id="r8fg-w181" data-translation-unit="r8fg-w181"></span>
+
+:::caution[注意]
+8. 受信機を保護するため、発泡材やゴム布など、RC用の防振材で包んでください。密閉したビニール袋に入れると、受信機が制御不能になる原因となり得る湿気やほこりを防げます。
+:::
+
+<span id="r8fg-w182" data-translation-unit="r8fg-w182"></span>
+
+RadioLink製品をお選びいただき、重ねてありがとうございます。
+
+<span id="r8fg-w183" data-translation-unit="r8fg-w183"></span>
+
+原典印刷ページ：11

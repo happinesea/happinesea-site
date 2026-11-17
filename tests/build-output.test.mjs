@@ -607,9 +607,9 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   const html = await route('radiolink/index.html');
 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
-  assert.equal((html.match(/data-detail-available/g) ?? []).length, 22);
-  assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 61);
-  assert.equal((html.match(/詳しい仕様は公式サイトで/g) ?? []).length, 61);
+  assert.equal((html.match(/data-detail-available/g) ?? []).length, 24);
+  assert.equal((html.match(/data-detail-preparing/g) ?? []).length, 59);
+  assert.equal((html.match(/詳しい仕様は公式サイトで/g) ?? []).length, 59);
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);
@@ -824,7 +824,7 @@ for (const product of [
       assert.doesNotMatch(html, />標準モード</);
       assert.doesNotMatch(html, />長距離モード</);
     }
-    if (['rc8p', 'r12f'].includes(product.slug))
+    if (['rc8p', 'r12f', 'r7fg', 'r16f', 'r8fg'].includes(product.slug))
       assert.ok(
         html.includes(`href="${publicationBase}/manuals/${product.slug}/"`),
       );

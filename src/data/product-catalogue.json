@@ -681,8 +681,8 @@
     "subcategoryLabel": "RTK",
     "description": "RadiolinkのRTK測位システムです。",
     "officialUrl": "https://www.radiolink.com/rtk_f9p",
-    "detailPath": null,
-    "status": "detail_preparing",
+    "detailPath": "/radiolink/rtk-f9p/",
+    "status": "detail_available",
     "image": {
       "src": "/assets/radiolink/catalogue/rtk-f9p.webp",
       "sourceUrl": "https://www.radiolink.com/9b2934977c9b0c199e93b3f00c342197.png",
@@ -786,8 +786,8 @@
     "subcategoryLabel": "GPS",
     "description": "RadiolinkのGPSモジュールです。",
     "officialUrl": "https://www.radiolink.com/ts100",
-    "detailPath": null,
-    "status": "detail_preparing",
+    "detailPath": "/radiolink/ts100-m8n/",
+    "status": "detail_available",
     "image": {
       "src": "/assets/radiolink/catalogue/ts100-m8n.webp",
       "sourceUrl": "https://www.radiolink.com/74124c5fde344385aaec1a0c279102cb.jpg",
