@@ -191,7 +191,7 @@
       "english_figure_count": 5,
       "english_figure_count_unknown": 0,
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     },
     {
       "product_id": "prm-01",
@@ -376,7 +376,7 @@
       "english_figure_count": 8,
       "english_figure_count_unknown": 0,
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     },
     {
       "product_id": "prm-03",
@@ -621,7 +621,7 @@
       "english_figure_count": 14,
       "english_figure_count_unknown": 0,
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     },
     {
       "product_id": "su04",
@@ -921,7 +921,7 @@
       "english_figure_count": 17,
       "english_figure_count_unknown": 0,
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     },
     {
       "product_id": "sui04",
@@ -1830,7 +1830,7 @@
       "english_figure_count": 88,
       "english_figure_count_unknown": 0,
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     }
   ]
 }
