@@ -51,3 +51,11 @@ src/content/docs/manuals/r12f/index.mdx
 src/content/docs/manuals/r16sm/index.mdx
 src/content/docs/manuals/r8fgh/index.mdx
 src/data/manuals/receiver-web-batch3.json
+
+# Batch 4 deterministic canonical exports.
+src/content/docs/manuals/r7fg/index.mdx
+src/content/docs/manuals/r16f/index.mdx
+src/content/docs/manuals/r8fg/index.mdx
+src/content/docs/manuals/ts100-m8n/index.mdx
+src/content/docs/manuals/rtk-f9p/index.mdx
+src/data/manuals/receiver-web-batch4.json

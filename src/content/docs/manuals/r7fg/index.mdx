@@ -1,0 +1,709 @@
+---
+title: R7FG 日本語取扱説明書
+description: Radiolink R7FG の公式英語取扱説明書に対応する日本語版です。
+product: r7fg
+slug: manuals/r7fg
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/2d1458a9ab6414e66def0325be2ecbce.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r7fg/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R7FG 公式英語取扱説明書（文書版・発行日不明、9頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r7fg-w001" data-translation-unit="r7fg-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p1-f1.jpeg" width={1000} height={1000} figureId="r7fg-p1-f1" alt={"R7FG受信機の外観。原図の本体表示はV1.4、3.0-12V/DC、Blue/Purple-S.BUS/PPM+PWM、Telemetry（＋／－）です。"} caption={"R7FG受信機の外観。原図の本体表示はV1.4、3.0-12V/DC、Blue/Purple-S.BUS/PPM+PWM、Telemetry（＋／－）です。"} />
+
+<span id="r7fg-w002" data-translation-unit="r7fg-w002"></span>
+
+## R7FG
+
+<span id="r7fg-w003" data-translation-unit="r7fg-w003"></span>
+
+（FHSS）
+
+<span id="r7fg-w004" data-translation-unit="r7fg-w004"></span>
+
+### 取扱説明書
+
+<span id="r7fg-w005" data-translation-unit="r7fg-w005"></span>
+
+双方向通信
+PWM・PPM・SBUS信号に対応
+ジャイロ内蔵7チャンネル受信機
+
+<span id="r7fg-w006" data-translation-unit="r7fg-w006"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p2-f1.jpeg" width={289} height={58} figureId="r7fg-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w007" data-translation-unit="r7fg-w007"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w008" data-translation-unit="r7fg-w008"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w009" data-translation-unit="r7fg-w009"></span>
+
+RadioLinkのデュアルアンテナ・7チャンネル受信機R7FGをお選びいただき、ありがとうございます。
+
+<span id="r7fg-w010" data-translation-unit="r7fg-w010"></span>
+
+本製品の機能を十分に活用し、安全に使用するため、説明をよく読み、記載された手順に従って機器を設定してください。
+
+<span id="r7fg-w011" data-translation-unit="r7fg-w011"></span>
+
+操作中に問題が発生した場合は、次のいずれかの方法でオンライン技術サポートを利用できます。
+
+<span id="r7fg-w012" data-translation-unit="r7fg-w012"></span>
+
+1. after_service@radiolink.com.cnへメールをお送りください。できるだけ早く回答します。
+
+<span id="r7fg-w013" data-translation-unit="r7fg-w013"></span>
+
+2. 当社のFacebookページへプライベートメッセージを送信するか、YouTubeページへコメントを投稿してください。
+
+<span id="r7fg-w014" data-translation-unit="r7fg-w014"></span>
+
+3. お近くの販売代理店で購入した場合は、その代理店へサポートや修理を依頼することもできます。
+
+<span id="r7fg-w015" data-translation-unit="r7fg-w015"></span>
+
+すべてのマニュアルとファームウェアはRadioLink公式サイトwww.radiolink.comで入手でき、チュートリアルも順次掲載しています。FacebookおよびYouTubeの当社ホームページをフォローして、最新情報をご確認ください。
+
+<span id="r7fg-w016" data-translation-unit="r7fg-w016"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p2-f2.jpeg" width={300} height={300} figureId="r7fg-p2-f2" alt={"FacebookのQRコード。"} caption={"FacebookのQRコード。"} />
+
+<span id="r7fg-w017" data-translation-unit="r7fg-w017"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p2-f3.jpeg" width={300} height={300} figureId="r7fg-p2-f3" alt={"YouTubeのQRコード。"} caption={"YouTubeのQRコード。"} />
+
+<span id="r7fg-w018" data-translation-unit="r7fg-w018"></span>
+
+Facebook／YouTube
+
+<span id="r7fg-w019" data-translation-unit="r7fg-w019"></span>
+
+### 安全上の注意
+
+<span id="r7fg-w020" data-translation-unit="r7fg-w020"></span>
+
+:::caution[注意]
+- 悪天候のときにモデルを操作しないでください。視界が悪いと方向を見失い、モデルを制御できなくなることがあります。
+- 人混みや使用が禁止されている場所で本製品を使用しないでください。
+- 受信機を接続する前に、トリムレバーが0で、バッテリーが十分に充電されていることを必ず確認してください。
+- 走行前に、すべてのサーボと接続状態を必ず確認してください。
+- 電源を切るときは、必ず送信機より先に受信機の電源を切ってください。
+:::
+
+<span id="r7fg-w021" data-translation-unit="r7fg-w021"></span>
+
+### 警告
+
+<span id="r7fg-w022" data-translation-unit="r7fg-w022"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、14歳未満のお子様には適していません。大人はお子様の手の届かない場所で保管し、お子様がいる場所で操作するときは十分注意してください。
+:::
+
+<span id="r7fg-w023" data-translation-unit="r7fg-w023"></span>
+
+:::caution[注意]
+アンテナやジョイスティックの隙間から送信機内部へ水や湿気が入り、モデルの動作が不安定になったり、制御不能になったりすることがあります。競技などで雨天時の使用が避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="r7fg-w024" data-translation-unit="r7fg-w024"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p3-f1.jpeg" width={289} height={58} figureId="r7fg-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w025" data-translation-unit="r7fg-w025"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w026" data-translation-unit="r7fg-w026"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w027" data-translation-unit="r7fg-w027"></span>
+
+## 目次
+
+|項目|原典印刷ページ|
+|---|---:|
+|1. R7FGの概要|2|
+|1.1 対応送信機|2|
+|1.2 バインド|2|
+|2. テレメトリー|3|
+|2.1 信号とRSSIのテレメトリー|3|
+|2.2 模型用バッテリー電圧と受信機電圧のテレメトリー|3|
+|3. サブID|4|
+|4. 動作モード|5|
+|5. ジャイロの説明|6|
+|5.1 ジャイロ機能|6|
+|5.2 ジャイロの有効化|6|
+|5.3 ジャイロの補正方向|6|
+|5.4 送信機での感度調整|6|
+|6. R7FGの仕様|7|
+|7. アンテナの取り付けに関する注意|7|
+
+<span id="r7fg-w028" data-translation-unit="r7fg-w028"></span>
+
+原典印刷ページ：1
+
+<span id="r7fg-w029" data-translation-unit="r7fg-w029"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p4-f1.jpeg" width={289} height={58} figureId="r7fg-p4-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w030" data-translation-unit="r7fg-w030"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w031" data-translation-unit="r7fg-w031"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w032" data-translation-unit="r7fg-w032"></span>
+
+## 1. R7FGの概要
+
+<span id="r7fg-w033" data-translation-unit="r7fg-w033"></span>
+
+### 1.1 対応送信機
+
+<span id="r7fg-w034" data-translation-unit="r7fg-w034"></span>
+
+RadioLink R7FGは、防滴仕様の2.4 GHz・7チャンネル受信機です。本格的なドリフト走行用のジャイロを内蔵し、高電圧サーボに対応します。RadioLink RC6GS V3／RC6GS V2／RC6GS／RC4GS V3／RC4GS V2／RC4GS／RC3S／RC4G／T8FB／T8Sに対応します。
+
+:::note[原典について]
+原典の導入と仕様では送信機の列挙範囲が異なります。それぞれの原典記載を保持し、列挙の省略から非対応を推測したり、別の製品版の条件を補ったりしていません。
+:::
+
+<span id="r7fg-w035" data-translation-unit="r7fg-w035"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p4-f2.jpeg" width={700} height={425} figureId="r7fg-p4-f2" alt={"R7FG V1.4の端子説明図。バインドボタンは「ID SET」、アンテナ、LEDインジケーター、模型用バッテリー電圧のTelemetry（＋／－）端子を示します。VCCは電源、GNDはグランド、Signalは信号です。CH1はステアリング、CH2はスロットル、CH3～5は補助、CH6は補助／PPM、CH7は補助／SBUSと表示されています。本体の定格表示は3.0-12V/DCです。"} caption={"R7FG V1.4の端子説明図。バインドボタンは「ID SET」、アンテナ、LEDインジケーター、模型用バッテリー電圧のTelemetry（＋／－）端子を示します。VCCは電源、GNDはグランド、Signalは信号です。CH1はステアリング、CH2はスロットル、CH3～5は補助、CH6は補助／PPM、CH7は補助／SBUSと表示されています。本体の定格表示は3.0-12V/DCです。"} />
+
+<span id="r7fg-w036" data-translation-unit="r7fg-w036"></span>
+
+### 1.2 バインド
+
+<span id="r7fg-w037" data-translation-unit="r7fg-w037"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w038" data-translation-unit="r7fg-w038"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w039" data-translation-unit="r7fg-w039"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w040" data-translation-unit="r7fg-w040"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w041" data-translation-unit="r7fg-w041"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w042" data-translation-unit="r7fg-w042"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w043" data-translation-unit="r7fg-w043"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w044" data-translation-unit="r7fg-w044"></span>
+
+注意
+
+<span id="r7fg-w045" data-translation-unit="r7fg-w045"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w046" data-translation-unit="r7fg-w046"></span>
+
+:::caution[注意]
+工場出荷時はジャイロが無効です。R7FGは内蔵ジャイロの自己診断を行うため、電源を入れるときに静止させておくことが非常に重要です。緑のLEDの常時点灯は通常動作モードを、紫と赤のLEDの常時点灯はジャイロ動作モードを示します。赤が消灯している場合はジャイロが無効です。バインドに失敗した場合は、緑のLEDが点滅し続けて知らせます。
+:::
+
+<span id="r7fg-w047" data-translation-unit="r7fg-w047"></span>
+
+原典印刷ページ：2
+
+<span id="r7fg-w048" data-translation-unit="r7fg-w048"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p5-f1.jpeg" width={289} height={58} figureId="r7fg-p5-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w049" data-translation-unit="r7fg-w049"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w050" data-translation-unit="r7fg-w050"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w051" data-translation-unit="r7fg-w051"></span>
+
+## 2. テレメトリー
+
+<span id="r7fg-w052" data-translation-unit="r7fg-w052"></span>
+
+R7FGは、RSSI、受信機電圧、模型用バッテリー電圧などの飛行情報をリアルタイムで送信機へ返すことができます。
+
+<span id="r7fg-w053" data-translation-unit="r7fg-w053"></span>
+
+この機能を使用するには、RC6GS（3ポジションスイッチ版）を、https://www.radiolink.com/rc6gs_firmware からダウンロードしたファームウェア「RC6GS_RadioLink_bin_1d15_V_6_1_2」へ更新してください。
+
+<span id="r7fg-w054" data-translation-unit="r7fg-w054"></span>
+
+または、RC4GS（2018年1月1日より後に製造されたもの）を、https://www.radiolink.com/rc4gs_firmware からダウンロードした「RC4GS_RX_RadioLink_bin_2f50_V_6_0_1」へ更新してください。
+
+<span id="r7fg-w055" data-translation-unit="r7fg-w055"></span>
+
+RC6GS V3、RC6GS V2、RC4GS V3、RC4GS V2を使用する場合は、標準のファームウェアでテレメトリー機能に対応しています。
+
+<span id="r7fg-w056" data-translation-unit="r7fg-w056"></span>
+
+### 2.1 信号とRSSIのテレメトリー
+
+<span id="r7fg-w057" data-translation-unit="r7fg-w057"></span>
+
+送信機と受信機の電源を入れてバインドを完了すると、送信機のメイン画面に信号が表示されます。「EXIT」を2回短押しすると、RSSI値などのテレメトリー情報を表示する画面に入ります。
+
+<span id="r7fg-w058" data-translation-unit="r7fg-w058"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p5-f2.jpeg" width={500} height={500} figureId="r7fg-p5-f2" alt={"RC6GSのメイン画面例。MODEL4、8.0 V、ID01、12.2 V、ST、THが表示されています。"} caption={"RC6GSのメイン画面例。MODEL4、8.0 V、ID01、12.2 V、ST、THが表示されています。"} />
+
+<span id="r7fg-w059" data-translation-unit="r7fg-w059"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p5-f3.jpeg" width={500} height={500} figureId="r7fg-p5-f3" alt={"RC6GSのテレメトリー画面例。RSSI：−31 dBm、RATE：0000 rpm、EXT：12.2 V、RX：4.1 V、T：NULLと表示されています。"} caption={"RC6GSのテレメトリー画面例。RSSI：−31 dBm、RATE：0000 rpm、EXT：12.2 V、RX：4.1 V、T：NULLと表示されています。"} />
+
+<span id="r7fg-w060" data-translation-unit="r7fg-w060"></span>
+
+距離を変えてテストした後、特定の低いRSSI値で警報するように設定できます。
+
+<span id="r7fg-w061" data-translation-unit="r7fg-w061"></span>
+
+「EXIT」と「ENTER」を同時に押してメニューへ入り、「Inc(+)」で「19. ALARM」を選択します。「ENTER」で警報の有効／無効を切り替え、RSSI警報値を設定します。
+
+<span id="r7fg-w062" data-translation-unit="r7fg-w062"></span>
+
+注意：R7FGはデュアルアンテナ受信機です。送信機とR7FGの距離が50 cmのとき、RSSI値が0～−30 dBmの範囲であれば正常です。0に近いほど信号が強いことを示します。RadioLink送信機のRSSI値の範囲は0～−99 dBmです。RSSI値の絶対値が大きいほど、信号は弱くなります。例えば、−90 dBmの信号は−75 dBmの信号より弱いことを示します。
+
+<span id="r7fg-w063" data-translation-unit="r7fg-w063"></span>
+
+### 2.2 模型用バッテリー電圧と受信機電圧のテレメトリー
+
+<span id="r7fg-w064" data-translation-unit="r7fg-w064"></span>
+
+受信機電圧に加え、模型用バッテリーの電圧（最大8Sのリチウムバッテリー）もリアルタイムで送信機へ返すことができます。模型用バッテリーの低電圧警報値は、実際の必要に応じて設定できます。
+
+<span id="r7fg-w065" data-translation-unit="r7fg-w065"></span>
+
+「EXIT」と「ENTER」を同時に押してメニューへ入り、「Inc(+)」で「19. ALARM」を選択します。「ENTER」を押して、模型用バッテリーの電圧警報値を設定します。
+
+<span id="r7fg-w066" data-translation-unit="r7fg-w066"></span>
+
+原典印刷ページ：3
+
+<span id="r7fg-w067" data-translation-unit="r7fg-w067"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p6-f1.jpeg" width={289} height={58} figureId="r7fg-p6-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w068" data-translation-unit="r7fg-w068"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w069" data-translation-unit="r7fg-w069"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w070" data-translation-unit="r7fg-w070"></span>
+
+通常は1セル当たり3.7 Vを警報値にします。例えば、モデルカーで3Sリチウムバッテリーを使用する場合、警報値は（3.7 V×3S＝）11.1 Vに設定します。
+
+<span id="r7fg-w071" data-translation-unit="r7fg-w071"></span>
+
+模型用バッテリー電圧のテレメトリーは、バッテリーケーブルのオス側をESCへ、メス側をバッテリーへ接続し、JSTコネクター付きケーブルをR7FG／R8Fの「Telemetry（＋／－）」端子へ接続するだけで利用できます。接続は下図のとおりです。追加モジュールは不要です。
+
+<span id="r7fg-w072" data-translation-unit="r7fg-w072"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p6-f2.jpeg" width={1400} height={1000} figureId="r7fg-p6-f2" alt={"模型用バッテリー電圧のテレメトリー接続図。Battery（バッテリー）、Telemetry Cable（テレメトリーケーブル）、Motor（モーター）、ESC、Servo（サーボ）、R7FGが表示されています。受信機のTelemetry端子から給電してはいけません。"} caption={"模型用バッテリー電圧のテレメトリー接続図。Battery（バッテリー）、Telemetry Cable（テレメトリーケーブル）、Motor（モーター）、ESC、Servo（サーボ）、R7FGが表示されています。受信機のTelemetry端子から給電してはいけません。"} />
+
+<span id="r7fg-w073" data-translation-unit="r7fg-w073"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p6-f3.jpeg" width={500} height={500} figureId="r7fg-p6-f3" alt={"模型用バッテリー電圧を表示したRC6GSのメイン画面例。12.2 Vの表示があります。"} caption={"模型用バッテリー電圧を表示したRC6GSのメイン画面例。12.2 Vの表示があります。"} />
+
+<span id="r7fg-w074" data-translation-unit="r7fg-w074"></span>
+
+正しく接続すると、送信機のメイン画面でバッテリー電圧を確認できます。
+
+<span id="r7fg-w075" data-translation-unit="r7fg-w075"></span>
+
+## 3. サブID
+
+<span id="r7fg-w076" data-translation-unit="r7fg-w076"></span>
+
+サブID機能は、複数のバインド済み受信機の中からサブIDを指定し、その受信機を制御する機能です。RC6GS（3ポジションスイッチ版、最新ファームウェアV6.0.0）またはRC4GS（2018年1月1日より後に製造されたもの、最新ファームウェアV6.0.1）の「ID SEED」メニューで使用できます。送信機には独立したサブIDを合計10個保存できます。
+
+:::note[原典について]
+この節の「最新」は原典に記載された時点の表現です。前の節のRC6GS V6.1.2と本節のV6.0.0等を統合せず、現在の最新版と読み替えていません。
+:::
+
+<span id="r7fg-w077" data-translation-unit="r7fg-w077"></span>
+
+例えば、RC6GSが10艇の異なるボートとバインドし、それぞれの設定を完了しているとします。「ID SEED」を有効にしてID.1のボートを選び、水面の中央まで操縦したところ、予期せず動作しなくなった場合を考えます。このときID.2のボート（または別の任意のサブIDのボート）へ切り替えて独立して操作し、ID.1のボートを救助できます。2艇を同時に操作して救助を難しくすることはありません。従来のバインド方式とは異なり、独立したIDで簡単に実現できます。
+
+<span id="r7fg-w078" data-translation-unit="r7fg-w078"></span>
+
+「EXIT」と「ENTER」を同時に押してメニューへ入り、「Inc(+)」／「DEC(-)」で「22. ID SEED」を選択します。「ENTER」を押して「MODE」を「OFF」から「ON」へ変更し、サブID番号を設定して、バインドと各パラメータの設定を完了します。
+
+<span id="r7fg-w079" data-translation-unit="r7fg-w079"></span>
+
+完了すると、RC6GSのメイン画面に対応するID番号が表示されます。他の受信機も、続く番号を使って同じ方法でバインドできます。
+
+<span id="r7fg-w080" data-translation-unit="r7fg-w080"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p6-f4.jpeg" width={500} height={500} figureId="r7fg-p6-f4" alt={"サブID番号「ID01」を表示したRC6GSのメイン画面例。"} caption={"サブID番号「ID01」を表示したRC6GSのメイン画面例。"} />
+
+<span id="r7fg-w081" data-translation-unit="r7fg-w081"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p6-f5.jpeg" width={700} height={700} figureId="r7fg-p6-f5" alt={"「ID SEED」設定画面例。「MODE：ON」「SEED：ID01」と、00、10、0F、3Dが表示されています。"} caption={"「ID SEED」設定画面例。「MODE：ON」「SEED：ID01」と、00、10、0F、3Dが表示されています。"} />
+
+<span id="r7fg-w082" data-translation-unit="r7fg-w082"></span>
+
+原典印刷ページ：4
+
+<span id="r7fg-w083" data-translation-unit="r7fg-w083"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p7-f1.jpeg" width={289} height={58} figureId="r7fg-p7-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w084" data-translation-unit="r7fg-w084"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w085" data-translation-unit="r7fg-w085"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w086" data-translation-unit="r7fg-w086"></span>
+
+## 4. 動作モード
+
+<span id="r7fg-w087" data-translation-unit="r7fg-w087"></span>
+
+R7FGには4つの動作モードがあります。
+
+<span id="r7fg-w088" data-translation-unit="r7fg-w088"></span>
+
+### R7FGの動作モード
+
+|項目|Mode 1|Mode 2|Mode 3|Mode 4|備考|
+|---|---|---|---|---|---|
+|インジケーターの色|緑|青|赤|紫（赤＋青）| |
+|ジャイロ|無効|無効|有効|有効| |
+|Telemetry|模型用バッテリー電圧端子（＋／－）|模型用バッテリー電圧端子（＋／－）|模型用バッテリー電圧端子（＋／－）|模型用バッテリー電圧端子（＋／－）|2S～8Sバッテリーの電圧テレメトリー専用です。受信機への給電には使用できません。|
+|CH1|PWM|PWM|PWM|PWM|ステアリング|
+|CH2|PWM|PWM|PWM|PWM|スロットル|
+|CH3|PWM|PWM|PWM|PWM|補助|
+|CH4|PWM|PWM|PWM|PWM|補助|
+|CH5|PWM|PWM|PWM|PWM|補助|
+|CH6／PPM|PWM|PPM|PWM|PPM|補助|
+|CH7／S.BUS|PWM|S.BUS|PWM|S.BUS| |
+|ID SETを1回短押し|Mode 2（青）へ|Mode 1（緑）へ|Mode 4（紫）へ|Mode 3（赤）へ| |
+|ID SETを素早く3回短押し|Mode 3（赤）へ|Mode 4（紫）へ|Mode 1（緑）へ|Mode 2（青）へ| |
+|ID SETを素早く2回短押し| | |ジャイロ補正方向を変更|ジャイロ補正方向を変更| |
+|ID SETを素早く4回短押し|Mode 4（紫）へ|Mode 3（赤）へ|Mode 2（青）へ|Mode 1（緑）へ| |
+
+紫（赤＋青）のインジケーターモードでは、CH6からPPM、CH7からS.BUSを出力します。このモードではフライトコントローラーを接続でき、メカナムカー、ロボット、自動運転車両・ボート、エンジニアリングオフロードカーなど、さまざまなモデルの制御を実現できます。
+
+:::note[原典について]
+本書の写真はV1.4・3.0-12V/DC表示で、CH6 PPM／CH7 SBUSが個別の構成です。別資料の4.6-10V/DC表示・CH7共用構成へ、本書の定格や出力表を流用しないでください。
+:::
+
+<span id="r7fg-w089" data-translation-unit="r7fg-w089"></span>
+
+原典印刷ページ：5
+
+<span id="r7fg-w090" data-translation-unit="r7fg-w090"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p8-f1.jpeg" width={289} height={58} figureId="r7fg-p8-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w091" data-translation-unit="r7fg-w091"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w092" data-translation-unit="r7fg-w092"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w093" data-translation-unit="r7fg-w093"></span>
+
+### Mode 1：PWM出力（工場出荷時の既定、ジャイロ無効）
+
+<span id="r7fg-w094" data-translation-unit="r7fg-w094"></span>
+
+緑のインジケーターが点灯しているとき、CH1～CH7は標準PWMを出力します。「ID SET」を1回短押しするとMode 1からMode 2へ、1秒以内に3回短押しするとMode 3へ切り替わります。
+
+:::note[原典について]
+本書の写真はV1.4・3.0-12V/DC表示で、CH6 PPM／CH7 SBUSが個別の構成です。別資料の4.6-10V/DC表示・CH7共用構成へ、本書の定格や出力表を流用しないでください。
+:::
+
+<span id="r7fg-w095" data-translation-unit="r7fg-w095"></span>
+
+### Mode 2：PWM＋PPM＋SBUS出力（ジャイロ無効）
+
+<span id="r7fg-w096" data-translation-unit="r7fg-w096"></span>
+
+青のインジケーターが点灯しているとき、CH1～CH5は標準PWM、CH6はPPM、CH7はSBUSを出力します。「ID SET」を1回短押しするとMode 2からMode 1へ、1秒以内に3回短押しするとMode 4へ切り替わります。
+
+:::note[原典について]
+本書の写真はV1.4・3.0-12V/DC表示で、CH6 PPM／CH7 SBUSが個別の構成です。別資料の4.6-10V/DC表示・CH7共用構成へ、本書の定格や出力表を流用しないでください。
+:::
+
+<span id="r7fg-w097" data-translation-unit="r7fg-w097"></span>
+
+### Mode 3：PWM出力＋ジャイロ
+
+<span id="r7fg-w098" data-translation-unit="r7fg-w098"></span>
+
+赤のインジケーターが点灯しているとき、CH1～CH7は標準PWMを出力し、ジャイロも有効になります。方向を安定させ、車体の横滑りを抑え、安全な旋回によって高速走行時のドリフトを防ぎます。「ID SET」を1回短押しするとMode 3からMode 4へ、1秒以内に3回短押しするとMode 1へ切り替わります。1秒以内に2回短押しすると、ジャイロの補正方向を変更します。
+
+:::note[原典について]
+本書の写真はV1.4・3.0-12V/DC表示で、CH6 PPM／CH7 SBUSが個別の構成です。別資料の4.6-10V/DC表示・CH7共用構成へ、本書の定格や出力表を流用しないでください。
+:::
+
+<span id="r7fg-w099" data-translation-unit="r7fg-w099"></span>
+
+### Mode 4：PWM＋PPM＋SBUS出力＋ジャイロ
+
+<span id="r7fg-w100" data-translation-unit="r7fg-w100"></span>
+
+赤と青の両方のインジケーターが点灯しているとき（紫）、CH1～CH5は標準PWM、CH6はPPM、CH7はSBUSを出力し、ジャイロも有効になります。方向を安定させ、車体の横滑りを抑え、安全な旋回によって高速走行時のドリフトを防ぎます。「ID SET」を1回短押しするとMode 4からMode 3へ、1秒以内に3回短押しするとMode 2へ切り替わります。1秒以内に2回短押しすると、ジャイロの補正方向を変更します。
+
+:::note[原典について]
+本書の写真はV1.4・3.0-12V/DC表示で、CH6 PPM／CH7 SBUSが個別の構成です。別資料の4.6-10V/DC表示・CH7共用構成へ、本書の定格や出力表を流用しないでください。
+:::
+
+<span id="r7fg-w101" data-translation-unit="r7fg-w101"></span>
+
+## 5. ジャイロの説明
+
+<span id="r7fg-w102" data-translation-unit="r7fg-w102"></span>
+
+### 5.1 ジャイロ機能
+
+<span id="r7fg-w103" data-translation-unit="r7fg-w103"></span>
+
+R7FGに内蔵された本格的なドリフト走行用ジャイロは、有効／無効を切り替えられます。有効にすると、競技中の旋回安定性を最大限に高めます。姿勢が乱れた場合にも、車体の直進と正確な旋回を維持します。
+
+<span id="r7fg-w104" data-translation-unit="r7fg-w104"></span>
+
+### 5.2 ジャイロの有効化
+
+<span id="r7fg-w105" data-translation-unit="r7fg-w105"></span>
+
+工場出荷時はジャイロ機能が「OFF」です。「ID SET」を1秒未満の間隔で3回短押しすると、赤のインジケーターが3回点滅します。赤のLEDの点灯／消灯が、ジャイロ機能の有効／無効を示します。
+
+<span id="r7fg-w106" data-translation-unit="r7fg-w106"></span>
+
+### 5.3 ジャイロの補正方向
+
+<span id="r7fg-w107" data-translation-unit="r7fg-w107"></span>
+
+ジャイロの正方向補正を有効にしたら、モデルカーを回して、ジャイロが車輪を補正しているか確認します。通常、車体を左へ回したときは車輪が右へ、車体を右へ回したときは車輪が左へ補正されます。補正方向が逆の場合は、Mode 3またはMode 4でバインドボタン「ID SET」を1秒以内に2回短押しします。インジケーターが1回点滅すると、補正方向の設定完了です。
+
+<span id="r7fg-w108" data-translation-unit="r7fg-w108"></span>
+
+### 5.4 送信機での感度調整
+
+<span id="r7fg-w109" data-translation-unit="r7fg-w109"></span>
+
+ジャイロ感度は、工場出荷時にはCH3に割り当てられており、VRロータリースイッチで調整できます。調整中は割合が表示され、割合が大きいほど感度が高くなります。
+
+<span id="r7fg-w110" data-translation-unit="r7fg-w110"></span>
+
+VRロータリースイッチ／CH3を別の機能に設定している場合は、メニューの「GYRO」設定で「MODE」を「STD」へ変更すると、「Dec(-)」と「Inc(-)」ボタンでジャイロ感度を調整できます。
+
+:::note[原典について]
+原典は感度調整ボタンをDec(-)とInc(-)と記載しています。符号を推測で修正せず原表記を保持し、実機UIの確認済みとは扱っていません。
+:::
+
+<span id="r7fg-w111" data-translation-unit="r7fg-w111"></span>
+
+原典印刷ページ：6
+
+<span id="r7fg-w112" data-translation-unit="r7fg-w112"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p9-f1.jpeg" width={289} height={58} figureId="r7fg-p9-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r7fg-w113" data-translation-unit="r7fg-w113"></span>
+
+RadioLink Electronic Ltd
+
+<span id="r7fg-w114" data-translation-unit="r7fg-w114"></span>
+
+www.radiolink.com
+
+<span id="r7fg-w115" data-translation-unit="r7fg-w115"></span>
+
+## 6. R7FGの仕様
+
+<span id="r7fg-w116" data-translation-unit="r7fg-w116"></span>
+
+1）周波数：2.4 GHz ISM帯（2400～2483.5 MHz）。
+
+<span id="r7fg-w117" data-translation-unit="r7fg-w117"></span>
+
+2）寸法：35×22×13 mm。
+
+<span id="r7fg-w118" data-translation-unit="r7fg-w118"></span>
+
+3）重量：6 g。
+
+<span id="r7fg-w119" data-translation-unit="r7fg-w119"></span>
+
+4）チャンネル数：7チャンネル。
+
+<span id="r7fg-w120" data-translation-unit="r7fg-w120"></span>
+
+5）出力信号：PWM／PWM＆PPM＆SBUS。
+
+<span id="r7fg-w121" data-translation-unit="r7fg-w121"></span>
+
+6）対応モデル：カー／ボート／固定翼機／グライダー／マルチローター。
+
+<span id="r7fg-w122" data-translation-unit="r7fg-w122"></span>
+
+7）符号化：FHSS、67チャンネルの疑似ランダム周波数ホッピング。
+
+<span id="r7fg-w123" data-translation-unit="r7fg-w123"></span>
+
+8）アンテナ長：205 mm（デュアルアンテナ）。
+
+<span id="r7fg-w124" data-translation-unit="r7fg-w124"></span>
+
+9）電圧範囲：3～12 V。
+
+<span id="r7fg-w125" data-translation-unit="r7fg-w125"></span>
+
+10）チャンネル分解能：4096。
+
+<span id="r7fg-w126" data-translation-unit="r7fg-w126"></span>
+
+11）動作電流：30 mA（電源によって異なります）。
+
+<span id="r7fg-w127" data-translation-unit="r7fg-w127"></span>
+
+12）テレメトリー：信号／RSSI／模型用バッテリー電圧。
+
+<span id="r7fg-w128" data-translation-unit="r7fg-w128"></span>
+
+13）操縦距離：地上600 m。
+
+<span id="r7fg-w129" data-translation-unit="r7fg-w129"></span>
+
+14）対応送信機：RC6GS V3／RC4GS V3／RC6GS V2／RC4GS V2／RC6GS（3ポジションスイッチ版）、RC4GS（P.Dが180101より後の版）／T8S／T8FB。
+
+:::note[原典について]
+原典の導入と仕様では送信機の列挙範囲が異なります。それぞれの原典記載を保持し、列挙の省略から非対応を推測したり、別の製品版の条件を補ったりしていません。
+:::
+
+<span id="r7fg-w130" data-translation-unit="r7fg-w130"></span>
+
+## 7. アンテナの取り付けに関する注意
+
+<span id="r7fg-w131" data-translation-unit="r7fg-w131"></span>
+
+信号伝送性能を最大限に引き出すため、次の点を強く推奨します。
+
+<span id="r7fg-w132" data-translation-unit="r7fg-w132"></span>
+
+<ManualFigure src="/assets/radiolink/r7fg/web-ja-v1/r7fg-p9-f2.jpeg" width={501} height={275} figureId="r7fg-p9-f2" alt={"R7FGの2本のアンテナを90°に配置する例。"} caption={"R7FGの2本のアンテナを90°に配置する例。"} />
+
+<span id="r7fg-w133" data-translation-unit="r7fg-w133"></span>
+
+1. アンテナはできるだけまっすぐにしてください。曲がっていると有効操縦距離が短くなります。
+
+<span id="r7fg-w134" data-translation-unit="r7fg-w134"></span>
+
+2. 下図のように、2本のアンテナを90°の角度にしてください。
+
+<span id="r7fg-w135" data-translation-unit="r7fg-w135"></span>
+
+3. 大型モデルには、信号の送信へ影響する金属部品が含まれる場合があります。その場合は、どのような状況でも最良の信号状態となるよう、モデルの両側へアンテナを配置してください。
+
+<span id="r7fg-w136" data-translation-unit="r7fg-w136"></span>
+
+4. アンテナを金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+
+<span id="r7fg-w137" data-translation-unit="r7fg-w137"></span>
+
+5. アンテナをモーター、ESC、その他干渉源になり得るものから離してください。
+
+<span id="r7fg-w138" data-translation-unit="r7fg-w138"></span>
+
+6. 受信機を取り付けるときは、振動を防ぐためスポンジやフォーム材を使用することを推奨します。
+
+<span id="r7fg-w139" data-translation-unit="r7fg-w139"></span>
+
+7. 受信機には高精度の電子部品が含まれています。強い振動や高温を避けるよう注意してください。
+
+<span id="r7fg-w140" data-translation-unit="r7fg-w140"></span>
+
+8. 受信機を保護するため、フォームやゴム布などRC用の防振材で包みます。密封したビニール袋に入れておくと、制御不能の原因になり得る湿気やほこりを防げます。
+
+<span id="r7fg-w141" data-translation-unit="r7fg-w141"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r7fg-w142" data-translation-unit="r7fg-w142"></span>
+
+RadioLink製品をお選びいただき、重ねてありがとうございます。
+
+<span id="r7fg-w143" data-translation-unit="r7fg-w143"></span>
+
+原典印刷ページ：7

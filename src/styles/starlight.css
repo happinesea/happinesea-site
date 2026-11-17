@@ -41,3 +41,16 @@
   :is(th, td):first-child {
   min-width: 8em;
 }
+
+/* New receiver/GPS scopes retain readable labels in horizontally scrollable tables. */
+.sl-markdown-content:has(
+    [data-translation-unit^='r7fg-'],
+    [data-translation-unit^='r16f-'],
+    [data-translation-unit^='r8fg-'],
+    [data-translation-unit^='ts100-'],
+    [data-translation-unit^='rtkf9p-']
+  )
+  table
+  :is(th, td):first-child {
+  min-width: 8em;
+}

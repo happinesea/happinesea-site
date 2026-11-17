@@ -33,3 +33,11 @@ src/content/docs/manuals/r12f/** -text whitespace=cr-at-eol
 src/content/docs/manuals/r16sm/** -text whitespace=cr-at-eol
 src/content/docs/manuals/r8fgh/** -text whitespace=cr-at-eol
 src/data/manuals/receiver-web-batch3.json -text whitespace=cr-at-eol
+
+# Batch 4 source-bound bytes.
+src/content/docs/manuals/r7fg/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r16f/** -text whitespace=cr-at-eol
+src/content/docs/manuals/r8fg/** -text whitespace=cr-at-eol
+src/content/docs/manuals/ts100-m8n/** -text whitespace=cr-at-eol
+src/content/docs/manuals/rtk-f9p/** -text whitespace=cr-at-eol
+src/data/manuals/receiver-web-batch4.json -text whitespace=cr-at-eol

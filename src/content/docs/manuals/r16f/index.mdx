@@ -1,0 +1,728 @@
+---
+title: R16F 日本語取扱説明書
+description: Radiolink R16F の公式英語取扱説明書に対応する日本語版です。
+product: r16f
+slug: manuals/r16f
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/900ed696a5458c4e67ff9b8782b608a3.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/r16f/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink R16F 公式英語取扱説明書（文書版・発行日不明、12頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="r16f-w001" data-translation-unit="r16f-w001"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f1.jpeg" width={600} height={180} figureId="r16f-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="r16f-w002" data-translation-unit="r16f-w002"></span>
+
+## R16F
+
+<span id="r16f-w003" data-translation-unit="r16f-w003"></span>
+
+## 取扱説明書
+
+<span id="r16f-w004" data-translation-unit="r16f-w004"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f2.jpeg" width={600} height={600} figureId="r16f-p1-f2" alt={"R16Fの製品写真。原図のV2.0、SBUS＋CRSF＋PWM、3–12V/DC、Ext、各チャンネル端子などの表示を保持しています。"} caption={"R16Fの製品写真。原図のV2.0、SBUS＋CRSF＋PWM、3–12V/DC、Ext、各チャンネル端子などの表示を保持しています。"} />
+
+:::note[原典について]
+原典写真はV2.0と表示されています。これをすべてのR16FのHardware Revisionやファームウェア版として一般化していません。本文の適用条件と実機の表示を区別してください。
+:::
+
+<span id="r16f-w005" data-translation-unit="r16f-w005"></span>
+
+リアルタイム内蔵テレメトリー対応16チャンネル受信機
+
+<span id="r16f-w006" data-translation-unit="r16f-w006"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f3.jpeg" width={166} height={230} figureId="r16f-p1-f3" alt={"車輪付きごみ箱に斜線を入れた記号。"} caption={"車輪付きごみ箱に斜線を入れた記号。"} />
+
+<span id="r16f-w007" data-translation-unit="r16f-w007"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f4.jpeg" width={136} height={137} figureId="r16f-p1-f4" alt={"原典表紙の認証関連記号。"} caption={"原典表紙の認証関連記号。"} />
+
+<span id="r16f-w008" data-translation-unit="r16f-w008"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f5.jpeg" width={640} height={380} figureId="r16f-p1-f5" alt={"原典表紙の14＋表示。"} caption={"原典表紙の14＋表示。"} />
+
+<span id="r16f-w009" data-translation-unit="r16f-w009"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f6.jpeg" width={230} height={180} figureId="r16f-p1-f6" alt={"原典表紙のCEマーク。"} caption={"原典表紙のCEマーク。"} />
+
+<span id="r16f-w010" data-translation-unit="r16f-w010"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f7.jpeg" width={500} height={180} figureId="r16f-p1-f7" alt={"原典表紙のRoHS表示。"} caption={"原典表紙のRoHS表示。"} />
+
+<span id="r16f-w011" data-translation-unit="r16f-w011"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p1-f8.jpeg" width={230} height={180} figureId="r16f-p1-f8" alt={"原典表紙のFCCマーク。"} caption={"原典表紙のFCCマーク。"} />
+
+<span id="r16f-w012" data-translation-unit="r16f-w012"></span>
+
+## 目次
+
+<span id="r16f-w013" data-translation-unit="r16f-w013"></span>
+
+1. R16Fの概要……2
+
+<span id="r16f-w014" data-translation-unit="r16f-w014"></span>
+
+2. 受信機プロトコルの選択……3
+
+<span id="r16f-w015" data-translation-unit="r16f-w015"></span>
+
+3. バインド……3
+
+<span id="r16f-w016" data-translation-unit="r16f-w016"></span>
+
+4. テレメトリー……4
+
+<span id="r16f-w017" data-translation-unit="r16f-w017"></span>
+
+5. 動作モード……5
+
+<span id="r16f-w018" data-translation-unit="r16f-w018"></span>
+
+6. ファームウェア更新……8
+
+<span id="r16f-w019" data-translation-unit="r16f-w019"></span>
+
+7. アンテナの取り付け……8
+
+<span id="r16f-w020" data-translation-unit="r16f-w020"></span>
+
+8. RSSI試験……8
+
+<span id="r16f-w021" data-translation-unit="r16f-w021"></span>
+
+9. サブID……9
+
+<span id="r16f-w022" data-translation-unit="r16f-w022"></span>
+
+10. R16Fの仕様……10
+
+<span id="r16f-w023" data-translation-unit="r16f-w023"></span>
+
+原典印刷ページ：1
+
+<span id="r16f-w024" data-translation-unit="r16f-w024"></span>
+
+## 1. R16Fの概要
+
+<span id="r16f-w025" data-translation-unit="r16f-w025"></span>
+
+RadioLink R16Fは、リアルタイム内蔵テレメトリーに対応する16チャンネル受信機です。2.4 GHz FHSSスペクトラム拡散方式と67チャンネルの疑似ランダム周波数ホッピングを採用し、PWM、SBUS、CRSF信号に対応します。防滴仕様で、高電圧サーボに対応し、ファームウェアを更新することで新しい機能を追加できます。対応するRadioLink送信機は、T16D、T12D、T8FB、T8S、RC8P、RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS、RC4GSです。
+
+<span id="r16f-w026" data-translation-unit="r16f-w026"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p3-f1.jpeg" width={742} height={660} figureId="r16f-p3-f1" alt={"R16Fの端子・各部名称。CH1～CH16、バインドボタン、フライトコントローラー情報のテレメトリー用Mavlinkポート、信号LED、ファームウェア更新用Type-Cポート、模型用バッテリー電圧テレメトリーポートを示します。"} caption={"R16Fの端子・各部名称。CH1～CH16、バインドボタン、フライトコントローラー情報のテレメトリー用Mavlinkポート、信号LED、ファームウェア更新用Type-Cポート、模型用バッテリー電圧テレメトリーポートを示します。"} />
+
+:::note[原典について]
+原典写真はV2.0と表示されています。これをすべてのR16FのHardware Revisionやファームウェア版として一般化していません。本文の適用条件と実機の表示を区別してください。
+:::
+
+<span id="r16f-w027" data-translation-unit="r16f-w027"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p3-f2.jpeg" width={1034} height={270} figureId="r16f-p3-f2" alt={"R16Fのアンテナ、同軸ケーブル、バインドボタンの位置。原図のV2.0表記を保持しています。"} caption={"R16Fのアンテナ、同軸ケーブル、バインドボタンの位置。原図のV2.0表記を保持しています。"} />
+
+:::note[原典について]
+原典写真はV2.0と表示されています。これをすべてのR16FのHardware Revisionやファームウェア版として一般化していません。本文の適用条件と実機の表示を区別してください。
+:::
+
+<span id="r16f-w028" data-translation-unit="r16f-w028"></span>
+
+:::caution[注意]
+注意：
+1. Mavlinkポートの機能については、T16D／T12D送信機のベイトボート機能を参照してください。
+:::
+
+<span id="r16f-w029" data-translation-unit="r16f-w029"></span>
+
+:::caution[注意]
+2. 模型を操作する前に、以下の安全確認を行ってください。
+（1）RSSI（受信信号強度）試験：試験方法は、本書「8. RSSI試験」を参照してください。
+:::
+
+<span id="r16f-w030" data-translation-unit="r16f-w030"></span>
+
+:::caution[注意]
+（2）アンテナの点検：R16Fの灰色の線は同軸ケーブルで、その先端の長さ約4～5 cmの透明な部分がアンテナです。この透明な部分が切断・破損すると、操縦距離に直接影響します。異常を見つけた場合は、速やかに受信機のアンテナを交換してください。
+:::
+
+<span id="r16f-w031" data-translation-unit="r16f-w031"></span>
+
+原典印刷ページ：2
+
+<span id="r16f-w032" data-translation-unit="r16f-w032"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w033" data-translation-unit="r16f-w033"></span>
+
+## 2. 受信機プロトコルの選択
+
+<span id="r16f-w034" data-translation-unit="r16f-w034"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w035" data-translation-unit="r16f-w035"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w036" data-translation-unit="r16f-w036"></span>
+
+:::caution[注意]
+注記：
+1. FHSS V2とFHSS V2.1のPWM出力分解能は4096で、より精密な操作が可能です。
+:::
+
+<span id="r16f-w037" data-translation-unit="r16f-w037"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w038" data-translation-unit="r16f-w038"></span>
+
+:::caution[注意]
+3. プロトコルを切り替えた後は、受信機と送信機を再度バインドしてください。
+:::
+
+<span id="r16f-w039" data-translation-unit="r16f-w039"></span>
+
+:::caution[注意]
+4. デジタルサーボを使用する場合は、3 msまたは4 msのサーボスピードを選択できます。
+:::
+
+<span id="r16f-w040" data-translation-unit="r16f-w040"></span>
+
+## 3. バインド
+
+<span id="r16f-w041" data-translation-unit="r16f-w041"></span>
+
+各受信機には固有のIDコードがあり、使用前に送信機とバインドする必要があります。バインドが完了すると、IDコードは送信機に保存されるため、毎回バインドし直す必要はありません。新しくR16Fを購入した場合は、送信機で使用するためにバインドを行ってください。
+
+<span id="r16f-w042" data-translation-unit="r16f-w042"></span>
+
+### バインド手順
+
+<span id="r16f-w043" data-translation-unit="r16f-w043"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w044" data-translation-unit="r16f-w044"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w045" data-translation-unit="r16f-w045"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w046" data-translation-unit="r16f-w046"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w047" data-translation-unit="r16f-w047"></span>
+
+原典印刷ページ：3
+
+<span id="r16f-w048" data-translation-unit="r16f-w048"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w049" data-translation-unit="r16f-w049"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w050" data-translation-unit="r16f-w050"></span>
+
+### 別のバインド方法
+
+<span id="r16f-w051" data-translation-unit="r16f-w051"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w052" data-translation-unit="r16f-w052"></span>
+
+:::caution[注意]
+注意：
+送信機と受信機の電源が入っている状態で、バインドに失敗するか信号を失うと、受信機のLEDが点滅し続けて知らせます。
+:::
+
+<span id="r16f-w053" data-translation-unit="r16f-w053"></span>
+
+:::caution[注意]
+送信機と受信機が近すぎると、信号のブロックによりバインドに失敗したり、信号を失ったりする場合があります。バインド後も、例えば60 cm以内など近すぎる場合は同様に信号を失うことがあります。送信機と受信機をさらに離すと、信号の喪失は自動的に解消します。
+:::
+
+<span id="r16f-w054" data-translation-unit="r16f-w054"></span>
+
+## 4. テレメトリー
+
+<span id="r16f-w055" data-translation-unit="r16f-w055"></span>
+
+R16Fはリアルタイム内蔵テレメトリーに対応し、信号強度、RSSI値、受信機電圧、模型用バッテリー電圧を送信機へ返送します。R16Fをフライトコントローラーに接続し、T16D／T12Dのベイトボート機能を使用すると、釣りポイント名、緯度・経度、距離、方位、受信GPS衛星数などが送信機画面に表示されます。
+
+<span id="r16f-w056" data-translation-unit="r16f-w056"></span>
+
+動力用バッテリーの電圧を返送するには、テレメトリーケーブルの一端をR16Fのテレメトリーポートに、もう一端をESCに接続します。接続方法は下図を参照してください。
+
+<span id="r16f-w057" data-translation-unit="r16f-w057"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p5-f1.jpeg" width={1700} height={1228} figureId="r16f-p5-f1" alt={"模型用バッテリー電圧テレメトリーケーブルの接続図。受信機、エルロンサーボ、エレベーターサーボ、ラダーサーボ、バッテリー、ESC、モーターの位置を示します。受信機への給電とExtポートの電圧測定を混同しないでください。"} caption={"模型用バッテリー電圧テレメトリーケーブルの接続図。受信機、エルロンサーボ、エレベーターサーボ、ラダーサーボ、バッテリー、ESC、モーターの位置を示します。受信機への給電とExtポートの電圧測定を混同しないでください。"} />
+
+<span id="r16f-w058" data-translation-unit="r16f-w058"></span>
+
+原典印刷ページ：4
+
+<span id="r16f-w059" data-translation-unit="r16f-w059"></span>
+
+:::caution[注意]
+注意：
+（1）R16Fの16チャンネルすべてに逆接保護回路があり、重要な部品を逆接から保護します。ただし、R16Fに付属するバッテリー接続用JSTコネクターは逆極性で接続しないでください。逆接すると、誤った電圧値がテレメトリーで返送されます。
+:::
+
+<span id="r16f-w060" data-translation-unit="r16f-w060"></span>
+
+:::caution[注意]
+（2）Extポートは模型用バッテリー電圧のテレメトリー専用です。受信機への給電には使用できません。
+:::
+
+<span id="r16f-w061" data-translation-unit="r16f-w061"></span>
+
+## 5. 動作モード
+
+<span id="r16f-w062" data-translation-unit="r16f-w062"></span>
+
+R16FはPWM、SBUS、CRSFの3種類の信号出力に対応し、合計4つの動作モードがあります。
+
+<span id="r16f-w063" data-translation-unit="r16f-w063"></span>
+
+### R16Fの動作モード設定
+
+<span id="r16f-w064" data-translation-unit="r16f-w064"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w065" data-translation-unit="r16f-w065"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w066" data-translation-unit="r16f-w066"></span>
+
+### 4つの動作モードの説明
+
+<span id="r16f-w067" data-translation-unit="r16f-w067"></span>
+
+#### 1）PWMモード
+
+<span id="r16f-w068" data-translation-unit="r16f-w068"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w069" data-translation-unit="r16f-w069"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w070" data-translation-unit="r16f-w070"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w071" data-translation-unit="r16f-w071"></span>
+
+原典印刷ページ：5
+
+<span id="r16f-w072" data-translation-unit="r16f-w072"></span>
+
+#### 2）PWM＋SBUSモード
+
+<span id="r16f-w073" data-translation-unit="r16f-w073"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w074" data-translation-unit="r16f-w074"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w075" data-translation-unit="r16f-w075"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w076" data-translation-unit="r16f-w076"></span>
+
+#### 3）PWM＋CRSF＋SBUSモード
+
+<span id="r16f-w077" data-translation-unit="r16f-w077"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w078" data-translation-unit="r16f-w078"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w079" data-translation-unit="r16f-w079"></span>
+
+原典印刷ページ：6
+
+<span id="r16f-w080" data-translation-unit="r16f-w080"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w081" data-translation-unit="r16f-w081"></span>
+
+#### 4）PWM＋CRSFモード
+
+<span id="r16f-w082" data-translation-unit="r16f-w082"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w083" data-translation-unit="r16f-w083"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w084" data-translation-unit="r16f-w084"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="r16f-w085" data-translation-unit="r16f-w085"></span>
+
+原典印刷ページ：7
+
+<span id="r16f-w086" data-translation-unit="r16f-w086"></span>
+
+## 6. ファームウェア更新
+
+<span id="r16f-w087" data-translation-unit="r16f-w087"></span>
+
+R16Fはファームウェア更新に対応します。更新手順は以下のとおりです。
+
+<span id="r16f-w088" data-translation-unit="r16f-w088"></span>
+
+（1）Type-CケーブルをR16FのType-Cポートに差し込みます。
+
+<span id="r16f-w089" data-translation-unit="r16f-w089"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p9-f1.jpeg" width={1076} height={777} figureId="r16f-p9-f1" alt={"ファームウェア更新用Type-Cポートの位置。"} caption={"ファームウェア更新用Type-Cポートの位置。"} />
+
+<span id="r16f-w090" data-translation-unit="r16f-w090"></span>
+
+（2）R16Fのバインドボタンを押したままにします。
+
+<span id="r16f-w091" data-translation-unit="r16f-w091"></span>
+
+（3）Type-Cケーブルのもう一端をパソコンに接続し、バインドボタンを離します。
+
+<span id="r16f-w092" data-translation-unit="r16f-w092"></span>
+
+（4）受信機のLEDが点灯し、パソコンにUSBフラッシュドライブが表示されます。
+
+<span id="r16f-w093" data-translation-unit="r16f-w093"></span>
+
+（5）R16Fの新しいファームウェアをUSBフラッシュドライブへコピー＆ペーストすると、更新が完了します。
+
+<span id="r16f-w094" data-translation-unit="r16f-w094"></span>
+
+## 7. アンテナの取り付け
+
+<span id="r16f-w095" data-translation-unit="r16f-w095"></span>
+
+受信機のアンテナは模型に正しく取り付けることが重要です。取り付けが不適切だと、信号品質が低下します。
+
+<span id="r16f-w096" data-translation-unit="r16f-w096"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p9-f2.jpeg" width={1000} height={500} figureId="r16f-p9-f2" alt={"2本のアンテナを90°の角度に保つ取り付け例。"} caption={"2本のアンテナを90°の角度に保つ取り付け例。"} />
+
+<span id="r16f-w097" data-translation-unit="r16f-w097"></span>
+
+受信機のアンテナの取り付け方は、信号品質にどのように影響するのでしょうか。以下は、アンテナ取り付け時の一般的な誤りです。
+
+<span id="r16f-w098" data-translation-unit="r16f-w098"></span>
+
+:::caution[注意]
+（1）受信機の2本のアンテナを重ねないでください。互いに干渉します。右図のように、2本のアンテナを90°の角度に保ってください。
+:::
+
+<span id="r16f-w099" data-translation-unit="r16f-w099"></span>
+
+:::caution[注意]
+（2）金属物の近くにアンテナを置かないでください。導電性の板による反射で、信号が大きく悪化します。
+:::
+
+<span id="r16f-w100" data-translation-unit="r16f-w100"></span>
+
+:::caution[注意]
+（3）アンテナを地面と平行にしないでください。地面に対して垂直に配置してください。
+:::
+
+<span id="r16f-w101" data-translation-unit="r16f-w101"></span>
+
+:::caution[注意]
+（4）大型の模型には、信号の放射に影響する金属部品が含まれる場合があります。その場合は、どのような状態でも最良の信号状態を確保できるよう、模型の両側にアンテナを配置してください。
+:::
+
+<span id="r16f-w102" data-translation-unit="r16f-w102"></span>
+
+:::caution[注意]
+（5）アンテナは金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+:::
+
+<span id="r16f-w103" data-translation-unit="r16f-w103"></span>
+
+:::caution[注意]
+（6）アンテナはモーター、ESC、その他の干渉源となり得るものから離してください。
+:::
+
+<span id="r16f-w104" data-translation-unit="r16f-w104"></span>
+
+:::caution[注意]
+（7）受信機の取り付けには、振動を抑えるためスポンジや発泡材の使用を推奨します。
+:::
+
+<span id="r16f-w105" data-translation-unit="r16f-w105"></span>
+
+:::caution[注意]
+（8）受信機には高精度の電子部品が含まれます。強い振動や高温を避けてください。
+:::
+
+<span id="r16f-w106" data-translation-unit="r16f-w106"></span>
+
+:::caution[注意]
+（9）受信機を保護するため、発泡材やゴム布など、RC用の防振材で包んでください。密閉したビニール袋に入れると、受信機が制御不能になる原因となり得る湿気やほこりを防げます。
+:::
+
+<span id="r16f-w107" data-translation-unit="r16f-w107"></span>
+
+受信機のアンテナ取り付けガイドは、以下のリンクを参照してください。
+https://www.radiolink.com/receiver_antenna_installation
+
+<span id="r16f-w108" data-translation-unit="r16f-w108"></span>
+
+## 8. RSSI試験
+
+<span id="r16f-w109" data-translation-unit="r16f-w109"></span>
+
+操縦距離が短い場合は、以下の説明を参考に送受信機間のRSSIを試験してください。送信機のRSSI値の試験手順と、RSSI値の異常への対処方法を説明します。
+
+<span id="r16f-w110" data-translation-unit="r16f-w110"></span>
+
+原典印刷ページ：8
+
+<span id="r16f-w111" data-translation-unit="r16f-w111"></span>
+
+（1）送信機の電源を入れると同時に受信機にも給電します。送受信機が接続されます。接続されない場合は、再度バインドしてください。送信機画面に電波マークが表示されれば、バインド成功です。ホーム画面にRSSI値が表示され、送受信機間の距離に応じて変化します（右図参照）。
+
+<span id="r16f-w112" data-translation-unit="r16f-w112"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p10-f1.jpeg" width={319} height={241} figureId="r16f-p10-f1" alt={"T16D画面のRSSI表示位置の例。原図はRSSI −99 dBm、RX_V 5 V、EXT_V 12 Vを表示しています。表示値は原典の画面例です。"} caption={"T16D画面のRSSI表示位置の例。原図はRSSI −99 dBm、RX_V 5 V、EXT_V 12 Vを表示しています。表示値は原典の画面例です。"} />
+
+<span id="r16f-w113" data-translation-unit="r16f-w113"></span>
+
+（2）受信機と送信機のアンテナを平行にし、約60 cm離して、両方のアンテナをまっすぐにします。RSSI値が0～−30 dBmの範囲であれば正常です。値が0に近いほど信号が強いことを示します（下図参照）。
+
+<span id="r16f-w114" data-translation-unit="r16f-w114"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p10-f2.jpeg" width={2017} height={1403} figureId="r16f-p10-f2" alt={"RSSI試験で送信機と受信機を約60 cm離す原典図。"} caption={"RSSI試験で送信機と受信機を約60 cm離す原典図。"} />
+
+<span id="r16f-w115" data-translation-unit="r16f-w115"></span>
+
+### 信号強度が異常な場合の対処
+
+<span id="r16f-w116" data-translation-unit="r16f-w116"></span>
+
+受信機と送信機のアンテナに損傷がないか確認してください。信号強度の低下の多くは、アンテナの損傷が原因です。損傷があればアンテナを交換してください。損傷がない場合は、受信機を交換して送信機または受信機の不具合を確認できます。それでも解決しない場合は、after_service@radiolink.com.cnへメールでサポートを依頼してください。
+
+<span id="r16f-w117" data-translation-unit="r16f-w117"></span>
+
+## 9. サブID（T16D送信機を例に説明）
+
+<span id="r16f-w118" data-translation-unit="r16f-w118"></span>
+
+RadioLink送信機は複数の受信機とバインドできます。T16Dと複数の受信機のバインドが完了し、T16Dとすべての受信機の電源を同時に入れた場合、以下の2通りの使い方があります。
+
+<span id="r16f-w119" data-translation-unit="r16f-w119"></span>
+
+1. サブID機能をOFFにすると、T16Dで複数の機器を同時に操作できます。
+
+<span id="r16f-w120" data-translation-unit="r16f-w120"></span>
+
+2. サブID機能をONにすると、選択したサブIDに対応する機器だけをT16Dで操作できます。T16Dには16組のサブIDがあり、各IDが1台の受信機に対応します。先にサブIDを設定してください。すべての機器の電源を入れた状態で、サブID機能により1台を操作し、その間、ほかの機器は待機します。
+
+<span id="r16f-w121" data-translation-unit="r16f-w121"></span>
+
+例として、T16Dをトラックと車にバインドして、すべての電源を入れます。まずT16Dで車をトラックの荷台へ走らせ、次に受信機IDをトラックへ切り替えて、車を目的地まで運びます。
+
+<span id="r16f-w122" data-translation-unit="r16f-w122"></span>
+
+原典印刷ページ：9
+
+<span id="r16f-w123" data-translation-unit="r16f-w123"></span>
+
+### サブID機能の設定手順
+
+<span id="r16f-w124" data-translation-unit="r16f-w124"></span>
+
+1. サブID機能をONにします。模型に合わせてID番号を設定し、各受信機のバインドとパラメータ設定を完了します。
+
+<span id="r16f-w125" data-translation-unit="r16f-w125"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p11-f1.jpeg" width={636} height={475} figureId="r16f-p11-f1" alt={"サブID機能ONの原典画面。「Sub ID」「Subsidiary」「ID_0」などを表示します。 原図は画面の左側や下部で文字が切れています。欠けた文字を推測で補わず、メニュー名全体は同じ原典の本文記載との対応として示しています。"} caption={"サブID機能ONの原典画面。「Sub ID」「Subsidiary」「ID_0」などを表示します。 原図は画面の左側や下部で文字が切れています。欠けた文字を推測で補わず、メニュー名全体は同じ原典の本文記載との対応として示しています。"} />
+
+:::note[原典について]
+サブIDの画面にはFHSS V2.1と表示されていますが、原典のサブID表示例として保持しています。確認待ちのプロトコルや利用可能チャンネル数を確定する根拠にしないでください。
+:::
+
+:::note[原典について]
+原図の受信機設定画面は左側や下部の文字が切れています。欠けた文字列を補完せず、同じ原典本文で確認できるメニュー名と、画像として実際に読める部分を区別しています。
+:::
+
+<span id="r16f-w126" data-translation-unit="r16f-w126"></span>
+
+2. サブIDをONにすると、T16Dのメイン画面に対応するID番号が表示されます。
+
+<span id="r16f-w127" data-translation-unit="r16f-w127"></span>
+
+:::caution[注意]
+注意：T16D／T12Dでは、2ポジションまたは3ポジションスイッチを割り当て、サブID番号を切り替えられます。詳細はT16D／T12Dの「CONDITION」機能を参照してください。
+:::
+
+<span id="r16f-w128" data-translation-unit="r16f-w128"></span>
+
+## 10. R16Fの仕様
+
+<span id="r16f-w129" data-translation-unit="r16f-w129"></span>
+
+|項目|R16F受信機|
+|---|---|
+|寸法|45×32×15 mm（1.77×1.26×0.59インチ）|
+|重量|17 g（0.6 oz）|
+|チャンネル数|16チャンネル|
+|動作電圧|3～12 V|
+|動作電流|50±10 mA＠5 V|
+|アンテナ長|205 mm（8.07インチ）|
+|信号出力|SBUS＋CRSF＋PWM|
+|出力周波数|2.4 GHz ISM帯（2400～2483.5 MHz）|
+|スペクトラム拡散|FHSS、67チャンネルの疑似ランダム周波数ホッピング|
+|対応モデル|回転翼機／固定翼機／グライダー／マルチコプター／車／ボート／ロボット|
+|操縦距離|空中4000 m（最大距離は障害物や干渉のない場所で試験）|
+|テレメトリー|模型用バッテリー電圧、RSSI、受信機電圧のリアルタイム内蔵テレメトリー。フライトコントローラーに接続すると、緯度・経度、距離、衛星数、方位などをリアルタイムで返送できます。|
+|オンライン更新|データ転送用Type-CケーブルでR16Fをパソコンに接続することで、追加機器なしで最新機能を容易に追加できます。|
+
+<span id="r16f-w130" data-translation-unit="r16f-w130"></span>
+
+原典印刷ページ：10
+
+<span id="r16f-w131" data-translation-unit="r16f-w131"></span>
+
+|項目|R16F受信機（仕様の続き）|
+|---|---|
+|EXTバッテリー入力|1S～14S（3.0～60 V）|
+|応答遅延|3 ms、4 ms、14 msから選択可能|
+|防滴|防水等級IPX4|
+|動作温度|−30～85 °C|
+|対応送信機|T16D、T12D、T8FB、T8S、RC8P、RC8X、RC6GS V3、RC4GS V3、RC6GS V2、RC4GS V2、RC6GS、RC4GS|
+
+<span id="r16f-w132" data-translation-unit="r16f-w132"></span>
+
+## テクニカルサポート
+
+<span id="r16f-w133" data-translation-unit="r16f-w133"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p12-f1.jpeg" width={300} height={300} figureId="r16f-p12-f1" alt={"R16FユーザーマニュアルへのQRコード。"} caption={"R16FユーザーマニュアルへのQRコード。"} />
+
+<span id="r16f-w134" data-translation-unit="r16f-w134"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p12-f2.jpeg" width={300} height={300} figureId="r16f-p12-f2" alt={"R16F FAQへのQRコード。"} caption={"R16F FAQへのQRコード。"} />
+
+<span id="r16f-w135" data-translation-unit="r16f-w135"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p12-f3.jpeg" width={300} height={300} figureId="r16f-p12-f3" alt={"R16FチュートリアルへのQRコード。"} caption={"R16FチュートリアルへのQRコード。"} />
+
+<span id="r16f-w136" data-translation-unit="r16f-w136"></span>
+
+<ManualFigure src="/assets/radiolink/r16f/web-ja-v1/r16f-p12-f4.jpeg" width={920} height={911} figureId="r16f-p12-f4" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="r16f-w137" data-translation-unit="r16f-w137"></span>
+
+Facebook MessengerでRadioLink RLに連絡／R16Fユーザーマニュアル／R16F FAQ／R16Fチュートリアル
+
+<span id="r16f-w138" data-translation-unit="r16f-w138"></span>
+
+上記の連絡方法で問題が解決しない場合は、技術サポートafter_service@radiolink.com.cnへメールで連絡することもできます。本内容は変更される場合があります。最新版はhttps://www.radiolink.com/r16f_manualからダウンロードしてください。
+
+<span id="r16f-w139" data-translation-unit="r16f-w139"></span>
+
+RadioLink製品をお選びいただき、重ねてありがとうございます。
+
+<span id="r16f-w140" data-translation-unit="r16f-w140"></span>
+
+原典印刷ページ：11
