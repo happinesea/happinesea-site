@@ -1206,7 +1206,7 @@
     "subcategoryLabel": "固定翼用ESC",
     "description": "Radiolinkの固定翼機向けESCです。",
     "officialUrl": "https://www.radiolink.com/15a_esc",
-    "detailPath": null,
+    "detailPath": "/radiolink/re15a-2s/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/re15a-2s.webp",

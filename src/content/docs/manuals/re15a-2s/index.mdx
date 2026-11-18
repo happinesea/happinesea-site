@@ -1,0 +1,242 @@
+---
+title: RE15A 2S 日本語取扱説明書
+description: Radiolink RE15A 2S の公式英語取扱説明書に対応する日本語版です。
+product: re15a-2s
+slug: manuals/re15a-2s
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/e4650bd29d7089c93cf52f35c3dc5523.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/re15a-2s/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink RE15A 2S 公式英語取扱説明書（文書版・発行日不明、7頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="re15a-p1-u01" data-translation-unit="re15a-p1-u01"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p1-f1.jpeg" width={600} height={180} figureId="re15a-p1-f1" alt={"RadioLinkロゴ"} caption={"RadioLinkロゴ"} />
+
+<span id="re15a-p1-u02" data-translation-unit="re15a-p1-u02"></span>
+
+## RE15A 2S 固定翼用ブラシレスESC取扱説明書
+
+<span id="re15a-p1-u03" data-translation-unit="re15a-p1-u03"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p1-f2.jpeg" width={1500} height={1500} figureId="re15a-p1-f2" alt={"RE15A 2S ESCの原典写真"} caption={"RE15A 2S ESCの原典写真"} />
+
+<span id="re15a-p1-u04" data-translation-unit="re15a-p1-u04"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p1-f3.jpeg" width={640} height={380} figureId="re15a-p1-f3" alt={"14+の表示"} caption={"14+の表示"} />
+
+<span id="re15a-p2-u01" data-translation-unit="re15a-p2-u01"></span>
+
+目次
+
+1. 主な特長（2）、2. 仕様（2）、3. 配線図（3）、4. 操作方法（3）、5. プログラミングパラメーター（3）、6. 注意事項（5）。括弧内は原典印刷頁。
+
+<span id="re15a-p2-u02" data-translation-unit="re15a-p2-u02"></span>
+
+原典印刷ページ：1
+
+<span id="re15a-p3-u01" data-translation-unit="re15a-p3-u01"></span>
+
+## 1. 主な特長
+
+<span id="re15a-p3-u02" data-translation-unit="re15a-p3-u02"></span>
+
+- 固定翼用に最適化したBLHeli_Sアルゴリズムと高性能MCU EFM8BB21F16Gを採用し、スロットルに高速で応答します。
+- 電源投入時にスロットル信号を自動検出します。パルス幅1～2 msの標準スロットル方式に対応し、停止を防ぐ安全機構を内蔵しています。
+- ESC制御アルゴリズム、最適化した基板回路、消磁補償技術を組み合わせ、モーターを滑らかかつ正確に動かします。
+- 温度保護、低回転時の出力保護、安全始動保護などを備えます。
+- 高効率5 V BECを搭載し、受信機とサーボへ安定した5 Vを供給します。
+- PWMとDshot300に対応し、RadioLink A560、SU27、D460および他社の固定翼機に幅広く対応します。
+- モータータイミングを調整でき、さまざまなモーターに対応します。
+
+<span id="re15a-p3-u03" data-translation-unit="re15a-p3-u03"></span>
+
+## 2. 仕様
+
+<span id="re15a-p3-u04" data-translation-unit="re15a-p3-u04"></span>
+
+| 重量 | 7.4 g（0.26 oz） |
+
+<span id="re15a-p3-u05" data-translation-unit="re15a-p3-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p3-u06" data-translation-unit="re15a-p3-u06"></span>
+
+| 項目 | 原典記載 |
+|---|---|
+| 入力電圧 | 6.0～8.7 V（2Sバッテリー） |
+| 出力電圧 | 入力電圧と同じ |
+| 連続電流 | 15 A |
+| ピーク電流 | 20 A（10秒間） |
+| BEC出力電圧 | 5 V |
+| BEC出力電流 | 2 A |
+| 対応機体 | 固定翼機 |
+| モータータイミング | 初期値Medium（15°）。0°、7.5°、15°、22.5°、30°に調整可 |
+| プロトコル | PWM、Dshot300 |
+| MCU | EFM8BB21F16G |
+| ESC Firmware | E_H_30_REV16_7.HEX |
+| 設定ソフトウェア | BLHeliSuite.exe |
+| 形式 | ブラシレス、センサーレス |
+
+<span id="re15a-p3-u07" data-translation-unit="re15a-p3-u07"></span>
+
+原典印刷ページ：2
+
+<span id="re15a-p4-u01" data-translation-unit="re15a-p4-u01"></span>
+
+## 3. 配線図
+
+<span id="re15a-p4-u02" data-translation-unit="re15a-p4-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p4-u03" data-translation-unit="re15a-p4-u03"></span>
+
+## 4. 操作方法
+
+<span id="re15a-p4-u04" data-translation-unit="re15a-p4-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p4-u05" data-translation-unit="re15a-p4-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p4-u06" data-translation-unit="re15a-p4-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p4-u07" data-translation-unit="re15a-p4-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p4-u08" data-translation-unit="re15a-p4-u08"></span>
+
+## 5. プログラミングパラメーター
+
+<span id="re15a-p4-u09" data-translation-unit="re15a-p4-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p4-u10" data-translation-unit="re15a-p4-u10"></span>
+
+原典印刷ページ：3
+
+<span id="re15a-p5-u01" data-translation-unit="re15a-p5-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p5-u02" data-translation-unit="re15a-p5-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p5-u03" data-translation-unit="re15a-p5-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p5-u04" data-translation-unit="re15a-p5-u04"></span>
+
+原典印刷ページ：4
+
+<span id="re15a-p6-u01" data-translation-unit="re15a-p6-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="re15a-p6-u02" data-translation-unit="re15a-p6-u02"></span>
+
+## 6. 注意事項
+
+<span id="re15a-p6-u03" data-translation-unit="re15a-p6-u03"></span>
+
+:::caution[注意]
+- ESC内部の電子部品を自分で分解しないでください。恒久的な破損や情報の消失につながります。
+- ESCとモーターを試験するときは、機体にプロペラを取り付けないでください。
+- ひび割れや破損のあるバッテリーパックを使用しないでください。
+- 過熱しやすいバッテリーパックを使用しないでください。
+- 規格に適合しないケーブル絶縁材を使用しないでください。
+- 規格に適合しないケーブルコネクターを使用しないでください。
+- バッテリー電圧はESCの動作電圧範囲を超えてはいけません。
+- バッテリーの極性に注意してください。極性を誤るとESCが破損します。
+- ESCを湿気にさらしたり、過度に露出した場所に置いたりしないでください。
+- モーター動作中にバッテリーを抜かないでください。大きなピーク電流が発生し、ESCが破損します。
+- ESCの外側を物で覆わないでください。できるだけ通風・放熱の良い場所に設置してください。
+:::
+
+<span id="re15a-p6-u04" data-translation-unit="re15a-p6-u04"></span>
+
+原典印刷ページ：5
+
+<span id="re15a-p7-u01" data-translation-unit="re15a-p7-u01"></span>
+
+## 技術サポート
+
+<span id="re15a-p7-u05" data-translation-unit="re15a-p7-u05"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p7-f4.jpeg" width={920} height={911} figureId="re15a-p7-f4" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="re15a-p7-u02" data-translation-unit="re15a-p7-u02"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p7-f1.jpeg" width={300} height={300} figureId="re15a-p7-f1" alt={"RE15A取扱説明書のQRコード。"} caption={"RE15A取扱説明書のQRコード。"} />
+
+<span id="re15a-p7-u03" data-translation-unit="re15a-p7-u03"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p7-f2.jpeg" width={300} height={300} figureId="re15a-p7-f2" alt={"RE15A FAQのQRコード。"} caption={"RE15A FAQのQRコード。"} />
+
+<span id="re15a-p7-u04" data-translation-unit="re15a-p7-u04"></span>
+
+<ManualFigure src="/assets/radiolink/re15a-2s/web-ja-v1/re15a-p7-f3.jpeg" width={300} height={300} figureId="re15a-p7-f3" alt={"RE15AチュートリアルのQRコード。"} caption={"RE15AチュートリアルのQRコード。"} />
+
+<span id="re15a-p7-u06" data-translation-unit="re15a-p7-u06"></span>
+
+Facebook MessengerでRadioLink RLに連絡。
+
+<span id="re15a-p7-u07" data-translation-unit="re15a-p7-u07"></span>
+
+上記で解決できない場合はafter_service@radiolink.com.cn にメールでお問い合わせください。内容は変更される場合があります。最新版は https://www.radiolink.com.cn/15a_esc_user_manual から入手してください。
+
+<span id="re15a-p7-u08" data-translation-unit="re15a-p7-u08"></span>
+
+RadioLink製品をお選びいただき、ありがとうございます。
+
+<span id="re15a-p7-u09" data-translation-unit="re15a-p7-u09"></span>
+
+原典印刷ページ：6

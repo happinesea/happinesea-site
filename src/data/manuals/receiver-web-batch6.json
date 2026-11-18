@@ -1,9 +1,7 @@
 {
   "batch_id": "receiver-web-batch6",
-  "production_scope": "PARTIAL",
-  "pending_product_ids": [
-    "re15a"
-  ],
+  "production_scope": "FULL_FIVE",
+  "pending_product_ids": [],
   "manuals": [
     {
       "product_id": "trainer-cable",
@@ -783,6 +781,203 @@
       "batch_id": "receiver-web-batch6",
       "source_product_id": "elrs915",
       "inventory_product_id": "elrs_915",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null,
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "re15a-2s",
+      "model": "RE15A 2S",
+      "route": "/manuals/re15a-2s/",
+      "product_route": "/radiolink/re15a-2s/",
+      "source": {
+        "document_id": "15a_esc_user_manual",
+        "repository_path": "sources/en/15a_esc_user_manual.pdf",
+        "sha256": "3760c2d5c5128973a026dd6162f6e55f783fce557c86d5810f30eb7650505d72",
+        "source_url": "https://www.radiolink.com/download/e4650bd29d7089c93cf52f35c3dc5523.pdf",
+        "version": null,
+        "page_count": 7
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "caacb02f51ee552231b09d8817a9e373d3839a55e6f2d617d7ec3a9b86f2786b",
+      "mdx_sha256": "466eed1c5d3a8a859f7c59c28b37546db786e9bfdcd9dac33095a2f70cf12341",
+      "translation_qa_sha256": "78fcf97b8fa86e6e4c3c8ec735ecdfece6bdaa642e86f9b96e34c623bcf06caa",
+      "unit_ids": [
+        "re15a-p1-u01",
+        "re15a-p1-u02",
+        "re15a-p1-u03",
+        "re15a-p1-u04",
+        "re15a-p2-u01",
+        "re15a-p2-u02",
+        "re15a-p3-u01",
+        "re15a-p3-u02",
+        "re15a-p3-u03",
+        "re15a-p3-u04",
+        "re15a-p3-u05",
+        "re15a-p3-u06",
+        "re15a-p3-u07",
+        "re15a-p4-u01",
+        "re15a-p4-u02",
+        "re15a-p4-u03",
+        "re15a-p4-u04",
+        "re15a-p4-u05",
+        "re15a-p4-u06",
+        "re15a-p4-u07",
+        "re15a-p4-u08",
+        "re15a-p4-u09",
+        "re15a-p4-u10",
+        "re15a-p5-u01",
+        "re15a-p5-u02",
+        "re15a-p5-u03",
+        "re15a-p5-u04",
+        "re15a-p6-u01",
+        "re15a-p6-u02",
+        "re15a-p6-u03",
+        "re15a-p6-u04",
+        "re15a-p7-u01",
+        "re15a-p7-u05",
+        "re15a-p7-u02",
+        "re15a-p7-u03",
+        "re15a-p7-u04",
+        "re15a-p7-u06",
+        "re15a-p7-u07",
+        "re15a-p7-u08",
+        "re15a-p7-u09"
+      ],
+      "withheld_unit_ids": [
+        "re15a-p3-u05",
+        "re15a-p4-u02",
+        "re15a-p4-u04",
+        "re15a-p4-u05",
+        "re15a-p4-u06",
+        "re15a-p4-u07",
+        "re15a-p4-u09",
+        "re15a-p5-u01",
+        "re15a-p5-u02",
+        "re15a-p5-u03",
+        "re15a-p6-u01"
+      ],
+      "source_figures_total": 11,
+      "withheld_figure_ids": [
+        "re15a-p4-f1",
+        "re15a-p4-f2",
+        "re15a-p4-f3",
+        "re15a-p5-f1"
+      ],
+      "figures": [
+        {
+          "figure_id": "re15a-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            148.32000732421875,
+            75.24000549316406,
+            474.96002197265625,
+            173.16000366210938
+          ],
+          "source_xref": 11,
+          "width": 600,
+          "height": 180,
+          "path": "assets/re15a-p1-f1.jpeg",
+          "sha256": "b419f9cddb66a2bf9d9ebb09122093104b66502756768b2a91ece764cd1de5cc"
+        },
+        {
+          "figure_id": "re15a-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            95.76000213623047,
+            333.1199951171875,
+            454.08001708984375,
+            691.4400024414062
+          ],
+          "source_xref": 10,
+          "width": 1500,
+          "height": 1500,
+          "path": "assets/re15a-p1-f2.jpeg",
+          "sha256": "540bf9e009ffd239c11c65ea9002daf153e005cb20d56a880026d545197eaea9"
+        },
+        {
+          "figure_id": "re15a-p1-f3",
+          "source_page": 1,
+          "source_bbox": [
+            523.5599975585938,
+            793.5599975585938,
+            557.280029296875,
+            813.5999755859375
+          ],
+          "source_xref": 8,
+          "width": 640,
+          "height": 380,
+          "path": "assets/re15a-p1-f3.jpeg",
+          "sha256": "5e07bf4db1072e92d1652172a274b20c71c492be60d5b833e249ee6b3383f67d"
+        },
+        {
+          "figure_id": "re15a-p7-f1",
+          "source_page": 7,
+          "source_bbox": [
+            208.44000244140625,
+            94.32000732421875,
+            282.7200012207031,
+            168.60000610351562
+          ],
+          "source_xref": 85,
+          "width": 300,
+          "height": 300,
+          "path": "assets/re15a-p7-f1.jpeg",
+          "sha256": "8e3f4ee55e67b1bf3d018db2cbd8a8bf4d8198065529050d916dede0c101ae5d"
+        },
+        {
+          "figure_id": "re15a-p7-f2",
+          "source_page": 7,
+          "source_bbox": [
+            334.67999267578125,
+            95.15999603271484,
+            409.0799865722656,
+            169.55999755859375
+          ],
+          "source_xref": 86,
+          "width": 300,
+          "height": 300,
+          "path": "assets/re15a-p7-f2.jpeg",
+          "sha256": "27ca4513ceb50a36c16d9433b17bd5a6dd70998c25769bfff7a1cf1e0ccc1f80"
+        },
+        {
+          "figure_id": "re15a-p7-f3",
+          "source_page": 7,
+          "source_bbox": [
+            461.1600036621094,
+            95.27999877929688,
+            534.9600219726562,
+            169.0800018310547
+          ],
+          "source_xref": 87,
+          "width": 300,
+          "height": 300,
+          "path": "assets/re15a-p7-f3.jpeg",
+          "sha256": "4b45feed626f75ca168f89ed0d44a7b1ea7298165ab37eb7dbe41fe700fc6d03"
+        },
+        {
+          "figure_id": "re15a-p7-f4",
+          "source_page": 7,
+          "source_bbox": [
+            72.0,
+            96.4800033569336,
+            144.1199951171875,
+            168.0
+          ],
+          "source_xref": 83,
+          "width": 920,
+          "height": 911,
+          "path": "assets/re15a-p7-f4.jpeg",
+          "sha256": "e09dd876a3a3bdfd3ef44a692d3dd196045ad0126c8fb4546892d94c8a41eccb"
+        }
+      ],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch6",
+      "source_product_id": "re15a",
+      "inventory_product_id": "15a_esc",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
       "web_qa_status": "PASS_RENDERED_SCOPE"
