@@ -205,9 +205,9 @@
         "page_count": 6
       },
       "canonical_revision": "web-ja-v1",
-      "canonical_sha256": "8431eff462830dca79cdafe551df46bc434f6c52955c4d9380446641555520d2",
-      "mdx_sha256": "bd4c95337aa4a71ad2904a22bf496bf10a219a5e97b5b09f49ff571e5f0c8f76",
-      "translation_qa_sha256": "eaf2717d7d2b7ea35e9b3230c19aa57c21423f82728730c69a9056fb9e7aea6c",
+      "canonical_sha256": "b4b07035b8e1431131fa92e4b4eef9afcc2964cdba9b5a11c626d5b822d9f29d",
+      "mdx_sha256": "07e4c628c27ca645a1c045869b9e0dc741d8c69da6cb039de3c378793da6894e",
+      "translation_qa_sha256": "ebd94db80a2b4a3fe27445b6579903a7c7818541e2295467d1e07ccba91c2eb5",
       "unit_ids": [
         "cm120-p1-u01",
         "cm120-p1-u02",
@@ -354,7 +354,7 @@
       "source_product_id": "cm120",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     }
   ]
 }
