@@ -23,7 +23,10 @@ test('batch5 copies retain independent provenance, untranslated original figures
     batch.production_scope === 'SHORT_FOUR' ? 4 : 5,
   );
   assert.equal(
-    all.manuals.filter((m) => m.batch_id !== 'receiver-web-batch6').length,
+    all.manuals.filter(
+      (m) =>
+        !['receiver-web-batch6', 'receiver-web-batch7'].includes(m.batch_id),
+    ).length,
     20 + batch.manuals.length,
   );
   for (const m of batch.manuals) {

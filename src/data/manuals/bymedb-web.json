@@ -1,0 +1,493 @@
+{
+  "manuals": [
+    {
+      "product_id": "byme-db",
+      "model": "Byme-DB",
+      "route": "/manuals/byme-db/",
+      "product_route": "/radiolink/byme-db/",
+      "source": {
+        "document_id": "bymedb_manual",
+        "repository_path": "sources/en/bymedb_manual.pdf",
+        "sha256": "9eceaf246a14071238ab8f3d5bfb59c55e0cbbdb947b15fcdfd3e3607cdb53c7",
+        "source_url": "https://www.radiolink.com/download/a72a7284dc880570b0940146d00254ce.pdf",
+        "version": "V1.0",
+        "page_count": 13
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "7f31a5a5b7c071ae3104cbd8ce632147ca6744bf2be1bbd3a017c8d57d68c919",
+      "mdx_sha256": "1eb62455cee0d1108984c1ad14667b69fb4eafab4bd4108b60032365cf2807f5",
+      "translation_qa_sha256": "a7c6f0798289c1e0749784c3ccab36628c48a1b1b0a5b50fa773eafbc131ce73",
+      "unit_ids": [
+        "bymedb-p1-u01",
+        "bymedb-p1-f1-unit",
+        "bymedb-p1-f2-unit",
+        "bymedb-p1-f3-unit",
+        "bymedb-p2-folio",
+        "bymedb-p2-u01",
+        "bymedb-p3-folio",
+        "bymedb-p3-u01",
+        "bymedb-p3-u02",
+        "bymedb-p4-folio",
+        "bymedb-p4-u01",
+        "bymedb-p4-f1-unit",
+        "bymedb-p4-f2-unit",
+        "bymedb-p4-f3-unit",
+        "bymedb-p4-f4-unit",
+        "bymedb-p4-f5-unit",
+        "bymedb-p5-folio",
+        "bymedb-p5-u01",
+        "bymedb-p5-u02",
+        "bymedb-p5-u03",
+        "bymedb-p5-f1-unit",
+        "bymedb-p6-folio",
+        "bymedb-p6-u01",
+        "bymedb-p6-u02",
+        "bymedb-p6-f1-unit",
+        "bymedb-p6-f2-unit",
+        "bymedb-p6-f3-unit",
+        "bymedb-p7-folio",
+        "bymedb-p7-u01",
+        "bymedb-p7-u02",
+        "bymedb-p7-u03",
+        "bymedb-p7-u04",
+        "bymedb-p7-f1-unit",
+        "bymedb-p7-f2-unit",
+        "bymedb-p7-f3-unit",
+        "bymedb-p8-folio",
+        "bymedb-p8-u01",
+        "bymedb-p8-u02",
+        "bymedb-p8-u03",
+        "bymedb-p8-f1-unit",
+        "bymedb-p9-folio",
+        "bymedb-p9-u01",
+        "bymedb-p9-f1-unit",
+        "bymedb-p9-f2-unit",
+        "bymedb-p9-f3-unit",
+        "bymedb-p10-folio",
+        "bymedb-p10-u01",
+        "bymedb-p10-u02",
+        "bymedb-p10-f1-unit",
+        "bymedb-p10-f2-unit",
+        "bymedb-p11-folio",
+        "bymedb-p11-u01",
+        "bymedb-p11-u02",
+        "bymedb-p11-f1-unit",
+        "bymedb-p11-f2-unit",
+        "bymedb-p12-folio",
+        "bymedb-p12-f1-unit",
+        "bymedb-p12-u01",
+        "bymedb-p12-f2-unit",
+        "bymedb-p12-u02",
+        "bymedb-p12-u03",
+        "bymedb-p13-folio",
+        "bymedb-p13-u01",
+        "bymedb-p13-f3-unit",
+        "bymedb-p13-f2-unit",
+        "bymedb-p13-f1-unit"
+      ],
+      "withheld_unit_ids": [
+        "bymedb-p5-u03",
+        "bymedb-p7-u02",
+        "bymedb-p7-u04",
+        "bymedb-p7-f1-unit",
+        "bymedb-p7-f2-unit",
+        "bymedb-p7-f3-unit",
+        "bymedb-p12-u02",
+        "bymedb-p12-u03"
+      ],
+      "source_figures_total": 28,
+      "withheld_figure_ids": [
+        "bymedb-p7-f1",
+        "bymedb-p7-f2",
+        "bymedb-p7-f3"
+      ],
+      "figures": [
+        {
+          "figure_id": "bymedb-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            163.1999969482422,
+            69.84000396728516,
+            445.20001220703125,
+            154.44000244140625
+          ],
+          "source_xref": 10,
+          "width": 600,
+          "height": 180,
+          "path": "assets/bymedb-p1-f1.jpeg",
+          "sha256": "b419f9cddb66a2bf9d9ebb09122093104b66502756768b2a91ece764cd1de5cc"
+        },
+        {
+          "figure_id": "bymedb-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            92.4000015258789,
+            299.760009765625,
+            500.1600036621094,
+            707.52001953125
+          ],
+          "source_xref": 8,
+          "width": 1000,
+          "height": 1000,
+          "path": "assets/bymedb-p1-f2.jpeg",
+          "sha256": "0a77b345c51d878adb63daa34343cd248d605515493698c0f083ba02125e46e2"
+        },
+        {
+          "figure_id": "bymedb-p1-f3",
+          "source_page": 1,
+          "source_bbox": [
+            495.4800109863281,
+            773.6399536132812,
+            550.2000122070312,
+            806.1599731445312
+          ],
+          "source_xref": 12,
+          "width": 640,
+          "height": 380,
+          "path": "assets/bymedb-p1-f3.jpeg",
+          "sha256": "5e07bf4db1072e92d1652172a274b20c71c492be60d5b833e249ee6b3383f67d"
+        },
+        {
+          "figure_id": "bymedb-p4-f1",
+          "source_page": 4,
+          "source_bbox": [
+            33.959999084472656,
+            68.40000915527344,
+            560.280029296875,
+            264.6000061035156
+          ],
+          "source_xref": 220,
+          "width": 1180,
+          "height": 440,
+          "path": "assets/bymedb-p4-f1.jpeg",
+          "sha256": "0433c6c793d7c749f37174b7f4ea33b7b75a53028597da333dba43e4564de0d0"
+        },
+        {
+          "figure_id": "bymedb-p4-f2",
+          "source_page": 4,
+          "source_bbox": [
+            51.2400016784668,
+            303.1199951171875,
+            279.4800109863281,
+            531.3599853515625
+          ],
+          "source_xref": 221,
+          "width": 800,
+          "height": 800,
+          "path": "assets/bymedb-p4-f2.jpeg",
+          "sha256": "58bbb2507219a5635e71cf7f345d76754ebb142ef480005eb040162aec1bc53e"
+        },
+        {
+          "figure_id": "bymedb-p4-f3",
+          "source_page": 4,
+          "source_bbox": [
+            315.9599914550781,
+            312.1199645996094,
+            532.5599975585938,
+            528.719970703125
+          ],
+          "source_xref": 222,
+          "width": 800,
+          "height": 800,
+          "path": "assets/bymedb-p4-f3.jpeg",
+          "sha256": "0324f0adb74d332bada736b03646d75619712cb3ce8aa9a5e4a78167b1df5d81"
+        },
+        {
+          "figure_id": "bymedb-p4-f4",
+          "source_page": 4,
+          "source_bbox": [
+            53.52000045776367,
+            516.239990234375,
+            277.32000732421875,
+            740.0399780273438
+          ],
+          "source_xref": 223,
+          "width": 800,
+          "height": 800,
+          "path": "assets/bymedb-p4-f4.jpeg",
+          "sha256": "75bf51c21114a34b5f5d7eba37119c4fd08d6f229cb6b8c88dcaac9ae3f85add"
+        },
+        {
+          "figure_id": "bymedb-p4-f5",
+          "source_page": 4,
+          "source_bbox": [
+            319.0799865722656,
+            526.5599975585938,
+            531.8399658203125,
+            739.3200073242188
+          ],
+          "source_xref": 224,
+          "width": 800,
+          "height": 800,
+          "path": "assets/bymedb-p4-f5.jpeg",
+          "sha256": "94614497c17d91eec78d3a5585f64c27dc4016b1a05b73648627873220085ef1"
+        },
+        {
+          "figure_id": "bymedb-p5-f1",
+          "source_page": 5,
+          "source_bbox": [
+            134.75999450683594,
+            482.5199890136719,
+            435.8399658203125,
+            783.5999755859375
+          ],
+          "source_xref": 230,
+          "width": 1000,
+          "height": 1000,
+          "path": "assets/bymedb-p5-f1.jpeg",
+          "sha256": "eb8016934ccb0c51c63332f041536b7f54fb789337ac9fe76f7e73057ec2f79c"
+        },
+        {
+          "figure_id": "bymedb-p6-f1",
+          "source_page": 6,
+          "source_bbox": [
+            144.9600067138672,
+            101.87998962402344,
+            427.79998779296875,
+            282.9599914550781
+          ],
+          "source_xref": 236,
+          "width": 1000,
+          "height": 640,
+          "path": "assets/bymedb-p6-f1.jpeg",
+          "sha256": "7b00dce452b7064d3700baaf20b12f19b13f715461c0fc3b5a86344b76d6ca3f"
+        },
+        {
+          "figure_id": "bymedb-p6-f2",
+          "source_page": 6,
+          "source_bbox": [
+            139.55999755859375,
+            325.55999755859375,
+            427.20001220703125,
+            480.9599914550781
+          ],
+          "source_xref": 237,
+          "width": 1000,
+          "height": 540,
+          "path": "assets/bymedb-p6-f2.jpeg",
+          "sha256": "063c3e0091a46bf95cc8709f0f998394c1b4b433258b0dcea3335273a31cad36"
+        },
+        {
+          "figure_id": "bymedb-p6-f3",
+          "source_page": 6,
+          "source_bbox": [
+            145.9199981689453,
+            531.719970703125,
+            421.08001708984375,
+            669.3599853515625
+          ],
+          "source_xref": 235,
+          "width": 1000,
+          "height": 500,
+          "path": "assets/bymedb-p6-f3.jpeg",
+          "sha256": "2b2eb2e07a88c138c70bfe7a282682bf9f8aeb4ec4cc8a1883164aaa119099f7"
+        },
+        {
+          "figure_id": "bymedb-p8-f1",
+          "source_page": 8,
+          "source_bbox": [
+            105.5999984741211,
+            589.7999877929688,
+            473.0400085449219,
+            718.7999877929688
+          ],
+          "source_xref": 247,
+          "width": 1179,
+          "height": 414,
+          "path": "assets/bymedb-p8-f1.jpeg",
+          "sha256": "e72dcb5366821c96f771afc9c02c3cdf821445202a9d1770837b1eca4d193578"
+        },
+        {
+          "figure_id": "bymedb-p9-f1",
+          "source_page": 9,
+          "source_bbox": [
+            155.27999877929688,
+            34.79998779296875,
+            404.760009765625,
+            297.7200012207031
+          ],
+          "source_xref": 255,
+          "width": 549,
+          "height": 578,
+          "path": "assets/bymedb-p9-f1.jpeg",
+          "sha256": "28622c71c58ce1482c972e725142c2da3fefe7698c61e52ebaec1711be06e4c3"
+        },
+        {
+          "figure_id": "bymedb-p9-f2",
+          "source_page": 9,
+          "source_bbox": [
+            163.0800018310547,
+            364.67999267578125,
+            388.55999755859375,
+            513.0
+          ],
+          "source_xref": 254,
+          "width": 760,
+          "height": 500,
+          "path": "assets/bymedb-p9-f2.jpeg",
+          "sha256": "73421437f1065f7b1e99cb6f01e73cb44f9478f7d6a2fa0ee8492dcba4a8965e"
+        },
+        {
+          "figure_id": "bymedb-p9-f3",
+          "source_page": 9,
+          "source_bbox": [
+            102.5999984741211,
+            569.760009765625,
+            471.3600158691406,
+            717.3599853515625
+          ],
+          "source_xref": 253,
+          "width": 750,
+          "height": 300,
+          "path": "assets/bymedb-p9-f3.jpeg",
+          "sha256": "3be2c3940b4ec2f6c2b8c0c42fef5848e95cea04d00d227e950dece80444f92a"
+        },
+        {
+          "figure_id": "bymedb-p10-f1",
+          "source_page": 10,
+          "source_bbox": [
+            75.23999786376953,
+            149.4000244140625,
+            485.2799987792969,
+            409.9200134277344
+          ],
+          "source_xref": 259,
+          "width": 1532,
+          "height": 973,
+          "path": "assets/bymedb-p10-f1.jpeg",
+          "sha256": "2ab0b4e134a083e9eed28f8d0f1c3a9e550db9fff66c0b3e5536094dc6ed4251"
+        },
+        {
+          "figure_id": "bymedb-p10-f2",
+          "source_page": 10,
+          "source_bbox": [
+            108.12000274658203,
+            489.7200012207031,
+            466.0799865722656,
+            632.8800048828125
+          ],
+          "source_xref": 258,
+          "width": 1000,
+          "height": 400,
+          "path": "assets/bymedb-p10-f2.jpeg",
+          "sha256": "52d1684dc4b62f52c3813de0c0263fc6c31de8be2cbd875e8cac53ca12e6cfce"
+        },
+        {
+          "figure_id": "bymedb-p11-f1",
+          "source_page": 11,
+          "source_bbox": [
+            134.8800048828125,
+            294.1199951171875,
+            423.9599914550781,
+            536.0399780273438
+          ],
+          "source_xref": 262,
+          "width": 1195,
+          "height": 1000,
+          "path": "assets/bymedb-p11-f1.jpeg",
+          "sha256": "6a98c508fb26486e929b4c646160c570d3e359e899eb6cedfeedd41826b7a159"
+        },
+        {
+          "figure_id": "bymedb-p11-f2",
+          "source_page": 11,
+          "source_bbox": [
+            136.32000732421875,
+            540.0,
+            423.6000061035156,
+            780.3599853515625
+          ],
+          "source_xref": 263,
+          "width": 1195,
+          "height": 1000,
+          "path": "assets/bymedb-p11-f2.jpeg",
+          "sha256": "85fb6af2e36b54c349414c3ce7aa34f00363fc5f84f8d012947a2309a51d441a"
+        },
+        {
+          "figure_id": "bymedb-p12-f1",
+          "source_page": 12,
+          "source_bbox": [
+            134.16000366210938,
+            47.159996032714844,
+            430.08001708984375,
+            142.9199981689453
+          ],
+          "source_xref": 268,
+          "width": 1195,
+          "height": 387,
+          "path": "assets/bymedb-p12-f1.jpeg",
+          "sha256": "0bfc55a378670147db134745c044bccf6f9f74c2fc565daca8e0272b34749b5d"
+        },
+        {
+          "figure_id": "bymedb-p12-f2",
+          "source_page": 12,
+          "source_bbox": [
+            119.87999725341797,
+            230.04000854492188,
+            439.9200134277344,
+            506.6400146484375
+          ],
+          "source_xref": 269,
+          "width": 1157,
+          "height": 1000,
+          "path": "assets/bymedb-p12-f2.jpeg",
+          "sha256": "d589b8d565b16f80689280f21b64fd57be333abd6dd83b3ec9ed0fb7cb7baebc"
+        },
+        {
+          "figure_id": "bymedb-p13-f1",
+          "source_page": 13,
+          "source_bbox": [
+            426.8399963378906,
+            65.52000427246094,
+            493.55999755859375,
+            132.24000549316406
+          ],
+          "source_xref": 277,
+          "width": 300,
+          "height": 300,
+          "path": "assets/bymedb-p13-f1.jpeg",
+          "sha256": "a8ada419c5c6b6537a0e8f2d5c04757d87fc01cb34438d1afcdb5f939e34c4b0"
+        },
+        {
+          "figure_id": "bymedb-p13-f2",
+          "source_page": 13,
+          "source_bbox": [
+            250.44000244140625,
+            66.5999984741211,
+            315.8399963378906,
+            132.0
+          ],
+          "source_xref": 276,
+          "width": 300,
+          "height": 300,
+          "path": "assets/bymedb-p13-f2.jpeg",
+          "sha256": "6587dc216e8ad3e38e6e0af5dda331f69517589c71ec994f2bc3c5fed8555e60"
+        },
+        {
+          "figure_id": "bymedb-p13-f3",
+          "source_page": 13,
+          "source_bbox": [
+            72.12000274658203,
+            69.36000061035156,
+            135.36000061035156,
+            132.0
+          ],
+          "source_xref": 274,
+          "width": 193,
+          "height": 191,
+          "path": "assets/bymedb-p13-f3.jpeg",
+          "sha256": "d913b0fb0c58fb539bc528e612b8109a870f198f2c24d4a5771f5f3345ac43c9"
+        }
+      ],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch7",
+      "source_product_id": "bymedb",
+      "inventory_product_id": "bymedb",
+      "web_qa_status": "PASS_RENDERED_SCOPE",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null
+    }
+  ]
+}

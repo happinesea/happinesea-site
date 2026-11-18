@@ -19,7 +19,8 @@ if (!product || !manual)
     (manual.batch_id === 'receiver-web-batch3' ||
       manual.batch_id === 'receiver-web-batch4' ||
       manual.batch_id === 'receiver-web-batch5' ||
-      manual.batch_id === 'receiver-web-batch6')
+      manual.batch_id === 'receiver-web-batch6' ||
+      manual.batch_id === 'receiver-web-batch7')
       ? 'noindex, nofollow'
       : undefined
   }
@@ -35,6 +36,10 @@ if (!product || !manual)
       </a>
     ) : product.category === '電源・ESC' ? (
       <a href={withBase('/radiolink/#power-esc')}>電源・ESC一覧へ戻る</a>
+    ) : product.category === 'フライトコントローラー' ? (
+      <a href={withBase('/radiolink/#flight-controllers')}>
+        フライトコントローラー一覧へ戻る
+      </a>
     ) : (
       <a href={withBase('/radiolink/#receivers')}>受信機一覧へ戻る</a>
     )}
@@ -62,7 +67,8 @@ if (!product || !manual)
       manual.batch_id === 'receiver-web-batch3' ||
       manual.batch_id === 'receiver-web-batch4' ||
       manual.batch_id === 'receiver-web-batch5' ||
-      manual.batch_id === 'receiver-web-batch6') &&
+      manual.batch_id === 'receiver-web-batch6' ||
+      manual.batch_id === 'receiver-web-batch7') &&
     manual.withheld_unit_ids.length === 0 ? (
       <p>
         英語原典に対応した日本語本文を掲載しています。挿図は原図のままです。適用条件は本文を確認してください。

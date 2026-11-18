@@ -58,6 +58,7 @@ test('catalogue images are local official assets and detail links match implemen
       'rtk-f9p',
       't12d',
       'ts100-m8n',
+      'byme-db',
       ...batch6.manuals.map((m) => m.product_id),
       ...batch5.manuals
         .filter((m) => m.product_id !== 'r6fg')
@@ -66,7 +67,7 @@ test('catalogue images are local official assets and detail links match implemen
   );
   assert.equal(
     pending.length,
-    59 -
+    58 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
       batch6.manuals.length,
   );

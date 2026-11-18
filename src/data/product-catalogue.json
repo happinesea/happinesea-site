@@ -555,7 +555,7 @@
     "subcategoryLabel": "固定翼用フライトコントローラー",
     "description": "Radiolinkの固定翼機向けフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/bymedb",
-    "detailPath": null,
+    "detailPath": "/radiolink/byme-db/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/byme-db.webp",

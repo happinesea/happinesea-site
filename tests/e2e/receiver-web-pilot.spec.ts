@@ -19,7 +19,8 @@ for (const manual of data.manuals) {
       (manual.batch_id === 'receiver-web-batch3' ||
         manual.batch_id === 'receiver-web-batch4' ||
         manual.batch_id === 'receiver-web-batch5' ||
-        manual.batch_id === 'receiver-web-batch6')
+        manual.batch_id === 'receiver-web-batch6' ||
+        manual.batch_id === 'receiver-web-batch7')
     )
       await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
         'content',
@@ -33,7 +34,8 @@ for (const manual of data.manuals) {
       (manual.batch_id === 'receiver-web-batch3' ||
         manual.batch_id === 'receiver-web-batch4' ||
         manual.batch_id === 'receiver-web-batch5' ||
-        manual.batch_id === 'receiver-web-batch6')
+        manual.batch_id === 'receiver-web-batch6' ||
+        manual.batch_id === 'receiver-web-batch7')
     )
       for (const cell of await page
         .locator('table :is(th, td):first-child')
@@ -96,7 +98,8 @@ for (const manual of data.manuals) {
       (manual.batch_id === 'receiver-web-batch3' ||
         manual.batch_id === 'receiver-web-batch4' ||
         manual.batch_id === 'receiver-web-batch5' ||
-        manual.batch_id === 'receiver-web-batch6')
+        manual.batch_id === 'receiver-web-batch6' ||
+        manual.batch_id === 'receiver-web-batch7')
     )
       await captureManualPage(page, screenshot);
     else
@@ -110,7 +113,8 @@ for (const manual of data.manuals) {
       (manual.batch_id === 'receiver-web-batch3' ||
         manual.batch_id === 'receiver-web-batch4' ||
         manual.batch_id === 'receiver-web-batch5' ||
-        manual.batch_id === 'receiver-web-batch6')
+        manual.batch_id === 'receiver-web-batch6' ||
+        manual.batch_id === 'receiver-web-batch7')
     )
       await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
         'content',
