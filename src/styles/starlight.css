@@ -85,7 +85,8 @@
     [data-translation-unit^='elrsmicro-'],
     [data-translation-unit^='f722-'],
     [data-translation-unit^='cm210-'],
-    [data-translation-unit^='elrs915receiver-']
+    [data-translation-unit^='elrs915receiver-'],
+    [data-translation-unit^='am32_70a_4in1_esc-']
   )
   table
   :is(th, td):first-child {
@@ -98,7 +99,8 @@
     [data-translation-unit^='elrsmicro-'],
     [data-translation-unit^='f722-'],
     [data-translation-unit^='cm210-'],
-    [data-translation-unit^='elrs915receiver-']
+    [data-translation-unit^='elrs915receiver-'],
+    [data-translation-unit^='am32_70a_4in1_esc-']
   )
   [data-manual-figure]
   img {

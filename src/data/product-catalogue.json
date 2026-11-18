@@ -1227,7 +1227,7 @@
     "subcategoryLabel": "ドローン用ESC",
     "description": "Radiolinkのドローン向けESCです。",
     "officialUrl": "https://www.radiolink.com/am32_70a_4in1_esc",
-    "detailPath": null,
+    "detailPath": "/radiolink/am32-70a/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/am32-70a.webp",
