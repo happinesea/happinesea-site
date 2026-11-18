@@ -190,7 +190,7 @@
       "source_product_id": "trainercable",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
-      "web_qa_status": "QA_REQUIRED"
+      "web_qa_status": "PASS_RENDERED_SCOPE"
     }
   ]
 }
