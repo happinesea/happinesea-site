@@ -271,3 +271,23 @@ test('a safety exclusion cannot become publication content without applicable au
     /authoritative evidence/i,
   );
 });
+test('Byme-D guidance retains the fixture warning without an unsupported calibration angle', async () => {
+  const { renderSemanticSection } =
+    await import('../../scripts/lib/manual-semantic-structure.mjs');
+  const data = JSON.parse(
+    await readFile(new URL('src/data/manuals/existing-ja.json', root), 'utf8'),
+  );
+  const manual = data.manuals.find((m) => m.product === 'byme-d');
+  const warning = renderSemanticSection(manual, 'section-002-警告-注意事項');
+  const calibration = renderSemanticSection(manual, 'section-005-姿勢の校正');
+  assert.match(
+    warning,
+    /取り付けや試験を行うときは、機体にプロペラを装着しないでください/,
+  );
+  assert.match(calibration, /原典は具体的な角度を指定していません/);
+  assert.doesNotMatch(calibration, /20°/);
+  assert.deepEqual(
+    manual.technical_changes.map((r) => r.evidence.physical_pages),
+    [[3], [7]],
+  );
+});
