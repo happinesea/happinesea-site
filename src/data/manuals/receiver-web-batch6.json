@@ -2,7 +2,6 @@
   "batch_id": "receiver-web-batch6",
   "production_scope": "PARTIAL",
   "pending_product_ids": [
-    "elrs915",
     "re15a"
   ],
   "manuals": [
@@ -186,6 +185,7 @@
       "knowledge": "DEFERRED",
       "batch_id": "receiver-web-batch6",
       "source_product_id": "trainercable",
+      "inventory_product_id": "wireless_trainer_cable",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
       "web_qa_status": "PASS_RENDERED_SCOPE"
@@ -351,6 +351,7 @@
       "knowledge": "DEFERRED",
       "batch_id": "receiver-web-batch6",
       "source_product_id": "cm120",
+      "inventory_product_id": "cm120",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
       "web_qa_status": "PASS_RENDERED_SCOPE"
@@ -567,6 +568,221 @@
       "knowledge": "DEFERRED",
       "batch_id": "receiver-web-batch6",
       "source_product_id": "elrs24",
+      "inventory_product_id": "elrs_1w",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null,
+      "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "915mhz-1w",
+      "model": "915MHz(1W)",
+      "route": "/manuals/915mhz-1w/",
+      "product_route": "/radiolink/915mhz-1w/",
+      "source": {
+        "document_id": "ATA_ELRS_1W_915MHz_long-range_module_user_manual",
+        "repository_path": "sources/en/ATA_ELRS_1W_915MHz_long-range_module_user_manual.pdf",
+        "sha256": "cc87fffc6966af73087f76cdab2e0a2630a94941862c3bbffd7669b493ae2fa1",
+        "source_url": "https://www.radiolink.com/download/6a442f80024f8beb6a62de775b46a000.pdf",
+        "version": null,
+        "page_count": 6
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "e94839cc693fc1232ad1b6dc1a99f68a0f0733c805d007eda33d53e8b8932d28",
+      "mdx_sha256": "a37539a29ac2867fc67cff5426e6f5e50662fe1c5b7419ea79b729bf72cc737b",
+      "translation_qa_sha256": "3d61f427ef3c409396ba44e9bdd8266dc8e1a729aebed948ddabbe7158d2ab6a",
+      "unit_ids": [
+        "elrs915-p1-u01",
+        "elrs915-p1-u02",
+        "elrs915-p1-u03",
+        "elrs915-p1-u04",
+        "elrs915-p2-u01",
+        "elrs915-p2-u02",
+        "elrs915-p3-u01",
+        "elrs915-p3-u02",
+        "elrs915-p3-u03",
+        "elrs915-p3-u04",
+        "elrs915-p3-u05",
+        "elrs915-p3-u06",
+        "elrs915-p3-u07",
+        "elrs915-p3-u08",
+        "elrs915-p3-u09",
+        "elrs915-p3-u10",
+        "elrs915-p3-u11",
+        "elrs915-p4-u01",
+        "elrs915-p4-u02",
+        "elrs915-p4-u04",
+        "elrs915-p4-u03",
+        "elrs915-p4-u05",
+        "elrs915-p4-u06",
+        "elrs915-p4-u07",
+        "elrs915-p4-u08",
+        "elrs915-p4-u09",
+        "elrs915-p4-u10",
+        "elrs915-p4-u11",
+        "elrs915-p5-u01",
+        "elrs915-p5-u02",
+        "elrs915-p5-u03",
+        "elrs915-p5-u04",
+        "elrs915-p5-u05",
+        "elrs915-p5-u06",
+        "elrs915-p5-u07",
+        "elrs915-p5-u08",
+        "elrs915-p6-u01",
+        "elrs915-p6-u02",
+        "elrs915-p6-u05",
+        "elrs915-p6-u03",
+        "elrs915-p6-u04",
+        "elrs915-p6-u06",
+        "elrs915-p6-u07",
+        "elrs915-p6-u08",
+        "elrs915-p6-u09"
+      ],
+      "withheld_unit_ids": [
+        "elrs915-p3-u03",
+        "elrs915-p3-u07",
+        "elrs915-p3-u10",
+        "elrs915-p4-u01",
+        "elrs915-p4-u02",
+        "elrs915-p4-u04",
+        "elrs915-p4-u03",
+        "elrs915-p4-u05",
+        "elrs915-p4-u06",
+        "elrs915-p4-u09",
+        "elrs915-p4-u10",
+        "elrs915-p5-u01",
+        "elrs915-p5-u02",
+        "elrs915-p5-u03",
+        "elrs915-p5-u04",
+        "elrs915-p5-u06",
+        "elrs915-p5-u07",
+        "elrs915-p6-u01"
+      ],
+      "source_figures_total": 16,
+      "withheld_figure_ids": [
+        "elrs915-p3-f1",
+        "elrs915-p4-f1",
+        "elrs915-p4-f2",
+        "elrs915-p4-f3",
+        "elrs915-p4-f4",
+        "elrs915-p4-f5",
+        "elrs915-p5-f1",
+        "elrs915-p5-f2",
+        "elrs915-p5-f3"
+      ],
+      "figures": [
+        {
+          "figure_id": "elrs915-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            206.63999938964844,
+            78.96000671386719,
+            385.20001220703125,
+            168.24000549316406
+          ],
+          "source_xref": 11,
+          "width": 744,
+          "height": 372,
+          "path": "assets/elrs915-p1-f1.jpeg",
+          "sha256": "d935dde4a6c43d2f97ac986f1ed700ba751779ec6e9fac453f9d80d56f2106bc"
+        },
+        {
+          "figure_id": "elrs915-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            120.5999984741211,
+            350.2799987792969,
+            507.0,
+            736.6799926757812
+          ],
+          "source_xref": 10,
+          "width": 2000,
+          "height": 2000,
+          "path": "assets/elrs915-p1-f2.jpeg",
+          "sha256": "039151200196018e6376590059c050c35bc844679a71be75fee271c2e9e20708"
+        },
+        {
+          "figure_id": "elrs915-p1-f3",
+          "source_page": 1,
+          "source_bbox": [
+            498.8399963378906,
+            827.8800048828125,
+            539.6400146484375,
+            852.239990234375
+          ],
+          "source_xref": 8,
+          "width": 640,
+          "height": 380,
+          "path": "assets/elrs915-p1-f3.jpeg",
+          "sha256": "5e07bf4db1072e92d1652172a274b20c71c492be60d5b833e249ee6b3383f67d"
+        },
+        {
+          "figure_id": "elrs915-p6-f1",
+          "source_page": 6,
+          "source_bbox": [
+            220.44000244140625,
+            180.72000122070312,
+            284.6400146484375,
+            244.9199981689453
+          ],
+          "source_xref": 77,
+          "width": 300,
+          "height": 300,
+          "path": "assets/elrs915-p6-f1.jpeg",
+          "sha256": "41579a8ff8d972f7b39bfa55ad8b31643f523292f4efdb4cf8e8d493d048bb42"
+        },
+        {
+          "figure_id": "elrs915-p6-f2",
+          "source_page": 6,
+          "source_bbox": [
+            342.4800109863281,
+            180.95999145507812,
+            407.1600036621094,
+            245.63998413085938
+          ],
+          "source_xref": 78,
+          "width": 300,
+          "height": 300,
+          "path": "assets/elrs915-p6-f2.jpeg",
+          "sha256": "7cdfe90286113b31bfb99478634c7a101b92c325ec5d2296bdf041a407835c37"
+        },
+        {
+          "figure_id": "elrs915-p6-f3",
+          "source_page": 6,
+          "source_bbox": [
+            83.04000091552734,
+            181.9199981689453,
+            146.63999938964844,
+            244.9199981689453
+          ],
+          "source_xref": 75,
+          "width": 920,
+          "height": 911,
+          "path": "assets/elrs915-p6-f3.jpeg",
+          "sha256": "e09dd876a3a3bdfd3ef44a692d3dd196045ad0126c8fb4546892d94c8a41eccb"
+        },
+        {
+          "figure_id": "elrs915-p6-f4",
+          "source_page": 6,
+          "source_bbox": [
+            458.760009765625,
+            182.40000915527344,
+            521.8800048828125,
+            245.52000427246094
+          ],
+          "source_xref": 79,
+          "width": 300,
+          "height": 300,
+          "path": "assets/elrs915-p6-f4.jpeg",
+          "sha256": "2fe91777055236f45acaac0b6b7612143fc648542c0e9553d911220c1aca7e47"
+        }
+      ],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch6",
+      "source_product_id": "elrs915",
+      "inventory_product_id": "elrs_915",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
       "web_qa_status": "PASS_RENDERED_SCOPE"

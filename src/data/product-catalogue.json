@@ -282,7 +282,7 @@
     "subcategoryLabel": "ELRS長距離モジュール",
     "description": "RadiolinkのELRS長距離モジュールです。",
     "officialUrl": "https://www.radiolink.com/elrs_915",
-    "detailPath": null,
+    "detailPath": "/radiolink/915mhz-1w/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/915mhz-1w.webp",

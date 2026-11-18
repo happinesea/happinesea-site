@@ -53,3 +53,4 @@ src/data/manuals/receiver-web-batch6.json -text whitespace=cr-at-eol
 src/content/docs/manuals/trainer-cable/index.mdx -text whitespace=cr-at-eol
 src/content/docs/manuals/cm120/index.mdx -text whitespace=cr-at-eol
 src/content/docs/manuals/2-4g-nano-1w/index.mdx -text whitespace=cr-at-eol
+src/content/docs/manuals/915mhz-1w/index.mdx -text whitespace=cr-at-eol
