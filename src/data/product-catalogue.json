@@ -1164,7 +1164,7 @@
     "subcategoryLabel": "充電器",
     "description": "Radiolinkのバッテリー充電器です。",
     "officialUrl": "https://www.radiolink.com/cm210",
-    "detailPath": null,
+    "detailPath": "/radiolink/cm210/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cm210.webp",

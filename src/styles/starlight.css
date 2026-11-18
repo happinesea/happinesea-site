@@ -83,7 +83,8 @@
     [data-translation-unit^='bymedb-'],
     [data-translation-unit^='rtc8-'],
     [data-translation-unit^='elrsmicro-'],
-    [data-translation-unit^='f722-']
+    [data-translation-unit^='f722-'],
+    [data-translation-unit^='cm210-']
   )
   table
   :is(th, td):first-child {
@@ -94,7 +95,8 @@
 .sl-markdown-content:has(
     [data-translation-unit^='rtc8-'],
     [data-translation-unit^='elrsmicro-'],
-    [data-translation-unit^='f722-']
+    [data-translation-unit^='f722-'],
+    [data-translation-unit^='cm210-']
   )
   [data-manual-figure]
   img {
