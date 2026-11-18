@@ -135,7 +135,7 @@
     "subcategoryLabel": "トレーナーシステム",
     "description": "Radiolinkのトレーナーシステム関連製品です。",
     "officialUrl": "https://www.radiolink.com/trainer_cable",
-    "detailPath": null,
+    "detailPath": "/radiolink/trainer-cable/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/trainer-cable.webp",

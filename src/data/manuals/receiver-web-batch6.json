@@ -1,0 +1,196 @@
+{
+  "batch_id": "receiver-web-batch6",
+  "production_scope": "PARTIAL",
+  "pending_product_ids": [
+    "cm120",
+    "elrs24",
+    "elrs915",
+    "re15a"
+  ],
+  "manuals": [
+    {
+      "product_id": "trainer-cable",
+      "model": "Trainer Cable",
+      "route": "/manuals/trainer-cable/",
+      "product_route": "/radiolink/trainer-cable/",
+      "source": {
+        "document_id": "trainer_cable_manual",
+        "repository_path": "sources/en/trainer_cable_manual.pdf",
+        "sha256": "a0e1a367722cd1ed2b30e325eec66982033bf38b96b9969e7a593a5ce01728d4",
+        "source_url": "https://www.radiolink.com/download/aebe9133425794c0184aa46ab2b9c41a.pdf",
+        "version": null,
+        "page_count": 5
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "38d65f1c4613de4b3050c64aa694fa88fb3e7a331a5cf4323840e28a6abaf637",
+      "mdx_sha256": "b68dda0f67c1902d3c5b407dda53537e2dc91b336087d081146e84a664b615b9",
+      "translation_qa_sha256": "70803332df823cfe2ad3a43b6c1b64e18b05c4d0a4982a399730b0eb1a825157",
+      "unit_ids": [
+        "trainercable-p1-u01",
+        "trainercable-p1-u02",
+        "trainercable-p1-u03",
+        "trainercable-p1-u04",
+        "trainercable-p1-u05",
+        "trainercable-p1-u06",
+        "trainercable-p2-u01",
+        "trainercable-p2-u02",
+        "trainercable-p2-u03",
+        "trainercable-p2-u04",
+        "trainercable-p2-u05",
+        "trainercable-p2-u06",
+        "trainercable-p2-u07",
+        "trainercable-p3-u01",
+        "trainercable-p3-u02",
+        "trainercable-p3-u03",
+        "trainercable-p3-u04",
+        "trainercable-p3-u05",
+        "trainercable-p3-u06",
+        "trainercable-p3-u07",
+        "trainercable-p3-u08",
+        "trainercable-p3-u09",
+        "trainercable-p3-u10",
+        "trainercable-p3-u11",
+        "trainercable-p3-u12",
+        "trainercable-p3-u13",
+        "trainercable-p4-u01",
+        "trainercable-p4-u02",
+        "trainercable-p4-u03",
+        "trainercable-p4-u04",
+        "trainercable-p4-u05",
+        "trainercable-p4-u06",
+        "trainercable-p4-u07",
+        "trainercable-p5-u01",
+        "trainercable-p5-u02",
+        "trainercable-p5-u03",
+        "trainercable-p5-u04",
+        "trainercable-p5-u05",
+        "trainercable-p5-u06",
+        "trainercable-p5-u07",
+        "trainercable-p5-u08",
+        "trainercable-p5-u09"
+      ],
+      "withheld_unit_ids": [
+        "trainercable-p3-u05",
+        "trainercable-p3-u06",
+        "trainercable-p3-u07",
+        "trainercable-p3-u08",
+        "trainercable-p3-u09",
+        "trainercable-p3-u10",
+        "trainercable-p3-u11",
+        "trainercable-p3-u12",
+        "trainercable-p4-u03",
+        "trainercable-p4-u04",
+        "trainercable-p4-u05",
+        "trainercable-p4-u06",
+        "trainercable-p5-u04"
+      ],
+      "source_figures_total": 9,
+      "withheld_figure_ids": [
+        "trainercable-p3-f2",
+        "trainercable-p4-f2",
+        "trainercable-p4-f3"
+      ],
+      "figures": [
+        {
+          "figure_id": "trainercable-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            57.599998474121094,
+            43.08000183105469,
+            177.60000610351562,
+            76.68000030517578
+          ],
+          "source_xref": 19,
+          "width": 318,
+          "height": 89,
+          "path": "assets/trainercable-p1-f1.jpeg",
+          "sha256": "491ee49b5dc65f2f0b6bc8d989167b97259072e68c47367eaab187ff9ce8404f"
+        },
+        {
+          "figure_id": "trainercable-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            112.08000183105469,
+            152.4000244140625,
+            483.239990234375,
+            450.4800109863281
+          ],
+          "source_xref": 25,
+          "width": 635,
+          "height": 510,
+          "path": "assets/trainercable-p1-f2.jpeg",
+          "sha256": "15cc76502edd8d8f5dfa215897b71241dae56a5eb1c3ec52ae30a52dc17ca074"
+        },
+        {
+          "figure_id": "trainercable-p2-f1",
+          "source_page": 2,
+          "source_bbox": [
+            57.599998474121094,
+            43.08000183105469,
+            177.60000610351562,
+            76.68000030517578
+          ],
+          "source_xref": 19,
+          "width": 318,
+          "height": 89,
+          "path": "assets/trainercable-p2-f1.jpeg",
+          "sha256": "491ee49b5dc65f2f0b6bc8d989167b97259072e68c47367eaab187ff9ce8404f"
+        },
+        {
+          "figure_id": "trainercable-p3-f1",
+          "source_page": 3,
+          "source_bbox": [
+            57.599998474121094,
+            43.08000183105469,
+            177.60000610351562,
+            76.68000030517578
+          ],
+          "source_xref": 19,
+          "width": 318,
+          "height": 89,
+          "path": "assets/trainercable-p3-f1.jpeg",
+          "sha256": "491ee49b5dc65f2f0b6bc8d989167b97259072e68c47367eaab187ff9ce8404f"
+        },
+        {
+          "figure_id": "trainercable-p4-f1",
+          "source_page": 4,
+          "source_bbox": [
+            57.599998474121094,
+            43.08000183105469,
+            177.60000610351562,
+            76.68000030517578
+          ],
+          "source_xref": 19,
+          "width": 318,
+          "height": 89,
+          "path": "assets/trainercable-p4-f1.jpeg",
+          "sha256": "491ee49b5dc65f2f0b6bc8d989167b97259072e68c47367eaab187ff9ce8404f"
+        },
+        {
+          "figure_id": "trainercable-p5-f1",
+          "source_page": 5,
+          "source_bbox": [
+            57.599998474121094,
+            43.08000183105469,
+            177.60000610351562,
+            76.68000030517578
+          ],
+          "source_xref": 19,
+          "width": 318,
+          "height": 89,
+          "path": "assets/trainercable-p5-f1.jpeg",
+          "sha256": "491ee49b5dc65f2f0b6bc8d989167b97259072e68c47367eaab187ff9ce8404f"
+        }
+      ],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch6",
+      "source_product_id": "trainercable",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null,
+      "web_qa_status": "QA_REQUIRED"
+    }
+  ]
+}
