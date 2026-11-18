@@ -1710,7 +1710,7 @@
     "subcategoryLabel": "ELRS受信機",
     "description": "RadiolinkのELRS受信機です。",
     "officialUrl": "https://www.radiolink.com/elrs_915mhz",
-    "detailPath": null,
+    "detailPath": "/radiolink/elrs-915mhz/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/elrs-915mhz.webp",
