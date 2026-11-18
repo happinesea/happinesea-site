@@ -2,7 +2,6 @@
   "batch_id": "receiver-web-batch6",
   "production_scope": "PARTIAL",
   "pending_product_ids": [
-    "cm120",
     "elrs24",
     "elrs915",
     "re15a"
@@ -191,6 +190,171 @@
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null,
       "web_qa_status": "PASS_RENDERED_SCOPE"
+    },
+    {
+      "product_id": "cm120",
+      "model": "CM120",
+      "route": "/manuals/cm120/",
+      "product_route": "/radiolink/cm120/",
+      "source": {
+        "document_id": "cm120_manual",
+        "repository_path": "sources/en/cm120_manual.pdf",
+        "sha256": "bbc051e7a99cad8fe0b351fe5370dc9972dbbc261dbafd670a9c0bffad7ed215",
+        "source_url": "https://www.radiolink.com/download/804b636c87d9a0502cf1138a499acd24.pdf",
+        "version": null,
+        "page_count": 6
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "8431eff462830dca79cdafe551df46bc434f6c52955c4d9380446641555520d2",
+      "mdx_sha256": "bd4c95337aa4a71ad2904a22bf496bf10a219a5e97b5b09f49ff571e5f0c8f76",
+      "translation_qa_sha256": "eaf2717d7d2b7ea35e9b3230c19aa57c21423f82728730c69a9056fb9e7aea6c",
+      "unit_ids": [
+        "cm120-p1-u01",
+        "cm120-p1-u02",
+        "cm120-p1-u03",
+        "cm120-p1-u04",
+        "cm120-p2-u01",
+        "cm120-p2-u02",
+        "cm120-p3-u01",
+        "cm120-p3-u02",
+        "cm120-p3-u09",
+        "cm120-p3-u10",
+        "cm120-p3-u03",
+        "cm120-p3-u04",
+        "cm120-p3-u05",
+        "cm120-p3-u06",
+        "cm120-p3-u07",
+        "cm120-p3-u08",
+        "cm120-p4-u01",
+        "cm120-p4-u02",
+        "cm120-p4-u03",
+        "cm120-p4-u04",
+        "cm120-p4-u05",
+        "cm120-p4-u06",
+        "cm120-p4-u07",
+        "cm120-p4-u08",
+        "cm120-p5-u01",
+        "cm120-p5-u02",
+        "cm120-p5-u03",
+        "cm120-p5-u04",
+        "cm120-p5-u05",
+        "cm120-p5-u06",
+        "cm120-p5-u07",
+        "cm120-p6-u01",
+        "cm120-p6-u02",
+        "cm120-p6-u03",
+        "cm120-p6-u04",
+        "cm120-p6-u05",
+        "cm120-p6-u06",
+        "cm120-p6-u07",
+        "cm120-p6-u08"
+      ],
+      "withheld_unit_ids": [
+        "cm120-p3-u09",
+        "cm120-p3-u07",
+        "cm120-p4-u01",
+        "cm120-p4-u04",
+        "cm120-p4-u06",
+        "cm120-p4-u07",
+        "cm120-p5-u01",
+        "cm120-p5-u02",
+        "cm120-p5-u03",
+        "cm120-p5-u04",
+        "cm120-p5-u06"
+      ],
+      "source_figures_total": 9,
+      "withheld_figure_ids": [
+        "cm120-p4-f1",
+        "cm120-p4-f2",
+        "cm120-p5-f1",
+        "cm120-p5-f2"
+      ],
+      "figures": [
+        {
+          "figure_id": "cm120-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            163.67999267578125,
+            79.92000579833984,
+            454.0799865722656,
+            143.52000427246094
+          ],
+          "source_xref": 8,
+          "width": 563,
+          "height": 134,
+          "path": "assets/cm120-p1-f1.jpeg",
+          "sha256": "cb743d437f067aa72f056af79764cc31419bfd037021377879443c8f8d665f64"
+        },
+        {
+          "figure_id": "cm120-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            103.80000305175781,
+            272.6400146484375,
+            508.79998779296875,
+            677.6400146484375
+          ],
+          "source_xref": 11,
+          "width": 1000,
+          "height": 1000,
+          "path": "assets/cm120-p1-f2.jpeg",
+          "sha256": "ddcceff8d92543a1358fc72763ec7c01b507fed4fd8a3cfd9345d5c3d205f9f1"
+        },
+        {
+          "figure_id": "cm120-p1-f3",
+          "source_page": 1,
+          "source_bbox": [
+            491.0400085449219,
+            761.0400390625,
+            565.5599975585938,
+            805.320068359375
+          ],
+          "source_xref": 12,
+          "width": 640,
+          "height": 380,
+          "path": "assets/cm120-p1-f3.jpeg",
+          "sha256": "5e07bf4db1072e92d1652172a274b20c71c492be60d5b833e249ee6b3383f67d"
+        },
+        {
+          "figure_id": "cm120-p6-f1",
+          "source_page": 6,
+          "source_bbox": [
+            359.2799987792969,
+            164.27999877929688,
+            441.47998046875,
+            246.47999572753906
+          ],
+          "source_xref": 61,
+          "width": 300,
+          "height": 300,
+          "path": "assets/cm120-p6-f1.jpeg",
+          "sha256": "ab486c7a6abf54a4c20d0cf6646921d99f987ceb3dcb0d98fd06f5d038e0b53a"
+        },
+        {
+          "figure_id": "cm120-p6-f2",
+          "source_page": 6,
+          "source_bbox": [
+            108.0,
+            166.20001220703125,
+            189.60000610351562,
+            247.08001708984375
+          ],
+          "source_xref": 59,
+          "width": 193,
+          "height": 191,
+          "path": "assets/cm120-p6-f2.jpeg",
+          "sha256": "d913b0fb0c58fb539bc528e612b8109a870f198f2c24d4a5771f5f3345ac43c9"
+        }
+      ],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch6",
+      "source_product_id": "cm120",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null,
+      "web_qa_status": "QA_REQUIRED"
     }
   ]
 }

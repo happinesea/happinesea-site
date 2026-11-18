@@ -51,3 +51,4 @@ src/content/docs/manuals/sui04/** -text whitespace=cr-at-eol
 
 src/data/manuals/receiver-web-batch6.json -text whitespace=cr-at-eol
 src/content/docs/manuals/trainer-cable/index.mdx -text whitespace=cr-at-eol
+src/content/docs/manuals/cm120/index.mdx -text whitespace=cr-at-eol

@@ -67,7 +67,10 @@
   min-width: 8em;
 }
 
-.sl-markdown-content:has([data-translation-unit^='trainercable-'])
+.sl-markdown-content:has(
+    [data-translation-unit^='trainercable-'],
+    [data-translation-unit^='cm120-']
+  )
   table
   :is(th, td):first-child {
   min-width: 8em;

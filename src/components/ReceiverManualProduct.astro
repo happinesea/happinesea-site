@@ -33,6 +33,8 @@ if (!product || !manual)
       <a href={withBase('/radiolink/#modules-accessories')}>
         モジュール・アクセサリー一覧へ戻る
       </a>
+    ) : product.category === '電源・ESC' ? (
+      <a href={withBase('/radiolink/#power-esc')}>電源・ESC一覧へ戻る</a>
     ) : (
       <a href={withBase('/radiolink/#receivers')}>受信機一覧へ戻る</a>
     )}

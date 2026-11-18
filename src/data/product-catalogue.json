@@ -1185,7 +1185,7 @@
     "subcategoryLabel": "充電器",
     "description": "Radiolinkのバッテリー充電器です。",
     "officialUrl": "https://www.radiolink.com/cm120",
-    "detailPath": null,
+    "detailPath": "/radiolink/cm120/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cm120.webp",
