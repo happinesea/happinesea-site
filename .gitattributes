@@ -58,3 +58,8 @@ src/content/docs/manuals/re15a-2s/index.mdx -text whitespace=cr-at-eol
 
 src/content/docs/manuals/byme-db/index.mdx -text whitespace=cr-at-eol
 src/data/manuals/bymedb-web.json -text whitespace=cr-at-eol
+
+src/content/docs/manuals/rtc8/index.mdx -text whitespace=cr-at-eol
+src/data/manuals/remaining-web.json -text whitespace=cr-at-eol
+src/content/docs/manuals/2-4g-micro-1w/index.mdx -text whitespace=cr-at-eol
+src/content/docs/manuals/f722/index.mdx -text whitespace=cr-at-eol

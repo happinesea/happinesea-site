@@ -1,0 +1,798 @@
+---
+title: 2.4G Micro(1W) 日本語取扱説明書
+description: Radiolink 2.4G Micro(1W) の公式英語取扱説明書に対応する日本語版です。
+product: 2-4g-micro-1w
+slug: manuals/2-4g-micro-1w
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/3623c3f2e2f3557326cce0893d45b8e0.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/2-4g-micro-1w/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink 2.4G Micro(1W) 公式英語取扱説明書（文書版・発行日不明、14頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="elrsmicro-p1-u01" data-translation-unit="elrsmicro-p1-u01"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p1-f1.jpeg" width={744} height={372} figureId="elrsmicro-p1-f1" alt={"ATA HOBBYロゴ"} caption={"ATA HOBBYロゴ"} />
+
+<span id="elrsmicro-p1-u02" data-translation-unit="elrsmicro-p1-u02"></span>
+
+## 2.4G ELRS Micro
+
+<span id="elrsmicro-p1-u03" data-translation-unit="elrsmicro-p1-u03"></span>
+
+## 長距離モジュール
+
+<span id="elrsmicro-p1-u04" data-translation-unit="elrsmicro-p1-u04"></span>
+
+## 取扱説明書
+
+<span id="elrsmicro-p1-u05" data-translation-unit="elrsmicro-p1-u05"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p1-f2.jpeg" width={1242} height={2554} figureId="elrsmicro-p1-f2" alt={"アンテナ付き2.4G ELRS Microモジュールの原典写真"} caption={"アンテナ付き2.4G ELRS Microモジュールの原典写真"} />
+
+<span id="elrsmicro-p1-u06" data-translation-unit="elrsmicro-p1-u06"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p1-f3.jpeg" width={640} height={380} figureId="elrsmicro-p1-f3" alt={"原典の14歳以上の年齢表示"} caption={"原典の14歳以上の年齢表示"} />
+
+<span id="elrsmicro-p2-u01" data-translation-unit="elrsmicro-p2-u01"></span>
+
+### 目次
+
+<span id="elrsmicro-p2-u02" data-translation-unit="elrsmicro-p2-u02"></span>
+
+1. 仕様 …… 2
+
+2. 基本設定 …… 2
+
+3. CRSFプロトコル …… 3
+
+4. LUAスクリプト …… 3
+
+5. バインド …… 5
+
+6. LED表示 …… 5
+
+7. ファームウェア更新 …… 6
+
+<span id="elrsmicro-p2-u03" data-translation-unit="elrsmicro-p2-u03"></span>
+
+原典印刷ページ：1
+
+<span id="elrsmicro-p3-u01" data-translation-unit="elrsmicro-p3-u01"></span>
+
+### 1. 仕様
+
+<span id="elrsmicro-p3-u02" data-translation-unit="elrsmicro-p3-u02"></span>
+
+パケット更新レート：50 Hz／100 Hz Full／150 Hz／250 Hz／333 Hz Full／500 Hz／D250／D500／F500／F1000
+
+<span id="elrsmicro-p3-u03" data-translation-unit="elrsmicro-p3-u03"></span>
+
+RF出力：25 mW／50 mW／100 mW／250 mW／500 mW／1 W
+
+<span id="elrsmicro-p3-u04" data-translation-unit="elrsmicro-p3-u04"></span>
+
+周波数帯：2.4 GHz ISM
+
+<span id="elrsmicro-p3-u05" data-translation-unit="elrsmicro-p3-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p3-u06" data-translation-unit="elrsmicro-p3-u06"></span>
+
+USBポート：Type-C
+
+<span id="elrsmicro-p3-u07" data-translation-unit="elrsmicro-p3-u07"></span>
+
+動作電流：910 mA未満（電源電圧7.5 V、出力1 W時）
+
+<span id="elrsmicro-p3-u08" data-translation-unit="elrsmicro-p3-u08"></span>
+
+重量：40 g
+
+<span id="elrsmicro-p3-u09" data-translation-unit="elrsmicro-p3-u09"></span>
+
+アンテナ：2.4Gロッドアンテナ
+
+<span id="elrsmicro-p3-u10" data-translation-unit="elrsmicro-p3-u10"></span>
+
+対応送信機：Micro（JR、SLIM）モジュールベイを備える送信機に対応
+
+<span id="elrsmicro-p3-u11" data-translation-unit="elrsmicro-p3-u11"></span>
+
+### 2. 基本設定
+
+<span id="elrsmicro-p3-u12" data-translation-unit="elrsmicro-p3-u12"></span>
+
+2.4G ELRS MicroモジュールはCrossfireシリアルプロトコル（CRSFプロトコル）に対応しています。使用する送信機がCRSFシリアルプロトコルに対応していることを確認してください。
+
+<span id="elrsmicro-p3-u13" data-translation-unit="elrsmicro-p3-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p3-u14" data-translation-unit="elrsmicro-p3-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p3-u15" data-translation-unit="elrsmicro-p3-u15"></span>
+
+### 注意
+
+<span id="elrsmicro-p3-u16" data-translation-unit="elrsmicro-p3-u16"></span>
+
+:::caution[注意]
+（1）電源を入れる前にアンテナを取り付けてください。取り付けずに電源を入れると、Microモジュール内のPAチップが恒久的に損傷します。
+:::
+
+<span id="elrsmicro-p3-u17" data-translation-unit="elrsmicro-p3-u17"></span>
+
+:::caution[注意]
+（2）XT30ポートからMicroモジュールへ電源を供給する際は、3S以上のバッテリーを使用しないでください。使用すると、モジュール内の電源チップが恒久的に損傷します。
+:::
+
+<span id="elrsmicro-p3-u18" data-translation-unit="elrsmicro-p3-u18"></span>
+
+原典印刷ページ：2
+
+<span id="elrsmicro-p4-u01" data-translation-unit="elrsmicro-p4-u01"></span>
+
+### 3. CRSFプロトコル
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u02" data-translation-unit="elrsmicro-p4-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u03" data-translation-unit="elrsmicro-p4-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u04" data-translation-unit="elrsmicro-p4-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u05" data-translation-unit="elrsmicro-p4-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u06" data-translation-unit="elrsmicro-p4-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u07" data-translation-unit="elrsmicro-p4-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u08" data-translation-unit="elrsmicro-p4-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u09" data-translation-unit="elrsmicro-p4-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u10" data-translation-unit="elrsmicro-p4-u10"></span>
+
+### 4. LUAスクリプト
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u11" data-translation-unit="elrsmicro-p4-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u12" data-translation-unit="elrsmicro-p4-u12"></span>
+
+### OpenTXでLUAスクリプトを変更する手順
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u13" data-translation-unit="elrsmicro-p4-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u14" data-translation-unit="elrsmicro-p4-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p4-u15" data-translation-unit="elrsmicro-p4-u15"></span>
+
+原典印刷ページ：3
+
+<span id="elrsmicro-p5-u01" data-translation-unit="elrsmicro-p5-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u02" data-translation-unit="elrsmicro-p5-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u03" data-translation-unit="elrsmicro-p5-u03"></span>
+
+### RadioLink T16D送信機でLUAスクリプトを変更する手順
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u04" data-translation-unit="elrsmicro-p5-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u05" data-translation-unit="elrsmicro-p5-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u06" data-translation-unit="elrsmicro-p5-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u07" data-translation-unit="elrsmicro-p5-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u08" data-translation-unit="elrsmicro-p5-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u09" data-translation-unit="elrsmicro-p5-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u10" data-translation-unit="elrsmicro-p5-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u11" data-translation-unit="elrsmicro-p5-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u12" data-translation-unit="elrsmicro-p5-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u13" data-translation-unit="elrsmicro-p5-u13"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u14" data-translation-unit="elrsmicro-p5-u14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u15" data-translation-unit="elrsmicro-p5-u15"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u16" data-translation-unit="elrsmicro-p5-u16"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u17" data-translation-unit="elrsmicro-p5-u17"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p5-u18" data-translation-unit="elrsmicro-p5-u18"></span>
+
+原典印刷ページ：4
+
+<span id="elrsmicro-p6-u01" data-translation-unit="elrsmicro-p6-u01"></span>
+
+### 5. バインド
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u02" data-translation-unit="elrsmicro-p6-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u03" data-translation-unit="elrsmicro-p6-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u04" data-translation-unit="elrsmicro-p6-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u05" data-translation-unit="elrsmicro-p6-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u06" data-translation-unit="elrsmicro-p6-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u07" data-translation-unit="elrsmicro-p6-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u08" data-translation-unit="elrsmicro-p6-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u09" data-translation-unit="elrsmicro-p6-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u10" data-translation-unit="elrsmicro-p6-u10"></span>
+
+### 6. LED表示
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u11" data-translation-unit="elrsmicro-p6-u11"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u12" data-translation-unit="elrsmicro-p6-u12"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p6-u13" data-translation-unit="elrsmicro-p6-u13"></span>
+
+原典印刷ページ：5
+
+<span id="elrsmicro-p7-u01" data-translation-unit="elrsmicro-p7-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u02" data-translation-unit="elrsmicro-p7-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u03" data-translation-unit="elrsmicro-p7-u03"></span>
+
+### 7. ファームウェア更新
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u04" data-translation-unit="elrsmicro-p7-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u05" data-translation-unit="elrsmicro-p7-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u06" data-translation-unit="elrsmicro-p7-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u07" data-translation-unit="elrsmicro-p7-u07"></span>
+
+### 方法1：Wi-Fi接続（TXファームウェアの更新のみ）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u08" data-translation-unit="elrsmicro-p7-u08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p7-u09" data-translation-unit="elrsmicro-p7-u09"></span>
+
+原典印刷ページ：6
+
+<span id="elrsmicro-p8-u01" data-translation-unit="elrsmicro-p8-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u02" data-translation-unit="elrsmicro-p8-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u03" data-translation-unit="elrsmicro-p8-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u04" data-translation-unit="elrsmicro-p8-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u05" data-translation-unit="elrsmicro-p8-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u06" data-translation-unit="elrsmicro-p8-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u07" data-translation-unit="elrsmicro-p8-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p8-u08" data-translation-unit="elrsmicro-p8-u08"></span>
+
+原典印刷ページ：7
+
+<span id="elrsmicro-p9-u01" data-translation-unit="elrsmicro-p9-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p9-u02" data-translation-unit="elrsmicro-p9-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p9-u03" data-translation-unit="elrsmicro-p9-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p9-u04" data-translation-unit="elrsmicro-p9-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p9-u05" data-translation-unit="elrsmicro-p9-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p9-u06" data-translation-unit="elrsmicro-p9-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p9-u07" data-translation-unit="elrsmicro-p9-u07"></span>
+
+原典印刷ページ：8
+
+<span id="elrsmicro-p10-u01" data-translation-unit="elrsmicro-p10-u01"></span>
+
+### 方法2：USB接続（TXおよびバックパックファームウェアの更新）
+
+<span id="elrsmicro-p10-u02" data-translation-unit="elrsmicro-p10-u02"></span>
+
+（1）パソコンにUSBドライバーをインストールします。ドライバーはRadioLink公式サイトからダウンロードできます。
+
+https://radiolink.com.cn/elrs1wMicro_firmwares
+
+<span id="elrsmicro-p10-u03" data-translation-unit="elrsmicro-p10-u03"></span>
+
+（2）Flash Download Toolを用意します。www.espressif.com.cn を開き、「Support」→「Download」→「Tools」の順にクリックします。
+
+<span id="elrsmicro-p10-u04" data-translation-unit="elrsmicro-p10-u04"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p10-f1.jpeg" width={1280} height={363} figureId="elrsmicro-p10-f1" alt={"EspressifサイトのSupport、Download、Toolsの選択例。"} caption={"EspressifサイトのSupport、Download、Toolsの選択例。"} />
+
+<span id="elrsmicro-p10-u05" data-translation-unit="elrsmicro-p10-u05"></span>
+
+Flash Download Toolを探し、右側のダウンロードアイコンをクリックします。
+
+<span id="elrsmicro-p10-u06" data-translation-unit="elrsmicro-p10-u06"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p10-f2.jpeg" width={1275} height={504} figureId="elrsmicro-p10-f2" alt={"Flash Download Toolsとダウンロードアイコンの表示例。"} caption={"Flash Download Toolsとダウンロードアイコンの表示例。"} />
+
+<span id="elrsmicro-p10-u07" data-translation-unit="elrsmicro-p10-u07"></span>
+
+青い文字の「Flash Download Tool」をクリックしてダウンロードします。
+
+<span id="elrsmicro-p10-u08" data-translation-unit="elrsmicro-p10-u08"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p10-f3.jpeg" width={1035} height={456} figureId="elrsmicro-p10-f3" alt={"Flash Download Tool User Guideのダウンロードリンク例。図には書き込み対象モジュールとWindows 7（64ビット）／Windows 10のPC、Flash Download Toolが必要と表示されています。"} caption={"Flash Download Tool User Guideのダウンロードリンク例。図には書き込み対象モジュールとWindows 7（64ビット）／Windows 10のPC、Flash Download Toolが必要と表示されています。"} />
+
+<span id="elrsmicro-p10-u09" data-translation-unit="elrsmicro-p10-u09"></span>
+
+原典印刷ページ：9
+
+<span id="elrsmicro-p11-u01" data-translation-unit="elrsmicro-p11-u01"></span>
+
+ダウンロードが完了すると、「flash_download_tool.zip」という圧縮ファイルが保存されます。デスクトップに任意の英字名のフォルダーを作成し、圧縮ファイル内のすべてのファイルをそこへ展開します。以降のファームウェア更新手順では、そのフォルダー内の「flash_download_tool_3.9.10.exe」を使用します。
+
+<span id="elrsmicro-p11-u02" data-translation-unit="elrsmicro-p11-u02"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p11-f1.jpeg" width={688} height={423} figureId="elrsmicro-p11-f1" alt={"展開後のフォルダーとflash_download_tool_3.9.10アプリケーションの例。"} caption={"展開後のフォルダーとflash_download_tool_3.9.10アプリケーションの例。"} />
+
+:::note[原典について]
+スクリプト画面は3.3.0、Web画面は3.3.2、書き込みツールは3.9.10の例です。原典記載の画面と手順を保持し、現在の最新版や実機ファームウェア確認済みとは扱いません。
+:::
+
+<span id="elrsmicro-p11-u03" data-translation-unit="elrsmicro-p11-u03"></span>
+
+### （3）DIPスイッチの設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p11-u04" data-translation-unit="elrsmicro-p11-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p11-u05" data-translation-unit="elrsmicro-p11-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p11-u06" data-translation-unit="elrsmicro-p11-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p11-u07" data-translation-unit="elrsmicro-p11-u07"></span>
+
+原典印刷ページ：10
+
+<span id="elrsmicro-p12-u01" data-translation-unit="elrsmicro-p12-u01"></span>
+
+### （4）ファームウェアの更新（TXファームウェアの例）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u02" data-translation-unit="elrsmicro-p12-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u03" data-translation-unit="elrsmicro-p12-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u04" data-translation-unit="elrsmicro-p12-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u05" data-translation-unit="elrsmicro-p12-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u06" data-translation-unit="elrsmicro-p12-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u07" data-translation-unit="elrsmicro-p12-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p12-u08" data-translation-unit="elrsmicro-p12-u08"></span>
+
+原典印刷ページ：11
+
+<span id="elrsmicro-p13-u01" data-translation-unit="elrsmicro-p13-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p13-u02" data-translation-unit="elrsmicro-p13-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p13-u03" data-translation-unit="elrsmicro-p13-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p13-u04" data-translation-unit="elrsmicro-p13-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p13-u05" data-translation-unit="elrsmicro-p13-u05"></span>
+
+原典印刷ページ：12
+
+<span id="elrsmicro-p14-u01" data-translation-unit="elrsmicro-p14-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p14-u02" data-translation-unit="elrsmicro-p14-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p14-u03" data-translation-unit="elrsmicro-p14-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p14-u04" data-translation-unit="elrsmicro-p14-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrsmicro-p14-u05" data-translation-unit="elrsmicro-p14-u05"></span>
+
+### テクニカルサポート
+
+<span id="elrsmicro-p14-u06" data-translation-unit="elrsmicro-p14-u06"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p14-f3.jpeg" width={300} height={300} figureId="elrsmicro-p14-f3" alt={"取扱説明書のQRコード（原典掲載）。"} caption={"取扱説明書のQRコード（原典掲載）。"} />
+
+<span id="elrsmicro-p14-u07" data-translation-unit="elrsmicro-p14-u07"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p14-f4.jpeg" width={300} height={300} figureId="elrsmicro-p14-f4" alt={"FAQのQRコード（原典掲載）。"} caption={"FAQのQRコード（原典掲載）。"} />
+
+<span id="elrsmicro-p14-u08" data-translation-unit="elrsmicro-p14-u08"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p14-f5.jpeg" width={920} height={911} figureId="elrsmicro-p14-f5" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="elrsmicro-p14-u09" data-translation-unit="elrsmicro-p14-u09"></span>
+
+<ManualFigure src="/assets/radiolink/2-4g-micro-1w/web-ja-v1/elrsmicro-p14-f6.jpeg" width={300} height={300} figureId="elrsmicro-p14-f6" alt={"チュートリアルのQRコード（原典掲載）。"} caption={"チュートリアルのQRコード（原典掲載）。"} />
+
+<span id="elrsmicro-p14-u10" data-translation-unit="elrsmicro-p14-u10"></span>
+
+Facebook MessengerでRadioLink RLへ連絡
+
+取扱説明書
+
+FAQ
+
+チュートリアル
+
+<span id="elrsmicro-p14-u11" data-translation-unit="elrsmicro-p14-u11"></span>
+
+上記の連絡方法で問題を解決できない場合は、テクニカルサポート after_service@radiolink.com.cn へメールでお問い合わせいただくこともできます。本書の内容は変更される場合があります。最新版は https://radiolink.com.cn/elrs1wMicro_firmwares からダウンロードしてください。
+
+<span id="elrsmicro-p14-u12" data-translation-unit="elrsmicro-p14-u12"></span>
+
+原典印刷ページ：13

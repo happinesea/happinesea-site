@@ -246,3 +246,25 @@ for (const manual of inventory.manuals.filter(
     ).toBe(404);
   });
 }
+test('Byme-D source corrections appear in the existing manual', async ({
+  page,
+}, info) => {
+  await page.goto('./manuals/byme-d/chapter-01/');
+  const warning = page.getByText(
+    '取り付けや試験を行うときは、機体にプロペラを装着しないでください。',
+    { exact: true },
+  );
+  await expect(warning).toBeVisible();
+  await warning.screenshot({ path: info.outputPath('propeller-warning.png') });
+  await page.goto('./manuals/byme-d/chapter-04/');
+  const calibration = page.locator(
+    '[data-semantic-section="section-005-姿勢の校正"]',
+  );
+  await expect(calibration).toContainText(
+    '原典は具体的な角度を指定していません。',
+  );
+  await expect(calibration).not.toContainText('20°');
+  await calibration
+    .getByText(/原典は具体的な角度を指定していません/)
+    .screenshot({ path: info.outputPath('attitude-calibration.png') });
+});

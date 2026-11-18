@@ -1,3 +1,4 @@
+import remaining from '../../src/data/manuals/remaining-web.json' with { type: 'json' };
 import batch6 from '../../src/data/manuals/receiver-web-batch6.json' with { type: 'json' };
 import batch5 from '../../src/data/manuals/receiver-web-batch5.json' with { type: 'json' };
 import assert from 'node:assert/strict';
@@ -59,6 +60,9 @@ test('catalogue images are local official assets and detail links match implemen
       't12d',
       'ts100-m8n',
       'byme-db',
+      ...remaining.manuals
+        .filter((m) => m.product_id !== 'rtc8')
+        .map((m) => m.product_id),
       ...batch6.manuals.map((m) => m.product_id),
       ...batch5.manuals
         .filter((m) => m.product_id !== 'r6fg')
@@ -69,7 +73,8 @@ test('catalogue images are local official assets and detail links match implemen
     pending.length,
     58 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length,
+      batch6.manuals.length -
+      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
   );
 
   for (const product of products) {

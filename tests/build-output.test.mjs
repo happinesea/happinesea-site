@@ -1,3 +1,4 @@
+import remaining from '../src/data/manuals/remaining-web.json' with { type: 'json' };
 import batch6 from '../src/data/manuals/receiver-web-batch6.json' with { type: 'json' };
 import batch5 from '../src/data/manuals/receiver-web-batch5.json' with { type: 'json' };
 import assert from 'node:assert/strict';
@@ -613,19 +614,22 @@ test('Radiolink catalogue renders all inventory products without pending detail 
     (html.match(/data-detail-available/g) ?? []).length,
     25 +
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
-      batch6.manuals.length,
+      batch6.manuals.length +
+      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
   );
   assert.equal(
     (html.match(/data-detail-preparing/g) ?? []).length,
     58 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length,
+      batch6.manuals.length -
+      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
   );
   assert.equal(
     (html.match(/詳しい仕様は公式サイトで/g) ?? []).length,
     58 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length,
+      batch6.manuals.length -
+      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
   );
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);

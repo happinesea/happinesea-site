@@ -79,8 +79,24 @@
   min-width: 8em;
 }
 
-.sl-markdown-content:has([data-translation-unit^='bymedb-'])
+.sl-markdown-content:has(
+    [data-translation-unit^='bymedb-'],
+    [data-translation-unit^='rtc8-'],
+    [data-translation-unit^='elrsmicro-'],
+    [data-translation-unit^='f722-']
+  )
   table
   :is(th, td):first-child {
   min-width: 8em;
+}
+
+/* Size tall source diagrams by width so their labels retain the original ratio. */
+.sl-markdown-content:has(
+    [data-translation-unit^='rtc8-'],
+    [data-translation-unit^='elrsmicro-'],
+    [data-translation-unit^='f722-']
+  )
+  [data-manual-figure]
+  img {
+  max-height: none;
 }
