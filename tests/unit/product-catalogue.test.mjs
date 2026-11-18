@@ -1,3 +1,4 @@
+import batch5 from '../../src/data/manuals/receiver-web-batch5.json' with { type: 'json' };
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
@@ -29,33 +30,42 @@ test('catalogue images are local official assets and detail links match implemen
   const implemented = products.filter(({ detailPath }) => detailPath !== null);
   const pending = products.filter(({ detailPath }) => detailPath === null);
 
-  assert.deepEqual(implemented.map(({ slug }) => slug).sort(), [
-    'er16-2-4g',
-    'r12ds',
-    'r12dse',
-    'r12f',
-    'r16f',
-    'r16sm',
-    'r4fgm',
-    'r6ds',
-    'r6dsm',
-    'r6f',
-    'r6fg',
-    'r7fg',
-    'r8ef',
-    'r8fg',
-    'r8fgh',
-    'r8fm',
-    'r8sm',
-    'r8xm',
-    'r9ds',
-    'rc8p',
-    'rc8x',
-    'rtk-f9p',
-    't12d',
-    'ts100-m8n',
-  ]);
-  assert.equal(pending.length, 59);
+  assert.deepEqual(
+    implemented.map(({ slug }) => slug).sort(),
+    [
+      'er16-2-4g',
+      'r12ds',
+      'r12dse',
+      'r12f',
+      'r16f',
+      'r16sm',
+      'r4fgm',
+      'r6ds',
+      'r6dsm',
+      'r6f',
+      'r6fg',
+      'r7fg',
+      'r8ef',
+      'r8fg',
+      'r8fgh',
+      'r8fm',
+      'r8sm',
+      'r8xm',
+      'r9ds',
+      'rc8p',
+      'rc8x',
+      'rtk-f9p',
+      't12d',
+      'ts100-m8n',
+      ...batch5.manuals
+        .filter((m) => m.product_id !== 'r6fg')
+        .map((m) => m.product_id),
+    ].sort(),
+  );
+  assert.equal(
+    pending.length,
+    59 - batch5.manuals.filter((m) => m.product_id !== 'r6fg').length,
+  );
 
   for (const product of products) {
     assert.match(

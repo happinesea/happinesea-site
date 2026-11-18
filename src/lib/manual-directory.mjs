@@ -42,7 +42,8 @@ models.push(
     .filter(
       (product) =>
         !models.some((model) => model.catalogue === product.slug) &&
-        official.links.some((link) => link.product === product.slug),
+        (official.links.some((link) => link.product === product.slug) ||
+          receiverManuals.manuals.some((m) => m.product_id === product.slug)),
     )
     .map((product) => ({
       id: product.slug,

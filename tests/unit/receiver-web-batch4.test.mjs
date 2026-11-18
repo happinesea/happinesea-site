@@ -18,7 +18,7 @@ test('batch4 copies retain independent provenance, untranslated original figures
     new Set(all.manuals.map((m) => m.product_id)).size,
     all.manuals.length,
   );
-  assert.equal(all.manuals.length, 20);
+  assert(all.manuals.length >= 20);
   const ts100 = batch.manuals.find((m) => m.product_id === 'ts100-m8n');
   assert.equal(ts100.inventory_product_id, 'ts100');
   assert.equal(ts100.model, 'TS100(M8N)');

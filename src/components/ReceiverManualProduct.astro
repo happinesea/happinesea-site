@@ -17,7 +17,8 @@ if (!product || !manual)
   robots={
     'batch_id' in manual &&
     (manual.batch_id === 'receiver-web-batch3' ||
-      manual.batch_id === 'receiver-web-batch4')
+      manual.batch_id === 'receiver-web-batch4' ||
+      manual.batch_id === 'receiver-web-batch5')
       ? 'noindex, nofollow'
       : undefined
   }
@@ -26,6 +27,10 @@ if (!product || !manual)
     {product.category === 'GPS・RTK・センサー' ? (
       <a href={withBase('/radiolink/#gps-rtk-sensors')}>
         GPS・RTK・センサー一覧へ戻る
+      </a>
+    ) : product.category === 'モジュール・アクセサリー' ? (
+      <a href={withBase('/radiolink/#modules-accessories')}>
+        モジュール・アクセサリー一覧へ戻る
       </a>
     ) : (
       <a href={withBase('/radiolink/#receivers')}>受信機一覧へ戻る</a>
@@ -52,7 +57,8 @@ if (!product || !manual)
     {'batch_id' in manual &&
     (manual.batch_id === 'receiver-web-batch2' ||
       manual.batch_id === 'receiver-web-batch3' ||
-      manual.batch_id === 'receiver-web-batch4') &&
+      manual.batch_id === 'receiver-web-batch4' ||
+      manual.batch_id === 'receiver-web-batch5') &&
     manual.withheld_unit_ids.length === 0 ? (
       <p>
         英語原典に対応した日本語本文を掲載しています。挿図は原図のままです。適用条件は本文を確認してください。

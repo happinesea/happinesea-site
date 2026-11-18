@@ -1,0 +1,322 @@
+---
+title: PRM-03 日本語取扱説明書
+description: Radiolink PRM-03 の公式英語取扱説明書に対応する日本語版です。
+product: prm-03
+slug: manuals/prm-03
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/58db06a8eff479fc30131857356b4abf.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/prm-03/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+:::caution[確認待ちの手順について]
+保留表示を含む一連の操作・接続手順は実行しないでください。手順番号を飛ばして進めず、確認が取れるまで参照用として扱ってください。
+:::
+
+挿図は英語原図のまま掲載しています。
+
+適用資料：Radiolink PRM-03 公式英語取扱説明書（文書版・発行日不明、8頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="prm03-w001" data-translation-unit="prm03-w001"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p1-f1.png" width={289} height={58} figureId="prm03-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w002" data-translation-unit="prm03-w002"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w003" data-translation-unit="prm03-w003"></span>
+
+www.radiolink.com
+
+<span id="prm03-w004" data-translation-unit="prm03-w004"></span>
+
+### OSD情報テレメトリーモジュール PRM-03
+
+<span id="prm03-w005" data-translation-unit="prm03-w005"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w006" data-translation-unit="prm03-w006"></span>
+
+取扱説明書
+
+<span id="prm03-w007" data-translation-unit="prm03-w007"></span>
+
+対応受信機：R12DS、R9DS
+
+<span id="prm03-w008" data-translation-unit="prm03-w008"></span>
+
+対応送信機：AT10II／AT10／AT9S Pro／AT9S／AT9
+
+<span id="prm03-w009" data-translation-unit="prm03-w009"></span>
+
+対応フライトコントローラー：Mini Pix／PIXHAWK／TURBO PiX／APM
+
+<span id="prm03-w010" data-translation-unit="prm03-w010"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p2-f1.png" width={289} height={58} figureId="prm03-p2-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w011" data-translation-unit="prm03-w011"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w012" data-translation-unit="prm03-w012"></span>
+
+www.radiolink.com
+
+<span id="prm03-w013" data-translation-unit="prm03-w013"></span>
+
+目次
+
+<span id="prm03-w014" data-translation-unit="prm03-w014"></span>
+
+はじめに …… 原典3頁
+
+<span id="prm03-w015" data-translation-unit="prm03-w015"></span>
+
+仕様 …… 原典3頁
+
+<span id="prm03-w016" data-translation-unit="prm03-w016"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w017" data-translation-unit="prm03-w017"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w018" data-translation-unit="prm03-w018"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p3-f1.png" width={289} height={58} figureId="prm03-p3-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w019" data-translation-unit="prm03-w019"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w020" data-translation-unit="prm03-w020"></span>
+
+www.radiolink.com
+
+<span id="prm03-w021" data-translation-unit="prm03-w021"></span>
+
+### はじめに
+
+<span id="prm03-w022" data-translation-unit="prm03-w022"></span>
+
+### OSDテレメトリーセンサー：PRM-03
+
+<span id="prm03-w023" data-translation-unit="prm03-w023"></span>
+
+機体のリアルタイムデータにより、機体のシステムに関する重要な情報をユーザーに伝えます。
+
+<span id="prm03-w024" data-translation-unit="prm03-w024"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w025" data-translation-unit="prm03-w025"></span>
+
+音・メッセージによるアラームを設定でき、機体電圧が低いときに問題の可能性を知らせます。機体の低電圧アラーム値は変更できます。
+
+<span id="prm03-w026" data-translation-unit="prm03-w026"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w027" data-translation-unit="prm03-w027"></span>
+
+### 仕様
+
+<span id="prm03-w028" data-translation-unit="prm03-w028"></span>
+
+① 名称：OSDテレメトリーモジュール
+
+<span id="prm03-w029" data-translation-unit="prm03-w029"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p4-f1.png" width={289} height={58} figureId="prm03-p4-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w030" data-translation-unit="prm03-w030"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w031" data-translation-unit="prm03-w031"></span>
+
+www.radiolink.com
+
+<span id="prm03-w032" data-translation-unit="prm03-w032"></span>
+
+② 型番：PRM-03
+
+<span id="prm03-w033" data-translation-unit="prm03-w033"></span>
+
+③ 寸法：27 × 13 mm（1.06" × 0.51"）
+
+<span id="prm03-w034" data-translation-unit="prm03-w034"></span>
+
+④ 重量：6 g（0.21 oz）
+
+<span id="prm03-w035" data-translation-unit="prm03-w035"></span>
+
+⑤ 対応フライトコントローラー：Mini Pix／PIXHAWK／TURBO PiX／APM
+
+<span id="prm03-w036" data-translation-unit="prm03-w036"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w037" data-translation-unit="prm03-w037"></span>
+
+⑦ 対応送信機：AT10II／AT10／AT9S Pro／AT9S／AT9
+
+<span id="prm03-w038" data-translation-unit="prm03-w038"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w039" data-translation-unit="prm03-w039"></span>
+
+⑨ PRM-03は1セル～12セルのバッテリー（3.7～50.4 V）に対応します。
+
+<span id="prm03-w040" data-translation-unit="prm03-w040"></span>
+
+:::caution[注意]
+注意：旧版AT9とAT10でPRM-03を使用してOSD情報をテレメトリー送信する場合は、ファームウェアを更新する必要があります。AT9は少なくともV1.2.6(OSD)、AT10は少なくともV1.0.6(OSD)に更新してください。
+:::
+
+<span id="prm03-w041" data-translation-unit="prm03-w041"></span>
+
+### 接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w042" data-translation-unit="prm03-w042"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w043" data-translation-unit="prm03-w043"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p5-f1.png" width={289} height={58} figureId="prm03-p5-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w044" data-translation-unit="prm03-w044"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w045" data-translation-unit="prm03-w045"></span>
+
+www.radiolink.com
+
+<span id="prm03-w046" data-translation-unit="prm03-w046"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w047" data-translation-unit="prm03-w047"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p6-f1.png" width={289} height={58} figureId="prm03-p6-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w048" data-translation-unit="prm03-w048"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w049" data-translation-unit="prm03-w049"></span>
+
+www.radiolink.com
+
+<span id="prm03-w050" data-translation-unit="prm03-w050"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w051" data-translation-unit="prm03-w051"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w052" data-translation-unit="prm03-w052"></span>
+
+### 例：PIXHAWKへの接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w053" data-translation-unit="prm03-w053"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p7-f1.png" width={289} height={58} figureId="prm03-p7-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w054" data-translation-unit="prm03-w054"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w055" data-translation-unit="prm03-w055"></span>
+
+www.radiolink.com
+
+<span id="prm03-w056" data-translation-unit="prm03-w056"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w057" data-translation-unit="prm03-w057"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w058" data-translation-unit="prm03-w058"></span>
+
+<ManualFigure src="/assets/radiolink/prm-03/web-ja-v1/prm03-p8-f1.png" width={289} height={58} figureId="prm03-p8-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="prm03-w059" data-translation-unit="prm03-w059"></span>
+
+RadioLink Electronic Limited
+
+<span id="prm03-w060" data-translation-unit="prm03-w060"></span>
+
+www.radiolink.com
+
+<span id="prm03-w061" data-translation-unit="prm03-w061"></span>
+
+### 表示例
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="prm03-w062" data-translation-unit="prm03-w062"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::

@@ -5,11 +5,14 @@ import batch3 from '../data/manuals/receiver-web-batch3.json' with { type: 'json
 
 import batch4 from '../data/manuals/receiver-web-batch4.json' with { type: 'json' };
 
+import batch5 from '../data/manuals/receiver-web-batch5.json' with { type: 'json' };
+
 const manuals = [
   ...pilot.manuals,
   ...batch2.manuals,
   ...batch3.manuals,
   ...batch4.manuals,
+  ...batch5.manuals,
 ];
 if (new Set(manuals.map((m) => m.product_id)).size !== manuals.length)
   throw new Error('Duplicate receiver manual scope');
