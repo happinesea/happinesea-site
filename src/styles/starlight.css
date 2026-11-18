@@ -66,3 +66,15 @@
   :is(th, td):first-child {
   min-width: 8em;
 }
+
+.sl-markdown-content:has(
+    [data-translation-unit^='trainercable-'],
+    [data-translation-unit^='cm120-'],
+    [data-translation-unit^='elrs24-'],
+    [data-translation-unit^='elrs915-'],
+    [data-translation-unit^='re15a-']
+  )
+  table
+  :is(th, td):first-child {
+  min-width: 8em;
+}

@@ -135,7 +135,7 @@
     "subcategoryLabel": "トレーナーシステム",
     "description": "Radiolinkのトレーナーシステム関連製品です。",
     "officialUrl": "https://www.radiolink.com/trainer_cable",
-    "detailPath": null,
+    "detailPath": "/radiolink/trainer-cable/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/trainer-cable.webp",
@@ -261,7 +261,7 @@
     "subcategoryLabel": "ELRS長距離モジュール",
     "description": "RadiolinkのELRS長距離モジュールです。",
     "officialUrl": "https://www.radiolink.com/elrs_1w",
-    "detailPath": null,
+    "detailPath": "/radiolink/2-4g-nano-1w/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/2-4g-nano-1w.webp",
@@ -282,7 +282,7 @@
     "subcategoryLabel": "ELRS長距離モジュール",
     "description": "RadiolinkのELRS長距離モジュールです。",
     "officialUrl": "https://www.radiolink.com/elrs_915",
-    "detailPath": null,
+    "detailPath": "/radiolink/915mhz-1w/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/915mhz-1w.webp",
@@ -1185,7 +1185,7 @@
     "subcategoryLabel": "充電器",
     "description": "Radiolinkのバッテリー充電器です。",
     "officialUrl": "https://www.radiolink.com/cm120",
-    "detailPath": null,
+    "detailPath": "/radiolink/cm120/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cm120.webp",
@@ -1206,7 +1206,7 @@
     "subcategoryLabel": "固定翼用ESC",
     "description": "Radiolinkの固定翼機向けESCです。",
     "officialUrl": "https://www.radiolink.com/15a_esc",
-    "detailPath": null,
+    "detailPath": "/radiolink/re15a-2s/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/re15a-2s.webp",

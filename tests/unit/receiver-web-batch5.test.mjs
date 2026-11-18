@@ -22,7 +22,10 @@ test('batch5 copies retain independent provenance, untranslated original figures
     batch.manuals.length,
     batch.production_scope === 'SHORT_FOUR' ? 4 : 5,
   );
-  assert.equal(all.manuals.length, 20 + batch.manuals.length);
+  assert.equal(
+    all.manuals.filter((m) => m.batch_id !== 'receiver-web-batch6').length,
+    20 + batch.manuals.length,
+  );
   for (const m of batch.manuals) {
     const mdx = fs.readFileSync(
       `src/content/docs/manuals/${m.product_id}/index.mdx`,

@@ -1,0 +1,259 @@
+---
+title: 915MHz(1W) 日本語取扱説明書
+description: Radiolink 915MHz(1W) の公式英語取扱説明書に対応する日本語版です。
+product: 915mhz-1w
+slug: manuals/915mhz-1w
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/6a442f80024f8beb6a62de775b46a000.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/915mhz-1w/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink 915MHz(1W) 公式英語取扱説明書（文書版・発行日不明、6頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="elrs915-p1-u01" data-translation-unit="elrs915-p1-u01"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p1-f1.jpeg" width={744} height={372} figureId="elrs915-p1-f1" alt={"ATA HOBBYロゴ"} caption={"ATA HOBBYロゴ"} />
+
+<span id="elrs915-p1-u02" data-translation-unit="elrs915-p1-u02"></span>
+
+## ELRS 915MHz長距離モジュール取扱説明書
+
+<span id="elrs915-p1-u03" data-translation-unit="elrs915-p1-u03"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p1-f2.jpeg" width={2000} height={2000} figureId="elrs915-p1-f2" alt={"915MHz長距離モジュールの原典写真"} caption={"915MHz長距離モジュールの原典写真"} />
+
+<span id="elrs915-p1-u04" data-translation-unit="elrs915-p1-u04"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p1-f3.jpeg" width={640} height={380} figureId="elrs915-p1-f3" alt={"14+の表示"} caption={"14+の表示"} />
+
+<span id="elrs915-p2-u01" data-translation-unit="elrs915-p2-u01"></span>
+
+目次
+
+1. 仕様（2）、2. 基本設定（2）、3. CRSFプロトコル（2）、4. Luaスクリプト（3）、5. バインド（4）。括弧内は原典印刷頁。
+
+<span id="elrs915-p2-u02" data-translation-unit="elrs915-p2-u02"></span>
+
+原典印刷ページ：1
+
+<span id="elrs915-p3-u01" data-translation-unit="elrs915-p3-u01"></span>
+
+## 1. 仕様
+
+<span id="elrs915-p3-u02" data-translation-unit="elrs915-p3-u02"></span>
+
+| 項目 | 原典記載 |
+|---|---|
+| パケット更新レート | D50Hz／25Hz／50Hz／100Hz／100Hz Full／200Hz |
+| RF出力 | 10 mW／25 mW／50 mW／100 mW／250 mW／500 mW／1 W |
+| 周波数帯 | FCC915 |
+
+:::note[原典について]
+FCC915は原典記載の周波数帯です。日本国内での使用可否は未確認です。
+:::
+
+<span id="elrs915-p3-u03" data-translation-unit="elrs915-p3-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p3-u04" data-translation-unit="elrs915-p3-u04"></span>
+
+| 項目 | 原典記載 |
+|---|---|
+| USBポート | Type-C |
+| ファン | 高効率冷却ファン内蔵 |
+| アンテナ | 915M T型アンテナ |
+| 対応送信機 | Nano (Lite) モジュールベイを備えた送信機 |
+
+<span id="elrs915-p3-u05" data-translation-unit="elrs915-p3-u05"></span>
+
+## 2. 基本設定
+
+<span id="elrs915-p3-u06" data-translation-unit="elrs915-p3-u06"></span>
+
+ATA ELRS 915MHz 長距離モジュールはCrossfireシリアルプロトコル（CRSF）に対応しています。送信機がCRSFシリアルプロトコルに対応していることを確認してください。OpenTX搭載送信機とRadioLink T16Dを例に、CRSFプロトコルとLuaスクリプトの設定を説明します。
+
+<span id="elrs915-p3-u07" data-translation-unit="elrs915-p3-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p3-u08" data-translation-unit="elrs915-p3-u08"></span>
+
+:::caution[注意]
+電源を入れる前にアンテナを取り付けてください。取り付けずに通電するとモジュール内部のPAチップが破損します。
+:::
+
+<span id="elrs915-p3-u09" data-translation-unit="elrs915-p3-u09"></span>
+
+## 3. CRSFプロトコル
+
+<span id="elrs915-p3-u10" data-translation-unit="elrs915-p3-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p3-u11" data-translation-unit="elrs915-p3-u11"></span>
+
+原典印刷ページ：2
+
+<span id="elrs915-p4-u01" data-translation-unit="elrs915-p4-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u02" data-translation-unit="elrs915-p4-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u04" data-translation-unit="elrs915-p4-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u03" data-translation-unit="elrs915-p4-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u05" data-translation-unit="elrs915-p4-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u06" data-translation-unit="elrs915-p4-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u07" data-translation-unit="elrs915-p4-u07"></span>
+
+## 4. Luaスクリプト
+
+<span id="elrs915-p4-u08" data-translation-unit="elrs915-p4-u08"></span>
+
+出力や更新レートなどのパラメーターを変更するときは、Luaスクリプトでモジュールを制御できます。
+
+<span id="elrs915-p4-u09" data-translation-unit="elrs915-p4-u09"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u10" data-translation-unit="elrs915-p4-u10"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p4-u11" data-translation-unit="elrs915-p4-u11"></span>
+
+原典印刷ページ：3
+
+<span id="elrs915-p5-u01" data-translation-unit="elrs915-p5-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p5-u02" data-translation-unit="elrs915-p5-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p5-u03" data-translation-unit="elrs915-p5-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p5-u04" data-translation-unit="elrs915-p5-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p5-u05" data-translation-unit="elrs915-p5-u05"></span>
+
+## 5. バインド
+
+<span id="elrs915-p5-u06" data-translation-unit="elrs915-p5-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p5-u07" data-translation-unit="elrs915-p5-u07"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p5-u08" data-translation-unit="elrs915-p5-u08"></span>
+
+原典印刷ページ：4
+
+<span id="elrs915-p6-u01" data-translation-unit="elrs915-p6-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915-p6-u02" data-translation-unit="elrs915-p6-u02"></span>
+
+## 技術サポート
+
+<span id="elrs915-p6-u05" data-translation-unit="elrs915-p6-u05"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p6-f3.jpeg" width={920} height={911} figureId="elrs915-p6-f3" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="elrs915-p6-u03" data-translation-unit="elrs915-p6-u03"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p6-f1.jpeg" width={300} height={300} figureId="elrs915-p6-f1" alt={"取扱説明書のQRコード。"} caption={"取扱説明書のQRコード。"} />
+
+<span id="elrs915-p6-u04" data-translation-unit="elrs915-p6-u04"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p6-f2.jpeg" width={300} height={300} figureId="elrs915-p6-f2" alt={"FAQのQRコード。"} caption={"FAQのQRコード。"} />
+
+<span id="elrs915-p6-u06" data-translation-unit="elrs915-p6-u06"></span>
+
+<ManualFigure src="/assets/radiolink/915mhz-1w/web-ja-v1/elrs915-p6-f4.jpeg" width={300} height={300} figureId="elrs915-p6-f4" alt={"チュートリアルのQRコード。"} caption={"チュートリアルのQRコード。"} />
+
+<span id="elrs915-p6-u07" data-translation-unit="elrs915-p6-u07"></span>
+
+Facebook MessengerでRadioLink RLに連絡。
+
+<span id="elrs915-p6-u08" data-translation-unit="elrs915-p6-u08"></span>
+
+解決できない場合はafter_service@radiolink.com.cn へメールでお問い合わせください。内容は変更される場合があります。最新版は www.radiolink.com.cn/ATA_ELRS_1W_915MHz_long-range_module_user_manual から入手してください。
+
+<span id="elrs915-p6-u09" data-translation-unit="elrs915-p6-u09"></span>
+
+原典印刷ページ：5
