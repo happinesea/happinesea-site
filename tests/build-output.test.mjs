@@ -611,19 +611,19 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
   assert.equal(
     (html.match(/data-detail-available/g) ?? []).length,
-    24 +
+    25 +
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
       batch6.manuals.length,
   );
   assert.equal(
     (html.match(/data-detail-preparing/g) ?? []).length,
-    59 -
+    58 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
       batch6.manuals.length,
   );
   assert.equal(
     (html.match(/詳しい仕様は公式サイトで/g) ?? []).length,
-    59 -
+    58 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
       batch6.manuals.length,
   );

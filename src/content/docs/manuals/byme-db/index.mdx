@@ -1,0 +1,391 @@
+---
+title: Byme-DB 日本語取扱説明書
+description: Radiolink Byme-DB の公式英語取扱説明書に対応する日本語版です。
+product: byme-db
+slug: manuals/byme-db
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/a72a7284dc880570b0940146d00254ce.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/byme-db/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink Byme-DB 公式英語取扱説明書（V1.0・発行日不明、13頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="bymedb-p1-u01" data-translation-unit="bymedb-p1-u01"></span>
+
+### 表紙
+
+Byme-DB 取扱説明書 V1.0
+
+<span id="bymedb-p1-f1-unit" data-translation-unit="bymedb-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p1-f1.jpeg" width={600} height={180} figureId="bymedb-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="bymedb-p1-f2-unit" data-translation-unit="bymedb-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p1-f2.jpeg" width={1000} height={1000} figureId="bymedb-p1-f2" alt={"Byme-DB本体の表面と端子を示す写真。"} caption={"Byme-DB本体の表面と端子を示す写真。"} />
+
+<span id="bymedb-p1-f3-unit" data-translation-unit="bymedb-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p1-f3.jpeg" width={640} height={380} figureId="bymedb-p1-f3" alt={"14+の表示。"} caption={"14+の表示。"} />
+
+<span id="bymedb-p2-folio" data-translation-unit="bymedb-p2-folio"></span>
+
+原典印刷ページ：1
+
+<span id="bymedb-p2-u01" data-translation-unit="bymedb-p2-u01"></span>
+
+### 目次
+
+括弧内は原典印刷頁。免責事項（2）、安全上の注意（2）、Byme-DBの概要（3）、仕様（4）、取り付け（4）、飛行モード設定（5）、モーター安全ロック（5）、送信機設定（7）、電源投入とジャイロ自己診断（7）、姿勢キャリブレーション（7）、サーボ動作方向（9）、サーボ動作方向の点検（9）と調整（9）、3つの飛行モード（10）、スタビライズモード（10）、ジャイロモード（11）、マニュアルモード（11）、ジャイロ感度（11）、技術サポート（12）。
+
+<span id="bymedb-p3-folio" data-translation-unit="bymedb-p3-folio"></span>
+
+原典印刷ページ：2
+
+<span id="bymedb-p3-u01" data-translation-unit="bymedb-p3-u01"></span>
+
+### 免責事項
+
+RadioLink Byme-DBフライトコントローラーをお買い上げいただき、ありがとうございます。製品の機能を十分に活用し、安全にご使用いただくため、本書をよく読み、記載の手順に従って設定してください。
+
+不適切な操作は、財産の損失や生命を脅かす事故につながるおそれがあります。RadioLink製品を操作することで、操作者はこの責任制限を理解し、操作に責任を負うことに同意したものとみなされます。現地の法令に従い、RadioLinkが定める原則を守ってください。
+
+飛行記録が提供されない場合、RadioLinkは製品の損傷や事故原因の分析、アフターサービスの提供ができません。法令で許される最大限の範囲で、RadioLinkは購入、操作、操作不能に伴う間接的、結果的、偶発的、特別または懲罰的損害について責任を負いません。損失の可能性を事前に通知されていた場合も同様です。
+
+国によっては保証条件からの免責が法律で禁じられている場合があります。そのため、消費者の権利は国によって異なります。RadioLinkは法令に従って上記条件を解釈する権利を留保します。また、予告なく条件を更新、変更または終了する権利を留保します。
+
+注意：本製品は玩具ではなく、14歳未満のお子様には適しません。大人は製品を子どもの手の届かない場所に保管し、子どもの近くで操作する場合には十分に注意してください。
+
+<span id="bymedb-p3-u02" data-translation-unit="bymedb-p3-u02"></span>
+
+### 安全上の注意
+
+1. 雨天時には飛行させないでください。雨や湿気によって飛行が不安定になったり、操縦不能になったりするおそれがあります。雷が発生しているときは絶対に飛行させないでください。雨、霧、雷、風のない好天時の飛行を推奨します。
+2. 飛行時は現地の法令を厳守し、安全に飛行させてください。空港や軍事基地など飛行禁止区域では飛行させないでください。
+3. 人混みや建物から離れた開けた場所で飛行させてください。
+4. 飲酒時、疲労時、その他判断力が低下しているときは操作しないでください。本取扱説明書に従って操作してください。
+5. 高圧電線、高圧送電施設、携帯電話基地局、テレビ放送用電波塔など、電磁干渉源の近くで飛行する場合は注意してください。干渉によって送信機の無線伝送性能が低下することがあります。干渉が強すぎると送受信機間の信号が途絶え、墜落につながるおそれがあります。
+
+<span id="bymedb-p4-folio" data-translation-unit="bymedb-p4-folio"></span>
+
+原典印刷ページ：3
+
+<span id="bymedb-p4-u01" data-translation-unit="bymedb-p4-u01"></span>
+
+### Byme-DBの概要
+
+Byme-DBは、エレベーターとエルロンをミキシングする模型飛行機に対応します。原典の例はデルタ翼機、紙飛行機、J10、従来型SU27、ラダーサーボ付きSU27、F22です。
+
+<span id="bymedb-p4-f1-unit" data-translation-unit="bymedb-p4-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p4-f1.jpeg" width={1180} height={440} figureId="bymedb-p4-f1" alt={"Byme-DBの配線端子図。CH1左サーボ、CH2右サーボ、CH3スロットル／ESC、CH4ラダーサーボ、SBUS／PPM受信機接続、機首方向、サーボ動作方向調整ボタンを示します。"} caption={"Byme-DBの配線端子図。CH1左サーボ、CH2右サーボ、CH3スロットル／ESC、CH4ラダーサーボ、SBUS／PPM受信機接続、機首方向、サーボ動作方向調整ボタンを示します。"} />
+
+<span id="bymedb-p4-f2-unit" data-translation-unit="bymedb-p4-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p4-f2.jpeg" width={800} height={800} figureId="bymedb-p4-f2" alt={"Byme-DB対応機の例として掲載された、SU27表記のデルタ翼模型機。"} caption={"Byme-DB対応機の例として掲載された、SU27表記のデルタ翼模型機。"} />
+
+<span id="bymedb-p4-f3-unit" data-translation-unit="bymedb-p4-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p4-f3.jpeg" width={800} height={800} figureId="bymedb-p4-f3" alt={"Byme-DB対応機の例として掲載された、灰色迷彩塗装の戦闘機型模型機。"} caption={"Byme-DB対応機の例として掲載された、灰色迷彩塗装の戦闘機型模型機。"} />
+
+<span id="bymedb-p4-f4-unit" data-translation-unit="bymedb-p4-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p4-f4.jpeg" width={800} height={800} figureId="bymedb-p4-f4" alt={"Byme-DB対応機の例として掲載された、白色の小型デルタ翼模型機。"} caption={"Byme-DB対応機の例として掲載された、白色の小型デルタ翼模型機。"} />
+
+<span id="bymedb-p4-f5-unit" data-translation-unit="bymedb-p4-f5-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p4-f5.jpeg" width={800} height={800} figureId="bymedb-p4-f5" alt={"Byme-DB対応機の例として掲載された、黄色のデルタ翼模型機。"} caption={"Byme-DB対応機の例として掲載された、黄色のデルタ翼模型機。"} />
+
+<span id="bymedb-p5-folio" data-translation-unit="bymedb-p5-folio"></span>
+
+原典印刷ページ：4
+
+<span id="bymedb-p5-u01" data-translation-unit="bymedb-p5-u01"></span>
+
+### 仕様
+
+| 項目 | 原典記載 |
+|---|---|
+| 寸法 | 29 × 25.1 × 9.1 mm |
+| 重量 | 4.5 g（配線込み） |
+| チャンネル数 | 7 |
+| 内蔵センサー | 3軸ジャイロ、3軸加速度センサー |
+| 対応信号 | SBUS／PPM |
+| 入力電圧 | 5～6 V |
+| 動作電流 | 25 ± 2 mA |
+| 飛行モード | スタビライズ、ジャイロ、マニュアル |
+| 飛行モード切り替え | CH5 |
+| モーターロック | CH7 |
+| 端子 | CH1・CH2・CH4は3ピンSH1.00、受信機接続は3ピンPH1.25、CH3は3ピン2.54 mm Dupont端子 |
+| 対応送信機 | SBUS／PPM信号出力に対応する送信機 |
+| 対応機体 | エレベーターとエルロンをミキシングする模型飛行機。デルタ翼機、紙飛行機、J10、従来型SU27、ラダーサーボ付きSU27、F22など |
+
+<span id="bymedb-p5-u02" data-translation-unit="bymedb-p5-u02"></span>
+
+### 取り付け
+
+Byme-DBの矢印が機首方向を向くようにしてください。3Mの接着材を使い、胴体に水平に固定します。機体の重心付近への取り付けを推奨します。付属の受信機接続ケーブルで受信機をByme-DBに接続します。サーボとESCのケーブルを接続する前に、Byme-DB側のソケットや端子に適合することを確認してください。
+
+<span id="bymedb-p5-u03" data-translation-unit="bymedb-p5-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p5-f1-unit" data-translation-unit="bymedb-p5-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p5-f1.jpeg" width={1000} height={1000} figureId="bymedb-p5-f1" alt={"胴体へのByme-DB搭載位置例。機首方向と、重心付近に置く例を示します。"} caption={"胴体へのByme-DB搭載位置例。機首方向と、重心付近に置く例を示します。"} />
+
+<span id="bymedb-p6-folio" data-translation-unit="bymedb-p6-folio"></span>
+
+原典印刷ページ：5
+
+<span id="bymedb-p6-u01" data-translation-unit="bymedb-p6-u01"></span>
+
+### 飛行モード設定
+
+送信機のCH5（3ポジションスイッチ）で、スタビライズ、ジャイロ、マニュアルの3モードを設定できます。原典ではRadioLink T8FB／T8Sを例としています。他社の送信機を使う場合は原図を参照してください。各モードに対応するCH5の値の範囲は原図に記載されています。
+
+<span id="bymedb-p6-u02" data-translation-unit="bymedb-p6-u02"></span>
+
+### モーター安全ロック
+
+送信機のCH7でモーターをロック、または解除できます。ロック中はスロットルスティックが最上位置でもモーターは回転しません。スロットルを最下位置にしてCH7のスイッチを切り替え、ロックを解除します。長いビープ音が2回鳴ると解除成功です。ロック時はByme-DBのジャイロが自動的にオフになり、解除時は自動的にオンになります。
+
+<span id="bymedb-p6-f1-unit" data-translation-unit="bymedb-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p6-f1.jpeg" width={1000} height={640} figureId="bymedb-p6-f1" alt={"RadioLink T8FB／T8S送信機のCH5飛行モードスイッチ例。"} caption={"RadioLink T8FB／T8S送信機のCH5飛行モードスイッチ例。"} />
+
+<span id="bymedb-p6-f2-unit" data-translation-unit="bymedb-p6-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p6-f2.jpeg" width={1000} height={540} figureId="bymedb-p6-f2" alt={"他社送信機のCH5スイッチ位置例：下がスタビライズ、中央がジャイロ、上がマニュアルです。"} caption={"他社送信機のCH5スイッチ位置例：下がスタビライズ、中央がジャイロ、上がマニュアルです。"} />
+
+<span id="bymedb-p6-f3-unit" data-translation-unit="bymedb-p6-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p6-f3.jpeg" width={1000} height={500} figureId="bymedb-p6-f3" alt={"CH5値の範囲と飛行モード：1000～1300がスタビライズ、1300～1700がジャイロ、1700～2125がマニュアルです。"} caption={"CH5値の範囲と飛行モード：1000～1300がスタビライズ、1300～1700がジャイロ、1700～2125がマニュアルです。"} />
+
+<span id="bymedb-p7-folio" data-translation-unit="bymedb-p7-folio"></span>
+
+原典印刷ページ：6
+
+<span id="bymedb-p7-u01" data-translation-unit="bymedb-p7-u01"></span>
+
+### ロック解除の確認
+
+注意：CH7を解除側に切り替えた際、ビープ音が1回だけ鳴る場合は解除に失敗しています。次の方法で確認してください。
+
+1. スロットルが最下位置か確認します。最下位置でなければそこまで下げ、2回目の長いビープ音が鳴ることを確認します。
+
+<span id="bymedb-p7-u02" data-translation-unit="bymedb-p7-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p7-u03" data-translation-unit="bymedb-p7-u03"></span>
+
+:::caution[注意]
+ブレードの回転による負傷を避けるため、スロットルトラベルの調整中は機体を安定させてください。
+:::
+
+<span id="bymedb-p7-u04" data-translation-unit="bymedb-p7-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p7-f1-unit" data-translation-unit="bymedb-p7-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p7-f2-unit" data-translation-unit="bymedb-p7-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p7-f3-unit" data-translation-unit="bymedb-p7-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p8-folio" data-translation-unit="bymedb-p8-folio"></span>
+
+原典印刷ページ：7
+
+<span id="bymedb-p8-u01" data-translation-unit="bymedb-p8-u01"></span>
+
+### 送信機設定
+
+1. Byme-DBを搭載する場合、送信機側でミキシングを設定しないでください。Byme-DBが内蔵ミキシングを飛行モードに応じて自動的に適用します。送信機側でも設定すると競合し、飛行に影響します。
+2. RadioLink送信機では、CH3（スロットル）をリバース、それ以外をノーマルに設定します。RadioLink以外の送信機では送信機側の動作方向を設定する必要はないと原典に記載されています。
+
+<span id="bymedb-p8-u02" data-translation-unit="bymedb-p8-u02"></span>
+
+### 電源投入とジャイロ自己診断
+
+電源投入のたびにジャイロが自己診断を行います。機体が静止していなければ完了できません。バッテリーを取り付けてから機体の電源を入れ、機体を静止させてください。電源投入後はCH3の緑色インジケーターが点灯し続けます。自己診断が通ると舵面がわずかに動き、CH1やCH2などの緑色インジケーターも点灯します。
+
+注意：
+
+1. 機体、送信機などの違いにより、自己診断後もCH1やCH2などの緑色インジケーターが点灯しない場合があります。舵面がわずかに動いたかどうかで完了を判断してください。
+2. スロットルスティックを最下位置にしてから機体の電源を入れてください。最上位置で電源を入れるとESCはキャリブレーションモードに入ります。
+
+<span id="bymedb-p8-u03" data-translation-unit="bymedb-p8-u03"></span>
+
+### 姿勢キャリブレーション
+
+Byme-DBは機体のバランスを保つため、姿勢・水平のキャリブレーションが必要です。機体を地面に水平に置いて実行できます。初心者には、飛行を滑らかにするため機首を少し上げること（20°推奨）が原典に記載されています。成功時の姿勢はフライトコントローラーに記録されます。左スティックを左下、右スティックを右下へ動かし、原図のように3秒を超えて保持します。緑色LEDが1回点滅すると完了です。
+
+<span id="bymedb-p8-f1-unit" data-translation-unit="bymedb-p8-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p8-f1.jpeg" width={1179} height={414} figureId="bymedb-p8-f1" alt={"姿勢キャリブレーション時に機首を約20°上げる推奨姿勢の図。"} caption={"姿勢キャリブレーション時に機首を約20°上げる推奨姿勢の図。"} />
+
+<span id="bymedb-p9-folio" data-translation-unit="bymedb-p9-folio"></span>
+
+原典印刷ページ：8
+
+<span id="bymedb-p9-u01" data-translation-unit="bymedb-p9-u01"></span>
+
+### 他社送信機での姿勢キャリブレーション
+
+注意：RadioLink以外の送信機で上記の左下・右下操作をしても成功しない場合、送信機のチャンネル方向を変更します。指定位置でCH1とCH2が2000 µs、CH3とCH4が1000 µsとなることを確認します。原典のオープンソース送信機の表示例では、CH1・CH2が2000 µs（OpenTX +100）、CH3・CH4が1000 µs（OpenTX -100）です。
+
+<span id="bymedb-p9-f1-unit" data-translation-unit="bymedb-p9-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p9-f1.jpeg" width={549} height={578} figureId="bymedb-p9-f1" alt={"姿勢キャリブレーション時のスティック操作例：左スティックを左下、右スティックを右下にします。"} caption={"姿勢キャリブレーション時のスティック操作例：左スティックを左下、右スティックを右下にします。"} />
+
+<span id="bymedb-p9-f2-unit" data-translation-unit="bymedb-p9-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p9-f2.jpeg" width={760} height={500} figureId="bymedb-p9-f2" alt={"OpenTX送信機で姿勢キャリブレーションを行う際のスティック位置例。"} caption={"OpenTX送信機で姿勢キャリブレーションを行う際のスティック位置例。"} />
+
+<span id="bymedb-p9-f3-unit" data-translation-unit="bymedb-p9-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p9-f3.jpeg" width={750} height={300} figureId="bymedb-p9-f3" alt={"OpenTXのチャンネルモニター例。姿勢キャリブレーション成功時のCH1～CH4の表示を示します。"} caption={"OpenTXのチャンネルモニター例。姿勢キャリブレーション成功時のCH1～CH4の表示を示します。"} />
+
+<span id="bymedb-p10-folio" data-translation-unit="bymedb-p10-folio"></span>
+
+原典印刷ページ：9
+
+<span id="bymedb-p10-u01" data-translation-unit="bymedb-p10-u01"></span>
+
+### サーボ動作方向の点検
+
+姿勢キャリブレーションを済ませてから点検してください。先に点検すると舵面が異常に動くことがあります。マニュアルモードに切り替え、スティック操作と対応する舵面の動きが一致するか確認します。原典は送信機のMode 2を例にしています。
+
+<span id="bymedb-p10-u02" data-translation-unit="bymedb-p10-u02"></span>
+
+### サーボ動作方向の調整
+
+エルロンがスティック操作と異なる方向に動く場合、Byme-DB前面のボタンでサーボ動作方向を調整します。
+
+| 点検結果 | 原因 | 対処 | LED |
+|---|---|---|---|
+| エルロンスティックを左へ動かすとエルロンとテールロンの動作方向が逆 | エルロンのミキシング方向が逆 | ボタンを短く1回押す | CH1緑色LED 点灯／消灯 |
+| エレベータースティックを下げるとエルロンとテールロンの動作方向が逆 | エレベーターのミキシング方向が逆 | ボタンを短く2回押す | CH2緑色LED 点灯／消灯 |
+| ラダースティックを動かすとラダーサーボの動作方向が逆 | CH4がリバース | ボタンを短く4回押す | CH4緑色LED 点灯／消灯 |
+
+<span id="bymedb-p10-f1-unit" data-translation-unit="bymedb-p10-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p10-f1.jpeg" width={1532} height={973} figureId="bymedb-p10-f1" alt={"サーボ動作方向点検の例：エルロン左／エレベーター下のスティック操作と、対応する舵面の動きを示します。"} caption={"サーボ動作方向点検の例：エルロン左／エレベーター下のスティック操作と、対応する舵面の動きを示します。"} />
+
+<span id="bymedb-p10-f2-unit" data-translation-unit="bymedb-p10-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p10-f2.jpeg" width={1000} height={400} figureId="bymedb-p10-f2" alt={"Byme-DB本体前面のサーボ動作方向調整ボタン。"} caption={"Byme-DB本体前面のサーボ動作方向調整ボタン。"} />
+
+<span id="bymedb-p11-folio" data-translation-unit="bymedb-p11-folio"></span>
+
+原典印刷ページ：10
+
+<span id="bymedb-p11-u01" data-translation-unit="bymedb-p11-u01"></span>
+
+### 動作方向の注意と飛行モード
+
+1. CH3の緑色LEDは常時点灯します。
+2. 緑色LEDの点灯・消灯だけでは反転の有無は判断できません。スティックを動かして対応するサーボの動きを確認します。フライトコントローラー側の方向が逆の場合、フライトコントローラーのボタンで調整します。送信機側の調整は不要です。
+
+送信機のCH5でスタビライズ、ジャイロ、マニュアルの3モードを設定できます。原典はMode 2を例にしています。
+
+<span id="bymedb-p11-u02" data-translation-unit="bymedb-p11-u02"></span>
+
+### スタビライズモード
+
+フライトコントローラーが姿勢を安定させるため、初心者が水平飛行を練習するのに適しています。機体の傾きはスティックで操作し、中央へ戻すと水平になります。最大傾斜角はロール70°、ピッチ45°です。
+
+<span id="bymedb-p11-f1-unit" data-translation-unit="bymedb-p11-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p11-f1.jpeg" width={1195} height={1000} figureId="bymedb-p11-f1" alt={"スタビライズモードのエルロン操作例：左／右操作に対する機体の左右傾斜。"} caption={"スタビライズモードのエルロン操作例：左／右操作に対する機体の左右傾斜。"} />
+
+<span id="bymedb-p11-f2-unit" data-translation-unit="bymedb-p11-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p11-f2.jpeg" width={1195} height={1000} figureId="bymedb-p11-f2" alt={"スタビライズモードのエレベーター操作例：下／上操作に対する機首上げ／下げ。"} caption={"スタビライズモードのエレベーター操作例：下／上操作に対する機首上げ／下げ。"} />
+
+<span id="bymedb-p12-folio" data-translation-unit="bymedb-p12-folio"></span>
+
+原典印刷ページ：11
+
+<span id="bymedb-p12-f1-unit" data-translation-unit="bymedb-p12-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p12-f1.jpeg" width={1195} height={387} figureId="bymedb-p12-f1" alt={"スタビライズモードの図：スティックを中央に戻すと機体が水平になります。"} caption={"スタビライズモードの図：スティックを中央に戻すと機体が水平になります。"} />
+
+<span id="bymedb-p12-u01" data-translation-unit="bymedb-p12-u01"></span>
+
+### ジャイロモード
+
+スティックで機体の回転（角速度）を操作します。内蔵3軸ジャイロが安定性を補助します。上級者向けで、スティックを中央に戻しても機体は水平に戻りません。
+
+<span id="bymedb-p12-f2-unit" data-translation-unit="bymedb-p12-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p12-f2.jpeg" width={1157} height={1000} figureId="bymedb-p12-f2" alt={"ジャイロモードの図：エルロン操作で水平軸、エレベーター操作で垂直軸まわりに機体が回転します。"} caption={"ジャイロモードの図：エルロン操作で水平軸、エレベーター操作で垂直軸まわりに機体が回転します。"} />
+
+<span id="bymedb-p12-u02" data-translation-unit="bymedb-p12-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p12-u03" data-translation-unit="bymedb-p12-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bymedb-p13-folio" data-translation-unit="bymedb-p13-folio"></span>
+
+原典印刷ページ：12
+
+<span id="bymedb-p13-u01" data-translation-unit="bymedb-p13-u01"></span>
+
+### 技術サポート
+
+Facebook MessengerでRadioLink RLに連絡できます。Byme-DB取扱説明書とチュートリアルのQRコードを参照してください。上記の情報で解決しない場合は技術サポート after_service@radioLink.com.cn にお問い合わせください。内容は変更されることがあります。最新版は https://www.radiolink.com/bymedb_manual から入手してください。RadioLink製品をお選びいただき、ありがとうございます。
+
+<span id="bymedb-p13-f3-unit" data-translation-unit="bymedb-p13-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p13-f3.jpeg" width={193} height={191} figureId="bymedb-p13-f3" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="bymedb-p13-f2-unit" data-translation-unit="bymedb-p13-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p13-f2.jpeg" width={300} height={300} figureId="bymedb-p13-f2" alt={"Byme-DB取扱説明書のQRコード。"} caption={"Byme-DB取扱説明書のQRコード。"} />
+
+<span id="bymedb-p13-f1-unit" data-translation-unit="bymedb-p13-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/byme-db/web-ja-v1/bymedb-p13-f1.jpeg" width={300} height={300} figureId="bymedb-p13-f1" alt={"Byme-DBチュートリアルのQRコード。"} caption={"Byme-DBチュートリアルのQRコード。"} />

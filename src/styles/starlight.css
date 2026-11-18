@@ -78,3 +78,9 @@
   :is(th, td):first-child {
   min-width: 8em;
 }
+
+.sl-markdown-content:has([data-translation-unit^='bymedb-'])
+  table
+  :is(th, td):first-child {
+  min-width: 8em;
+}
