@@ -246,6 +246,32 @@ for (const manual of inventory.manuals.filter(
     ).toBe(404);
   });
 }
+test('RC8X source warning appears before firmware update steps', async ({
+  page,
+}, info) => {
+  await page.goto('./manuals/rc8x/chapter-02/#section-2.11.2');
+  const warning = page.getByText(
+    'ファームウェア更新前に、バッテリー残量が十分であることを確認してください。機器の損傷を防ぐため、更新中は電源を抜かないでください。',
+    { exact: true },
+  );
+  await expect(warning).toBeVisible();
+  const firstStep = page.getByRole('heading', {
+    name: '1. 「Update the latest」Mode',
+  });
+  await expect(firstStep).toBeAttached();
+  const stepNode = await firstStep.elementHandle();
+  expect(
+    await warning.evaluate(
+      (node, step) =>
+        Boolean(
+          node.compareDocumentPosition(step) & Node.DOCUMENT_POSITION_FOLLOWING,
+        ),
+      stepNode!,
+    ),
+  ).toBe(true);
+  await warning.screenshot({ path: info.outputPath('rc8x-power-warning.png') });
+});
+
 test('Byme-D source corrections appear in the existing manual', async ({
   page,
 }, info) => {
