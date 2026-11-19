@@ -4291,6 +4291,896 @@
       "web_qa_status": "PASS_RENDERED_SCOPE",
       "figure_localization": "DEFERRED",
       "untranslated_figure_string_count": null
+    },
+    {
+      "product_id": "twc",
+      "model": "TWC",
+      "route": "/manuals/twc/",
+      "product_route": "/radiolink/twc/",
+      "source": {
+        "document_id": "twc_typec_trainer_cable_official_html",
+        "format": "HTML",
+        "repository_path": "manuals/typec_wireless_trainer_cable/source-html/original.html",
+        "sha256": "6c8d419a9341e9e09bc42e843378bc6426759eb2cb9e6f442d60a17b898e0638",
+        "source_url": "https://www.radiolink.com/en/typec_trainer_cable_manual",
+        "version": null,
+        "page_count": null,
+        "pagination": "NOT_APPLICABLE_HTML",
+        "body_extraction_path": "manuals/typec_wireless_trainer_cable/source-html/manual-body.txt",
+        "body_extraction_sha256": "991e5b6d9b92a7d7e2dab4b98697e5432f567d563fc652134d107ea1e2b50174",
+        "source_receipt": "manuals/typec_wireless_trainer_cable/source-verification.json",
+        "product_scope": "Type-C TWC; T16D coach / T12D student example; separate from legacy Trainer Cable PDF"
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "552fc4452e3b92951797b7307813fecd6649f984557cf859e0002642de413e4e",
+      "mdx_sha256": "9cac1cc7118238d97fe8953e3c5235ddfe41126ca407d0185451f78336cce552",
+      "translation_qa_sha256": "bf08af18a2ba6414a2ea890c12a88b79163b00a9230e08e1793a0595c1086f07",
+      "unit_ids": [
+        "twc-text-01",
+        "twc-f1-unit",
+        "twc-text-02",
+        "twc-text-03",
+        "twc-text-04",
+        "twc-external-power-warning",
+        "twc-text-05",
+        "twc-f2-unit",
+        "twc-text-06",
+        "twc-f3-unit",
+        "twc-text-07",
+        "twc-text-08",
+        "twc-text-09",
+        "twc-text-10",
+        "twc-text-11",
+        "twc-text-12",
+        "twc-text-13",
+        "twc-f4-unit",
+        "twc-text-14",
+        "twc-video-1",
+        "twc-video-2"
+      ],
+      "withheld_unit_ids": [
+        "twc-text-01",
+        "twc-f1-unit",
+        "twc-text-02",
+        "twc-text-03",
+        "twc-text-04",
+        "twc-text-05",
+        "twc-f2-unit",
+        "twc-f3-unit",
+        "twc-text-08",
+        "twc-text-10",
+        "twc-text-11",
+        "twc-text-12",
+        "twc-text-13",
+        "twc-f4-unit",
+        "twc-text-14"
+      ],
+      "source_figures_total": 4,
+      "withheld_figure_ids": [
+        "twc-f1",
+        "twc-f2",
+        "twc-f3",
+        "twc-f4"
+      ],
+      "figures": [],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch8",
+      "source_product_id": "typec_wireless_trainer_cable",
+      "inventory_product_id": "typec_wireless_trainer_cable",
+      "web_qa_status": "PASS_RENDERED_SCOPE",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null
+    },
+    {
+      "product_id": "cb86-plus",
+      "model": "CB86-PLUS",
+      "route": "/manuals/cb86-plus/",
+      "product_route": "/radiolink/cb86-plus/",
+      "source": {
+        "document_id": "cb86plus_manual",
+        "repository_path": "sources/en/cb86plus_manual.pdf",
+        "sha256": "73903aefbef6ff98c0536757423ec054d49c58ce35fb5b3867c2274a58976923",
+        "source_url": "https://www.radiolink.com/download/5d654ef6324e0d5fbe2fedb4f73af7ce.pdf",
+        "page_count": 18,
+        "version": null,
+        "observed_cover_model": "CB86-PLUS (V2)",
+        "observed_example_firmware": "V2.5"
+      },
+      "canonical_revision": "web-ja-v1",
+      "canonical_sha256": "a27179a3ef428942345eb115bd55dbdc73d3f3174bb0f4080859416fa052a98a",
+      "mdx_sha256": "6db2d20a30f116bba7e867737c4127815d06dc56e03fcd6754de9a9bbe2973d6",
+      "translation_qa_sha256": "642bbed7784f8b0904f37952132a0c2d6e9fabe5d3b021e2020eee2983d79b3f",
+      "unit_ids": [
+        "cb86plus-p1-f1-unit",
+        "cb86plus-p1-title",
+        "cb86plus-p1-f2-unit",
+        "cb86plus-p2-contents",
+        "cb86plus-p2-folio",
+        "cb86plus-p3-safety-heading",
+        "cb86plus-p3-safety1",
+        "cb86plus-p3-safety2",
+        "cb86plus-p3-safety3",
+        "cb86plus-p3-safety4",
+        "cb86plus-p3-safety5",
+        "cb86plus-p3-safety6",
+        "cb86plus-p3-safety7",
+        "cb86plus-p3-safety8",
+        "cb86plus-p3-safety9",
+        "cb86plus-p3-safety10",
+        "cb86plus-p3-safety11",
+        "cb86plus-p3-safety12",
+        "cb86plus-p3-safety13",
+        "cb86plus-p3-safety14",
+        "cb86plus-p3-safety15",
+        "cb86plus-p3-safety16",
+        "cb86plus-p3-child-warning",
+        "cb86plus-p3-functions",
+        "cb86plus-p3-folio",
+        "cb86plus-p4-repair",
+        "cb86plus-p4-functions",
+        "cb86plus-p4-spec",
+        "cb86plus-p4-home-heading",
+        "cb86plus-p4-f1-unit",
+        "cb86plus-p4-folio",
+        "cb86plus-p5-home-fields",
+        "cb86plus-p5-settings-heading",
+        "cb86plus-p5-f1-unit",
+        "cb86plus-p5-settings",
+        "cb86plus-p5-f2-unit",
+        "cb86plus-p5-buttons-heading",
+        "cb86plus-p5-f3-unit",
+        "cb86plus-p5-startstop",
+        "cb86plus-p5-folio",
+        "cb86plus-p6-buttons",
+        "cb86plus-p6-supply",
+        "cb86plus-p6-dc",
+        "cb86plus-p6-f1-unit",
+        "cb86plus-p6-f2-unit",
+        "cb86plus-p6-f3-unit",
+        "cb86plus-p6-battery",
+        "cb86plus-p6-f4-unit",
+        "cb86plus-p6-folio",
+        "cb86plus-p7-input-battery",
+        "cb86plus-p7-f1-unit",
+        "cb86plus-p7-supply-mode-note",
+        "cb86plus-p7-mode-setting",
+        "cb86plus-p7-low-power",
+        "cb86plus-p7-f2-unit",
+        "cb86plus-p7-overvoltage",
+        "cb86plus-p7-folio",
+        "cb86plus-p8-f1-unit",
+        "cb86plus-p8-undervoltage",
+        "cb86plus-p8-f2-unit",
+        "cb86plus-p8-connect",
+        "cb86plus-p8-polarity-warning",
+        "cb86plus-p8-correct-heading",
+        "cb86plus-p8-f3-unit",
+        "cb86plus-p8-folio",
+        "cb86plus-p9-wrong-heading",
+        "cb86plus-p9-f1-unit",
+        "cb86plus-p9-combinations",
+        "cb86plus-p9-6s",
+        "cb86plus-p9-f2-unit",
+        "cb86plus-p9-4s2s",
+        "cb86plus-p9-f3-unit",
+        "cb86plus-p9-folio",
+        "cb86plus-p10-2sx3",
+        "cb86plus-p10-f1-unit",
+        "cb86plus-p10-3sx2",
+        "cb86plus-p10-f2-unit",
+        "cb86plus-p10-1sx6",
+        "cb86plus-p10-f3-unit",
+        "cb86plus-p10-folio",
+        "cb86plus-p11-mode-intro",
+        "cb86plus-p11-charge",
+        "cb86plus-p11-input-drop",
+        "cb86plus-p11-charge-voltage",
+        "cb86plus-p11-f1-unit",
+        "cb86plus-p11-charge-current",
+        "cb86plus-p11-higher-current",
+        "cb86plus-p11-f2-unit",
+        "cb86plus-p11-common-setting",
+        "cb86plus-p11-folio",
+        "cb86plus-p12-f1-unit",
+        "cb86plus-p12-individual",
+        "cb86plus-p12-f2-unit",
+        "cb86plus-p12-selection-warning",
+        "cb86plus-p12-full",
+        "cb86plus-p12-reconnect",
+        "cb86plus-p12-f3-unit",
+        "cb86plus-p12-folio",
+        "cb86plus-p13-discharge",
+        "cb86plus-p13-discharge-storage",
+        "cb86plus-p13-f2-unit",
+        "cb86plus-p13-f1-unit",
+        "cb86plus-p13-storage",
+        "cb86plus-p13-f4-unit",
+        "cb86plus-p13-f3-unit",
+        "cb86plus-p13-repair",
+        "cb86plus-p13-folio",
+        "cb86plus-p14-repair",
+        "cb86plus-p14-repair-note",
+        "cb86plus-p14-f1-unit",
+        "cb86plus-p14-resistance",
+        "cb86plus-p14-f2-unit",
+        "cb86plus-p14-parameters",
+        "cb86plus-p14-f4-unit",
+        "cb86plus-p14-f3-unit",
+        "cb86plus-p14-param-captions",
+        "cb86plus-p14-folio",
+        "cb86plus-p15-firmware",
+        "cb86plus-p15-calibration-warning",
+        "cb86plus-p15-calibration1",
+        "cb86plus-p15-f1-unit",
+        "cb86plus-p15-calibration2",
+        "cb86plus-p15-first-cell-warning",
+        "cb86plus-p15-folio",
+        "cb86plus-p16-f1-unit",
+        "cb86plus-p16-calibration3",
+        "cb86plus-p16-f2-unit",
+        "cb86plus-p16-calibration4",
+        "cb86plus-p16-f3-unit",
+        "cb86plus-p16-folio",
+        "cb86plus-p17-failure",
+        "cb86plus-p17-f1-unit",
+        "cb86plus-p17-restart",
+        "cb86plus-p17-test08",
+        "cb86plus-p17-beep-intro",
+        "cb86plus-p17-cable-check",
+        "cb86plus-p17-test1a",
+        "cb86plus-p17-battery-test",
+        "cb86plus-p17-contact",
+        "cb86plus-p17-folio",
+        "cb86plus-p18-heading",
+        "cb86plus-p18-f3-unit",
+        "cb86plus-p18-f1-unit",
+        "cb86plus-p18-f2-unit",
+        "cb86plus-p18-support",
+        "cb86plus-p18-folio"
+      ],
+      "withheld_unit_ids": [
+        "cb86plus-p4-repair",
+        "cb86plus-p5-settings",
+        "cb86plus-p7-supply-mode-note",
+        "cb86plus-p11-mode-intro",
+        "cb86plus-p11-higher-current",
+        "cb86plus-p13-discharge-storage",
+        "cb86plus-p13-storage",
+        "cb86plus-p13-f4-unit",
+        "cb86plus-p13-f3-unit",
+        "cb86plus-p13-repair",
+        "cb86plus-p14-repair",
+        "cb86plus-p14-repair-note",
+        "cb86plus-p14-f1-unit",
+        "cb86plus-p15-firmware",
+        "cb86plus-p17-test08",
+        "cb86plus-p17-test1a",
+        "cb86plus-p17-battery-test"
+      ],
+      "source_figures_total": 42,
+      "withheld_figure_ids": [
+        "cb86plus-p13-f3",
+        "cb86plus-p13-f4",
+        "cb86plus-p14-f1"
+      ],
+      "figures": [
+        {
+          "figure_id": "cb86plus-p1-f1",
+          "source_page": 1,
+          "source_bbox": [
+            93.72000122070312,
+            80.75999450683594,
+            283.44000244140625,
+            137.63999938964844
+          ],
+          "source_xref": 8,
+          "width": 600,
+          "height": 180,
+          "path": "assets/cb86plus-p1-f1.png",
+          "sha256": "a18927a8ec817de4576a9db17ad020502ef91949ec425e6c7d7774f7cf4e36d6",
+          "source_asset_path": "assets/cb86plus-p1-f1.jpeg",
+          "source_asset_sha256": "b419f9cddb66a2bf9d9ebb09122093104b66502756768b2a91ece764cd1de5cc",
+          "source_mask_xref": 9
+        },
+        {
+          "figure_id": "cb86plus-p1-f2",
+          "source_page": 1,
+          "source_bbox": [
+            81.72000122070312,
+            240.84002685546875,
+            522.9599609375,
+            682.0800170898438
+          ],
+          "source_xref": 11,
+          "width": 1000,
+          "height": 1000,
+          "path": "assets/cb86plus-p1-f2.png",
+          "sha256": "72e1c42d2cfb1fa3d156b5df045d46488f424bf89ea9e5a9ee5837705bd4fadb",
+          "source_asset_path": "assets/cb86plus-p1-f2.jpeg",
+          "source_asset_sha256": "2e294a08b39fa8a169c633adb2e11c244f09af140e07f86a0db8ec96f2a54a35",
+          "source_mask_xref": 12
+        },
+        {
+          "figure_id": "cb86plus-p4-f1",
+          "source_page": 4,
+          "source_bbox": [
+            100.44000244140625,
+            641.1600341796875,
+            474.1199951171875,
+            803.8800048828125
+          ],
+          "source_xref": 118,
+          "width": 1050,
+          "height": 457,
+          "path": "assets/cb86plus-p4-f1.jpeg",
+          "sha256": "cc1a89d3a8ee5f185783e6a9e31202f0d92a6117cd398d8275915dfcde0af700"
+        },
+        {
+          "figure_id": "cb86plus-p5-f1",
+          "source_page": 5,
+          "source_bbox": [
+            51.0,
+            215.40000915527344,
+            522.9599609375,
+            386.760009765625
+          ],
+          "source_xref": 124,
+          "width": 1300,
+          "height": 472,
+          "path": "assets/cb86plus-p5-f1.jpeg",
+          "sha256": "38a80ee651786b6a1c925b2da97c731083eaf6a21f092e7e9cca3e38e2a46d4d"
+        },
+        {
+          "figure_id": "cb86plus-p5-f2",
+          "source_page": 5,
+          "source_bbox": [
+            47.400001525878906,
+            531.47998046875,
+            64.08000183105469,
+            547.9199829101562
+          ],
+          "source_xref": 130,
+          "width": 51,
+          "height": 50,
+          "path": "assets/cb86plus-p5-f2.jpeg",
+          "sha256": "ab7cc35d73805aa3766751009c396376543d486e68468121c731d8b37624100c"
+        },
+        {
+          "figure_id": "cb86plus-p5-f3",
+          "source_page": 5,
+          "source_bbox": [
+            96.0,
+            659.760009765625,
+            401.5199890136719,
+            734.8800048828125
+          ],
+          "source_xref": 123,
+          "width": 1000,
+          "height": 246,
+          "path": "assets/cb86plus-p5-f3.jpeg",
+          "sha256": "1ff1c13c087e0778472aa41b7e8c6c649469a1a4cb9789af47dc6c1d0e6e7ddd"
+        },
+        {
+          "figure_id": "cb86plus-p6-f1",
+          "source_page": 6,
+          "source_bbox": [
+            149.52000427246094,
+            302.5199890136719,
+            322.32000732421875,
+            408.0
+          ],
+          "source_xref": 138,
+          "width": 437,
+          "height": 267,
+          "path": "assets/cb86plus-p6-f1.jpeg",
+          "sha256": "7295e630d031e75cc986aa8775f7af99fb5bac9b194c7dbb8bcfbf8a4836b7fd"
+        },
+        {
+          "figure_id": "cb86plus-p6-f2",
+          "source_page": 6,
+          "source_bbox": [
+            65.87999725341797,
+            451.8000183105469,
+            266.2799987792969,
+            652.2000122070312
+          ],
+          "source_xref": 136,
+          "width": 612,
+          "height": 612,
+          "path": "assets/cb86plus-p6-f2.jpeg",
+          "sha256": "ae7bb76862b67b46ff357a8fbb679d8880a3cbac415a98a23a9bc34dff4fc8ae"
+        },
+        {
+          "figure_id": "cb86plus-p6-f3",
+          "source_page": 6,
+          "source_bbox": [
+            317.760009765625,
+            478.32000732421875,
+            533.8800048828125,
+            614.52001953125
+          ],
+          "source_xref": 135,
+          "width": 660,
+          "height": 416,
+          "path": "assets/cb86plus-p6-f3.jpeg",
+          "sha256": "155dc03e341d4f953de03d445287a2f4f82b3c239bb47ccbd92dcba97f084a33"
+        },
+        {
+          "figure_id": "cb86plus-p6-f4",
+          "source_page": 6,
+          "source_bbox": [
+            146.39999389648438,
+            702.9599609375,
+            311.760009765625,
+            801.47998046875
+          ],
+          "source_xref": 137,
+          "width": 438,
+          "height": 261,
+          "path": "assets/cb86plus-p6-f4.jpeg",
+          "sha256": "25f0cc4367a5a3e54dce83d97dff3c540be25edc7dd5506c47e38ea18cf80b2a"
+        },
+        {
+          "figure_id": "cb86plus-p7-f1",
+          "source_page": 7,
+          "source_bbox": [
+            146.52000427246094,
+            175.67999267578125,
+            334.67999267578125,
+            363.8399963378906
+          ],
+          "source_xref": 145,
+          "width": 575,
+          "height": 575,
+          "path": "assets/cb86plus-p7-f1.jpeg",
+          "sha256": "a5efcdc465a5035c7c8ca6af00d9a13d9fab33e5ae4fbc138a847d2b066c4f1c"
+        },
+        {
+          "figure_id": "cb86plus-p7-f2",
+          "source_page": 7,
+          "source_bbox": [
+            144.60000610351562,
+            563.1600341796875,
+            337.20001220703125,
+            707.280029296875
+          ],
+          "source_xref": 146,
+          "width": 436,
+          "height": 326,
+          "path": "assets/cb86plus-p7-f2.jpeg",
+          "sha256": "8086db237eb71c68396fcc44c74f62d54d32e81f876f365df31fb6da10a4fe41"
+        },
+        {
+          "figure_id": "cb86plus-p8-f1",
+          "source_page": 8,
+          "source_bbox": [
+            147.0,
+            12.599990844726562,
+            332.8800048828125,
+            198.47999572753906
+          ],
+          "source_xref": 152,
+          "width": 1000,
+          "height": 1000,
+          "path": "assets/cb86plus-p8-f1.png",
+          "sha256": "a9ba937955735c4b5829222926c6c1356a16a784100667091d4239f1672f92e0",
+          "source_asset_path": "assets/cb86plus-p8-f1.jpeg",
+          "source_asset_sha256": "055ade436c4142b7783aec06fa17975843c04295b94e233f2097a07196691c6a",
+          "source_mask_xref": 153
+        },
+        {
+          "figure_id": "cb86plus-p8-f2",
+          "source_page": 8,
+          "source_bbox": [
+            142.67999267578125,
+            256.0799865722656,
+            335.8800048828125,
+            401.3999938964844
+          ],
+          "source_xref": 154,
+          "width": 438,
+          "height": 329,
+          "path": "assets/cb86plus-p8-f2.jpeg",
+          "sha256": "11a204a7bf82e6341c5d407842891298570051287b34aa64de9bc82659caeae0"
+        },
+        {
+          "figure_id": "cb86plus-p8-f3",
+          "source_page": 8,
+          "source_bbox": [
+            126.95999908447266,
+            632.760009765625,
+            343.9200134277344,
+            796.6799926757812
+          ],
+          "source_xref": 151,
+          "width": 700,
+          "height": 529,
+          "path": "assets/cb86plus-p8-f3.jpeg",
+          "sha256": "6b1e0fc54e8b5b7d6a20461503b31711d03985809f3a6432cff71880196b979d"
+        },
+        {
+          "figure_id": "cb86plus-p9-f1",
+          "source_page": 9,
+          "source_bbox": [
+            87.12000274658203,
+            58.920013427734375,
+            435.7200012207031,
+            337.9200134277344
+          ],
+          "source_xref": 169,
+          "width": 998,
+          "height": 799,
+          "path": "assets/cb86plus-p9-f1.jpeg",
+          "sha256": "07695e1a7888599b5e9821baa95e98ea9895a57244c4335138185996f4c89cb0"
+        },
+        {
+          "figure_id": "cb86plus-p9-f2",
+          "source_page": 9,
+          "source_bbox": [
+            41.52000045776367,
+            473.760009765625,
+            471.239990234375,
+            593.760009765625
+          ],
+          "source_xref": 166,
+          "width": 698,
+          "height": 195,
+          "path": "assets/cb86plus-p9-f2.jpeg",
+          "sha256": "607d4bb2794b20b4ee70d239c682963893edc35597b4415e7ca778a478648101"
+        },
+        {
+          "figure_id": "cb86plus-p9-f3",
+          "source_page": 9,
+          "source_bbox": [
+            42.36000061035156,
+            630.3600463867188,
+            470.52001953125,
+            750.9600219726562
+          ],
+          "source_xref": 167,
+          "width": 700,
+          "height": 197,
+          "path": "assets/cb86plus-p9-f3.png",
+          "sha256": "f49aedcb4ae0cebe5c6e790dc07ccde2dba9b695f921bffbbe6de6a7cd3bc91f",
+          "source_asset_path": "assets/cb86plus-p9-f3.jpeg",
+          "source_asset_sha256": "42f0d4fafd750edf080eb680db1a29b0278dddebacf3a36ee2deaea0baa6d72d",
+          "source_mask_xref": 168
+        },
+        {
+          "figure_id": "cb86plus-p10-f1",
+          "source_page": 10,
+          "source_bbox": [
+            43.560001373291016,
+            54.480003356933594,
+            470.3999938964844,
+            175.44000244140625
+          ],
+          "source_xref": 175,
+          "width": 699,
+          "height": 198,
+          "path": "assets/cb86plus-p10-f1.jpeg",
+          "sha256": "eab2f9e98acd5e8ed0b0440b3949b594f923b8649d2a2b58a674b6ddb3b417a9"
+        },
+        {
+          "figure_id": "cb86plus-p10-f2",
+          "source_page": 10,
+          "source_bbox": [
+            43.20000076293945,
+            210.36001586914062,
+            471.96002197265625,
+            331.20001220703125
+          ],
+          "source_xref": 176,
+          "width": 699,
+          "height": 197,
+          "path": "assets/cb86plus-p10-f2.jpeg",
+          "sha256": "f24228241381ff602d62d34854316d6d335ac3730eacb39abfc9ed6c8c5a51d3"
+        },
+        {
+          "figure_id": "cb86plus-p10-f3",
+          "source_page": 10,
+          "source_bbox": [
+            80.5199966430664,
+            415.8000183105469,
+            401.5199890136719,
+            712.2000122070312
+          ],
+          "source_xref": 174,
+          "width": 700,
+          "height": 646,
+          "path": "assets/cb86plus-p10-f3.jpeg",
+          "sha256": "bb609c86fefca0ffffb664bf7076b3942377606385d214f8a47734f1e82dac67"
+        },
+        {
+          "figure_id": "cb86plus-p11-f1",
+          "source_page": 11,
+          "source_bbox": [
+            134.0399932861328,
+            362.2799987792969,
+            349.91998291015625,
+            460.32000732421875
+          ],
+          "source_xref": 179,
+          "width": 436,
+          "height": 198,
+          "path": "assets/cb86plus-p11-f1.jpeg",
+          "sha256": "356f4e253ed0d77f4bc152a3af095d0af4bcb06e898fe74f355fe538590ec7d0"
+        },
+        {
+          "figure_id": "cb86plus-p11-f2",
+          "source_page": 11,
+          "source_bbox": [
+            133.1999969482422,
+            575.3999633789062,
+            356.03997802734375,
+            675.5999755859375
+          ],
+          "source_xref": 180,
+          "width": 438,
+          "height": 197,
+          "path": "assets/cb86plus-p11-f2.jpeg",
+          "sha256": "af00fcca199c5eb1cf86fe7d523ec2454266d0b20d77d33e3c8904014390f362"
+        },
+        {
+          "figure_id": "cb86plus-p12-f1",
+          "source_page": 12,
+          "source_bbox": [
+            126.95999908447266,
+            55.19999694824219,
+            358.79998779296875,
+            165.83999633789062
+          ],
+          "source_xref": 188,
+          "width": 436,
+          "height": 208,
+          "path": "assets/cb86plus-p12-f1.jpeg",
+          "sha256": "b6b953b9e0e92a0acc380e54cd67a8ea29ecc159c4d3830b1808e1eeccd3c667"
+        },
+        {
+          "figure_id": "cb86plus-p12-f2",
+          "source_page": 12,
+          "source_bbox": [
+            123.36000061035156,
+            293.8800048828125,
+            367.20001220703125,
+            409.44000244140625
+          ],
+          "source_xref": 191,
+          "width": 437,
+          "height": 207,
+          "path": "assets/cb86plus-p12-f2.jpeg",
+          "sha256": "727bb6765eed8ce6430aa3c7857df94388335446d6d397f58dbc41d83bee3d5c"
+        },
+        {
+          "figure_id": "cb86plus-p12-f3",
+          "source_page": 12,
+          "source_bbox": [
+            136.8000030517578,
+            611.8800048828125,
+            345.7200012207031,
+            820.7999877929688
+          ],
+          "source_xref": 189,
+          "width": 1000,
+          "height": 1000,
+          "path": "assets/cb86plus-p12-f3.png",
+          "sha256": "ff4ac63e5139ba8643349e9dfa72935ef2892d2f53f33914e974af63c56df079",
+          "source_asset_path": "assets/cb86plus-p12-f3.jpeg",
+          "source_asset_sha256": "c993aea4f5cd39f02dab2ee884ae3b05798f6aff2451e9e45b0c8797f28e9196",
+          "source_mask_xref": 190
+        },
+        {
+          "figure_id": "cb86plus-p13-f1",
+          "source_page": 13,
+          "source_bbox": [
+            324.3599853515625,
+            245.16000366210938,
+            509.7599792480469,
+            384.0
+          ],
+          "source_xref": 196,
+          "width": 437,
+          "height": 327,
+          "path": "assets/cb86plus-p13-f1.jpeg",
+          "sha256": "042f1444e286170093b27921bd694896f4200cdf90fe42e9522ba1eb5176ee2f"
+        },
+        {
+          "figure_id": "cb86plus-p13-f2",
+          "source_page": 13,
+          "source_bbox": [
+            69.12000274658203,
+            246.1199951171875,
+            298.44000244140625,
+            384.0
+          ],
+          "source_xref": 198,
+          "width": 436,
+          "height": 262,
+          "path": "assets/cb86plus-p13-f2.jpeg",
+          "sha256": "e5ec98c66797aa5bc0c6671af8a22ca276f7d21a8214ddaa2e4b612fbd8ef018"
+        },
+        {
+          "figure_id": "cb86plus-p14-f2",
+          "source_page": 14,
+          "source_bbox": [
+            170.27999877929688,
+            397.20001220703125,
+            364.44000244140625,
+            542.52001953125
+          ],
+          "source_xref": 205,
+          "width": 437,
+          "height": 327,
+          "path": "assets/cb86plus-p14-f2.jpeg",
+          "sha256": "ecd9cbb82d13b0cd51efa9cd618da5d71ebcace7ca670e47677a35f27880b0e4"
+        },
+        {
+          "figure_id": "cb86plus-p14-f3",
+          "source_page": 14,
+          "source_bbox": [
+            304.9200134277344,
+            646.2000122070312,
+            477.96002197265625,
+            776.760009765625
+          ],
+          "source_xref": 207,
+          "width": 436,
+          "height": 329,
+          "path": "assets/cb86plus-p14-f3.jpeg",
+          "sha256": "05ba15fbc6ba42aa4c522a23043e203f752d99fc25a3f5e97a5199a2043bb328"
+        },
+        {
+          "figure_id": "cb86plus-p14-f4",
+          "source_page": 14,
+          "source_bbox": [
+            66.12000274658203,
+            647.52001953125,
+            241.67999267578125,
+            778.2000122070312
+          ],
+          "source_xref": 208,
+          "width": 438,
+          "height": 326,
+          "path": "assets/cb86plus-p14-f4.jpeg",
+          "sha256": "62894a7018e107490df07f2fefb253d5cbd02dd334c3ac53509213a92e2ae0be"
+        },
+        {
+          "figure_id": "cb86plus-p15-f1",
+          "source_page": 15,
+          "source_bbox": [
+            139.1999969482422,
+            459.48004150390625,
+            318.1199951171875,
+            638.4000244140625
+          ],
+          "source_xref": 217,
+          "width": 761,
+          "height": 761,
+          "path": "assets/cb86plus-p15-f1.jpeg",
+          "sha256": "e412c03b84f8188f657497c1e4f04a9074d6ea57a6902ea90c0cc809a342deab"
+        },
+        {
+          "figure_id": "cb86plus-p16-f1",
+          "source_page": 16,
+          "source_bbox": [
+            157.8000030517578,
+            35.040008544921875,
+            309.1199951171875,
+            196.8000030517578
+          ],
+          "source_xref": 222,
+          "width": 1198,
+          "height": 1280,
+          "path": "assets/cb86plus-p16-f1.jpeg",
+          "sha256": "7787e7a03ca673caab726b9adcb9b65a989b324166e91740801270c17d621caa"
+        },
+        {
+          "figure_id": "cb86plus-p16-f2",
+          "source_page": 16,
+          "source_bbox": [
+            152.0399932861328,
+            243.71998596191406,
+            315.0,
+            365.5199890136719
+          ],
+          "source_xref": 224,
+          "width": 368,
+          "height": 275,
+          "path": "assets/cb86plus-p16-f2.jpeg",
+          "sha256": "c5bff73c8051ec2e36e34f6646baeca4b0b98e6b609f4d6dbd0bb867ac157d0b"
+        },
+        {
+          "figure_id": "cb86plus-p16-f3",
+          "source_page": 16,
+          "source_bbox": [
+            150.47999572753906,
+            668.3999633789062,
+            314.2799987792969,
+            789.47998046875
+          ],
+          "source_xref": 223,
+          "width": 437,
+          "height": 323,
+          "path": "assets/cb86plus-p16-f3.jpeg",
+          "sha256": "88ecc93e3f89abc2f8c85aae9a2d06da6edf76d4d47e79d90abd0913c2c68279"
+        },
+        {
+          "figure_id": "cb86plus-p17-f1",
+          "source_page": 17,
+          "source_bbox": [
+            135.0,
+            119.16001892089844,
+            330.3599853515625,
+            262.9200134277344
+          ],
+          "source_xref": 227,
+          "width": 439,
+          "height": 323,
+          "path": "assets/cb86plus-p17-f1.jpeg",
+          "sha256": "4b93dba1aacfcdfb98827ab88c7f25cca5858867d970cf0265b6a89977d9f129"
+        },
+        {
+          "figure_id": "cb86plus-p18-f1",
+          "source_page": 18,
+          "source_bbox": [
+            237.0,
+            65.03999328613281,
+            315.7200012207031,
+            143.75999450683594
+          ],
+          "source_xref": 236,
+          "width": 300,
+          "height": 300,
+          "path": "assets/cb86plus-p18-f1.jpeg",
+          "sha256": "616d05de4fa05030b62842069bd8feb9f777bf32cf1f301223ece107b3eecd59"
+        },
+        {
+          "figure_id": "cb86plus-p18-f2",
+          "source_page": 18,
+          "source_bbox": [
+            437.5199890136719,
+            66.0,
+            515.8800048828125,
+            144.36000061035156
+          ],
+          "source_xref": 235,
+          "width": 300,
+          "height": 300,
+          "path": "assets/cb86plus-p18-f2.jpeg",
+          "sha256": "678b47b1873e9b220674b3e85c732bcae4d92bd85b7141e448e6985085222143"
+        },
+        {
+          "figure_id": "cb86plus-p18-f3",
+          "source_page": 18,
+          "source_bbox": [
+            50.880001068115234,
+            66.7199935913086,
+            129.0,
+            144.1199951171875
+          ],
+          "source_xref": 237,
+          "width": 920,
+          "height": 911,
+          "path": "assets/cb86plus-p18-f3.png",
+          "sha256": "90f8973ba947610a600018602a15d91962304d9c36ad03bfdf49946bdc3b6332",
+          "source_asset_path": "assets/cb86plus-p18-f3.jpeg",
+          "source_asset_sha256": "e09dd876a3a3bdfd3ef44a692d3dd196045ad0126c8fb4546892d94c8a41eccb",
+          "source_mask_xref": 238
+        }
+      ],
+      "publication_readiness": "WEB_HOLD",
+      "publication_status": "UNPUBLISHED",
+      "pdf": "DEFERRED",
+      "knowledge": "DEFERRED",
+      "batch_id": "receiver-web-batch8",
+      "source_product_id": "cb86plus",
+      "inventory_product_id": "cb86plus",
+      "web_qa_status": "QA_REQUIRED",
+      "figure_localization": "DEFERRED",
+      "untranslated_figure_string_count": null
     }
   ]
 }

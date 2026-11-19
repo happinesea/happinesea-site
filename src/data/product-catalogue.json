@@ -156,7 +156,7 @@
     "subcategoryLabel": "トレーナーシステム",
     "description": "Radiolinkのトレーナーシステム関連製品です。",
     "officialUrl": "https://www.radiolink.com/typec_wireless_trainer_cable",
-    "detailPath": null,
+    "detailPath": "/radiolink/twc/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/twc.webp",
@@ -1143,7 +1143,7 @@
     "subcategoryLabel": "充電器",
     "description": "Radiolinkのバッテリー充電器です。",
     "officialUrl": "https://www.radiolink.com/cb86plus",
-    "detailPath": null,
+    "detailPath": "/radiolink/cb86-plus/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cb86-plus.webp",

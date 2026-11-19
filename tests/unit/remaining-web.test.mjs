@@ -1,16 +1,16 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import test from 'node:test';
 import remaining from '../../src/data/manuals/remaining-web.json' with { type: 'json' };
 
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 11);
+  assert.equal(remaining.manuals.length, 13);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    11,
+    13,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -54,7 +54,8 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     for (const id of manual.withheld_figure_ids) {
       assert(!mdx.includes(`figureId="${id}"`));
       assert(
-        !readdirSync(dir).some((filename) => filename.startsWith(id + '.')),
+        !existsSync(dir) ||
+          !readdirSync(dir).some((filename) => filename.startsWith(id + '.')),
       );
     }
   }
