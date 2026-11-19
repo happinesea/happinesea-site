@@ -608,28 +608,24 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
 
 test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
   const html = await route('radiolink/index.html');
+  const detailCount =
+    26 +
+    batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
+    batch6.manuals.length +
+    remaining.manuals.filter((m) => m.product_id !== 'rtc8').length;
 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
   assert.equal(
     (html.match(/data-detail-available/g) ?? []).length,
-    25 +
-      batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
-      batch6.manuals.length +
-      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
+    detailCount,
   );
   assert.equal(
     (html.match(/data-detail-preparing/g) ?? []).length,
-    58 -
-      batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length -
-      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
+    83 - detailCount,
   );
   assert.equal(
     (html.match(/詳しい仕様は公式サイトで/g) ?? []).length,
-    58 -
-      batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length -
-      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
+    83 - detailCount,
   );
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
