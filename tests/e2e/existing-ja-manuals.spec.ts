@@ -276,6 +276,14 @@ test('Byme-D source corrections appear in the existing manual', async ({
   page,
 }, info) => {
   await page.goto('./manuals/byme-d/');
+  await page.getByRole('link', { name: '製品ページへ戻る' }).click();
+  await expect(page).toHaveURL(/\/radiolink\/byme-d\/$/);
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    'content',
+    /noindex/,
+  );
+  await page.getByRole('link', { name: '日本語取扱説明書' }).click();
+  await expect(page).toHaveURL(/\/manuals\/byme-d\/$/);
   await expect(page.locator('.byme-d-manual-toc li')).toHaveCount(15);
   await expect(
     page.locator('.byme-d-manual-toc li:not(:has(> a))'),

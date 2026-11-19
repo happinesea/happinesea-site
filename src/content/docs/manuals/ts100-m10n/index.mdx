@@ -1,0 +1,308 @@
+---
+title: TS100(M10N) 日本語取扱説明書
+description: Radiolink TS100(M10N) の公式英語取扱説明書に対応する日本語版です。
+product: ts100-m10n
+slug: manuals/ts100-m10n
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/en/ts100v2_manual
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/ts100-m10n/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink TS100(M10N)の公式英語HTML取扱説明書。文書の版と発行日は原典に記載されていません。対象はTS100 V2.0（M10N）です。
+
+<span id="ts100v2-text-01" data-translation-unit="ts100v2-text-01"></span>
+
+TS100 V2.0（M10N）
+
+<span id="ts100v2-text-02" data-translation-unit="ts100v2-text-02"></span>
+
+## 概要
+
+<span id="ts100v2-text-03" data-translation-unit="ts100v2-text-03"></span>
+
+RadioLink M10N GPS TS100 V2.0は、RadioLinkの技術者が22年以上にわたり培った無線技術の経験を活用し、回路設計から基板上の部品配置まで工夫することで、ICの感度指標の限界を超える性能を実現しています。
+
+<span id="ts100v2-text-04" data-translation-unit="ts100v2-text-04"></span>
+
+測位精度は50 cmです。開けた場所では6秒で20基の衛星を捕捉します。谷間での位置保持性能は業界トップクラスです。
+
+<span id="ts100v2-text-05" data-translation-unit="ts100v2-text-05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-f01-unit" data-translation-unit="ts100v2-f01-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ts100-m10n/web-ja-v1/ts100v2-f01.png" width={957} height={623} figureId="ts100v2-f01" alt={"外形寸法図。各辺に30 mm、32 mm、12 mmの表示があります。"} caption={"外形寸法図。各辺に30 mm、32 mm、12 mmの表示があります。"} />
+
+<span id="ts100v2-text-06" data-translation-unit="ts100v2-text-06"></span>
+
+TS100 V2.0（M10N）
+
+<span id="ts100v2-text-07" data-translation-unit="ts100v2-text-07"></span>
+
+## 構成
+
+<span id="ts100v2-text-08" data-translation-unit="ts100v2-text-08"></span>
+
+GPS受信チップ：RadioLink M10N GPS TS100はu-blox M10050を採用し、単一GNSSの7Nより高い性能を備えています。
+
+<span id="ts100v2-text-09" data-translation-unit="ts100v2-text-09"></span>
+
+高精度電子コンパスIST8310内蔵（I2Cポート）。
+
+<span id="ts100v2-text-10" data-translation-unit="ts100v2-text-10"></span>
+
+アンテナ：利得2.5 dBiの高利得・高選択性セラミックチップアンテナ。
+
+<span id="ts100v2-text-11" data-translation-unit="ts100v2-text-11"></span>
+
+二重フィルター：村田製作所の2段SAWF（弾性表面波フィルター）。
+
+<span id="ts100v2-text-12" data-translation-unit="ts100v2-text-12"></span>
+
+測位精度は50 cmです。
+
+<span id="ts100v2-text-13" data-translation-unit="ts100v2-text-13"></span>
+
+開けた場所では6秒で20基の衛星を捕捉します。
+
+<span id="ts100v2-text-14" data-translation-unit="ts100v2-text-14"></span>
+
+谷底でも高い測位性能を発揮します。
+
+<span id="ts100v2-text-15" data-translation-unit="ts100v2-text-15"></span>
+
+複数の測位システム（BD1、GPS/L1、Galileo/E1、GLONASS/G1）に対応し、4システムを同時に利用できます。
+
+<span id="ts100v2-text-16" data-translation-unit="ts100v2-text-16"></span>
+
+3周波数：1561±1 MHz、1575±1 MHz、1602～1610 MHz。
+
+<span id="ts100v2-text-17" data-translation-unit="ts100v2-text-17"></span>
+
+## 仕様
+
+<span id="ts100v2-text-18" data-translation-unit="ts100v2-text-18"></span>
+
+測位精度：
+
+<span id="ts100v2-text-19" data-translation-unit="ts100v2-text-19"></span>
+
+デュアルモードでは最大50 cm、シングルモードでは250 cm。
+
+<span id="ts100v2-text-20" data-translation-unit="ts100v2-text-20"></span>
+
+通信プロトコル：
+
+<span id="ts100v2-text-21" data-translation-unit="ts100v2-text-21"></span>
+
+既定はNMEAです。
+
+<span id="ts100v2-text-22" data-translation-unit="ts100v2-text-22"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-23" data-translation-unit="ts100v2-text-23"></span>
+
+速度精度：
+
+<span id="ts100v2-text-24" data-translation-unit="ts100v2-text-24"></span>
+
+0.1 m/s
+
+<span id="ts100v2-text-25" data-translation-unit="ts100v2-text-25"></span>
+
+最大高度：
+
+<span id="ts100v2-text-26" data-translation-unit="ts100v2-text-26"></span>
+
+50000 m
+
+<span id="ts100v2-text-27" data-translation-unit="ts100v2-text-27"></span>
+
+最高速度：
+
+<span id="ts100v2-text-28" data-translation-unit="ts100v2-text-28"></span>
+
+515 m/s
+
+<span id="ts100v2-text-29" data-translation-unit="ts100v2-text-29"></span>
+
+最大加速度：
+
+<span id="ts100v2-text-30" data-translation-unit="ts100v2-text-30"></span>
+
+4G
+
+<span id="ts100v2-text-31" data-translation-unit="ts100v2-text-31"></span>
+
+最大更新レート：
+
+<span id="ts100v2-text-32" data-translation-unit="ts100v2-text-32"></span>
+
+10 Hz
+
+<span id="ts100v2-text-33" data-translation-unit="ts100v2-text-33"></span>
+
+感度：
+
+<span id="ts100v2-text-34" data-translation-unit="ts100v2-text-34"></span>
+
+追尾・測位：−167 dBm
+
+<span id="ts100v2-text-35" data-translation-unit="ts100v2-text-35"></span>
+
+捕捉：−163 dBm
+
+<span id="ts100v2-text-36" data-translation-unit="ts100v2-text-36"></span>
+
+コールドスタート：−151 dBm
+
+<span id="ts100v2-text-37" data-translation-unit="ts100v2-text-37"></span>
+
+ホットスタート：−159 dBm
+
+<span id="ts100v2-text-38" data-translation-unit="ts100v2-text-38"></span>
+
+起動時間：
+
+<span id="ts100v2-text-39" data-translation-unit="ts100v2-text-39"></span>
+
+コールドスタート：26秒
+
+<span id="ts100v2-text-40" data-translation-unit="ts100v2-text-40"></span>
+
+ホットスタート：1秒
+
+<span id="ts100v2-text-41" data-translation-unit="ts100v2-text-41"></span>
+
+電源：
+
+<span id="ts100v2-text-42" data-translation-unit="ts100v2-text-42"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-43" data-translation-unit="ts100v2-text-43"></span>
+
+<span id="ts100v2-text-44" data-translation-unit="ts100v2-text-44"></span>
+
+ポート：
+
+<span id="ts100v2-text-45" data-translation-unit="ts100v2-text-45"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-46" data-translation-unit="ts100v2-text-46"></span>
+
+地磁気センサー：I2Cポート
+
+<span id="ts100v2-text-47" data-translation-unit="ts100v2-text-47"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-48" data-translation-unit="ts100v2-text-48"></span>
+
+<span id="ts100v2-text-49" data-translation-unit="ts100v2-text-49"></span>
+
+## コネクターのピン配置
+
+<span id="ts100v2-text-50" data-translation-unit="ts100v2-text-50"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-51" data-translation-unit="ts100v2-text-51"></span>
+
+<span id="ts100v2-f02-unit" data-translation-unit="ts100v2-f02-unit"></span>
+
+<span id="ts100v2-text-52" data-translation-unit="ts100v2-text-52"></span>
+
+TS100 V2.0（M10N）
+
+<span id="ts100v2-text-53" data-translation-unit="ts100v2-text-53"></span>
+
+## Mini Pixへの接続
+
+<span id="ts100v2-f03-unit" data-translation-unit="ts100v2-f03-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-54" data-translation-unit="ts100v2-text-54"></span>
+
+## 測位状態の表示
+
+<span id="ts100v2-text-55" data-translation-unit="ts100v2-text-55"></span>
+
+緑色LEDで測位状態を表示します。TS100 V2.0（M10N）が測位すると緑色LEDが点滅します。
+
+<span id="ts100v2-f04-unit" data-translation-unit="ts100v2-f04-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-56" data-translation-unit="ts100v2-text-56"></span>
+
+## コンパスの校正
+
+<span id="ts100v2-text-57" data-translation-unit="ts100v2-text-57"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ts100v2-text-58" data-translation-unit="ts100v2-text-58"></span>
+
+<span id="ts100v2-text-59" data-translation-unit="ts100v2-text-59"></span>
+
+<span id="ts100v2-f05-unit" data-translation-unit="ts100v2-f05-unit"></span>
+
+<span id="ts100v2-text-60" data-translation-unit="ts100v2-text-60"></span>
+
+<span id="ts100v2-f06-unit" data-translation-unit="ts100v2-f06-unit"></span>
+
+<span id="ts100v2-text-61" data-translation-unit="ts100v2-text-61"></span>
+
+<span id="ts100v2-f07-unit" data-translation-unit="ts100v2-f07-unit"></span>
+
+<span id="ts100v2-text-62" data-translation-unit="ts100v2-text-62"></span>
+
+<span id="ts100v2-f08-unit" data-translation-unit="ts100v2-f08-unit"></span>
+
+<span id="ts100v2-f09-unit" data-translation-unit="ts100v2-f09-unit"></span>
+
+<span id="ts100v2-text-63" data-translation-unit="ts100v2-text-63"></span>
+
+<span id="ts100v2-f10-unit" data-translation-unit="ts100v2-f10-unit"></span>
+
+<span id="ts100v2-text-64" data-translation-unit="ts100v2-text-64"></span>
+
+<span id="ts100v2-f11-unit" data-translation-unit="ts100v2-f11-unit"></span>

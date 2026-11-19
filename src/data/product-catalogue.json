@@ -597,7 +597,7 @@
     "subcategoryLabel": "固定翼用フライトコントローラー",
     "description": "Radiolinkの固定翼機向けフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/bymed",
-    "detailPath": null,
+    "detailPath": "/radiolink/byme-d/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/byme-d.webp",
@@ -765,7 +765,7 @@
     "subcategoryLabel": "GPS",
     "description": "RadiolinkのGPSモジュールです。",
     "officialUrl": "https://www.radiolink.com/ts100v2",
-    "detailPath": null,
+    "detailPath": "/radiolink/ts100-m10n/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/ts100-m10n.webp",
