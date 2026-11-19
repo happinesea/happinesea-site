@@ -286,8 +286,22 @@ test('Byme-D guidance retains the fixture warning without an unsupported calibra
   );
   assert.match(calibration, /原典は具体的な角度を指定していません/);
   assert.doesNotMatch(calibration, /20°/);
+  assert.doesNotMatch(calibration, /モード1ご利用/);
+  assert.match(calibration, /3秒を超えて保持/);
+  assert.match(
+    renderSemanticSection(manual, 'section-005-サーボの位相'),
+    /1回短押しする/,
+  );
+  assert.match(
+    renderSemanticSection(manual, 'section-006-ジャイロモード'),
+    /回転を続けます/,
+  );
+  assert.match(
+    renderSemanticSection(manual, 'section-003-概要'),
+    /対応関係は確認保留/,
+  );
   assert.deepEqual(
     manual.technical_changes.map((r) => r.evidence.physical_pages),
-    [[3], [7]],
+    [[3], [7], [4, 9, 10], [5], [7], [7, 8], [9], [9], [10], [12]],
   );
 });

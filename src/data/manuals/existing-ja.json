@@ -17306,8 +17306,8 @@
         {
           "id": "section-003",
           "title": "概要",
-          "content_html": "<h2 id=\"section-003-概要\">概要</h2>\n<p>Byme-D は、デルタ翼、紙飛行機、SU27、F22 を含むエレベーター/エルロン制御が混在するすべての模型飛行機に適用でき、SBUS および PPM 信号がサポートされています。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-005.png\" alt=\"Byme-D 日本語取扱説明書 概要の図（原資料の挿図）\" width=\"1063\" height=\"309\" loading=\"lazy\"/></figure><p></p>\n<p>Byme-Dの飛行モード：</p>\n<p>安定モード、ジャイロモード、及び、マニュアルモード</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-006.png\" alt=\"Byme-D 日本語取扱説明書 概要の図（原資料の挿図）\" width=\"840\" height=\"612\" loading=\"lazy\"/></figure><p></p>",
-          "sha256": "ea18ca76a8338c890c3761a7d52058fb62d102b6116880c73b34e6196c34709d",
+          "content_html": "<h2 id=\"section-003-概要\">概要</h2>\n<p>Byme-D は、デルタ翼、紙飛行機、SU27、F22 を含むエレベーター/エルロン制御が混在するすべての模型飛行機に適用でき、SBUS および PPM 信号がサポートされています。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-005.png\" alt=\"Byme-D 日本語取扱説明書 概要の図（原資料の挿図）\" width=\"1063\" height=\"309\" loading=\"lazy\"/></figure><p></p>\n<p>Byme-Dの飛行モード：</p>\n<p>安定モード、アクロバットモード、マニュアルモード</p>\n<p>原典の概要では「Acrobat Mode」、操作説明では「Gyro Mode」と表記されています。両者の対応関係は確認保留です。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-006.png\" alt=\"Byme-D 日本語取扱説明書 概要の図（原資料の挿図）\" width=\"840\" height=\"612\" loading=\"lazy\"/></figure><p></p>",
+          "sha256": "22d41f41d9c98b6760ccfdba5a88907694c86d98619c2927372d07ba52452509",
           "source_locator": {
             "file": "docx/byme-d取扱説明書_20240116.docx",
             "paragraph_range": [46, 51]
@@ -17326,8 +17326,8 @@
         {
           "id": "section-005",
           "title": "機体への取り付け",
-          "content_html": "<h2 id=\"section-005-機体への取り付け\">機体への取り付け</h2>\n<p>Byme-Dのサーボ位相調整ボタンが航空機の頭部を指し、Byme-D のピンの端が航空機の尾部を指していることを確認してください。 </p>\n<p>フライトコントローラーは、航空機本体に 3M 接着剤を使用して上向きまたは下向きに取り付けることができ、各コネクターは対応するサーボに接続します。 Byme-D を（航空機の）重心の近くに設置することをお勧めします。 </p>\n<p>以下のように Byme-D を設置してください。 </p>\n<p>(注: Byme-D の取り付け方向と位置を誤ると、フライトコントローラーの補正が不正確になり、最高の飛行効果を達成することが困難になります。)</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-007.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"965\" height=\"892\" loading=\"lazy\"/></figure><p></p>\n<h3 id=\"section-005-送信機の設定\">送信機の設定</h3>\n<p>CH5 (3wayスイッチ) は 3 つの飛行モード間の切り替え、CH7はモーターのロック/解除に使用されるので、7チャンネル以上の送信機を使用してください。</p>\n<p>Byme-Dは既にミキシング機能があるため、機体にByme-Dを搭載する場合、送信機でミキシング機能を設定できません。<br/>プログラムミキシングのコントロールはフライトモードの設定に応じて、自動的に有効になります。送信機にミキシング機能が設定される場合、ミキシング機能の競合が発生し、飛行に影響を与える恐れがあります。</p>\n<p>チャンネルの方向を次のように設定する：<br/>CH3(スロットル)：リバース<br/>その他のチャンネル：ノーマル</p>\n<h3 id=\"section-005-通電時の校正\">通電時の校正</h3>\n<p>機体の電源がオンになると、Byme-D のジャイロが緑色に点滅して調整されます。</p>\n<p>緑色のライトが常に点灯するまで、機体を静止させてください。</p>\n<h3 id=\"section-005-姿勢の校正\">姿勢の校正</h3>\n<p>フライトコントローラーはバランスのとれた状態を確保するために姿勢/レベルを調整する必要があります。 校正精度を確保するために、機首を一定の角度で持ち上げることを推奨します。原典は具体的な角度を指定していません。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-008.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"950\" height=\"248\" loading=\"lazy\"/></figure><p></p>\n<p>以下のように左スティック（左下）と右スティック（右下）を3秒以上押し続けます。 緑色の LED が 1 回点滅すると、校正が完了したことを意味します。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-009.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"825\" height=\"357\" loading=\"lazy\"/></figure><p></p>\n<p>※注: 下記は、モード2を例にします。モード1ご利用の場合、適切に読み替えて下さい。</p>\n<p>チャンネルの方向を上記のように設定した場合 (CH3 - スロットル: リバース、その他のチャンネル: ノーマル)、左スティック (左下) と右スティック (右下) を押しても姿勢校正が終了しない場合は、送信機のメニューから、チャンネルの位相を設定します。</p>\n<p>スロットルチャンネルの方向は依然としてリバースのままでも、他のチャンネルの場合は、次の 3 つの組み合わせを試してチャンネルの方向を設定し、左スティック (左下) と右スティック (右下) を押して姿勢を調整してください。</p>\n<p>設定パターン：</p>\n<p>　パターン1：CH1-ノーマル、CH2-リバース</p>\n<p>　パターン2：CH1-リバース、CH2-ノーマル</p>\n<p>　パターン3：CH1-リバース、CH2-リバース</p>\n<p>上記チャンネルの組み合わせで左スティック（左下）と右スティック（右下）を押すことで姿勢補正ができる場合</p>\n<p>方向を変更したら、その状態を保存して、変更を加えないでください。</p>\n<p>姿勢校正が完了したら、次のステップでサーボの位相を確認と設定をしてください。</p>\n<h3 id=\"section-005-サーボの位相\">サーボの位相</h3>\n<p>飛行前にサーボの位相が正しいことを確認してください。 </p>\n<p>送信機はモード2で、マニュアルモードを設定する例を以下に示します。 (モードの切り替えについてはマニュアルのフライトモードを参照してください) </p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-010.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"938\" height=\"652\" loading=\"lazy\"/></figure><p></p>\n<p>エルロンの動作方向がジョイスティックと一致しない場合は、Byme-D 前面のボタンでサーボ位相を調整してください。 </p>\n<p>※この時点では、リモコンのサーボ方向の設定を変更しないでください。</p>\n<p>Byme-Dのサーボ位相調整ボタンで、サーボ位相を調整する方法：</p>\n<p>1回押す：エルロンのプログラムミキシングが逆になり、LED 1のON/OFF表示が切替える。</p>\n<p>2回押す：エレベーターのプログラムミキシングが逆になり、LED 2のON/OFF表示が切替える。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-011.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"597\" height=\"299\" loading=\"lazy\"/></figure><p></p>\n<p>※注: サーボ位相を変更する前に、姿勢校正が完了していることを確認してください。</p>\n<p>Byme-D は機体の設置位置 (上/下向き) を識別し、ジャイロを自動的に調整します。</p>",
-          "sha256": "9a1fe808ac8edb141be2d88daafdb13e4cb5786fc715275d938f3b3100c7bb8c",
+          "content_html": "<h2 id=\"section-005-機体への取り付け\">機体への取り付け</h2>\n<p>Byme-Dのサーボ位相調整ボタンが航空機の頭部を指し、Byme-D のピンの端が航空機の尾部を指していることを確認してください。 </p>\n<p>フライトコントローラーは、航空機本体に 3M 接着剤を使用して上向きまたは下向きに取り付けることができ、配線は対応するピンに接続します。 Byme-D を（航空機の）重心の近くに設置することをお勧めします。 </p>\n<p>以下のように Byme-D を設置してください。 </p>\n<p>(注: Byme-D の取り付け方向と位置を誤ると、フライトコントローラーの補正が不正確になり、最高の飛行効果を達成することが困難になります。)</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-007.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"965\" height=\"892\" loading=\"lazy\"/></figure><p></p>\n<h3 id=\"section-005-送信機の設定\">送信機の設定</h3>\n<p>CH5 (3wayスイッチ) は 3 つの飛行モード間の切り替え、CH7はモーターのロック/解除に使用されるので、7チャンネル以上の送信機を使用してください。</p>\n<p>Byme-Dは既にミキシング機能があるため、機体にByme-Dを搭載する場合、送信機でミキシング機能を設定できません。<br/>プログラムミキシングのコントロールはフライトモードの設定に応じて、自動的に有効になります。送信機にミキシング機能が設定される場合、ミキシング機能の競合が発生し、飛行に影響を与える恐れがあります。</p>\n<p>チャンネルの方向を次のように設定する：<br/>CH3(スロットル)：リバース<br/>その他のチャンネル：ノーマル</p>\n<h3 id=\"section-005-通電時の校正\">通電時の校正</h3>\n<p>機体の電源がオンになると、Byme-D のジャイロが緑色に点滅して調整されます。</p>\n<p>緑色のライトが常に点灯するまで、機体を静止させてください。</p>\n<h3 id=\"section-005-姿勢の校正\">姿勢の校正</h3>\n<p>フライトコントローラーはバランスのとれた状態を確保するために姿勢/レベルを調整する必要があります。 校正精度を確保するために、機首を一定の角度で持ち上げることを推奨します。原典は具体的な角度を指定していません。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-008.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"950\" height=\"248\" loading=\"lazy\"/></figure><p></p>\n<p>以下のように左スティック（左下）と右スティック（右下）を3秒を超えて保持します。 緑色の LED が 1 回点滅すると、校正が完了したことを意味します。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-009.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"825\" height=\"357\" loading=\"lazy\"/></figure><p></p>\n<p>チャンネルの方向を上記のように設定した場合 (CH3 - スロットル: リバース、その他のチャンネル: ノーマル)、左スティック (左下) と右スティック (右下) を押しても姿勢校正が終了しない場合は、送信機のメニューから、チャンネルの位相を設定します。</p>\n<p>スロットルチャンネルの方向は依然としてリバースのままでも、他のチャンネルの場合は、次の 3 つの組み合わせを試してチャンネルの方向を設定し、左スティック (左下) と右スティック (右下) を押して姿勢を調整してください。</p>\n<p>設定パターン：</p>\n<p>　パターン1：CH1-ノーマル、CH2-リバース</p>\n<p>　パターン2：CH1-リバース、CH2-ノーマル</p>\n<p>　パターン3：CH1-リバース、CH2-リバース</p>\n<p>上記チャンネルの組み合わせで左スティック（左下）と右スティック（右下）を押すことで姿勢補正ができる場合</p>\n<p>方向を変更したら、その状態を保存して、変更を加えないでください。</p>\n<p>姿勢校正が完了したら、次のステップでサーボの位相を確認と設定をしてください。</p>\n<h3 id=\"section-005-サーボの位相\">サーボの位相</h3>\n<p>飛行前にサーボの位相が正しいことを確認してください。 </p>\n<p>送信機はモード2で、マニュアルモードを設定する例を以下に示します。 (モードの切り替えについてはマニュアルのフライトモードを参照してください) </p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-010.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"938\" height=\"652\" loading=\"lazy\"/></figure><p></p>\n<p>エルロンの動作方向がジョイスティックと一致しない場合は、Byme-D 前面のボタンでサーボ位相を調整してください。 </p>\n<p>※この時点では、リモコンのサーボ方向の設定を変更しないでください。</p>\n<p>Byme-Dのサーボ位相調整ボタンで、サーボ位相を調整する方法：</p>\n<p>1回短押しする：エルロンのプログラムミキシングが逆になり、LED 1のON/OFF表示が切替える。</p>\n<p>2回短押しする：エレベーターのプログラムミキシングが逆になり、LED 2のON/OFF表示が切替える。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-011.png\" alt=\"Byme-D 日本語取扱説明書 機体への取り付けの図（原資料の挿図）\" width=\"597\" height=\"299\" loading=\"lazy\"/></figure><p></p>\n<p>※注: サーボ位相を変更する前に、姿勢校正が完了していることを確認してください。</p>\n<p>Byme-D は機体の設置位置 (上/下向き) を識別し、ジャイロを自動的に調整します。</p>",
+          "sha256": "83831b886f9d87ca17adc8889b74daf663712c3244ca524ac49df0e69e7dd318",
           "source_locator": {
             "file": "docx/byme-d取扱説明書_20240116.docx",
             "paragraph_range": [60, 102]
@@ -17336,8 +17336,8 @@
         {
           "id": "section-006",
           "title": "フライトモードの設定",
-          "content_html": "<h2 id=\"section-006-フライトモードの設定\">フライトモードの設定</h2>\n<p>フライトモードは送信機のCH5（3wayスイッチ）で設定できます。</p>\n<p>安定モード、ジャイロモード、マニュアルモードの 3つのモードがあります。</p>\n<h3 id=\"section-006-安定モード\">安定モード</h3>\n<p>機体の姿勢（傾斜角度）はジョイスティックで制御します。</p>\n<p>最大傾斜角度はローリングで70°、ピッチングで45°です。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-012.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"182\" height=\"32\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-013.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"293\" height=\"183\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-014.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"297\" height=\"202\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-015.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"991\" height=\"749\" loading=\"lazy\"/></figure><p></p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-016.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"278\" height=\"171\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-017.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"220\" height=\"195\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-018.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"1099\" height=\"825\" loading=\"lazy\"/></figure><p></p>\n<p>全てのジョイスティックがニュートラルに戻すと、機体が水平状態へ戻す。</p>\n<h3 id=\"section-006-ジャイロモード\">ジャイロモード</h3>\n<p>機体の安定性を高めるジャイロを備えた制御をおこなうフライトモードです。</p>\n<p>ジョイスティックがニュートラルに戻しても、機体は水平にならないので、中級者以上、操作に慣れた方のご使用を推奨します。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-019.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"820\" height=\"664\" loading=\"lazy\"/></figure><p></p>\n<h3 id=\"section-006-マニュアルモード\">マニュアルモード</h3>\n<p>フライトコントローラーのアルゴリズムやジャイロの機能をせず、すべての飛行動作は手動で実現され、最も高度なスキルが必要となります。</p>\n<p>マニュアルモードでは、ジャイロスコープがないため、送信機を操作しないとサーボが動きません。</p>",
-          "sha256": "2e0717c3006752c06a42ab038c9fb299ca46ecfc079da706fd84d6da706c57af",
+          "content_html": "<h2 id=\"section-006-フライトモードの設定\">フライトモードの設定</h2>\n<p>フライトモードは送信機のCH5（3wayスイッチ）で設定できます。</p>\n<p>安定モード、ジャイロモード、マニュアルモードの 3つのモードがあります。</p>\n<h3 id=\"section-006-安定モード\">安定モード</h3>\n<p>機体の姿勢（傾斜角度）はジョイスティックで制御します。</p>\n<p>最大傾斜角度はローリングで70°、ピッチングで45°です。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-012.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"182\" height=\"32\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-013.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"293\" height=\"183\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-014.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"297\" height=\"202\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-015.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"991\" height=\"749\" loading=\"lazy\"/></figure><p></p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-016.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"278\" height=\"171\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-017.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"220\" height=\"195\" loading=\"lazy\"/></figure><p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-018.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"1099\" height=\"825\" loading=\"lazy\"/></figure><p></p>\n<p>全てのジョイスティックがニュートラルに戻すと、機体が水平状態へ戻す。</p>\n<h3 id=\"section-006-ジャイロモード\">ジャイロモード</h3>\n<p>機体の安定性を高めるジャイロを備えた制御をおこなうフライトモードです。</p>\n<p>上級者向けのモードです。スティックから手を離しても機体は水平に戻らず、回転を続けます。</p>\n<p></p><figure data-manual-figure><img src=\"/assets/radiolink/byme-d/manuals/byme-d/figure-019.png\" alt=\"Byme-D 日本語取扱説明書 フライトモードの設定の図（原資料の挿図）\" width=\"820\" height=\"664\" loading=\"lazy\"/></figure><p></p>\n<h3 id=\"section-006-マニュアルモード\">マニュアルモード</h3>\n<p>フライトコントローラーのアルゴリズムやジャイロの機能をせず、すべての飛行動作は手動で実現され、最も高度なスキルが必要となります。</p>\n<p>マニュアルモードでは、ジャイロスコープがないため、送信機を操作しないとサーボが動きません。</p>",
+          "sha256": "145d2d79fcfbc098cbb62d7dd8d9db5b83fa2a9420e49138cadc88cdb806da0f",
           "source_locator": {
             "file": "docx/byme-d取扱説明書_20240116.docx",
             "paragraph_range": [103, 120]
@@ -17356,8 +17356,8 @@
         {
           "id": "section-008",
           "title": "ジャイロ感度",
-          "content_html": "<h2 id=\"section-008-ジャイロ感度\">ジャイロ感度</h2>\n<p>Byme-DのPID制御には一定の余裕を持たしております。様々の機体に対して、補正が不十分または強すぎるようであれば、舵角レバーアームを調整してみてください。</p>\n<p>RadioLinkの製品を選び頂き、誠にありがとうございます。</p>",
-          "sha256": "3fa81b70c3d9f1665867fca34bb6de8c43355f3925234a42d0f0c948d17438f8",
+          "content_html": "<h2 id=\"section-008-ジャイロ感度\">ジャイロ感度</h2>\n<p>Byme-DのPID制御には一定の余裕を持たしております。様々の機体に対して、補正が不十分または強すぎるようであれば、ラダーの舵角を調整してみてください。</p>\n<p>RadioLinkの製品を選び頂き、誠にありがとうございます。</p>",
+          "sha256": "e607d9f2a4e62e200862c6bc5b6bd9208fe88355a72cf9d6e36d0e080289a8dd",
           "source_locator": {
             "file": "docx/byme-d取扱説明書_20240116.docx",
             "paragraph_range": [125, 129]
@@ -17416,6 +17416,126 @@
             "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
             "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
             "physical_pages": [7]
+          }
+        },
+        {
+          "before": "<p>安定モード、ジャイロモード、及び、マニュアルモード</p>",
+          "after": "<p>安定モード、アクロバットモード、マニュアルモード</p>\n<p>原典の概要では「Acrobat Mode」、操作説明では「Gyro Mode」と表記されています。両者の対応関係は確認保留です。</p>",
+          "reason": "英語原典内のモード名称の不一致を保持する。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [46, 51]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [4, 9, 10]
+          }
+        },
+        {
+          "before": "各コネクターは対応するサーボに接続します。",
+          "after": "配線は対応するピンに接続します。",
+          "reason": "接続先をサーボに限定していた記述を原典に合わせる。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [60, 102]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [5]
+          }
+        },
+        {
+          "before": "3秒以上押し続けます。",
+          "after": "3秒を超えて保持します。",
+          "reason": "原典の more than 3 seconds を保持する。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [60, 102]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [7]
+          }
+        },
+        {
+          "before": "<p>※注: 下記は、モード2を例にします。モード1ご利用の場合、適切に読み替えて下さい。</p>\n<p>チャンネルの方向を上記のように設定した場合 (CH3 - スロットル: リバース、その他のチャンネル: ノーマル)、左スティック (左下) と右スティック (右下) を押しても姿勢校正が終了しない場合は、送信機のメニューから、チャンネルの位相を設定します。</p>",
+          "after": "<p>チャンネルの方向を上記のように設定した場合 (CH3 - スロットル: リバース、その他のチャンネル: ノーマル)、左スティック (左下) と右スティック (右下) を押しても姿勢校正が終了しない場合は、送信機のメニューから、チャンネルの位相を設定します。</p>",
+          "reason": "原典のMode 2例はサーボ位相の項にあり、姿勢校正への適用根拠がないため削除する。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [60, 102]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [7, 8]
+          }
+        },
+        {
+          "before": "<p>1回押す：",
+          "after": "<p>1回短押しする：",
+          "reason": "原典指定の短押し条件を明記する。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [60, 102]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [9]
+          }
+        },
+        {
+          "before": "<p>2回押す：",
+          "after": "<p>2回短押しする：",
+          "reason": "原典指定の短押し条件を明記する。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [60, 102]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [9]
+          }
+        },
+        {
+          "before": "<p>ジョイスティックがニュートラルに戻しても、機体は水平にならないので、中級者以上、操作に慣れた方のご使用を推奨します。</p>",
+          "after": "<p>上級者向けのモードです。スティックから手を離しても機体は水平に戻らず、回転を続けます。</p>",
+          "reason": "原典にあるスティック解放時の挙動を保持する。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [103, 120]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [10]
+          }
+        },
+        {
+          "before": "舵角レバーアームを調整してみてください。",
+          "after": "ラダーの舵角を調整してみてください。",
+          "reason": "原典にない機械的な調整方法の指定を取り除く。",
+          "source_locator": {
+            "file": "docx/byme-d取扱説明書_20240116.docx",
+            "paragraph_range": [125, 129]
+          },
+          "evidence": {
+            "path": "sources/en/bymed_manual.pdf",
+            "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
+            "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
+            "physical_pages": [12]
           }
         }
       ],
@@ -17478,7 +17598,7 @@
             {
               "source_section": "section-003",
               "start": 31,
-              "end": 571
+              "end": 642
             }
           ]
         },
@@ -17512,7 +17632,7 @@
             {
               "source_section": "section-005",
               "start": 43,
-              "end": 547
+              "end": 542
             }
           ]
         },
@@ -17522,14 +17642,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-005",
-            "start": 547,
-            "end": 586
+            "start": 542,
+            "end": 581
           },
           "blocks": [
             {
               "source_section": "section-005",
-              "start": 586,
-              "end": 909
+              "start": 581,
+              "end": 904
             }
           ]
         },
@@ -17539,14 +17659,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-005",
-            "start": 909,
-            "end": 948
+            "start": 904,
+            "end": 943
           },
           "blocks": [
             {
               "source_section": "section-005",
-              "start": 948,
-              "end": 1034
+              "start": 943,
+              "end": 1029
             }
           ]
         },
@@ -17556,14 +17676,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-005",
-            "start": 1034,
-            "end": 1071
+            "start": 1029,
+            "end": 1066
           },
           "blocks": [
             {
               "source_section": "section-005",
-              "start": 1071,
-              "end": 2227
+              "start": 1066,
+              "end": 2173
             }
           ]
         },
@@ -17573,14 +17693,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-005",
-            "start": 2227,
-            "end": 2266
+            "start": 2173,
+            "end": 2212
           },
           "blocks": [
             {
               "source_section": "section-005",
-              "start": 2266,
-              "end": 3136
+              "start": 2212,
+              "end": 3088
             }
           ]
         },
@@ -17631,7 +17751,7 @@
             {
               "source_section": "section-006",
               "start": 1693,
-              "end": 2004
+              "end": 1989
             }
           ]
         },
@@ -17641,14 +17761,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-006",
-            "start": 2004,
-            "end": 2047
+            "start": 1989,
+            "end": 2032
           },
           "blocks": [
             {
               "source_section": "section-006",
-              "start": 2047,
-              "end": 2172
+              "start": 2032,
+              "end": 2157
             }
           ]
         },
@@ -17682,7 +17802,7 @@
             {
               "source_section": "section-008",
               "start": 39,
-              "end": 165
+              "end": 163
             }
           ]
         }
@@ -17708,10 +17828,10 @@
             "path": "sources/en/bymed_manual.pdf",
             "url": "https://www.radiolink.com/download/162b92cf6afce4c2030cc99633241053.pdf",
             "sha256": "20ef945b8e909b5db3ec66ee4e492a5ab29adf19913cc89f65cb691a593e0a0a",
-            "physical_pages": [3, 7]
+            "physical_pages": [3, 4, 5, 7, 8, 9, 10, 12]
           }
         ],
-        "scope": "Only the two identified calibration and propeller warning corrections; no whole-manual approval"
+        "scope": "Specified source-based corrections only; mode naming remains under review and full manual approval is pending"
       }
     }
   ]
