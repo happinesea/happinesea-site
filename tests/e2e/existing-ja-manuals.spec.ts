@@ -275,6 +275,24 @@ test('RC8X source warning appears before firmware update steps', async ({
 test('Byme-D source corrections appear in the existing manual', async ({
   page,
 }, info) => {
+  await page.goto('./manuals/byme-d/');
+  await expect(page.locator('.byme-d-manual-toc li')).toHaveCount(15);
+  await expect(
+    page.locator('.byme-d-manual-toc li:not(:has(> a))'),
+  ).toHaveCount(0);
+  await expect(page.locator('.pagination-links a[rel=prev]')).toHaveCount(0);
+  await expect(page.locator('.pagination-links a[rel=next]')).toHaveAttribute(
+    'href',
+    /chapter-01/,
+  );
+
+  await page.goto('./manuals/byme-d/chapter-07/');
+  await expect(page.locator('.pagination-links a[rel=next]')).toHaveCount(0);
+  await expect(page.locator('.pagination-links a[rel=prev]')).toHaveAttribute(
+    'href',
+    /chapter-06/,
+  );
+
   await page.goto('./manuals/byme-d/chapter-01/');
   const warning = page.getByText(
     '取り付けや試験を行うときは、機体にプロペラを装着しないでください。',
