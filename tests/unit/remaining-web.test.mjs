@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 6);
+  assert.equal(remaining.manuals.length, 8);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    6,
+    8,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -21,6 +21,13 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     assert.match(mdx.toString(), /status: draft[\s\S]*noindex, nofollow/);
     assert.equal(manual.publication_status, 'UNPUBLISHED');
     assert.equal(manual.publication_readiness, 'WEB_HOLD');
+    if (manual.product_id === 'f405') {
+      assert.equal(
+        manual.source.document_scope,
+        'QUICK_START_GUIDE_NOT_FULL_MANUAL',
+      );
+      assert.match(mdx.toString(), /^title: F405 V1\.1 日本語クイックガイド$/m);
+    }
     assert.equal(
       manual.figures.length + manual.withheld_figure_ids.length,
       manual.source_figures_total,

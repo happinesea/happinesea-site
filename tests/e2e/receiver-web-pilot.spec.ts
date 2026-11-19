@@ -11,8 +11,11 @@ for (const manual of data.manuals) {
     page,
   }, testInfo) => {
     await page.goto(`manuals/${manual.product_id}/`);
+    const quickGuide =
+      'document_scope' in manual.source &&
+      manual.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL';
     await expect(page.locator('h1')).toHaveText(
-      `${manual.model} 日本語取扱説明書`,
+      `${manual.model} ${quickGuide ? '日本語クイックガイド' : '日本語取扱説明書'}`,
     );
     if (
       'batch_id' in manual &&

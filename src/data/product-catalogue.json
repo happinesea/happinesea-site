@@ -429,7 +429,7 @@
     "subcategoryLabel": "フライトコントローラー",
     "description": "Radiolinkのフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/f405",
-    "detailPath": null,
+    "detailPath": "/radiolink/f405/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f405.webp",
@@ -870,7 +870,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/bds200_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/bds200/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/bds200.webp",
