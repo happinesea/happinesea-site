@@ -88,7 +88,10 @@
     [data-translation-unit^='elrs915receiver-'],
     [data-translation-unit^='am32_70a_4in1_esc-'],
     [data-translation-unit^='bds200-'],
-    [data-translation-unit^='f405-']
+    [data-translation-unit^='f405-'],
+    [data-translation-unit^='ld_b20_drone_soccer-'],
+    [data-translation-unit^='cool9030-'],
+    [data-translation-unit^='f121-']
   )
   table
   :is(th, td):first-child {
@@ -104,7 +107,10 @@
     [data-translation-unit^='elrs915receiver-'],
     [data-translation-unit^='am32_70a_4in1_esc-'],
     [data-translation-unit^='bds200-'],
-    [data-translation-unit^='f405-']
+    [data-translation-unit^='f405-'],
+    [data-translation-unit^='ld_b20_drone_soccer-'],
+    [data-translation-unit^='cool9030-'],
+    [data-translation-unit^='f121-']
   )
   [data-manual-figure]
   img {

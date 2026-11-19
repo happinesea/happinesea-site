@@ -828,7 +828,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/ld_b20_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/ld-b20/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/ld-b20.webp",
@@ -1017,7 +1017,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f121",
-    "detailPath": null,
+    "detailPath": "/radiolink/f121/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f121.webp",
@@ -1248,7 +1248,7 @@
     "subcategoryLabel": "車・ボート用ESC",
     "description": "RadiolinkのRCカー・ボート向けESCです。",
     "officialUrl": "https://www.radiolink.com/cool9030",
-    "detailPath": null,
+    "detailPath": "/radiolink/cl9030/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cl9030.webp",

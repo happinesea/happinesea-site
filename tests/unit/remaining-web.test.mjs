@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 8);
+  assert.equal(remaining.manuals.length, 11);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    8,
+    11,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -28,13 +28,22 @@ test('Remaining manual candidates isolate held units and images and preserve sou
       );
       assert.match(mdx.toString(), /^title: F405 V1\.1 日本語クイックガイド$/m);
     }
+    if (manual.product_id === 'f121') {
+      assert(manual.withheld_notice_count > 0);
+      assert(manual.withheld_notice_count < manual.withheld_unit_ids.length);
+    }
+    const shown = manual.figures.flatMap(
+      (figure) => figure.source_figure_ids ?? [figure.figure_id],
+    );
+    assert.equal(new Set(shown).size, shown.length);
+    assert(!shown.some((id) => manual.withheld_figure_ids.includes(id)));
     assert.equal(
-      manual.figures.length + manual.withheld_figure_ids.length,
+      shown.length + manual.withheld_figure_ids.length,
       manual.source_figures_total,
     );
     assert.equal(
       (mdx.toString().match(/:::caution\[原典確認待ち\]/g) ?? []).length,
-      manual.withheld_unit_ids.length,
+      manual.withheld_notice_count ?? manual.withheld_unit_ids.length,
     );
     for (const figure of manual.figures) {
       assert.equal(

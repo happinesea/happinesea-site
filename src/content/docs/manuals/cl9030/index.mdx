@@ -1,0 +1,679 @@
+---
+title: CL9030 日本語取扱説明書
+description: Radiolink CL9030 の公式英語取扱説明書に対応する日本語版です。
+product: cl9030
+slug: manuals/cl9030
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/5d868387d368fcc8b8d9fbd96eb05024.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/cl9030/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink CL9030 公式英語取扱説明書（文書版・発行日不明、18頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="cool9030-p1-f1-unit" data-translation-unit="cool9030-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cover-logo.png" width={595} height={132} figureId="cool9030-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="cool9030-p1-title" data-translation-unit="cool9030-p1-title"></span>
+
+## CL9030 取扱説明書
+
+<span id="cool9030-p1-f2-unit" data-translation-unit="cool9030-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cover-product.png" width={1033} height={707} figureId="cool9030-p1-f2" alt={"CL9030ブラシ付きモーター用ESCの外観。"} caption={"CL9030ブラシ付きモーター用ESCの外観。"} />
+
+<span id="cool9030-p1-f3-unit" data-translation-unit="cool9030-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cover-marks.png" width={518} height={83} figureId="cool9030-p1-f3" alt={"14歳以上の表示。"} caption={"原典1頁の図"} />
+
+14歳以上の表示。
+CE表示。
+RoHS表示。
+FCC表示。
+
+<span id="cool9030-p1-f4-unit" data-translation-unit="cool9030-p1-f4-unit"></span>
+
+<span id="cool9030-p1-f5-unit" data-translation-unit="cool9030-p1-f5-unit"></span>
+
+<span id="cool9030-p1-f6-unit" data-translation-unit="cool9030-p1-f6-unit"></span>
+
+<span id="cool9030-p2-folio" data-translation-unit="cool9030-p2-folio"></span>
+
+原典印刷ページ: 1
+
+<span id="cool9030-p2-heading" data-translation-unit="cool9030-p2-heading"></span>
+
+## 目次
+
+<span id="cool9030-p2-toc" data-translation-unit="cool9030-p2-toc"></span>
+
+安全上の注意 …… 2\
+第1部 CL9030の概要 …… 2\
+1.1 CL9030の各部 …… 2\
+1.2 仕様 …… 4\
+第2部 CL9030の接続 …… 5\
+2.1 電源入力 …… 6\
+2.2 モーター出力 …… 8\
+2.3 信号入力 …… 9\
+第3部 スロットルのキャリブレーション …… 10\
+第4部 ジャンパーキャップの使用方法 …… 11\
+第5部 ESCの状態 …… 14\
+5.1 モーター音 …… 15\
+5.2 インジケーター …… 15\
+5.3 モーター音とインジケーターを組み合わせた通知 …… 16
+
+<span id="cool9030-p3-folio" data-translation-unit="cool9030-p3-folio"></span>
+
+原典印刷ページ: 2
+
+<span id="cool9030-p3-safety" data-translation-unit="cool9030-p3-safety"></span>
+
+## 安全上の注意
+
+<span id="cool9030-p3-insulation" data-translation-unit="cool9030-p3-insulation"></span>
+
+:::caution[注意]
+1. ESCを各機器に接続する前に、配線と接続部分がすべて十分に絶縁されていることを確認してください。短絡するとESCが損傷します。
+:::
+
+<span id="cool9030-p3-matching" data-translation-unit="cool9030-p3-matching"></span>
+
+:::caution[注意]
+2. ESCを使用する前に、電源機器と車体の説明書をよく読み、機器の組み合わせが適切であることを確認してください。不適切な組み合わせはモーターの過負荷を招き、ESCの損傷につながります。
+:::
+
+<span id="cool9030-p3-suspended-car" data-translation-unit="cool9030-p3-suspended-car"></span>
+
+:::caution[注意]
+3. ご自身や周囲の方の安全のため、車体を浮かせた状態で配線と動作調整を行ってください。
+:::
+
+<span id="cool9030-p3-disconnect" data-translation-unit="cool9030-p3-disconnect"></span>
+
+:::caution[注意]
+4. 使用後はバッテリーとESCの接続を外してください。バッテリーを接続したままでは、ESCのスイッチを切っても電力を消費し続けます。使用せずに長時間接続したままにすると、バッテリーが完全に放電し、バッテリーやESCの故障につながります。
+:::
+
+<span id="cool9030-p3-liability" data-translation-unit="cool9030-p3-liability"></span>
+
+:::caution[注意]
+誤った操作によって生じた損害について、RadioLinkは責任を負いません。
+:::
+
+<span id="cool9030-p3-part1" data-translation-unit="cool9030-p3-part1"></span>
+
+## 第1部 CL9030の概要
+
+<span id="cool9030-p3-overview" data-translation-unit="cool9030-p3-overview"></span>
+
+### 1.1 CL9030の各部
+
+<span id="cool9030-p3-f1-unit" data-translation-unit="cool9030-p3-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/p3-overview.png" width={970} height={389} figureId="cool9030-p3-f1" alt={"CL9030の配線概観。①電源入力、②モーター出力、③PWM信号入力。"} caption={"原典3頁の図"} />
+
+CL9030の配線概観。①電源入力、②モーター出力、③PWM信号入力。
+概観図の参照番号3。
+概観図の参照番号2。
+概観図の参照番号1。
+
+<span id="cool9030-p3-f2-unit" data-translation-unit="cool9030-p3-f2-unit"></span>
+
+<span id="cool9030-p3-f3-unit" data-translation-unit="cool9030-p3-f3-unit"></span>
+
+<span id="cool9030-p3-f4-unit" data-translation-unit="cool9030-p3-f4-unit"></span>
+
+<span id="cool9030-p4-folio" data-translation-unit="cool9030-p4-folio"></span>
+
+原典印刷ページ: 3
+
+<span id="cool9030-p4-f1-unit" data-translation-unit="cool9030-p4-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p4-f1.png" width={67} height={81} figureId="cool9030-p4-f1" alt={"本文項目の参照番号1。"} caption={"本文項目の参照番号1。"} />
+
+<span id="cool9030-p4-input" data-translation-unit="cool9030-p4-input"></span>
+
+① 電源入力：ESCの電源入力を電源に接続します。接続する電源の電圧は、非リチウム系バッテリー（Ni-MH、ニッケルカドミウム、鉛蓄電池など）では6～16.8 V、リチウム系バッテリーでは6～18 Vの範囲内とします。この範囲外の電圧では、システムの安定動作を保証できません。
+
+<span id="cool9030-p4-jumper-battery-warning" data-translation-unit="cool9030-p4-jumper-battery-warning"></span>
+
+:::caution[注意]
+注意：リチウム系と非リチウム系のバッテリーでは、電圧範囲に加えて使用方法も異なります。
+:::
+
+<span id="cool9030-p4-cap3-setting" data-translation-unit="cool9030-p4-cap3-setting"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p4-overdischarge-warning" data-translation-unit="cool9030-p4-overdischarge-warning"></span>
+
+:::caution[注意]
+ジャンパーキャップ3の状態が実際のバッテリーの種類と一致しない場合、バッテリーが深刻な過放電を起こして損傷するおそれがあります。使用前に、ESCのバッテリー種別とジャンパーキャップの状態を確認してください。詳しくは第4部「ジャンパーキャップの使用方法」を参照してください。
+:::
+
+<span id="cool9030-p4-f2-unit" data-translation-unit="cool9030-p4-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p4-f2.png" width={67} height={82} figureId="cool9030-p4-f2" alt={"本文項目の参照番号2。"} caption={"本文項目の参照番号2。"} />
+
+<span id="cool9030-p4-motor" data-translation-unit="cool9030-p4-motor"></span>
+
+② モーター出力：モーターコネクターはブラシ付きDCモーターとの接続に使用します。接続するブラシ付きDCモーターの定格動作電圧は、ESCの電源電圧範囲に適合する必要があります。適合しない場合、ESCと接続したモーターの安定動作を保証できません。
+
+<span id="cool9030-p4-f3-unit" data-translation-unit="cool9030-p4-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p4-f3.png" width={67} height={81} figureId="cool9030-p4-f3" alt={"本文項目の参照番号3。"} caption={"本文項目の参照番号3。"} />
+
+<span id="cool9030-p4-signal" data-translation-unit="cool9030-p4-signal"></span>
+
+③ 信号入力：受信機の単一チャンネルのPWM信号をESCへ入力します。このコネクターはBEC出力機能も備え、受信機またはサーボに給電できます。最大電流は5 Aです。
+
+<span id="cool9030-p4-f4-unit" data-translation-unit="cool9030-p4-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/p4-switch-overview.png" width={928} height={396} figureId="cool9030-p4-f4" alt={"CL9030の各部図。④制御スイッチ、⑤ジャンパーキャップ、⑥電源灯、⑦状態灯を表示。"} caption={"原典4頁の図"} />
+
+CL9030の各部図。④制御スイッチ、⑤ジャンパーキャップ、⑥電源灯、⑦状態灯を表示。
+各部図の参照番号4。
+各部図の参照番号7。
+各部図の参照番号5。
+各部図の参照番号6。
+
+<span id="cool9030-p4-f5-unit" data-translation-unit="cool9030-p4-f5-unit"></span>
+
+<span id="cool9030-p4-f6-unit" data-translation-unit="cool9030-p4-f6-unit"></span>
+
+<span id="cool9030-p4-f7-unit" data-translation-unit="cool9030-p4-f7-unit"></span>
+
+<span id="cool9030-p4-f8-unit" data-translation-unit="cool9030-p4-f8-unit"></span>
+
+<span id="cool9030-p5-folio" data-translation-unit="cool9030-p5-folio"></span>
+
+原典印刷ページ: 4
+
+<span id="cool9030-p5-switch-heading" data-translation-unit="cool9030-p5-switch-heading"></span>
+
+## スイッチの説明
+
+<span id="cool9030-p5-f1-unit" data-translation-unit="cool9030-p5-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p5-f1.png" width={49} height={49} figureId="cool9030-p5-f1" alt={"スイッチ・LED説明の参照番号4。"} caption={"スイッチ・LED説明の参照番号4。"} />
+
+<span id="cool9030-p5-switch" data-translation-unit="cool9030-p5-switch"></span>
+
+④ コントロールスイッチ：ESCの動作状態を切り替えます。スイッチをオンにするとESCが動作を開始し、5.5 Vまたは7.5 Vを出力します。オフにするとESCの動作が停止し、出力電圧はなくなります。
+
+<span id="cool9030-p5-f2-unit" data-translation-unit="cool9030-p5-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p5-f2.png" width={49} height={48} figureId="cool9030-p5-f2" alt={"スイッチ・LED説明の参照番号5。"} caption={"スイッチ・LED説明の参照番号5。"} />
+
+<span id="cool9030-p5-jumper" data-translation-unit="cool9030-p5-jumper"></span>
+
+⑤ ジャンパーキャップ：ESCの動作モード、入力電源の種類、BECの出力電圧を選択します。詳しくは後述します。
+
+<span id="cool9030-p5-led-heading" data-translation-unit="cool9030-p5-led-heading"></span>
+
+## LEDインジケーターの説明
+
+<span id="cool9030-p5-f3-unit" data-translation-unit="cool9030-p5-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p5-f3.png" width={48} height={49} figureId="cool9030-p5-f3" alt={"スイッチ・LED説明の参照番号6。"} caption={"スイッチ・LED説明の参照番号6。"} />
+
+<span id="cool9030-p5-power-led" data-translation-unit="cool9030-p5-power-led"></span>
+
+⑥ 電源インジケーター：ESCシステムの自己チェックと電源の状態を示します。色は緑です。詳しくは後述します。
+
+<span id="cool9030-p5-f4-unit" data-translation-unit="cool9030-p5-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p5-f4.png" width={49} height={48} figureId="cool9030-p5-f4" alt={"スイッチ・LED説明の参照番号7。"} caption={"スイッチ・LED説明の参照番号7。"} />
+
+<span id="cool9030-p5-status-led" data-translation-unit="cool9030-p5-status-led"></span>
+
+⑦ 状態インジケーター：ESCシステムの自己チェックと動作状態を示します。色は赤です。詳しくは後述します。
+
+<span id="cool9030-p5-spec-heading" data-translation-unit="cool9030-p5-spec-heading"></span>
+
+## 1.2 仕様
+
+<span id="cool9030-p5-spec-table" data-translation-unit="cool9030-p5-spec-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p6-folio" data-translation-unit="cool9030-p6-folio"></span>
+
+原典印刷ページ: 5
+
+<span id="cool9030-p6-spec-table-cont" data-translation-unit="cool9030-p6-spec-table-cont"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p6-connection-heading" data-translation-unit="cool9030-p6-connection-heading"></span>
+
+## 第2部 CL9030の接続
+
+<span id="cool9030-p6-connection" data-translation-unit="cool9030-p6-connection"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p6-polarity-warning" data-translation-unit="cool9030-p6-polarity-warning"></span>
+
+:::caution[注意]
+電源入力ケーブルのプラス極とマイナス極を逆にしないでください。
+:::
+
+<span id="cool9030-p6-receiver-connection" data-translation-unit="cool9030-p6-receiver-connection"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p6-f1-unit" data-translation-unit="cool9030-p6-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p7-folio" data-translation-unit="cool9030-p7-folio"></span>
+
+原典印刷ページ: 6
+
+<span id="cool9030-p7-motor-connection" data-translation-unit="cool9030-p7-motor-connection"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p7-battery-connection" data-translation-unit="cool9030-p7-battery-connection"></span>
+
+:::caution[注意]
+バッテリーへの接続：ESCのバッテリー接続ケーブルにはプラス極とマイナス極があります。ケーブルの（＋）をバッテリーの（＋）へ、（−）を（−）へ接続してください。逆に接続するとESCが損傷します。電源の逆接続により損傷したESCは保証対象外です。
+:::
+
+<span id="cool9030-p7-input-heading" data-translation-unit="cool9030-p7-input-heading"></span>
+
+### 2.1 電源入力
+
+<span id="cool9030-p7-input-requirements" data-translation-unit="cool9030-p7-input-requirements"></span>
+
+このブラシ付きDCモーター用ESCは、非リチウム系バッテリー（Ni-MH、ニッケルカドミウム、鉛蓄電池など）とリチウム系バッテリー（リチウムポリマーバッテリー）に対応します。システムを安定して動作させるには、電源電圧を6.0～16.8 V（リチウム系バッテリーモードでは6～18 V）の範囲内にしてください。バッテリーの種類によって電圧保護の方式が異なります。詳しくは以下の表を参照してください。
+
+<span id="cool9030-p7-protection-table" data-translation-unit="cool9030-p7-protection-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p8-folio" data-translation-unit="cool9030-p8-folio"></span>
+
+原典印刷ページ: 7
+
+<span id="cool9030-p8-protection-table-cont" data-translation-unit="cool9030-p8-protection-table-cont"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p8-table-warning" data-translation-unit="cool9030-p8-table-warning"></span>
+
+:::caution[注意]
+注意：表のリチウム系バッテリーの低電圧保護値と半出力保護値は標準リチウム系バッテリー（1セル当たりの最大電圧4.2 V）に基づきます。過電圧保護値は標準高電圧リチウム系バッテリー（1セル当たりの最大電圧4.35 V）に基づきます。
+:::
+
+<span id="cool9030-p8-protection-intro" data-translation-unit="cool9030-p8-protection-intro"></span>
+
+以下に、低電圧保護、半出力保護、過電圧保護の3つの状態を説明します。
+
+<span id="cool9030-p8-undervoltage" data-translation-unit="cool9030-p8-undervoltage"></span>
+
+1. 低電圧保護：入力電源の電圧がこの値を下回ると、ESCはモーターの出力制御を停止し、入力信号に応答しなくなります。電源インジケーターが点滅して知らせます。低電圧保護状態でバッテリー電圧が半出力保護値まで戻ると、低電圧保護を解除し、通常動作とモーターの通常出力制御が復帰します。
+
+<span id="cool9030-p8-half-power" data-translation-unit="cool9030-p8-half-power"></span>
+
+2. 半出力保護：入力電源の電圧がこの値を下回ると、ESCはモーターの出力を元の半分にします。この状態でも入力信号には応答します。電圧が過電圧保護値付近まで上がっても、半出力保護は解除されません。バッテリー電圧が低電圧保護値まで低下すると、半出力保護を終了します（続きは原典物理9頁）。
+
+<span id="cool9030-p9-folio" data-translation-unit="cool9030-p9-folio"></span>
+
+原典印刷ページ: 8
+
+<span id="cool9030-p9-half-power-cont" data-translation-unit="cool9030-p9-half-power-cont"></span>
+
+低電圧保護状態へ移行し、モーターの出力制御を行いません。
+
+<span id="cool9030-p9-overvoltage" data-translation-unit="cool9030-p9-overvoltage"></span>
+
+3. 過電圧保護：入力電源の電圧がこの値を上回ると、ESCはモーターの出力制御を停止し、入力信号に応答しなくなります。電源インジケーターが点滅して知らせます。過電圧保護状態でバッテリー電圧が過電圧保護値を下回ると、システムは通常動作を再開し、モーターの通常出力制御が復帰します。原典は通常動作と出力制御の復帰を重ねて記載しています。
+
+<span id="cool9030-p9-motor-heading" data-translation-unit="cool9030-p9-motor-heading"></span>
+
+### 2.2 モーター出力
+
+<span id="cool9030-p9-motor-output" data-translation-unit="cool9030-p9-motor-output"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p9-motor-table-intro" data-translation-unit="cool9030-p9-motor-table-intro"></span>
+
+一般的なブラシ付きDCモーターの回転数と、一般的なリチウム系バッテリーおよびNi-MHバッテリーの組み合わせについては、以下の表を参照してください。
+
+<span id="cool9030-p9-motor-table" data-translation-unit="cool9030-p9-motor-table"></span>
+
+| リチウム系バッテリー | Ni-MHバッテリー | モーター回転数 |
+| --- | --- | --- |
+| 2S | 5～6S | 30,000 rpm未満、7.2 V |
+| 3S | 7～9S | 20,000 rpm未満、7.2 V |
+| 4S | 10～12S | 15,000 rpm未満、7.2 V |
+
+<span id="cool9030-p10-folio" data-translation-unit="cool9030-p10-folio"></span>
+
+原典印刷ページ: 9
+
+<span id="cool9030-p10-motor-warning" data-translation-unit="cool9030-p10-motor-warning"></span>
+
+:::caution[注意]
+注意：表は参考情報です。ESCやモーターの損傷、バッテリーの損傷事故を防ぐため、実際の使用条件ごとに適合性を確認してください。
+:::
+
+<span id="cool9030-p10-signal-heading" data-translation-unit="cool9030-p10-signal-heading"></span>
+
+### 2.3 信号入力
+
+<span id="cool9030-p10-signal-format" data-translation-unit="cool9030-p10-signal-format"></span>
+
+このブラシ付きDCモーター用ESCの信号入力（スロットル信号入力）が認識できるのは、受信機の単一チャンネルが出力するPWM信号のみです。PPM信号やS.BUS信号など、複数チャンネルを符号化した信号は認識できません。また、制御信号によってシステムを安定して制御するには、PWM信号が以下の表の仕様を満たす必要があります。
+
+<span id="cool9030-p10-signal-table" data-translation-unit="cool9030-p10-signal-table"></span>
+
+| パラメーター | 最小 | 最大 |
+| --- | --- | --- |
+| PWM信号周波数 | 7.15 Hz（140 ms） | 400 Hz（2.5 ms） |
+| PWM信号振幅 | 2.8 V | 5.4 V |
+| PWM信号遅延 | 0 ms | 150 ms |
+| PWM信号パルス幅 | 0.8 ms（800 μs） | 2.2 ms（2200 μs） |
+
+<span id="cool9030-p10-signal-warning" data-translation-unit="cool9030-p10-signal-warning"></span>
+
+:::caution[注意]
+注意：表のPWM信号遅延は、突然の信号中断（信号喪失）に対するESCの耐性の範囲を示すもので、PWM信号の中断（喪失）から回復までの時間を表します。
+:::
+
+<span id="cool9030-p10-abnormal-intro" data-translation-unit="cool9030-p10-abnormal-intro"></span>
+
+このESCシステムには、基本的な制御機能に加えて、制御入力信号の異常に対応する機能があります。制御入力信号の異常には以下の2つの場合があります。
+
+<span id="cool9030-p10-loss" data-translation-unit="cool9030-p10-loss"></span>
+
+1. 入力信号なし：ESCが電源に接続されているとき、スロットル入力信号を検出できない場合、またはスロットル信号の遅延時間がPWM信号遅延のパラメーターを超えた場合、ESCは入力信号がない状態と判定します。異常状態の通知方法は原典物理11頁に続きます。
+
+<span id="cool9030-p11-loss-cont" data-translation-unit="cool9030-p11-loss-cont"></span>
+
+（物理10頁「入力信号なし」の続き）状態表示灯の点滅とモーターのブザー音を同時に用いて、現在の異常状態を知らせます。
+
+<span id="cool9030-p11-abnormal-signal" data-translation-unit="cool9030-p11-abnormal-signal"></span>
+
+2. 入力信号異常：ESCへ電源が接続され、スロットル入力が中立範囲にない場合、入力信号異常と判定し、状態表示灯の点滅とモーター音で知らせます。標準中立は1500µs、その±50µs（1450～1550µs）が中立範囲です。校正後はその校正結果を優先します。
+
+<span id="cool9030-p11-signal-note" data-translation-unit="cool9030-p11-signal-note"></span>
+
+注意：信号異常時は、スロットル入力を中立範囲へ戻すと異常通知を解除できます。
+
+<span id="cool9030-p11-calibration-intro" data-translation-unit="cool9030-p11-calibration-intro"></span>
+
+## 第3部 スロットル校正
+
+標準では一般的な受信機チャンネル信号を基準としますが、送受信機ごとのサーボ出力比率や中立値などの設定差で、予期しない結果になる場合があります。この場合はスロットル校正を行い、受信機の出力信号へESCを合わせます。CL9030は双方向ESCで、一般的な双方向ESCと同じ方法で校正します。
+
+<span id="cool9030-p11-calibration-table" data-translation-unit="cool9030-p11-calibration-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p11-folio" data-translation-unit="cool9030-p11-folio"></span>
+
+原典印刷ページ：10
+
+<span id="cool9030-p12-calibration-table" data-translation-unit="cool9030-p12-calibration-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p12-calibration-notes" data-translation-unit="cool9030-p12-calibration-notes"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p12-jumper-heading" data-translation-unit="cool9030-p12-jumper-heading"></span>
+
+## 第4部 ジャンパーキャップの使い方
+
+<span id="cool9030-p12-f2-unit" data-translation-unit="cool9030-p12-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/cool9030-p12-f2.jpeg" width={1000} height={676} figureId="cool9030-p12-f2" alt={"左図：キャップを取り外した状態。番号1～4。"} caption={"左図：キャップを取り外した状態。番号1～4。"} />
+
+<span id="cool9030-p12-f1-unit" data-translation-unit="cool9030-p12-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p12-jumper-captions" data-translation-unit="cool9030-p12-jumper-captions"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p12-jumper-intro" data-translation-unit="cool9030-p12-jumper-intro"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p12-folio" data-translation-unit="cool9030-p12-folio"></span>
+
+原典印刷ページ：11
+
+<span id="cool9030-p13-jumper-intro" data-translation-unit="cool9030-p13-jumper-intro"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p13-restart-warning" data-translation-unit="cool9030-p13-restart-warning"></span>
+
+:::caution[注意]
+注意：キャップの状態を変更した後はESCを再起動してください。再起動しないと、設定したモードと出力が反映されません。
+:::
+
+<span id="cool9030-p13-f1-unit" data-translation-unit="cool9030-p13-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p13-mode-intro" data-translation-unit="cool9030-p13-mode-intro"></span>
+
+## 動作モード切替
+
+1と2の状態で4モードを切り替えます。スロットル位置によるモーターの応答は次表のとおりです。
+
+<span id="cool9030-p13-folio" data-translation-unit="cool9030-p13-folio"></span>
+
+原典印刷ページ：12
+
+<span id="cool9030-p14-mode-table" data-translation-unit="cool9030-p14-mode-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p14-modes" data-translation-unit="cool9030-p14-modes"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p14-battery" data-translation-unit="cool9030-p14-battery"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p14-folio" data-translation-unit="cool9030-p14-folio"></span>
+
+原典印刷ページ：13
+
+<span id="cool9030-p15-battery-warning" data-translation-unit="cool9030-p15-battery-warning"></span>
+
+:::caution[注意]
+（前頁の続き）バッテリーの深刻な過放電と損傷を防ぐため、使用前に必ずキャップ3を確認し、ESCのバッテリー種別が正しいことを確認してください。
+:::
+
+<span id="cool9030-p15-bec" data-translation-unit="cool9030-p15-bec"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p15-bec-warning" data-translation-unit="cool9030-p15-bec-warning"></span>
+
+:::caution[注意]
+使用前はキャップ4を必ず確認し、BEC電圧が適切であることを確認してください。誤った選択はサーボを損傷するおそれがあります。
+:::
+
+<span id="cool9030-p15-status" data-translation-unit="cool9030-p15-status"></span>
+
+## 第5部 ESCの状態表示
+
+赤・緑の2灯で状態を表示します。緑の電源灯は自己診断と給電状態、赤の状態灯は自己診断と動作状態を示します。点灯・消灯・点滅の3状態があり、点滅間隔は通知により異なります。
+
+モーターの振動と発音も利用し、光と音で通知します。短い音、長い音、メロディー音の3種類があり、回数と間隔が通知により変わります。
+
+<span id="cool9030-p15-folio" data-translation-unit="cool9030-p15-folio"></span>
+
+原典印刷ページ：14
+
+<span id="cool9030-p16-coordination" data-translation-unit="cool9030-p16-coordination"></span>
+
+モーター音と表示灯は、状態に応じて単独または同時に動作します。音のみ、表示灯のみの場合と、両方で通知する場合があります。
+
+<span id="cool9030-p16-startup" data-translation-unit="cool9030-p16-startup"></span>
+
+## 5.1 モーター音
+
+正常起動時は赤・緑灯が点灯し、自己診断、バッテリー種別、操作許可の順に音で知らせます。起動音が最後まで鳴らない場合は、ESCと接続機器を点検してください。
+
+<span id="cool9030-p16-sound-table" data-translation-unit="cool9030-p16-sound-table"></span>
+
+| 音 | ESCの状態 |
+| --- | --- |
+| メロディー（ド・レ・ミ） | 自己診断完了 |
+| 短い音 | バッテリー種別通知 |
+| 長い音 | 操作許可 |
+
+<span id="cool9030-p16-sound-note" data-translation-unit="cool9030-p16-sound-note"></span>
+
+注意：メロディーはド・レ・ミの3音です。短い音の数は電池種別で変わります。
+
+<span id="cool9030-p16-cap3-setting" data-translation-unit="cool9030-p16-cap3-setting"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p16-battery-beep-count" data-translation-unit="cool9030-p16-battery-beep-count"></span>
+
+非リチウム系は1回、リチウム系はセル数と同じ回数です（4Sなら4回）。
+
+<span id="cool9030-p16-light-intro" data-translation-unit="cool9030-p16-light-intro"></span>
+
+## 5.2 表示灯
+
+電源灯と状態灯が両方点灯し続ける場合は正常動作です。どちらかが点滅し、モーター音がない場合は次表で状態を確認してください。
+
+<span id="cool9030-p16-folio" data-translation-unit="cool9030-p16-folio"></span>
+
+原典印刷ページ：15
+
+<span id="cool9030-p17-light-table" data-translation-unit="cool9030-p17-light-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cool9030-p17-light-note" data-translation-unit="cool9030-p17-light-note"></span>
+
+注意：表の電源灯と状態灯の複合表示は、両方の状態通知が同時に実行されることを意味します。それぞれの通知は独立しているため、別々に実行することもできます。
+
+<span id="cool9030-p17-mixed" data-translation-unit="cool9030-p17-mixed"></span>
+
+## 5.3 モーター音と表示灯の複合通知
+
+複合通知では赤灯が動作し、緑灯は動作しません。ただしバッテリー過電圧／低電圧警告があるときは、モーター音を停止し、表示灯のみを残します。高温／低温警告の連続するモーター音の間隔は1.5秒、スロットル信号喪失／信号異常では2.5秒です。対応する状態は次表のとおりです。
+
+<span id="cool9030-p17-folio" data-translation-unit="cool9030-p17-folio"></span>
+
+原典印刷ページ：16
+
+<span id="cool9030-p18-mixed-table" data-translation-unit="cool9030-p18-mixed-table"></span>
+
+| モーター音 | 赤灯 | 状態 |
+| --- | --- | --- |
+| 短い音が4回連続 | 0.2秒ごとに1回点滅 | システム高温警告（85℃超） |
+| 短い音が3回連続 | 0.4秒ごとに1回点滅 | システム低温警告（-40℃未満） |
+| 短い音が1回 | 0.6秒ごとに1回点滅 | スロットル信号喪失 |
+| 短い音が2回連続 | 0.8秒ごとに1回点滅 | スロットル信号異常 |
+
+<span id="cool9030-p18-motor-state" data-translation-unit="cool9030-p18-motor-state"></span>
+
+前述の正常動作状態では、モーターは信号へ応答します。それ以外の異常状態ではESCがモーター動作を停止し、入力信号へ応答しません。該当する異常を解消した後でなければ正常動作へ戻りません。
+
+<span id="cool9030-p18-support" data-translation-unit="cool9030-p18-support"></span>
+
+## テクニカルサポート
+
+Facebook MessengerからRadioLink RLへ連絡できます。CL9030マニュアル、チュートリアルのQRを掲載しています。上記方法で問題を解決できない場合は、after_service@radiolink.com.cnへメールでお問い合わせください。
+
+本書は変更される場合があります。最新版：https://www.radiolink.com/cool9030_manual
+
+RadioLink製品をお選びいただき、重ねてお礼申し上げます。
+
+<span id="cool9030-p18-f1-unit" data-translation-unit="cool9030-p18-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cl9030/web-ja-v1/p18-support.png" width={931} height={210} figureId="cool9030-p18-f1" alt={"Facebook Messengerのアイコン。"} caption={"原典18頁の図"} />
+
+Facebook Messengerのアイコン。
+CL9030マニュアルのQR（リンク先未検証）。
+CL9030チュートリアルのQR（リンク先未検証）。
+
+<span id="cool9030-p18-f2-unit" data-translation-unit="cool9030-p18-f2-unit"></span>
+
+<span id="cool9030-p18-f3-unit" data-translation-unit="cool9030-p18-f3-unit"></span>
+
+<span id="cool9030-p18-folio" data-translation-unit="cool9030-p18-folio"></span>
+
+原典印刷ページ：17
