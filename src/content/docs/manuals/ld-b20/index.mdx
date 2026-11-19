@@ -1,0 +1,700 @@
+---
+title: LD-B20 日本語取扱説明書
+description: Radiolink LD-B20 の公式英語取扱説明書に対応する日本語版です。
+product: ld-b20
+slug: manuals/ld-b20
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/75ea9bf3051a243f84ae968280c60867.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/ld-b20/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink LD-B20 公式英語取扱説明書（文書版・発行日不明、20頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="ld_b20_drone_soccer-p1-u01" data-translation-unit="ld_b20_drone_soccer-p1-u01"></span>
+
+LD-B20/LD-B22 取扱説明書
+本書はLD-B20とLD-B22の両方に適用されます。説明を分かりやすくするため、両機種の機能と使用方法をLD-B20を例に説明します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p1-f1-unit" data-translation-unit="ld_b20_drone_soccer-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p1-f1.png" width={600} height={180} figureId="ld_b20_drone_soccer-p1-f1" alt={"RadioLinkロゴ"} caption={"RadioLinkロゴ"} />
+
+<span id="ld_b20_drone_soccer-p1-f2-unit" data-translation-unit="ld_b20_drone_soccer-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p1-f2.jpeg" width={2000} height={2000} figureId="ld_b20_drone_soccer-p1-f2" alt={"LD-B20/LD-B22のドローン本体"} caption={"LD-B20/LD-B22のドローン本体"} />
+
+<span id="ld_b20_drone_soccer-p1-f3-unit" data-translation-unit="ld_b20_drone_soccer-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p1-f3.jpeg" width={640} height={380} figureId="ld_b20_drone_soccer-p1-f3" alt={"14歳以上の注意表示"} caption={"14歳以上の注意表示"} />
+
+<span id="ld_b20_drone_soccer-p2-folio" data-translation-unit="ld_b20_drone_soccer-p2-folio"></span>
+
+## 原典印刷頁 1
+
+<span id="ld_b20_drone_soccer-p2-u01" data-translation-unit="ld_b20_drone_soccer-p2-u01"></span>
+
+LD-B20/LD-B22をお買い上げいただきありがとうございます。本製品を安全にご使用いただくため、説明書をよく読み、記載手順に従って設定してください。使用中に問題が発生した場合は、after_service@radiolink.com.cnへメールするか、正規販売店にお問い合わせください。説明書はRadioLink公式サイト www.radiolink.com.cn で入手できます。
+
+<span id="ld_b20_drone_soccer-p2-u02" data-translation-unit="ld_b20_drone_soccer-p2-u02"></span>
+
+:::caution[注意]
+安全上の注意
+1. 雨天では飛行させないでください。雨や湿気で飛行が不安定になり、制御不能になるおそれがあります。雷のあるときは飛行させないでください。雨・霧・雷・風のない天候での飛行を推奨します。2. 現地の法令を守り、安全に飛行してください。空港・軍事施設などの飛行禁止区域では飛行させないでください。3. 人や建物から離れた開けた場所で飛行させてください。4. 飲酒時、疲労時など正常な判断が難しい状態で操作しないでください。製品説明書に従って操作してください。5. 高圧線・変電所・携帯電話基地局・テレビ放送塔など電磁干渉源の付近では注意してください。干渉により送信機の無線性能が影響を受け、送信機と受信機の通信が途絶えて墜落するおそれがあります。6. 逆回転用プロペラを誤って取り付けないよう、説明書に従ってプロペラを取り付けてください。
+:::
+
+<span id="ld_b20_drone_soccer-p2-u03" data-translation-unit="ld_b20_drone_soccer-p2-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p2-u04" data-translation-unit="ld_b20_drone_soccer-p2-u04"></span>
+
+:::caution[注意]
+8. FCをBetaflight Configuratorへ接続するとき、またはESCをキャリブレーションするときは、機体からプロペラを取り外してください。9. 離陸時は送信機を先に電源オンし、その後機体の電源を入れます。飛行後は機体のバッテリーを先に外し、その後送信機の電源を切ります。10. アーム成功後は安全のため機体から距離を取り、離陸時はスロットルをゆっくり上げてください。
+:::
+
+<span id="ld_b20_drone_soccer-p2-u05" data-translation-unit="ld_b20_drone_soccer-p2-u05"></span>
+
+:::caution[注意]
+警告
+本製品は玩具ではなく、14歳未満には適しません。大人は子どもの手の届かない場所に保管し、子どもの近くで操作するときは注意してください。電子機器の隙間から水分が送信機や小型ドローンに入り、機体が不安定または制御不能になることがあります。ゲーム等で湿潤環境での飛行が避けられない場合は、送信機をビニール袋または防水布で覆ってください。
+:::
+
+<span id="ld_b20_drone_soccer-p2-u06" data-translation-unit="ld_b20_drone_soccer-p2-u06"></span>
+
+:::caution[注意]
+本機器はFCC規則Part 15に適合します。動作は次の2条件に従います：(1)有害な干渉を発生させないこと、(2)望ましくない動作を引き起こす干渉を含む外部の無線干渉を「防ぐ」こと（原文は“prevents external wireless interference”と記載。条件としての意味に曖昧さがあります）。
+:::
+
+:::note[原典について]
+FCC条件(2)の原文は“prevents external wireless interference”です。干渉を防ぐという記述がFCCの動作条件として曖昧ですが、原文を受容条件へ書き換えず、原典の語義を維持して注記します。
+:::
+
+<span id="ld_b20_drone_soccer-p2-u07" data-translation-unit="ld_b20_drone_soccer-p2-u07"></span>
+
+:::caution[注意]
+適合責任者が明示的に承認していない変更・改造を行うと、使用者の使用権限が無効になる場合があります。
+:::
+
+<span id="ld_b20_drone_soccer-p3-folio" data-translation-unit="ld_b20_drone_soccer-p3-folio"></span>
+
+## 原典印刷頁 2
+
+<span id="ld_b20_drone_soccer-p3-u01" data-translation-unit="ld_b20_drone_soccer-p3-u01"></span>
+
+目次
+安全上の注意（原典頁1）、警告（1）、同梱品（3）、仕様（3）、1. 飛行の原理（4）、1.1 送信機（4）、1.2 スティックと飛行動作（4）、2. フライトコントローラーのチャンネル（7）、3. 送信機スイッチ（7）、4. LD-B20のアーム／ディスアーム（8）、5. 2つの動作モード（9）、5.1 スタビライズ（9）、5.2 タートル（10）、6. LEDストリップスイッチ（10）、7. 低電圧アラーム（10）、8. モーターとプロペラの取り付け（10）、9. R16SMのバインド（11）、10. 充電器（11）、11. 加速度センサー校正（14）、12. LD-B20 PNP受信機接続（14）、13. モード設定（18）、14. LEDストリップ設定（18）、15. トラブルシューティング（19）。
+
+<span id="ld_b20_drone_soccer-p4-folio" data-translation-unit="ld_b20_drone_soccer-p4-folio"></span>
+
+## 原典印刷頁 3
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p4-u01" data-translation-unit="ld_b20_drone_soccer-p4-u01"></span>
+
+同梱品
+本書ではT12Dを例に説明します。T8FB/T8Sなど他のRadioLink送信機も選択できます。
+仕様：重量 LD-B20 198 g／LD-B22 206 g。直径 LD-B20 195 mm／LD-B22 210 mm。材質：フレームはカーボンファイバー、ボールシェルとバッテリーケースはプラスチック。対応信号入力 CRSF／ELRS／SBUS。動作モード スタビライズ／タートル。飛行時間 5～6分。低電圧アラーム 初期値14.5 V。電圧が14.5 V未満になるとT12Dが「DDD」音を鳴らして警告。尾部LEDストリップは7色対応、消灯可能。
+同梱品（PNP版｜RTF版。原表の空欄は「空欄」と明記）：機体（青／赤）1｜1、送信機 RadioLink T12D 空欄｜1、受信機 RadioLink R16SM 空欄｜1、FC/ESC LD-B20/LD-B22 AIO 40A 3～4S 1｜1、SZ-SPEED 1507-4000KVモーター4｜4、Gemfan 2828プロペラ4｜4、Gensace 4S 850 mAh 40C LiPoバッテリー1｜1、Gensace B6充電器1｜1、Type-Cケーブル1｜1、1.5 mm六角レンチ1｜1、T12Dスロットルリターンアクセサリー 空欄｜1、梱包箱1｜1。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p5-folio" data-translation-unit="ld_b20_drone_soccer-p5-folio"></span>
+
+## 原典印刷頁 4
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p5-u01" data-translation-unit="ld_b20_drone_soccer-p5-u01"></span>
+
+1. 飛行の原理
+1.1 送信機
+T12Dの2本のスティックは4つの基本チャンネルに対応します。以下はすべてT12D Mode 2（左スティックがスロットル）の例です。左スティック：上下（THROTTLE）でLD-B20を上昇／下降させ、左右（YAW）で時計回り／反時計回りに旋回させます。右スティック：上下（PITCH）で前進／後退、左右（ROLL）で左右へ移動させます。
+1.2 スティックと飛行動作
+A. スロットル：上昇／下降（T12D Mode 2の例）。左スティックを上へ動かすと上昇し、下へ動かすと下降します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p5-f1-unit" data-translation-unit="ld_b20_drone_soccer-p5-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p5-f1.jpeg" width={4008} height={1886} figureId="ld_b20_drone_soccer-p5-f1" alt={"T12D Mode 2のスティック配置"} caption={"T12D Mode 2のスティック配置"} />
+
+<span id="ld_b20_drone_soccer-p6-folio" data-translation-unit="ld_b20_drone_soccer-p6-folio"></span>
+
+## 原典印刷頁 5
+
+<span id="ld_b20_drone_soccer-p6-u01" data-translation-unit="ld_b20_drone_soccer-p6-u01"></span>
+
+B. Yaw：時計回り／反時計回り。左スティックを左へ動かすと反時計回り、右へ動かすと時計回りに旋回します。
+
+<span id="ld_b20_drone_soccer-p6-f1-unit" data-translation-unit="ld_b20_drone_soccer-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p6-f1.jpeg" width={3308} height={2625} figureId="ld_b20_drone_soccer-p6-f1" alt={"T12Dスロットルスティックを上／下へ操作。Rise（上昇）／Descend（下降）、2 m、Ground（地面）の図示。"} caption={"T12Dスロットルスティックを上／下へ操作。Rise（上昇）／Descend（下降）、2 m、Ground（地面）の図示。"} />
+
+<span id="ld_b20_drone_soccer-p6-f2-unit" data-translation-unit="ld_b20_drone_soccer-p6-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p6-f2.jpeg" width={2930} height={980} figureId="ld_b20_drone_soccer-p6-f2" alt={"Yaw左入力：反時計回り"} caption={"Yaw左入力：反時計回り"} />
+
+<span id="ld_b20_drone_soccer-p6-f3-unit" data-translation-unit="ld_b20_drone_soccer-p6-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p6-f3.jpeg" width={2930} height={980} figureId="ld_b20_drone_soccer-p6-f3" alt={"Yaw右入力：時計回り"} caption={"Yaw右入力：時計回り"} />
+
+<span id="ld_b20_drone_soccer-p7-folio" data-translation-unit="ld_b20_drone_soccer-p7-folio"></span>
+
+## 原典印刷頁 6
+
+<span id="ld_b20_drone_soccer-p7-u01" data-translation-unit="ld_b20_drone_soccer-p7-u01"></span>
+
+C. Pitch：前進／後退。右スティックを上へ動かすと前進し、下へ動かすと後退します。D. Roll：左／右。右スティックを左へ動かすと左へ、右へ動かすと右へ移動します。
+
+<span id="ld_b20_drone_soccer-p7-f1-unit" data-translation-unit="ld_b20_drone_soccer-p7-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p7-f1.jpeg" width={2930} height={980} figureId="ld_b20_drone_soccer-p7-f1" alt={"Pitch上入力：前進"} caption={"Pitch上入力：前進"} />
+
+<span id="ld_b20_drone_soccer-p7-f2-unit" data-translation-unit="ld_b20_drone_soccer-p7-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p7-f2.jpeg" width={2930} height={980} figureId="ld_b20_drone_soccer-p7-f2" alt={"Pitch下入力：後退"} caption={"Pitch下入力：後退"} />
+
+<span id="ld_b20_drone_soccer-p7-f3-unit" data-translation-unit="ld_b20_drone_soccer-p7-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p7-f3.jpeg" width={2930} height={980} figureId="ld_b20_drone_soccer-p7-f3" alt={"Roll左入力：左移動"} caption={"Roll左入力：左移動"} />
+
+<span id="ld_b20_drone_soccer-p8-folio" data-translation-unit="ld_b20_drone_soccer-p8-folio"></span>
+
+## 原典印刷頁 7
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p8-u01" data-translation-unit="ld_b20_drone_soccer-p8-u01"></span>
+
+2. フライトコントローラーのチャンネル
+CH1：Roll、CH2：Pitch、CH3：Throttle、CH4：Yaw、AUX1：ディスアーム／アーム、AUX2：スタビライズモード、AUX3：タートルモード、AUX4：LEDストリップスイッチ。
+3. 送信機スイッチ
+LD-B20にはRadioLink T12Dが付属します。SWA：上でディスアーム、下でアーム、中央はNULL（AUX1）。SWB：スタビライズモード（AUX2）。SWD：上でタートルモードOFF、下でON（AUX3）。VRA：反時計回り端まで回すと消灯、時計回りに回すと7色を切り替え（AUX4）。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p8-f1-unit" data-translation-unit="ld_b20_drone_soccer-p8-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p8-f1.jpeg" width={2930} height={980} figureId="ld_b20_drone_soccer-p8-f1" alt={"Roll右入力：右移動"} caption={"Roll右入力：右移動"} />
+
+<span id="ld_b20_drone_soccer-p9-folio" data-translation-unit="ld_b20_drone_soccer-p9-folio"></span>
+
+## 原典印刷頁 8
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p9-u01" data-translation-unit="ld_b20_drone_soccer-p9-u01"></span>
+
+T12D画面のトリム値が0でない場合は、図に示す4つのトリムボタンで0に調整してください。詳細はT12D説明書 https://www.radiolink.com.cn/t12d_manual を参照してください。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p9-u02" data-translation-unit="ld_b20_drone_soccer-p9-u02"></span>
+
+## 4. LD-B20のアーム／ディスアーム
+
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p9-u03" data-translation-unit="ld_b20_drone_soccer-p9-u03"></span>
+
+:::caution[注意]
+アーム（実行保留）
+
+:::
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p9-u04" data-translation-unit="ld_b20_drone_soccer-p9-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p9-f1-unit" data-translation-unit="ld_b20_drone_soccer-p9-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p9-f1.jpeg" width={3991} height={1859} figureId="ld_b20_drone_soccer-p9-f1" alt={"T12Dのスイッチとトリム配置"} caption={"T12Dのスイッチとトリム配置"} />
+
+<span id="ld_b20_drone_soccer-p9-f2-unit" data-translation-unit="ld_b20_drone_soccer-p9-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p9-f2.jpeg" width={391} height={279} figureId="ld_b20_drone_soccer-p9-f2" alt={"T12D画面のトリム値例"} caption={"T12D画面のトリム値例"} />
+
+<span id="ld_b20_drone_soccer-p10-folio" data-translation-unit="ld_b20_drone_soccer-p10-folio"></span>
+
+## 原典印刷頁 9
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p10-u01" data-translation-unit="ld_b20_drone_soccer-p10-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p10-u02" data-translation-unit="ld_b20_drone_soccer-p10-u02"></span>
+
+:::caution[注意]
+ディスアーム
+飛行終了後、SWAを上へ動かしてLD-B20をディスアームします。プロペラの回転停止で成功を確認します。飛行中にSWAを上げるとモーター／プロペラは直ちに停止します。人や貴重品に接触しないよう注意してください。
+:::
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p10-u03" data-translation-unit="ld_b20_drone_soccer-p10-u03"></span>
+
+原典図キャプション：LD-B20のプロペラが停止するとディスアーム成功を示します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p10-u04" data-translation-unit="ld_b20_drone_soccer-p10-u04"></span>
+
+## 5. 2つの動作モード
+
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p10-u05" data-translation-unit="ld_b20_drone_soccer-p10-u05"></span>
+
+5.1 スタビライズモード
+スロットルは機体出力に対応し、スティックを上げるほど上昇力が大きくなります。同じ高度を維持するには飛行操作を練習してください。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p10-f1-unit" data-translation-unit="ld_b20_drone_soccer-p10-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p10-f2-unit" data-translation-unit="ld_b20_drone_soccer-p10-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p10-f2.jpeg" width={1711} height={1711} figureId="ld_b20_drone_soccer-p10-f2" alt={"ディスアーム成功時のプロペラ状態"} caption={"ディスアーム成功時のプロペラ状態"} />
+
+<span id="ld_b20_drone_soccer-p11-folio" data-translation-unit="ld_b20_drone_soccer-p11-folio"></span>
+
+## 原典印刷頁 10
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u02" data-translation-unit="ld_b20_drone_soccer-p11-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u03" data-translation-unit="ld_b20_drone_soccer-p11-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u04" data-translation-unit="ld_b20_drone_soccer-p11-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u05" data-translation-unit="ld_b20_drone_soccer-p11-u05"></span>
+
+## 6. LEDストリップスイッチ
+尾部LEDストリップをVRAで操作します。反時計回り端で消灯、時計回りで紫・オレンジ・赤・黄・緑・シアン・青の7色を切り替えます。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u06" data-translation-unit="ld_b20_drone_soccer-p11-u06"></span>
+
+:::caution[注意]
+7. 低電圧アラーム
+LD-B20 RTF版にはバッテリー電圧テレメトリー対応のR16SM受信機が付属します。飛行中はT12D画面で電圧を確認できます。T12D初期アラーム電圧は14.5 Vです。14.5 V未満で「DDD」音が鳴ります。速やかに着陸してバッテリーを交換してください。飛行継続で出力が大きく低下し飛行不能となり、重度の過放電状態になります。14.5 Vに達したら着陸・交換することを強く推奨します。着陸後は電源を切り、過放電を防ぐため速やかにバッテリーを交換してください。
+:::
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u07" data-translation-unit="ld_b20_drone_soccer-p11-u07"></span>
+
+アラーム電圧を変更する場合はT12D詳細説明書を参照してください。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p11-u08" data-translation-unit="ld_b20_drone_soccer-p11-u08"></span>
+
+## 8. モーターとプロペラの取り付け
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p12-folio" data-translation-unit="ld_b20_drone_soccer-p12-folio"></span>
+
+## 原典印刷頁 11
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p12-u01" data-translation-unit="ld_b20_drone_soccer-p12-u01"></span>
+
+9. バインド（R16SM）
+LD-B20 RTF版にはT12D送信機とR16SM受信機が付属します。RTF版では工場出荷時にバインド済みのため再バインド不要です。R16SMはT12DのほかT16D/T8FB/T8Sにも対応します。送信機を変更する場合は先にバインドしてください。
+RadioLink送受信機の手順：①送信機と機体搭載受信機を50 cm以内に置く。②送信機と受信機の電源を入れる。③受信機側面の黒いバインドボタンを1秒以上押す。LED点滅で開始を示します。同じ場所に同型機が複数ある場合は、他機の電源を切ってからバインドすることを推奨します。④LEDが常時点灯したら完了です。R16SMのLEDはCRSFを示す青色であることを確認します。赤色（SBUSモード）の場合はバインドボタンを1回押して青色に切り替えます。他社製送受信機は各製品の説明書を参照してください。
+10. 充電器
+LD-B20にはバッテリー充電用のGensace B6充電器が同梱されています。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p12-f1-unit" data-translation-unit="ld_b20_drone_soccer-p12-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p12-f2-unit" data-translation-unit="ld_b20_drone_soccer-p12-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p12-f2.jpeg" width={2879} height={748} figureId="ld_b20_drone_soccer-p12-f2" alt={"R16SM受信機の表示・操作部"} caption={"R16SM受信機の表示・操作部"} />
+
+<span id="ld_b20_drone_soccer-p13-folio" data-translation-unit="ld_b20_drone_soccer-p13-folio"></span>
+
+## 原典印刷頁 12
+
+<span id="ld_b20_drone_soccer-p13-u01" data-translation-unit="ld_b20_drone_soccer-p13-u01"></span>
+
+Gensace B6の概要（原典本文見出し）。ただし同頁に掲載された画像は「IMARS mini」と表示された別機種の充電器です。画像がGensace B6を示すとは扱わず、製品同定と使用説明への適合確認まで図版を保留します。
+
+<span id="ld_b20_drone_soccer-p13-f1-unit" data-translation-unit="ld_b20_drone_soccer-p13-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p13-f2-unit" data-translation-unit="ld_b20_drone_soccer-p13-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p14-folio" data-translation-unit="ld_b20_drone_soccer-p14-folio"></span>
+
+## 原典印刷頁 13
+
+<span id="ld_b20_drone_soccer-p14-u01" data-translation-unit="ld_b20_drone_soccer-p14-u01"></span>
+
+B6充電器とバッテリーの接続（原典本文）。図版には「IMARS mini」と表示された充電器が写っており、Gensace B6との対応を確認できません。
+
+<span id="ld_b20_drone_soccer-p14-u02" data-translation-unit="ld_b20_drone_soccer-p14-u02"></span>
+
+仕様：最大充電電力60 W、充電電流1～5 A（最大5 A、自動調整）、最大ストレージ電力 放電3 W／充電60 W、入力電圧5～20 V、出力電圧DC 2.5～18 V、最大入力電流DC 3 A、バランス電流0.4 A/セル×2。入力 QC/PD/BC1.2/Type-C V1.4/SDP/CDP/DCP/Apple 5 V 2.4 A（5 V 1 Aアダプター入力非対応）。異常電圧アラーム、出力逆接続保護・警報、バランスポート逆接続保護・警報あり。対応電池 LiPo/LiHv/LiFe（2～4S）、NiMH（2～12S）。動作温度0～40 ℃、保管温度-20～60 ℃、寸法85×55×21 mm、正味重量約64 g。
+
+<span id="ld_b20_drone_soccer-p14-u03" data-translation-unit="ld_b20_drone_soccer-p14-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p14-f1-unit" data-translation-unit="ld_b20_drone_soccer-p14-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p15-folio" data-translation-unit="ld_b20_drone_soccer-p15-folio"></span>
+
+## 原典印刷頁 14
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p15-u01" data-translation-unit="ld_b20_drone_soccer-p15-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p15-u02" data-translation-unit="ld_b20_drone_soccer-p15-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p15-u03" data-translation-unit="ld_b20_drone_soccer-p15-u03"></span>
+
+充電器の問い合わせ先として原典はGrepow Inc.、電話9253647166、Fax +1-925-364-7177、info@genstattu.comを記載します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p15-u04" data-translation-unit="ld_b20_drone_soccer-p15-u04"></span>
+
+:::caution[注意]
+11. 加速度センサーのキャリブレーション
+工場出荷時に校正済みのため通常は再校正せず飛行できます。フレームまたはFCを分解した場合は校正が必要です。FCは工場出荷時と同じ向きに取り付けてください。異なる向きではアーム後に制御不能になるおそれがあります。校正中は動力バッテリーを切り離してください。これは原典に明記された安全条件です。
+:::
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p15-u05" data-translation-unit="ld_b20_drone_soccer-p15-u05"></span>
+
+FCをType-Cケーブルでコンピューターへ接続し、Betaflight Configuratorを起動します。右上のCONNECTをクリックし、接続後 Setup—Calibrate Accelerometer を選択します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p15-u06" data-translation-unit="ld_b20_drone_soccer-p15-u06"></span>
+
+## 12. LD-B20 PNPの受信機接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p15-f1-unit" data-translation-unit="ld_b20_drone_soccer-p15-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p15-f1.jpeg" width={1271} height={615} figureId="ld_b20_drone_soccer-p15-f1" alt={"Betaflightの加速度センサー校正画面"} caption={"Betaflightの加速度センサー校正画面"} />
+
+<span id="ld_b20_drone_soccer-p16-folio" data-translation-unit="ld_b20_drone_soccer-p16-folio"></span>
+
+## 原典印刷頁 15
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p16-u01" data-translation-unit="ld_b20_drone_soccer-p16-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p16-f1-unit" data-translation-unit="ld_b20_drone_soccer-p16-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p16-f2-unit" data-translation-unit="ld_b20_drone_soccer-p16-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p16-f3-unit" data-translation-unit="ld_b20_drone_soccer-p16-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p17-folio" data-translation-unit="ld_b20_drone_soccer-p17-folio"></span>
+
+## 原典印刷頁 16
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p17-u01" data-translation-unit="ld_b20_drone_soccer-p17-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p17-f1-unit" data-translation-unit="ld_b20_drone_soccer-p17-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p17-f2-unit" data-translation-unit="ld_b20_drone_soccer-p17-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p18-folio" data-translation-unit="ld_b20_drone_soccer-p18-folio"></span>
+
+## 原典印刷頁 17
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p18-f1-unit" data-translation-unit="ld_b20_drone_soccer-p18-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p18-f2-unit" data-translation-unit="ld_b20_drone_soccer-p18-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p19-folio" data-translation-unit="ld_b20_drone_soccer-p19-folio"></span>
+
+## 原典印刷頁 18
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p19-u01" data-translation-unit="ld_b20_drone_soccer-p19-u01"></span>
+
+13. モード設定
+Betaflight ConfiguratorのModeで、チャンネル5～12（またはそれ以上）を使ってFCの一般機能を設定します。送信機スイッチとモード割当ての組合せをrangeおよび／または他モードへのlinkで構成できます。受信機チャンネル値がrangeの最小～最大内にあるとモードが有効になります。別モードが有効なときにモードを有効にするlinkも設定できます。ARMは他モードへlinkできず、他モードからもlinkできません。複数range/linkを設定し、各条件をANDまたはORにできます。すべてのAND条件、または少なくとも1つのOR条件が有効ならモードが有効です。Saveで保存します。例：ノブスイッチをLEDLOW（照明）に割り当てる場合、右側のボックスでAutoを選び、ノブを回して照明スイッチとして自動認識させます。黄色リンクはLED消灯を示します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+:::note[原典について]
+本書はBetaflight Configuratorの画面を掲載しますが、版番号・適用版を特定しません。画面配置・UI名の現行版への適用を保証せず、掲載画面例として扱います。
+:::
+
+<span id="ld_b20_drone_soccer-p19-u02" data-translation-unit="ld_b20_drone_soccer-p19-u02"></span>
+
+14. LEDストリップ設定
+LEDストリップはMotor 1付近の3ピンコネクターに接続されています。LED Strip—Select Wire Ordering Mode—16 LEDsを選択し、Arm State for Functionを設定します。LEDLOW（照明スイッチ）と同じスイッチを選び、DisarmedとArmedの色を青に設定してSaveをクリックします。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+:::note[原典について]
+本書はBetaflight Configuratorの画面を掲載しますが、版番号・適用版を特定しません。画面配置・UI名の現行版への適用を保証せず、掲載画面例として扱います。
+:::
+
+<span id="ld_b20_drone_soccer-p19-f1-unit" data-translation-unit="ld_b20_drone_soccer-p19-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p19-f1.jpeg" width={1597} height={829} figureId="ld_b20_drone_soccer-p19-f1" alt={"Betaflightのモード割当て画面"} caption={"Betaflightのモード割当て画面"} />
+
+<span id="ld_b20_drone_soccer-p20-folio" data-translation-unit="ld_b20_drone_soccer-p20-folio"></span>
+
+## 原典印刷頁 19
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u01" data-translation-unit="ld_b20_drone_soccer-p20-u01"></span>
+
+## 15. トラブルシューティング
+問題｜対処方法
+アームできない：スロットルが最下位置か、タートルモード中でないか確認します。スティックを最下・左端へ動かしたときのサーボ値が最小しきい値を下回るか確認します。T12DのCH2が反転しているか確認し、Basic menu—REVERSEでCH2をREVに設定します。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+:::note[原典について]
+本書はBetaflight Configuratorの画面を掲載しますが、版番号・適用版を特定しません。画面配置・UI名の現行版への適用を保証せず、掲載画面例として扱います。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u02" data-translation-unit="ld_b20_drone_soccer-p20-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u03" data-translation-unit="ld_b20_drone_soccer-p20-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u04" data-translation-unit="ld_b20_drone_soccer-p20-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u05" data-translation-unit="ld_b20_drone_soccer-p20-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u06" data-translation-unit="ld_b20_drone_soccer-p20-u06"></span>
+
+離陸後に一方向へ偏る：トリムボタンでトリムを0にします。詳細は送信機の説明書を参照してください。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p20-u07" data-translation-unit="ld_b20_drone_soccer-p20-u07"></span>
+
+RadioLink製品をお選びいただき、ありがとうございます。
+
+:::note[原典について]
+本書はLD-B20/LD-B22共通でLD-B20を例に説明します。重量・直径、同梱品、PNP受信機接続などモデル固有条件を混同せず、LD-B22値をLD-B20へ、またはLD-B20手順をLD-B22へ推定転用しないでください。T12D Mode 2の例も他送信機へ一般化しません。
+:::
+
+<span id="ld_b20_drone_soccer-p20-f1-unit" data-translation-unit="ld_b20_drone_soccer-p20-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/ld-b20/web-ja-v1/ld_b20_drone_soccer-p20-f1.jpeg" width={1911} height={1012} figureId="ld_b20_drone_soccer-p20-f1" alt={"BetaflightのLEDストリップ設定画面"} caption={"BetaflightのLEDストリップ設定画面"} />

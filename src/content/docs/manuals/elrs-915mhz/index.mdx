@@ -1,0 +1,504 @@
+---
+title: ELRS(915MHz) 日本語取扱説明書
+description: Radiolink ELRS(915MHz) の公式英語取扱説明書に対応する日本語版です。
+product: elrs-915mhz
+slug: manuals/elrs-915mhz
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/b515957e86e68fcbce443a8df444baa7-14908
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/elrs-915mhz/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink ELRS(915MHz) 公式英語取扱説明書（文書版・発行日不明、9頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="elrs915receiver-p1-f1-unit" data-translation-unit="elrs915receiver-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p1-f1.jpeg" width={744} height={372} figureId="elrs915receiver-p1-f1" alt={"ATA HOBBYロゴ"} caption={"ATA HOBBYロゴ"} />
+
+<span id="elrs915receiver-p1-u01" data-translation-unit="elrs915receiver-p1-u01"></span>
+
+## ELRS 915MHz 取扱説明書
+
+<span id="elrs915receiver-p1-f2-unit" data-translation-unit="elrs915receiver-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p1-f2.png" width={696} height={642} figureId="elrs915receiver-p1-f2" alt={"T字型ダイポールアンテナ付きELRS 915MHz受信機の外観"} caption={"T字型ダイポールアンテナ付きELRS 915MHz受信機の外観"} />
+
+<span id="elrs915receiver-p1-u02" data-translation-unit="elrs915receiver-p1-u02"></span>
+
+ELRS 915MHz受信機
+
+<span id="elrs915receiver-p1-f3-unit" data-translation-unit="elrs915receiver-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p1-f3.jpeg" width={640} height={380} figureId="elrs915receiver-p1-f3" alt={"14歳以上を示す表示"} caption={"14歳以上を示す表示"} />
+
+<span id="elrs915receiver-p2-u01" data-translation-unit="elrs915receiver-p2-u01"></span>
+
+## 目次
+
+<span id="elrs915receiver-p2-u02" data-translation-unit="elrs915receiver-p2-u02"></span>
+
+1. はじめに（原典印刷頁2）、2. 仕様（2）、3. LED表示（3）、4. バインド（3）、5. Betaflightフライトコントローラーの設定（3）、6. APMフライトコントローラーの設定（4）、7. Firmware更新（5）。
+
+<span id="elrs915receiver-p2-u03" data-translation-unit="elrs915receiver-p2-u03"></span>
+
+原典印刷ページ：1
+
+<span id="elrs915receiver-p3-u01" data-translation-unit="elrs915receiver-p3-u01"></span>
+
+## 1. はじめに
+
+<span id="elrs915receiver-p3-u02" data-translation-unit="elrs915receiver-p3-u02"></span>
+
+ELRS 915MHzは、オープンソースプロジェクトExpressLRSを基に開発された受信機です。
+
+<span id="elrs915receiver-p3-u03" data-translation-unit="elrs915receiver-p3-u03"></span>
+
+ExpressLRS 915MHzモジュールおよび送信機に対応します。
+
+<span id="elrs915receiver-p3-u04" data-translation-unit="elrs915receiver-p3-u04"></span>
+
+LoRa変調技術を採用し、高い受信感度、強い耐干渉性能、長い制御距離を特徴とします。
+
+<span id="elrs915receiver-p3-u05" data-translation-unit="elrs915receiver-p3-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p3-f1-unit" data-translation-unit="elrs915receiver-p3-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p3-f1.jpeg" width={2000} height={714} figureId="elrs915receiver-p3-f1" alt={"受信機基板の裏面図。UART_RX、UART_TX、5V、GND、アンテナのラベルを表示"} caption={"受信機基板の裏面図。UART_RX、UART_TX、5V、GND、アンテナのラベルを表示"} />
+
+<span id="elrs915receiver-p3-f2-unit" data-translation-unit="elrs915receiver-p3-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p3-f2.jpeg" width={1985} height={760} figureId="elrs915receiver-p3-f2" alt={"受信機基板の表面図。GND、5V、UART_TX、UART_RX、Firmware更新ボタン、LEDのラベルを表示"} caption={"受信機基板の表面図。GND、5V、UART_TX、UART_RX、Firmware更新ボタン、LEDのラベルを表示"} />
+
+<span id="elrs915receiver-p3-u06" data-translation-unit="elrs915receiver-p3-u06"></span>
+
+## 2. 仕様
+
+<span id="elrs915receiver-p3-u07" data-translation-unit="elrs915receiver-p3-u07"></span>
+
+寸法：20×11 mm（0.79×0.43インチ）。
+
+<span id="elrs915receiver-p3-u08" data-translation-unit="elrs915receiver-p3-u08"></span>
+
+重量：0.9 g（0.03 oz）。
+
+<span id="elrs915receiver-p3-u09" data-translation-unit="elrs915receiver-p3-u09"></span>
+
+チャンネル数：16チャンネル。
+
+<span id="elrs915receiver-p3-u10" data-translation-unit="elrs915receiver-p3-u10"></span>
+
+アンテナ長：水平エレメントの幅は約145 mm、給電ケーブルは110 mm。
+
+<span id="elrs915receiver-p3-u11" data-translation-unit="elrs915receiver-p3-u11"></span>
+
+出力周波数：915 MHz（FCC）／868 MHz（EU）。
+
+<span id="elrs915receiver-p3-u12" data-translation-unit="elrs915receiver-p3-u12"></span>
+
+プロトコル：CRSF。
+
+<span id="elrs915receiver-p3-u13" data-translation-unit="elrs915receiver-p3-u13"></span>
+
+スペクトラム拡散方式：LoRa（CSS）。
+
+<span id="elrs915receiver-p3-u14" data-translation-unit="elrs915receiver-p3-u14"></span>
+
+送信出力：100 mW（20 dBm）。
+
+<span id="elrs915receiver-p3-u15" data-translation-unit="elrs915receiver-p3-u15"></span>
+
+受信感度：-123.5 dBm。
+
+<span id="elrs915receiver-p3-u16" data-translation-unit="elrs915receiver-p3-u16"></span>
+
+入力電圧：DC 4～9 V。
+
+<span id="elrs915receiver-p3-u17" data-translation-unit="elrs915receiver-p3-u17"></span>
+
+動作電流：45 mA未満。
+
+<span id="elrs915receiver-p3-u18" data-translation-unit="elrs915receiver-p3-u18"></span>
+
+更新レート：500 Hz／25 Hz。
+
+<span id="elrs915receiver-p3-u19" data-translation-unit="elrs915receiver-p3-u19"></span>
+
+データインターフェース：ELRSインターフェース。
+
+<span id="elrs915receiver-p3-u20" data-translation-unit="elrs915receiver-p3-u20"></span>
+
+アンテナコネクター：IPEXソケット。
+
+<span id="elrs915receiver-p3-u21" data-translation-unit="elrs915receiver-p3-u21"></span>
+
+アンテナ形式：T字型ダイポールアンテナ。
+
+<span id="elrs915receiver-p3-u22" data-translation-unit="elrs915receiver-p3-u22"></span>
+
+アンテナインピーダンス：50 Ω。
+
+<span id="elrs915receiver-p3-u23" data-translation-unit="elrs915receiver-p3-u23"></span>
+
+ハードウェアインターフェース：4ピン 1.0ソケット／4ピン 2.54パッド。
+
+<span id="elrs915receiver-p3-u24" data-translation-unit="elrs915receiver-p3-u24"></span>
+
+制御距離：最大5,000 m（開けた干渉のない条件での試験値）。実際の制御距離は飛行環境によって変わる場合があります。
+
+<span id="elrs915receiver-p3-u25" data-translation-unit="elrs915receiver-p3-u25"></span>
+
+原典印刷ページ：2
+
+<span id="elrs915receiver-p4-u01" data-translation-unit="elrs915receiver-p4-u01"></span>
+
+テレメトリー：フライトコントローラーとGPSに接続すると、電圧、電流、緯度、経度、衛星数などのテレメトリーに対応します。
+
+<span id="elrs915receiver-p4-u02" data-translation-unit="elrs915receiver-p4-u02"></span>
+
+機体バッテリー電圧テレメトリーの範囲：フライトコントローラーの設定によります。
+
+<span id="elrs915receiver-p4-u03" data-translation-unit="elrs915receiver-p4-u03"></span>
+
+応答遅延：送信機の周波数設定によります。
+
+<span id="elrs915receiver-p4-u04" data-translation-unit="elrs915receiver-p4-u04"></span>
+
+動作温度：-20～+75 ℃。
+
+<span id="elrs915receiver-p4-u05" data-translation-unit="elrs915receiver-p4-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p4-u06" data-translation-unit="elrs915receiver-p4-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p4-u07" data-translation-unit="elrs915receiver-p4-u07"></span>
+
+## 3. LED表示
+
+<span id="elrs915receiver-p4-u08" data-translation-unit="elrs915receiver-p4-u08"></span>
+
+点灯：バインド成功／送信信号を受信。
+
+<span id="elrs915receiver-p4-u09" data-translation-unit="elrs915receiver-p4-u09"></span>
+
+速く2回点滅：バインド中。
+
+<span id="elrs915receiver-p4-u10" data-translation-unit="elrs915receiver-p4-u10"></span>
+
+ゆっくり点滅：送信信号を受信していない状態。
+
+<span id="elrs915receiver-p4-u11" data-translation-unit="elrs915receiver-p4-u11"></span>
+
+速く点滅：Wi-Fi更新中。
+
+<span id="elrs915receiver-p4-u12" data-translation-unit="elrs915receiver-p4-u12"></span>
+
+## 4. バインド
+
+<span id="elrs915receiver-p4-u13" data-translation-unit="elrs915receiver-p4-u13"></span>
+
+(1) ELRS 915MHz受信機の電源を連続して3回入れます。各回の電源投入間隔は1.5秒未満にします。
+
+<span id="elrs915receiver-p4-u14" data-translation-unit="elrs915receiver-p4-u14"></span>
+
+(2) 受信機のインジケーターが2回点滅し、バインド状態に入ったことを示します。
+
+<span id="elrs915receiver-p4-u15" data-translation-unit="elrs915receiver-p4-u15"></span>
+
+(3) ExpressLRS送信機（送信機本体またはモジュール）のBINDボタンを押します。
+
+<span id="elrs915receiver-p4-u16" data-translation-unit="elrs915receiver-p4-u16"></span>
+
+(4) 受信機のインジケーターが点灯状態になり、バインド成功を示します。
+
+<span id="elrs915receiver-p4-u17" data-translation-unit="elrs915receiver-p4-u17"></span>
+
+(5) バインドに成功すると、プログラムがペアリングした送信機を記録します。次回の電源投入時には最後のバインド記録が復元されるため、受信機の電源を入れるたびにバインドする必要はありません。
+
+<span id="elrs915receiver-p4-u18" data-translation-unit="elrs915receiver-p4-u18"></span>
+
+## 5. Betaflightフライトコントローラーの設定
+
+<span id="elrs915receiver-p4-u19" data-translation-unit="elrs915receiver-p4-u19"></span>
+
+(1) ELRS 915MHz受信機をBetaflightフライトコントローラーの任意のシリアルポートに接続します。以下ではUART6を例に設定を示します。
+
+<span id="elrs915receiver-p4-f1-unit" data-translation-unit="elrs915receiver-p4-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p4-f1.jpeg" width={2057} height={617} figureId="elrs915receiver-p4-f1" alt={"ELRS 915MHz受信機とBetaflightフライトコントローラーの配線例。RX/TXの交差接続と5V/GNDを表示"} caption={"ELRS 915MHz受信機とBetaflightフライトコントローラーの配線例。RX/TXの交差接続と5V/GNDを表示"} />
+
+<span id="elrs915receiver-p4-u20" data-translation-unit="elrs915receiver-p4-u20"></span>
+
+原典印刷ページ：3
+
+<span id="elrs915receiver-p5-u01" data-translation-unit="elrs915receiver-p5-u01"></span>
+
+(2) フライトコントローラーをパソコンに接続し、Betaflight Configuratorを開いて接続します。Portsメニューを開き、UART6のSerial RXを有効にします。
+
+<span id="elrs915receiver-p5-f1-unit" data-translation-unit="elrs915receiver-p5-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p5-f1.jpeg" width={1147} height={510} figureId="elrs915receiver-p5-f1" alt={"Betaflight ConfiguratorのPortsタブ。UART6のSerial RXを強調表示"} caption={"Betaflight ConfiguratorのPortsタブ。UART6のSerial RXを強調表示"} />
+
+<span id="elrs915receiver-p5-u02" data-translation-unit="elrs915receiver-p5-u02"></span>
+
+(3) Receiverメニューを開き、受信機モードにSerial (via UART)を選択し、シリアル受信機プロバイダーにCRSFを設定します。
+
+<span id="elrs915receiver-p5-f2-unit" data-translation-unit="elrs915receiver-p5-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p5-f2.jpeg" width={800} height={231} figureId="elrs915receiver-p5-f2" alt={"Betaflight ConfiguratorのReceiver設定。Serial (via UART)とCRSFを表示"} caption={"Betaflight ConfiguratorのReceiver設定。Serial (via UART)とCRSFを表示"} />
+
+<span id="elrs915receiver-p5-u03" data-translation-unit="elrs915receiver-p5-u03"></span>
+
+## 6. APMフライトコントローラーの設定
+
+<span id="elrs915receiver-p5-u04" data-translation-unit="elrs915receiver-p5-u04"></span>
+
+(1) ELRS 915MHz受信機をAPMフライトコントローラーのTELEM1ポートに接続します。以下の例ではRadioLink CrossFlightフライトコントローラーのTELEM1ポートを使用します。
+
+<span id="elrs915receiver-p5-f3-unit" data-translation-unit="elrs915receiver-p5-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p5-f3.jpeg" width={3373} height={1428} figureId="elrs915receiver-p5-f3" alt={"受信機とRadioLink CrossFlightのTELEM1を接続する配線図。5V、TX、RX、GNDのラベルを表示"} caption={"受信機とRadioLink CrossFlightのTELEM1を接続する配線図。5V、TX、RX、GNDのラベルを表示"} />
+
+<span id="elrs915receiver-p5-u05" data-translation-unit="elrs915receiver-p5-u05"></span>
+
+原典印刷ページ：4
+
+<span id="elrs915receiver-p6-u01" data-translation-unit="elrs915receiver-p6-u01"></span>
+
+(2) CrossFlightフライトコントローラーをパソコンに接続し、Mission Plannerで次の3つのパラメーターを設定します。SERIAL1_BAUDを115、SERIAL1_OPTIONSを0、SERIAL1_PROTOCOLを23に設定します。
+
+<span id="elrs915receiver-p6-u02" data-translation-unit="elrs915receiver-p6-u02"></span>
+
+## 7. Firmware更新
+
+<span id="elrs915receiver-p6-u03" data-translation-unit="elrs915receiver-p6-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p6-u04" data-translation-unit="elrs915receiver-p6-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p6-f1-unit" data-translation-unit="elrs915receiver-p6-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p6-u05" data-translation-unit="elrs915receiver-p6-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p6-f2-unit" data-translation-unit="elrs915receiver-p6-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p6-u06" data-translation-unit="elrs915receiver-p6-u06"></span>
+
+原典印刷ページ：5
+
+<span id="elrs915receiver-p7-u01" data-translation-unit="elrs915receiver-p7-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-u02" data-translation-unit="elrs915receiver-p7-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-f1-unit" data-translation-unit="elrs915receiver-p7-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-u03" data-translation-unit="elrs915receiver-p7-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-f2-unit" data-translation-unit="elrs915receiver-p7-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-u04" data-translation-unit="elrs915receiver-p7-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-f3-unit" data-translation-unit="elrs915receiver-p7-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-u05" data-translation-unit="elrs915receiver-p7-u05"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-f4-unit" data-translation-unit="elrs915receiver-p7-f4-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-u06" data-translation-unit="elrs915receiver-p7-u06"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p7-u07" data-translation-unit="elrs915receiver-p7-u07"></span>
+
+原典印刷ページ：6
+
+<span id="elrs915receiver-p8-f1-unit" data-translation-unit="elrs915receiver-p8-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-u01" data-translation-unit="elrs915receiver-p8-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-u02" data-translation-unit="elrs915receiver-p8-u02"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-f2-unit" data-translation-unit="elrs915receiver-p8-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-u03" data-translation-unit="elrs915receiver-p8-u03"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-f3-unit" data-translation-unit="elrs915receiver-p8-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-u04" data-translation-unit="elrs915receiver-p8-u04"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-f4-unit" data-translation-unit="elrs915receiver-p8-f4-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p8-u05" data-translation-unit="elrs915receiver-p8-u05"></span>
+
+原典印刷ページ：7
+
+<span id="elrs915receiver-p9-u01" data-translation-unit="elrs915receiver-p9-u01"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p9-f1-unit" data-translation-unit="elrs915receiver-p9-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p9-f2-unit" data-translation-unit="elrs915receiver-p9-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="elrs915receiver-p9-u02" data-translation-unit="elrs915receiver-p9-u02"></span>
+
+## テクニカルサポート
+
+<span id="elrs915receiver-p9-u03" data-translation-unit="elrs915receiver-p9-u03"></span>
+
+RadioLink RLに連絡
+
+<span id="elrs915receiver-p9-f3-unit" data-translation-unit="elrs915receiver-p9-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p9-f3.png" width={920} height={911} figureId="elrs915receiver-p9-f3" alt={"Facebook Messengerのサポートアイコン"} caption={"Facebook Messengerのサポートアイコン"} />
+
+<span id="elrs915receiver-p9-f4-unit" data-translation-unit="elrs915receiver-p9-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p9-f4.jpeg" width={300} height={300} figureId="elrs915receiver-p9-f4" alt={"User ManualのQRコード"} caption={"User ManualのQRコード"} />
+
+<span id="elrs915receiver-p9-f5-unit" data-translation-unit="elrs915receiver-p9-f5-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p9-f5.jpeg" width={300} height={300} figureId="elrs915receiver-p9-f5" alt={"FAQのQRコード"} caption={"FAQのQRコード"} />
+
+<span id="elrs915receiver-p9-f6-unit" data-translation-unit="elrs915receiver-p9-f6-unit"></span>
+
+<ManualFigure src="/assets/radiolink/elrs-915mhz/web-ja-v1/elrs915receiver-p9-f6.jpeg" width={300} height={300} figureId="elrs915receiver-p9-f6" alt={"TutorialsのQRコード"} caption={"TutorialsのQRコード"} />
+
+<span id="elrs915receiver-p9-u04" data-translation-unit="elrs915receiver-p9-u04"></span>
+
+Facebook Messenger経由で
+
+<span id="elrs915receiver-p9-u05" data-translation-unit="elrs915receiver-p9-u05"></span>
+
+上記のコードで問題を解決できない場合は、テクニカルサポート（after_service@radiolink.com.cn）にメールで問い合わせることもできます。
+
+<span id="elrs915receiver-p9-u06" data-translation-unit="elrs915receiver-p9-u06"></span>
+
+本書の内容は変更されることがあります。最新版はhttps://www.radiolink.com/elrs_915mhz_manualからダウンロードしてください。
+
+<span id="elrs915receiver-p9-u07" data-translation-unit="elrs915receiver-p9-u07"></span>
+
+原典印刷ページ：8

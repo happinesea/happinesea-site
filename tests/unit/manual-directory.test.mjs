@@ -3,8 +3,8 @@ import test from 'node:test';
 import { manualCards } from '../../src/lib/manual-directory.mjs';
 
 test('manual directory groups editions and quick references without exposing withheld manuals', () => {
-  assert.equal(manualCards.length, 79);
-  assert.equal(new Set(manualCards.map((card) => card.id)).size, 79);
+  assert.equal(manualCards.length, 80);
+  assert.equal(new Set(manualCards.map((card) => card.id)).size, 80);
   assert.deepEqual(
     manualCards
       .find((card) => card.id === 'rc4gs')
@@ -57,7 +57,7 @@ test('manual directory groups editions and quick references without exposing wit
   assert.equal(
     manualCards.flatMap((card) => card.links).filter((link) => link.external)
       .length,
-    81,
+    82,
   );
   for (const card of manualCards) {
     assert.ok(card.image.src.startsWith('/assets/'));

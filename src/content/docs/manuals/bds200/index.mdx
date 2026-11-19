@@ -1,0 +1,736 @@
+---
+title: BDS200 日本語取扱説明書
+description: Radiolink BDS200 の公式英語取扱説明書に対応する日本語版です。
+product: bds200
+slug: manuals/bds200
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/7ab181a2388bebd97a85c8c6699824a0.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/bds200/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink BDS200 公式英語取扱説明書（文書版・発行日不明、15頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="bds200-p1-f1-unit" data-translation-unit="bds200-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p1-f1.png" width={451} height={135} figureId="bds200-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="bds200-p1-title" data-translation-unit="bds200-p1-title"></span>
+
+## BDS200
+
+取扱説明書
+
+ブラシレス・サッカードローン
+
+:::note[原典について]
+本文に製品Revision・Firmware適用版の明示がありません。公式リンク名2025.1.17は版・現行実機への適用根拠とみなさず、版不明のまま保持します。
+:::
+
+<span id="bds200-p1-f2-unit" data-translation-unit="bds200-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p1-f2.png" width={2000} height={2000} figureId="bds200-p1-f2" alt={"BDS200ブラシレス・サッカードローンの外観。"} caption={"BDS200ブラシレス・サッカードローンの外観。"} />
+
+<span id="bds200-p1-f3-unit" data-translation-unit="bds200-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p1-f3.jpeg" width={640} height={380} figureId="bds200-p1-f3" alt={"14歳以上の年齢表示。"} caption={"14歳以上の年齢表示。"} />
+
+<span id="bds200-p2-support" data-translation-unit="bds200-p2-support"></span>
+
+RadioLinkのブラシレス・サッカードローンBDS200をお買い上げいただきありがとうございます。
+
+本製品の機能を十分に活用し、安全に使用するため、本書をよく読み、記載された手順に従って機器を設定してください。操作中に問題が発生した場合は、次の方法でオンライン技術サポートをご利用いただけます。
+
+1. after_service@radiolink.com.cnへメールでお問い合わせください。できるだけ早く回答します。
+2. Facebookページ https://www.facebook.com/radiolinkofficial へメッセージを送るか、YouTubeページ https://www.youtube.com/@Radiolink_official へコメントをお寄せください。
+3. 正規販売店または代理店で購入された場合は、直接その販売店へサポートを依頼できます。
+
+詳細は http://www.radiolink.com をご確認ください。
+
+<span id="bds200-p2-safety" data-translation-unit="bds200-p2-safety"></span>
+
+:::caution[注意]
+## 安全上の注意
+
+- 悪天候時には模型を操作しないでください。視界が悪いと方向を見失い、模型の制御を失うおそれがあります。
+- 人混みや法律で使用が禁止されている区域では使用しないでください。
+- 受信機を接続する前に、トリムレバーが0であり、バッテリーが適切に充電されていることを必ず確認してください。
+- 毎回の運転前に、すべてのサーボと接続を確認してください。
+- 必ず受信機の電源を切ってから送信機の電源を切ってください。
+- 良好な無線通信のため、高圧電線、通信基地局、送信塔などの干渉がない場所で飛行させてください。
+:::
+
+<span id="bds200-p2-warning" data-translation-unit="bds200-p2-warning"></span>
+
+:::caution[注意]
+## 警告
+
+本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方はお子様の手の届かない場所に保管し、お子様のいる場所で操作するときは十分注意してください。
+
+アンテナやスティックの隙間から水分が送信機内部へ入り、模型が不安定になったり制御不能になったりするおそれがあります。競技などで湿った天候での使用を避けられない場合は、必ずビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="bds200-p2-revision" data-translation-unit="bds200-p2-revision"></span>
+
+本書は定期的に更新されます。最新版はRadioLink公式サイトからダウンロードしてください：https://www.radiolink.com/bds200_drone_soccer_manaul
+
+<span id="bds200-p3-contents" data-translation-unit="bds200-p3-contents"></span>
+
+## 目次
+
+- 同梱品 …… 2
+- 第1章 BDS200の紹介 …… 3
+  - 1.1 BDS200の特長 …… 3
+  - 1.2 仕様 …… 3
+- 第2章 飛行前の準備 …… 4
+  - 2.1 電源 …… 4
+  - 2.2 BDS200の向きの見分け方 …… 5
+  - 2.3 スティックと飛行動作 …… 6
+  - 2.4 LED表示の説明 …… 8
+  - 2.5 T8S送信機のスイッチ …… 8
+  - 2.6 T8S送信機のスティック校正 …… 9
+- 第3章 飛行前点検 …… 10
+- 第4章 3つの飛行モード …… 11
+- 第5章 飛行手順 …… 11
+  - 5.1 バッテリーの取り付け …… 11
+  - 5.2 BDS200の電源を入れる …… 12
+  - 5.3 離陸 …… 12
+  - 5.4 着陸 …… 12
+  - 5.5 BDS200の電源を切る …… 12
+- 第6章 トラブルシューティング …… 13
+
+<span id="bds200-p3-folio" data-translation-unit="bds200-p3-folio"></span>
+
+原典印刷ページ：1
+
+<span id="bds200-p4-heading" data-translation-unit="bds200-p4-heading"></span>
+
+同梱品
+
+BDS200ドローン、T8S送信機、2S LiPoバッテリー、CM210充電器、充電ケーブル、T8S更新ケーブル、ドライバー、フックとスプリング、バッグ。
+
+<span id="bds200-p4-f1-unit" data-translation-unit="bds200-p4-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f1.png" width={2000} height={2000} figureId="bds200-p4-f1" alt={"BDS200ドローン"} caption={"BDS200ドローン"} />
+
+<span id="bds200-p4-f2-unit" data-translation-unit="bds200-p4-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f2.jpeg" width={1000} height={1000} figureId="bds200-p4-f2" alt={"T8S送信機"} caption={"T8S送信機"} />
+
+<span id="bds200-p4-f4-unit" data-translation-unit="bds200-p4-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f4.jpeg" width={600} height={600} figureId="bds200-p4-f4" alt={"2S LiPoバッテリー"} caption={"2S LiPoバッテリー"} />
+
+<span id="bds200-p4-f3-unit" data-translation-unit="bds200-p4-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f3.jpeg" width={600} height={600} figureId="bds200-p4-f3" alt={"CM210充電器"} caption={"CM210充電器"} />
+
+<span id="bds200-p4-f7-unit" data-translation-unit="bds200-p4-f7-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f7.jpeg" width={1000} height={1000} figureId="bds200-p4-f7" alt={"充電ケーブル"} caption={"充電ケーブル"} />
+
+<span id="bds200-p4-f5-unit" data-translation-unit="bds200-p4-f5-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f5.jpeg" width={1000} height={1000} figureId="bds200-p4-f5" alt={"T8S更新ケーブル"} caption={"T8S更新ケーブル"} />
+
+<span id="bds200-p4-f8-unit" data-translation-unit="bds200-p4-f8-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f8.jpeg" width={1200} height={1200} figureId="bds200-p4-f8" alt={"ドライバー"} caption={"ドライバー"} />
+
+<span id="bds200-p4-f6-unit" data-translation-unit="bds200-p4-f6-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f6.jpeg" width={1000} height={1000} figureId="bds200-p4-f6" alt={"フックとスプリング"} caption={"フックとスプリング"} />
+
+<span id="bds200-p4-f9-unit" data-translation-unit="bds200-p4-f9-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p4-f9.jpeg" width={800} height={800} figureId="bds200-p4-f9" alt={"バッグ"} caption={"バッグ"} />
+
+<span id="bds200-p4-folio" data-translation-unit="bds200-p4-folio"></span>
+
+原典印刷ページ：2
+
+<span id="bds200-p5-heading" data-translation-unit="bds200-p5-heading"></span>
+
+## 第1章 BDS200の紹介
+
+<span id="bds200-p5-features-heading" data-translation-unit="bds200-p5-features-heading"></span>
+
+## 1.1 BDS200の特長
+
+<span id="bds200-p5-feature1" data-translation-unit="bds200-p5-feature1"></span>
+
+1. BDS200は競技用の本格的なドローンです。ジャイロ、加速度計、気圧計による慣性航法とカルマンフィルターによる高度維持アルゴリズムが、高速性と安定性の両立を実現します。初心者の操作の難しさを大幅に減らし、競技飛行の楽しさを体験できます。
+
+<span id="bds200-p5-feature2" data-translation-unit="bds200-p5-feature2"></span>
+
+2. RTF版には、スマートフォンアプリでパラメーター調整ができる8チャンネル送信機が付属します。日本のNoble製の高品質ポテンショメーターを搭載し、スティックの制御精度は0.25マイクロ秒です。Bluetooth接続したAndroidまたはiOSアプリで設定・変更できます。送信機、受信機、動力用バッテリーの低電圧アラーム値は、必要に応じて設定できます。
+
+<span id="bds200-p5-feature3" data-translation-unit="bds200-p5-feature3"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p5-feature4" data-translation-unit="bds200-p5-feature4"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p5-feature5" data-translation-unit="bds200-p5-feature5"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p5-feature6" data-translation-unit="bds200-p5-feature6"></span>
+
+6. 新しい耐衝撃素材を採用しており、競技中の激しい衝突や落下にも安全性を確保します。
+
+<span id="bds200-p5-spec-heading" data-translation-unit="bds200-p5-spec-heading"></span>
+
+## 1.2 仕様
+
+<span id="bds200-p5-spec-table" data-translation-unit="bds200-p5-spec-table"></span>
+
+| 項目 | 仕様 |
+| --- | --- |
+| 名称 | BDS200 |
+| 重量（バッテリー含む） | 200g以内 |
+| 寸法 | 200×200mm（±10mm） |
+| 材質 | カーボンファイバー（フレーム）、プラスチック（ボール外殻、カバー、バッテリーケース） |
+| 送信機 | RadioLink T8S |
+| モーター | SZ-SPEEDブラシレスモーター |
+| プロペラ | Gemfanプロペラ |
+| 出力周波数 | 2.4G |
+| 受信機信号 | SBUS |
+| フライトコントローラー／ESC | RadioLink Stack（フライトコントローラーと4-in-1 ESC） |
+| バッテリー | Gensaceバッテリー |
+| 充電器 | RadioLink CM210 |
+| 飛行モード | 高度維持、スタビライズ、起き上がり |
+| 飛行時間 | 6分 |
+| 飛行環境 | 屋内／屋外 |
+| 収納 | 携帯用バッグ |
+
+:::note[原典について]
+本文に製品Revision・Firmware適用版の明示がありません。公式リンク名2025.1.17は版・現行実機への適用根拠とみなさず、版不明のまま保持します。
+:::
+
+<span id="bds200-p5-folio" data-translation-unit="bds200-p5-folio"></span>
+
+原典印刷ページ：3
+
+<span id="bds200-p6-heading" data-translation-unit="bds200-p6-heading"></span>
+
+## 第2章 飛行前の準備
+
+<span id="bds200-p6-power" data-translation-unit="bds200-p6-power"></span>
+
+## 2.1 電源
+
+T8S送信機：送信機が満充電になっていることを確認してください。
+
+BDS200：付属の2S LiPoバッテリーは出荷時には満充電ではありません。飛行前にCM210充電器で充電してください。
+
+2S LiPo専用のCM210は、CB86PLUSの専門的な開発技術と高精度を受け継ぎ、より安全な充電とバッテリー寿命を確保します。
+
+<span id="bds200-p6-charge-heading" data-translation-unit="bds200-p6-charge-heading"></span>
+
+## CM210の使用方法
+
+<span id="bds200-p6-charge1" data-translation-unit="bds200-p6-charge1"></span>
+
+1. 標準USBケーブルの一端をCM210のType-C入力端子へ挿入し（下図参照）、もう一端をモバイルバッテリー、コンピューター、携帯電話用アダプターなどの電源へ接続します（入力電圧：5V）。正しく接続すると赤色LEDが点灯し続けます。
+
+<span id="bds200-p6-charge2" data-translation-unit="bds200-p6-charge2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p6-charge3" data-translation-unit="bds200-p6-charge3"></span>
+
+3. 4つのLEDがすべて緑色で点灯し続けると満充電になり、充電器が自動的に充電を停止します。
+
+<span id="bds200-p6-charge4" data-translation-unit="bds200-p6-charge4"></span>
+
+4. バッテリーを取り外してから、電源を切り離します。
+
+<span id="bds200-p6-folio" data-translation-unit="bds200-p6-folio"></span>
+
+原典印刷ページ：4
+
+<span id="bds200-p7-f1-unit" data-translation-unit="bds200-p7-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p7-led-heading" data-translation-unit="bds200-p7-led-heading"></span>
+
+## CM210のLED表示の状態
+
+<span id="bds200-p7-led-table" data-translation-unit="bds200-p7-led-table"></span>
+
+| LEDの色 | 状態 | 意味 |
+| --- | --- | --- |
+| 赤 | 点滅 | 充電器が異常を検出 |
+| 赤 | 点灯し続ける | バッテリー未接続 |
+| 緑 | 4つすべてが1回点滅 | 充電器の電源が入った |
+| 緑 | 1つ目が点滅。他は消灯 | バッテリー電圧が7.4V未満 |
+| 緑 | 1つ目が点灯し続け、2つ目が点滅。他は消灯 | バッテリー電圧が7.8V未満 |
+| 緑 | 最初の2つが点灯し続け、3つ目が点滅。他は消灯 | バッテリー電圧が8.2V未満 |
+| 緑 | 最初の3つが点灯し続け、4つ目が点滅。他のLEDは消灯 | バッテリー電圧が8.4V未満 |
+| 緑 | 4つすべてが点灯し続ける | バッテリーは満充電 |
+
+<span id="bds200-p7-direction" data-translation-unit="bds200-p7-direction"></span>
+
+## 2.2 BDS200の向きの見分け方
+
+機体後部には電源ケーブルがあります。電源を入れると、後部のフライトコントローラー表示灯が点灯し（色の説明は後述）、機体の向きを見分けやすくなります。
+
+<span id="bds200-p7-folio" data-translation-unit="bds200-p7-folio"></span>
+
+原典印刷ページ：5
+
+<span id="bds200-p8-f1-unit" data-translation-unit="bds200-p8-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p8-f1.jpeg" width={1004} height={624} figureId="bds200-p8-f1" alt={"機体後部のフライトコントローラー表示灯の写真。"} caption={"機体後部のフライトコントローラー表示灯の写真。"} />
+
+<span id="bds200-p8-throttle" data-translation-unit="bds200-p8-throttle"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p8-f2-unit" data-translation-unit="bds200-p8-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p8-folio" data-translation-unit="bds200-p8-folio"></span>
+
+原典印刷ページ：6
+
+<span id="bds200-p9-yaw" data-translation-unit="bds200-p9-yaw"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-f1-unit" data-translation-unit="bds200-p9-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-yaw-left" data-translation-unit="bds200-p9-yaw-left"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-f2-unit" data-translation-unit="bds200-p9-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-yaw-right" data-translation-unit="bds200-p9-yaw-right"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-pitch" data-translation-unit="bds200-p9-pitch"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-f3-unit" data-translation-unit="bds200-p9-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-pitch-up" data-translation-unit="bds200-p9-pitch-up"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-f4-unit" data-translation-unit="bds200-p9-f4-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-pitch-down" data-translation-unit="bds200-p9-pitch-down"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p9-folio" data-translation-unit="bds200-p9-folio"></span>
+
+原典印刷ページ：7
+
+<span id="bds200-p10-roll" data-translation-unit="bds200-p10-roll"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-f1-unit" data-translation-unit="bds200-p10-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-roll-left" data-translation-unit="bds200-p10-roll-left"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-f2-unit" data-translation-unit="bds200-p10-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-roll-right" data-translation-unit="bds200-p10-roll-right"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-led-intro" data-translation-unit="bds200-p10-led-intro"></span>
+
+## 2.4 LED表示の説明
+
+ドローンには2枚のライトパネルがあり、バッテリー室の前後にそれぞれチームLEDと後部LEDが配置されています。
+
+<span id="bds200-p10-team-led" data-translation-unit="bds200-p10-team-led"></span>
+
+(1) チームLED：機体がアームされていないとき、T8SのCH6スイッチを短く押すと色を切り替えられます。原典は赤、黄、青、緑、シアン、青、紫の7色と記載しています。
+
+:::note[原典について]
+チームLED7色は原典で青が2回記載されています。別の色を推測せず原典どおり保持しています。
+:::
+
+<span id="bds200-p10-tail-led" data-translation-unit="bds200-p10-tail-led"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-switches" data-translation-unit="bds200-p10-switches"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p10-folio" data-translation-unit="bds200-p10-folio"></span>
+
+原典印刷ページ：8
+
+<span id="bds200-p11-switch2" data-translation-unit="bds200-p11-switch2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-switch3" data-translation-unit="bds200-p11-switch3"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-switch4" data-translation-unit="bds200-p11-switch4"></span>
+
+(4) CH6プッシュボタンでチームLEDの色を切り替えます。下図は送信機の機能です。短く1回押すごとに1色変わります。原典は赤、黄、青、緑、シアン、青、紫の7色と記載しています。
+
+:::note[原典について]
+チームLED7色は原典で青が2回記載されています。別の色を推測せず原典どおり保持しています。
+:::
+
+<span id="bds200-p11-f1-unit" data-translation-unit="bds200-p11-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-calibration-intro" data-translation-unit="bds200-p11-calibration-intro"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-calibration1" data-translation-unit="bds200-p11-calibration1"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-f2-unit" data-translation-unit="bds200-p11-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-calibration2" data-translation-unit="bds200-p11-calibration2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p11-folio" data-translation-unit="bds200-p11-folio"></span>
+
+原典印刷ページ：9
+
+<span id="bds200-p12-f1-unit" data-translation-unit="bds200-p12-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p12-calibration3" data-translation-unit="bds200-p12-calibration3"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p12-f2-unit" data-translation-unit="bds200-p12-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p12-inspection" data-translation-unit="bds200-p12-inspection"></span>
+
+## 第3章 飛行前点検
+
+ドローンの点検：
+
+1. バッテリーが確実に取り付けられ、満充電であり、膨張・変形・損傷がないことを確認します。
+
+
+<span id="bds200-p12-propeller-inspection" data-translation-unit="bds200-p12-propeller-inspection"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p12-fuselage-inspection" data-translation-unit="bds200-p12-fuselage-inspection"></span>
+
+3. 機体と部品を点検します。外観の損傷、ねじ接続部の亀裂、各部のねじの緩みがないことを確認します。
+
+
+<span id="bds200-p12-motor-inspection" data-translation-unit="bds200-p12-motor-inspection"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p12-transmitter-inspection" data-translation-unit="bds200-p12-transmitter-inspection"></span>
+
+5. 送信機を確認します。
+   ① 満充電であることを確認します。
+
+<span id="bds200-p12-folio" data-translation-unit="bds200-p12-folio"></span>
+
+原典印刷ページ：10
+
+<span id="bds200-p13-inspection" data-translation-unit="bds200-p13-inspection"></span>
+
+② スティックの外観に変形がなく、引っ掛かりなく滑らかに動かせることを確認します。
+
+③ T8SのLEDが正常に点灯し、異常アラームがないことを確認します。
+
+<span id="bds200-p13-modes" data-translation-unit="bds200-p13-modes"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p13-f1-unit" data-translation-unit="bds200-p13-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p13-battery" data-translation-unit="bds200-p13-battery"></span>
+
+## 第5章 飛行手順
+
+### 5.1 バッテリーの取り付け
+
+(1) BDS200付属の2S LiPoバッテリーを用意します。
+
+(2) 下図のようにバッテリー室へ入れます。バッテリーの電源ケーブルは、チームLEDと同じ方向へ向けてください。
+
+<span id="bds200-p13-f2-unit" data-translation-unit="bds200-p13-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/bds200/web-ja-v1/bds200-p13-f2.jpeg" width={613} height={467} figureId="bds200-p13-f2" alt={"バッテリー取り付けの写真。バッテリーの電源ケーブルをチームLED側へ向ける説明に対応。"} caption={"バッテリー取り付けの写真。バッテリーの電源ケーブルをチームLED側へ向ける説明に対応。"} />
+
+<span id="bds200-p13-folio" data-translation-unit="bds200-p13-folio"></span>
+
+原典印刷ページ：11
+
+<span id="bds200-p14-battery" data-translation-unit="bds200-p14-battery"></span>
+
+(3) 面ファスナーストラップでバッテリーを機体へ固定します。
+
+(4) 機体を揺すり、バッテリーがしっかり固定され、落ちないことを確認します。
+
+<span id="bds200-p14-power" data-translation-unit="bds200-p14-power"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p14-takeoff" data-translation-unit="bds200-p14-takeoff"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p14-landing" data-translation-unit="bds200-p14-landing"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p14-low-voltage-warning" data-translation-unit="bds200-p14-low-voltage-warning"></span>
+
+:::caution[注意]
+注意：バッテリー電圧が設定電圧未満になると、機体は自動的にゆっくり着陸し、スロットルでは機体を制御できなくなります。
+:::
+
+<span id="bds200-p14-off" data-translation-unit="bds200-p14-off"></span>
+
+## 5.5 BDS200の電源を切る
+
+(1) BDS200のバッテリーを取り外します。
+
+(2) T8Sの電源を切ります。
+
+(3) 機体と送信機は、圧迫、湿気、高温を避けて適切に保管します。
+
+<span id="bds200-p14-folio" data-translation-unit="bds200-p14-folio"></span>
+
+原典印刷ページ：12
+
+<span id="bds200-p15-heading" data-translation-unit="bds200-p15-heading"></span>
+
+## 第6章 トラブルシューティング
+
+<span id="bds200-p15-table-heading" data-translation-unit="bds200-p15-table-heading"></span>
+
+| 問題 | 対処 |
+| --- | --- |
+
+<span id="bds200-p15-row1" data-translation-unit="bds200-p15-row1"></span>
+
+| 問題 | 対処 |
+| --- | --- |
+| スロットルが最上位置でも離陸できない。 | バッテリー電圧が低下しています。充電して再度試してください。 |
+
+<span id="bds200-p15-row2" data-translation-unit="bds200-p15-row2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row3" data-translation-unit="bds200-p15-row3"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row4" data-translation-unit="bds200-p15-row4"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row5" data-translation-unit="bds200-p15-row5"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row6" data-translation-unit="bds200-p15-row6"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row7" data-translation-unit="bds200-p15-row7"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row8" data-translation-unit="bds200-p15-row8"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row9" data-translation-unit="bds200-p15-row9"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-row10" data-translation-unit="bds200-p15-row10"></span>
+
+| 問題 | 対処 |
+| --- | --- |
+| 静止状態で機体が地面に立たない。 | 外殻の損傷を確認し、外殻部品を交換します。 |
+
+<span id="bds200-p15-row11" data-translation-unit="bds200-p15-row11"></span>
+
+| 問題 | 対処 |
+| --- | --- |
+| 離陸後に一方向へ偏る。 | トリムボタンを操作します。トリムが中央に戻ると長いビープ音が鳴るので、位置が正しいか確認できます。 |
+
+<span id="bds200-p15-row12" data-translation-unit="bds200-p15-row12"></span>
+
+| 問題 | 対処 |
+| --- | --- |
+| 離陸後に制御不能になる。 | 近くに強い信号の干渉源がないか確認し、干渉源から離れて飛行してください。 |
+
+<span id="bds200-p15-row13" data-translation-unit="bds200-p15-row13"></span>
+
+| 問題 | 対処 |
+| --- | --- |
+| 離陸後、近距離で制御不能になる。 | 受信機アンテナの断線・損傷を確認し、損傷している場合は受信機を交換します。 |
+
+<span id="bds200-p15-row14" data-translation-unit="bds200-p15-row14"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="bds200-p15-folio" data-translation-unit="bds200-p15-folio"></span>
+
+原典印刷ページ：13

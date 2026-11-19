@@ -303,7 +303,7 @@
     "subcategoryLabel": "ELRS長距離モジュール",
     "description": "RadiolinkのELRS長距離モジュールです。",
     "officialUrl": "https://www.radiolink.com/elrs_1w_Micro",
-    "detailPath": null,
+    "detailPath": "/radiolink/2-4g-micro-1w/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/2-4g-micro-1w.webp",
@@ -429,7 +429,7 @@
     "subcategoryLabel": "フライトコントローラー",
     "description": "Radiolinkのフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/f405",
-    "detailPath": null,
+    "detailPath": "/radiolink/f405/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f405.webp",
@@ -450,7 +450,7 @@
     "subcategoryLabel": "フライトコントローラー",
     "description": "Radiolinkのフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/f722",
-    "detailPath": null,
+    "detailPath": "/radiolink/f722/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f722.webp",
@@ -828,7 +828,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/ld_b20_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/ld-b20/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/ld-b20.webp",
@@ -870,7 +870,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/bds200_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/bds200/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/bds200.webp",
@@ -1017,7 +1017,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f121",
-    "detailPath": null,
+    "detailPath": "/radiolink/f121/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f121.webp",
@@ -1164,7 +1164,7 @@
     "subcategoryLabel": "充電器",
     "description": "Radiolinkのバッテリー充電器です。",
     "officialUrl": "https://www.radiolink.com/cm210",
-    "detailPath": null,
+    "detailPath": "/radiolink/cm210/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cm210.webp",
@@ -1227,7 +1227,7 @@
     "subcategoryLabel": "ドローン用ESC",
     "description": "Radiolinkのドローン向けESCです。",
     "officialUrl": "https://www.radiolink.com/am32_70a_4in1_esc",
-    "detailPath": null,
+    "detailPath": "/radiolink/am32-70a/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/am32-70a.webp",
@@ -1248,7 +1248,7 @@
     "subcategoryLabel": "車・ボート用ESC",
     "description": "RadiolinkのRCカー・ボート向けESCです。",
     "officialUrl": "https://www.radiolink.com/cool9030",
-    "detailPath": null,
+    "detailPath": "/radiolink/cl9030/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cl9030.webp",
@@ -1710,7 +1710,7 @@
     "subcategoryLabel": "ELRS受信機",
     "description": "RadiolinkのELRS受信機です。",
     "officialUrl": "https://www.radiolink.com/elrs_915mhz",
-    "detailPath": null,
+    "detailPath": "/radiolink/elrs-915mhz/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/elrs-915mhz.webp",

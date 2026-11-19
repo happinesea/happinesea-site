@@ -79,8 +79,40 @@
   min-width: 8em;
 }
 
-.sl-markdown-content:has([data-translation-unit^='bymedb-'])
+.sl-markdown-content:has(
+    [data-translation-unit^='bymedb-'],
+    [data-translation-unit^='rtc8-'],
+    [data-translation-unit^='elrsmicro-'],
+    [data-translation-unit^='f722-'],
+    [data-translation-unit^='cm210-'],
+    [data-translation-unit^='elrs915receiver-'],
+    [data-translation-unit^='am32_70a_4in1_esc-'],
+    [data-translation-unit^='bds200-'],
+    [data-translation-unit^='f405-'],
+    [data-translation-unit^='ld_b20_drone_soccer-'],
+    [data-translation-unit^='cool9030-'],
+    [data-translation-unit^='f121-']
+  )
   table
   :is(th, td):first-child {
   min-width: 8em;
+}
+
+/* Size tall source diagrams by width so their labels retain the original ratio. */
+.sl-markdown-content:has(
+    [data-translation-unit^='rtc8-'],
+    [data-translation-unit^='elrsmicro-'],
+    [data-translation-unit^='f722-'],
+    [data-translation-unit^='cm210-'],
+    [data-translation-unit^='elrs915receiver-'],
+    [data-translation-unit^='am32_70a_4in1_esc-'],
+    [data-translation-unit^='bds200-'],
+    [data-translation-unit^='f405-'],
+    [data-translation-unit^='ld_b20_drone_soccer-'],
+    [data-translation-unit^='cool9030-'],
+    [data-translation-unit^='f121-']
+  )
+  [data-manual-figure]
+  img {
+  max-height: none;
 }

@@ -1,0 +1,1130 @@
+---
+title: F121 日本語取扱説明書
+description: Radiolink F121 の公式英語取扱説明書に対応する日本語版です。
+product: f121
+slug: manuals/f121
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/d0912df7f0d12a885b6bf642411fdafb.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f121/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F121 T8S・新OSD版 英語取扱説明書（V2.0、26頁）。F121 Proは対象外です。
+
+<span id="f121-p1-f1-unit" data-translation-unit="f121-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p1-f1.png" width={600} height={180} figureId="f121-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="f121-p1-title" data-translation-unit="f121-p1-title"></span>
+
+## F121
+
+ミニレーシングドローン
+
+慣性航法による高度維持
+
+取扱説明書 V2.0
+
+<span id="f121-p1-f2-unit" data-translation-unit="f121-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p1-f2.png" width={2749} height={1565} figureId="f121-p1-f2" alt={"F121ミニレーシングドローンの外観。F121 Proではありません。"} caption={"F121ミニレーシングドローンの外観。F121 Proではありません。"} />
+
+<span id="f121-p1-f3-unit" data-translation-unit="f121-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p1-f3.jpeg" width={640} height={380} figureId="f121-p1-f3" alt={"14歳以上の年齢表示。"} caption={"14歳以上の年齢表示。"} />
+
+<span id="f121-p2-support" data-translation-unit="f121-p2-support"></span>
+
+RadioLinkのミニレーシングドローンF121をお買い上げいただきありがとうございます。
+
+機能を十分に活用し、安全に使用するため、本書をよく読み、手順に従って機器を設定してください。操作中に問題が発生した場合は、次の方法でオンライン技術サポートをご利用いただけます。
+
+1. after_service@radiolink.com.cnへメールでお問い合わせください。できるだけ早く回答します。
+2. Facebookページへメッセージ、またはYouTubeページへコメントをお寄せください。
+3. 正規販売店や代理店で購入された場合は、直接その販売店へサポートを依頼できます。
+
+すべてのマニュアルとファームウェアは公式サイト www.radiolink.com で入手でき、チュートリアルも追加されます。FacebookやYouTubeのホームページでも最新情報をご確認いただけます。
+
+<span id="f121-p2-safety" data-translation-unit="f121-p2-safety"></span>
+
+:::caution[注意]
+- 悪天候時には模型を操作しないでください。視界が悪いと方向を見失い、模型の制御を失うおそれがあります。
+- 人混みや法律で使用が禁止されている場所では使用しないでください。
+- 受信機の接続前に、送信機のトリムが0で、バッテリーが適切に充電されていることを確認してください。
+- 飛行中は、高速回転するプロペラやブラシモーターなどで負傷しないよう、機体から一定の距離を保ってください。
+- 着陸後は、ディスアームされ、プロペラが止まっていることを確認してから、機体へ近づいて触れてください。
+- 必ず受信機や機体の電源を切ってから、送信機の電源を切ってください。
+- 飛行中に外れないよう、プロペラの取り付け指示に従ってください。
+- 良好な無線通信のため、高圧電線、通信基地局、送信塔などの干渉がない場所で飛行してください。
+:::
+
+<span id="f121-p2-warning" data-translation-unit="f121-p2-warning"></span>
+
+:::caution[注意]
+本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方はお子様の手の届かない場所に保管し、お子様のいる場所での操作には十分注意してください。ミニドローンや送信機の電子部品の隙間へ水分が入り、不安定になったり制御不能になったりするおそれがあります。競技などで湿った天候での飛行が避けられない場合は、ビニール袋や防水布で送信機を覆ってください。
+:::
+
+<span id="f121-p2-fcc" data-translation-unit="f121-p2-fcc"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p2-revision" data-translation-unit="f121-p2-revision"></span>
+
+本書は定期的に更新されます。最新版はRadioLink公式サイト www.radiolink.com からダウンロードしてください。
+
+警告／安全上の注意
+
+<span id="f121-p3-contents" data-translation-unit="f121-p3-contents"></span>
+
+## 目次
+
+- 同梱品 …… 2
+- 第1章 F121の特長 …… 3
+- 第2章 飛行前の準備 …… 3
+  - 2.1 電源 …… 3
+  - 2.2 送信機 …… 3
+  - 2.3 F121 …… 4
+  - 2.4 スティックと飛行動作 …… 5
+- 第3章 飛行前の準備作業 …… 7
+  - 3.1 モーターの取り付け …… 7
+  - 3.2 プロペラ／プロペラガードの取り付け …… 8
+  - 3.3 夜間飛行用の方向LED …… 9
+  - 3.4 F121の電源投入 …… 9
+  - 3.5 飛行上の注意 …… 10
+  - 3.6 対応送信機の設定 …… 10
+  - 3.7 バインド …… 11
+  - 3.8 アームとディスアーム …… 12
+- 第4章 各飛行モードでの飛行 …… 13
+  - 4.1 高度維持モード（低速／高速） …… 13
+    - 4.1.1 上昇／下降 …… 13
+    - 4.1.2 ホバリング …… 13
+    - 4.1.3 前進／後退／右／左 …… 13
+    - 4.1.4 時計回り／反時計回りの旋回 …… 14
+  - 4.2 スタビライズモード …… 14
+  - 4.3 360度フリップモードへの切替 …… 14
+- 第5章 F121の映像伝送 …… 15
+  - 5.1 Little Pilot（SCHOOL）一体型4.3インチFPVモニター …… 15
+    - 5.1.1 ボタンと機能 …… 15
+    - 5.1.2 周波数グループ選択 …… 16
+    - 5.1.3 F121とのバインド …… 16
+  - 5.2 ZENCHANSI 3インチFPVゴーグル …… 16
+    - 5.2.1 ボタンと端子 …… 16
+    - 5.2.2 AVケーブル …… 17
+    - 5.2.3 周波数表 …… 17
+    - 5.2.4 F121とのバインド …… 17
+  - 5.3 F121の映像伝送 …… 18
+    - 5.3.1 映像伝送の表示 …… 18
+    - 5.3.2 出力／バンド／周波数のカスタマイズ …… 19
+  - 5.4 T8Sスマートフォン／FPVモニターホルダー …… 22
+- 第6章 仕様 …… 23
+  - 6.1 F121 …… 23
+  - 6.2 映像伝送システム …… 23
+  - 6.3 Little Pilotモニター …… 24
+  - 6.4 ZENCHANSI FPVゴーグル …… 24
+
+<span id="f121-p3-folio" data-translation-unit="f121-p3-folio"></span>
+
+原典印刷ページ：1
+
+<span id="f121-p4-package-table" data-translation-unit="f121-p4-package-table"></span>
+
+## 同梱品
+
+| 原図 | 品目 | PNP | PNP FPV | RTF | RTF FPV |
+| --- | --- | --- | --- | --- | --- |
+| f121-p4-f1 | F121の箱 | 1 | 1 |  |  |
+| f121-p4-f2 | 携帯・ショルダーバッグ |  |  | 1 | 1 |
+| f121-p4-f3 | F121 | 1 | 1 | 1 | 1 |
+| f121-p4-f4 | R8SM受信機 |  |  | 1 | 1 |
+| f121-p4-f5 | T8S送信機 |  |  | 1 | 1 |
+| f121-p4-f6 | FPVカメラ |  | 1 |  | 1 |
+| f121-p4-f7 | 660mAh LiPoバッテリー | 1 | 1 | 2 | 2 |
+| f121-p4-f8 | GEMFAN予備プロペラ（1組4枚） | 2 | 2 | 2 | 2 |
+| f121-p4-f9 | プロペラガード | 4 | 4 | 4 | 4 |
+| f121-p4-f10 | プロペラ取り外し工具 | 1 | 1 | 1 | 1 |
+| f121-p4-f11 | Hawkeye4.3インチFPVモニター |  |  |  | 1 |
+| f121-p4-f12 | 送信機・FPVモニターホルダー |  |  |  | 1 |
+| f121-p4-f13 | DIY用シェル |  |  | 1 | 1 |
+| f121-p4-f14 | フックとスプリング |  |  | 1 | 1 |
+| f121-p4-f15 | バッテリー充電器 | 1 | 1 | 1 | 1 |
+| f121-p4-f16 | USBケーブル |  |  | 1 | 1 |
+| f121-p4-f17 | 受信機・FC接続ケーブル |  |  | 1 | 1 |
+| f121-p4-f18 | 夜間用方向LED | 1 | 1 | 1 | 1 |
+| f121-p4-f19 | ドライバー | 1 | 1 | 1 | 1 |
+| f121-p4-f20 | F121取扱説明書 | 1 | 1 | 1 | 1 |
+| f121-p4-f21 | Hawkeye FPVマニュアル |  |  |  | 1 |
+
+注意：F121 RTF FPVでは、必要に応じてFPVモニターまたはFPVゴーグルを選択できます。空欄は原典の空欄を保持しています。
+
+<span id="f121-p4-f1-unit" data-translation-unit="f121-p4-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/packing-list.png" width={908} height={1248} figureId="f121-p4-f1" alt={"F121の箱（同梱品表の同じ行の原図）。"} caption={"原典4頁の図"} />
+
+F121の箱（同梱品表の同じ行の原図）。
+携帯・ショルダーバッグ（同梱品表の同じ行の原図）。
+F121（同梱品表の同じ行の原図）。
+R8SM受信機（同梱品表の同じ行の原図）。
+T8S送信機（同梱品表の同じ行の原図）。
+FPVカメラ（同梱品表の同じ行の原図）。
+660mAh LiPoバッテリー（同梱品表の同じ行の原図）。
+GEMFAN予備プロペラ（1組4枚）（同梱品表の同じ行の原図）。
+プロペラガード（同梱品表の同じ行の原図）。
+プロペラ取り外し工具（同梱品表の同じ行の原図）。
+Hawkeye4.3インチFPVモニター（同梱品表の同じ行の原図）。
+送信機・FPVモニターホルダー（同梱品表の同じ行の原図）。
+DIY用シェル（同梱品表の同じ行の原図）。
+フックとスプリング（同梱品表の同じ行の原図）。
+バッテリー充電器（同梱品表の同じ行の原図）。
+USBケーブル（同梱品表の同じ行の原図）。
+受信機・FC接続ケーブル（同梱品表の同じ行の原図）。
+夜間用方向LED（同梱品表の同じ行の原図）。
+ドライバー（同梱品表の同じ行の原図）。
+F121取扱説明書（同梱品表の同じ行の原図）。
+Hawkeye FPVマニュアル（同梱品表の同じ行の原図）。
+
+<span id="f121-p4-f2-unit" data-translation-unit="f121-p4-f2-unit"></span>
+
+<span id="f121-p4-f3-unit" data-translation-unit="f121-p4-f3-unit"></span>
+
+<span id="f121-p4-f4-unit" data-translation-unit="f121-p4-f4-unit"></span>
+
+<span id="f121-p4-f5-unit" data-translation-unit="f121-p4-f5-unit"></span>
+
+<span id="f121-p4-f6-unit" data-translation-unit="f121-p4-f6-unit"></span>
+
+<span id="f121-p4-f7-unit" data-translation-unit="f121-p4-f7-unit"></span>
+
+<span id="f121-p4-f8-unit" data-translation-unit="f121-p4-f8-unit"></span>
+
+<span id="f121-p4-f9-unit" data-translation-unit="f121-p4-f9-unit"></span>
+
+<span id="f121-p4-f10-unit" data-translation-unit="f121-p4-f10-unit"></span>
+
+<span id="f121-p4-f11-unit" data-translation-unit="f121-p4-f11-unit"></span>
+
+<span id="f121-p4-f12-unit" data-translation-unit="f121-p4-f12-unit"></span>
+
+<span id="f121-p4-f13-unit" data-translation-unit="f121-p4-f13-unit"></span>
+
+<span id="f121-p4-f14-unit" data-translation-unit="f121-p4-f14-unit"></span>
+
+<span id="f121-p4-f15-unit" data-translation-unit="f121-p4-f15-unit"></span>
+
+<span id="f121-p4-f16-unit" data-translation-unit="f121-p4-f16-unit"></span>
+
+<span id="f121-p4-f17-unit" data-translation-unit="f121-p4-f17-unit"></span>
+
+<span id="f121-p4-f18-unit" data-translation-unit="f121-p4-f18-unit"></span>
+
+<span id="f121-p4-f19-unit" data-translation-unit="f121-p4-f19-unit"></span>
+
+<span id="f121-p4-f20-unit" data-translation-unit="f121-p4-f20-unit"></span>
+
+<span id="f121-p4-f21-unit" data-translation-unit="f121-p4-f21-unit"></span>
+
+<span id="f121-p4-folio" data-translation-unit="f121-p4-folio"></span>
+
+原典印刷ページ：2
+
+<span id="f121-p5-features1" data-translation-unit="f121-p5-features1"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p5-features2" data-translation-unit="f121-p5-features2"></span>
+
+RadioLinkのミニレーシングドローン用FCで制御されます。使用前にPID設定が必要な他のFCとは異なり、自動調整します。ソフトウェアによるノイズ低減技術で快適な飛行を実現し、従来の8520コアレスモーターより応答性と効率を高めています。
+
+<span id="f121-p5-throw-claim" data-translation-unit="f121-p5-throw-claim"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p5-power" data-translation-unit="f121-p5-power"></span>
+
+## 第2章 飛行前の準備
+
+### 2.1 電源
+
+T8S送信機：満充電であることを確認してください。
+
+F121：付属の1S LiPoバッテリーは出荷時に満充電ではないため、飛行前にCM120で充電してください。1S LiPo専用のCM120は、CB86PLUSの専門的な開発技術と高精度を受け継ぎ、より安全な充電とバッテリー寿命を確保します。
+
+<span id="f121-p5-f1-unit" data-translation-unit="f121-p5-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p5-f1.jpeg" width={646} height={153} figureId="f121-p5-f1" alt={"RadioLink CM120充電器の写真。赤・緑LEDと2A／1A切替スイッチを表示。"} caption={"RadioLink CM120充電器の写真。赤・緑LEDと2A／1A切替スイッチを表示。"} />
+
+<span id="f121-p5-charging" data-translation-unit="f121-p5-charging"></span>
+
+充電器側面のスイッチで、充電電流を1Aまたは2Aへ設定できます。赤色LEDがゆっくり点滅している間は充電中、緑色LEDが点灯し続けると満充電、赤・緑の交互点滅は異常を示します。
+
+CM120は一般的なUSB端子を使用し、パソコンやモバイルバッテリーを電源にできます。
+
+
+
+<span id="f121-p5-input-voltage-warning" data-translation-unit="f121-p5-input-voltage-warning"></span>
+
+:::caution[注意]
+注意：電源の出力電圧は5Vを超えてはいけません。
+:::
+
+<span id="f121-p5-transmitter" data-translation-unit="f121-p5-transmitter"></span>
+
+## 2.2 送信機
+
+T8Sの2本のスティックは4つの基本チャンネルに対応します。例はRadioLink T8SのMode2（左スロットル）です。
+
+左スティック：上下のスロットル操作で上昇・下降し、左右のヨー操作で時計回り・反時計回りに旋回します。
+
+右スティック：上下のピッチ操作で前進・後退し、左右のロール操作で左右へ移動します。
+
+<span id="f121-p5-folio" data-translation-unit="f121-p5-folio"></span>
+
+原典印刷ページ：3
+
+<span id="f121-p6-f1-unit" data-translation-unit="f121-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p6-f1.jpeg" width={492} height={267} figureId="f121-p6-f1" alt={"Mode2のT8S送信機の写真。"} caption={"Mode2のT8S送信機の写真。"} />
+
+<span id="f121-p6-f2-unit" data-translation-unit="f121-p6-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p6-f2.jpeg" width={197} height={186} figureId="f121-p6-f2" alt={"左スティック：ヨーで時計回り・反時計回り、スロットルで上昇・下降。"} caption={"左スティック：ヨーで時計回り・反時計回り、スロットルで上昇・下降。"} />
+
+<span id="f121-p6-f3-unit" data-translation-unit="f121-p6-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p6-f3.jpeg" width={181} height={173} figureId="f121-p6-f3" alt={"右スティック：ロールで左右移動、ピッチで前進・後退。"} caption={"右スティック：ロールで左右移動、ピッチで前進・後退。"} />
+
+<span id="f121-p6-other-transmitters" data-translation-unit="f121-p6-other-transmitters"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p6-intro" data-translation-unit="f121-p6-intro"></span>
+
+## 2.3 F121
+
+ブロックのような組み立て方式により、RCを学ぶ人はDIYの能力を高め、長時間のモバイルゲームから離れ、組み立て、設定、飛行を通して科学技術を学べます。
+
+<span id="f121-p6-native-diagram-labels" data-translation-unit="f121-p6-native-diagram-labels"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p6-f4-unit" data-translation-unit="f121-p6-f4-unit"></span>
+
+<span id="f121-p6-folio" data-translation-unit="f121-p6-folio"></span>
+
+原典印刷ページ：4
+
+<span id="f121-p7-f1-unit" data-translation-unit="f121-p7-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p7-throttle" data-translation-unit="f121-p7-throttle"></span>
+
+<span id="f121-p7-f2-unit" data-translation-unit="f121-p7-f2-unit"></span>
+
+<span id="f121-p7-f3-unit" data-translation-unit="f121-p7-f3-unit"></span>
+
+<span id="f121-p7-f4-unit" data-translation-unit="f121-p7-f4-unit"></span>
+
+<span id="f121-p7-f5-unit" data-translation-unit="f121-p7-f5-unit"></span>
+
+<span id="f121-p7-f6-unit" data-translation-unit="f121-p7-f6-unit"></span>
+
+<span id="f121-p7-f7-unit" data-translation-unit="f121-p7-f7-unit"></span>
+
+<span id="f121-p7-f8-unit" data-translation-unit="f121-p7-f8-unit"></span>
+
+<span id="f121-p7-f9-unit" data-translation-unit="f121-p7-f9-unit"></span>
+
+<span id="f121-p7-f10-unit" data-translation-unit="f121-p7-f10-unit"></span>
+
+<span id="f121-p7-f11-unit" data-translation-unit="f121-p7-f11-unit"></span>
+
+<span id="f121-p7-scale" data-translation-unit="f121-p7-scale"></span>
+
+<span id="f121-p7-folio" data-translation-unit="f121-p7-folio"></span>
+
+原典印刷ページ：5
+
+<span id="f121-p8-yaw" data-translation-unit="f121-p8-yaw"></span>
+
+### B. ヨー：時計回り／反時計回り
+
+左スティックのヨーを左へ動かすと反時計回り、右へ動かすと時計回りに旋回します。
+
+<span id="f121-p8-f1-unit" data-translation-unit="f121-p8-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/yaw-left.png" width={744} height={193} figureId="f121-p8-f1" alt={"反時計回りに旋回する機体図。"} caption={"原典8頁の図"} />
+
+反時計回りに旋回する機体図。
+ヨースティックを左へ動かす図。
+
+<span id="f121-p8-f2-unit" data-translation-unit="f121-p8-f2-unit"></span>
+
+<span id="f121-p8-f3-unit" data-translation-unit="f121-p8-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/yaw-right.png" width={723} height={185} figureId="f121-p8-f3" alt={"ヨースティックを右へ動かす図。"} caption={"原典8頁の図"} />
+
+ヨースティックを右へ動かす図。
+時計回りに旋回する機体図。
+
+<span id="f121-p8-f4-unit" data-translation-unit="f121-p8-f4-unit"></span>
+
+<span id="f121-p8-pitch" data-translation-unit="f121-p8-pitch"></span>
+
+### C. ピッチ：前進／後退
+
+右スティックのピッチを上へ動かすと前進し、下へ動かすと後退します。
+
+<span id="f121-p8-f5-unit" data-translation-unit="f121-p8-f5-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/pitch-up.png" width={756} height={197} figureId="f121-p8-f5" alt={"前進する機体図。"} caption={"原典8頁の図"} />
+
+前進する機体図。
+ピッチスティックを上へ動かす図。
+ピッチ上操作の矢印。
+
+<span id="f121-p8-f6-unit" data-translation-unit="f121-p8-f6-unit"></span>
+
+<span id="f121-p8-f7-unit" data-translation-unit="f121-p8-f7-unit"></span>
+
+<span id="f121-p8-f8-unit" data-translation-unit="f121-p8-f8-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/pitch-down.png" width={754} height={243} figureId="f121-p8-f8" alt={"後退する機体図。"} caption={"原典8頁の図"} />
+
+後退する機体図。
+ピッチスティックを下へ動かす図。
+ピッチ下操作の矢印。
+
+<span id="f121-p8-f9-unit" data-translation-unit="f121-p8-f9-unit"></span>
+
+<span id="f121-p8-f10-unit" data-translation-unit="f121-p8-f10-unit"></span>
+
+<span id="f121-p8-roll" data-translation-unit="f121-p8-roll"></span>
+
+### D. ロール：右／左
+
+右スティックのロールを左へ動かすと左へ移動し、右へ動かすと右へ移動します。
+
+<span id="f121-p8-labels" data-translation-unit="f121-p8-labels"></span>
+
+ピッチを上へ：前進。ピッチを下へ：後退。ヨーを左へ：反時計回り。ヨーを右へ：時計回り。
+
+<span id="f121-p8-folio" data-translation-unit="f121-p8-folio"></span>
+
+原典印刷ページ：6
+
+<span id="f121-p9-roll-labels" data-translation-unit="f121-p9-roll-labels"></span>
+
+ロールスティックを左へ：機体は左へ移動。ロールスティックを右へ：機体は右へ移動。
+
+<span id="f121-p9-f1-unit" data-translation-unit="f121-p9-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/roll-left.png" width={750} height={232} figureId="f121-p9-f1" alt={"左へ移動する機体図。"} caption={"原典9頁の図"} />
+
+左へ移動する機体図。
+ロールを左へ動かす図。
+ロール左操作の矢印。
+
+<span id="f121-p9-f2-unit" data-translation-unit="f121-p9-f2-unit"></span>
+
+<span id="f121-p9-f3-unit" data-translation-unit="f121-p9-f3-unit"></span>
+
+<span id="f121-p9-f4-unit" data-translation-unit="f121-p9-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/roll-right.png" width={748} height={185} figureId="f121-p9-f4" alt={"右へ移動する機体図。"} caption={"原典9頁の図"} />
+
+右へ移動する機体図。
+ロールを右へ動かす図。
+ロール右操作の矢印。
+
+<span id="f121-p9-f5-unit" data-translation-unit="f121-p9-f5-unit"></span>
+
+<span id="f121-p9-f6-unit" data-translation-unit="f121-p9-f6-unit"></span>
+
+<span id="f121-p9-motor" data-translation-unit="f121-p9-motor"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p9-f7-unit" data-translation-unit="f121-p9-f7-unit"></span>
+
+<span id="f121-p9-f8-unit" data-translation-unit="f121-p9-f8-unit"></span>
+
+<span id="f121-p9-folio" data-translation-unit="f121-p9-folio"></span>
+
+原典印刷ページ：7
+
+<span id="f121-p10-half-guards" data-translation-unit="f121-p10-half-guards"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p10-f1-unit" data-translation-unit="f121-p10-f1-unit"></span>
+
+<span id="f121-p10-f2-unit" data-translation-unit="f121-p10-f2-unit"></span>
+
+<span id="f121-p10-f3-unit" data-translation-unit="f121-p10-f3-unit"></span>
+
+<span id="f121-p10-f4-unit" data-translation-unit="f121-p10-f4-unit"></span>
+
+<span id="f121-p10-full-guards" data-translation-unit="f121-p10-full-guards"></span>
+
+<span id="f121-p10-f5-unit" data-translation-unit="f121-p10-f5-unit"></span>
+
+<span id="f121-p10-f6-unit" data-translation-unit="f121-p10-f6-unit"></span>
+
+<span id="f121-p10-guard-check" data-translation-unit="f121-p10-guard-check"></span>
+
+<span id="f121-p10-propeller" data-translation-unit="f121-p10-propeller"></span>
+
+<span id="f121-p10-screw-label" data-translation-unit="f121-p10-screw-label"></span>
+
+<span id="f121-p10-folio" data-translation-unit="f121-p10-folio"></span>
+
+原典印刷ページ：8
+
+<span id="f121-p11-f2-unit" data-translation-unit="f121-p11-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p11-f1-unit" data-translation-unit="f121-p11-f1-unit"></span>
+
+<span id="f121-p11-motor-align" data-translation-unit="f121-p11-motor-align"></span>
+
+<span id="f121-p11-f3-unit" data-translation-unit="f121-p11-f3-unit"></span>
+
+<span id="f121-p11-night-led" data-translation-unit="f121-p11-night-led"></span>
+
+<span id="f121-p11-f4-unit" data-translation-unit="f121-p11-f4-unit"></span>
+
+<span id="f121-p11-f6-unit" data-translation-unit="f121-p11-f6-unit"></span>
+
+<span id="f121-p11-f5-unit" data-translation-unit="f121-p11-f5-unit"></span>
+
+<span id="f121-p11-power" data-translation-unit="f121-p11-power"></span>
+
+## 3.4 F121の電源を入れる
+
+先に1S LiPoバッテリーを満充電にしてください。バッテリーのPH2.0端子をF121へ接続してから、機体底部のバッテリーフレームへ入れます。
+
+(1) 標準ではオレンジ色のプロペラが機首を示します。電源を入れて飛行準備するときは、安全のため操縦者と同じ方向へ向けてください。
+(2) 電源を入れると緑色LEDが点滅を始め、消灯すると校正完了です。
+
+<span id="f121-p11-folio" data-translation-unit="f121-p11-folio"></span>
+
+原典印刷ページ：9
+
+<span id="f121-p12-head-direction" data-translation-unit="f121-p12-head-direction"></span>
+
+注意：機首方向は固定されています。標準と違う方向で校正した場合、飛行開始時に標準方向へ自動的に戻ります。これをコンパスを使わないHead Front Forward Pointと呼んでいます。FCが機首方向を誤認識した場合は、再投入または再校正で機首方向を認識し直せます。
+
+<span id="f121-p12-flight-note" data-translation-unit="f121-p12-flight-note"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p12-crash-warning" data-translation-unit="f121-p12-crash-warning"></span>
+
+:::caution[注意]
+何かに当たって機体が落下した場合は、ただちにスロットルを最下位置へ動かし、モーターの回転を止めてください。
+:::
+
+<span id="f121-p12-sbus" data-translation-unit="f121-p12-sbus"></span>
+
+正常に動作させるため、受信機がSBUS出力であることを確認してください。RadioLink R8SM／R6DSMは、SBUSモード時のLEDが青色／紫色です。
+
+<span id="f121-p12-compatible" data-translation-unit="f121-p12-compatible"></span>
+
+## 3.6 対応送信機の設定
+
+単体版には標準で受信機がなく、RTF版はT8S送信機とR8SM受信機が付属します。R8SMはRadioLink T8FB／T16D／T12Dにも対応します。AT10／AT10II／AT9／AT9S／AT9S Proを使用する場合はR6DSMを使用します。
+
+<span id="f121-p12-receiver-low-voltage-warning" data-translation-unit="f121-p12-receiver-low-voltage-warning"></span>
+
+:::caution[注意]
+他社の送受信機を使用する場合の注意：
+
+1. 受信機の最低動作電圧を確認してください。市販ミニ受信機には最低電圧が3.7Vのものが多く、コアレスモーター機は通常1S 4.2Vリチウム電池で動作します。高速飛行では3.7V未満へ低下しやすく、電源不足で制御を失って墜落するおそれがあります。受信機の最低動作電圧へ注意してください。
+:::
+
+<span id="f121-p12-other-brands" data-translation-unit="f121-p12-other-brands"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p12-sbus-warning" data-translation-unit="f121-p12-sbus-warning"></span>
+
+:::caution[注意]
+2. 受信機がSBUS出力に対応することを確認してください。
+:::
+
+<span id="f121-p12-t8-controls" data-translation-unit="f121-p12-t8-controls"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p12-folio" data-translation-unit="f121-p12-folio"></span>
+
+原典印刷ページ：10
+
+<span id="f121-p13-f2-unit" data-translation-unit="f121-p13-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p13-f1-unit" data-translation-unit="f121-p13-f1-unit"></span>
+
+<span id="f121-p13-setup" data-translation-unit="f121-p13-setup"></span>
+
+<span id="f121-p13-f3-unit" data-translation-unit="f121-p13-f3-unit"></span>
+
+<span id="f121-p13-f4-unit" data-translation-unit="f121-p13-f4-unit"></span>
+
+<span id="f121-p13-f5-unit" data-translation-unit="f121-p13-f5-unit"></span>
+
+<span id="f121-p13-more" data-translation-unit="f121-p13-more"></span>
+
+各送信機の詳しい設定は www.radiolink.com から該当する詳細マニュアルをダウンロードしてください。
+
+<span id="f121-p13-binding" data-translation-unit="f121-p13-binding"></span>
+
+## 3.7 バインド
+
+RTF版（T8S＋F121＋バッグ）では、工場出荷時にR8SMを取り付けてバインド済みのため作業不要です。PNP版を購入した場合は、次の手順でバインドしてください。
+
+<span id="f121-p13-folio" data-translation-unit="f121-p13-folio"></span>
+
+原典印刷ページ：11
+
+<span id="f121-p14-binding" data-translation-unit="f121-p14-binding"></span>
+
+PNP版のバインド手順：
+
+(1) 送信機と機体に取り付けた受信機を50cm以内へ近づけます。
+(2) 送信機とF121の電源を入れます。
+(3) 受信機側面の黒いID SETボタンを1秒を超えて押します。LEDの点滅でバインド開始を示します。
+(4) LEDが点灯し続けると完了です。
+(5) 次節の方法でアームし、スロットルを軽く上げてモーターが動くか確認します。動かなければバインドをやり直します。
+
+<span id="f121-p14-f1-unit" data-translation-unit="f121-p14-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p14-f1.png" width={815} height={459} figureId="f121-p14-f1" alt={"バインド時のF121の向きの図。"} caption={"バインド時のF121の向きの図。"} />
+
+<span id="f121-p14-f2-unit" data-translation-unit="f121-p14-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p14-f2.jpeg" width={580} height={435} figureId="f121-p14-f2" alt={"受信機のバインドボタン位置を示す写真。"} caption={"受信機のバインドボタン位置を示す写真。"} />
+
+<span id="f121-p14-binding-note" data-translation-unit="f121-p14-binding-note"></span>
+
+注意：
+
+- F121はSBUS出力のみ対応します。R8SM／R6DSMのLEDが青／紫であることを確認してください。赤の場合はバインドボタンを1秒以内に2回押して離すと紫／青に切り替わります。
+- AT9S Pro／AT9S／AT10／AT10IIとR6DSMを使う場合は、BASICE MENU → SYSTEMでCH-SELECTを10CHへ設定します。そうしないとアームできません。
+- T16D／T12DとR8SMを使う場合は、Receiver setting → RF SETTINGSでFHSS V1を選びます。そうしないとバインドできません。
+
+<span id="f121-p14-arm" data-translation-unit="f121-p14-arm"></span>
+
+## 3.8 アームとディスアーム
+
+### A. アーム
+
+T8Sではスロットルを最下位置にし、左側のCH7（3ポジション）を上へ動かします。緑LED点灯でアーム成功です。T8FBではスロットル最下位置で左側CH7（2ポジション）を下へ動かします。他の送信機ではCH7へ2ポジションスイッチを割り当て、スロットル最下位置・スイッチ下位置で緑LEDが点灯するとアームです。安全のため、スロットル操作が5秒間ないと自動ディスアームします。飛行準備ができたら再度アームしてください。
+
+<span id="f121-p14-f4-unit" data-translation-unit="f121-p14-f4-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p14-f3-unit" data-translation-unit="f121-p14-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p14-f3.png" width={572} height={439} figureId="f121-p14-f3" alt={"アーム状態の機体と緑色表示灯の図。"} caption={"アーム状態の機体と緑色表示灯の図。"} />
+
+<span id="f121-p14-binding-caption" data-translation-unit="f121-p14-binding-caption"></span>
+
+受信機のバインドボタン。
+
+<span id="f121-p14-folio" data-translation-unit="f121-p14-folio"></span>
+
+原典印刷ページ：12
+
+<span id="f121-p15-disarm-warning" data-translation-unit="f121-p15-disarm-warning"></span>
+
+:::caution[注意]
+### B. ディスアーム
+
+飛行後は、予期しない負傷を防ぐため、近づいて触る前に必ずディスアームを確認してください。必ずF121の電源を切ってからT8Sの電源を切ってください。
+:::
+
+<span id="f121-p15-disarm" data-translation-unit="f121-p15-disarm"></span>
+
+T8SのCH7を下へ動かし、緑LED消灯でディスアームです。T8FBではCH7を上へ動かします。他の送信機ではCH7へ2ポジションスイッチを割り当て、上位置で緑LEDが消灯するとディスアームです。
+
+<span id="f121-p15-f1-unit" data-translation-unit="f121-p15-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p15-f2-unit" data-translation-unit="f121-p15-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p15-f2.png" width={609} height={468} figureId="f121-p15-f2" alt={"ディスアーム状態のF121の図。"} caption={"ディスアーム状態のF121の図。"} />
+
+<span id="f121-p15-flight-warning" data-translation-unit="f121-p15-flight-warning"></span>
+
+:::caution[注意]
+## 第4章 各飛行モードでの飛行
+
+初心者は低速高度維持、高速高度維持、スタビライズの順に練習することを強く推奨します。飛行方向を判断しやすいよう機首を操縦者と同じ方向へ向けてください。そうしないと操縦者へ向かって飛び負傷するおそれがあります。意図せず機首が違う方向になった場合は、スロットルを最下位置へ下げて着陸させてください。
+:::
+
+<span id="f121-p15-altitude" data-translation-unit="f121-p15-altitude"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p15-hover" data-translation-unit="f121-p15-hover"></span>
+
+<span id="f121-p15-horizontal" data-translation-unit="f121-p15-horizontal"></span>
+
+<span id="f121-p15-folio" data-translation-unit="f121-p15-folio"></span>
+
+原典印刷ページ：13
+
+<span id="f121-p16-yaw" data-translation-unit="f121-p16-yaw"></span>
+
+### 4.1.4 時計回り／反時計回りの旋回
+
+上記操作に慣れたら旋回を練習します。ヨー操作は飛行方向の判断が難しいため、機体に乗っているつもりで方向を考えると習得に役立ちます。ラダースティックを左へ動かすと反時計回り、右へ動かすと時計回りに旋回します。
+
+<span id="f121-p16-stabilize" data-translation-unit="f121-p16-stabilize"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p16-flip-intro" data-translation-unit="f121-p16-flip-intro"></span>
+
+<span id="f121-p16-f2-unit" data-translation-unit="f121-p16-f2-unit"></span>
+
+<span id="f121-p16-f1-unit" data-translation-unit="f121-p16-f1-unit"></span>
+
+<span id="f121-p16-flips" data-translation-unit="f121-p16-flips"></span>
+
+<span id="f121-p16-flip-distance-warning" data-translation-unit="f121-p16-flip-distance-warning"></span>
+
+:::caution[注意]
+後方フリップを行うときは、安全のため先に自分から離れた所へ飛ばしてください。
+:::
+
+<span id="f121-p16-flips-followup" data-translation-unit="f121-p16-flips-followup"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p16-low-voltage" data-translation-unit="f121-p16-low-voltage"></span>
+
+:::caution[注意]
+注意：飛行中に緑LEDが点滅し始めると、1Sバッテリーの標準値である3.8V未満に低下したことを示します。過放電を防ぐため飛行を終了することを推奨します。
+:::
+
+:::note[原典について]
+FCの緑LED警告は3.8V、OSDの電圧点滅は3.4V未満40秒/3.2V未満と別の表示条件です。異なる表示系統を同じ閾値へ統一しません。原典6.1は緑LED速い点滅、4.3は点滅開始と記載し、点滅速度を他の章へ補完しません。
+:::
+
+<span id="f121-p16-folio" data-translation-unit="f121-p16-folio"></span>
+
+原典印刷ページ：14
+
+<span id="f121-p17-rf-intro" data-translation-unit="f121-p17-rf-intro"></span>
+
+## 第5章 F121の映像伝送
+
+F121は5.8G・25mW・全チャンネル対応のカメラ一体型映像伝送機器を搭載します。映像伝送版はFPV画面とのバインド済みで、飛行前に両方の電源を入れます。単体版では5.8G受信機内蔵のFPV画面またはゴーグルを用意し、その説明書に従って設定します。
+
+<span id="f121-p17-power-values" data-translation-unit="f121-p17-power-values"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p17-rf-note" data-translation-unit="f121-p17-rf-note"></span>
+
+注意：映像伝送は送信と受信の両方を含むため、送受信ゲインで距離が変わる場合があります。
+
+<span id="f121-p17-monitor-heading" data-translation-unit="f121-p17-monitor-heading"></span>
+
+## 5.1 Little Pilot（SCHOOL）一体型4.3インチFPVモニター
+
+### 5.1.1 ボタンと機能
+
+<span id="f121-p17-f1-unit" data-translation-unit="f121-p17-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p17-f1.jpeg" width={2369} height={910} figureId="f121-p17-f1" alt={"Little Pilotのボタン位置1～5。画面上部はFPVバッテリー電圧、システム動作時間、FPV周波数、FPV信号強度を表示。"} caption={"Little Pilotのボタン位置1～5。画面上部はFPVバッテリー電圧、システム動作時間、FPV周波数、FPV信号強度を表示。"} />
+
+<span id="f121-p17-monitor-table" data-translation-unit="f121-p17-monitor-table"></span>
+
+| ボタン名 | 機能 |
+| --- | --- |
+| 1. 調整＋ | 項目増加。長押しで自動検索、短押しでA-B-C-D-R-Fの6グループを選択 |
+| 2. 電源／メニュー | 短押しで設定メニュー、長押しで電源オン／オフ |
+| 3. 調整－ | 項目減少。短押しで1～8を選択 |
+| 4. Micro USB充電端子 | 充電 |
+| 5. Reset | リセット |
+
+<span id="f121-p17-folio" data-translation-unit="f121-p17-folio"></span>
+
+原典印刷ページ：15
+
+<span id="f121-p18-frequency-heading" data-translation-unit="f121-p18-frequency-heading"></span>
+
+## 5.1.2 Little Pilotモニターの周波数グループ選択
+
+<span id="f121-p18-f1-unit" data-translation-unit="f121-p18-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p18-f1.jpeg" width={1114} height={487} figureId="f121-p18-f1" alt={"Little Pilotの周波数表（原典値）。"} caption={"原典18頁の図"} />
+
+Little Pilotの周波数表（原典値）。
+
+| CH | A | B | C | D | R | F |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 5645 | 5740 | 5725 | 5733 | 5658 | 5362 |
+| 2 | 5665 | 5760 | 5745 | 5752 | 5695 | 5399 |
+| 3 | 5685 | 5780 | 5765 | 5771 | 5732 | 5436 |
+| 4 | 5705 | 5800 | 5785 | 5790 | 5769 | 5473 |
+| 5 | 5885 | 5820 | 5805 | 5809 | 5806 | 5510 |
+| 6 | 5905 | 5840 | 5825 | 5828 | 5843 | 5547 |
+| 7 | 5925 | 5860 | 5845 | 5847 | 5880 | 5584 |
+| 8 | 5945 | 5880 | 5865 | 5866 | 5917 | 5621 |
+
+<span id="f121-p18-binding" data-translation-unit="f121-p18-binding"></span>
+
+### 5.1.3 F121とのバインド
+
+1. 自動（推奨）：F121の電源を入れ、Little Pilotの＋を長押しして自動検索します。検索後、最も強い信号の画面を自動表示します。
+
+
+<span id="f121-p18-binding-manual" data-translation-unit="f121-p18-binding-manual"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p18-goggle-heading" data-translation-unit="f121-p18-goggle-heading"></span>
+
+## 5.2 ZENCHANSI 3インチFPVゴーグル
+
+### 5.2.1 ボタンと端子
+
+<span id="f121-p18-f2-unit" data-translation-unit="f121-p18-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p18-f2.jpeg" width={804} height={800} figureId="f121-p18-f2" alt={"ZENCHANSIの番号付き端子・ボタン図。⑩調節できるヘッドバンド、⑪目の周囲を保護する部分。①～⑨は次頁の説明に対応。"} caption={"ZENCHANSIの番号付き端子・ボタン図。⑩調節できるヘッドバンド、⑪目の周囲を保護する部分。①～⑨は次頁の説明に対応。"} />
+
+<span id="f121-p18-folio" data-translation-unit="f121-p18-folio"></span>
+
+原典印刷ページ：16
+
+<span id="f121-p19-av-mode-claim" data-translation-unit="f121-p19-av-mode-claim"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p19-goggle-controls" data-translation-unit="f121-p19-goggle-controls"></span>
+
+② A：アンテナ端子A（RP-SMAオス）。
+③ EB：アンテナ端子B（RP-SMAオス）。
+④ 充電表示：充電中は赤点灯、満充電で消灯。
+⑤ Micro-USB充電端子：5V／1.5A対応。
+⑥ Power/Menu：短押しで電源オン、もう一度短押しでメニュー、長押しでオフ。表示パラメーターを設定できます。
+⑦ AV/Search：長押しでAVモード（CVBS・NTSC・PALの外部映像入力）、短押しで自動検索。
+⑧ －/Band+：menu短押しで画面設定へ入り項目を選び、－で値を減らします。Band+短押しでA-B-C-D-E-Rを循環選択。
+⑨ ＋/CH+：menuで項目を選び、＋で値を増やします。CH+短押しで1～8を循環選択。
+
+メニュー項目：BRIGHTNESS（明るさ）、CONTRAST（コントラスト）、SATURATION（彩度）、RESET（リセット）。
+
+<span id="f121-p19-av-heading" data-translation-unit="f121-p19-av-heading"></span>
+
+## 5.2.2 AVケーブル
+
+<span id="f121-p19-f1-unit" data-translation-unit="f121-p19-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p19-f1.jpeg" width={1203} height={317} figureId="f121-p19-f1" alt={"3.5mm AVケーブル。プラグの赤／白／GND／黄の位置を表示。赤は左音声出力、白は右音声出力、黄は映像出力／入力です。"} caption={"3.5mm AVケーブル。プラグの赤／白／GND／黄の位置を表示。赤は左音声出力、白は右音声出力、黄は映像出力／入力です。"} />
+
+<span id="f121-p19-frequency-heading" data-translation-unit="f121-p19-frequency-heading"></span>
+
+## 5.2.3 ZENCHANSIの周波数表
+
+<span id="f121-p19-f2-unit" data-translation-unit="f121-p19-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p19-f2.jpeg" width={1186} height={360} figureId="f121-p19-f2" alt={"ZENCHANSI周波数表（原典のM表記を保持）。"} caption={"原典19頁の図"} />
+
+ZENCHANSI周波数表（原典のM表記を保持）。
+
+| FR/CH | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A | 5865M | 5845M | 5825M | 5805M | 5785M | 5765M | 5745M | 5725M |
+| B | 5733M | 5752M | 5771M | 5790M | 5809M | 5828M | 5847M | 5866M |
+| C | 5705M | 5685M | 5665M | 5645M | 5885M | 5905M | 5925M | 5945M |
+| D | 5740M | 5760M | 5780M | 5800M | 5820M | 5840M | 5860M | 5880M |
+| E | 5362M | 5399M | 5436M | 5473M | 5510M | 5547M | 5584M | 5621M |
+| R | 5658M | 5695M | 5732M | 5769M | 5806M | 5843M | 5880M | 5917M |
+
+<span id="f121-p19-goggle-auto" data-translation-unit="f121-p19-goggle-auto"></span>
+
+### 5.2.4 F121とのバインド
+
+1. 自動（推奨）：F121の電源を入れ、ゴーグルのSearchを短押しして自動検索します。映像が表示されると成功です。
+
+<span id="f121-p19-folio" data-translation-unit="f121-p19-folio"></span>
+
+原典印刷ページ：17
+
+<span id="f121-p20-goggle-manual" data-translation-unit="f121-p20-goggle-manual"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p20-rf-power" data-translation-unit="f121-p20-rf-power"></span>
+
+## 5.3 F121の映像伝送
+
+### 5.3.1 映像伝送の表示
+
+機体右側の映像伝送電源スイッチを前へ動かしてオンにします（下図）。赤・青LEDが点灯し続けます。初期化を3秒待ってください。
+
+<span id="f121-p20-f1-unit" data-translation-unit="f121-p20-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p20-f1.jpeg" width={1920} height={1081} figureId="f121-p20-f1" alt={"映像伝送電源スイッチ。前方がON、後方がOFF。"} caption={"映像伝送電源スイッチ。前方がON、後方がOFF。"} />
+
+<span id="f121-p20-display-intro" data-translation-unit="f121-p20-display-intro"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p20-f2-unit" data-translation-unit="f121-p20-f2-unit"></span>
+
+<span id="f121-p20-folio" data-translation-unit="f121-p20-folio"></span>
+
+原典印刷ページ：18
+
+<span id="f121-p21-display-table" data-translation-unit="f121-p21-display-table"></span>
+
+| 番号 | 意味 |
+| --- | --- |
+| 1 | 飛行モード：ALTBは低速高度維持、ALTAは高速高度維持、STABはスタビライズ |
+| 2 | アーム状態：施錠アイコンはディスアームでプロペラは回転しません。アームすると解錠アイコンが1秒表示されて消えます |
+| 3 | F121の電源投入後の時間 |
+| 4 | 映像伝送の周波数と出力 |
+| 5 | バッテリー電圧。3.4V未満が40秒続くと電圧値がゆっくり点滅し、3.2V未満では速く点滅 |
+| 6 | 映像伝送機器のメーカー |
+
+:::note[原典について]
+FCの緑LED警告は3.8V、OSDの電圧点滅は3.4V未満40秒/3.2V未満と別の表示条件です。異なる表示系統を同じ閾値へ統一しません。原典6.1は緑LED速い点滅、4.3は点滅開始と記載し、点滅速度を他の章へ補完しません。
+:::
+
+<span id="f121-p21-f1-unit" data-translation-unit="f121-p21-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p21-f1.png" width={284} height={345} figureId="f121-p21-f1" alt={"OSDの施錠アイコン。"} caption={"OSDの施錠アイコン。"} />
+
+<span id="f121-p21-f2-unit" data-translation-unit="f121-p21-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p21-f2.png" width={394} height={345} figureId="f121-p21-f2" alt={"OSDの解錠アイコン。"} caption={"OSDの解錠アイコン。"} />
+
+<span id="f121-p21-config-entry" data-translation-unit="f121-p21-config-entry"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p21-f3-unit" data-translation-unit="f121-p21-f3-unit"></span>
+
+<span id="f121-p21-folio" data-translation-unit="f121-p21-folio"></span>
+
+原典印刷ページ：19
+
+<span id="f121-p22-config-table" data-translation-unit="f121-p22-config-table"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p22-f1-unit" data-translation-unit="f121-p22-f1-unit"></span>
+
+<span id="f121-p22-select" data-translation-unit="f121-p22-select"></span>
+
+<span id="f121-p22-mode2-select" data-translation-unit="f121-p22-mode2-select"></span>
+
+<span id="f121-p22-f2-unit" data-translation-unit="f121-p22-f2-unit"></span>
+
+<span id="f121-p22-folio" data-translation-unit="f121-p22-folio"></span>
+
+原典印刷ページ：20
+
+<span id="f121-p23-value" data-translation-unit="f121-p23-value"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p23-f1-unit" data-translation-unit="f121-p23-f1-unit"></span>
+
+<span id="f121-p23-save" data-translation-unit="f121-p23-save"></span>
+
+<span id="f121-p23-f2-unit" data-translation-unit="f121-p23-f2-unit"></span>
+
+<span id="f121-p23-frequency-heading" data-translation-unit="f121-p23-frequency-heading"></span>
+
+## バンド／周波数表
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p23-f3-unit" data-translation-unit="f121-p23-f3-unit"></span>
+
+<span id="f121-p23-folio" data-translation-unit="f121-p23-folio"></span>
+
+原典印刷ページ：21
+
+<span id="f121-p24-thermal-warning" data-translation-unit="f121-p24-thermal-warning"></span>
+
+:::caution[注意]
+注意：
+
+(1) 映像伝送カメラの取り付け時は放熱を考慮してください。そうしないと過熱保護が働き、出力が低下したり停止したりします。
+(2) 使用中にカメラが熱くなるのは正常です。やけどのおそれがあるため、手で直接触らないでください。
+:::
+
+<span id="f121-p24-antenna" data-translation-unit="f121-p24-antenna"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-p24-interference" data-translation-unit="f121-p24-interference"></span>
+
+<span id="f121-p24-holder-heading" data-translation-unit="f121-p24-holder-heading"></span>
+
+## 5.4 T8Sスマートフォン／FPVモニターホルダー
+
+<span id="f121-p24-f1-unit" data-translation-unit="f121-p24-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p24-f1.jpeg" width={1510} height={638} figureId="f121-p24-f1" alt={"① スマートフォン／FPVモニター固定部：45mm（1.77インチ）～75mm（2.95インチ）。② ストラップ穴。③ ねじを取り付け、モニター角度を90度または135度へ調整。④ T8S固定部：58mm（2.28インチ）。"} caption={"① スマートフォン／FPVモニター固定部：45mm（1.77インチ）～75mm（2.95インチ）。② ストラップ穴。③ ねじを取り付け、モニター角度を90度または135度へ調整。④ T8S固定部：58mm（2.28インチ）。"} />
+
+<span id="f121-p24-f2-unit" data-translation-unit="f121-p24-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p24-f2.jpeg" width={1500} height={570} figureId="f121-p24-f2" alt={"1. 箱からホルダーと赤いねじを取り出します。2. 図のように2つの樹脂部品を組み合わせます。3. 両側のねじ穴へ赤いねじ2本を時計回りに入れます。この時点では締め付けず、角度を調整してから締めて固定してください。"} caption={"1. 箱からホルダーと赤いねじを取り出します。2. 図のように2つの樹脂部品を組み合わせます。3. 両側のねじ穴へ赤いねじ2本を時計回りに入れます。この時点では締め付けず、角度を調整してから締めて固定してください。"} />
+
+<span id="f121-p24-f3-unit" data-translation-unit="f121-p24-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p24-f3.jpeg" width={1500} height={440} figureId="f121-p24-f3" alt={"4. 図のようにT8Sへホルダーを取り付けると完了です。"} caption={"4. 図のようにT8Sへホルダーを取り付けると完了です。"} />
+
+<span id="f121-p24-folio" data-translation-unit="f121-p24-folio"></span>
+
+原典印刷ページ：22
+
+<span id="f121-p25-f1-unit" data-translation-unit="f121-p25-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121/web-ja-v1/f121-p25-f1.jpeg" width={828} height={483} figureId="f121-p25-f1" alt={"5. 取り外すときはホルダー下側からT8Sを取り出してください。破損を防ぐため、モニターを挟む部分を持ってホルダーを外さないでください。"} caption={"5. 取り外すときはホルダー下側からT8Sを取り出してください。破損を防ぐため、モニターを挟む部分を持ってホルダーを外さないでください。"} />
+
+<span id="f121-p25-aircraft-spec" data-translation-unit="f121-p25-aircraft-spec"></span>
+
+## 第6章 仕様
+
+### 6.1 F121
+
+| 項目 | 原典記載 |
+| --- | --- |
+| 名称 | F121（高度維持ミニレーシングドローン） |
+| 重量 | 47.5g（機体のみ） |
+| 機体寸法 | 121×55mm（アンテナ含む。アンテナなしは41mm） |
+| 梱包寸法 | RTFバッグ170×210×113mm、単体箱210×163×67mm |
+| 送信機周波数 | 2.4G |
+| 映像伝送周波数 | 5.8G |
+| 材質 | フレーム：カーボンファイバー、カバー・映像伝送／バッテリー台・プロペラガード：プラスチック |
+| モーター | ソフトウェアでノイズ低減する8520コアレス |
+| プロペラ | 直径65mm GEMFAN |
+| 送信機 | RadioLink8チャンネルT8S |
+| 受信機 | RadioLink8チャンネルミニ受信機R8SM |
+| FC | RadioLink F121 |
+| バッテリー | FULLYMAX3.7V 660mA 25C LiPo（mAは原典表記） |
+| 充電器 | USB充電器（1A／2A） |
+| 飛行時間 | 10分、屋内外対応 |
+| 低電圧アラーム | 3.8V未満で緑LEDが速く点滅 |
+| 制御距離 | 空中2km（遮蔽物・干渉のない場所での最大値試験） |
+
+:::note[原典について]
+FCの緑LED警告は3.8V、OSDの電圧点滅は3.4V未満40秒/3.2V未満と別の表示条件です。異なる表示系統を同じ閾値へ統一しません。原典6.1は緑LED速い点滅、4.3は点滅開始と記載し、点滅速度を他の章へ補完しません。
+:::
+
+:::note[原典について]
+同梱表は660mAh、仕様6.1は660mAという単位です。容量と電流を推測で統一せず、原文単位を保持して注記します。
+:::
+
+<span id="f121-p25-rf-spec" data-translation-unit="f121-p25-rf-spec"></span>
+
+### 6.2 映像伝送システム
+
+動作周波数：5.8G（48チャンネル、6バンド×8チャンネル）。出力：25mW／100mW／200mW。電圧：DC3～5.2V（1S）。4.2V時の電流：420mA（25mW）／450mA（100mW）／520mA（200mW）。重量：4.4g。寸法：18.03×16.83×16.55mm。解像度：800TVL。視野角：150度。焦点距離：1.2mm。
+
+<span id="f121-p25-folio" data-translation-unit="f121-p25-folio"></span>
+
+原典印刷ページ：23
+
+<span id="f121-p26-monitor-spec" data-translation-unit="f121-p26-monitor-spec"></span>
+
+### 6.3 Little Pilotモニター
+
+ブランド：Hawkeye。周波数：5.8GHz。画面：4.3インチ。解像度：480×3（RGB）×272。48チャンネル。明るさ：700cd/m²。縦横比：16:9。応答時間：10ms未満。方式：PAL／NTSC。動作時間：2.5時間超。受信感度：-94dB（原典表記）。
+
+<span id="f121-p26-goggle-spec" data-translation-unit="f121-p26-goggle-spec"></span>
+
+### 6.4 ZENCHANSI FPVゴーグル
+
+画面：3.0インチ、480×272画素。明るさ：230cd/m²、高輝度LEDバックライト。映像方式：NTSC／PAL。AV端子：外部映像入力または内部AV出力。電源アダプター：DC5V／1.5A（USB）。OSD：信号強度、バッテリー、チャンネル。バッテリー：3.7V／1800mAh、満充電で約3.5時間。動作時間：3.5時間。充電時間：3時間。アンテナ端子：RP-SMA（内側ピン）。寸法：155×135×55mm。重量：236.4g（ヘッドバンド・アンテナ含む）。周波数範囲：5362～5945MHz。48チャンネル。
+
+<span id="f121-p26-thanks" data-translation-unit="f121-p26-thanks"></span>
+
+RadioLink製品をお選びいただき、重ねてお礼申し上げます。
+
+<span id="f121-p26-folio" data-translation-unit="f121-p26-folio"></span>
+
+原典印刷ページ：24

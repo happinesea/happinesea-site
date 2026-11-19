@@ -1,0 +1,444 @@
+---
+title: F722 日本語取扱説明書
+description: Radiolink F722 の公式英語取扱説明書に対応する日本語版です。
+product: f722
+slug: manuals/f722
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/66930fe253e96fdceafe8af16a3e7ce3.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f722/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F722 公式英語取扱説明書（文書版・発行日不明、17頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="f722-p1-f1-unit" data-translation-unit="f722-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f722/web-ja-v1/f722-p1-f1.jpeg" width={380} height={114} figureId="f722-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="f722-p1-body" data-translation-unit="f722-p1-body"></span>
+
+### F722
+
+RadioLink F722 取扱説明書
+
+<span id="f722-p1-f2-unit" data-translation-unit="f722-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f722/web-ja-v1/f722-p1-f2.jpeg" width={1319} height={1300} figureId="f722-p1-f2" alt={"原典のF722基板写真。基板表示は「24:05:21 V1.0」です。"} caption={"原典のF722基板写真。基板表示は「24:05:21 V1.0」です。"} />
+
+<span id="f722-p1-f3-unit" data-translation-unit="f722-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f722/web-ja-v1/f722-p1-f3.jpeg" width={110} height={66} figureId="f722-p1-f3" alt={"原典の14歳以上の年齢表示。"} caption={"原典の14歳以上の年齢表示。"} />
+
+<span id="f722-p2-body" data-translation-unit="f722-p2-body"></span>
+
+:::caution[注意]
+RadioLink製品をお選びいただきありがとうございます。本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方はお子様の手の届かない場所に保管し、お子様のいる場所で操作する際は十分注意してください。
+:::
+
+<span id="f722-p2-body-download" data-translation-unit="f722-p2-body-download"></span>
+
+RADIOLINKF722の取扱説明書は、https://www.radiolink.com/f722_manual_download からもダウンロードできます。
+
+<span id="f722-p2-body-support" data-translation-unit="f722-p2-body-support"></span>
+
+本書をよく読み、指示に従って機器を設定してください。ご質問はFacebookやYouTubeのメッセージ・コメント、または after_service@radiolink.com.cn へメールでお寄せください。
+
+<span id="f722-p2-f1-unit" data-translation-unit="f722-p2-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f722/web-ja-v1/f722-p2-f1.jpeg" width={300} height={300} figureId="f722-p2-f1" alt={"F722取扱説明書のQRコード（原典掲載、リンク先未検証）。"} caption={"F722取扱説明書のQRコード（原典掲載、リンク先未検証）。"} />
+
+<span id="f722-p2-f2-unit" data-translation-unit="f722-p2-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f722/web-ja-v1/f722-p2-f2.jpeg" width={145} height={143} figureId="f722-p2-f2" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="f722-p2-body-links" data-translation-unit="f722-p2-body-links"></span>
+
+Facebook MessengerでRadioLink RLへ連絡
+
+F722取扱説明書
+
+<span id="f722-p3-body" data-translation-unit="f722-p3-body"></span>
+
+### 目次
+
+- 仕様 …… 1
+- 同梱品 …… 3
+- LED表示 …… 4
+- はんだ付けパッドの定義 …… 4
+- ソケット端子の定義 …… 5
+- フライトコントローラーとESCの接続 …… 6
+- 周辺機器の接続 …… 7
+- ファームウェア更新 …… 11
+- ESCとコンデンサーの取り付け …… 12
+
+<span id="f722-p4-body" data-translation-unit="f722-p4-body"></span>
+
+### 仕様
+
+|分類|項目|原典記載|
+|---|---|---|
+|重量・寸法|寸法|30.5 × 30.5 mm（1.2 × 1.2インチ）|
+||重量|9.5 g|
+|ハードウェア|プロセッサー|STM32F722RET6|
+|センサー|ジャイロ|ICM42688|
+||気圧計|BMP280／DPS310|
+||ブラックボックス|128 MB、飛行ログを記録・保存|
+||OSDモジュール|AT7456E|
+|コネクター|チャンネル出力|M1～M8|
+||HDデジタル映像伝送|プラグアンドプレイ対応|
+||アナログ映像伝送|プラグアンドプレイ対応|
+||Betaflightカメラパラメーター設定用パッド|対応|
+||バッテリースケール|110|
+||UARTポート|5|
+||ESC機能|対応|
+||I2C|対応|
+||LEDストリップ|対応、専用パッドあり|
+||ブザー|対応、専用パッドあり|
+||RSSI出力|対応、専用パッドあり|
+
+<span id="f722-p4-folio" data-translation-unit="f722-p4-folio"></span>
+
+原典印刷ページ：1
+
+<span id="f722-p5-body" data-translation-unit="f722-p5-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p5-folio" data-translation-unit="f722-p5-folio"></span>
+
+原典印刷ページ：2
+
+<span id="f722-p6-body" data-translation-unit="f722-p6-body"></span>
+
+### 同梱品
+
+<span id="f722-p6-f1-unit" data-translation-unit="f722-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f722/web-ja-v1/f722-p6-f1.jpeg" width={973} height={1134} figureId="f722-p6-f1" alt={"同梱品：F722フライトコントローラー×1、ESC接続ケーブル×2、カメラ接続ケーブル×1、ELRS受信機接続ケーブル×1、アナログ映像伝送接続ケーブル×1、TS100 GPS接続ケーブル×1、3ピン受信機接続ケーブル×1、R8SM受信機接続ケーブル×1、箱×1。"} caption={"同梱品：F722フライトコントローラー×1、ESC接続ケーブル×2、カメラ接続ケーブル×1、ELRS受信機接続ケーブル×1、アナログ映像伝送接続ケーブル×1、TS100 GPS接続ケーブル×1、3ピン受信機接続ケーブル×1、R8SM受信機接続ケーブル×1、箱×1。"} />
+
+<span id="f722-p6-folio" data-translation-unit="f722-p6-folio"></span>
+
+原典印刷ページ：3
+
+<span id="f722-p7-body" data-translation-unit="f722-p7-body"></span>
+
+### LED表示
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p7-f1-unit" data-translation-unit="f722-p7-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p7-body-pads" data-translation-unit="f722-p7-body-pads"></span>
+
+### はんだ付けパッドの定義
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p7-f2-unit" data-translation-unit="f722-p7-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p7-folio" data-translation-unit="f722-p7-folio"></span>
+
+原典印刷ページ：4
+
+<span id="f722-p8-body" data-translation-unit="f722-p8-body"></span>
+
+### コネクター端子の定義
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p8-f1-unit" data-translation-unit="f722-p8-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p8-folio" data-translation-unit="f722-p8-folio"></span>
+
+原典印刷ページ：5
+
+<span id="f722-p9-body" data-translation-unit="f722-p9-body"></span>
+
+### フライトコントローラーとESCの接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p9-body-method1" data-translation-unit="f722-p9-body-method1"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p9-f1-unit" data-translation-unit="f722-p9-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p9-body-warning" data-translation-unit="f722-p9-body-warning"></span>
+
+:::caution[注意]
+注意：この方式で2台のESCを接続する場合は、片方のESCのBAT、CURR、TLMのケーブルを外してください。
+:::
+
+<span id="f722-p9-body-method2" data-translation-unit="f722-p9-body-method2"></span>
+
+### 方式2：直接はんだ付け。
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p9-f2-unit" data-translation-unit="f722-p9-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p9-folio" data-translation-unit="f722-p9-folio"></span>
+
+原典印刷ページ：6
+
+<span id="f722-p10-body" data-translation-unit="f722-p10-body"></span>
+
+### 周辺機器の接続
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p10-body-method1" data-translation-unit="f722-p10-body-method1"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p10-f1-unit" data-translation-unit="f722-p10-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p10-folio" data-translation-unit="f722-p10-folio"></span>
+
+原典印刷ページ：7
+
+<span id="f722-p11-body" data-translation-unit="f722-p11-body"></span>
+
+### 方式2：直接はんだ付け。
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p11-f1-unit" data-translation-unit="f722-p11-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p11-folio" data-translation-unit="f722-p11-folio"></span>
+
+原典印刷ページ：8
+
+<span id="f722-p12-f1-unit" data-translation-unit="f722-p12-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p12-f2-unit" data-translation-unit="f722-p12-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p12-f3-unit" data-translation-unit="f722-p12-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p12-folio" data-translation-unit="f722-p12-folio"></span>
+
+原典印刷ページ：9
+
+<span id="f722-p13-f1-unit" data-translation-unit="f722-p13-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p13-body" data-translation-unit="f722-p13-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p13-f2-unit" data-translation-unit="f722-p13-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p13-folio" data-translation-unit="f722-p13-folio"></span>
+
+原典印刷ページ：10
+
+<span id="f722-p14-body" data-translation-unit="f722-p14-body"></span>
+
+### フライトコントローラーのファームウェア更新
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p14-body-step1" data-translation-unit="f722-p14-body-step1"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p14-f1-unit" data-translation-unit="f722-p14-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p14-f2-unit" data-translation-unit="f722-p14-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p14-body-step2" data-translation-unit="f722-p14-body-step2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p14-f3-unit" data-translation-unit="f722-p14-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p14-folio" data-translation-unit="f722-p14-folio"></span>
+
+原典印刷ページ：11
+
+<span id="f722-p15-body" data-translation-unit="f722-p15-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p15-f1-unit" data-translation-unit="f722-p15-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p15-body-step4" data-translation-unit="f722-p15-body-step4"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p15-f2-unit" data-translation-unit="f722-p15-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p15-body-install" data-translation-unit="f722-p15-body-install"></span>
+
+### ESCとコンデンサーの取り付け
+
+<span id="f722-p15-body-esc" data-translation-unit="f722-p15-body-esc"></span>
+
+### 1. ESCの取り付け
+
+<span id="f722-p15-body-insulation" data-translation-unit="f722-p15-body-insulation"></span>
+
+:::caution[注意]
+レースやアクロバット用ドローンの一部では、フレーム底板がCNC加工された導電性の材料で作られています。正しく取り付けないと、ESC底部の電子部品と金属製底板の安全距離が不足する場合があります。機体の防振ボール（または防振ブラケット）の緩衝作用により、衝突や着陸の衝撃を受けたときにESCの位置がずれ、底板に直接接触して短絡し、ESCとフライトコントローラーを損傷するおそれがあります。
+:::
+
+<span id="f722-p15-folio" data-translation-unit="f722-p15-folio"></span>
+
+原典印刷ページ：12
+
+<span id="f722-p16-body" data-translation-unit="f722-p16-body"></span>
+
+### 2. コンデンサーの取り付け
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p16-body-polarity" data-translation-unit="f722-p16-body-polarity"></span>
+
+:::caution[注意]
+ESC付属のコンデンサーを取り付け、はんだ付け不良がないことを確認してください。不良があると、墜落時にESCとフライトコントローラーが損傷しやすくなります。コンデンサーをESCバッテリーケーブルの赤・黒の端に正しくはんだ付けします。コンデンサーの正極と負極を逆にはんだ付けしないでください（下図参照）。
+:::
+
+<span id="f722-p16-f1-unit" data-translation-unit="f722-p16-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f722-p16-body-capacitor-purpose" data-translation-unit="f722-p16-body-capacitor-purpose"></span>
+
+:::caution[注意]
+大容量コンデンサーは、電圧の安定化、干渉の抑制、瞬間的なエネルギー供給によって、複雑な動作条件でESCの信頼性を大きく改善します。無人航空機の電源系統を安定して動作させる重要な部品です。ESCにコンデンサーを取り付けないと、フライトコントローラーが損傷しやすくなります。
+:::
+
+<span id="f722-p16-folio" data-translation-unit="f722-p16-folio"></span>
+
+原典印刷ページ：13
+
+<span id="f722-p17-body" data-translation-unit="f722-p17-body"></span>
+
+### 大容量コンデンサーの機能
+
+1. 電源電圧の安定化：モーターが始動、加速、急停止すると瞬間的に大電流を消費し、電源電圧が変動することがあります。コンデンサーは蓄えたエネルギーを素早く放出し、一時的な電流不足を補って電圧降下を防ぎます。
+2. 高周波干渉の除去：ESCは高周波スイッチング信号でモーター回転速度を制御します。その際に発生する電流スパイクや電磁ノイズをコンデンサーが吸収し、ESCとフライトコントローラーへの信号干渉を減らします。
+3. 電子部品の保護：モーターの急停止や拘束で瞬間的な高電圧が発生することがあります。このエネルギーをコンデンサーが吸収し、ESC内部のMOSFETや電力回路の破損を防ぎます。
+4. 動的性能の改善：機体姿勢が急変するとき、一時的な電源としてESCの指令への素早い応答を助け、モーター出力の連続性を保ちます。
+
+<span id="f722-p17-folio" data-translation-unit="f722-p17-folio"></span>
+
+原典印刷ページ：14

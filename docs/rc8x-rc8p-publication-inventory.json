@@ -9,7 +9,7 @@
       "canonical_files": {
         "manuals/rc8x/ja/front-matter.md": "7b4ab7e0868d0e0e8a79ff5cda30f4724a70d90bff9a7442855a4b744280c84f",
         "manuals/rc8x/ja/chapter-01.md": "3eeaec42047ae53b9092410e25cbc24c18a869f68c5c840bd5cf8af8a89dabd7",
-        "manuals/rc8x/ja/chapter-02.md": "fc2b43d1a84cb1907271d30fa09791c2da7caff55c06e36353409e0531f8b0aa",
+        "manuals/rc8x/ja/chapter-02.md": "30a7f1f6e7b26f2b3bd94693e65b930c1988a9b0343366ad61d46304bf89b474",
         "manuals/rc8x/ja/figure-guide.md": "a52c784144bc3ad4046c8027bf39113a9a427ff57c84c4cfe8fe7f7603a5abf2",
         "manuals/rc8x/ja/back-matter.md": "81853942e503cf6581c2adfca9224f229da1f8da44b175b95f3f63c30f590600"
       },
@@ -346,7 +346,7 @@
         {
           "route": "/manuals/rc8x/chapter-02/",
           "path": "src/content/docs/manuals/rc8x/chapter-02.mdx",
-          "sha256": "eccc720c1cbd734a6f64223046634275a223fb5e292051920145346ffcea58cd",
+          "sha256": "39718e49d54eb2d75681505c71b29d76877d069a87abfcb790839efe67c13598",
           "tables": 1,
           "legacy_anchors": [
             {

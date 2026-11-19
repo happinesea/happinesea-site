@@ -1,0 +1,427 @@
+---
+title: F405 V1.1 日本語クイックガイド
+description: Radiolink F405 V1.1 の公式英語クイックガイドに対応する日本語版です。
+product: f405
+slug: manuals/f405
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/fd587e08f015b4eb1c3f05e6476d3410-10480
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f405/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F405 V1.1 公式英語クイックガイド（V1.1、17頁）。このページの対象はクイックガイドの範囲です。
+
+<span id="f405-p1-f1-unit" data-translation-unit="f405-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p1-f1.png" width={380} height={114} figureId="f405-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="f405-p1-title" data-translation-unit="f405-p1-title"></span>
+
+## F405 V1.1
+
+クイックスタートガイド
+
+<span id="f405-p1-f2-unit" data-translation-unit="f405-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p1-f2.jpeg" width={1280} height={1262} figureId="f405-p1-f2" alt={"F405 V1.1基板の外観。基板表示は「25:04:11 V1.1」。本資料はクイックスタートガイドです。"} caption={"F405 V1.1基板の外観。基板表示は「25:04:11 V1.1」。本資料はクイックスタートガイドです。"} />
+
+<span id="f405-p1-f3-unit" data-translation-unit="f405-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p1-f3.jpeg" width={110} height={66} figureId="f405-p1-f3" alt={"14歳以上の年齢表示。"} caption={"14歳以上の年齢表示。"} />
+
+<span id="f405-p2-warning" data-translation-unit="f405-p2-warning"></span>
+
+:::caution[注意]
+RadioLink製品をお選びいただきありがとうございます。本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方はお子様の手の届かない場所に保管し、お子様のいる場所で操作する際は十分注意してください。
+:::
+
+<span id="f405-p2-download" data-translation-unit="f405-p2-download"></span>
+
+RADIOLINKF405のマニュアルは https://www.radiolink.com/f405_manual からもダウンロードできます。
+
+<span id="f405-p2-support" data-translation-unit="f405-p2-support"></span>
+
+本書をよく読み、指示に従って機器を設定してください。ご質問はFacebookやYouTubeへメッセージ・コメントを送るか、after_service@radiolink.com.cnへメールでお問い合わせください。
+
+<span id="f405-p2-contact" data-translation-unit="f405-p2-contact"></span>
+
+RadioLink RLへ連絡
+
+F405マニュアル
+
+Facebook Messenger経由で
+
+<span id="f405-p2-f1-unit" data-translation-unit="f405-p2-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p2-f1.png" width={145} height={143} figureId="f405-p2-f1" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="f405-p2-f2-unit" data-translation-unit="f405-p2-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p2-f2.jpeg" width={300} height={300} figureId="f405-p2-f2" alt={"F405マニュアルのQRコード（原典掲載、リンク先未検証）。"} caption={"F405マニュアルのQRコード（原典掲載、リンク先未検証）。"} />
+
+<span id="f405-p2-folio" data-translation-unit="f405-p2-folio"></span>
+
+原典印刷ページ：1
+
+<span id="f405-p3-contents" data-translation-unit="f405-p3-contents"></span>
+
+## 目次
+
+- 仕様 …… 3
+- 同梱品 …… 5
+- LED表示 …… 5
+- はんだ付けパッドの定義 …… 6
+- コネクター端子の定義 …… 7
+- フライトコントローラーとESCの接続 …… 8
+- 周辺機器の接続 …… 9
+- ファームウェア更新 …… 13
+- ESCとコンデンサーの取り付け …… 15
+
+<span id="f405-p3-folio" data-translation-unit="f405-p3-folio"></span>
+
+原典印刷ページ：2
+
+<span id="f405-p4-specifications" data-translation-unit="f405-p4-specifications"></span>
+
+## 仕様
+
+| 分類 | 項目 | 原典記載 |
+| --- | --- | --- |
+| 重量・寸法 | 寸法 | 30.5×30.5mm（1.2×1.2インチ） |
+| 重量・寸法 | 重量 | 9.5g |
+| ハードウェア | プロセッサー | STM32F405RGT6 |
+| センサー | ジャイロ | ICM42688 |
+| センサー | 気圧計 | SPL06 |
+| センサー | ブラックボックス | 128MB、飛行ログを記録・保存 |
+| センサー | OSDモジュール | AT7456E |
+| コネクター | チャンネル出力 | M1～M6 |
+| コネクター | HDデジタル映像伝送 | プラグアンドプレイ対応 |
+| コネクター | アナログ映像伝送 | プラグアンドプレイ対応 |
+| コネクター | バッテリースケール | 110 |
+| コネクター | UARTポート | 5 |
+| コネクター | ESC機能 | 対応（UART3 RX） |
+| コネクター | I2C | 対応 |
+| コネクター | LEDストリップ | 対応、はんだ付けパッドあり |
+| コネクター | ブザー | 対応、はんだ付けパッドあり |
+| コネクター | RSSI出力 | 対応、はんだ付けパッドあり |
+| コネクター | ファームウェアの種類 | Ardupilot、Betaflight、INAV |
+
+<span id="f405-p4-folio" data-translation-unit="f405-p4-folio"></span>
+
+原典印刷ページ：3
+
+<span id="f405-p5-specifications" data-translation-unit="f405-p5-specifications"></span>
+
+| 項目 | 原典記載 |
+| --- | --- |
+| ファームウェア名 | RADIOLINKF405 |
+| USB端子 | 1個（Type-C） |
+| RC入力信号 | SBUS／CRSF |
+| OSDテレメトリー | 対応、OSDモジュール内蔵 |
+| ESCプロトコル | PWM、双方向DShot、OneShot |
+| 入力電圧 | 2S～6S |
+| BEC | 3.3V／300mA、5V／3A、9V／3A |
+| 9V BECスイッチ | 対応（USER1） |
+| 対応模型 | 2～6軸マルチローター、飛行機、ヘリコプター、全翼機、車、ボート、ロボット、ベイトボート、芝刈り機など |
+| 動作温度 | -30～85° |
+
+:::note[原典について]
+動作温度は-30～85°で温度単位が明示されません。℃へ補完しません。
+:::
+
+<span id="f405-p5-folio" data-translation-unit="f405-p5-folio"></span>
+
+原典印刷ページ：4
+
+<span id="f405-p6-package" data-translation-unit="f405-p6-package"></span>
+
+## 同梱品
+
+<span id="f405-p6-f1-unit" data-translation-unit="f405-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p6-f1.jpeg" width={968} height={783} figureId="f405-p6-f1" alt={"同梱品：F405フライトコントローラー×1、ESC接続ケーブル×1、カメラ接続ケーブル×1、R8SM受信機接続ケーブル×1、アナログ映像伝送接続ケーブル×1、GPS接続ケーブル×1、SBUS受信機接続ケーブル×1。"} caption={"同梱品：F405フライトコントローラー×1、ESC接続ケーブル×1、カメラ接続ケーブル×1、R8SM受信機接続ケーブル×1、アナログ映像伝送接続ケーブル×1、GPS接続ケーブル×1、SBUS受信機接続ケーブル×1。"} />
+
+<span id="f405-p6-led" data-translation-unit="f405-p6-led"></span>
+
+## LED表示
+
+<span id="f405-p6-f2-unit" data-translation-unit="f405-p6-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p6-f2.jpeg" width={1573} height={955} figureId="f405-p6-f2" alt={"青色LED：状態表示。赤色LED：電源表示。黄色・緑色LED：9V BEC表示。9V BECがオンになると黄色・緑色LEDが点灯し続けます。"} caption={"青色LED：状態表示。赤色LED：電源表示。黄色・緑色LED：9V BEC表示。9V BECがオンになると黄色・緑色LEDが点灯し続けます。"} />
+
+<span id="f405-p6-folio" data-translation-unit="f405-p6-folio"></span>
+
+原典印刷ページ：5
+
+<span id="f405-p7-heading" data-translation-unit="f405-p7-heading"></span>
+
+## はんだ付けパッドの定義
+
+<span id="f405-p7-f1-unit" data-translation-unit="f405-p7-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p7-folio" data-translation-unit="f405-p7-folio"></span>
+
+原典印刷ページ：6
+
+<span id="f405-p8-heading" data-translation-unit="f405-p8-heading"></span>
+
+## コネクター端子の定義
+
+<span id="f405-p8-f1-unit" data-translation-unit="f405-p8-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p8-f1.jpeg" width={1422} height={1378} figureId="f405-p8-f1" alt={"ESC接続端子：4、3、2、1、TLM、CURR、GND、BAT。カメラ端子：5V、GND、VIN。GPS端子：SCL、SDA、T5、R5、GND、4V5。SBUS受信機端子：SBUS、GND、4V5。DJIデジタル映像伝送端子：9V、GND、T1、R1、GND、SBUS。アナログ映像伝送端子：9V、GND、VOUT、T1。原図の向きで端子順を示します。"} caption={"ESC接続端子：4、3、2、1、TLM、CURR、GND、BAT。カメラ端子：5V、GND、VIN。GPS端子：SCL、SDA、T5、R5、GND、4V5。SBUS受信機端子：SBUS、GND、4V5。DJIデジタル映像伝送端子：9V、GND、T1、R1、GND、SBUS。アナログ映像伝送端子：9V、GND、VOUT、T1。原図の向きで端子順を示します。"} />
+
+<span id="f405-p8-folio" data-translation-unit="f405-p8-folio"></span>
+
+原典印刷ページ：7
+
+<span id="f405-p9-heading" data-translation-unit="f405-p9-heading"></span>
+
+## フライトコントローラーとESCの接続
+
+<span id="f405-p9-method1" data-translation-unit="f405-p9-method1"></span>
+
+## 方式1：コネクター接続
+
+<span id="f405-p9-f1-unit" data-translation-unit="f405-p9-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p9-f1.jpeg" width={1199} height={706} figureId="f405-p9-f1" alt={"フライトコントローラーとESCをコネクターケーブルで接続する図。ESC側にGND、GND、Vbat、NC、4、3、2、1、CRT、NCの表示があります。"} caption={"フライトコントローラーとESCをコネクターケーブルで接続する図。ESC側にGND、GND、Vbat、NC、4、3、2、1、CRT、NCの表示があります。"} />
+
+<span id="f405-p9-method2" data-translation-unit="f405-p9-method2"></span>
+
+## 方式2：直接はんだ付け
+
+<span id="f405-p9-f2-unit" data-translation-unit="f405-p9-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p9-f2.jpeg" width={1199} height={734} figureId="f405-p9-f2" alt={"ESCへの直接はんだ付け接続図。FCのG、B+、CR、TM、M1～M4とESC側のGND、Vbat、CRT、NC、4～1の配線を原図の線色・端子位置で示します。"} caption={"ESCへの直接はんだ付け接続図。FCのG、B+、CR、TM、M1～M4とESC側のGND、Vbat、CRT、NC、4～1の配線を原図の線色・端子位置で示します。"} />
+
+<span id="f405-p9-folio" data-translation-unit="f405-p9-folio"></span>
+
+原典印刷ページ：8
+
+<span id="f405-p10-heading" data-translation-unit="f405-p10-heading"></span>
+
+## 周辺機器の接続
+
+<span id="f405-p10-method1" data-translation-unit="f405-p10-method1"></span>
+
+## 方式1：コネクター接続
+
+<span id="f405-p10-f1-unit" data-translation-unit="f405-p10-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p10-f1.jpeg" width={1212} height={1373} figureId="f405-p10-f1" alt={"F405と4-in-1 ESC、カメラ、GPS、SBUS受信機、DJI HDデジタル映像伝送機器、アナログ映像伝送機器のコネクター接続図。図は原典の接続例であり、他の版や機器の互換性を示すものではありません。"} caption={"F405と4-in-1 ESC、カメラ、GPS、SBUS受信機、DJI HDデジタル映像伝送機器、アナログ映像伝送機器のコネクター接続図。図は原典の接続例であり、他の版や機器の互換性を示すものではありません。"} />
+
+<span id="f405-p10-folio" data-translation-unit="f405-p10-folio"></span>
+
+原典印刷ページ：9
+
+<span id="f405-p11-heading" data-translation-unit="f405-p11-heading"></span>
+
+## 方式2：直接はんだ付け
+
+<span id="f405-p11-f1-unit" data-translation-unit="f405-p11-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p11-folio" data-translation-unit="f405-p11-folio"></span>
+
+原典印刷ページ：10
+
+<span id="f405-p12-f1-unit" data-translation-unit="f405-p12-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p12-f2-unit" data-translation-unit="f405-p12-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p12-f2.jpeg" width={1199} height={545} figureId="f405-p12-f2" alt={"LEDストリップのLEDs、GND、5Vと、FCのLD、G、5Vを接続する図。"} caption={"LEDストリップのLEDs、GND、5Vと、FCのLD、G、5Vを接続する図。"} />
+
+<span id="f405-p12-f3-unit" data-translation-unit="f405-p12-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p12-folio" data-translation-unit="f405-p12-folio"></span>
+
+原典印刷ページ：11
+
+<span id="f405-p13-f1-unit" data-translation-unit="f405-p13-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p13-f2-unit" data-translation-unit="f405-p13-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p13-f3-unit" data-translation-unit="f405-p13-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p13-antenna-warning" data-translation-unit="f405-p13-antenna-warning"></span>
+
+:::caution[注意]
+使用前にアンテナを取り付けてください。
+:::
+
+<span id="f405-p13-folio" data-translation-unit="f405-p13-folio"></span>
+
+原典印刷ページ：12
+
+<span id="f405-p14-heading" data-translation-unit="f405-p14-heading"></span>
+
+## ファームウェア更新
+
+<span id="f405-p14-intro" data-translation-unit="f405-p14-intro"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p14-step1" data-translation-unit="f405-p14-step1"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p14-f1-unit" data-translation-unit="f405-p14-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p14-f2-unit" data-translation-unit="f405-p14-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p14-independent-flashing-warning" data-translation-unit="f405-p14-independent-flashing-warning"></span>
+
+:::caution[注意]
+警告：この書き込みツールでBetaflight用ではないハードウェアへ書き込まないでください。書き込み中は基板を取り外したり、パソコンの電源を切ったりしないでください。更新・ダウングレードで設定が消える場合があるため、バックアップを用意してください。重要：対象に適したファイルを使用してください。別ターゲット向けのバイナリーを書き込むと問題が起きるおそれがあります。
+:::
+
+<span id="f405-p14-folio" data-translation-unit="f405-p14-folio"></span>
+
+原典印刷ページ：13
+
+<span id="f405-p15-step2" data-translation-unit="f405-p15-step2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-f1-unit" data-translation-unit="f405-p15-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-f2-unit" data-translation-unit="f405-p15-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-step3" data-translation-unit="f405-p15-step3"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-f3-unit" data-translation-unit="f405-p15-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-step4" data-translation-unit="f405-p15-step4"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-f4-unit" data-translation-unit="f405-p15-f4-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f405-p15-folio" data-translation-unit="f405-p15-folio"></span>
+
+原典印刷ページ：14
+
+<span id="f405-p16-heading" data-translation-unit="f405-p16-heading"></span>
+
+## ESCとコンデンサーの取り付け
+
+<span id="f405-p16-esc" data-translation-unit="f405-p16-esc"></span>
+
+:::caution[注意]
+## 1. ESCの取り付け
+
+レース用や曲技飛行用ドローンの一部は、CNC加工した導電性材料の底板を使用しています。正しく取り付けないと、ESC底部の電子部品と金属底板の安全な間隔が不足する場合があります。防振ボールや防振ブラケットの緩衝作用により、衝突・着陸時の衝撃でESCがずれて底板へ直接接触し、短絡してESCやフライトコントローラーを損傷するおそれがあります。
+:::
+
+<span id="f405-p16-capacitor" data-translation-unit="f405-p16-capacitor"></span>
+
+:::caution[注意]
+## 2. コンデンサーの取り付け
+
+ESC付属のコンデンサーを取り付け、はんだ付け不良がないことを確認してください。不良があると墜落時にESCやフライトコントローラーが損傷しやすくなります。ESCバッテリーケーブルの赤・黒の端へ正しくはんだ付けし、コンデンサーの正極・負極を逆に接続しないでください（下図）。
+:::
+
+<span id="f405-p16-f1-unit" data-translation-unit="f405-p16-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f405/web-ja-v1/f405-p16-f1.jpeg" width={578} height={543} figureId="f405-p16-f1" alt={"F405 V1.1（25:04:11）の実装写真。Positiveは正極、Negativeは負極を示し、矢印はESCの赤・黒のバッテリー線の接続位置を示します。"} caption={"F405 V1.1（25:04:11）の実装写真。Positiveは正極、Negativeは負極を示し、矢印はESCの赤・黒のバッテリー線の接続位置を示します。"} />
+
+<span id="f405-p16-folio" data-translation-unit="f405-p16-folio"></span>
+
+原典印刷ページ：15
+
+<span id="f405-p17-warning" data-translation-unit="f405-p17-warning"></span>
+
+:::caution[注意]
+大容量コンデンサーは、電圧の安定化、干渉の抑制、瞬間的なエネルギー供給により、複雑な動作条件でのESCの信頼性を大きく改善します。無人航空機の電源系統を安定動作させる重要な部品です。ESCにコンデンサーがないと、フライトコントローラーが損傷しやすくなります。
+:::
+
+<span id="f405-p17-functions" data-translation-unit="f405-p17-functions"></span>
+
+## 大容量コンデンサーの機能
+
+1. 電源電圧の安定化：モーターの始動・加速・急停止時には瞬間的に大電流を消費し、電源電圧が変動することがあります。コンデンサーが蓄えたエネルギーを素早く放出して一時的な電流不足を補い、電圧降下を防ぎます。
+2. 高周波干渉の除去：ESCは高周波スイッチングでモーター速度を制御し、電流スパイクや電磁ノイズを発生させます。コンデンサーが高周波干渉を吸収し、ESCやFCへの信号干渉を減らします。
+3. 電子部品の保護：モーターの急停止や拘束時には瞬間的な高電圧が発生することがあります。コンデンサーが異常エネルギーを吸収し、ESC内のMOSFETや電源回路の損傷を防ぎます。
+4. 動的性能の改善：機体姿勢が急変するとき、一時的な電源としてESCの素早い制御応答を助け、モーター出力の連続性を保ちます。
+
+<span id="f405-p17-folio" data-translation-unit="f405-p17-folio"></span>
+
+原典印刷ページ：16

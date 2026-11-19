@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
+---
+
+<BaseLayout
+  title="Radiolink RTC8"
+  description="RTC8の公式原典と日本語取扱説明書"
+  robots="noindex, nofollow"
+>
+  <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-12">
+    <a href={withBase('/manuals/')}>マニュアル一覧へ戻る</a>
+    <h1 class="mt-6 text-3xl font-bold">Radiolink RTC8</h1>
+    <p class="mt-3">SBUS／PPM-CANプロトコルエンコーダー</p>
+    <p class="mt-4">
+      <a href={withBase('/manuals/rtc8/')} data-receiver-manual-link>
+        日本語取扱説明書
+      </a>
+    </p>
+    <p class="mt-4">原典の給電・設定条件に確認待ちの箇所があります。</p>
+    <p class="mt-4">
+      <a href="https://www.radiolink.com/en/rtc8">Radiolink公式製品情報</a>
+    </p>
+  </section>
+</BaseLayout>
