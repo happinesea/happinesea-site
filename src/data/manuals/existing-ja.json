@@ -16161,8 +16161,8 @@
         {
           "id": "section-001",
           "title": "Byme-A（1ページ）",
-          "content_html": "<h3 id=\"section-001-byme-a\">Byme-A</h3>\n<h3 id=\"section-001-固定翼飛行機フライトコントローラー\">固定翼飛行機フライトコントローラー</h3>\n<h3 id=\"section-001-取扱説明書-v2-0-対応\">取扱説明書(V2.0 対応)</h3><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-01.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の1ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（1ページ）</figcaption></figure>",
-          "sha256": "7ad705c022377ceed7bbd6d4d27958f189382bb572afeafb394e296362e1cb87",
+          "content_html": "<h3 id=\"section-001-byme-a\">Byme-A</h3>\n<h3 id=\"section-001-固定翼飛行機フライトコントローラー\">固定翼飛行機フライトコントローラー</h3>\n<h3 id=\"section-001-取扱説明書-v2-0-対応\">取扱説明書(V2.0 対応)</h3><aside aria-label=\"注意\">既存日本語資料の表紙画像は、原典の対象年齢と異なる表示を含むため非表示としています。</aside>",
+          "sha256": "a41471b4f9782d2c0d938589d69bd85c57323f5af3af315b8ab49496c4e9393b",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 1,
@@ -16170,7 +16170,9 @@
             "tables": 0,
             "image_occurrences": 3
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<h3 id=\"section-001-byme-a\">Byme-A</h3>\n<h3 id=\"section-001-固定翼飛行機フライトコントローラー\">固定翼飛行機フライトコントローラー</h3>\n<h3 id=\"section-001-取扱説明書-v2-0-対応\">取扱説明書(V2.0 対応)</h3><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-01.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の1ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（1ページ）</figcaption></figure>",
+          "original_sha256": "7ad705c022377ceed7bbd6d4d27958f189382bb572afeafb394e296362e1cb87"
         },
         {
           "id": "section-002",
@@ -16203,8 +16205,8 @@
         {
           "id": "section-003",
           "title": "免責事項（3ページ）",
-          "content_html": "<h3 id=\"section-003-免責事項\">免責事項</h3>\n<p>Radiolink フライトコントローラーByme-A V2.0 をお買い上げいただきありがとうございます。</p>\n<p>楽しく、安全にご使用するために、はじめに、本書の内容をご確認して、説明に従ってデバイスをセッ</p>\n<p>トアップしてください。</p>\n<p>操作中に問題が見つかった場合は、まず本取扱説明書を参照してください。</p>\n<p>本書の内容から、問題を解決できない場合、ご購入された量販店の担当者や、RadioLink 社のカスタマー</p>\n<p>サービスにご連絡してください。</p>\n<p>RadioLink 社のカスタマーサービスの連絡</p>\n<p>■中国語/英語</p>\n<p>・Facebook：</p>\n<p>https://www.facebook.com/radiolinkofficial</p>\n<p>・メールアドレス：</p>\n<p>after_service@radiolink.com.cn</p>\n<p>■日本語</p>\n<p>・X アカウント：</p>\n<p>https://twitter.com/RadiolinkJ</p>\n<p>・メールアドレス：</p>\n<p>info@happinesea.com</p>\n<p>・Line 公式アカウント：</p>\n<p>@662zyrsb</p>\n<p>予期せぬ変更により、このマニュアルに記載されている情報は変更される可能性があります。</p>\n<p>詳細については、当社のWeb サイトhttp://www.radiolink.com をご覧ください。</p>\n<h3 id=\"section-003-警告-注意事項\">警告・注意事項</h3>\n<aside aria-label=\"注意\">注意事項</aside>\n<p><br/>悪天候等、視界の悪い時、モデルの操作をやめて下さい。視界が悪いと、パイロットが方向感覚を失</p>\n<p>い、制御不能になる危険性があります。</p>\n<p><br/>人混みや違法な場所では絶対に使用しないでください。</p>\n<p><br/>受信機を接続する前に、トリムレバーが0 にあり、バッテリーが適切に充電されていることを必ず</p>\n<p>確認してください。</p>\n<p><br/>モデルを飛ばす前に、必ずすべてのサーボとの接続状況を確認してください。</p>\n<p><br/>送信機の前に必ず受信機の電源を切ってください。</p>\n<p><br/>RC 飛行機ご利用にあたって、高圧電線、通信基地局、電波の発射塔の付近をご遠慮してください。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-03.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の3ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（3ページ）</figcaption></figure>",
-          "sha256": "cd12906516527d40987d77e3cd586195e1bcbd8f191d0d579f9152e378f7b5ab",
+          "content_html": "<h3 id=\"section-003-免責事項\">免責事項</h3>\n<p>Radiolink フライトコントローラーByme-A V2.0 をお買い上げいただきありがとうございます。</p>\n<p>楽しく、安全にご使用するために、はじめに、本書の内容をご確認して、説明に従ってデバイスをセッ</p>\n<p>トアップしてください。</p>\n<p>操作中に問題が見つかった場合は、まず本取扱説明書を参照してください。</p>\n<p>本書の内容から、問題を解決できない場合、ご購入された量販店の担当者や、RadioLink 社のカスタマー</p>\n<p>サービスにご連絡してください。</p>\n<p>RadioLink 社のカスタマーサービスの連絡</p>\n<p>■中国語/英語</p>\n<p>・Facebook：</p>\n<p>https://www.facebook.com/radiolinkofficial</p>\n<p>・メールアドレス：</p>\n<p>after_service@radiolink.com.cn</p>\n<p>■日本語</p>\n<p>・X アカウント：</p>\n<p>https://twitter.com/RadiolinkJ</p>\n<p>・メールアドレス：</p>\n<p>info@happinesea.com</p>\n<p>・Line 公式アカウント：</p>\n<p>@662zyrsb</p>\n<p>予期せぬ変更により、このマニュアルに記載されている情報は変更される可能性があります。</p>\n<p>詳細については、当社のWeb サイトhttp://www.radiolink.com をご覧ください。</p>\n<h3 id=\"section-003-警告-注意事項\">警告・注意事項</h3>\n<aside aria-label=\"注意\">注意事項</aside>\n<p>•<br/>悪天候等、視界の悪い時、モデルの操作をやめて下さい。視界が悪いと、パイロットが方向感覚を失</p>\n<p>い、制御不能になる危険性があります。</p>\n<p>•<br/>人混みや違法な場所では絶対に使用しないでください。</p>\n<p>•<br/>受信機を接続する前に、トリムレバーが0 にあり、バッテリーが適切に充電されていることを必ず</p>\n<p>確認してください。</p>\n<p>•<br/>モデルを飛ばす前に、必ずすべてのサーボとの接続状況を確認してください。</p>\n<p>•<br/>送信機の前に必ず受信機の電源を切ってください。</p>\n<p>•<br/>RC 飛行機ご利用にあたって、高圧電線、通信基地局、電波の発射塔の付近をご遠慮してください。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-03.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の3ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（3ページ）</figcaption></figure>",
+          "sha256": "9aa9fabee7661fdc8a451282fb7555cf6753da3caa529b4920a184d51c277bd8",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 3,
@@ -16217,8 +16219,8 @@
         {
           "id": "section-004",
           "title": "概要（4ページ）",
-          "content_html": "<aside aria-label=\"注意\">警告</aside>\n<p>当製品は玩具ではないため、18 歳未満の未成年者に適しない。お子様の手の届かない場所に保管してく</p>\n<p>ださい。</p>\n<p>子供のいる場所でご利用する場合、周りを十分にご注意してください。</p>\n<p>水や湿気がアンテナやジョイスティックの隙間から送信機の内部に浸水してしまい、制御不能等、モデル</p>\n<p>が不安定になる可能性があります。雨天等、水漏れの恐れある場所でのご利用を避けられない場合、常</p>\n<p>にビニール袋または防水布を使用して送信機を保護してください。</p>\n<h3 id=\"section-004-概要\">概要</h3>\n<p>Byme-A V2.0 は、3D 固定翼(F3P)や4 チャンネルのトレーニング機、スケールモデル機(V テールグ</p>\n<p>ライダーを除く)を含む様々な固定翼機に適用可能、SBUS とPPM 信号をサポートするフライトコント</p>\n<p>ローラーです。</p>\n<p>3 軸ジャイロセンサー、3 軸加速度センサー、及び、完全な姿勢アルゴリズム、制御アルゴリズム、デジ</p>\n<p>タルフィルターリングを備えたByme-A V2.0 は、飛行を容易にします。</p>\n<p>Byme-A V2.0 の飛行モード：</p>\n<p>安定モード、ホバリング(マルチコプター)、ホバリング(固定翼)、ジャイロモード、アクロバットモー</p>\n<p>ド、及び、マニュアルモード</p>\n<h3 id=\"section-004-スペック情報\">スペック情報</h3>\n<p>寸法：35.5×15.5×10.5mm</p>\n<p>重要(ワイヤー類を含む)：4.5g</p>\n<p>対応チャンネル数：4</p>\n<p>センサー：3 軸ジャイロセンサーと3 軸加速度センサー</p>\n<p>対応信号：SBUS/PPM</p>\n<p>入力電圧：5～6V</p>\n<p>動作電流：25±2mA</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-04.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の4ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（4ページ）</figcaption></figure>",
-          "sha256": "0df98cffb4d19014f6eb2a1f1a9b155dd8e790a67d5e06e41032f7a2e76d6f45",
+          "content_html": "<aside aria-label=\"注意\">警告</aside>\n<p>当製品は玩具ではないため、18 歳未満の未成年者に適しない。お子様の手の届かない場所に保管してく</p>\n<p>ださい。</p>\n<p>子供のいる場所でご利用する場合、周りを十分にご注意してください。</p>\n<p>水や湿気がアンテナやジョイスティックの隙間から送信機の内部に浸水してしまい、制御不能等、モデル</p>\n<p>が不安定になる可能性があります。</p>\n<aside aria-label=\"注意\">原典には悪天候での操作禁止と雨天時のカバー使用の両方が記載されています。雨天時の操作手順は確認が取れるまで案内を保留します。</aside>\n<h3 id=\"section-004-概要\">概要</h3>\n<p>Byme-A V2.0は、3D固定翼機（F3P）、4チャンネルの練習機、スケールモデル機など、直線翼を持つ固定翼機（Vテールグライダーを除く）に対応するフライトコントローラーです。SBUSとPPMの信号に対応しています。</p>\n<p>3 軸ジャイロセンサー、3 軸加速度センサー、及び、完全な姿勢アルゴリズム、制御アルゴリズム、デジ</p>\n<p>タルフィルターリングを備えたByme-A V2.0 は、飛行を容易にします。</p>\n<p>Byme-A V2.0 の飛行モード：</p>\n<p>安定モード、ホバリング(マルチコプター)、ホバリング(固定翼)、ジャイロモード、アクロバットモー</p>\n<p>ド、及び、マニュアルモード</p>\n<h3 id=\"section-004-スペック情報\">スペック情報</h3>\n<p>寸法：35.5×15.5×10.5mm</p>\n<p>重要(ワイヤー類を含む)：4.5g</p>\n<p>対応チャンネル数：4</p>\n<p>センサー：3 軸ジャイロセンサーと3 軸加速度センサー</p>\n<p>対応信号：SBUS/PPM</p>\n<p>入力電圧：5～6V</p>\n<p>動作電流：25±2mA</p><aside aria-label=\"注意\">既存日本語資料の4ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "f631ba7379207fc080693918853580337ddc801c3055f5ca878e050612466212",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 4,
@@ -16226,7 +16228,9 @@
             "tables": 0,
             "image_occurrences": 1
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<aside aria-label=\"注意\">警告</aside>\n<p>当製品は玩具ではないため、18 歳未満の未成年者に適しない。お子様の手の届かない場所に保管してく</p>\n<p>ださい。</p>\n<p>子供のいる場所でご利用する場合、周りを十分にご注意してください。</p>\n<p>水や湿気がアンテナやジョイスティックの隙間から送信機の内部に浸水してしまい、制御不能等、モデル</p>\n<p>が不安定になる可能性があります。雨天等、水漏れの恐れある場所でのご利用を避けられない場合、常</p>\n<p>にビニール袋または防水布を使用して送信機を保護してください。</p>\n<h3 id=\"section-004-概要\">概要</h3>\n<p>Byme-A V2.0 は、3D 固定翼(F3P)や4 チャンネルのトレーニング機、スケールモデル機(V テールグ</p>\n<p>ライダーを除く)を含む様々な固定翼機に適用可能、SBUS とPPM 信号をサポートするフライトコント</p>\n<p>ローラーです。</p>\n<p>3 軸ジャイロセンサー、3 軸加速度センサー、及び、完全な姿勢アルゴリズム、制御アルゴリズム、デジ</p>\n<p>タルフィルターリングを備えたByme-A V2.0 は、飛行を容易にします。</p>\n<p>Byme-A V2.0 の飛行モード：</p>\n<p>安定モード、ホバリング(マルチコプター)、ホバリング(固定翼)、ジャイロモード、アクロバットモー</p>\n<p>ド、及び、マニュアルモード</p>\n<h3 id=\"section-004-スペック情報\">スペック情報</h3>\n<p>寸法：35.5×15.5×10.5mm</p>\n<p>重要(ワイヤー類を含む)：4.5g</p>\n<p>対応チャンネル数：4</p>\n<p>センサー：3 軸ジャイロセンサーと3 軸加速度センサー</p>\n<p>対応信号：SBUS/PPM</p>\n<p>入力電圧：5～6V</p>\n<p>動作電流：25±2mA</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-04.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の4ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（4ページ）</figcaption></figure>",
+          "original_sha256": "0df98cffb4d19014f6eb2a1f1a9b155dd8e790a67d5e06e41032f7a2e76d6f45"
         },
         {
           "id": "section-005",
@@ -16259,8 +16263,8 @@
         {
           "id": "section-007",
           "title": "電源ON とジャイロのセルフテスト（7ページ）",
-          "content_html": "<p>上記以外、他者のプロポをご利用する場合、下図を参照して、フライトモードの切替える設定をしてく</p>\n<p>ださい。フライトモードに対応するチャンネル5(CH5)とチャンネル7(CH7)の値の範囲は以下となりま</p>\n<p>す。</p>\n<h3 id=\"section-007-電源on-とジャイロのセルフテスト\">電源ON とジャイロのセルフテスト</h3>\n<p>(1)送信機のスロットルスティックを一番下の位置まで押して、機体の電源を入れます。</p>\n<p>(2)フライトコントローラーの電源がオンになる同時に、フライトコントローラーは緑色のLED が速く</p>\n<p>点滅します。これは、ジャイロのセルフテストが進行中であることを意味します。</p>\n<aside aria-label=\"注意\">注意：もしスロットルスティックを最も高い位置まで押して機体の電源を入れると、ESC は校正モード</aside>\n<p>に入ります。</p>\n<p>従って、バッテリーを取り付けて、電源ON の状態で、飛行機を地面に置き、モーターからビー音が聞</p>\n<p>こえるまで航空機を地上に静止させることを推奨します。緑色のLED が常に点灯するまで、セルフテス</p>\n<p>トが完了した事を意味します。</p>\n<h3 id=\"section-007-校正\">校正</h3>\n<p>Byme-A 2.0 フライトコントローラーは機体のバランス状態を確保するために、姿勢/レベルを調整する</p>\n<p>必要があります。</p>\n<p>(1) 姿勢校正を行う際、機体を地面に平らに置くことができます。特に初回の場合は、校正の精度を確</p>\n<p>保し、正常に完了すると姿勢校正結果がフライトコントローラーに記録されるように、機体のヘッド</p>\n<p>を一定の角度(通常、20 度を推奨) で持ち上げることをお勧めします。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-07.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の7ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（7ページ）</figcaption></figure>",
-          "sha256": "943516a67bf239d513cf182499ea8646a0384d80d28c288e57ad85c933c336fb",
+          "content_html": "<p>上記以外、他者のプロポをご利用する場合、下図を参照して、フライトモードの切替える設定をしてく</p>\n<p>ださい。フライトモードに対応するチャンネル5(CH5)とチャンネル7(CH7)の値の範囲は以下となりま</p>\n<p>す。</p>\n<h3 id=\"section-007-電源on-とジャイロのセルフテスト\">電源ON とジャイロのセルフテスト</h3>\n<p>(1)送信機のスロットルスティックを一番下の位置まで押して、機体の電源を入れます。</p>\n<p>(2)フライトコントローラーの電源がオンになる同時に、フライトコントローラーは緑色のLED が速く</p>\n<p>点滅します。これは、ジャイロのセルフテストが進行中であることを意味します。</p>\n<aside aria-label=\"注意\">注意：もしスロットルスティックを最も高い位置まで押して機体の電源を入れると、ESC は校正モード</aside>\n<p>に入ります。</p>\n<p>バッテリーを取り付け、機体を地面に置いてから電源を入れてください。モーターから「ピー」という音が鳴るまで機体を地上で静止させます。緑色のLEDが点灯し続けるとセルフテストは完了です。</p>\n<h3 id=\"section-007-校正\">校正</h3>\n<p>Byme-A 2.0 フライトコントローラーは機体のバランス状態を確保するために、姿勢/レベルを調整する</p>\n<p>必要があります。</p>\n<p>(1) 姿勢校正を行う際、機体を地面に平らに置くことができます。特に初回の場合は、校正の精度を確</p>\n<p>保し、正常に完了すると姿勢校正結果がフライトコントローラーに記録されるように、機体のヘッド</p>\n<p>を一定の角度(通常、20 度を推奨) で持ち上げることをお勧めします。</p><aside aria-label=\"注意\">既存日本語資料の7ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "fdb8471dda05213dcd3b0d6c197dadd31b6ce20e467d297b065aa04c8cd1a93c",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 7,
@@ -16268,13 +16272,15 @@
             "tables": 0,
             "image_occurrences": 1
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<p>上記以外、他者のプロポをご利用する場合、下図を参照して、フライトモードの切替える設定をしてく</p>\n<p>ださい。フライトモードに対応するチャンネル5(CH5)とチャンネル7(CH7)の値の範囲は以下となりま</p>\n<p>す。</p>\n<h3 id=\"section-007-電源on-とジャイロのセルフテスト\">電源ON とジャイロのセルフテスト</h3>\n<p>(1)送信機のスロットルスティックを一番下の位置まで押して、機体の電源を入れます。</p>\n<p>(2)フライトコントローラーの電源がオンになる同時に、フライトコントローラーは緑色のLED が速く</p>\n<p>点滅します。これは、ジャイロのセルフテストが進行中であることを意味します。</p>\n<aside aria-label=\"注意\">注意：もしスロットルスティックを最も高い位置まで押して機体の電源を入れると、ESC は校正モード</aside>\n<p>に入ります。</p>\n<p>従って、バッテリーを取り付けて、電源ON の状態で、飛行機を地面に置き、モーターからビー音が聞</p>\n<p>こえるまで航空機を地上に静止させることを推奨します。緑色のLED が常に点灯するまで、セルフテス</p>\n<p>トが完了した事を意味します。</p>\n<h3 id=\"section-007-校正\">校正</h3>\n<p>Byme-A 2.0 フライトコントローラーは機体のバランス状態を確保するために、姿勢/レベルを調整する</p>\n<p>必要があります。</p>\n<p>(1) 姿勢校正を行う際、機体を地面に平らに置くことができます。特に初回の場合は、校正の精度を確</p>\n<p>保し、正常に完了すると姿勢校正結果がフライトコントローラーに記録されるように、機体のヘッド</p>\n<p>を一定の角度(通常、20 度を推奨) で持ち上げることをお勧めします。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-07.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の7ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（7ページ）</figcaption></figure>",
+          "original_sha256": "943516a67bf239d513cf182499ea8646a0384d80d28c288e57ad85c933c336fb"
         },
         {
           "id": "section-008",
           "title": "原資料（8ページ）",
-          "content_html": "<p>(2) 以下のように左スティック⇒左下、右スティック⇒右下<br/>を3 秒以上押し続けます。</p>\n<p>緑色のLED が1 回点滅すると、校正が完了し、コントロールとしても正常です。</p>\n<p>ラダーが振動したり、モーターが回転したりするのは正常な現象です。</p>\n<aside aria-label=\"注意\">※RadioLink 以外、他者のプロポセットをご使用する場合も同様に、左スティック⇒左下、右スティック</aside>\n<p>⇒右下を押します。校正が失敗する場合は、送信機のチャンネルの方向を変更してみてください。</p>\n<p>上記のようにジョイスティックを押すとき、チャンネル1 からチャンネル4 までの値の範囲が以下であ</p>\n<p>ることを確認してください。</p>\n<p>CH1 2000μs、CH2 2000μs、CH3 1000μs、CH4 1000μs</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-08.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の8ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（8ページ）</figcaption></figure>",
-          "sha256": "10890ec0ef51123851dfa08a0d02f6ce222b164e1f3524b385f939c7f52a344f",
+          "content_html": "<p>(2) 以下のように左スティック⇒左下、右スティック⇒右下<br/>を3秒を超えて保持します。</p>\n<p>緑色のLED が1 回点滅すると、校正が完了し、コントロールとしても正常です。</p>\n<p>このとき、舵面が動いたり、モーターが1回回転したりすることがありますが、正常な現象です。</p>\n<aside aria-label=\"注意\">※RadioLink 以外、他者のプロポセットをご使用する場合も同様に、左スティック⇒左下、右スティック</aside>\n<p>⇒右下を押します。校正が失敗する場合は、送信機のチャンネルの方向を変更してみてください。</p>\n<p>上記のようにジョイスティックを押すとき、チャンネル1 からチャンネル4 までの値の範囲が以下であ</p>\n<p>ることを確認してください。</p>\n<p>CH1 2000μs、CH2 2000μs、CH3 1000μs、CH4 1000μs</p><aside aria-label=\"注意\">既存日本語資料の8ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "e5000128b9619656d8548cdcdc40a10bbc2c7481b97eb258407b47a3fdab4ceb",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 8,
@@ -16282,7 +16288,9 @@
             "tables": 0,
             "image_occurrences": 3
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<p>(2) 以下のように左スティック⇒左下、右スティック⇒右下<br/>を3 秒以上押し続けます。</p>\n<p>緑色のLED が1 回点滅すると、校正が完了し、コントロールとしても正常です。</p>\n<p>ラダーが振動したり、モーターが回転したりするのは正常な現象です。</p>\n<aside aria-label=\"注意\">※RadioLink 以外、他者のプロポセットをご使用する場合も同様に、左スティック⇒左下、右スティック</aside>\n<p>⇒右下を押します。校正が失敗する場合は、送信機のチャンネルの方向を変更してみてください。</p>\n<p>上記のようにジョイスティックを押すとき、チャンネル1 からチャンネル4 までの値の範囲が以下であ</p>\n<p>ることを確認してください。</p>\n<p>CH1 2000μs、CH2 2000μs、CH3 1000μs、CH4 1000μs</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-08.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の8ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（8ページ）</figcaption></figure>",
+          "original_sha256": "10890ec0ef51123851dfa08a0d02f6ce222b164e1f3524b385f939c7f52a344f"
         },
         {
           "id": "section-009",
@@ -16315,8 +16323,8 @@
         {
           "id": "section-011",
           "title": "送信機の設定（11ページ）",
-          "content_html": "<div class=\"manual-table\"><table><tbody><tr><th scope=\"col\">No.</th><th scope=\"col\">チャンネル</th><th scope=\"col\">ジャイロ位相リバース操作</th><th scope=\"col\">LED</th></tr><tr><th scope=\"row\">1</th><td>エルロン</td><td>位相変更ボタンを 1 回押下</td><td>CH1 の緑の LED が ON/OFF</td></tr><tr><th scope=\"row\">2</th><td>エレベーター</td><td>位相変更ボタンを 2 回押下</td><td>CH2 の緑の LED が ON/OFF</td></tr><tr><th scope=\"row\">3</th><td>スロットル</td><td>-</td><td>LED が常に点灯</td></tr><tr><th scope=\"row\">4</th><td>ラダー</td><td>位相変更ボタンを 4 回押下</td><td>CH4 の緑の LED が ON/OFF</td></tr></tbody></table></div>\n<aside aria-label=\"注意\">※緑のLED のON もOFF も、リバース設定はできたと表しません。送信機のジョイスティックを切り</aside>\n<p>替えて、対応するサーボの動作から確認してください。フライトコントローラーの位相が逆になっている</p>\n<p>場合、フライトコントローラーのジャイロ位相変更ボタンを押下して、変更してください。</p>\n<h3 id=\"section-011-送信機の設定\">送信機の設定</h3>\n<p>モデルタイプの設定</p>\n<p>送信機でモデルタイプを設定する場合、固定翼機(Acrobasic)に設定する必要があります。</p>\n<p>下図、RadioLink AT9SPro 送信機で設定する例です。</p>\n<p>送信機位相設定</p>\n<p>RadioLink 送信機をご利用される場合、送信機位相の設定例：</p>\n<p>CH3-スロットル：リバース</p>\n<p>その他のチャンネル：ノーマル</p>\n<aside aria-label=\"注意\">※他社送信機をご使用される場合、上記の要件に従う必要がありません。</aside>\n<p>送信機位相テスト</p>\n<p>飛行する前に送信機の位相が正しいことを、必ず確認してください。</p>\n<p>以下、すべての設定例はモード2 とします。モード1 をご利用する場合、適切に読み替えて下さい。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-11.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の11ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（11ページ）</figcaption></figure>",
-          "sha256": "c63421b5aee20371332e054b83de329fae809a290ad7e7fd015128a399a3f0d3",
+          "content_html": "<div class=\"manual-table\"><table><tbody><tr><th scope=\"col\">No.</th><th scope=\"col\">チャンネル</th><th scope=\"col\">ジャイロ位相リバース操作</th><th scope=\"col\">LED</th></tr><tr><th scope=\"row\">1</th><td>エルロン</td><td>位相変更ボタンを1回短押し</td><td>CH1 の緑の LED が ON/OFF</td></tr><tr><th scope=\"row\">2</th><td>エレベーター</td><td>位相変更ボタンを2回短押し</td><td>CH2 の緑の LED が ON/OFF</td></tr><tr><th scope=\"row\">3</th><td>スロットル</td><td>-</td><td>LED が常に点灯</td></tr><tr><th scope=\"row\">4</th><td>ラダー</td><td>位相変更ボタンを4回短押し</td><td>CH4 の緑の LED が ON/OFF</td></tr></tbody></table></div>\n<aside aria-label=\"注意\">※緑のLED のON もOFF も、リバース設定はできたと表しません。送信機のジョイスティックを切り</aside>\n<p>替えて、対応するサーボの動作から確認してください。フライトコントローラーの位相が逆になっている</p>\n<p>場合、フライトコントローラーのジャイロ位相変更ボタンを押下して、変更してください。</p>\n<h3 id=\"section-011-送信機の設定\">送信機の設定</h3>\n<p>モデルタイプの設定</p>\n<p>送信機でモデルタイプを設定する場合、固定翼機(Acrobasic)に設定する必要があります。</p>\n<p>下図、RadioLink AT9SPro 送信機で設定する例です。</p>\n<p>送信機位相設定</p>\n<p>RadioLink 送信機をご利用される場合、送信機位相の設定例：</p>\n<p>CH3-スロットル：リバース</p>\n<p>その他のチャンネル：ノーマル</p>\n<aside aria-label=\"注意\">※他社送信機をご使用される場合、上記の要件に従う必要がありません。</aside>\n<p>送信機位相テスト</p>\n<p>飛行する前に送信機の位相が正しいことを、必ず確認してください。</p>\n<p>以下の設定例はMode 2です。</p><aside aria-label=\"注意\">既存日本語資料の11ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "d2e2b12401f3119a3199bea7f2a43fa0e6465d2ae93b24adf77154e3516e6b4f",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 11,
@@ -16324,7 +16332,9 @@
             "tables": 1,
             "image_occurrences": 1
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<div class=\"manual-table\"><table><tbody><tr><th scope=\"col\">No.</th><th scope=\"col\">チャンネル</th><th scope=\"col\">ジャイロ位相リバース操作</th><th scope=\"col\">LED</th></tr><tr><th scope=\"row\">1</th><td>エルロン</td><td>位相変更ボタンを 1 回押下</td><td>CH1 の緑の LED が ON/OFF</td></tr><tr><th scope=\"row\">2</th><td>エレベーター</td><td>位相変更ボタンを 2 回押下</td><td>CH2 の緑の LED が ON/OFF</td></tr><tr><th scope=\"row\">3</th><td>スロットル</td><td>-</td><td>LED が常に点灯</td></tr><tr><th scope=\"row\">4</th><td>ラダー</td><td>位相変更ボタンを 4 回押下</td><td>CH4 の緑の LED が ON/OFF</td></tr></tbody></table></div>\n<aside aria-label=\"注意\">※緑のLED のON もOFF も、リバース設定はできたと表しません。送信機のジョイスティックを切り</aside>\n<p>替えて、対応するサーボの動作から確認してください。フライトコントローラーの位相が逆になっている</p>\n<p>場合、フライトコントローラーのジャイロ位相変更ボタンを押下して、変更してください。</p>\n<h3 id=\"section-011-送信機の設定\">送信機の設定</h3>\n<p>モデルタイプの設定</p>\n<p>送信機でモデルタイプを設定する場合、固定翼機(Acrobasic)に設定する必要があります。</p>\n<p>下図、RadioLink AT9SPro 送信機で設定する例です。</p>\n<p>送信機位相設定</p>\n<p>RadioLink 送信機をご利用される場合、送信機位相の設定例：</p>\n<p>CH3-スロットル：リバース</p>\n<p>その他のチャンネル：ノーマル</p>\n<aside aria-label=\"注意\">※他社送信機をご使用される場合、上記の要件に従う必要がありません。</aside>\n<p>送信機位相テスト</p>\n<p>飛行する前に送信機の位相が正しいことを、必ず確認してください。</p>\n<p>以下、すべての設定例はモード2 とします。モード1 をご利用する場合、適切に読み替えて下さい。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-11.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の11ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（11ページ）</figcaption></figure>",
+          "original_sha256": "c63421b5aee20371332e054b83de329fae809a290ad7e7fd015128a399a3f0d3"
         },
         {
           "id": "section-012",
@@ -16343,8 +16353,8 @@
         {
           "id": "section-013",
           "title": "6 種の飛行モード（13ページ）",
-          "content_html": "<p>ラダージョイスティックを左に切り替えるとラダーサーボ（垂直尾翼）が左に回し、ジョイスティックを</p>\n<p>右に切り替えるとラダーサーボ（垂直尾翼）が右に回します。</p>\n<p>マニュアルモードでジョイスティックを操作して、対応チャンネルの舵が逆になる場合、送信機の設定か</p>\n<p>ら、サーボの位相を逆に設定します。</p>\n<h3 id=\"section-013-6-種の飛行モード\">6 種の飛行モード</h3>\n<p>以下、飛行モードの設定の説明については、モード2 の例とします。</p>\n<p>モード1 でご利用される場合、適切に読み替えて下さい。</p>\n<p>安定モード</p>\n<p>意図しない飛行状態になる場合、フライトコントローラーは自動的に機体のバランスを調整する安定化モ</p>\n<p>ードです。こちらは、初心者の水平飛行の練習に適します。</p>\n<p>機体の姿勢(傾斜角度)は送信機のジョイスティックで制御します。ジョイスティックは中心に戻すと、機</p>\n<p>体は水平になります。</p>\n<p>最大傾斜角度について、ローリング：70°、ピッチング：45°となります。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-13.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の13ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（13ページ）</figcaption></figure>",
-          "sha256": "c12afcabc804aa9be27c927f59509f5ffd7be7f41943c24c0d859be9e1816e42",
+          "content_html": "<p>ラダージョイスティックを左に切り替えるとラダーサーボ（垂直尾翼）が左に回し、ジョイスティックを</p>\n<p>右に切り替えるとラダーサーボ（垂直尾翼）が右に回します。</p>\n<p>マニュアルモードでジョイスティックを操作して、対応チャンネルの舵が逆になる場合、送信機の設定か</p>\n<p>ら、サーボの位相を逆に設定します。</p>\n<h3 id=\"section-013-6-種の飛行モード\">6 種の飛行モード</h3>\n<p>以下の飛行モード設定はMode 2の例です。</p>\n<p>安定モード</p>\n<p>意図しない飛行状態になる場合、フライトコントローラーは自動的に機体のバランスを調整する安定化モ</p>\n<p>ードです。こちらは、初心者の水平飛行の練習に適します。</p>\n<p>機体の姿勢(傾斜角度)は送信機のジョイスティックで制御します。ジョイスティックは中心に戻すと、機</p>\n<p>体は水平になります。</p>\n<p>最大傾斜角度について、ローリング：70°、ピッチング：45°となります。</p><aside aria-label=\"注意\">既存日本語資料の13ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "2f42abea5dd70e2d882c19850a8be44be2c6e599e4ec31520bc6526d5269dba7",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 13,
@@ -16352,7 +16362,9 @@
             "tables": 0,
             "image_occurrences": 1
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<p>ラダージョイスティックを左に切り替えるとラダーサーボ（垂直尾翼）が左に回し、ジョイスティックを</p>\n<p>右に切り替えるとラダーサーボ（垂直尾翼）が右に回します。</p>\n<p>マニュアルモードでジョイスティックを操作して、対応チャンネルの舵が逆になる場合、送信機の設定か</p>\n<p>ら、サーボの位相を逆に設定します。</p>\n<h3 id=\"section-013-6-種の飛行モード\">6 種の飛行モード</h3>\n<p>以下、飛行モードの設定の説明については、モード2 の例とします。</p>\n<p>モード1 でご利用される場合、適切に読み替えて下さい。</p>\n<p>安定モード</p>\n<p>意図しない飛行状態になる場合、フライトコントローラーは自動的に機体のバランスを調整する安定化モ</p>\n<p>ードです。こちらは、初心者の水平飛行の練習に適します。</p>\n<p>機体の姿勢(傾斜角度)は送信機のジョイスティックで制御します。ジョイスティックは中心に戻すと、機</p>\n<p>体は水平になります。</p>\n<p>最大傾斜角度について、ローリング：70°、ピッチング：45°となります。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-13.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の13ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（13ページ）</figcaption></figure>",
+          "original_sha256": "c12afcabc804aa9be27c927f59509f5ffd7be7f41943c24c0d859be9e1816e42"
         },
         {
           "id": "section-014",
@@ -16413,8 +16425,8 @@
         {
           "id": "section-018",
           "title": "原資料（18ページ）",
-          "content_html": "<p>スロットルジョイスティックの上下操作で、垂直姿勢での上昇/降下の制御をします。</p>\n<p>ジャイロモード</p>\n<p>ジャイロモードでは、フライトコントローラーに統合された3 軸ジャイロで機体の安定性を高めますが、</p>\n<p>安定モードと異なって、ジョイスティックが中心点に戻っても機体は水平に戻さなく、送信機から操作し</p>\n<p>た状態を維持します。</p>\n<p>つまり、送信機から受信したローリング、ピッチング、又は、ラダーのままで、自主的に機体を水平状態</p>\n<p>に戻そうとしません。</p>\n<p>アクロバットモード</p>\n<p>安定モードとジャイロモードを組み合わせることで、ローリング、急行、後進、サイドフライト、スパイ</p>\n<p>ラル降下など、多彩な自由なスタイルを簡単に実現することができ、ジョイスティックを中心点に戻すと</p>\n<p>機体は水平に戻します。</p>\n<p>ジョイスティックを広い範囲で切り替えると、航空機は対応する方向に回転します。</p>\n<p>マニュアルモード</p>\n<p>フライトコントローラーのアルゴリズムやジャイロの機能をせず、すべての飛行動作は手動で実現され、</p>\n<p>最も高度なスキルが必要となります。</p>\n<p>マニュアルモードでは、ジャイロスコープがないため、送信機を操作しないとサーボが動きません。</p>\n<aside aria-label=\"注意\">※ 安定/ジャイロ/アクロバットモードでは、機体を安定させるために、エルロン等の舵は勝手に動く現</aside>\n<p>象がありますが、これは正常な現象です。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-18.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の18ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（18ページ）</figcaption></figure>",
-          "sha256": "ce1ecf998cef4bf7e6c12115de970417092321ca4c74b6902ef3768326723530",
+          "content_html": "<p>スロットルジョイスティックの上下操作で、垂直姿勢での上昇/降下の制御をします。</p>\n<p>ジャイロモード</p>\n<p>ジャイロモードは上級者向けのモードです。内蔵3軸ジャイロが安定性を補助しますが、スティックを中央に戻しても機体は水平に戻りません。スティックで機体の回転の角速度を制御します。ロール、ピッチ、ラダーのスティックを動かすと、機体は入力に応じた角速度で回転します。</p>\n<p>アクロバットモード</p>\n<p>安定モードとジャイロモードを組み合わせることで、ローリング、急行、後進、サイドフライト、スパイ</p>\n<p>ラル降下など、多彩な自由なスタイルを簡単に実現することができ、ジョイスティックを中心点に戻すと</p>\n<p>機体は水平に戻します。</p>\n<p>スティックの操作量が小さいと、機体は操作した方向に移動します。操作量が大きいと、機体はその方向に回転します。</p>\n<p>マニュアルモード</p>\n<p>フライトコントローラーのアルゴリズムやジャイロの機能をせず、すべての飛行動作は手動で実現され、</p>\n<p>最も高度なスキルが必要となります。</p>\n<p>マニュアルモードでは、ジャイロスコープがないため、送信機を操作しないとサーボが動きません。</p>\n<aside aria-label=\"注意\">※ 安定/ジャイロ/アクロバットモードでは、機体を安定させるために、エルロン等の舵は勝手に動く現</aside>\n<p>象がありますが、これは正常な現象です。</p><aside aria-label=\"注意\">既存日本語資料の18ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "355c27b149ce1360b8b8af80d5ccf91aa83ffa542bbab947b6dfa218cbfeffe9",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 18,
@@ -16422,13 +16434,15 @@
             "tables": 0,
             "image_occurrences": 1
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<p>スロットルジョイスティックの上下操作で、垂直姿勢での上昇/降下の制御をします。</p>\n<p>ジャイロモード</p>\n<p>ジャイロモードでは、フライトコントローラーに統合された3 軸ジャイロで機体の安定性を高めますが、</p>\n<p>安定モードと異なって、ジョイスティックが中心点に戻っても機体は水平に戻さなく、送信機から操作し</p>\n<p>た状態を維持します。</p>\n<p>つまり、送信機から受信したローリング、ピッチング、又は、ラダーのままで、自主的に機体を水平状態</p>\n<p>に戻そうとしません。</p>\n<p>アクロバットモード</p>\n<p>安定モードとジャイロモードを組み合わせることで、ローリング、急行、後進、サイドフライト、スパイ</p>\n<p>ラル降下など、多彩な自由なスタイルを簡単に実現することができ、ジョイスティックを中心点に戻すと</p>\n<p>機体は水平に戻します。</p>\n<p>ジョイスティックを広い範囲で切り替えると、航空機は対応する方向に回転します。</p>\n<p>マニュアルモード</p>\n<p>フライトコントローラーのアルゴリズムやジャイロの機能をせず、すべての飛行動作は手動で実現され、</p>\n<p>最も高度なスキルが必要となります。</p>\n<p>マニュアルモードでは、ジャイロスコープがないため、送信機を操作しないとサーボが動きません。</p>\n<aside aria-label=\"注意\">※ 安定/ジャイロ/アクロバットモードでは、機体を安定させるために、エルロン等の舵は勝手に動く現</aside>\n<p>象がありますが、これは正常な現象です。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-18.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の18ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（18ページ）</figcaption></figure>",
+          "original_sha256": "ce1ecf998cef4bf7e6c12115de970417092321ca4c74b6902ef3768326723530"
         },
         {
           "id": "section-019",
           "title": "ジャイロ感度（19ページ）",
-          "content_html": "<h3 id=\"section-019-ジャイロ感度\">ジャイロ感度</h3>\n<p>Byme-A V2.0 のPID 制御には一定の余裕を持たしております。様々の機体に対して、制御が過大にな</p>\n<p>ることは想定されます。ジャイロ感度の設定については、舵角の調整を試すことができます。</p>\n<p>RadioLink の製品を選び頂き、誠にありがとうございます。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-19.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の19ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（19ページ）</figcaption></figure>",
-          "sha256": "44af75348be9cb6a78d1a7ec577825ae4ded1e24c5947db9b59a8211f3a4e574",
+          "content_html": "<h3 id=\"section-019-ジャイロ感度\">ジャイロ感度</h3>\n<p>Byme-A V2.0のPID制御には一定の安定余裕があります。機体によって補正が不足したり、過大になったりする場合は、舵角の調整を試すことができます。</p>\n<p>RadioLink の製品を選び頂き、誠にありがとうございます。</p><aside aria-label=\"注意\">既存日本語資料の19ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "sha256": "f1d26948ea302aa19bb0965c6919559d0052852cd3536dc99722221d5502b7fc",
           "source_locator": {
             "file": "pdf/byme-a取扱説明書_20240109.pdf",
             "page": 19,
@@ -16436,7 +16450,9 @@
             "tables": 0,
             "image_occurrences": 0
           },
-          "source_links": []
+          "source_links": [],
+          "original_content_html": "<h3 id=\"section-019-ジャイロ感度\">ジャイロ感度</h3>\n<p>Byme-A V2.0 のPID 制御には一定の余裕を持たしております。様々の機体に対して、制御が過大にな</p>\n<p>ることは想定されます。ジャイロ感度の設定については、舵角の調整を試すことができます。</p>\n<p>RadioLink の製品を選び頂き、誠にありがとうございます。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-19.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の19ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（19ページ）</figcaption></figure>",
+          "original_sha256": "44af75348be9cb6a78d1a7ec577825ae4ded1e24c5947db9b59a8211f3a4e574"
         }
       ],
       "editorial_changes": [
@@ -16464,7 +16480,404 @@
       "revision": null,
       "published_at": null,
       "date_policy": "Source filename is not evidence of a publication date; unspecified dates remain null.",
-      "technical_changes": [],
+      "technical_changes": [
+        {
+          "before": "<p>が不安定になる可能性があります。雨天等、水漏れの恐れある場所でのご利用を避けられない場合、常</p>\n<p>にビニール袋または防水布を使用して送信機を保護してください。</p>",
+          "after": "<p>が不安定になる可能性があります。</p>\n<aside aria-label=\"注意\">原典には悪天候での操作禁止と雨天時のカバー使用の両方が記載されています。雨天時の操作手順は確認が取れるまで案内を保留します。</aside>",
+          "reason": "原典に併記された悪天候時の指示が整合しないため、雨天操作の案内を保留する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 4,
+            "text_blocks": 24,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [3]
+          }
+        },
+        {
+          "before": "<p>Byme-A V2.0 は、3D 固定翼(F3P)や4 チャンネルのトレーニング機、スケールモデル機(V テールグ</p>\n<p>ライダーを除く)を含む様々な固定翼機に適用可能、SBUS とPPM 信号をサポートするフライトコント</p>\n<p>ローラーです。</p>",
+          "after": "<p>Byme-A V2.0は、3D固定翼機（F3P）、4チャンネルの練習機、スケールモデル機など、直線翼を持つ固定翼機（Vテールグライダーを除く）に対応するフライトコントローラーです。SBUSとPPMの信号に対応しています。</p>",
+          "reason": "英語原典にある直線翼の適用範囲を明記する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 4,
+            "text_blocks": 24,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [4]
+          }
+        },
+        {
+          "before": "<p>従って、バッテリーを取り付けて、電源ON の状態で、飛行機を地面に置き、モーターからビー音が聞</p>\n<p>こえるまで航空機を地上に静止させることを推奨します。緑色のLED が常に点灯するまで、セルフテス</p>\n<p>トが完了した事を意味します。</p>",
+          "after": "<p>バッテリーを取り付け、機体を地面に置いてから電源を入れてください。モーターから「ピー」という音が鳴るまで機体を地上で静止させます。緑色のLEDが点灯し続けるとセルフテストは完了です。</p>",
+          "reason": "英語原典どおり、機体を地面に置いてから通電する順序に訂正する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 7,
+            "text_blocks": 18,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [7]
+          }
+        },
+        {
+          "before": "3 秒以上押し続けます。",
+          "after": "3秒を超えて保持します。",
+          "reason": "「more than 3 seconds」の条件を反映する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 8,
+            "text_blocks": 8,
+            "tables": 0,
+            "image_occurrences": 3
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [8]
+          }
+        },
+        {
+          "before": "<p>ラダーが振動したり、モーターが回転したりするのは正常な現象です。</p>",
+          "after": "<p>このとき、舵面が動いたり、モーターが1回回転したりすることがありますが、正常な現象です。</p>",
+          "reason": "舵面の対象と、校正時にモーターが1回回転するという条件を反映する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 8,
+            "text_blocks": 8,
+            "tables": 0,
+            "image_occurrences": 3
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [8]
+          }
+        },
+        {
+          "before": "位相変更ボタンを 1 回押下",
+          "after": "位相変更ボタンを1回短押し",
+          "reason": "位相変更の操作が短押しであることを明記する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 11,
+            "text_blocks": 16,
+            "tables": 1,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [10]
+          }
+        },
+        {
+          "before": "位相変更ボタンを 2 回押下",
+          "after": "位相変更ボタンを2回短押し",
+          "reason": "位相変更の操作が短押しであることを明記する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 11,
+            "text_blocks": 16,
+            "tables": 1,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [10]
+          }
+        },
+        {
+          "before": "位相変更ボタンを 4 回押下",
+          "after": "位相変更ボタンを4回短押し",
+          "reason": "位相変更の操作が短押しであることを明記する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 11,
+            "text_blocks": 16,
+            "tables": 1,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [10]
+          }
+        },
+        {
+          "before": "<p>以下、すべての設定例はモード2 とします。モード1 をご利用する場合、適切に読み替えて下さい。</p>",
+          "after": "<p>以下の設定例はMode 2です。</p>",
+          "reason": "英語原典にないMode 1への読み替え指示を外す。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 11,
+            "text_blocks": 16,
+            "tables": 1,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [11]
+          }
+        },
+        {
+          "before": "<p>以下、飛行モードの設定の説明については、モード2 の例とします。</p>\n<p>モード1 でご利用される場合、適切に読み替えて下さい。</p>",
+          "after": "<p>以下の飛行モード設定はMode 2の例です。</p>",
+          "reason": "英語原典にないMode 1への読み替え指示を外す。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 13,
+            "text_blocks": 13,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [13]
+          }
+        },
+        {
+          "before": "<p>ジャイロモードでは、フライトコントローラーに統合された3 軸ジャイロで機体の安定性を高めますが、</p>\n<p>安定モードと異なって、ジョイスティックが中心点に戻っても機体は水平に戻さなく、送信機から操作し</p>\n<p>た状態を維持します。</p>\n<p>つまり、送信機から受信したローリング、ピッチング、又は、ラダーのままで、自主的に機体を水平状態</p>\n<p>に戻そうとしません。</p>",
+          "after": "<p>ジャイロモードは上級者向けのモードです。内蔵3軸ジャイロが安定性を補助しますが、スティックを中央に戻しても機体は水平に戻りません。スティックで機体の回転の角速度を制御します。ロール、ピッチ、ラダーのスティックを動かすと、機体は入力に応じた角速度で回転します。</p>",
+          "reason": "姿勢保持という限定を避け、英語原典の角速度制御と水平復帰なしを明記する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 18,
+            "text_blocks": 18,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [17]
+          }
+        },
+        {
+          "before": "<p>ジョイスティックを広い範囲で切り替えると、航空機は対応する方向に回転します。</p>",
+          "after": "<p>スティックの操作量が小さいと、機体は操作した方向に移動します。操作量が大きいと、機体はその方向に回転します。</p>",
+          "reason": "操作量が小さい場合の移動と大きい場合の回転を両方明記する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 18,
+            "text_blocks": 18,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [17]
+          }
+        },
+        {
+          "before": "<p>Byme-A V2.0 のPID 制御には一定の余裕を持たしております。様々の機体に対して、制御が過大にな</p>\n<p>ることは想定されます。ジャイロ感度の設定については、舵角の調整を試すことができます。</p>",
+          "after": "<p>Byme-A V2.0のPID制御には一定の安定余裕があります。機体によって補正が不足したり、過大になったりする場合は、舵角の調整を試すことができます。</p>",
+          "reason": "英語原典が示す補正不足と過補正の両条件を反映する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 19,
+            "text_blocks": 4,
+            "tables": 0,
+            "image_occurrences": 0
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [18]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-04.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の4ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（4ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の4ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 4,
+            "text_blocks": 24,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [3, 4]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-07.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の7ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（7ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の7ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 7,
+            "text_blocks": 18,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [7]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-08.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の8ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（8ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の8ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 8,
+            "text_blocks": 8,
+            "tables": 0,
+            "image_occurrences": 3
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [8]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-11.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の11ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（11ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の11ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 11,
+            "text_blocks": 16,
+            "tables": 1,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [10, 11]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-13.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の13ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（13ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の13ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 13,
+            "text_blocks": 13,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [13]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-18.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の18ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（18ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の18ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 18,
+            "text_blocks": 18,
+            "tables": 0,
+            "image_occurrences": 1
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [17]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-19.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の19ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（19ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の19ページ画像は、訂正前の記述を含むため非表示としています。</aside>",
+          "reason": "訂正前の手順を含む既存日本語ページ画像を表示対象から隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 19,
+            "text_blocks": 4,
+            "tables": 0,
+            "image_occurrences": 0
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [18]
+          }
+        },
+        {
+          "before": "<figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-01.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の1ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（1ページ）</figcaption></figure>",
+          "after": "<aside aria-label=\"注意\">既存日本語資料の表紙画像は、原典の対象年齢と異なる表示を含むため非表示としています。</aside>",
+          "reason": "旧日本語表紙の14+表記と英語原典の18歳未満不適合が一致しないため、旧表紙画像を隔離する。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 1,
+            "text_blocks": 3,
+            "tables": 0,
+            "image_occurrences": 3
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [1, 3]
+          }
+        },
+        {
+          "before": "<h3 id=\"section-003-免責事項\">免責事項</h3>\n<p>Radiolink フライトコントローラーByme-A V2.0 をお買い上げいただきありがとうございます。</p>\n<p>楽しく、安全にご使用するために、はじめに、本書の内容をご確認して、説明に従ってデバイスをセッ</p>\n<p>トアップしてください。</p>\n<p>操作中に問題が見つかった場合は、まず本取扱説明書を参照してください。</p>\n<p>本書の内容から、問題を解決できない場合、ご購入された量販店の担当者や、RadioLink 社のカスタマー</p>\n<p>サービスにご連絡してください。</p>\n<p>RadioLink 社のカスタマーサービスの連絡</p>\n<p>■中国語/英語</p>\n<p>・Facebook：</p>\n<p>https://www.facebook.com/radiolinkofficial</p>\n<p>・メールアドレス：</p>\n<p>after_service@radiolink.com.cn</p>\n<p>■日本語</p>\n<p>・X アカウント：</p>\n<p>https://twitter.com/RadiolinkJ</p>\n<p>・メールアドレス：</p>\n<p>info@happinesea.com</p>\n<p>・Line 公式アカウント：</p>\n<p>@662zyrsb</p>\n<p>予期せぬ変更により、このマニュアルに記載されている情報は変更される可能性があります。</p>\n<p>詳細については、当社のWeb サイトhttp://www.radiolink.com をご覧ください。</p>\n<h3 id=\"section-003-警告-注意事項\">警告・注意事項</h3>\n<aside aria-label=\"注意\">注意事項</aside>\n<p><br/>悪天候等、視界の悪い時、モデルの操作をやめて下さい。視界が悪いと、パイロットが方向感覚を失</p>\n<p>い、制御不能になる危険性があります。</p>\n<p><br/>人混みや違法な場所では絶対に使用しないでください。</p>\n<p><br/>受信機を接続する前に、トリムレバーが0 にあり、バッテリーが適切に充電されていることを必ず</p>\n<p>確認してください。</p>\n<p><br/>モデルを飛ばす前に、必ずすべてのサーボとの接続状況を確認してください。</p>\n<p><br/>送信機の前に必ず受信機の電源を切ってください。</p>\n<p><br/>RC 飛行機ご利用にあたって、高圧電線、通信基地局、電波の発射塔の付近をご遠慮してください。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-03.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の3ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（3ページ）</figcaption></figure>",
+          "after": "<h3 id=\"section-003-免責事項\">免責事項</h3>\n<p>Radiolink フライトコントローラーByme-A V2.0 をお買い上げいただきありがとうございます。</p>\n<p>楽しく、安全にご使用するために、はじめに、本書の内容をご確認して、説明に従ってデバイスをセッ</p>\n<p>トアップしてください。</p>\n<p>操作中に問題が見つかった場合は、まず本取扱説明書を参照してください。</p>\n<p>本書の内容から、問題を解決できない場合、ご購入された量販店の担当者や、RadioLink 社のカスタマー</p>\n<p>サービスにご連絡してください。</p>\n<p>RadioLink 社のカスタマーサービスの連絡</p>\n<p>■中国語/英語</p>\n<p>・Facebook：</p>\n<p>https://www.facebook.com/radiolinkofficial</p>\n<p>・メールアドレス：</p>\n<p>after_service@radiolink.com.cn</p>\n<p>■日本語</p>\n<p>・X アカウント：</p>\n<p>https://twitter.com/RadiolinkJ</p>\n<p>・メールアドレス：</p>\n<p>info@happinesea.com</p>\n<p>・Line 公式アカウント：</p>\n<p>@662zyrsb</p>\n<p>予期せぬ変更により、このマニュアルに記載されている情報は変更される可能性があります。</p>\n<p>詳細については、当社のWeb サイトhttp://www.radiolink.com をご覧ください。</p>\n<h3 id=\"section-003-警告-注意事項\">警告・注意事項</h3>\n<aside aria-label=\"注意\">注意事項</aside>\n<p>•<br/>悪天候等、視界の悪い時、モデルの操作をやめて下さい。視界が悪いと、パイロットが方向感覚を失</p>\n<p>い、制御不能になる危険性があります。</p>\n<p>•<br/>人混みや違法な場所では絶対に使用しないでください。</p>\n<p>•<br/>受信機を接続する前に、トリムレバーが0 にあり、バッテリーが適切に充電されていることを必ず</p>\n<p>確認してください。</p>\n<p>•<br/>モデルを飛ばす前に、必ずすべてのサーボとの接続状況を確認してください。</p>\n<p>•<br/>送信機の前に必ず受信機の電源を切ってください。</p>\n<p>•<br/>RC 飛行機ご利用にあたって、高圧電線、通信基地局、電波の発射塔の付近をご遠慮してください。</p><figure data-manual-figure><img src=\"/assets/radiolink/byme-a/manuals/byme-a-v2/page-03.webp\" alt=\"Byme-A V2.0 日本語取扱説明書 原資料の3ページ\" width=\"1072\" height=\"1516\" loading=\"lazy\"/><figcaption>図版・配置の原資料（3ページ）</figcaption></figure>",
+          "reason": "注意事項の箇条書き記号を標準Unicodeにそろえる。",
+          "source_locator": {
+            "file": "pdf/byme-a取扱説明書_20240109.pdf",
+            "page": 3,
+            "text_blocks": 32,
+            "tables": 0,
+            "image_occurrences": 2
+          },
+          "evidence": {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [3]
+          }
+        }
+      ],
       "semantic_sections": [
         {
           "id": "manual-introduction",
@@ -16473,7 +16886,7 @@
             {
               "source_section": "section-001",
               "start": 0,
-              "end": 378
+              "end": 229
             },
             {
               "source_section": "section-002",
@@ -16517,7 +16930,7 @@
             {
               "source_section": "section-004",
               "start": 0,
-              "end": 289
+              "end": 315
             }
           ]
         },
@@ -16527,14 +16940,14 @@
           "depth": 2,
           "heading": {
             "source_section": "section-004",
-            "start": 289,
-            "end": 320
+            "start": 315,
+            "end": 346
           },
           "blocks": [
             {
               "source_section": "section-004",
-              "start": 320,
-              "end": 666
+              "start": 346,
+              "end": 672
             }
           ]
         },
@@ -16544,14 +16957,14 @@
           "depth": 2,
           "heading": {
             "source_section": "section-004",
-            "start": 666,
-            "end": 705
+            "start": 672,
+            "end": 711
           },
           "blocks": [
             {
               "source_section": "section-004",
-              "start": 705,
-              "end": 1089
+              "start": 711,
+              "end": 941
             }
           ]
         },
@@ -16607,7 +17020,7 @@
             {
               "source_section": "section-007",
               "start": 184,
-              "end": 563
+              "end": 529
             }
           ]
         },
@@ -16617,19 +17030,19 @@
           "depth": 2,
           "heading": {
             "source_section": "section-007",
-            "start": 563,
-            "end": 594
+            "start": 529,
+            "end": 560
           },
           "blocks": [
             {
               "source_section": "section-007",
-              "start": 594,
-              "end": 1044
+              "start": 560,
+              "end": 856
             },
             {
               "source_section": "section-008",
               "start": 0,
-              "end": 627
+              "end": 485
             },
             {
               "source_section": "section-009",
@@ -16695,7 +17108,7 @@
             {
               "source_section": "section-011",
               "start": 0,
-              "end": 727
+              "end": 724
             }
           ]
         },
@@ -16705,14 +17118,14 @@
           "depth": 2,
           "heading": {
             "source_section": "section-011",
-            "start": 727,
-            "end": 766
+            "start": 724,
+            "end": 763
           },
           "blocks": [
             {
               "source_section": "section-011",
-              "start": 766,
-              "end": 767
+              "start": 763,
+              "end": 764
             }
           ]
         },
@@ -16722,14 +17135,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-011",
-            "start": 767,
-            "end": 783
+            "start": 764,
+            "end": 780
           },
           "blocks": [
             {
               "source_section": "section-011",
-              "start": 783,
-              "end": 879
+              "start": 780,
+              "end": 876
             }
           ]
         },
@@ -16739,14 +17152,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-011",
-            "start": 879,
-            "end": 893
+            "start": 876,
+            "end": 890
           },
           "blocks": [
             {
               "source_section": "section-011",
-              "start": 893,
-              "end": 1044
+              "start": 890,
+              "end": 1041
             }
           ]
         },
@@ -16756,14 +17169,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-011",
-            "start": 1044,
-            "end": 1059
+            "start": 1041,
+            "end": 1056
           },
           "blocks": [
             {
               "source_section": "section-011",
-              "start": 1059,
-              "end": 1377
+              "start": 1056,
+              "end": 1188
             },
             {
               "source_section": "section-012",
@@ -16790,7 +17203,7 @@
             {
               "source_section": "section-013",
               "start": 216,
-              "end": 292
+              "end": 247
             }
           ]
         },
@@ -16800,14 +17213,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-013",
-            "start": 292,
-            "end": 304
+            "start": 247,
+            "end": 259
           },
           "blocks": [
             {
               "source_section": "section-013",
-              "start": 304,
-              "end": 736
+              "start": 259,
+              "end": 536
             },
             {
               "source_section": "section-014",
@@ -16878,7 +17291,7 @@
             {
               "source_section": "section-018",
               "start": 61,
-              "end": 264
+              "end": 199
             }
           ]
         },
@@ -16888,14 +17301,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-018",
-            "start": 264,
-            "end": 280
+            "start": 199,
+            "end": 215
           },
           "blocks": [
             {
               "source_section": "section-018",
-              "start": 280,
-              "end": 456
+              "start": 215,
+              "end": 407
             }
           ]
         },
@@ -16905,14 +17318,14 @@
           "depth": 3,
           "heading": {
             "source_section": "section-018",
-            "start": 456,
-            "end": 471
+            "start": 407,
+            "end": 422
           },
           "blocks": [
             {
               "source_section": "section-018",
-              "start": 471,
-              "end": 935
+              "start": 422,
+              "end": 731
             }
           ]
         },
@@ -16929,7 +17342,7 @@
             {
               "source_section": "section-019",
               "start": 39,
-              "end": 414
+              "end": 232
             }
           ]
         }
@@ -17029,7 +17442,21 @@
           "id": "ジャイロ感度19ページ",
           "source_section": "section-019"
         }
-      ]
+      ],
+      "safety_review": {
+        "decision": "AUTHORITATIVE_EVIDENCE_CLEARED",
+        "applicability_established": true,
+        "missing_evidence": [],
+        "authoritative_sources": [
+          {
+            "path": "sources/en/bymea_manual.pdf",
+            "url": "https://www.radiolink.com/download/c640a31b4aac8f68f3be39814c723a13.pdf",
+            "sha256": "81fa295a70d2efa2d0085429dcb62bccdb19f7229b5254a487464ee4d93a2f6f",
+            "physical_pages": [1, 3, 4, 7, 8, 10, 11, 13, 17, 18]
+          }
+        ],
+        "scope": "Exact English Byme-A V2.0 source applied only to listed Japanese corrections; rain operation, superseded Japanese page images, and legacy PDF display link remain withheld from this Web draft. Independent whole-manual QA pending."
+      }
     },
     {
       "id": "repo-byme-d-ja-instruction_manual",

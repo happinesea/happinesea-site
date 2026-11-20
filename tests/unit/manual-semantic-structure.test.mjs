@@ -107,6 +107,9 @@ test('all six semantic outlines preserve every original reading segment, source 
   const bymeDReview = JSON.parse(
     readFileSync(new URL('tests/fixtures/byme-d-safety-review.json', root)),
   );
+  const bymeAReview = JSON.parse(
+    readFileSync(new URL('tests/fixtures/byme-a-safety-review.json', root)),
+  );
   for (const manual of inventory.manuals) {
     const previous = baseline.manuals.find((entry) => entry.id === manual.id);
     for (const key of [
@@ -122,7 +125,8 @@ test('all six semantic outlines preserve every original reading segment, source 
         createHash('sha256')
           .update(JSON.stringify(manual[key] ?? null))
           .digest('hex'),
-        bymeDReview[manual.id]?.[key] ??
+        bymeAReview[manual.id]?.[key] ??
+          bymeDReview[manual.id]?.[key] ??
           rc6gsReview[manual.id]?.[key] ??
           previous.hashes[key],
         `${manual.id} changed ${key}`,
@@ -200,6 +204,34 @@ test('all six semantic outlines preserve every original reading segment, source 
         assert(!pageHeading.test(match[1]));
     }
   }
+});
+
+test('Byme-A V2.0 displays source-based corrections without superseded snapshots or the legacy PDF link', () => {
+  const manual = inventory.manuals.find(
+    (entry) => entry.id === 'repo-byme-a-v2-ja-instruction_manual',
+  );
+  const rendered = manual.semantic_sections
+    .map((section) => renderSemanticSection(manual, section.id))
+    .join('\n');
+  assert.match(rendered, /機体を地面に置いてから電源を入れ/);
+  assert.match(rendered, /3秒を超えて保持/);
+  assert.match(rendered, /モーターが1回回転/);
+  assert.match(rendered, /直線翼を持つ固定翼機/);
+  assert.match(rendered, /機体の回転の角速度を制御/);
+  assert.match(rendered, /操作量が小さいと、機体は操作した方向に移動/);
+  assert.match(rendered, /補正が不足したり、過大になったり/);
+  assert.match(rendered, /雨天時の操作手順は確認が取れるまで案内を保留/);
+  assert.doesNotMatch(rendered, /モード1.{0,24}読み替えて/);
+  assert.doesNotMatch(rendered, /page-(01|04|07|08|11|13|18|19)\.webp/);
+  assert.match(rendered, /page-05\.webp/);
+  for (const count of [1, 2, 4])
+    assert.ok(rendered.includes(`位相変更ボタンを${count}回短押し`));
+  const index = readFileSync(
+    new URL('src/content/docs/manuals/byme-a-v2/index.mdx', root),
+    'utf8',
+  );
+  assert.ok(!index.includes(manual.download));
+  assert.match(index, /訂正前の日本語PDFは、このページでの配布を保留/);
 });
 
 test('actual Markdown processor retains exact reviewed punctuation and leaves other pages unchanged', async () => {

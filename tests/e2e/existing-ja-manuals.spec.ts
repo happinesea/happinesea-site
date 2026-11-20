@@ -272,6 +272,33 @@ test('RC8X source warning appears before firmware update steps', async ({
   await warning.screenshot({ path: info.outputPath('rc8x-power-warning.png') });
 });
 
+test('Byme-A V2.0 retains corrected navigation and holds the older PDF', async ({
+  page,
+}) => {
+  await page.goto('./manuals/byme-a-v2/');
+  await expect(
+    page.getByText('訂正前の日本語PDFは、このページでの配布を保留しています。'),
+  ).toBeVisible();
+  await expect(page.locator('a[href$="byme-a-v2.pdf"]')).toHaveCount(0);
+  await expect(page.locator('img[src$="page-01.webp"]')).toHaveCount(0);
+  await expect(page.getByText(/原典の対象年齢と異なる表示/)).toBeVisible();
+  await expect(page.locator('.byme-a-manual-toc li')).toHaveCount(23);
+  await expect(
+    page.locator('.byme-a-manual-toc li:not(:has(> a))'),
+  ).toHaveCount(0);
+  await expect(page.locator('.pagination-links a[rel=prev]')).toHaveCount(0);
+  await page.getByRole('link', { name: '製品ページへ戻る' }).click();
+  await expect(page).toHaveURL(/\/radiolink\/byme-a\/$/);
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    'content',
+    /noindex/,
+  );
+  await page.getByRole('link', { name: '日本語取扱説明書' }).click();
+  await expect(page).toHaveURL(/\/manuals\/byme-a-v2\/$/);
+  await page.goto('./manuals/byme-a-v2/chapter-12/');
+  await expect(page.locator('.pagination-links a[rel=next]')).toHaveCount(0);
+});
+
 test('Byme-D source corrections appear in the existing manual', async ({
   page,
 }, info) => {

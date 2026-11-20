@@ -609,7 +609,7 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
 test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
   const html = await route('radiolink/index.html');
   const detailCount =
-    26 +
+    27 +
     batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
     batch6.manuals.length +
     remaining.manuals.filter((m) => m.product_id !== 'rtc8').length;
