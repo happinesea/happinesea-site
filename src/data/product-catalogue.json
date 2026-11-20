@@ -891,7 +891,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/vds200",
-    "detailPath": null,
+    "detailPath": "/radiolink/vds200/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/vds200.webp",
