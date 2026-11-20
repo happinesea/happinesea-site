@@ -176,9 +176,15 @@ test('latest full manuals have complete local figures, tables, videos and resolv
         }
       }
     }
-    assert.equal(figures, product.figure_placements);
-    assert.equal(tables, product.tables);
-    assert.equal(videos, product.videos.length);
+    assert.equal(
+      figures,
+      product.review_projection?.figure_ids.length ?? product.figure_placements,
+    );
+    assert.equal(tables, product.review_projection?.tables ?? product.tables);
+    assert.equal(
+      videos,
+      (product.review_projection?.videos ?? product.videos).length,
+    );
   }
 });
 

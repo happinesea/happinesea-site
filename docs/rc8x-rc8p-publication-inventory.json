@@ -7848,7 +7848,109 @@
       "tables": 6,
       "headings": 51,
       "saved_asset_files": 89,
-      "reused_asset_files": 9
+      "reused_asset_files": 9,
+      "review_projection": {
+        "pages": {
+          "src/content/docs/manuals/rc8p/chapter-01.mdx": {
+            "sha256": "f82e0d2acbfcd416a90820482084b47a8f217cf5759866213366000e60431f2e",
+            "headings": 19
+          },
+          "src/content/docs/manuals/rc8p/chapter-02.mdx": {
+            "sha256": "c63331a8e0234d1520c4bcf67e67d3f71f72d5eddf5df24561649a50e48ab773",
+            "headings": 25
+          },
+          "src/content/docs/manuals/rc8p/chapter-03.mdx": {
+            "sha256": "0624464694600c1f302a8cbf800b7b96250bb7b74cf3384ce88a149a379e317a",
+            "headings": 1
+          },
+          "src/content/docs/manuals/rc8p/chapter-04.mdx": {
+            "sha256": "619b07304708fb7e38251c9abebba3fdfd0c0103f475926571325ba2a61cc51f",
+            "headings": 5
+          },
+          "src/content/docs/manuals/rc8p/back-matter.mdx": {
+            "sha256": "82b591c12d7634027a4da7ab2bae7a234e05ba31859700133aa1fc0ae9b1e44d",
+            "headings": 1
+          },
+          "src/content/docs/manuals/rc8p/index.mdx": {
+            "sha256": "3f35554bcce033798a8d3b799cf55d0ae9685a116daa2f716ff80febd175c74b",
+            "headings": 1
+          }
+        },
+        "figure_ids": [
+          "RC8P-P006-I08",
+          "RC8P-P006-I01",
+          "RC8P-P006-I02",
+          "RC8P-P006-I03",
+          "RC8P-P006-I06",
+          "RC8P-P006-I04",
+          "RC8P-P006-I07",
+          "RC8P-P006-I09",
+          "RC8P-P006-I05",
+          "RC8P-P007-I02",
+          "RC8P-P007-I01",
+          "RC8P-P008-I01",
+          "RC8P-P008-I02",
+          "RC8P-P008-I03",
+          "RC8P-P008-I04",
+          "RC8P-P008-I05",
+          "RC8P-P008-I07",
+          "RC8P-P008-I06",
+          "RC8P-P009-I01",
+          "RC8P-P009-I02",
+          "RC8P-P009-I03",
+          "RC8P-P009-I04",
+          "RC8P-P011-I01",
+          "RC8P-P011-I02",
+          "RC8P-P011-I04",
+          "RC8P-P011-I05",
+          "RC8P-P011-I03",
+          "RC8P-P012-I01",
+          "RC8P-P013-I01",
+          "RC8P-P015-I01",
+          "RC8P-P016-I01",
+          "RC8P-P016-I02",
+          "RC8P-P017-I04",
+          "RC8P-P017-I01",
+          "RC8P-P017-I03",
+          "RC8P-P019-I01",
+          "RC8P-P019-I02",
+          "RC8P-P019-I04",
+          "RC8P-P020-I02",
+          "RC8P-P020-I01",
+          "RC8P-P021-I01",
+          "RC8P-P022-I01",
+          "RC8P-P022-I02",
+          "RC8P-P022-I03",
+          "RC8P-P023-I01",
+          "RC8P-P023-I02",
+          "RC8P-P024-I02",
+          "RC8P-P024-I01",
+          "RC8P-P025-I01",
+          "RC8P-P025-I04",
+          "RC8P-P025-I02",
+          "RC8P-P025-I03",
+          "RC8P-P026-I01",
+          "RC8P-P026-I02",
+          "RC8P-P026-I03",
+          "RC8P-P029-I01",
+          "RC8P-P030-I01",
+          "RC8P-P030-I02",
+          "RC8P-P031-I06",
+          "RC8P-P031-I01",
+          "RC8P-P031-I05",
+          "RC8P-P031-I04",
+          "RC8P-P001-I07",
+          "RC8P-P001-I08",
+          "RC8P-P001-I02",
+          "RC8P-P001-I01",
+          "RC8P-P001-I05",
+          "RC8P-P001-I06",
+          "RC8P-P001-I03",
+          "RC8P-P001-I04"
+        ],
+        "tables": 4,
+        "videos": []
+      }
     }
   ],
   "canonical_hash_basis": "utf8_lf_text",

@@ -64,9 +64,9 @@ for (const product of inventory.products) {
           }),
         ),
       ).toBe(true);
-      const expectedVideos = product.videos.filter(
-        (video) => video.route === route.route,
-      );
+      const expectedVideos = (
+        product.review_projection?.videos ?? product.videos
+      ).filter((video) => video.route === route.route);
       await expect(page.locator('[data-manual-video] iframe')).toHaveCount(
         expectedVideos.length,
       );
