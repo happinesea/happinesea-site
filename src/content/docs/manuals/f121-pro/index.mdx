@@ -1,0 +1,503 @@
+---
+title: F121 Pro 日本語取扱説明書
+description: Radiolink F121 Pro の公式英語取扱説明書に対応する日本語版です。
+product: f121-pro
+slug: manuals/f121-pro
+status: draft
+prev: false
+next: false
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/7c7c16f360ebed9e79ace734ceb36430.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f121-pro/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F121 Pro V1.1の公式英語取扱説明書（19頁）。F121は対象外です。
+
+<span id="f121-pro-p1" data-translation-unit="f121-pro-p1"></span>
+
+## F121 Pro
+マニュアルモード搭載ミニレーシングドローン
+慣性航法による高度保持
+取扱説明書 V1.1
+※本書は定期的に更新されます。最新版はRadioLink公式サイト（www.radiolink.com）からダウンロードしてください。
+
+<span id="f121-pro-p1-f1-unit" data-translation-unit="f121-pro-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121-pro/web-ja-v1/f121-pro-p1-f1.png" width={600} height={180} figureId="f121-pro-p1-f1" alt={"RadioLinkのロゴ。"} caption={"RadioLinkのロゴ。"} />
+
+<span id="f121-pro-p1-f2-unit" data-translation-unit="f121-pro-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f121-pro/web-ja-v1/f121-pro-p1-f2.png" width={1000} height={600} figureId="f121-pro-p1-f2" alt={"F121 Proの機体外観。"} caption={"F121 Proの機体外観。"} />
+
+<span id="f121-pro-p2" data-translation-unit="f121-pro-p2"></span>
+
+RadioLink Electronic Limited　www.radiolink.com
+
+RadioLinkのミニレーシングドローンF121 Proをお買い上げいただきありがとうございます。性能を十分に活用し、安全に使用するため、本書をよく読み、手順どおりに機器を設定してください。操作中に問題が生じた場合は、下記の方法で技術サポートをご利用いただけます。
+
+1. after_service@radiolink.com.cn にメールでお問い合わせください。できる限り早く回答します。
+2. 正規販売店または代理店から購入した場合は、購入先へ直接お問い合わせください。
+
+マニュアルはRadioLink公式サイト（www.radiolink.com）に掲載しています。チュートリアルも随時追加します。
+
+<span id="f121-pro-p2-safety" data-translation-unit="f121-pro-p2-safety"></span>
+
+:::caution[注意]
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界不良により方向を見失い、機体の制御を失うおそれがあります。
+- 人混みや使用が法令で禁止されている場所では、本製品を使用しないでください。
+- 受信機を接続する前には、送信機のトリムレバーが0で、バッテリーが適切に充電されていることを確認してください。
+- 飛行中は機体から一定の距離を取り、プロペラやブラシ付きモーターなどの高速回転部品でけがをしないようにしてください。
+- 着陸後、機体に近づいて触れる前に、ディスアームされ、プロペラが停止していることを確認してください。
+- 送信機の電源を切る前に、受信機または機体の電源を切ってください。
+- 飛行中に脱落しないよう、プロペラの取付手順に従ってください。
+- 無線通信を確保するため、高圧線、通信基地局、送信塔などからの干渉がない場所で飛行させてください。
+:::
+
+<span id="f121-pro-p2-warning" data-translation-unit="f121-pro-p2-warning"></span>
+
+:::caution[注意]
+## 警告
+
+本製品は玩具ではありません。14歳未満のお子様には適していません。大人は本製品をお子様の手が届かないところに置き、お子様がいる場所で操作するときは十分注意してください。
+:::
+
+<span id="f121-pro-p2-warning-wet" data-translation-unit="f121-pro-p2-warning-wet"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p2-fcc" data-translation-unit="f121-pro-p2-fcc"></span>
+
+<span id="f121-pro-p2-f1-unit" data-translation-unit="f121-pro-p2-f1-unit"></span>
+
+<span id="f121-pro-p3" data-translation-unit="f121-pro-p3"></span>
+
+## 目次
+
+| 節 | 原典の印刷ページ |
+| --- | ---: |
+| 第1章 F121 Proの特長 | 2 |
+| 第2章 飛行前の準備 | 2 |
+| 2.1 電源 | 2 |
+| 2.2 送信機 | 2 |
+| 2.3 F121 Pro | 3 |
+| 第3章 飛行準備 | 6 |
+| 3.1 モーターの取付け | 6 |
+| 3.2 プロペラとプロペラガードの取付け | 7 |
+| 3.3 F121 Proの電源を入れる | 8 |
+| 3.4 飛行時の注意 | 8 |
+| 3.5 対応送信機の設定 | 8 |
+| 3.6 バインド | 9 |
+| 第4章 各飛行モードでの飛行 | 10 |
+| 4.1 F121 Proのアームとディスアーム | 10 |
+| 4.1.1 アーム方法 | 10 |
+| 4.1.2 ディスアーム方法 | 11 |
+| 4.2 高度保持モード | 11 |
+| 4.2.1 上昇／下降 | 11 |
+| 4.2.2 ホバリング | 11 |
+| 4.2.3 前進／後退／右移動／左移動 | 12 |
+| 4.2.4 時計回り／反時計回りの旋回 | 12 |
+| 4.3 安定モード | 12 |
+| 4.4 マニュアルモード | 12 |
+| 4.5 スイッチによる360°フリップ | 12 |
+| 4.6 低バッテリー警報 | 13 |
+| 4.7 キャリブレーション | 13 |
+| 第5章 F121 Proの映像伝送 | 14 |
+| 第6章 F121 ProのFPVゴーグル | 15 |
+| 6.1 ボタンと端子 | 15 |
+| 6.2 FPVゴーグルのバッテリー | 16 |
+| 6.3 DVRモード | 16 |
+| 6.4 ゴーグルの組立てと分解 | 16 |
+| 第7章 仕様 | 16 |
+| 7.1 機体 | 16 |
+| 7.2 送信機 | 17 |
+| 7.3 充電器 | 17 |
+| 7.4 カメラと映像伝送 | 17 |
+| 7.5 FPVゴーグル | 17 |
+
+<span id="f121-pro-p4-features" data-translation-unit="f121-pro-p4-features"></span>
+
+## 第1章 F121 Proの特長
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p4-charge" data-translation-unit="f121-pro-p4-charge"></span>
+
+## 第2章 飛行前の準備
+
+### 2.1 電源
+
+<span id="f121-pro-p4-charge-input-limit" data-translation-unit="f121-pro-p4-charge-input-limit"></span>
+
+:::caution[注意]
+CM120に接続する電源の出力電圧は5 Vを超えてはいけません。
+:::
+
+<span id="f121-pro-p4-tx" data-translation-unit="f121-pro-p4-tx"></span>
+
+### 2.2 送信機
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p4-f1-unit" data-translation-unit="f121-pro-p4-f1-unit"></span>
+
+<span id="f121-pro-p4-f2-unit" data-translation-unit="f121-pro-p4-f2-unit"></span>
+
+<span id="f121-pro-p5-mode" data-translation-unit="f121-pro-p5-mode"></span>
+
+<span id="f121-pro-p5-assembly" data-translation-unit="f121-pro-p5-assembly"></span>
+
+### 2.3 F121 Pro
+
+### 2.4 スティックと機体の動き
+
+<span id="f121-pro-p5-f1-unit" data-translation-unit="f121-pro-p5-f1-unit"></span>
+
+<span id="f121-pro-p5-f2-unit" data-translation-unit="f121-pro-p5-f2-unit"></span>
+
+<span id="f121-pro-p5-f3-unit" data-translation-unit="f121-pro-p5-f3-unit"></span>
+
+<span id="f121-pro-p6" data-translation-unit="f121-pro-p6"></span>
+
+<span id="f121-pro-p6-f1-unit" data-translation-unit="f121-pro-p6-f1-unit"></span>
+
+<span id="f121-pro-p6-f2-unit" data-translation-unit="f121-pro-p6-f2-unit"></span>
+
+<span id="f121-pro-p6-f3-unit" data-translation-unit="f121-pro-p6-f3-unit"></span>
+
+<span id="f121-pro-p6-f4-unit" data-translation-unit="f121-pro-p6-f4-unit"></span>
+
+<span id="f121-pro-p6-f5-unit" data-translation-unit="f121-pro-p6-f5-unit"></span>
+
+<span id="f121-pro-p6-f6-unit" data-translation-unit="f121-pro-p6-f6-unit"></span>
+
+<span id="f121-pro-p6-f7-unit" data-translation-unit="f121-pro-p6-f7-unit"></span>
+
+<span id="f121-pro-p6-f8-unit" data-translation-unit="f121-pro-p6-f8-unit"></span>
+
+<span id="f121-pro-p6-f9-unit" data-translation-unit="f121-pro-p6-f9-unit"></span>
+
+<span id="f121-pro-p6-f10-unit" data-translation-unit="f121-pro-p6-f10-unit"></span>
+
+<span id="f121-pro-p6-f11-unit" data-translation-unit="f121-pro-p6-f11-unit"></span>
+
+<span id="f121-pro-p6-f12-unit" data-translation-unit="f121-pro-p6-f12-unit"></span>
+
+<span id="f121-pro-p7" data-translation-unit="f121-pro-p7"></span>
+
+<span id="f121-pro-p7-f1-unit" data-translation-unit="f121-pro-p7-f1-unit"></span>
+
+<span id="f121-pro-p7-f2-unit" data-translation-unit="f121-pro-p7-f2-unit"></span>
+
+<span id="f121-pro-p7-f3-unit" data-translation-unit="f121-pro-p7-f3-unit"></span>
+
+<span id="f121-pro-p7-f4-unit" data-translation-unit="f121-pro-p7-f4-unit"></span>
+
+<span id="f121-pro-p7-f5-unit" data-translation-unit="f121-pro-p7-f5-unit"></span>
+
+<span id="f121-pro-p7-f6-unit" data-translation-unit="f121-pro-p7-f6-unit"></span>
+
+<span id="f121-pro-p7-f7-unit" data-translation-unit="f121-pro-p7-f7-unit"></span>
+
+<span id="f121-pro-p7-f8-unit" data-translation-unit="f121-pro-p7-f8-unit"></span>
+
+<span id="f121-pro-p7-f9-unit" data-translation-unit="f121-pro-p7-f9-unit"></span>
+
+<span id="f121-pro-p7-f10-unit" data-translation-unit="f121-pro-p7-f10-unit"></span>
+
+<span id="f121-pro-p7-f11-unit" data-translation-unit="f121-pro-p7-f11-unit"></span>
+
+<span id="f121-pro-p8" data-translation-unit="f121-pro-p8"></span>
+
+## 第3章 飛行準備
+
+### 3.1 モーターの取付け
+
+<span id="f121-pro-p8-f1-unit" data-translation-unit="f121-pro-p8-f1-unit"></span>
+
+<span id="f121-pro-p8-f2-unit" data-translation-unit="f121-pro-p8-f2-unit"></span>
+
+<span id="f121-pro-p8-f3-unit" data-translation-unit="f121-pro-p8-f3-unit"></span>
+
+<span id="f121-pro-p8-f4-unit" data-translation-unit="f121-pro-p8-f4-unit"></span>
+
+<span id="f121-pro-p8-f5-unit" data-translation-unit="f121-pro-p8-f5-unit"></span>
+
+<span id="f121-pro-p8-f6-unit" data-translation-unit="f121-pro-p8-f6-unit"></span>
+
+<span id="f121-pro-p8-f7-unit" data-translation-unit="f121-pro-p8-f7-unit"></span>
+
+<span id="f121-pro-p8-f8-unit" data-translation-unit="f121-pro-p8-f8-unit"></span>
+
+<span id="f121-pro-p8-f9-unit" data-translation-unit="f121-pro-p8-f9-unit"></span>
+
+<span id="f121-pro-p9" data-translation-unit="f121-pro-p9"></span>
+
+### 3.2 プロペラとプロペラガードの取付け
+
+<span id="f121-pro-p9-f1-unit" data-translation-unit="f121-pro-p9-f1-unit"></span>
+
+<span id="f121-pro-p9-f2-unit" data-translation-unit="f121-pro-p9-f2-unit"></span>
+
+<span id="f121-pro-p9-f3-unit" data-translation-unit="f121-pro-p9-f3-unit"></span>
+
+<span id="f121-pro-p9-f4-unit" data-translation-unit="f121-pro-p9-f4-unit"></span>
+
+<span id="f121-pro-p9-f5-unit" data-translation-unit="f121-pro-p9-f5-unit"></span>
+
+<span id="f121-pro-p9-f6-unit" data-translation-unit="f121-pro-p9-f6-unit"></span>
+
+<span id="f121-pro-p9-f7-unit" data-translation-unit="f121-pro-p9-f7-unit"></span>
+
+<span id="f121-pro-p9-f8-unit" data-translation-unit="f121-pro-p9-f8-unit"></span>
+
+<span id="f121-pro-p10" data-translation-unit="f121-pro-p10"></span>
+
+### 3.3 F121 Proの電源を入れる
+
+### 3.4 飛行時の注意
+
+<span id="f121-pro-p10-crash-stop" data-translation-unit="f121-pro-p10-crash-stop"></span>
+
+:::caution[注意]
+衝突してF121 Proが落下した場合は、ただちにスロットルスティックを最下位置にし、モーターの回転を止めます。
+:::
+
+<span id="f121-pro-p10-receiver" data-translation-unit="f121-pro-p10-receiver"></span>
+
+### 3.5 対応送信機の設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p10-receiver-voltage-warning" data-translation-unit="f121-pro-p10-receiver-voltage-warning"></span>
+
+:::caution[注意]
+他社製の送受信機を使用する場合は、受信機の最低動作電圧を確認してください。市販の小型受信機の多くは3.7 Vまでしか動作しません。一方、コアレスモーター機は通常1S 4.2 Vのリチウム電池を使用し、高速飛行で3.7 Vを下回ると、電力不足によって制御を失い墜落するおそれがあります。
+:::
+
+<span id="f121-pro-p10-receiver-rated-voltage" data-translation-unit="f121-pro-p10-receiver-rated-voltage"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p10-f1-unit" data-translation-unit="f121-pro-p10-f1-unit"></span>
+
+<span id="f121-pro-p11" data-translation-unit="f121-pro-p11"></span>
+
+### 3.6 バインド
+
+<span id="f121-pro-p11-f1-unit" data-translation-unit="f121-pro-p11-f1-unit"></span>
+
+<span id="f121-pro-p11-f2-unit" data-translation-unit="f121-pro-p11-f2-unit"></span>
+
+<span id="f121-pro-p11-f3-unit" data-translation-unit="f121-pro-p11-f3-unit"></span>
+
+<span id="f121-pro-p11-f4-unit" data-translation-unit="f121-pro-p11-f4-unit"></span>
+
+<span id="f121-pro-p11-f5-unit" data-translation-unit="f121-pro-p11-f5-unit"></span>
+
+<span id="f121-pro-p11-f6-unit" data-translation-unit="f121-pro-p11-f6-unit"></span>
+
+<span id="f121-pro-p12" data-translation-unit="f121-pro-p12"></span>
+
+## 第4章 各飛行モードでの飛行
+
+### 4.1 F121 Proのアームとディスアーム
+
+#### 4.1.1 アーム方法
+
+<span id="f121-pro-p12-f1-unit" data-translation-unit="f121-pro-p12-f1-unit"></span>
+
+<span id="f121-pro-p12-f2-unit" data-translation-unit="f121-pro-p12-f2-unit"></span>
+
+<span id="f121-pro-p13-disarm-heading" data-translation-unit="f121-pro-p13-disarm-heading"></span>
+
+#### 4.1.2 ディスアーム方法
+
+<span id="f121-pro-p13-disarm-safety" data-translation-unit="f121-pro-p13-disarm-safety"></span>
+
+:::caution[注意]
+飛行後、けがを避けるため、F121 Proに近づいて触れる前にディスアームされていることを確認してください。T8Sより先にF121 Proの電源を切ります。
+:::
+
+<span id="f121-pro-p13" data-translation-unit="f121-pro-p13"></span>
+
+### 4.2 高度保持モード
+
+#### 4.2.1 上昇／下降
+
+#### 4.2.2 ホバリング
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p13-f1-unit" data-translation-unit="f121-pro-p13-f1-unit"></span>
+
+<span id="f121-pro-p13-f2-unit" data-translation-unit="f121-pro-p13-f2-unit"></span>
+
+<span id="f121-pro-p13-f3-unit" data-translation-unit="f121-pro-p13-f3-unit"></span>
+
+<span id="f121-pro-p13-f4-unit" data-translation-unit="f121-pro-p13-f4-unit"></span>
+
+<span id="f121-pro-p13-f5-unit" data-translation-unit="f121-pro-p13-f5-unit"></span>
+
+<span id="f121-pro-p14" data-translation-unit="f121-pro-p14"></span>
+
+#### 4.2.3 前進／後退／右移動／左移動
+
+<span id="f121-pro-p14-beginners-gentle" data-translation-unit="f121-pro-p14-beginners-gentle"></span>
+
+:::caution[注意]
+F121 Proはレーシングドローンで応答性が高いため、初心者はスティックをゆっくり操作してください。
+:::
+
+<span id="f121-pro-p14-mode-behavior" data-translation-unit="f121-pro-p14-mode-behavior"></span>
+
+#### 4.2.4 時計回り／反時計回りの旋回
+
+### 4.3 安定モード
+
+### 4.4 マニュアルモード
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p14-manual-safety" data-translation-unit="f121-pro-p14-manual-safety"></span>
+
+:::caution[注意]
+マニュアルモードは十分に操作に習熟してから選んでください。急な動きで操縦者がけがをしないよう、スティックはできるだけ穏やかに操作してください。
+:::
+
+<span id="f121-pro-p14-before-flight" data-translation-unit="f121-pro-p14-before-flight"></span>
+
+### 4.5 スイッチによる360°フリップ
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p14-f1-unit" data-translation-unit="f121-pro-p14-f1-unit"></span>
+
+<span id="f121-pro-p15-flips" data-translation-unit="f121-pro-p15-flips"></span>
+
+<span id="f121-pro-p15-low" data-translation-unit="f121-pro-p15-low"></span>
+
+### 4.6 低バッテリー警報
+
+<span id="f121-pro-p15-low-abort" data-translation-unit="f121-pro-p15-low-abort"></span>
+
+:::caution[注意]
+低バッテリー警報が出た場合は、過放電を避けるため飛行を中止するよう推奨しています。
+:::
+
+<span id="f121-pro-p15-low-osd" data-translation-unit="f121-pro-p15-low-osd"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p15-cal" data-translation-unit="f121-pro-p15-cal"></span>
+
+### 4.7 キャリブレーション
+
+<span id="f121-pro-p15-f1-unit" data-translation-unit="f121-pro-p15-f1-unit"></span>
+
+<span id="f121-pro-p15-f2-unit" data-translation-unit="f121-pro-p15-f2-unit"></span>
+
+<span id="f121-pro-p15-f3-unit" data-translation-unit="f121-pro-p15-f3-unit"></span>
+
+<span id="f121-pro-p15-f4-unit" data-translation-unit="f121-pro-p15-f4-unit"></span>
+
+<span id="f121-pro-p16" data-translation-unit="f121-pro-p16"></span>
+
+## 第5章 F121 Proの映像伝送
+
+<span id="f121-pro-p16-f1-unit" data-translation-unit="f121-pro-p16-f1-unit"></span>
+
+<span id="f121-pro-p16-f2-unit" data-translation-unit="f121-pro-p16-f2-unit"></span>
+
+<span id="f121-pro-p17-rf" data-translation-unit="f121-pro-p17-rf"></span>
+
+<span id="f121-pro-p17-warning" data-translation-unit="f121-pro-p17-warning"></span>
+
+:::caution[注意]
+注意：
+
+1. 映像伝送装置を取り付ける際は放熱を考慮してください。過熱保護が作動すると伝送出力が低下したり、停止したりします。
+2. 使用中にカメラが熱を持つのは正常です。やけどを防ぐため、素手で直接触れないでください。
+:::
+
+<span id="f121-pro-p17-other" data-translation-unit="f121-pro-p17-other"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p17-goggles" data-translation-unit="f121-pro-p17-goggles"></span>
+
+## 第6章 F121 ProのFPVゴーグル
+### 6.1 ボタンと端子
+
+<span id="f121-pro-p17-f1-unit" data-translation-unit="f121-pro-p17-f1-unit"></span>
+
+<span id="f121-pro-p17-f2-unit" data-translation-unit="f121-pro-p17-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f121-pro-p18-controls" data-translation-unit="f121-pro-p18-controls"></span>
+
+### 6.2 FPVゴーグルのバッテリー
+
+### 6.3 DVRモード
+
+### 6.4 ゴーグルの組立てと分解
+
+<span id="f121-pro-p18-spec" data-translation-unit="f121-pro-p18-spec"></span>
+
+## 第7章 仕様
+
+### 7.1 機体
+
+<span id="f121-pro-p18-f1-unit" data-translation-unit="f121-pro-p18-f1-unit"></span>
+
+<span id="f121-pro-p19-alarm" data-translation-unit="f121-pro-p19-alarm"></span>
+
+<span id="f121-pro-p19-spec" data-translation-unit="f121-pro-p19-spec"></span>
+
+### 7.2 送信機
+
+### 7.3 充電器
+
+### 7.4 カメラと映像伝送
+
+### 7.5 FPVゴーグル
+
+<span id="f121-pro-p19-f1-unit" data-translation-unit="f121-pro-p19-f1-unit"></span>

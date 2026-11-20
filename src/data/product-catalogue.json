@@ -1038,7 +1038,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f121_pro",
-    "detailPath": null,
+    "detailPath": "/radiolink/f121-pro/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f121-pro.webp",
