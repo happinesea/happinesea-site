@@ -7852,7 +7852,7 @@
       "review_projection": {
         "pages": {
           "src/content/docs/manuals/rc8p/chapter-01.mdx": {
-            "sha256": "ecf89ce746ba3fd214432b03be6de8c899a69d454cf29667bdcbccff097cb066",
+            "sha256": "1e1d8c96d396df42c34bdd65fc2095610121a106ff24938461c077134a6e80fd",
             "headings": 19
           },
           "src/content/docs/manuals/rc8p/chapter-02.mdx": {
