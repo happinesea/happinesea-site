@@ -2,6 +2,7 @@
 import inventory from '../../data/manuals/existing-ja.json';
 import { withBase } from '../../lib/urls';
 import { createHash } from 'node:crypto';
+import { readerManualCopy } from '../../../scripts/lib/manual-public-copy.mjs';
 import { renderSemanticSection } from '../../../scripts/lib/manual-semantic-structure.mjs';
 
 interface Props {
@@ -23,11 +24,16 @@ for (const source of manual.sections) {
   )
     throw new Error('Existing Japanese manual publication hash mismatch');
 }
-const body = renderSemanticSection(manual, section.id).replaceAll(
-  /<img src="(\/assets\/[^"]+)"([^>]+)>/g,
-  (_: string, src: string, attributes: string) =>
-    `<a href="${withBase(src)}" aria-label="図を原寸で開く"><img src="${withBase(src)}"${attributes}></a>`,
-);
+const body = renderSemanticSection(manual, section.id)
+  .replaceAll(
+    /<p>([^<]+)<\/p>/g,
+    (_, text: string) => `<p>${readerManualCopy(text)}</p>`,
+  )
+  .replaceAll(
+    /<img src="(\/assets\/[^"]+)"([^>]+)>/g,
+    (_: string, src: string, attributes: string) =>
+      `<a href="${withBase(src)}" aria-label="図を原寸で開く"><img src="${withBase(src)}"${attributes}></a>`,
+  );
 ---
 
 <div

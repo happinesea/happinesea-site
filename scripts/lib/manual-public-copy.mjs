@@ -186,17 +186,25 @@ const paragraph = (value) => ({
   properties: {},
   children: [textNode(value)],
 });
-const normalizedText = (node, ctx) => ctx.textContent(node).trim();
+const normalizedText = (node, ctx) =>
+  ctx.textContent(node).replaceAll('\r\n', '\n').trim();
+
+export function readerManualCopy(text) {
+  return publicCopy.get(text) ?? text;
+}
+
+function withheldTableCell(node, ctx) {
+  if (node.value === '"確認待ち"' && ctx.parent(node)?.name === 'td')
+    ctx.replaceNode(node, textNode('—'));
+}
 
 export function manualPublicCopy() {
   return ({ fileURL }) => {
     if (!fileURL.pathname.includes('/src/content/docs/manuals/')) return;
     return {
       name: 'manual-public-copy',
-      mdxTextExpression(node, ctx) {
-        if (node.value === '"確認待ち"' && ctx.parent(node)?.name === 'td')
-          ctx.replaceNode(node, textNode('—'));
-      },
+      mdxTextExpression: withheldTableCell,
+      mdxFlowExpression: withheldTableCell,
       element: [
         {
           filter: ['aside'],
@@ -241,11 +249,11 @@ export function manualPublicCopy() {
 }
 
 const internalLabel =
-  /\b(?:REVIEW_REQUIRED|WEB_HOLD|SECTION_HOLD|QA_REQUIRED|PASS_RENDERED_SCOPE|BLOCKED_EXTERNAL)\b|原典確認待ち|確認待ちの手順について|QA待ち|独立レビュー待ち|内部監査|制作メモ|実機未確認|適合確認まで図版を保留|別項目su04-ri08|原典確認中|項目名・単位の対応を確認中|暫定訳/;
+  /\b(?:REVIEW_REQUIRED|WEB_HOLD|SECTION_HOLD|QA_REQUIRED|PASS_RENDERED_SCOPE|BLOCKED_EXTERNAL)\b|原典確認待ち|確認待ちの手順について|QA待ち|独立レビュー待ち|内部監査|制作メモ|実機未確認|適合確認まで図版を保留|別項目su04-ri08|原典確認中|項目名・単位の対応を確認中|暫定訳|推測で画面名を変更していません|推測で番号やUI表記を修正していません|旧記事の記載を保持しています|記載の根拠は未確認です/;
 
 export function assertPublicManualCopy(html, name) {
   const text = sanitizeHtml(html, { allowedTags: [], allowedAttributes: {} });
-  const leak = text.match(internalLabel);
+  const leak = text.match(internalLabel) ?? html.match(/>確認待ち<\/td>/);
   if (leak) throw new Error(`Internal manual copy in ${name}: ${leak[0]}`);
 }
 
