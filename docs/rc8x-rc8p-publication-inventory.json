@@ -7856,7 +7856,7 @@
             "headings": 19
           },
           "src/content/docs/manuals/rc8p/chapter-02.mdx": {
-            "sha256": "2a83d3a01f88a1e703811a173318c4875d70a33a49dfd82868a01f925f7dca8a",
+            "sha256": "6d93cbbe75097c9666b3819034c5c744085bea8aa37dc7674ff65788ce82a5f2",
             "headings": 25
           },
           "src/content/docs/manuals/rc8p/chapter-03.mdx": {
@@ -7864,15 +7864,15 @@
             "headings": 1
           },
           "src/content/docs/manuals/rc8p/chapter-04.mdx": {
-            "sha256": "619b07304708fb7e38251c9abebba3fdfd0c0103f475926571325ba2a61cc51f",
+            "sha256": "ff9a12f8e6e2ce06886b2acba1b1a79a70c70593e616a184facfa90ca4fc9f3e",
             "headings": 5
           },
           "src/content/docs/manuals/rc8p/back-matter.mdx": {
-            "sha256": "82b591c12d7634027a4da7ab2bae7a234e05ba31859700133aa1fc0ae9b1e44d",
+            "sha256": "a8013c68281fe4fc82649ac0195ba233a60285915e9f7ca58034ebee19bd438a",
             "headings": 1
           },
           "src/content/docs/manuals/rc8p/index.mdx": {
-            "sha256": "3f35554bcce033798a8d3b799cf55d0ae9685a116daa2f716ff80febd175c74b",
+            "sha256": "6af302a299bb55f9fc11f234a8e365803d210264b108b56396688b7fe2887ddd",
             "headings": 1
           }
         },
@@ -7935,18 +7935,18 @@
           "RC8P-P029-I01",
           "RC8P-P030-I01",
           "RC8P-P030-I02",
-          "RC8P-P031-I06",
           "RC8P-P031-I01",
+          "RC8P-P031-I06",
           "RC8P-P031-I05",
           "RC8P-P031-I04",
           "RC8P-P001-I07",
           "RC8P-P001-I08",
-          "RC8P-P001-I02",
-          "RC8P-P001-I01",
-          "RC8P-P001-I05",
-          "RC8P-P001-I06",
+          "RC8P-P001-I04",
           "RC8P-P001-I03",
-          "RC8P-P001-I04"
+          "RC8P-P001-I05",
+          "RC8P-P001-I01",
+          "RC8P-P001-I02",
+          "RC8P-P001-I06"
         ],
         "tables": 4,
         "videos": []
