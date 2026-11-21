@@ -1,0 +1,138 @@
+import { expect, test } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
+
+const slug = 'japan-hypersonic-missile-technology-challenges-2026';
+const article = `./insights/${slug}/`;
+const localDraftPreview =
+  process.env.PUBLICATION_MODE !== 'production' &&
+  process.env.CMS_ARTICLE_LOCAL_PREVIEW === slug;
+const publicArticle =
+  './insights/china-fourth-generation-air-to-air-missiles-technological-advancements-that-transcend-range/';
+
+test('draft preview paginates the article and follows browser history', async ({
+  page,
+}) => {
+  test.skip(!localDraftPreview, 'Requires the local draft preview.');
+  const markdown = await readFile(`src/content/articles/${slug}.md`, 'utf8');
+  const firstHeadings = markdown
+    .split('<!--nextpage-->')
+    .map((part) => part.match(/^## (.+)$/m)?.[1]);
+  expect(firstHeadings.length).toBeGreaterThan(1);
+
+  await page.goto(article);
+  const body = page.locator('[data-article-section="body"]');
+  const sections = body.locator('[data-page-body]');
+  const nav = page.getByRole('navigation', { name: '記事のページ' });
+  const selected = nav.locator('[aria-current="page"]');
+  const previous = nav.getByRole('link', { name: '前へ' });
+  const next = nav.getByRole('link', { name: '次へ' });
+  const canonical = page.locator('link[rel="canonical"]');
+  const expectedCanonical = await canonical.getAttribute('href');
+  expect(expectedCanonical).toMatch(new RegExp(`/${slug}/$`));
+
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    'content',
+    'noindex, nofollow',
+  );
+  await expect(sections).toHaveCount(firstHeadings.length);
+  await expect(
+    sections.nth(0).getByRole('heading', { level: 2 }).first(),
+  ).toHaveText(firstHeadings[0]!);
+  await expect(sections.nth(1)).toBeHidden();
+  await expect(selected).toHaveText('1');
+  await expect(previous).toBeHidden();
+
+  await next.click();
+  await expect(page).toHaveURL(/\?page=2$/);
+  await expect(sections.nth(0)).toBeHidden();
+  await expect(
+    sections.nth(1).getByRole('heading', { level: 2 }).first(),
+  ).toHaveText(firstHeadings[1]!);
+  await expect(selected).toHaveText('2');
+  await expect(previous).toHaveAttribute('href', '?page=1');
+
+  await page.goBack();
+  await expect(selected).toHaveText('1');
+  await expect(sections.nth(0)).toBeVisible();
+  await page.goForward();
+  await expect(selected).toHaveText('2');
+  await expect(sections.nth(1)).toBeVisible();
+
+  await page.goto(article + '?page=2');
+  await expect(selected).toHaveText('2');
+  await expect(body.locator('[data-page-body]:visible')).toHaveCount(1);
+  await expect(canonical).toHaveAttribute('href', expectedCanonical!);
+  await expect(page.locator('article img').first()).toBeVisible();
+  await expect
+    .poll(() =>
+      page
+        .locator('article img')
+        .first()
+        .evaluate((image: HTMLImageElement) => image.naturalWidth),
+    )
+    .toBeGreaterThan(0);
+
+  const last = String(firstHeadings.length);
+  await nav.getByRole('link', { name: last, exact: true }).click();
+  await expect(selected).toHaveText(last);
+  await expect(next).toBeHidden();
+  await expect(sections.last().getByRole('link').first()).toHaveAttribute(
+    'href',
+    /^https?:\/\//,
+  );
+  expect(
+    await nav.evaluate((element) => element.scrollWidth),
+  ).toBeLessThanOrEqual(await nav.evaluate((element) => element.clientWidth));
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
+    await page.evaluate(() => document.documentElement.clientWidth),
+  );
+
+  await page.goto(article + '?page=0');
+  await expect(selected).toHaveText('1');
+  await expect(page).toHaveURL(new RegExp(`/${slug}/$`));
+});
+
+test('public articles without a marker retain their body, media, SEO and listing', async ({
+  page,
+}) => {
+  await page.goto(publicArticle + '?page=2');
+  const body = page.locator('[data-article-section="body"]');
+  await expect(body.getByRole('heading')).toHaveCount(6);
+  await expect(body.getByRole('heading').last()).toBeVisible();
+  await expect(body.getByRole('img')).toBeVisible();
+  await expect
+    .poll(() =>
+      body
+        .getByRole('img')
+        .evaluate((image: HTMLImageElement) => image.naturalWidth),
+    )
+    .toBeGreaterThan(0);
+  await expect(
+    page.getByRole('navigation', { name: '記事のページ' }),
+  ).toHaveCount(0);
+  await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    /china-fourth-generation-air-to-air-missiles-technological-advancements-that-transcend-range\/$/,
+  );
+
+  await page.goto('./insights/');
+  await expect(
+    page.locator('main a[href*="china-fourth-generation-air-to-air-missiles"]'),
+  ).toBeVisible();
+  await expect(page.locator(`main a[href*="${slug}"]`)).toHaveCount(0);
+});
+
+test('draft article is absent from normal builds, including query URLs', async ({
+  page,
+}) => {
+  test.skip(
+    localDraftPreview,
+    'The local preview deliberately exposes this draft.',
+  );
+  for (const suffix of ['', '?page=2']) {
+    const response = await page.goto(article + suffix);
+    expect(response?.status()).toBe(404);
+    await expect(page.locator('[data-article-section="body"]')).toHaveCount(0);
+  }
+});

@@ -1,7 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 
 const remoteBaseUrl = process.env.E2E_BASE_URL;
-const localBaseUrl = 'http://127.0.0.1:4327/happinesea-site/';
+const production = process.env.PUBLICATION_MODE === 'production';
+const localDraftPreview = !production && process.env.CMS_ARTICLE_LOCAL_PREVIEW;
+const localBaseUrl = production
+  ? 'http://127.0.0.1:4327/'
+  : 'http://127.0.0.1:4327/happinesea-site/';
 
 export default defineConfig({
   testDir: './tests/e2e',
@@ -14,7 +18,9 @@ export default defineConfig({
   webServer: remoteBaseUrl
     ? undefined
     : {
-        command: 'npm run build && npm run preview -- --host 127.0.0.1 --port 4327',
+        command: localDraftPreview
+          ? 'npm run dev -- --host 127.0.0.1 --port 4327'
+          : 'npm run build && npm run preview -- --host 127.0.0.1 --port 4327',
         url: localBaseUrl,
         reuseExistingServer: false,
         timeout: 120_000,

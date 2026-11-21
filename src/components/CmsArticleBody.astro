@@ -1,0 +1,89 @@
+---
+interface Props {
+  pages: string[];
+}
+
+const { pages } = Astro.props;
+---
+
+{pages.length === 1 ? (
+  <Fragment set:html={pages[0]} />
+) : (
+  <div data-cms-pagination>
+    {pages.map((html, index) => (
+      <div data-page-body hidden={index !== 0} set:html={html} />
+    ))}
+    <nav class="mt-8" aria-label="記事のページ">
+      <ul class="flex list-none flex-wrap items-center gap-2 p-0">
+        <li data-page-previous hidden>
+          <a href="?page=1" class="inline-block px-3 py-2 underline">
+            前へ
+          </a>
+        </li>
+        {pages.map((_, index) => (
+          <li>
+            <a
+              href={`?page=${index + 1}`}
+              class="inline-block px-3 py-2 underline aria-[current=page]:rounded aria-[current=page]:bg-teal-50 aria-[current=page]:font-bold"
+              aria-current={index === 0 ? 'page' : undefined}
+            >
+              {index + 1}
+            </a>
+          </li>
+        ))}
+        <li data-page-next>
+          <a href="?page=2" class="inline-block px-3 py-2 underline">
+            次へ
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+)}
+
+<script>
+  const pagination = document.querySelector('[data-cms-pagination]');
+
+  if (pagination) {
+    const sections =
+      pagination.querySelectorAll<HTMLElement>('[data-page-body]');
+    const numbers = pagination.querySelectorAll<HTMLAnchorElement>(
+      'nav li:not([data-page-previous], [data-page-next]) a',
+    );
+    const previous = pagination.querySelector<HTMLElement>(
+      '[data-page-previous]',
+    )!;
+    const next = pagination.querySelector<HTMLElement>('[data-page-next]')!;
+
+    function showPage() {
+      const url = new URL(window.location.href);
+      const value = url.searchParams.get('page');
+      const requested = Number(value);
+      const valid =
+        value === String(requested) &&
+        Number.isInteger(requested) &&
+        requested >= 1 &&
+        requested <= sections.length;
+      const current = valid ? requested : 1;
+
+      if (value !== null && !valid) {
+        url.searchParams.delete('page');
+        history.replaceState(history.state, '', url);
+      }
+
+      sections.forEach((section, index) => {
+        section.hidden = index !== current - 1;
+        if (section.hidden) numbers[index].removeAttribute('aria-current');
+        else numbers[index].setAttribute('aria-current', 'page');
+      });
+
+      previous.hidden = current === 1;
+      previous.querySelector('a')!.href = `?page=${current - 1}`;
+      next.hidden = current === sections.length;
+      next.querySelector('a')!.href = `?page=${current + 1}`;
+    }
+
+    showPage();
+    window.addEventListener('popstate', showPage);
+  }
+</script>

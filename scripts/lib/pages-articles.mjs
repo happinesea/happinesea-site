@@ -1,4 +1,5 @@
 import { z } from 'astro/zod';
+import { randomUUID } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { readFile, readdir, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -100,10 +101,35 @@ export function articleExcerpt(body = '') {
 }
 
 export function renderCmsArticle(body = '', base = '/') {
+  return renderCmsArticlePages(body, base).join('');
+}
+
+export function renderCmsArticlePages(body = '', base = '/') {
+  const separator = `<!--${randomUUID()}-->`;
   const html = markdownToHtml(body, {
-    hastPlugins: [cmsArticleImages(base)],
+    hastPlugins: [
+      cmsArticleImages(base),
+      {
+        name: 'cms-article-pagination',
+        raw(node, ctx) {
+          if (
+            node.value.trim() === '<!--nextpage-->' &&
+            ctx.parent(node).type === 'root'
+          )
+            return { ...node, value: separator };
+        },
+      },
+    ],
     data: { astro: { frontmatter: { content_origin: 'pages-cms' } } },
   }).html;
+  const pages = html
+    .split(separator)
+    .map((part) => sanitizeCmsArticleHtml(part, base))
+    .filter((part) => part.trim());
+  return pages.length ? pages : [''];
+}
+
+function sanitizeCmsArticleHtml(html, base) {
   return sanitizeHtml(html, {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
     allowedAttributes: {
