@@ -48,6 +48,11 @@ test('Remaining manual candidates isolate held units and images and preserve sou
         /ディスアームが完了したことを確認[\s\S]*?具体的にいつバッテリーを取り外すかは、原典の記載から確認できていません[\s\S]*?9\. 離陸時/,
       );
       assert(!text.includes('Please unplug the battery until'));
+      assert.match(
+        text,
+        /figureId="d16pro-p1-f3"[\s\S]*?figureId="d16pro-p1-f2"[\s\S]*?figureId="d16pro-p1-f1"/,
+      );
+      assert.doesNotMatch(text, /不明のためnull|scopeを維持/);
     }
     const shown = manual.figures.flatMap(
       (figure) => figure.source_figure_ids ?? [figure.figure_id],
