@@ -1,16 +1,16 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import test from 'node:test';
 import remaining from '../../src/data/manuals/remaining-web.json' with { type: 'json' };
 
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 11);
+  assert.equal(remaining.manuals.length, 16);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    11,
+    16,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -28,9 +28,15 @@ test('Remaining manual candidates isolate held units and images and preserve sou
       );
       assert.match(mdx.toString(), /^title: F405 V1\.1 日本語クイックガイド$/m);
     }
-    if (manual.product_id === 'f121') {
+    if (
+      ['f121', 'f121-pro', 'ts100-m10n', 'vds200'].includes(manual.product_id)
+    ) {
       assert(manual.withheld_notice_count > 0);
       assert(manual.withheld_notice_count < manual.withheld_unit_ids.length);
+    }
+    if (manual.product_id === 'ts100-m10n') {
+      assert.equal(manual.source.page_count, null);
+      assert.match(mdx.toString(), /対象はTS100 V2\.0（M10N）です/);
     }
     const shown = manual.figures.flatMap(
       (figure) => figure.source_figure_ids ?? [figure.figure_id],
@@ -54,7 +60,8 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     for (const id of manual.withheld_figure_ids) {
       assert(!mdx.includes(`figureId="${id}"`));
       assert(
-        !readdirSync(dir).some((filename) => filename.startsWith(id + '.')),
+        !existsSync(dir) ||
+          !readdirSync(dir).some((filename) => filename.startsWith(id + '.')),
       );
     }
   }

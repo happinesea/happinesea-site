@@ -59,6 +59,8 @@ test('catalogue images are local official assets and detail links match implemen
       'rtk-f9p',
       't12d',
       'ts100-m8n',
+      'byme-a',
+      'byme-d',
       'byme-db',
       ...remaining.manuals
         .filter((m) => m.product_id !== 'rtc8')
@@ -71,7 +73,7 @@ test('catalogue images are local official assets and detail links match implemen
   );
   assert.equal(
     pending.length,
-    58 -
+    56 -
       batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
       batch6.manuals.length -
       remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,

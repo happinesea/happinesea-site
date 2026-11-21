@@ -1,0 +1,805 @@
+---
+title: CB86-PLUS 日本語取扱説明書
+description: Radiolink CB86-PLUS の公式英語取扱説明書に対応する日本語版です。
+product: cb86-plus
+slug: manuals/cb86-plus
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/5d654ef6324e0d5fbe2fedb4f73af7ce.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/cb86-plus/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink CB86-PLUS 公式英語取扱説明書（文書版・発行日不明、18頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="cb86plus-p1-f1-unit" data-translation-unit="cb86plus-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p1-f1.png" width={600} height={180} figureId="cb86plus-p1-f1" alt={"RadioLinkロゴ。"} caption={"RadioLinkロゴ。"} />
+
+<span id="cb86plus-p1-title" data-translation-unit="cb86plus-p1-title"></span>
+
+## CB86-PLUS（V2）
+
+取扱説明書
+
+CE／FCC／RoHS表示。
+
+:::note[原典について]
+表紙はV2、設定画面はFirmware V2.5です。ハードウェア版・説明書版・Firmware版を同一視しません。
+:::
+
+<span id="cb86plus-p1-f2-unit" data-translation-unit="cb86plus-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p1-f2.png" width={1000} height={1000} figureId="cb86plus-p1-f2" alt={"CB86-PLUSの製品外観。充電ポート、表示画面、Start/Stop・＋・－・SETボタンを表示。"} caption={"CB86-PLUSの製品外観。充電ポート、表示画面、Start/Stop・＋・－・SETボタンを表示。"} />
+
+<span id="cb86plus-p2-contents" data-translation-unit="cb86plus-p2-contents"></span>
+
+## 目次
+
+- 第1部 安全上の注意 …… 2
+- 第2部 CB86-PLUSの概要 …… 2
+  - 2.1 機能 …… 2
+  - 2.2 仕様 …… 3
+  - 2.3 ホーム画面 …… 3
+  - 2.4 設定画面 …… 4
+  - 2.5 ボタン …… 4
+- 第3部 電源 …… 5
+  - 3.1 電源 …… 5
+    - 3.1.1 DC電源 …… 5
+    - 3.1.2 バッテリー電源 …… 5
+  - 3.2 電源能力不足 …… 6
+  - 3.3 入力過電圧 …… 6
+  - 3.4 入力低電圧 …… 7
+  - 3.5 バッテリーの接続 …… 7
+    - 3.5.1 正しい接続 …… 7
+    - 3.5.2 誤った接続 …… 8
+    - 3.5.3 5つの接続組み合わせ …… 8
+- 第4部 動作モード …… 10
+  - 4.1 充電 …… 10
+    - 4.1.1 推奨充電電圧 …… 10
+    - 4.1.2 推奨充電電流 …… 10
+    - 4.1.3 全ポートを同じ値へ設定 …… 10
+    - 4.1.4 ポートごとに異なる値へ設定 …… 11
+    - 4.1.5 満充電時の通知 …… 11
+  - 4.2 放電 …… 12
+  - 4.3 ストレージ …… 12
+  - 4.4 修復充電 …… 12
+  - 4.5 内部抵抗 …… 13
+  - 4.6 パラメーター表示 …… 13
+- 第5部 ファームウェア更新 …… 14
+- 第6部 電圧校正 …… 14
+- 第7部 トラブルシューティング …… 16
+  - 7.1 故障自己検出警告 …… 16
+  - 7.2 ブザー通知への対処 …… 16
+
+<span id="cb86plus-p2-folio" data-translation-unit="cb86plus-p2-folio"></span>
+
+原典印刷ページ：1
+
+<span id="cb86plus-p3-safety-heading" data-translation-unit="cb86plus-p3-safety-heading"></span>
+
+## 第1部 安全上の注意
+
+<span id="cb86plus-p3-safety1" data-translation-unit="cb86plus-p3-safety1"></span>
+
+:::caution[注意]
+1. 安全に使用するため、本書をよくお読みください。
+:::
+
+<span id="cb86plus-p3-safety2" data-translation-unit="cb86plus-p3-safety2"></span>
+
+:::caution[注意]
+2. DC電源が必要です。出力10.5～15V、出力電流15A以上のDC電源を用意してください。
+:::
+
+<span id="cb86plus-p3-safety3" data-translation-unit="cb86plus-p3-safety3"></span>
+
+:::caution[注意]
+3. 入力電源が大きく変動すると、充電器の焼損や、電池・電源の損傷を招く場合があります。電源仕様に応じて入力保護電圧を設定し、過負荷を防いでください。過負荷保護付き電源でも電圧が大きく変動するものがあります。
+:::
+
+<span id="cb86plus-p3-safety4" data-translation-unit="cb86plus-p3-safety4"></span>
+
+:::caution[注意]
+4. 先に電源へ充電器を接続して起動し、モード・電圧・電流を設定してから電池を接続し、STARTで充電します。電池を先に接続してから充電器へ通電してはいけません。満充電後は電池を外してから充電器の電源を切ってください。
+:::
+
+<span id="cb86plus-p3-safety5" data-translation-unit="cb86plus-p3-safety5"></span>
+
+:::caution[注意]
+5. 独立した1～6S電池を8ポートで順次充電できますが、12S電池は非対応です。12Sを充電する場合は独立した6Sパック2個へ分割する必要があります。2個の6Sパックを外部電気部品へ接続したままにすると、充電器や電池が焼損するおそれがあります。
+:::
+
+<span id="cb86plus-p3-safety6" data-translation-unit="cb86plus-p3-safety6"></span>
+
+:::caution[注意]
+6. 子供やペットから常に離してください。
+:::
+
+<span id="cb86plus-p3-safety7" data-translation-unit="cb86plus-p3-safety7"></span>
+
+:::caution[注意]
+7. 充放電中は監視してください。離れる必要がある場合は、予期しない危険や損傷を防ぐため電池を取り外してください。
+:::
+
+<span id="cb86plus-p3-safety8" data-translation-unit="cb86plus-p3-safety8"></span>
+
+:::caution[注意]
+8. 電池に合った充電電圧・電流へ設定してください。誤設定は損傷や発火を招きます。
+:::
+
+<span id="cb86plus-p3-safety9" data-translation-unit="cb86plus-p3-safety9"></span>
+
+:::caution[注意]
+9. 充電器へ金属や電線を入れないでください。
+:::
+
+<span id="cb86plus-p3-safety10" data-translation-unit="cb86plus-p3-safety10"></span>
+
+:::caution[注意]
+10. 漏液、膨張、外皮剥離、変色、変形など異常のある電池は充放電しないでください。
+:::
+
+<span id="cb86plus-p3-safety11" data-translation-unit="cb86plus-p3-safety11"></span>
+
+:::caution[注意]
+11. 異なる種類・容量・メーカーの電池を混ぜないでください。
+:::
+
+<span id="cb86plus-p3-safety12" data-translation-unit="cb86plus-p3-safety12"></span>
+
+:::caution[注意]
+12. 充電器を改造・分解しないでください。
+:::
+
+<span id="cb86plus-p3-safety13" data-translation-unit="cb86plus-p3-safety13"></span>
+
+:::caution[注意]
+13. 可燃性の台や可燃物の近くで使用せず、RC模型内や実車の車内で充放電しないでください。
+:::
+
+<span id="cb86plus-p3-safety14" data-translation-unit="cb86plus-p3-safety14"></span>
+
+:::caution[注意]
+14. 吸気穴を塞がず、閉鎖空間や高温環境で使用しないでください。内部温度保護で充放電が異常になる場合があります。
+:::
+
+<span id="cb86plus-p3-safety15" data-translation-unit="cb86plus-p3-safety15"></span>
+
+:::caution[注意]
+15. 充電できない乾電池を充電しないでください。
+:::
+
+<span id="cb86plus-p3-safety16" data-translation-unit="cb86plus-p3-safety16"></span>
+
+:::caution[注意]
+16. 電池の推奨最大充電レートを超えず、電池メーカーの推奨事項・安全上の助言に従ってください。
+:::
+
+<span id="cb86plus-p3-child-warning" data-translation-unit="cb86plus-p3-child-warning"></span>
+
+:::caution[注意]
+注意：14歳未満の子供に触れさせないでください。玩具ではありません。子供がいる場所での操作には十分注意してください。
+:::
+
+<span id="cb86plus-p3-functions" data-translation-unit="cb86plus-p3-functions"></span>
+
+## 第2部 CB86-PLUSの概要
+
+### 2.1 機能
+
+1. 高精度：0.001Vで、0.01Vの競合品の10倍の精度です。
+2. 充放電ポート8個。各ポートは1～6Sに対応し、個別に設定できます。
+3. バランス電流6A。一般的な0.5Aより大きく、充電効率を高めます。
+4. パラメーター設定後に全ポートの電池を自動走査し、順次充放電します。
+5. 電源の最大出力が足りないときは、自動的に電流を下げて対応します。スムーズパワー技術で、瞬間的に定格出力を開始できない電源の問題へ対応します。
+
+<span id="cb86plus-p3-folio" data-translation-unit="cb86plus-p3-folio"></span>
+
+原典印刷ページ：2
+
+<span id="cb86plus-p4-repair" data-translation-unit="cb86plus-p4-repair"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p4-functions" data-translation-unit="cb86plus-p4-functions"></span>
+
+7. 逆極性接続時は動作せず、充電器を保護します。
+8. 入力電圧が高すぎると自動認識し、損傷を防ぎます。
+9. 各セル専用のPUSH-PULLスイッチ回路を採用し、バランス充電で抵抗による電力消費がなく発熱を減らします。動作電流は最小135mA、充電効率最大97%、待機・動作にかかわらず動作温度は35℃と説明しています。
+10. 初期・完了電圧、各セル容量、内部抵抗などをキー1つで表示します。
+11. 充電開始10秒後から内部抵抗を表示し、セルのバランスと放電性能を判断できます。
+12. 3S×2、4S＋2S、2S×3、1S×6を1つの6S相当として組み合わせ、組電池の6セルを同時に充放電できます。
+
+<span id="cb86plus-p4-spec" data-translation-unit="cb86plus-p4-spec"></span>
+
+## 2.2 仕様
+
+寸法：188×104×57mm（7.4×4.09×2.24インチ）。重量：0.89kg。入力：DC10.5～15V。対応：1～6S（リチウム、リチウム鉄、高電圧リチウム）、8ポート。モード：CHARGE／DISCHARGE／STORAGE／修復充電。充電電圧：3.5～4.35V。普通のリチウムは1セル4.2V、リチウム鉄の終止電圧は3.6V、高電圧リチウムは4.35Vを推奨します。充電電流：0.3～6.0A。バランス電流：0.3～6.0A（充電電流と同じ）。放電電流：固定1.2A。画面：2.8インチTFT。ブザー：オン／オフ設定可能。最大出力：162W。
+
+<span id="cb86plus-p4-home-heading" data-translation-unit="cb86plus-p4-home-heading"></span>
+
+## 2.3 ホーム画面
+
+<span id="cb86plus-p4-f1-unit" data-translation-unit="cb86plus-p4-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p4-f1.jpeg" width={1050} height={457} figureId="cb86plus-p4-f1" alt={"ホーム画面の番号1～9と、PWR、REMAIN、MODE、VOL、CUR、セル電圧・容量の表示位置。"} caption={"ホーム画面の番号1～9と、PWR、REMAIN、MODE、VOL、CUR、セル電圧・容量の表示位置。"} />
+
+<span id="cb86plus-p4-folio" data-translation-unit="cb86plus-p4-folio"></span>
+
+原典印刷ページ：3
+
+<span id="cb86plus-p5-home-fields" data-translation-unit="cb86plus-p5-home-fields"></span>
+
+①PWR：入力電圧。②REMAIN：充放電残時間。③ポート。④設定アイコン。⑤MODE：動作モード。⑥VOL：充放電電圧。⑦CUR：充放電電流。⑧各セル電圧・容量。⑨＋／－で各パラメーターを表示。
+
+<span id="cb86plus-p5-settings-heading" data-translation-unit="cb86plus-p5-settings-heading"></span>
+
+## 2.4 設定画面
+
+<span id="cb86plus-p5-f1-unit" data-translation-unit="cb86plus-p5-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p5-f1.jpeg" width={1300} height={472} figureId="cb86plus-p5-f1" alt={"設定画面の例。SUPPLY POWER、LOW PWR10.50V、TIME00:06、V2.5、MODE STORAGE、VOLTAGE3.80V、CURRENT0.30A、DCHARGE(FIX)1.20Aを表示。"} caption={"設定画面の例。SUPPLY POWER、LOW PWR10.50V、TIME00:06、V2.5、MODE STORAGE、VOLTAGE3.80V、CURRENT0.30A、DCHARGE(FIX)1.20Aを表示。"} />
+
+<span id="cb86plus-p5-settings" data-translation-unit="cb86plus-p5-settings"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p5-f2-unit" data-translation-unit="cb86plus-p5-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p5-f2.jpeg" width={51} height={50} figureId="cb86plus-p5-f2" alt={"音のオン／オフを示すアイコン。"} caption={"音のオン／オフを示すアイコン。"} />
+
+<span id="cb86plus-p5-buttons-heading" data-translation-unit="cb86plus-p5-buttons-heading"></span>
+
+## 2.5 ボタン
+
+<span id="cb86plus-p5-f3-unit" data-translation-unit="cb86plus-p5-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p5-f3.jpeg" width={1000} height={246} figureId="cb86plus-p5-f3" alt={"START/STOP、＋/▲、－/▼、SETボタン。"} caption={"START/STOP、＋/▲、－/▼、SETボタン。"} />
+
+<span id="cb86plus-p5-startstop" data-translation-unit="cb86plus-p5-startstop"></span>
+
+:::caution[注意]
+START/STOP：いつでも現在の動作を開始・停止できます。押す前に、充放電の電圧・電流をすべて設定してください。
+:::
+
+<span id="cb86plus-p5-folio" data-translation-unit="cb86plus-p5-folio"></span>
+
+原典印刷ページ：4
+
+<span id="cb86plus-p6-buttons" data-translation-unit="cb86plus-p6-buttons"></span>
+
+SET：①停止中のホーム画面から設定へ入ります。②充電中は充電中の電池の内部抵抗を表示。③設定項目の確定・終了に使います。＋/▲と－/▼で設定値や機能を選択します。
+
+<span id="cb86plus-p6-supply" data-translation-unit="cb86plus-p6-supply"></span>
+
+## 第3部 電源
+
+### 3.1 電源
+
+電源は標準付属しません。DC電源または電池電源へ接続する必要があります。
+
+<span id="cb86plus-p6-dc" data-translation-unit="cb86plus-p6-dc"></span>
+
+### 3.1.1 DC電源
+
+DC電源の場合はSUPPLYをPOWERに設定します。出力10.5～15V、電流15A以上が必要です。下図は接続例です。
+
+<span id="cb86plus-p6-f1-unit" data-translation-unit="cb86plus-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p6-f1.jpeg" width={437} height={267} figureId="cb86plus-p6-f1" alt={"SUPPLYをPOWERに設定した画面。"} caption={"SUPPLYをPOWERに設定した画面。"} />
+
+<span id="cb86plus-p6-f2-unit" data-translation-unit="cb86plus-p6-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p6-f2.jpeg" width={612} height={612} figureId="cb86plus-p6-f2" alt={"外部DC電源との接続例。"} caption={"外部DC電源との接続例。"} />
+
+<span id="cb86plus-p6-f3-unit" data-translation-unit="cb86plus-p6-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p6-f3.jpeg" width={660} height={416} figureId="cb86plus-p6-f3" alt={"DCプラグ：5.5×2.5mm。"} caption={"DCプラグ：5.5×2.5mm。"} />
+
+<span id="cb86plus-p6-battery" data-translation-unit="cb86plus-p6-battery"></span>
+
+### 3.1.2 電池電源
+
+電池を電源にする場合はSUPPLYをBATTERYに設定します。
+
+<span id="cb86plus-p6-f4-unit" data-translation-unit="cb86plus-p6-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p6-f4.jpeg" width={438} height={261} figureId="cb86plus-p6-f4" alt={"SUPPLYをBATTERYに設定した画面。"} caption={"SUPPLYをBATTERYに設定した画面。"} />
+
+<span id="cb86plus-p6-folio" data-translation-unit="cb86plus-p6-folio"></span>
+
+原典印刷ページ：5
+
+<span id="cb86plus-p7-input-battery" data-translation-unit="cb86plus-p7-input-battery"></span>
+
+電源用電池の電圧は10.5～15Vが必要です。自動車用電池の例では、車を始動できなくなるほど放電しないようLOW PWRへ最低動作電圧を設定します。
+
+電源の正負極を正しく接続してください。逆接続では起動しませんが損傷しないと説明しています。充電器の赤線を電源正極、黒線を負極へ接続してください。
+
+<span id="cb86plus-p7-f1-unit" data-translation-unit="cb86plus-p7-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p7-f1.jpeg" width={575} height={575} figureId="cb86plus-p7-f1" alt={"車用電池を電源にする例。赤線は正極、黒線は負極。"} caption={"車用電池を電源にする例。赤線は正極、黒線は負極。"} />
+
+<span id="cb86plus-p7-supply-mode-note" data-translation-unit="cb86plus-p7-supply-mode-note"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p7-mode-setting" data-translation-unit="cb86plus-p7-mode-setting"></span>
+
+設定方法：充電停止中にSETを短押しし、POWERへカーソルを移動、SETで点滅させます。＋/▲または－/▼でBATTERYへ切り替え、SETで確定し、続いて他の項目を設定します。
+
+<span id="cb86plus-p7-low-power" data-translation-unit="cb86plus-p7-low-power"></span>
+
+## 3.2 電源能力不足
+
+供給電力が不足するとSupply Low Powerを表示します。充電は停止せず、電流を自動低減します。
+
+<span id="cb86plus-p7-f2-unit" data-translation-unit="cb86plus-p7-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p7-f2.jpeg" width={436} height={326} figureId="cb86plus-p7-f2" alt={"Supply Low Power（電源能力不足）の画面。"} caption={"Supply Low Power（電源能力不足）の画面。"} />
+
+<span id="cb86plus-p7-overvoltage" data-translation-unit="cb86plus-p7-overvoltage"></span>
+
+## 3.3 入力過電圧
+
+入力が15.0Vを超えるとSupply Voltage Over Highを表示し、充電を自動停止します。
+
+<span id="cb86plus-p7-folio" data-translation-unit="cb86plus-p7-folio"></span>
+
+原典印刷ページ：6
+
+<span id="cb86plus-p8-f1-unit" data-translation-unit="cb86plus-p8-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p8-f1.png" width={1000} height={1000} figureId="cb86plus-p8-f1" alt={"入力過電圧を示す画面。"} caption={"入力過電圧を示す画面。"} />
+
+<span id="cb86plus-p8-undervoltage" data-translation-unit="cb86plus-p8-undervoltage"></span>
+
+## 3.4 入力低電圧
+
+入力が10.5V未満になるとSupply Voltage Over Lowを表示し、充電を自動停止します。
+
+<span id="cb86plus-p8-f2-unit" data-translation-unit="cb86plus-p8-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p8-f2.jpeg" width={438} height={329} figureId="cb86plus-p8-f2" alt={"入力低電圧を示す画面。"} caption={"入力低電圧を示す画面。"} />
+
+<span id="cb86plus-p8-connect" data-translation-unit="cb86plus-p8-connect"></span>
+
+## 3.5 電池の接続
+
+8個のバランスポートへ、最大8組の6セルリチウム／リチウムポリマー電池を同時に接続できます。1～6Sの任意接続にも対応します。接続は下図を参照してください。
+
+<span id="cb86plus-p8-polarity-warning" data-translation-unit="cb86plus-p8-polarity-warning"></span>
+
+:::caution[注意]
+注意：
+1. 正極の赤線を左、負極の黒線を右へ接続してください。
+2. 大きな抵抗があって挿さらない場合は、ピンの曲がりや逆接続（黒線が右か）を確認し、電池や充電器の損傷を防いでください。
+:::
+
+<span id="cb86plus-p8-correct-heading" data-translation-unit="cb86plus-p8-correct-heading"></span>
+
+## 3.5.1 正しい電池接続
+
+<span id="cb86plus-p8-f3-unit" data-translation-unit="cb86plus-p8-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p8-f3.jpeg" width={700} height={529} figureId="cb86plus-p8-f3" alt={"正しい接続。赤の正極は常に左、黒の負極は常に右（原図の向き）。"} caption={"正しい接続。赤の正極は常に左、黒の負極は常に右（原図の向き）。"} />
+
+<span id="cb86plus-p8-folio" data-translation-unit="cb86plus-p8-folio"></span>
+
+原典印刷ページ：7
+
+<span id="cb86plus-p9-wrong-heading" data-translation-unit="cb86plus-p9-wrong-heading"></span>
+
+## 3.5.2 誤った電池接続
+
+<span id="cb86plus-p9-f1-unit" data-translation-unit="cb86plus-p9-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p9-f1.jpeg" width={998} height={799} figureId="cb86plus-p9-f1" alt={"誤接続の図。12S直列パックや、外部で並列接続した6Sパック2個を接続してはいけません。警告：先に充電器を通電してから電池を接続してください。直列・並列回路を接続すると焼損するおそれがあります。動作しない、焦げ臭い場合は速やかに電源を切り、使用を停止してRadioLinkサポートへ連絡してください。"} caption={"誤接続の図。12S直列パックや、外部で並列接続した6Sパック2個を接続してはいけません。警告：先に充電器を通電してから電池を接続してください。直列・並列回路を接続すると焼損するおそれがあります。動作しない、焦げ臭い場合は速やかに電源を切り、使用を停止してRadioLinkサポートへ連絡してください。"} />
+
+<span id="cb86plus-p9-combinations" data-translation-unit="cb86plus-p9-combinations"></span>
+
+## 3.5.3 5つの充放電接続例
+
+8ポートで最大8組に対応し、各ポートには独立した電源6系統があり最大6Sを充放電できます。6S以外では、1S×6、4S＋2S、3S×2、2S×3、または6S×1を下図のように接続できます。
+
+<span id="cb86plus-p9-6s" data-translation-unit="cb86plus-p9-6s"></span>
+
+(1) 6Sを1個。
+
+<span id="cb86plus-p9-f2-unit" data-translation-unit="cb86plus-p9-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p9-f2.jpeg" width={698} height={195} figureId="cb86plus-p9-f2" alt={"(1) 6S1個を接続する例。"} caption={"(1) 6S1個を接続する例。"} />
+
+<span id="cb86plus-p9-4s2s" data-translation-unit="cb86plus-p9-4s2s"></span>
+
+(2) 4Sを1個＋2Sを1個。
+
+<span id="cb86plus-p9-f3-unit" data-translation-unit="cb86plus-p9-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p9-f3.png" width={700} height={197} figureId="cb86plus-p9-f3" alt={"(2) 4S1個＋2S1個の接続例。"} caption={"(2) 4S1個＋2S1個の接続例。"} />
+
+<span id="cb86plus-p9-folio" data-translation-unit="cb86plus-p9-folio"></span>
+
+原典印刷ページ：8
+
+<span id="cb86plus-p10-2sx3" data-translation-unit="cb86plus-p10-2sx3"></span>
+
+(3) 2Sを3個。
+
+<span id="cb86plus-p10-f1-unit" data-translation-unit="cb86plus-p10-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p10-f1.jpeg" width={699} height={198} figureId="cb86plus-p10-f1" alt={"2Sを3個接続する例。"} caption={"2Sを3個接続する例。"} />
+
+<span id="cb86plus-p10-3sx2" data-translation-unit="cb86plus-p10-3sx2"></span>
+
+(4) 3Sを2個。
+
+<span id="cb86plus-p10-f2-unit" data-translation-unit="cb86plus-p10-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p10-f2.jpeg" width={699} height={197} figureId="cb86plus-p10-f2" alt={"3Sを2個接続する例。"} caption={"3Sを2個接続する例。"} />
+
+<span id="cb86plus-p10-1sx6" data-translation-unit="cb86plus-p10-1sx6"></span>
+
+(5) 1Sを6個。1Sリチウム電池6個を同時に充放電するには、下図の6-in-1バランス変換ケーブルが必要です。
+
+<span id="cb86plus-p10-f3-unit" data-translation-unit="cb86plus-p10-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p10-f3.jpeg" width={700} height={646} figureId="cb86plus-p10-f3" alt={"CB86-PLUS、6-in-1バランス変換ケーブル、3.7V1S電池6個の接続例。"} caption={"CB86-PLUS、6-in-1バランス変換ケーブル、3.7V1S電池6個の接続例。"} />
+
+<span id="cb86plus-p10-folio" data-translation-unit="cb86plus-p10-folio"></span>
+
+原典印刷ページ：9
+
+<span id="cb86plus-p11-mode-intro" data-translation-unit="cb86plus-p11-mode-intro"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p11-charge" data-translation-unit="cb86plus-p11-charge"></span>
+
+## 4.1 充電
+
+順序を指定しない場合はポート番号順に充電します。全ポート共通、またはポート別の設定が可能です。
+
+<span id="cb86plus-p11-input-drop" data-translation-unit="cb86plus-p11-input-drop"></span>
+
+注意：充電中に入力電圧が9%を超えて下がると、入力低下を5～8%内に保つよう自動で電流制限します。
+
+<span id="cb86plus-p11-charge-voltage" data-translation-unit="cb86plus-p11-charge-voltage"></span>
+
+### 4.1.1 推奨充電電圧
+
+普通のリチウムは4.2V。バランス端子のシリコーン線の安全電流が6.0Aまでのため、最大充電電流を6.0Aより大きくしてはいけません。過大な電流は過負荷を招きます。高電圧リチウムは4.35V、リチウム鉄は3.6Vを推奨します。
+
+<span id="cb86plus-p11-f1-unit" data-translation-unit="cb86plus-p11-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p11-f1.jpeg" width={436} height={198} figureId="cb86plus-p11-f1" alt={"充電電圧4.20Vの設定例。"} caption={"充電電圧4.20Vの設定例。"} />
+
+<span id="cb86plus-p11-charge-current" data-translation-unit="cb86plus-p11-charge-current"></span>
+
+### 4.1.2 推奨充電電流
+
+標準リチウム電池の満充電は1セル4.2Vです。電流は容量に合わせ、保護のため通常1Cとします。1000mAhなら1A、2000mAhなら2Aです。
+
+<span id="cb86plus-p11-higher-current" data-translation-unit="cb86plus-p11-higher-current"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p11-f2-unit" data-translation-unit="cb86plus-p11-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p11-f2.jpeg" width={438} height={197} figureId="cb86plus-p11-f2" alt={"充電電流0.30Aの設定例。"} caption={"充電電流0.30Aの設定例。"} />
+
+<span id="cb86plus-p11-common-setting" data-translation-unit="cb86plus-p11-common-setting"></span>
+
+### 4.1.3 全ポート共通の設定
+
+停止中にSETで設定へ入り、＋/▲または－/▼でMODEを選びます。SETと＋/－でCHARGEを選び、SETで確定します。VOLTAGEへ移動してSETで選び、充電電圧・電流を設定すると全ポートへ適用します。
+
+<span id="cb86plus-p11-folio" data-translation-unit="cb86plus-p11-folio"></span>
+
+原典印刷ページ：10
+
+<span id="cb86plus-p12-f1-unit" data-translation-unit="cb86plus-p12-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p12-f1.jpeg" width={436} height={208} figureId="cb86plus-p12-f1" alt={"全ポートを選択した共通設定の画面。"} caption={"全ポートを選択した共通設定の画面。"} />
+
+<span id="cb86plus-p12-individual" data-translation-unit="cb86plus-p12-individual"></span>
+
+### 4.1.4 ポート別の設定
+
+停止中にSETで設定へ入り、MODEを選んでCHARGEへ設定・確定します。＋/－で①～⑧へ移動しSETを押すと点滅します。対象ポートを＋/－で選びSETで確定し、VOLTAGEへ移動してSETでそのポートの電圧・電流を設定します。
+
+<span id="cb86plus-p12-f2-unit" data-translation-unit="cb86plus-p12-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p12-f2.jpeg" width={437} height={207} figureId="cb86plus-p12-f2" alt={"ポート2を選択した個別設定例。"} caption={"ポート2を選択した個別設定例。"} />
+
+<span id="cb86plus-p12-selection-warning" data-translation-unit="cb86plus-p12-selection-warning"></span>
+
+:::caution[注意]
+注意：ポート別に異なる値を設定するときは、①～⑧をすべて選択しないでください。全部が青または緑になると全選択です。
+:::
+
+<span id="cb86plus-p12-full" data-translation-unit="cb86plus-p12-full"></span>
+
+### 4.1.5 満充電の通知
+
+電流と電圧の設定後、START/STOPで開始します。ポート左の赤灯が点灯し、対応番号の背景が緑になります。画面には各セルの現在電圧、充電電流、充電した容量を表示します。セルが満充電になるたび4回鳴り、その電圧値の背景が緑になります。
+
+<span id="cb86plus-p12-reconnect" data-translation-unit="cb86plus-p12-reconnect"></span>
+
+2. 充電中の接触不良ではブザーが鳴ります。電池を抜いてから差し直してください。
+
+<span id="cb86plus-p12-f3-unit" data-translation-unit="cb86plus-p12-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p12-f3.png" width={1000} height={1000} figureId="cb86plus-p12-f3" alt={"充電状態画面。満充電のセル電圧は緑色の背景で表示。"} caption={"充電状態画面。満充電のセル電圧は緑色の背景で表示。"} />
+
+<span id="cb86plus-p12-folio" data-translation-unit="cb86plus-p12-folio"></span>
+
+原典印刷ページ：11
+
+<span id="cb86plus-p13-discharge" data-translation-unit="cb86plus-p13-discharge"></span>
+
+## 4.2 放電
+
+電流は固定1.2Aで、終止電圧を設定できます。設定電圧まで放電すると完了です。終止電圧が低すぎると過放電で損傷し寿命が短くなるため、適切な値を設定してください。電池電圧より高い設定では放電できません。放電中の発熱で冷却ファンが自動動作します。
+
+<span id="cb86plus-p13-discharge-storage" data-translation-unit="cb86plus-p13-discharge-storage"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p13-f2-unit" data-translation-unit="cb86plus-p13-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p13-f2.jpeg" width={436} height={262} figureId="cb86plus-p13-f2" alt={"放電設定：3.80V、1.20A。"} caption={"放電設定：3.80V、1.20A。"} />
+
+<span id="cb86plus-p13-f1-unit" data-translation-unit="cb86plus-p13-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p13-f1.jpeg" width={437} height={327} figureId="cb86plus-p13-f1" alt={"放電中のセル電圧・電流・容量の表示例。"} caption={"放電中のセル電圧・電流・容量の表示例。"} />
+
+<span id="cb86plus-p13-storage" data-translation-unit="cb86plus-p13-storage"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p13-f4-unit" data-translation-unit="cb86plus-p13-f4-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p13-f3-unit" data-translation-unit="cb86plus-p13-f3-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p13-repair" data-translation-unit="cb86plus-p13-repair"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p13-folio" data-translation-unit="cb86plus-p13-folio"></span>
+
+原典印刷ページ：12
+
+<span id="cb86plus-p14-repair" data-translation-unit="cb86plus-p14-repair"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p14-repair-note" data-translation-unit="cb86plus-p14-repair-note"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p14-f1-unit" data-translation-unit="cb86plus-p14-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p14-resistance" data-translation-unit="cb86plus-p14-resistance"></span>
+
+## 4.5 内部抵抗
+
+充電開始10秒後にSETを短押しすると、充電中の電池の全セル内部抵抗を表示します。再びSETで充電画面へ戻ります。
+
+<span id="cb86plus-p14-f2-unit" data-translation-unit="cb86plus-p14-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p14-f2.jpeg" width={437} height={327} figureId="cb86plus-p14-f2" alt={"セルごとの内部抵抗Ωを表示する画面。"} caption={"セルごとの内部抵抗Ωを表示する画面。"} />
+
+<span id="cb86plus-p14-parameters" data-translation-unit="cb86plus-p14-parameters"></span>
+
+## 4.6 パラメーター表示
+
+停止中のホーム画面で＋/－を押して対象ポートを選び、SETで確定して各セルを表示します。他ポートは＋/－で切り替えます。
+
+<span id="cb86plus-p14-f4-unit" data-translation-unit="cb86plus-p14-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p14-f4.jpeg" width={438} height={326} figureId="cb86plus-p14-f4" alt={"全電池の総電圧を表示。"} caption={"全電池の総電圧を表示。"} />
+
+<span id="cb86plus-p14-f3-unit" data-translation-unit="cb86plus-p14-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p14-f3.jpeg" width={436} height={329} figureId="cb86plus-p14-f3" alt={"ポート4の各セルのパラメーター。"} caption={"ポート4の各セルのパラメーター。"} />
+
+<span id="cb86plus-p14-param-captions" data-translation-unit="cb86plus-p14-param-captions"></span>
+
+左：全電池の総電圧データ。右：ポート4の各セルのパラメーター。
+
+<span id="cb86plus-p14-folio" data-translation-unit="cb86plus-p14-folio"></span>
+
+原典印刷ページ：13
+
+<span id="cb86plus-p15-firmware" data-translation-unit="cb86plus-p15-firmware"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p15-calibration-warning" data-translation-unit="cb86plus-p15-calibration-warning"></span>
+
+:::caution[注意]
+## 第6部 電圧校正
+
+正常な充電器は校正しないでください。誤校正は過放電・過充電や爆発を招きます。誤差が0.2V以内なら校正できますが、0.3Vなど0.2Vを超える場合は故障の可能性があり、先にRadioLinkサポートへ相談してください。先に確認しないと過充電・爆発を招くおそれがあります。
+
+注意：電池と電源の電圧を正確に測り、正確に入力してください。
+:::
+
+<span id="cb86plus-p15-calibration1" data-translation-unit="cb86plus-p15-calibration1"></span>
+
+校正方法：
+1. テスターで電源電圧を測り記録します。11～15Vの範囲である必要があります。
+
+<span id="cb86plus-p15-f1-unit" data-translation-unit="cb86plus-p15-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p15-f1.jpeg" width={761} height={761} figureId="cb86plus-p15-f1" alt={"電源電圧をテスターで測定する例（12.87V）。"} caption={"電源電圧をテスターで測定する例（12.87V）。"} />
+
+<span id="cb86plus-p15-calibration2" data-translation-unit="cb86plus-p15-calibration2"></span>
+
+2. 正常な電池電圧を測り記録します。セル電圧は3.8～4.4Vである必要があります。
+
+<span id="cb86plus-p15-first-cell-warning" data-translation-unit="cb86plus-p15-first-cell-warning"></span>
+
+:::caution[注意]
+注意：2Sや6Sなど複数セルでは、バランス端子の黒線に隣接する最初のセルを測ります。黒の測定線を電池の黒線へ、赤の測定線をその隣の線へ接続してください。
+:::
+
+<span id="cb86plus-p15-folio" data-translation-unit="cb86plus-p15-folio"></span>
+
+原典印刷ページ：14
+
+<span id="cb86plus-p16-f1-unit" data-translation-unit="cb86plus-p16-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p16-f1.jpeg" width={1198} height={1280} figureId="cb86plus-p16-f1" alt={"最初のセルの測定例（4.17V）。"} caption={"最初のセルの測定例（4.17V）。"} />
+
+<span id="cb86plus-p16-calibration3" data-translation-unit="cb86plus-p16-calibration3"></span>
+
+3. StartとSETを同時に押しながら通電すると校正画面へ入ります。
+
+<span id="cb86plus-p16-f2-unit" data-translation-unit="cb86plus-p16-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p16-f2.jpeg" width={368} height={275} figureId="cb86plus-p16-f2" alt={"校正画面。SETは校正、上下ボタンは値調整、STARTは保存。PwrとBatを表示。"} caption={"校正画面。SETは校正、上下ボタンは値調整、STARTは保存。PwrとBatを表示。"} />
+
+<span id="cb86plus-p16-calibration4" data-translation-unit="cb86plus-p16-calibration4"></span>
+
+4. 電源を先に、電池を後で校正します。
+
+① Pwr：SETで自動調整し、実測と異なれば＋/－で一致させ、Startで確定します。Power Calibrationの横にOKが表示されると電池校正へ進めます。
+
+② Bat：電池を任意ポートへ接続してSETで自動調整し、実測と異なれば＋/－で一致させ、Startで確定します。Battery CalibrationのOKで完了し、ホームへ戻ります。両方のOKを表示した後ホームへ戻ります。
+
+<span id="cb86plus-p16-f3-unit" data-translation-unit="cb86plus-p16-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p16-f3.jpeg" width={437} height={323} figureId="cb86plus-p16-f3" alt={"電源・電池校正の両方にOKを表示。"} caption={"電源・電池校正の両方にOKを表示。"} />
+
+<span id="cb86plus-p16-folio" data-translation-unit="cb86plus-p16-folio"></span>
+
+原典印刷ページ：15
+
+<span id="cb86plus-p17-failure" data-translation-unit="cb86plus-p17-failure"></span>
+
+## 第7部 トラブルシューティング
+
+### 7.1 故障自己検出警告
+
+CHARGER FAILURE!（充電器故障）ではRadioLinkへ連絡してください：after_service@radiolink.com.cn
+
+<span id="cb86plus-p17-f1-unit" data-translation-unit="cb86plus-p17-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p17-f1.jpeg" width={439} height={323} figureId="cb86plus-p17-f1" alt={"CHARGER FAILURE警告とメール連絡先。"} caption={"CHARGER FAILURE警告とメール連絡先。"} />
+
+<span id="cb86plus-p17-restart" data-translation-unit="cb86plus-p17-restart"></span>
+
+主な原因は入力電源異常、電池異常、ハードウェア異常です。電源を切って再起動すると警告画面を終了し、次の点検を行えます。
+
+<span id="cb86plus-p17-test08" data-translation-unit="cb86plus-p17-test08"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p17-beep-intro" data-translation-unit="cb86plus-p17-beep-intro"></span>
+
+### 7.2 ブザー通知への対処
+
+充電中にセル電圧が4.2Vへ近づくと警告音が鳴る場合があります。原因・対処は次のとおりです。
+
+<span id="cb86plus-p17-cable-check" data-translation-unit="cb86plus-p17-cable-check"></span>
+
+1. 先に充電を停止し、電池と電源の接続ケーブルに損傷がないか確認します。
+
+<span id="cb86plus-p17-test1a" data-translation-unit="cb86plus-p17-test1a"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p17-battery-test" data-translation-unit="cb86plus-p17-battery-test"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="cb86plus-p17-contact" data-translation-unit="cb86plus-p17-contact"></span>
+
+4. すべて試しても正常に充電できない場合は、故障の可能性があるためサポートへ連絡してください。
+5. 放電中のブザーは通常ケーブル損傷か充電器のハードウェア異常によります。
+
+<span id="cb86plus-p17-folio" data-translation-unit="cb86plus-p17-folio"></span>
+
+原典印刷ページ：16
+
+<span id="cb86plus-p18-heading" data-translation-unit="cb86plus-p18-heading"></span>
+
+## テクニカルサポート
+
+<span id="cb86plus-p18-f3-unit" data-translation-unit="cb86plus-p18-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p18-f3.png" width={920} height={911} figureId="cb86plus-p18-f3" alt={"Facebook Messengerのアイコン。"} caption={"Facebook Messengerのアイコン。"} />
+
+<span id="cb86plus-p18-f1-unit" data-translation-unit="cb86plus-p18-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p18-f1.jpeg" width={300} height={300} figureId="cb86plus-p18-f1" alt={"マニュアルのQR（リンク先未検証）。"} caption={"マニュアルのQR（リンク先未検証）。"} />
+
+<span id="cb86plus-p18-f2-unit" data-translation-unit="cb86plus-p18-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/cb86-plus/web-ja-v1/cb86plus-p18-f2.jpeg" width={300} height={300} figureId="cb86plus-p18-f2" alt={"チュートリアルのQR（リンク先未検証）。"} caption={"チュートリアルのQR（リンク先未検証）。"} />
+
+<span id="cb86plus-p18-support" data-translation-unit="cb86plus-p18-support"></span>
+
+Facebook MessengerからRadioLink RLへ連絡できます。マニュアル、チュートリアルのQRを掲載しています。解決しない場合はafter_service@radiolink.com.cnへお問い合わせください。内容は変更される場合があります。最新版：https://www.radiolink.com/cb86plus_manual
+
+RadioLink製品をお選びいただき、重ねてお礼申し上げます。
+
+<span id="cb86plus-p18-folio" data-translation-unit="cb86plus-p18-folio"></span>
+
+原典印刷ページ：17

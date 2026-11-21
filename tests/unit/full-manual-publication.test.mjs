@@ -34,13 +34,14 @@ for (const product of inventory.products) {
     assert.doesNotMatch(text, /^#+.*(?:原資料.*ページ|PDF\s*\d|Page\s*\d)/m);
     for (const page of product.pages) {
       const content = read(page.path).replaceAll('\r\n', '\n');
+      const projection = product.review_projection?.pages[page.path];
       assert.equal(
         createHash('sha256').update(content).digest('hex'),
-        page.sha256,
+        projection?.sha256 ?? page.sha256,
       );
       assert.equal(
         (content.match(/^#{2,6}\s/gm) ?? []).length,
-        page.headings.length,
+        projection?.headings ?? page.headings.length,
       );
       assert.match(content, /status: manufacturer_review/);
       assert.match(content, /content: noindex, nofollow/);
@@ -48,8 +49,17 @@ for (const product of inventory.products) {
     }
     assert.equal(
       (text.match(/<ManualFigure\s/g) ?? []).length,
-      product.figure_placements,
+      product.review_projection?.figure_ids.length ?? product.figure_placements,
     );
+    if (product.review_projection) {
+      const shown = [...text.matchAll(/figureId="([^"]+)"/g)].map(
+        (match) => match[1],
+      );
+      const original = new Set(product.assets.map((asset) => asset.figure_id));
+      assert.deepEqual(shown, product.review_projection.figure_ids);
+      assert(shown.every((id) => original.has(id)));
+      assert.equal(new Set(shown).size, shown.length);
+    }
     assert.equal(
       new Set(product.assets.map((asset) => asset.figure_id)).size,
       product.figure_placements,
@@ -78,6 +88,7 @@ for (const product of inventory.products) {
   });
   test(`${product.product}: each canonical YouTube occurrence is exactly one existing video block`, () => {
     assert.equal(product.videos.length, product.product === 'rc8x' ? 12 : 2);
+    const visibleVideos = product.review_projection?.videos ?? product.videos;
     const text = product.pages.map((page) => read(page.path)).join('\n');
     assert.doesNotMatch(
       text,
@@ -85,11 +96,11 @@ for (const product of inventory.products) {
     );
     assert.equal(
       (text.match(/<ManualVideo /g) ?? []).length,
-      product.videos.length,
+      visibleVideos.length,
     );
     for (const video of product.videos)
       assert.match(video.video_id, /^[\w-]{11}$/);
-    const expected = product.videos.map((video) => video.video_id).sort();
+    const expected = visibleVideos.map((video) => video.video_id).sort();
     const actual = [...text.matchAll(/<ManualVideo youtubeId="([\w-]+)"/g)]
       .map((match) => match[1])
       .sort();

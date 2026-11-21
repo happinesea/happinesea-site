@@ -176,9 +176,15 @@ test('latest full manuals have complete local figures, tables, videos and resolv
         }
       }
     }
-    assert.equal(figures, product.figure_placements);
-    assert.equal(tables, product.tables);
-    assert.equal(videos, product.videos.length);
+    assert.equal(
+      figures,
+      product.review_projection?.figure_ids.length ?? product.figure_placements,
+    );
+    assert.equal(tables, product.review_projection?.tables ?? product.tables);
+    assert.equal(
+      videos,
+      (product.review_projection?.videos ?? product.videos).length,
+    );
   }
 });
 
@@ -608,28 +614,24 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
 
 test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
   const html = await route('radiolink/index.html');
+  const detailCount =
+    27 +
+    batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
+    batch6.manuals.length +
+    remaining.manuals.filter((m) => m.product_id !== 'rtc8').length;
 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
   assert.equal(
     (html.match(/data-detail-available/g) ?? []).length,
-    25 +
-      batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
-      batch6.manuals.length +
-      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
+    detailCount,
   );
   assert.equal(
     (html.match(/data-detail-preparing/g) ?? []).length,
-    58 -
-      batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length -
-      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
+    83 - detailCount,
   );
   assert.equal(
     (html.match(/詳しい仕様は公式サイトで/g) ?? []).length,
-    58 -
-      batch5.manuals.filter((m) => m.product_id !== 'r6fg').length -
-      batch6.manuals.length -
-      remaining.manuals.filter((m) => m.product_id !== 'rtc8').length,
+    83 - detailCount,
   );
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);

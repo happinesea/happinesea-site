@@ -156,7 +156,7 @@
     "subcategoryLabel": "トレーナーシステム",
     "description": "Radiolinkのトレーナーシステム関連製品です。",
     "officialUrl": "https://www.radiolink.com/typec_wireless_trainer_cable",
-    "detailPath": null,
+    "detailPath": "/radiolink/twc/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/twc.webp",
@@ -576,7 +576,7 @@
     "subcategoryLabel": "固定翼用フライトコントローラー",
     "description": "Radiolinkの固定翼機向けフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/bymea",
-    "detailPath": null,
+    "detailPath": "/radiolink/byme-a/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/byme-a.webp",
@@ -597,7 +597,7 @@
     "subcategoryLabel": "固定翼用フライトコントローラー",
     "description": "Radiolinkの固定翼機向けフライトコントローラーです。",
     "officialUrl": "https://www.radiolink.com/bymed",
-    "detailPath": null,
+    "detailPath": "/radiolink/byme-d/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/byme-d.webp",
@@ -765,7 +765,7 @@
     "subcategoryLabel": "GPS",
     "description": "RadiolinkのGPSモジュールです。",
     "officialUrl": "https://www.radiolink.com/ts100v2",
-    "detailPath": null,
+    "detailPath": "/radiolink/ts100-m10n/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/ts100-m10n.webp",
@@ -891,7 +891,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/vds200",
-    "detailPath": null,
+    "detailPath": "/radiolink/vds200/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/vds200.webp",
@@ -1038,7 +1038,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f121_pro",
-    "detailPath": null,
+    "detailPath": "/radiolink/f121-pro/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f121-pro.webp",
@@ -1143,7 +1143,7 @@
     "subcategoryLabel": "充電器",
     "description": "Radiolinkのバッテリー充電器です。",
     "officialUrl": "https://www.radiolink.com/cb86plus",
-    "detailPath": null,
+    "detailPath": "/radiolink/cb86-plus/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/cb86-plus.webp",

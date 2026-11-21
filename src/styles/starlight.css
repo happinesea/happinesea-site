@@ -91,7 +91,9 @@
     [data-translation-unit^='f405-'],
     [data-translation-unit^='ld_b20_drone_soccer-'],
     [data-translation-unit^='cool9030-'],
-    [data-translation-unit^='f121-']
+    [data-translation-unit^='f121-'],
+    [data-translation-unit^='cb86plus-'],
+    [data-translation-unit^='vds200-']
   )
   table
   :is(th, td):first-child {
@@ -110,7 +112,9 @@
     [data-translation-unit^='f405-'],
     [data-translation-unit^='ld_b20_drone_soccer-'],
     [data-translation-unit^='cool9030-'],
-    [data-translation-unit^='f121-']
+    [data-translation-unit^='f121-'],
+    [data-translation-unit^='cb86plus-'],
+    [data-translation-unit^='vds200-']
   )
   [data-manual-figure]
   img {
