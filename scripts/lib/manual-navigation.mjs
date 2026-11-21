@@ -1,3 +1,5 @@
+import catalogue from '../../src/data/product-catalogue.json' with { type: 'json' };
+import { categoryIds } from '../../src/lib/radiolink-categories.mjs';
 import GithubSlugger from 'github-slugger';
 
 export function manualChapters(manual) {
@@ -52,4 +54,60 @@ export function manualAnchorTargets(manual) {
       }
     }
   return targets;
+}
+
+export function catalogueManualSidebar({
+  generated,
+  existing,
+  includePreview,
+  legacy,
+}) {
+  const products = new Map(catalogue.map((product) => [product.slug, product]));
+  const groups = new Map(
+    Object.keys(categoryIds).map((category) => [category, []]),
+  );
+  const routes = new Set();
+  function add(productSlug, route, item) {
+    if (routes.has(route)) throw new Error(`Duplicate manual route: ${route}`);
+    const product = products.get(productSlug);
+    if (!product)
+      throw new Error(`Manual missing catalogue product: ${productSlug}`);
+    routes.add(route);
+    groups.get(product.category).push(item);
+  }
+  for (const entry of legacy) {
+    const route = entry.items[0].slug;
+    const slug = route.split('/')[1];
+    add(slug === 'rc4gs-v2' ? 'rc4gs-v3' : slug, route, {
+      ...entry,
+      collapsed: true,
+    });
+  }
+  for (const entry of existing) {
+    if (entry.publication_status !== 'publication_copy') continue;
+    // The catalogue uses the current model slug for a manual family.
+    const slug =
+      { rc4gs: 'rc4gs-v3', rc6gs: 'rc6gs-v3', t8fb: 't8fb-bt' }[
+        entry.product
+      ] ?? entry.product;
+    add(slug, entry.route.slice(1, -1), manualSidebar(entry));
+  }
+  for (const entry of generated) {
+    if (entry.publication_status !== 'PUBLISHED' && !includePreview) continue;
+    // RTC8 has a draft detail route but is outside the official product catalogue.
+    if (entry.product_id === 'rtc8' && !products.has('rtc8')) continue;
+    const slug = entry.route.slice(1, -1);
+    const label =
+      entry.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL'
+        ? `${entry.model} クイックガイド`
+        : entry.model;
+    add(entry.product_id, slug, { label, slug });
+  }
+  return [...groups]
+    .filter(([, items]) => items.length)
+    .map(([label, items]) => ({
+      label,
+      items,
+      collapsed: true,
+    }));
 }

@@ -1,7 +1,10 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
+import receiverManuals from '../../src/lib/receiver-manuals.mjs';
+import { categoryIds } from '../../src/lib/radiolink-categories.mjs';
 import {
+  catalogueManualSidebar,
   manualSidebar,
   manualAnchorTargets,
 } from '../../scripts/lib/manual-navigation.mjs';
@@ -84,4 +87,43 @@ test('sidebar uses reviewed topics, and old source/semantic anchors resolve to t
   );
   for (const item of sidebar.items)
     assert(!/原資料|ページ|section-\d/.test(item.label));
+});
+
+test('catalogue categories separate preview manuals from public manual links', () => {
+  const legacy = ['rc4gs-v2', 'rc8x', 'rc8p'].map((slug) => ({
+    label: slug,
+    items: [{ label: 'はじめに・目次', slug: `manuals/${slug}` }],
+  }));
+  const input = {
+    generated: receiverManuals.manuals,
+    existing: inventory.manuals,
+    legacy,
+  };
+  const preview = catalogueManualSidebar({ ...input, includePreview: true });
+  const published = catalogueManualSidebar({ ...input, includePreview: false });
+  assert.deepEqual(
+    preview.map((group) => group.label),
+    Object.keys(categoryIds),
+  );
+  assert.ok(preview.every((group) => group.collapsed));
+  const receiver = preview.find((group) => group.label === '受信機');
+  assert.ok(receiver.items.some((item) => item.slug === 'manuals/r6f'));
+  assert.ok(!receiver.items.some((item) => item.slug === 'manuals/d16pro-200'));
+  const links = published.flatMap((group) => group.items);
+  assert.ok(!links.some((item) => item.slug === 'manuals/d16pro-200'));
+  assert.ok(links.find((item) => item.label === 'rc8p'));
+  assert.equal(
+    preview
+      .flatMap((group) => group.items)
+      .filter((item) => item.slug === 'manuals/rtc8').length,
+    0,
+  );
+  assert.equal(
+    new Set(
+      preview.flatMap((group) =>
+        group.items.map((item) => item.slug ?? item.items[0].slug),
+      ),
+    ).size,
+    preview.reduce((count, group) => count + group.items.length, 0),
+  );
 });

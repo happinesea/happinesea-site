@@ -9,7 +9,7 @@ import existingJapaneseManuals from './src/data/manuals/existing-ja.json' with {
 import { verifyExistingJapaneseManuals } from './scripts/lib/existing-ja-manuals.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
 import { semanticHeadingPunctuation } from './scripts/lib/manual-semantic-structure.mjs';
-import { manualSidebar } from './scripts/lib/manual-navigation.mjs';
+import { catalogueManualSidebar } from './scripts/lib/manual-navigation.mjs';
 import { cmsArticleImages, finalizeCmsArticleImages } from './scripts/lib/pages-articles.mjs';
 
 verifyExistingJapaneseManuals(existingJapaneseManuals, new URL('./public/', import.meta.url));
@@ -46,42 +46,45 @@ export default defineConfig({
       locales: {
         root: { label: '日本語', lang: 'ja' },
       },
-      sidebar: [
-        { label: '製品別 日本語取扱説明書', items: receiverManuals.manuals.map((m) => ({label:m.model,slug:m.route.slice(1,-1)})) },
-        ...existingJapaneseManuals.manuals.filter((manual) => manual.publication_status === 'publication_copy').map(manualSidebar),
-        {
-          label: 'RC4GS V2',
-          items: [
-            { label: 'はじめに・目次', slug: 'manuals/rc4gs-v2' },
-            { label: '第1章 送信機と受信機', slug: 'manuals/rc4gs-v2/chapter-01' },
-            { label: '第2章 機能', slug: 'manuals/rc4gs-v2/chapter-02' },
-          ],
-        },
-        {
-          label: 'RC8X',
-          items: [
-            { label: 'はじめに・目次', slug: 'manuals/rc8x' },
-            {
-              label: '第1章 リモートコントロールシステム',
-              slug: 'manuals/rc8x/chapter-01',
-            },
-            { label: '第2章 基本機能', slug: 'manuals/rc8x/chapter-02' },
-            { label: 'サポート・ご購入のお礼', slug: 'manuals/rc8x/back-matter' },
-          ],
-        },
-        {
-          label: 'RC8P',
-          collapsed: true,
-          items: [
-            { label: 'はじめに・目次', slug: 'manuals/rc8p' },
-            { label: '第1章 送信機とR8FG受信機', slug: 'manuals/rc8p/chapter-01' },
-            { label: '第2章 基本機能', slug: 'manuals/rc8p/chapter-02' },
-            { label: '第3章 ファームウェア更新', slug: 'manuals/rc8p/chapter-03' },
-            { label: '第4章 カスタムスイッチ音声', slug: 'manuals/rc8p/chapter-04' },
-            { label: 'サポート・ご購入のお礼', slug: 'manuals/rc8p/back-matter' },
-          ],
-        },
-      ],
+      sidebar: catalogueManualSidebar({
+        generated: receiverManuals.manuals,
+        existing: existingJapaneseManuals.manuals,
+        includePreview: !production,
+        legacy: [
+          {
+            label: 'RC4GS V2',
+            items: [
+              { label: 'はじめに・目次', slug: 'manuals/rc4gs-v2' },
+              { label: '第1章 送信機と受信機', slug: 'manuals/rc4gs-v2/chapter-01' },
+              { label: '第2章 機能', slug: 'manuals/rc4gs-v2/chapter-02' },
+            ],
+          },
+          {
+            label: 'RC8X',
+            items: [
+              { label: 'はじめに・目次', slug: 'manuals/rc8x' },
+              {
+                label: '第1章 リモートコントロールシステム',
+                slug: 'manuals/rc8x/chapter-01',
+              },
+              { label: '第2章 基本機能', slug: 'manuals/rc8x/chapter-02' },
+              { label: 'サポート・ご購入のお礼', slug: 'manuals/rc8x/back-matter' },
+            ],
+          },
+          {
+            label: 'RC8P',
+            collapsed: true,
+            items: [
+              { label: 'はじめに・目次', slug: 'manuals/rc8p' },
+              { label: '第1章 送信機とR8FG受信機', slug: 'manuals/rc8p/chapter-01' },
+              { label: '第2章 基本機能', slug: 'manuals/rc8p/chapter-02' },
+              { label: '第3章 ファームウェア更新', slug: 'manuals/rc8p/chapter-03' },
+              { label: '第4章 カスタムスイッチ音声', slug: 'manuals/rc8p/chapter-04' },
+              { label: 'サポート・ご購入のお礼', slug: 'manuals/rc8p/back-matter' },
+            ],
+          },
+        ],
+      }),
       customCss: ['./src/styles/global.css', './src/styles/starlight.css'],
       components: {
         Head: './src/components/manuals/Head.astro',
