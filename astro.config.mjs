@@ -1,3 +1,4 @@
+import { manualPublicCopy, verifyBuiltManualCopy } from './scripts/lib/manual-public-copy.mjs';
 import receiverManuals from './src/lib/receiver-manuals.mjs';
 import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
@@ -25,13 +26,14 @@ const buildOutput = new URL(ownerDrawings ? './.superpowers/drawing-publication-
 export default defineConfig({
   outDir: fileURLToPath(buildOutput),
   markdown: {
-    processor: satteri({ hastPlugins: [semanticHeadingPunctuation(existingJapaneseManuals.manuals), cmsArticleImages(production ? '/' : '/happinesea-site')] }),
+    processor: satteri({ hastPlugins: [semanticHeadingPunctuation(existingJapaneseManuals.manuals), cmsArticleImages(production ? '/' : '/happinesea-site'), manualPublicCopy()] }),
   },
   site: production ? 'https://happinesea.com' : 'https://happinesea.github.io',
   base: production ? '/' : '/happinesea-site',
   output: 'static',
   trailingSlash: 'always',
   integrations: [
+    {name:'manual-public-copy',hooks:{'astro:build:done': async ({dir})=>verifyBuiltManualCopy(fileURLToPath(dir))}},
     {name:'cms-article-assets',hooks:{'astro:build:done': async ({dir})=>finalizeCmsArticleImages(fileURLToPath(dir))}},
     sitemap({
       // Aliases are finalized after Astro; the post-build gate verifies canonical targets.

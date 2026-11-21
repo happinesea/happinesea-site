@@ -100,7 +100,9 @@ export function catalogueManualSidebar({
     const label =
       entry.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL'
         ? `${entry.model} クイックガイド`
-        : entry.model;
+        : entry.source.document_id === 'twc_typec_trainer_cable_official_html'
+          ? `${entry.model} 公式Web手順`
+          : entry.model;
     add(entry.product_id, slug, { label, slug });
   }
   return [...groups]
