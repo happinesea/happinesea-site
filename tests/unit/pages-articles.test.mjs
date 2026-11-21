@@ -14,6 +14,7 @@ import { parse } from 'yaml';
 import { createSatteriMarkdownProcessor } from '@astrojs/markdown-satteri';
 import {
   cmsArticleSchema,
+  renderCmsArticlePages,
   publishedCmsArticles,
   cmsArticleImages,
   finalizeCmsArticleImages,
@@ -147,4 +148,40 @@ test('draft-only images are removed only from the artifact, published references
   await access(join(dir, 'images/articles/published.png'));
   await assert.rejects(access(join(dir, 'images/articles/draft.png')));
   await access('public' + sampleImage);
+});
+
+test('pagination uses standalone Markdown markers and preserves shared link references', () => {
+  const pages = renderCmsArticlePages(
+    [
+      '<!--nextpage-->',
+      '## First',
+      '',
+      '[Reference][shared]',
+      '',
+      '```html',
+      '<!--nextpage-->',
+      '```',
+      '',
+      '> <!--nextpage-->',
+      '> Quoted text',
+      '',
+      '<!--nextpage-->',
+      '',
+      '<!--nextpage-->',
+      '',
+      '## Second',
+      '',
+      '[shared]: https://example.com/',
+      '',
+      '<!--nextpage-->',
+    ].join('\n'),
+  );
+  assert.equal(pages.length, 2);
+  assert.match(pages[0], /<h2[^>]*>First<\/h2>/);
+  assert.match(pages[0], /href="https:\/\/example\.com\/">Reference/);
+  assert.match(pages[0], /&lt;!--nextpage--&gt;/);
+  assert.match(pages[0], /Quoted text/);
+  assert.doesNotMatch(pages[0], /Second/);
+  assert.match(pages[1], /<h2[^>]*>Second<\/h2>/);
+  assert.deepEqual(renderCmsArticlePages(''), ['']);
 });

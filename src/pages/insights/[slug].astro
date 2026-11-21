@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import ArticleHero from '../../components/ArticleHero.astro';
+import CmsArticleBody from '../../components/CmsArticleBody.astro';
 import ArticleShare from '../../components/ArticleShare.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import UnverifiedNotice from '../../components/UnverifiedNotice.astro';
@@ -12,8 +13,9 @@ import {
 import { canonicalUrl, withBase } from '../../lib/urls';
 import { SITE_NAME } from '../../lib/site';
 import {
+  articleExcerpt,
   publishedCmsArticles,
-  renderCmsArticle,
+  renderCmsArticlePages,
 } from '../../../scripts/lib/pages-articles.mjs';
 import catalogue from '../../data/product-catalogue.json';
 import ResponsiveMedia from '../../components/ResponsiveMedia.astro';
@@ -33,10 +35,20 @@ interface Props {
 }
 
 export async function getStaticPaths() {
+  const cmsArticles = await getCollection('cmsArticles');
+  const draftPreview =
+    import.meta.env.DEV && process.env.PUBLICATION_MODE !== 'production'
+      ? cmsArticles.find(
+          ({ data }) =>
+            data.content_status === 'draft' &&
+            data.slug === process.env.CMS_ARTICLE_LOCAL_PREVIEW,
+        )
+      : undefined;
   const insights = [
     ...(await getCollection('insights')),
     ...(await getCollection('wordpressInsights')),
-    ...publishedCmsArticles(await getCollection('cmsArticles')),
+    ...publishedCmsArticles(cmsArticles),
+    ...(draftPreview ? [draftPreview] : []),
   ];
   const slugs = new Set<string>();
   for (const { data } of insights) {
@@ -58,9 +70,7 @@ const wordpressData =
   article.collection === 'wordpressInsights' ? article.data : undefined;
 const cmsData = article.collection === 'cmsArticles' ? article.data : undefined;
 const staticArticle = article.collection === 'insights' ? article : undefined;
-const cmsBody = cmsData
-  ? renderCmsArticle(article.body, import.meta.env.BASE_URL)
-  : undefined;
+
 const relatedProducts =
   cmsData?.related_products.map((id) =>
     catalogue.find((product) => product.id === id)!,
@@ -69,6 +79,12 @@ const Content = staticArticle
   ? (await render(staticArticle)).Content
   : undefined;
 const isPublished = data.content_status === 'published';
+const isDraftPreview =
+  cmsData?.content_status === 'draft' && import.meta.env.DEV;
+const cmsPages =
+  cmsData && (isPublished || isDraftPreview)
+    ? renderCmsArticlePages(article.body, import.meta.env.BASE_URL)
+    : undefined;
 const routeUrl = canonicalUrl(`/insights/${data.slug}/`);
 const manualTarget =
   wordpressData && migratedManualTarget(wordpressData.canonical, manual);
@@ -98,7 +114,9 @@ const jsonLd = isPublished
   : breadcrumbJsonLd;
 const description = isPublished
   ? data.description
-  : 'この記事は現在お読みいただけません。ニュース・航空知識の一覧から、ほかの記事をご覧ください。';
+  : isDraftPreview
+    ? data.description || articleExcerpt(article.body) || data.title
+    : 'この記事は現在お読みいただけません。ニュース・航空知識の一覧から、ほかの記事をご覧ください。';
 const wordpressBody =
   wordpressData &&
   rewriteSafetyBlockedDownloads(
@@ -132,7 +150,7 @@ const wordpressBody =
         { label: data.title },
       ]}
     />
-    {isPublished ? (
+    {isPublished || isDraftPreview ? (
       <>
         {manualTarget && (
           <p class="my-6 rounded-lg border border-teal-200 bg-teal-50 p-4">
@@ -156,7 +174,7 @@ const wordpressBody =
           class="border-y border-slate-200 py-7 text-xl leading-9 text-slate-700"
           data-article-section="introduction"
         >
-          <p>{data.description}</p>
+          <p>{description}</p>
         </section>
 
         <div
@@ -170,8 +188,8 @@ const wordpressBody =
                 (_, attr: string, src: string) => `${attr}="${withBase(src)}"`,
               )}
             />
-          ) : cmsData ? (
-            <Fragment set:html={cmsBody} />
+          ) : cmsPages ? (
+            <CmsArticleBody pages={cmsPages} />
           ) : (
             Content && <Content />
           )}
