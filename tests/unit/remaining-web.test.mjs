@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 16);
+  assert.equal(remaining.manuals.length, 17);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    16,
+    17,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -37,6 +37,17 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     if (manual.product_id === 'ts100-m10n') {
       assert.equal(manual.source.page_count, null);
       assert.match(mdx.toString(), /対象はTS100 V2\.0（M10N）です/);
+    }
+    if (manual.product_id === 'd16pro-200') {
+      const text = mdx.toString();
+      assert.equal(manual.unit_ids.length, 74);
+      assert.equal(manual.withheld_unit_ids.length, 58);
+      assert.equal(manual.source_figures_total, 42);
+      assert.match(
+        text,
+        /ディスアームが完了したことを確認[\s\S]*?具体的にいつバッテリーを取り外すかは、原典の記載から確認できていません[\s\S]*?9\. 離陸時/,
+      );
+      assert(!text.includes('Please unplug the battery until'));
     }
     const shown = manual.figures.flatMap(
       (figure) => figure.source_figure_ids ?? [figure.figure_id],
