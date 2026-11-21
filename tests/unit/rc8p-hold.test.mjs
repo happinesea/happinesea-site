@@ -23,6 +23,11 @@ test('RC8P unresolved receiver, fail-safe and update operations remain withheld'
   assert.doesNotMatch(settings, /CH8の左右を120|スロットル出力を停止|4096/);
   assert.match(section(settings, '2.11'), /制御不能に前進または後退/);
   assert.match(receiver, /入力電圧は5 Vを超えない/);
+  assert.doesNotMatch(section(receiver, '1.2.1'), /16色|875～2125|>36 dBm/);
+  assert.match(section(receiver, '1.3.1'), /受信機のアンテナを点検/);
+  assert.match(section(receiver, '1.3.1'), /受信機のアンテナを交換/);
+  assert.doesNotMatch(section(settings, '2.3'), /RC8P-P017-I01/);
+  assert.match(section(settings, '2.4'), /RC8P-P017-I01/);
   assert.match(
     section(receiver, '1.3.5'),
     /電源投入時は自己チェックのためR8FGを動かさないでください/,

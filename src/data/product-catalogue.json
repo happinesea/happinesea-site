@@ -849,7 +849,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/d16pro_200_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/d16pro-200/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/d16pro-200.webp",

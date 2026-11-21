@@ -89,8 +89,8 @@ export const manualCards = models.map((model) => {
         href: m.route,
         label:
           m.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL'
-            ? `${m.source.version} 日本語クイックガイド（確認待ち箇所あり）`
-            : '日本語取扱説明書（確認待ち箇所あり）',
+            ? `${m.source.version} 日本語クイックガイド`
+            : '日本語取扱説明書',
         external: false,
         id: `${model.id}-web-ja-v1`,
       })),
