@@ -7852,11 +7852,11 @@
       "review_projection": {
         "pages": {
           "src/content/docs/manuals/rc8p/chapter-01.mdx": {
-            "sha256": "f82e0d2acbfcd416a90820482084b47a8f217cf5759866213366000e60431f2e",
+            "sha256": "ecf89ce746ba3fd214432b03be6de8c899a69d454cf29667bdcbccff097cb066",
             "headings": 19
           },
           "src/content/docs/manuals/rc8p/chapter-02.mdx": {
-            "sha256": "c63331a8e0234d1520c4bcf67e67d3f71f72d5eddf5df24561649a50e48ab773",
+            "sha256": "2a83d3a01f88a1e703811a173318c4875d70a33a49dfd82868a01f925f7dca8a",
             "headings": 25
           },
           "src/content/docs/manuals/rc8p/chapter-03.mdx": {
