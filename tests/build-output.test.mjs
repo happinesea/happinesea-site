@@ -6,6 +6,7 @@ import { access, readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
+import { gunzipSync } from 'node:zlib';
 import { parse as parseYaml } from 'yaml';
 import {
   canonicalSitemapEntry,
@@ -13,7 +14,10 @@ import {
   verifySitemap,
 } from '../scripts/lib/sitemap.mjs';
 import { manualCanonical } from '../scripts/lib/rc4gs-v2-manual.mjs';
-import { verifyBuiltManualCopy } from '../scripts/lib/manual-public-copy.mjs';
+import {
+  assertPublicManualCopy,
+  verifyBuiltManualCopy,
+} from '../scripts/lib/manual-public-copy.mjs';
 import {
   headingText,
   pageHeading,
@@ -1347,4 +1351,26 @@ test('manual rendering omits editorial states and preserves source safety warnin
     );
     assert.match(d16, /noindex, nofollow/);
   }
+});
+
+test('Pagefind indexes reader-facing manual text', async () => {
+  const directory = new URL('../dist/pagefind/fragment/', import.meta.url);
+  const files = await readdir(directory);
+  let checked = 0;
+  let foundSafetyNotice = false;
+  for (const file of files.filter((entry) => entry.endsWith('.pf_fragment'))) {
+    const bytes = await readFile(new URL(file, directory));
+    const fragment = JSON.parse(
+      gunzipSync(bytes)
+        .toString('utf8')
+        .replace(/^pagefind_dcd/, ''),
+    );
+    if (!fragment.url.includes('/manuals/')) continue;
+    checked++;
+    const text = fragment.content.replaceAll('\u200b', '');
+    assertPublicManualCopy(text, fragment.url);
+    if (text.includes('安全上の注意')) foundSafetyNotice = true;
+  }
+  assert.ok(checked > 0);
+  assert.ok(foundSafetyNotice);
 });

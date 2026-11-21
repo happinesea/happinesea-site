@@ -27,7 +27,7 @@ for (const source of manual.sections) {
 const body = renderSemanticSection(manual, section.id)
   .replaceAll(
     /<p>([^<]+)<\/p>/g,
-    (_, text: string) => `<p>${readerManualCopy(text)}</p>`,
+    (_match: string, text: string) => `<p>${readerManualCopy(text)}</p>`,
   )
   .replaceAll(
     /<img src="(\/assets\/[^"]+)"([^>]+)>/g,
