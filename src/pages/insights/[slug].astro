@@ -52,6 +52,7 @@ export async function getStaticPaths() {
     ...publishedCmsArticles(cmsArticles),
     ...(draftPreview ? [draftPreview] : []),
   ];
+  // Keep the authored lead separate from the generated SEO description.
   const cmsLeads = new Map(
     cmsArticles.map(({ data }) => [data.slug, data.description]),
   );

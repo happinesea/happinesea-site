@@ -214,8 +214,45 @@ test('CMS presentation removes only repetitive opening copy', () => {
     cmsArticlePresentation(['<p>APIs are useful.</p>'], '題名', 'API').lead,
     'API',
   );
-  assert.deepEqual(
-    cmsArticlePresentation(['<h1>題名</h1>', '<p>次。</p>'], '題名', '').pages,
-    ['<h2>題名</h2>', '<p>次。</p>'],
+});
+
+test('a title-only opening page loses its duplicate heading but keeps its page number', () => {
+  const pages = renderCmsArticlePages(
+    '# 記事　&amp; 技術\n\n<!--nextpage-->\n\n本文。\n\n## 次\n\n### 補足',
   );
+  assert.equal(pages.length, 2);
+  assert.deepEqual(cmsArticlePresentation(pages, '記事 & 技術', '本文。'), {
+    pages: ['', pages[1]],
+    lead: '',
+  });
+});
+
+test('a hand-written lead matching the first body paragraph is hidden without changing the body', () => {
+  const pages = renderCmsArticlePages(
+    '最初の段落。\n\n## 見出し\n\n次の段落。',
+  );
+  assert.deepEqual(cmsArticlePresentation(pages, '題名', '最初の段落。'), {
+    pages,
+    lead: '',
+  });
+});
+
+test('a generated 160-character SEO description does not become a separate lead', () => {
+  const entry = {
+    id: input.slug,
+    data: cmsArticleSchema.parse({ ...input, description: '' }),
+    body: 'あ'.repeat(160) + 'ここは概要の切り出し後も本文に残る。',
+  };
+  const [published] = publishedCmsArticles([entry]);
+  assert.equal(published.data.description, 'あ'.repeat(160));
+  assert.equal(entry.data.description, '');
+  const pages = renderCmsArticlePages(entry.body);
+  const presentation = cmsArticlePresentation(
+    pages,
+    entry.data.title,
+    entry.data.description,
+  );
+  assert.deepEqual(presentation, { pages, lead: '' });
+  assert.equal(presentation.pages.length, 1);
+  assert.ok(presentation.pages[0].includes(entry.body));
 });

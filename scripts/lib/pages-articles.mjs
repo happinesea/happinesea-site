@@ -133,14 +133,14 @@ export function cmsArticlePresentation(pages, title, description) {
   const [first, ...remaining] = pages;
   const normalize = (text) => text.replaceAll(/\s+/gu, ' ').trim();
   const heading = first.match(/^\s*<h1>([\s\S]*?)<\/h1>\s*/);
-  const rest = heading ? first.slice(heading[0].length) : '';
   const opening =
-    heading && rest.trim() && metadataText(heading[1]) === normalize(title)
-      ? rest
+    heading && metadataText(heading[1]) === normalize(title)
+      ? first.slice(heading[0].length)
       : first;
   const lead = normalize(description);
+  const leadOpening = opening || remaining[0] || '';
   const paragraphs =
-    opening.match(/^(?:\s*<p>(?:(?!<\/p>)[\s\S])*<\/p>)+/)?.[0] ?? '';
+    leadOpening.match(/^(?:\s*<p>(?:(?!<\/p>)[\s\S])*<\/p>)+/)?.[0] ?? '';
   let joined = '';
   let spaced = '';
   let duplicateLead = lead === normalize(title);
