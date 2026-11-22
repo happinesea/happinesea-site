@@ -210,4 +210,12 @@ test('CMS presentation removes only repetitive opening copy', () => {
     cmsArticlePresentation(['<p>本文。</p>'], '題名', '題名').lead,
     '',
   );
+  assert.equal(
+    cmsArticlePresentation(['<p>APIs are useful.</p>'], '題名', 'API').lead,
+    'API',
+  );
+  assert.deepEqual(
+    cmsArticlePresentation(['<h1>題名</h1>', '<p>次。</p>'], '題名', '').pages,
+    ['<h2>題名</h2>', '<p>次。</p>'],
+  );
 });

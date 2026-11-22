@@ -131,25 +131,36 @@ export function renderCmsArticlePages(body = '', base = '/') {
 
 export function cmsArticlePresentation(pages, title, description) {
   const [first, ...remaining] = pages;
-  const normalize = (text) => text.replaceAll(/\s+/gu, '');
+  const normalize = (text) => text.replaceAll(/\s+/gu, ' ').trim();
   const heading = first.match(/^\s*<h1>([\s\S]*?)<\/h1>\s*/);
+  const rest = heading ? first.slice(heading[0].length) : '';
   const opening =
-    heading && normalize(metadataText(heading[1])) === normalize(title)
-      ? first.slice(heading[0].length)
+    heading && rest.trim() && metadataText(heading[1]) === normalize(title)
+      ? rest
       : first;
+  const lead = normalize(description);
   const paragraphs =
     opening.match(/^(?:\s*<p>(?:(?!<\/p>)[\s\S])*<\/p>)+/)?.[0] ?? '';
-  const lead = normalize(description);
+  let joined = '';
+  let spaced = '';
+  let duplicateLead = lead === normalize(title);
+
+  for (const [, html] of paragraphs.matchAll(/<p>([\s\S]*?)<\/p>/g)) {
+    const paragraph = metadataText(html);
+    joined += paragraph;
+    spaced = spaced ? spaced + ' ' + paragraph : paragraph;
+    if (lead === joined || lead === spaced) {
+      duplicateLead = true;
+      break;
+    }
+    if (joined.length > lead.length) break;
+  }
+
   return {
     pages: [opening, ...remaining].map((page) =>
       page.replaceAll(/<(\/?)h1>/g, '<$1h2>'),
     ),
-    lead:
-      lead &&
-      lead !== normalize(title) &&
-      !normalize(metadataText(paragraphs)).startsWith(lead)
-        ? description
-        : '',
+    lead: duplicateLead ? '' : description,
   };
 }
 

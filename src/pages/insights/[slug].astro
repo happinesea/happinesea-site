@@ -29,6 +29,7 @@ import {
 } from '../../../scripts/lib/rc4gs-v2-manual.mjs';
 
 interface Props {
+  cmsLead?: string;
   article:
     | CollectionEntry<'insights'>
     | CollectionEntry<'wordpressInsights'>
@@ -51,6 +52,9 @@ export async function getStaticPaths() {
     ...publishedCmsArticles(cmsArticles),
     ...(draftPreview ? [draftPreview] : []),
   ];
+  const cmsLeads = new Map(
+    cmsArticles.map(({ data }) => [data.slug, data.description]),
+  );
   const slugs = new Set<string>();
   for (const { data } of insights) {
     const routeSlug = decodeURIComponent(data.slug);
@@ -60,11 +64,17 @@ export async function getStaticPaths() {
   }
   return insights.map((article) => ({
     params: { slug: decodeURIComponent(article.data.slug) },
-    props: { article },
+    props: {
+      article,
+      cmsLead:
+        article.collection === 'cmsArticles'
+          ? cmsLeads.get(article.data.slug)
+          : undefined,
+    },
   }));
 }
 
-const { article } = Astro.props;
+const { article, cmsLead = '' } = Astro.props;
 const { data } = article;
 const isWordpress = article.collection === 'wordpressInsights';
 const wordpressData =
@@ -119,7 +129,7 @@ const description = isPublished
     ? data.description || articleExcerpt(article.body) || data.title
     : 'この記事は現在お読みいただけません。ニュース・航空知識の一覧から、ほかの記事をご覧ください。';
 const cmsPresentation = cmsPages
-  ? cmsArticlePresentation(cmsPages, data.title, description)
+  ? cmsArticlePresentation(cmsPages, data.title, cmsLead)
   : undefined;
 const wordpressBody =
   wordpressData &&
