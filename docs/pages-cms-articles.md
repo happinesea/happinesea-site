@@ -69,3 +69,40 @@ CMS管理MarkdownはGUIのserializerを原本とし、Prettierによる書換を
 ## 本文へ画像を入れる操作
 
 画像挿入は文字選択時のツールバーとは別の入口です。[本文画像の操作手順](pages-cms-body-images.md)の順序で、空段落の半角`/`→**Image**を使用してください。本文のラベルにも入口を表示します。ALTは画像クリック→**ALT**→説明→チェックマーク→記事の**Save**で設定・再編集します。
+
+## 記事の改ページとローカル確認
+
+Markdown本文のトップレベルに `<!--nextpage-->` を単独の行として置き、
+前後を空行で区切ります。本文の下に「前へ・ページ番号・次へ」が表示されます。
+2ページ目を直接開くときは記事URLに `?page=2` を付けます。
+静的サイトのため、クエリに合わせた本文の切り替えにはJavaScriptが必要です。
+canonical URLは記事全体のURLです。
+
+下書きの確認にはPowerShellで次を実行します。指定したslugだけを
+ローカルの開発サーバーで確認でき、記事の公開状態を変更する必要はありません。
+
+```powershell
+$env:CMS_ARTICLE_LOCAL_PREVIEW = 'japan-hypersonic-missile-technology-challenges-2026'
+npm run dev -- --host 127.0.0.1 --port 4326
+```
+
+[対象記事の1ページ目](http://127.0.0.1:4326/happinesea-site/insights/japan-hypersonic-missile-technology-challenges-2026/)、
+[2ページ目](http://127.0.0.1:4326/happinesea-site/insights/japan-hypersonic-missile-technology-challenges-2026/?page=2)。
+
+同じ環境変数で、デスクトップとスマートフォンのPlaywright検証を実行できます。
+
+```powershell
+npm run test:e2e -- tests/e2e/cms-article-pagination.spec.ts
+```
+
+本番設定で生成した静的サイトをローカルで配信し、下書きのURLが
+404になることを確認します。この手順ではデプロイ処理を実行しません。
+
+```powershell
+$env:PUBLICATION_MODE = 'production'
+try {
+  npm run test:e2e -- tests/e2e/cms-article-pagination.spec.ts
+} finally {
+  Remove-Item Env:PUBLICATION_MODE, Env:CMS_ARTICLE_LOCAL_PREVIEW -ErrorAction SilentlyContinue
+}
+```
