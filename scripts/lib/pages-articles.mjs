@@ -129,6 +129,30 @@ export function renderCmsArticlePages(body = '', base = '/') {
   return pages.length ? pages : [''];
 }
 
+export function cmsArticlePresentation(pages, title, description) {
+  const [first, ...remaining] = pages;
+  const normalize = (text) => text.replaceAll(/\s+/gu, '');
+  const heading = first.match(/^\s*<h1>([\s\S]*?)<\/h1>\s*/);
+  const opening =
+    heading && normalize(metadataText(heading[1])) === normalize(title)
+      ? first.slice(heading[0].length)
+      : first;
+  const paragraphs =
+    opening.match(/^(?:\s*<p>(?:(?!<\/p>)[\s\S])*<\/p>)+/)?.[0] ?? '';
+  const lead = normalize(description);
+  return {
+    pages: [opening, ...remaining].map((page) =>
+      page.replaceAll(/<(\/?)h1>/g, '<$1h2>'),
+    ),
+    lead:
+      lead &&
+      lead !== normalize(title) &&
+      !normalize(metadataText(paragraphs)).startsWith(lead)
+        ? description
+        : '',
+  };
+}
+
 function sanitizeCmsArticleHtml(html, base) {
   return sanitizeHtml(html, {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],

@@ -15,6 +15,7 @@ import { createSatteriMarkdownProcessor } from '@astrojs/markdown-satteri';
 import {
   cmsArticleSchema,
   renderCmsArticlePages,
+  cmsArticlePresentation,
   publishedCmsArticles,
   cmsArticleImages,
   finalizeCmsArticleImages,
@@ -184,4 +185,29 @@ test('pagination uses standalone Markdown markers and preserves shared link refe
   assert.doesNotMatch(pages[0], /Second/);
   assert.match(pages[1], /<h2[^>]*>Second<\/h2>/);
   assert.deepEqual(renderCmsArticlePages(''), ['']);
+});
+
+test('CMS presentation removes only repetitive opening copy', () => {
+  const pages = [
+    '<h1>記事 &amp; 技術</h1>\n<p>冒頭。</p>\n<p>続き。</p>',
+    '<h2>次</h2>',
+  ];
+  assert.deepEqual(
+    cmsArticlePresentation(pages, '記事 & 技術', '冒頭。続き。'),
+    {
+      pages: ['<p>冒頭。</p>\n<p>続き。</p>', '<h2>次</h2>'],
+      lead: '',
+    },
+  );
+  assert.deepEqual(cmsArticlePresentation(pages, '別の題名', '固有の要約。'), {
+    pages: [
+      '<h2>記事 &amp; 技術</h2>\n<p>冒頭。</p>\n<p>続き。</p>',
+      '<h2>次</h2>',
+    ],
+    lead: '固有の要約。',
+  });
+  assert.equal(
+    cmsArticlePresentation(['<p>本文。</p>'], '題名', '題名').lead,
+    '',
+  );
 });

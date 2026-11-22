@@ -7,16 +7,24 @@ const { pages } = Astro.props;
 ---
 
 {pages.length === 1 ? (
-  <Fragment set:html={pages[0]} />
+  <div class="cms-copy" set:html={pages[0]} />
 ) : (
   <div data-cms-pagination>
     {pages.map((html, index) => (
-      <div data-page-body hidden={index !== 0} set:html={html} />
+      <div
+        class="cms-copy"
+        data-page-body
+        hidden={index !== 0}
+        set:html={html}
+      />
     ))}
-    <nav class="mt-8" aria-label="記事のページ">
-      <ul class="flex list-none flex-wrap items-center gap-2 p-0">
+    <nav class="mt-8 border-t border-slate-200 pt-4" aria-label="記事のページ">
+      <ul class="m-0 flex list-none flex-wrap items-center gap-2 p-0">
         <li data-page-previous hidden>
-          <a href="?page=1" class="inline-block px-3 py-2 underline">
+          <a
+            href="?page=1"
+            class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-slate-300 px-3 text-teal-800 underline"
+          >
             前へ
           </a>
         </li>
@@ -24,7 +32,7 @@ const { pages } = Astro.props;
           <li>
             <a
               href={`?page=${index + 1}`}
-              class="inline-block px-3 py-2 underline aria-[current=page]:rounded aria-[current=page]:bg-teal-50 aria-[current=page]:font-bold"
+              class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-slate-300 px-3 text-teal-800 underline aria-[current=page]:border-teal-700 aria-[current=page]:bg-teal-50 aria-[current=page]:font-bold"
               aria-current={index === 0 ? 'page' : undefined}
             >
               {index + 1}
@@ -32,7 +40,10 @@ const { pages } = Astro.props;
           </li>
         ))}
         <li data-page-next>
-          <a href="?page=2" class="inline-block px-3 py-2 underline">
+          <a
+            href="?page=2"
+            class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-slate-300 px-3 text-teal-800 underline"
+          >
             次へ
           </a>
         </li>
@@ -87,3 +98,72 @@ const { pages } = Astro.props;
     window.addEventListener('popstate', showPage);
   }
 </script>
+
+<style>
+  .cms-copy {
+    overflow-x: auto;
+    font-size: clamp(1rem, 0.94rem + 0.28vw, 1.125rem);
+    line-height: 1.85;
+  }
+
+  .cms-copy :global(:is(h2, h3)) {
+    scroll-margin-top: 5rem;
+  }
+
+  .cms-copy :global(h2),
+  .cms-copy :global(h3) {
+    margin: 1.65em 0 0.55em;
+    line-height: 1.4;
+    color: var(--color-ink-950);
+  }
+
+  .cms-copy :global(h2) {
+    font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  }
+
+  .cms-copy :global(h3) {
+    font-size: 1.125rem;
+  }
+
+  .cms-copy :global(p) {
+    margin: 0 0 1em;
+  }
+
+  .cms-copy :global(a) {
+    color: var(--site-accent-strong);
+    text-underline-offset: 0.16em;
+  }
+
+  .cms-copy :global(blockquote) {
+    margin: 1.4em 0;
+    padding: 0.75em 1em;
+    border-inline-start: 3px solid var(--site-accent);
+    background: var(--site-surface);
+  }
+
+  .cms-copy :global(blockquote > :last-child) {
+    margin-block-end: 0;
+  }
+
+  .cms-copy :global(figure) {
+    margin: 1.5em 0;
+  }
+
+  .cms-copy :global(img) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .cms-copy :global(figcaption) {
+    margin-top: 0.45em;
+    color: var(--site-muted);
+    font-size: 0.875rem;
+  }
+
+  .cms-copy :global(pre) {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+</style>

@@ -3,13 +3,15 @@ import type { CollectionEntry } from 'astro:content';
 import ResponsiveMedia from './ResponsiveMedia.astro';
 
 interface Props {
+  cms?: boolean;
+  lead?: string;
   article:
     | CollectionEntry<'insights'>['data']
     | CollectionEntry<'wordpressInsights'>['data']
     | CollectionEntry<'cmsArticles'>['data'];
 }
 
-const { article } = Astro.props;
+const { article, cms = false, lead } = Astro.props;
 const media = article.hero
   ? {
       src: article.hero.src ?? undefined,
@@ -26,22 +28,35 @@ const published = article.published_at.toLocaleDateString('ja-JP', {
 });
 ---
 
-<header class="py-10 lg:py-16">
+<header class={cms ? 'pt-6 pb-4 sm:pt-8' : 'py-10 lg:py-16'}>
   <p class="mb-3 text-sm font-bold tracking-[0.14em] text-teal-700 uppercase">
     {article.topic}
   </p>
-  <h1 class="m-0 max-w-4xl text-4xl leading-tight font-bold tracking-tight text-slate-950 sm:text-6xl">
+  <h1
+    class:list={[
+      'm-0 max-w-4xl leading-tight font-bold tracking-tight text-slate-950',
+      cms ? 'text-[clamp(1.875rem,4vw,3rem)]' : 'text-4xl sm:text-6xl',
+    ]}
+  >
     {article.title}
   </h1>
   <time
-    class="mt-5 block text-sm text-slate-500"
+    class:list={['block text-sm text-slate-500', cms ? 'mt-3' : 'mt-5']}
     datetime={article.published_at.toISOString()}
   >
     {published}
   </time>
+  {lead && (
+    <p
+      data-article-section="introduction"
+      class="mt-4 mb-0 text-base leading-relaxed text-slate-700 sm:text-lg"
+    >
+      {lead}
+    </p>
+  )}
   <ResponsiveMedia
     media={media}
-    class="mt-10 min-h-72"
+    class={cms ? 'mt-5 block' : 'mt-10 min-h-72'}
     eager
     placeholderLabel="記事画像は表示できません"
   />
