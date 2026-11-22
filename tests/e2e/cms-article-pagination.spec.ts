@@ -11,6 +11,7 @@ const publicArticle =
 
 test('draft preview paginates the article and follows browser history', async ({
   page,
+  isMobile,
 }) => {
   test.skip(!localDraftPreview, 'Requires the local draft preview.');
   const markdown = await readFile(`src/content/articles/${slug}.md`, 'utf8');
@@ -19,7 +20,12 @@ test('draft preview paginates the article and follows browser history', async ({
     .map((part) => part.match(/^## (.+)$/m)?.[1]);
   expect(firstHeadings.length).toBeGreaterThan(1);
 
+  await page.setViewportSize(
+    isMobile ? { width: 390, height: 844 } : { width: 1440, height: 900 },
+  );
   await page.goto(article);
+  await expect(page.locator('article h1')).toHaveCount(1);
+  await expect(page.locator('[data-article-section="related"]')).toHaveCount(0);
   const body = page.locator('[data-article-section="body"]');
   const sections = body.locator('[data-page-body]');
   const nav = page.getByRole('navigation', { name: '記事のページ' });
@@ -41,6 +47,10 @@ test('draft preview paginates the article and follows browser history', async ({
   await expect(sections.nth(1)).toBeHidden();
   await expect(selected).toHaveText('1');
   await expect(previous).toBeHidden();
+  expect((await next.boundingBox())?.height).toBeGreaterThanOrEqual(44);
+  await selected.focus();
+  await page.keyboard.press('Tab');
+  await expect(nav.getByRole('link', { name: '2', exact: true })).toBeFocused();
 
   await next.click();
   await expect(page).toHaveURL(/\?page=2$/);
@@ -72,6 +82,7 @@ test('draft preview paginates the article and follows browser history', async ({
     )
     .toBeGreaterThan(0);
 
+  if (isMobile) await page.setViewportSize({ width: 360, height: 800 });
   const last = String(firstHeadings.length);
   await nav.getByRole('link', { name: last, exact: true }).click();
   await expect(selected).toHaveText(last);
@@ -96,6 +107,10 @@ test('public articles without a marker retain their body, media, SEO and listing
   page,
 }) => {
   await page.goto(publicArticle + '?page=2');
+  await expect(page.locator('article h1')).toHaveCount(1);
+  await expect(
+    page.locator('[data-article-section="introduction"]'),
+  ).toHaveCount(0);
   const body = page.locator('[data-article-section="body"]');
   await expect(body.getByRole('heading')).toHaveCount(6);
   await expect(body.getByRole('heading').last()).toBeVisible();
