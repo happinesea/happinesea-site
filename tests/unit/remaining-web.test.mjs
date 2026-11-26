@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 17);
+  assert.equal(remaining.manuals.length, 19);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    17,
+    19,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -37,6 +37,10 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     if (manual.product_id === 'ts100-m10n') {
       assert.equal(manual.source.page_count, null);
       assert.match(mdx.toString(), /対象はTS100 V2\.0（M10N）です/);
+    }
+    if (manual.product_id === 'd460') {
+      assert.match(mdx.toString(), /^## 第1章 D460の概要$/m);
+      assert.match(mdx.toString(), /^## D460（PNP）取扱説明書$/m);
     }
     if (manual.product_id === 'd16pro-200') {
       const text = mdx.toString();

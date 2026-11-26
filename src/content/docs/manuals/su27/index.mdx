@@ -1,0 +1,489 @@
+---
+title: SU27 日本語取扱説明書
+description: Radiolink SU27 の公式英語取扱説明書に対応する日本語版です。
+product: su27
+slug: manuals/su27
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/a405d9f5a6b801e19e904008cc63b6b5.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/su27/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink SU27 公式英語取扱説明書（文書版・発行日不明、23頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="su27-p1-body" data-translation-unit="su27-p1-body"></span>
+
+SU27 取扱説明書
+
+<span id="su27-p1-f1-unit" data-translation-unit="su27-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/su27/web-ja-v1/su27-p1-f1.png" width={563} height={169} figureId="su27-p1-f1" alt={"RadioLinkロゴ"} caption={"RadioLinkロゴ"} />
+
+<span id="su27-p1-f2-unit" data-translation-unit="su27-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/su27/web-ja-v1/su27-p1-f2.jpeg" width={1000} height={670} figureId="su27-p1-f2" alt={"SU27の機体外観"} caption={"SU27の機体外観"} />
+
+<span id="su27-p1-f3-unit" data-translation-unit="su27-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/su27/web-ja-v1/su27-p1-f3.jpeg" width={640} height={380} figureId="su27-p1-f3" alt={"対象年齢14歳以上の表示"} caption={"対象年齢14歳以上の表示"} />
+
+<span id="su27-p2-body" data-translation-unit="su27-p2-body"></span>
+
+SU27（RTF）目次
+免責事項と警告 … 3
+同梱品一覧 … 4
+第1章 SU27の概要 … 5
+1.1 SU27の概要 … 5
+1.2 SU27の各部品の使い方 … 5
+1.2.1 使用上の注意 … 5
+1.2.2 送信機と受信機 … 5
+1.2.3 フライトコントローラー Byme-DB … 7
+1.2.4 モーター … 7
+1.2.5 ESC … 7
+1.2.6 サーボ … 8
+1.2.7 プロペラ … 8
+1.2.8 バッテリー … 8
+1.2.9 充電器 … 8
+第2章 フライトモードの設定 … 10
+第3章 モーターの安全ロック … 11
+第4章 送信機の設定 … 11
+第5章 飛行時の注意 … 12
+第6章 電源投入とジャイロの自己診断 … 12
+第7章 姿勢キャリブレーション … 12
+第8章 サーボの動作方向 … 13
+8.1 サーボの動作方向の確認 … 13
+8.2 サーボの動作方向の調整 … 13
+第9章 3つのフライトモード … 14
+9.1 スタビライズモード … 14
+9.2 ジャイロモード … 16
+9.3 マニュアルモード … 16
+第10章 ジャイロ感度 … 16
+SU27にはRTF版とPNP版の2種類があります。RTF版は本書の印刷頁3～16、PNP版は印刷頁17～22を参照してください。
+
+<span id="su27-p3-body" data-translation-unit="su27-p3-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p4-body" data-translation-unit="su27-p4-body"></span>
+
+免責事項と警告
+
+RadioLinkの固定翼機SU27をお買い上げいただき、ありがとうございます。
+本製品の機能を十分に活用し、安全を確保するため、本書をよく読み、記載の手順に従って設定してください。本製品は玩具ではなく、14歳未満のお子様には適していません。成人の方は本製品をお子様の手の届かない場所に保管し、お子様がいる場所で操作するときは十分注意してください。
+
+不適切な操作は、財産上の損失や、事故によって生命が脅かされる事態につながるおそれがあります。RadioLink製品を操作した時点で、操作者はこの責任制限を理解し、操作に伴う責任を引き受けることに同意したものとします。現地の法令を必ず守り、RadioLinkが定める原則に従ってください。
+
+飛行記録が提供されない場合、RadioLinkは製品の損傷や事故原因を分析できず、アフターサービスを提供できません。法令で認められる最大限の範囲において、RadioLinkは、購入、操作、または操作不能に伴う損失を含め、間接的、結果的、偶発的、特別または懲罰的な損害による損失について、事前に損失の可能性を知らされていた場合でも、一切責任を負いません。
+
+一部の国では、法律により保証条項に基づく免責が禁じられる場合があります。このため、消費者の権利は国によって異なる場合があります。RadioLinkは法令に従い、上記の条件を解釈する権利を留保します。RadioLinkは、事前の通知なく本条件を更新、変更または終了する権利を留保します。
+
+警告
+
+1. 雨天時は飛行させないでください。雨や湿気によって飛行が不安定になり、操縦不能に至ることがあります。雷が発生しているときは絶対に飛行させないでください。雨、霧、雷、風のない良好な天候で飛行させることを推奨します。
+2. 飛行時は現地の法令を厳守し、安全に飛行させてください。空港や軍事基地など、飛行が禁止されている区域で飛行させないでください。
+3. 人が集まる場所や建物から離れた、開けた場所で飛行させてください。
+4. 飲酒時、疲労時、その他精神状態がすぐれないときは操作しないでください。取扱説明書の指示を厳守して操作してください。
+5. 高圧電線、高圧送電施設、携帯電話基地局、テレビ放送塔などの電磁干渉源の近くで飛行するときは注意してください。このような場所では、干渉によって送信機の無線伝送性能が影響を受ける場合があります。干渉が強いと、送信機と受信機の間の信号伝送が途絶え、墜落するおそれがあります。
+
+<span id="su27-p5-body" data-translation-unit="su27-p5-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p5-f1-unit" data-translation-unit="su27-p5-f1-unit"></span>
+
+<span id="su27-p5-f2-unit" data-translation-unit="su27-p5-f2-unit"></span>
+
+<span id="su27-p5-f3-unit" data-translation-unit="su27-p5-f3-unit"></span>
+
+<span id="su27-p5-f4-unit" data-translation-unit="su27-p5-f4-unit"></span>
+
+<span id="su27-p5-f5-unit" data-translation-unit="su27-p5-f5-unit"></span>
+
+<span id="su27-p5-f6-unit" data-translation-unit="su27-p5-f6-unit"></span>
+
+<span id="su27-p5-f7-unit" data-translation-unit="su27-p5-f7-unit"></span>
+
+<span id="su27-p5-f8-unit" data-translation-unit="su27-p5-f8-unit"></span>
+
+<span id="su27-p5-f9-unit" data-translation-unit="su27-p5-f9-unit"></span>
+
+<span id="su27-p5-f10-unit" data-translation-unit="su27-p5-f10-unit"></span>
+
+<span id="su27-p5-f11-unit" data-translation-unit="su27-p5-f11-unit"></span>
+
+<span id="su27-p5-f12-unit" data-translation-unit="su27-p5-f12-unit"></span>
+
+<span id="su27-p5-f13-unit" data-translation-unit="su27-p5-f13-unit"></span>
+
+<span id="su27-p5-f14-unit" data-translation-unit="su27-p5-f14-unit"></span>
+
+<span id="su27-p5-f15-unit" data-translation-unit="su27-p5-f15-unit"></span>
+
+<span id="su27-p5-f16-unit" data-translation-unit="su27-p5-f16-unit"></span>
+
+<span id="su27-p5-f17-unit" data-translation-unit="su27-p5-f17-unit"></span>
+
+<span id="su27-p5-f18-unit" data-translation-unit="su27-p5-f18-unit"></span>
+
+<span id="su27-p6-body" data-translation-unit="su27-p6-body"></span>
+
+第1章 SU27の概要
+
+1.1 SU27の概要
+
+
+
+1.2 SU27の各部品の使い方
+
+1.2.1 使用上の注意
+
+SU27の内部に水、油、砂などの異物が入っていないことを確認してください。SU27、送信機、バッテリーを含め、すべての機器が正常に機能することを確認してください。機体や関連部品を独自に改造しないでください。機能に影響し、飛行中の事故につながるおそれがあります。
+
+1.2.2 送信機と受信機
+
+SU27のRTF（Ready To Fly）版には、RadioLinkの8チャンネル送信機T8Sと小型受信機R8XMが付属します。安定した操縦距離は最大4,000 mで、リアルタイムテレメトリー機能を内蔵しています。最大距離は障害物と電波干渉のない場所で測定した値で、現地の法令によって異なる場合があります。
+
+<span id="su27-p6-f1-unit" data-translation-unit="su27-p6-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p6-f2-unit" data-translation-unit="su27-p6-f2-unit"></span>
+
+<span id="su27-p7-body" data-translation-unit="su27-p7-body"></span>
+
+PNP版を購入した場合は、使用する送信機と受信機の説明書を参照してください。
+
+スティックモード
+
+初心者は、各スティックとチャンネルの対応を理解し、自分に合ったモードを選ぶことが重要です。スロットルはスティックの上下で操作します。最上端が最大100%、最下端が最小0%です。以下はスロットルスティックが左側にあるMODE 2の例です。
+
+- 左スティック：上下でモーターを制御します。上げると加速し、下げると減速します。左右に倒してもSU27の操舵面は動きません。
+- 右スティック：上下でSU27のエレベーターミキシング、左右でエルロンミキシングを操作します。
+
+T8S送信機の使い方
+
+- 送信機のバッテリーが満充電であることを確認してください。T8Sの電池残量はLED表示で確認できます。LED 1灯が25%を示し、4灯すべてが点灯している場合は満充電です。
+- 送信機を変更した場合は、使用前にバインドをやり直してください。詳細はRadioLink公式サイトのT8S取扱説明書を参照してください。https://www.radiolink.com/t8s_manual
+- 着陸時は送信機より先にSU27の電源を切ってください。
+
+SU27に標準で付属するR8XM受信機は、RSSI、受信機電圧、機体電圧をリアルタイムに送信します。テレメトリーの通信距離は操縦距離と同じ4,000 mです。R8XMは最大6S（25.2 V）のバッテリー電圧のテレメトリーに対応します。R8XMと他の機器の接続は、1.2.3「フライトコントローラー Byme-DB」を参照してください。
+
+受信したRSSI、受信機電圧、機体電圧が設定した警報値を下回ると、送信機が警報音を鳴らします。
+
+1. 送信機の低電圧警報：DDDDという短い音がすばやく連続します。T8Sはバッテリーを内蔵しています。警報電圧の既定値は3.7 Vで変更できません。
+2. 機体の低電圧警報：DDDの3回を1組とする警報音が連続します。
+3. 低RSSI警報：DDDDの4回を1組とする警報音が連続します。
+4. 受信機の低電圧警報：DDDDDの5回を1組とする警報音が連続します。
+
+機体電圧の警報値は既定で7.4 V（2Sバッテリー）です。SU27のバッテリー電圧が7.4 Vを下回ると、送信機がDDDと3回鳴って警告します。R8XM受信機の詳細はRadioLink公式サイトの取扱説明書を参照してください。https://www.radiolink.com/r8xm_manual
+
+:::caution[受信機の電圧測定範囲]
+6S（25.2 V）はR8XM受信機の電圧テレメトリーの測定上限です。この値を基準に機体の動力用バッテリーを選ばないでください。
+:::
+
+<span id="su27-p7-f1-unit" data-translation-unit="su27-p7-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/su27/web-ja-v1/su27-p7-f1.jpeg" width={988} height={372} figureId="su27-p7-f1" alt={"Mode 2のT8S。左上下はスロットル、右上下はエレベーターミキシング、右左右はエルロンミキシング"} caption={"Mode 2のT8S。左上下はスロットル、右上下はエレベーターミキシング、右左右はエルロンミキシング"} />
+
+<span id="su27-p8-body" data-translation-unit="su27-p8-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p8-safety-warning" data-translation-unit="su27-p8-safety-warning"></span>
+
+:::caution[注意]
+2. モーターの構造を独自に変更しないでください。
+3. モーターが回転を停止した直後に触れないでください。やけどのおそれがあります。
+4. モーターの通気口をふさがないでください。モーターの内部に異物が入っていないことを確認してください。
+5. SU27と送信機の電源を切る前に、モーターが完全に停止したことを確認してください。
+:::
+
+<span id="su27-p8-body-tail" data-translation-unit="su27-p8-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p8-f1-unit" data-translation-unit="su27-p8-f1-unit"></span>
+
+<span id="su27-p9-body" data-translation-unit="su27-p9-body"></span>
+
+<span id="su27-p9-condition-warning" data-translation-unit="su27-p9-condition-warning"></span>
+
+:::caution[注意]
+1. 飛行前にプロペラの状態を確認してください。劣化、損傷、変形がある場合は、正常なプロペラに交換してから飛行させてください。
+:::
+
+<span id="su27-p9-safety-warning" data-translation-unit="su27-p9-safety-warning"></span>
+
+:::caution[注意]
+2. プロペラに触れる前に必ず電源を切り離してください。
+:::
+
+<span id="su27-p9-rotating-warning" data-translation-unit="su27-p9-rotating-warning"></span>
+
+:::caution[注意]
+3. プロペラは薄いため、必要に応じて工具で取り付け、取り外しを行い、誤って傷を付けないよう注意してください。
+4. 飛行前にプロペラが正しく、しっかり固定されていることを確認してください。
+5. 切り傷を防ぐため、回転中のプロペラやモーターに近づかないでください。原典の例である着陸中の機体へ手を伸ばす場合も、この注意が当てはまります。
+:::
+
+<span id="su27-p9-body-tail" data-translation-unit="su27-p9-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p9-f1-unit" data-translation-unit="su27-p9-f1-unit"></span>
+
+<span id="su27-p10-body" data-translation-unit="su27-p10-body"></span>
+
+<span id="su27-p10-f1-unit" data-translation-unit="su27-p10-f1-unit"></span>
+
+<span id="su27-p11-body" data-translation-unit="su27-p11-body"></span>
+
+## 第2章 フライトモードの設定
+
+<span id="su27-p11-f1-unit" data-translation-unit="su27-p11-f1-unit"></span>
+
+<span id="su27-p11-f2-unit" data-translation-unit="su27-p11-f2-unit"></span>
+
+<span id="su27-p12-body" data-translation-unit="su27-p12-body"></span>
+
+## 第3章 モーターのセーフティロック
+
+## 第4章 送信機の設定
+
+<span id="su27-p12-f1-unit" data-translation-unit="su27-p12-f1-unit"></span>
+
+<span id="su27-p12-f2-unit" data-translation-unit="su27-p12-f2-unit"></span>
+
+<span id="su27-p13-body-mixing" data-translation-unit="su27-p13-body-mixing"></span>
+
+:::caution[注意]
+注意：Byme-DBを機体に搭載しているときは、送信機側でミキシングを設定しないでください。Byme-DBにはすでにミキシングが組み込まれており、機体のフライトモードに応じて自動で機能します。送信機側でも設定するとミキシングが競合して飛行に影響します。
+:::
+
+<span id="su27-p13-body" data-translation-unit="su27-p13-body"></span>
+
+## 第5章 飛行時の注意事項
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p13-body-preflight" data-translation-unit="su27-p13-body-preflight"></span>
+
+:::caution[注意]
+1. 離陸前に全部品が正常に動作することを確認してください。
+2. 離陸前にバッテリーが満充電で、機体にしっかり固定されていることを確認してください。
+3. プロペラの表裏が正しく、傾かずに取り付けられていることを確認してください。
+:::
+
+<span id="su27-p13-body-safety-remainder" data-translation-unit="su27-p13-body-safety-remainder"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p13-safety-warning" data-translation-unit="su27-p13-safety-warning"></span>
+
+:::caution[注意]
+7. 飛行中に異常が生じたら、すぐに着陸して原因を調べてください。
+:::
+
+<span id="su27-p13-body-tail" data-translation-unit="su27-p13-body-tail"></span>
+
+## 第6章 電源投入とジャイロの自己診断
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p13-body-tail-throttle" data-translation-unit="su27-p13-body-tail-throttle"></span>
+
+:::caution[注意]
+注意：先に送信機のスロットルスティックを最下位置にしてから機体の電源を入れてください。スロットルを最上位置にしてから機体の電源を入れると、ESCはキャリブレーションモードに入ります。
+:::
+
+<span id="su27-p13-body-tail-safety-remainder" data-translation-unit="su27-p13-body-tail-safety-remainder"></span>
+
+## 第7章 姿勢キャリブレーション
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p13-f1-unit" data-translation-unit="su27-p13-f1-unit"></span>
+
+<span id="su27-p14-body" data-translation-unit="su27-p14-body"></span>
+
+## 第8章 サーボの動作方向
+
+### 8.1 サーボの動作方向の確認
+
+### 8.2 サーボの動作方向の調整
+
+<span id="su27-p14-f1-unit" data-translation-unit="su27-p14-f1-unit"></span>
+
+<span id="su27-p14-f2-unit" data-translation-unit="su27-p14-f2-unit"></span>
+
+<span id="su27-p15-body" data-translation-unit="su27-p15-body"></span>
+
+## 第9章 3種類のフライトモード
+
+### 9.1 スタビライズモード
+
+<span id="su27-p15-f1-unit" data-translation-unit="su27-p15-f1-unit"></span>
+
+<span id="su27-p16-body" data-translation-unit="su27-p16-body"></span>
+
+<span id="su27-p16-f1-unit" data-translation-unit="su27-p16-f1-unit"></span>
+
+<span id="su27-p16-f2-unit" data-translation-unit="su27-p16-f2-unit"></span>
+
+<span id="su27-p16-f3-unit" data-translation-unit="su27-p16-f3-unit"></span>
+
+<span id="su27-p17-body" data-translation-unit="su27-p17-body"></span>
+
+### 9.2 ジャイロモード
+
+### 9.3 マニュアルモード
+
+## 第10章 ジャイロ感度
+
+<span id="su27-p17-f1-unit" data-translation-unit="su27-p17-f1-unit"></span>
+
+<span id="su27-p18-body" data-translation-unit="su27-p18-body"></span>
+
+## 免責事項と警告
+
+## 梱包内容
+
+## 第1章 SU27の概要
+
+### 1.1 SU27の概要と各機器の使用方法
+
+### 1.2 受信機の接続
+
+<span id="su27-p19-body" data-translation-unit="su27-p19-body"></span>
+
+## 第2章 飛行モードの設定
+
+## 第3章 モーターの安全ロック
+
+<span id="su27-p19-f1-unit" data-translation-unit="su27-p19-f1-unit"></span>
+
+<span id="su27-p19-f2-unit" data-translation-unit="su27-p19-f2-unit"></span>
+
+<span id="su27-p20-body" data-translation-unit="su27-p20-body"></span>
+
+### モーターの安全ロック（続き）
+
+## 第4章 送信機の設定
+
+### 4.1 モデルタイプの設定
+
+<span id="su27-p20-f1-unit" data-translation-unit="su27-p20-f1-unit"></span>
+
+<span id="su27-p20-f2-unit" data-translation-unit="su27-p20-f2-unit"></span>
+
+<span id="su27-p20-f3-unit" data-translation-unit="su27-p20-f3-unit"></span>
+
+<span id="su27-p21-body" data-translation-unit="su27-p21-body"></span>
+
+### 4.1 送信機側の動作方向の設定
+
+<span id="su27-p21-body-mixing" data-translation-unit="su27-p21-body-mixing"></span>
+
+:::caution[注意]
+注意：機体にByme-DBを搭載している場合、送信機側ではミキシングを設定しないでください。Byme-DBのミキシングは機体の飛行モードに応じて自動的に働きます。送信機側でも設定するとミキシングが競合し、飛行に影響します。
+:::
+
+<span id="su27-p21-body-safety-split-1" data-translation-unit="su27-p21-body-safety-split-1"></span>
+
+## 第5章 飛行時の注意
+
+## 第6章 電源投入とジャイロの自己診断
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p21-body-throttle" data-translation-unit="su27-p21-body-throttle"></span>
+
+:::caution[注意]
+2. 送信機のスロットルスティックを先に最下位置にしてから、機体の電源を入れてください。最上位置で電源を入れるとESCは校正モードに入ります。
+:::
+
+<span id="su27-p21-body-safety-remainder" data-translation-unit="su27-p21-body-safety-remainder"></span>
+
+## 第7章 機体姿勢の校正
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p21-f1-unit" data-translation-unit="su27-p21-f1-unit"></span>
+
+<span id="su27-p22-body" data-translation-unit="su27-p22-body"></span>
+
+### 機体姿勢の校正（続き）
+
+<span id="su27-p22-f1-unit" data-translation-unit="su27-p22-f1-unit"></span>
+
+<span id="su27-p22-f2-unit" data-translation-unit="su27-p22-f2-unit"></span>
+
+<span id="su27-p22-f3-unit" data-translation-unit="su27-p22-f3-unit"></span>
+
+<span id="su27-p23-body" data-translation-unit="su27-p23-body"></span>
+
+## 第8章 サーボの動作方向
+SU27 RTF版の第8章を参照してください。
+
+## 第9章 3つの飛行モード
+SU27 RTF版の第9章を参照してください。
+
+## 第10章 ジャイロ感度
+SU27 RTF版の第10章を参照してください。
+
+## テクニカルサポート
+Facebook MessengerでRadioLink RLに連絡できます。原典にはSU27取扱説明書とチュートリアルのQRコードも掲載されています。
+上記の情報で解決しない場合は、テクニカルサポートへメールでお問い合わせください。
+after_service@radioLink.com.cn
+内容は変更される場合があります。SU27の最新版の取扱説明書は、以下からダウンロードしてください。
+https://www.radiolink.com/su27_manual
+
+Radiolink製品をお選びいただき、ありがとうございます。
+
+<span id="su27-p23-f2-unit" data-translation-unit="su27-p23-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="su27-p23-f1-unit" data-translation-unit="su27-p23-f1-unit"></span>
+
+<span id="su27-p23-f3-unit" data-translation-unit="su27-p23-f3-unit"></span>

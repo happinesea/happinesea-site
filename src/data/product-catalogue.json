@@ -1101,7 +1101,7 @@
     "subcategoryLabel": "固定翼機",
     "description": "Radiolinkの固定翼機です。",
     "officialUrl": "https://www.radiolink.com/su27",
-    "detailPath": null,
+    "detailPath": "/radiolink/su27/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/su27.webp",
@@ -1122,7 +1122,7 @@
     "subcategoryLabel": "固定翼機",
     "description": "Radiolinkの固定翼機です。",
     "officialUrl": "https://www.radiolink.com/D460",
-    "detailPath": null,
+    "detailPath": "/radiolink/d460/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/d460.webp",
