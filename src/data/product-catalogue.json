@@ -1059,7 +1059,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f125",
-    "detailPath": null,
+    "detailPath": "/radiolink/f125/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f125.webp",

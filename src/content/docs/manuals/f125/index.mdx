@@ -1,0 +1,718 @@
+---
+title: F125 日本語取扱説明書
+description: Radiolink F125 の公式英語取扱説明書に対応する日本語版です。
+product: f125
+slug: manuals/f125
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/b43897b825c133793f9c977fe0ad75a8.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f125/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F125の公式英語取扱説明書（V1.0、24頁）。同梱品と機器の適用条件はPNP／RTFとFPVの有無で異なります。
+
+<span id="f125-p1-body" data-translation-unit="f125-p1-body"></span>
+
+# F125 取扱説明書 V1.0
+
+慣性航法による高度維持機能を備えたミニレーシングドローン。
+
+本書は定期的に更新されます。最新版はRadiolink公式サイトからダウンロードしてください。
+https://www.radiolink.com/f125_manual
+
+<span id="f125-p1-f1-unit" data-translation-unit="f125-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p1-f1.png" width={600} height={180} figureId="f125-p1-f1" alt={"RadioLinkロゴ"} caption={"RadioLinkロゴ"} />
+
+<span id="f125-p1-f2-unit" data-translation-unit="f125-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p1-f2.jpeg" width={540} height={397} figureId="f125-p1-f2" alt={"F125機体"} caption={"F125機体"} />
+
+<span id="f125-p2-body" data-translation-unit="f125-p2-body"></span>
+
+RadiolinkのミニレーシングドローンF125をお買い上げいただき、ありがとうございます。製品の機能を活用し安全に使用するため、本書をよく読み、記載の手順に従って機器を設定してください。
+
+使用中に問題が発生した場合は、次の方法でサポートへお問い合わせください。
+
+1. after_service@radiolink.com.cn にメールでお問い合わせください。できるだけ早く回答します。
+2. RadiolinkのFacebookページでメッセージを送るか、YouTubeページにコメントを残してください。
+3. 正規販売店または代理店から購入した場合は、購入先へ直接お問い合わせいただけます。
+
+取扱説明書とファームウェアはRadiolink公式サイト（www.radiolink.com）に掲載しています。解説動画や最新情報は公式サイト、Facebook、YouTubeでもご確認いただけます。
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界が悪いと操縦者が方向を見失い、機体を制御できなくなるおそれがあります。
+- 人の集まる場所や使用が禁止されている場所では使用しないでください。
+- 受信機を接続する前に、送信機のトリムが0で、バッテリーが適切に充電されていることを確認してください。
+- 高速で回転するプロペラやブラシモーターなどでけがをしないよう、飛行中は機体から距離を取ってください。
+- 着陸後は機体をディスアームし、プロペラの回転が停止したことを確認してから、機体に近づいて触れてください。
+- 送信機より先に受信機または機体の電源を切ってください。
+- 飛行中にプロペラが外れて落下しないよう、プロペラの取り付け手順に従ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などの電波干渉源がない場所で飛行させてください。
+
+## 警告
+
+本製品は玩具ではなく、14歳未満の子どもには適していません。大人は本製品を子どもの手の届かない場所に保管し、子どもの近くで操作するときは十分に注意してください。機体や送信機の電子機器の隙間から水や湿気が入り、機体が不安定になったり、操縦不能になったりするおそれがあります。
+
+<span id="f125-p2-body-rain" data-translation-unit="f125-p2-body-rain"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p2-body-fcc" data-translation-unit="f125-p2-body-fcc"></span>
+
+## FCCに関する原典記載
+
+<span id="f125-p2-f1-unit" data-translation-unit="f125-p2-f1-unit"></span>
+
+<span id="f125-p3-body" data-translation-unit="f125-p3-body"></span>
+
+# 目次
+
+同梱品一覧 … 2
+
+第1章 F125の特徴 … 3
+
+第2章 飛行前の準備 … 3
+- 2.1 電源 … 3
+- 2.2 送信機 … 3
+- 2.3 F125 … 4
+- 2.4 スティック操作と機体の動き … 4
+
+第3章 飛行の準備 … 7
+- 3.1 モーターの取り付け … 7
+- 3.2 プロペラの取り付け … 7
+- 3.3 F125の電源投入 … 8
+- 3.4 飛行時の注意 … 9
+- 3.5 対応送信機の設定 … 9
+- 3.6 バインディング … 11
+- 3.7 F125のアーム・ディスアーム … 11
+
+第4章 各フライトモードでの飛行 … 13
+- 4.1 高度維持モード（低速）と高度維持モード（高速） … 13
+  - 4.1.1 上昇・下降 … 13
+  - 4.1.2 ホバリング … 13
+  - 4.1.3 前進・後退・右・左への移動 … 13
+  - 4.1.4 時計回り・反時計回りの旋回 … 13
+- 4.2 スタビライズモード … 13
+- 4.3 360°フリップモードへの切り替え … 14
+
+第5章 F125の映像伝送 … 14
+- 5.1 Little Pilot（SCHOOL）4.3インチ一体型FPVモニター … 15
+  - 5.1.1 ボタンと機能 … 15
+  - 5.1.2 Little Pilotモニターの周波数グループ選択 … 15
+  - 5.1.3 Little PilotモニターとF125のバインディング … 16
+- 5.2 LONGSITE 3インチFPVゴーグル … 16
+  - 5.2.1 概要 … 16
+  - 5.2.2 メニュー操作 … 17
+  - 5.2.3 LONGSITE FPVゴーグルの周波数表 … 17
+  - 5.2.4 LONGSITE FPVゴーグルとF125のバインディング … 17
+- 5.3 F125の映像伝送 … 17
+  - 5.3.1 映像伝送用LEDインジケーター … 17
+  - 5.3.2 出力・バンド・周波数のカスタマイズ … 18
+- 5.4 T8S用スマートフォン／FPVモニターホルダーの使用方法 … 20
+
+第6章 仕様 … 21
+- 6.1 F125の仕様 … 21
+- 6.2 映像伝送システムの仕様 … 22
+- 6.3 Little Pilotモニターの仕様 … 22
+- 6.4 LONGSITE FPVゴーグルの仕様 … 22
+
+<span id="f125-p3-f1-unit" data-translation-unit="f125-p3-f1-unit"></span>
+
+<span id="f125-p3-f2-unit" data-translation-unit="f125-p3-f2-unit"></span>
+
+<span id="f125-p4-body" data-translation-unit="f125-p4-body"></span>
+
+## 同梱品
+
+| 品目 | PNP | PNP FPV | RTF | RTF FPV |
+| --- | ---: | ---: | ---: | ---: |
+| F125梱包箱 | 1 | 1 |  |  |
+| キャリング／ショルダーバッグ |  |  | 1 | 1 |
+| F125機体 | 1 | 1 | 1 | 1 |
+| R8SM受信機 |  |  | 1 | 1 |
+| T8S送信機 |  |  | 1 | 1 |
+| FPVカメラ |  | 1 |  | 1 |
+| 660 mAh LiPoバッテリー | 1 | 1 | 2 | 2 |
+| GEMFAN予備プロペラ（4枚1組） | 2 | 2 | 2 | 2 |
+| ハーフカバータイプのプロペラガード | 4 | 4 | 4 | 4 |
+| フルカバータイプのプロペラガード | 1 | 1 | 1 | 1 |
+| プロペラ取り外し工具 | 1 | 1 | 1 | 1 |
+| Hawkeye 4.3インチFPVモニター |  |  |  | 1 |
+| 送信機・FPVモニターホルダー |  |  |  | 1 |
+| 工作用外装 |  |  | 1 | 1 |
+| フックとばね |  |  | 1 | 1 |
+| バッテリー充電器 | 1 | 1 | 1 | 1 |
+| USBケーブル |  |  | 1 | 1 |
+| 受信機・フライトコントローラー接続ケーブル |  |  | 1 | 1 |
+| 夜間飛行用方向表示LED |  |  |  | 1 |
+| ドライバー | 1 | 1 | 1 | 1 |
+| F125取扱説明書 | 1 | 1 | 1 | 1 |
+| Hawkeye FPV取扱説明書 |  |  |  | 1 |
+
+<span id="f125-p4-f1-unit" data-translation-unit="f125-p4-f1-unit"></span>
+
+<span id="f125-p4-f2-unit" data-translation-unit="f125-p4-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f2.jpeg" width={131} height={88} figureId="f125-p4-f2" alt={"F125梱包箱"} caption={"F125梱包箱"} />
+
+<span id="f125-p4-f3-unit" data-translation-unit="f125-p4-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f3.jpeg" width={68} height={78} figureId="f125-p4-f3" alt={"キャリング／ショルダーバッグ"} caption={"キャリング／ショルダーバッグ"} />
+
+<span id="f125-p4-f4-unit" data-translation-unit="f125-p4-f4-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f4.jpeg" width={86} height={86} figureId="f125-p4-f4" alt={"F125機体"} caption={"F125機体"} />
+
+<span id="f125-p4-f5-unit" data-translation-unit="f125-p4-f5-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f5.jpeg" width={176} height={70} figureId="f125-p4-f5" alt={"R8SM受信機"} caption={"R8SM受信機"} />
+
+<span id="f125-p4-f6-unit" data-translation-unit="f125-p4-f6-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f6.jpeg" width={143} height={84} figureId="f125-p4-f6" alt={"T8S送信機"} caption={"T8S送信機"} />
+
+<span id="f125-p4-f7-unit" data-translation-unit="f125-p4-f7-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f7.jpeg" width={131} height={102} figureId="f125-p4-f7" alt={"FPVカメラ"} caption={"FPVカメラ"} />
+
+<span id="f125-p4-f8-unit" data-translation-unit="f125-p4-f8-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f8.jpeg" width={97} height={89} figureId="f125-p4-f8" alt={"660 mAh LiPoバッテリー"} caption={"660 mAh LiPoバッテリー"} />
+
+<span id="f125-p4-f9-unit" data-translation-unit="f125-p4-f9-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f9.jpeg" width={87} height={86} figureId="f125-p4-f9" alt={"GEMFAN予備プロペラ（4枚1組）"} caption={"GEMFAN予備プロペラ（4枚1組）"} />
+
+<span id="f125-p4-f10-unit" data-translation-unit="f125-p4-f10-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f10.jpeg" width={118} height={80} figureId="f125-p4-f10" alt={"ハーフカバータイプのプロペラガード"} caption={"ハーフカバータイプのプロペラガード"} />
+
+<span id="f125-p4-f11-unit" data-translation-unit="f125-p4-f11-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f11.jpeg" width={116} height={89} figureId="f125-p4-f11" alt={"フルカバータイプのプロペラガード"} caption={"フルカバータイプのプロペラガード"} />
+
+<span id="f125-p4-f12-unit" data-translation-unit="f125-p4-f12-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f12.jpeg" width={212} height={59} figureId="f125-p4-f12" alt={"プロペラ取り外し工具"} caption={"プロペラ取り外し工具"} />
+
+<span id="f125-p4-f13-unit" data-translation-unit="f125-p4-f13-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f13.jpeg" width={86} height={82} figureId="f125-p4-f13" alt={"Hawkeye 4.3インチFPVモニター"} caption={"Hawkeye 4.3インチFPVモニター"} />
+
+<span id="f125-p4-f14-unit" data-translation-unit="f125-p4-f14-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f14.jpeg" width={116} height={83} figureId="f125-p4-f14" alt={"送信機・FPVモニターホルダー"} caption={"送信機・FPVモニターホルダー"} />
+
+<span id="f125-p4-f15-unit" data-translation-unit="f125-p4-f15-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f15.jpeg" width={132} height={84} figureId="f125-p4-f15" alt={"工作用外装"} caption={"工作用外装"} />
+
+<span id="f125-p4-f16-unit" data-translation-unit="f125-p4-f16-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f16.jpeg" width={80} height={73} figureId="f125-p4-f16" alt={"フックとばね"} caption={"フックとばね"} />
+
+<span id="f125-p4-f17-unit" data-translation-unit="f125-p4-f17-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f17.jpeg" width={141} height={81} figureId="f125-p4-f17" alt={"バッテリー充電器"} caption={"バッテリー充電器"} />
+
+<span id="f125-p4-f18-unit" data-translation-unit="f125-p4-f18-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f18.jpeg" width={190} height={74} figureId="f125-p4-f18" alt={"USBケーブル"} caption={"USBケーブル"} />
+
+<span id="f125-p4-f19-unit" data-translation-unit="f125-p4-f19-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f19.jpeg" width={114} height={74} figureId="f125-p4-f19" alt={"受信機・フライトコントローラー接続ケーブル"} caption={"受信機・フライトコントローラー接続ケーブル"} />
+
+<span id="f125-p4-f20-unit" data-translation-unit="f125-p4-f20-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f20.jpeg" width={245} height={45} figureId="f125-p4-f20" alt={"夜間飛行用方向表示LED"} caption={"夜間飛行用方向表示LED"} />
+
+<span id="f125-p4-f21-unit" data-translation-unit="f125-p4-f21-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f21.jpeg" width={217} height={54} figureId="f125-p4-f21" alt={"ドライバー"} caption={"ドライバー"} />
+
+<span id="f125-p4-f22-unit" data-translation-unit="f125-p4-f22-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f22.jpeg" width={64} height={89} figureId="f125-p4-f22" alt={"F125取扱説明書"} caption={"F125取扱説明書"} />
+
+<span id="f125-p4-f23-unit" data-translation-unit="f125-p4-f23-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p4-f23.jpeg" width={59} height={84} figureId="f125-p4-f23" alt={"Hawkeye FPV取扱説明書"} caption={"Hawkeye FPV取扱説明書"} />
+
+<span id="f125-p5-body" data-translation-unit="f125-p5-body"></span>
+
+## 第1章 F125の特長
+
+## 第2章 飛行前
+
+### 2.1 電源
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p5-body-charging-limit" data-translation-unit="f125-p5-body-charging-limit"></span>
+
+:::caution[注意]
+注意：CM120の給電元の出力電圧は5 Vを超えてはなりません。
+:::
+
+<span id="f125-p5-body-tail" data-translation-unit="f125-p5-body-tail"></span>
+
+### 2.2 送信機
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p5-f1-unit" data-translation-unit="f125-p5-f1-unit"></span>
+
+<span id="f125-p5-f2-unit" data-translation-unit="f125-p5-f2-unit"></span>
+
+<span id="f125-p6-body" data-translation-unit="f125-p6-body"></span>
+
+### 2.2 送信機（続き）
+
+### 2.3 F125
+
+<span id="f125-p6-f1-unit" data-translation-unit="f125-p6-f1-unit"></span>
+
+<span id="f125-p6-f2-unit" data-translation-unit="f125-p6-f2-unit"></span>
+
+<span id="f125-p6-f3-unit" data-translation-unit="f125-p6-f3-unit"></span>
+
+<span id="f125-p6-f4-unit" data-translation-unit="f125-p6-f4-unit"></span>
+
+<span id="f125-p6-f5-unit" data-translation-unit="f125-p6-f5-unit"></span>
+
+<span id="f125-p7-body" data-translation-unit="f125-p7-body"></span>
+
+### 2.4 スティックと機体の動き
+
+#### A. スロットル（上昇・下降・ホバリング）
+
+#### B. ヨー（時計回り・反時計回り）
+
+<span id="f125-p7-f1-unit" data-translation-unit="f125-p7-f1-unit"></span>
+
+<span id="f125-p7-f2-unit" data-translation-unit="f125-p7-f2-unit"></span>
+
+<span id="f125-p7-f3-unit" data-translation-unit="f125-p7-f3-unit"></span>
+
+<span id="f125-p7-f4-unit" data-translation-unit="f125-p7-f4-unit"></span>
+
+<span id="f125-p8-body" data-translation-unit="f125-p8-body"></span>
+
+#### C. ピッチ（前進・後退）
+
+#### D. ロール（右移動・左移動）
+
+<span id="f125-p8-f1-unit" data-translation-unit="f125-p8-f1-unit"></span>
+
+<span id="f125-p8-f2-unit" data-translation-unit="f125-p8-f2-unit"></span>
+
+<span id="f125-p8-f3-unit" data-translation-unit="f125-p8-f3-unit"></span>
+
+<span id="f125-p8-f4-unit" data-translation-unit="f125-p8-f4-unit"></span>
+
+<span id="f125-p8-f5-unit" data-translation-unit="f125-p8-f5-unit"></span>
+
+<span id="f125-p9-body" data-translation-unit="f125-p9-body"></span>
+
+## 第3章 飛行の準備
+
+### 3.1 モーターの取り付け
+
+### 3.2 プロペラの取り付け
+
+<span id="f125-p9-body-guard-prerequisite" data-translation-unit="f125-p9-body-guard-prerequisite"></span>
+
+:::caution[注意]
+梱包上の都合により、工場出荷時のF125にはプロペラガードが装着されていません。安全に飛行させるため、ガードが正しく取り付けられているか必ず確認してください。
+:::
+
+<span id="f125-p9-body-tail-2" data-translation-unit="f125-p9-body-tail-2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p9-body-guard-warning" data-translation-unit="f125-p9-body-guard-warning"></span>
+
+:::caution[注意]
+注意：4つのプロペラガードを取り付けたら、傾いていないか確認し、機体を軽く揺すって外れないか確かめます。傾きや脱落があれば、ガードを確実に取り付け直してください。
+:::
+
+<span id="f125-p9-f1-unit" data-translation-unit="f125-p9-f1-unit"></span>
+
+<span id="f125-p9-f2-unit" data-translation-unit="f125-p9-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p9-f3-unit" data-translation-unit="f125-p9-f3-unit"></span>
+
+<span id="f125-p10-body" data-translation-unit="f125-p10-body"></span>
+
+### 3.2 プロペラの取り付け（続き）
+
+### 3.3 F125の電源投入
+
+<span id="f125-p10-f1-unit" data-translation-unit="f125-p10-f1-unit"></span>
+
+<span id="f125-p10-f2-unit" data-translation-unit="f125-p10-f2-unit"></span>
+
+<span id="f125-p10-f3-unit" data-translation-unit="f125-p10-f3-unit"></span>
+
+<span id="f125-p10-f4-unit" data-translation-unit="f125-p10-f4-unit"></span>
+
+<span id="f125-p10-f5-unit" data-translation-unit="f125-p10-f5-unit"></span>
+
+<span id="f125-p10-f6-unit" data-translation-unit="f125-p10-f6-unit"></span>
+
+<span id="f125-p10-f7-unit" data-translation-unit="f125-p10-f7-unit"></span>
+
+<span id="f125-p10-f8-unit" data-translation-unit="f125-p10-f8-unit"></span>
+
+<span id="f125-p10-f9-unit" data-translation-unit="f125-p10-f9-unit"></span>
+
+<span id="f125-p10-f10-unit" data-translation-unit="f125-p10-f10-unit"></span>
+
+<span id="f125-p11-body" data-translation-unit="f125-p11-body"></span>
+
+### 3.3 電源投入（続き）
+
+### 3.4 飛行時の注意
+
+<span id="f125-p11-body-collision-warning" data-translation-unit="f125-p11-body-collision-warning"></span>
+
+:::caution[注意]
+F125が衝突して落下した場合は、モーターの回転を止めるためスロットルスティックを直ちに最下位置にしてください。
+:::
+
+<span id="f125-p11-body-tail" data-translation-unit="f125-p11-body-tail"></span>
+
+### 3.5 対応送信機の設定
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p11-body-tail-loss-warning" data-translation-unit="f125-p11-body-tail-loss-warning"></span>
+
+:::caution[注意]
+電圧不足で受信機が制御不能になり、墜落するおそれがあります。
+:::
+
+<span id="f125-p11-body-tail-tail" data-translation-unit="f125-p11-body-tail-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p11-f1-unit" data-translation-unit="f125-p11-f1-unit"></span>
+
+<span id="f125-p11-f2-unit" data-translation-unit="f125-p11-f2-unit"></span>
+
+<span id="f125-p11-f3-unit" data-translation-unit="f125-p11-f3-unit"></span>
+
+<span id="f125-p12-body" data-translation-unit="f125-p12-body"></span>
+
+#### AT9S Pro／AT9S／AT9／AT10／AT10II
+
+<span id="f125-p12-f1-unit" data-translation-unit="f125-p12-f1-unit"></span>
+
+<span id="f125-p12-f2-unit" data-translation-unit="f125-p12-f2-unit"></span>
+
+<span id="f125-p12-f3-unit" data-translation-unit="f125-p12-f3-unit"></span>
+
+<span id="f125-p12-f4-unit" data-translation-unit="f125-p12-f4-unit"></span>
+
+<span id="f125-p12-f5-unit" data-translation-unit="f125-p12-f5-unit"></span>
+
+<span id="f125-p12-f6-unit" data-translation-unit="f125-p12-f6-unit"></span>
+
+<span id="f125-p12-f7-unit" data-translation-unit="f125-p12-f7-unit"></span>
+
+<span id="f125-p12-f8-unit" data-translation-unit="f125-p12-f8-unit"></span>
+
+<span id="f125-p12-f9-unit" data-translation-unit="f125-p12-f9-unit"></span>
+
+<span id="f125-p13-body" data-translation-unit="f125-p13-body"></span>
+
+### 3.6 バインディング
+
+### 3.7 F125のアームとディスアーム
+
+#### A. アーム方法
+
+<span id="f125-p13-f1-unit" data-translation-unit="f125-p13-f1-unit"></span>
+
+<span id="f125-p13-f2-unit" data-translation-unit="f125-p13-f2-unit"></span>
+
+<span id="f125-p13-f3-unit" data-translation-unit="f125-p13-f3-unit"></span>
+
+<span id="f125-p13-f4-unit" data-translation-unit="f125-p13-f4-unit"></span>
+
+<span id="f125-p13-f5-unit" data-translation-unit="f125-p13-f5-unit"></span>
+
+<span id="f125-p14-body" data-translation-unit="f125-p14-body"></span>
+
+#### B. ディスアーム方法
+
+<span id="f125-p14-body-disarm-warning" data-translation-unit="f125-p14-body-disarm-warning"></span>
+
+:::caution[注意]
+飛行後に機体へ近づいたり触れたりする前に、けがを防ぐため、F125がディスアームされていることを必ず確認してください。
+:::
+
+<span id="f125-p14-body-tail" data-translation-unit="f125-p14-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p14-f1-unit" data-translation-unit="f125-p14-f1-unit"></span>
+
+<span id="f125-p14-f2-unit" data-translation-unit="f125-p14-f2-unit"></span>
+
+<span id="f125-p14-f3-unit" data-translation-unit="f125-p14-f3-unit"></span>
+
+<span id="f125-p14-f4-unit" data-translation-unit="f125-p14-f4-unit"></span>
+
+<span id="f125-p14-f5-unit" data-translation-unit="f125-p14-f5-unit"></span>
+
+<span id="f125-p15-body" data-translation-unit="f125-p15-body"></span>
+
+## 第4章 フライトモードごとの飛行
+
+<span id="f125-p15-body-orientation-warning" data-translation-unit="f125-p15-body-orientation-warning"></span>
+
+:::caution[注意]
+飛行方向を判断しやすいよう、F125の機首を操縦者と同じ方向に向けておくとよいでしょう。向きが異なると、機体が操縦者に向かって飛び、けがを負わせるおそれがあります。
+:::
+
+<span id="f125-p15-body-tail-2" data-translation-unit="f125-p15-body-tail-2"></span>
+
+### 4.1 高度維持モード（低速）と高度維持モード（高速）
+
+#### 4.1.1 上昇／下降
+
+#### 4.1.2 ホバリング
+
+#### 4.1.3 前進／後退／右移動／左移動
+
+#### 4.1.4 時計回り／反時計回りの旋回
+
+### 4.2 スタビライズモード
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p15-body-tail-2-stick-warning" data-translation-unit="f125-p15-body-tail-2-stick-warning"></span>
+
+:::caution[注意]
+急な動きで操縦者がけがをするおそれがあるため、スティックはできるだけゆっくり操作してください。
+:::
+
+<span id="f125-p15-body-tail-2-tail-2" data-translation-unit="f125-p15-body-tail-2-tail-2"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p15-f1-unit" data-translation-unit="f125-p15-f1-unit"></span>
+
+<span id="f125-p16-body" data-translation-unit="f125-p16-body"></span>
+
+### 4.3 360°フリップモードの切り替え
+
+<span id="f125-p16-body-distance-warning" data-translation-unit="f125-p16-body-distance-warning"></span>
+
+:::caution[注意]
+F125を後方へ360°回転させる前に、安全のため機体を自分から十分に離してください。
+:::
+
+<span id="f125-p16-body-tail" data-translation-unit="f125-p16-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p16-body-tail-battery-warning" data-translation-unit="f125-p16-body-tail-battery-warning"></span>
+
+:::caution[注意]
+飛行中に低電圧の警告が出た場合は、過放電を避けるため、飛行を中止することを勧めます。
+:::
+
+<span id="f125-p16-body-tail-tail" data-translation-unit="f125-p16-body-tail-tail"></span>
+
+## 第5章 F125の映像伝送
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p16-f1-unit" data-translation-unit="f125-p16-f1-unit"></span>
+
+<span id="f125-p16-f2-unit" data-translation-unit="f125-p16-f2-unit"></span>
+
+<span id="f125-p16-f3-unit" data-translation-unit="f125-p16-f3-unit"></span>
+
+<span id="f125-p17-body" data-translation-unit="f125-p17-body"></span>
+
+### 5.1 Little Pilot（SCHOOL）一体型4.3インチFPVモニター
+
+#### 5.1.1 ボタンと機能
+
+#### 5.1.2 Little Pilotモニターの周波数グループの選択
+
+<span id="f125-p17-f1-unit" data-translation-unit="f125-p17-f1-unit"></span>
+
+<span id="f125-p17-f2-unit" data-translation-unit="f125-p17-f2-unit"></span>
+
+<span id="f125-p17-f3-unit" data-translation-unit="f125-p17-f3-unit"></span>
+
+<span id="f125-p18-body" data-translation-unit="f125-p18-body"></span>
+
+#### 5.1.3 Little PilotモニターとF125のバインディング
+
+### 5.2 LONGSITE 3インチFPVゴーグル
+
+#### 5.2.1 各部の名称と機能
+
+<span id="f125-p18-body-goggle-charging-limit" data-translation-unit="f125-p18-body-goggle-charging-limit"></span>
+
+:::caution[注意]
+LONGSITE 3インチFPVゴーグルのMicro USB充電端子はDC 5 V専用です。
+:::
+
+<span id="f125-p18-body-tail" data-translation-unit="f125-p18-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p18-f1-unit" data-translation-unit="f125-p18-f1-unit"></span>
+
+<span id="f125-p18-f2-unit" data-translation-unit="f125-p18-f2-unit"></span>
+
+<span id="f125-p19-body" data-translation-unit="f125-p19-body"></span>
+
+#### 5.2.2 メニュー操作
+
+#### 5.2.3 LONGSITE FPVゴーグルの周波数表（MHz）
+
+#### 5.2.4 LONGSITE FPVゴーグルとF125のバインディング
+
+### 5.3 F125の映像伝送
+
+#### 5.3.1 映像伝送のLED表示
+
+<span id="f125-p19-f1-unit" data-translation-unit="f125-p19-f1-unit"></span>
+
+<span id="f125-p20-body" data-translation-unit="f125-p20-body"></span>
+
+#### 5.3.2 出力・バンド・周波数の設定
+
+<span id="f125-p20-f1-unit" data-translation-unit="f125-p20-f1-unit"></span>
+
+<span id="f125-p20-f2-unit" data-translation-unit="f125-p20-f2-unit"></span>
+
+<span id="f125-p20-f3-unit" data-translation-unit="f125-p20-f3-unit"></span>
+
+<span id="f125-p21-body" data-translation-unit="f125-p21-body"></span>
+
+<span id="f125-p21-f1-unit" data-translation-unit="f125-p21-f1-unit"></span>
+
+<span id="f125-p22-body" data-translation-unit="f125-p22-body"></span>
+
+<span id="f125-p22-body-heat-warning" data-translation-unit="f125-p22-body-heat-warning"></span>
+
+:::caution[注意]
+注意
+
+1. 映像伝送カメラを取り付ける際は放熱を確保してください。放熱が不十分だと過熱保護により送信出力が低下するか、送信が停止します。
+2. 使用中にカメラが熱くなるのは正常です。やけどのおそれがあるため、手で直接触れないでください。
+:::
+
+<span id="f125-p22-body-holder" data-translation-unit="f125-p22-body-holder"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p22-body-holder-section" data-translation-unit="f125-p22-body-holder-section"></span>
+
+### 5.4 T8S用スマートフォン／FPVモニターホルダー
+
+図の各部：①モバイル機器／FPVモニター用ホルダー（45 mm／1.77インチ〜75 mm／2.95インチ）、②ストラップ穴、③ネジを取り付けてモニター角度を90°または135°に調整する箇所、④T8Sホルダー（58 mm／2.28インチ）。
+
+1. 箱からホルダーと付属の赤いネジを取り出します。
+2. 図のように2つの樹脂部品を組み合わせます。
+3. 2本の赤いネジをホルダー両側のネジ穴に時計回りに入れます。この時点では締め込まず、ホルダーの角度を調整してから締めて固定します。
+
+<span id="f125-p22-f1-unit" data-translation-unit="f125-p22-f1-unit"></span>
+
+<span id="f125-p22-f2-unit" data-translation-unit="f125-p22-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p22-f2.jpeg" width={1510} height={638} figureId="f125-p22-f2" alt={"T8S用ホルダーの各部と寸法"} caption={"T8S用ホルダーの各部と寸法"} />
+
+<span id="f125-p22-f3-unit" data-translation-unit="f125-p22-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p22-f3.jpeg" width={1500} height={570} figureId="f125-p22-f3" alt={"ホルダーの組み立て手順1〜3"} caption={"ホルダーの組み立て手順1〜3"} />
+
+<span id="f125-p23-body" data-translation-unit="f125-p23-body"></span>
+
+4. 図のようにT8S送信機にホルダーを取り付けると、取り付けは完了です。
+5. T8S送信機からホルダーを外す際は、ホルダーの下側からT8Sを取り外します。ホルダーの破損を避けるため、モニターを挟んでいる位置からホルダーを外さないでください。
+
+<span id="f125-p23-f1-unit" data-translation-unit="f125-p23-f1-unit"></span>
+
+<span id="f125-p23-f3-unit" data-translation-unit="f125-p23-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p23-f3.jpeg" width={1500} height={440} figureId="f125-p23-f3" alt={"T8Sへのホルダー取り付け"} caption={"T8Sへのホルダー取り付け"} />
+
+<span id="f125-p23-f2-unit" data-translation-unit="f125-p23-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f125/web-ja-v1/f125-p23-f2.jpeg" width={828} height={483} figureId="f125-p23-f2" alt={"T8Sからのホルダー取り外し"} caption={"T8Sからのホルダー取り外し"} />
+
+<span id="f125-p23-body-section" data-translation-unit="f125-p23-body-section"></span>
+
+## 第6章 仕様
+
+### 6.1 F125の仕様
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f125-p24-body" data-translation-unit="f125-p24-body"></span>
+
+### 6.2 映像伝送システムの仕様
+
+### 6.3 Little Pilotモニターの仕様
+
+### 6.4 LONGSITE FPVゴーグルの仕様
+
+<span id="f125-p24-f1-unit" data-translation-unit="f125-p24-f1-unit"></span>

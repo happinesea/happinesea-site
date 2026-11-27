@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 19);
+  assert.equal(remaining.manuals.length, 20);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    19,
+    20,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -37,6 +37,14 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     if (manual.product_id === 'ts100-m10n') {
       assert.equal(manual.source.page_count, null);
       assert.match(mdx.toString(), /対象はTS100 V2\.0（M10N）です/);
+    }
+    if (manual.product_id === 'f125') {
+      const text = mdx.toString();
+      assert.equal(manual.source_figures_total, 100);
+      assert.match(text, /CM120の給電元の出力電圧は5 Vを超えてはなりません/);
+      assert.match(text, /FPVゴーグルのMicro USB充電端子はDC 5 V専用/);
+      assert.match(text, /スロットルスティックを直ちに最下位置/);
+      assert.doesNotMatch(text, /25 MW|200 MW|CH5スイッチを後方へ/);
     }
     if (manual.product_id === 'd460') {
       assert.match(mdx.toString(), /^## 第1章 D460の概要$/m);
