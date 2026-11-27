@@ -1,0 +1,345 @@
+---
+title: F108 日本語取扱説明書
+description: Radiolink F108 の公式英語取扱説明書に対応する日本語版です。
+product: f108
+slug: manuals/f108
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/6a9104d2f2fbafc828f22055b19000e5.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f108/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F108 公式英語取扱説明書（文書版・発行日不明、31頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="f108-p1-body" data-translation-unit="f108-p1-body"></span>
+
+## F108 取扱説明書
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f108-p1-f1-unit" data-translation-unit="f108-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f108/web-ja-v1/f108-p1-f1.png" width={600} height={180} figureId="f108-p1-f1" alt={"RadioLinkロゴ"} caption={"RadioLinkロゴ"} />
+
+<span id="f108-p1-f2-unit" data-translation-unit="f108-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f108/web-ja-v1/f108-p1-f2.jpeg" width={640} height={380} figureId="f108-p1-f2" alt={"対象年齢表示：14歳以上"} caption={"対象年齢表示：14歳以上"} />
+
+<span id="f108-p1-f3-unit" data-translation-unit="f108-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f108/web-ja-v1/f108-p1-f3.jpeg" width={1465} height={1000} figureId="f108-p1-f3" alt={"F108の機体写真"} caption={"F108の機体写真"} />
+
+<span id="f108-p2-body" data-translation-unit="f108-p2-body"></span>
+
+RadioLink F108ミニレース用ドローンをお買い上げいただきありがとうございます。本製品を十分に活用し、安全に使用するため、本書をよく読み、記載された手順で機器を設定してください。
+
+使用中に問題があれば、after_service@radiolink.com.cn にメールでお問い合わせください。できるだけ早く回答します。正規販売店や代理店で購入した場合は、その窓口に直接お問い合わせいただけます。取扱説明書や解説は公式サイト www.radiolink.com で提供しています。
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界不良により方向を見失い、機体を制御できなくなるおそれがあります。
+- 人混みや使用が禁止されている場所では使用しないでください。
+- 受信機を接続する前に、送信機のトリムが0で、バッテリーが適切に充電されていることを必ず確認してください。
+- 飛行中は機体から距離を取り、プロペラやブラシ付きモーターなど高速回転する部品でけがをしないようにしてください。
+- 着陸後、機体に近づいて触れる前に、ディスアームしてプロペラが停止したことを確認してください。
+- 送信機の電源を切る前に、受信機や機体の電源を必ず切ってください。
+- 飛行中にプロペラが外れないよう、取り付け手順に従ってください。
+- 無線通信のため、高圧線、通信基地局、送信塔などの電波干渉がない場所で飛行させてください。
+
+## 警告
+
+本製品は玩具ではなく、14歳未満の子どもには適していません。子どもの手の届かないところに保管し、子どもの近くで操作するときは十分注意してください。電子部品の隙間から水や湿気が機体や送信機に入り、機体が不安定になるか、制御できなくなるおそれがあります。
+
+<span id="f108-p2-body-exception" data-translation-unit="f108-p2-body-exception"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f108-p3-body" data-translation-unit="f108-p3-body"></span>
+
+## 目次
+
+番号は原典の印刷頁です。
+
+- 第1章 はじめに（2）
+  - 1.1 主な特長（2）
+  - 1.2 F108の概要（2）
+  - 1.3 同梱品（3）
+- 第2章 飛行前の準備（4）
+  - 2.1 送信機（4）
+  - 2.2 スティックと機体の動き（4）
+  - 2.3 モーターとプロペラの取り付け（6）
+  - 2.4 電源（7）
+  - 2.5 飛行時の注意（7）
+  - 2.6 フライトコントローラーのチャンネル（7）
+  - 2.7 送信機の設定（8）
+  - 2.8 バインディング（8）
+- 第3章 飛行モード別の操作（9）
+  - 3.1 F108の電源投入（9）
+  - 3.2 F108のアームとディスアーム（T8Sの例）（9）
+  - 3.3 5種類の飛行モード（10）
+    - 3.3.1 位置維持モード（10）
+    - 3.3.2 高度維持モード（11）
+    - 3.3.3 スタビライズモード（11）
+    - 3.3.4 マニュアルモード（11）
+    - 3.3.5 タートルモード（12）
+  - 3.4 バッテリー低電圧警報（12）
+  - 3.5 水平校正（12）
+  - 3.6 PNP版F108の受信機接続（13）
+  - 3.7 充電器（17）
+- 第4章 周辺機器の取扱説明（19）
+  - 4.1 ZENCHANSI 600 mWアナログ映像伝送装置（19）
+  - 4.2 ZENCHANSI FPVゴーグル（21）
+  - 4.3 Hawk eye 4.3インチFPVモニター（22）
+- 第5章 仕様（24）
+- 第6章 トラブルシューティング（26）
+- 第7章 Mission Plannerでマニュアルモードのチャンネルを変更する方法（27）
+
+<span id="f108-p4-body" data-translation-unit="f108-p4-body"></span>
+
+## 第1章 はじめに
+
+### 1.1 主な特長
+
+### 1.2 F108の概要
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f108-p4-f1-unit" data-translation-unit="f108-p4-f1-unit"></span>
+
+<span id="f108-p5-body" data-translation-unit="f108-p5-body"></span>
+
+### 1.3 同梱品
+
+<span id="f108-p6-body" data-translation-unit="f108-p6-body"></span>
+
+## 第2章 飛行前の準備
+
+### 2.1 送信機
+
+### 2.2 スティックと機体の動き
+
+#### A. スロットル：上昇・下降・ホバリング
+
+<span id="f108-p6-f1-unit" data-translation-unit="f108-p6-f1-unit"></span>
+
+<span id="f108-p6-f2-unit" data-translation-unit="f108-p6-f2-unit"></span>
+
+<span id="f108-p7-body" data-translation-unit="f108-p7-body"></span>
+
+#### B. ヨー：時計回り／反時計回り
+
+#### C. ピッチ：前進／後退
+
+<span id="f108-p7-f1-unit" data-translation-unit="f108-p7-f1-unit"></span>
+
+<span id="f108-p7-f2-unit" data-translation-unit="f108-p7-f2-unit"></span>
+
+<span id="f108-p7-f3-unit" data-translation-unit="f108-p7-f3-unit"></span>
+
+<span id="f108-p7-f4-unit" data-translation-unit="f108-p7-f4-unit"></span>
+
+<span id="f108-p8-body" data-translation-unit="f108-p8-body"></span>
+
+#### D. ロール：右／左
+
+### 2.3 モーターとプロペラの取り付け
+
+<span id="f108-p8-f1-unit" data-translation-unit="f108-p8-f1-unit"></span>
+
+<span id="f108-p8-f2-unit" data-translation-unit="f108-p8-f2-unit"></span>
+
+<span id="f108-p8-f3-unit" data-translation-unit="f108-p8-f3-unit"></span>
+
+<span id="f108-p9-body" data-translation-unit="f108-p9-body"></span>
+
+### 2.4 電源
+
+### 2.5 飛行時の注意
+
+### 2.6 フライトコントローラーのチャンネル
+
+<span id="f108-p10-body" data-translation-unit="f108-p10-body"></span>
+
+### 2.7 送信機の設定
+
+### 2.8 バインディング
+
+<span id="f108-p10-f1-unit" data-translation-unit="f108-p10-f1-unit"></span>
+
+<span id="f108-p10-f2-unit" data-translation-unit="f108-p10-f2-unit"></span>
+
+<span id="f108-p10-f3-unit" data-translation-unit="f108-p10-f3-unit"></span>
+
+<span id="f108-p10-f4-unit" data-translation-unit="f108-p10-f4-unit"></span>
+
+<span id="f108-p11-body" data-translation-unit="f108-p11-body"></span>
+
+## 第3章 飛行モード別の操作
+
+### 3.1 F108の電源投入
+
+### 3.2 F108のアームとディスアーム（T8Sの例）
+
+<span id="f108-p12-body" data-translation-unit="f108-p12-body"></span>
+
+### 3.3 5種類の飛行モード
+
+#### 3.3.1 位置維持モード
+
+<span id="f108-p12-f1-unit" data-translation-unit="f108-p12-f1-unit"></span>
+
+<span id="f108-p12-f2-unit" data-translation-unit="f108-p12-f2-unit"></span>
+
+<span id="f108-p13-body" data-translation-unit="f108-p13-body"></span>
+
+#### 3.3.2 高度維持モード
+
+#### 3.3.3 スタビライズモード
+
+#### 3.3.4 マニュアルモード
+
+<span id="f108-p14-body" data-translation-unit="f108-p14-body"></span>
+
+#### 3.3.5 タートルモード
+
+### 3.4 バッテリー低電圧警報
+
+### 3.5 水平校正
+
+<span id="f108-p15-body" data-translation-unit="f108-p15-body"></span>
+
+### 3.6 PNP版F108の受信機接続
+
+<span id="f108-p15-f1-unit" data-translation-unit="f108-p15-f1-unit"></span>
+
+<span id="f108-p15-f2-unit" data-translation-unit="f108-p15-f2-unit"></span>
+
+<span id="f108-p16-body" data-translation-unit="f108-p16-body"></span>
+
+<span id="f108-p16-f1-unit" data-translation-unit="f108-p16-f1-unit"></span>
+
+<span id="f108-p16-f2-unit" data-translation-unit="f108-p16-f2-unit"></span>
+
+<span id="f108-p17-body" data-translation-unit="f108-p17-body"></span>
+
+<span id="f108-p17-f1-unit" data-translation-unit="f108-p17-f1-unit"></span>
+
+<span id="f108-p17-f2-unit" data-translation-unit="f108-p17-f2-unit"></span>
+
+<span id="f108-p17-f3-unit" data-translation-unit="f108-p17-f3-unit"></span>
+
+<span id="f108-p18-body" data-translation-unit="f108-p18-body"></span>
+
+<span id="f108-p18-f1-unit" data-translation-unit="f108-p18-f1-unit"></span>
+
+<span id="f108-p18-f2-unit" data-translation-unit="f108-p18-f2-unit"></span>
+
+<span id="f108-p19-body" data-translation-unit="f108-p19-body"></span>
+
+### 3.7 充電器
+
+<span id="f108-p19-f1-unit" data-translation-unit="f108-p19-f1-unit"></span>
+
+<span id="f108-p19-f2-unit" data-translation-unit="f108-p19-f2-unit"></span>
+
+<span id="f108-p20-body" data-translation-unit="f108-p20-body"></span>
+
+<span id="f108-p21-body" data-translation-unit="f108-p21-body"></span>
+
+## 第4章 周辺機器の取扱説明
+
+### 4.1 ZENCHANSI 600 mWアナログ映像伝送装置
+
+<span id="f108-p21-f1-unit" data-translation-unit="f108-p21-f1-unit"></span>
+
+<span id="f108-p22-body" data-translation-unit="f108-p22-body"></span>
+
+<span id="f108-p22-f1-unit" data-translation-unit="f108-p22-f1-unit"></span>
+
+<span id="f108-p23-body" data-translation-unit="f108-p23-body"></span>
+
+### 4.2 ZENCHANSI FPVゴーグル
+
+<span id="f108-p23-f1-unit" data-translation-unit="f108-p23-f1-unit"></span>
+
+<span id="f108-p24-body" data-translation-unit="f108-p24-body"></span>
+
+### 4.3 Hawk eye 4.3インチFPVモニター
+
+<span id="f108-p24-f1-unit" data-translation-unit="f108-p24-f1-unit"></span>
+
+<span id="f108-p24-f2-unit" data-translation-unit="f108-p24-f2-unit"></span>
+
+<span id="f108-p25-body" data-translation-unit="f108-p25-body"></span>
+
+<span id="f108-p25-f1-unit" data-translation-unit="f108-p25-f1-unit"></span>
+
+<span id="f108-p25-f2-unit" data-translation-unit="f108-p25-f2-unit"></span>
+
+<span id="f108-p26-body" data-translation-unit="f108-p26-body"></span>
+
+## 第5章 仕様
+
+### F108機体
+
+### 電源・駆動系
+
+<span id="f108-p27-body" data-translation-unit="f108-p27-body"></span>
+
+### 送受信システム
+
+### オプティカルフロー
+
+### 充電器
+
+### アナログ映像伝送装置（アナログ映像伝送版のみ）
+
+<span id="f108-p28-body" data-translation-unit="f108-p28-body"></span>
+
+### カメラ
+
+## 第6章 トラブルシューティング
+
+### ホバリング時
+
+### その他
+
+<span id="f108-p29-body" data-translation-unit="f108-p29-body"></span>
+
+## 第7章 Mission Plannerでマニュアルモードのチャンネルを変更する方法
+
+<span id="f108-p29-f1-unit" data-translation-unit="f108-p29-f1-unit"></span>
+
+<span id="f108-p29-f2-unit" data-translation-unit="f108-p29-f2-unit"></span>
+
+<span id="f108-p30-body" data-translation-unit="f108-p30-body"></span>
+
+<span id="f108-p30-f1-unit" data-translation-unit="f108-p30-f1-unit"></span>
+
+<span id="f108-p30-f2-unit" data-translation-unit="f108-p30-f2-unit"></span>
+
+<span id="f108-p30-f3-unit" data-translation-unit="f108-p30-f3-unit"></span>
+
+<span id="f108-p31-body" data-translation-unit="f108-p31-body"></span>
+
+<span id="f108-p31-f1-unit" data-translation-unit="f108-p31-f1-unit"></span>

@@ -912,7 +912,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f108",
-    "detailPath": null,
+    "detailPath": "/radiolink/f108/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f108.webp",
@@ -1080,7 +1080,7 @@
     "subcategoryLabel": "固定翼機",
     "description": "Radiolinkの固定翼機です。",
     "officialUrl": "https://www.radiolink.com/a560",
-    "detailPath": null,
+    "detailPath": "/radiolink/a560/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/a560.webp",
