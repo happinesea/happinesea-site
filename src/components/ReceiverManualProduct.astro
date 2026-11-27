@@ -5,9 +5,9 @@ import manuals from '../lib/receiver-manuals.mjs';
 import { withBase } from '../lib/urls';
 import { categoryIds } from '../lib/radiolink-categories.mjs';
 
-const { productId } = Astro.props;
+const { productId, manualId = productId } = Astro.props;
 const product = catalogue.find((p) => p.id === productId);
-const manual = manuals.manuals.find((m) => m.product_id === productId);
+const manual = manuals.manuals.find((m) => m.product_id === manualId);
 if (!product || !manual)
   throw new Error(`Missing receiver publication: ${productId}`);
 const quickGuide =

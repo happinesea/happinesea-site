@@ -3,6 +3,8 @@ title: T16D 日本語取扱説明書
 product: t16d
 slug: manuals/t16d
 status: draft
+tableOfContents:
+  maxHeadingLevel: 4
 source:
   kind: publication_contract
   url: https://www.radiolink.com/download/0b9699e77485a646f5095dedf2553a55.pdf
@@ -20,9 +22,21 @@ import { withBase } from '../../../../lib/urls';
 
 適用資料：Radiolink T16D 公式英語取扱説明書（2026年8月20日版、51頁）。
 
-<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-7.png" width={736} height={735} figureId="t16d-figure-1-7" alt="T16D送信機" caption="原典表紙のT16D送信機" />
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-0.png" width={43} height={43} figureId="t16d-figure-1-0" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
 
-このページでは安全上の注意と取扱説明書の章構成を参照できます。
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-1.png" width={38} height={51} figureId="t16d-figure-1-1" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-2.png" width={41} height={33} figureId="t16d-figure-1-2" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-3.png" width={82} height={30} figureId="t16d-figure-1-3" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-4.png" width={46} height={36} figureId="t16d-figure-1-4" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-5.png" width={68} height={41} figureId="t16d-figure-1-5" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-6.png" width={572} height={172} figureId="t16d-figure-1-6" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-1-7.png" width={736} height={735} figureId="t16d-figure-1-7" alt="T16D取扱説明書の図" caption="英語原典 物理1頁の図" />
 
 <span id="section-1"></span>
 
@@ -36,11 +50,29 @@ import { withBase } from '../../../../lib/urls';
 
 :::caution[安全上の注意]
 1. 雨天の屋外、水たまりを通過する場所、視界の悪い状況では使用しないでください。送受信機などの構成部品に水や雪が入ると、誤動作や操縦不能につながるおそれがあります。
+:::
+
+:::caution[安全上の注意]
 2. 人や道路の近くでは使用しないでください。
+:::
+
+:::caution[安全上の注意]
 3. 本製品は玩具ではなく、14歳未満のお子様には適していません。大人の方は子供の手が届かない場所に保管し、子供がいる場所では十分注意して使用してください。
+:::
+
+:::caution[安全上の注意]
 4. 飛行時は地域の法令を厳守し、安全に飛行してください。
+:::
+
+:::caution[安全上の注意]
 5. 電源を入れる前に、スロットルスティックとトリムボタンが最下端にあることを確認してください。送信機の電源を入れ、電源容量が十分であることを確認してから、受信機の電源を入れてください。
+:::
+
+:::caution[安全上の注意]
 6. 模型を動作させる前に、各サーボの動作が対応するスティックの操作方向と一致していることを確認してください。一致しない場合は調整してから使用してください。
+:::
+
+:::caution[安全上の注意]
 7. 電源を切るときは、受信機と制御対象の機器を先に切り、その後で送信機を切ってください。逆の順序で操作すると操縦不能となり、事故につながるおそれがあります。
 :::
 
@@ -52,29 +84,127 @@ import { withBase } from '../../../../lib/urls';
 
 #### 1.2.1 仕様
 
+標準対応受信機：R16F。
+
+<table><tbody><tr><th colSpan={2}>T16D送信機</th></tr><tr><td>寸法</td><td>174.3 × 206.9 × 106.9 mm（6.86 × 8.15 × 4.21 インチ）</td></tr><tr><td>バッテリー収納部の寸法</td><td>114.4 × 35.4 × 32 mm（4.5 × 1.39 × 1.26 インチ）</td></tr><tr><td>アンテナ長</td><td>90 mm（3.54 インチ）</td></tr><tr><td>質量</td><td>558 g（19.68 oz）</td></tr><tr><td>チャンネル数</td><td>16チャンネル（全チャンネルがフルプロポーショナルでプログラム可能）</td></tr><tr><td>送信周波数</td><td>2.4 GHz ISM帯（2400～2483.5 MHz）</td></tr><tr><td>スペクトラム拡散</td><td>FHSS方式（67チャンネルの疑似ランダム周波数ホッピング）</td></tr><tr><td>信号出力</td><td>PWM／SBUS／PPM／CRSF</td></tr><tr><td>OS</td><td>freeRTOS＋LVGL GUI</td></tr><tr><td>長距離モジュールのスクリプト</td><td>LUA</td></tr><tr><td>長距離モジュール</td><td>ELRSやTBS Crossfireなどに対応</td></tr></tbody></table>
+
+<table><tbody><tr><td>音声案内</td><td>音声案内をカスタマイズ可能</td></tr><tr><td>応答遅延</td><td>3／4／14 msから選択可能</td></tr><tr><td>チャンネル分解能</td><td>チャンネル分解能は4096、通常のジッターは0.25 µsです。</td></tr><tr><td>変調方式</td><td>GFSK</td></tr><tr><td>チャンネル帯域幅</td><td>400 kHz</td></tr><tr><td>チャンネル間隔</td><td>1200 kHz</td></tr><tr><td>伝送速度</td><td>38 kbps</td></tr><tr><td>フレーム周期</td><td>1フレームあたり15 ms</td></tr><tr><td>動作電圧</td><td>動作電圧：7.4～18.0 V（単3形電池8本、2S～4S LiPoバッテリー、または18650リチウム電池）。外部モジュールを接続する場合は、電源電圧がモジュールの動作電圧を超えないことを確認してください。</td></tr><tr><td>Type-Cポートの電圧と電流</td><td>Type-Cポート：入力電圧5 V（Type-CケーブルでコンピューターまたはモバイルバッテリーからT16Dへ給電することもできます）、入力電流500 mA。出力電圧4.6～5.0 V、出力電流最大1 A。</td></tr><tr><td>動作電流</td><td>DC 8.4 V時に200 mA（±10 mA）</td></tr><tr><td>操縦距離</td><td>内蔵RF：空中4000 m（障害物および電波干渉のない場所で最大距離を試験）。外部RF：長距離モジュールの受信機によります。</td></tr><tr><td>対応模型</td><td>対応模型：回転翼機／固定翼機／グライダー／マルチコプター／車／船／ロボット</td></tr><tr><td>低電圧アラーム</td><td>送信機電圧低下、受信機電圧低下、模型のバッテリー電圧低下、RSSI低下の各アラームをカスタマイズできます。</td></tr><tr><td>モデルメモリー数</td><td>100</td></tr><tr><td>サブID数</td><td>16</td></tr><tr><td>270°サーボ</td><td>270°サーボに対応します。「Receiver Setting」→「RF SETTING」→「PROTOCOL」で270°サーボ機能を有効にします。</td></tr></tbody></table>
+
+<table><tbody><tr><td>シミュレーター機能</td><td>Phoenixなどの従来のシミュレーターに加え、内蔵シミュレーター機能に対応します（ファームウェアをV1.7.1へ更新する必要があります）。外部ドングルを使わずType-Cケーブルでコンピューターへ接続し、TRYP FPV、AeroFly、Uncrashed、Liftoff、FPV LOGIC、Velocidroneなどのオープンソースシミュレーターに対応します。macOSとWindowsで使用できます。</td></tr><tr><td>トレーナー機能</td><td>対応</td></tr><tr><td>対応受信機</td><td>対応受信機：R16F（標準）、R16SM、R12F、R8EF、R8FM、R8SM、R8XM、R8FGH、R8FG、R7FG、R6FG、R6F、R4FGM</td></tr><tr><td>動作温度</td><td>−30～85 °C</td></tr><tr><td>対応制御基板</td><td>対応制御基板：Ardupilot、pix4、beta、Arduino、Raspberry Pi。SBUS信号で接続できます。</td></tr></tbody></table>
+
+<table><tbody><tr></tr><tr><td>寸法</td><td>45 × 32 × 15 mm（1.77 × 1.26 × 0.59 インチ）</td></tr><tr><td>質量</td><td>17 g（0.6 oz）</td></tr><tr><td>チャンネル数</td><td>16チャンネル</td></tr><tr><td>動作電圧</td><td>3～12 V</td></tr><tr><td>動作電流</td><td>5 V時に50±10 mA</td></tr><tr><td>アンテナ長</td><td>205 mm（8.07 インチ）</td></tr><tr><td>信号出力</td><td>SBUS／CRSF／PWM</td></tr><tr><td>R16F周波数</td><td>R16F周波数：2.4 GHz ISM帯（2400～2483.5 MHz）</td></tr><tr><td>R16Fスペクトラム拡散</td><td>R16Fスペクトラム拡散：FHSS方式、67チャンネルの疑似ランダム周波数ホッピング</td></tr><tr><td>R16F対応模型</td><td>R16F対応模型：回転翼機／固定翼機／グライダー／マルチコプター／車／船／ロボット</td></tr><tr><td>R16F操縦距離</td><td>R16F操縦距離：空中4000 m（障害物および電波干渉のない場所で最大距離を試験）</td></tr><tr><td>テレメトリー</td><td>模型のバッテリー電圧、RSSI、受信機電圧をリアルタイムで返すテレメトリー機能を内蔵しています。フライトコントローラーと接続すると、内蔵データ通信機能により緯度・経度、距離、衛星数などの情報をリアルタイムで送信できます。</td></tr></tbody></table>
+
+<table><tbody><tr><td>オンライン更新</td><td>データ転送用Type-CケーブルでR16Fをコンピューターに接続すると、追加機器なしで最新機能を追加できます。</td></tr><tr><td>EXTバッテリー入力</td><td>EXTバッテリー入力：1S～14S（3.0～60 V）</td></tr><tr><td>応答遅延</td><td>3／4／14 msから選択可能</td></tr><tr><td>R16Fシミュレーター機能</td><td>PC Game Joystick通信プログラムを内蔵しています（ファームウェアをV1.7へ更新する必要があります）。Type-Cポートでコンピューターへ直接接続し、TRYP FPV、AeroFly、Uncrashed、liftoff、FPV LOGIC、Velocidrone（Black Sheep Simulator）などのオープンソースシミュレーターに対応します。受信機への追加給電は不要です。AppleおよびWindowsのコンピューターで使用できます。</td></tr><tr><td>動作温度</td><td>−30～85 °C</td></tr><tr><td>対応送信機</td><td>対応送信機：T16D／T12D／T8FB／T8S／RC8X／RC8P／RC6GS V3／RC4GS V3／RC6GS V2／RC4GS V2／RC6GS／RC4GS</td></tr></tbody></table>
+
 <span id="section-1-2-2"></span>
 
 #### 1.2.2 同梱品
+
+T16D送信機 ×1、R16F受信機 ×1、TFカード（4G、T16Dに装着済み）×1、Type-Cケーブル ×1、バッテリー接続延長線 ×1、ストラップ ×1、フックおよびスプリング ×1、マニュアル ×1、梱包箱 ×1、エンジン電圧テレメトリーケーブル ×1、R16FのMavlinkポートとCrossFlightのTELEM1を接続するケーブル ×1、R16FのCH14およびCH15とCrossFlightのTELEM2を接続するケーブル ×1、R16FのCH6とCrossFlightのRC INを接続するケーブル ×1。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-12.png" width={2000} height={2000} figureId="t16d-figure-7-12" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-1.png" width={156} height={156} figureId="t16d-figure-7-1" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-5.png" width={1000} height={1000} figureId="t16d-figure-7-5" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-6.png" width={600} height={600} figureId="t16d-figure-7-6" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-8.png" width={600} height={600} figureId="t16d-figure-7-8" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-7.png" width={600} height={600} figureId="t16d-figure-7-7" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-0.png" width={1000} height={1000} figureId="t16d-figure-7-0" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-4.png" width={1000} height={1000} figureId="t16d-figure-7-4" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-3.png" width={1000} height={1000} figureId="t16d-figure-7-3" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-10.png" width={898} height={1280} figureId="t16d-figure-7-10" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-7-11.png" width={504} height={162} figureId="t16d-figure-7-11" alt="T16D取扱説明書の図" caption="英語原典 物理7頁の図" />
 
 <span id="section-1-2-3"></span>
 
 #### 1.2.3 T16D各部の名称
 
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-9-0.png" width={1021} height={451} figureId="t16d-figure-9-0" alt="T16D取扱説明書の図" caption="英語原典 物理9頁の図" />
+
 <span id="section-1-2-4"></span>
 
 #### 1.2.4 送信機の基本操作
+
+<span id="t16d-ch1-1-2-4" data-translation-unit="t16d-ch1-1-2-4"></span>
+
+手順1：単3形電池8本、2S～4S LiPoバッテリー、または18650電池でT16Dに給電します。外部モジュールを接続する場合は、電源電圧がモジュールの動作電圧を超えないことを確認してください。
+
+手順2：電源ボタンを長押ししてT16Dの電源を入れます。
+
+手順3：Modeボタンを押して「MAIN MENU」に入ります。
+
+手順4：Pushボタンを回してカーソルを移動するか、機能のパラメーター値を変更します。Pushボタンを押して確定します。
+
+手順5：Endボタンを1回押すと前のメニューに戻ります。メイン画面でEndボタンを押すと「MONITOR」画面へ切り替わります。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-9-1.png" width={1020} height={634} figureId="t16d-figure-9-1" alt="T16D取扱説明書の図" caption="英語原典 物理9頁の図" />
 
 <span id="section-1-2-5"></span>
 
 #### 1.2.5 T16Dの電源を入れる
 
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-10-0.png" width={398} height={298} figureId="t16d-figure-10-0" alt="T16D取扱説明書の図" caption="英語原典 物理10頁の図" />
+
+<span id="t16d-ch1-1-2-5" data-translation-unit="t16d-ch1-1-2-5"></span>
+
+T16Dの電源ボタンを長押しすると電源が入り、図の画面が表示されます。
+
+①現在のモデル名。送信機設定の「MODEL」で別のモデルを選択できます。最大100件のモデルを保存できます。操作前に、画面のモデルが実際に使用する模型と一致することを必ず確認してください。異なるモデルを選択するとサーボの動作量、動作方向、ニュートラル位置の設定が誤ったものとなり、操作すると模型が破損するおそれがあります。
+
+②モジュール選択。受信機設定の「RF SETTINGS」で設定します。内蔵モジュール選択時は「IN」、外部モジュール選択時は「EX」が表示されます。
+
+③電波塔アイコン。送信機と受信機のバインドに成功すると表示され、送受信機間の信号強度を示します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-10-1.png" width={51} height={31} figureId="t16d-figure-10-1" alt="T16D取扱説明書の図" caption="英語原典 物理10頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-10-2.png" width={50} height={31} figureId="t16d-figure-10-2" alt="T16D取扱説明書の図" caption="英語原典 物理10頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-10-3.png" width={39} height={32} figureId="t16d-figure-10-3" alt="T16D取扱説明書の図" caption="英語原典 物理10頁の図" />
+
+④送信機のバッテリー電圧。⑤現在の電源表示。⑥現在のフライトモード。
+
+⑦タイマー1とタイマー2。カーソルをタイマー1または2へ移動し、Pushボタンを短押しすると計時を開始／停止し、長押しするとリセットします。
+
+⑧受信信号強度（RSSI）。「NULL」は信号がないか、送受信機のバインドが成功していないことを示します。RSSI値は0に近いほど信号が強く、負の値の絶対値が大きいほど信号が弱くなります。
+
+⑨受信機の電源電圧。
+
+⑩模型の動力用バッテリー電圧。テレメトリー対応受信機を使用し、テレメトリーケーブルを正しく接続すると、外部電圧が送信機画面に表示されます。
+
+⑪画面ロック。カーソルをロックに合わせ、Pushボタンを長押しするとロック／解除します。ロック中はアイコンが赤くなり、PushボタンとModeボタンは機能しませんが、Endボタンを短押しするとモニター画面をすぐに確認できます。Pushボタンを長押しして解除するとロックが白くなり、すべてのボタン機能が復帰します。
+
+⑫Mode 2の例です。画面の下端および左右端に4つの目盛りがあります。固定翼機ではエルロン、エレベーター、スロットル、ラダーのトリムを表し、送信機の4つのトリムレバーに対応します（1.2.3参照）。初飛行前の模型の調整には、このトリムを使用しないでください。初回の運用で水平飛行しているときに、機体姿勢を微調整するために使用します。
+
+⑬現在のモデルタイプ。
+
 <span id="section-1-2-6"></span>
 
 #### 1.2.6 言語の選択
 
+<span id="t16d-ch1-1-2-6" data-translation-unit="t16d-ch1-1-2-6"></span>
+
+メニューは中国語、英語、ドイツ語、フランス語、ロシア語、日本語、スペイン語、韓国語、タイ語、ポーランド語などに対応しています。初期設定は英語です。希望する言語を選択できます。T16Dの電源を入れ、Modeボタンを短押しし、「MAIN MENU」→「Transmitter Settings」→「SYSTEM SETTING」→「LANGUAGE」で言語を選択します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-11-3.png" width={332} height={249} figureId="t16d-figure-11-3" alt="T16D取扱説明書の図" caption="英語原典 物理11頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-11-4.png" width={334} height={250} figureId="t16d-figure-11-4" alt="T16D取扱説明書の図" caption="英語原典 物理11頁の図" />
+
 <span id="section-1-2-7"></span>
 
 #### 1.2.7 送信機の低電圧アラーム
+
+<span id="t16d-ch1-1-2-7" data-translation-unit="t16d-ch1-1-2-7"></span>
+
+送信機バッテリーの低電圧アラーム初期値は6.6 Vです。電圧が6.6 V未満になると、音声で低電圧を警告します。使用する電池に応じてアラーム電圧を設定できます。T16Dの電源を入れ、Modeボタンを短押しし、「MAIN MENU」→「Transmitter Settings」→「SYSTEM SETTINGS」→「BATTERY ALARM」で設定します。2S LiPoバッテリーを使用する場合は7.4 V以上、3S LiPoバッテリーを使用する場合は11.1 V以上に設定することを推奨します。
 
 <span id="section-1-2-8"></span>
 
@@ -88,57 +218,235 @@ import { withBase } from '../../../../lib/urls';
 
 #### 1.3.1 R16Fの特徴
 
+<span id="t16d-r16f-kit" data-translation-unit="t16d-r16f-kit"></span>
+
+同梱受信機：本書記載のT16DセットにはR16Fが同梱されます。
+
+<span id="t16d-ch1-1-3-1" data-translation-unit="t16d-ch1-1-3-1"></span>
+
+R16Fの特長：T16Dには、模型の電圧テレメトリーに対応する16チャンネル受信機R16Fが同梱されています。2.4G FHSSスペクトラム拡散アルゴリズムと67チャンネルの疑似ランダム周波数ホッピングにより、優れた耐干渉性能を備えます。PWM、SBUS、CRSFの3種類の信号出力に対応します。
+
+模型を操作する前に、次の安全点検を実施してください。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-14-0.png" width={578} height={515} figureId="t16d-figure-14-0" alt="T16D取扱説明書の図" caption="英語原典 物理14頁の図" />
+
+(1) RSSI（受信信号強度）試験：方法は1.3.7を参照してください。
+
+(2) アンテナ点検：R16Fの灰色の線は同軸ケーブルで、先端の約4～5 cmの透明な部分がアンテナです。透明な部分の断線や損傷は操縦距離に直接影響します。異常がある場合は速やかに受信機アンテナを交換してください。
+
 <span id="section-1-3-2"></span>
 
 #### 1.3.2 バインド
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-14-2.png" width={374} height={152} figureId="t16d-figure-14-2" alt="T16D取扱説明書の図" caption="英語原典 物理14頁の図" />
+
+<span id="t16d-ch1-1-3-2" data-translation-unit="t16d-ch1-1-3-2"></span>
+
+T16DとR16Fは初期状態でバインド（リンク）済みです。両方の電源を入れ、T16D画面上部に電波塔アイコンが表示されると、バインド済みであることを示します。新しいR16F受信機を購入した場合は送信機とのバインドが必要です。各受信機には固有のIDコードがあり、使用前に送信機とバインドする必要があります。完了するとIDコードが送信機に保存され、再バインドは不要です。
+
+(1) 送信機と受信機を約60 cm離して置きます。近すぎると信号が遮られ、バインドの失敗や信号消失が起こることがあります。
+
+(2) 送受信機の電源を入れます。R16FのLEDがゆっくり点滅します。
+
+(3) 受信機側面の黒いバインドボタン「ID SET」を1秒を超えて押してから離します。LEDが速く点滅し、バインド処理中であることを示します。
+
+(4) LEDが点滅から点灯に変わると完了し、送信機のLCD画面上部に電波塔アイコンが表示されます。失敗するとLEDはゆっくり点滅し続けます。上記の手順を繰り返してください。
+
+解説動画：https://www.youtube.com/watch?v=k-TGPy9AsNU
+
+別の方法：受信機の電源を連続して3回入／切する方法でもバインドできます。各回の通電時間は1～5秒としてください（1秒未満は回数に含まれません）。連続3回の後、LEDが速く点滅してバインドが始まります。LEDが点灯に変わると完了です。
 
 <span id="section-1-3-3"></span>
 
 #### 1.3.3 受信機の接続
 
+<span id="t16d-ch1-1-3-3" data-translation-unit="t16d-ch1-1-3-3"></span>
+
+(1) 接続ケーブル：一般的な配線色は白／赤／黒（図1）または黄／赤／茶（図2）です。どちらも明るい色が信号線、暗い色がグランド線、中央が5 V電源線です。各線は図の端子表示に対応します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-15-0.png" width={379} height={163} figureId="t16d-figure-15-0" alt="T16D取扱説明書の図" caption="英語原典 物理15頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-15-1.png" width={365} height={157} figureId="t16d-figure-15-1" alt="T16D取扱説明書の図" caption="英語原典 物理15頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-15-2.png" width={72} height={18} figureId="t16d-figure-15-2" alt="T16D取扱説明書の図" caption="英語原典 物理15頁の図" />
+
+注意：RadioLinkの受信機には逆接続保護があります。別のバッテリーで受信機へ給電する場合、極性を逆に接続しても受信機は破損しませんが、そのときサーボが接続されているとサーボが破損します。
+
+(2) 模型バッテリーのテレメトリー接続：R16Fは模型のバッテリー電圧、受信機電圧、RSSIのテレメトリーに対応します。ケーブルの一端をR16Fのテレメトリーポートへ、もう一端をESCへ接続すると、動力用バッテリー電圧を取得できます。接続は図を参照してください。
+
+注意：(1) R16Fの全16チャンネルには逆接続保護回路があり、主要部品を保護します。ただしR16F付属のバッテリー接続用JSTコネクターは逆接続しないでください。逆接続するとテレメトリー電圧値が誤った値になります。(2) Extポートは模型の電圧テレメトリー専用です。受信機への給電には使用できません。
+
 <span id="section-1-3-4"></span>
 
 #### 1.3.4 受信機の動作モード
+
+<span id="t16d-ch1-1-3-4" data-translation-unit="t16d-ch1-1-3-4"></span>
+
+R16FはPWM、SBUS、CRSFの3種類の信号出力に対応し、合計4つの動作モードがあります。
+
+SBUSのON/OFF：バインドボタンを1回短押しします。青色LEDがSBUSのONを示し、CH16からSBUS信号を出力します。
+
+CRSFのON/OFF：2秒以内にバインドボタンを2回短押しします。緑色LEDがCRSFのONを示します。CH14がRXを受信し、CH15がTXを出力します。
+
+1. PWMモード：赤色LEDの点灯はPWM出力を示します。全16チャンネルです。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-17-1.png" width={508} height={416} figureId="t16d-figure-17-1" alt="T16D取扱説明書の図" caption="英語原典 物理17頁の図" />
+
+2. PWM＋SBUSモード：赤色と青色のLEDが点灯します。CH1～CH15はPWM、CH16はSBUSを出力します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-17-2.png" width={485} height={410} figureId="t16d-figure-17-2" alt="T16D取扱説明書の図" caption="英語原典 物理17頁の図" />
+
+3. PWM＋CRSF＋SBUSモード：赤色、緑色、青色のLEDが点灯します。CH1～CH13はPWMを出力し、CH14はRXを受信、CH15はTXを出力、CH16はSBUSを出力します。
+
+4. PWM＋CRSFモード：赤色と緑色のLEDが点灯します。CH1～CH13はPWMを出力し、CH14はRXを受信、CH15はTXを出力、CH16はPWMを出力します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-18-2.png" width={421} height={369} figureId="t16d-figure-18-2" alt="T16D取扱説明書の図" caption="英語原典 物理18頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-19-1.png" width={389} height={340} figureId="t16d-figure-19-1" alt="T16D取扱説明書の図" caption="英語原典 物理19頁の図" />
 
 <span id="section-1-3-5"></span>
 
 #### 1.3.5 受信機ファームウェアの更新
 
+<span id="t16d-ch1-1-3-5" data-translation-unit="t16d-ch1-1-3-5"></span>
+
+R16Fはファームウェア更新に対応します。
+
+(1) Type-CケーブルをR16FのType-Cポートへ差し込みます。
+
+(2) R16Fのバインドボタンを押したままにします。
+
+(3) ケーブルのもう一端をコンピューターへ差し込み、バインドボタンを離します。
+
+(4) 受信機のLEDが点灯し、コンピューターにUSBドライブが表示されます。
+
+(5) R16Fの新しいファームウェアをそのUSBドライブへコピー＆ペーストすると更新が完了します。
+
+解説動画：https://www.youtube.com/watch?v=VkRftk5fYP0
+
 <span id="section-1-3-6"></span>
 
 #### 1.3.6 受信機アンテナの取り付け
+
+<span id="t16d-ch1-1-3-6" data-translation-unit="t16d-ch1-1-3-6"></span>
+
+受信機アンテナを模型へ正しく取り付けることが重要です。誤った取り付けは信号品質を低下させます。よくある取り付けの誤りと注意点を示します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-20-0.png" width={396} height={199} figureId="t16d-figure-20-0" alt="T16D取扱説明書の図" caption="英語原典 物理20頁の図" />
+
+(1) 2本のアンテナを重ねないでください。相互に干渉します。図のように互いに90°に保ってください。
+
+(2) 金属物の近くに置かないでください。導体面での反射により信号が大きく悪化します。
+
+(3) アンテナを地面と平行にしないでください。地面に対して垂直に配置してください。
+
+(4) 大型模型の金属部品は信号の放射に影響することがあります。その場合は、あらゆる状況で最良の信号状態を得るため、アンテナを模型の両側へ配置してください。
+
+(5) 金属導体やカーボンファイバーから少なくとも0.5インチ離し、過度に曲げないでください。
+
+(6) モーター、ESC、その他の干渉源になり得る機器から離してください。
+
+(7) 受信機取り付け時は、防振のためスポンジや発泡材を使用することを推奨します。
+
+(8) 受信機には高精度電子部品が含まれます。強い振動と高温を避けてください。
+
+(9) RC用の発泡材やゴム布などの専用防振材で包んで保護してください。密封性の高いビニール袋に入れると、操縦不能の原因となり得る湿気やほこりの侵入を防げます。
+
+取り付けガイド：https://www.radiolink.com/newsinfo/886600.html
 
 <span id="section-1-3-7"></span>
 
 #### 1.3.7 RSSI試験
 
+<span id="t16d-ch1-1-3-7" data-translation-unit="t16d-ch1-1-3-7"></span>
+
+操縦距離が短い場合は、以下の方法で送信機を試験してください。RSSI値の試験手順と、異常値への対処を説明します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-20-1.png" width={342} height={259} figureId="t16d-figure-20-1" alt="T16D取扱説明書の図" caption="英語原典 物理20頁の図" />
+
+(1) 送信機と受信機の電源を入れて接続します。接続しない場合は再バインドが必要です。送信機画面に電波塔アイコンが表示されると、バインド成功を示します。ホーム画面のRSSI値は送受信機間の距離に応じて変化します。
+
+(2) 送信機と受信機のアンテナを平行にします。送受信機を約60 cm離し、両方のアンテナをまっすぐにします。RSSI値が0～-30 dBmの範囲なら正常です。0に近いほど信号が強くなります。
+
+解説動画：https://www.youtube.com/watch?v=pXPmR9yGsus
+
+信号強度異常への対処：送受信機のアンテナに損傷がないか確認してください。信号強度の低下の多くはアンテナの損傷が原因です。損傷していれば交換してください。損傷がない場合は受信機を交換し、送受信機の故障を調べることができます。それでも解決しない場合は、after_service@radiolink.com.cnへメールでお問い合わせください。
+
 <span id="section-2"></span>
 
 ## 2 基本設定
+
+<span id="t16d-basic-2" data-translation-unit="t16d-basic-2"></span>
+
+この章では、［Main Menu］→［Basic Setting］の各機能を説明します。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-21-1.png" width={351} height={263} figureId="t16d-figure-21-1" alt="T16D取扱説明書の図" caption="英語原典 物理21頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-21-0.png" width={348} height={262} figureId="t16d-figure-21-0" alt="T16D取扱説明書の図" caption="英語原典 物理21頁の図" />
 
 <span id="section-2-1"></span>
 
 ### 2.1 モニター（MONITOR）
 
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-21-3.png" width={321} height={242} figureId="t16d-figure-21-3" alt="T16D取扱説明書の図" caption="英語原典 物理21頁の図" />
+
+<span id="t16d-basic-2-1" data-translation-unit="t16d-basic-2-1"></span>
+
+全チャンネルの現在の出力状態をリアルタイムで表示します。T16Dのメイン画面でEndボタンを短押しすると、チャンネルモニターをすぐに開けます。画面例は原典の物理21頁を参照してください。
+
 <span id="section-2-2"></span>
 
 ### 2.2 サーボリバース（REVERSE）
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-22-2.png" width={321} height={241} figureId="t16d-figure-22-2" alt="T16D取扱説明書の図" caption="英語原典 物理22頁の図" />
+
+<span id="t16d-basic-2-2" data-translation-unit="t16d-basic-2-2"></span>
+
+1つまたは複数のチャンネルの出力方向を反転します。機体によって設計仕様が異なるため、組み立てや調整中に、右に動かす操作で機体が左に動くなど、意図した方向と逆に動くことがあります。この場合は、送信機の該当チャンネルの出力方向を調整します。変更するチャンネルにカーソルを合わせ、Pushボタンを短押しして方向を切り替えます。画面例は原典の物理22頁を参照してください。
 
 <span id="section-2-3"></span>
 
 ### 2.3 エンドポイント（END POINTS）
 
+<span id="t16d-basic-2-3" data-translation-unit="t16d-basic-2-3"></span>
+
+サーボの出力動作量を調整します。チャンネルごとにHIGH、LOW、SUBTRIMを設定できます。機体の構造寸法や仕様、操縦者の操作の好みに応じて動作量を調整します。例えば旋回時の動きを小さくしたいときは、方向を制御するチャンネルの両端の値を小さくします。原典では、旋回時の動きが小さくなり、スピンしにくくなる例として説明しています。設定する値にカーソルを合わせ、Pushボタンを回して調整します。エンドポイントの設定範囲は0～120です。画面例は原典の物理22頁を参照してください。原典の動画：https://www.youtube.com/watch?v=SYsrEZqgJM8
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-22-1.png" width={323} height={242} figureId="t16d-figure-22-1" alt="T16D取扱説明書の図" caption="英語原典 物理22頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-22-0.png" width={322} height={244} figureId="t16d-figure-22-0" alt="T16D取扱説明書の図" caption="英語原典 物理22頁の図" />
+
 <span id="section-2-4"></span>
 
 ### 2.4 チャンネル動作速度（CH SPEED）
+
+<span id="t16d-basic-2-4" data-translation-unit="t16d-basic-2-4"></span>
+
+機体に合わせて、チャンネルの出力速度を調整します。例えば引込脚の動きをゆっくりにしたい場合は、該当チャンネルの出力速度を下げます。SWITCHにはSWA～SWHを割り当てられます。NULLはスイッチの割り当てなしを示します。STATEのINHは機能無効、ON/OFFは機能のオン／オフを示します。初期値の0秒ではチャンネルに遅延がなく、最大12秒まで設定できます。画面例は原典の物理23頁を参照してください。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-23-0.png" width={323} height={244} figureId="t16d-figure-23-0" alt="T16D取扱説明書の図" caption="英語原典 物理23頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-23-2.png" width={325} height={243} figureId="t16d-figure-23-2" alt="T16D取扱説明書の図" caption="英語原典 物理23頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-23-3.png" width={333} height={251} figureId="t16d-figure-23-3" alt="T16D取扱説明書の図" caption="英語原典 物理23頁の図" />
 
 <span id="section-2-5"></span>
 
 ### 2.5 補助チャンネル（AUX CH）
 
+<span id="t16d-basic-2-5" data-translation-unit="t16d-basic-2-5"></span>
+
+CH5～CH16の操作に使うスイッチやつまみを割り当てます。SWA～SWDとVRA～VRDを設定できます。NULLは割り当てなしを示します。画面例は原典の物理23頁を参照してください。
+
 <span id="section-2-6"></span>
 
 ### 2.6 トリム（TRIMS）
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-23-4.png" width={335} height={254} figureId="t16d-figure-23-4" alt="T16D取扱説明書の図" caption="英語原典 物理23頁の図" />
+
+<span id="t16d-basic-2-6" data-translation-unit="t16d-basic-2-6"></span>
+
+機械的なずれを補正し、各チャンネルのニュートラル位置を調整します。初期値は0で、−100～100の範囲で設定できます。画面例は原典の物理23頁を参照してください。
 
 <span id="section-2-7"></span>
 
@@ -148,17 +456,41 @@ import { withBase } from '../../../../lib/urls';
 
 ### 2.8 スイッチ音声（SWITCH AUDIO）
 
+<span id="t16d-basic-2-8" data-translation-unit="t16d-basic-2-8"></span>
+
+SWA～SWHの音声案内を設定します。機能を割り当てたスイッチに対し、位置ごとに異なる音声を設定できます。飛行モードや機能のオン／オフを音声で知らせる場合に使用します。独自の音声を使用する場合は、音声ファイルを送信機にコピーします。音声の作成方法は第7章を参照してください。画面例は原典の物理24頁を参照してください。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-24-1.png" width={341} height={255} figureId="t16d-figure-24-1" alt="T16D取扱説明書の図" caption="英語原典 物理24頁の図" />
+
 <span id="section-2-9"></span>
 
 ### 2.9 センサー音声通知（SENSOR BROADCAST）
+
+<span id="t16d-basic-2-9" data-translation-unit="t16d-basic-2-9"></span>
+
+信号強度、RX Vol（受信機電圧）、EXT Vol（外部電圧）、BAT Vol（送信機電圧）などのテレメトリー情報を音声で案内します。案内のスイッチにはSWA～SWHを設定できます。NULLでは音声案内が無効です。各項目のオン／オフを設定できます。白い点が左ならオフ、右ならオンです。例えばSWA_UPを設定し、SWAを上に操作すると、送信機が信号強度、受信機電圧、外部電圧、送信機電圧の順に案内します。画面例は原典の物理24頁を参照してください。
 
 <span id="section-3"></span>
 
 ## 3 高度設定（Advanced Settings）
 
+<span id="t16d-ch3-full" data-translation-unit="t16d-ch3-full"></span>
+
+この章では、高度設定メニューのTYPE SELECT、FLIGHT MODE、CONDITIONS、RATE/CURVE、THROTTLE CURVE、THROTTLE HOLD、V-TAILなど、すべての機能を説明します。モデルタイプを選択すると、そのタイプで使用できる機能が高度設定メニューに表示されます。例えばヘリコプターを選択すると、PITCH CURVEとHELICOPTER SETTINGSが表示されます。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-25-0.png" width={342} height={258} figureId="t16d-figure-25-0" alt="T16D取扱説明書の図" caption="英語原典 物理25頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-25-1.png" width={338} height={255} figureId="t16d-figure-25-1" alt="T16D取扱説明書の図" caption="英語原典 物理25頁の図" />
+
 <span id="section-3-1"></span>
 
 ### 3.1 モデルタイプ選択（TYPE SELECT）
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-25-2.png" width={343} height={257} figureId="t16d-figure-25-2" alt="T16D取扱説明書の図" caption="英語原典 物理25頁の図" />
+
+<span id="t16d-ch3-1-full" data-translation-unit="t16d-ch3-1-full"></span>
+
+現在のモデルのタイプを選択します。T16Dは、固定翼、デルタ翼、マルチローター、ヘリコプター、カー、ボート、戦車、ロボットの8タイプに対応しています。別のモデルタイプを選択すると、そのタイプで使用できる機能が高度設定メニューに表示されます。
 
 <span id="section-3-2"></span>
 
@@ -168,6 +500,18 @@ import { withBase } from '../../../../lib/urls';
 
 ### 3.3 コンディション（CONDITION）
 
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-26-2.png" width={341} height={256} figureId="t16d-figure-26-2" alt="T16D取扱説明書の図" caption="英語原典 物理26頁の図" />
+
+<span id="t16d-ch3-3-full" data-translation-unit="t16d-ch3-3-full"></span>
+
+CONDITION 1/2：1つのモデルに最大3つのコンディションを設定でき、最大3つのスイッチで切り替えられます。CONDITION 1／CONDITION 2／CONDITION 3の切替にはSWA～SWHを選択できます。複数のスイッチを使用でき、優先順位は3＞2＞1です。
+
+CONDITION 2/2：コンディション用スイッチで有効／無効を切り替えられる機能は、END POINTS、CHANNEL SPEED、RATE/CURVE、THROTTLE CURVE、GYRO SENSE、V-TAIL、DELTA-WING MIX、PITCH CURVE、TRACK MIX、RF SETTINGSです。これらの機能をコンディション用スイッチで制御する場合は、この画面で該当機能をオンにしてください。オフのままではコンディション用スイッチは機能しません。
+
+例として、1つのスイッチで3つのスロットルカーブを切り替える手順を示します。(1) CONDITION 1／2／3のスイッチを、それぞれSWC_UP／SWC_MID／SWC_DOWNに設定します。(2) CONDITION 2/2画面でTHROTTLE CURVEをオンにします。(3) 高度設定メニューのスロットルカーブ設定画面を開きます。SWCを上（コンディション1）にして1つ目のカーブ、中（コンディション2）にして2つ目、下（コンディション3）にして3つ目のカーブを設定します。SWCでカーブを切り替えられます。SWCの位置に応じて、画面上部のタスクバーにも対応するコンディション番号が表示されます（原図参照）。チュートリアル：https://www.youtube.com/watch?v=I9FWLX-rsRo
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-27-1.png" width={342} height={257} figureId="t16d-figure-27-1" alt="T16D取扱説明書の図" caption="英語原典 物理27頁の図" />
+
 <span id="section-3-4"></span>
 
 ### 3.4 レート／カーブ（RATE/CURVE）
@@ -176,13 +520,43 @@ import { withBase } from '../../../../lib/urls';
 
 ### 3.5 スロットルカーブ（THROTTLE CURVE）
 
+<span id="t16d-ch3-5-full" data-translation-unit="t16d-ch3-5-full"></span>
+
+加速時や制動時のスロットル操作を敏感または滑らかにし、動作を直線的または非直線的に変化させます。TYPEはEXPとCRVから選択します。
+
+EXP：スロットルの中心点から最高点までの感度を調整します。負の値では、負の値が大きいほど50%スロットル付近での感度が低く、低速側と高速側の感度が高くなります。正の値では、値が大きいほど50%スロットル付近の感度が高く、低速側と高速側の感度が低くなります。設定範囲は-100～+100です。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-28-2.png" width={340} height={255} figureId="t16d-figure-28-2" alt="T16D取扱説明書の図" caption="英語原典 物理28頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-28-3.png" width={338} height={254} figureId="t16d-figure-28-3" alt="T16D取扱説明書の図" caption="英語原典 物理28頁の図" />
+
+CRV：スロットルの最下点から最上点までを9ポイントのカーブで設定します。例えばポイント1が-100ならポイント1の動作量は-100、ポイント2が-75ならポイント2の動作量は-75です。各ポイントの開始量は、直前のポイントで指定した位置になります。
+
 <span id="section-3-6"></span>
 
 ### 3.6 スロットルホールド（THROTTLE HOLD）
 
+<span id="t16d-ch3-6-full" data-translation-unit="t16d-ch3-6-full"></span>
+
+スロットルホールド（クルーズコントロール）は、スロットル出力を一定値に固定します。オンにすると、現在のスロットル位置に関係なく、出力が固定位置へ切り替わります。例えばクローラーでは、スイッチでクルーズコントロールをオンにすると、トリガーに触れずに一定速度を維持できます。
+
+SWITCH：SWA～SWHから選択します。設定時に実際のスイッチを操作して、そのスイッチを直接選択することもできます。ただし、ホールドが作動して事故が発生しないよう、スイッチ操作前に必ずTHROTTLE RATEを0にしてください。
+
+THROTTLE RATE：スロットルの固定出力値です。設定範囲は-120～+120で、スロットルチャンネルのサーボ出力値を表します。設定中は下のバーで出力値を確認できます。
+
+CH3：既定のスロットルチャンネルはCH3です。CH1～CH16の任意の1チャンネルをスロットルに選択できます。
+
+STATE：現在のスロットルホールドの状態です。白い点が左ならオフ、右ならオンです。チュートリアル：https://www.youtube.com/watch?v=RGXMy3x_Q5g
+
 <span id="section-3-7"></span>
 
 ### 3.7 Vテール（V_TAIL、固定翼）
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-29-0.png" width={343} height={257} figureId="t16d-figure-29-0" alt="T16D取扱説明書の図" caption="英語原典 物理29頁の図" />
+
+<span id="t16d-ch3-7-full" data-translation-unit="t16d-ch3-7-full"></span>
+
+Vテール付き固定翼機など、特定の機体用の機能です。2つのチャンネルを同方向または逆方向に動かすミキシング制御を行えます。STATEでオン／オフを切り替えます。CH2／CH4の値を調整し、エレベーターまたはラダースティック操作に対する、エレベーター／ラダーサーボの動作範囲と方向を決定します。
 
 <span id="section-3-8"></span>
 
@@ -192,13 +566,29 @@ import { withBase } from '../../../../lib/urls';
 
 ### 3.9 トリムグループ（TRIMS GROUP、固定翼）
 
+<span id="t16d-ch3-9-full" data-translation-unit="t16d-ch3-9-full"></span>
+
+固定翼機のCH1～CH4に、独立した3グループのトリム値を設定できます。各グループを異なる値にでき、互いに影響しません。Trim Groupは3グループを設定できます。SWITCHでグループ切替用スイッチを設定できます。Recoverで現在のトリム値を0に戻します。
+
 <span id="section-3-10"></span>
 
 ### 3.10 デルタ翼ミキシング（DELTA-WING MIX、デルタ翼）
 
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-30-0.png" width={339} height={254} figureId="t16d-figure-30-0" alt="T16D取扱説明書の図" caption="英語原典 物理30頁の図" />
+
+<span id="t16d-ch3-10-full" data-translation-unit="t16d-ch3-10-full"></span>
+
+エレボンミキシングとも呼ばれ、主にデルタ翼機で使用します。左右の2つの動翼を2つのサーボで独立して制御し、エルロンとエレベーターの両方として動作させます。STATEでオン／オフを切り替えます。CH1／CH2の値を調整し、エルロンまたはエレベータースティック操作に対する、エルロン／エレベーターサーボの動作範囲と方向を決定します。
+
 <span id="section-3-11"></span>
 
 ### 3.11 ジャイロ（GYROSCOPE）
+
+<span id="t16d-ch3-11-full" data-translation-unit="t16d-ch3-11-full"></span>
+
+ジャイロ感度を調整します。調整前に、受信機にジャイロが内蔵され、受信機側のジャイロ機能がオンになっていることを確認してください。STATEではVRA、VRBノブを感度調整に使用できます。NULLを選択した場合は感度を手動で設定します。GYRO SENSEの設定範囲は1～100%で、100%が最大感度です。オフに設定するとジャイロがオフになります。
+
+注意：GYRO機能はFHSS V2プロトコルの受信機にのみ対応します。対象はR8FGH、R8FG V2.1以降、R4FGM V2.1以降、および製造日が2023年4月26日以降のR8FGとR4FGMです。FHSS V1の受信機（R7FG、R6FGなど）では、まずCH8の両側のエンドポイントを120に設定し、CH8へノブスイッチを割り当てて感度を調整してください。
 
 <span id="section-3-12"></span>
 
@@ -207,6 +597,18 @@ import { withBase } from '../../../../lib/urls';
 <span id="section-3-13"></span>
 
 ### 3.13 ヘリコプター設定（HELICOPTER SETTINGS）
+
+<span id="t16d-ch3-13-full" data-translation-unit="t16d-ch3-13-full"></span>
+
+最良の飛行効果を得るため、現在のモードでヘリコプターのエルロン、エレベーター、ピッチサーボのミキシング制御を設定する機能です。
+
+原典図の表示補足（実機UI未確認）：スワッシュプレート欄には「SWASHPLATE FIXED」と「SWASHPLATE VARIABLE」の2つの画面例があります。両例のAILERON、ELEVATOR、PITCHはそれぞれ50%と表示されています。VARIABLEの例には、さらに「ELEVATOR2」のチャンネル選択「CH8」と値「50%」が表示されています。図の見出し「HELIPITCHSCROPE」は原典の表記を保持しています。
+
+これらは原典の画面例の転記であり、初期値や推奨設定値を示すものではありません。FIXED／VARIABLEの機能差、ELEVATOR2の用途・設定手順は原典本文に説明がないため、メーカー確認が必要です。日本語の補足を実機の日本語表示として扱わないでください。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-31-1.png" width={325} height={248} figureId="t16d-figure-31-1" alt="T16D取扱説明書の図" caption="英語原典 物理31頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-31-0.png" width={327} height={246} figureId="t16d-figure-31-0" alt="T16D取扱説明書の図" caption="英語原典 物理31頁の図" />
 
 <span id="section-3-14"></span>
 
@@ -224,29 +626,103 @@ import { withBase } from '../../../../lib/urls';
 
 ### 4.1 モデル管理（MODEL）
 
+<span id="t16d-transmitter-4-1" data-translation-unit="t16d-transmitter-4-1"></span>
+
+モデル管理メニューでは、モデル選択、モデルタイプ、モデルのコピー／貼り付け、名前の変更、モデルリセットを行います。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-34-2.png" width={336} height={255} figureId="t16d-figure-34-2" alt="T16D取扱説明書の図" caption="英語原典 物理34頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-34-3.png" width={335} height={253} figureId="t16d-figure-34-3" alt="T16D取扱説明書の図" caption="英語原典 物理34頁の図" />
+
 <span id="section-4-1-1"></span>
 
 #### 4.1.1 モデル選択
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-34-4.png" width={339} height={255} figureId="t16d-figure-34-4" alt="T16D取扱説明書の図" caption="英語原典 物理34頁の図" />
+
+<span id="t16d-transmitter-4-1-1" data-translation-unit="t16d-transmitter-4-1-1"></span>
+
+T16Dには最大100組のモデルデータを保存でき、必要なモデルをいつでも選択できます。カスタムモデルも追加されています。モデル91～96はRadioLinkのモデルで、400 Ball、200 Ball、A560、D460、SU27、F108を含みます。これらには初期パラメーターが用意されているため、対応するモデルをそのまま操作できます。
 
 <span id="section-4-1-2"></span>
 
 #### 4.1.2 モデルタイプ
 
+<span id="t16d-transmitter-4-1-2" data-translation-unit="t16d-transmitter-4-1-2"></span>
+
+固定翼、デルタ翼、マルチローター、ヘリコプター、カー、ボート、戦車、ロボットの8種類のモデルタイプを用意しています。Advanced Settingsメニューからもモデルタイプを選択できます。
+
 <span id="section-4-1-3"></span>
 
 #### 4.1.3 モデルのコピー／貼り付け
+
+<span id="t16d-transmitter-4-1-3" data-translation-unit="t16d-transmitter-4-1-3"></span>
+
+新しいモデルが以前使用したモデルと同じか、または似ている場合は、コピー機能を使って設定を短時間で行えます。例えばモデル1のデータをモデル2へコピーする場合は、モデル1を選択してコピーをクリックし、次にモデル2を選択して貼り付けをクリックします。注意：新しいモデルへコピーすると、元のモデル名もコピーされます。混同を避けるため、新しいモデルを区別できる名前に変更してください。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-34-0.png" width={340} height={257} figureId="t16d-figure-34-0" alt="T16D取扱説明書の図" caption="英語原典 物理34頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-34-1.png" width={342} height={258} figureId="t16d-figure-34-1" alt="T16D取扱説明書の図" caption="英語原典 物理34頁の図" />
 
 <span id="section-4-1-4"></span>
 
 #### 4.1.4 モデル名の変更
 
+<span id="t16d-transmitter-4-1-4" data-translation-unit="t16d-transmitter-4-1-4"></span>
+
+選択したモデルの名前を入力・変更できます。
+
 <span id="section-4-1-5"></span>
 
 #### 4.1.5 モデルリセット
 
+<span id="t16d-transmitter-4-1-5" data-translation-unit="t16d-transmitter-4-1-5"></span>
+
+現在のモデルのすべての設定を消去し、初期値に戻します。
+
 <span id="section-4-2"></span>
 
 ### 4.2 システム設定（SYSTEM SETTING）
+
+<span id="t16d-transmitter-4-2" data-translation-unit="t16d-transmitter-4-2"></span>
+
+言語、音、音量、アイドルアラーム、振動、振動強度、バッテリータイプ、バッテリーアラーム、電圧校正、明るさ、バックライト時間、自動電源オフを設定します。
+
+SYSTEM SETTING 1/3
+
+LANGUAGE：メニュー表示言語は中国語、英語、ドイツ語、フランス語、ロシア語、日本語、スペイン語、韓国語、タイ語、ポーランド語に対応します。T16Dの初期言語は英語です。必要な言語を選択できます。
+
+SOUND：システムとアラームの音を設定します。アラームのみ、キー操作音のみ、キー操作音＋アラームを選択できます。
+
+VOLUME：音量を0%、25%、50%、75%、100%に設定できます。100%が最大です。
+
+VIBRATION：システムとアラームの振動を設定します。アラームのみ、キー操作時のみ、キー操作時＋アラームを選択できます。NULLでは振動しません。
+
+VIBRATION INTENSITY：振動強度を0～100%に設定できます。
+
+SYSTEM SETTING 2/3
+
+BATTERY TYPE：画面右上のバッテリーアイコンに残量を正しく表示するため、バッテリータイプを設定します。誤ったタイプを選択すると、右上のアイコンの残量表示が不正確になります。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-35-1.png" width={342} height={258} figureId="t16d-figure-35-1" alt="T16D取扱説明書の図" caption="英語原典 物理35頁の図" />
+
+BATTERY ALARM：送信機バッテリーの警告電圧を設定します。電圧が設定値を下回るとアラームが鳴ります。初期値は6.6Vです。
+
+PWR OFF Voltage：送信機の電圧がこの電源オフ電圧に達すると、自動的に電源が切れます。
+
+CALIBRATION VOLTAGE：表示電圧と実際のバッテリー電圧に差がある場合、電圧校正で表示を一致させることができます。調整範囲は−5V～＋5Vです。
+
+BRIGHTNESS：画面の明るさを設定します。
+
+BACKLIGHT TIME：操作がないときに画面を点灯しておく時間を設定します。NULLでは長時間操作がなくても画面は消灯しません。最大1時間に設定できます。
+
+SYSTEM SETTING 3/3
+
+IDLE ALARM：送信機を操作しないときにアラームを鳴らすまでの時間を設定します。長時間の待機によるバッテリーの過放電を防ぐため、操作せず待機していることを知らせるアラームを設定できます。設定範囲は0～360分です。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-36-1.png" width={332} height={250} figureId="t16d-figure-36-1" alt="T16D取扱説明書の図" caption="英語原典 物理36頁の図" />
+
+AUTO SHUTDOWN：操作がないときに送信機の電源を自動的に切るまでの時間を設定します。NULLでは長時間操作がなくても自動的に電源は切れません。最大1時間に設定できます。
 
 <span id="section-4-3"></span>
 
@@ -256,21 +732,99 @@ import { withBase } from '../../../../lib/urls';
 
 ### 4.4 トレーナー（TRAINER）
 
+<span id="t16d-transmitter-4-4" data-translation-unit="t16d-transmitter-4-4"></span>
+
+SWITCH：スイッチでPPM信号の入出力をオン／オフできます。SWA、SWB、SWC、SWD、SWE、SWF、SWG、SWHから選択できます。NULLはスイッチの割り当てなしを示します。
+
+STATE：INHは機能無効、ON/OFFは機能のオン／オフです。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-38-2.png" width={349} height={262} figureId="t16d-figure-38-2" alt="T16D取扱説明書の図" caption="英語原典 物理38頁の図" />
+
+MODE：MIX INは主にヘッドトラッキング入力に使います。Trainer ModeはT16Dを教官用送信機として使う場合に設定し、生徒用送信機と交互に機体を操作します。Student ModeはT16Dを生徒用送信機として使う場合に設定します。
+
+PWR：T16Dを教官用送信機とし、RadioLinkワイヤレストレーナーケーブルを使用する場合に設定できます。ONではT16DのType-C端子から、生徒用送信機とバインドした受信機へ給電します。OFFではType-C端子から給電しません。注意：RadioLinkワイヤレストレーナーケーブルに対応する教官用T16DはハードウェアV1.0.2以降のみです。MAIN MENU → Transmitter Settings → ABOUTで送信機のハードウェアバージョンを確認してください。
+
+CH1 IN：T16Dを教官用送信機とし、トレーナー機能をオンにすると、生徒用送信機のCH1のPPM値を自動認識します。生徒用送信機のPPM入力値を確認するための表示です。生徒用送信機のCH1のスティックを動かすと、CH1 INも変化します。この画面でCH1 INを基にPPM MIN／PPM MID／PPM MAXを調整し、T16Dを他のヘッドトラッキング機器やトレーナー機器に適合させます。
+
+PPM MIN／PPM MID／PPM MAX：PPM入出力のパルス幅を調整します。ヘッドトラッキング機器やトレーナー機器の互換性の違いにより、PPMのニュートラル、最大値、最小値が一致しない場合は、ここで変更できます。
+
+注意：T16Dのトレーナー機能には、トレーナーケーブルで接続する方法と、RadioLinkワイヤレストレーナーケーブルで接続する方法があります。接続・設定の詳細：https://www.radiolink.com/newsinfo/955662.html
+
 <span id="section-4-5"></span>
 
 ### 4.5 タイマー（TIMER）
+
+<span id="t16d-transmitter-4-5" data-translation-unit="t16d-transmitter-4-5"></span>
+
+タイマーの表示と操作を設定します。T16Dには独立して設定できるタイマーが2つあり、設定方法は同じです。
+
+タイマー機能の動画：https://www.youtube.com/watch?v=2f0sw2P0bXQ
+
+TIMER 1/2
+
+TYPE：UPとDOWNの2種類があります。UPは0から計時を開始します。DOWNは設定時間からカウントダウンします。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-39-0.png" width={328} height={246} figureId="t16d-figure-39-0" alt="T16D取扱説明書の図" caption="英語原典 物理39頁の図" />
+
+ALARM：警告時間です。計時がここで設定した時間に達すると、送信機がアラームを鳴らします。初期値は5分です。
+
+ON/OFF：スイッチで計時を開始・停止できます。SWA、SWB、SWC、SWD、SWE、SWF、SWG、SWH、THR（スロットルスティック）から選択できます。
+
+RESET：スイッチで計時をリセットできます。計時中にリセットスイッチを1回操作すると、計時が最初から再開します。停止中に1回操作すると、タイマーがリセットされます。
+
+注意：タイマー終了後、次の計時を始める前に、リセットスイッチを1回操作してリセットしてください。
+
+ALARM：INHではタイマー終了時にアラーム音が鳴りません。ONではタイマー終了時に送信機がアラーム音を鳴らします。
+
+VIBRATION：INHではタイマー終了時に振動しません。ONではタイマー終了時に送信機が振動して知らせます。
+
+TIMER 2/2：タイマー1を参照してください。
 
 <span id="section-4-6"></span>
 
 ### 4.6 スイッチ設定（SWITCHES SETTING）
 
+<span id="t16d-transmitter-4-6" data-translation-unit="t16d-transmitter-4-6"></span>
+
+SWITCH SETTING 1/2
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-39-1.png" width={328} height={247} figureId="t16d-figure-39-1" alt="T16D取扱説明書の図" caption="英語原典 物理39頁の図" />
+
+2ポジションスイッチを3ポジションとして、または3ポジションスイッチを2ポジションとして設定できます。物理スイッチを交換した場合、この機能で対応するスイッチタイプを設定できます。SWA、SWB、SWC、SWD、SWE、SWGのタイプを設定できます。
+
+注意：ハードウェア上の理由により、SWFとSWHは2ポジションでのみ使用でき、3ポジションには設定できません。
+
+例えば2ポジションのSWDを3ポジションに設定した場合、SWDを中央位置に保持している間は中央段のSWD_MIDとなります。3ポジションのSWCを2ポジションに設定した場合、中央段のSWC_MIDは機能しません。
+
+スイッチ設定の動画：https://www.youtube.com/watch?v=rloVHAI-XiI
+
+SWITCH SETTING 2/2
+
+SELF CHECK：スイッチのセルフチェックをオン／オフします。白い点が左ならオフ、右ならオンです。スイッチ位置はUP／MIDDLE／DOWNに設定できます。送信機の電源を入れる際にSWA、SWB、SWC、SWD、SWE、SWF、SWG、SWHを指定位置（UP／MIDDLE／DOWNなど）にする必要がある場合、セルフチェックをオンにできます。初期設定はオフです。
+
+例：セルフチェックをオンにし、ここでSWAをDOWNに設定します。次回電源を入れたときにSWAが最下位置にないと、画面に「SWA is not at the set position. Press ↓」と表示されます。SWAを最下位置へ動かすと警告が解除されます。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-40-0.png" width={330} height={244} figureId="t16d-figure-40-0" alt="T16D取扱説明書の図" caption="英語原典 物理40頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-40-4.png" width={329} height={131} figureId="t16d-figure-40-4" alt="T16D取扱説明書の図" caption="英語原典 物理40頁の図" />
+
 <span id="section-4-7"></span>
 
 ### 4.7 起動設定（BOOT SETTINGS）
 
+<span id="t16d-transmitter-4-7" data-translation-unit="t16d-transmitter-4-7"></span>
+
+起動アニメーションをオン／オフします。
+
 <span id="section-4-8"></span>
 
 ### 4.8 テーマ設定（THEME SETTINGS）
+
+<span id="t16d-transmitter-4-8" data-translation-unit="t16d-transmitter-4-8"></span>
+
+テーマカラー、背景色、文字色、枠の色を設定します。すべての色をカスタマイズできます。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-40-1.png" width={312} height={235} figureId="t16d-figure-40-1" alt="T16D取扱説明書の図" caption="英語原典 物理40頁の図" />
 
 <span id="section-4-9"></span>
 
@@ -280,26 +834,166 @@ import { withBase } from '../../../../lib/urls';
 
 ## 5 受信機設定
 
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-41-3.png" width={328} height={247} figureId="t16d-figure-41-3" alt="T16D取扱説明書の図" caption="英語原典 物理41頁の図" />
+
+<span id="t16d-ch567-1" data-translation-unit="t16d-ch567-1"></span>
+
+この章ではReceiver SettingsメニューのRF SETTINGS、SUBSIDIARY ID、SENSOR、FAILSAFEを説明します。
+
 <span id="section-5-1"></span>
 
 ### 5.1 RF設定（RF SETTINGS）
+
+<span id="t16d-r16f-internal" data-translation-unit="t16d-r16f-internal"></span>
+
+内蔵RF：外部モジュールを接続していない場合は「Internal」を選択します。
+
+<span id="t16d-r16f-rebind" data-translation-unit="t16d-r16f-rebind"></span>
+
+プロトコル変更：プロトコルを変更した後は送信機と受信機を再度バインドします。
+
+<span id="t16d-ch567-2" data-translation-unit="t16d-ch567-2"></span>
+
+内蔵RFの設定：MODULE SELECTIONではInternalまたはExternalを選択します。外部モジュールを接続しない場合はInternalを選択します。上部タスクバーの電波マークの横にINが表示されます。PROTOCOLは受信機のプロトコルで、FHSS V1、FHSS V2、FHSS V2.1を選択できます。270°は270度サーボ用です。FHSS V2.1を選択し、270度サーボを使用する場合に有効にできます。SERVO SPEEDはサーボの応答速度です。アナログサーボは14ms、デジタルサーボは4msまたは3msを選択します。使用する受信機がデジタルサーボに対応していることを確認してください。
+
+<span id="t16d-ch567-4" data-translation-unit="t16d-ch567-4"></span>
+
+プロトコルの注意事項：1. FHSS V2とV2.1のPWM出力分解能は4096で、より細かい操作ができます。2. FHSS V1とV2は8チャンネルに対応します。R16F、R16SM、R12Fを使用しても、V1またはV2を選択すると受信機で使用できるのは8チャンネルです。3. プロトコルを変更した後は、受信機と送信機を再度バインドしてください。
+
+<span id="t16d-r16f-external" data-translation-unit="t16d-r16f-external"></span>
+
+外部RF：「External」を選択すると、RadioLink受信機はT16Dとバインドできません。
+
+<span id="t16d-ch567-5" data-translation-unit="t16d-ch567-5"></span>
+
+外部RFの設定：外部モジュールを接続する場合はMODULE SELECTIONをExternalにします。タスクバーにEXが表示され、PROTOCOL、BAUD、RATEなどの外部モジュール用設定が現れます。Externalを選択するとRadioLink受信機はT16Dとバインドできません。PROTOCOLはELRS、CRSF V2、BeastXから、使用するモジュールに合わせて選択します。BAUD RATEは400K、921K、1.87Mから選択します。データレート50～250Hzでは400K、500Hzでは921K、1000Hzでは1.87Mを選択します。
+
+<span id="t16d-ch567-6" data-translation-unit="t16d-ch567-6"></span>
+
+ELRSの接続・設定（1～4）：1. T16Dに外部モジュールを取り付け、T16Dと受信機の電源を入れます。受信機はフライトコントローラーのTELEMポートに接続し、フライトコントローラーへの給電によって電源を入れることもできます。2. Receiver Settings→RF SETTINGSでMODULE SELECTIONをExternalにします。3. モジュールの仕様に合わせてPROTOCOLとBAUD RATEを設定し、Parameterに入ります。詳細はモジュールの説明書を参照してください。4. 送信機がモジュールのパラメーターを読み取るまで待ちます。モジュール未接続や接続失敗の場合は読み取り画面のままになります。Endボタンを長押しすると終了できます。動画：https://www.youtube.com/watch?v=64idhfqYJLA
+
+<span id="t16d-ch567-7" data-translation-unit="t16d-ch567-7"></span>
+
+ELRSの接続・設定（5～8）：パラメーターの読み取りに成功すると設定画面が表示されます。モジュールと受信機が未バインドの場合は、右上に「-」が表示されます。5. 受信機の電源を続けて3回入れ直し、バインドモードにします。受信機のLEDは2回ずつ点滅します。6. 送信機の画面でBindを選択して押し、バインドを開始します。7. 成功すると右上の「-」が「C」に変わります。戻ると上部に電波マークが表示され、ELRS受信機のLEDが点灯します。8. 失敗した場合は手順5と6を繰り返します。
 
 <span id="section-5-2"></span>
 
 ### 5.2 サブID（SUBSIDIARY ID）
 
+<span id="t16d-ch567-8" data-translation-unit="t16d-ch567-8"></span>
+
+サブIDの動作：T16Dは複数の受信機とバインドできます。バインド済みの機器をすべて同時に起動した場合、サブID機能がオフなら複数の機器を同時に操作できます。オンなら選択したIDに対応する機器だけを操作できます。サブIDは16組で、各IDが1台の受信機に対応します。あらかじめサブIDを設定しておけば、全機器の電源が入っていても1台を操作し、ほかを待機させられます。原典の例では、トラックと車をバインドして両方の電源を入れ、車をトラックの荷台まで走らせた後、トラックの受信機IDに切り替えて目的地へ運びます。
+
+<span id="t16d-ch567-9" data-translation-unit="t16d-ch567-9"></span>
+
+サブIDの設定：1. サブID機能をオンにします。モデルに応じてID番号を設定し、各受信機のバインドとパラメーター設定を完了させます。2. 有効にするとT16Dのメイン画面に該当するID番号が表示されます。2位置・3位置スイッチで番号を切り替える方法は3.3 CONDITIONを参照してください。動画：https://www.youtube.com/watch?v=_I68EFqkm7Q
+
 <span id="section-5-3"></span>
 
 ### 5.3 センサー（SENSOR）
+
+<span id="t16d-ch567-10" data-translation-unit="t16d-ch567-10"></span>
+
+センサーの警報設定：RSSI、受信機電圧、外部バッテリー電圧の警報と電圧校正を設定します。SENSOR 1/2のAlarm intervalは警報間隔で、各値が設定した警報値に達すると送信機が警報を出します。間隔は2秒、5秒、10秒です。RSSI ALARM、RX VOLTAGE ALARM、EXT VOLTAGE ALARMは各警報のオン／オフです。白い点が左ならオフ、右ならオンです。
+
+<span id="t16d-ch567-12" data-translation-unit="t16d-ch567-12"></span>
+
+外部電圧のしきい値：EXT BATTERY VOLTAGE ALARM VALUEは外部バッテリー電圧の警報値で、3～60V、初期値6.6Vです。警報機能を使う場合はSystem Settingsで警報音または振動をオンにしてください。
+
+<span id="t16d-ch567-13" data-translation-unit="t16d-ch567-13"></span>
+
+電圧校正：SENSOR 2/2のRX_Vは受信機電圧、EXT_Vは外部バッテリー電圧です。NULLは該当する電圧を受信していないことを示します。表示電圧と実際の電圧に差がある場合は、RX_V Calibrationで−5～＋5V、EXT_V Calibrationで−10～＋10Vの校正値を設定し、表示を一致させます。
 
 <span id="section-5-4"></span>
 
 ### 5.4 フェイルセーフ
 
+<span id="t16d-ch567-14" data-translation-unit="t16d-ch567-14"></span>
+
+信号喪失時の各チャンネルの出力値を設定する重要な安全機能です。モデルの紛失防止や損害軽減、人の安全の保護に役立ちます。全チャンネルの初期値は0%で、使用する機器に応じて変更できます。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-46-0.png" width={357} height={268} figureId="t16d-figure-46-0" alt="T16D取扱説明書の図" caption="英語原典 物理46頁の図" />
+
 <span id="section-6"></span>
 
 ## 6 ファームウェア更新
 
+<span id="t16d-ch567-15" data-translation-unit="t16d-ch567-15"></span>
+
+ファームウェア更新（1）：機能の追加や改善のため、T16Dのファームウェアは更新されます。公式サイトwww.radiolink.com.cnで最新版を確認してください。動画：https://www.youtube.com/watch?v=bJnml-aJZdU 。1. https://www.radiolink.com.cn/t16d_firmwares から最新版をダウンロードします。ZIP形式なので、パソコンで展開してください。展開後はFirmware、model、Script、soundsの4フォルダーがあります。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-47-3.png" width={665} height={197} figureId="t16d-figure-47-3" alt="T16D取扱説明書の図" caption="英語原典 物理47頁の図" />
+
+<span id="t16d-ch567-16" data-translation-unit="t16d-ch567-16"></span>
+
+ファームウェア更新（2～4）：2. T16Dにバッテリーを接続し、送信機の電源を切ります。図で示す2つのTRIMボタンを中央へ押しながら電源ボタンを長押しし、「D」という音が鳴るまで保持します。3. BOOT MODE画面でUSB MODEを選択し、Pushボタンを押して確定します。USB MODE画面になり、パソコンにもUSBドライブが接続されたことが通知されます。4. パソコンに表示されたT16Dのリムーバブルディスクを開き、ダウンロードしたファイルをT16Dへコピーします。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-47-2.png" width={360} height={384} figureId="t16d-figure-47-2" alt="T16D取扱説明書の図" caption="英語原典 物理47頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-47-0.png" width={471} height={284} figureId="t16d-figure-47-0" alt="T16D取扱説明書の図" caption="英語原典 物理47頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-47-1.png" width={471} height={285} figureId="t16d-figure-47-1" alt="T16D取扱説明書の図" caption="英語原典 物理47頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-48-3.png" width={703} height={221} figureId="t16d-figure-48-3" alt="T16D取扱説明書の図" caption="英語原典 物理48頁の図" />
+
+<span id="t16d-ch567-17" data-translation-unit="t16d-ch567-17"></span>
+
+ファームウェア更新（5～7）：コピー中に置換確認が出たら、すべてYesを選択して元のフォルダーを置き換えます。5. コピー後、Endボタンを短押ししてUSBモードを終了します。BOOT MODEでUpgradeを選択し、Pushボタンを押します。6. Upgrade MODEでYESを選択してPushボタンを押すと更新が始まります。画面のパーセント表示は進捗です。7. 「Firmware upgrade successful」と表示されたら更新成功です。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-48-0.png" width={447} height={270} figureId="t16d-figure-48-0" alt="T16D取扱説明書の図" caption="英語原典 物理48頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-48-1.png" width={445} height={269} figureId="t16d-figure-48-1" alt="T16D取扱説明書の図" caption="英語原典 物理48頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-48-2.png" width={438} height={264} figureId="t16d-figure-48-2" alt="T16D取扱説明書の図" caption="英語原典 物理48頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-48-4.png" width={437} height={264} figureId="t16d-figure-48-4" alt="T16D取扱説明書の図" caption="英語原典 物理48頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-49-0.png" width={443} height={268} figureId="t16d-figure-49-0" alt="T16D取扱説明書の図" caption="英語原典 物理49頁の図" />
+
+<span id="t16d-ch567-18" data-translation-unit="t16d-ch567-18"></span>
+
+ファームウェア更新（8）：8. Endボタンを短押しして更新モードを終了します。電源ボタンを長押しして通常起動します。Transmitter Settings→ABOUTで現在のファームウェア版を確認し、更新が成功したことを確認できます。
+
+注意：更新中は、事故を防ぐため電源を切らないでください（原典物理48頁の更新画面内の警告）。
+
 <span id="section-7"></span>
 
 ## 7 スイッチ用音声の作成
+
+<span id="t16d-ch567-19" data-translation-unit="t16d-ch567-19"></span>
+
+スイッチ用音声の作成（1）：T16Dはスイッチ用の独自音声に対応します。音声合成ソフトなどでファイルを作成し、送信機へコピーして利用できます。動画：https://www.youtube.com/watch?v=w-6v8xznyGc 。1. 録音した音声ファイルをWAV形式、サンプリング周波数16kHzまたは32kHz、モノラル、16ビットに変換します。原典ではAdobe Auditionの例として、ファイルを読み込み、File→Save Asを選択しています。制作方法は、主に以下の3工程です。
+
+<span id="t16d-ch567-20" data-translation-unit="t16d-ch567-20"></span>
+
+音声の保存・コピー準備（2）：保存画面でWAV、16kHzまたは32kHz、モノラル、16ビットを選択し、保存先を指定してOKを押します。「Include markers and other metadata」にはチェックを入れません。2. 音声ファイルをT16Dへコピーします。送信機にバッテリーを接続して電源を切り、図の2つのTRIMボタンを中央へ押しながら電源ボタンを長押しします。「D」という音が鳴ったら、BOOT MODEでUSB MODEを選択し、Pushボタンで確定します。USB MODE画面が表示されればUSBモードに入っています。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-50-4.png" width={319} height={341} figureId="t16d-figure-50-4" alt="T16D取扱説明書の図" caption="英語原典 物理50頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-50-0.png" width={371} height={267} figureId="t16d-figure-50-0" alt="T16D取扱説明書の図" caption="英語原典 物理50頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-50-3.png" width={306} height={326} figureId="t16d-figure-50-3" alt="T16D取扱説明書の図" caption="英語原典 物理50頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-50-1.png" width={454} height={274} figureId="t16d-figure-50-1" alt="T16D取扱説明書の図" caption="英語原典 物理50頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-50-2.png" width={455} height={275} figureId="t16d-figure-50-2" alt="T16D取扱説明書の図" caption="英語原典 物理50頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-2.png" width={345} height={174} figureId="t16d-figure-51-2" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-1.png" width={589} height={176} figureId="t16d-figure-51-1" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-3.png" width={585} height={258} figureId="t16d-figure-51-3" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<span id="t16d-ch567-21" data-translation-unit="t16d-ch567-21"></span>
+
+音声ファイルのコピーと選択（3）：パソコンに表示されたT16Dのリムーバブルディスクを開き、T16Dのsounds→USERへ音声ファイルをコピーします。原典は「Landing gear open」を例にしています。送信機上で目的の音声を選べるよう、用途に合わせてファイル名を付けてください。3. コピー後はUSBモードを終了し、T16Dを起動してSWITCH AUDIOから音声ファイルを選択します。原典末尾には技術サポート、Facebook Messenger、T16Dマニュアル・FAQ・動画への案内があります。解決しない場合の連絡先はafter_service@radiolink.com.cnです。原典は内容が変更される場合があり、最新版をhttps://www.radiolink.com.cn/t16d_manual で確認するよう案内しています。RadioLink製品をお選びいただき、重ねてお礼申し上げます。
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-4.png" width={339} height={255} figureId="t16d-figure-51-4" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-0.png" width={156} height={155} figureId="t16d-figure-51-0" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-5.png" width={154} height={154} figureId="t16d-figure-51-5" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-6.png" width={154} height={154} figureId="t16d-figure-51-6" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />
+
+<ManualFigure src="/assets/radiolink/t16d/web-ja-v1/t16d-figure-51-7.png" width={153} height={153} figureId="t16d-figure-51-7" alt="T16D取扱説明書の図" caption="英語原典 物理51頁の図" />

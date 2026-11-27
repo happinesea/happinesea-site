@@ -103,7 +103,10 @@ export function catalogueManualSidebar({
         : entry.source.document_id === 'twc_typec_trainer_cable_official_html'
           ? `${entry.model} 公式Web手順`
           : entry.model;
-    add(entry.product_id, slug, { label, slug });
+    const productSlug = entry.product_route.split('/')[2];
+    const scopeLabel =
+      entry.product_id !== productSlug ? `${label}（現行英語版）` : label;
+    add(productSlug, slug, { label: scopeLabel, slug });
   }
   return [...groups]
     .filter(([, items]) => items.length)

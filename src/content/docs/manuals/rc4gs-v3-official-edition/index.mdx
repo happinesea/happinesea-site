@@ -1,0 +1,391 @@
+---
+title: RC4GS V3 日本語取扱説明書
+description: Radiolink RC4GS V3 の公式英語取扱説明書に対応する日本語版です。
+product: rc4gs-v3-official-edition
+slug: manuals/rc4gs-v3-official-edition
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/1f79c534568f2ba2b909b3f3f2bdf6d0-5978
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/rc4gs-v3/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink RC4GS V3 公式英語取扱説明書（文書版・発行日不明、15頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="rc4gsv3-p1-body" data-translation-unit="rc4gsv3-p1-body"></span>
+
+# RC4GS V3 取扱説明書
+
+RC4GS V3　CE・FCC・RoHS（表紙表示）
+
+<span id="rc4gsv3-p1-f1-unit" data-translation-unit="rc4gsv3-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/rc4gs-v3-official-edition/web-ja-v1/rc4gsv3-p1-f1.jpeg" width={1000} height={274} figureId="rc4gsv3-p1-f1" alt={"原典物理1頁の原図1"} caption={"原典物理1頁の原図1"} />
+
+<span id="rc4gsv3-p1-f2-unit" data-translation-unit="rc4gsv3-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/rc4gs-v3-official-edition/web-ja-v1/rc4gsv3-p1-f2.png" width={600} height={180} figureId="rc4gsv3-p1-f2" alt={"原典物理1頁の原図2"} caption={"原典物理1頁の原図2"} />
+
+<span id="rc4gsv3-p1-f3-unit" data-translation-unit="rc4gsv3-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/rc4gs-v3-official-edition/web-ja-v1/rc4gsv3-p1-f3.jpeg" width={1000} height={1200} figureId="rc4gsv3-p1-f3" alt={"原典物理1頁の原図3"} caption={"原典物理1頁の原図3"} />
+
+<span id="rc4gsv3-p2-safety" data-translation-unit="rc4gsv3-p2-safety"></span>
+
+## 安全上の注意
+
+- 悪天候のときは模型を操作しないでください。視界不良により方向を見失い、模型を制御できなくなるおそれがあります。
+- 人が密集している場所や使用が禁止されている場所では使用しないでください。
+- 受信機を接続する前に、トリムレバーが0であり、バッテリーが適切に充電されていることを必ず確認してください。
+- 使用前に必ずすべてのサーボとその接続を確認してください。
+- 電源を切るときは、必ず先に受信機、次に送信機の電源を切ってください。
+
+### 警告
+
+本製品は玩具ではなく、14歳未満の子どもには適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは操作に十分注意してください。
+
+<span id="rc4gsv3-p2-water-ingress" data-translation-unit="rc4gsv3-p2-water-ingress"></span>
+
+:::caution[注意]
+アンテナや操作部の隙間から送信機内部に水や湿気が入り、模型の動きが不安定になり、制御を失うおそれがあります。
+:::
+
+<span id="rc4gsv3-p2-body" data-translation-unit="rc4gsv3-p2-body"></span>
+
+### FCCに関する記載
+
+### 同梱品
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="rc4gsv3-p3-body" data-translation-unit="rc4gsv3-p3-body"></span>
+
+## 目次（前半）
+
+頁番号は原典の印刷頁です。
+
+- I. RC4GS V3送受信システム（4頁）
+  - 1.1 RC4GS V3送信機（4頁）
+    - 1.1.1 送信機の概要（4頁）
+    - 1.1.2 スイッチ・ボタンの説明（4頁）
+    - 1.1.3 仕様（4頁）
+    - 1.1.4 基本操作（5頁）
+  - 1.2 R6FG受信機（標準セット）（5頁）
+    - 1.2.1 R6FGの概要（5頁）
+    - 1.2.2 仕様（6頁）
+    - 1.2.3 バインディング（6頁）
+    - 1.2.4 受信機の使用上の注意（6頁）
+    - 1.2.5 動作モード（6頁）
+    - 1.2.6 ジャイロの設定（7頁）
+    - 1.2.7 模型のバッテリー電圧テレメトリー（7頁）
+    - 1.2.8 RSSIの確認（7頁）
+- II. RC4GS V3の機能（8頁）
+  - 2.1 サーボ値（8頁）
+  - 2.2 言語「LANGUAGE」（8頁）
+  - 2.3 モデル選択「MODEL」（8頁）
+  - 2.4 エンドポイント調整「EPA」（8頁）
+  - 2.5 ステアリングエクスポネンシャル「STEXP」（8頁）
+  - 2.6 ステアリングサーボ速度遅延「STSPD」（9頁）
+  - 2.7 スロットルエクスポネンシャル「THEXP」（9頁）
+  - 2.8 スロットル速度遅延「THSPD」（9頁）
+  - 2.9 ABS「A.B.S」（10頁）
+  - 2.10 スロットル加速「ACCEL」（10頁）
+  - 2.11 アイドルアップ「IDLUP」（11頁）
+    - 2.11.1 エンジン始動時のアイドルアップ（11頁）
+    - 2.11.2 クルーズコントロール「TH-LOCK」（11頁）
+  - 2.12 サブトリム「SUBTRIM」（11頁）
+  - 2.13 チャンネルリバース「REVERSE」（11頁）
+  - 2.14 ステアリング／スロットルのデュアルレート「D/R」（11頁）
+  - 2.15 ブレーキ側の調整「ATL」（11頁）
+  - 2.16 プログラムミキシング「PMIX01/02」（11頁）
+    - 2.16.1 ミキシングの設定（12頁）
+  - 2.17 補助チャンネル「AUX-CH」（12頁）
+  - 2.18 モデル名「NAME」（12頁）
+  - 2.19 低電圧・信号強度警報「ALARM」（12頁）
+  - 2.20 ジャイロ感度「GYRO」（13頁）
+  - 2.21 フェイルセーフ「F/S」（13頁）
+
+<span id="rc4gsv3-p4-body" data-translation-unit="rc4gsv3-p4-body"></span>
+
+## 目次（続き）
+
+- 2.22 ID SEED（13頁）
+- 2.23 タイマー設定「TIMER」（13頁）
+- 2.24 工場出荷時へのリセット「RESET」（14頁）
+- III. チュートリアル（14頁）
+  - 3.1 RC4GS V3のファームウェア更新
+  - 3.2 スロットルとステアリングの校正
+  - 3.3 RC4GS V3とシミュレーターの接続
+  - 3.4 スロットル速度遅延「THSPD」
+  - 3.5 タイマー「TIMER」
+  - 3.6 デュアルレート
+  - 3.7 エンドポイント調整「EPA」
+  - 3.8 30台の模型ごとに異なる警報を設定する方法
+  - 3.9 ID Seed
+  - 3.10 クルーズコントロール
+  - 3.11 RC4GS V3とTBS Crossfireの接続
+  - 3.12 LK-A／LK-Dボタンの設定
+
+<span id="rc4gsv3-p5-body" data-translation-unit="rc4gsv3-p5-body"></span>
+
+## I. RC4GS V3送受信システム
+
+### 1.1 RC4GS V3送信機
+
+#### 1.1.1 送信機の概要
+
+#### 1.1.2 スイッチ・ボタンの説明
+
+#### 1.1.3 仕様
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="rc4gsv3-p5-f1-unit" data-translation-unit="rc4gsv3-p5-f1-unit"></span>
+
+<span id="rc4gsv3-p5-f2-unit" data-translation-unit="rc4gsv3-p5-f2-unit"></span>
+
+<span id="rc4gsv3-p6-body" data-translation-unit="rc4gsv3-p6-body"></span>
+
+#### 1.1.4 基本操作
+
+### 1.2 R6FG受信機（標準セット）
+
+#### 1.2.1 R6FGの概要
+
+<span id="rc4gsv3-p6-f1-unit" data-translation-unit="rc4gsv3-p6-f1-unit"></span>
+
+<span id="rc4gsv3-p6-f2-unit" data-translation-unit="rc4gsv3-p6-f2-unit"></span>
+
+<span id="rc4gsv3-p6-f3-unit" data-translation-unit="rc4gsv3-p6-f3-unit"></span>
+
+<span id="rc4gsv3-p6-f4-unit" data-translation-unit="rc4gsv3-p6-f4-unit"></span>
+
+<span id="rc4gsv3-p7-body" data-translation-unit="rc4gsv3-p7-body"></span>
+
+#### 1.2.2 仕様
+
+#### 1.2.3 バインディング
+
+#### 1.2.4 使用上の注意
+
+#### 1.2.5 動作モード
+
+<span id="rc4gsv3-p7-f1-unit" data-translation-unit="rc4gsv3-p7-f1-unit"></span>
+
+<span id="rc4gsv3-p7-f2-unit" data-translation-unit="rc4gsv3-p7-f2-unit"></span>
+
+<span id="rc4gsv3-p8-body" data-translation-unit="rc4gsv3-p8-body"></span>
+
+#### 1.2.6 ジャイロ設定
+
+#### 1.2.7 模型バッテリー電圧のテレメトリー
+
+#### 1.2.8 RSSIの確認
+
+<span id="rc4gsv3-p8-f1-unit" data-translation-unit="rc4gsv3-p8-f1-unit"></span>
+
+<span id="rc4gsv3-p8-f2-unit" data-translation-unit="rc4gsv3-p8-f2-unit"></span>
+
+<span id="rc4gsv3-p8-f3-unit" data-translation-unit="rc4gsv3-p8-f3-unit"></span>
+
+<span id="rc4gsv3-p9-body" data-translation-unit="rc4gsv3-p9-body"></span>
+
+## II. RC4GS V3の機能
+
+### 2.1 サーボ動作量の表示
+
+### 2.2 言語「LANGUAGE」
+
+### 2.3 モデル選択「MODEL」
+
+### 2.4 エンドポイント調整「EPA」
+
+### 2.5 ステアリングエクスポネンシャル「STEXP」
+
+<span id="rc4gsv3-p9-f1-unit" data-translation-unit="rc4gsv3-p9-f1-unit"></span>
+
+<span id="rc4gsv3-p9-f2-unit" data-translation-unit="rc4gsv3-p9-f2-unit"></span>
+
+<span id="rc4gsv3-p9-f3-unit" data-translation-unit="rc4gsv3-p9-f3-unit"></span>
+
+<span id="rc4gsv3-p9-f4-unit" data-translation-unit="rc4gsv3-p9-f4-unit"></span>
+
+<span id="rc4gsv3-p9-f5-unit" data-translation-unit="rc4gsv3-p9-f5-unit"></span>
+
+<span id="rc4gsv3-p9-f6-unit" data-translation-unit="rc4gsv3-p9-f6-unit"></span>
+
+<span id="rc4gsv3-p10-body" data-translation-unit="rc4gsv3-p10-body"></span>
+
+### 2.6 ステアリングサーボスピード「STSPD」
+
+### 2.7 スロットルエクスポネンシャル「THEXP」
+
+### 2.8 スロットルスピード「THSPD」
+
+<span id="rc4gsv3-p10-f1-unit" data-translation-unit="rc4gsv3-p10-f1-unit"></span>
+
+<span id="rc4gsv3-p10-f2-unit" data-translation-unit="rc4gsv3-p10-f2-unit"></span>
+
+<span id="rc4gsv3-p10-f3-unit" data-translation-unit="rc4gsv3-p10-f3-unit"></span>
+
+<span id="rc4gsv3-p10-f4-unit" data-translation-unit="rc4gsv3-p10-f4-unit"></span>
+
+<span id="rc4gsv3-p10-f5-unit" data-translation-unit="rc4gsv3-p10-f5-unit"></span>
+
+<span id="rc4gsv3-p10-f6-unit" data-translation-unit="rc4gsv3-p10-f6-unit"></span>
+
+<span id="rc4gsv3-p10-f7-unit" data-translation-unit="rc4gsv3-p10-f7-unit"></span>
+
+<span id="rc4gsv3-p11-body" data-translation-unit="rc4gsv3-p11-body"></span>
+
+### 2.9 A.B.S.「A.B.S」
+
+### 2.10 スロットルアクセレーション「ACCEL」
+
+<span id="rc4gsv3-p11-f1-unit" data-translation-unit="rc4gsv3-p11-f1-unit"></span>
+
+<span id="rc4gsv3-p11-f2-unit" data-translation-unit="rc4gsv3-p11-f2-unit"></span>
+
+<span id="rc4gsv3-p11-f3-unit" data-translation-unit="rc4gsv3-p11-f3-unit"></span>
+
+<span id="rc4gsv3-p12-body" data-translation-unit="rc4gsv3-p12-body"></span>
+
+### 2.11 アイドルアップ「IDLUP」
+
+#### 2.11.1 エンジン始動時のアイドルアップ
+
+#### 2.11.2 クルーズコントロール「TH-LOCK」
+
+### 2.12 サブトリム「SUBTRIM」
+
+### 2.13 チャンネルリバース「REVERSE」
+
+### 2.14 ステアリング／スロットルのデュアルレート「D/R」
+
+### 2.15 ブレーキ側調整「ATL」
+
+### 2.16 プログラマブルミキシング「PMIX01/02」
+
+<span id="rc4gsv3-p12-f1-unit" data-translation-unit="rc4gsv3-p12-f1-unit"></span>
+
+<span id="rc4gsv3-p12-f2-unit" data-translation-unit="rc4gsv3-p12-f2-unit"></span>
+
+<span id="rc4gsv3-p12-f3-unit" data-translation-unit="rc4gsv3-p12-f3-unit"></span>
+
+<span id="rc4gsv3-p12-f4-unit" data-translation-unit="rc4gsv3-p12-f4-unit"></span>
+
+<span id="rc4gsv3-p12-f5-unit" data-translation-unit="rc4gsv3-p12-f5-unit"></span>
+
+<span id="rc4gsv3-p12-f6-unit" data-translation-unit="rc4gsv3-p12-f6-unit"></span>
+
+<span id="rc4gsv3-p13-body" data-translation-unit="rc4gsv3-p13-body"></span>
+
+#### 2.16.1 ミックス制御の設定
+
+### 2.17 補助チャンネル「AUX-CH」
+
+### 2.18 モデル名「NAME」
+
+### 2.19 アラーム「ALARM」（低電圧・信号強度の警告）
+
+<span id="rc4gsv3-p13-f1-unit" data-translation-unit="rc4gsv3-p13-f1-unit"></span>
+
+<span id="rc4gsv3-p13-f2-unit" data-translation-unit="rc4gsv3-p13-f2-unit"></span>
+
+<span id="rc4gsv3-p13-f3-unit" data-translation-unit="rc4gsv3-p13-f3-unit"></span>
+
+<span id="rc4gsv3-p13-f4-unit" data-translation-unit="rc4gsv3-p13-f4-unit"></span>
+
+<span id="rc4gsv3-p13-f5-unit" data-translation-unit="rc4gsv3-p13-f5-unit"></span>
+
+<span id="rc4gsv3-p13-f6-unit" data-translation-unit="rc4gsv3-p13-f6-unit"></span>
+
+<span id="rc4gsv3-p13-f7-unit" data-translation-unit="rc4gsv3-p13-f7-unit"></span>
+
+<span id="rc4gsv3-p13-f8-unit" data-translation-unit="rc4gsv3-p13-f8-unit"></span>
+
+<span id="rc4gsv3-p14-body" data-translation-unit="rc4gsv3-p14-body"></span>
+
+### 2.20 ジャイロ感度「GYRO」
+
+### 2.21 フェイルセーフ「F/S」
+
+### 2.22 ID SEED
+
+### 2.23 タイマー「TIMER」
+
+<span id="rc4gsv3-p14-f1-unit" data-translation-unit="rc4gsv3-p14-f1-unit"></span>
+
+<span id="rc4gsv3-p14-f2-unit" data-translation-unit="rc4gsv3-p14-f2-unit"></span>
+
+<span id="rc4gsv3-p14-f3-unit" data-translation-unit="rc4gsv3-p14-f3-unit"></span>
+
+<span id="rc4gsv3-p14-f4-unit" data-translation-unit="rc4gsv3-p14-f4-unit"></span>
+
+<span id="rc4gsv3-p14-f5-unit" data-translation-unit="rc4gsv3-p14-f5-unit"></span>
+
+<span id="rc4gsv3-p14-f6-unit" data-translation-unit="rc4gsv3-p14-f6-unit"></span>
+
+<span id="rc4gsv3-p14-f7-unit" data-translation-unit="rc4gsv3-p14-f7-unit"></span>
+
+<span id="rc4gsv3-p14-f8-unit" data-translation-unit="rc4gsv3-p14-f8-unit"></span>
+
+<span id="rc4gsv3-p14-f9-unit" data-translation-unit="rc4gsv3-p14-f9-unit"></span>
+
+<span id="rc4gsv3-p15-body" data-translation-unit="rc4gsv3-p15-body"></span>
+
+### 2.24 工場出荷時設定へのリセット「RESET」
+
+<span id="rc4gsv3-p15-tutorial-directory" data-translation-unit="rc4gsv3-p15-tutorial-directory"></span>
+
+## III. チュートリアル
+
+YouTubeでRadiolink_officialを検索して公式チャンネルを開き、RC4GS V3のプレイリスト、または目的の機能のキーワード検索から以下の動画をご覧ください。
+
+- 3.1 RC4GS V3のファームウェア更新
+- 3.2 スロットルとステアリングのキャリブレーション
+- 3.3 RC4GS V3とシミュレーターの接続
+- 3.4 RC4GS V3のスロットルスピード機能（THSPD）
+- 3.5 RC4GS V3のタイマー機能（TIMER）
+- 3.6 RC4GS V3のデュアルレート機能
+- 3.7 RC4GS V3のEPA機能
+- 3.8 RC4GS V3で30モデルに個別のアラームを設定する方法
+- 3.9 RC4GS V3のID SEED機能
+- 3.10 RC4GS V3のクルーズコントロール機能
+- 3.11 RC4GS V3とTBS Crossfireの接続
+- 3.12 RC4GS V3のLK-A／LK-Dボタンの設定
+
+技術サポート：Facebook MessengerでRadioLink RLに連絡、RC4GS V3取扱説明書、RC4GS V3チュートリアル（原図のコードを参照）。上記の連絡方法で解決できない場合は、技術サポート after_service@radioLink.com.cn にメールでお問い合わせください。本書の内容は変更される場合があります。最新版は https://www.radiolink.com/rc4gsv3_manual で入手できます。RadioLink製品をお選びいただきありがとうございます。
+
+<span id="rc4gsv3-p15-f1-unit" data-translation-unit="rc4gsv3-p15-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="rc4gsv3-p15-f2-unit" data-translation-unit="rc4gsv3-p15-f2-unit"></span>
+
+<span id="rc4gsv3-p15-f3-unit" data-translation-unit="rc4gsv3-p15-f3-unit"></span>
+
+<span id="rc4gsv3-p15-f4-unit" data-translation-unit="rc4gsv3-p15-f4-unit"></span>
+
+<span id="rc4gsv3-p15-f5-unit" data-translation-unit="rc4gsv3-p15-f5-unit"></span>
+
+<span id="rc4gsv3-p15-f6-unit" data-translation-unit="rc4gsv3-p15-f6-unit"></span>

@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 29);
+  assert.equal(remaining.manuals.length, 31);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    29,
+    31,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -32,10 +32,26 @@ test('Remaining manual candidates isolate held units and images and preserve sou
         'wolf-qav250',
         't16d',
         't12d',
+        'rc4gs-v3-official-edition',
+        'rc6gs-v3-official-edition',
       ].includes(manual.product_id)
         ? 'WEB_QA_REQUIRED'
         : 'WEB_HOLD',
     );
+    if (manual.product_id === 'rc4gs-v3-official-edition') {
+      assert.equal(manual.product_route, '/radiolink/rc4gs-v3/');
+      assert(existsSync('src/content/docs/manuals/rc4gs-v3/index.mdx'));
+    }
+    if (manual.product_id === 't16d') {
+      const text = mdx.toString();
+      assert.equal((text.match(/<span id="section-/g) ?? []).length, 67);
+      assert.match(text, /:::caution\[安全上の注意\]/);
+      assert.equal(manual.unit_ids.length, 143);
+      assert.equal(manual.source_figures_total, 163);
+      for (const id of manual.withheld_unit_ids) {
+        assert(!text.includes(`data-translation-unit="${id}"`));
+      }
+    }
     if (manual.product_id === 'f405') {
       assert.equal(
         manual.source.document_scope,
@@ -95,6 +111,13 @@ test('Remaining manual candidates isolate held units and images and preserve sou
       manual.withheld_notice_count ?? manual.withheld_unit_ids.length,
     );
     for (const figure of manual.figures) {
+      assert(
+        mdx
+          .toString()
+          .includes(
+            `/assets/radiolink/${manual.product_id}/web-ja-v1/${figure.path.split('/').at(-1)}`,
+          ),
+      );
       assert.equal(
         sha(readFileSync(`${dir}/${figure.path.split('/').at(-1)}`)),
         figure.sha256,
