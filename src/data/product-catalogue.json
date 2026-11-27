@@ -996,7 +996,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f450",
-    "detailPath": null,
+    "detailPath": "/radiolink/f450/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f450.webp",
