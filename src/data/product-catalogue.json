@@ -933,7 +933,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/qav250_gps_FPV",
-    "detailPath": null,
+    "detailPath": "/radiolink/wolf-qav250/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/wolf-qav250.webp",

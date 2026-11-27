@@ -1,0 +1,486 @@
+---
+title: Wolf QAV250 日本語取扱説明書
+description: Radiolink Wolf QAV250 の公式英語取扱説明書に対応する日本語版です。
+product: wolf-qav250
+slug: manuals/wolf-qav250
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/ce1c925288208dae0568658c8b258984.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/wolf-qav250/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink Wolf QAV250 公式英語取扱説明書（文書版・発行日不明、43頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="qav250-p1-body" data-translation-unit="qav250-p1-body"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p1-f1-unit" data-translation-unit="qav250-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/wolf-qav250/web-ja-v1/qav250-p1-f1.jpeg" width={184} height={109} figureId="qav250-p1-f1" alt={"Wolf QAV250の表紙原図1"} caption={"Wolf QAV250の表紙原図1"} />
+
+<span id="qav250-p1-f2-unit" data-translation-unit="qav250-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/wolf-qav250/web-ja-v1/qav250-p1-f2.png" width={600} height={180} figureId="qav250-p1-f2" alt={"Wolf QAV250の表紙原図2"} caption={"Wolf QAV250の表紙原図2"} />
+
+<span id="qav250-p1-f3-unit" data-translation-unit="qav250-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/wolf-qav250/web-ja-v1/qav250-p1-f3.jpeg" width={600} height={600} figureId="qav250-p1-f3" alt={"Wolf QAV250の表紙原図3"} caption={"Wolf QAV250の表紙原図3"} />
+
+<span id="qav250-p2-body" data-translation-unit="qav250-p2-body"></span>
+
+## 目次
+
+- 免責事項と警告（2頁）
+- 第1章 はじめに（3頁）
+  - 1.1 主な特長（3頁）
+  - 1.2 Wolf QAV250について（3頁）
+  - 1.3 仕様（4頁）
+  - 1.4 Wolf QAV250の準備（7頁）
+  - 1.5 送信機の準備（8頁）
+- 第2章 機体のセットアップ（8頁）
+  - 2.1 RTF版とFPV版のセットアップ（8頁）
+    - 2.1.1 送信機の基本操作（8頁）
+    - 2.1.2 Wolf QAV250のアームとディスアーム（9頁）
+    - 2.1.3 飛行モードの概要（10頁）
+    - 2.1.4 Wolf QAV250のマニュアルモード（11頁）
+  - 2.2 PNP版のセットアップ（11頁）
+    - 2.2.1 送信機とWolf QAV250のバインディング（12頁）
+    - 2.2.2 Mission Plannerのインストール（12頁）
+    - 2.2.3 送信機の設定（13頁）
+      - 2.2.3.1 送信機の校正（13頁）
+      - 2.2.3.2 飛行モードの設定（15頁）
+      - 2.2.3.3 フェイルセーフの設定（17頁）
+    - 2.2.4 プロペラの取り付け（20頁）
+  - 2.3 充電器（20頁）
+- 第3章 飛行（23頁）
+  - 3.1 目視飛行（23頁）
+  - 3.2 FPV飛行（23頁）
+    - 3.2.1 Walksnail AVATAR HD Pro Kit（23頁）
+    - 3.2.2 Walksnail AVATAR HDゴーグル（27頁）
+    - 3.2.3 Walksnail AVATAR FPV VRX（33頁）
+    - 3.2.4 携帯型モニター（36頁）
+    - 3.2.5 ZENCHANSI 600 mWアナログ映像伝送装置（38頁）
+    - 3.2.6 LONGSITE 3インチFPVゴーグル（39頁）
+    - 3.2.7 Little Pilot（SCHOOL）4.3インチFPVモニター（41頁）
+
+<span id="qav250-p3-body" data-translation-unit="qav250-p3-body"></span>
+
+## 免責事項と警告
+
+RadioLink Wolf QAV250をお買い上げいただき、ありがとうございます。製品の機能を活用し安全に使用するため、本書をよく読み、記載の手順に従って設定してください。本製品は玩具ではなく、14歳未満の子どもには適していません。子どもの手の届かない場所に保管し、子どもの近くで操作する場合は十分に注意してください。
+
+不適切な操作は財産の損失や人命に関わる事故につながるおそれがあります。RadioLink製品を操作した時点で、操作者はこの責任制限を理解し、操作の責任を負うことに同意したものとされます。現地の法令とRadioLinkの定める原則に従ってください。
+
+飛行記録がなければ、RadioLinkは製品の破損や事故の原因を分析できず、アフターサービスを提供できません。法令で認められる最大限の範囲で、RadioLinkは購入、操作、操作の失敗による損失を含む間接的、結果的、偶発的、特別または懲罰的な損害について責任を負いません。損失の可能性を事前に知らされていた場合も同様です。
+
+国によっては保証条件の免責を法律が認めないことがあり、消費者の権利は国によって異なります。RadioLinkは法令に従って上記条件を解釈し、予告なく更新、変更、終了する権利を留保します。
+
+### 安全上の注意
+
+1. 雨天時は飛行させないでください。雨や湿気により飛行が不安定になり、制御を失うおそれがあります。雷が鳴っているときは絶対に飛行させないでください。雨、霧、雷、風のない好天時の飛行を推奨します。
+2. 飛行時は現地の法令を厳守してください。空港や軍事基地などの飛行禁止区域では飛行させないでください。
+3. 人混みや建物から離れた開けた場所で飛行させてください。
+4. 飲酒後、疲労時、その他集中力や判断力が低下しているときは操作しないでください。本書に従って操作してください。
+5. 高圧送電線、高圧送電設備、携帯電話基地局、テレビ放送の送信塔など、電磁干渉源の近くでは注意してください。強い干渉で送信機と受信機の通信が途絶えると、墜落するおそれがあります。
+6. プロペラを逆向きに取り付けて墜落させないよう、本書に従って取り付けてください。
+7. 飛行時は機体から距離を取り、プロペラやモーターなど高速で回転する部品に近づかないでください。
+8. 飛行または試験飛行でプロペラが回っているときは、機体の状態にかかわらず、手や体の一部で触れないでください。
+9. 飛行後はディスアームが完了したことを必ず確認してください。
+
+<span id="qav250-p3-body-battery" data-translation-unit="qav250-p3-body-battery"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p3-body-continued" data-translation-unit="qav250-p3-body-continued"></span>
+
+10. フライトコントローラーをMission Plannerに接続するとき、またはESCを校正するときは、機体にプロペラが取り付けられていないことを確認してください。
+11. 離陸時は先に送信機、次に機体の電源を入れてください。飛行後は先に機体のバッテリーを外し、その後で送信機の電源を切ってください。
+12. 機体の設定値を変更するときは、安全のため先にプロペラを取り外してください。
+13. アームが完了したら、機体から十分に距離を取ってください。
+
+<span id="qav250-p4-body" data-translation-unit="qav250-p4-body"></span>
+
+## 第1章 はじめに
+
+### 1.1 主な特長
+
+### 1.2 Wolf QAV250について
+
+#### Wolf QAV250の同梱品
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p5-body" data-translation-unit="qav250-p5-body"></span>
+
+#### 同梱品（続き）
+
+### 1.3 仕様
+
+<span id="qav250-p6-body" data-translation-unit="qav250-p6-body"></span>
+
+<span id="qav250-p7-body" data-translation-unit="qav250-p7-body"></span>
+
+<span id="qav250-p8-body" data-translation-unit="qav250-p8-body"></span>
+
+### 1.4 Wolf QAV250の準備
+
+<span id="qav250-p9-body" data-translation-unit="qav250-p9-body"></span>
+
+### 1.5 送信機の準備
+
+## 第2章 機体のセットアップ
+
+### 2.1 RTF版とFPV版のセットアップ
+
+#### 2.1.1 送信機の基本操作
+
+<span id="qav250-p10-body" data-translation-unit="qav250-p10-body"></span>
+
+#### 2.1.2 Wolf QAV250のアームとディスアーム
+
+<span id="qav250-p10-f1-unit" data-translation-unit="qav250-p10-f1-unit"></span>
+
+<span id="qav250-p10-f2-unit" data-translation-unit="qav250-p10-f2-unit"></span>
+
+<span id="qav250-p11-body" data-translation-unit="qav250-p11-body"></span>
+
+#### 2.1.3 飛行モードの概要
+
+<span id="qav250-p12-body" data-translation-unit="qav250-p12-body"></span>
+
+#### 2.1.4 Wolf QAV250のマニュアルモード
+
+### 2.2 PNP版のセットアップ
+
+<span id="qav250-p12-f1-unit" data-translation-unit="qav250-p12-f1-unit"></span>
+
+<span id="qav250-p13-body" data-translation-unit="qav250-p13-body"></span>
+
+#### 2.2.1 送信機とWolf QAV250のバインディング
+
+#### 2.2.2 Mission Plannerのインストール
+
+<span id="qav250-p13-f1-unit" data-translation-unit="qav250-p13-f1-unit"></span>
+
+<span id="qav250-p14-body" data-translation-unit="qav250-p14-body"></span>
+
+#### 2.2.3 送信機の設定
+
+<span id="qav250-p14-f1-unit" data-translation-unit="qav250-p14-f1-unit"></span>
+
+<span id="qav250-p14-f2-unit" data-translation-unit="qav250-p14-f2-unit"></span>
+
+<span id="qav250-p14-f3-unit" data-translation-unit="qav250-p14-f3-unit"></span>
+
+<span id="qav250-p15-body" data-translation-unit="qav250-p15-body"></span>
+
+<span id="qav250-p15-body-warning" data-translation-unit="qav250-p15-body-warning"></span>
+
+:::caution[注意]
+校正前に、機体のモーターが無通電でプロペラが外されていることを確認してください。
+:::
+
+<span id="qav250-p15-body-continued" data-translation-unit="qav250-p15-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p15-f1-unit" data-translation-unit="qav250-p15-f1-unit"></span>
+
+<span id="qav250-p15-f2-unit" data-translation-unit="qav250-p15-f2-unit"></span>
+
+<span id="qav250-p15-f3-unit" data-translation-unit="qav250-p15-f3-unit"></span>
+
+<span id="qav250-p15-f4-unit" data-translation-unit="qav250-p15-f4-unit"></span>
+
+<span id="qav250-p16-body" data-translation-unit="qav250-p16-body"></span>
+
+<span id="qav250-p16-f1-unit" data-translation-unit="qav250-p16-f1-unit"></span>
+
+<span id="qav250-p16-f2-unit" data-translation-unit="qav250-p16-f2-unit"></span>
+
+<span id="qav250-p17-body" data-translation-unit="qav250-p17-body"></span>
+
+<span id="qav250-p17-f1-unit" data-translation-unit="qav250-p17-f1-unit"></span>
+
+<span id="qav250-p18-body" data-translation-unit="qav250-p18-body"></span>
+
+<span id="qav250-p19-body" data-translation-unit="qav250-p19-body"></span>
+
+<span id="qav250-p19-f1-unit" data-translation-unit="qav250-p19-f1-unit"></span>
+
+<span id="qav250-p19-f2-unit" data-translation-unit="qav250-p19-f2-unit"></span>
+
+<span id="qav250-p20-body" data-translation-unit="qav250-p20-body"></span>
+
+<span id="qav250-p20-f1-unit" data-translation-unit="qav250-p20-f1-unit"></span>
+
+<span id="qav250-p21-body" data-translation-unit="qav250-p21-body"></span>
+
+#### 2.2.4 プロペラの取り付け
+
+<span id="qav250-p21-body-warning" data-translation-unit="qav250-p21-body-warning"></span>
+
+:::caution[注意]
+安全のため、機体設定が完了するまでプロペラを取り付けないでください。
+:::
+
+<span id="qav250-p21-body-continued" data-translation-unit="qav250-p21-body-continued"></span>
+
+### 2.3 充電器
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p21-f1-unit" data-translation-unit="qav250-p21-f1-unit"></span>
+
+<span id="qav250-p22-body" data-translation-unit="qav250-p22-body"></span>
+
+#### 各部の説明
+
+#### 警告と安全上の注意
+
+<span id="qav250-p22-f1-unit" data-translation-unit="qav250-p22-f1-unit"></span>
+
+<span id="qav250-p22-f2-unit" data-translation-unit="qav250-p22-f2-unit"></span>
+
+<span id="qav250-p23-body" data-translation-unit="qav250-p23-body"></span>
+
+#### 推奨される接続順序
+
+#### 操作方法
+
+#### 充電器の設定
+
+<span id="qav250-p23-f1-unit" data-translation-unit="qav250-p23-f1-unit"></span>
+
+<span id="qav250-p23-f2-unit" data-translation-unit="qav250-p23-f2-unit"></span>
+
+<span id="qav250-p24-body" data-translation-unit="qav250-p24-body"></span>
+
+## 第3章 飛行
+
+### 3.1 目視飛行
+
+### 3.2 FPV飛行
+
+#### 3.2.1 Walksnail AVATAR HD Pro Kit
+
+<span id="qav250-p24-f1-unit" data-translation-unit="qav250-p24-f1-unit"></span>
+
+<span id="qav250-p25-body" data-translation-unit="qav250-p25-body"></span>
+
+<span id="qav250-p25-body-warning" data-translation-unit="qav250-p25-body-warning"></span>
+
+:::caution[注意]
+VTXの更新中は電源を切らないでください。
+:::
+
+<span id="qav250-p25-body-continued" data-translation-unit="qav250-p25-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p25-f1-unit" data-translation-unit="qav250-p25-f1-unit"></span>
+
+<span id="qav250-p25-f2-unit" data-translation-unit="qav250-p25-f2-unit"></span>
+
+<span id="qav250-p26-body" data-translation-unit="qav250-p26-body"></span>
+
+<span id="qav250-p26-body-warning" data-translation-unit="qav250-p26-body-warning"></span>
+
+:::caution[注意]
+VTXの部品を損傷しないよう、電源投入前にすべてのアンテナを取り付けてください。
+:::
+
+<span id="qav250-p26-body-continued" data-translation-unit="qav250-p26-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p26-f1-unit" data-translation-unit="qav250-p26-f1-unit"></span>
+
+<span id="qav250-p27-body" data-translation-unit="qav250-p27-body"></span>
+
+<span id="qav250-p28-body" data-translation-unit="qav250-p28-body"></span>
+
+#### 3.2.2 Walksnail AVATAR HDゴーグル
+
+<span id="qav250-p28-f1-unit" data-translation-unit="qav250-p28-f1-unit"></span>
+
+<span id="qav250-p28-f2-unit" data-translation-unit="qav250-p28-f2-unit"></span>
+
+<span id="qav250-p29-body" data-translation-unit="qav250-p29-body"></span>
+
+<span id="qav250-p29-body-warning" data-translation-unit="qav250-p29-body-warning"></span>
+
+:::caution[注意]
+ゴーグルの更新中は電源を切らないでください。
+:::
+
+<span id="qav250-p29-body-continued" data-translation-unit="qav250-p29-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p29-f1-unit" data-translation-unit="qav250-p29-f1-unit"></span>
+
+<span id="qav250-p29-f2-unit" data-translation-unit="qav250-p29-f2-unit"></span>
+
+<span id="qav250-p30-body" data-translation-unit="qav250-p30-body"></span>
+
+<span id="qav250-p30-f1-unit" data-translation-unit="qav250-p30-f1-unit"></span>
+
+<span id="qav250-p31-body" data-translation-unit="qav250-p31-body"></span>
+
+<span id="qav250-p31-f1-unit" data-translation-unit="qav250-p31-f1-unit"></span>
+
+<span id="qav250-p31-f2-unit" data-translation-unit="qav250-p31-f2-unit"></span>
+
+<span id="qav250-p32-body" data-translation-unit="qav250-p32-body"></span>
+
+<span id="qav250-p33-body" data-translation-unit="qav250-p33-body"></span>
+
+<span id="qav250-p33-f1-unit" data-translation-unit="qav250-p33-f1-unit"></span>
+
+<span id="qav250-p34-body" data-translation-unit="qav250-p34-body"></span>
+
+#### 3.2.3 Walksnail AVATAR FPV VRX
+
+<span id="qav250-p34-f1-unit" data-translation-unit="qav250-p34-f1-unit"></span>
+
+<span id="qav250-p35-body" data-translation-unit="qav250-p35-body"></span>
+
+<span id="qav250-p35-body-warning" data-translation-unit="qav250-p35-body-warning"></span>
+
+:::caution[注意]
+VRXの更新中は電源を切らないでください。
+:::
+
+<span id="qav250-p35-body-continued" data-translation-unit="qav250-p35-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p35-f1-unit" data-translation-unit="qav250-p35-f1-unit"></span>
+
+<span id="qav250-p36-body" data-translation-unit="qav250-p36-body"></span>
+
+<span id="qav250-p36-body-warning" data-translation-unit="qav250-p36-body-warning"></span>
+
+:::caution[注意]
+VRXの部品を損傷しないよう、電源投入前にすべてのアンテナを取り付けてください。
+:::
+
+<span id="qav250-p36-body-continued" data-translation-unit="qav250-p36-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p36-f1-unit" data-translation-unit="qav250-p36-f1-unit"></span>
+
+<span id="qav250-p36-f2-unit" data-translation-unit="qav250-p36-f2-unit"></span>
+
+<span id="qav250-p36-f3-unit" data-translation-unit="qav250-p36-f3-unit"></span>
+
+<span id="qav250-p37-body" data-translation-unit="qav250-p37-body"></span>
+
+#### 3.2.4 携帯型モニター
+
+<span id="qav250-p37-f1-unit" data-translation-unit="qav250-p37-f1-unit"></span>
+
+<span id="qav250-p37-f2-unit" data-translation-unit="qav250-p37-f2-unit"></span>
+
+<span id="qav250-p37-f3-unit" data-translation-unit="qav250-p37-f3-unit"></span>
+
+<span id="qav250-p38-body" data-translation-unit="qav250-p38-body"></span>
+
+**注意事項**
+
+通常の条件で使用するため、使用前に以下をよく読み、守ってください。
+
+1. タッチ操作に対応しない機種の画面を指で触らないでください。皮脂が付くと拭き取りにくくなります。
+2. 修理・分解・改造しないでください。内部に高電圧部品があり、触れると重傷を負うおそれがあります。
+3. 防水仕様ではありません。水に浸したり、水をかけたり、濡れた手で触れたりしないでください。故障・感電のおそれがあります。
+4. 金属など導電性のあるものを本体や露出した端子に差し込まないでください。破損・感電のおそれがあります。
+5. 炎天下の車内や暖房器具の近くなど、高温になる場所で使用しないでください。
+6. ディスプレイケーブルを傷つけたり加工したりしないでください。熱源に近づけたり、無理にひねる、曲げる、引っ張るといった操作をしたり、上に重い物を置いたり、重い物と一緒に束ねたりしないでください。
+7. USBケーブルを修理・分解・改造しないでください。破損したら同じ仕様のケーブルに交換し、感電・火災を防いでください。
+
+使用中にUSBプラグやケーブルが異常に熱くなり、煙や異臭が生じた場合は直ちに使用を中止してください。
+
+<span id="qav250-p38-body-parameters" data-translation-unit="qav250-p38-body-parameters"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p38-f1-unit" data-translation-unit="qav250-p38-f1-unit"></span>
+
+<span id="qav250-p38-f2-unit" data-translation-unit="qav250-p38-f2-unit"></span>
+
+<span id="qav250-p39-body" data-translation-unit="qav250-p39-body"></span>
+
+#### 3.2.5 ZENCHANSI 600 mWアナログ映像伝送装置
+
+<span id="qav250-p39-f1-unit" data-translation-unit="qav250-p39-f1-unit"></span>
+
+<span id="qav250-p40-body" data-translation-unit="qav250-p40-body"></span>
+
+#### 3.2.6 LONGSITE 3インチFPVゴーグル
+
+<span id="qav250-p40-f1-unit" data-translation-unit="qav250-p40-f1-unit"></span>
+
+<span id="qav250-p41-body" data-translation-unit="qav250-p41-body"></span>
+
+<span id="qav250-p41-body-warning" data-translation-unit="qav250-p41-body-warning"></span>
+
+:::caution[注意]
+LONGSITE 3インチFPVゴーグルのMicro USB充電端子はDC 5 V専用です。
+:::
+
+<span id="qav250-p41-body-continued" data-translation-unit="qav250-p41-body-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="qav250-p41-f1-unit" data-translation-unit="qav250-p41-f1-unit"></span>
+
+<span id="qav250-p42-body" data-translation-unit="qav250-p42-body"></span>
+
+#### 3.2.7 Little Pilot（SCHOOL）4.3インチFPVモニター
+
+<span id="qav250-p42-f1-unit" data-translation-unit="qav250-p42-f1-unit"></span>
+
+<span id="qav250-p43-body" data-translation-unit="qav250-p43-body"></span>
+
+<span id="qav250-p43-f1-unit" data-translation-unit="qav250-p43-f1-unit"></span>
