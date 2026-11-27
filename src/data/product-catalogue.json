@@ -51,7 +51,7 @@
     "subcategoryLabel": "航空機用送信機",
     "description": "Radiolinkの航空機向け送信機です。",
     "officialUrl": "https://www.radiolink.com/t16d",
-    "detailPath": null,
+    "detailPath": "/radiolink/t16d/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/t16d.webp",

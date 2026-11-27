@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 27);
+  assert.equal(remaining.manuals.length, 29);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    27,
+    29,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -30,6 +30,8 @@ test('Remaining manual candidates isolate held units and images and preserve sou
         'm435',
         't8s-bt',
         'wolf-qav250',
+        't16d',
+        't12d',
       ].includes(manual.product_id)
         ? 'WEB_QA_REQUIRED'
         : 'WEB_HOLD',

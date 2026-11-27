@@ -1,10 +1,19 @@
 ---
 import { getEntry } from 'astro:content';
 import StandardProductPage from '../../components/StandardProductPage.astro';
+import { withBase } from '../../lib/urls';
 import pages from '../../data/standard-product-pages.json';
 
 const product = await getEntry('products', 't12d');
 if (!product) throw new Error('T12D product data is missing');
 ---
 
-<StandardProductPage product={product} detail={pages.t12d} />
+<StandardProductPage product={product} detail={pages.t12d}>
+  {
+    process.env.PUBLICATION_MODE !== 'production' && (
+      <a slot="manual-link" href={withBase('/manuals/t12d/')}>
+        日本語取扱説明書
+      </a>
+    )
+  }
+</StandardProductPage>

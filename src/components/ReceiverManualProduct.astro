@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import catalogue from '../data/product-catalogue.json';
 import manuals from '../lib/receiver-manuals.mjs';
 import { withBase } from '../lib/urls';
+import { categoryIds } from '../lib/radiolink-categories.mjs';
 
 const { productId } = Astro.props;
 const product = catalogue.find((p) => p.id === productId);
@@ -30,25 +31,13 @@ const quickGuide =
   }
 >
   <section class="mx-auto max-w-[var(--site-max-width)] px-5 py-12">
-    {product.category === 'GPS・RTK・センサー' ? (
-      <a href={withBase('/radiolink/#gps-rtk-sensors')}>
-        GPS・RTK・センサー一覧へ戻る
-      </a>
-    ) : product.category === 'モジュール・アクセサリー' ? (
-      <a href={withBase('/radiolink/#modules-accessories')}>
-        モジュール・アクセサリー一覧へ戻る
-      </a>
-    ) : product.category === '電源・ESC' ? (
-      <a href={withBase('/radiolink/#power-esc')}>電源・ESC一覧へ戻る</a>
-    ) : product.category === 'フライトコントローラー' ? (
-      <a href={withBase('/radiolink/#flight-controllers')}>
-        フライトコントローラー一覧へ戻る
-      </a>
-    ) : product.category === '機体' ? (
-      <a href={withBase('/radiolink/#aircraft')}>機体一覧へ戻る</a>
-    ) : (
-      <a href={withBase('/radiolink/#receivers')}>受信機一覧へ戻る</a>
-    )}
+    <a
+      href={withBase(
+        `/radiolink/#${categoryIds[product.category as keyof typeof categoryIds]}`,
+      )}
+    >
+      {product.category}一覧へ戻る
+    </a>
     <h1 class="mt-6 text-3xl font-bold">Radiolink {product.name}</h1>
     <p class="mt-3">{product.description}</p>
     <img
