@@ -807,7 +807,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/ld_a40_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/ld-a40/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/ld-a40.webp",
