@@ -114,7 +114,7 @@
     "subcategoryLabel": "航空機用送信機",
     "description": "Radiolinkの航空機向け送信機です。",
     "officialUrl": "https://www.radiolink.com/t8s",
-    "detailPath": null,
+    "detailPath": "/radiolink/t8s-bt/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/t8s-bt.webp",
@@ -954,7 +954,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://radiolink.com/m435",
-    "detailPath": null,
+    "detailPath": "/radiolink/m435/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/m435.webp",
