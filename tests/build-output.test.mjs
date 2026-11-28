@@ -1409,6 +1409,9 @@ test(
           page,
         );
         assert.match(html, /日本語Web版 初版/);
+        if (entry.withheld_unit_ids.length > 0) {
+          assert.match(html, /この日本語Web版は原典の一部を掲載しています/);
+        }
         const canonical = `https://happinesea.com${entry.route}`;
         const location = `<loc>${canonical}</loc>`;
         assert.equal(sitemap.split(location).length, 2, page);

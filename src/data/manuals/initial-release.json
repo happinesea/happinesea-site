@@ -20,6 +20,16 @@
     "mdx_sha256": "4627879199936604fa85f588ee24668e196266cd8286aa25f19e02da6962ecb7"
   },
   {
+    "route": "/manuals/at10-ii/",
+    "canonical_sha256": "1aec35e72b50e8d43cb912ee7631597aca3d06d7f5a20403d8becb422aa53b64",
+    "mdx_sha256": "dcb48f6fa148bc3aa756f53f3a67b4bd801bb88e4073d557ce6a4c7a91a5dc9d"
+  },
+  {
+    "route": "/manuals/at9s-pro/",
+    "canonical_sha256": "3ae6a9aad119b5b4441c3bd4c744ce00dfb6b87f0294b71e2b21d9a58fb43eac",
+    "mdx_sha256": "eb60aff2561a89e884ea076bab9a179cf27e85201b73106149da06258eef5c03"
+  },
+  {
     "route": "/manuals/bds200/",
     "canonical_sha256": "d890532b4ed522d5483485790dca02935787839ce802802febc319f9299e761f",
     "mdx_sha256": "0899cf32aef61d724bb8964f74a5d65f1cf33f7238f163548a3cfdd7e857d463"
@@ -108,6 +118,21 @@
     "route": "/manuals/ld-b20/",
     "canonical_sha256": "cf3820d93a4b4d650bf54e82fae90726fd654dc463b06b9e25a0ecc312ad8b79",
     "mdx_sha256": "16b40f8990957cdb6ce1fae16099641737301f9e65dca154609f78855f7a9dd1"
+  },
+  {
+    "route": "/manuals/mini-pix/",
+    "canonical_sha256": "b7460cb6a941768ff499dcfa66272e0a74f08dcf84e47cc3fa2cf1cf304c6694",
+    "mdx_sha256": "3df18c92f756a7386cae4fa27e8ccf505a2b5bbce427e473a6ca6c9638c76d69"
+  },
+  {
+    "route": "/manuals/pix6/",
+    "canonical_sha256": "d836fa243e21ce2f0bb464d9e1345579e5c22519c38803ceffe64805267af67e",
+    "mdx_sha256": "365f1f633e66f8d40eaada8ed4c869a94f27b8ca492175b00abd89ea22a10c3e"
+  },
+  {
+    "route": "/manuals/pixhawk/",
+    "canonical_sha256": "1bdebbcd4263c991f4f5396013ad3fbd13148a253822f9118ee654d00555890f",
+    "mdx_sha256": "565093465076474914b1f96822f0859a6f5dadccc514419e65eaa5243a497e0c"
   },
   {
     "route": "/manuals/prm-01/",
