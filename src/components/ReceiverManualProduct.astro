@@ -20,7 +20,9 @@ const quickGuide =
   'document_scope' in manual.source &&
   manual.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL';
 const showManual = canShowGeneratedManual(manual);
-const initialRelease = isInitialManualRelease(manual);
+const initialRelease =
+  process.env.PUBLICATION_MODE === 'production' &&
+  isInitialManualRelease(manual);
 ---
 
 <BaseLayout
