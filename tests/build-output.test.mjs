@@ -1392,9 +1392,11 @@ test(
   },
   async () => {
     const sitemap = await route('sitemap-0.xml');
+    const news = await route('news-sitemap.xml');
     const approved = new Set(
       initialManualReleaseEntries.map((entry) => entry.route),
     );
+    assert.equal(approved.size, initialManualReleaseEntries.length);
     assert.ok(approved.size > 0);
     for (const entry of receiverManuals.manuals) {
       const page = `${entry.route.slice(1)}index.html`;
@@ -1407,10 +1409,20 @@ test(
           page,
         );
         assert.match(html, /日本語Web版 初版/);
+        const canonical = `https://happinesea.com${entry.route}`;
+        const location = `<loc>${canonical}</loc>`;
+        assert.equal(sitemap.split(location).length, 2, page);
+        assert.ok(!news.includes(location), page);
         assert.ok(
-          sitemap.includes(`https://happinesea.com${entry.route}</loc>`),
+          html.includes(`<link rel="canonical" href="${canonical}"`),
           page,
         );
+        assert.ok(
+          html.includes(`<meta property="og:url" content="${canonical}"`),
+          page,
+        );
+        assert.match(html, /<title>[^<]+<\/title>/, page);
+        assert.match(html, /<meta name="description" content="[^"]+"/, page);
         for (const figure of entry.figures)
           await access(
             new URL(
