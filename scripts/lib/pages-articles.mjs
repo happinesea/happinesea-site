@@ -1,4 +1,5 @@
 import { z } from 'astro/zod';
+import { randomUUID } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { readFile, readdir, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -100,10 +101,70 @@ export function articleExcerpt(body = '') {
 }
 
 export function renderCmsArticle(body = '', base = '/') {
+  return renderCmsArticlePages(body, base).join('');
+}
+
+export function renderCmsArticlePages(body = '', base = '/') {
+  const separator = `<!--${randomUUID()}-->`;
   const html = markdownToHtml(body, {
-    hastPlugins: [cmsArticleImages(base)],
+    hastPlugins: [
+      cmsArticleImages(base),
+      {
+        name: 'cms-article-pagination',
+        raw(node, ctx) {
+          if (
+            node.value.trim() === '<!--nextpage-->' &&
+            ctx.parent(node).type === 'root'
+          )
+            return { ...node, value: separator };
+        },
+      },
+    ],
     data: { astro: { frontmatter: { content_origin: 'pages-cms' } } },
   }).html;
+  const pages = html
+    .split(separator)
+    .map((part) => sanitizeCmsArticleHtml(part, base))
+    .filter((part) => part.trim());
+  return pages.length ? pages : [''];
+}
+
+export function cmsArticlePresentation(pages, title, description) {
+  const [first, ...remaining] = pages;
+  const normalize = (text) => text.replaceAll(/\s+/gu, ' ').trim();
+  const heading = first.match(/^\s*<h1>([\s\S]*?)<\/h1>\s*/);
+  const opening =
+    heading && metadataText(heading[1]) === normalize(title)
+      ? first.slice(heading[0].length)
+      : first;
+  const lead = normalize(description);
+  const leadOpening = opening || remaining[0] || '';
+  const paragraphs =
+    leadOpening.match(/^(?:\s*<p>(?:(?!<\/p>)[\s\S])*<\/p>)+/)?.[0] ?? '';
+  let joined = '';
+  let spaced = '';
+  let duplicateLead = lead === normalize(title);
+
+  for (const [, html] of paragraphs.matchAll(/<p>([\s\S]*?)<\/p>/g)) {
+    const paragraph = metadataText(html);
+    joined += paragraph;
+    spaced = spaced ? spaced + ' ' + paragraph : paragraph;
+    if (lead === joined || lead === spaced) {
+      duplicateLead = true;
+      break;
+    }
+    if (joined.length > lead.length) break;
+  }
+
+  return {
+    pages: [opening, ...remaining].map((page) =>
+      page.replaceAll(/<(\/?)h1>/g, '<$1h2>'),
+    ),
+    lead: duplicateLead ? '' : description,
+  };
+}
+
+function sanitizeCmsArticleHtml(html, base) {
   return sanitizeHtml(html, {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
     allowedAttributes: {
