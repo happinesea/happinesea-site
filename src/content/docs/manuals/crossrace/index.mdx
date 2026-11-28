@@ -1,0 +1,646 @@
+---
+title: CrossRace 日本語取扱説明書
+description: Radiolink CrossRace の公式英語取扱説明書に対応する日本語版です。
+product: crossrace
+slug: manuals/crossrace
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/1d1dbfc507b7b0f562bf7b50db29d13e.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/crossrace/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink CrossRace 公式英語取扱説明書（文書版・発行日不明、64頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="crossrace-p1-body" data-translation-unit="crossrace-p1-body"></span>
+
+# CrossRace 取扱説明書
+
+対応機体：ローター数2〜8のマルチローター。
+
+<span id="crossrace-p1-f1-unit" data-translation-unit="crossrace-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossrace/web-ja-v1/crossrace-p1-f1.png" width={600} height={180} figureId="crossrace-p1-f1" alt={"CrossRace原典物理1頁の図1"} caption={"CrossRace原典物理1頁の図1"} />
+
+<span id="crossrace-p1-f2-unit" data-translation-unit="crossrace-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossrace/web-ja-v1/crossrace-p1-f2.jpeg" width={1316} height={1338} figureId="crossrace-p1-f2" alt={"CrossRace原典物理1頁の図2"} caption={"CrossRace原典物理1頁の図2"} />
+
+<span id="crossrace-p1-f3-unit" data-translation-unit="crossrace-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossrace/web-ja-v1/crossrace-p1-f3.jpeg" width={640} height={380} figureId="crossrace-p1-f3" alt={"CrossRace原典物理1頁の図3"} caption={"CrossRace原典物理1頁の図3"} />
+
+<span id="crossrace-p2-body-safety" data-translation-unit="crossrace-p2-body-safety"></span>
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界が悪いと方向を見失い、操縦できなくなるおそれがあります。
+- 人混みや法令で禁止されている場所では使用しないでください。
+- 使用前に毎回、すべてのサーボとその接続を点検してください。
+- 電源は必ず受信機、送信機の順に切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉のない場所で飛行・走行させてください。
+
+## 警告
+
+本製品は玩具ではなく、14歳未満の子どもの使用には適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは慎重に操作してください。
+
+水や湿気がアンテナやスティックの隙間から送信機に入り、機体の動作が不安定になったり、制御不能になったりするおそれがあります。
+
+<span id="crossrace-p2-body-wet-weather" data-translation-unit="crossrace-p2-body-wet-weather"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p2-body-fcc" data-translation-unit="crossrace-p2-body-fcc"></span>
+
+## FCC声明
+
+本機器は試験によりFCC規則第15部のクラスBデジタル機器の制限に適合することが確認されています。この制限は、住宅での設置時に有害な干渉を合理的に防ぐためのものです。本機器は無線周波エネルギーを発生・使用し、放射することがあります。指示どおりに設置・使用しない場合、無線通信に有害な干渉を与えるおそれがあります。ただし、個々の設置環境で干渉が起こらないことを保証するものではありません。
+
+本機器がラジオやテレビの受信に有害な干渉を与えているかどうかは、本機器の電源を切って入れ直すことで確認できます。干渉が生じている場合は、次のうち一つ以上の方法で解消を試みてください。
+
+- 受信アンテナの向きや位置を変える。
+- 本機器と受信機の間隔を広げる。
+- 受信機とは別の回路にあるコンセントに本機器を接続する。
+- 販売店または経験のあるラジオ・テレビ技術者に相談する。
+
+本機器はFCC規則第15部に適合しています。使用には次の二つの条件が適用されます。（1）本機器が有害な干渉を発生させないこと。（2）意図しない動作の原因となる干渉を含め、受信したあらゆる干渉を受け入れること。
+
+適合性に責任を負う当事者が明示的に承認していない変更や改造を行うと、利用者の本機器を使用する権限が失われることがあります。
+
+
+
+<span id="crossrace-p3-body" data-translation-unit="crossrace-p3-body"></span>
+
+## 目次（原典の印刷ページ）
+
+- 1 CrossRaceの概要 — 4
+  - 1.1 付属品 — 4
+  - 1.2 コネクター — 5
+  - 1.3 仕様 — 8
+  - 1.4 使用上の助言 — 9
+- 2 Mission Planner — 10
+  - 2.1 Mission Plannerのインストール — 10
+  - 2.2 Mission Plannerの概要 — 10
+- 3 初期設定 — 11
+  - 3.1 ファームウェアのダウンロードとインストール — 11
+  - 3.2 フレームタイプ — 14
+  - 3.3 加速度センサーのキャリブレーション — 15
+  - 3.4 コンパスのキャリブレーション — 18
+  - 3.5 送受信機のキャリブレーション — 21
+  - 3.6 フライトモードの設定 — 25
+  - 3.7 フライトモードの概要 — 26
+    - 3.7.1 Stabilizeモード — 26
+    - 3.7.2 Acroモード（FPV） — 26
+    - 3.7.3 Altitude Holdモード — 28
+    - 3.7.4 Autoモード — 29
+    - 3.7.5 PosHoldモード — 30
+    - 3.7.6 RTLモード — 31
+    - 3.7.7 SimpleモードとSuper Simpleモード — 32
+    - 3.7.8 その他のフライトモード — 34
+- 4 F/S（フェイルセーフ）設定 — 35
+  - 4.1 無線フェイルセーフの設定 — 35
+
+<span id="crossrace-p4-body" data-translation-unit="crossrace-p4-body"></span>
+
+## 目次（続き）
+
+- 3 初期設定 — 38
+- 5 ハードウェアの取り付けと設定 — 39
+  - 5.1 機体へのCrossRaceの取り付け — 39
+  - 5.2 CrossRaceと機体の接続 — 40
+    - 5.2.1 モーターの番号順と回転方向の選択 — 40
+    - 5.2.2 時計回りと反時計回りのプロペラの見分け方 — 43
+    - 5.2.3 付属品の接続 — 43
+  - 5.3 LED表示、アーム、トラブルシューティング — 46
+    - 5.3.1 LED表示 — 46
+    - 5.3.2 アームとディスアーム — 46
+    - 5.3.3 アーム時の回転を停止する — 48
+    - 5.3.4 アームできない場合の対処 — 49
+  - 5.4 ESCのキャリブレーション — 52
+  - 5.5 水平キャリブレーション — 52
+  - 5.6 GeoFence — 53
+  - 5.7 内蔵OSD — 54
+    - 5.7.1 設定の概要 — 55
+    - 5.7.2 表示画面の概要 — 56
+  - 5.8 CrossRaceの高度な機能 — 56
+    - 5.8.1 CrossRaceでのESCテレメトリーの使用 — 56
+    - 5.8.2 CrossRaceのアンチタートルモード — 58
+- 6 AutoTune — 58
+- 7 パラメーター設定 — 60
+  - 7.1 パラメーター画面の概要 — 60
+  - 7.2 パラメーターの調整 — 61
+  - 7.3 パラメーターの手動調整 — 61
+  - 7.4 Acroモードの操作感の最適化 — 61
+- 8 DataFlashログのダウンロード — 62
+
+<span id="crossrace-p5-body" data-translation-unit="crossrace-p5-body"></span>
+
+## 1. CrossRaceの概要
+
+### 1.1 付属品
+
+<span id="crossrace-p5-f1-unit" data-translation-unit="crossrace-p5-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p6-body" data-translation-unit="crossrace-p6-body"></span>
+
+### 1.2 コネクター
+
+<span id="crossrace-p6-f1-unit" data-translation-unit="crossrace-p6-f1-unit"></span>
+
+<span id="crossrace-p7-body" data-translation-unit="crossrace-p7-body"></span>
+
+<span id="crossrace-p7-f1-unit" data-translation-unit="crossrace-p7-f1-unit"></span>
+
+<span id="crossrace-p8-body" data-translation-unit="crossrace-p8-body"></span>
+
+<span id="crossrace-p8-f1-unit" data-translation-unit="crossrace-p8-f1-unit"></span>
+
+<span id="crossrace-p9-body" data-translation-unit="crossrace-p9-body"></span>
+
+### 1.3 仕様
+
+<span id="crossrace-p10-body" data-translation-unit="crossrace-p10-body"></span>
+
+### 1.4 使用上の助言
+
+<span id="crossrace-p11-body" data-translation-unit="crossrace-p11-body"></span>
+
+## 2. Mission Planner
+
+### 2.1 Mission Plannerのインストール
+
+### 2.2 Mission Plannerの概要
+
+<span id="crossrace-p11-f1-unit" data-translation-unit="crossrace-p11-f1-unit"></span>
+
+<span id="crossrace-p12-body" data-translation-unit="crossrace-p12-body"></span>
+
+## 3. 初期設定
+
+### 3.1 ファームウェアのダウンロードとインストール
+
+<span id="crossrace-p12-f1-unit" data-translation-unit="crossrace-p12-f1-unit"></span>
+
+<span id="crossrace-p13-body" data-translation-unit="crossrace-p13-body"></span>
+
+<span id="crossrace-p13-f1-unit" data-translation-unit="crossrace-p13-f1-unit"></span>
+
+<span id="crossrace-p13-f2-unit" data-translation-unit="crossrace-p13-f2-unit"></span>
+
+<span id="crossrace-p14-body" data-translation-unit="crossrace-p14-body"></span>
+
+<span id="crossrace-p14-f1-unit" data-translation-unit="crossrace-p14-f1-unit"></span>
+
+<span id="crossrace-p14-f2-unit" data-translation-unit="crossrace-p14-f2-unit"></span>
+
+<span id="crossrace-p14-f3-unit" data-translation-unit="crossrace-p14-f3-unit"></span>
+
+<span id="crossrace-p15-body" data-translation-unit="crossrace-p15-body"></span>
+
+### 3.2 フレームタイプ
+
+<span id="crossrace-p15-f1-unit" data-translation-unit="crossrace-p15-f1-unit"></span>
+
+<span id="crossrace-p15-f2-unit" data-translation-unit="crossrace-p15-f2-unit"></span>
+
+<span id="crossrace-p16-body" data-translation-unit="crossrace-p16-body"></span>
+
+### 3.3 加速度センサーのキャリブレーション
+
+<span id="crossrace-p16-f1-unit" data-translation-unit="crossrace-p16-f1-unit"></span>
+
+<span id="crossrace-p16-f2-unit" data-translation-unit="crossrace-p16-f2-unit"></span>
+
+<span id="crossrace-p16-f3-unit" data-translation-unit="crossrace-p16-f3-unit"></span>
+
+<span id="crossrace-p17-body" data-translation-unit="crossrace-p17-body"></span>
+
+<span id="crossrace-p17-f1-unit" data-translation-unit="crossrace-p17-f1-unit"></span>
+
+<span id="crossrace-p17-f2-unit" data-translation-unit="crossrace-p17-f2-unit"></span>
+
+<span id="crossrace-p18-body" data-translation-unit="crossrace-p18-body"></span>
+
+<span id="crossrace-p18-f1-unit" data-translation-unit="crossrace-p18-f1-unit"></span>
+
+<span id="crossrace-p18-f2-unit" data-translation-unit="crossrace-p18-f2-unit"></span>
+
+<span id="crossrace-p19-body" data-translation-unit="crossrace-p19-body"></span>
+
+### 3.4 コンパスのキャリブレーション
+
+<span id="crossrace-p19-f1-unit" data-translation-unit="crossrace-p19-f1-unit"></span>
+
+<span id="crossrace-p19-f2-unit" data-translation-unit="crossrace-p19-f2-unit"></span>
+
+<span id="crossrace-p20-body" data-translation-unit="crossrace-p20-body"></span>
+
+<span id="crossrace-p20-f1-unit" data-translation-unit="crossrace-p20-f1-unit"></span>
+
+<span id="crossrace-p20-f2-unit" data-translation-unit="crossrace-p20-f2-unit"></span>
+
+<span id="crossrace-p21-body" data-translation-unit="crossrace-p21-body"></span>
+
+<span id="crossrace-p21-f1-unit" data-translation-unit="crossrace-p21-f1-unit"></span>
+
+<span id="crossrace-p21-f2-unit" data-translation-unit="crossrace-p21-f2-unit"></span>
+
+<span id="crossrace-p22-body-setup" data-translation-unit="crossrace-p22-body-setup"></span>
+
+### 3.5 送受信機のキャリブレーション
+
+<span id="crossrace-p22-body-warning" data-translation-unit="crossrace-p22-body-warning"></span>
+
+:::caution[注意]
+**安全上の注意**：キャリブレーションの前にバッテリーを外すか、プロペラを取り外すか、両方を実施してください。
+
+
+:::
+
+<span id="crossrace-p22-body-operation" data-translation-unit="crossrace-p22-body-operation"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p22-f1-unit" data-translation-unit="crossrace-p22-f1-unit"></span>
+
+<span id="crossrace-p22-f2-unit" data-translation-unit="crossrace-p22-f2-unit"></span>
+
+<span id="crossrace-p23-body" data-translation-unit="crossrace-p23-body"></span>
+
+<span id="crossrace-p23-f1-unit" data-translation-unit="crossrace-p23-f1-unit"></span>
+
+<span id="crossrace-p23-f2-unit" data-translation-unit="crossrace-p23-f2-unit"></span>
+
+<span id="crossrace-p24-body" data-translation-unit="crossrace-p24-body"></span>
+
+<span id="crossrace-p24-f1-unit" data-translation-unit="crossrace-p24-f1-unit"></span>
+
+<span id="crossrace-p24-f2-unit" data-translation-unit="crossrace-p24-f2-unit"></span>
+
+<span id="crossrace-p24-f3-unit" data-translation-unit="crossrace-p24-f3-unit"></span>
+
+<span id="crossrace-p25-body" data-translation-unit="crossrace-p25-body"></span>
+
+<span id="crossrace-p25-f1-unit" data-translation-unit="crossrace-p25-f1-unit"></span>
+
+<span id="crossrace-p25-f2-unit" data-translation-unit="crossrace-p25-f2-unit"></span>
+
+<span id="crossrace-p25-f3-unit" data-translation-unit="crossrace-p25-f3-unit"></span>
+
+<span id="crossrace-p26-body" data-translation-unit="crossrace-p26-body"></span>
+
+### 3.6 フライトモードを設定する
+
+<span id="crossrace-p26-f1-unit" data-translation-unit="crossrace-p26-f1-unit"></span>
+
+<span id="crossrace-p27-body" data-translation-unit="crossrace-p27-body"></span>
+
+### 3.7 フライトモードの説明
+
+#### 3.7.1 スタビライズ（Stabilize）
+
+#### 3.7.2 アクロ（Acro、FPV）
+
+<span id="crossrace-p27-f1-unit" data-translation-unit="crossrace-p27-f1-unit"></span>
+
+<span id="crossrace-p28-body" data-translation-unit="crossrace-p28-body"></span>
+
+<span id="crossrace-p28-f1-unit" data-translation-unit="crossrace-p28-f1-unit"></span>
+
+<span id="crossrace-p29-body" data-translation-unit="crossrace-p29-body"></span>
+
+#### 3.7.3 高度保持（Altitude Hold）
+
+<span id="crossrace-p29-f1-unit" data-translation-unit="crossrace-p29-f1-unit"></span>
+
+<span id="crossrace-p30-body" data-translation-unit="crossrace-p30-body"></span>
+
+#### 3.7.4 Autoモード
+
+<span id="crossrace-p30-f1-unit" data-translation-unit="crossrace-p30-f1-unit"></span>
+
+<span id="crossrace-p31-body" data-translation-unit="crossrace-p31-body"></span>
+
+#### 3.7.5 PosHoldモード
+
+<span id="crossrace-p32-body" data-translation-unit="crossrace-p32-body"></span>
+
+#### 3.7.6 RTLモード
+
+<span id="crossrace-p32-f1-unit" data-translation-unit="crossrace-p32-f1-unit"></span>
+
+<span id="crossrace-p33-body" data-translation-unit="crossrace-p33-body"></span>
+
+#### 3.7.7 SimpleとSuper Simple
+
+<span id="crossrace-p34-body" data-translation-unit="crossrace-p34-body"></span>
+
+<span id="crossrace-p34-f1-unit" data-translation-unit="crossrace-p34-f1-unit"></span>
+
+<span id="crossrace-p34-f2-unit" data-translation-unit="crossrace-p34-f2-unit"></span>
+
+<span id="crossrace-p35-body" data-translation-unit="crossrace-p35-body"></span>
+
+#### 3.7.8 その他のフライトモード
+
+<span id="crossrace-p35-f1-unit" data-translation-unit="crossrace-p35-f1-unit"></span>
+
+<span id="crossrace-p36-body" data-translation-unit="crossrace-p36-body"></span>
+
+## 4. F/S（フェイルセーフ）設定
+
+### 4.1 無線フェイルセーフの設定
+
+<span id="crossrace-p36-f1-unit" data-translation-unit="crossrace-p36-f1-unit"></span>
+
+<span id="crossrace-p37-body" data-translation-unit="crossrace-p37-body"></span>
+
+<span id="crossrace-p37-f1-unit" data-translation-unit="crossrace-p37-f1-unit"></span>
+
+<span id="crossrace-p38-body" data-translation-unit="crossrace-p38-body"></span>
+
+<span id="crossrace-p38-f1-unit" data-translation-unit="crossrace-p38-f1-unit"></span>
+
+<span id="crossrace-p38-f2-unit" data-translation-unit="crossrace-p38-f2-unit"></span>
+
+<span id="crossrace-p39-body" data-translation-unit="crossrace-p39-body"></span>
+
+### 4.2 EKFフェイルセーフ
+
+<span id="crossrace-p39-f1-unit" data-translation-unit="crossrace-p39-f1-unit"></span>
+
+<span id="crossrace-p40-body-setup" data-translation-unit="crossrace-p40-body-setup"></span>
+
+## 5. ハードウェアの取り付けと設定
+
+<span id="crossrace-p40-body-warning" data-translation-unit="crossrace-p40-body-warning"></span>
+
+:::caution[注意]
+**注意**：初回飛行時のESCキャリブレーションでは、プロペラを取り外してください。
+
+
+:::
+
+<span id="crossrace-p40-body-operation" data-translation-unit="crossrace-p40-body-operation"></span>
+
+### 5.1 機体へのCrossRaceの取り付け
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p40-f1-unit" data-translation-unit="crossrace-p40-f1-unit"></span>
+
+<span id="crossrace-p40-f2-unit" data-translation-unit="crossrace-p40-f2-unit"></span>
+
+<span id="crossrace-p41-body" data-translation-unit="crossrace-p41-body"></span>
+
+### 5.2 CrossRaceと機体の接続
+
+#### 5.2.1 モーターの番号順と回転方向の選択
+
+<span id="crossrace-p41-f1-unit" data-translation-unit="crossrace-p41-f1-unit"></span>
+
+<span id="crossrace-p41-f2-unit" data-translation-unit="crossrace-p41-f2-unit"></span>
+
+<span id="crossrace-p41-f3-unit" data-translation-unit="crossrace-p41-f3-unit"></span>
+
+<span id="crossrace-p41-f4-unit" data-translation-unit="crossrace-p41-f4-unit"></span>
+
+<span id="crossrace-p41-f5-unit" data-translation-unit="crossrace-p41-f5-unit"></span>
+
+<span id="crossrace-p42-body" data-translation-unit="crossrace-p42-body"></span>
+
+<span id="crossrace-p42-f1-unit" data-translation-unit="crossrace-p42-f1-unit"></span>
+
+<span id="crossrace-p42-f2-unit" data-translation-unit="crossrace-p42-f2-unit"></span>
+
+<span id="crossrace-p42-f3-unit" data-translation-unit="crossrace-p42-f3-unit"></span>
+
+<span id="crossrace-p42-f4-unit" data-translation-unit="crossrace-p42-f4-unit"></span>
+
+<span id="crossrace-p42-f5-unit" data-translation-unit="crossrace-p42-f5-unit"></span>
+
+<span id="crossrace-p43-body" data-translation-unit="crossrace-p43-body"></span>
+
+<span id="crossrace-p43-f1-unit" data-translation-unit="crossrace-p43-f1-unit"></span>
+
+<span id="crossrace-p43-f2-unit" data-translation-unit="crossrace-p43-f2-unit"></span>
+
+<span id="crossrace-p43-f3-unit" data-translation-unit="crossrace-p43-f3-unit"></span>
+
+<span id="crossrace-p43-f4-unit" data-translation-unit="crossrace-p43-f4-unit"></span>
+
+<span id="crossrace-p43-f5-unit" data-translation-unit="crossrace-p43-f5-unit"></span>
+
+<span id="crossrace-p44-body" data-translation-unit="crossrace-p44-body"></span>
+
+#### 5.2.2 時計回りと反時計回りのプロペラの見分け方
+
+#### 5.2.3 付属品の接続
+
+<span id="crossrace-p44-f1-unit" data-translation-unit="crossrace-p44-f1-unit"></span>
+
+<span id="crossrace-p44-f2-unit" data-translation-unit="crossrace-p44-f2-unit"></span>
+
+<span id="crossrace-p45-body" data-translation-unit="crossrace-p45-body"></span>
+
+<span id="crossrace-p45-f1-unit" data-translation-unit="crossrace-p45-f1-unit"></span>
+
+<span id="crossrace-p46-body" data-translation-unit="crossrace-p46-body"></span>
+
+<span id="crossrace-p46-f1-unit" data-translation-unit="crossrace-p46-f1-unit"></span>
+
+<span id="crossrace-p46-f2-unit" data-translation-unit="crossrace-p46-f2-unit"></span>
+
+<span id="crossrace-p46-f3-unit" data-translation-unit="crossrace-p46-f3-unit"></span>
+
+<span id="crossrace-p47-body" data-translation-unit="crossrace-p47-body"></span>
+
+### 5.3 LED表示、アーム、トラブルシューティング
+
+#### 5.3.1 LED表示
+
+#### 5.3.2 アームとディスアーム
+
+<span id="crossrace-p47-f1-unit" data-translation-unit="crossrace-p47-f1-unit"></span>
+
+<span id="crossrace-p48-body" data-translation-unit="crossrace-p48-body"></span>
+
+<span id="crossrace-p48-f1-unit" data-translation-unit="crossrace-p48-f1-unit"></span>
+
+<span id="crossrace-p48-f2-unit" data-translation-unit="crossrace-p48-f2-unit"></span>
+
+<span id="crossrace-p49-body" data-translation-unit="crossrace-p49-body"></span>
+
+#### 5.3.3 アーム時のモーター回転の停止
+
+<span id="crossrace-p49-f1-unit" data-translation-unit="crossrace-p49-f1-unit"></span>
+
+<span id="crossrace-p49-f2-unit" data-translation-unit="crossrace-p49-f2-unit"></span>
+
+<span id="crossrace-p50-body" data-translation-unit="crossrace-p50-body"></span>
+
+#### 5.3.4 アーム失敗時の対処
+
+<span id="crossrace-p50-f1-unit" data-translation-unit="crossrace-p50-f1-unit"></span>
+
+<span id="crossrace-p50-f2-unit" data-translation-unit="crossrace-p50-f2-unit"></span>
+
+<span id="crossrace-p51-body" data-translation-unit="crossrace-p51-body"></span>
+
+<span id="crossrace-p52-body" data-translation-unit="crossrace-p52-body"></span>
+
+<span id="crossrace-p53-body" data-translation-unit="crossrace-p53-body"></span>
+
+### 5.4 ESCのキャリブレーション
+
+### 5.5 水平キャリブレーション
+
+<span id="crossrace-p53-f1-unit" data-translation-unit="crossrace-p53-f1-unit"></span>
+
+<span id="crossrace-p53-f2-unit" data-translation-unit="crossrace-p53-f2-unit"></span>
+
+<span id="crossrace-p54-body" data-translation-unit="crossrace-p54-body"></span>
+
+### 5.6 GeoFence
+
+<span id="crossrace-p54-f1-unit" data-translation-unit="crossrace-p54-f1-unit"></span>
+
+<span id="crossrace-p54-f2-unit" data-translation-unit="crossrace-p54-f2-unit"></span>
+
+<span id="crossrace-p55-body" data-translation-unit="crossrace-p55-body"></span>
+
+### 5.7 内蔵OSD
+
+<span id="crossrace-p55-f1-unit" data-translation-unit="crossrace-p55-f1-unit"></span>
+
+<span id="crossrace-p55-f2-unit" data-translation-unit="crossrace-p55-f2-unit"></span>
+
+<span id="crossrace-p56-body" data-translation-unit="crossrace-p56-body"></span>
+
+#### 5.7.1 設定の概要
+
+<span id="crossrace-p57-body" data-translation-unit="crossrace-p57-body"></span>
+
+#### 5.7.2 表示画面の概要
+
+### 5.8 CrossRaceの高度な機能
+
+#### 5.8.1 ESCテレメトリー
+
+<span id="crossrace-p57-f1-unit" data-translation-unit="crossrace-p57-f1-unit"></span>
+
+<span id="crossrace-p57-f2-unit" data-translation-unit="crossrace-p57-f2-unit"></span>
+
+<span id="crossrace-p58-body" data-translation-unit="crossrace-p58-body"></span>
+
+<span id="crossrace-p58-f1-unit" data-translation-unit="crossrace-p58-f1-unit"></span>
+
+<span id="crossrace-p58-f2-unit" data-translation-unit="crossrace-p58-f2-unit"></span>
+
+<span id="crossrace-p58-f3-unit" data-translation-unit="crossrace-p58-f3-unit"></span>
+
+<span id="crossrace-p59-body" data-translation-unit="crossrace-p59-body"></span>
+
+#### 5.8.2 アンチタートルモード
+
+## 6. AutoTune
+
+<span id="crossrace-p59-f1-unit" data-translation-unit="crossrace-p59-f1-unit"></span>
+
+<span id="crossrace-p59-f2-unit" data-translation-unit="crossrace-p59-f2-unit"></span>
+
+<span id="crossrace-p60-body" data-translation-unit="crossrace-p60-body"></span>
+
+### 飛行前の設定
+
+### AutoTuneの開始
+
+<span id="crossrace-p60-f1-unit" data-translation-unit="crossrace-p60-f1-unit"></span>
+
+<span id="crossrace-p61-body-setup" data-translation-unit="crossrace-p61-body-setup"></span>
+
+## 7. パラメーター設定
+
+### 7.1 パラメーター画面の概要
+
+<span id="crossrace-p61-body-warning" data-translation-unit="crossrace-p61-body-warning"></span>
+
+:::caution[注意]
+**飛行中にパラメーターを変更しないでください。**
+
+
+:::
+
+<span id="crossrace-p61-body-options" data-translation-unit="crossrace-p61-body-options"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p61-f1-unit" data-translation-unit="crossrace-p61-f1-unit"></span>
+
+<span id="crossrace-p62-body" data-translation-unit="crossrace-p62-body"></span>
+
+### 7.2 パラメーターの調整
+
+### 7.3 パラメーターの手動調整
+
+### 7.4 Acroモードの操作感の最適化
+
+<span id="crossrace-p62-f1-unit" data-translation-unit="crossrace-p62-f1-unit"></span>
+
+<span id="crossrace-p63-body-acro-settings" data-translation-unit="crossrace-p63-body-acro-settings"></span>
+
+<span id="crossrace-p63-body-log-concepts" data-translation-unit="crossrace-p63-body-log-concepts"></span>
+
+## 8. DataFlashログのダウンロード
+飛行データの記録方式は2通りあります。一部の例外を除いて記録内容はよく似ていますが、保存方法が異なります。
+- DataFlashログは内蔵DataFlashに記録され、飛行後にダウンロードできます。Copterでは最初にアームした後で作成されます。
+- テレメトリーログ（tlog）はArduPilotとPCをテレメトリーでつないだときに、Mission Plannerなどの地上局で記録します。
+
+ログに不慣れな場合は、入門ページで保存場所、ダウンロード、閲覧方法を確認してください。
+
+<span id="crossrace-p63-f1-unit" data-translation-unit="crossrace-p63-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p64-body" data-translation-unit="crossrace-p64-body"></span>
+
+**注意**：ログダウンロード時はダウンロードスレッドがフライトコントローラーのメインスレッドをブロックするため、ダウンロード後に内部エラーが表示されます。**次回の飛行前にフライトコントローラーを再起動してください。**
+
+ログファイルの開き方は原典図の手順を参照してください。
+
+原典の参照先：http://ardupilot.org/copter/index.html
+
+<span id="crossrace-p64-f1-unit" data-translation-unit="crossrace-p64-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace-p64-f2-unit" data-translation-unit="crossrace-p64-f2-unit"></span>
