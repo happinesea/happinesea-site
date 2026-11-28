@@ -1,3 +1,4 @@
+import { initialManualReleaseEntries } from '../../src/lib/manual-release.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
@@ -110,7 +111,12 @@ test('catalogue categories separate preview manuals from public manual links', (
   assert.ok(receiver.items.some((item) => item.slug === 'manuals/r6f'));
   assert.ok(!receiver.items.some((item) => item.slug === 'manuals/d16pro-200'));
   const links = published.flatMap((group) => group.items);
-  assert.ok(!links.some((item) => item.slug === 'manuals/d16pro-200'));
+  for (const entry of initialManualReleaseEntries)
+    assert.ok(
+      links.some((item) => item.slug === entry.route.slice(1, -1)),
+      entry.route,
+    );
+  assert.ok(!links.some((item) => item.slug === 'manuals/at9s-pro'));
   assert.ok(links.find((item) => item.label === 'rc8p'));
   assert.equal(
     preview

@@ -3,6 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import catalogue from '../data/product-catalogue.json';
 import manuals from '../lib/receiver-manuals.mjs';
 import { withBase } from '../lib/urls';
+import { isInitialManualRelease } from '../lib/manual-release.mjs';
+import {
+  canShowGeneratedManual,
+  fullSourceUnavailable,
+  generatedManualLabel,
+} from '../lib/product-materials.mjs';
 import { categoryIds } from '../lib/radiolink-categories.mjs';
 
 const { productId, manualId = productId } = Astro.props;
@@ -13,12 +19,15 @@ if (!product || !manual)
 const quickGuide =
   'document_scope' in manual.source &&
   manual.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL';
+const showManual = canShowGeneratedManual(manual);
+const initialRelease = isInitialManualRelease(manual);
 ---
 
 <BaseLayout
   title={`Radiolink ${product.name}`}
   description={product.description}
   robots={
+    !initialRelease &&
     'batch_id' in manual &&
     (manual.batch_id === 'receiver-web-batch3' ||
       manual.batch_id === 'receiver-web-batch4' ||
@@ -48,30 +57,21 @@ const quickGuide =
       class="my-8 max-h-80 w-full object-contain"
     />
     <h2 class="text-2xl font-bold">取扱説明書</h2>
-    <p class="my-4">
-      <a
-        href={withBase(manual.route)}
-        class="font-bold text-teal-800 underline"
-        data-receiver-manual-link
-      >
-        {quickGuide
-          ? `${manual.source.version} 日本語クイックガイド`
-          : '日本語取扱説明書'}
-      </a>
-    </p>
-    {'batch_id' in manual &&
-    (manual.batch_id === 'receiver-web-batch2' ||
-      manual.batch_id === 'receiver-web-batch3' ||
-      manual.batch_id === 'receiver-web-batch4' ||
-      manual.batch_id === 'receiver-web-batch5' ||
-      manual.batch_id === 'receiver-web-batch6' ||
-      manual.batch_id === 'receiver-web-batch7' ||
-      manual.batch_id === 'receiver-web-batch8') &&
-    manual.withheld_unit_ids.length === 0 ? (
-      <p>
-        英語原典に対応した日本語本文を掲載しています。挿図は原図のままです。適用条件は本文を確認してください。
+    {fullSourceUnavailable(product.slug) && (
+      <p class="mt-3">この型番の公式全文取扱説明書は確認できていません。</p>
+    )}
+    {showManual && (
+      <p class="my-4">
+        <a
+          href={withBase(manual.route)}
+          class="font-bold text-teal-800 underline"
+          data-receiver-manual-link
+        >
+          {generatedManualLabel(manual)}
+        </a>
       </p>
-    ) : (
+    )}
+    {showManual && (
       <p>
         操作・接続の前に、取扱説明書の安全上の注意とお使いの機器への適用条件を確認してください。
       </p>
@@ -79,14 +79,22 @@ const quickGuide =
     <p class="mt-4">
       <a href={manual.source.source_url}>
         {quickGuide
-          ? `${manual.source.version} 公式英語クイックガイド`
-          : '公式英語取扱説明書'}
+          ? (manual.source.version ? manual.source.version + ' ' : '') +
+            '公式英語クイックガイド'
+          : product.slug === 'twc'
+            ? '公式Web資料（英語、掲載範囲のみ）'
+            : product.slug === 'pix6'
+              ? '公式英語取扱説明書（マルチローター版）'
+              : '公式英語取扱説明書'}
       </a>
     </p>
     <p class="mt-4">
       <a href={product.officialUrl} rel="noreferrer" target="_blank">
         Radiolink公式製品情報
       </a>
+    </p>
+    <p class="mt-4">
+      <a href={withBase('/support/')}>サポート・FAQ</a>
     </p>
   </section>
 </BaseLayout>

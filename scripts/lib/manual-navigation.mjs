@@ -1,3 +1,4 @@
+import { isInitialManualRelease } from '../../src/lib/manual-release.mjs';
 import catalogue from '../../src/data/product-catalogue.json' with { type: 'json' };
 import { categoryIds } from '../../src/lib/radiolink-categories.mjs';
 import GithubSlugger from 'github-slugger';
@@ -93,7 +94,12 @@ export function catalogueManualSidebar({
     add(slug, entry.route.slice(1, -1), manualSidebar(entry));
   }
   for (const entry of generated) {
-    if (entry.publication_status !== 'PUBLISHED' && !includePreview) continue;
+    if (
+      entry.publication_status !== 'PUBLISHED' &&
+      !includePreview &&
+      !isInitialManualRelease(entry)
+    )
+      continue;
     // RTC8 has a draft detail route but is outside the official product catalogue.
     if (entry.product_id === 'rtc8' && !products.has('rtc8')) continue;
     const slug = entry.route.slice(1, -1);

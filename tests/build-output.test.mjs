@@ -1,3 +1,12 @@
+import {
+  productDetailPath,
+  canShowGeneratedManual,
+} from '../src/lib/product-materials.mjs';
+import receiverManuals from '../src/lib/receiver-manuals.mjs';
+import {
+  initialManualReleaseEntries,
+  isInitialManualRelease,
+} from '../src/lib/manual-release.mjs';
 import catalogue from '../src/data/product-catalogue.json' with { type: 'json' };
 import assert from 'node:assert/strict';
 import { access, readFile, readdir } from 'node:fs/promises';
@@ -617,21 +626,15 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
 
 test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
   const html = await route('radiolink/index.html');
-  const detailCount = catalogue.filter((product) => product.detailPath).length;
-
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
-  assert.equal(
-    (html.match(/data-detail-available/g) ?? []).length,
-    detailCount,
-  );
-  assert.equal(
-    (html.match(/data-detail-preparing/g) ?? []).length,
-    83 - detailCount,
-  );
-  assert.equal(
-    (html.match(/詳しい仕様は公式サイトで/g) ?? []).length,
-    83 - detailCount,
-  );
+  assert.equal((html.match(/data-detail-available/g) ?? []).length, 83);
+  assert.doesNotMatch(html, /data-detail-preparing/);
+  const paths = catalogue.map(productDetailPath);
+  assert.equal(new Set(paths).size, 83);
+  for (const path of paths) {
+    assert.ok(html.includes('href="' + publicationBase + path + '"'));
+    await route(path.slice(1) + 'index.html');
+  }
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);
@@ -848,7 +851,11 @@ for (const product of [
     }
     if (
       ['rc8p', 'r12f', 'r7fg', 'r16f', 'r8fg', 'r6fg'].includes(product.slug) ||
-      (product.slug === 't12d' && publicationBase)
+      (product.slug === 't12d' &&
+        receiverManuals.manuals.some(
+          (entry) =>
+            entry.product_id === 't12d' && canShowGeneratedManual(entry),
+        ))
     )
       assert.ok(
         html.includes(`href="${publicationBase}/manuals/${product.slug}/"`),
@@ -882,7 +889,7 @@ test('manuals category provides a public entry point without review language', a
 
   assert.match(category, /data-manual-index/);
   assert.ok(category.includes(`href="${publicationBase}/manuals/rc8x/"`));
-  assert.match(category, /日本語完全版の取扱説明書を掲載しています。/);
+  assert.match(category, /機種と製品世代に合った取扱説明書を選べます。/);
   for (const html of [category, manual, chapterOne, chapterTwo]) {
     assert.doesNotMatch(
       html,
@@ -1192,7 +1199,13 @@ test(
     ))
       await check(
         product.detailPath,
-        productStates.get(product.slug) === 'published',
+        productStates.get(product.slug) === 'published' ||
+          (productStates.get(product.slug) !== 'manufacturer_review' &&
+            receiverManuals.manuals.some(
+              (entry) =>
+                entry.product_route === product.detailPath &&
+                isInitialManualRelease(entry),
+            )),
       );
     for (const record of (await load('drawing-library/production')).records)
       await check(record.route);
@@ -1371,3 +1384,45 @@ test('Pagefind indexes reader-facing manual text', async () => {
   assert.ok(checked > 0);
   assert.ok(foundSafetyNotice);
 });
+
+test(
+  'initial release production routes match the approved source-bound scope',
+  {
+    skip: process.env.PUBLICATION_MODE !== 'production',
+  },
+  async () => {
+    const sitemap = await route('sitemap-0.xml');
+    const approved = new Set(
+      initialManualReleaseEntries.map((entry) => entry.route),
+    );
+    assert.ok(approved.size > 0);
+    for (const entry of receiverManuals.manuals) {
+      const page = `${entry.route.slice(1)}index.html`;
+      if (approved.has(entry.route)) {
+        assert.ok(isInitialManualRelease(entry), entry.route);
+        const html = await route(page);
+        assert.doesNotMatch(
+          html,
+          /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i,
+          page,
+        );
+        assert.match(html, /日本語Web版 初版/);
+        assert.ok(
+          sitemap.includes(`https://happinesea.com${entry.route}</loc>`),
+          page,
+        );
+        for (const figure of entry.figures)
+          await access(
+            new URL(
+              `../dist/assets/radiolink/${entry.product_id}/web-ja-v1/${figure.path.split('/').at(-1)}`,
+              import.meta.url,
+            ),
+          );
+      } else if (entry.route === '/manuals/rtc8/') {
+        assert.match(await route(page), /noindex, nofollow/);
+      } else if (entry.publication_status !== 'PUBLISHED') {
+        await assert.rejects(route(page), { code: 'ENOENT' });
+      }
+    }
+  },
+);

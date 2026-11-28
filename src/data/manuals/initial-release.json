@@ -1,0 +1,252 @@
+[
+  {
+    "route": "/manuals/2-4g-micro-1w/",
+    "canonical_sha256": "b6f3de20ebae4974025b97b507e176fb1830e9e2d909fca3543000e91056bca8",
+    "mdx_sha256": "438f7afecd983d0b9611cd8c740abe73022aec17a0e9a34c29e117fb25f8a646"
+  },
+  {
+    "route": "/manuals/2-4g-nano-1w/",
+    "canonical_sha256": "0d8ba7fb6780170db59f0437300d85afd24e944878aab17f79e332f13da0764b",
+    "mdx_sha256": "d8c6cb68f87bbccc5c771bf1725d647807be66115506f8b8fca32f8700df2959"
+  },
+  {
+    "route": "/manuals/915mhz-1w/",
+    "canonical_sha256": "e94839cc693fc1232ad1b6dc1a99f68a0f0733c805d007eda33d53e8b8932d28",
+    "mdx_sha256": "a37539a29ac2867fc67cff5426e6f5e50662fe1c5b7419ea79b729bf72cc737b"
+  },
+  {
+    "route": "/manuals/am32-70a/",
+    "canonical_sha256": "0a0d40ca68f2120b2f1d372a5a27ea0f15353f87de0f806e74c27ee38339d600",
+    "mdx_sha256": "4627879199936604fa85f588ee24668e196266cd8286aa25f19e02da6962ecb7"
+  },
+  {
+    "route": "/manuals/bds200/",
+    "canonical_sha256": "d890532b4ed522d5483485790dca02935787839ce802802febc319f9299e761f",
+    "mdx_sha256": "0899cf32aef61d724bb8964f74a5d65f1cf33f7238f163548a3cfdd7e857d463"
+  },
+  {
+    "route": "/manuals/byme-db/",
+    "canonical_sha256": "7f31a5a5b7c071ae3104cbd8ce632147ca6744bf2be1bbd3a017c8d57d68c919",
+    "mdx_sha256": "1eb62455cee0d1108984c1ad14667b69fb4eafab4bd4108b60032365cf2807f5"
+  },
+  {
+    "route": "/manuals/cb86-plus/",
+    "canonical_sha256": "a27179a3ef428942345eb115bd55dbdc73d3f3174bb0f4080859416fa052a98a",
+    "mdx_sha256": "6db2d20a30f116bba7e867737c4127815d06dc56e03fcd6754de9a9bbe2973d6"
+  },
+  {
+    "route": "/manuals/cl9030/",
+    "canonical_sha256": "54e9a6eb09fae189b251ae3cc565502c22352b62fe4a8eadd89cb07f9e9fccb5",
+    "mdx_sha256": "a7f33975882bf179a645d6e27314455882d73c02708538c65e1f6c2567bf383b"
+  },
+  {
+    "route": "/manuals/cm120/",
+    "canonical_sha256": "b4b07035b8e1431131fa92e4b4eef9afcc2964cdba9b5a11c626d5b822d9f29d",
+    "mdx_sha256": "07e4c628c27ca645a1c045869b9e0dc741d8c69da6cb039de3c378793da6894e"
+  },
+  {
+    "route": "/manuals/cm210/",
+    "canonical_sha256": "1636029e5e139887cc219e560705c006940400f9e544bcb83de5c5455a3144ba",
+    "mdx_sha256": "13f2ee6aeb8d60b2eb47317f9fc6c0f50d33244d302409c73184f1892de34a43"
+  },
+  {
+    "route": "/manuals/d16pro-200/",
+    "canonical_sha256": "3caa1661152870a30423af48a5d21b9872aac2ebdf8f519fe0a3f81a25b394b1",
+    "mdx_sha256": "a7d2a06248ed819f1194443ebd533190ca434d555c1c9c65ff440862ca839280"
+  },
+  {
+    "route": "/manuals/d460/",
+    "canonical_sha256": "2a674b87213b9aa3a24ea322f047789cf9aae7120727803f76601c71782cee7d",
+    "mdx_sha256": "82fea24de7ed3d8de7b49b968fadbc9f6913815e2bf8f5a423f8f46e7a00d445"
+  },
+  {
+    "route": "/manuals/elrs-915mhz/",
+    "canonical_sha256": "8169ec668ce9f60d7944a047a5253d1da0a0c991b0ba8098732c5864fa982589",
+    "mdx_sha256": "e76f38bde9719a8ca9865e4d14af9eab6612291ac6b40a46a499f775c1959a98"
+  },
+  {
+    "route": "/manuals/er16-2-4g/",
+    "canonical_sha256": "4abec8c91a46c5f2e99406dcbaf88871ba79c6c3023819f702877561f1822a51",
+    "mdx_sha256": "c9595107139cd525b30e4ecbba3cbfe29468dcb787d6966929e196237c05b8a1"
+  },
+  {
+    "route": "/manuals/f121-pro/",
+    "canonical_sha256": "ec826192715d45e91cf321a722b85b1a5abb1dbaa1b37cb2f1d5bab7accc0bc9",
+    "mdx_sha256": "a98b23d3fa2fe5b11aa45ea22872eb57de9138f52a40d2a26da0494dc1d6f919"
+  },
+  {
+    "route": "/manuals/f121/",
+    "canonical_sha256": "00f246900efd78eeeaed5bf4cb752e5769c1e90005584cb1d427ddf0dfa8c200",
+    "mdx_sha256": "00df6fc0a3e07af2871ad13a06bd5254e286271f667f01360651a4dfaae2dba4"
+  },
+  {
+    "route": "/manuals/f125/",
+    "canonical_sha256": "d97aefd3cfbae0d761364dfa829145b60982a1952bf541017dbe7b014138e392",
+    "mdx_sha256": "bd88708aca93b11735d6cbe225c46a49422d05de2e46d07c7f8c565fae152d2d"
+  },
+  {
+    "route": "/manuals/f405/",
+    "canonical_sha256": "d3ba0dd971de239bab0783385615ff53b5a5715078a073d4e73e3aaee38f95c1",
+    "mdx_sha256": "2452c075d6b7126902ffe89e70d15ec7107e39d3200c52c666cc8f641bbda395"
+  },
+  {
+    "route": "/manuals/f722/",
+    "canonical_sha256": "e3122559f14bcbf40c6e07d95ea39359af8de34a2d0892a0fbd30989cb81b091",
+    "mdx_sha256": "272b9ab8d012d579d7172fdce067a64829d18573ffc6d2f3de80770d96e7f415"
+  },
+  {
+    "route": "/manuals/ld-b20/",
+    "canonical_sha256": "cf3820d93a4b4d650bf54e82fae90726fd654dc463b06b9e25a0ecc312ad8b79",
+    "mdx_sha256": "16b40f8990957cdb6ce1fae16099641737301f9e65dca154609f78855f7a9dd1"
+  },
+  {
+    "route": "/manuals/prm-01/",
+    "canonical_sha256": "88bae6c08dbd8f84a06e62eb2419971592908f8f183d9ff8ed6c1fbbad4b1893",
+    "mdx_sha256": "f9bbd7839091ccd85039eb3c22e90a788f596893a93d45999aed6aa9280cb4fd"
+  },
+  {
+    "route": "/manuals/prm-03/",
+    "canonical_sha256": "716d14485237dfbad2c96d82ffa6179667759e8706fe027f6ba7b8c73eae7036",
+    "mdx_sha256": "a873e21756c08bab97fcb375d9b697465b54c9c99c1f163a41cb3f2a4a07841b"
+  },
+  {
+    "route": "/manuals/r12ds/",
+    "canonical_sha256": "88a135cfb00c2fbe97311ff8ea0a7591cfb1e64dfcc10b0d0d71439e57e2d20e",
+    "mdx_sha256": "be33a8ad5809e32b07c41f462b84548baf2125cafd52a5ab75296faee252f4b9"
+  },
+  {
+    "route": "/manuals/r12dse/",
+    "canonical_sha256": "d9b8cb30f1fbc1f67de0f7ab36ee8360bb5f1aaaa0717529e0e75babe1fbf4e2",
+    "mdx_sha256": "dd86d57beca1bc48f511643dd7b9677b3b14d9bef40ee18af292110991633d85"
+  },
+  {
+    "route": "/manuals/r12f/",
+    "canonical_sha256": "93bc3d53565dba44070ea4868404af6882b80ddb77ca6fd12968065cae2a290a",
+    "mdx_sha256": "989cd5c013322d195c5e83831d2469a47b5db38a0d671c8b6b2464f99fac7776"
+  },
+  {
+    "route": "/manuals/r16f/",
+    "canonical_sha256": "0dfc3c7e540cdb481a987b778065a00ca380da504d58bffc8be08ea6961e5703",
+    "mdx_sha256": "9a55e5cde08eedafbaab88faf3ef1fc99f5278eae080bb540bd30e5ea0b51e90"
+  },
+  {
+    "route": "/manuals/r16sm/",
+    "canonical_sha256": "707b1723322680226bb3f21c95aa4d43ec2729a71f5626f9d221c7173d403438",
+    "mdx_sha256": "e5282af1f5c9ec20d018fc12309ce5daa7ccbc4b148ac5695b427c077ebc9492"
+  },
+  {
+    "route": "/manuals/r4fgm/",
+    "canonical_sha256": "37411f23b4582b63fb54ad2e7873323076dbb87fd78b2f20c06a67829c0330db",
+    "mdx_sha256": "424518995ae5a6ff7273aa7e46b8ff924f467a6a6ea5226774278acf9905f4a8"
+  },
+  {
+    "route": "/manuals/r6ds/",
+    "canonical_sha256": "bb4e20ede310e31de3a0e60786465475eb85761bcd23706f22d6814bc80ebc7b",
+    "mdx_sha256": "ebb1518741fe08c5cb4b44a52bdf0539dc66dc19bad51cc735b584830571cbc8"
+  },
+  {
+    "route": "/manuals/r6dsm/",
+    "canonical_sha256": "bf6b5e999f1e1359684ec7e897dac3b4e8fee1d40027ec4b85ae0924b16d4fa8",
+    "mdx_sha256": "c2773dd6543a6e4942d187cb332d35f16b2d06e23d412ae3994ccfe9b573f2d9"
+  },
+  {
+    "route": "/manuals/r6f/",
+    "canonical_sha256": "a1f53e70fe787ea801179cca21e872cf5648757cbacc33706f2fccbc7609559e",
+    "mdx_sha256": "892e277d2a8d5f02e79b4b23055958d735bf417059c1f1c2fa170e7f0890bd90"
+  },
+  {
+    "route": "/manuals/r6fg/",
+    "canonical_sha256": "c6bba43d81d972c7008a086e3bfb09d82107b979eea2ab8dad3d52aeee23e2dc",
+    "mdx_sha256": "e6462d1d0f57328f1621b4658faf6cca9655a5ccccdf6715a1ac91c5a1d86410"
+  },
+  {
+    "route": "/manuals/r7fg/",
+    "canonical_sha256": "a25a25dbf76d37266209afa6899f58cbc85a239c03c8881458129359bcbc8427",
+    "mdx_sha256": "38b214da8c779fdb79a030249abef56a32919b41da2278b9eb5a85240a2f6809"
+  },
+  {
+    "route": "/manuals/r8ef/",
+    "canonical_sha256": "23cf33809432192fc548e77202ca23e5f559ffe03d10f2f5b713d38203a0fc29",
+    "mdx_sha256": "780cb0bfd9b73e378a04c7703fabb9d7fa924b88157f3ca8bbabc5b9c605c515"
+  },
+  {
+    "route": "/manuals/r8fg/",
+    "canonical_sha256": "1ed9554b1eba09ae0e3f89f8af4a95fb354335829b4e4345fc9f19d5e2f46a43",
+    "mdx_sha256": "d71503ba253f16d03dc0316c1a6b447b972b16c7b11dd763873a6939621b017e"
+  },
+  {
+    "route": "/manuals/r8fgh/",
+    "canonical_sha256": "6461c10b591ef05e2afc0cd4cf8b0f8b172a00c3ee344335dcf4cbb917f626c0",
+    "mdx_sha256": "44692221b2305c6852fb731c1cc4dd3b40a59b2f2c4f7bbbc5939469dd0226b6"
+  },
+  {
+    "route": "/manuals/r8fm/",
+    "canonical_sha256": "e4ccd5edacf6c902373ad0524a1e8dbc68a5d698d4bb1879cd19a070c4363573",
+    "mdx_sha256": "1d434203da66c23174fd4394da60797a6e5ff746058fd0276e0c0887ed495723"
+  },
+  {
+    "route": "/manuals/r8sm/",
+    "canonical_sha256": "c1e5da678dbee00f493143c0227e9d072d9e1f1463d3658fa5f8d7487686db6a",
+    "mdx_sha256": "094bd25797ef91e7bb4c2496db39e73a441d4091c4ea2ff57fe13dc5f7334373"
+  },
+  {
+    "route": "/manuals/r8xm/",
+    "canonical_sha256": "2d381a6ae03df78b319e3e62d81e4285a736160b0172f27569851dc90de5efd6",
+    "mdx_sha256": "9303d3d82041a63e6a09ee042770fa0f0917b6ec8748cf425cfab5e205434195"
+  },
+  {
+    "route": "/manuals/r9ds/",
+    "canonical_sha256": "0ace9eeafc601108593d6fa9e1f6c847c001aa1959c174a89f45c427a13a2de3",
+    "mdx_sha256": "e75cbde5851c929efd540f03ab4fbcf080769af06caf3fed602a17de16b543bc"
+  },
+  {
+    "route": "/manuals/re15a-2s/",
+    "canonical_sha256": "caacb02f51ee552231b09d8817a9e373d3839a55e6f2d617d7ec3a9b86f2786b",
+    "mdx_sha256": "466eed1c5d3a8a859f7c59c28b37546db786e9bfdcd9dac33095a2f70cf12341"
+  },
+  {
+    "route": "/manuals/rtk-f9p/",
+    "canonical_sha256": "080c8a85ea51a9a1ea01d3b25bceb47960ebd9acd461a01cf9ef4696919ec162",
+    "mdx_sha256": "1306471d894739606c9a6bdfde114ad7be363d551d4000ebacfc38b8cd1991ff"
+  },
+  {
+    "route": "/manuals/su04/",
+    "canonical_sha256": "fdcb2c2d4def0dea9f7aaa38f945f94f44bc1c80161793d5bb5caccd3bf6cc32",
+    "mdx_sha256": "a6abacea31cc7251bce3b8401c5e4cd0605be4e85f65e46b0027ebb2f2667bb2"
+  },
+  {
+    "route": "/manuals/su27/",
+    "canonical_sha256": "c339b35ca64af16d308f370300833076081bfef21f741ad262e54504bdf6d7ac",
+    "mdx_sha256": "fd3e2732214800dae736873b5b13ea695336bcd1f524889901467d645fd59811"
+  },
+  {
+    "route": "/manuals/sui04/",
+    "canonical_sha256": "71e59cbc413cfff97c26871b6c686b85ab439c81291e9e3b0bbbcf65876135e9",
+    "mdx_sha256": "2af90a4e80d83ee7b634b641d9c713fa539ee779a520ff264dc9a27351048523"
+  },
+  {
+    "route": "/manuals/trainer-cable/",
+    "canonical_sha256": "38d65f1c4613de4b3050c64aa694fa88fb3e7a331a5cf4323840e28a6abaf637",
+    "mdx_sha256": "b68dda0f67c1902d3c5b407dda53537e2dc91b336087d081146e84a664b615b9"
+  },
+  {
+    "route": "/manuals/ts100-m10n/",
+    "canonical_sha256": "ede7ae34e9c0b24821ca0c31c729510f9c1028211caaa57820a267dbad459765",
+    "mdx_sha256": "5aabee989d6332a1d37cf59be909184a8efddb345f5880cdfad134981e61708c"
+  },
+  {
+    "route": "/manuals/ts100-m8n/",
+    "canonical_sha256": "19967d5e27ff94aa1c904cceaeb185ea366720eb0f7fb924edc2b67b1c5a788a",
+    "mdx_sha256": "ede4151860a82d538e6724c7f7148ec7f393d29d2a4c91ca77abfbf243d58ba6"
+  },
+  {
+    "route": "/manuals/twc/",
+    "canonical_sha256": "552fc4452e3b92951797b7307813fecd6649f984557cf859e0002642de413e4e",
+    "mdx_sha256": "9cac1cc7118238d97fe8953e3c5235ddfe41126ca407d0185451f78336cce552"
+  },
+  {
+    "route": "/manuals/vds200/",
+    "canonical_sha256": "c5ba67dbf9c857f63ba24541ec6f9550ccfb50cf995226af94d759233b95e829",
+    "mdx_sha256": "72536917bc25849cf4619ad07ec835a9f53c4503221e32f55731f629a3ab8aa3"
+  }
+]

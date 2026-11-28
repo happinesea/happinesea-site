@@ -1,7 +1,10 @@
 ---
 import { withBase } from '../lib/urls';
-import japaneseManuals from '../data/manuals/existing-ja.json';
-import receiverManuals from '../lib/receiver-manuals.mjs';
+import {
+  fullSourceUnavailable,
+  productDetailPath,
+  productMaterialLinks,
+} from '../lib/product-materials.mjs';
 
 interface CatalogueProduct {
   name: string;
@@ -23,19 +26,9 @@ interface Props {
 }
 
 const { product } = Astro.props;
-const receiverManual = receiverManuals.manuals.find(
-  (m) => m.product_id === product.slug,
-);
-const manualProduct =
-  { 't8fb-bt': 't8fb', 'rc6gs-v3': 'rc6gs', 'rc4gs-v3': 'rc4gs' }[
-    product.slug
-  ] ?? product.slug;
-const manuals = japaneseManuals.manuals.filter(
-  (manual) =>
-    manual.publication_status === 'publication_copy' &&
-    manual.product === manualProduct &&
-    (manual.generation === 'V3' ||
-      !['rc4gs-v3', 'rc6gs-v3'].includes(product.slug)),
+const detailPath = productDetailPath(product);
+const manuals = productMaterialLinks(product).filter(
+  (link) => link.href !== product.officialUrl,
 );
 ---
 
@@ -65,22 +58,13 @@ const manuals = japaneseManuals.manuals.filter(
       {product.description}
     </p>
     <div class="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-5">
-      {product.detailPath ? (
-        <a
-          class="font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
-          href={withBase(product.detailPath)}
-          data-detail-available
-        >
-          製品情報を見る
-        </a>
-      ) : (
-        <span
-          class="text-sm font-semibold text-slate-500"
-          data-detail-preparing
-        >
-          詳しい仕様は公式サイトで
-        </span>
-      )}
+      <a
+        class="font-bold text-teal-800 underline decoration-teal-300 underline-offset-4"
+        href={withBase(detailPath)}
+        data-detail-available
+      >
+        製品情報を見る
+      </a>
       <a
         class="text-sm text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-teal-800"
         href={product.officialUrl}
@@ -90,14 +74,9 @@ const manuals = japaneseManuals.manuals.filter(
         Radiolink公式<span class="sr-only">・外部サイト</span>
       </a>
     </div>
-    {receiverManual && (
+    {fullSourceUnavailable(product.slug) && (
       <p class="mt-4 text-sm">
-        <a
-          class="text-teal-800 underline"
-          href={withBase(receiverManual.route)}
-        >
-          日本語取扱説明書
-        </a>
+        この型番の公式全文取扱説明書は確認できていません。
       </p>
     )}
     {manuals.length > 0 && (
@@ -106,9 +85,11 @@ const manuals = japaneseManuals.manuals.filter(
           <li>
             <a
               class="text-teal-800 underline underline-offset-4"
-              href={withBase(manual.route)}
+              href={manual.external ? manual.href : withBase(manual.href)}
+              target={manual.external ? '_blank' : undefined}
+              rel={manual.external ? 'noopener noreferrer' : undefined}
             >
-              {manual.title}
+              {manual.label}
             </a>
           </li>
         ))}

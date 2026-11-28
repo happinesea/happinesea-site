@@ -19,15 +19,12 @@ test('manual directory groups editions, filters models and keeps official links 
   await page.goto(new URL('manuals/', baseURL).href);
   await expect(page.locator('main h1')).toHaveText('取扱説明書');
   const cards = page.locator('[data-manual-card]');
-  await expect(cards).toHaveCount(79);
-  await expect(page.locator('[data-result-count]')).toHaveText('79件を表示');
+  await expect(cards).toHaveCount(83);
+  await expect(page.locator('[data-result-count]')).toHaveText('83件を表示');
   const rc8x = page.locator('[data-manual-card="rc8x"]');
   await expect(
     rc8x.getByRole('link', { name: '取扱説明書', exact: true }),
   ).toHaveCount(1);
-  await expect(rc8x).toContainText(
-    '日本語完全版の取扱説明書を掲載しています。',
-  );
   const rc4gs = page.locator('[data-manual-card="rc4gs"]');
   await expect(
     rc4gs.getByRole('link', { name: '取扱説明書（V2）', exact: true }),
@@ -80,15 +77,14 @@ test('manual directory groups editions, filters models and keeps official links 
   await page.getByRole('button', { name: '受信機', exact: true }).click();
   await expect(page.locator('[data-manual-card]:visible')).toHaveCount(20);
   await expect(page.locator('[data-manual-card="r7fg"]')).toBeVisible();
-  await expect(page.locator('[data-manual-card="r7fg"] a')).toHaveAttribute(
-    'href',
-    'https://www.radiolink.com/r7fg_manual',
-  );
+  await expect(
+    page.locator('[data-manual-card="r7fg"] a[href$="/r7fg_manual"]'),
+  ).toHaveAttribute('href', 'https://www.radiolink.com/r7fg_manual');
   for (const [category, count] of [
-    ['GPS・RTK・センサー', 7],
+    ['GPS・RTK・センサー', 8],
     ['機体', 16],
-    ['電源・ESC', 5],
-    ['モジュール・アクセサリー', 8],
+    ['電源・ESC', 6],
+    ['モジュール・アクセサリー', 10],
   ] as const) {
     await page.getByRole('button', { name: category, exact: true }).click();
     await expect(page.locator('[data-manual-card]:visible')).toHaveCount(count);
@@ -97,7 +93,7 @@ test('manual directory groups editions, filters models and keeps official links 
     );
   }
   await page.getByRole('button', { name: 'すべて', exact: true }).click();
-  await expect(page.locator('[data-manual-card]:visible')).toHaveCount(79);
+  await expect(page.locator('[data-manual-card]:visible')).toHaveCount(83);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth > window.innerWidth,

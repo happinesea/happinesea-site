@@ -91,6 +91,7 @@ export default defineConfig({
       components: {
         Head: './src/components/manuals/Head.astro',
         SiteTitle: './src/components/manuals/SiteTitle.astro',
+        PageTitle: './src/components/manuals/PageTitle.astro',
       },
     }),
   ],
