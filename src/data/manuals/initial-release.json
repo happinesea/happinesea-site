@@ -50,6 +50,11 @@
     "mdx_sha256": "13f2ee6aeb8d60b2eb47317f9fc6c0f50d33244d302409c73184f1892de34a43"
   },
   {
+    "route": "/manuals/crossrace/",
+    "canonical_sha256": "aa98123fdaca5b1a942b964001643933269b1039ec8b8f18c6f6b6583647d46f",
+    "mdx_sha256": "e8b8bc4be88da3403ab5ce40a0fc34a5ccfe3ab9bfb14f0cd9c143d9067c5583"
+  },
+  {
     "route": "/manuals/d16pro-200/",
     "canonical_sha256": "3caa1661152870a30423af48a5d21b9872aac2ebdf8f519fe0a3f81a25b394b1",
     "mdx_sha256": "a7d2a06248ed819f1194443ebd533190ca434d555c1c9c65ff440862ca839280"
@@ -93,6 +98,11 @@
     "route": "/manuals/f722/",
     "canonical_sha256": "e3122559f14bcbf40c6e07d95ea39359af8de34a2d0892a0fbd30989cb81b091",
     "mdx_sha256": "272b9ab8d012d579d7172fdce067a64829d18573ffc6d2f3de80770d96e7f415"
+  },
+  {
+    "route": "/manuals/ld-a40/",
+    "canonical_sha256": "231dfd8f88740f44cffb5d377a85a506db72872a0f613595e22ff7bece3a67fd",
+    "mdx_sha256": "24062340667b19300799b0d7f96addd0271a298647a5098a069a4d5db712e446"
   },
   {
     "route": "/manuals/ld-b20/",

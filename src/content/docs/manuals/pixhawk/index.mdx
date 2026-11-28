@@ -1,0 +1,561 @@
+---
+title: PIXHAWK 日本語取扱説明書
+description: Radiolink PIXHAWK の公式英語取扱説明書に対応する日本語版です。
+product: pixhawk
+slug: manuals/pixhawk
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/32456e86631e81100d1406ef7c386cdf.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/pixhawk/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink PIXHAWK 公式英語取扱説明書（文書版・発行日不明、55頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="pixhawk-p1-body" data-translation-unit="pixhawk-p1-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+# PIXHAWK 取扱説明書
+
+対応機種：固定翼機、グライダー、マルチローター、ヘリコプター、車、ボート、ロボット。
+
+CE・FCC・RoHS
+
+<span id="pixhawk-p1-f1-unit" data-translation-unit="pixhawk-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/pixhawk/web-ja-v1/pixhawk-p1-f1.jpeg" width={1000} height={1000} figureId="pixhawk-p1-f1" alt={"PIXHAWK原典物理1頁の図1"} caption={"PIXHAWK原典物理1頁の図1"} />
+
+<span id="pixhawk-p1-f2-unit" data-translation-unit="pixhawk-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/pixhawk/web-ja-v1/pixhawk-p1-f2.jpeg" width={600} height={180} figureId="pixhawk-p1-f2" alt={"PIXHAWK原典物理1頁の図2"} caption={"PIXHAWK原典物理1頁の図2"} />
+
+<span id="pixhawk-p2-body-before" data-translation-unit="pixhawk-p2-body-before"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+RadiolinkのフライトコントローラーPIXHAWKをお買い上げいただき、ありがとうございます。製品の機能を十分に活用し、安全にお使いいただくため、本書をよく読み、記載の手順に従って機器を設定してください。
+
+操作中に問題が生じた場合は、次の方法で技術サポートを受けられます。
+
+1. after_service@radiolink.com.cn へメールをお送りください。できるだけ早く回答します。
+2. Facebookページにメッセージを送るか、YouTubeページにコメントを残してください。
+3. お近くの販売店で購入した場合は、その販売店にもサポートや修理についてご相談いただけます。
+
+説明書、ファームウェア、チュートリアルはRadiolink公式サイト（www.radiolink.com）に掲載されています。FacebookとYouTubeでも最新情報を確認できます。
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界が悪いと方向を見失い、操縦できなくなるおそれがあります。
+- 人混みや法令で禁止されている場所では使用しないでください。
+- 使用前に毎回、すべてのサーボとその接続を点検してください。
+- 電源は必ず受信機、送信機の順に切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉のない場所で飛行・走行させてください。
+
+## 警告
+
+本製品は玩具ではなく、18歳未満の子どもの使用には適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは慎重に操作してください。
+
+水や湿気がアンテナやスティックの隙間から送信機に入り、機体の動作が不安定になったり、制御不能になったりするおそれがあります。
+
+<span id="pixhawk-p2-body-rain" data-translation-unit="pixhawk-p2-body-rain"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p2-body-after" data-translation-unit="pixhawk-p2-body-after"></span>
+
+## FCC声明
+
+本機器は試験によりFCC規則第15部のクラスBデジタル機器の制限に適合することが確認されています。この制限は、住宅での設置時に有害な干渉を合理的に防ぐためのものです。本機器は無線周波エネルギーを発生・使用し、放射することがあります（次頁に続く）。
+
+<span id="pixhawk-p2-f1-unit" data-translation-unit="pixhawk-p2-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p2-f2-unit" data-translation-unit="pixhawk-p2-f2-unit"></span>
+
+<span id="pixhawk-p3-body" data-translation-unit="pixhawk-p3-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+## FCC声明（続き）
+
+本機器を指示どおりに設置・使用しない場合、無線通信に有害な干渉を与えるおそれがあります。ただし、個々の設置環境で干渉が生じないことを保証するものではありません。本機器がラジオやテレビの受信に有害な干渉を与えているかどうかは、本機器の電源を切って入れ直すことで確認できます。干渉が生じている場合は、次のうち一つ以上の方法で解消を試みてください。
+
+- 受信アンテナの向きや位置を変える。
+- 本機器と受信機の間隔を広げる。
+- 受信機とは別の回路にあるコンセントに本機器を接続する。
+- 販売店または経験のあるラジオ・テレビ技術者に相談する。
+
+本機器はFCC規則第15部に適合しています。使用には次の二つの条件が適用されます。（1）本機器が有害な干渉を発生させないこと。（2）意図しない動作の原因となる干渉を含め、受信したあらゆる干渉を受け入れること。
+
+適合性に責任を負う当事者が明示的に承認していない変更や改造を行うと、利用者の本機器を使用する権限が失われることがあります。
+
+## 同梱品
+
+本書はArduPilotを前提とし、Radiolink送信機AT9Sを設定例に使用します。PIXHAWKシリーズのフライトコントローラーを使用するための詳細は、原典で別資料の参照を案内しています。
+
+| 品名 | 数量 |
+| --- | --- |
+| PIXHAWKフライトコントローラー | 1 |
+| 電源モジュール | 1 |
+| セーフティスイッチ | 1 |
+| ブザー | 1 |
+| TFカード（4G） | 1 |
+| 両面粘着テープ | 2 |
+| ケーブル | 4 |
+| 取扱説明書 | 1 |
+
+<span id="pixhawk-p4-body" data-translation-unit="pixhawk-p4-body"></span>
+
+Radiolink Electronic Ltd www.radiolink.com
+
+## 目次（原典の印刷ページ）
+- 1. PIXHAWKの概要 — 2
+  - 1.1 コネクター — 2
+  - 1.2 使用上の助言 — 4
+- 2. Mission Planner — 4
+  - 2.1 Mission Plannerのインストール — 4
+  - 2.2 Mission Plannerの概要 — 5
+- 3. 初期設定 — 6
+  - 3.1 ファームウェアのダウンロードとインストール — 6
+  - 3.2 フレームタイプ — 10
+  - 3.3 加速度センサーのキャリブレーション — 11
+  - 3.4 コンパスのキャリブレーション — 12
+  - 3.5 送受信機のキャリブレーション — 15
+  - 3.6 フライトモード — 19
+    - 3.6.1 Stabilizeモード — 21
+    - 3.6.2 Acroモード（FPV） — 22
+    - 3.6.3 Altitude Holdモード — 23
+    - 3.6.4 Autoモード — 24
+    - 3.6.5 PosHoldモード — 26
+    - 3.6.6 RTLモード — 26
+    - 3.6.7 SimpleモードとSuper Simpleモード — 28
+    - 3.6.8 その他のフライトモード — 30
+- 4. F/S（フェイルセーフ）設定 — 31
+  - 4.1 無線フェイルセーフの設定 — 31
+  - 4.2 EKFフェイルセーフ — 35
+- 5. オプション機器の取り付けと設定 — 36
+  - 5.1 機体へのPIXHAWKの取り付け — 36
+  - 5.2 PIXHAWKと機体の接続 — 37
+    - 5.2.1 モーターの番号順と回転方向の選択 — 37
+    - 5.2.2 時計回りと反時計回りのプロペラの見分け方 — 39
+    - 5.2.3 付属品の接続 — 40
+    - 5.2.4 バッテリーモニターの設定 — 40
+  - 5.3 LED表示、アーム、トラブルシューティング — 43
+    - 5.3.1 LED表示 — 43
+    - 5.3.2 アームとディスアーム — 43
+  - 5.4 ESCのキャリブレーション — 47
+- 6. AutoTune — 48
+- 7. DataFlashログのダウンロード — 51
+
+<span id="pixhawk-p5-body" data-translation-unit="pixhawk-p5-body"></span>
+
+## 1. PIXHAWKの概要
+
+### 1.1 コネクター
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p5-f1-unit" data-translation-unit="pixhawk-p5-f1-unit"></span>
+
+<span id="pixhawk-p6-body" data-translation-unit="pixhawk-p6-body"></span>
+
+### パラメーター
+
+<span id="pixhawk-p6-f1-unit" data-translation-unit="pixhawk-p6-f1-unit"></span>
+
+<span id="pixhawk-p7-body" data-translation-unit="pixhawk-p7-body"></span>
+
+### 1.2 使用上の助言
+
+## 2. Mission Planner
+
+### 2.1 Mission Plannerのインストール
+
+<span id="pixhawk-p8-body" data-translation-unit="pixhawk-p8-body"></span>
+
+### 2.2 Mission Plannerの概要
+
+<span id="pixhawk-p8-f1-unit" data-translation-unit="pixhawk-p8-f1-unit"></span>
+
+<span id="pixhawk-p8-f2-unit" data-translation-unit="pixhawk-p8-f2-unit"></span>
+
+<span id="pixhawk-p9-body" data-translation-unit="pixhawk-p9-body"></span>
+
+## 3. 初期設定
+
+### 3.1 ファームウェアのダウンロードとインストール
+
+<span id="pixhawk-p9-f1-unit" data-translation-unit="pixhawk-p9-f1-unit"></span>
+
+<span id="pixhawk-p10-body-before" data-translation-unit="pixhawk-p10-body-before"></span>
+
+<span id="pixhawk-p10-body-wireless-warning" data-translation-unit="pixhawk-p10-body-wireless-warning"></span>
+
+2. 無線データ伝送経由ではリセット信号が失われるため、無線で新しいファームウェアを書き込まないでください。
+
+<span id="pixhawk-p10-body-after" data-translation-unit="pixhawk-p10-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p10-f1-unit" data-translation-unit="pixhawk-p10-f1-unit"></span>
+
+<span id="pixhawk-p10-f2-unit" data-translation-unit="pixhawk-p10-f2-unit"></span>
+
+<span id="pixhawk-p11-body" data-translation-unit="pixhawk-p11-body"></span>
+
+<span id="pixhawk-p11-f1-unit" data-translation-unit="pixhawk-p11-f1-unit"></span>
+
+<span id="pixhawk-p11-f2-unit" data-translation-unit="pixhawk-p11-f2-unit"></span>
+
+<span id="pixhawk-p12-body" data-translation-unit="pixhawk-p12-body"></span>
+
+<span id="pixhawk-p12-f1-unit" data-translation-unit="pixhawk-p12-f1-unit"></span>
+
+<span id="pixhawk-p12-f2-unit" data-translation-unit="pixhawk-p12-f2-unit"></span>
+
+<span id="pixhawk-p13-body" data-translation-unit="pixhawk-p13-body"></span>
+
+### 3.2 フレームタイプ
+
+<span id="pixhawk-p13-f1-unit" data-translation-unit="pixhawk-p13-f1-unit"></span>
+
+<span id="pixhawk-p13-f2-unit" data-translation-unit="pixhawk-p13-f2-unit"></span>
+
+<span id="pixhawk-p14-body" data-translation-unit="pixhawk-p14-body"></span>
+
+### 3.3 加速度センサーのキャリブレーション
+
+<span id="pixhawk-p14-f1-unit" data-translation-unit="pixhawk-p14-f1-unit"></span>
+
+<span id="pixhawk-p14-f2-unit" data-translation-unit="pixhawk-p14-f2-unit"></span>
+
+<span id="pixhawk-p14-f3-unit" data-translation-unit="pixhawk-p14-f3-unit"></span>
+
+<span id="pixhawk-p14-f4-unit" data-translation-unit="pixhawk-p14-f4-unit"></span>
+
+<span id="pixhawk-p15-body" data-translation-unit="pixhawk-p15-body"></span>
+
+### 3.4 コンパスのキャリブレーション
+
+<span id="pixhawk-p15-f1-unit" data-translation-unit="pixhawk-p15-f1-unit"></span>
+
+<span id="pixhawk-p15-f2-unit" data-translation-unit="pixhawk-p15-f2-unit"></span>
+
+<span id="pixhawk-p15-f3-unit" data-translation-unit="pixhawk-p15-f3-unit"></span>
+
+<span id="pixhawk-p15-f4-unit" data-translation-unit="pixhawk-p15-f4-unit"></span>
+
+<span id="pixhawk-p16-body" data-translation-unit="pixhawk-p16-body"></span>
+
+<span id="pixhawk-p16-f1-unit" data-translation-unit="pixhawk-p16-f1-unit"></span>
+
+<span id="pixhawk-p16-f2-unit" data-translation-unit="pixhawk-p16-f2-unit"></span>
+
+<span id="pixhawk-p16-f3-unit" data-translation-unit="pixhawk-p16-f3-unit"></span>
+
+<span id="pixhawk-p16-f4-unit" data-translation-unit="pixhawk-p16-f4-unit"></span>
+
+<span id="pixhawk-p16-f5-unit" data-translation-unit="pixhawk-p16-f5-unit"></span>
+
+<span id="pixhawk-p17-body" data-translation-unit="pixhawk-p17-body"></span>
+
+<span id="pixhawk-p17-f1-unit" data-translation-unit="pixhawk-p17-f1-unit"></span>
+
+<span id="pixhawk-p17-f2-unit" data-translation-unit="pixhawk-p17-f2-unit"></span>
+
+<span id="pixhawk-p17-f3-unit" data-translation-unit="pixhawk-p17-f3-unit"></span>
+
+<span id="pixhawk-p17-f4-unit" data-translation-unit="pixhawk-p17-f4-unit"></span>
+
+<span id="pixhawk-p18-body" data-translation-unit="pixhawk-p18-body"></span>
+
+### 3.5 送受信機のキャリブレーション
+
+<span id="pixhawk-p18-f1-unit" data-translation-unit="pixhawk-p18-f1-unit"></span>
+
+<span id="pixhawk-p18-f2-unit" data-translation-unit="pixhawk-p18-f2-unit"></span>
+
+<span id="pixhawk-p19-body-before" data-translation-unit="pixhawk-p19-body-before"></span>
+
+<span id="pixhawk-p19-body-calibration-warning" data-translation-unit="pixhawk-p19-body-calibration-warning"></span>
+
+**安全上の注意**：キャリブレーションの前にバッテリーを外すか、プロペラを取り外すか、両方を実施してください。
+
+<span id="pixhawk-p19-body-after" data-translation-unit="pixhawk-p19-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p19-f1-unit" data-translation-unit="pixhawk-p19-f1-unit"></span>
+
+<span id="pixhawk-p19-f2-unit" data-translation-unit="pixhawk-p19-f2-unit"></span>
+
+<span id="pixhawk-p19-f3-unit" data-translation-unit="pixhawk-p19-f3-unit"></span>
+
+<span id="pixhawk-p20-body" data-translation-unit="pixhawk-p20-body"></span>
+
+<span id="pixhawk-p20-f1-unit" data-translation-unit="pixhawk-p20-f1-unit"></span>
+
+<span id="pixhawk-p20-f2-unit" data-translation-unit="pixhawk-p20-f2-unit"></span>
+
+<span id="pixhawk-p21-body" data-translation-unit="pixhawk-p21-body"></span>
+
+<span id="pixhawk-p21-f1-unit" data-translation-unit="pixhawk-p21-f1-unit"></span>
+
+<span id="pixhawk-p21-f2-unit" data-translation-unit="pixhawk-p21-f2-unit"></span>
+
+<span id="pixhawk-p21-f3-unit" data-translation-unit="pixhawk-p21-f3-unit"></span>
+
+<span id="pixhawk-p22-body" data-translation-unit="pixhawk-p22-body"></span>
+
+### 3.6 フライトモード
+
+<span id="pixhawk-p22-f1-unit" data-translation-unit="pixhawk-p22-f1-unit"></span>
+
+<span id="pixhawk-p23-body" data-translation-unit="pixhawk-p23-body"></span>
+
+<span id="pixhawk-p23-f1-unit" data-translation-unit="pixhawk-p23-f1-unit"></span>
+
+<span id="pixhawk-p23-f2-unit" data-translation-unit="pixhawk-p23-f2-unit"></span>
+
+<span id="pixhawk-p24-body" data-translation-unit="pixhawk-p24-body"></span>
+
+<span id="pixhawk-p24-f1-unit" data-translation-unit="pixhawk-p24-f1-unit"></span>
+
+<span id="pixhawk-p25-body" data-translation-unit="pixhawk-p25-body"></span>
+
+<span id="pixhawk-p26-body" data-translation-unit="pixhawk-p26-body"></span>
+
+#### 3.6.2 Acroモード（FPV）（続き）
+
+#### 3.6.3 Altitude Holdモード
+
+<span id="pixhawk-p26-f1-unit" data-translation-unit="pixhawk-p26-f1-unit"></span>
+
+<span id="pixhawk-p27-body" data-translation-unit="pixhawk-p27-body"></span>
+
+#### 3.6.3 Altitude Holdモード（続き）
+
+#### 3.6.4 Autoモード
+
+<span id="pixhawk-p27-f1-unit" data-translation-unit="pixhawk-p27-f1-unit"></span>
+
+<span id="pixhawk-p28-body" data-translation-unit="pixhawk-p28-body"></span>
+
+#### 3.6.4 Autoモード（続き）
+
+<span id="pixhawk-p28-f1-unit" data-translation-unit="pixhawk-p28-f1-unit"></span>
+
+<span id="pixhawk-p29-body" data-translation-unit="pixhawk-p29-body"></span>
+
+#### 3.6.4 Autoモード（続き）
+
+#### 3.6.5 PosHoldモード
+
+#### 3.6.6 RTLモード
+
+<span id="pixhawk-p30-body" data-translation-unit="pixhawk-p30-body"></span>
+
+#### 3.6.6 RTLモード（続き）
+
+<span id="pixhawk-p30-f1-unit" data-translation-unit="pixhawk-p30-f1-unit"></span>
+
+<span id="pixhawk-p31-body" data-translation-unit="pixhawk-p31-body"></span>
+
+#### 3.6.7 SimpleモードとSuper Simpleモード
+
+<span id="pixhawk-p32-body" data-translation-unit="pixhawk-p32-body"></span>
+
+<span id="pixhawk-p32-f1-unit" data-translation-unit="pixhawk-p32-f1-unit"></span>
+
+<span id="pixhawk-p32-f2-unit" data-translation-unit="pixhawk-p32-f2-unit"></span>
+
+<span id="pixhawk-p32-f3-unit" data-translation-unit="pixhawk-p32-f3-unit"></span>
+
+<span id="pixhawk-p33-body" data-translation-unit="pixhawk-p33-body"></span>
+
+<span id="pixhawk-p33-f1-unit" data-translation-unit="pixhawk-p33-f1-unit"></span>
+
+<span id="pixhawk-p34-body" data-translation-unit="pixhawk-p34-body"></span>
+
+<span id="pixhawk-p35-body" data-translation-unit="pixhawk-p35-body"></span>
+
+<span id="pixhawk-p35-f1-unit" data-translation-unit="pixhawk-p35-f1-unit"></span>
+
+<span id="pixhawk-p36-body" data-translation-unit="pixhawk-p36-body"></span>
+
+<span id="pixhawk-p36-f1-unit" data-translation-unit="pixhawk-p36-f1-unit"></span>
+
+<span id="pixhawk-p36-f2-unit" data-translation-unit="pixhawk-p36-f2-unit"></span>
+
+<span id="pixhawk-p37-body" data-translation-unit="pixhawk-p37-body"></span>
+
+<span id="pixhawk-p37-f1-unit" data-translation-unit="pixhawk-p37-f1-unit"></span>
+
+<span id="pixhawk-p38-body-before" data-translation-unit="pixhawk-p38-body-before"></span>
+
+<span id="pixhawk-p38-body-test-warning" data-translation-unit="pixhawk-p38-body-test-warning"></span>
+
+LiPoバッテリーを取り付けずに試験できます。接続する場合は先にプロペラを外してください。
+
+<span id="pixhawk-p38-body-after" data-translation-unit="pixhawk-p38-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p39-body" data-translation-unit="pixhawk-p39-body"></span>
+
+<span id="pixhawk-p39-f1-unit" data-translation-unit="pixhawk-p39-f1-unit"></span>
+
+<span id="pixhawk-p39-f2-unit" data-translation-unit="pixhawk-p39-f2-unit"></span>
+
+<span id="pixhawk-p39-f3-unit" data-translation-unit="pixhawk-p39-f3-unit"></span>
+
+<span id="pixhawk-p40-body" data-translation-unit="pixhawk-p40-body"></span>
+
+<span id="pixhawk-p40-f1-unit" data-translation-unit="pixhawk-p40-f1-unit"></span>
+
+<span id="pixhawk-p40-f2-unit" data-translation-unit="pixhawk-p40-f2-unit"></span>
+
+<span id="pixhawk-p40-f3-unit" data-translation-unit="pixhawk-p40-f3-unit"></span>
+
+<span id="pixhawk-p41-body" data-translation-unit="pixhawk-p41-body"></span>
+
+<span id="pixhawk-p41-f1-unit" data-translation-unit="pixhawk-p41-f1-unit"></span>
+
+<span id="pixhawk-p41-f2-unit" data-translation-unit="pixhawk-p41-f2-unit"></span>
+
+<span id="pixhawk-p41-f3-unit" data-translation-unit="pixhawk-p41-f3-unit"></span>
+
+<span id="pixhawk-p41-f4-unit" data-translation-unit="pixhawk-p41-f4-unit"></span>
+
+<span id="pixhawk-p42-body" data-translation-unit="pixhawk-p42-body"></span>
+
+<span id="pixhawk-p42-f1-unit" data-translation-unit="pixhawk-p42-f1-unit"></span>
+
+<span id="pixhawk-p42-f2-unit" data-translation-unit="pixhawk-p42-f2-unit"></span>
+
+<span id="pixhawk-p42-f3-unit" data-translation-unit="pixhawk-p42-f3-unit"></span>
+
+<span id="pixhawk-p43-body" data-translation-unit="pixhawk-p43-body"></span>
+
+<span id="pixhawk-p43-f1-unit" data-translation-unit="pixhawk-p43-f1-unit"></span>
+
+<span id="pixhawk-p44-body" data-translation-unit="pixhawk-p44-body"></span>
+
+<span id="pixhawk-p44-f1-unit" data-translation-unit="pixhawk-p44-f1-unit"></span>
+
+<span id="pixhawk-p45-body" data-translation-unit="pixhawk-p45-body"></span>
+
+<span id="pixhawk-p45-f1-unit" data-translation-unit="pixhawk-p45-f1-unit"></span>
+
+<span id="pixhawk-p45-f2-unit" data-translation-unit="pixhawk-p45-f2-unit"></span>
+
+<span id="pixhawk-p46-body-before" data-translation-unit="pixhawk-p46-body-before"></span>
+
+<span id="pixhawk-p46-body-propeller-warning" data-translation-unit="pixhawk-p46-body-propeller-warning"></span>
+
+人、物、手などの体の一部をプロペラから離してください。
+
+<span id="pixhawk-p46-body-after" data-translation-unit="pixhawk-p46-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p46-f1-unit" data-translation-unit="pixhawk-p46-f1-unit"></span>
+
+<span id="pixhawk-p46-f2-unit" data-translation-unit="pixhawk-p46-f2-unit"></span>
+
+<span id="pixhawk-p47-body" data-translation-unit="pixhawk-p47-body"></span>
+
+<span id="pixhawk-p48-body" data-translation-unit="pixhawk-p48-body"></span>
+
+<span id="pixhawk-p49-body" data-translation-unit="pixhawk-p49-body"></span>
+
+<span id="pixhawk-p50-body-before" data-translation-unit="pixhawk-p50-body-before"></span>
+
+<span id="pixhawk-p50-body-esc-warning" data-translation-unit="pixhawk-p50-body-esc-warning"></span>
+
+作業前にプロペラをすべて取り外し、PIXHAWKのPCとのUSB接続とLiPoバッテリーの接続を解除してください。
+
+<span id="pixhawk-p50-body-after" data-translation-unit="pixhawk-p50-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p50-f1-unit" data-translation-unit="pixhawk-p50-f1-unit"></span>
+
+<span id="pixhawk-p51-body" data-translation-unit="pixhawk-p51-body"></span>
+
+<span id="pixhawk-p52-body" data-translation-unit="pixhawk-p52-body"></span>
+
+<span id="pixhawk-p52-f1-unit" data-translation-unit="pixhawk-p52-f1-unit"></span>
+
+<span id="pixhawk-p53-body-before" data-translation-unit="pixhawk-p53-body-before"></span>
+
+<span id="pixhawk-p53-body-flight-warning" data-translation-unit="pixhawk-p53-body-flight-warning"></span>
+
+PIXHAWKのパラメーターを飛行中に変更しないでください。
+
+<span id="pixhawk-p53-body-after" data-translation-unit="pixhawk-p53-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p53-f1-unit" data-translation-unit="pixhawk-p53-f1-unit"></span>
+
+<span id="pixhawk-p54-body-reset" data-translation-unit="pixhawk-p54-body-reset"></span>
+
+<span id="pixhawk-p54-body-after" data-translation-unit="pixhawk-p54-body-after"></span>
+
+7. DataFlashログのダウンロード
+飛行データの記録方法は2つあります。一部を除き同種のデータを異なる方法で記録します。DataFlashログはPIXHAWKの内蔵メモリーに保存され、飛行後にダウンロードできます。PlaneとRoverでは起動直後、Copterでは最初にアームした後に作成されます。テレメトリーログ（tlog）は、ArduPilotとPCをテレメトリーリンクで接続すると、Mission Plannerなどの地上局が記録します。ログに慣れていない場合は、まず入門資料で保存先とダウンロード・閲覧方法を確認してください。
+
+<span id="pixhawk-p54-f1-unit" data-translation-unit="pixhawk-p54-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p55-body" data-translation-unit="pixhawk-p55-body"></span>
+
+PIXHAWKおよびAPMの詳細について、原典はArduPilotのミッション計画資料を案内しています。http://ardupilot.org/copter/docs/common-mission-planning.html
+
+<span id="pixhawk-p55-f1-unit" data-translation-unit="pixhawk-p55-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pixhawk-p55-f2-unit" data-translation-unit="pixhawk-p55-f2-unit"></span>

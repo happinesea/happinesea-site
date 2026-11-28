@@ -644,7 +644,7 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.doesNotMatch(html, /詳細ページ準備中/);
   assert.doesNotMatch(
     html,
-    new RegExp(`href="${publicationBase}/radiolink/(?:turbo-pix|at10-ii)/"`),
+    new RegExp(`href="${publicationBase}/radiolink/turbo-pix/"`),
   );
 });
 

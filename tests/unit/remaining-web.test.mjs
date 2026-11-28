@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 39);
+  assert.equal(remaining.manuals.length, 41);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    39,
+    41,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -34,6 +34,8 @@ test('Remaining manual candidates isolate held units and images and preserve sou
         'crossflight',
         'crossrace-pro',
         'crossrace',
+        'at10-ii',
+        'pixhawk',
         'mini-pix',
         'pix6',
         'at9s-pro',

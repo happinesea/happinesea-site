@@ -1,0 +1,3165 @@
+---
+title: AT10 II 日本語取扱説明書
+description: Radiolink AT10 II の公式英語取扱説明書に対応する日本語版です。
+product: at10-ii
+slug: manuals/at10-ii
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/d1091bd8c3326e95cdfabab65e73d5cf.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/at10-ii/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink AT10 II 公式英語取扱説明書（文書版・発行日不明、88頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="at10ii-p1-body" data-translation-unit="at10ii-p1-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+# AT10 II（DSSS・FHSS）取扱説明書
+
+CE・FCC・RoHS
+
+本書は定期的に更新されます。最新版はRadiolink公式サイトからダウンロードしてください。
+
+<span id="at10ii-p1-f1-unit" data-translation-unit="at10ii-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/at10-ii/web-ja-v1/at10ii-p1-f1.jpeg" width={1337} height={1687} figureId="at10ii-p1-f1" alt={"AT10 II原典表紙の図1"} caption={"AT10 II原典表紙の図1"} />
+
+<span id="at10ii-p1-f2-unit" data-translation-unit="at10ii-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/at10-ii/web-ja-v1/at10ii-p1-f2.jpeg" width={563} height={134} figureId="at10ii-p1-f2" alt={"AT10 II原典表紙の図2"} caption={"AT10 II原典表紙の図2"} />
+
+<span id="at10ii-p2-body" data-translation-unit="at10ii-p2-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+Radiolinkの12チャンネル送信機AT10 IIをお買い上げいただき、ありがとうございます。製品の機能を十分に活用し、安全にお使いいただくため、本書をよく読み、記載の手順に従って機器を設定してください。
+
+操作中に問題が生じた場合は、次の方法で技術サポートを受けられます。
+
+1. after_service@radiolink.com.cn または after_service1@radiolink.com.cn へメールをお送りください。できるだけ早く回答します。
+2. Facebookページにプライベートメッセージを送るか、YouTubeページにコメントを残してください。
+3. お近くの販売店で購入した場合は、その販売店にもサポートや修理についてご相談いただけます。
+
+すべての取扱説明書とファームウェアはRadiolink公式サイト（www.radiolink.com）から入手でき、チュートリアルも掲載しています。FacebookとYouTubeでも最新情報を確認できます。
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界が悪いと方向を見失い、操縦できなくなるおそれがあります。
+- 人混みや法令で禁止されている場所では使用しないでください。
+- 使用前に毎回、すべてのサーボとその接続を点検してください。
+- 電源は必ず受信機、送信機の順に切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉のない場所で飛行・走行させてください。
+
+## 警告
+
+本製品は玩具ではなく、18歳未満の子どもの使用には適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは慎重に操作してください。
+
+水や湿気がアンテナやスティックの隙間から送信機に入り、機体の動作が不安定になったり、制御不能になったりするおそれがあります。
+
+<span id="at10ii-p2-body-wet-weather" data-translation-unit="at10ii-p2-body-wet-weather"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at10ii-p2-body-fcc" data-translation-unit="at10ii-p2-body-fcc"></span>
+
+## FCC声明
+
+本機器は試験により、FCC規則第15部のクラスBデジタル機器の制限に適合することが確認されています。この制限は、住宅での設置時に有害な干渉を合理的に防ぐためのものです。本機器は無線周波エネルギーを発生・使用し、放射することがあります。指示どおりに設置・使用しない場合、無線通信に有害な干渉を与えるおそれがあります。ただし、個々の設置環境で干渉が生じないことを保証するものではありません（次頁に続く）。
+
+<span id="at10ii-p2-f1-unit" data-translation-unit="at10ii-p2-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/at10-ii/web-ja-v1/at10ii-p2-f1.jpeg" width={373} height={169} figureId="at10ii-p2-f1" alt={"AT10 II原典物理2頁の図1"} caption={"AT10 II原典物理2頁の図1"} />
+
+<span id="at10ii-p3-body" data-translation-unit="at10ii-p3-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+## FCC声明（続き）
+
+本機器がラジオやテレビの受信に有害な干渉を与えているかどうかは、本機器の電源を切って入れ直すことで確認できます。干渉が生じている場合、次のうち一つ以上の方法で解消を試みてください。
+
+- 受信アンテナの向きや位置を変える。
+- 本機器と受信機の距離を広げる。
+- 受信機とは別の回路にあるコンセントに本機器を接続する。
+- 販売店または経験のあるラジオ・テレビ技術者に相談する。
+
+本機器はFCC規則第15部に適合しています。使用には次の二つの条件が適用されます。（1）本機器が有害な干渉を発生させないこと。（2）意図しない動作を引き起こす可能性のある干渉を含め、受信したあらゆる干渉を受け入れること。
+
+適合性に責任を負う当事者が明示的に承認していない変更や改造を行うと、利用者の本機器を操作する権限が失われることがあります。
+
+<span id="at10ii-p4-body" data-translation-unit="at10ii-p4-body"></span>
+
+## 目次
+
+以下は原典に印刷された頁番号です。
+
+- 第1部 AT10 IIシステムの概要（1頁）
+  - 1.1 AT10 IIシステム（1頁）
+    - 1.1.1 送信機の機能（1頁）
+    - 1.1.2 送信機の各部（2頁）
+    - 1.1.3 対応受信機（4頁）
+    - 1.1.4 RSSIの確認（4頁）
+  - 1.2 無線機器の取り付け（5頁）
+    - 1.2.1 サーボ、受信機、バッテリーの取り付け指針（5頁）
+    - 1.2.2 受信機とサーボの接続（7頁）
+    - 1.2.3 アンテナの取り付け（10頁）
+  - 1.3 無線機器の基本設定（11頁）
+    - 1.3.1 送信機の基本設定（11頁）
+    - 1.3.2 モデルタイプ（11頁）
+    - 1.3.3 バインディング（11頁）
+    - 1.3.4 送信機の表示とボタン（11頁）
+- 第2部 飛行機の基本機能（13頁）
+  - 2.1 ACRO基本メニューのクイックガイド（13頁）
+  - 2.2 基本的な4チャンネル飛行機を使い始めるためのクイックガイド（14頁）
+  - 2.3 飛行機の基本機能（16頁）
+    - 2.3.1 モデル選択（16頁）
+    - 2.3.2 モデルタイプ（17頁）
+    - 2.3.3 サーボ動作範囲のエンドポイント調整（END POINT、EPA）（19頁）
+    - 2.3.4 トリム（20頁）
+    - 2.3.5 サブトリム（20頁）
+    - 2.3.6 サーボリバース（REVERSE）（21頁）
+    - 2.3.7 デュアル／トリプルレートとエクスポネンシャル（D/R、EXP）（22頁）
+    - 2.3.8 スロットルカット（25頁）
+    - 2.3.9 アイドルダウン（ACROのみ）（26頁）
+    - 2.3.10 フェイルセーフ（F/S）（27頁）
+    - 2.3.11 補助チャンネル機能（CH9～10の操作を含む）（28頁）
+    - 2.3.12 TIMERサブメニュー（ストップウォッチ機能）（29頁）
+    - 2.3.13 トレーナー（30頁）
+    - 2.3.14 ロジックスイッチの選択（LOGIC SW）（31頁）
+    - 2.3.15 サーボの表示・サイクルサブメニュー（32頁）
+    - 2.3.16 テレメトリー（32頁）
+- 第3部 ACRO詳細メニューの機能（34頁）
+  - 3.1 飛行機の主翼タイプ（ACRO／GLID）（34頁）
+  - 3.2 2サーボエルロン（5CH受信機、AILE-2、ACRO／GLID）（35頁）
+  - 3.3 ACRO詳細機能メニュー（35頁）
+    - 3.3.1 プログラムミキシング（36頁）
+    - 3.3.2 プログラムカーブミキシング（PROG.MIX 5～8、HELIは5～6）（39頁）
+    - 3.3.3 フラッペロン（ACRO／GLID 1A+1F）（40頁）
+    - 3.3.4 フラップトリム（41頁）
+    - 3.3.5 エルロンディファレンシャル（ACRO／GLID 2A+1F／GLID 2A+2F）（42頁）
+    - 3.3.6 エアブレーキ（ACRO／GLID）（43頁）
+    - 3.3.7 エレベーター・フラップミキシング（ACRO／GLID）（44頁）
+    - 3.3.8 2サーボエレベーター（ラダー付き、AILEVATOR、ACRO）（45頁）
+    - 3.3.9 スナップロール（ACRO）（46頁）
+    - 3.3.10 Vテール（ACRO／GLID）（47頁）
+    - 3.3.11 エレボン（48頁）
+    - 3.3.12 ジャイロ感度（49頁）
+    - 3.3.13 スロットルディレー（ACRO）（50頁）
+
+<span id="at10ii-p5-body" data-translation-unit="at10ii-p5-body"></span>
+
+## 目次（続き）
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at10ii-p6-body" data-translation-unit="at10ii-p6-body"></span>
+
+## 第1部 AT10 IIシステムの概要
+
+### 1.1 AT10 IIシステム
+
+#### 1.1.1 送信機の機能
+
+<span id="at10ii-p7-body" data-translation-unit="at10ii-p7-body"></span>
+
+#### 1.1.2 送信機の各部
+
+<span id="at10ii-p7-f1-unit" data-translation-unit="at10ii-p7-f1-unit"></span>
+
+<span id="at10ii-p8-body" data-translation-unit="at10ii-p8-body"></span>
+
+<span id="at10ii-p8-f1-unit" data-translation-unit="at10ii-p8-f1-unit"></span>
+
+<span id="at10ii-p9-body" data-translation-unit="at10ii-p9-body"></span>
+
+#### 1.1.3 対応受信機
+
+<span id="at10ii-p10-body" data-translation-unit="at10ii-p10-body"></span>
+
+#### 1.1.4 RSSIの確認
+
+<span id="at10ii-p10-f1-unit" data-translation-unit="at10ii-p10-f1-unit"></span>
+
+<span id="at10ii-p11-body" data-translation-unit="at10ii-p11-body"></span>
+
+### 1.2 無線機器の取り付け
+
+#### 1.2.1 サーボ、受信機、バッテリーの取り付け指針
+
+<span id="at10ii-p11-f1-unit" data-translation-unit="at10ii-p11-f1-unit"></span>
+
+<span id="at10ii-p11-f2-unit" data-translation-unit="at10ii-p11-f2-unit"></span>
+
+<span id="at10ii-p11-f3-unit" data-translation-unit="at10ii-p11-f3-unit"></span>
+
+<span id="at10ii-p12-body" data-translation-unit="at10ii-p12-body"></span>
+
+#### 1.2.2 受信機とサーボの接続
+
+<span id="at10ii-p12-f1-unit" data-translation-unit="at10ii-p12-f1-unit"></span>
+
+<span id="at10ii-p12-f2-unit" data-translation-unit="at10ii-p12-f2-unit"></span>
+
+<span id="at10ii-p12-f3-unit" data-translation-unit="at10ii-p12-f3-unit"></span>
+
+<span id="at10ii-p13-body" data-translation-unit="at10ii-p13-body"></span>
+
+<span id="at10ii-p13-f1-unit" data-translation-unit="at10ii-p13-f1-unit"></span>
+
+<span id="at10ii-p13-f2-unit" data-translation-unit="at10ii-p13-f2-unit"></span>
+
+<span id="at10ii-p14-body" data-translation-unit="at10ii-p14-body"></span>
+
+<span id="at10ii-p14-f1-unit" data-translation-unit="at10ii-p14-f1-unit"></span>
+
+<span id="at10ii-p15-body" data-translation-unit="at10ii-p15-body"></span>
+
+#### 1.2.3 アンテナの取り付け
+
+<span id="at10ii-p15-f1-unit" data-translation-unit="at10ii-p15-f1-unit"></span>
+
+<span id="at10ii-p15-f2-unit" data-translation-unit="at10ii-p15-f2-unit"></span>
+
+<span id="at10ii-p16-body" data-translation-unit="at10ii-p16-body"></span>
+
+### 1.3 無線機器の基本設定
+
+#### 1.3.1 送信機の基本設定
+
+#### 1.3.2 モデルタイプ
+
+<span id="at10ii-p16-f1-unit" data-translation-unit="at10ii-p16-f1-unit"></span>
+
+<span id="at10ii-p17-body" data-translation-unit="at10ii-p17-body"></span>
+
+#### 1.3.3 バインディング
+
+#### 1.3.4 送信機の表示とボタン
+
+<span id="at10ii-p17-f1-unit" data-translation-unit="at10ii-p17-f1-unit"></span>
+
+<span id="at10ii-p18-body" data-translation-unit="at10ii-p18-body"></span>
+
+## 第2部 飛行機の基本機能
+
+### 2.1 ACRO基本メニューのクイックガイド
+
+<span id="at10ii-p18-f1-unit" data-translation-unit="at10ii-p18-f1-unit"></span>
+
+<span id="at10ii-p19-body" data-translation-unit="at10ii-p19-body"></span>
+
+### 2.2 クイックガイド：基本的な4チャンネル飛行機を使い始める
+
+<span id="at10ii-p19-f1-unit" data-translation-unit="at10ii-p19-f1-unit"></span>
+
+<span id="at10ii-p19-f2-unit" data-translation-unit="at10ii-p19-f2-unit"></span>
+
+<span id="at10ii-p19-f3-unit" data-translation-unit="at10ii-p19-f3-unit"></span>
+
+<span id="at10ii-p19-f4-unit" data-translation-unit="at10ii-p19-f4-unit"></span>
+
+<span id="at10ii-p19-f5-unit" data-translation-unit="at10ii-p19-f5-unit"></span>
+
+<span id="at10ii-p19-f6-unit" data-translation-unit="at10ii-p19-f6-unit"></span>
+
+<span id="at10ii-p19-f7-unit" data-translation-unit="at10ii-p19-f7-unit"></span>
+
+<span id="at10ii-p19-f8-unit" data-translation-unit="at10ii-p19-f8-unit"></span>
+
+<span id="at10ii-p19-f9-unit" data-translation-unit="at10ii-p19-f9-unit"></span>
+
+<span id="at10ii-p19-f10-unit" data-translation-unit="at10ii-p19-f10-unit"></span>
+
+<span id="at10ii-p19-f11-unit" data-translation-unit="at10ii-p19-f11-unit"></span>
+
+<span id="at10ii-p19-f12-unit" data-translation-unit="at10ii-p19-f12-unit"></span>
+
+<span id="at10ii-p19-f13-unit" data-translation-unit="at10ii-p19-f13-unit"></span>
+
+<span id="at10ii-p19-f14-unit" data-translation-unit="at10ii-p19-f14-unit"></span>
+
+<span id="at10ii-p19-f15-unit" data-translation-unit="at10ii-p19-f15-unit"></span>
+
+<span id="at10ii-p19-f16-unit" data-translation-unit="at10ii-p19-f16-unit"></span>
+
+<span id="at10ii-p19-f17-unit" data-translation-unit="at10ii-p19-f17-unit"></span>
+
+<span id="at10ii-p19-f18-unit" data-translation-unit="at10ii-p19-f18-unit"></span>
+
+<span id="at10ii-p19-f19-unit" data-translation-unit="at10ii-p19-f19-unit"></span>
+
+<span id="at10ii-p19-f20-unit" data-translation-unit="at10ii-p19-f20-unit"></span>
+
+<span id="at10ii-p19-f21-unit" data-translation-unit="at10ii-p19-f21-unit"></span>
+
+<span id="at10ii-p19-f22-unit" data-translation-unit="at10ii-p19-f22-unit"></span>
+
+<span id="at10ii-p20-body" data-translation-unit="at10ii-p20-body"></span>
+
+<span id="at10ii-p20-f1-unit" data-translation-unit="at10ii-p20-f1-unit"></span>
+
+<span id="at10ii-p20-f2-unit" data-translation-unit="at10ii-p20-f2-unit"></span>
+
+<span id="at10ii-p20-f3-unit" data-translation-unit="at10ii-p20-f3-unit"></span>
+
+<span id="at10ii-p20-f4-unit" data-translation-unit="at10ii-p20-f4-unit"></span>
+
+<span id="at10ii-p20-f5-unit" data-translation-unit="at10ii-p20-f5-unit"></span>
+
+<span id="at10ii-p20-f6-unit" data-translation-unit="at10ii-p20-f6-unit"></span>
+
+<span id="at10ii-p20-f7-unit" data-translation-unit="at10ii-p20-f7-unit"></span>
+
+<span id="at10ii-p20-f8-unit" data-translation-unit="at10ii-p20-f8-unit"></span>
+
+<span id="at10ii-p20-f9-unit" data-translation-unit="at10ii-p20-f9-unit"></span>
+
+<span id="at10ii-p20-f10-unit" data-translation-unit="at10ii-p20-f10-unit"></span>
+
+<span id="at10ii-p20-f11-unit" data-translation-unit="at10ii-p20-f11-unit"></span>
+
+<span id="at10ii-p20-f12-unit" data-translation-unit="at10ii-p20-f12-unit"></span>
+
+<span id="at10ii-p20-f13-unit" data-translation-unit="at10ii-p20-f13-unit"></span>
+
+<span id="at10ii-p20-f14-unit" data-translation-unit="at10ii-p20-f14-unit"></span>
+
+<span id="at10ii-p20-f15-unit" data-translation-unit="at10ii-p20-f15-unit"></span>
+
+<span id="at10ii-p20-f16-unit" data-translation-unit="at10ii-p20-f16-unit"></span>
+
+<span id="at10ii-p20-f17-unit" data-translation-unit="at10ii-p20-f17-unit"></span>
+
+<span id="at10ii-p20-f18-unit" data-translation-unit="at10ii-p20-f18-unit"></span>
+
+<span id="at10ii-p20-f19-unit" data-translation-unit="at10ii-p20-f19-unit"></span>
+
+<span id="at10ii-p20-f20-unit" data-translation-unit="at10ii-p20-f20-unit"></span>
+
+<span id="at10ii-p20-f21-unit" data-translation-unit="at10ii-p20-f21-unit"></span>
+
+<span id="at10ii-p20-f22-unit" data-translation-unit="at10ii-p20-f22-unit"></span>
+
+<span id="at10ii-p20-f23-unit" data-translation-unit="at10ii-p20-f23-unit"></span>
+
+<span id="at10ii-p20-f24-unit" data-translation-unit="at10ii-p20-f24-unit"></span>
+
+<span id="at10ii-p20-f25-unit" data-translation-unit="at10ii-p20-f25-unit"></span>
+
+<span id="at10ii-p20-f26-unit" data-translation-unit="at10ii-p20-f26-unit"></span>
+
+<span id="at10ii-p20-f27-unit" data-translation-unit="at10ii-p20-f27-unit"></span>
+
+<span id="at10ii-p20-f28-unit" data-translation-unit="at10ii-p20-f28-unit"></span>
+
+<span id="at10ii-p20-f29-unit" data-translation-unit="at10ii-p20-f29-unit"></span>
+
+<span id="at10ii-p20-f30-unit" data-translation-unit="at10ii-p20-f30-unit"></span>
+
+<span id="at10ii-p20-f31-unit" data-translation-unit="at10ii-p20-f31-unit"></span>
+
+<span id="at10ii-p20-f32-unit" data-translation-unit="at10ii-p20-f32-unit"></span>
+
+<span id="at10ii-p20-f33-unit" data-translation-unit="at10ii-p20-f33-unit"></span>
+
+<span id="at10ii-p20-f34-unit" data-translation-unit="at10ii-p20-f34-unit"></span>
+
+<span id="at10ii-p20-f35-unit" data-translation-unit="at10ii-p20-f35-unit"></span>
+
+<span id="at10ii-p20-f36-unit" data-translation-unit="at10ii-p20-f36-unit"></span>
+
+<span id="at10ii-p20-f37-unit" data-translation-unit="at10ii-p20-f37-unit"></span>
+
+<span id="at10ii-p20-f38-unit" data-translation-unit="at10ii-p20-f38-unit"></span>
+
+<span id="at10ii-p20-f39-unit" data-translation-unit="at10ii-p20-f39-unit"></span>
+
+<span id="at10ii-p20-f40-unit" data-translation-unit="at10ii-p20-f40-unit"></span>
+
+<span id="at10ii-p20-f41-unit" data-translation-unit="at10ii-p20-f41-unit"></span>
+
+<span id="at10ii-p20-f42-unit" data-translation-unit="at10ii-p20-f42-unit"></span>
+
+<span id="at10ii-p21-body" data-translation-unit="at10ii-p21-body"></span>
+
+### 2.3 飛行機の基本機能
+
+#### 2.3.1 モデル選択
+
+<span id="at10ii-p21-f1-unit" data-translation-unit="at10ii-p21-f1-unit"></span>
+
+<span id="at10ii-p21-f2-unit" data-translation-unit="at10ii-p21-f2-unit"></span>
+
+<span id="at10ii-p21-f3-unit" data-translation-unit="at10ii-p21-f3-unit"></span>
+
+<span id="at10ii-p21-f4-unit" data-translation-unit="at10ii-p21-f4-unit"></span>
+
+<span id="at10ii-p21-f5-unit" data-translation-unit="at10ii-p21-f5-unit"></span>
+
+<span id="at10ii-p21-f6-unit" data-translation-unit="at10ii-p21-f6-unit"></span>
+
+<span id="at10ii-p21-f7-unit" data-translation-unit="at10ii-p21-f7-unit"></span>
+
+<span id="at10ii-p21-f8-unit" data-translation-unit="at10ii-p21-f8-unit"></span>
+
+<span id="at10ii-p21-f9-unit" data-translation-unit="at10ii-p21-f9-unit"></span>
+
+<span id="at10ii-p21-f10-unit" data-translation-unit="at10ii-p21-f10-unit"></span>
+
+<span id="at10ii-p21-f11-unit" data-translation-unit="at10ii-p21-f11-unit"></span>
+
+<span id="at10ii-p21-f12-unit" data-translation-unit="at10ii-p21-f12-unit"></span>
+
+<span id="at10ii-p21-f13-unit" data-translation-unit="at10ii-p21-f13-unit"></span>
+
+<span id="at10ii-p21-f14-unit" data-translation-unit="at10ii-p21-f14-unit"></span>
+
+<span id="at10ii-p21-f15-unit" data-translation-unit="at10ii-p21-f15-unit"></span>
+
+<span id="at10ii-p21-f16-unit" data-translation-unit="at10ii-p21-f16-unit"></span>
+
+<span id="at10ii-p21-f17-unit" data-translation-unit="at10ii-p21-f17-unit"></span>
+
+<span id="at10ii-p21-f18-unit" data-translation-unit="at10ii-p21-f18-unit"></span>
+
+<span id="at10ii-p21-f19-unit" data-translation-unit="at10ii-p21-f19-unit"></span>
+
+<span id="at10ii-p21-f20-unit" data-translation-unit="at10ii-p21-f20-unit"></span>
+
+<span id="at10ii-p21-f21-unit" data-translation-unit="at10ii-p21-f21-unit"></span>
+
+<span id="at10ii-p21-f22-unit" data-translation-unit="at10ii-p21-f22-unit"></span>
+
+<span id="at10ii-p21-f23-unit" data-translation-unit="at10ii-p21-f23-unit"></span>
+
+<span id="at10ii-p21-f24-unit" data-translation-unit="at10ii-p21-f24-unit"></span>
+
+<span id="at10ii-p21-f25-unit" data-translation-unit="at10ii-p21-f25-unit"></span>
+
+<span id="at10ii-p21-f26-unit" data-translation-unit="at10ii-p21-f26-unit"></span>
+
+<span id="at10ii-p21-f27-unit" data-translation-unit="at10ii-p21-f27-unit"></span>
+
+<span id="at10ii-p22-body" data-translation-unit="at10ii-p22-body"></span>
+
+<span id="at10ii-p22-f1-unit" data-translation-unit="at10ii-p22-f1-unit"></span>
+
+<span id="at10ii-p22-f2-unit" data-translation-unit="at10ii-p22-f2-unit"></span>
+
+<span id="at10ii-p22-f3-unit" data-translation-unit="at10ii-p22-f3-unit"></span>
+
+<span id="at10ii-p22-f4-unit" data-translation-unit="at10ii-p22-f4-unit"></span>
+
+<span id="at10ii-p22-f5-unit" data-translation-unit="at10ii-p22-f5-unit"></span>
+
+<span id="at10ii-p22-f6-unit" data-translation-unit="at10ii-p22-f6-unit"></span>
+
+<span id="at10ii-p22-f7-unit" data-translation-unit="at10ii-p22-f7-unit"></span>
+
+<span id="at10ii-p22-f8-unit" data-translation-unit="at10ii-p22-f8-unit"></span>
+
+<span id="at10ii-p22-f9-unit" data-translation-unit="at10ii-p22-f9-unit"></span>
+
+<span id="at10ii-p22-f10-unit" data-translation-unit="at10ii-p22-f10-unit"></span>
+
+<span id="at10ii-p22-f11-unit" data-translation-unit="at10ii-p22-f11-unit"></span>
+
+<span id="at10ii-p22-f12-unit" data-translation-unit="at10ii-p22-f12-unit"></span>
+
+<span id="at10ii-p22-f13-unit" data-translation-unit="at10ii-p22-f13-unit"></span>
+
+<span id="at10ii-p23-body" data-translation-unit="at10ii-p23-body"></span>
+
+#### 2.3.2 モデルタイプ
+
+<span id="at10ii-p23-f1-unit" data-translation-unit="at10ii-p23-f1-unit"></span>
+
+<span id="at10ii-p23-f2-unit" data-translation-unit="at10ii-p23-f2-unit"></span>
+
+<span id="at10ii-p23-f3-unit" data-translation-unit="at10ii-p23-f3-unit"></span>
+
+<span id="at10ii-p23-f4-unit" data-translation-unit="at10ii-p23-f4-unit"></span>
+
+<span id="at10ii-p23-f5-unit" data-translation-unit="at10ii-p23-f5-unit"></span>
+
+<span id="at10ii-p24-body" data-translation-unit="at10ii-p24-body"></span>
+
+#### 2.3.3 サーボ動作範囲のエンドポイント調整（END POINT、EPA）
+
+<span id="at10ii-p24-f1-unit" data-translation-unit="at10ii-p24-f1-unit"></span>
+
+<span id="at10ii-p24-f2-unit" data-translation-unit="at10ii-p24-f2-unit"></span>
+
+<span id="at10ii-p24-f3-unit" data-translation-unit="at10ii-p24-f3-unit"></span>
+
+<span id="at10ii-p24-f4-unit" data-translation-unit="at10ii-p24-f4-unit"></span>
+
+<span id="at10ii-p24-f5-unit" data-translation-unit="at10ii-p24-f5-unit"></span>
+
+<span id="at10ii-p24-f6-unit" data-translation-unit="at10ii-p24-f6-unit"></span>
+
+<span id="at10ii-p24-f7-unit" data-translation-unit="at10ii-p24-f7-unit"></span>
+
+<span id="at10ii-p24-f8-unit" data-translation-unit="at10ii-p24-f8-unit"></span>
+
+<span id="at10ii-p25-body" data-translation-unit="at10ii-p25-body"></span>
+
+#### 2.3.4 トリム
+
+<span id="at10ii-p25-f1-unit" data-translation-unit="at10ii-p25-f1-unit"></span>
+
+<span id="at10ii-p25-f2-unit" data-translation-unit="at10ii-p25-f2-unit"></span>
+
+<span id="at10ii-p25-f3-unit" data-translation-unit="at10ii-p25-f3-unit"></span>
+
+<span id="at10ii-p25-f4-unit" data-translation-unit="at10ii-p25-f4-unit"></span>
+
+<span id="at10ii-p25-f5-unit" data-translation-unit="at10ii-p25-f5-unit"></span>
+
+<span id="at10ii-p25-f6-unit" data-translation-unit="at10ii-p25-f6-unit"></span>
+
+<span id="at10ii-p25-f7-unit" data-translation-unit="at10ii-p25-f7-unit"></span>
+
+<span id="at10ii-p25-f8-unit" data-translation-unit="at10ii-p25-f8-unit"></span>
+
+<span id="at10ii-p26-body" data-translation-unit="at10ii-p26-body"></span>
+
+#### 2.3.5 サブトリム
+
+<span id="at10ii-p26-f1-unit" data-translation-unit="at10ii-p26-f1-unit"></span>
+
+<span id="at10ii-p26-f2-unit" data-translation-unit="at10ii-p26-f2-unit"></span>
+
+<span id="at10ii-p26-f3-unit" data-translation-unit="at10ii-p26-f3-unit"></span>
+
+<span id="at10ii-p26-f4-unit" data-translation-unit="at10ii-p26-f4-unit"></span>
+
+<span id="at10ii-p26-f5-unit" data-translation-unit="at10ii-p26-f5-unit"></span>
+
+<span id="at10ii-p26-f6-unit" data-translation-unit="at10ii-p26-f6-unit"></span>
+
+<span id="at10ii-p26-f7-unit" data-translation-unit="at10ii-p26-f7-unit"></span>
+
+<span id="at10ii-p26-f8-unit" data-translation-unit="at10ii-p26-f8-unit"></span>
+
+<span id="at10ii-p26-f9-unit" data-translation-unit="at10ii-p26-f9-unit"></span>
+
+<span id="at10ii-p26-f10-unit" data-translation-unit="at10ii-p26-f10-unit"></span>
+
+<span id="at10ii-p26-f11-unit" data-translation-unit="at10ii-p26-f11-unit"></span>
+
+<span id="at10ii-p26-f12-unit" data-translation-unit="at10ii-p26-f12-unit"></span>
+
+<span id="at10ii-p26-f13-unit" data-translation-unit="at10ii-p26-f13-unit"></span>
+
+<span id="at10ii-p26-f14-unit" data-translation-unit="at10ii-p26-f14-unit"></span>
+
+<span id="at10ii-p26-f15-unit" data-translation-unit="at10ii-p26-f15-unit"></span>
+
+<span id="at10ii-p26-f16-unit" data-translation-unit="at10ii-p26-f16-unit"></span>
+
+<span id="at10ii-p26-f17-unit" data-translation-unit="at10ii-p26-f17-unit"></span>
+
+<span id="at10ii-p26-f18-unit" data-translation-unit="at10ii-p26-f18-unit"></span>
+
+<span id="at10ii-p26-f19-unit" data-translation-unit="at10ii-p26-f19-unit"></span>
+
+<span id="at10ii-p27-body" data-translation-unit="at10ii-p27-body"></span>
+
+#### 2.3.6 サーボリバース（REVERSE）
+
+#### 2.3.7 デュアル／トリプルレートとエクスポネンシャル（D/R、EXP）
+
+<span id="at10ii-p27-f1-unit" data-translation-unit="at10ii-p27-f1-unit"></span>
+
+<span id="at10ii-p27-f2-unit" data-translation-unit="at10ii-p27-f2-unit"></span>
+
+<span id="at10ii-p27-f3-unit" data-translation-unit="at10ii-p27-f3-unit"></span>
+
+<span id="at10ii-p27-f4-unit" data-translation-unit="at10ii-p27-f4-unit"></span>
+
+<span id="at10ii-p27-f5-unit" data-translation-unit="at10ii-p27-f5-unit"></span>
+
+<span id="at10ii-p27-f6-unit" data-translation-unit="at10ii-p27-f6-unit"></span>
+
+<span id="at10ii-p27-f7-unit" data-translation-unit="at10ii-p27-f7-unit"></span>
+
+<span id="at10ii-p27-f8-unit" data-translation-unit="at10ii-p27-f8-unit"></span>
+
+<span id="at10ii-p27-f9-unit" data-translation-unit="at10ii-p27-f9-unit"></span>
+
+<span id="at10ii-p28-body" data-translation-unit="at10ii-p28-body"></span>
+
+<span id="at10ii-p28-f1-unit" data-translation-unit="at10ii-p28-f1-unit"></span>
+
+<span id="at10ii-p28-f2-unit" data-translation-unit="at10ii-p28-f2-unit"></span>
+
+<span id="at10ii-p28-f3-unit" data-translation-unit="at10ii-p28-f3-unit"></span>
+
+<span id="at10ii-p28-f4-unit" data-translation-unit="at10ii-p28-f4-unit"></span>
+
+<span id="at10ii-p28-f5-unit" data-translation-unit="at10ii-p28-f5-unit"></span>
+
+<span id="at10ii-p29-body" data-translation-unit="at10ii-p29-body"></span>
+
+<span id="at10ii-p29-f1-unit" data-translation-unit="at10ii-p29-f1-unit"></span>
+
+<span id="at10ii-p29-f2-unit" data-translation-unit="at10ii-p29-f2-unit"></span>
+
+<span id="at10ii-p29-f3-unit" data-translation-unit="at10ii-p29-f3-unit"></span>
+
+<span id="at10ii-p29-f4-unit" data-translation-unit="at10ii-p29-f4-unit"></span>
+
+<span id="at10ii-p29-f5-unit" data-translation-unit="at10ii-p29-f5-unit"></span>
+
+<span id="at10ii-p29-f6-unit" data-translation-unit="at10ii-p29-f6-unit"></span>
+
+<span id="at10ii-p29-f7-unit" data-translation-unit="at10ii-p29-f7-unit"></span>
+
+<span id="at10ii-p29-f8-unit" data-translation-unit="at10ii-p29-f8-unit"></span>
+
+<span id="at10ii-p29-f9-unit" data-translation-unit="at10ii-p29-f9-unit"></span>
+
+<span id="at10ii-p29-f10-unit" data-translation-unit="at10ii-p29-f10-unit"></span>
+
+<span id="at10ii-p29-f11-unit" data-translation-unit="at10ii-p29-f11-unit"></span>
+
+<span id="at10ii-p29-f12-unit" data-translation-unit="at10ii-p29-f12-unit"></span>
+
+<span id="at10ii-p29-f13-unit" data-translation-unit="at10ii-p29-f13-unit"></span>
+
+<span id="at10ii-p29-f14-unit" data-translation-unit="at10ii-p29-f14-unit"></span>
+
+<span id="at10ii-p29-f15-unit" data-translation-unit="at10ii-p29-f15-unit"></span>
+
+<span id="at10ii-p29-f16-unit" data-translation-unit="at10ii-p29-f16-unit"></span>
+
+<span id="at10ii-p29-f17-unit" data-translation-unit="at10ii-p29-f17-unit"></span>
+
+<span id="at10ii-p29-f18-unit" data-translation-unit="at10ii-p29-f18-unit"></span>
+
+<span id="at10ii-p29-f19-unit" data-translation-unit="at10ii-p29-f19-unit"></span>
+
+<span id="at10ii-p29-f20-unit" data-translation-unit="at10ii-p29-f20-unit"></span>
+
+<span id="at10ii-p29-f21-unit" data-translation-unit="at10ii-p29-f21-unit"></span>
+
+<span id="at10ii-p29-f22-unit" data-translation-unit="at10ii-p29-f22-unit"></span>
+
+<span id="at10ii-p30-body" data-translation-unit="at10ii-p30-body"></span>
+
+#### 2.3.8 スロットルカット（THR CUT）
+
+<span id="at10ii-p30-f1-unit" data-translation-unit="at10ii-p30-f1-unit"></span>
+
+<span id="at10ii-p30-f2-unit" data-translation-unit="at10ii-p30-f2-unit"></span>
+
+<span id="at10ii-p30-f3-unit" data-translation-unit="at10ii-p30-f3-unit"></span>
+
+<span id="at10ii-p30-f4-unit" data-translation-unit="at10ii-p30-f4-unit"></span>
+
+<span id="at10ii-p30-f5-unit" data-translation-unit="at10ii-p30-f5-unit"></span>
+
+<span id="at10ii-p30-f6-unit" data-translation-unit="at10ii-p30-f6-unit"></span>
+
+<span id="at10ii-p30-f7-unit" data-translation-unit="at10ii-p30-f7-unit"></span>
+
+<span id="at10ii-p30-f8-unit" data-translation-unit="at10ii-p30-f8-unit"></span>
+
+<span id="at10ii-p30-f9-unit" data-translation-unit="at10ii-p30-f9-unit"></span>
+
+<span id="at10ii-p30-f10-unit" data-translation-unit="at10ii-p30-f10-unit"></span>
+
+<span id="at10ii-p30-f11-unit" data-translation-unit="at10ii-p30-f11-unit"></span>
+
+<span id="at10ii-p30-f12-unit" data-translation-unit="at10ii-p30-f12-unit"></span>
+
+<span id="at10ii-p30-f13-unit" data-translation-unit="at10ii-p30-f13-unit"></span>
+
+<span id="at10ii-p30-f14-unit" data-translation-unit="at10ii-p30-f14-unit"></span>
+
+<span id="at10ii-p30-f15-unit" data-translation-unit="at10ii-p30-f15-unit"></span>
+
+<span id="at10ii-p30-f16-unit" data-translation-unit="at10ii-p30-f16-unit"></span>
+
+<span id="at10ii-p30-f17-unit" data-translation-unit="at10ii-p30-f17-unit"></span>
+
+<span id="at10ii-p30-f18-unit" data-translation-unit="at10ii-p30-f18-unit"></span>
+
+<span id="at10ii-p30-f19-unit" data-translation-unit="at10ii-p30-f19-unit"></span>
+
+<span id="at10ii-p30-f20-unit" data-translation-unit="at10ii-p30-f20-unit"></span>
+
+<span id="at10ii-p30-f21-unit" data-translation-unit="at10ii-p30-f21-unit"></span>
+
+<span id="at10ii-p30-f22-unit" data-translation-unit="at10ii-p30-f22-unit"></span>
+
+<span id="at10ii-p30-f23-unit" data-translation-unit="at10ii-p30-f23-unit"></span>
+
+<span id="at10ii-p30-f24-unit" data-translation-unit="at10ii-p30-f24-unit"></span>
+
+<span id="at10ii-p30-f25-unit" data-translation-unit="at10ii-p30-f25-unit"></span>
+
+<span id="at10ii-p30-f26-unit" data-translation-unit="at10ii-p30-f26-unit"></span>
+
+<span id="at10ii-p30-f27-unit" data-translation-unit="at10ii-p30-f27-unit"></span>
+
+<span id="at10ii-p30-f28-unit" data-translation-unit="at10ii-p30-f28-unit"></span>
+
+<span id="at10ii-p30-f29-unit" data-translation-unit="at10ii-p30-f29-unit"></span>
+
+<span id="at10ii-p30-f30-unit" data-translation-unit="at10ii-p30-f30-unit"></span>
+
+<span id="at10ii-p30-f31-unit" data-translation-unit="at10ii-p30-f31-unit"></span>
+
+<span id="at10ii-p30-f32-unit" data-translation-unit="at10ii-p30-f32-unit"></span>
+
+<span id="at10ii-p30-f33-unit" data-translation-unit="at10ii-p30-f33-unit"></span>
+
+<span id="at10ii-p30-f34-unit" data-translation-unit="at10ii-p30-f34-unit"></span>
+
+<span id="at10ii-p30-f35-unit" data-translation-unit="at10ii-p30-f35-unit"></span>
+
+<span id="at10ii-p31-body" data-translation-unit="at10ii-p31-body"></span>
+
+<span id="at10ii-p31-f1-unit" data-translation-unit="at10ii-p31-f1-unit"></span>
+
+<span id="at10ii-p31-f2-unit" data-translation-unit="at10ii-p31-f2-unit"></span>
+
+<span id="at10ii-p31-f3-unit" data-translation-unit="at10ii-p31-f3-unit"></span>
+
+<span id="at10ii-p31-f4-unit" data-translation-unit="at10ii-p31-f4-unit"></span>
+
+<span id="at10ii-p31-f5-unit" data-translation-unit="at10ii-p31-f5-unit"></span>
+
+<span id="at10ii-p31-f6-unit" data-translation-unit="at10ii-p31-f6-unit"></span>
+
+<span id="at10ii-p31-f7-unit" data-translation-unit="at10ii-p31-f7-unit"></span>
+
+<span id="at10ii-p31-f8-unit" data-translation-unit="at10ii-p31-f8-unit"></span>
+
+<span id="at10ii-p31-f9-unit" data-translation-unit="at10ii-p31-f9-unit"></span>
+
+<span id="at10ii-p31-f10-unit" data-translation-unit="at10ii-p31-f10-unit"></span>
+
+<span id="at10ii-p31-f11-unit" data-translation-unit="at10ii-p31-f11-unit"></span>
+
+<span id="at10ii-p31-f12-unit" data-translation-unit="at10ii-p31-f12-unit"></span>
+
+<span id="at10ii-p31-f13-unit" data-translation-unit="at10ii-p31-f13-unit"></span>
+
+<span id="at10ii-p31-f14-unit" data-translation-unit="at10ii-p31-f14-unit"></span>
+
+<span id="at10ii-p31-f15-unit" data-translation-unit="at10ii-p31-f15-unit"></span>
+
+<span id="at10ii-p31-f16-unit" data-translation-unit="at10ii-p31-f16-unit"></span>
+
+<span id="at10ii-p31-f17-unit" data-translation-unit="at10ii-p31-f17-unit"></span>
+
+<span id="at10ii-p31-f18-unit" data-translation-unit="at10ii-p31-f18-unit"></span>
+
+<span id="at10ii-p31-f19-unit" data-translation-unit="at10ii-p31-f19-unit"></span>
+
+<span id="at10ii-p31-f20-unit" data-translation-unit="at10ii-p31-f20-unit"></span>
+
+<span id="at10ii-p31-f21-unit" data-translation-unit="at10ii-p31-f21-unit"></span>
+
+<span id="at10ii-p31-f22-unit" data-translation-unit="at10ii-p31-f22-unit"></span>
+
+<span id="at10ii-p31-f23-unit" data-translation-unit="at10ii-p31-f23-unit"></span>
+
+<span id="at10ii-p31-f24-unit" data-translation-unit="at10ii-p31-f24-unit"></span>
+
+<span id="at10ii-p31-f25-unit" data-translation-unit="at10ii-p31-f25-unit"></span>
+
+<span id="at10ii-p31-f26-unit" data-translation-unit="at10ii-p31-f26-unit"></span>
+
+<span id="at10ii-p31-f27-unit" data-translation-unit="at10ii-p31-f27-unit"></span>
+
+<span id="at10ii-p31-f28-unit" data-translation-unit="at10ii-p31-f28-unit"></span>
+
+<span id="at10ii-p32-body" data-translation-unit="at10ii-p32-body"></span>
+
+#### 2.3.9 アイドルダウン（ACROのみ）
+
+#### 2.3.10 フェイルセーフ（F/S）
+
+<span id="at10ii-p32-f1-unit" data-translation-unit="at10ii-p32-f1-unit"></span>
+
+<span id="at10ii-p32-f2-unit" data-translation-unit="at10ii-p32-f2-unit"></span>
+
+<span id="at10ii-p32-f3-unit" data-translation-unit="at10ii-p32-f3-unit"></span>
+
+<span id="at10ii-p32-f4-unit" data-translation-unit="at10ii-p32-f4-unit"></span>
+
+<span id="at10ii-p32-f5-unit" data-translation-unit="at10ii-p32-f5-unit"></span>
+
+<span id="at10ii-p32-f6-unit" data-translation-unit="at10ii-p32-f6-unit"></span>
+
+<span id="at10ii-p32-f7-unit" data-translation-unit="at10ii-p32-f7-unit"></span>
+
+<span id="at10ii-p32-f8-unit" data-translation-unit="at10ii-p32-f8-unit"></span>
+
+<span id="at10ii-p32-f9-unit" data-translation-unit="at10ii-p32-f9-unit"></span>
+
+<span id="at10ii-p32-f10-unit" data-translation-unit="at10ii-p32-f10-unit"></span>
+
+<span id="at10ii-p32-f11-unit" data-translation-unit="at10ii-p32-f11-unit"></span>
+
+<span id="at10ii-p32-f12-unit" data-translation-unit="at10ii-p32-f12-unit"></span>
+
+<span id="at10ii-p32-f13-unit" data-translation-unit="at10ii-p32-f13-unit"></span>
+
+<span id="at10ii-p33-body" data-translation-unit="at10ii-p33-body"></span>
+
+#### 2.3.11 補助チャンネル機能（CH9～12の操作を含む）
+
+<span id="at10ii-p33-f1-unit" data-translation-unit="at10ii-p33-f1-unit"></span>
+
+<span id="at10ii-p33-f2-unit" data-translation-unit="at10ii-p33-f2-unit"></span>
+
+<span id="at10ii-p33-f3-unit" data-translation-unit="at10ii-p33-f3-unit"></span>
+
+<span id="at10ii-p33-f4-unit" data-translation-unit="at10ii-p33-f4-unit"></span>
+
+<span id="at10ii-p33-f5-unit" data-translation-unit="at10ii-p33-f5-unit"></span>
+
+<span id="at10ii-p33-f6-unit" data-translation-unit="at10ii-p33-f6-unit"></span>
+
+<span id="at10ii-p33-f7-unit" data-translation-unit="at10ii-p33-f7-unit"></span>
+
+<span id="at10ii-p33-f8-unit" data-translation-unit="at10ii-p33-f8-unit"></span>
+
+<span id="at10ii-p34-body" data-translation-unit="at10ii-p34-body"></span>
+
+#### 2.3.12 TIMERサブメニュー（ストップウォッチ機能）
+
+<span id="at10ii-p34-f1-unit" data-translation-unit="at10ii-p34-f1-unit"></span>
+
+<span id="at10ii-p34-f2-unit" data-translation-unit="at10ii-p34-f2-unit"></span>
+
+<span id="at10ii-p34-f3-unit" data-translation-unit="at10ii-p34-f3-unit"></span>
+
+<span id="at10ii-p34-f4-unit" data-translation-unit="at10ii-p34-f4-unit"></span>
+
+<span id="at10ii-p34-f5-unit" data-translation-unit="at10ii-p34-f5-unit"></span>
+
+<span id="at10ii-p34-f6-unit" data-translation-unit="at10ii-p34-f6-unit"></span>
+
+<span id="at10ii-p34-f7-unit" data-translation-unit="at10ii-p34-f7-unit"></span>
+
+<span id="at10ii-p34-f8-unit" data-translation-unit="at10ii-p34-f8-unit"></span>
+
+<span id="at10ii-p34-f9-unit" data-translation-unit="at10ii-p34-f9-unit"></span>
+
+<span id="at10ii-p34-f10-unit" data-translation-unit="at10ii-p34-f10-unit"></span>
+
+<span id="at10ii-p35-body" data-translation-unit="at10ii-p35-body"></span>
+
+#### 2.3.13 トレーナー（TRAINER）
+
+<span id="at10ii-p35-f1-unit" data-translation-unit="at10ii-p35-f1-unit"></span>
+
+<span id="at10ii-p35-f2-unit" data-translation-unit="at10ii-p35-f2-unit"></span>
+
+<span id="at10ii-p35-f3-unit" data-translation-unit="at10ii-p35-f3-unit"></span>
+
+<span id="at10ii-p35-f4-unit" data-translation-unit="at10ii-p35-f4-unit"></span>
+
+<span id="at10ii-p35-f5-unit" data-translation-unit="at10ii-p35-f5-unit"></span>
+
+<span id="at10ii-p35-f6-unit" data-translation-unit="at10ii-p35-f6-unit"></span>
+
+<span id="at10ii-p35-f7-unit" data-translation-unit="at10ii-p35-f7-unit"></span>
+
+<span id="at10ii-p35-f8-unit" data-translation-unit="at10ii-p35-f8-unit"></span>
+
+<span id="at10ii-p35-f9-unit" data-translation-unit="at10ii-p35-f9-unit"></span>
+
+<span id="at10ii-p35-f10-unit" data-translation-unit="at10ii-p35-f10-unit"></span>
+
+<span id="at10ii-p35-f11-unit" data-translation-unit="at10ii-p35-f11-unit"></span>
+
+<span id="at10ii-p35-f12-unit" data-translation-unit="at10ii-p35-f12-unit"></span>
+
+<span id="at10ii-p35-f13-unit" data-translation-unit="at10ii-p35-f13-unit"></span>
+
+<span id="at10ii-p35-f14-unit" data-translation-unit="at10ii-p35-f14-unit"></span>
+
+<span id="at10ii-p36-body" data-translation-unit="at10ii-p36-body"></span>
+
+<span id="at10ii-p36-f1-unit" data-translation-unit="at10ii-p36-f1-unit"></span>
+
+<span id="at10ii-p37-body" data-translation-unit="at10ii-p37-body"></span>
+
+#### 2.3.14 ロジックスイッチの選択（LOGIC SW）
+
+#### 2.3.15 SERVO表示・サイクルサブメニュー
+
+<span id="at10ii-p37-f1-unit" data-translation-unit="at10ii-p37-f1-unit"></span>
+
+<span id="at10ii-p37-f2-unit" data-translation-unit="at10ii-p37-f2-unit"></span>
+
+<span id="at10ii-p37-f3-unit" data-translation-unit="at10ii-p37-f3-unit"></span>
+
+<span id="at10ii-p37-f4-unit" data-translation-unit="at10ii-p37-f4-unit"></span>
+
+<span id="at10ii-p37-f5-unit" data-translation-unit="at10ii-p37-f5-unit"></span>
+
+<span id="at10ii-p37-f6-unit" data-translation-unit="at10ii-p37-f6-unit"></span>
+
+<span id="at10ii-p37-f7-unit" data-translation-unit="at10ii-p37-f7-unit"></span>
+
+<span id="at10ii-p37-f8-unit" data-translation-unit="at10ii-p37-f8-unit"></span>
+
+<span id="at10ii-p37-f9-unit" data-translation-unit="at10ii-p37-f9-unit"></span>
+
+<span id="at10ii-p37-f10-unit" data-translation-unit="at10ii-p37-f10-unit"></span>
+
+<span id="at10ii-p37-f11-unit" data-translation-unit="at10ii-p37-f11-unit"></span>
+
+<span id="at10ii-p37-f12-unit" data-translation-unit="at10ii-p37-f12-unit"></span>
+
+<span id="at10ii-p37-f13-unit" data-translation-unit="at10ii-p37-f13-unit"></span>
+
+<span id="at10ii-p37-f14-unit" data-translation-unit="at10ii-p37-f14-unit"></span>
+
+<span id="at10ii-p38-body" data-translation-unit="at10ii-p38-body"></span>
+
+#### 2.3.16 テレメトリー（原典見出し：TELEMETARY）
+
+<span id="at10ii-p38-f1-unit" data-translation-unit="at10ii-p38-f1-unit"></span>
+
+<span id="at10ii-p38-f2-unit" data-translation-unit="at10ii-p38-f2-unit"></span>
+
+<span id="at10ii-p38-f3-unit" data-translation-unit="at10ii-p38-f3-unit"></span>
+
+<span id="at10ii-p38-f4-unit" data-translation-unit="at10ii-p38-f4-unit"></span>
+
+<span id="at10ii-p38-f5-unit" data-translation-unit="at10ii-p38-f5-unit"></span>
+
+<span id="at10ii-p38-f6-unit" data-translation-unit="at10ii-p38-f6-unit"></span>
+
+<span id="at10ii-p38-f7-unit" data-translation-unit="at10ii-p38-f7-unit"></span>
+
+<span id="at10ii-p38-f8-unit" data-translation-unit="at10ii-p38-f8-unit"></span>
+
+<span id="at10ii-p39-body" data-translation-unit="at10ii-p39-body"></span>
+
+<span id="at10ii-p39-f1-unit" data-translation-unit="at10ii-p39-f1-unit"></span>
+
+<span id="at10ii-p39-f2-unit" data-translation-unit="at10ii-p39-f2-unit"></span>
+
+<span id="at10ii-p40-body" data-translation-unit="at10ii-p40-body"></span>
+
+## 第3部 ACROの詳細メニュー機能
+
+### 3.1 飛行機の主翼タイプ（ACRO／GLID）
+
+<span id="at10ii-p40-f1-unit" data-translation-unit="at10ii-p40-f1-unit"></span>
+
+<span id="at10ii-p41-body" data-translation-unit="at10ii-p41-body"></span>
+
+### 3.2 エルロンサーボ2個（5チャンネル受信機、AILE-2、ACRO／GLID）
+
+### 3.3 ACRO詳細機能メニュー
+
+<span id="at10ii-p41-f1-unit" data-translation-unit="at10ii-p41-f1-unit"></span>
+
+<span id="at10ii-p41-f2-unit" data-translation-unit="at10ii-p41-f2-unit"></span>
+
+<span id="at10ii-p41-f3-unit" data-translation-unit="at10ii-p41-f3-unit"></span>
+
+<span id="at10ii-p41-f4-unit" data-translation-unit="at10ii-p41-f4-unit"></span>
+
+<span id="at10ii-p41-f5-unit" data-translation-unit="at10ii-p41-f5-unit"></span>
+
+<span id="at10ii-p41-f6-unit" data-translation-unit="at10ii-p41-f6-unit"></span>
+
+<span id="at10ii-p41-f7-unit" data-translation-unit="at10ii-p41-f7-unit"></span>
+
+<span id="at10ii-p41-f8-unit" data-translation-unit="at10ii-p41-f8-unit"></span>
+
+<span id="at10ii-p41-f9-unit" data-translation-unit="at10ii-p41-f9-unit"></span>
+
+<span id="at10ii-p42-body" data-translation-unit="at10ii-p42-body"></span>
+
+#### 3.3.1 Program MIX
+
+<span id="at10ii-p42-f1-unit" data-translation-unit="at10ii-p42-f1-unit"></span>
+
+<span id="at10ii-p42-f2-unit" data-translation-unit="at10ii-p42-f2-unit"></span>
+
+<span id="at10ii-p43-body" data-translation-unit="at10ii-p43-body"></span>
+
+<span id="at10ii-p44-body" data-translation-unit="at10ii-p44-body"></span>
+
+<span id="at10ii-p44-f1-unit" data-translation-unit="at10ii-p44-f1-unit"></span>
+
+<span id="at10ii-p44-f2-unit" data-translation-unit="at10ii-p44-f2-unit"></span>
+
+<span id="at10ii-p44-f3-unit" data-translation-unit="at10ii-p44-f3-unit"></span>
+
+<span id="at10ii-p44-f4-unit" data-translation-unit="at10ii-p44-f4-unit"></span>
+
+<span id="at10ii-p44-f5-unit" data-translation-unit="at10ii-p44-f5-unit"></span>
+
+<span id="at10ii-p44-f6-unit" data-translation-unit="at10ii-p44-f6-unit"></span>
+
+<span id="at10ii-p44-f7-unit" data-translation-unit="at10ii-p44-f7-unit"></span>
+
+<span id="at10ii-p44-f8-unit" data-translation-unit="at10ii-p44-f8-unit"></span>
+
+<span id="at10ii-p44-f9-unit" data-translation-unit="at10ii-p44-f9-unit"></span>
+
+<span id="at10ii-p44-f10-unit" data-translation-unit="at10ii-p44-f10-unit"></span>
+
+<span id="at10ii-p44-f11-unit" data-translation-unit="at10ii-p44-f11-unit"></span>
+
+<span id="at10ii-p44-f12-unit" data-translation-unit="at10ii-p44-f12-unit"></span>
+
+<span id="at10ii-p44-f13-unit" data-translation-unit="at10ii-p44-f13-unit"></span>
+
+<span id="at10ii-p44-f14-unit" data-translation-unit="at10ii-p44-f14-unit"></span>
+
+<span id="at10ii-p44-f15-unit" data-translation-unit="at10ii-p44-f15-unit"></span>
+
+<span id="at10ii-p44-f16-unit" data-translation-unit="at10ii-p44-f16-unit"></span>
+
+<span id="at10ii-p44-f17-unit" data-translation-unit="at10ii-p44-f17-unit"></span>
+
+<span id="at10ii-p44-f18-unit" data-translation-unit="at10ii-p44-f18-unit"></span>
+
+<span id="at10ii-p45-body" data-translation-unit="at10ii-p45-body"></span>
+
+#### 3.3.2 カーブプログラムミキシング（PROG.MIX5〜8、HELI：PROG.MIX5〜6）
+
+<span id="at10ii-p45-f1-unit" data-translation-unit="at10ii-p45-f1-unit"></span>
+
+<span id="at10ii-p45-f2-unit" data-translation-unit="at10ii-p45-f2-unit"></span>
+
+<span id="at10ii-p45-f3-unit" data-translation-unit="at10ii-p45-f3-unit"></span>
+
+<span id="at10ii-p45-f4-unit" data-translation-unit="at10ii-p45-f4-unit"></span>
+
+<span id="at10ii-p45-f5-unit" data-translation-unit="at10ii-p45-f5-unit"></span>
+
+<span id="at10ii-p45-f6-unit" data-translation-unit="at10ii-p45-f6-unit"></span>
+
+<span id="at10ii-p45-f7-unit" data-translation-unit="at10ii-p45-f7-unit"></span>
+
+<span id="at10ii-p45-f8-unit" data-translation-unit="at10ii-p45-f8-unit"></span>
+
+<span id="at10ii-p45-f9-unit" data-translation-unit="at10ii-p45-f9-unit"></span>
+
+<span id="at10ii-p45-f10-unit" data-translation-unit="at10ii-p45-f10-unit"></span>
+
+<span id="at10ii-p45-f11-unit" data-translation-unit="at10ii-p45-f11-unit"></span>
+
+<span id="at10ii-p45-f12-unit" data-translation-unit="at10ii-p45-f12-unit"></span>
+
+<span id="at10ii-p45-f13-unit" data-translation-unit="at10ii-p45-f13-unit"></span>
+
+<span id="at10ii-p46-body" data-translation-unit="at10ii-p46-body"></span>
+
+#### 3.3.3 FLAPERON（ACRO／GLID 1A+1F）
+
+<span id="at10ii-p46-f1-unit" data-translation-unit="at10ii-p46-f1-unit"></span>
+
+<span id="at10ii-p46-f2-unit" data-translation-unit="at10ii-p46-f2-unit"></span>
+
+<span id="at10ii-p46-f3-unit" data-translation-unit="at10ii-p46-f3-unit"></span>
+
+<span id="at10ii-p46-f4-unit" data-translation-unit="at10ii-p46-f4-unit"></span>
+
+<span id="at10ii-p46-f5-unit" data-translation-unit="at10ii-p46-f5-unit"></span>
+
+<span id="at10ii-p46-f6-unit" data-translation-unit="at10ii-p46-f6-unit"></span>
+
+<span id="at10ii-p46-f7-unit" data-translation-unit="at10ii-p46-f7-unit"></span>
+
+<span id="at10ii-p46-f8-unit" data-translation-unit="at10ii-p46-f8-unit"></span>
+
+<span id="at10ii-p46-f9-unit" data-translation-unit="at10ii-p46-f9-unit"></span>
+
+<span id="at10ii-p46-f10-unit" data-translation-unit="at10ii-p46-f10-unit"></span>
+
+<span id="at10ii-p46-f11-unit" data-translation-unit="at10ii-p46-f11-unit"></span>
+
+<span id="at10ii-p46-f12-unit" data-translation-unit="at10ii-p46-f12-unit"></span>
+
+<span id="at10ii-p46-f13-unit" data-translation-unit="at10ii-p46-f13-unit"></span>
+
+<span id="at10ii-p46-f14-unit" data-translation-unit="at10ii-p46-f14-unit"></span>
+
+<span id="at10ii-p46-f15-unit" data-translation-unit="at10ii-p46-f15-unit"></span>
+
+<span id="at10ii-p46-f16-unit" data-translation-unit="at10ii-p46-f16-unit"></span>
+
+<span id="at10ii-p46-f17-unit" data-translation-unit="at10ii-p46-f17-unit"></span>
+
+<span id="at10ii-p46-f18-unit" data-translation-unit="at10ii-p46-f18-unit"></span>
+
+<span id="at10ii-p46-f19-unit" data-translation-unit="at10ii-p46-f19-unit"></span>
+
+<span id="at10ii-p46-f20-unit" data-translation-unit="at10ii-p46-f20-unit"></span>
+
+<span id="at10ii-p46-f21-unit" data-translation-unit="at10ii-p46-f21-unit"></span>
+
+<span id="at10ii-p46-f22-unit" data-translation-unit="at10ii-p46-f22-unit"></span>
+
+<span id="at10ii-p46-f23-unit" data-translation-unit="at10ii-p46-f23-unit"></span>
+
+<span id="at10ii-p46-f24-unit" data-translation-unit="at10ii-p46-f24-unit"></span>
+
+<span id="at10ii-p47-body" data-translation-unit="at10ii-p47-body"></span>
+
+#### 3.3.4 FLAP-TRIM
+
+<span id="at10ii-p47-f1-unit" data-translation-unit="at10ii-p47-f1-unit"></span>
+
+<span id="at10ii-p47-f2-unit" data-translation-unit="at10ii-p47-f2-unit"></span>
+
+<span id="at10ii-p47-f3-unit" data-translation-unit="at10ii-p47-f3-unit"></span>
+
+<span id="at10ii-p47-f4-unit" data-translation-unit="at10ii-p47-f4-unit"></span>
+
+<span id="at10ii-p47-f5-unit" data-translation-unit="at10ii-p47-f5-unit"></span>
+
+<span id="at10ii-p47-f6-unit" data-translation-unit="at10ii-p47-f6-unit"></span>
+
+<span id="at10ii-p47-f7-unit" data-translation-unit="at10ii-p47-f7-unit"></span>
+
+<span id="at10ii-p47-f8-unit" data-translation-unit="at10ii-p47-f8-unit"></span>
+
+<span id="at10ii-p47-f9-unit" data-translation-unit="at10ii-p47-f9-unit"></span>
+
+<span id="at10ii-p47-f10-unit" data-translation-unit="at10ii-p47-f10-unit"></span>
+
+<span id="at10ii-p47-f11-unit" data-translation-unit="at10ii-p47-f11-unit"></span>
+
+<span id="at10ii-p47-f12-unit" data-translation-unit="at10ii-p47-f12-unit"></span>
+
+<span id="at10ii-p47-f13-unit" data-translation-unit="at10ii-p47-f13-unit"></span>
+
+<span id="at10ii-p47-f14-unit" data-translation-unit="at10ii-p47-f14-unit"></span>
+
+<span id="at10ii-p47-f15-unit" data-translation-unit="at10ii-p47-f15-unit"></span>
+
+<span id="at10ii-p47-f16-unit" data-translation-unit="at10ii-p47-f16-unit"></span>
+
+<span id="at10ii-p47-f17-unit" data-translation-unit="at10ii-p47-f17-unit"></span>
+
+<span id="at10ii-p47-f18-unit" data-translation-unit="at10ii-p47-f18-unit"></span>
+
+<span id="at10ii-p47-f19-unit" data-translation-unit="at10ii-p47-f19-unit"></span>
+
+<span id="at10ii-p47-f20-unit" data-translation-unit="at10ii-p47-f20-unit"></span>
+
+<span id="at10ii-p48-body" data-translation-unit="at10ii-p48-body"></span>
+
+#### 3.3.5 AILE-DIFF（ACRO／GLID 2A+1F／GLID 2A+2F）
+
+<span id="at10ii-p48-f1-unit" data-translation-unit="at10ii-p48-f1-unit"></span>
+
+<span id="at10ii-p48-f2-unit" data-translation-unit="at10ii-p48-f2-unit"></span>
+
+<span id="at10ii-p48-f3-unit" data-translation-unit="at10ii-p48-f3-unit"></span>
+
+<span id="at10ii-p48-f4-unit" data-translation-unit="at10ii-p48-f4-unit"></span>
+
+<span id="at10ii-p48-f5-unit" data-translation-unit="at10ii-p48-f5-unit"></span>
+
+<span id="at10ii-p48-f6-unit" data-translation-unit="at10ii-p48-f6-unit"></span>
+
+<span id="at10ii-p48-f7-unit" data-translation-unit="at10ii-p48-f7-unit"></span>
+
+<span id="at10ii-p48-f8-unit" data-translation-unit="at10ii-p48-f8-unit"></span>
+
+<span id="at10ii-p48-f9-unit" data-translation-unit="at10ii-p48-f9-unit"></span>
+
+<span id="at10ii-p48-f10-unit" data-translation-unit="at10ii-p48-f10-unit"></span>
+
+<span id="at10ii-p48-f11-unit" data-translation-unit="at10ii-p48-f11-unit"></span>
+
+<span id="at10ii-p48-f12-unit" data-translation-unit="at10ii-p48-f12-unit"></span>
+
+<span id="at10ii-p48-f13-unit" data-translation-unit="at10ii-p48-f13-unit"></span>
+
+<span id="at10ii-p48-f14-unit" data-translation-unit="at10ii-p48-f14-unit"></span>
+
+<span id="at10ii-p48-f15-unit" data-translation-unit="at10ii-p48-f15-unit"></span>
+
+<span id="at10ii-p48-f16-unit" data-translation-unit="at10ii-p48-f16-unit"></span>
+
+<span id="at10ii-p48-f17-unit" data-translation-unit="at10ii-p48-f17-unit"></span>
+
+<span id="at10ii-p48-f18-unit" data-translation-unit="at10ii-p48-f18-unit"></span>
+
+<span id="at10ii-p48-f19-unit" data-translation-unit="at10ii-p48-f19-unit"></span>
+
+<span id="at10ii-p48-f20-unit" data-translation-unit="at10ii-p48-f20-unit"></span>
+
+<span id="at10ii-p48-f21-unit" data-translation-unit="at10ii-p48-f21-unit"></span>
+
+<span id="at10ii-p49-body" data-translation-unit="at10ii-p49-body"></span>
+
+#### 3.3.6 AIRBRAKE（ACRO／GLID）
+
+<span id="at10ii-p49-f1-unit" data-translation-unit="at10ii-p49-f1-unit"></span>
+
+<span id="at10ii-p49-f2-unit" data-translation-unit="at10ii-p49-f2-unit"></span>
+
+<span id="at10ii-p49-f3-unit" data-translation-unit="at10ii-p49-f3-unit"></span>
+
+<span id="at10ii-p49-f4-unit" data-translation-unit="at10ii-p49-f4-unit"></span>
+
+<span id="at10ii-p49-f5-unit" data-translation-unit="at10ii-p49-f5-unit"></span>
+
+<span id="at10ii-p50-body" data-translation-unit="at10ii-p50-body"></span>
+
+#### 3.3.7 ELEV-FLAPミキシング（ACRO／GLID）
+
+<span id="at10ii-p50-f1-unit" data-translation-unit="at10ii-p50-f1-unit"></span>
+
+<span id="at10ii-p50-f2-unit" data-translation-unit="at10ii-p50-f2-unit"></span>
+
+<span id="at10ii-p50-f3-unit" data-translation-unit="at10ii-p50-f3-unit"></span>
+
+<span id="at10ii-p50-f4-unit" data-translation-unit="at10ii-p50-f4-unit"></span>
+
+<span id="at10ii-p50-f5-unit" data-translation-unit="at10ii-p50-f5-unit"></span>
+
+<span id="at10ii-p50-f6-unit" data-translation-unit="at10ii-p50-f6-unit"></span>
+
+<span id="at10ii-p50-f7-unit" data-translation-unit="at10ii-p50-f7-unit"></span>
+
+<span id="at10ii-p50-f8-unit" data-translation-unit="at10ii-p50-f8-unit"></span>
+
+<span id="at10ii-p50-f9-unit" data-translation-unit="at10ii-p50-f9-unit"></span>
+
+<span id="at10ii-p50-f10-unit" data-translation-unit="at10ii-p50-f10-unit"></span>
+
+<span id="at10ii-p50-f11-unit" data-translation-unit="at10ii-p50-f11-unit"></span>
+
+<span id="at10ii-p50-f12-unit" data-translation-unit="at10ii-p50-f12-unit"></span>
+
+<span id="at10ii-p50-f13-unit" data-translation-unit="at10ii-p50-f13-unit"></span>
+
+<span id="at10ii-p50-f14-unit" data-translation-unit="at10ii-p50-f14-unit"></span>
+
+<span id="at10ii-p50-f15-unit" data-translation-unit="at10ii-p50-f15-unit"></span>
+
+<span id="at10ii-p50-f16-unit" data-translation-unit="at10ii-p50-f16-unit"></span>
+
+<span id="at10ii-p50-f17-unit" data-translation-unit="at10ii-p50-f17-unit"></span>
+
+<span id="at10ii-p50-f18-unit" data-translation-unit="at10ii-p50-f18-unit"></span>
+
+<span id="at10ii-p50-f19-unit" data-translation-unit="at10ii-p50-f19-unit"></span>
+
+<span id="at10ii-p50-f20-unit" data-translation-unit="at10ii-p50-f20-unit"></span>
+
+<span id="at10ii-p50-f21-unit" data-translation-unit="at10ii-p50-f21-unit"></span>
+
+<span id="at10ii-p50-f22-unit" data-translation-unit="at10ii-p50-f22-unit"></span>
+
+<span id="at10ii-p50-f23-unit" data-translation-unit="at10ii-p50-f23-unit"></span>
+
+<span id="at10ii-p51-body" data-translation-unit="at10ii-p51-body"></span>
+
+#### 3.3.8 エレベーターサーボ2個（ラダーあり、AILEVATOR、ACRO）
+
+<span id="at10ii-p51-f1-unit" data-translation-unit="at10ii-p51-f1-unit"></span>
+
+<span id="at10ii-p51-f2-unit" data-translation-unit="at10ii-p51-f2-unit"></span>
+
+<span id="at10ii-p51-f3-unit" data-translation-unit="at10ii-p51-f3-unit"></span>
+
+<span id="at10ii-p51-f4-unit" data-translation-unit="at10ii-p51-f4-unit"></span>
+
+<span id="at10ii-p51-f5-unit" data-translation-unit="at10ii-p51-f5-unit"></span>
+
+<span id="at10ii-p51-f6-unit" data-translation-unit="at10ii-p51-f6-unit"></span>
+
+<span id="at10ii-p51-f7-unit" data-translation-unit="at10ii-p51-f7-unit"></span>
+
+<span id="at10ii-p51-f8-unit" data-translation-unit="at10ii-p51-f8-unit"></span>
+
+<span id="at10ii-p51-f9-unit" data-translation-unit="at10ii-p51-f9-unit"></span>
+
+<span id="at10ii-p51-f10-unit" data-translation-unit="at10ii-p51-f10-unit"></span>
+
+<span id="at10ii-p51-f11-unit" data-translation-unit="at10ii-p51-f11-unit"></span>
+
+<span id="at10ii-p51-f12-unit" data-translation-unit="at10ii-p51-f12-unit"></span>
+
+<span id="at10ii-p51-f13-unit" data-translation-unit="at10ii-p51-f13-unit"></span>
+
+<span id="at10ii-p51-f14-unit" data-translation-unit="at10ii-p51-f14-unit"></span>
+
+<span id="at10ii-p51-f15-unit" data-translation-unit="at10ii-p51-f15-unit"></span>
+
+<span id="at10ii-p52-body" data-translation-unit="at10ii-p52-body"></span>
+
+#### 3.3.9 SNAP-ROLL（ACRO）
+
+<span id="at10ii-p52-f1-unit" data-translation-unit="at10ii-p52-f1-unit"></span>
+
+<span id="at10ii-p52-f2-unit" data-translation-unit="at10ii-p52-f2-unit"></span>
+
+<span id="at10ii-p52-f3-unit" data-translation-unit="at10ii-p52-f3-unit"></span>
+
+<span id="at10ii-p52-f4-unit" data-translation-unit="at10ii-p52-f4-unit"></span>
+
+<span id="at10ii-p52-f5-unit" data-translation-unit="at10ii-p52-f5-unit"></span>
+
+<span id="at10ii-p52-f6-unit" data-translation-unit="at10ii-p52-f6-unit"></span>
+
+<span id="at10ii-p52-f7-unit" data-translation-unit="at10ii-p52-f7-unit"></span>
+
+<span id="at10ii-p52-f8-unit" data-translation-unit="at10ii-p52-f8-unit"></span>
+
+<span id="at10ii-p52-f9-unit" data-translation-unit="at10ii-p52-f9-unit"></span>
+
+<span id="at10ii-p52-f10-unit" data-translation-unit="at10ii-p52-f10-unit"></span>
+
+<span id="at10ii-p52-f11-unit" data-translation-unit="at10ii-p52-f11-unit"></span>
+
+<span id="at10ii-p52-f12-unit" data-translation-unit="at10ii-p52-f12-unit"></span>
+
+<span id="at10ii-p52-f13-unit" data-translation-unit="at10ii-p52-f13-unit"></span>
+
+<span id="at10ii-p52-f14-unit" data-translation-unit="at10ii-p52-f14-unit"></span>
+
+<span id="at10ii-p52-f15-unit" data-translation-unit="at10ii-p52-f15-unit"></span>
+
+<span id="at10ii-p52-f16-unit" data-translation-unit="at10ii-p52-f16-unit"></span>
+
+<span id="at10ii-p52-f17-unit" data-translation-unit="at10ii-p52-f17-unit"></span>
+
+<span id="at10ii-p52-f18-unit" data-translation-unit="at10ii-p52-f18-unit"></span>
+
+<span id="at10ii-p52-f19-unit" data-translation-unit="at10ii-p52-f19-unit"></span>
+
+<span id="at10ii-p52-f20-unit" data-translation-unit="at10ii-p52-f20-unit"></span>
+
+<span id="at10ii-p52-f21-unit" data-translation-unit="at10ii-p52-f21-unit"></span>
+
+<span id="at10ii-p52-f22-unit" data-translation-unit="at10ii-p52-f22-unit"></span>
+
+<span id="at10ii-p52-f23-unit" data-translation-unit="at10ii-p52-f23-unit"></span>
+
+<span id="at10ii-p52-f24-unit" data-translation-unit="at10ii-p52-f24-unit"></span>
+
+<span id="at10ii-p53-body" data-translation-unit="at10ii-p53-body"></span>
+
+#### 3.3.10 V-TAIL（ACRO／GLID）
+
+<span id="at10ii-p53-f1-unit" data-translation-unit="at10ii-p53-f1-unit"></span>
+
+<span id="at10ii-p53-f2-unit" data-translation-unit="at10ii-p53-f2-unit"></span>
+
+<span id="at10ii-p53-f3-unit" data-translation-unit="at10ii-p53-f3-unit"></span>
+
+<span id="at10ii-p53-f4-unit" data-translation-unit="at10ii-p53-f4-unit"></span>
+
+<span id="at10ii-p53-f5-unit" data-translation-unit="at10ii-p53-f5-unit"></span>
+
+<span id="at10ii-p53-f6-unit" data-translation-unit="at10ii-p53-f6-unit"></span>
+
+<span id="at10ii-p53-f7-unit" data-translation-unit="at10ii-p53-f7-unit"></span>
+
+<span id="at10ii-p53-f8-unit" data-translation-unit="at10ii-p53-f8-unit"></span>
+
+<span id="at10ii-p53-f9-unit" data-translation-unit="at10ii-p53-f9-unit"></span>
+
+<span id="at10ii-p53-f10-unit" data-translation-unit="at10ii-p53-f10-unit"></span>
+
+<span id="at10ii-p53-f11-unit" data-translation-unit="at10ii-p53-f11-unit"></span>
+
+<span id="at10ii-p53-f12-unit" data-translation-unit="at10ii-p53-f12-unit"></span>
+
+<span id="at10ii-p53-f13-unit" data-translation-unit="at10ii-p53-f13-unit"></span>
+
+<span id="at10ii-p53-f14-unit" data-translation-unit="at10ii-p53-f14-unit"></span>
+
+<span id="at10ii-p53-f15-unit" data-translation-unit="at10ii-p53-f15-unit"></span>
+
+<span id="at10ii-p53-f16-unit" data-translation-unit="at10ii-p53-f16-unit"></span>
+
+<span id="at10ii-p53-f17-unit" data-translation-unit="at10ii-p53-f17-unit"></span>
+
+<span id="at10ii-p53-f18-unit" data-translation-unit="at10ii-p53-f18-unit"></span>
+
+<span id="at10ii-p53-f19-unit" data-translation-unit="at10ii-p53-f19-unit"></span>
+
+<span id="at10ii-p53-f20-unit" data-translation-unit="at10ii-p53-f20-unit"></span>
+
+<span id="at10ii-p53-f21-unit" data-translation-unit="at10ii-p53-f21-unit"></span>
+
+<span id="at10ii-p53-f22-unit" data-translation-unit="at10ii-p53-f22-unit"></span>
+
+<span id="at10ii-p53-f23-unit" data-translation-unit="at10ii-p53-f23-unit"></span>
+
+<span id="at10ii-p53-f24-unit" data-translation-unit="at10ii-p53-f24-unit"></span>
+
+<span id="at10ii-p53-f25-unit" data-translation-unit="at10ii-p53-f25-unit"></span>
+
+<span id="at10ii-p53-f26-unit" data-translation-unit="at10ii-p53-f26-unit"></span>
+
+<span id="at10ii-p53-f27-unit" data-translation-unit="at10ii-p53-f27-unit"></span>
+
+<span id="at10ii-p53-f28-unit" data-translation-unit="at10ii-p53-f28-unit"></span>
+
+<span id="at10ii-p53-f29-unit" data-translation-unit="at10ii-p53-f29-unit"></span>
+
+<span id="at10ii-p54-body" data-translation-unit="at10ii-p54-body"></span>
+
+#### 3.3.11 ELEVON
+
+<span id="at10ii-p54-f1-unit" data-translation-unit="at10ii-p54-f1-unit"></span>
+
+<span id="at10ii-p54-f2-unit" data-translation-unit="at10ii-p54-f2-unit"></span>
+
+<span id="at10ii-p54-f3-unit" data-translation-unit="at10ii-p54-f3-unit"></span>
+
+<span id="at10ii-p54-f4-unit" data-translation-unit="at10ii-p54-f4-unit"></span>
+
+<span id="at10ii-p54-f5-unit" data-translation-unit="at10ii-p54-f5-unit"></span>
+
+<span id="at10ii-p54-f6-unit" data-translation-unit="at10ii-p54-f6-unit"></span>
+
+<span id="at10ii-p54-f7-unit" data-translation-unit="at10ii-p54-f7-unit"></span>
+
+<span id="at10ii-p54-f8-unit" data-translation-unit="at10ii-p54-f8-unit"></span>
+
+<span id="at10ii-p54-f9-unit" data-translation-unit="at10ii-p54-f9-unit"></span>
+
+<span id="at10ii-p54-f10-unit" data-translation-unit="at10ii-p54-f10-unit"></span>
+
+<span id="at10ii-p54-f11-unit" data-translation-unit="at10ii-p54-f11-unit"></span>
+
+<span id="at10ii-p54-f12-unit" data-translation-unit="at10ii-p54-f12-unit"></span>
+
+<span id="at10ii-p54-f13-unit" data-translation-unit="at10ii-p54-f13-unit"></span>
+
+<span id="at10ii-p55-body" data-translation-unit="at10ii-p55-body"></span>
+
+#### 3.3.12 GYRO SENSE
+
+<span id="at10ii-p55-f1-unit" data-translation-unit="at10ii-p55-f1-unit"></span>
+
+<span id="at10ii-p55-f2-unit" data-translation-unit="at10ii-p55-f2-unit"></span>
+
+<span id="at10ii-p55-f3-unit" data-translation-unit="at10ii-p55-f3-unit"></span>
+
+<span id="at10ii-p55-f4-unit" data-translation-unit="at10ii-p55-f4-unit"></span>
+
+<span id="at10ii-p55-f5-unit" data-translation-unit="at10ii-p55-f5-unit"></span>
+
+<span id="at10ii-p55-f6-unit" data-translation-unit="at10ii-p55-f6-unit"></span>
+
+<span id="at10ii-p55-f7-unit" data-translation-unit="at10ii-p55-f7-unit"></span>
+
+<span id="at10ii-p55-f8-unit" data-translation-unit="at10ii-p55-f8-unit"></span>
+
+<span id="at10ii-p55-f9-unit" data-translation-unit="at10ii-p55-f9-unit"></span>
+
+<span id="at10ii-p55-f10-unit" data-translation-unit="at10ii-p55-f10-unit"></span>
+
+<span id="at10ii-p55-f11-unit" data-translation-unit="at10ii-p55-f11-unit"></span>
+
+<span id="at10ii-p55-f12-unit" data-translation-unit="at10ii-p55-f12-unit"></span>
+
+<span id="at10ii-p55-f13-unit" data-translation-unit="at10ii-p55-f13-unit"></span>
+
+<span id="at10ii-p55-f14-unit" data-translation-unit="at10ii-p55-f14-unit"></span>
+
+<span id="at10ii-p55-f15-unit" data-translation-unit="at10ii-p55-f15-unit"></span>
+
+<span id="at10ii-p55-f16-unit" data-translation-unit="at10ii-p55-f16-unit"></span>
+
+<span id="at10ii-p55-f17-unit" data-translation-unit="at10ii-p55-f17-unit"></span>
+
+<span id="at10ii-p55-f18-unit" data-translation-unit="at10ii-p55-f18-unit"></span>
+
+<span id="at10ii-p56-body" data-translation-unit="at10ii-p56-body"></span>
+
+#### 3.3.13 THR-DELAY（ACRO）
+
+#### 3.3.14 THR CURVE（ACRO）
+
+<span id="at10ii-p56-f1-unit" data-translation-unit="at10ii-p56-f1-unit"></span>
+
+<span id="at10ii-p56-f2-unit" data-translation-unit="at10ii-p56-f2-unit"></span>
+
+<span id="at10ii-p56-f3-unit" data-translation-unit="at10ii-p56-f3-unit"></span>
+
+<span id="at10ii-p56-f4-unit" data-translation-unit="at10ii-p56-f4-unit"></span>
+
+<span id="at10ii-p56-f5-unit" data-translation-unit="at10ii-p56-f5-unit"></span>
+
+<span id="at10ii-p56-f6-unit" data-translation-unit="at10ii-p56-f6-unit"></span>
+
+<span id="at10ii-p56-f7-unit" data-translation-unit="at10ii-p56-f7-unit"></span>
+
+<span id="at10ii-p56-f8-unit" data-translation-unit="at10ii-p56-f8-unit"></span>
+
+<span id="at10ii-p56-f9-unit" data-translation-unit="at10ii-p56-f9-unit"></span>
+
+<span id="at10ii-p56-f10-unit" data-translation-unit="at10ii-p56-f10-unit"></span>
+
+<span id="at10ii-p56-f11-unit" data-translation-unit="at10ii-p56-f11-unit"></span>
+
+<span id="at10ii-p56-f12-unit" data-translation-unit="at10ii-p56-f12-unit"></span>
+
+<span id="at10ii-p56-f13-unit" data-translation-unit="at10ii-p56-f13-unit"></span>
+
+<span id="at10ii-p56-f14-unit" data-translation-unit="at10ii-p56-f14-unit"></span>
+
+<span id="at10ii-p56-f15-unit" data-translation-unit="at10ii-p56-f15-unit"></span>
+
+<span id="at10ii-p56-f16-unit" data-translation-unit="at10ii-p56-f16-unit"></span>
+
+<span id="at10ii-p56-f17-unit" data-translation-unit="at10ii-p56-f17-unit"></span>
+
+<span id="at10ii-p56-f18-unit" data-translation-unit="at10ii-p56-f18-unit"></span>
+
+<span id="at10ii-p56-f19-unit" data-translation-unit="at10ii-p56-f19-unit"></span>
+
+<span id="at10ii-p56-f20-unit" data-translation-unit="at10ii-p56-f20-unit"></span>
+
+<span id="at10ii-p56-f21-unit" data-translation-unit="at10ii-p56-f21-unit"></span>
+
+<span id="at10ii-p56-f22-unit" data-translation-unit="at10ii-p56-f22-unit"></span>
+
+<span id="at10ii-p56-f23-unit" data-translation-unit="at10ii-p56-f23-unit"></span>
+
+<span id="at10ii-p56-f24-unit" data-translation-unit="at10ii-p56-f24-unit"></span>
+
+<span id="at10ii-p56-f25-unit" data-translation-unit="at10ii-p56-f25-unit"></span>
+
+<span id="at10ii-p56-f26-unit" data-translation-unit="at10ii-p56-f26-unit"></span>
+
+<span id="at10ii-p56-f27-unit" data-translation-unit="at10ii-p56-f27-unit"></span>
+
+<span id="at10ii-p56-f28-unit" data-translation-unit="at10ii-p56-f28-unit"></span>
+
+<span id="at10ii-p56-f29-unit" data-translation-unit="at10ii-p56-f29-unit"></span>
+
+<span id="at10ii-p56-f30-unit" data-translation-unit="at10ii-p56-f30-unit"></span>
+
+<span id="at10ii-p56-f31-unit" data-translation-unit="at10ii-p56-f31-unit"></span>
+
+<span id="at10ii-p56-f32-unit" data-translation-unit="at10ii-p56-f32-unit"></span>
+
+<span id="at10ii-p56-f33-unit" data-translation-unit="at10ii-p56-f33-unit"></span>
+
+<span id="at10ii-p57-body" data-translation-unit="at10ii-p57-body"></span>
+
+#### 3.3.15 THROTTLE-NEEDLEミキシング（ACRO／HELI）
+
+<span id="at10ii-p57-f1-unit" data-translation-unit="at10ii-p57-f1-unit"></span>
+
+<span id="at10ii-p57-f2-unit" data-translation-unit="at10ii-p57-f2-unit"></span>
+
+<span id="at10ii-p57-f3-unit" data-translation-unit="at10ii-p57-f3-unit"></span>
+
+<span id="at10ii-p57-f4-unit" data-translation-unit="at10ii-p57-f4-unit"></span>
+
+<span id="at10ii-p57-f5-unit" data-translation-unit="at10ii-p57-f5-unit"></span>
+
+<span id="at10ii-p57-f6-unit" data-translation-unit="at10ii-p57-f6-unit"></span>
+
+<span id="at10ii-p57-f7-unit" data-translation-unit="at10ii-p57-f7-unit"></span>
+
+<span id="at10ii-p57-f8-unit" data-translation-unit="at10ii-p57-f8-unit"></span>
+
+<span id="at10ii-p57-f9-unit" data-translation-unit="at10ii-p57-f9-unit"></span>
+
+<span id="at10ii-p57-f10-unit" data-translation-unit="at10ii-p57-f10-unit"></span>
+
+<span id="at10ii-p57-f11-unit" data-translation-unit="at10ii-p57-f11-unit"></span>
+
+<span id="at10ii-p57-f12-unit" data-translation-unit="at10ii-p57-f12-unit"></span>
+
+<span id="at10ii-p57-f13-unit" data-translation-unit="at10ii-p57-f13-unit"></span>
+
+<span id="at10ii-p57-f14-unit" data-translation-unit="at10ii-p57-f14-unit"></span>
+
+<span id="at10ii-p57-f15-unit" data-translation-unit="at10ii-p57-f15-unit"></span>
+
+<span id="at10ii-p57-f16-unit" data-translation-unit="at10ii-p57-f16-unit"></span>
+
+<span id="at10ii-p57-f17-unit" data-translation-unit="at10ii-p57-f17-unit"></span>
+
+<span id="at10ii-p57-f18-unit" data-translation-unit="at10ii-p57-f18-unit"></span>
+
+<span id="at10ii-p57-f19-unit" data-translation-unit="at10ii-p57-f19-unit"></span>
+
+<span id="at10ii-p57-f20-unit" data-translation-unit="at10ii-p57-f20-unit"></span>
+
+<span id="at10ii-p57-f21-unit" data-translation-unit="at10ii-p57-f21-unit"></span>
+
+<span id="at10ii-p57-f22-unit" data-translation-unit="at10ii-p57-f22-unit"></span>
+
+<span id="at10ii-p58-body" data-translation-unit="at10ii-p58-body"></span>
+
+<span id="at10ii-p58-f1-unit" data-translation-unit="at10ii-p58-f1-unit"></span>
+
+<span id="at10ii-p58-f2-unit" data-translation-unit="at10ii-p58-f2-unit"></span>
+
+<span id="at10ii-p58-f3-unit" data-translation-unit="at10ii-p58-f3-unit"></span>
+
+<span id="at10ii-p58-f4-unit" data-translation-unit="at10ii-p58-f4-unit"></span>
+
+<span id="at10ii-p58-f5-unit" data-translation-unit="at10ii-p58-f5-unit"></span>
+
+<span id="at10ii-p58-f6-unit" data-translation-unit="at10ii-p58-f6-unit"></span>
+
+<span id="at10ii-p58-f7-unit" data-translation-unit="at10ii-p58-f7-unit"></span>
+
+<span id="at10ii-p58-f8-unit" data-translation-unit="at10ii-p58-f8-unit"></span>
+
+<span id="at10ii-p58-f9-unit" data-translation-unit="at10ii-p58-f9-unit"></span>
+
+<span id="at10ii-p58-f10-unit" data-translation-unit="at10ii-p58-f10-unit"></span>
+
+<span id="at10ii-p58-f11-unit" data-translation-unit="at10ii-p58-f11-unit"></span>
+
+<span id="at10ii-p58-f12-unit" data-translation-unit="at10ii-p58-f12-unit"></span>
+
+<span id="at10ii-p58-f13-unit" data-translation-unit="at10ii-p58-f13-unit"></span>
+
+<span id="at10ii-p58-f14-unit" data-translation-unit="at10ii-p58-f14-unit"></span>
+
+<span id="at10ii-p58-f15-unit" data-translation-unit="at10ii-p58-f15-unit"></span>
+
+<span id="at10ii-p58-f16-unit" data-translation-unit="at10ii-p58-f16-unit"></span>
+
+<span id="at10ii-p58-f17-unit" data-translation-unit="at10ii-p58-f17-unit"></span>
+
+<span id="at10ii-p58-f18-unit" data-translation-unit="at10ii-p58-f18-unit"></span>
+
+<span id="at10ii-p58-f19-unit" data-translation-unit="at10ii-p58-f19-unit"></span>
+
+<span id="at10ii-p58-f20-unit" data-translation-unit="at10ii-p58-f20-unit"></span>
+
+<span id="at10ii-p58-f21-unit" data-translation-unit="at10ii-p58-f21-unit"></span>
+
+<span id="at10ii-p58-f22-unit" data-translation-unit="at10ii-p58-f22-unit"></span>
+
+<span id="at10ii-p58-f23-unit" data-translation-unit="at10ii-p58-f23-unit"></span>
+
+<span id="at10ii-p58-f24-unit" data-translation-unit="at10ii-p58-f24-unit"></span>
+
+<span id="at10ii-p58-f25-unit" data-translation-unit="at10ii-p58-f25-unit"></span>
+
+<span id="at10ii-p58-f26-unit" data-translation-unit="at10ii-p58-f26-unit"></span>
+
+<span id="at10ii-p58-f27-unit" data-translation-unit="at10ii-p58-f27-unit"></span>
+
+<span id="at10ii-p58-f28-unit" data-translation-unit="at10ii-p58-f28-unit"></span>
+
+<span id="at10ii-p58-f29-unit" data-translation-unit="at10ii-p58-f29-unit"></span>
+
+<span id="at10ii-p58-f30-unit" data-translation-unit="at10ii-p58-f30-unit"></span>
+
+<span id="at10ii-p58-f31-unit" data-translation-unit="at10ii-p58-f31-unit"></span>
+
+<span id="at10ii-p58-f32-unit" data-translation-unit="at10ii-p58-f32-unit"></span>
+
+<span id="at10ii-p59-body" data-translation-unit="at10ii-p59-body"></span>
+
+## 第4部 グライダーの機能
+
+### 4.1 GLIDのBASICメニュー設定
+
+<span id="at10ii-p59-f1-unit" data-translation-unit="at10ii-p59-f1-unit"></span>
+
+<span id="at10ii-p59-f2-unit" data-translation-unit="at10ii-p59-f2-unit"></span>
+
+<span id="at10ii-p59-f3-unit" data-translation-unit="at10ii-p59-f3-unit"></span>
+
+<span id="at10ii-p59-f4-unit" data-translation-unit="at10ii-p59-f4-unit"></span>
+
+<span id="at10ii-p59-f5-unit" data-translation-unit="at10ii-p59-f5-unit"></span>
+
+<span id="at10ii-p59-f6-unit" data-translation-unit="at10ii-p59-f6-unit"></span>
+
+<span id="at10ii-p59-f7-unit" data-translation-unit="at10ii-p59-f7-unit"></span>
+
+<span id="at10ii-p59-f8-unit" data-translation-unit="at10ii-p59-f8-unit"></span>
+
+<span id="at10ii-p59-f9-unit" data-translation-unit="at10ii-p59-f9-unit"></span>
+
+<span id="at10ii-p59-f10-unit" data-translation-unit="at10ii-p59-f10-unit"></span>
+
+<span id="at10ii-p59-f11-unit" data-translation-unit="at10ii-p59-f11-unit"></span>
+
+<span id="at10ii-p59-f12-unit" data-translation-unit="at10ii-p59-f12-unit"></span>
+
+<span id="at10ii-p59-f13-unit" data-translation-unit="at10ii-p59-f13-unit"></span>
+
+<span id="at10ii-p59-f14-unit" data-translation-unit="at10ii-p59-f14-unit"></span>
+
+<span id="at10ii-p59-f15-unit" data-translation-unit="at10ii-p59-f15-unit"></span>
+
+<span id="at10ii-p59-f16-unit" data-translation-unit="at10ii-p59-f16-unit"></span>
+
+<span id="at10ii-p59-f17-unit" data-translation-unit="at10ii-p59-f17-unit"></span>
+
+<span id="at10ii-p59-f18-unit" data-translation-unit="at10ii-p59-f18-unit"></span>
+
+<span id="at10ii-p59-f19-unit" data-translation-unit="at10ii-p59-f19-unit"></span>
+
+<span id="at10ii-p59-f20-unit" data-translation-unit="at10ii-p59-f20-unit"></span>
+
+<span id="at10ii-p59-f21-unit" data-translation-unit="at10ii-p59-f21-unit"></span>
+
+<span id="at10ii-p59-f22-unit" data-translation-unit="at10ii-p59-f22-unit"></span>
+
+<span id="at10ii-p59-f23-unit" data-translation-unit="at10ii-p59-f23-unit"></span>
+
+<span id="at10ii-p59-f24-unit" data-translation-unit="at10ii-p59-f24-unit"></span>
+
+<span id="at10ii-p60-body" data-translation-unit="at10ii-p60-body"></span>
+
+### 4.2 GLIDタイプの設定
+
+<span id="at10ii-p60-f1-unit" data-translation-unit="at10ii-p60-f1-unit"></span>
+
+<span id="at10ii-p60-f2-unit" data-translation-unit="at10ii-p60-f2-unit"></span>
+
+<span id="at10ii-p60-f3-unit" data-translation-unit="at10ii-p60-f3-unit"></span>
+
+<span id="at10ii-p60-f4-unit" data-translation-unit="at10ii-p60-f4-unit"></span>
+
+<span id="at10ii-p60-f5-unit" data-translation-unit="at10ii-p60-f5-unit"></span>
+
+<span id="at10ii-p60-f6-unit" data-translation-unit="at10ii-p60-f6-unit"></span>
+
+<span id="at10ii-p60-f7-unit" data-translation-unit="at10ii-p60-f7-unit"></span>
+
+<span id="at10ii-p60-f8-unit" data-translation-unit="at10ii-p60-f8-unit"></span>
+
+<span id="at10ii-p60-f9-unit" data-translation-unit="at10ii-p60-f9-unit"></span>
+
+<span id="at10ii-p60-f10-unit" data-translation-unit="at10ii-p60-f10-unit"></span>
+
+<span id="at10ii-p60-f11-unit" data-translation-unit="at10ii-p60-f11-unit"></span>
+
+<span id="at10ii-p60-f12-unit" data-translation-unit="at10ii-p60-f12-unit"></span>
+
+<span id="at10ii-p60-f13-unit" data-translation-unit="at10ii-p60-f13-unit"></span>
+
+<span id="at10ii-p60-f14-unit" data-translation-unit="at10ii-p60-f14-unit"></span>
+
+<span id="at10ii-p60-f15-unit" data-translation-unit="at10ii-p60-f15-unit"></span>
+
+<span id="at10ii-p60-f16-unit" data-translation-unit="at10ii-p60-f16-unit"></span>
+
+<span id="at10ii-p60-f17-unit" data-translation-unit="at10ii-p60-f17-unit"></span>
+
+<span id="at10ii-p60-f18-unit" data-translation-unit="at10ii-p60-f18-unit"></span>
+
+<span id="at10ii-p60-f19-unit" data-translation-unit="at10ii-p60-f19-unit"></span>
+
+<span id="at10ii-p60-f20-unit" data-translation-unit="at10ii-p60-f20-unit"></span>
+
+<span id="at10ii-p60-f21-unit" data-translation-unit="at10ii-p60-f21-unit"></span>
+
+<span id="at10ii-p60-f22-unit" data-translation-unit="at10ii-p60-f22-unit"></span>
+
+<span id="at10ii-p60-f23-unit" data-translation-unit="at10ii-p60-f23-unit"></span>
+
+<span id="at10ii-p60-f24-unit" data-translation-unit="at10ii-p60-f24-unit"></span>
+
+<span id="at10ii-p60-f25-unit" data-translation-unit="at10ii-p60-f25-unit"></span>
+
+<span id="at10ii-p60-f26-unit" data-translation-unit="at10ii-p60-f26-unit"></span>
+
+<span id="at10ii-p60-f27-unit" data-translation-unit="at10ii-p60-f27-unit"></span>
+
+<span id="at10ii-p60-f28-unit" data-translation-unit="at10ii-p60-f28-unit"></span>
+
+<span id="at10ii-p60-f29-unit" data-translation-unit="at10ii-p60-f29-unit"></span>
+
+<span id="at10ii-p60-f30-unit" data-translation-unit="at10ii-p60-f30-unit"></span>
+
+<span id="at10ii-p60-f31-unit" data-translation-unit="at10ii-p60-f31-unit"></span>
+
+<span id="at10ii-p60-f32-unit" data-translation-unit="at10ii-p60-f32-unit"></span>
+
+<span id="at10ii-p60-f33-unit" data-translation-unit="at10ii-p60-f33-unit"></span>
+
+<span id="at10ii-p60-f34-unit" data-translation-unit="at10ii-p60-f34-unit"></span>
+
+<span id="at10ii-p60-f35-unit" data-translation-unit="at10ii-p60-f35-unit"></span>
+
+<span id="at10ii-p60-f36-unit" data-translation-unit="at10ii-p60-f36-unit"></span>
+
+<span id="at10ii-p60-f37-unit" data-translation-unit="at10ii-p60-f37-unit"></span>
+
+<span id="at10ii-p60-f38-unit" data-translation-unit="at10ii-p60-f38-unit"></span>
+
+<span id="at10ii-p60-f39-unit" data-translation-unit="at10ii-p60-f39-unit"></span>
+
+<span id="at10ii-p60-f40-unit" data-translation-unit="at10ii-p60-f40-unit"></span>
+
+<span id="at10ii-p60-f41-unit" data-translation-unit="at10ii-p60-f41-unit"></span>
+
+<span id="at10ii-p60-f42-unit" data-translation-unit="at10ii-p60-f42-unit"></span>
+
+<span id="at10ii-p60-f43-unit" data-translation-unit="at10ii-p60-f43-unit"></span>
+
+<span id="at10ii-p60-f44-unit" data-translation-unit="at10ii-p60-f44-unit"></span>
+
+<span id="at10ii-p60-f45-unit" data-translation-unit="at10ii-p60-f45-unit"></span>
+
+<span id="at10ii-p60-f46-unit" data-translation-unit="at10ii-p60-f46-unit"></span>
+
+<span id="at10ii-p61-body" data-translation-unit="at10ii-p61-body"></span>
+
+### 4.3 GLIDの詳細メニュー
+
+<span id="at10ii-p61-f1-unit" data-translation-unit="at10ii-p61-f1-unit"></span>
+
+<span id="at10ii-p61-f2-unit" data-translation-unit="at10ii-p61-f2-unit"></span>
+
+<span id="at10ii-p61-f3-unit" data-translation-unit="at10ii-p61-f3-unit"></span>
+
+<span id="at10ii-p62-body" data-translation-unit="at10ii-p62-body"></span>
+
+#### 4.3.1 AILE DIFF
+
+#### 4.3.2 FLAPERON（GLID 1A+1F）
+
+#### 4.3.3 V-TAIL
+
+#### 4.3.4 OFFSET（GLID 2A+2F）
+
+<span id="at10ii-p62-f1-unit" data-translation-unit="at10ii-p62-f1-unit"></span>
+
+<span id="at10ii-p62-f2-unit" data-translation-unit="at10ii-p62-f2-unit"></span>
+
+<span id="at10ii-p62-f3-unit" data-translation-unit="at10ii-p62-f3-unit"></span>
+
+<span id="at10ii-p62-f4-unit" data-translation-unit="at10ii-p62-f4-unit"></span>
+
+<span id="at10ii-p62-f5-unit" data-translation-unit="at10ii-p62-f5-unit"></span>
+
+<span id="at10ii-p62-f6-unit" data-translation-unit="at10ii-p62-f6-unit"></span>
+
+<span id="at10ii-p62-f7-unit" data-translation-unit="at10ii-p62-f7-unit"></span>
+
+<span id="at10ii-p63-body" data-translation-unit="at10ii-p63-body"></span>
+
+#### 4.3.5 START DELAY（GLID 1A+1Fのみ）
+
+#### 4.3.6 CHAMBER-FLP（原典見出し）
+
+<span id="at10ii-p63-f1-unit" data-translation-unit="at10ii-p63-f1-unit"></span>
+
+<span id="at10ii-p63-f2-unit" data-translation-unit="at10ii-p63-f2-unit"></span>
+
+<span id="at10ii-p63-f3-unit" data-translation-unit="at10ii-p63-f3-unit"></span>
+
+<span id="at10ii-p63-f4-unit" data-translation-unit="at10ii-p63-f4-unit"></span>
+
+<span id="at10ii-p63-f5-unit" data-translation-unit="at10ii-p63-f5-unit"></span>
+
+<span id="at10ii-p63-f6-unit" data-translation-unit="at10ii-p63-f6-unit"></span>
+
+<span id="at10ii-p63-f7-unit" data-translation-unit="at10ii-p63-f7-unit"></span>
+
+<span id="at10ii-p63-f8-unit" data-translation-unit="at10ii-p63-f8-unit"></span>
+
+<span id="at10ii-p63-f9-unit" data-translation-unit="at10ii-p63-f9-unit"></span>
+
+<span id="at10ii-p63-f10-unit" data-translation-unit="at10ii-p63-f10-unit"></span>
+
+<span id="at10ii-p63-f11-unit" data-translation-unit="at10ii-p63-f11-unit"></span>
+
+<span id="at10ii-p63-f12-unit" data-translation-unit="at10ii-p63-f12-unit"></span>
+
+<span id="at10ii-p63-f13-unit" data-translation-unit="at10ii-p63-f13-unit"></span>
+
+<span id="at10ii-p63-f14-unit" data-translation-unit="at10ii-p63-f14-unit"></span>
+
+<span id="at10ii-p63-f15-unit" data-translation-unit="at10ii-p63-f15-unit"></span>
+
+<span id="at10ii-p63-f16-unit" data-translation-unit="at10ii-p63-f16-unit"></span>
+
+<span id="at10ii-p63-f17-unit" data-translation-unit="at10ii-p63-f17-unit"></span>
+
+<span id="at10ii-p63-f18-unit" data-translation-unit="at10ii-p63-f18-unit"></span>
+
+<span id="at10ii-p63-f19-unit" data-translation-unit="at10ii-p63-f19-unit"></span>
+
+<span id="at10ii-p63-f20-unit" data-translation-unit="at10ii-p63-f20-unit"></span>
+
+<span id="at10ii-p63-f21-unit" data-translation-unit="at10ii-p63-f21-unit"></span>
+
+<span id="at10ii-p63-f22-unit" data-translation-unit="at10ii-p63-f22-unit"></span>
+
+<span id="at10ii-p63-f23-unit" data-translation-unit="at10ii-p63-f23-unit"></span>
+
+<span id="at10ii-p63-f24-unit" data-translation-unit="at10ii-p63-f24-unit"></span>
+
+<span id="at10ii-p64-body" data-translation-unit="at10ii-p64-body"></span>
+
+#### 4.3.7 Camber Mixing
+
+<span id="at10ii-p64-f1-unit" data-translation-unit="at10ii-p64-f1-unit"></span>
+
+<span id="at10ii-p64-f2-unit" data-translation-unit="at10ii-p64-f2-unit"></span>
+
+<span id="at10ii-p64-f3-unit" data-translation-unit="at10ii-p64-f3-unit"></span>
+
+<span id="at10ii-p64-f4-unit" data-translation-unit="at10ii-p64-f4-unit"></span>
+
+<span id="at10ii-p64-f5-unit" data-translation-unit="at10ii-p64-f5-unit"></span>
+
+<span id="at10ii-p64-f6-unit" data-translation-unit="at10ii-p64-f6-unit"></span>
+
+<span id="at10ii-p64-f7-unit" data-translation-unit="at10ii-p64-f7-unit"></span>
+
+<span id="at10ii-p64-f8-unit" data-translation-unit="at10ii-p64-f8-unit"></span>
+
+<span id="at10ii-p64-f9-unit" data-translation-unit="at10ii-p64-f9-unit"></span>
+
+<span id="at10ii-p64-f10-unit" data-translation-unit="at10ii-p64-f10-unit"></span>
+
+<span id="at10ii-p64-f11-unit" data-translation-unit="at10ii-p64-f11-unit"></span>
+
+<span id="at10ii-p64-f12-unit" data-translation-unit="at10ii-p64-f12-unit"></span>
+
+<span id="at10ii-p64-f13-unit" data-translation-unit="at10ii-p64-f13-unit"></span>
+
+<span id="at10ii-p64-f14-unit" data-translation-unit="at10ii-p64-f14-unit"></span>
+
+<span id="at10ii-p64-f15-unit" data-translation-unit="at10ii-p64-f15-unit"></span>
+
+<span id="at10ii-p64-f16-unit" data-translation-unit="at10ii-p64-f16-unit"></span>
+
+<span id="at10ii-p64-f17-unit" data-translation-unit="at10ii-p64-f17-unit"></span>
+
+<span id="at10ii-p64-f18-unit" data-translation-unit="at10ii-p64-f18-unit"></span>
+
+<span id="at10ii-p64-f19-unit" data-translation-unit="at10ii-p64-f19-unit"></span>
+
+<span id="at10ii-p64-f20-unit" data-translation-unit="at10ii-p64-f20-unit"></span>
+
+<span id="at10ii-p64-f21-unit" data-translation-unit="at10ii-p64-f21-unit"></span>
+
+<span id="at10ii-p64-f22-unit" data-translation-unit="at10ii-p64-f22-unit"></span>
+
+<span id="at10ii-p65-body" data-translation-unit="at10ii-p65-body"></span>
+
+#### 4.3.8 BUTTERFLY（crow）ミキシング
+
+<span id="at10ii-p65-f1-unit" data-translation-unit="at10ii-p65-f1-unit"></span>
+
+<span id="at10ii-p65-f2-unit" data-translation-unit="at10ii-p65-f2-unit"></span>
+
+<span id="at10ii-p65-f3-unit" data-translation-unit="at10ii-p65-f3-unit"></span>
+
+<span id="at10ii-p65-f4-unit" data-translation-unit="at10ii-p65-f4-unit"></span>
+
+<span id="at10ii-p65-f5-unit" data-translation-unit="at10ii-p65-f5-unit"></span>
+
+<span id="at10ii-p65-f6-unit" data-translation-unit="at10ii-p65-f6-unit"></span>
+
+<span id="at10ii-p65-f7-unit" data-translation-unit="at10ii-p65-f7-unit"></span>
+
+<span id="at10ii-p65-f8-unit" data-translation-unit="at10ii-p65-f8-unit"></span>
+
+<span id="at10ii-p65-f9-unit" data-translation-unit="at10ii-p65-f9-unit"></span>
+
+<span id="at10ii-p65-f10-unit" data-translation-unit="at10ii-p65-f10-unit"></span>
+
+<span id="at10ii-p65-f11-unit" data-translation-unit="at10ii-p65-f11-unit"></span>
+
+<span id="at10ii-p65-f12-unit" data-translation-unit="at10ii-p65-f12-unit"></span>
+
+<span id="at10ii-p65-f13-unit" data-translation-unit="at10ii-p65-f13-unit"></span>
+
+<span id="at10ii-p65-f14-unit" data-translation-unit="at10ii-p65-f14-unit"></span>
+
+<span id="at10ii-p65-f15-unit" data-translation-unit="at10ii-p65-f15-unit"></span>
+
+<span id="at10ii-p65-f16-unit" data-translation-unit="at10ii-p65-f16-unit"></span>
+
+<span id="at10ii-p65-f17-unit" data-translation-unit="at10ii-p65-f17-unit"></span>
+
+<span id="at10ii-p65-f18-unit" data-translation-unit="at10ii-p65-f18-unit"></span>
+
+<span id="at10ii-p65-f19-unit" data-translation-unit="at10ii-p65-f19-unit"></span>
+
+<span id="at10ii-p65-f20-unit" data-translation-unit="at10ii-p65-f20-unit"></span>
+
+<span id="at10ii-p65-f21-unit" data-translation-unit="at10ii-p65-f21-unit"></span>
+
+<span id="at10ii-p65-f22-unit" data-translation-unit="at10ii-p65-f22-unit"></span>
+
+<span id="at10ii-p65-f23-unit" data-translation-unit="at10ii-p65-f23-unit"></span>
+
+<span id="at10ii-p65-f24-unit" data-translation-unit="at10ii-p65-f24-unit"></span>
+
+<span id="at10ii-p65-f25-unit" data-translation-unit="at10ii-p65-f25-unit"></span>
+
+<span id="at10ii-p65-f26-unit" data-translation-unit="at10ii-p65-f26-unit"></span>
+
+<span id="at10ii-p65-f27-unit" data-translation-unit="at10ii-p65-f27-unit"></span>
+
+<span id="at10ii-p66-body" data-translation-unit="at10ii-p66-body"></span>
+
+#### 4.3.9 AILE／RUDD MIX
+
+<span id="at10ii-p66-f1-unit" data-translation-unit="at10ii-p66-f1-unit"></span>
+
+<span id="at10ii-p66-f2-unit" data-translation-unit="at10ii-p66-f2-unit"></span>
+
+<span id="at10ii-p66-f3-unit" data-translation-unit="at10ii-p66-f3-unit"></span>
+
+<span id="at10ii-p66-f4-unit" data-translation-unit="at10ii-p66-f4-unit"></span>
+
+<span id="at10ii-p66-f5-unit" data-translation-unit="at10ii-p66-f5-unit"></span>
+
+<span id="at10ii-p66-f6-unit" data-translation-unit="at10ii-p66-f6-unit"></span>
+
+<span id="at10ii-p66-f7-unit" data-translation-unit="at10ii-p66-f7-unit"></span>
+
+<span id="at10ii-p66-f8-unit" data-translation-unit="at10ii-p66-f8-unit"></span>
+
+<span id="at10ii-p66-f9-unit" data-translation-unit="at10ii-p66-f9-unit"></span>
+
+<span id="at10ii-p66-f10-unit" data-translation-unit="at10ii-p66-f10-unit"></span>
+
+<span id="at10ii-p66-f11-unit" data-translation-unit="at10ii-p66-f11-unit"></span>
+
+<span id="at10ii-p66-f12-unit" data-translation-unit="at10ii-p66-f12-unit"></span>
+
+<span id="at10ii-p66-f13-unit" data-translation-unit="at10ii-p66-f13-unit"></span>
+
+<span id="at10ii-p66-f14-unit" data-translation-unit="at10ii-p66-f14-unit"></span>
+
+<span id="at10ii-p66-f15-unit" data-translation-unit="at10ii-p66-f15-unit"></span>
+
+<span id="at10ii-p66-f16-unit" data-translation-unit="at10ii-p66-f16-unit"></span>
+
+<span id="at10ii-p66-f17-unit" data-translation-unit="at10ii-p66-f17-unit"></span>
+
+<span id="at10ii-p66-f18-unit" data-translation-unit="at10ii-p66-f18-unit"></span>
+
+<span id="at10ii-p66-f19-unit" data-translation-unit="at10ii-p66-f19-unit"></span>
+
+<span id="at10ii-p66-f20-unit" data-translation-unit="at10ii-p66-f20-unit"></span>
+
+<span id="at10ii-p66-f21-unit" data-translation-unit="at10ii-p66-f21-unit"></span>
+
+<span id="at10ii-p66-f22-unit" data-translation-unit="at10ii-p66-f22-unit"></span>
+
+<span id="at10ii-p66-f23-unit" data-translation-unit="at10ii-p66-f23-unit"></span>
+
+<span id="at10ii-p66-f24-unit" data-translation-unit="at10ii-p66-f24-unit"></span>
+
+<span id="at10ii-p67-body" data-translation-unit="at10ii-p67-body"></span>
+
+#### 4.3.10 ELEV-FLAP
+
+#### 4.3.11 AILE-FLAP（GLID 2A+2Fのみ）
+
+#### 4.3.12 SPOILER MIX（GLID）
+
+<span id="at10ii-p67-f1-unit" data-translation-unit="at10ii-p67-f1-unit"></span>
+
+<span id="at10ii-p67-f2-unit" data-translation-unit="at10ii-p67-f2-unit"></span>
+
+<span id="at10ii-p67-f3-unit" data-translation-unit="at10ii-p67-f3-unit"></span>
+
+<span id="at10ii-p67-f4-unit" data-translation-unit="at10ii-p67-f4-unit"></span>
+
+<span id="at10ii-p67-f5-unit" data-translation-unit="at10ii-p67-f5-unit"></span>
+
+<span id="at10ii-p67-f6-unit" data-translation-unit="at10ii-p67-f6-unit"></span>
+
+<span id="at10ii-p67-f7-unit" data-translation-unit="at10ii-p67-f7-unit"></span>
+
+<span id="at10ii-p67-f8-unit" data-translation-unit="at10ii-p67-f8-unit"></span>
+
+<span id="at10ii-p67-f9-unit" data-translation-unit="at10ii-p67-f9-unit"></span>
+
+<span id="at10ii-p67-f10-unit" data-translation-unit="at10ii-p67-f10-unit"></span>
+
+<span id="at10ii-p67-f11-unit" data-translation-unit="at10ii-p67-f11-unit"></span>
+
+<span id="at10ii-p67-f12-unit" data-translation-unit="at10ii-p67-f12-unit"></span>
+
+<span id="at10ii-p67-f13-unit" data-translation-unit="at10ii-p67-f13-unit"></span>
+
+<span id="at10ii-p67-f14-unit" data-translation-unit="at10ii-p67-f14-unit"></span>
+
+<span id="at10ii-p67-f15-unit" data-translation-unit="at10ii-p67-f15-unit"></span>
+
+<span id="at10ii-p67-f16-unit" data-translation-unit="at10ii-p67-f16-unit"></span>
+
+<span id="at10ii-p67-f17-unit" data-translation-unit="at10ii-p67-f17-unit"></span>
+
+<span id="at10ii-p67-f18-unit" data-translation-unit="at10ii-p67-f18-unit"></span>
+
+<span id="at10ii-p67-f19-unit" data-translation-unit="at10ii-p67-f19-unit"></span>
+
+<span id="at10ii-p67-f20-unit" data-translation-unit="at10ii-p67-f20-unit"></span>
+
+<span id="at10ii-p67-f21-unit" data-translation-unit="at10ii-p67-f21-unit"></span>
+
+<span id="at10ii-p67-f22-unit" data-translation-unit="at10ii-p67-f22-unit"></span>
+
+<span id="at10ii-p67-f23-unit" data-translation-unit="at10ii-p67-f23-unit"></span>
+
+<span id="at10ii-p67-f24-unit" data-translation-unit="at10ii-p67-f24-unit"></span>
+
+<span id="at10ii-p67-f25-unit" data-translation-unit="at10ii-p67-f25-unit"></span>
+
+<span id="at10ii-p67-f26-unit" data-translation-unit="at10ii-p67-f26-unit"></span>
+
+<span id="at10ii-p67-f27-unit" data-translation-unit="at10ii-p67-f27-unit"></span>
+
+<span id="at10ii-p67-f28-unit" data-translation-unit="at10ii-p67-f28-unit"></span>
+
+<span id="at10ii-p67-f29-unit" data-translation-unit="at10ii-p67-f29-unit"></span>
+
+<span id="at10ii-p67-f30-unit" data-translation-unit="at10ii-p67-f30-unit"></span>
+
+<span id="at10ii-p67-f31-unit" data-translation-unit="at10ii-p67-f31-unit"></span>
+
+<span id="at10ii-p67-f32-unit" data-translation-unit="at10ii-p67-f32-unit"></span>
+
+<span id="at10ii-p67-f33-unit" data-translation-unit="at10ii-p67-f33-unit"></span>
+
+<span id="at10ii-p67-f34-unit" data-translation-unit="at10ii-p67-f34-unit"></span>
+
+<span id="at10ii-p67-f35-unit" data-translation-unit="at10ii-p67-f35-unit"></span>
+
+<span id="at10ii-p67-f36-unit" data-translation-unit="at10ii-p67-f36-unit"></span>
+
+<span id="at10ii-p67-f37-unit" data-translation-unit="at10ii-p67-f37-unit"></span>
+
+<span id="at10ii-p67-f38-unit" data-translation-unit="at10ii-p67-f38-unit"></span>
+
+<span id="at10ii-p67-f39-unit" data-translation-unit="at10ii-p67-f39-unit"></span>
+
+<span id="at10ii-p67-f40-unit" data-translation-unit="at10ii-p67-f40-unit"></span>
+
+<span id="at10ii-p67-f41-unit" data-translation-unit="at10ii-p67-f41-unit"></span>
+
+<span id="at10ii-p67-f42-unit" data-translation-unit="at10ii-p67-f42-unit"></span>
+
+<span id="at10ii-p68-body" data-translation-unit="at10ii-p68-body"></span>
+
+#### 4.3.13 FLAP-TRIM
+
+#### 4.3.14 CONDITION
+
+<span id="at10ii-p68-f1-unit" data-translation-unit="at10ii-p68-f1-unit"></span>
+
+<span id="at10ii-p68-f2-unit" data-translation-unit="at10ii-p68-f2-unit"></span>
+
+<span id="at10ii-p68-f3-unit" data-translation-unit="at10ii-p68-f3-unit"></span>
+
+<span id="at10ii-p68-f4-unit" data-translation-unit="at10ii-p68-f4-unit"></span>
+
+<span id="at10ii-p68-f5-unit" data-translation-unit="at10ii-p68-f5-unit"></span>
+
+<span id="at10ii-p68-f6-unit" data-translation-unit="at10ii-p68-f6-unit"></span>
+
+<span id="at10ii-p68-f7-unit" data-translation-unit="at10ii-p68-f7-unit"></span>
+
+<span id="at10ii-p68-f8-unit" data-translation-unit="at10ii-p68-f8-unit"></span>
+
+<span id="at10ii-p68-f9-unit" data-translation-unit="at10ii-p68-f9-unit"></span>
+
+<span id="at10ii-p68-f10-unit" data-translation-unit="at10ii-p68-f10-unit"></span>
+
+<span id="at10ii-p68-f11-unit" data-translation-unit="at10ii-p68-f11-unit"></span>
+
+<span id="at10ii-p68-f12-unit" data-translation-unit="at10ii-p68-f12-unit"></span>
+
+<span id="at10ii-p68-f13-unit" data-translation-unit="at10ii-p68-f13-unit"></span>
+
+<span id="at10ii-p68-f14-unit" data-translation-unit="at10ii-p68-f14-unit"></span>
+
+<span id="at10ii-p68-f15-unit" data-translation-unit="at10ii-p68-f15-unit"></span>
+
+<span id="at10ii-p68-f16-unit" data-translation-unit="at10ii-p68-f16-unit"></span>
+
+<span id="at10ii-p68-f17-unit" data-translation-unit="at10ii-p68-f17-unit"></span>
+
+<span id="at10ii-p68-f18-unit" data-translation-unit="at10ii-p68-f18-unit"></span>
+
+<span id="at10ii-p68-f19-unit" data-translation-unit="at10ii-p68-f19-unit"></span>
+
+<span id="at10ii-p68-f20-unit" data-translation-unit="at10ii-p68-f20-unit"></span>
+
+<span id="at10ii-p68-f21-unit" data-translation-unit="at10ii-p68-f21-unit"></span>
+
+<span id="at10ii-p68-f22-unit" data-translation-unit="at10ii-p68-f22-unit"></span>
+
+<span id="at10ii-p68-f23-unit" data-translation-unit="at10ii-p68-f23-unit"></span>
+
+<span id="at10ii-p68-f24-unit" data-translation-unit="at10ii-p68-f24-unit"></span>
+
+<span id="at10ii-p68-f25-unit" data-translation-unit="at10ii-p68-f25-unit"></span>
+
+<span id="at10ii-p68-f26-unit" data-translation-unit="at10ii-p68-f26-unit"></span>
+
+<span id="at10ii-p68-f27-unit" data-translation-unit="at10ii-p68-f27-unit"></span>
+
+<span id="at10ii-p68-f28-unit" data-translation-unit="at10ii-p68-f28-unit"></span>
+
+<span id="at10ii-p68-f29-unit" data-translation-unit="at10ii-p68-f29-unit"></span>
+
+<span id="at10ii-p68-f30-unit" data-translation-unit="at10ii-p68-f30-unit"></span>
+
+<span id="at10ii-p68-f31-unit" data-translation-unit="at10ii-p68-f31-unit"></span>
+
+<span id="at10ii-p69-body" data-translation-unit="at10ii-p69-body"></span>
+
+## 第5部 ヘリコプターの機能
+
+### 5.1 ヘリコプターの基本設定
+
+<span id="at10ii-p69-f1-unit" data-translation-unit="at10ii-p69-f1-unit"></span>
+
+<span id="at10ii-p69-f2-unit" data-translation-unit="at10ii-p69-f2-unit"></span>
+
+<span id="at10ii-p69-f3-unit" data-translation-unit="at10ii-p69-f3-unit"></span>
+
+<span id="at10ii-p69-f4-unit" data-translation-unit="at10ii-p69-f4-unit"></span>
+
+<span id="at10ii-p69-f5-unit" data-translation-unit="at10ii-p69-f5-unit"></span>
+
+<span id="at10ii-p69-f6-unit" data-translation-unit="at10ii-p69-f6-unit"></span>
+
+<span id="at10ii-p70-body" data-translation-unit="at10ii-p70-body"></span>
+
+<span id="at10ii-p70-f1-unit" data-translation-unit="at10ii-p70-f1-unit"></span>
+
+<span id="at10ii-p70-f2-unit" data-translation-unit="at10ii-p70-f2-unit"></span>
+
+<span id="at10ii-p70-f3-unit" data-translation-unit="at10ii-p70-f3-unit"></span>
+
+<span id="at10ii-p70-f4-unit" data-translation-unit="at10ii-p70-f4-unit"></span>
+
+<span id="at10ii-p70-f5-unit" data-translation-unit="at10ii-p70-f5-unit"></span>
+
+<span id="at10ii-p70-f6-unit" data-translation-unit="at10ii-p70-f6-unit"></span>
+
+<span id="at10ii-p70-f7-unit" data-translation-unit="at10ii-p70-f7-unit"></span>
+
+<span id="at10ii-p70-f8-unit" data-translation-unit="at10ii-p70-f8-unit"></span>
+
+<span id="at10ii-p70-f9-unit" data-translation-unit="at10ii-p70-f9-unit"></span>
+
+<span id="at10ii-p70-f10-unit" data-translation-unit="at10ii-p70-f10-unit"></span>
+
+<span id="at10ii-p70-f11-unit" data-translation-unit="at10ii-p70-f11-unit"></span>
+
+<span id="at10ii-p70-f12-unit" data-translation-unit="at10ii-p70-f12-unit"></span>
+
+<span id="at10ii-p70-f13-unit" data-translation-unit="at10ii-p70-f13-unit"></span>
+
+<span id="at10ii-p70-f14-unit" data-translation-unit="at10ii-p70-f14-unit"></span>
+
+<span id="at10ii-p70-f15-unit" data-translation-unit="at10ii-p70-f15-unit"></span>
+
+<span id="at10ii-p70-f16-unit" data-translation-unit="at10ii-p70-f16-unit"></span>
+
+<span id="at10ii-p70-f17-unit" data-translation-unit="at10ii-p70-f17-unit"></span>
+
+<span id="at10ii-p70-f18-unit" data-translation-unit="at10ii-p70-f18-unit"></span>
+
+<span id="at10ii-p70-f19-unit" data-translation-unit="at10ii-p70-f19-unit"></span>
+
+<span id="at10ii-p70-f20-unit" data-translation-unit="at10ii-p70-f20-unit"></span>
+
+<span id="at10ii-p70-f21-unit" data-translation-unit="at10ii-p70-f21-unit"></span>
+
+<span id="at10ii-p70-f22-unit" data-translation-unit="at10ii-p70-f22-unit"></span>
+
+<span id="at10ii-p70-f23-unit" data-translation-unit="at10ii-p70-f23-unit"></span>
+
+<span id="at10ii-p70-f24-unit" data-translation-unit="at10ii-p70-f24-unit"></span>
+
+<span id="at10ii-p70-f25-unit" data-translation-unit="at10ii-p70-f25-unit"></span>
+
+<span id="at10ii-p70-f26-unit" data-translation-unit="at10ii-p70-f26-unit"></span>
+
+<span id="at10ii-p70-f27-unit" data-translation-unit="at10ii-p70-f27-unit"></span>
+
+<span id="at10ii-p70-f28-unit" data-translation-unit="at10ii-p70-f28-unit"></span>
+
+<span id="at10ii-p70-f29-unit" data-translation-unit="at10ii-p70-f29-unit"></span>
+
+<span id="at10ii-p70-f30-unit" data-translation-unit="at10ii-p70-f30-unit"></span>
+
+<span id="at10ii-p70-f31-unit" data-translation-unit="at10ii-p70-f31-unit"></span>
+
+<span id="at10ii-p70-f32-unit" data-translation-unit="at10ii-p70-f32-unit"></span>
+
+<span id="at10ii-p70-f33-unit" data-translation-unit="at10ii-p70-f33-unit"></span>
+
+<span id="at10ii-p70-f34-unit" data-translation-unit="at10ii-p70-f34-unit"></span>
+
+<span id="at10ii-p70-f35-unit" data-translation-unit="at10ii-p70-f35-unit"></span>
+
+<span id="at10ii-p70-f36-unit" data-translation-unit="at10ii-p70-f36-unit"></span>
+
+<span id="at10ii-p70-f37-unit" data-translation-unit="at10ii-p70-f37-unit"></span>
+
+<span id="at10ii-p70-f38-unit" data-translation-unit="at10ii-p70-f38-unit"></span>
+
+<span id="at10ii-p70-f39-unit" data-translation-unit="at10ii-p70-f39-unit"></span>
+
+<span id="at10ii-p70-f40-unit" data-translation-unit="at10ii-p70-f40-unit"></span>
+
+<span id="at10ii-p70-f41-unit" data-translation-unit="at10ii-p70-f41-unit"></span>
+
+<span id="at10ii-p70-f42-unit" data-translation-unit="at10ii-p70-f42-unit"></span>
+
+<span id="at10ii-p70-f43-unit" data-translation-unit="at10ii-p70-f43-unit"></span>
+
+<span id="at10ii-p70-f44-unit" data-translation-unit="at10ii-p70-f44-unit"></span>
+
+<span id="at10ii-p70-f45-unit" data-translation-unit="at10ii-p70-f45-unit"></span>
+
+<span id="at10ii-p70-f46-unit" data-translation-unit="at10ii-p70-f46-unit"></span>
+
+<span id="at10ii-p70-f47-unit" data-translation-unit="at10ii-p70-f47-unit"></span>
+
+<span id="at10ii-p70-f48-unit" data-translation-unit="at10ii-p70-f48-unit"></span>
+
+<span id="at10ii-p70-f49-unit" data-translation-unit="at10ii-p70-f49-unit"></span>
+
+<span id="at10ii-p70-f50-unit" data-translation-unit="at10ii-p70-f50-unit"></span>
+
+<span id="at10ii-p70-f51-unit" data-translation-unit="at10ii-p70-f51-unit"></span>
+
+<span id="at10ii-p70-f52-unit" data-translation-unit="at10ii-p70-f52-unit"></span>
+
+<span id="at10ii-p70-f53-unit" data-translation-unit="at10ii-p70-f53-unit"></span>
+
+<span id="at10ii-p70-f54-unit" data-translation-unit="at10ii-p70-f54-unit"></span>
+
+<span id="at10ii-p71-body" data-translation-unit="at10ii-p71-body"></span>
+
+<span id="at10ii-p71-f1-unit" data-translation-unit="at10ii-p71-f1-unit"></span>
+
+<span id="at10ii-p71-f2-unit" data-translation-unit="at10ii-p71-f2-unit"></span>
+
+<span id="at10ii-p71-f3-unit" data-translation-unit="at10ii-p71-f3-unit"></span>
+
+<span id="at10ii-p71-f4-unit" data-translation-unit="at10ii-p71-f4-unit"></span>
+
+<span id="at10ii-p71-f5-unit" data-translation-unit="at10ii-p71-f5-unit"></span>
+
+<span id="at10ii-p71-f6-unit" data-translation-unit="at10ii-p71-f6-unit"></span>
+
+<span id="at10ii-p71-f7-unit" data-translation-unit="at10ii-p71-f7-unit"></span>
+
+<span id="at10ii-p71-f8-unit" data-translation-unit="at10ii-p71-f8-unit"></span>
+
+<span id="at10ii-p71-f9-unit" data-translation-unit="at10ii-p71-f9-unit"></span>
+
+<span id="at10ii-p71-f10-unit" data-translation-unit="at10ii-p71-f10-unit"></span>
+
+<span id="at10ii-p71-f11-unit" data-translation-unit="at10ii-p71-f11-unit"></span>
+
+<span id="at10ii-p71-f12-unit" data-translation-unit="at10ii-p71-f12-unit"></span>
+
+<span id="at10ii-p71-f13-unit" data-translation-unit="at10ii-p71-f13-unit"></span>
+
+<span id="at10ii-p71-f14-unit" data-translation-unit="at10ii-p71-f14-unit"></span>
+
+<span id="at10ii-p71-f15-unit" data-translation-unit="at10ii-p71-f15-unit"></span>
+
+<span id="at10ii-p71-f16-unit" data-translation-unit="at10ii-p71-f16-unit"></span>
+
+<span id="at10ii-p71-f17-unit" data-translation-unit="at10ii-p71-f17-unit"></span>
+
+<span id="at10ii-p71-f18-unit" data-translation-unit="at10ii-p71-f18-unit"></span>
+
+<span id="at10ii-p71-f19-unit" data-translation-unit="at10ii-p71-f19-unit"></span>
+
+<span id="at10ii-p71-f20-unit" data-translation-unit="at10ii-p71-f20-unit"></span>
+
+<span id="at10ii-p71-f21-unit" data-translation-unit="at10ii-p71-f21-unit"></span>
+
+<span id="at10ii-p71-f22-unit" data-translation-unit="at10ii-p71-f22-unit"></span>
+
+<span id="at10ii-p71-f23-unit" data-translation-unit="at10ii-p71-f23-unit"></span>
+
+<span id="at10ii-p71-f24-unit" data-translation-unit="at10ii-p71-f24-unit"></span>
+
+<span id="at10ii-p71-f25-unit" data-translation-unit="at10ii-p71-f25-unit"></span>
+
+<span id="at10ii-p71-f26-unit" data-translation-unit="at10ii-p71-f26-unit"></span>
+
+<span id="at10ii-p71-f27-unit" data-translation-unit="at10ii-p71-f27-unit"></span>
+
+<span id="at10ii-p71-f28-unit" data-translation-unit="at10ii-p71-f28-unit"></span>
+
+<span id="at10ii-p71-f29-unit" data-translation-unit="at10ii-p71-f29-unit"></span>
+
+<span id="at10ii-p71-f30-unit" data-translation-unit="at10ii-p71-f30-unit"></span>
+
+<span id="at10ii-p71-f31-unit" data-translation-unit="at10ii-p71-f31-unit"></span>
+
+<span id="at10ii-p71-f32-unit" data-translation-unit="at10ii-p71-f32-unit"></span>
+
+<span id="at10ii-p71-f33-unit" data-translation-unit="at10ii-p71-f33-unit"></span>
+
+<span id="at10ii-p71-f34-unit" data-translation-unit="at10ii-p71-f34-unit"></span>
+
+<span id="at10ii-p72-body" data-translation-unit="at10ii-p72-body"></span>
+
+### 5.2 HELI専用のBASICメニュー機能
+
+#### 5.2.1 スワッシュプレート型式
+
+<span id="at10ii-p72-f1-unit" data-translation-unit="at10ii-p72-f1-unit"></span>
+
+<span id="at10ii-p72-f2-unit" data-translation-unit="at10ii-p72-f2-unit"></span>
+
+<span id="at10ii-p72-f3-unit" data-translation-unit="at10ii-p72-f3-unit"></span>
+
+<span id="at10ii-p72-f4-unit" data-translation-unit="at10ii-p72-f4-unit"></span>
+
+<span id="at10ii-p72-f5-unit" data-translation-unit="at10ii-p72-f5-unit"></span>
+
+<span id="at10ii-p72-f6-unit" data-translation-unit="at10ii-p72-f6-unit"></span>
+
+<span id="at10ii-p72-f7-unit" data-translation-unit="at10ii-p72-f7-unit"></span>
+
+<span id="at10ii-p72-f8-unit" data-translation-unit="at10ii-p72-f8-unit"></span>
+
+<span id="at10ii-p72-f9-unit" data-translation-unit="at10ii-p72-f9-unit"></span>
+
+<span id="at10ii-p72-f10-unit" data-translation-unit="at10ii-p72-f10-unit"></span>
+
+<span id="at10ii-p73-body" data-translation-unit="at10ii-p73-body"></span>
+
+#### 5.2.2 SWASH AFR（SWH1を除く）
+
+<span id="at10ii-p73-f1-unit" data-translation-unit="at10ii-p73-f1-unit"></span>
+
+<span id="at10ii-p73-f2-unit" data-translation-unit="at10ii-p73-f2-unit"></span>
+
+<span id="at10ii-p73-f3-unit" data-translation-unit="at10ii-p73-f3-unit"></span>
+
+<span id="at10ii-p73-f4-unit" data-translation-unit="at10ii-p73-f4-unit"></span>
+
+<span id="at10ii-p73-f5-unit" data-translation-unit="at10ii-p73-f5-unit"></span>
+
+<span id="at10ii-p73-f6-unit" data-translation-unit="at10ii-p73-f6-unit"></span>
+
+<span id="at10ii-p73-f7-unit" data-translation-unit="at10ii-p73-f7-unit"></span>
+
+<span id="at10ii-p73-f8-unit" data-translation-unit="at10ii-p73-f8-unit"></span>
+
+<span id="at10ii-p74-body" data-translation-unit="at10ii-p74-body"></span>
+
+### 5.3 HELI専用の詳細メニュー機能
+
+#### 5.3.1 THR-CURVEとPIT-CURVE
+
+<span id="at10ii-p74-f1-unit" data-translation-unit="at10ii-p74-f1-unit"></span>
+
+<span id="at10ii-p74-f2-unit" data-translation-unit="at10ii-p74-f2-unit"></span>
+
+<span id="at10ii-p74-f3-unit" data-translation-unit="at10ii-p74-f3-unit"></span>
+
+<span id="at10ii-p74-f4-unit" data-translation-unit="at10ii-p74-f4-unit"></span>
+
+<span id="at10ii-p74-f5-unit" data-translation-unit="at10ii-p74-f5-unit"></span>
+
+<span id="at10ii-p74-f6-unit" data-translation-unit="at10ii-p74-f6-unit"></span>
+
+<span id="at10ii-p74-f7-unit" data-translation-unit="at10ii-p74-f7-unit"></span>
+
+<span id="at10ii-p74-f8-unit" data-translation-unit="at10ii-p74-f8-unit"></span>
+
+<span id="at10ii-p74-f9-unit" data-translation-unit="at10ii-p74-f9-unit"></span>
+
+<span id="at10ii-p74-f10-unit" data-translation-unit="at10ii-p74-f10-unit"></span>
+
+<span id="at10ii-p75-body" data-translation-unit="at10ii-p75-body"></span>
+
+#### 5.3.2 REVO MIX
+
+<span id="at10ii-p75-f1-unit" data-translation-unit="at10ii-p75-f1-unit"></span>
+
+<span id="at10ii-p75-f2-unit" data-translation-unit="at10ii-p75-f2-unit"></span>
+
+<span id="at10ii-p75-f3-unit" data-translation-unit="at10ii-p75-f3-unit"></span>
+
+<span id="at10ii-p75-f4-unit" data-translation-unit="at10ii-p75-f4-unit"></span>
+
+<span id="at10ii-p75-f5-unit" data-translation-unit="at10ii-p75-f5-unit"></span>
+
+<span id="at10ii-p75-f6-unit" data-translation-unit="at10ii-p75-f6-unit"></span>
+
+<span id="at10ii-p76-body" data-translation-unit="at10ii-p76-body"></span>
+
+<span id="at10ii-p76-f1-unit" data-translation-unit="at10ii-p76-f1-unit"></span>
+
+<span id="at10ii-p76-f2-unit" data-translation-unit="at10ii-p76-f2-unit"></span>
+
+<span id="at10ii-p76-f3-unit" data-translation-unit="at10ii-p76-f3-unit"></span>
+
+<span id="at10ii-p76-f4-unit" data-translation-unit="at10ii-p76-f4-unit"></span>
+
+<span id="at10ii-p76-f5-unit" data-translation-unit="at10ii-p76-f5-unit"></span>
+
+<span id="at10ii-p76-f6-unit" data-translation-unit="at10ii-p76-f6-unit"></span>
+
+<span id="at10ii-p76-f7-unit" data-translation-unit="at10ii-p76-f7-unit"></span>
+
+<span id="at10ii-p76-f8-unit" data-translation-unit="at10ii-p76-f8-unit"></span>
+
+<span id="at10ii-p76-f9-unit" data-translation-unit="at10ii-p76-f9-unit"></span>
+
+<span id="at10ii-p76-f10-unit" data-translation-unit="at10ii-p76-f10-unit"></span>
+
+<span id="at10ii-p76-f11-unit" data-translation-unit="at10ii-p76-f11-unit"></span>
+
+<span id="at10ii-p76-f12-unit" data-translation-unit="at10ii-p76-f12-unit"></span>
+
+<span id="at10ii-p76-f13-unit" data-translation-unit="at10ii-p76-f13-unit"></span>
+
+<span id="at10ii-p76-f14-unit" data-translation-unit="at10ii-p76-f14-unit"></span>
+
+<span id="at10ii-p76-f15-unit" data-translation-unit="at10ii-p76-f15-unit"></span>
+
+<span id="at10ii-p76-f16-unit" data-translation-unit="at10ii-p76-f16-unit"></span>
+
+<span id="at10ii-p76-f17-unit" data-translation-unit="at10ii-p76-f17-unit"></span>
+
+<span id="at10ii-p76-f18-unit" data-translation-unit="at10ii-p76-f18-unit"></span>
+
+<span id="at10ii-p76-f19-unit" data-translation-unit="at10ii-p76-f19-unit"></span>
+
+<span id="at10ii-p76-f20-unit" data-translation-unit="at10ii-p76-f20-unit"></span>
+
+<span id="at10ii-p76-f21-unit" data-translation-unit="at10ii-p76-f21-unit"></span>
+
+<span id="at10ii-p76-f22-unit" data-translation-unit="at10ii-p76-f22-unit"></span>
+
+<span id="at10ii-p76-f23-unit" data-translation-unit="at10ii-p76-f23-unit"></span>
+
+<span id="at10ii-p76-f24-unit" data-translation-unit="at10ii-p76-f24-unit"></span>
+
+<span id="at10ii-p77-body" data-translation-unit="at10ii-p77-body"></span>
+
+<span id="at10ii-p77-f1-unit" data-translation-unit="at10ii-p77-f1-unit"></span>
+
+<span id="at10ii-p77-f2-unit" data-translation-unit="at10ii-p77-f2-unit"></span>
+
+<span id="at10ii-p77-f3-unit" data-translation-unit="at10ii-p77-f3-unit"></span>
+
+<span id="at10ii-p77-f4-unit" data-translation-unit="at10ii-p77-f4-unit"></span>
+
+<span id="at10ii-p77-f5-unit" data-translation-unit="at10ii-p77-f5-unit"></span>
+
+<span id="at10ii-p77-f6-unit" data-translation-unit="at10ii-p77-f6-unit"></span>
+
+<span id="at10ii-p77-f7-unit" data-translation-unit="at10ii-p77-f7-unit"></span>
+
+<span id="at10ii-p77-f8-unit" data-translation-unit="at10ii-p77-f8-unit"></span>
+
+<span id="at10ii-p77-f9-unit" data-translation-unit="at10ii-p77-f9-unit"></span>
+
+<span id="at10ii-p77-f10-unit" data-translation-unit="at10ii-p77-f10-unit"></span>
+
+<span id="at10ii-p77-f11-unit" data-translation-unit="at10ii-p77-f11-unit"></span>
+
+<span id="at10ii-p77-f12-unit" data-translation-unit="at10ii-p77-f12-unit"></span>
+
+<span id="at10ii-p77-f13-unit" data-translation-unit="at10ii-p77-f13-unit"></span>
+
+<span id="at10ii-p77-f14-unit" data-translation-unit="at10ii-p77-f14-unit"></span>
+
+<span id="at10ii-p77-f15-unit" data-translation-unit="at10ii-p77-f15-unit"></span>
+
+<span id="at10ii-p77-f16-unit" data-translation-unit="at10ii-p77-f16-unit"></span>
+
+<span id="at10ii-p77-f17-unit" data-translation-unit="at10ii-p77-f17-unit"></span>
+
+<span id="at10ii-p77-f18-unit" data-translation-unit="at10ii-p77-f18-unit"></span>
+
+<span id="at10ii-p77-f19-unit" data-translation-unit="at10ii-p77-f19-unit"></span>
+
+<span id="at10ii-p77-f20-unit" data-translation-unit="at10ii-p77-f20-unit"></span>
+
+<span id="at10ii-p77-f21-unit" data-translation-unit="at10ii-p77-f21-unit"></span>
+
+<span id="at10ii-p77-f22-unit" data-translation-unit="at10ii-p77-f22-unit"></span>
+
+<span id="at10ii-p77-f23-unit" data-translation-unit="at10ii-p77-f23-unit"></span>
+
+<span id="at10ii-p77-f24-unit" data-translation-unit="at10ii-p77-f24-unit"></span>
+
+<span id="at10ii-p77-f25-unit" data-translation-unit="at10ii-p77-f25-unit"></span>
+
+<span id="at10ii-p78-body" data-translation-unit="at10ii-p78-body"></span>
+
+<span id="at10ii-p78-f1-unit" data-translation-unit="at10ii-p78-f1-unit"></span>
+
+<span id="at10ii-p78-f2-unit" data-translation-unit="at10ii-p78-f2-unit"></span>
+
+<span id="at10ii-p78-f3-unit" data-translation-unit="at10ii-p78-f3-unit"></span>
+
+<span id="at10ii-p78-f4-unit" data-translation-unit="at10ii-p78-f4-unit"></span>
+
+<span id="at10ii-p78-f5-unit" data-translation-unit="at10ii-p78-f5-unit"></span>
+
+<span id="at10ii-p78-f6-unit" data-translation-unit="at10ii-p78-f6-unit"></span>
+
+<span id="at10ii-p78-f7-unit" data-translation-unit="at10ii-p78-f7-unit"></span>
+
+<span id="at10ii-p78-f8-unit" data-translation-unit="at10ii-p78-f8-unit"></span>
+
+<span id="at10ii-p78-f9-unit" data-translation-unit="at10ii-p78-f9-unit"></span>
+
+<span id="at10ii-p78-f10-unit" data-translation-unit="at10ii-p78-f10-unit"></span>
+
+<span id="at10ii-p78-f11-unit" data-translation-unit="at10ii-p78-f11-unit"></span>
+
+<span id="at10ii-p78-f12-unit" data-translation-unit="at10ii-p78-f12-unit"></span>
+
+<span id="at10ii-p78-f13-unit" data-translation-unit="at10ii-p78-f13-unit"></span>
+
+<span id="at10ii-p78-f14-unit" data-translation-unit="at10ii-p78-f14-unit"></span>
+
+<span id="at10ii-p78-f15-unit" data-translation-unit="at10ii-p78-f15-unit"></span>
+
+<span id="at10ii-p78-f16-unit" data-translation-unit="at10ii-p78-f16-unit"></span>
+
+<span id="at10ii-p79-body" data-translation-unit="at10ii-p79-body"></span>
+
+<span id="at10ii-p79-f1-unit" data-translation-unit="at10ii-p79-f1-unit"></span>
+
+<span id="at10ii-p79-f2-unit" data-translation-unit="at10ii-p79-f2-unit"></span>
+
+<span id="at10ii-p79-f3-unit" data-translation-unit="at10ii-p79-f3-unit"></span>
+
+<span id="at10ii-p79-f4-unit" data-translation-unit="at10ii-p79-f4-unit"></span>
+
+<span id="at10ii-p79-f5-unit" data-translation-unit="at10ii-p79-f5-unit"></span>
+
+<span id="at10ii-p79-f6-unit" data-translation-unit="at10ii-p79-f6-unit"></span>
+
+<span id="at10ii-p79-f7-unit" data-translation-unit="at10ii-p79-f7-unit"></span>
+
+<span id="at10ii-p79-f8-unit" data-translation-unit="at10ii-p79-f8-unit"></span>
+
+<span id="at10ii-p79-f9-unit" data-translation-unit="at10ii-p79-f9-unit"></span>
+
+<span id="at10ii-p79-f10-unit" data-translation-unit="at10ii-p79-f10-unit"></span>
+
+<span id="at10ii-p79-f11-unit" data-translation-unit="at10ii-p79-f11-unit"></span>
+
+<span id="at10ii-p79-f12-unit" data-translation-unit="at10ii-p79-f12-unit"></span>
+
+<span id="at10ii-p79-f13-unit" data-translation-unit="at10ii-p79-f13-unit"></span>
+
+<span id="at10ii-p79-f14-unit" data-translation-unit="at10ii-p79-f14-unit"></span>
+
+<span id="at10ii-p79-f15-unit" data-translation-unit="at10ii-p79-f15-unit"></span>
+
+<span id="at10ii-p79-f16-unit" data-translation-unit="at10ii-p79-f16-unit"></span>
+
+<span id="at10ii-p79-f17-unit" data-translation-unit="at10ii-p79-f17-unit"></span>
+
+<span id="at10ii-p79-f18-unit" data-translation-unit="at10ii-p79-f18-unit"></span>
+
+<span id="at10ii-p79-f19-unit" data-translation-unit="at10ii-p79-f19-unit"></span>
+
+<span id="at10ii-p79-f20-unit" data-translation-unit="at10ii-p79-f20-unit"></span>
+
+<span id="at10ii-p79-f21-unit" data-translation-unit="at10ii-p79-f21-unit"></span>
+
+<span id="at10ii-p79-f22-unit" data-translation-unit="at10ii-p79-f22-unit"></span>
+
+<span id="at10ii-p79-f23-unit" data-translation-unit="at10ii-p79-f23-unit"></span>
+
+<span id="at10ii-p79-f24-unit" data-translation-unit="at10ii-p79-f24-unit"></span>
+
+<span id="at10ii-p79-f25-unit" data-translation-unit="at10ii-p79-f25-unit"></span>
+
+<span id="at10ii-p79-f26-unit" data-translation-unit="at10ii-p79-f26-unit"></span>
+
+<span id="at10ii-p79-f27-unit" data-translation-unit="at10ii-p79-f27-unit"></span>
+
+<span id="at10ii-p79-f28-unit" data-translation-unit="at10ii-p79-f28-unit"></span>
+
+<span id="at10ii-p79-f29-unit" data-translation-unit="at10ii-p79-f29-unit"></span>
+
+<span id="at10ii-p79-f30-unit" data-translation-unit="at10ii-p79-f30-unit"></span>
+
+<span id="at10ii-p79-f31-unit" data-translation-unit="at10ii-p79-f31-unit"></span>
+
+<span id="at10ii-p80-body" data-translation-unit="at10ii-p80-body"></span>
+
+<span id="at10ii-p80-f1-unit" data-translation-unit="at10ii-p80-f1-unit"></span>
+
+<span id="at10ii-p80-f2-unit" data-translation-unit="at10ii-p80-f2-unit"></span>
+
+<span id="at10ii-p80-f3-unit" data-translation-unit="at10ii-p80-f3-unit"></span>
+
+<span id="at10ii-p80-f4-unit" data-translation-unit="at10ii-p80-f4-unit"></span>
+
+<span id="at10ii-p80-f5-unit" data-translation-unit="at10ii-p80-f5-unit"></span>
+
+<span id="at10ii-p80-f6-unit" data-translation-unit="at10ii-p80-f6-unit"></span>
+
+<span id="at10ii-p80-f7-unit" data-translation-unit="at10ii-p80-f7-unit"></span>
+
+<span id="at10ii-p80-f8-unit" data-translation-unit="at10ii-p80-f8-unit"></span>
+
+<span id="at10ii-p80-f9-unit" data-translation-unit="at10ii-p80-f9-unit"></span>
+
+<span id="at10ii-p80-f10-unit" data-translation-unit="at10ii-p80-f10-unit"></span>
+
+<span id="at10ii-p80-f11-unit" data-translation-unit="at10ii-p80-f11-unit"></span>
+
+<span id="at10ii-p80-f12-unit" data-translation-unit="at10ii-p80-f12-unit"></span>
+
+<span id="at10ii-p80-f13-unit" data-translation-unit="at10ii-p80-f13-unit"></span>
+
+<span id="at10ii-p80-f14-unit" data-translation-unit="at10ii-p80-f14-unit"></span>
+
+<span id="at10ii-p80-f15-unit" data-translation-unit="at10ii-p80-f15-unit"></span>
+
+<span id="at10ii-p80-f16-unit" data-translation-unit="at10ii-p80-f16-unit"></span>
+
+<span id="at10ii-p80-f17-unit" data-translation-unit="at10ii-p80-f17-unit"></span>
+
+<span id="at10ii-p80-f18-unit" data-translation-unit="at10ii-p80-f18-unit"></span>
+
+<span id="at10ii-p80-f19-unit" data-translation-unit="at10ii-p80-f19-unit"></span>
+
+<span id="at10ii-p80-f20-unit" data-translation-unit="at10ii-p80-f20-unit"></span>
+
+<span id="at10ii-p80-f21-unit" data-translation-unit="at10ii-p80-f21-unit"></span>
+
+<span id="at10ii-p80-f22-unit" data-translation-unit="at10ii-p80-f22-unit"></span>
+
+<span id="at10ii-p80-f23-unit" data-translation-unit="at10ii-p80-f23-unit"></span>
+
+<span id="at10ii-p80-f24-unit" data-translation-unit="at10ii-p80-f24-unit"></span>
+
+<span id="at10ii-p81-body" data-translation-unit="at10ii-p81-body"></span>
+
+<span id="at10ii-p81-f1-unit" data-translation-unit="at10ii-p81-f1-unit"></span>
+
+<span id="at10ii-p81-f2-unit" data-translation-unit="at10ii-p81-f2-unit"></span>
+
+<span id="at10ii-p81-f3-unit" data-translation-unit="at10ii-p81-f3-unit"></span>
+
+<span id="at10ii-p81-f4-unit" data-translation-unit="at10ii-p81-f4-unit"></span>
+
+<span id="at10ii-p81-f5-unit" data-translation-unit="at10ii-p81-f5-unit"></span>
+
+<span id="at10ii-p81-f6-unit" data-translation-unit="at10ii-p81-f6-unit"></span>
+
+<span id="at10ii-p81-f7-unit" data-translation-unit="at10ii-p81-f7-unit"></span>
+
+<span id="at10ii-p81-f8-unit" data-translation-unit="at10ii-p81-f8-unit"></span>
+
+<span id="at10ii-p81-f9-unit" data-translation-unit="at10ii-p81-f9-unit"></span>
+
+<span id="at10ii-p81-f10-unit" data-translation-unit="at10ii-p81-f10-unit"></span>
+
+<span id="at10ii-p81-f11-unit" data-translation-unit="at10ii-p81-f11-unit"></span>
+
+<span id="at10ii-p81-f12-unit" data-translation-unit="at10ii-p81-f12-unit"></span>
+
+<span id="at10ii-p81-f13-unit" data-translation-unit="at10ii-p81-f13-unit"></span>
+
+<span id="at10ii-p82-body" data-translation-unit="at10ii-p82-body"></span>
+
+<span id="at10ii-p82-f1-unit" data-translation-unit="at10ii-p82-f1-unit"></span>
+
+<span id="at10ii-p82-f2-unit" data-translation-unit="at10ii-p82-f2-unit"></span>
+
+<span id="at10ii-p82-f3-unit" data-translation-unit="at10ii-p82-f3-unit"></span>
+
+<span id="at10ii-p82-f4-unit" data-translation-unit="at10ii-p82-f4-unit"></span>
+
+<span id="at10ii-p82-f5-unit" data-translation-unit="at10ii-p82-f5-unit"></span>
+
+<span id="at10ii-p82-f6-unit" data-translation-unit="at10ii-p82-f6-unit"></span>
+
+<span id="at10ii-p83-body" data-translation-unit="at10ii-p83-body"></span>
+
+<span id="at10ii-p83-f1-unit" data-translation-unit="at10ii-p83-f1-unit"></span>
+
+<span id="at10ii-p83-f2-unit" data-translation-unit="at10ii-p83-f2-unit"></span>
+
+<span id="at10ii-p83-f3-unit" data-translation-unit="at10ii-p83-f3-unit"></span>
+
+<span id="at10ii-p83-f4-unit" data-translation-unit="at10ii-p83-f4-unit"></span>
+
+<span id="at10ii-p83-f5-unit" data-translation-unit="at10ii-p83-f5-unit"></span>
+
+<span id="at10ii-p83-f6-unit" data-translation-unit="at10ii-p83-f6-unit"></span>
+
+<span id="at10ii-p83-f7-unit" data-translation-unit="at10ii-p83-f7-unit"></span>
+
+<span id="at10ii-p83-f8-unit" data-translation-unit="at10ii-p83-f8-unit"></span>
+
+<span id="at10ii-p83-f9-unit" data-translation-unit="at10ii-p83-f9-unit"></span>
+
+<span id="at10ii-p83-f10-unit" data-translation-unit="at10ii-p83-f10-unit"></span>
+
+<span id="at10ii-p83-f11-unit" data-translation-unit="at10ii-p83-f11-unit"></span>
+
+<span id="at10ii-p83-f12-unit" data-translation-unit="at10ii-p83-f12-unit"></span>
+
+<span id="at10ii-p83-f13-unit" data-translation-unit="at10ii-p83-f13-unit"></span>
+
+<span id="at10ii-p83-f14-unit" data-translation-unit="at10ii-p83-f14-unit"></span>
+
+<span id="at10ii-p83-f15-unit" data-translation-unit="at10ii-p83-f15-unit"></span>
+
+<span id="at10ii-p83-f16-unit" data-translation-unit="at10ii-p83-f16-unit"></span>
+
+<span id="at10ii-p83-f17-unit" data-translation-unit="at10ii-p83-f17-unit"></span>
+
+<span id="at10ii-p83-f18-unit" data-translation-unit="at10ii-p83-f18-unit"></span>
+
+<span id="at10ii-p83-f19-unit" data-translation-unit="at10ii-p83-f19-unit"></span>
+
+<span id="at10ii-p83-f20-unit" data-translation-unit="at10ii-p83-f20-unit"></span>
+
+<span id="at10ii-p83-f21-unit" data-translation-unit="at10ii-p83-f21-unit"></span>
+
+<span id="at10ii-p83-f22-unit" data-translation-unit="at10ii-p83-f22-unit"></span>
+
+<span id="at10ii-p83-f23-unit" data-translation-unit="at10ii-p83-f23-unit"></span>
+
+<span id="at10ii-p83-f24-unit" data-translation-unit="at10ii-p83-f24-unit"></span>
+
+<span id="at10ii-p83-f25-unit" data-translation-unit="at10ii-p83-f25-unit"></span>
+
+<span id="at10ii-p83-f26-unit" data-translation-unit="at10ii-p83-f26-unit"></span>
+
+<span id="at10ii-p83-f27-unit" data-translation-unit="at10ii-p83-f27-unit"></span>
+
+<span id="at10ii-p83-f28-unit" data-translation-unit="at10ii-p83-f28-unit"></span>
+
+<span id="at10ii-p83-f29-unit" data-translation-unit="at10ii-p83-f29-unit"></span>
+
+<span id="at10ii-p83-f30-unit" data-translation-unit="at10ii-p83-f30-unit"></span>
+
+<span id="at10ii-p83-f31-unit" data-translation-unit="at10ii-p83-f31-unit"></span>
+
+<span id="at10ii-p83-f32-unit" data-translation-unit="at10ii-p83-f32-unit"></span>
+
+<span id="at10ii-p83-f33-unit" data-translation-unit="at10ii-p83-f33-unit"></span>
+
+<span id="at10ii-p83-f34-unit" data-translation-unit="at10ii-p83-f34-unit"></span>
+
+<span id="at10ii-p83-f35-unit" data-translation-unit="at10ii-p83-f35-unit"></span>
+
+<span id="at10ii-p83-f36-unit" data-translation-unit="at10ii-p83-f36-unit"></span>
+
+<span id="at10ii-p83-f37-unit" data-translation-unit="at10ii-p83-f37-unit"></span>
+
+<span id="at10ii-p84-body" data-translation-unit="at10ii-p84-body"></span>
+
+<span id="at10ii-p84-f1-unit" data-translation-unit="at10ii-p84-f1-unit"></span>
+
+<span id="at10ii-p84-f2-unit" data-translation-unit="at10ii-p84-f2-unit"></span>
+
+<span id="at10ii-p84-f3-unit" data-translation-unit="at10ii-p84-f3-unit"></span>
+
+<span id="at10ii-p84-f4-unit" data-translation-unit="at10ii-p84-f4-unit"></span>
+
+<span id="at10ii-p84-f5-unit" data-translation-unit="at10ii-p84-f5-unit"></span>
+
+<span id="at10ii-p84-f6-unit" data-translation-unit="at10ii-p84-f6-unit"></span>
+
+<span id="at10ii-p84-f7-unit" data-translation-unit="at10ii-p84-f7-unit"></span>
+
+<span id="at10ii-p84-f8-unit" data-translation-unit="at10ii-p84-f8-unit"></span>
+
+<span id="at10ii-p84-f9-unit" data-translation-unit="at10ii-p84-f9-unit"></span>
+
+<span id="at10ii-p84-f10-unit" data-translation-unit="at10ii-p84-f10-unit"></span>
+
+<span id="at10ii-p84-f11-unit" data-translation-unit="at10ii-p84-f11-unit"></span>
+
+<span id="at10ii-p84-f12-unit" data-translation-unit="at10ii-p84-f12-unit"></span>
+
+<span id="at10ii-p84-f13-unit" data-translation-unit="at10ii-p84-f13-unit"></span>
+
+<span id="at10ii-p84-f14-unit" data-translation-unit="at10ii-p84-f14-unit"></span>
+
+<span id="at10ii-p84-f15-unit" data-translation-unit="at10ii-p84-f15-unit"></span>
+
+<span id="at10ii-p84-f16-unit" data-translation-unit="at10ii-p84-f16-unit"></span>
+
+<span id="at10ii-p85-body" data-translation-unit="at10ii-p85-body"></span>
+
+<span id="at10ii-p85-f1-unit" data-translation-unit="at10ii-p85-f1-unit"></span>
+
+<span id="at10ii-p85-f2-unit" data-translation-unit="at10ii-p85-f2-unit"></span>
+
+<span id="at10ii-p85-f3-unit" data-translation-unit="at10ii-p85-f3-unit"></span>
+
+<span id="at10ii-p85-f4-unit" data-translation-unit="at10ii-p85-f4-unit"></span>
+
+<span id="at10ii-p85-f5-unit" data-translation-unit="at10ii-p85-f5-unit"></span>
+
+<span id="at10ii-p85-f6-unit" data-translation-unit="at10ii-p85-f6-unit"></span>
+
+<span id="at10ii-p85-f7-unit" data-translation-unit="at10ii-p85-f7-unit"></span>
+
+<span id="at10ii-p85-f8-unit" data-translation-unit="at10ii-p85-f8-unit"></span>
+
+<span id="at10ii-p85-f9-unit" data-translation-unit="at10ii-p85-f9-unit"></span>
+
+<span id="at10ii-p85-f10-unit" data-translation-unit="at10ii-p85-f10-unit"></span>
+
+<span id="at10ii-p85-f11-unit" data-translation-unit="at10ii-p85-f11-unit"></span>
+
+<span id="at10ii-p85-f12-unit" data-translation-unit="at10ii-p85-f12-unit"></span>
+
+<span id="at10ii-p86-body" data-translation-unit="at10ii-p86-body"></span>
+
+<span id="at10ii-p86-f1-unit" data-translation-unit="at10ii-p86-f1-unit"></span>
+
+<span id="at10ii-p86-f2-unit" data-translation-unit="at10ii-p86-f2-unit"></span>
+
+<span id="at10ii-p86-f3-unit" data-translation-unit="at10ii-p86-f3-unit"></span>
+
+<span id="at10ii-p86-f4-unit" data-translation-unit="at10ii-p86-f4-unit"></span>
+
+<span id="at10ii-p86-f5-unit" data-translation-unit="at10ii-p86-f5-unit"></span>
+
+<span id="at10ii-p86-f6-unit" data-translation-unit="at10ii-p86-f6-unit"></span>
+
+<span id="at10ii-p86-f7-unit" data-translation-unit="at10ii-p86-f7-unit"></span>
+
+<span id="at10ii-p86-f8-unit" data-translation-unit="at10ii-p86-f8-unit"></span>
+
+<span id="at10ii-p86-f9-unit" data-translation-unit="at10ii-p86-f9-unit"></span>
+
+<span id="at10ii-p86-f10-unit" data-translation-unit="at10ii-p86-f10-unit"></span>
+
+<span id="at10ii-p86-f11-unit" data-translation-unit="at10ii-p86-f11-unit"></span>
+
+<span id="at10ii-p86-f12-unit" data-translation-unit="at10ii-p86-f12-unit"></span>
+
+<span id="at10ii-p86-f13-unit" data-translation-unit="at10ii-p86-f13-unit"></span>
+
+<span id="at10ii-p86-f14-unit" data-translation-unit="at10ii-p86-f14-unit"></span>
+
+<span id="at10ii-p86-f15-unit" data-translation-unit="at10ii-p86-f15-unit"></span>
+
+<span id="at10ii-p86-f16-unit" data-translation-unit="at10ii-p86-f16-unit"></span>
+
+<span id="at10ii-p86-f17-unit" data-translation-unit="at10ii-p86-f17-unit"></span>
+
+<span id="at10ii-p86-f18-unit" data-translation-unit="at10ii-p86-f18-unit"></span>
+
+<span id="at10ii-p86-f19-unit" data-translation-unit="at10ii-p86-f19-unit"></span>
+
+<span id="at10ii-p86-f20-unit" data-translation-unit="at10ii-p86-f20-unit"></span>
+
+<span id="at10ii-p86-f21-unit" data-translation-unit="at10ii-p86-f21-unit"></span>
+
+<span id="at10ii-p86-f22-unit" data-translation-unit="at10ii-p86-f22-unit"></span>
+
+<span id="at10ii-p86-f23-unit" data-translation-unit="at10ii-p86-f23-unit"></span>
+
+<span id="at10ii-p86-f24-unit" data-translation-unit="at10ii-p86-f24-unit"></span>
+
+<span id="at10ii-p86-f25-unit" data-translation-unit="at10ii-p86-f25-unit"></span>
+
+<span id="at10ii-p86-f26-unit" data-translation-unit="at10ii-p86-f26-unit"></span>
+
+<span id="at10ii-p86-f27-unit" data-translation-unit="at10ii-p86-f27-unit"></span>
+
+<span id="at10ii-p86-f28-unit" data-translation-unit="at10ii-p86-f28-unit"></span>
+
+<span id="at10ii-p86-f29-unit" data-translation-unit="at10ii-p86-f29-unit"></span>
+
+<span id="at10ii-p86-f30-unit" data-translation-unit="at10ii-p86-f30-unit"></span>
+
+<span id="at10ii-p86-f31-unit" data-translation-unit="at10ii-p86-f31-unit"></span>
+
+<span id="at10ii-p86-f32-unit" data-translation-unit="at10ii-p86-f32-unit"></span>
+
+<span id="at10ii-p86-f33-unit" data-translation-unit="at10ii-p86-f33-unit"></span>
+
+<span id="at10ii-p86-f34-unit" data-translation-unit="at10ii-p86-f34-unit"></span>
+
+<span id="at10ii-p86-f35-unit" data-translation-unit="at10ii-p86-f35-unit"></span>
+
+<span id="at10ii-p86-f36-unit" data-translation-unit="at10ii-p86-f36-unit"></span>
+
+<span id="at10ii-p86-f37-unit" data-translation-unit="at10ii-p86-f37-unit"></span>
+
+<span id="at10ii-p86-f38-unit" data-translation-unit="at10ii-p86-f38-unit"></span>
+
+<span id="at10ii-p86-f39-unit" data-translation-unit="at10ii-p86-f39-unit"></span>
+
+<span id="at10ii-p86-f40-unit" data-translation-unit="at10ii-p86-f40-unit"></span>
+
+<span id="at10ii-p86-f41-unit" data-translation-unit="at10ii-p86-f41-unit"></span>
+
+<span id="at10ii-p86-f42-unit" data-translation-unit="at10ii-p86-f42-unit"></span>
+
+<span id="at10ii-p86-f43-unit" data-translation-unit="at10ii-p86-f43-unit"></span>
+
+<span id="at10ii-p86-f44-unit" data-translation-unit="at10ii-p86-f44-unit"></span>
+
+<span id="at10ii-p86-f45-unit" data-translation-unit="at10ii-p86-f45-unit"></span>
+
+<span id="at10ii-p86-f46-unit" data-translation-unit="at10ii-p86-f46-unit"></span>
+
+<span id="at10ii-p86-f47-unit" data-translation-unit="at10ii-p86-f47-unit"></span>
+
+<span id="at10ii-p86-f48-unit" data-translation-unit="at10ii-p86-f48-unit"></span>
+
+<span id="at10ii-p86-f49-unit" data-translation-unit="at10ii-p86-f49-unit"></span>
+
+<span id="at10ii-p86-f50-unit" data-translation-unit="at10ii-p86-f50-unit"></span>
+
+<span id="at10ii-p86-f51-unit" data-translation-unit="at10ii-p86-f51-unit"></span>
+
+<span id="at10ii-p86-f52-unit" data-translation-unit="at10ii-p86-f52-unit"></span>
+
+<span id="at10ii-p86-f53-unit" data-translation-unit="at10ii-p86-f53-unit"></span>
+
+<span id="at10ii-p86-f54-unit" data-translation-unit="at10ii-p86-f54-unit"></span>
+
+<span id="at10ii-p86-f55-unit" data-translation-unit="at10ii-p86-f55-unit"></span>
+
+<span id="at10ii-p86-f56-unit" data-translation-unit="at10ii-p86-f56-unit"></span>
+
+<span id="at10ii-p86-f57-unit" data-translation-unit="at10ii-p86-f57-unit"></span>
+
+<span id="at10ii-p86-f58-unit" data-translation-unit="at10ii-p86-f58-unit"></span>
+
+<span id="at10ii-p86-f59-unit" data-translation-unit="at10ii-p86-f59-unit"></span>
+
+<span id="at10ii-p86-f60-unit" data-translation-unit="at10ii-p86-f60-unit"></span>
+
+<span id="at10ii-p86-f61-unit" data-translation-unit="at10ii-p86-f61-unit"></span>
+
+<span id="at10ii-p86-f62-unit" data-translation-unit="at10ii-p86-f62-unit"></span>
+
+<span id="at10ii-p86-f63-unit" data-translation-unit="at10ii-p86-f63-unit"></span>
+
+<span id="at10ii-p86-f64-unit" data-translation-unit="at10ii-p86-f64-unit"></span>
+
+<span id="at10ii-p86-f65-unit" data-translation-unit="at10ii-p86-f65-unit"></span>
+
+<span id="at10ii-p86-f66-unit" data-translation-unit="at10ii-p86-f66-unit"></span>
+
+<span id="at10ii-p87-body" data-translation-unit="at10ii-p87-body"></span>
+
+<span id="at10ii-p87-f1-unit" data-translation-unit="at10ii-p87-f1-unit"></span>
+
+<span id="at10ii-p87-f2-unit" data-translation-unit="at10ii-p87-f2-unit"></span>
+
+<span id="at10ii-p87-f3-unit" data-translation-unit="at10ii-p87-f3-unit"></span>
+
+<span id="at10ii-p87-f4-unit" data-translation-unit="at10ii-p87-f4-unit"></span>
+
+<span id="at10ii-p87-f5-unit" data-translation-unit="at10ii-p87-f5-unit"></span>
+
+<span id="at10ii-p87-f6-unit" data-translation-unit="at10ii-p87-f6-unit"></span>
+
+<span id="at10ii-p87-f7-unit" data-translation-unit="at10ii-p87-f7-unit"></span>
+
+<span id="at10ii-p87-f8-unit" data-translation-unit="at10ii-p87-f8-unit"></span>
+
+<span id="at10ii-p87-f9-unit" data-translation-unit="at10ii-p87-f9-unit"></span>
+
+<span id="at10ii-p87-f10-unit" data-translation-unit="at10ii-p87-f10-unit"></span>
+
+<span id="at10ii-p87-f11-unit" data-translation-unit="at10ii-p87-f11-unit"></span>
+
+<span id="at10ii-p87-f12-unit" data-translation-unit="at10ii-p87-f12-unit"></span>
+
+<span id="at10ii-p87-f13-unit" data-translation-unit="at10ii-p87-f13-unit"></span>
+
+<span id="at10ii-p87-f14-unit" data-translation-unit="at10ii-p87-f14-unit"></span>
+
+<span id="at10ii-p88-body" data-translation-unit="at10ii-p88-body"></span>
+
+<span id="at10ii-p88-f1-unit" data-translation-unit="at10ii-p88-f1-unit"></span>
+
+<span id="at10ii-p88-f2-unit" data-translation-unit="at10ii-p88-f2-unit"></span>
+
+<span id="at10ii-p88-f3-unit" data-translation-unit="at10ii-p88-f3-unit"></span>
+
+<span id="at10ii-p88-f4-unit" data-translation-unit="at10ii-p88-f4-unit"></span>
+
+<span id="at10ii-p88-f5-unit" data-translation-unit="at10ii-p88-f5-unit"></span>
+
+<span id="at10ii-p88-f6-unit" data-translation-unit="at10ii-p88-f6-unit"></span>
+
+<span id="at10ii-p88-f7-unit" data-translation-unit="at10ii-p88-f7-unit"></span>
+
+<span id="at10ii-p88-f8-unit" data-translation-unit="at10ii-p88-f8-unit"></span>
+
+<span id="at10ii-p88-f9-unit" data-translation-unit="at10ii-p88-f9-unit"></span>
+
+<span id="at10ii-p88-f10-unit" data-translation-unit="at10ii-p88-f10-unit"></span>
+
+<span id="at10ii-p88-f11-unit" data-translation-unit="at10ii-p88-f11-unit"></span>
+
+<span id="at10ii-p88-f12-unit" data-translation-unit="at10ii-p88-f12-unit"></span>
+
+<span id="at10ii-p88-f13-unit" data-translation-unit="at10ii-p88-f13-unit"></span>
+
+<span id="at10ii-p88-f14-unit" data-translation-unit="at10ii-p88-f14-unit"></span>
+
+<span id="at10ii-p88-f15-unit" data-translation-unit="at10ii-p88-f15-unit"></span>
+
+<span id="at10ii-p88-f16-unit" data-translation-unit="at10ii-p88-f16-unit"></span>
+
+<span id="at10ii-p88-f17-unit" data-translation-unit="at10ii-p88-f17-unit"></span>
+
+<span id="at10ii-p88-f18-unit" data-translation-unit="at10ii-p88-f18-unit"></span>
