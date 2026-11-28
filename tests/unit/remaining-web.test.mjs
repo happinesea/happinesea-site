@@ -7,10 +7,10 @@ import remaining from '../../src/data/manuals/remaining-web.json' with { type: '
 const sha = (value) => createHash('sha256').update(value).digest('hex');
 
 test('Remaining manual candidates isolate held units and images and preserve source hashes', () => {
-  assert.equal(remaining.manuals.length, 16);
+  assert.equal(remaining.manuals.length, 41);
   assert.equal(
     new Set(remaining.manuals.map((m) => m.inventory_product_id)).size,
-    16,
+    41,
   );
   for (const manual of remaining.manuals) {
     const dir = `public/assets/radiolink/${manual.product_id}/web-ja-v1`;
@@ -20,7 +20,48 @@ test('Remaining manual candidates isolate held units and images and preserve sou
     assert.equal(sha(mdx), manual.mdx_sha256);
     assert.match(mdx.toString(), /status: draft[\s\S]*noindex, nofollow/);
     assert.equal(manual.publication_status, 'UNPUBLISHED');
-    assert.equal(manual.publication_readiness, 'WEB_HOLD');
+    assert.equal(
+      manual.publication_readiness,
+      [
+        'ld-a40',
+        'f450',
+        'a560',
+        'f108',
+        'm435',
+        't8s-bt',
+        't8fb-bt',
+        'crossflight-ce',
+        'crossflight',
+        'crossrace-pro',
+        'crossrace',
+        'at10-ii',
+        'pixhawk',
+        'mini-pix',
+        'pix6',
+        'at9s-pro',
+        'wolf-qav250',
+        't16d',
+        't12d',
+        'rc4gs-v3-official-edition',
+        'rc6gs-v3-official-edition',
+      ].includes(manual.product_id)
+        ? 'WEB_QA_REQUIRED'
+        : 'WEB_HOLD',
+    );
+    if (manual.product_id === 'rc4gs-v3-official-edition') {
+      assert.equal(manual.product_route, '/radiolink/rc4gs-v3/');
+      assert(existsSync('src/content/docs/manuals/rc4gs-v3/index.mdx'));
+    }
+    if (manual.product_id === 't16d') {
+      const text = mdx.toString();
+      assert.equal((text.match(/<span id="section-/g) ?? []).length, 67);
+      assert.match(text, /:::caution\[安全上の注意\]/);
+      assert.equal(manual.unit_ids.length, 143);
+      assert.equal(manual.source_figures_total, 163);
+      for (const id of manual.withheld_unit_ids) {
+        assert(!text.includes(`data-translation-unit="${id}"`));
+      }
+    }
     if (manual.product_id === 'f405') {
       assert.equal(
         manual.source.document_scope,
@@ -38,6 +79,34 @@ test('Remaining manual candidates isolate held units and images and preserve sou
       assert.equal(manual.source.page_count, null);
       assert.match(mdx.toString(), /対象はTS100 V2\.0（M10N）です/);
     }
+    if (manual.product_id === 'f125') {
+      const text = mdx.toString();
+      assert.equal(manual.source_figures_total, 100);
+      assert.match(text, /CM120の給電元の出力電圧は5 Vを超えてはなりません/);
+      assert.match(text, /FPVゴーグルのMicro USB充電端子はDC 5 V専用/);
+      assert.match(text, /スロットルスティックを直ちに最下位置/);
+      assert.doesNotMatch(text, /25 MW|200 MW|CH5スイッチを後方へ/);
+    }
+    if (manual.product_id === 'd460') {
+      assert.match(mdx.toString(), /^## 第1章 D460の概要$/m);
+      assert.match(mdx.toString(), /^## D460（PNP）取扱説明書$/m);
+    }
+    if (manual.product_id === 'd16pro-200') {
+      const text = mdx.toString();
+      assert.equal(manual.unit_ids.length, 74);
+      assert.equal(manual.withheld_unit_ids.length, 58);
+      assert.equal(manual.source_figures_total, 42);
+      assert.match(
+        text,
+        /ディスアームが完了したことを確認[\s\S]*?具体的にいつバッテリーを取り外すかは、原典の記載から確認できていません[\s\S]*?9\. 離陸時/,
+      );
+      assert(!text.includes('Please unplug the battery until'));
+      assert.match(
+        text,
+        /figureId="d16pro-p1-f3"[\s\S]*?figureId="d16pro-p1-f2"[\s\S]*?figureId="d16pro-p1-f1"/,
+      );
+      assert.doesNotMatch(text, /不明のためnull|scopeを維持/);
+    }
     const shown = manual.figures.flatMap(
       (figure) => figure.source_figure_ids ?? [figure.figure_id],
     );
@@ -52,6 +121,13 @@ test('Remaining manual candidates isolate held units and images and preserve sou
       manual.withheld_notice_count ?? manual.withheld_unit_ids.length,
     );
     for (const figure of manual.figures) {
+      assert(
+        mdx
+          .toString()
+          .includes(
+            `/assets/radiolink/${manual.product_id}/web-ja-v1/${figure.path.split('/').at(-1)}`,
+          ),
+      );
       assert.equal(
         sha(readFileSync(`${dir}/${figure.path.split('/').at(-1)}`)),
         figure.sha256,

@@ -1,0 +1,511 @@
+---
+title: D460 日本語取扱説明書
+description: Radiolink D460 の公式英語取扱説明書に対応する日本語版です。
+product: d460
+slug: manuals/d460
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/b88c08f12f7e026f3404d9381dfafb20.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/d460/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink D460 公式英語取扱説明書（文書版・発行日不明、23頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="d460-p1-body" data-translation-unit="d460-p1-body"></span>
+
+# D460 取扱説明書
+
+<span id="d460-p1-f1-unit" data-translation-unit="d460-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/d460/web-ja-v1/d460-p1-f1.png" width={563} height={169} figureId="d460-p1-f1" alt={"RadioLinkのロゴ"} caption={"RadioLinkのロゴ"} />
+
+<span id="d460-p1-f2-unit" data-translation-unit="d460-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/d460/web-ja-v1/d460-p1-f2.jpeg" width={1000} height={670} figureId="d460-p1-f2" alt={"D460固定翼機（紫色）"} caption={"D460固定翼機（紫色）"} />
+
+<span id="d460-p1-f3-unit" data-translation-unit="d460-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/d460/web-ja-v1/d460-p1-f3.jpeg" width={640} height={380} figureId="d460-p1-f3" alt={"14歳以上の表示"} caption={"14歳以上の表示"} />
+
+<span id="d460-p2-body" data-translation-unit="d460-p2-body"></span>
+
+# D460（RTF）目次
+
+- 免責事項と警告（3頁）
+- 梱包内容（4頁）
+- 第1章 D460の概要（5頁）
+- 1.1 D460の概要（5頁）
+- 1.2 D460各部の使用方法（6頁）
+- 1.2.1 使用上の注意（6頁）
+- 1.2.2 送信機と受信機（6頁）
+- 1.2.3 フライトコントローラー Byme-DB（7頁）
+- 1.2.4 モーター（7頁）
+- 1.2.5 ESC（8頁）
+- 1.2.6 サーボ（8頁）
+- 1.2.7 プロペラ（8頁）
+- 1.2.8 バッテリー（8頁）
+- 1.2.9 充電器（9頁）
+- 第2章 飛行モードの設定（10頁）
+- 第3章 モーターの安全ロック（11頁）
+- 第4章 送信機の設定（11頁）
+- 第5章 飛行時の注意（12頁）
+- 第6章 電源投入とジャイロの自己診断（12頁）
+- 第7章 機体姿勢の校正（12頁）
+- 第8章 サーボの動作方向（13頁）
+- 8.1 サーボの動作方向の確認（13頁）
+- 8.2 サーボの動作方向の調整（13頁）
+- 第9章 3つの飛行モード（14頁）
+- 9.1 スタビライズモード（14頁）
+- 9.2 ジャイロモード（16頁）
+- 9.3 マニュアルモード（16頁）
+- 第10章 ジャイロ感度（16頁）
+
+D460にはRTF版とPNP版の2種類があります。RTF版は本書の3〜16頁、PNP版は17〜22頁を参照してください。
+
+<span id="d460-p3-body" data-translation-unit="d460-p3-body"></span>
+
+# D460（PNP）目次
+
+- 免責事項と警告（17頁）
+- 梱包内容（17頁）
+- 第1章 D460の概要（17頁）
+- 1.1 D460の概要（17頁）
+- 1.2 受信機の接続（17頁）
+- 第2章 飛行モードの設定（18頁）
+- 第3章 モーターの安全ロック（18頁）
+- 第4章 送信機の設定（19頁）
+- 4.1 モデルタイプの設定（19頁）
+- 4.2 送信機側の動作方向の設定（20頁）
+- 第5章 飛行時の注意（20頁）
+- 第6章 電源投入とジャイロの自己診断（20頁）
+- 第7章 機体姿勢の校正（20頁）
+- 第8章 サーボの動作方向（22頁）
+- 第9章 3つの飛行モード（22頁）
+- 第10章 ジャイロ感度（22頁）
+
+<span id="d460-p4-body" data-translation-unit="d460-p4-body"></span>
+
+## 免責事項と警告
+Radiolinkの固定翼機D460をお買い上げいただき、ありがとうございます。
+
+製品の性能を十分に引き出し、安全にご使用いただくために、本書をよく読み、記載された手順に沿って設定してください。本製品は玩具ではなく、14歳未満のお子様には適していません。大人はお子様の手の届かない場所に保管し、お子様の近くで操作する際は十分に注意してください。
+
+不適切な操作は、物的損失や人命に危険が及ぶ事故を引き起こすおそれがあります。Radiolink製品を操作すると、操作者がこの責任制限を理解し、操作の責任を負うことに同意したものとみなされます。
+
+現地の法令を遵守し、Radiolinkが定める原則に従ってください。
+
+飛行記録が提供されない場合、Radiolinkは製品の損傷や事故の原因を分析したり、アフターサービスを提供したりすることができない旨をご理解ください。法律で許される最大限の範囲で、Radiolinkは、いかなる場合も、購入、操作、操作の失敗による損失を含め、間接的損害、結果的損害、偶発的損害、特別損害または懲罰的損害に起因する損失について責任を負いません。損失の可能性について事前に通知を受けていた場合も同様です。
+
+国によっては、保証条件からの免責を法令が禁止している場合があります。このため、消費者の権利は国により異なることがあります。
+
+法令に従い、Radiolinkは上記条件を解釈する権利を留保します。また、事前の通知なく条件を更新、変更または終了する権利を留保します。
+
+### 警告
+1. 雨天時は飛行させないでください。雨や湿気は飛行を不安定にし、操縦不能を招くおそれがあります。雷が発生している場合は絶対に飛行させないでください。雨・霧・雷・風のない良好な天候で飛行させることを推奨します。
+2. 飛行時は現地の法令を厳守し、安全に飛行させてください。空港や軍事基地などの飛行禁止区域では飛行させないでください。
+3. 人の集まる場所や建物から離れた、開けた場所で飛行させてください。
+4. 飲酒時、疲労時、その他精神状態が良くないときは操作しないでください。製品の取扱説明書に厳密に従って操作してください。
+5. 高圧送電線、高圧送電施設、携帯電話基地局、テレビ放送塔など、電磁干渉を生じるものの近くで飛行させる際は注意してください。このような場所では送信機の無線伝送性能が干渉の影響を受けることがあります。干渉が強すぎると送信機と受信機の間の信号伝送が途切れ、墜落するおそれがあります。
+
+<span id="d460-p5-body" data-translation-unit="d460-p5-body"></span>
+
+## 梱包内容
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p5-f1-unit" data-translation-unit="d460-p5-f1-unit"></span>
+
+<span id="d460-p5-f2-unit" data-translation-unit="d460-p5-f2-unit"></span>
+
+<span id="d460-p5-f3-unit" data-translation-unit="d460-p5-f3-unit"></span>
+
+<span id="d460-p5-f4-unit" data-translation-unit="d460-p5-f4-unit"></span>
+
+<span id="d460-p5-f5-unit" data-translation-unit="d460-p5-f5-unit"></span>
+
+<span id="d460-p5-f6-unit" data-translation-unit="d460-p5-f6-unit"></span>
+
+<span id="d460-p5-f7-unit" data-translation-unit="d460-p5-f7-unit"></span>
+
+<span id="d460-p5-f8-unit" data-translation-unit="d460-p5-f8-unit"></span>
+
+<span id="d460-p5-f9-unit" data-translation-unit="d460-p5-f9-unit"></span>
+
+<span id="d460-p5-f10-unit" data-translation-unit="d460-p5-f10-unit"></span>
+
+<span id="d460-p5-f11-unit" data-translation-unit="d460-p5-f11-unit"></span>
+
+<span id="d460-p5-f12-unit" data-translation-unit="d460-p5-f12-unit"></span>
+
+<span id="d460-p5-f13-unit" data-translation-unit="d460-p5-f13-unit"></span>
+
+<span id="d460-p5-f14-unit" data-translation-unit="d460-p5-f14-unit"></span>
+
+<span id="d460-p5-f15-unit" data-translation-unit="d460-p5-f15-unit"></span>
+
+<span id="d460-p5-f16-unit" data-translation-unit="d460-p5-f16-unit"></span>
+
+<span id="d460-p5-f17-unit" data-translation-unit="d460-p5-f17-unit"></span>
+
+<span id="d460-p6-body" data-translation-unit="d460-p6-body"></span>
+
+## 第1章 D460の概要
+
+## 1.1 D460の概要
+
+<span id="d460-p6-f1-unit" data-translation-unit="d460-p6-f1-unit"></span>
+
+<span id="d460-p6-f2-unit" data-translation-unit="d460-p6-f2-unit"></span>
+
+<span id="d460-p7-body" data-translation-unit="d460-p7-body"></span>
+
+## 1.2 D460各部の使用方法
+
+### 1.2.1 使用上の注意
+
+<span id="d460-p7-body-inspection" data-translation-unit="d460-p7-body-inspection"></span>
+
+:::caution[注意]
+- 水・油・砂などの異物がD460の内部に入っていないことを確認してください。
+- D460本体、送信機、バッテリーを含む装置一式が正常に機能することを確認してください。
+- 機体や関連部品を自分で改造しないでください。機能を損ない、飛行事故につながるおそれがあります。
+:::
+
+<span id="d460-p7-body-tail" data-translation-unit="d460-p7-body-tail"></span>
+
+### 1.2.2 送信機と受信機
+
+#### スティックモード
+
+#### T8S送信機の使い方
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p7-body-tail-shutdown" data-translation-unit="d460-p7-body-tail-shutdown"></span>
+
+:::caution[注意]
+- 着陸時は、送信機より先にD460の電源を切ってください。
+:::
+
+<span id="d460-p7-body-tail-safety-remainder" data-translation-unit="d460-p7-body-tail-safety-remainder"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p7-f1-unit" data-translation-unit="d460-p7-f1-unit"></span>
+
+<span id="d460-p8-body" data-translation-unit="d460-p8-body"></span>
+
+#### 警告音（続き）
+
+### 1.2.3 フライトコントローラー Byme-DB
+
+### 1.2.4 モーター
+
+#### モーターの使い方
+
+<span id="d460-p8-body-motor" data-translation-unit="d460-p8-body-motor"></span>
+
+:::caution[注意]
+2. モーターの構造を自分で改造しないでください。
+3. モーターは回転が止まった直後に触らないでください。やけどのおそれがあります。
+4. モーターの通気口をふさがないでください。内部に異物がないことを確認してください。
+5. D460と送信機の電源を切る前に、モーターが完全に停止したことを確認してください。
+:::
+
+<span id="d460-p8-f1-unit" data-translation-unit="d460-p8-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p9-body" data-translation-unit="d460-p9-body"></span>
+
+### 1.2.5 ESC
+
+### 1.2.6 サーボ
+
+### 1.2.7 プロペラ
+
+<span id="d460-p9-body-propeller" data-translation-unit="d460-p9-body-propeller"></span>
+
+:::caution[注意]
+1. 飛行前にプロペラの状態を確認してください。劣化、破損、変形がある場合は、正常なものに交換してから飛行させてください。
+2. プロペラに触れる前に必ず電源を切り離してください。
+3. プロペラは薄いため、必要に応じて工具を使って着脱し、誤って傷を負わないように注意してください。
+4. 飛行前にプロペラが確実に取り付けられていることを確認してください。
+5. 切り傷を防ぐため、回転中のプロペラやモーターに近づかないでください。着陸中の機体を手でつかむなどの行為も避けてください。
+:::
+
+<span id="d460-p9-body-tail" data-translation-unit="d460-p9-body-tail"></span>
+
+### 1.2.8 バッテリー
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p9-f1-unit" data-translation-unit="d460-p9-f1-unit"></span>
+
+<span id="d460-p10-body" data-translation-unit="d460-p10-body"></span>
+
+### 1.2.9 充電器
+
+#### CM210の使い方
+
+<span id="d460-p10-f1-unit" data-translation-unit="d460-p10-f1-unit"></span>
+
+<span id="d460-p11-body" data-translation-unit="d460-p11-body"></span>
+
+#### CM210のLED表示（続き）
+
+#### CM210のトラブルシューティング
+
+## 第2章 飛行モードの設定
+
+<span id="d460-p11-f1-unit" data-translation-unit="d460-p11-f1-unit"></span>
+
+<span id="d460-p11-f2-unit" data-translation-unit="d460-p11-f2-unit"></span>
+
+<span id="d460-p12-body" data-translation-unit="d460-p12-body"></span>
+
+## 第3章 モーターの安全ロック
+
+## 第4章 送信機の設定
+
+<span id="d460-p12-f1-unit" data-translation-unit="d460-p12-f1-unit"></span>
+
+<span id="d460-p12-f2-unit" data-translation-unit="d460-p12-f2-unit"></span>
+
+<span id="d460-p13-body-mixing" data-translation-unit="d460-p13-body-mixing"></span>
+
+:::caution[注意]
+注意：機体にByme-DBを搭載している場合、送信機側でミキシングを設定しないでください。Byme-DBにミキシング機能があり、機体の飛行モードに応じて自動で働きます。送信機側でも設定するとミキシングが競合し、飛行に影響します。
+:::
+
+<span id="d460-p13-body" data-translation-unit="d460-p13-body"></span>
+
+## 第5章 飛行時の注意
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p13-body-preflight" data-translation-unit="d460-p13-body-preflight"></span>
+
+:::caution[注意]
+1. 離陸前に全部品が正常に働くことを確認してください。
+2. 離陸前にバッテリーが満充電で、機体に確実に固定されていることを確認してください。
+3. プロペラの表裏が正しく取り付けられ、傾いていないことを確認してください。
+:::
+
+<span id="d460-p13-body-safety-remainder" data-translation-unit="d460-p13-body-safety-remainder"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p13-body-land" data-translation-unit="d460-p13-body-land"></span>
+
+:::caution[注意]
+7. 飛行中に異常があれば直ちに着陸し、原因を特定してください。
+:::
+
+<span id="d460-p13-body-tail" data-translation-unit="d460-p13-body-tail"></span>
+
+## 第6章 電源投入とジャイロの自己診断
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p13-body-tail-throttle" data-translation-unit="d460-p13-body-tail-throttle"></span>
+
+:::caution[注意]
+注意：電源を入れる前に送信機のスロットルスティックを最下位置にしてください。最上位置で機体の電源を入れるとESCは校正モードに入ります。
+:::
+
+<span id="d460-p13-body-tail-safety-remainder" data-translation-unit="d460-p13-body-tail-safety-remainder"></span>
+
+## 第7章 機体姿勢の校正
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p13-f1-unit" data-translation-unit="d460-p13-f1-unit"></span>
+
+<span id="d460-p14-body" data-translation-unit="d460-p14-body"></span>
+
+## 第7章 姿勢キャリブレーション（続き）
+
+## 第8章 サーボの動作方向
+
+### 8.1 サーボの動作方向の確認
+
+### 8.2 サーボの動作方向の調整
+
+<span id="d460-p14-visual-01-unit" data-translation-unit="d460-p14-visual-01-unit"></span>
+
+<span id="d460-p14-visual-02-unit" data-translation-unit="d460-p14-visual-02-unit"></span>
+
+<span id="d460-p15-body" data-translation-unit="d460-p15-body"></span>
+
+## 第9章 3つのフライトモード
+
+### 9.1 スタビライズモード
+
+<span id="d460-p15-visual-01-unit" data-translation-unit="d460-p15-visual-01-unit"></span>
+
+<span id="d460-p16-body" data-translation-unit="d460-p16-body"></span>
+
+<span id="d460-p16-f1-unit" data-translation-unit="d460-p16-f1-unit"></span>
+
+<span id="d460-p16-f2-unit" data-translation-unit="d460-p16-f2-unit"></span>
+
+<span id="d460-p16-f3-unit" data-translation-unit="d460-p16-f3-unit"></span>
+
+<span id="d460-p17-body" data-translation-unit="d460-p17-body"></span>
+
+### 9.2 ジャイロモード
+
+### 9.3 マニュアルモード
+
+## 第10章 ジャイロ感度
+
+<span id="d460-p17-f1-unit" data-translation-unit="d460-p17-f1-unit"></span>
+
+<span id="d460-p18-body" data-translation-unit="d460-p18-body"></span>
+
+## D460（PNP）取扱説明書
+
+## 免責事項と警告
+
+## 梱包内容
+
+## 第1章 D460の概要
+
+### 1.1 D460の概要と各機器の使用方法
+
+### 1.2 受信機の接続
+
+<span id="d460-p19-body" data-translation-unit="d460-p19-body"></span>
+
+## 第2章 飛行モードの設定
+
+## 第3章 モーターの安全ロック
+
+<span id="d460-p19-f1-unit" data-translation-unit="d460-p19-f1-unit"></span>
+
+<span id="d460-p19-f2-unit" data-translation-unit="d460-p19-f2-unit"></span>
+
+<span id="d460-p20-body" data-translation-unit="d460-p20-body"></span>
+
+### モーターの安全ロック（続き）
+
+## 第4章 送信機の設定
+
+### 4.1 モデルタイプの設定
+
+<span id="d460-p20-f1-unit" data-translation-unit="d460-p20-f1-unit"></span>
+
+<span id="d460-p20-f2-unit" data-translation-unit="d460-p20-f2-unit"></span>
+
+<span id="d460-p20-f3-unit" data-translation-unit="d460-p20-f3-unit"></span>
+
+<span id="d460-p21-body" data-translation-unit="d460-p21-body"></span>
+
+### 4.2 送信機側の動作方向の設定
+
+<span id="d460-p21-body-mixing" data-translation-unit="d460-p21-body-mixing"></span>
+
+:::caution[注意]
+注意：機体にByme-DBを搭載している場合、送信機側ではミキシングを設定しないでください。Byme-DBのミキシングは機体の飛行モードに応じて自動的に働きます。送信機側でも設定するとミキシングが競合し、飛行に影響します。
+:::
+
+<span id="d460-p21-body-tail" data-translation-unit="d460-p21-body-tail"></span>
+
+## 第5章 飛行時の注意
+
+## 第6章 電源投入とジャイロの自己診断
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p21-body-tail-throttle" data-translation-unit="d460-p21-body-tail-throttle"></span>
+
+:::caution[注意]
+2. 送信機のスロットルスティックを先に最下位置にしてから、機体の電源を入れてください。最上位置で電源を入れるとESCは校正モードに入ります。
+:::
+
+<span id="d460-p21-body-tail-safety-remainder" data-translation-unit="d460-p21-body-tail-safety-remainder"></span>
+
+## 第7章 機体姿勢の校正
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p21-f1-unit" data-translation-unit="d460-p21-f1-unit"></span>
+
+<span id="d460-p22-body" data-translation-unit="d460-p22-body"></span>
+
+### 機体姿勢の校正（続き）
+
+<span id="d460-p22-f1-unit" data-translation-unit="d460-p22-f1-unit"></span>
+
+<span id="d460-p22-f2-unit" data-translation-unit="d460-p22-f2-unit"></span>
+
+<span id="d460-p22-f3-unit" data-translation-unit="d460-p22-f3-unit"></span>
+
+<span id="d460-p23-body" data-translation-unit="d460-p23-body"></span>
+
+## 第8章 サーボの動作方向
+D460 RTF版の第8章を参照してください。
+
+## 第9章 3つの飛行モード
+D460 RTF版の第9章を参照してください。
+
+## 第10章 ジャイロ感度
+D460 RTF版の第10章を参照してください。
+
+## テクニカルサポート
+Facebook MessengerでRadioLink RLに連絡できます。原典にはD460取扱説明書とチュートリアルのQRコードも掲載されています。
+上記の情報で解決しない場合は、テクニカルサポートへメールでお問い合わせください。
+after_service@radioLink.com.cn
+内容は変更される場合があります。D460の最新版の取扱説明書は、以下からダウンロードしてください。
+https://www.radiolink.com/D460_manual
+
+Radiolink製品をお選びいただき、ありがとうございます。
+
+<span id="d460-p23-f1-unit" data-translation-unit="d460-p23-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/d460/web-ja-v1/d460-p23-f1.png" width={193} height={191} figureId="d460-p23-f1" alt={"Facebook Messengerのアイコン"} caption={"Facebook Messengerのアイコン"} />
+
+<span id="d460-p23-f2-unit" data-translation-unit="d460-p23-f2-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="d460-p23-f3-unit" data-translation-unit="d460-p23-f3-unit"></span>

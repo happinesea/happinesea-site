@@ -1,0 +1,594 @@
+---
+title: Mini Pix 日本語取扱説明書
+description: Radiolink Mini Pix の公式英語取扱説明書に対応する日本語版です。
+product: mini-pix
+slug: manuals/mini-pix
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/8fc95ecea89e90b8ed7d28187bd7d9ca-11307
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/mini-pix/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink Mini Pix 公式英語取扱説明書（文書版・発行日不明、60頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="minipix-p1-body" data-translation-unit="minipix-p1-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+# Mini Pix 取扱説明書
+
+対応機種：固定翼機、グライダー、マルチローター、ヘリコプター、車、ボート、ロボット。
+
+CE・FCC・RoHS
+
+<span id="minipix-p1-f1-unit" data-translation-unit="minipix-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/mini-pix/web-ja-v1/minipix-p1-f1.jpeg" width={943} height={634} figureId="minipix-p1-f1" alt={"Mini Pix原典物理1頁の図1"} caption={"Mini Pix原典物理1頁の図1"} />
+
+<span id="minipix-p1-f2-unit" data-translation-unit="minipix-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/mini-pix/web-ja-v1/minipix-p1-f2-web.png" width={600} height={180} figureId="minipix-p1-f2" alt={"Mini Pix原典物理1頁の図2"} caption={"Mini Pix原典物理1頁の図2"} />
+
+<span id="minipix-p2-body-safety" data-translation-unit="minipix-p2-body-safety"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+RadiolinkのフライトコントローラーMini Pixをお買い上げいただき、ありがとうございます。製品の機能を十分に活用し、安全にお使いいただくため、本書をよく読み、記載の手順に従って機器を設定してください。
+
+操作中に問題が生じた場合は、次の方法で技術サポートを受けられます。
+
+1. after_service@radiolink.com.cn へメールをお送りください。できるだけ早く回答します。
+2. Facebookページにメッセージを送るか、YouTubeページにコメントを残してください。
+3. お近くの販売店で購入した場合は、その販売店にもサポートや修理についてご相談いただけます。
+
+説明書、ファームウェア、チュートリアルはRadiolink公式サイト（www.radiolink.com）に掲載されています。FacebookとYouTubeでも最新情報を確認できます。
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界が悪いと方向を見失い、操縦できなくなるおそれがあります。
+- 人混みや法令で禁止されている場所では使用しないでください。
+- 使用前に毎回、すべてのサーボとその接続を点検してください。
+- 電源は必ず受信機、送信機の順に切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉のない場所で飛行・走行させてください。
+
+## 警告
+
+本製品は玩具ではなく、18歳未満の子どもの使用には適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは慎重に操作してください。
+
+水や湿気がアンテナやスティックの隙間から送信機に入り、機体の動作が不安定になったり、制御不能になったりするおそれがあります。
+
+<span id="minipix-p2-body" data-translation-unit="minipix-p2-body"></span>
+
+## FCC声明
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="minipix-p2-f1-unit" data-translation-unit="minipix-p2-f1-unit"></span>
+
+<span id="minipix-p2-f2-unit" data-translation-unit="minipix-p2-f2-unit"></span>
+
+<span id="minipix-p3-body" data-translation-unit="minipix-p3-body"></span>
+
+## FCC声明（続き）
+
+## 同梱品
+
+<span id="minipix-p4-body" data-translation-unit="minipix-p4-body"></span>
+
+Radiolink Electronic Ltd
+www.radiolink.com
+
+## 目次（原典の印刷ページ）
+
+- 同梱品 — 2
+- 1. Mini Pixの概要 — 2
+  - 1.1 付属品 — 2
+  - 1.2 コネクター — 3
+  - 1.3 パラメーター — 4
+  - 1.4 使用上の助言 — 5
+- 2. Mission Planner — 5
+  - 2.1 Mission Plannerのインストール — 5
+  - 2.2 Mission Plannerの概要 — 6
+- 3. 初期設定 — 7
+  - 3.1 ファームウェアのダウンロードとインストール — 7
+  - 3.2 フレームタイプ — 9
+  - 3.3 加速度センサーのキャリブレーション — 10
+  - 3.4 コンパスのキャリブレーション — 13
+    - 3.4.1 Mission Plannerを使う場合 — 13
+    - 3.4.2 送信機を使う場合 — 16
+  - 3.5 送受信機のキャリブレーション — 18
+  - 3.6 フライトモード — 22
+    - 3.6.1 Stabilizeモード — 24
+    - 3.6.2 Acroモード（FPV） — 24
+    - 3.6.3 Altitude Holdモード — 25
+    - 3.6.4 Autoモード — 26
+    - 3.6.5 PosHoldモード — 28
+    - 3.6.6 RTLモード — 28
+    - 3.6.7 SimpleモードとSuper Simpleモード — 30
+    - 3.6.8 その他のフライトモード — 33
+- 4. F/S（フェイルセーフ）設定 — 33
+  - 4.1 無線フェイルセーフの設定 — 33
+  - 4.2 EKFフェイルセーフ — 38
+- 5. オプション機器の取り付けと設定 — 38
+  - 5.1 機体へのMini Pixの取り付け — 38
+  - 5.2 Mini Pixと機体の接続 — 39
+    - 5.2.1 モーターの番号順と回転方向の選択 — 39
+    - 5.2.2 時計回りと反時計回りのプロペラの見分け方 — 41
+    - 5.2.3 付属品の接続 — 42
+  - 5.3 LED表示、アーム、トラブルシューティング — 45
+    - 5.3.1 LED表示 — 45
+    - 5.3.2 アームとディスアーム — 46
+  - 5.4 ESCのキャリブレーション — 49
+  - 5.5 水平キャリブレーション — 50
+  - 5.6 GeoFence — 51
+- 6. AutoTune — 53
+
+<span id="minipix-p5-body" data-translation-unit="minipix-p5-body"></span>
+
+## 1. Mini Pixの概要
+
+### 1.1 付属品
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="minipix-p5-f1-unit" data-translation-unit="minipix-p5-f1-unit"></span>
+
+<span id="minipix-p6-body" data-translation-unit="minipix-p6-body"></span>
+
+### 1.2 コネクター
+
+<span id="minipix-p6-f1-unit" data-translation-unit="minipix-p6-f1-unit"></span>
+
+<span id="minipix-p6-f2-unit" data-translation-unit="minipix-p6-f2-unit"></span>
+
+<span id="minipix-p7-body" data-translation-unit="minipix-p7-body"></span>
+
+### 1.3 パラメーター
+
+<span id="minipix-p7-f1-unit" data-translation-unit="minipix-p7-f1-unit"></span>
+
+<span id="minipix-p8-body" data-translation-unit="minipix-p8-body"></span>
+
+### 1.4 使用上の助言
+
+## 2. Mission Planner
+
+### 2.1 Mission Plannerのインストール
+
+<span id="minipix-p8-f1-unit" data-translation-unit="minipix-p8-f1-unit"></span>
+
+<span id="minipix-p9-body" data-translation-unit="minipix-p9-body"></span>
+
+### 2.2 Mission Plannerの概要
+
+<span id="minipix-p9-f1-unit" data-translation-unit="minipix-p9-f1-unit"></span>
+
+<span id="minipix-p10-body" data-translation-unit="minipix-p10-body"></span>
+
+## 3. 初期設定
+
+### 3.1 ファームウェアのダウンロードとインストール
+
+<span id="minipix-p10-f1-unit" data-translation-unit="minipix-p10-f1-unit"></span>
+
+<span id="minipix-p11-body" data-translation-unit="minipix-p11-body"></span>
+
+<span id="minipix-p11-f1-unit" data-translation-unit="minipix-p11-f1-unit"></span>
+
+<span id="minipix-p11-f2-unit" data-translation-unit="minipix-p11-f2-unit"></span>
+
+<span id="minipix-p11-f3-unit" data-translation-unit="minipix-p11-f3-unit"></span>
+
+<span id="minipix-p12-body" data-translation-unit="minipix-p12-body"></span>
+
+### 3.2 フレームタイプ
+
+<span id="minipix-p12-f1-unit" data-translation-unit="minipix-p12-f1-unit"></span>
+
+<span id="minipix-p12-f2-unit" data-translation-unit="minipix-p12-f2-unit"></span>
+
+<span id="minipix-p13-body" data-translation-unit="minipix-p13-body"></span>
+
+### 3.3 加速度センサーのキャリブレーション
+
+<span id="minipix-p13-f1-unit" data-translation-unit="minipix-p13-f1-unit"></span>
+
+<span id="minipix-p13-f2-unit" data-translation-unit="minipix-p13-f2-unit"></span>
+
+<span id="minipix-p13-f3-unit" data-translation-unit="minipix-p13-f3-unit"></span>
+
+<span id="minipix-p14-body" data-translation-unit="minipix-p14-body"></span>
+
+<span id="minipix-p14-f1-unit" data-translation-unit="minipix-p14-f1-unit"></span>
+
+<span id="minipix-p14-f2-unit" data-translation-unit="minipix-p14-f2-unit"></span>
+
+<span id="minipix-p15-body" data-translation-unit="minipix-p15-body"></span>
+
+<span id="minipix-p15-f1-unit" data-translation-unit="minipix-p15-f1-unit"></span>
+
+<span id="minipix-p15-f2-unit" data-translation-unit="minipix-p15-f2-unit"></span>
+
+<span id="minipix-p15-f3-unit" data-translation-unit="minipix-p15-f3-unit"></span>
+
+<span id="minipix-p16-body" data-translation-unit="minipix-p16-body"></span>
+
+### 3.4 コンパスのキャリブレーション
+
+#### 3.4.1 Mission Plannerを使う場合
+
+<span id="minipix-p16-f1-unit" data-translation-unit="minipix-p16-f1-unit"></span>
+
+<span id="minipix-p17-body" data-translation-unit="minipix-p17-body"></span>
+
+<span id="minipix-p17-f1-unit" data-translation-unit="minipix-p17-f1-unit"></span>
+
+<span id="minipix-p17-f2-unit" data-translation-unit="minipix-p17-f2-unit"></span>
+
+<span id="minipix-p17-f3-unit" data-translation-unit="minipix-p17-f3-unit"></span>
+
+<span id="minipix-p18-body" data-translation-unit="minipix-p18-body"></span>
+
+<span id="minipix-p18-f1-unit" data-translation-unit="minipix-p18-f1-unit"></span>
+
+<span id="minipix-p18-f2-unit" data-translation-unit="minipix-p18-f2-unit"></span>
+
+<span id="minipix-p18-f3-unit" data-translation-unit="minipix-p18-f3-unit"></span>
+
+<span id="minipix-p18-f4-unit" data-translation-unit="minipix-p18-f4-unit"></span>
+
+<span id="minipix-p18-f5-unit" data-translation-unit="minipix-p18-f5-unit"></span>
+
+<span id="minipix-p18-f6-unit" data-translation-unit="minipix-p18-f6-unit"></span>
+
+<span id="minipix-p18-f7-unit" data-translation-unit="minipix-p18-f7-unit"></span>
+
+<span id="minipix-p19-body" data-translation-unit="minipix-p19-body"></span>
+
+#### 3.4.2 送信機を使う場合
+
+<span id="minipix-p19-f1-unit" data-translation-unit="minipix-p19-f1-unit"></span>
+
+<span id="minipix-p20-body" data-translation-unit="minipix-p20-body"></span>
+
+<span id="minipix-p20-f1-unit" data-translation-unit="minipix-p20-f1-unit"></span>
+
+<span id="minipix-p20-f2-unit" data-translation-unit="minipix-p20-f2-unit"></span>
+
+<span id="minipix-p20-f3-unit" data-translation-unit="minipix-p20-f3-unit"></span>
+
+<span id="minipix-p20-f4-unit" data-translation-unit="minipix-p20-f4-unit"></span>
+
+<span id="minipix-p20-f5-unit" data-translation-unit="minipix-p20-f5-unit"></span>
+
+<span id="minipix-p20-f6-unit" data-translation-unit="minipix-p20-f6-unit"></span>
+
+<span id="minipix-p21-body" data-translation-unit="minipix-p21-body"></span>
+
+### 3.5 送受信機のキャリブレーション
+
+<span id="minipix-p21-f1-unit" data-translation-unit="minipix-p21-f1-unit"></span>
+
+<span id="minipix-p21-f2-unit" data-translation-unit="minipix-p21-f2-unit"></span>
+
+<span id="minipix-p22-body" data-translation-unit="minipix-p22-body"></span>
+
+<span id="minipix-p22-f1-unit" data-translation-unit="minipix-p22-f1-unit"></span>
+
+<span id="minipix-p22-f2-unit" data-translation-unit="minipix-p22-f2-unit"></span>
+
+<span id="minipix-p23-body" data-translation-unit="minipix-p23-body"></span>
+
+### 3.5 送信機の校正（続き）
+
+<span id="minipix-p23-f1-unit" data-translation-unit="minipix-p23-f1-unit"></span>
+
+<span id="minipix-p23-f2-unit" data-translation-unit="minipix-p23-f2-unit"></span>
+
+<span id="minipix-p23-f3-unit" data-translation-unit="minipix-p23-f3-unit"></span>
+
+<span id="minipix-p24-body" data-translation-unit="minipix-p24-body"></span>
+
+### 3.5 送信機の校正（続き）
+
+<span id="minipix-p24-f1-unit" data-translation-unit="minipix-p24-f1-unit"></span>
+
+<span id="minipix-p24-f2-unit" data-translation-unit="minipix-p24-f2-unit"></span>
+
+<span id="minipix-p25-body" data-translation-unit="minipix-p25-body"></span>
+
+### 3.6 フライトモード
+
+<span id="minipix-p25-f1-unit" data-translation-unit="minipix-p25-f1-unit"></span>
+
+<span id="minipix-p25-f2-unit" data-translation-unit="minipix-p25-f2-unit"></span>
+
+<span id="minipix-p26-body" data-translation-unit="minipix-p26-body"></span>
+
+<span id="minipix-p26-f1-unit" data-translation-unit="minipix-p26-f1-unit"></span>
+
+<span id="minipix-p26-f2-unit" data-translation-unit="minipix-p26-f2-unit"></span>
+
+<span id="minipix-p27-body" data-translation-unit="minipix-p27-body"></span>
+
+#### 3.6.1 Stabilizeモード
+
+#### 3.6.2 Acroモード（FPV）
+
+<span id="minipix-p28-body" data-translation-unit="minipix-p28-body"></span>
+
+#### 3.6.3 Altitude Holdモード
+
+<span id="minipix-p28-f1-unit" data-translation-unit="minipix-p28-f1-unit"></span>
+
+<span id="minipix-p29-body" data-translation-unit="minipix-p29-body"></span>
+
+#### 3.6.3 Altitude Holdモード（続き）
+
+#### 3.6.4 Autoモード
+
+<span id="minipix-p29-f1-unit" data-translation-unit="minipix-p29-f1-unit"></span>
+
+<span id="minipix-p30-body" data-translation-unit="minipix-p30-body"></span>
+
+#### 3.6.4 Autoモード（続き）
+
+<span id="minipix-p30-f1-unit" data-translation-unit="minipix-p30-f1-unit"></span>
+
+<span id="minipix-p31-body" data-translation-unit="minipix-p31-body"></span>
+
+#### 3.6.4 Autoモード（続き）
+
+#### 3.6.5 PosHoldモード
+
+#### 3.6.6 RTLモード
+
+<span id="minipix-p32-body" data-translation-unit="minipix-p32-body"></span>
+
+#### 3.6.6 RTLモード（続き）
+
+<span id="minipix-p32-f1-unit" data-translation-unit="minipix-p32-f1-unit"></span>
+
+<span id="minipix-p33-body" data-translation-unit="minipix-p33-body"></span>
+
+#### 3.6.7 SimpleモードとSuper Simpleモード
+
+<span id="minipix-p34-body" data-translation-unit="minipix-p34-body"></span>
+
+<span id="minipix-p34-f1-unit" data-translation-unit="minipix-p34-f1-unit"></span>
+
+<span id="minipix-p34-f2-unit" data-translation-unit="minipix-p34-f2-unit"></span>
+
+<span id="minipix-p35-body" data-translation-unit="minipix-p35-body"></span>
+
+<span id="minipix-p35-f1-unit" data-translation-unit="minipix-p35-f1-unit"></span>
+
+<span id="minipix-p36-body" data-translation-unit="minipix-p36-body"></span>
+
+#### 3.6.8 その他のフライトモード
+
+## 4. F/S（フェイルセーフ）設定
+
+### 4.1 無線フェイルセーフの設定
+
+<span id="minipix-p37-body" data-translation-unit="minipix-p37-body"></span>
+
+<span id="minipix-p37-f1-unit" data-translation-unit="minipix-p37-f1-unit"></span>
+
+<span id="minipix-p37-f2-unit" data-translation-unit="minipix-p37-f2-unit"></span>
+
+<span id="minipix-p38-body" data-translation-unit="minipix-p38-body"></span>
+
+<span id="minipix-p38-f1-unit" data-translation-unit="minipix-p38-f1-unit"></span>
+
+<span id="minipix-p39-body" data-translation-unit="minipix-p39-body"></span>
+
+<span id="minipix-p39-f1-unit" data-translation-unit="minipix-p39-f1-unit"></span>
+
+<span id="minipix-p39-f2-unit" data-translation-unit="minipix-p39-f2-unit"></span>
+
+<span id="minipix-p40-body" data-translation-unit="minipix-p40-body"></span>
+
+<span id="minipix-p41-body" data-translation-unit="minipix-p41-body"></span>
+
+### 4.1 送受信機のフェイルセーフ設定（続き）
+
+### 4.2 EKFフェイルセーフ
+
+## 5. オプションハードウェアの設定
+
+### 5.1 機体へのMini Pixの取り付け
+
+<span id="minipix-p41-f1-unit" data-translation-unit="minipix-p41-f1-unit"></span>
+
+<span id="minipix-p41-f2-unit" data-translation-unit="minipix-p41-f2-unit"></span>
+
+<span id="minipix-p42-body" data-translation-unit="minipix-p42-body"></span>
+
+### 5.1 機体へのMini Pixの取り付け（続き）
+
+### 5.2 Mini Pixと機体の接続
+
+#### 5.2.1 モーター順序と回転方向の選択
+
+<span id="minipix-p42-f1-unit" data-translation-unit="minipix-p42-f1-unit"></span>
+
+<span id="minipix-p42-f2-unit" data-translation-unit="minipix-p42-f2-unit"></span>
+
+<span id="minipix-p42-f3-unit" data-translation-unit="minipix-p42-f3-unit"></span>
+
+<span id="minipix-p43-body" data-translation-unit="minipix-p43-body"></span>
+
+#### 5.2.1 モーター順序と回転方向の選択（続き）
+
+<span id="minipix-p43-f1-unit" data-translation-unit="minipix-p43-f1-unit"></span>
+
+<span id="minipix-p43-f2-unit" data-translation-unit="minipix-p43-f2-unit"></span>
+
+<span id="minipix-p43-f3-unit" data-translation-unit="minipix-p43-f3-unit"></span>
+
+<span id="minipix-p44-body" data-translation-unit="minipix-p44-body"></span>
+
+#### 5.2.1 モーター順序と回転方向の選択（続き）
+
+#### 5.2.2 時計回り・反時計回りプロペラの見分け方
+
+<span id="minipix-p44-f1-unit" data-translation-unit="minipix-p44-f1-unit"></span>
+
+<span id="minipix-p44-f2-unit" data-translation-unit="minipix-p44-f2-unit"></span>
+
+<span id="minipix-p44-f3-unit" data-translation-unit="minipix-p44-f3-unit"></span>
+
+<span id="minipix-p45-body" data-translation-unit="minipix-p45-body"></span>
+
+#### 5.2.2 時計回り・反時計回りプロペラの見分け方（続き）
+
+#### 5.2.3 付属部品の接続
+
+<span id="minipix-p45-f1-unit" data-translation-unit="minipix-p45-f1-unit"></span>
+
+<span id="minipix-p45-f2-unit" data-translation-unit="minipix-p45-f2-unit"></span>
+
+<span id="minipix-p46-body" data-translation-unit="minipix-p46-body"></span>
+
+#### 5.2.3 付属部品の接続（続き）
+
+<span id="minipix-p47-body" data-translation-unit="minipix-p47-body"></span>
+
+#### 5.2.3 付属部品の接続（続き）
+
+<span id="minipix-p47-f1-unit" data-translation-unit="minipix-p47-f1-unit"></span>
+
+<span id="minipix-p48-body" data-translation-unit="minipix-p48-body"></span>
+
+#### 5.2.3 付属部品の接続（続き）
+
+### 5.3 LED表示・アーム・問題解決
+
+#### 5.3.1 LED表示
+
+<span id="minipix-p48-f1-unit" data-translation-unit="minipix-p48-f1-unit"></span>
+
+<span id="minipix-p49-body" data-translation-unit="minipix-p49-body"></span>
+
+#### 5.3.2 アームとディスアーム
+
+<span id="minipix-p50-body" data-translation-unit="minipix-p50-body"></span>
+
+#### 5.3.2 アームとディスアーム（続き）
+
+<span id="minipix-p51-body" data-translation-unit="minipix-p51-body"></span>
+
+#### 5.3.2 アームとディスアーム（続き）
+
+<span id="minipix-p52-body" data-translation-unit="minipix-p52-body"></span>
+
+### 5.4 ESCの校正
+
+<span id="minipix-p52-f1-unit" data-translation-unit="minipix-p52-f1-unit"></span>
+
+<span id="minipix-p53-body" data-translation-unit="minipix-p53-body"></span>
+
+### 5.4 ESCの校正（続き）
+
+### 5.5 水平校正
+
+<span id="minipix-p53-f1-unit" data-translation-unit="minipix-p53-f1-unit"></span>
+
+<span id="minipix-p54-body" data-translation-unit="minipix-p54-body"></span>
+
+### 5.6 ジオフェンス
+
+<span id="minipix-p54-f1-unit" data-translation-unit="minipix-p54-f1-unit"></span>
+
+<span id="minipix-p54-f2-unit" data-translation-unit="minipix-p54-f2-unit"></span>
+
+<span id="minipix-p55-body" data-translation-unit="minipix-p55-body"></span>
+
+### 5.6 ジオフェンス（続き）
+
+<span id="minipix-p55-f1-unit" data-translation-unit="minipix-p55-f1-unit"></span>
+
+<span id="minipix-p56-body" data-translation-unit="minipix-p56-body"></span>
+
+### 5.6 ジオフェンス（続き）
+
+## 6. AutoTune
+
+<span id="minipix-p56-f1-unit" data-translation-unit="minipix-p56-f1-unit"></span>
+
+<span id="minipix-p56-f2-unit" data-translation-unit="minipix-p56-f2-unit"></span>
+
+<span id="minipix-p57-body" data-translation-unit="minipix-p57-body"></span>
+
+### 飛行前の設定
+
+### AutoTuneの開始
+
+<span id="minipix-p57-f1-unit" data-translation-unit="minipix-p57-f1-unit"></span>
+
+<span id="minipix-p58-body" data-translation-unit="minipix-p58-body"></span>
+
+<span id="minipix-p58-body-flight-warning" data-translation-unit="minipix-p58-body-flight-warning"></span>
+
+:::caution[注意]
+**飛行中にパラメーターを変更しないでください。**
+:::
+
+<span id="minipix-p58-f1-unit" data-translation-unit="minipix-p58-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="minipix-p59-body" data-translation-unit="minipix-p59-body"></span>
+
+<span id="minipix-p59-body-initial-scope" data-translation-unit="minipix-p59-body-initial-scope"></span>
+
+## 7. DataFlashログのダウンロード
+飛行データの記録には2種類の方法があります。一部の例外を除き、内容はよく似ていますが、記録方法は異なります。
+
+- DataFlashログはMini Pixの内蔵DataFlashメモリーに記録され、飛行後にダウンロードできます。PlaneとRoverでは起動後まもなく作成され、Copterでは最初のアーム後に作成されます。
+- テレメトリーログ（tlog）は、ArduPilotをテレメトリー接続でPCにつないだときにMission Plannerなどの地上局で記録されます。
+
+ログに不慣れな場合は、まず入門ページで保存先、ダウンロード方法、記録内容の閲覧方法を確認してください。
+
+<span id="minipix-p59-f1-unit" data-translation-unit="minipix-p59-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="minipix-p60-body" data-translation-unit="minipix-p60-body"></span>
+
+Radiolink Electronic Ltd www.radiolink.com
+
+PIXHAWK、Mini Pix、APMの使い方については、原典が案内する http://ardupilot.org/copter/docs/common-mission-planning.html を参照してください。
+
+<span id="minipix-p60-f1-unit" data-translation-unit="minipix-p60-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="minipix-p60-f2-unit" data-translation-unit="minipix-p60-f2-unit"></span>

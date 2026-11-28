@@ -51,7 +51,7 @@
     "subcategoryLabel": "航空機用送信機",
     "description": "Radiolinkの航空機向け送信機です。",
     "officialUrl": "https://www.radiolink.com/t16d",
-    "detailPath": null,
+    "detailPath": "/radiolink/t16d/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/t16d.webp",
@@ -114,7 +114,7 @@
     "subcategoryLabel": "航空機用送信機",
     "description": "Radiolinkの航空機向け送信機です。",
     "officialUrl": "https://www.radiolink.com/t8s",
-    "detailPath": null,
+    "detailPath": "/radiolink/t8s-bt/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/t8s-bt.webp",
@@ -807,7 +807,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/ld_a40_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/ld-a40/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/ld-a40.webp",
@@ -849,7 +849,7 @@
     "subcategoryLabel": "ドローンサッカー",
     "description": "Radiolinkのドローンサッカー用機体です。",
     "officialUrl": "https://www.radiolink.com/d16pro_200_drone_soccer",
-    "detailPath": null,
+    "detailPath": "/radiolink/d16pro-200/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/d16pro-200.webp",
@@ -912,7 +912,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f108",
-    "detailPath": null,
+    "detailPath": "/radiolink/f108/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f108.webp",
@@ -933,7 +933,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/qav250_gps_FPV",
-    "detailPath": null,
+    "detailPath": "/radiolink/wolf-qav250/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/wolf-qav250.webp",
@@ -954,7 +954,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://radiolink.com/m435",
-    "detailPath": null,
+    "detailPath": "/radiolink/m435/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/m435.webp",
@@ -996,7 +996,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f450",
-    "detailPath": null,
+    "detailPath": "/radiolink/f450/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f450.webp",
@@ -1059,7 +1059,7 @@
     "subcategoryLabel": "マルチローター",
     "description": "Radiolinkのマルチローター機体です。",
     "officialUrl": "https://www.radiolink.com/f125",
-    "detailPath": null,
+    "detailPath": "/radiolink/f125/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/f125.webp",
@@ -1080,7 +1080,7 @@
     "subcategoryLabel": "固定翼機",
     "description": "Radiolinkの固定翼機です。",
     "officialUrl": "https://www.radiolink.com/a560",
-    "detailPath": null,
+    "detailPath": "/radiolink/a560/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/a560.webp",
@@ -1101,7 +1101,7 @@
     "subcategoryLabel": "固定翼機",
     "description": "Radiolinkの固定翼機です。",
     "officialUrl": "https://www.radiolink.com/su27",
-    "detailPath": null,
+    "detailPath": "/radiolink/su27/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/su27.webp",
@@ -1122,7 +1122,7 @@
     "subcategoryLabel": "固定翼機",
     "description": "Radiolinkの固定翼機です。",
     "officialUrl": "https://www.radiolink.com/D460",
-    "detailPath": null,
+    "detailPath": "/radiolink/d460/",
     "status": "detail_preparing",
     "image": {
       "src": "/assets/radiolink/catalogue/d460.webp",

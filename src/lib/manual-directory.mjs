@@ -1,7 +1,13 @@
 import catalogue from '../data/product-catalogue.json' with { type: 'json' };
 import inventory from '../data/manuals/existing-ja.json' with { type: 'json' };
-import official from '../data/manuals/official-links.json' with { type: 'json' };
 import receiverManuals from './receiver-manuals.mjs';
+import {
+  canShowGeneratedManual,
+  fullSourceUnavailable,
+  generatedManualLabel,
+  productDetailPath,
+  productMaterialLinks,
+} from './product-materials.mjs';
 
 // Catalogue variants supply imagery/category only; manual editions stay explicit.
 const models = [
@@ -40,10 +46,7 @@ const models = [
 models.push(
   ...catalogue
     .filter(
-      (product) =>
-        !models.some((model) => model.catalogue === product.slug) &&
-        (official.links.some((link) => link.product === product.slug) ||
-          receiverManuals.manuals.some((m) => m.product_id === product.slug)),
+      (product) => !models.some((model) => model.catalogue === product.slug),
     )
     .map((product) => ({
       id: product.slug,
@@ -84,32 +87,30 @@ export const manualCards = models.map((model) => {
     });
   links.push(
     ...receiverManuals.manuals
-      .filter((m) => m.product_id === model.id)
-      .map((m) => ({
-        href: m.route,
-        label:
-          m.source.document_scope === 'QUICK_START_GUIDE_NOT_FULL_MANUAL'
-            ? `${m.source.version} 日本語クイックガイド（確認待ち箇所あり）`
-            : '日本語取扱説明書（確認待ち箇所あり）',
+      .filter(
+        (entry) =>
+          (entry.product_id === product.slug ||
+            entry.product_route === '/radiolink/' + product.slug + '/') &&
+          canShowGeneratedManual(entry),
+      )
+      .map((entry) => ({
+        href: entry.route,
+        label: generatedManualLabel(entry),
         external: false,
-        id: `${model.id}-web-ja-v1`,
+        id: entry.product_id + '-web-ja-v1',
       })),
-    ...official.links
-      .filter((link) => link.product === model.catalogue)
-      .map((link, index) => ({
-        href: link.url,
-        label: `英語版${model.id === 'a560' ? '組立説明書' : '取扱説明書'}${link.edition ? `（${link.edition}）` : ''}（公式サイト）`,
-        external: true,
-        id: `${model.id}-official-${index}`,
-      })),
+    ...productMaterialLinks(product).filter((link) => link.external),
   );
   return {
     id: model.id,
     name: model.name,
     category: product.category,
-    description: ['rc8x', 'rc8p'].includes(model.id)
-      ? '日本語完全版の取扱説明書を掲載しています。'
-      : `${product.subcategoryLabel}の操作方法と設定を確認できます。`,
+    productPath: productDetailPath(product),
+    description: fullSourceUnavailable(product.slug)
+      ? 'この型番の公式全文取扱説明書は確認できていません。'
+      : ['rc8x', 'rc8p'].includes(model.id)
+        ? '日本語完全版の取扱説明書を掲載しています。'
+        : 'この機種の取扱説明書と公式資料を確認できます。',
     image: product.image,
     imageLabel: product.name,
     links,

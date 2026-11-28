@@ -1,0 +1,557 @@
+---
+title: PIX6 日本語取扱説明書
+description: Radiolink PIX6 の公式英語取扱説明書に対応する日本語版です。
+product: pix6
+slug: manuals/pix6
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/0e54d8df2c811409ed4966a33b8093c0-12206
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/pix6/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink PIX6の公式英語取扱説明書（マルチローター版、55頁）。固定翼・QuadPlane版とクイックガイドは別資料です。
+
+<span id="pix6-mr-p1-body" data-translation-unit="pix6-mr-p1-body"></span>
+
+# PIX6 マルチローター用取扱説明書
+
+表紙の対応機体表記：固定翼機、2～8ローター機、ヘリコプター、VTOL、車、船、ロボット、芝刈り機。
+
+<span id="pix6-mr-p1-f1-unit" data-translation-unit="pix6-mr-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/pix6/web-ja-v1/pix6-mr-p1-f1.jpeg" width={797} height={759} figureId="pix6-mr-p1-f1" alt={"原典物理1頁の図1"} caption={"原典物理1頁の図1"} />
+
+<span id="pix6-mr-p1-f2-unit" data-translation-unit="pix6-mr-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/pix6/web-ja-v1/pix6-mr-p1-f2.jpeg" width={640} height={380} figureId="pix6-mr-p1-f2" alt={"原典物理1頁の図2"} caption={"原典物理1頁の図2"} />
+
+<span id="pix6-mr-p1-f3-unit" data-translation-unit="pix6-mr-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/pix6/web-ja-v1/pix6-mr-p1-f3.png" width={600} height={180} figureId="pix6-mr-p1-f3" alt={"原典物理1頁の図3"} caption={"原典物理1頁の図3"} />
+
+<span id="pix6-mr-p2-body-safety" data-translation-unit="pix6-mr-p2-body-safety"></span>
+
+## 安全上の注意
+
+- 悪天候時に模型を操作しないでください。視界不良により方向を見失い、模型の制御を失うおそれがあります。
+- 人が密集した場所や法令で禁止されている場所で使用しないでください。
+- 運転前に毎回、すべてのサーボとその接続を確認してください。
+- 電源を切るときは、必ず先に受信機、次に送信機の電源を切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉のない場所で飛行・走行させてください。
+
+### 警告
+
+本製品は玩具ではなく、18歳未満の子どもには適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは操作に十分注意してください。
+
+
+
+<span id="pix6-mr-p2-body-water" data-translation-unit="pix6-mr-p2-body-water"></span>
+
+:::caution[注意]
+アンテナやスティックの隙間から送信機内部に水や湿気が入り、機体の動きが不安定になったり、制御を失ったりするおそれがあります。
+:::
+
+<span id="pix6-mr-p2-body" data-translation-unit="pix6-mr-p2-body"></span>
+
+### FCCに関する記載
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pix6-mr-p3-body" data-translation-unit="pix6-mr-p3-body"></span>
+
+## 目次
+
+- 1. PIX6の概要（5頁）
+  - 1.1 付属品（5頁）
+  - 1.2 コネクターと仕様（6頁）
+  - 1.3 使用の手引き（9頁）
+- 2. Mission Planner（10頁）
+  - 2.1 Mission Plannerのインストール（10頁）
+    - 2.1.1 Windowsへのインストール（10頁）
+    - 2.1.2 Androidへのインストール（11頁）
+    - 2.1.3 Linuxへのインストール（11頁）
+  - 2.2 Mission Plannerの概要（11頁）
+- 3. 初期設定（12頁）
+  - 3.1 ファームウェアのダウンロードとインストール（12頁）
+  - 3.2 フレームタイプ（14頁）
+  - 3.3 加速度センサーの校正（14頁）
+  - 3.4 送信機の校正（17頁）
+  - 3.5 コンパスの校正（20頁）
+  - 3.6 フライトモードの設定（22頁）
+  - 3.7 フライトモードの概要（23頁）
+    - 3.7.1 Stabilizeモード（23頁）
+    - 3.7.2 Acroモード（FPV）（24頁）
+    - 3.7.3 Altitude Holdモード（25頁）
+    - 3.7.4 Autoモード（26頁）
+    - 3.7.5 PosHoldモード（27頁）
+    - 3.7.6 RTLモード（28頁）
+    - 3.7.7 SimpleおよびSuper Simpleモード（29頁）
+    - 3.7.8 その他のフライトモード（32頁）
+
+<span id="pix6-mr-p4-body" data-translation-unit="pix6-mr-p4-body"></span>
+
+## 目次（続き）
+
+- 4. フェイルセーフ（F/S）の設定（32頁）
+  - 4.1 無線フェイルセーフの設定（32頁）
+  - 4.2 EKFフェイルセーフ（35頁）
+- 5. ハードウェア設定（36頁）
+  - 5.1 機体へのPIX6の取り付け（36頁）
+  - 5.2 機体へのPIX6の接続（37頁）
+    - 5.2.1 モーターの順番・回転方向の選択（37頁）
+    - 5.2.2 時計回り・反時計回りのプロペラの見分け方（40頁）
+    - 5.2.3 付属品の接続（40頁）
+    - 5.2.4 バッテリーモニターの設定（41頁）
+  - 5.3 LED表示、アーム、トラブルシューティング（41頁）
+    - 5.3.1 LED表示（41頁）
+    - 5.3.2 アームとディスアーム（42頁）
+    - 5.3.3 アーム時に回転させない設定（43頁）
+    - 5.3.4 アームできないときのトラブルシューティング（43頁）
+  - 5.4 ESCの校正（46頁）
+  - 5.5 水平校正（46頁）
+  - 5.6 ジオフェンス（47頁）
+  - 5.7 オンボードOSD（49頁）
+    - 5.7.1 設定の概要（49頁）
+    - 5.7.2 画面の概要（50頁）
+- 6. AutoTune（51頁）
+- 7. パラメーター設定（52頁）
+  - 7.1 パラメーター画面の概要（52頁）
+  - 7.2 パラメーター調整（53頁）
+  - 7.3 パラメーターの手動調整（54頁）
+- 8. DataFlashログのダウンロード（54頁）
+
+<span id="pix6-mr-p5-body" data-translation-unit="pix6-mr-p5-body"></span>
+
+## 1. PIX6の概要
+
+### 1.1 付属品
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pix6-mr-p5-f1-unit" data-translation-unit="pix6-mr-p5-f1-unit"></span>
+
+<span id="pix6-mr-p6-body" data-translation-unit="pix6-mr-p6-body"></span>
+
+### 1.2 コネクターと仕様
+
+<span id="pix6-mr-p6-f1-unit" data-translation-unit="pix6-mr-p6-f1-unit"></span>
+
+<span id="pix6-mr-p7-body" data-translation-unit="pix6-mr-p7-body"></span>
+
+<span id="pix6-mr-p7-f1-unit" data-translation-unit="pix6-mr-p7-f1-unit"></span>
+
+<span id="pix6-mr-p7-f2-unit" data-translation-unit="pix6-mr-p7-f2-unit"></span>
+
+<span id="pix6-mr-p8-body" data-translation-unit="pix6-mr-p8-body"></span>
+
+<span id="pix6-mr-p9-body" data-translation-unit="pix6-mr-p9-body"></span>
+
+### 1.3 使用の手引き
+
+<span id="pix6-mr-p10-body" data-translation-unit="pix6-mr-p10-body"></span>
+
+## 2. Mission Planner
+
+### 2.1 Mission Plannerのインストール
+
+#### 2.1.1 Windowsへのインストール
+
+<span id="pix6-mr-p10-f1-unit" data-translation-unit="pix6-mr-p10-f1-unit"></span>
+
+<span id="pix6-mr-p11-body" data-translation-unit="pix6-mr-p11-body"></span>
+
+#### 2.1.2 Androidへのインストール
+
+#### 2.1.3 Linuxへのインストール
+
+### 2.2 Mission Plannerの概要
+
+<span id="pix6-mr-p11-f1-unit" data-translation-unit="pix6-mr-p11-f1-unit"></span>
+
+<span id="pix6-mr-p12-body" data-translation-unit="pix6-mr-p12-body"></span>
+
+## 3. 初期設定
+
+### 3.1 ファームウェアのダウンロードとインストール
+
+<span id="pix6-mr-p12-f1-unit" data-translation-unit="pix6-mr-p12-f1-unit"></span>
+
+<span id="pix6-mr-p13-body" data-translation-unit="pix6-mr-p13-body"></span>
+
+<span id="pix6-mr-p13-f1-unit" data-translation-unit="pix6-mr-p13-f1-unit"></span>
+
+<span id="pix6-mr-p13-f2-unit" data-translation-unit="pix6-mr-p13-f2-unit"></span>
+
+<span id="pix6-mr-p14-body" data-translation-unit="pix6-mr-p14-body"></span>
+
+### 3.2 フレームタイプ
+
+### 3.3 加速度センサーの校正
+
+<span id="pix6-mr-p14-f1-unit" data-translation-unit="pix6-mr-p14-f1-unit"></span>
+
+<span id="pix6-mr-p14-f2-unit" data-translation-unit="pix6-mr-p14-f2-unit"></span>
+
+<span id="pix6-mr-p15-body" data-translation-unit="pix6-mr-p15-body"></span>
+
+<span id="pix6-mr-p15-f1-unit" data-translation-unit="pix6-mr-p15-f1-unit"></span>
+
+<span id="pix6-mr-p15-f2-unit" data-translation-unit="pix6-mr-p15-f2-unit"></span>
+
+<span id="pix6-mr-p15-f3-unit" data-translation-unit="pix6-mr-p15-f3-unit"></span>
+
+<span id="pix6-mr-p16-body" data-translation-unit="pix6-mr-p16-body"></span>
+
+<span id="pix6-mr-p16-f1-unit" data-translation-unit="pix6-mr-p16-f1-unit"></span>
+
+<span id="pix6-mr-p16-f2-unit" data-translation-unit="pix6-mr-p16-f2-unit"></span>
+
+<span id="pix6-mr-p16-f3-unit" data-translation-unit="pix6-mr-p16-f3-unit"></span>
+
+<span id="pix6-mr-p17-body" data-translation-unit="pix6-mr-p17-body"></span>
+
+### 3.4 送信機の校正
+
+<span id="pix6-mr-p17-f1-unit" data-translation-unit="pix6-mr-p17-f1-unit"></span>
+
+<span id="pix6-mr-p17-f2-unit" data-translation-unit="pix6-mr-p17-f2-unit"></span>
+
+<span id="pix6-mr-p18-body" data-translation-unit="pix6-mr-p18-body"></span>
+
+<span id="pix6-mr-p18-f1-unit" data-translation-unit="pix6-mr-p18-f1-unit"></span>
+
+<span id="pix6-mr-p18-f2-unit" data-translation-unit="pix6-mr-p18-f2-unit"></span>
+
+<span id="pix6-mr-p19-body" data-translation-unit="pix6-mr-p19-body"></span>
+
+<span id="pix6-mr-p19-f1-unit" data-translation-unit="pix6-mr-p19-f1-unit"></span>
+
+<span id="pix6-mr-p19-f2-unit" data-translation-unit="pix6-mr-p19-f2-unit"></span>
+
+<span id="pix6-mr-p19-f3-unit" data-translation-unit="pix6-mr-p19-f3-unit"></span>
+
+<span id="pix6-mr-p20-body" data-translation-unit="pix6-mr-p20-body"></span>
+
+### 3.5 コンパスの校正
+
+<span id="pix6-mr-p20-f1-unit" data-translation-unit="pix6-mr-p20-f1-unit"></span>
+
+<span id="pix6-mr-p20-f2-unit" data-translation-unit="pix6-mr-p20-f2-unit"></span>
+
+<span id="pix6-mr-p20-f3-unit" data-translation-unit="pix6-mr-p20-f3-unit"></span>
+
+<span id="pix6-mr-p21-body" data-translation-unit="pix6-mr-p21-body"></span>
+
+<span id="pix6-mr-p21-f1-unit" data-translation-unit="pix6-mr-p21-f1-unit"></span>
+
+<span id="pix6-mr-p21-f2-unit" data-translation-unit="pix6-mr-p21-f2-unit"></span>
+
+<span id="pix6-mr-p22-body" data-translation-unit="pix6-mr-p22-body"></span>
+
+### 3.6 フライトモードの設定
+
+<span id="pix6-mr-p22-f1-unit" data-translation-unit="pix6-mr-p22-f1-unit"></span>
+
+<span id="pix6-mr-p23-body" data-translation-unit="pix6-mr-p23-body"></span>
+
+### 3.7 フライトモードの概要
+
+#### 3.7.1 Stabilizeモード
+
+<span id="pix6-mr-p23-f1-unit" data-translation-unit="pix6-mr-p23-f1-unit"></span>
+
+<span id="pix6-mr-p23-f2-unit" data-translation-unit="pix6-mr-p23-f2-unit"></span>
+
+<span id="pix6-mr-p24-body" data-translation-unit="pix6-mr-p24-body"></span>
+
+#### 3.7.2 Acroモード（FPV）
+
+<span id="pix6-mr-p25-body" data-translation-unit="pix6-mr-p25-body"></span>
+
+#### 3.7.3 Altitude Holdモード
+
+<span id="pix6-mr-p25-f1-unit" data-translation-unit="pix6-mr-p25-f1-unit"></span>
+
+<span id="pix6-mr-p25-f2-unit" data-translation-unit="pix6-mr-p25-f2-unit"></span>
+
+<span id="pix6-mr-p26-body" data-translation-unit="pix6-mr-p26-body"></span>
+
+#### 3.7.4 Autoモード
+
+<span id="pix6-mr-p26-f1-unit" data-translation-unit="pix6-mr-p26-f1-unit"></span>
+
+<span id="pix6-mr-p27-body" data-translation-unit="pix6-mr-p27-body"></span>
+
+#### 3.7.5 PosHoldモード
+
+<span id="pix6-mr-p28-body" data-translation-unit="pix6-mr-p28-body"></span>
+
+#### 3.7.6 RTLモード
+
+<span id="pix6-mr-p28-f1-unit" data-translation-unit="pix6-mr-p28-f1-unit"></span>
+
+<span id="pix6-mr-p29-body" data-translation-unit="pix6-mr-p29-body"></span>
+
+#### 3.7.7 SimpleおよびSuper Simpleモード
+
+<span id="pix6-mr-p30-body" data-translation-unit="pix6-mr-p30-body"></span>
+
+<span id="pix6-mr-p30-f1-unit" data-translation-unit="pix6-mr-p30-f1-unit"></span>
+
+<span id="pix6-mr-p30-f2-unit" data-translation-unit="pix6-mr-p30-f2-unit"></span>
+
+<span id="pix6-mr-p31-body" data-translation-unit="pix6-mr-p31-body"></span>
+
+<span id="pix6-mr-p31-f1-unit" data-translation-unit="pix6-mr-p31-f1-unit"></span>
+
+<span id="pix6-mr-p32-body" data-translation-unit="pix6-mr-p32-body"></span>
+
+#### 3.7.8 その他のフライトモード
+
+## 4. フェイルセーフ（F/S）の設定
+
+### 4.1 無線フェイルセーフの設定
+
+<span id="pix6-mr-p33-body" data-translation-unit="pix6-mr-p33-body"></span>
+
+<span id="pix6-mr-p33-f1-unit" data-translation-unit="pix6-mr-p33-f1-unit"></span>
+
+<span id="pix6-mr-p34-body" data-translation-unit="pix6-mr-p34-body"></span>
+
+<span id="pix6-mr-p34-f1-unit" data-translation-unit="pix6-mr-p34-f1-unit"></span>
+
+<span id="pix6-mr-p34-f2-unit" data-translation-unit="pix6-mr-p34-f2-unit"></span>
+
+<span id="pix6-mr-p35-body" data-translation-unit="pix6-mr-p35-body"></span>
+
+### 4.2 EKFフェイルセーフ
+
+<span id="pix6-mr-p35-f1-unit" data-translation-unit="pix6-mr-p35-f1-unit"></span>
+
+<span id="pix6-mr-p36-body" data-translation-unit="pix6-mr-p36-body"></span>
+
+## 5. ハードウェア設定
+
+### 5.1 機体へのPIX6の取り付け
+
+<span id="pix6-mr-p36-f1-unit" data-translation-unit="pix6-mr-p36-f1-unit"></span>
+
+<span id="pix6-mr-p36-f2-unit" data-translation-unit="pix6-mr-p36-f2-unit"></span>
+
+<span id="pix6-mr-p37-body" data-translation-unit="pix6-mr-p37-body"></span>
+
+### 5.2 機体へのPIX6の接続
+
+#### 5.2.1 モーターの順番・回転方向の選択
+
+<span id="pix6-mr-p37-f1-unit" data-translation-unit="pix6-mr-p37-f1-unit"></span>
+
+<span id="pix6-mr-p37-f2-unit" data-translation-unit="pix6-mr-p37-f2-unit"></span>
+
+<span id="pix6-mr-p37-f3-unit" data-translation-unit="pix6-mr-p37-f3-unit"></span>
+
+<span id="pix6-mr-p38-body" data-translation-unit="pix6-mr-p38-body"></span>
+
+<span id="pix6-mr-p38-f1-unit" data-translation-unit="pix6-mr-p38-f1-unit"></span>
+
+<span id="pix6-mr-p38-f2-unit" data-translation-unit="pix6-mr-p38-f2-unit"></span>
+
+<span id="pix6-mr-p38-f3-unit" data-translation-unit="pix6-mr-p38-f3-unit"></span>
+
+<span id="pix6-mr-p38-f4-unit" data-translation-unit="pix6-mr-p38-f4-unit"></span>
+
+<span id="pix6-mr-p38-f5-unit" data-translation-unit="pix6-mr-p38-f5-unit"></span>
+
+<span id="pix6-mr-p38-f6-unit" data-translation-unit="pix6-mr-p38-f6-unit"></span>
+
+<span id="pix6-mr-p38-f7-unit" data-translation-unit="pix6-mr-p38-f7-unit"></span>
+
+<span id="pix6-mr-p39-body" data-translation-unit="pix6-mr-p39-body"></span>
+
+<span id="pix6-mr-p39-f1-unit" data-translation-unit="pix6-mr-p39-f1-unit"></span>
+
+<span id="pix6-mr-p39-f2-unit" data-translation-unit="pix6-mr-p39-f2-unit"></span>
+
+<span id="pix6-mr-p39-f3-unit" data-translation-unit="pix6-mr-p39-f3-unit"></span>
+
+<span id="pix6-mr-p39-f4-unit" data-translation-unit="pix6-mr-p39-f4-unit"></span>
+
+<span id="pix6-mr-p39-f5-unit" data-translation-unit="pix6-mr-p39-f5-unit"></span>
+
+<span id="pix6-mr-p40-body" data-translation-unit="pix6-mr-p40-body"></span>
+
+#### 5.2.2 時計回り・反時計回りのプロペラの見分け方
+
+#### 5.2.3 付属品の接続
+
+<span id="pix6-mr-p40-f1-unit" data-translation-unit="pix6-mr-p40-f1-unit"></span>
+
+<span id="pix6-mr-p40-f2-unit" data-translation-unit="pix6-mr-p40-f2-unit"></span>
+
+<span id="pix6-mr-p40-f3-unit" data-translation-unit="pix6-mr-p40-f3-unit"></span>
+
+<span id="pix6-mr-p41-body" data-translation-unit="pix6-mr-p41-body"></span>
+
+#### 5.2.4 バッテリーモニターの設定
+
+### 5.3 LED表示、アーム、トラブルシューティング
+
+#### 5.3.1 LED表示
+
+<span id="pix6-mr-p41-f1-unit" data-translation-unit="pix6-mr-p41-f1-unit"></span>
+
+<span id="pix6-mr-p42-body" data-translation-unit="pix6-mr-p42-body"></span>
+
+#### 5.3.2 アームとディスアーム
+
+<span id="pix6-mr-p42-f1-unit" data-translation-unit="pix6-mr-p42-f1-unit"></span>
+
+<span id="pix6-mr-p42-f2-unit" data-translation-unit="pix6-mr-p42-f2-unit"></span>
+
+<span id="pix6-mr-p43-body" data-translation-unit="pix6-mr-p43-body"></span>
+
+#### 5.3.3 アーム時に回転させない設定
+
+#### 5.3.4 アームできないときのトラブルシューティング
+
+<span id="pix6-mr-p43-f1-unit" data-translation-unit="pix6-mr-p43-f1-unit"></span>
+
+<span id="pix6-mr-p43-f2-unit" data-translation-unit="pix6-mr-p43-f2-unit"></span>
+
+<span id="pix6-mr-p44-body" data-translation-unit="pix6-mr-p44-body"></span>
+
+### 異常メッセージの例
+
+<span id="pix6-mr-p44-f1-unit" data-translation-unit="pix6-mr-p44-f1-unit"></span>
+
+<span id="pix6-mr-p45-body" data-translation-unit="pix6-mr-p45-body"></span>
+
+### 気圧センサー関連の異常
+
+### コンパス関連の異常
+
+### GPS関連の異常
+
+### INSのチェック（加速度センサー・ジャイロセンサー）
+
+<span id="pix6-mr-p46-body" data-translation-unit="pix6-mr-p46-body"></span>
+
+### INSのチェック（続き）
+
+### 基板電圧のチェック
+
+### パラメーターのチェック
+
+### 5.4 ESCのキャリブレーション
+
+### 5.5 水平キャリブレーション
+
+<span id="pix6-mr-p47-body" data-translation-unit="pix6-mr-p47-body"></span>
+
+### 5.6 GeoFence
+
+<span id="pix6-mr-p47-f1-unit" data-translation-unit="pix6-mr-p47-f1-unit"></span>
+
+<span id="pix6-mr-p47-f2-unit" data-translation-unit="pix6-mr-p47-f2-unit"></span>
+
+<span id="pix6-mr-p47-f3-unit" data-translation-unit="pix6-mr-p47-f3-unit"></span>
+
+<span id="pix6-mr-p48-body" data-translation-unit="pix6-mr-p48-body"></span>
+
+<span id="pix6-mr-p48-f1-unit" data-translation-unit="pix6-mr-p48-f1-unit"></span>
+
+<span id="pix6-mr-p48-f2-unit" data-translation-unit="pix6-mr-p48-f2-unit"></span>
+
+<span id="pix6-mr-p49-body" data-translation-unit="pix6-mr-p49-body"></span>
+
+### 5.7 内蔵OSD
+
+#### 5.7.1 設定の概要
+
+<span id="pix6-mr-p50-body" data-translation-unit="pix6-mr-p50-body"></span>
+
+#### 5.7.2 表示画面の概要
+
+<span id="pix6-mr-p50-f1-unit" data-translation-unit="pix6-mr-p50-f1-unit"></span>
+
+<span id="pix6-mr-p50-f2-unit" data-translation-unit="pix6-mr-p50-f2-unit"></span>
+
+<span id="pix6-mr-p51-body" data-translation-unit="pix6-mr-p51-body"></span>
+
+## 6. AutoTune
+
+### 飛行前の設定
+
+### AutoTuneの開始
+
+<span id="pix6-mr-p51-f1-unit" data-translation-unit="pix6-mr-p51-f1-unit"></span>
+
+<span id="pix6-mr-p52-body" data-translation-unit="pix6-mr-p52-body"></span>
+
+## 7. パラメーター設定
+
+### 7.1 パラメーター画面の概要
+
+<span id="pix6-mr-p52-body-safety" data-translation-unit="pix6-mr-p52-body-safety"></span>
+
+:::caution[注意]
+**飛行中にパラメーターを変更しないでください。**
+:::
+
+<span id="pix6-mr-p52-f1-unit" data-translation-unit="pix6-mr-p52-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pix6-mr-p53-body" data-translation-unit="pix6-mr-p53-body"></span>
+
+### 左側の項目
+
+### 右側の項目
+
+### 7.2 パラメーターの調整
+
+<span id="pix6-mr-p53-f1-unit" data-translation-unit="pix6-mr-p53-f1-unit"></span>
+
+<span id="pix6-mr-p54-body" data-translation-unit="pix6-mr-p54-body"></span>
+
+### 7.3 パラメーターの手動調整
+
+<span id="pix6-mr-p54-body-initial-scope" data-translation-unit="pix6-mr-p54-body-initial-scope"></span>
+
+## 8. DataFlashログのダウンロード
+飛行ログを取得し、問題の分析や飛行軌跡の確認などに使います。フライトコントローラーをMission Plannerに接続します。接続後、原典の図に示す操作でログをダウンロードします。
+
+<span id="pix6-mr-p54-f1-unit" data-translation-unit="pix6-mr-p54-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="pix6-mr-p54-f2-unit" data-translation-unit="pix6-mr-p54-f2-unit"></span>
+
+<span id="pix6-mr-p55-body" data-translation-unit="pix6-mr-p55-body"></span>
+
+- **Download All Logs**：すべての飛行ログをダウンロードします。
+- **Download Selected Logs**：選択したログをダウンロードします。
+
+追加のアフターサービスについては、after_service@radiolink.com.cn へメールでお問い合わせください。

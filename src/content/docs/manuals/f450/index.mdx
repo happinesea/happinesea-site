@@ -1,0 +1,376 @@
+---
+title: F450 日本語取扱説明書
+description: Radiolink F450 の公式英語取扱説明書に対応する日本語版です。
+product: f450
+slug: manuals/f450
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/b39b9801d872959532520ebda0c90348.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/f450/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink F450 公式英語取扱説明書（文書版・発行日不明、25頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="f450-p1-body" data-translation-unit="f450-p1-body"></span>
+
+# F450 取扱説明書
+
+DIYクアッドコプター ARFキット
+
+本書は定期的に更新されます。最新版はRadioLink公式サイトの www.radiolink.com.cn/f450_manual からダウンロードしてください。
+
+<span id="f450-p1-f1-unit" data-translation-unit="f450-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f450/web-ja-v1/f450-p1-f1.jpeg" width={600} height={180} figureId="f450-p1-f1" alt={"F450の表紙画像1"} caption={"F450の表紙画像1"} />
+
+<span id="f450-p1-f2-unit" data-translation-unit="f450-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f450/web-ja-v1/f450-p1-f2.jpeg" width={104} height={62} figureId="f450-p1-f2" alt={"F450の表紙画像2"} caption={"F450の表紙画像2"} />
+
+<span id="f450-p1-f3-unit" data-translation-unit="f450-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/f450/web-ja-v1/f450-p1-f3.jpeg" width={2000} height={2000} figureId="f450-p1-f3" alt={"F450の表紙画像3"} caption={"F450の表紙画像3"} />
+
+<span id="f450-p2-body" data-translation-unit="f450-p2-body"></span>
+
+RadioLink F450をお買い上げいただき、ありがとうございます。本製品は玩具ではなく、14歳未満の子どもには適していません。子どもの手の届かない場所に保管し、子どもの近くで操作する際は十分に注意してください。
+
+本書をよく読み、記載の手順に従って機器を設定してください。ご質問はFacebookやYouTubeへのメッセージ・コメント、または after_service@radiolink.com.cn へのメールでお問い合わせください。
+
+不適切な操作は財産の損失や生命への危険を招くおそれがあります。RadioLink製品を使用した時点で、操作者はこの責任制限を理解し、操作の責任を負うことに同意したとされます。現地の法律とRadioLinkの定める原則に従ってください。
+
+飛行記録がない場合、RadioLinkは故障や事故の原因を分析できず、アフターサービスを提供できません。法令で認められる最大限の範囲で、RadioLinkは購入、操作、操作の失敗によるものを含む間接的、結果的、偶発的、特別または懲罰的な損害について、事前に損失の可能性を知らされていても責任を負いません。
+
+国によっては保証条件の免責を法律が認めない場合があり、消費者の権利は異なります。RadioLinkは法令に従って上記条件を解釈する権利と、予告なく条件を更新・変更・終了する権利を留保します。
+
+## 安全上の注意
+
+1. 雨天時は飛行させないでください。雨や湿気により飛行が不安定になり、制御を失うおそれがあります。雷が鳴っているときは絶対に飛行させないでください。雨、霧、雷、風のない好天時の飛行を推奨します。
+2. 飛行時は現地の法令を厳守し、安全に飛行させてください。空港や軍事基地などの飛行禁止区域では飛行させないでください。
+3. 人混みや建物から離れた開けた場所で飛行させてください。
+4. 飲酒後、疲労時、その他集中力や判断力が低下しているときは操作しないでください。本書に従って操作してください。
+5. 高圧送電線、高圧送電設備、携帯電話基地局、テレビ放送の送信塔など、電磁干渉源の近くでは注意してください。電波干渉は送信性能を低下させ、強い干渉で送信機と受信機の通信が途絶えると、機体が墜落するおそれがあります。
+6. プロペラを逆向きに取り付けて墜落させないよう、本書に従って取り付けてください。
+7. 飛行時は機体から距離を取り、プロペラやモーターなど高速で回転する部品に近づかないでください。
+8. 飛行または試験飛行中にプロペラが回っているときは、機体の状態にかかわらず、手や体の一部で機体に触れないでください。身体の安全を確保してください。
+9. 飛行後はディスアームが完了したことを必ず確認してください。
+
+<span id="f450-p2-body-battery" data-translation-unit="f450-p2-body-battery"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p2-body-continued" data-translation-unit="f450-p2-body-continued"></span>
+
+10. フライトコントローラーをMission Plannerに接続するとき、またはESCを校正するときは、機体にプロペラが取り付けられていないことを確認してください。
+11. 離陸時は先に送信機、次に機体の電源を入れてください。飛行後は先に機体のバッテリーを取り外し、その後に送信機の電源を切ってください。
+
+<span id="f450-p3-body-warning" data-translation-unit="f450-p3-body-warning"></span>
+
+:::caution[注意]
+12. 機体の設定値を変更するときは、安全のために先にプロペラを取り外してください。
+13. アームが完了したら、安全のため機体から十分に距離を取ってください。
+:::
+
+<span id="f450-p3-body-tail" data-translation-unit="f450-p3-body-tail"></span>
+
+## 機体仕様
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p4-body" data-translation-unit="f450-p4-body"></span>
+
+## 構成品
+
+| 品名 | PNP 標準 | PNP 映像伝送 | ARF 標準 | ARF 映像伝送 |
+|---|---:|---:|---:|---:|
+| 送信機（AT10II／AT9S Pro／T16D／T12D／T8FB／T8S） | 0 | 0 | 1 | 1 |
+| 受信機（R12DSM／R8FMなど） | 0 | 0 | 1 | 1 |
+| フレーム | 1 | 1 | 1 | 1 |
+| SZ-SPEED 1000KVモーター | 4 | 4 | 4 | 4 |
+| FLYCOLOR 30 A ESC | 4 | 4 | 4 | 4 |
+| GEMFANプロペラ | 8 | 8 | 8 | 8 |
+| FULLYMAX 11.1 V 3,700 mAhバッテリー | 1 | 1 | 1 | 1 |
+| フライトコントローラー（Mini Pix／CrossFlightなど） | 1 | 1 | 1 | 1 |
+| GPS TS100 | 1 | 1 | 1 | 1 |
+| 銀色のGPSホルダー | 1 | 1 | 1 | 1 |
+| 電源モジュール | 1 | 1 | 1 | 1 |
+| 防振材 | 1 | 1 | 1 | 1 |
+| バッテリー固定ベルト | 1 | 1 | 1 | 1 |
+| セルフロック式ナイロン結束具 | 6 | 6 | 6 | 6 |
+| ZENCHANSI BROWN BEAR 008 アナログ映像伝送機器 | 0 | 1 | 0 | 1 |
+| Caddx Sableカメラ | 0 | 1 | 0 | 1 |
+| FPVゴーグル／モニター | 0 | 1 | 0 | 1 |
+| SU04超音波センサー（選択可） | 0 | 1 | 0 | 1 |
+| PRM-03テレメトリーモジュール（選択可） | 0 | 1 | 0 | 1 |
+
+送信機、受信機、フライトコントローラーなどの機種を選択でき、必要に応じて上記の機器を追加購入できます。購入前に実際の同梱品を販売店に確認してください。
+
+<span id="f450-p5-body" data-translation-unit="f450-p5-body"></span>
+
+## 目次
+
+原典の印刷頁番号を示します。
+
+- 第1章 はじめに（1）
+  - 1.1 主な特長（1）
+  - 1.2 F450について（1）
+  - 1.3 F450の準備（2）
+  - 1.4 送信機の準備（2）
+- 第2章 機体のセットアップ（2）
+  - 2.1 ARF版のセットアップ（2）
+    - 2.1.1 送信機の基本操作（2）
+    - 2.1.2 アーム（4）
+      - 2.1.2.1 F450のアーム（4）
+      - 2.1.2.2 送信機のアーム（4）
+    - 2.1.3 飛行モードの概要（6）
+      - 2.1.3.1 スタビライズモード（6）
+      - 2.1.3.2 高度維持モード（7）
+      - 2.1.3.3 位置維持モード（7）
+      - 2.1.3.4 RTLモード（7）
+    - 2.1.4 RTLの有効化（8）
+  - 2.2 機体単体版のセットアップ（8）
+    - 2.2.1 送信機とF450のバインディング（8）
+    - 2.2.2 Mission Plannerのインストール（9）
+    - 2.2.3 送信機の設定（10）
+      - 2.2.3.1 送信機の校正（10）
+      - 2.2.3.2 飛行モードの設定（12）
+      - 2.2.3.3 フェイルセーフの設定（15）
+    - 2.2.4 ESCの校正（初回飛行）（17）
+    - 2.2.5 プロペラの取り付け（18）
+    - 2.2.6 飛行時の注意（19）
+- 第3章 飛行（21）
+  - 3.1 目視飛行（19）
+  - 3.2 FPV飛行（21）
+    - 3.2.1 FPVゴーグル（21）
+
+<span id="f450-p6-body" data-translation-unit="f450-p6-body"></span>
+
+## 第1章 はじめに
+
+### 1.1 主な特長
+
+### 1.2 F450について
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p6-f1-unit" data-translation-unit="f450-p6-f1-unit"></span>
+
+<span id="f450-p7-body" data-translation-unit="f450-p7-body"></span>
+
+### 1.3 F450の準備
+
+### 1.4 送信機の準備
+
+## 第2章 機体のセットアップ
+
+### 2.1 ARF版のセットアップ
+
+#### 2.1.1 送信機の基本操作
+
+<span id="f450-p8-body" data-translation-unit="f450-p8-body"></span>
+
+<span id="f450-p8-f1-unit" data-translation-unit="f450-p8-f1-unit"></span>
+
+<span id="f450-p8-f2-unit" data-translation-unit="f450-p8-f2-unit"></span>
+
+<span id="f450-p8-f3-unit" data-translation-unit="f450-p8-f3-unit"></span>
+
+<span id="f450-p8-f4-unit" data-translation-unit="f450-p8-f4-unit"></span>
+
+<span id="f450-p8-f5-unit" data-translation-unit="f450-p8-f5-unit"></span>
+
+<span id="f450-p8-f6-unit" data-translation-unit="f450-p8-f6-unit"></span>
+
+<span id="f450-p9-body" data-translation-unit="f450-p9-body"></span>
+
+#### 2.1.2 アーム
+
+<span id="f450-p9-body-warning" data-translation-unit="f450-p9-body-warning"></span>
+
+:::caution[注意]
+安全のため機体から距離を取り、現在の飛行モードを確認してください。
+:::
+
+<span id="f450-p9-body-tail" data-translation-unit="f450-p9-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p9-f1-unit" data-translation-unit="f450-p9-f1-unit"></span>
+
+<span id="f450-p10-body" data-translation-unit="f450-p10-body"></span>
+
+<span id="f450-p10-f1-unit" data-translation-unit="f450-p10-f1-unit"></span>
+
+<span id="f450-p10-f2-unit" data-translation-unit="f450-p10-f2-unit"></span>
+
+<span id="f450-p10-f3-unit" data-translation-unit="f450-p10-f3-unit"></span>
+
+<span id="f450-p10-f4-unit" data-translation-unit="f450-p10-f4-unit"></span>
+
+<span id="f450-p11-body" data-translation-unit="f450-p11-body"></span>
+
+#### 2.1.3 飛行モードの概要
+
+<span id="f450-p11-f1-unit" data-translation-unit="f450-p11-f1-unit"></span>
+
+<span id="f450-p11-f2-unit" data-translation-unit="f450-p11-f2-unit"></span>
+
+<span id="f450-p12-body-warning" data-translation-unit="f450-p12-body-warning"></span>
+
+:::caution[注意]
+**警告**　フライトコントローラーは気圧高度計の測定値を高さの基準にします。気圧が変化すると、表示が実際の高さと異なる場合があります。
+:::
+
+<span id="f450-p12-body-tail" data-translation-unit="f450-p12-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p13-body" data-translation-unit="f450-p13-body"></span>
+
+#### 2.1.4 RTLの有効化
+
+### 2.2 機体単体版のセットアップ
+
+<span id="f450-p13-f1-unit" data-translation-unit="f450-p13-f1-unit"></span>
+
+<span id="f450-p14-body" data-translation-unit="f450-p14-body"></span>
+
+#### 2.2.1 送信機とF450のバインディング
+
+<span id="f450-p14-f1-unit" data-translation-unit="f450-p14-f1-unit"></span>
+
+<span id="f450-p14-f2-unit" data-translation-unit="f450-p14-f2-unit"></span>
+
+<span id="f450-p15-body" data-translation-unit="f450-p15-body"></span>
+
+#### 2.2.2 Mission Plannerのインストール
+
+#### 2.2.3 送信機の設定
+
+<span id="f450-p15-f1-unit" data-translation-unit="f450-p15-f1-unit"></span>
+
+<span id="f450-p15-f2-unit" data-translation-unit="f450-p15-f2-unit"></span>
+
+<span id="f450-p16-body" data-translation-unit="f450-p16-body"></span>
+
+<span id="f450-p16-body-warning" data-translation-unit="f450-p16-body-warning"></span>
+
+:::caution[注意]
+**安全上の注意**　プロペラはすべての設定を終えてから取り付けることを強く推奨します。
+:::
+
+<span id="f450-p16-body-tail" data-translation-unit="f450-p16-body-tail"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p16-f1-unit" data-translation-unit="f450-p16-f1-unit"></span>
+
+<span id="f450-p16-f2-unit" data-translation-unit="f450-p16-f2-unit"></span>
+
+<span id="f450-p16-f3-unit" data-translation-unit="f450-p16-f3-unit"></span>
+
+<span id="f450-p17-body" data-translation-unit="f450-p17-body"></span>
+
+<span id="f450-p17-f1-unit" data-translation-unit="f450-p17-f1-unit"></span>
+
+<span id="f450-p17-f2-unit" data-translation-unit="f450-p17-f2-unit"></span>
+
+<span id="f450-p18-body" data-translation-unit="f450-p18-body"></span>
+
+<span id="f450-p18-f1-unit" data-translation-unit="f450-p18-f1-unit"></span>
+
+<span id="f450-p18-f2-unit" data-translation-unit="f450-p18-f2-unit"></span>
+
+<span id="f450-p18-f3-unit" data-translation-unit="f450-p18-f3-unit"></span>
+
+<span id="f450-p19-body" data-translation-unit="f450-p19-body"></span>
+
+<span id="f450-p19-f1-unit" data-translation-unit="f450-p19-f1-unit"></span>
+
+<span id="f450-p19-f2-unit" data-translation-unit="f450-p19-f2-unit"></span>
+
+<span id="f450-p20-body" data-translation-unit="f450-p20-body"></span>
+
+<span id="f450-p20-f1-unit" data-translation-unit="f450-p20-f1-unit"></span>
+
+<span id="f450-p20-f2-unit" data-translation-unit="f450-p20-f2-unit"></span>
+
+<span id="f450-p21-body" data-translation-unit="f450-p21-body"></span>
+
+<span id="f450-p21-f1-unit" data-translation-unit="f450-p21-f1-unit"></span>
+
+<span id="f450-p22-body" data-translation-unit="f450-p22-body"></span>
+
+#### 2.2.4 ESCの校正（初回飛行）
+
+<span id="f450-p22-body-warning" data-translation-unit="f450-p22-body-warning"></span>
+
+:::caution[注意]
+**安全のため、ESCの校正前にプロペラを取り付けないでください。**
+:::
+
+<span id="f450-p22-body-tail" data-translation-unit="f450-p22-body-tail"></span>
+
+#### 2.2.5 プロペラの取り付け
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p22-f1-unit" data-translation-unit="f450-p22-f1-unit"></span>
+
+<span id="f450-p23-body-warning" data-translation-unit="f450-p23-body-warning"></span>
+
+:::caution[注意]
+注意：安全のため、機体設定が完了するまではプロペラを取り付けないでください。
+:::
+
+<span id="f450-p23-body-tail" data-translation-unit="f450-p23-body-tail"></span>
+
+#### 2.2.6 飛行時の注意
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="f450-p23-f1-unit" data-translation-unit="f450-p23-f1-unit"></span>
+
+<span id="f450-p24-body" data-translation-unit="f450-p24-body"></span>
+
+## 第3章 飛行
+
+### 3.1 目視飛行
+
+### 3.2 FPV飛行
+
+#### 3.2.1 FPVゴーグル
+
+<span id="f450-p24-f1-unit" data-translation-unit="f450-p24-f1-unit"></span>
+
+<span id="f450-p25-body" data-translation-unit="f450-p25-body"></span>

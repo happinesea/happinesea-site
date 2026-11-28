@@ -1,11 +1,19 @@
-import remaining from '../src/data/manuals/remaining-web.json' with { type: 'json' };
-import batch6 from '../src/data/manuals/receiver-web-batch6.json' with { type: 'json' };
-import batch5 from '../src/data/manuals/receiver-web-batch5.json' with { type: 'json' };
+import {
+  productDetailPath,
+  canShowGeneratedManual,
+} from '../src/lib/product-materials.mjs';
+import receiverManuals from '../src/lib/receiver-manuals.mjs';
+import {
+  initialManualReleaseEntries,
+  isInitialManualRelease,
+} from '../src/lib/manual-release.mjs';
+import catalogue from '../src/data/product-catalogue.json' with { type: 'json' };
 import assert from 'node:assert/strict';
 import { access, readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
+import { gunzipSync } from 'node:zlib';
 import { parse as parseYaml } from 'yaml';
 import {
   canonicalSitemapEntry,
@@ -13,6 +21,10 @@ import {
   verifySitemap,
 } from '../scripts/lib/sitemap.mjs';
 import { manualCanonical } from '../scripts/lib/rc4gs-v2-manual.mjs';
+import {
+  assertPublicManualCopy,
+  verifyBuiltManualCopy,
+} from '../scripts/lib/manual-public-copy.mjs';
 import {
   headingText,
   pageHeading,
@@ -614,25 +626,15 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
 
 test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
   const html = await route('radiolink/index.html');
-  const detailCount =
-    27 +
-    batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
-    batch6.manuals.length +
-    remaining.manuals.filter((m) => m.product_id !== 'rtc8').length;
-
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
-  assert.equal(
-    (html.match(/data-detail-available/g) ?? []).length,
-    detailCount,
-  );
-  assert.equal(
-    (html.match(/data-detail-preparing/g) ?? []).length,
-    83 - detailCount,
-  );
-  assert.equal(
-    (html.match(/詳しい仕様は公式サイトで/g) ?? []).length,
-    83 - detailCount,
-  );
+  assert.equal((html.match(/data-detail-available/g) ?? []).length, 83);
+  assert.doesNotMatch(html, /data-detail-preparing/);
+  const paths = catalogue.map(productDetailPath);
+  assert.equal(new Set(paths).size, 83);
+  for (const path of paths) {
+    assert.ok(html.includes('href="' + publicationBase + path + '"'));
+    await route(path.slice(1) + 'index.html');
+  }
   assert.equal((html.match(/data-product-card-image/g) ?? []).length, 83);
   assert.equal((html.match(/loading="lazy"/g) ?? []).length, 83);
   assert.match(html, /83件を表示/);
@@ -642,7 +644,7 @@ test('Radiolink catalogue renders all inventory products without pending detail 
   assert.doesNotMatch(html, /詳細ページ準備中/);
   assert.doesNotMatch(
     html,
-    new RegExp(`href="${publicationBase}/radiolink/(?:turbo-pix|at10-ii)/"`),
+    new RegExp(`href="${publicationBase}/radiolink/turbo-pix/"`),
   );
 });
 
@@ -847,7 +849,14 @@ for (const product of [
       assert.doesNotMatch(html, />標準モード</);
       assert.doesNotMatch(html, />長距離モード</);
     }
-    if (['rc8p', 'r12f', 'r7fg', 'r16f', 'r8fg', 'r6fg'].includes(product.slug))
+    if (
+      ['rc8p', 'r12f', 'r7fg', 'r16f', 'r8fg', 'r6fg'].includes(product.slug) ||
+      (product.slug === 't12d' &&
+        receiverManuals.manuals.some(
+          (entry) =>
+            entry.product_id === 't12d' && canShowGeneratedManual(entry),
+        ))
+    )
       assert.ok(
         html.includes(`href="${publicationBase}/manuals/${product.slug}/"`),
       );
@@ -880,7 +889,7 @@ test('manuals category provides a public entry point without review language', a
 
   assert.match(category, /data-manual-index/);
   assert.ok(category.includes(`href="${publicationBase}/manuals/rc8x/"`));
-  assert.match(category, /日本語完全版の取扱説明書を掲載しています。/);
+  assert.match(category, /機種と製品世代に合った取扱説明書を選べます。/);
   for (const html of [category, manual, chapterOne, chapterTwo]) {
     assert.doesNotMatch(
       html,
@@ -1190,7 +1199,13 @@ test(
     ))
       await check(
         product.detailPath,
-        productStates.get(product.slug) === 'published',
+        productStates.get(product.slug) === 'published' ||
+          (productStates.get(product.slug) !== 'manufacturer_review' &&
+            receiverManuals.manuals.some(
+              (entry) =>
+                entry.product_route === product.detailPath &&
+                isInitialManualRelease(entry),
+            )),
       );
     for (const record of (await load('drawing-library/production')).records)
       await check(record.route);
@@ -1323,3 +1338,106 @@ test('approved drawing assets and details publish, excluded records stay absent'
       /ENOENT/,
     );
 });
+
+test('manual rendering omits editorial states and preserves source safety warnings', async () => {
+  await verifyBuiltManualCopy(
+    fileURLToPath(new URL('../dist/', import.meta.url)),
+  );
+
+  const rc8p = await route('manuals/rc8p/chapter-02/index.html');
+  assert.match(rc8p, /制御不能に前進または後退/);
+  assert.match(rc8p, /信号を失ったときのスロットル出力とフェイルセーフ設定/);
+  assert.doesNotMatch(rc8p, /スロットル出力を停止|CH8の左右を120/);
+  const power = await route('manuals/rc8p/chapter-03/index.html');
+  assert.match(power, /USB接続を外したり、RC8Pの電源を切ったりしない/);
+
+  // Draft routes may be excluded in production. Their authored warnings must
+  // still appear as reader-facing safety notices in the staging build.
+  if (publicationBase) {
+    const d16 = await route('manuals/d16pro-200/index.html');
+    assert.match(
+      d16,
+      /バッテリーを取り外す時点は、お使いの機器に対応するメーカーの説明書を参照/,
+    );
+    assert.match(d16, /noindex, nofollow/);
+  }
+});
+
+test('Pagefind indexes reader-facing manual text', async () => {
+  const directory = new URL('../dist/pagefind/fragment/', import.meta.url);
+  const files = await readdir(directory);
+  let checked = 0;
+  let foundSafetyNotice = false;
+  for (const file of files.filter((entry) => entry.endsWith('.pf_fragment'))) {
+    const bytes = await readFile(new URL(file, directory));
+    const fragment = JSON.parse(
+      gunzipSync(bytes)
+        .toString('utf8')
+        .replace(/^pagefind_dcd/, ''),
+    );
+    if (!fragment.url.includes('/manuals/')) continue;
+    checked++;
+    const text = fragment.content.replaceAll('\u200b', '');
+    assertPublicManualCopy(text, fragment.url);
+    if (text.includes('安全上の注意')) foundSafetyNotice = true;
+  }
+  assert.ok(checked > 0);
+  assert.ok(foundSafetyNotice);
+});
+
+test(
+  'initial release production routes match the approved source-bound scope',
+  {
+    skip: process.env.PUBLICATION_MODE !== 'production',
+  },
+  async () => {
+    const sitemap = await route('sitemap-0.xml');
+    const news = await route('news-sitemap.xml');
+    const approved = new Set(
+      initialManualReleaseEntries.map((entry) => entry.route),
+    );
+    assert.equal(approved.size, initialManualReleaseEntries.length);
+    assert.ok(approved.size > 0);
+    for (const entry of receiverManuals.manuals) {
+      const page = `${entry.route.slice(1)}index.html`;
+      if (approved.has(entry.route)) {
+        assert.ok(isInitialManualRelease(entry), entry.route);
+        const html = await route(page);
+        assert.doesNotMatch(
+          html,
+          /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i,
+          page,
+        );
+        assert.match(html, /日本語Web版 初版/);
+        if (entry.withheld_unit_ids.length > 0) {
+          assert.match(html, /この日本語Web版は原典の一部を掲載しています/);
+        }
+        const canonical = `https://happinesea.com${entry.route}`;
+        const location = `<loc>${canonical}</loc>`;
+        assert.equal(sitemap.split(location).length, 2, page);
+        assert.ok(!news.includes(location), page);
+        assert.ok(
+          html.includes(`<link rel="canonical" href="${canonical}"`),
+          page,
+        );
+        assert.ok(
+          html.includes(`<meta property="og:url" content="${canonical}"`),
+          page,
+        );
+        assert.match(html, /<title>[^<]+<\/title>/, page);
+        assert.match(html, /<meta name="description" content="[^"]+"/, page);
+        for (const figure of entry.figures)
+          await access(
+            new URL(
+              `../dist/assets/radiolink/${entry.product_id}/web-ja-v1/${figure.path.split('/').at(-1)}`,
+              import.meta.url,
+            ),
+          );
+      } else if (entry.route === '/manuals/rtc8/') {
+        assert.match(await route(page), /noindex, nofollow/);
+      } else if (entry.publication_status !== 'PUBLISHED') {
+        await assert.rejects(route(page), { code: 'ENOENT' });
+      }
+    }
+  },
+);

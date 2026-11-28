@@ -1,20 +1,27 @@
 import { expect, test } from '@playwright/test';
-import { readFile } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
+import { parse } from 'yaml';
 
 const slug = 'japan-hypersonic-missile-technology-challenges-2026';
 const article = `./insights/${slug}/`;
+const markdown = readFileSync(`src/content/articles/${slug}.md`, 'utf8');
+const published =
+  parse(markdown.match(/^---\r?\n([\s\S]*?)\r?\n---/)![1]).content_status ===
+  'published';
 const localDraftPreview =
   process.env.PUBLICATION_MODE !== 'production' &&
   process.env.CMS_ARTICLE_LOCAL_PREVIEW === slug;
 const publicArticle =
   './insights/china-fourth-generation-air-to-air-missiles-technological-advancements-that-transcend-range/';
 
-test('draft preview paginates the article and follows browser history', async ({
+test('the paginated CMS article follows browser history', async ({
   page,
   isMobile,
 }) => {
-  test.skip(!localDraftPreview, 'Requires the local draft preview.');
-  const markdown = await readFile(`src/content/articles/${slug}.md`, 'utf8');
+  test.skip(
+    !published && !localDraftPreview,
+    'Requires the local draft preview.',
+  );
   const firstHeadings = markdown
     .split('<!--nextpage-->')
     .map((part) => part.match(/^## (.+)$/m)?.[1]);
@@ -36,10 +43,10 @@ test('draft preview paginates the article and follows browser history', async ({
   const expectedCanonical = await canonical.getAttribute('href');
   expect(expectedCanonical).toMatch(new RegExp(`/${slug}/$`));
 
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
-    'content',
-    'noindex, nofollow',
-  );
+  const robots = page.locator('meta[name="robots"]');
+  if (published) await expect(robots).toHaveCount(0);
+  else await expect(robots).toHaveAttribute('content', 'noindex, nofollow');
+  await expect(body).not.toContainText('<!--nextpage-->');
   await expect(sections).toHaveCount(firstHeadings.length);
   await expect(
     sections.nth(0).getByRole('heading', { level: 2 }).first(),
@@ -81,6 +88,19 @@ test('draft preview paginates the article and follows browser history', async ({
         .evaluate((image: HTMLImageElement) => image.naturalWidth),
     )
     .toBeGreaterThan(0);
+
+  await next.click();
+  await expect(selected).toHaveText('3');
+  const contentImage = sections.nth(2).getByRole('img').first();
+  await expect(contentImage).toBeVisible();
+  await expect
+    .poll(() =>
+      contentImage.evaluate((image: HTMLImageElement) => image.naturalWidth),
+    )
+    .toBeGreaterThan(0);
+  await previous.click();
+  await expect(selected).toHaveText('2');
+  await expect(canonical).toHaveAttribute('href', expectedCanonical!);
 
   if (isMobile) await page.setViewportSize({ width: 360, height: 800 });
   const last = String(firstHeadings.length);
@@ -135,15 +155,16 @@ test('public articles without a marker retain their body, media, SEO and listing
   await expect(
     page.locator('main a[href*="china-fourth-generation-air-to-air-missiles"]'),
   ).toBeVisible();
-  await expect(page.locator(`main a[href*="${slug}"]`)).toHaveCount(0);
+  if (!published)
+    await expect(page.locator(`main a[href*="${slug}"]`)).toHaveCount(0);
 });
 
 test('draft article is absent from normal builds, including query URLs', async ({
   page,
 }) => {
   test.skip(
-    localDraftPreview,
-    'The local preview deliberately exposes this draft.',
+    published || localDraftPreview,
+    'The article is published or deliberately exposed in local preview.',
   );
   for (const suffix of ['', '?page=2']) {
     const response = await page.goto(article + suffix);

@@ -4,6 +4,7 @@ import CatalogueProductCard from '../../components/CatalogueProductCard.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import catalogue from '../../data/product-catalogue.json';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categoryIds } from '../../lib/radiolink-categories.mjs';
 import { withBase } from '../../lib/urls';
 
 const entrances = [
@@ -39,29 +40,9 @@ const entrances = [
   },
 ];
 
-const categoryOrder = [
-  '送信機',
-  '受信機',
-  'フライトコントローラー',
-  'GPS・RTK・センサー',
-  '機体',
-  '電源・ESC',
-  'モジュール・アクセサリー',
-] as const;
-
-const categoryIds: Record<(typeof categoryOrder)[number], string> = {
-  送信機: 'transmitters',
-  受信機: 'receivers',
-  フライトコントローラー: 'flight-controllers',
-  'GPS・RTK・センサー': 'gps-rtk-sensors',
-  機体: 'aircraft',
-  '電源・ESC': 'power-esc',
-  'モジュール・アクセサリー': 'modules-accessories',
-};
-
-const groups = categoryOrder.map((category) => ({
+const groups = Object.entries(categoryIds).map(([category, id]) => ({
   category,
-  id: categoryIds[category],
+  id,
   products: catalogue.filter((product) => product.category === category),
 }));
 ---

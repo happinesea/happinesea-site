@@ -1,0 +1,569 @@
+---
+title: CrossRace Pro 日本語取扱説明書
+description: Radiolink CrossRace Pro の公式英語取扱説明書に対応する日本語版です。
+product: crossrace-pro
+slug: manuals/crossrace-pro
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/33431e851f09e414f0cdfd852299d155.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/crossrace-pro/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink CrossRace Pro 公式英語取扱説明書（文書版・発行日不明、62頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="crossrace_pro-p1-body" data-translation-unit="crossrace_pro-p1-body"></span>
+
+# CrossRace Pro 取扱説明書
+
+対応機体：ローター数2〜8のマルチローター。
+
+<span id="crossrace_pro-p1-f1-unit" data-translation-unit="crossrace_pro-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossrace-pro/web-ja-v1/crossrace_pro-p1-f1.jpeg" width={640} height={380} figureId="crossrace_pro-p1-f1" alt={"CrossRace Pro原典物理1頁の図1"} caption={"CrossRace Pro原典物理1頁の図1"} />
+
+<span id="crossrace_pro-p1-f2-unit" data-translation-unit="crossrace_pro-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossrace-pro/web-ja-v1/crossrace_pro-p1-f2.png" width={397} height={119} figureId="crossrace_pro-p1-f2" alt={"CrossRace Pro原典物理1頁の図2"} caption={"CrossRace Pro原典物理1頁の図2"} />
+
+<span id="crossrace_pro-p1-f3-unit" data-translation-unit="crossrace_pro-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossrace-pro/web-ja-v1/crossrace_pro-p1-f3.jpeg" width={958} height={1007} figureId="crossrace_pro-p1-f3" alt={"CrossRace Pro原典物理1頁の図3"} caption={"CrossRace Pro原典物理1頁の図3"} />
+
+<span id="crossrace_pro-p2-body-safety" data-translation-unit="crossrace_pro-p2-body-safety"></span>
+
+## 安全上の注意
+
+- 悪天候時は機体を操作しないでください。視界が悪いと方向を見失い、操縦できなくなるおそれがあります。
+- 人混みや法令で禁止されている場所では使用しないでください。
+- 使用前に毎回、すべてのサーボとその接続を点検してください。
+- 電源は必ず受信機、送信機の順に切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉のない場所で飛行・走行させてください。
+
+## 警告
+
+本製品は玩具ではなく、14歳未満の子どもの使用には適していません。大人は子どもの手の届かない場所に保管し、子どもが近くにいるときは慎重に操作してください。
+
+水や湿気がアンテナやスティックの隙間から送信機に入り、機体の動作が不安定になったり、制御不能になったりするおそれがあります。
+
+<span id="crossrace_pro-p2-body-wet-weather" data-translation-unit="crossrace_pro-p2-body-wet-weather"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace_pro-p2-body-fcc" data-translation-unit="crossrace_pro-p2-body-fcc"></span>
+
+## FCC声明
+
+本機器は試験によりFCC規則第15部のクラスBデジタル機器の制限に適合することが確認されています。この制限は、住宅での設置時に有害な干渉を合理的に防ぐためのものです。本機器は無線周波エネルギーを発生・使用し、放射することがあります。指示どおりに設置・使用しない場合、無線通信に有害な干渉を与えるおそれがあります。ただし、個々の設置環境で干渉が起こらないことを保証するものではありません。
+
+本機器がラジオやテレビの受信に有害な干渉を与えているかどうかは、本機器の電源を切って入れ直すことで確認できます。干渉が生じている場合は、次のうち一つ以上の方法で解消を試みてください。
+
+- 受信アンテナの向きや位置を変える。
+- 本機器と受信機の間隔を広げる。
+- 受信機とは別の回路にあるコンセントに本機器を接続する。
+- 販売店または経験のあるラジオ・テレビ技術者に相談する。
+
+本機器はFCC規則第15部に適合しています。使用には次の二つの条件が適用されます。（1）本機器が有害な干渉を発生させないこと。（2）意図しない動作の原因となる干渉を含め、受信したあらゆる干渉を受け入れること。
+
+適合性に責任を負う当事者が明示的に承認していない変更や改造を行うと、利用者の本機器を使用する権限が失われることがあります。
+
+
+
+<span id="crossrace_pro-p3-body" data-translation-unit="crossrace_pro-p3-body"></span>
+
+## 目次（原典の印刷ページ）
+
+- 1 CrossRace Proの概要 — 4
+  - 1.1 付属品 — 4
+  - 1.2 コネクター — 5
+  - 1.3 仕様 — 7
+  - 1.4 使用上の助言 — 9
+- 2 Mission Planner — 9
+  - 2.1 Mission Plannerのインストール — 9
+  - 2.2 Mission Plannerの概要 — 10
+- 3 初期設定 — 11
+  - 3.1 ファームウェアのダウンロードとインストール — 11
+  - 3.2 フレームタイプ — 13
+  - 3.3 加速度センサーのキャリブレーション — 14
+  - 3.4 コンパスのキャリブレーション — 17
+  - 3.5 送受信機のキャリブレーション — 20
+  - 3.6 フライトモードの設定 — 23
+  - 3.7 フライトモードの概要 — 24
+    - 3.7.1 Stabilizeモード — 24
+    - 3.7.2 Acroモード（FPV） — 24
+    - 3.7.3 Altitude Holdモード — 26
+    - 3.7.4 Autoモード — 26
+    - 3.7.5 PosHoldモード — 28
+    - 3.7.6 RTLモード — 28
+    - 3.7.7 SimpleモードとSuper Simpleモード — 30
+    - 3.7.8 その他のフライトモード — 32
+- 4 F/S（フェイルセーフ）設定 — 33
+  - 4.1 無線フェイルセーフの設定 — 33
+  - 4.2 EKFフェイルセーフ — 36
+- 5 ハードウェアの取り付けと設定 — 36
+  - 5.1 機体へのCrossRace Proの取り付け — 36
+
+<span id="crossrace_pro-p4-body" data-translation-unit="crossrace_pro-p4-body"></span>
+
+## 目次（続き）
+
+- 3 初期設定 — 37
+    - 5.2.1 モーターの番号順と回転方向の選択 — 37
+    - 5.2.2 時計回りと反時計回りのプロペラの見分け方 — 40
+    - 5.2.3 付属品の接続 — 41
+  - 5.3 LED表示、アーム、トラブルシューティング — 44
+    - 5.3.1 LED表示 — 44
+    - 5.3.2 アームとディスアーム — 44
+    - 5.3.3 アーム時の回転を停止する — 46
+    - 5.3.4 アームできない場合の対処 — 46
+  - 5.4 ESCのキャリブレーション — 49
+  - 5.5 水平キャリブレーション — 50
+  - 5.6 GeoFence — 50
+  - 5.7 内蔵OSD — 52
+    - 5.7.1 設定の概要 — 52
+    - 5.7.2 表示画面の概要 — 53
+  - 5.8 CrossRace Proの高度な機能 — 54
+    - 5.8.1 CrossRace ProでのESCテレメトリーの使用 — 54
+    - 5.8.2 CrossRace Proのアンチタートルモード — 56
+- 6 AutoTune — 56
+- 7 パラメーター設定 — 58
+  - 7.1 パラメーター画面の概要 — 58
+  - 7.2 パラメーターの調整 — 59
+  - 7.3 パラメーターの手動調整 — 59
+  - 7.4 Acroモードの操作感の最適化 — 59
+- 8 DataFlashログのダウンロード — 60
+
+<span id="crossrace_pro-p5-body" data-translation-unit="crossrace_pro-p5-body"></span>
+
+## 1. CrossRace Proの概要
+
+### 1.1 付属品
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossrace_pro-p5-f1-unit" data-translation-unit="crossrace_pro-p5-f1-unit"></span>
+
+<span id="crossrace_pro-p6-body" data-translation-unit="crossrace_pro-p6-body"></span>
+
+### 1.2 コネクター
+
+<span id="crossrace_pro-p6-f1-unit" data-translation-unit="crossrace_pro-p6-f1-unit"></span>
+
+<span id="crossrace_pro-p6-f2-unit" data-translation-unit="crossrace_pro-p6-f2-unit"></span>
+
+<span id="crossrace_pro-p7-body" data-translation-unit="crossrace_pro-p7-body"></span>
+
+<span id="crossrace_pro-p7-f1-unit" data-translation-unit="crossrace_pro-p7-f1-unit"></span>
+
+<span id="crossrace_pro-p8-body" data-translation-unit="crossrace_pro-p8-body"></span>
+
+### 1.3 仕様
+
+<span id="crossrace_pro-p8-f1-unit" data-translation-unit="crossrace_pro-p8-f1-unit"></span>
+
+<span id="crossrace_pro-p9-body" data-translation-unit="crossrace_pro-p9-body"></span>
+
+<span id="crossrace_pro-p10-body" data-translation-unit="crossrace_pro-p10-body"></span>
+
+### 1.4 使用時の案内
+
+## 2. Mission Planner
+
+### 2.1 Mission Plannerのインストール
+
+<span id="crossrace_pro-p10-f1-unit" data-translation-unit="crossrace_pro-p10-f1-unit"></span>
+
+<span id="crossrace_pro-p11-body" data-translation-unit="crossrace_pro-p11-body"></span>
+
+### 2.2 Mission Plannerの概要
+
+<span id="crossrace_pro-p11-f1-unit" data-translation-unit="crossrace_pro-p11-f1-unit"></span>
+
+<span id="crossrace_pro-p11-f2-unit" data-translation-unit="crossrace_pro-p11-f2-unit"></span>
+
+<span id="crossrace_pro-p12-body" data-translation-unit="crossrace_pro-p12-body"></span>
+
+## 3. 初期設定
+
+### 3.1 ファームウェアのダウンロードとインストール
+
+<span id="crossrace_pro-p12-f1-unit" data-translation-unit="crossrace_pro-p12-f1-unit"></span>
+
+<span id="crossrace_pro-p13-body" data-translation-unit="crossrace_pro-p13-body"></span>
+
+<span id="crossrace_pro-p13-f1-unit" data-translation-unit="crossrace_pro-p13-f1-unit"></span>
+
+<span id="crossrace_pro-p13-f2-unit" data-translation-unit="crossrace_pro-p13-f2-unit"></span>
+
+<span id="crossrace_pro-p14-body" data-translation-unit="crossrace_pro-p14-body"></span>
+
+### 3.2 フレームタイプ（Frame Type）
+
+<span id="crossrace_pro-p14-f1-unit" data-translation-unit="crossrace_pro-p14-f1-unit"></span>
+
+<span id="crossrace_pro-p14-f2-unit" data-translation-unit="crossrace_pro-p14-f2-unit"></span>
+
+<span id="crossrace_pro-p15-body" data-translation-unit="crossrace_pro-p15-body"></span>
+
+### 3.3 加速度センサーのキャリブレーション
+
+<span id="crossrace_pro-p15-f1-unit" data-translation-unit="crossrace_pro-p15-f1-unit"></span>
+
+<span id="crossrace_pro-p15-f2-unit" data-translation-unit="crossrace_pro-p15-f2-unit"></span>
+
+<span id="crossrace_pro-p15-f3-unit" data-translation-unit="crossrace_pro-p15-f3-unit"></span>
+
+<span id="crossrace_pro-p16-body" data-translation-unit="crossrace_pro-p16-body"></span>
+
+<span id="crossrace_pro-p16-f1-unit" data-translation-unit="crossrace_pro-p16-f1-unit"></span>
+
+<span id="crossrace_pro-p16-f2-unit" data-translation-unit="crossrace_pro-p16-f2-unit"></span>
+
+<span id="crossrace_pro-p17-body" data-translation-unit="crossrace_pro-p17-body"></span>
+
+<span id="crossrace_pro-p17-f1-unit" data-translation-unit="crossrace_pro-p17-f1-unit"></span>
+
+<span id="crossrace_pro-p17-f2-unit" data-translation-unit="crossrace_pro-p17-f2-unit"></span>
+
+<span id="crossrace_pro-p18-body" data-translation-unit="crossrace_pro-p18-body"></span>
+
+### 3.4 コンパスのキャリブレーション
+
+<span id="crossrace_pro-p18-f1-unit" data-translation-unit="crossrace_pro-p18-f1-unit"></span>
+
+<span id="crossrace_pro-p18-f2-unit" data-translation-unit="crossrace_pro-p18-f2-unit"></span>
+
+<span id="crossrace_pro-p19-body" data-translation-unit="crossrace_pro-p19-body"></span>
+
+<span id="crossrace_pro-p19-f1-unit" data-translation-unit="crossrace_pro-p19-f1-unit"></span>
+
+<span id="crossrace_pro-p19-f2-unit" data-translation-unit="crossrace_pro-p19-f2-unit"></span>
+
+<span id="crossrace_pro-p20-body" data-translation-unit="crossrace_pro-p20-body"></span>
+
+<span id="crossrace_pro-p20-f1-unit" data-translation-unit="crossrace_pro-p20-f1-unit"></span>
+
+<span id="crossrace_pro-p20-f2-unit" data-translation-unit="crossrace_pro-p20-f2-unit"></span>
+
+<span id="crossrace_pro-p21-body" data-translation-unit="crossrace_pro-p21-body"></span>
+
+### 3.5 送信機のキャリブレーション（Radio Calibration）
+
+<span id="crossrace_pro-p21-f1-unit" data-translation-unit="crossrace_pro-p21-f1-unit"></span>
+
+<span id="crossrace_pro-p22-body" data-translation-unit="crossrace_pro-p22-body"></span>
+
+<span id="crossrace_pro-p22-f1-unit" data-translation-unit="crossrace_pro-p22-f1-unit"></span>
+
+<span id="crossrace_pro-p22-f2-unit" data-translation-unit="crossrace_pro-p22-f2-unit"></span>
+
+<span id="crossrace_pro-p22-f3-unit" data-translation-unit="crossrace_pro-p22-f3-unit"></span>
+
+<span id="crossrace_pro-p22-f4-unit" data-translation-unit="crossrace_pro-p22-f4-unit"></span>
+
+<span id="crossrace_pro-p23-body" data-translation-unit="crossrace_pro-p23-body"></span>
+
+<span id="crossrace_pro-p23-f1-unit" data-translation-unit="crossrace_pro-p23-f1-unit"></span>
+
+<span id="crossrace_pro-p23-f2-unit" data-translation-unit="crossrace_pro-p23-f2-unit"></span>
+
+<span id="crossrace_pro-p23-f3-unit" data-translation-unit="crossrace_pro-p23-f3-unit"></span>
+
+<span id="crossrace_pro-p24-body" data-translation-unit="crossrace_pro-p24-body"></span>
+
+### 3.6 フライトモードを設定する
+
+<span id="crossrace_pro-p24-f1-unit" data-translation-unit="crossrace_pro-p24-f1-unit"></span>
+
+<span id="crossrace_pro-p25-body" data-translation-unit="crossrace_pro-p25-body"></span>
+
+### 3.7 フライトモードの説明
+
+#### 3.7.1 スタビライズ（Stabilize）
+
+#### 3.7.2 アクロ（Acro、FPV）
+
+<span id="crossrace_pro-p25-f1-unit" data-translation-unit="crossrace_pro-p25-f1-unit"></span>
+
+<span id="crossrace_pro-p26-body" data-translation-unit="crossrace_pro-p26-body"></span>
+
+<span id="crossrace_pro-p26-f1-unit" data-translation-unit="crossrace_pro-p26-f1-unit"></span>
+
+<span id="crossrace_pro-p27-body" data-translation-unit="crossrace_pro-p27-body"></span>
+
+#### 3.7.3 高度維持モード（AltHold）
+
+#### 3.7.4 自動モード（Auto）
+
+<span id="crossrace_pro-p27-f1-unit" data-translation-unit="crossrace_pro-p27-f1-unit"></span>
+
+<span id="crossrace_pro-p28-body" data-translation-unit="crossrace_pro-p28-body"></span>
+
+<span id="crossrace_pro-p28-f1-unit" data-translation-unit="crossrace_pro-p28-f1-unit"></span>
+
+<span id="crossrace_pro-p29-body" data-translation-unit="crossrace_pro-p29-body"></span>
+
+#### 3.7.5 位置維持モード（PosHold）
+
+#### 3.7.6 帰還モード（RTL）
+
+<span id="crossrace_pro-p30-body" data-translation-unit="crossrace_pro-p30-body"></span>
+
+<span id="crossrace_pro-p30-f1-unit" data-translation-unit="crossrace_pro-p30-f1-unit"></span>
+
+<span id="crossrace_pro-p31-body" data-translation-unit="crossrace_pro-p31-body"></span>
+
+#### 3.7.7 シンプル／スーパーシンプルモード
+
+<span id="crossrace_pro-p32-body" data-translation-unit="crossrace_pro-p32-body"></span>
+
+<span id="crossrace_pro-p32-f1-unit" data-translation-unit="crossrace_pro-p32-f1-unit"></span>
+
+<span id="crossrace_pro-p32-f2-unit" data-translation-unit="crossrace_pro-p32-f2-unit"></span>
+
+<span id="crossrace_pro-p33-body" data-translation-unit="crossrace_pro-p33-body"></span>
+
+#### 3.7.8 その他のフライトモード
+
+<span id="crossrace_pro-p33-f1-unit" data-translation-unit="crossrace_pro-p33-f1-unit"></span>
+
+<span id="crossrace_pro-p34-body" data-translation-unit="crossrace_pro-p34-body"></span>
+
+## 4. フェイルセーフ設定（F/S）
+
+### 4.1 無線フェイルセーフ
+
+<span id="crossrace_pro-p34-f1-unit" data-translation-unit="crossrace_pro-p34-f1-unit"></span>
+
+<span id="crossrace_pro-p35-body" data-translation-unit="crossrace_pro-p35-body"></span>
+
+<span id="crossrace_pro-p35-f1-unit" data-translation-unit="crossrace_pro-p35-f1-unit"></span>
+
+<span id="crossrace_pro-p35-f2-unit" data-translation-unit="crossrace_pro-p35-f2-unit"></span>
+
+<span id="crossrace_pro-p36-body" data-translation-unit="crossrace_pro-p36-body"></span>
+
+<span id="crossrace_pro-p37-body" data-translation-unit="crossrace_pro-p37-body"></span>
+
+### 4.2 EKFフェイルセーフ
+
+## 5. ハードウェアの設定
+
+### 5.1 機体へのCrossRace Proの取り付け
+
+<span id="crossrace_pro-p37-f1-unit" data-translation-unit="crossrace_pro-p37-f1-unit"></span>
+
+<span id="crossrace_pro-p37-f2-unit" data-translation-unit="crossrace_pro-p37-f2-unit"></span>
+
+<span id="crossrace_pro-p38-body" data-translation-unit="crossrace_pro-p38-body"></span>
+
+### 5.2 CrossRace Proの機体への接続
+
+#### 5.2.1 モーター順と回転方向の選択
+
+<span id="crossrace_pro-p38-f1-unit" data-translation-unit="crossrace_pro-p38-f1-unit"></span>
+
+<span id="crossrace_pro-p38-f2-unit" data-translation-unit="crossrace_pro-p38-f2-unit"></span>
+
+<span id="crossrace_pro-p38-f3-unit" data-translation-unit="crossrace_pro-p38-f3-unit"></span>
+
+<span id="crossrace_pro-p39-body" data-translation-unit="crossrace_pro-p39-body"></span>
+
+<span id="crossrace_pro-p39-f1-unit" data-translation-unit="crossrace_pro-p39-f1-unit"></span>
+
+<span id="crossrace_pro-p39-f2-unit" data-translation-unit="crossrace_pro-p39-f2-unit"></span>
+
+<span id="crossrace_pro-p39-f3-unit" data-translation-unit="crossrace_pro-p39-f3-unit"></span>
+
+<span id="crossrace_pro-p39-f4-unit" data-translation-unit="crossrace_pro-p39-f4-unit"></span>
+
+<span id="crossrace_pro-p39-f5-unit" data-translation-unit="crossrace_pro-p39-f5-unit"></span>
+
+<span id="crossrace_pro-p39-f6-unit" data-translation-unit="crossrace_pro-p39-f6-unit"></span>
+
+<span id="crossrace_pro-p40-body" data-translation-unit="crossrace_pro-p40-body"></span>
+
+<span id="crossrace_pro-p40-f1-unit" data-translation-unit="crossrace_pro-p40-f1-unit"></span>
+
+<span id="crossrace_pro-p40-f2-unit" data-translation-unit="crossrace_pro-p40-f2-unit"></span>
+
+<span id="crossrace_pro-p40-f3-unit" data-translation-unit="crossrace_pro-p40-f3-unit"></span>
+
+<span id="crossrace_pro-p40-f4-unit" data-translation-unit="crossrace_pro-p40-f4-unit"></span>
+
+<span id="crossrace_pro-p40-f5-unit" data-translation-unit="crossrace_pro-p40-f5-unit"></span>
+
+<span id="crossrace_pro-p41-body" data-translation-unit="crossrace_pro-p41-body"></span>
+
+#### 5.2.2 時計回りと反時計回りのプロペラの見分け方
+
+<span id="crossrace_pro-p41-f1-unit" data-translation-unit="crossrace_pro-p41-f1-unit"></span>
+
+<span id="crossrace_pro-p41-f2-unit" data-translation-unit="crossrace_pro-p41-f2-unit"></span>
+
+<span id="crossrace_pro-p41-f3-unit" data-translation-unit="crossrace_pro-p41-f3-unit"></span>
+
+<span id="crossrace_pro-p41-f4-unit" data-translation-unit="crossrace_pro-p41-f4-unit"></span>
+
+<span id="crossrace_pro-p42-body" data-translation-unit="crossrace_pro-p42-body"></span>
+
+#### 5.2.3 周辺機器の接続
+
+<span id="crossrace_pro-p42-f1-unit" data-translation-unit="crossrace_pro-p42-f1-unit"></span>
+
+<span id="crossrace_pro-p43-body" data-translation-unit="crossrace_pro-p43-body"></span>
+
+<span id="crossrace_pro-p43-f1-unit" data-translation-unit="crossrace_pro-p43-f1-unit"></span>
+
+<span id="crossrace_pro-p43-f2-unit" data-translation-unit="crossrace_pro-p43-f2-unit"></span>
+
+<span id="crossrace_pro-p44-body" data-translation-unit="crossrace_pro-p44-body"></span>
+
+<span id="crossrace_pro-p44-f1-unit" data-translation-unit="crossrace_pro-p44-f1-unit"></span>
+
+<span id="crossrace_pro-p45-body" data-translation-unit="crossrace_pro-p45-body"></span>
+
+### 5.3 LED表示・アーム・トラブル対処
+
+#### 5.3.1 LED表示
+
+#### 5.3.2 アームとディスアーム
+
+<span id="crossrace_pro-p45-f1-unit" data-translation-unit="crossrace_pro-p45-f1-unit"></span>
+
+<span id="crossrace_pro-p46-body" data-translation-unit="crossrace_pro-p46-body"></span>
+
+<span id="crossrace_pro-p46-f1-unit" data-translation-unit="crossrace_pro-p46-f1-unit"></span>
+
+<span id="crossrace_pro-p46-f2-unit" data-translation-unit="crossrace_pro-p46-f2-unit"></span>
+
+<span id="crossrace_pro-p46-f3-unit" data-translation-unit="crossrace_pro-p46-f3-unit"></span>
+
+<span id="crossrace_pro-p47-body" data-translation-unit="crossrace_pro-p47-body"></span>
+
+#### 5.3.3 アーム中のモーター回転を停止する
+
+#### 5.3.4 アーム失敗時の対処
+
+<span id="crossrace_pro-p47-f1-unit" data-translation-unit="crossrace_pro-p47-f1-unit"></span>
+
+<span id="crossrace_pro-p47-f2-unit" data-translation-unit="crossrace_pro-p47-f2-unit"></span>
+
+<span id="crossrace_pro-p48-body" data-translation-unit="crossrace_pro-p48-body"></span>
+
+<span id="crossrace_pro-p48-f1-unit" data-translation-unit="crossrace_pro-p48-f1-unit"></span>
+
+<span id="crossrace_pro-p49-body" data-translation-unit="crossrace_pro-p49-body"></span>
+
+<span id="crossrace_pro-p50-body" data-translation-unit="crossrace_pro-p50-body"></span>
+
+### 5.4 ESCのキャリブレーション
+
+<span id="crossrace_pro-p50-f1-unit" data-translation-unit="crossrace_pro-p50-f1-unit"></span>
+
+<span id="crossrace_pro-p51-body" data-translation-unit="crossrace_pro-p51-body"></span>
+
+### 5.5 水平キャリブレーション
+
+### 5.6 ジオフェンス（GeoFence）
+
+<span id="crossrace_pro-p51-f1-unit" data-translation-unit="crossrace_pro-p51-f1-unit"></span>
+
+<span id="crossrace_pro-p51-f2-unit" data-translation-unit="crossrace_pro-p51-f2-unit"></span>
+
+<span id="crossrace_pro-p52-body" data-translation-unit="crossrace_pro-p52-body"></span>
+
+<span id="crossrace_pro-p52-f1-unit" data-translation-unit="crossrace_pro-p52-f1-unit"></span>
+
+<span id="crossrace_pro-p52-f2-unit" data-translation-unit="crossrace_pro-p52-f2-unit"></span>
+
+<span id="crossrace_pro-p53-body" data-translation-unit="crossrace_pro-p53-body"></span>
+
+### 5.7 内蔵OSD
+
+#### 5.7.1 設定
+
+<span id="crossrace_pro-p53-f1-unit" data-translation-unit="crossrace_pro-p53-f1-unit"></span>
+
+<span id="crossrace_pro-p54-body" data-translation-unit="crossrace_pro-p54-body"></span>
+
+#### 5.7.2 Screen画面
+
+<span id="crossrace_pro-p54-f1-unit" data-translation-unit="crossrace_pro-p54-f1-unit"></span>
+
+<span id="crossrace_pro-p55-body" data-translation-unit="crossrace_pro-p55-body"></span>
+
+### 5.8 CrossRace Proの高度な機能
+
+#### 5.8.1 ESCテレメトリー
+
+<span id="crossrace_pro-p55-f1-unit" data-translation-unit="crossrace_pro-p55-f1-unit"></span>
+
+<span id="crossrace_pro-p56-body" data-translation-unit="crossrace_pro-p56-body"></span>
+
+<span id="crossrace_pro-p56-f1-unit" data-translation-unit="crossrace_pro-p56-f1-unit"></span>
+
+<span id="crossrace_pro-p56-f2-unit" data-translation-unit="crossrace_pro-p56-f2-unit"></span>
+
+<span id="crossrace_pro-p56-f3-unit" data-translation-unit="crossrace_pro-p56-f3-unit"></span>
+
+<span id="crossrace_pro-p56-f4-unit" data-translation-unit="crossrace_pro-p56-f4-unit"></span>
+
+<span id="crossrace_pro-p57-body" data-translation-unit="crossrace_pro-p57-body"></span>
+
+#### 5.8.2 転倒復帰モード（Anti-turtle Mode）
+
+## 6. AutoTune
+
+<span id="crossrace_pro-p57-f1-unit" data-translation-unit="crossrace_pro-p57-f1-unit"></span>
+
+<span id="crossrace_pro-p58-body" data-translation-unit="crossrace_pro-p58-body"></span>
+
+<span id="crossrace_pro-p58-f1-unit" data-translation-unit="crossrace_pro-p58-f1-unit"></span>
+
+<span id="crossrace_pro-p59-body" data-translation-unit="crossrace_pro-p59-body"></span>
+
+## 7. パラメーター設定
+
+### 7.1 パラメーター画面
+
+<span id="crossrace_pro-p59-f1-unit" data-translation-unit="crossrace_pro-p59-f1-unit"></span>
+
+<span id="crossrace_pro-p60-body" data-translation-unit="crossrace_pro-p60-body"></span>
+
+### 7.2 パラメーターの調整
+
+### 7.3 パラメーターの手動調整
+
+### 7.4 Acroモードの操作性の最適化
+
+<span id="crossrace_pro-p60-f1-unit" data-translation-unit="crossrace_pro-p60-f1-unit"></span>
+
+<span id="crossrace_pro-p61-body" data-translation-unit="crossrace_pro-p61-body"></span>
+
+## 8. DataFlashログのダウンロード
+
+<span id="crossrace_pro-p61-f1-unit" data-translation-unit="crossrace_pro-p61-f1-unit"></span>
+
+<span id="crossrace_pro-p61-f2-unit" data-translation-unit="crossrace_pro-p61-f2-unit"></span>
+
+<span id="crossrace_pro-p62-body" data-translation-unit="crossrace_pro-p62-body"></span>
+
+<span id="crossrace_pro-p62-f1-unit" data-translation-unit="crossrace_pro-p62-f1-unit"></span>

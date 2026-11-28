@@ -1,7 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { docsLoader } from '@astrojs/starlight/loaders';
+import { manualDocsLoader } from './lib/manual-docs-loader';
 import { docsSchema } from '@astrojs/starlight/schema';
 import { cmsArticleSchema } from '../scripts/lib/pages-articles.mjs';
 
@@ -257,7 +257,7 @@ export const collections = {
   support,
   manualSections,
   docs: defineCollection({
-    loader: docsLoader(),
+    loader: manualDocsLoader(),
     schema: docsSchema({
       extend: z.object({
         product: z.string(),

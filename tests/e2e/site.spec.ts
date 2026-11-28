@@ -178,8 +178,8 @@ test('catalogue exposes all products and every local image decodes', async ({
 }) => {
   await page.goto('./radiolink/');
   await expect(page.locator('[data-product-card]')).toHaveCount(83);
-  await expect(page.locator('[data-detail-available]')).toHaveCount(8);
-  await expect(page.locator('[data-detail-preparing]')).toHaveCount(75);
+  await expect(page.locator('[data-detail-available]')).toHaveCount(83);
+  await expect(page.locator('[data-detail-preparing]')).toHaveCount(0);
 
   const images = page.locator('[data-product-card-image]');
   await expect(images).toHaveCount(83);
