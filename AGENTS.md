@@ -39,6 +39,8 @@
 
 Codexは明示指示がない限り、private sibling repoを読まない。
 
+SEO関連作業に限り、happinesea/site-management の `docs/seo/happinesea-seo-policy-v0.1-2026-12-01.md` を正本として参照する。この例外は当該ファイルの読み取りに限る。正本の全文や非公開情報は本リポジトリに転記しない。取得できない場合は未確認として記録し、制作と初版公開準備は継続する。
+
 特に以下をデフォルトでロードしない:
 
 - happinesea/site-management
