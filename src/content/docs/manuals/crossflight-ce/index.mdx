@@ -1,0 +1,683 @@
+---
+title: CrossFlight-CE 日本語取扱説明書
+description: Radiolink CrossFlight-CE の公式英語取扱説明書に対応する日本語版です。
+product: crossflight-ce
+slug: manuals/crossflight-ce
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/cd7ef289a3044e2475fe65a4ca64a184.pdf
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/crossflight-ce/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink CrossFlight-CE 公式英語取扱説明書（文書版・発行日不明、56頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="crossflight-ce-p1-body" data-translation-unit="crossflight-ce-p1-body"></span>
+
+CrossFlight-CE
+
+マルチローター用取扱説明書
+
+（固定翼機／グライダー／マルチローター／ヘリコプター／車／ボート／ロボットに対応）
+
+<span id="crossflight-ce-p1-f1-unit" data-translation-unit="crossflight-ce-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossflight-ce/web-ja-v1/crossflight-ce-p1-f1.png" width={600} height={180} figureId="crossflight-ce-p1-f1" alt={"CrossFlight-CE 原典物理1頁の図1"} caption={"CrossFlight-CE 原典物理1頁の図1"} />
+
+<span id="crossflight-ce-p1-f2-unit" data-translation-unit="crossflight-ce-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossflight-ce/web-ja-v1/crossflight-ce-p1-f2.jpeg" width={640} height={380} figureId="crossflight-ce-p1-f2" alt={"CrossFlight-CE 原典物理1頁の図2"} caption={"CrossFlight-CE 原典物理1頁の図2"} />
+
+<span id="crossflight-ce-p1-f3-unit" data-translation-unit="crossflight-ce-p1-f3-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossflight-ce/web-ja-v1/crossflight-ce-p1-f3.jpeg" width={696} height={662} figureId="crossflight-ce-p1-f3" alt={"CrossFlight-CE 原典物理1頁の図3"} caption={"CrossFlight-CE 原典物理1頁の図3"} />
+
+<span id="crossflight-ce-p2-body" data-translation-unit="crossflight-ce-p2-body"></span>
+
+RadioLinkフライトコントローラーCrossFlight-CEをお買い上げいただき、ありがとうございます。製品を十分に活用し、安全に使用するため、説明書をよく読み、手順に従って設定してください。
+
+操作中に問題が発生した場合は、次の方法でテクニカルサポートにお問い合わせください。
+
+1. after_service@radiolink.com.cn にメールをお送りください。できるだけ早く回答します。
+2. Facebookページにメッセージを送るか、YouTubeページにコメントを投稿してください。
+3. お近くの販売店で購入した場合は、サポートや修理についてその販売店に相談することもできます。
+
+各種取扱説明書とファームウェアはRadioLink公式サイト（www.radiolink.com）で入手でき、解説動画も公開しています。FacebookおよびYouTubeでも最新情報を案内しています。
+
+## 安全上の注意
+
+- 悪天候時には模型を操作しないでください。視界不良で方向を見失い、模型を制御できなくなるおそれがあります。
+- 人が密集する場所や、使用が法律で禁止されている場所では使用しないでください。
+- 毎回の使用前に、すべてのサーボとその接続を確認してください。
+- 電源は必ず受信機を切ってから送信機を切ってください。
+- 良好な無線通信を確保するため、高圧線、通信基地局、送信塔などによる干渉がない場所で飛行・走行させてください。
+
+## 警告
+
+本製品はおもちゃではありません。18歳未満の方には適しません。大人は子どもの手の届かない場所に保管し、子どもがいる場所で使用する場合は注意してください。
+
+送信機のアンテナやジョイスティックの隙間から水や湿気が入り、模型の動作が不安定になったり、制御できなくなったりするおそれがあります。競技などで雨天時に操作せざるを得ない場合は、送信機を必ずビニール袋または防水布で覆ってください。
+
+<span id="crossflight-ce-p2-f1-unit" data-translation-unit="crossflight-ce-p2-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossflight-ce/web-ja-v1/crossflight-ce-p2-f1.jpeg" width={260} height={260} figureId="crossflight-ce-p2-f1" alt={"CrossFlight-CE 原典物理2頁の図1"} caption={"CrossFlight-CE 原典物理2頁の図1"} />
+
+<span id="crossflight-ce-p2-f2-unit" data-translation-unit="crossflight-ce-p2-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossflight-ce/web-ja-v1/crossflight-ce-p2-f2.jpeg" width={260} height={260} figureId="crossflight-ce-p2-f2" alt={"CrossFlight-CE 原典物理2頁の図2"} caption={"CrossFlight-CE 原典物理2頁の図2"} />
+
+<span id="crossflight-ce-p3-body" data-translation-unit="crossflight-ce-p3-body"></span>
+
+## FCCに関する記載
+
+本機器は試験の結果、FCC規則第15部に基づくクラスBデジタル機器の制限に適合しています。この制限は住宅環境における有害な干渉を合理的に防止するためのものです。本機器は無線周波エネルギーを発生・使用し、放射することがあります。指示に従って設置・使用しないと無線通信に有害な干渉を生じることがあります。ただし、特定の設置環境で干渉が発生しないことは保証されません。本機器の電源を入切してラジオやテレビの受信に有害な干渉があることを確認した場合は、次のうち一つ以上の対策を試してください。
+
+- 受信用アンテナの向きまたは位置を変える。
+- 機器と受信機の間隔を広げる。
+- 受信機とは異なる回路のコンセントに機器を接続する。
+- 販売店または経験のあるラジオ／テレビ技術者に相談する。
+
+本機器はFCC規則第15部に適合しています。動作には次の2つの条件が適用されます。
+
+1. 本機器は有害な干渉を生じさせてはなりません。
+2. 本機器は意図しない動作を引き起こすおそれのある干渉を含め、受けたすべての干渉を受容しなければなりません。
+
+適合性に責任を負う当事者が明示的に承認していない変更や改造を行うと、使用者が本機器を運用する権限を失うおそれがあります。
+
+本書はArduPilotに基づき、RadioLink送信機AT9S Proを設定例に使用しています。フライトコントローラーの使用に関する詳細は、http://ardupilot.org/copter/docs/initial-setup.html を参照してください。
+
+<span id="crossflight-ce-p4-body" data-translation-unit="crossflight-ce-p4-body"></span>
+
+## 目次
+
+- 1. CrossFlight-CEの概要（5頁）
+- 1.1 付属部品（5頁）
+- 1.2 端子と仕様（6頁）
+- 1.3 使用の進め方（8頁）
+- 2. Mission Planner（8頁）
+- 2.1 Mission Plannerのインストール（8頁）
+- 2.2 Mission Plannerの概要（9頁）
+- 3. 初期設定（10頁）
+- 3.1 ファームウェアのダウンロードとインストール（10頁）
+- 3.2 フレームタイプ（12頁）
+- 3.3 加速度計の校正（13頁）
+- 3.4 送信機の校正（15頁）
+- 3.5 コンパスの校正（18頁）
+- 3.6 飛行モードの設定（21頁）
+- 3.7 飛行モードの概要（23頁）
+- 3.7.1 Stabilizeモード（23頁）
+- 3.7.2 Acroモード（FPV）（23頁）
+- 3.7.3 Altitude Holdモード（24頁）
+- 3.7.4 Autoモード（25頁）
+- 3.7.5 PosHoldモード（27頁）
+- 3.7.6 RTLモード（27頁）
+- 3.7.7 SimpleモードとSuper Simpleモード（29頁）
+- 3.7.8 その他の飛行モード（31頁）
+- 4. F/S（フェイルセーフ）の設定（32頁）
+- 4.1 送受信機のフェイルセーフ設定（32頁）
+- 4.2 EKFフェイルセーフ（35頁）
+- 5. ハードウェア設定（35頁）
+- 5.1 機体へのCrossFlight-CEの取り付け（36頁）
+- 5.2 CrossFlight-CEと機体の接続（37頁）
+- 5.2.1 モーター順序と回転方向の選択（37頁）
+- 5.2.2 時計回り・反時計回りプロペラの見分け方（39頁）
+- 5.2.3 付属部品の接続（40頁）
+- 5.3 LED表示・アーム・問題解決（41頁）
+
+<span id="crossflight-ce-p5-body" data-translation-unit="crossflight-ce-p5-body"></span>
+
+## 目次（続き）
+
+- 5.3.1 LED表示（41頁）
+- 5.3.2 アームとディスアーム（41頁）
+- 5.3.3 アーム時の回転を停止する設定（42頁）
+- 5.3.4 アームできない場合の問題解決（43頁）
+- 5.4 ESCの校正（46頁）
+- 5.5 水平校正（46頁）
+- 5.6 ジオフェンス（47頁）
+- 5.7 内蔵OSD（49頁）
+- 5.7.1 設定の概要（49頁）
+- 5.7.2 画面の概要（50頁）
+- 6. AutoTune（50頁）
+- 7. パラメーター設定（52頁）
+- 7.1 パラメーター画面の概要（52頁）
+- 7.2 パラメーターの調整（53頁）
+- 7.3 パラメーターの手動調整（53頁）
+- 8. DataFlashログのダウンロード（53頁）
+
+<span id="crossflight-ce-p6-body" data-translation-unit="crossflight-ce-p6-body"></span>
+
+## 1. CrossFlight-CEの概要
+
+### 1.1 付属部品
+
+<span id="crossflight-ce-p6-f1-unit" data-translation-unit="crossflight-ce-p6-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/crossflight-ce/web-ja-v1/crossflight-ce-p6-f1.jpeg" width={1023} height={1365} figureId="crossflight-ce-p6-f1" alt={"CrossFlight-CE 原典物理6頁の図1"} caption={"CrossFlight-CE 原典物理6頁の図1"} />
+
+<span id="crossflight-ce-p7-body" data-translation-unit="crossflight-ce-p7-body"></span>
+
+### 1.2 端子と仕様
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p7-f1-unit" data-translation-unit="crossflight-ce-p7-f1-unit"></span>
+
+<span id="crossflight-ce-p7-f2-unit" data-translation-unit="crossflight-ce-p7-f2-unit"></span>
+
+<span id="crossflight-ce-p8-body" data-translation-unit="crossflight-ce-p8-body"></span>
+
+#### 仕様
+
+<span id="crossflight-ce-p9-body" data-translation-unit="crossflight-ce-p9-body"></span>
+
+#### 仕様（続き）
+
+### 1.3 使用の進め方
+
+## 2. Mission Planner
+
+### 2.1 Mission Plannerのインストール
+
+<span id="crossflight-ce-p10-body" data-translation-unit="crossflight-ce-p10-body"></span>
+
+### 2.1 Mission Plannerのインストール（続き）
+
+### 2.2 Mission Plannerの概要
+
+<span id="crossflight-ce-p10-f1-unit" data-translation-unit="crossflight-ce-p10-f1-unit"></span>
+
+<span id="crossflight-ce-p10-f2-unit" data-translation-unit="crossflight-ce-p10-f2-unit"></span>
+
+<span id="crossflight-ce-p11-body" data-translation-unit="crossflight-ce-p11-body"></span>
+
+### 2.2 Mission Plannerの概要（続き）
+
+## 3. 初期設定
+
+### 3.1 ファームウェアのダウンロードとインストール
+
+<span id="crossflight-ce-p11-f1-unit" data-translation-unit="crossflight-ce-p11-f1-unit"></span>
+
+<span id="crossflight-ce-p12-body" data-translation-unit="crossflight-ce-p12-body"></span>
+
+### 3.1 ファームウェアのダウンロードとインストール（続き）
+
+<span id="crossflight-ce-p12-f1-unit" data-translation-unit="crossflight-ce-p12-f1-unit"></span>
+
+<span id="crossflight-ce-p12-f2-unit" data-translation-unit="crossflight-ce-p12-f2-unit"></span>
+
+<span id="crossflight-ce-p12-f3-unit" data-translation-unit="crossflight-ce-p12-f3-unit"></span>
+
+<span id="crossflight-ce-p13-body" data-translation-unit="crossflight-ce-p13-body"></span>
+
+### 3.1 ファームウェアのダウンロードとインストール（続き）
+
+### 3.2 フレームタイプ
+
+<span id="crossflight-ce-p13-f1-unit" data-translation-unit="crossflight-ce-p13-f1-unit"></span>
+
+<span id="crossflight-ce-p13-f2-unit" data-translation-unit="crossflight-ce-p13-f2-unit"></span>
+
+<span id="crossflight-ce-p14-body" data-translation-unit="crossflight-ce-p14-body"></span>
+
+### 3.3 加速度計の校正
+
+<span id="crossflight-ce-p14-f1-unit" data-translation-unit="crossflight-ce-p14-f1-unit"></span>
+
+<span id="crossflight-ce-p14-f2-unit" data-translation-unit="crossflight-ce-p14-f2-unit"></span>
+
+<span id="crossflight-ce-p14-f3-unit" data-translation-unit="crossflight-ce-p14-f3-unit"></span>
+
+<span id="crossflight-ce-p15-body" data-translation-unit="crossflight-ce-p15-body"></span>
+
+### 3.3 加速度計の校正（続き）
+
+<span id="crossflight-ce-p15-f1-unit" data-translation-unit="crossflight-ce-p15-f1-unit"></span>
+
+<span id="crossflight-ce-p15-f2-unit" data-translation-unit="crossflight-ce-p15-f2-unit"></span>
+
+<span id="crossflight-ce-p15-f3-unit" data-translation-unit="crossflight-ce-p15-f3-unit"></span>
+
+<span id="crossflight-ce-p16-body" data-translation-unit="crossflight-ce-p16-body"></span>
+
+### 3.3 加速度計の校正（続き）
+
+### 3.4 送信機の校正
+
+<span id="crossflight-ce-p16-safety" data-translation-unit="crossflight-ce-p16-safety"></span>
+
+:::caution[注意]
+安全のため、送信機の校正前にバッテリーを外すか、プロペラを取り外すか、またはその両方を行ってください。
+:::
+
+<span id="crossflight-ce-p16-continued" data-translation-unit="crossflight-ce-p16-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p16-f1-unit" data-translation-unit="crossflight-ce-p16-f1-unit"></span>
+
+<span id="crossflight-ce-p17-body" data-translation-unit="crossflight-ce-p17-body"></span>
+
+### 3.4 送信機の校正（続き）
+
+<span id="crossflight-ce-p17-f1-unit" data-translation-unit="crossflight-ce-p17-f1-unit"></span>
+
+<span id="crossflight-ce-p17-f2-unit" data-translation-unit="crossflight-ce-p17-f2-unit"></span>
+
+<span id="crossflight-ce-p17-f3-unit" data-translation-unit="crossflight-ce-p17-f3-unit"></span>
+
+<span id="crossflight-ce-p18-body" data-translation-unit="crossflight-ce-p18-body"></span>
+
+### 3.4 送信機の校正（続き）
+
+<span id="crossflight-ce-p18-safety" data-translation-unit="crossflight-ce-p18-safety"></span>
+
+:::caution[注意]
+送信機と受信機の確認時は、機体のモーターに電力が供給されておらず、プロペラが外されていることを確認してください。
+:::
+
+<span id="crossflight-ce-p18-continued" data-translation-unit="crossflight-ce-p18-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p18-f1-unit" data-translation-unit="crossflight-ce-p18-f1-unit"></span>
+
+<span id="crossflight-ce-p18-f2-unit" data-translation-unit="crossflight-ce-p18-f2-unit"></span>
+
+<span id="crossflight-ce-p18-f3-unit" data-translation-unit="crossflight-ce-p18-f3-unit"></span>
+
+<span id="crossflight-ce-p19-body" data-translation-unit="crossflight-ce-p19-body"></span>
+
+### 3.4 送信機の校正（続き）
+
+### 3.5 コンパスの校正
+
+<span id="crossflight-ce-p19-f1-unit" data-translation-unit="crossflight-ce-p19-f1-unit"></span>
+
+<span id="crossflight-ce-p19-f2-unit" data-translation-unit="crossflight-ce-p19-f2-unit"></span>
+
+<span id="crossflight-ce-p20-body" data-translation-unit="crossflight-ce-p20-body"></span>
+
+### 3.5 コンパスの校正（続き）
+
+<span id="crossflight-ce-p20-f1-unit" data-translation-unit="crossflight-ce-p20-f1-unit"></span>
+
+<span id="crossflight-ce-p20-f2-unit" data-translation-unit="crossflight-ce-p20-f2-unit"></span>
+
+<span id="crossflight-ce-p20-f3-unit" data-translation-unit="crossflight-ce-p20-f3-unit"></span>
+
+<span id="crossflight-ce-p21-body" data-translation-unit="crossflight-ce-p21-body"></span>
+
+### 3.5 コンパスの校正（続き）
+
+<span id="crossflight-ce-p21-f1-unit" data-translation-unit="crossflight-ce-p21-f1-unit"></span>
+
+<span id="crossflight-ce-p21-f2-unit" data-translation-unit="crossflight-ce-p21-f2-unit"></span>
+
+<span id="crossflight-ce-p22-body" data-translation-unit="crossflight-ce-p22-body"></span>
+
+### 3.5 コンパスの校正（続き）
+
+### 3.6 飛行モードの設定
+
+<span id="crossflight-ce-p22-f1-unit" data-translation-unit="crossflight-ce-p22-f1-unit"></span>
+
+<span id="crossflight-ce-p22-f2-unit" data-translation-unit="crossflight-ce-p22-f2-unit"></span>
+
+<span id="crossflight-ce-p23-body" data-translation-unit="crossflight-ce-p23-body"></span>
+
+### 3.6 飛行モードの設定（続き）
+
+<span id="crossflight-ce-p23-f1-unit" data-translation-unit="crossflight-ce-p23-f1-unit"></span>
+
+<span id="crossflight-ce-p24-body" data-translation-unit="crossflight-ce-p24-body"></span>
+
+### 3.7 飛行モードの概要
+
+#### 3.7.1 Stabilizeモード
+
+#### 3.7.2 Acroモード（FPV）
+
+<span id="crossflight-ce-p24-f1-unit" data-translation-unit="crossflight-ce-p24-f1-unit"></span>
+
+<span id="crossflight-ce-p25-body" data-translation-unit="crossflight-ce-p25-body"></span>
+
+#### 3.7.2 Acroモード（FPV）（続き）
+
+#### 3.7.3 Altitude Holdモード
+
+<span id="crossflight-ce-p25-f1-unit" data-translation-unit="crossflight-ce-p25-f1-unit"></span>
+
+<span id="crossflight-ce-p26-body" data-translation-unit="crossflight-ce-p26-body"></span>
+
+#### 3.7.3 Altitude Holdモード（続き）
+
+#### 3.7.4 Autoモード
+
+<span id="crossflight-ce-p26-f1-unit" data-translation-unit="crossflight-ce-p26-f1-unit"></span>
+
+<span id="crossflight-ce-p27-body" data-translation-unit="crossflight-ce-p27-body"></span>
+
+#### 3.7.4 Autoモード（続き）
+
+<span id="crossflight-ce-p27-f1-unit" data-translation-unit="crossflight-ce-p27-f1-unit"></span>
+
+<span id="crossflight-ce-p28-body" data-translation-unit="crossflight-ce-p28-body"></span>
+
+#### 3.7.4 Autoモード（続き）
+
+#### 3.7.5 PosHoldモード
+
+#### 3.7.6 RTLモード
+
+<span id="crossflight-ce-p29-body" data-translation-unit="crossflight-ce-p29-body"></span>
+
+#### 3.7.6 RTLモード（続き）
+
+<span id="crossflight-ce-p29-f1-unit" data-translation-unit="crossflight-ce-p29-f1-unit"></span>
+
+<span id="crossflight-ce-p30-body" data-translation-unit="crossflight-ce-p30-body"></span>
+
+#### 3.7.6 RTLモード（続き）
+
+#### 3.7.7 SimpleモードとSuper Simpleモード
+
+<span id="crossflight-ce-p31-body" data-translation-unit="crossflight-ce-p31-body"></span>
+
+#### 3.7.7 SimpleモードとSuper Simpleモード（続き）
+
+<span id="crossflight-ce-p31-f1-unit" data-translation-unit="crossflight-ce-p31-f1-unit"></span>
+
+<span id="crossflight-ce-p31-f2-unit" data-translation-unit="crossflight-ce-p31-f2-unit"></span>
+
+<span id="crossflight-ce-p32-body" data-translation-unit="crossflight-ce-p32-body"></span>
+
+#### 3.7.7 SimpleモードとSuper Simpleモード（続き）
+
+#### 3.7.8 その他の飛行モード
+
+<span id="crossflight-ce-p32-f1-unit" data-translation-unit="crossflight-ce-p32-f1-unit"></span>
+
+<span id="crossflight-ce-p33-body" data-translation-unit="crossflight-ce-p33-body"></span>
+
+#### 3.7.8 その他の飛行モード（続き）
+
+## 4. F/S（フェイルセーフ）の設定
+
+### 4.1 送受信機のフェイルセーフ設定
+
+<span id="crossflight-ce-p34-body" data-translation-unit="crossflight-ce-p34-body"></span>
+
+### 4.1 送受信機のフェイルセーフ設定（続き）
+
+<span id="crossflight-ce-p34-f1-unit" data-translation-unit="crossflight-ce-p34-f1-unit"></span>
+
+<span id="crossflight-ce-p34-f2-unit" data-translation-unit="crossflight-ce-p34-f2-unit"></span>
+
+<span id="crossflight-ce-p35-body" data-translation-unit="crossflight-ce-p35-body"></span>
+
+### 4.1 送受信機のフェイルセーフ設定（続き）
+
+<span id="crossflight-ce-p35-f1-unit" data-translation-unit="crossflight-ce-p35-f1-unit"></span>
+
+<span id="crossflight-ce-p36-body" data-translation-unit="crossflight-ce-p36-body"></span>
+
+### 4.1 送受信機のフェイルセーフ設定（続き）
+
+### 4.2 EKFフェイルセーフ
+
+## 5. ハードウェア設定
+
+<span id="crossflight-ce-p36-f1-unit" data-translation-unit="crossflight-ce-p36-f1-unit"></span>
+
+<span id="crossflight-ce-p36-f2-unit" data-translation-unit="crossflight-ce-p36-f2-unit"></span>
+
+<span id="crossflight-ce-p37-body" data-translation-unit="crossflight-ce-p37-body"></span>
+
+## 5. ハードウェア設定（続き）
+
+<span id="crossflight-ce-p37-safety" data-translation-unit="crossflight-ce-p37-safety"></span>
+
+:::caution[注意]
+初回飛行に先立ってESCを校正するときは、プロペラを取り外してください。
+:::
+
+<span id="crossflight-ce-p37-continued" data-translation-unit="crossflight-ce-p37-continued"></span>
+
+### 5.1 機体へのCrossFlight-CEの取り付け
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p37-f1-unit" data-translation-unit="crossflight-ce-p37-f1-unit"></span>
+
+<span id="crossflight-ce-p37-f2-unit" data-translation-unit="crossflight-ce-p37-f2-unit"></span>
+
+<span id="crossflight-ce-p38-body" data-translation-unit="crossflight-ce-p38-body"></span>
+
+### 5.2 CrossFlight-CEと機体の接続
+
+#### 5.2.1 モーター順序と回転方向の選択
+
+<span id="crossflight-ce-p38-f1-unit" data-translation-unit="crossflight-ce-p38-f1-unit"></span>
+
+<span id="crossflight-ce-p38-f2-unit" data-translation-unit="crossflight-ce-p38-f2-unit"></span>
+
+<span id="crossflight-ce-p38-f3-unit" data-translation-unit="crossflight-ce-p38-f3-unit"></span>
+
+<span id="crossflight-ce-p38-f4-unit" data-translation-unit="crossflight-ce-p38-f4-unit"></span>
+
+<span id="crossflight-ce-p38-f5-unit" data-translation-unit="crossflight-ce-p38-f5-unit"></span>
+
+<span id="crossflight-ce-p38-f6-unit" data-translation-unit="crossflight-ce-p38-f6-unit"></span>
+
+<span id="crossflight-ce-p39-body" data-translation-unit="crossflight-ce-p39-body"></span>
+
+#### 5.2.1 モーター順序と回転方向の選択（続き）
+
+<span id="crossflight-ce-p39-f1-unit" data-translation-unit="crossflight-ce-p39-f1-unit"></span>
+
+<span id="crossflight-ce-p39-f2-unit" data-translation-unit="crossflight-ce-p39-f2-unit"></span>
+
+<span id="crossflight-ce-p39-f3-unit" data-translation-unit="crossflight-ce-p39-f3-unit"></span>
+
+<span id="crossflight-ce-p39-f4-unit" data-translation-unit="crossflight-ce-p39-f4-unit"></span>
+
+<span id="crossflight-ce-p39-f5-unit" data-translation-unit="crossflight-ce-p39-f5-unit"></span>
+
+<span id="crossflight-ce-p40-body" data-translation-unit="crossflight-ce-p40-body"></span>
+
+#### 5.2.1 モーター順序と回転方向の選択（続き）
+
+#### 5.2.2 時計回り・反時計回りプロペラの見分け方
+
+<span id="crossflight-ce-p40-f1-unit" data-translation-unit="crossflight-ce-p40-f1-unit"></span>
+
+<span id="crossflight-ce-p40-f2-unit" data-translation-unit="crossflight-ce-p40-f2-unit"></span>
+
+<span id="crossflight-ce-p40-f3-unit" data-translation-unit="crossflight-ce-p40-f3-unit"></span>
+
+<span id="crossflight-ce-p40-f4-unit" data-translation-unit="crossflight-ce-p40-f4-unit"></span>
+
+<span id="crossflight-ce-p41-body" data-translation-unit="crossflight-ce-p41-body"></span>
+
+#### 5.2.3 付属部品の接続
+
+<span id="crossflight-ce-p41-f1-unit" data-translation-unit="crossflight-ce-p41-f1-unit"></span>
+
+<span id="crossflight-ce-p42-body" data-translation-unit="crossflight-ce-p42-body"></span>
+
+### 5.3 LED表示・アーム・問題解決
+
+#### 5.3.1 LED表示
+
+#### 5.3.2 アームとディスアーム
+
+<span id="crossflight-ce-p42-f1-unit" data-translation-unit="crossflight-ce-p42-f1-unit"></span>
+
+<span id="crossflight-ce-p43-body" data-translation-unit="crossflight-ce-p43-body"></span>
+
+#### 5.3.2 アームとディスアーム（続き）
+
+#### 5.3.3 アーム時の回転を停止する設定
+
+<span id="crossflight-ce-p43-f1-unit" data-translation-unit="crossflight-ce-p43-f1-unit"></span>
+
+<span id="crossflight-ce-p43-f2-unit" data-translation-unit="crossflight-ce-p43-f2-unit"></span>
+
+<span id="crossflight-ce-p44-body" data-translation-unit="crossflight-ce-p44-body"></span>
+
+#### 5.3.4 アームできない場合の問題解決
+
+<span id="crossflight-ce-p44-f1-unit" data-translation-unit="crossflight-ce-p44-f1-unit"></span>
+
+<span id="crossflight-ce-p44-f2-unit" data-translation-unit="crossflight-ce-p44-f2-unit"></span>
+
+<span id="crossflight-ce-p45-body" data-translation-unit="crossflight-ce-p45-body"></span>
+
+#### 5.3.4 アームできない場合の問題解決（続き）
+
+<span id="crossflight-ce-p46-body" data-translation-unit="crossflight-ce-p46-body"></span>
+
+#### 5.3.4 アームできない場合の問題解決（続き）
+
+<span id="crossflight-ce-p46-safety" data-translation-unit="crossflight-ce-p46-safety"></span>
+
+:::caution[注意]
+基板電圧の異常がバッテリー給電で発生した場合は重大な問題です。飛行前に電源モジュール、バッテリーなどの電源系統を十分に確認してください。
+:::
+
+<span id="crossflight-ce-p46-continued" data-translation-unit="crossflight-ce-p46-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p47-body" data-translation-unit="crossflight-ce-p47-body"></span>
+
+### 5.4 ESCの校正
+
+### 5.5 水平校正
+
+<span id="crossflight-ce-p47-f1-unit" data-translation-unit="crossflight-ce-p47-f1-unit"></span>
+
+<span id="crossflight-ce-p47-f2-unit" data-translation-unit="crossflight-ce-p47-f2-unit"></span>
+
+<span id="crossflight-ce-p48-body" data-translation-unit="crossflight-ce-p48-body"></span>
+
+### 5.5 水平校正（続き）
+
+### 5.6 ジオフェンス
+
+<span id="crossflight-ce-p48-f1-unit" data-translation-unit="crossflight-ce-p48-f1-unit"></span>
+
+<span id="crossflight-ce-p48-f2-unit" data-translation-unit="crossflight-ce-p48-f2-unit"></span>
+
+<span id="crossflight-ce-p49-body" data-translation-unit="crossflight-ce-p49-body"></span>
+
+### 5.6 ジオフェンス（続き）
+
+<span id="crossflight-ce-p49-f1-unit" data-translation-unit="crossflight-ce-p49-f1-unit"></span>
+
+<span id="crossflight-ce-p49-f2-unit" data-translation-unit="crossflight-ce-p49-f2-unit"></span>
+
+<span id="crossflight-ce-p50-body" data-translation-unit="crossflight-ce-p50-body"></span>
+
+### 5.7 内蔵OSD
+
+#### 5.7.1 設定の概要
+
+<span id="crossflight-ce-p51-body" data-translation-unit="crossflight-ce-p51-body"></span>
+
+#### 5.7.2 画面の概要
+
+## 6. AutoTune
+
+<span id="crossflight-ce-p51-f1-unit" data-translation-unit="crossflight-ce-p51-f1-unit"></span>
+
+<span id="crossflight-ce-p51-f2-unit" data-translation-unit="crossflight-ce-p51-f2-unit"></span>
+
+<span id="crossflight-ce-p52-body" data-translation-unit="crossflight-ce-p52-body"></span>
+
+## 6. AutoTune（続き）
+
+<span id="crossflight-ce-p52-f1-unit" data-translation-unit="crossflight-ce-p52-f1-unit"></span>
+
+<span id="crossflight-ce-p53-body" data-translation-unit="crossflight-ce-p53-body"></span>
+
+## 6. AutoTune（続き）
+
+## 7. パラメーター設定
+
+### 7.1 パラメーター画面の概要
+
+<span id="crossflight-ce-p53-safety" data-translation-unit="crossflight-ce-p53-safety"></span>
+
+:::caution[注意]
+飛行中はパラメーターを変更しないでください。
+:::
+
+<span id="crossflight-ce-p53-continued" data-translation-unit="crossflight-ce-p53-continued"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p53-f1-unit" data-translation-unit="crossflight-ce-p53-f1-unit"></span>
+
+<span id="crossflight-ce-p54-body" data-translation-unit="crossflight-ce-p54-body"></span>
+
+### 7.1 パラメーター画面の概要（続き）
+
+### 7.2 パラメーターの調整
+
+### 7.3 パラメーターの手動調整
+
+## 8. DataFlashログのダウンロード
+
+<span id="crossflight-ce-p54-f1-unit" data-translation-unit="crossflight-ce-p54-f1-unit"></span>
+
+<span id="crossflight-ce-p55-body" data-translation-unit="crossflight-ce-p55-body"></span>
+
+## 8. DataFlashログのダウンロード（続き）
+
+<span id="crossflight-ce-p55-safety" data-translation-unit="crossflight-ce-p55-safety"></span>
+
+:::caution[注意]
+次の飛行前にフライトコントローラーを再起動してください。
+:::
+
+<span id="crossflight-ce-p55-f1-unit" data-translation-unit="crossflight-ce-p55-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="crossflight-ce-p55-f2-unit" data-translation-unit="crossflight-ce-p55-f2-unit"></span>
+
+<span id="crossflight-ce-p56-body" data-translation-unit="crossflight-ce-p56-body"></span>
+
+## 8. DataFlashログのダウンロード（続き）
+
+<span id="crossflight-ce-p56-f1-unit" data-translation-unit="crossflight-ce-p56-f1-unit"></span>

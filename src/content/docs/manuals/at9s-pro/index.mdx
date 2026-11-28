@@ -1,0 +1,3447 @@
+---
+title: AT9S Pro 日本語取扱説明書
+description: Radiolink AT9S Pro の公式英語取扱説明書に対応する日本語版です。
+product: at9s-pro
+slug: manuals/at9s-pro
+status: draft
+tableOfContents:
+  maxHeadingLevel: 4
+source:
+  kind: publication_contract
+  url: https://www.radiolink.com/download/8fd8e414b5ec2db33d69fc74eba507f2-6691
+head:
+  - tag: meta
+    attrs:
+      name: robots
+      content: noindex, nofollow
+---
+
+import ManualFigure from '../../../../components/manuals/ManualFigure.astro';
+import { withBase } from '../../../../lib/urls';
+
+<a href={withBase("/radiolink/at9s-pro/")}>製品ページへ戻る</a>
+
+この日本語版はhappinesea hobbyによる翻訳です。メーカー公式の日本語版ではありません。
+
+適用資料：Radiolink AT9S Pro 公式英語取扱説明書（文書版・発行日不明、82頁）。製品・Firmwareの適用範囲は原典記載によります。
+
+<span id="at9spro-p1-body" data-translation-unit="at9spro-p1-body"></span>
+
+# AT9S Pro
+
+DSSSおよびFHSS／CRSF。ヘリコプター、固定翼機、グライダー、マルチローター、車、ボート、ロボットに対応します。
+
+RadioLink Electronic Ltd.（www.radiolink.com）。表紙表示：CE、FCC、RoHS。
+
+<span id="at9spro-p1-f1-unit" data-translation-unit="at9spro-p1-f1-unit"></span>
+
+<ManualFigure src="/assets/radiolink/at9s-pro/web-ja-v1/at9spro-p1-f1.png" width={600} height={180} figureId="at9spro-p1-f1" alt={"AT9S Proの表紙画像1"} caption={"AT9S Proの表紙画像1"} />
+
+<span id="at9spro-p1-f2-unit" data-translation-unit="at9spro-p1-f2-unit"></span>
+
+<ManualFigure src="/assets/radiolink/at9s-pro/web-ja-v1/at9spro-p1-f2.jpeg" width={763} height={590} figureId="at9spro-p1-f2" alt={"AT9S Proの表紙画像2"} caption={"AT9S Proの表紙画像2"} />
+
+<span id="at9spro-p2-body-safety" data-translation-unit="at9spro-p2-body-safety"></span>
+
+RadioLinkの2.4 GHz・10／12チャンネル送信機AT9S Proをお買い上げいただき、ありがとうございます。製品の機能を活用し、安全に使用するため、本書をよく読み、記載手順に従って設定してください。
+
+使用中に問題が生じた場合は、after_service@radiolink.com.cn または after_service1@radiolink.com.cn にメールでお問い合わせください。できるだけ早くお答えします。RadioLinkのFacebookページへのプライベートメッセージ、またはYouTubeページへのコメントでも問い合わせできます。地元の販売代理店で購入した場合は、サポートや修理について購入先に相談できます。
+
+取扱説明書とファームウェアは公式サイト（www.radiolink.com）に掲載され、解説動画も追加されています。最新情報はFacebookやYouTubeでも確認できます。
+
+## 安全上の注意
+
+- 悪天候時は模型を操作しないでください。視界が悪いと操縦者が方向を見失い、制御不能になるおそれがあります。
+- 人混みや使用が禁止されている場所では使用しないでください。
+- 使用前に毎回、すべてのサーボとその接続を点検してください。
+- 送信機の電源を切る前に、必ず受信機の電源を切ってください。
+- 良好な無線通信のため、高圧線、通信基地局、送信塔などの電波干渉源がない場所で飛行・走行させてください。
+
+## 警告
+
+本製品は玩具ではなく、18歳未満には適していません。子どもの手の届かないところに保管し、子どもの近くで操作する際は十分に注意してください。
+
+アンテナやスティックの隙間から水や湿気が送信機内に入り、模型が不安定になったり、制御不能になったりするおそれがあります。
+
+<span id="at9spro-p2-body-wet-weather" data-translation-unit="at9spro-p2-body-wet-weather"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at9spro-p2-body-fcc" data-translation-unit="at9spro-p2-body-fcc"></span>
+
+## FCC声明
+
+原典によると、本機器は試験の結果、FCC規則Part 15のクラスBデジタル機器の制限に適合しています。この制限は住宅内設置において有害な干渉を合理的に防ぐためのものです。本機器は無線周波エネルギーを発生、使用、放射することがあり、指示に従って設置・使用しない場合は無線通信に有害な干渉を生じるおそれがあります。特定の設置で干渉が起きない保証はありません。
+
+電源のオン／オフにより、本機器がラジオやテレビの受信に有害な干渉を起こしていると分かった場合、次の対策が案内されています。
+
+- 受信アンテナの向きや位置を変える。
+- 本機器と受信機を離す。
+- 受信機と別の回路のコンセントに本機器を接続する。
+- 販売店または経験のあるラジオ・テレビ技術者に相談する。
+
+原典は、本機器がFCC規則Part 15に適合し、次の条件で動作すると記載しています。
+
+1. 有害な干渉を引き起こさないこと。
+2. 望ましくない動作を引き起こす干渉を含め、受信した干渉を受け入れること。
+
+適合性に責任を負う当事者が明示的に承認していない変更や改造を行うと、使用者が機器を操作する権限を失う場合があります。
+
+<span id="at9spro-p3-body" data-translation-unit="at9spro-p3-body"></span>
+
+## 目次
+
+### I. AT9S Proシステムの概要（1頁）
+
+- 1.1 AT9S Proシステム（1頁）
+  - 1.1.1 送信機の機能（1頁）
+  - 1.1.2 送信機（2頁）
+  - 1.1.3 対応受信機（3頁）
+  - 1.1.4 TBS Crossfire TXとの接続（4頁）
+  - 1.1.5 RSSIの測定（4頁）
+- 1.2 無線機器の取り付け（5頁）
+  - 1.2.1 サーボ、受信機、バッテリーの取り付け指針（5頁）
+  - 1.2.2 受信機とサーボの接続（6頁）
+  - 1.2.3 アンテナの取り付け（8頁）
+- 1.3 無線機器の基本設定（8頁）
+  - 1.3.1 送信機の基本設定（8頁）
+  - 1.3.2 モデルタイプ（9頁）
+  - 1.3.3 バインド（9頁）
+  - 1.3.4 R9DSの2種類の信号動作モード（9頁）
+  - 1.3.5 送信機の表示とボタン（10頁）
+
+### II. 固定翼機の基本機能（11頁）
+
+- 2.1 ACRO基本メニューのクイックガイド（12頁）
+- 2.2 クイックガイド：基本的な4チャンネル固定翼機の設定（12頁）
+- 2.3 固定翼機の基本機能（14頁）
+  - 2.3.1 モデル選択（14頁）
+  - 2.3.2 モデルタイプ（16頁）
+  - 2.3.3 EPA（17頁）
+  - 2.3.4 トリム（18頁）
+  - 2.3.5 サブトリム（19頁）
+  - 2.3.6 リバース（19頁）
+  - 2.3.7 D/R、EXP（20頁）
+  - 2.3.8 スロットルカット（23頁）
+  - 2.3.9 アイドルダウン（ACROのみ、24頁）
+  - 2.3.10 フェイルセーフ（F/S、25頁）
+  - 2.3.11 補助チャンネル機能（CH9〜10を含む、26頁）
+  - 2.3.12 タイマー（27頁）
+  - 2.3.13 トレーナー（28頁）
+  - 2.3.14 論理スイッチ（29頁）
+  - 2.3.15 サーボ表示とサイクルサブメニュー（29頁）
+  - 2.3.16 テレメトリー（30頁）
+
+<span id="at9spro-p3-f1-unit" data-translation-unit="at9spro-p3-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at9spro-p4-body" data-translation-unit="at9spro-p4-body"></span>
+
+### III. ACRO詳細メニュー（31頁）
+
+- 3.1 主翼タイプ（ACRO／GLID、31頁）
+- 3.2 エルロンサーボ2個（5チャンネル受信機、AILE-2、ACRO／GLID、31頁）
+- 3.3 ACRO詳細機能メニュー（32頁）
+  - 3.3.1 プログラムミキシング（33頁）
+  - 3.3.2 カーブ式プログラムミキシング（PROG.MIX5〜8、HELIではPROG.MIX5〜6、36頁）
+  - 3.3.3 フラッペロン（ACRO／GLID 1A+1F、37頁）
+  - 3.3.4 フラップトリム（38頁）
+  - 3.3.5 エルロンディファレンシャル（ACRO／GLID 2A+1F／GLID 2A+2F、39頁）
+  - 3.3.6 エアブレーキ（ACRO／GLID、40頁）
+  - 3.3.7 エレベーター・フラップミキシング（ACRO／GLID、41頁）
+  - 3.3.8 エレベーターサーボ2個（ラダーあり、AILEVATOR、ACRO、42頁）
+  - 3.3.9 スナップロール（ACRO、43頁）
+  - 3.3.10 Vテール（ACRO／GLID、44頁）
+  - 3.3.11 エレボン（45頁）
+  - 3.3.12 ジャイロ感度（45頁）
+  - 3.3.13 スロットルディレイ（ACRO、46頁）
+  - 3.3.14 スロットルカーブ（ACRO、47頁）
+  - 3.3.15 スロットル・ニードルミキシング（ACRO／HELI、48頁）
+
+### IV. グライダーモデルの機能（49頁）
+
+- 4.1 GLID基本メニューの設定（49頁）
+- 4.2 GLIDタイプの設定（51頁）
+- 4.3 GLID詳細メニュー（52頁）
+  - 4.3.1 エルロンディファレンシャル（ACRO機能メニュー3.3.5を参照、52頁）
+  - 4.3.2 フラッペロン（GLID 1A+1F、ACRO 3.3.3を参照、52頁）
+  - 4.3.3 Vテール（ACRO 3.3.10を参照、52頁）
+  - 4.3.4 オフセット（GLID 2A+2F、52頁）
+  - 4.3.5 スタートディレイ（GLID 1A+1Fのみ、53頁）
+  - 4.3.6 キャンバー・フラップ（54頁）
+  - 4.3.7 キャンバーミキシング（55頁）
+  - 4.3.8 バタフライ（クロウ）ミキシング（55頁）
+  - 4.3.9 エルロン・ラダーミキシング（57頁）
+  - 4.3.10 エレベーター・フラップミキシング（原典の参照先：GLID 3.3.7、57頁）
+  - 4.3.11 エルロン・フラップ（GLID 2A+2Fのみ、57頁）
+  - 4.3.12 スポイラーミキシング（GLID、58頁）
+  - 4.3.13 フラップトリム（原典の参照先：GLID 3.3.4、59頁）
+  - 4.3.14 コンディション（59頁）
+
+### V. ヘリコプターモデルの機能（59頁）
+
+- 5.1 基本設定（59頁）
+- 5.2 ヘリコプター専用基本メニュー（61頁）
+
+<span id="at9spro-p4-f1-unit" data-translation-unit="at9spro-p4-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at9spro-p5-body" data-translation-unit="at9spro-p5-body"></span>
+
+  - 5.2.1 スワッシュプレートの種類（62頁）
+  - 5.2.2 スワッシュAFR（SWH1を除く、63頁）
+- 5.3 ヘリコプター専用詳細メニュー（64頁）
+  - 5.3.1 スロットルカーブとピッチカーブ（64頁）
+  - 5.3.2 レボリューションミキシング（65頁）
+  - 5.3.3 ジャイロ感度（67頁）
+  - 5.3.4 スロットルホールド（67頁）
+  - 5.3.5 ホバリング調整（Hov-Thr、Hov-Pit、68頁）
+  - 5.3.6 ハイ／ローピッチ（HI/LO-PIT、69頁）
+  - 5.3.7 オフセット（70頁）
+  - 5.3.8 ディレイ（70頁）
+  - 5.3.9 ガバナー（71頁）
+  - 5.3.10 スロットルミキシング（72頁）
+  - 5.3.11 スワッシュリング（73頁）
+  - 5.3.12 スロットル・ニードル（ACRO 3.3.15を参照、73頁）
+  - 5.3.13 プログラムミキシング（ACRO 3.3.1を参照、73頁）
+  - 5.3.14 コンディション（74頁）
+
+### VI. マルチローターの機能（74頁）
+
+- 6.1 マルチローター基本メニュー（76頁）
+  - 6.1.1 モデルタイプ（76頁）
+  - 6.1.2 補助チャンネル設定（76頁）
+- 6.2 マルチローター詳細メニュー（76頁）
+  - 6.2.1 ATTITUDE（77頁）
+  - 6.2.2 スロットルカーブ（ACRO 3.3.14を参照、77頁）
+  - 6.2.3 プログラムミキシング（ACRO 3.3.1を参照、77頁）
+
+<span id="at9spro-p5-f1-unit" data-translation-unit="at9spro-p5-f1-unit"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at9spro-p6-body" data-translation-unit="at9spro-p6-body"></span>
+
+## 第1部 AT9S Proシステムの概要
+
+### 1.1 AT9S Proシステム
+
+#### 1.1.1 送信機の機能
+
+<span id="at9spro-p6-f1-unit" data-translation-unit="at9spro-p6-f1-unit"></span>
+
+<span id="at9spro-p7-body" data-translation-unit="at9spro-p7-body"></span>
+
+#### 1.1.2 送信機
+
+<span id="at9spro-p7-f1-unit" data-translation-unit="at9spro-p7-f1-unit"></span>
+
+<span id="at9spro-p7-f2-unit" data-translation-unit="at9spro-p7-f2-unit"></span>
+
+<span id="at9spro-p7-f3-unit" data-translation-unit="at9spro-p7-f3-unit"></span>
+
+<span id="at9spro-p7-f4-unit" data-translation-unit="at9spro-p7-f4-unit"></span>
+
+<span id="at9spro-p8-body" data-translation-unit="at9spro-p8-body"></span>
+
+#### 1.1.3 対応受信機
+
+<span id="at9spro-p8-f1-unit" data-translation-unit="at9spro-p8-f1-unit"></span>
+
+<span id="at9spro-p9-body" data-translation-unit="at9spro-p9-body"></span>
+
+#### 1.1.4 TBS Crossfire TXとの接続
+
+#### 1.1.5 RSSIの測定
+
+<span id="at9spro-p9-f1-unit" data-translation-unit="at9spro-p9-f1-unit"></span>
+
+<span id="at9spro-p9-f2-unit" data-translation-unit="at9spro-p9-f2-unit"></span>
+
+<span id="at9spro-p9-f3-unit" data-translation-unit="at9spro-p9-f3-unit"></span>
+
+<span id="at9spro-p10-body" data-translation-unit="at9spro-p10-body"></span>
+
+### 1.2 無線機器の取り付け
+
+#### 1.2.1 サーボ、受信機、バッテリーの取り付け指針
+
+<span id="at9spro-p10-f1-unit" data-translation-unit="at9spro-p10-f1-unit"></span>
+
+<span id="at9spro-p10-f2-unit" data-translation-unit="at9spro-p10-f2-unit"></span>
+
+<span id="at9spro-p10-f3-unit" data-translation-unit="at9spro-p10-f3-unit"></span>
+
+<span id="at9spro-p10-f4-unit" data-translation-unit="at9spro-p10-f4-unit"></span>
+
+<span id="at9spro-p10-f5-unit" data-translation-unit="at9spro-p10-f5-unit"></span>
+
+<span id="at9spro-p11-body" data-translation-unit="at9spro-p11-body"></span>
+
+#### 1.2.2 受信機とサーボの接続
+
+<span id="at9spro-p11-f1-unit" data-translation-unit="at9spro-p11-f1-unit"></span>
+
+<span id="at9spro-p11-f2-unit" data-translation-unit="at9spro-p11-f2-unit"></span>
+
+<span id="at9spro-p11-f3-unit" data-translation-unit="at9spro-p11-f3-unit"></span>
+
+<span id="at9spro-p11-f4-unit" data-translation-unit="at9spro-p11-f4-unit"></span>
+
+<span id="at9spro-p12-body" data-translation-unit="at9spro-p12-body"></span>
+
+### (2) グライダーのサーボ接続
+
+### (3) ヘリコプターのサーボ接続
+
+<span id="at9spro-p12-f1-unit" data-translation-unit="at9spro-p12-f1-unit"></span>
+
+<span id="at9spro-p12-f2-unit" data-translation-unit="at9spro-p12-f2-unit"></span>
+
+<span id="at9spro-p12-f3-unit" data-translation-unit="at9spro-p12-f3-unit"></span>
+
+<span id="at9spro-p13-body" data-translation-unit="at9spro-p13-body"></span>
+
+#### 1.2.3 アンテナの取り付け
+
+### 1.3 送信機の基本設定
+
+#### 1.3.1 基本項目
+
+<span id="at9spro-p13-f1-unit" data-translation-unit="at9spro-p13-f1-unit"></span>
+
+<span id="at9spro-p14-body" data-translation-unit="at9spro-p14-body"></span>
+
+#### 1.3.2 モデルタイプ
+
+#### 1.3.3 バインディング
+
+#### 1.3.4 R9DSの信号出力モード
+
+<span id="at9spro-p14-f1-unit" data-translation-unit="at9spro-p14-f1-unit"></span>
+
+<span id="at9spro-p14-f2-unit" data-translation-unit="at9spro-p14-f2-unit"></span>
+
+<span id="at9spro-p15-body" data-translation-unit="at9spro-p15-body"></span>
+
+#### 1.3.5 画面と各ボタン
+
+<span id="at9spro-p15-f1-unit" data-translation-unit="at9spro-p15-f1-unit"></span>
+
+<span id="at9spro-p15-f2-unit" data-translation-unit="at9spro-p15-f2-unit"></span>
+
+<span id="at9spro-p15-f3-unit" data-translation-unit="at9spro-p15-f3-unit"></span>
+
+<span id="at9spro-p15-f4-unit" data-translation-unit="at9spro-p15-f4-unit"></span>
+
+<span id="at9spro-p16-body" data-translation-unit="at9spro-p16-body"></span>
+
+#### 警告とエラー表示
+
+## 第2部 飛行機の基本機能
+
+<span id="at9spro-p16-f1-unit" data-translation-unit="at9spro-p16-f1-unit"></span>
+
+<span id="at9spro-p17-body" data-translation-unit="at9spro-p17-body"></span>
+
+### 2.1 ACROBASICメニュー早見図
+
+### 2.2 クイックガイド：基本的な4チャンネル飛行機のセットアップ
+
+<span id="at9spro-p17-f1-unit" data-translation-unit="at9spro-p17-f1-unit"></span>
+
+<span id="at9spro-p17-f2-unit" data-translation-unit="at9spro-p17-f2-unit"></span>
+
+<span id="at9spro-p17-f3-unit" data-translation-unit="at9spro-p17-f3-unit"></span>
+
+<span id="at9spro-p17-f4-unit" data-translation-unit="at9spro-p17-f4-unit"></span>
+
+<span id="at9spro-p17-f5-unit" data-translation-unit="at9spro-p17-f5-unit"></span>
+
+<span id="at9spro-p17-f6-unit" data-translation-unit="at9spro-p17-f6-unit"></span>
+
+<span id="at9spro-p17-f7-unit" data-translation-unit="at9spro-p17-f7-unit"></span>
+
+<span id="at9spro-p17-f8-unit" data-translation-unit="at9spro-p17-f8-unit"></span>
+
+<span id="at9spro-p17-f9-unit" data-translation-unit="at9spro-p17-f9-unit"></span>
+
+<span id="at9spro-p17-f10-unit" data-translation-unit="at9spro-p17-f10-unit"></span>
+
+<span id="at9spro-p17-f11-unit" data-translation-unit="at9spro-p17-f11-unit"></span>
+
+<span id="at9spro-p17-f12-unit" data-translation-unit="at9spro-p17-f12-unit"></span>
+
+<span id="at9spro-p17-f13-unit" data-translation-unit="at9spro-p17-f13-unit"></span>
+
+<span id="at9spro-p17-f14-unit" data-translation-unit="at9spro-p17-f14-unit"></span>
+
+<span id="at9spro-p17-f15-unit" data-translation-unit="at9spro-p17-f15-unit"></span>
+
+<span id="at9spro-p17-f16-unit" data-translation-unit="at9spro-p17-f16-unit"></span>
+
+<span id="at9spro-p17-f17-unit" data-translation-unit="at9spro-p17-f17-unit"></span>
+
+<span id="at9spro-p17-f18-unit" data-translation-unit="at9spro-p17-f18-unit"></span>
+
+<span id="at9spro-p17-f19-unit" data-translation-unit="at9spro-p17-f19-unit"></span>
+
+<span id="at9spro-p17-f20-unit" data-translation-unit="at9spro-p17-f20-unit"></span>
+
+<span id="at9spro-p17-f21-unit" data-translation-unit="at9spro-p17-f21-unit"></span>
+
+<span id="at9spro-p17-f22-unit" data-translation-unit="at9spro-p17-f22-unit"></span>
+
+<span id="at9spro-p17-f23-unit" data-translation-unit="at9spro-p17-f23-unit"></span>
+
+<span id="at9spro-p17-f24-unit" data-translation-unit="at9spro-p17-f24-unit"></span>
+
+<span id="at9spro-p18-body" data-translation-unit="at9spro-p18-body"></span>
+
+<span id="at9spro-p18-f1-unit" data-translation-unit="at9spro-p18-f1-unit"></span>
+
+<span id="at9spro-p18-f2-unit" data-translation-unit="at9spro-p18-f2-unit"></span>
+
+<span id="at9spro-p18-f3-unit" data-translation-unit="at9spro-p18-f3-unit"></span>
+
+<span id="at9spro-p18-f4-unit" data-translation-unit="at9spro-p18-f4-unit"></span>
+
+<span id="at9spro-p18-f5-unit" data-translation-unit="at9spro-p18-f5-unit"></span>
+
+<span id="at9spro-p18-f6-unit" data-translation-unit="at9spro-p18-f6-unit"></span>
+
+<span id="at9spro-p18-f7-unit" data-translation-unit="at9spro-p18-f7-unit"></span>
+
+<span id="at9spro-p18-f8-unit" data-translation-unit="at9spro-p18-f8-unit"></span>
+
+<span id="at9spro-p18-f9-unit" data-translation-unit="at9spro-p18-f9-unit"></span>
+
+<span id="at9spro-p18-f10-unit" data-translation-unit="at9spro-p18-f10-unit"></span>
+
+<span id="at9spro-p18-f11-unit" data-translation-unit="at9spro-p18-f11-unit"></span>
+
+<span id="at9spro-p18-f12-unit" data-translation-unit="at9spro-p18-f12-unit"></span>
+
+<span id="at9spro-p18-f13-unit" data-translation-unit="at9spro-p18-f13-unit"></span>
+
+<span id="at9spro-p18-f14-unit" data-translation-unit="at9spro-p18-f14-unit"></span>
+
+<span id="at9spro-p18-f15-unit" data-translation-unit="at9spro-p18-f15-unit"></span>
+
+<span id="at9spro-p18-f16-unit" data-translation-unit="at9spro-p18-f16-unit"></span>
+
+<span id="at9spro-p18-f17-unit" data-translation-unit="at9spro-p18-f17-unit"></span>
+
+<span id="at9spro-p18-f18-unit" data-translation-unit="at9spro-p18-f18-unit"></span>
+
+<span id="at9spro-p18-f19-unit" data-translation-unit="at9spro-p18-f19-unit"></span>
+
+<span id="at9spro-p18-f20-unit" data-translation-unit="at9spro-p18-f20-unit"></span>
+
+<span id="at9spro-p18-f21-unit" data-translation-unit="at9spro-p18-f21-unit"></span>
+
+<span id="at9spro-p18-f22-unit" data-translation-unit="at9spro-p18-f22-unit"></span>
+
+<span id="at9spro-p18-f23-unit" data-translation-unit="at9spro-p18-f23-unit"></span>
+
+<span id="at9spro-p18-f24-unit" data-translation-unit="at9spro-p18-f24-unit"></span>
+
+<span id="at9spro-p18-f25-unit" data-translation-unit="at9spro-p18-f25-unit"></span>
+
+<span id="at9spro-p18-f26-unit" data-translation-unit="at9spro-p18-f26-unit"></span>
+
+<span id="at9spro-p18-f27-unit" data-translation-unit="at9spro-p18-f27-unit"></span>
+
+<span id="at9spro-p18-f28-unit" data-translation-unit="at9spro-p18-f28-unit"></span>
+
+<span id="at9spro-p18-f29-unit" data-translation-unit="at9spro-p18-f29-unit"></span>
+
+<span id="at9spro-p18-f30-unit" data-translation-unit="at9spro-p18-f30-unit"></span>
+
+<span id="at9spro-p19-body" data-translation-unit="at9spro-p19-body"></span>
+
+### 2.3 飛行機の基本機能
+
+#### 2.3.1 モデル選択
+
+<span id="at9spro-p19-f1-unit" data-translation-unit="at9spro-p19-f1-unit"></span>
+
+<span id="at9spro-p19-f2-unit" data-translation-unit="at9spro-p19-f2-unit"></span>
+
+<span id="at9spro-p19-f3-unit" data-translation-unit="at9spro-p19-f3-unit"></span>
+
+<span id="at9spro-p19-f4-unit" data-translation-unit="at9spro-p19-f4-unit"></span>
+
+<span id="at9spro-p19-f5-unit" data-translation-unit="at9spro-p19-f5-unit"></span>
+
+<span id="at9spro-p19-f6-unit" data-translation-unit="at9spro-p19-f6-unit"></span>
+
+<span id="at9spro-p19-f7-unit" data-translation-unit="at9spro-p19-f7-unit"></span>
+
+<span id="at9spro-p19-f8-unit" data-translation-unit="at9spro-p19-f8-unit"></span>
+
+<span id="at9spro-p19-f9-unit" data-translation-unit="at9spro-p19-f9-unit"></span>
+
+<span id="at9spro-p19-f10-unit" data-translation-unit="at9spro-p19-f10-unit"></span>
+
+<span id="at9spro-p19-f11-unit" data-translation-unit="at9spro-p19-f11-unit"></span>
+
+<span id="at9spro-p19-f12-unit" data-translation-unit="at9spro-p19-f12-unit"></span>
+
+<span id="at9spro-p19-f13-unit" data-translation-unit="at9spro-p19-f13-unit"></span>
+
+<span id="at9spro-p19-f14-unit" data-translation-unit="at9spro-p19-f14-unit"></span>
+
+<span id="at9spro-p19-f15-unit" data-translation-unit="at9spro-p19-f15-unit"></span>
+
+<span id="at9spro-p19-f16-unit" data-translation-unit="at9spro-p19-f16-unit"></span>
+
+<span id="at9spro-p19-f17-unit" data-translation-unit="at9spro-p19-f17-unit"></span>
+
+<span id="at9spro-p19-f18-unit" data-translation-unit="at9spro-p19-f18-unit"></span>
+
+<span id="at9spro-p19-f19-unit" data-translation-unit="at9spro-p19-f19-unit"></span>
+
+<span id="at9spro-p19-f20-unit" data-translation-unit="at9spro-p19-f20-unit"></span>
+
+<span id="at9spro-p19-f21-unit" data-translation-unit="at9spro-p19-f21-unit"></span>
+
+<span id="at9spro-p19-f22-unit" data-translation-unit="at9spro-p19-f22-unit"></span>
+
+<span id="at9spro-p19-f23-unit" data-translation-unit="at9spro-p19-f23-unit"></span>
+
+<span id="at9spro-p19-f24-unit" data-translation-unit="at9spro-p19-f24-unit"></span>
+
+<span id="at9spro-p19-f25-unit" data-translation-unit="at9spro-p19-f25-unit"></span>
+
+<span id="at9spro-p19-f26-unit" data-translation-unit="at9spro-p19-f26-unit"></span>
+
+<span id="at9spro-p19-f27-unit" data-translation-unit="at9spro-p19-f27-unit"></span>
+
+<span id="at9spro-p19-f28-unit" data-translation-unit="at9spro-p19-f28-unit"></span>
+
+<span id="at9spro-p19-f29-unit" data-translation-unit="at9spro-p19-f29-unit"></span>
+
+<span id="at9spro-p19-f30-unit" data-translation-unit="at9spro-p19-f30-unit"></span>
+
+<span id="at9spro-p19-f31-unit" data-translation-unit="at9spro-p19-f31-unit"></span>
+
+<span id="at9spro-p19-f32-unit" data-translation-unit="at9spro-p19-f32-unit"></span>
+
+<span id="at9spro-p19-f33-unit" data-translation-unit="at9spro-p19-f33-unit"></span>
+
+<span id="at9spro-p19-f34-unit" data-translation-unit="at9spro-p19-f34-unit"></span>
+
+<span id="at9spro-p19-f35-unit" data-translation-unit="at9spro-p19-f35-unit"></span>
+
+<span id="at9spro-p19-f36-unit" data-translation-unit="at9spro-p19-f36-unit"></span>
+
+<span id="at9spro-p19-f37-unit" data-translation-unit="at9spro-p19-f37-unit"></span>
+
+<span id="at9spro-p19-f38-unit" data-translation-unit="at9spro-p19-f38-unit"></span>
+
+<span id="at9spro-p19-f39-unit" data-translation-unit="at9spro-p19-f39-unit"></span>
+
+<span id="at9spro-p19-f40-unit" data-translation-unit="at9spro-p19-f40-unit"></span>
+
+<span id="at9spro-p19-f41-unit" data-translation-unit="at9spro-p19-f41-unit"></span>
+
+<span id="at9spro-p19-f42-unit" data-translation-unit="at9spro-p19-f42-unit"></span>
+
+<span id="at9spro-p20-body" data-translation-unit="at9spro-p20-body"></span>
+
+<span id="at9spro-p20-f1-unit" data-translation-unit="at9spro-p20-f1-unit"></span>
+
+<span id="at9spro-p20-f2-unit" data-translation-unit="at9spro-p20-f2-unit"></span>
+
+<span id="at9spro-p20-f3-unit" data-translation-unit="at9spro-p20-f3-unit"></span>
+
+<span id="at9spro-p20-f4-unit" data-translation-unit="at9spro-p20-f4-unit"></span>
+
+<span id="at9spro-p20-f5-unit" data-translation-unit="at9spro-p20-f5-unit"></span>
+
+<span id="at9spro-p20-f6-unit" data-translation-unit="at9spro-p20-f6-unit"></span>
+
+<span id="at9spro-p20-f7-unit" data-translation-unit="at9spro-p20-f7-unit"></span>
+
+<span id="at9spro-p20-f8-unit" data-translation-unit="at9spro-p20-f8-unit"></span>
+
+<span id="at9spro-p20-f9-unit" data-translation-unit="at9spro-p20-f9-unit"></span>
+
+<span id="at9spro-p20-f10-unit" data-translation-unit="at9spro-p20-f10-unit"></span>
+
+<span id="at9spro-p20-f11-unit" data-translation-unit="at9spro-p20-f11-unit"></span>
+
+<span id="at9spro-p20-f12-unit" data-translation-unit="at9spro-p20-f12-unit"></span>
+
+<span id="at9spro-p20-f13-unit" data-translation-unit="at9spro-p20-f13-unit"></span>
+
+<span id="at9spro-p20-f14-unit" data-translation-unit="at9spro-p20-f14-unit"></span>
+
+<span id="at9spro-p21-body" data-translation-unit="at9spro-p21-body"></span>
+
+#### 2.3.2 モデルタイプ
+
+<span id="at9spro-p21-f1-unit" data-translation-unit="at9spro-p21-f1-unit"></span>
+
+<span id="at9spro-p21-f2-unit" data-translation-unit="at9spro-p21-f2-unit"></span>
+
+<span id="at9spro-p21-f3-unit" data-translation-unit="at9spro-p21-f3-unit"></span>
+
+<span id="at9spro-p21-f4-unit" data-translation-unit="at9spro-p21-f4-unit"></span>
+
+<span id="at9spro-p21-f5-unit" data-translation-unit="at9spro-p21-f5-unit"></span>
+
+<span id="at9spro-p21-f6-unit" data-translation-unit="at9spro-p21-f6-unit"></span>
+
+<span id="at9spro-p22-body" data-translation-unit="at9spro-p22-body"></span>
+
+#### 2.3.3 サーボの可動端調整（END POINT、EPA）
+
+<span id="at9spro-p22-f1-unit" data-translation-unit="at9spro-p22-f1-unit"></span>
+
+<span id="at9spro-p22-f2-unit" data-translation-unit="at9spro-p22-f2-unit"></span>
+
+<span id="at9spro-p22-f3-unit" data-translation-unit="at9spro-p22-f3-unit"></span>
+
+<span id="at9spro-p22-f4-unit" data-translation-unit="at9spro-p22-f4-unit"></span>
+
+<span id="at9spro-p22-f5-unit" data-translation-unit="at9spro-p22-f5-unit"></span>
+
+<span id="at9spro-p22-f6-unit" data-translation-unit="at9spro-p22-f6-unit"></span>
+
+<span id="at9spro-p22-f7-unit" data-translation-unit="at9spro-p22-f7-unit"></span>
+
+<span id="at9spro-p22-f8-unit" data-translation-unit="at9spro-p22-f8-unit"></span>
+
+<span id="at9spro-p22-f9-unit" data-translation-unit="at9spro-p22-f9-unit"></span>
+
+<span id="at9spro-p23-body" data-translation-unit="at9spro-p23-body"></span>
+
+#### 2.3.4 トリム
+
+<span id="at9spro-p23-f1-unit" data-translation-unit="at9spro-p23-f1-unit"></span>
+
+<span id="at9spro-p23-f2-unit" data-translation-unit="at9spro-p23-f2-unit"></span>
+
+<span id="at9spro-p23-f3-unit" data-translation-unit="at9spro-p23-f3-unit"></span>
+
+<span id="at9spro-p23-f4-unit" data-translation-unit="at9spro-p23-f4-unit"></span>
+
+<span id="at9spro-p23-f5-unit" data-translation-unit="at9spro-p23-f5-unit"></span>
+
+<span id="at9spro-p23-f6-unit" data-translation-unit="at9spro-p23-f6-unit"></span>
+
+<span id="at9spro-p23-f7-unit" data-translation-unit="at9spro-p23-f7-unit"></span>
+
+<span id="at9spro-p23-f8-unit" data-translation-unit="at9spro-p23-f8-unit"></span>
+
+<span id="at9spro-p23-f9-unit" data-translation-unit="at9spro-p23-f9-unit"></span>
+
+<span id="at9spro-p24-body" data-translation-unit="at9spro-p24-body"></span>
+
+#### 2.3.5 サブトリム（SUB-TRIM）
+
+#### 2.3.6 サーボリバース（REVERSE）
+
+<span id="at9spro-p24-f1-unit" data-translation-unit="at9spro-p24-f1-unit"></span>
+
+<span id="at9spro-p24-f2-unit" data-translation-unit="at9spro-p24-f2-unit"></span>
+
+<span id="at9spro-p24-f3-unit" data-translation-unit="at9spro-p24-f3-unit"></span>
+
+<span id="at9spro-p24-f4-unit" data-translation-unit="at9spro-p24-f4-unit"></span>
+
+<span id="at9spro-p24-f5-unit" data-translation-unit="at9spro-p24-f5-unit"></span>
+
+<span id="at9spro-p24-f6-unit" data-translation-unit="at9spro-p24-f6-unit"></span>
+
+<span id="at9spro-p24-f7-unit" data-translation-unit="at9spro-p24-f7-unit"></span>
+
+<span id="at9spro-p24-f8-unit" data-translation-unit="at9spro-p24-f8-unit"></span>
+
+<span id="at9spro-p24-f9-unit" data-translation-unit="at9spro-p24-f9-unit"></span>
+
+<span id="at9spro-p24-f10-unit" data-translation-unit="at9spro-p24-f10-unit"></span>
+
+<span id="at9spro-p24-f11-unit" data-translation-unit="at9spro-p24-f11-unit"></span>
+
+<span id="at9spro-p24-f12-unit" data-translation-unit="at9spro-p24-f12-unit"></span>
+
+<span id="at9spro-p24-f13-unit" data-translation-unit="at9spro-p24-f13-unit"></span>
+
+<span id="at9spro-p24-f14-unit" data-translation-unit="at9spro-p24-f14-unit"></span>
+
+<span id="at9spro-p24-f15-unit" data-translation-unit="at9spro-p24-f15-unit"></span>
+
+<span id="at9spro-p24-f16-unit" data-translation-unit="at9spro-p24-f16-unit"></span>
+
+<span id="at9spro-p24-f17-unit" data-translation-unit="at9spro-p24-f17-unit"></span>
+
+<span id="at9spro-p24-f18-unit" data-translation-unit="at9spro-p24-f18-unit"></span>
+
+<span id="at9spro-p24-f19-unit" data-translation-unit="at9spro-p24-f19-unit"></span>
+
+<span id="at9spro-p24-f20-unit" data-translation-unit="at9spro-p24-f20-unit"></span>
+
+<span id="at9spro-p25-body" data-translation-unit="at9spro-p25-body"></span>
+
+#### 2.3.7 デュアル／トリプルレートとエクスポネンシャル（D/R,EXP）
+
+<span id="at9spro-p25-f1-unit" data-translation-unit="at9spro-p25-f1-unit"></span>
+
+<span id="at9spro-p25-f2-unit" data-translation-unit="at9spro-p25-f2-unit"></span>
+
+<span id="at9spro-p25-f3-unit" data-translation-unit="at9spro-p25-f3-unit"></span>
+
+<span id="at9spro-p25-f4-unit" data-translation-unit="at9spro-p25-f4-unit"></span>
+
+<span id="at9spro-p25-f5-unit" data-translation-unit="at9spro-p25-f5-unit"></span>
+
+<span id="at9spro-p25-f6-unit" data-translation-unit="at9spro-p25-f6-unit"></span>
+
+<span id="at9spro-p25-f7-unit" data-translation-unit="at9spro-p25-f7-unit"></span>
+
+<span id="at9spro-p25-f8-unit" data-translation-unit="at9spro-p25-f8-unit"></span>
+
+<span id="at9spro-p25-f9-unit" data-translation-unit="at9spro-p25-f9-unit"></span>
+
+<span id="at9spro-p25-f10-unit" data-translation-unit="at9spro-p25-f10-unit"></span>
+
+<span id="at9spro-p25-f11-unit" data-translation-unit="at9spro-p25-f11-unit"></span>
+
+<span id="at9spro-p25-f12-unit" data-translation-unit="at9spro-p25-f12-unit"></span>
+
+<span id="at9spro-p25-f13-unit" data-translation-unit="at9spro-p25-f13-unit"></span>
+
+<span id="at9spro-p26-body" data-translation-unit="at9spro-p26-body"></span>
+
+<span id="at9spro-p26-f1-unit" data-translation-unit="at9spro-p26-f1-unit"></span>
+
+<span id="at9spro-p26-f2-unit" data-translation-unit="at9spro-p26-f2-unit"></span>
+
+<span id="at9spro-p26-f3-unit" data-translation-unit="at9spro-p26-f3-unit"></span>
+
+<span id="at9spro-p26-f4-unit" data-translation-unit="at9spro-p26-f4-unit"></span>
+
+<span id="at9spro-p26-f5-unit" data-translation-unit="at9spro-p26-f5-unit"></span>
+
+<span id="at9spro-p26-f6-unit" data-translation-unit="at9spro-p26-f6-unit"></span>
+
+<span id="at9spro-p26-f7-unit" data-translation-unit="at9spro-p26-f7-unit"></span>
+
+<span id="at9spro-p26-f8-unit" data-translation-unit="at9spro-p26-f8-unit"></span>
+
+<span id="at9spro-p26-f9-unit" data-translation-unit="at9spro-p26-f9-unit"></span>
+
+<span id="at9spro-p26-f10-unit" data-translation-unit="at9spro-p26-f10-unit"></span>
+
+<span id="at9spro-p27-body" data-translation-unit="at9spro-p27-body"></span>
+
+### D/R、EXP（続き）
+
+#### 設定例：スイッチCでエルロンの3段階レートを切り替える
+
+<span id="at9spro-p27-f1-unit" data-translation-unit="at9spro-p27-f1-unit"></span>
+
+<span id="at9spro-p27-f2-unit" data-translation-unit="at9spro-p27-f2-unit"></span>
+
+<span id="at9spro-p27-f3-unit" data-translation-unit="at9spro-p27-f3-unit"></span>
+
+<span id="at9spro-p27-f4-unit" data-translation-unit="at9spro-p27-f4-unit"></span>
+
+<span id="at9spro-p27-f5-unit" data-translation-unit="at9spro-p27-f5-unit"></span>
+
+<span id="at9spro-p27-f6-unit" data-translation-unit="at9spro-p27-f6-unit"></span>
+
+<span id="at9spro-p27-f7-unit" data-translation-unit="at9spro-p27-f7-unit"></span>
+
+<span id="at9spro-p27-f8-unit" data-translation-unit="at9spro-p27-f8-unit"></span>
+
+<span id="at9spro-p27-f9-unit" data-translation-unit="at9spro-p27-f9-unit"></span>
+
+<span id="at9spro-p27-f10-unit" data-translation-unit="at9spro-p27-f10-unit"></span>
+
+<span id="at9spro-p27-f11-unit" data-translation-unit="at9spro-p27-f11-unit"></span>
+
+<span id="at9spro-p27-f12-unit" data-translation-unit="at9spro-p27-f12-unit"></span>
+
+<span id="at9spro-p27-f13-unit" data-translation-unit="at9spro-p27-f13-unit"></span>
+
+<span id="at9spro-p27-f14-unit" data-translation-unit="at9spro-p27-f14-unit"></span>
+
+<span id="at9spro-p27-f15-unit" data-translation-unit="at9spro-p27-f15-unit"></span>
+
+<span id="at9spro-p27-f16-unit" data-translation-unit="at9spro-p27-f16-unit"></span>
+
+<span id="at9spro-p27-f17-unit" data-translation-unit="at9spro-p27-f17-unit"></span>
+
+<span id="at9spro-p27-f18-unit" data-translation-unit="at9spro-p27-f18-unit"></span>
+
+<span id="at9spro-p27-f19-unit" data-translation-unit="at9spro-p27-f19-unit"></span>
+
+<span id="at9spro-p27-f20-unit" data-translation-unit="at9spro-p27-f20-unit"></span>
+
+<span id="at9spro-p27-f21-unit" data-translation-unit="at9spro-p27-f21-unit"></span>
+
+<span id="at9spro-p27-f22-unit" data-translation-unit="at9spro-p27-f22-unit"></span>
+
+<span id="at9spro-p27-f23-unit" data-translation-unit="at9spro-p27-f23-unit"></span>
+
+<span id="at9spro-p27-f24-unit" data-translation-unit="at9spro-p27-f24-unit"></span>
+
+<span id="at9spro-p27-f25-unit" data-translation-unit="at9spro-p27-f25-unit"></span>
+
+<span id="at9spro-p27-f26-unit" data-translation-unit="at9spro-p27-f26-unit"></span>
+
+<span id="at9spro-p27-f27-unit" data-translation-unit="at9spro-p27-f27-unit"></span>
+
+<span id="at9spro-p27-f28-unit" data-translation-unit="at9spro-p27-f28-unit"></span>
+
+<span id="at9spro-p27-f29-unit" data-translation-unit="at9spro-p27-f29-unit"></span>
+
+<span id="at9spro-p27-f30-unit" data-translation-unit="at9spro-p27-f30-unit"></span>
+
+<span id="at9spro-p27-f31-unit" data-translation-unit="at9spro-p27-f31-unit"></span>
+
+<span id="at9spro-p27-f32-unit" data-translation-unit="at9spro-p27-f32-unit"></span>
+
+<span id="at9spro-p27-f33-unit" data-translation-unit="at9spro-p27-f33-unit"></span>
+
+<span id="at9spro-p27-f34-unit" data-translation-unit="at9spro-p27-f34-unit"></span>
+
+<span id="at9spro-p27-f35-unit" data-translation-unit="at9spro-p27-f35-unit"></span>
+
+<span id="at9spro-p27-f36-unit" data-translation-unit="at9spro-p27-f36-unit"></span>
+
+<span id="at9spro-p27-f37-unit" data-translation-unit="at9spro-p27-f37-unit"></span>
+
+<span id="at9spro-p27-f38-unit" data-translation-unit="at9spro-p27-f38-unit"></span>
+
+<span id="at9spro-p27-f39-unit" data-translation-unit="at9spro-p27-f39-unit"></span>
+
+<span id="at9spro-p27-f40-unit" data-translation-unit="at9spro-p27-f40-unit"></span>
+
+<span id="at9spro-p27-f41-unit" data-translation-unit="at9spro-p27-f41-unit"></span>
+
+<span id="at9spro-p27-f42-unit" data-translation-unit="at9spro-p27-f42-unit"></span>
+
+<span id="at9spro-p27-f43-unit" data-translation-unit="at9spro-p27-f43-unit"></span>
+
+<span id="at9spro-p27-f44-unit" data-translation-unit="at9spro-p27-f44-unit"></span>
+
+<span id="at9spro-p27-f45-unit" data-translation-unit="at9spro-p27-f45-unit"></span>
+
+<span id="at9spro-p27-f46-unit" data-translation-unit="at9spro-p27-f46-unit"></span>
+
+<span id="at9spro-p27-f47-unit" data-translation-unit="at9spro-p27-f47-unit"></span>
+
+<span id="at9spro-p27-f48-unit" data-translation-unit="at9spro-p27-f48-unit"></span>
+
+<span id="at9spro-p28-body" data-translation-unit="at9spro-p28-body"></span>
+
+### 2.3.8 スロットルカット（THR CUT）
+
+#### 飛行機（ACRO）／ヘリコプター（HELI）の基本設定
+
+#### グライダー
+
+<span id="at9spro-p28-f1-unit" data-translation-unit="at9spro-p28-f1-unit"></span>
+
+<span id="at9spro-p28-f2-unit" data-translation-unit="at9spro-p28-f2-unit"></span>
+
+<span id="at9spro-p28-f3-unit" data-translation-unit="at9spro-p28-f3-unit"></span>
+
+<span id="at9spro-p28-f4-unit" data-translation-unit="at9spro-p28-f4-unit"></span>
+
+<span id="at9spro-p28-f5-unit" data-translation-unit="at9spro-p28-f5-unit"></span>
+
+<span id="at9spro-p28-f6-unit" data-translation-unit="at9spro-p28-f6-unit"></span>
+
+<span id="at9spro-p28-f7-unit" data-translation-unit="at9spro-p28-f7-unit"></span>
+
+<span id="at9spro-p28-f8-unit" data-translation-unit="at9spro-p28-f8-unit"></span>
+
+<span id="at9spro-p28-f9-unit" data-translation-unit="at9spro-p28-f9-unit"></span>
+
+<span id="at9spro-p28-f10-unit" data-translation-unit="at9spro-p28-f10-unit"></span>
+
+<span id="at9spro-p28-f11-unit" data-translation-unit="at9spro-p28-f11-unit"></span>
+
+<span id="at9spro-p28-f12-unit" data-translation-unit="at9spro-p28-f12-unit"></span>
+
+<span id="at9spro-p28-f13-unit" data-translation-unit="at9spro-p28-f13-unit"></span>
+
+<span id="at9spro-p28-f14-unit" data-translation-unit="at9spro-p28-f14-unit"></span>
+
+<span id="at9spro-p28-f15-unit" data-translation-unit="at9spro-p28-f15-unit"></span>
+
+<span id="at9spro-p28-f16-unit" data-translation-unit="at9spro-p28-f16-unit"></span>
+
+<span id="at9spro-p28-f17-unit" data-translation-unit="at9spro-p28-f17-unit"></span>
+
+<span id="at9spro-p28-f18-unit" data-translation-unit="at9spro-p28-f18-unit"></span>
+
+<span id="at9spro-p29-body" data-translation-unit="at9spro-p29-body"></span>
+
+#### スロットルカット設定例（続き）
+
+#### ヘリコプター
+
+### 2.3.9 アイドルダウン（IDLE DOWN、ACROのみ）
+
+<span id="at9spro-p29-f1-unit" data-translation-unit="at9spro-p29-f1-unit"></span>
+
+<span id="at9spro-p29-f2-unit" data-translation-unit="at9spro-p29-f2-unit"></span>
+
+<span id="at9spro-p29-f3-unit" data-translation-unit="at9spro-p29-f3-unit"></span>
+
+<span id="at9spro-p29-f4-unit" data-translation-unit="at9spro-p29-f4-unit"></span>
+
+<span id="at9spro-p29-f5-unit" data-translation-unit="at9spro-p29-f5-unit"></span>
+
+<span id="at9spro-p29-f6-unit" data-translation-unit="at9spro-p29-f6-unit"></span>
+
+<span id="at9spro-p29-f7-unit" data-translation-unit="at9spro-p29-f7-unit"></span>
+
+<span id="at9spro-p29-f8-unit" data-translation-unit="at9spro-p29-f8-unit"></span>
+
+<span id="at9spro-p29-f9-unit" data-translation-unit="at9spro-p29-f9-unit"></span>
+
+<span id="at9spro-p29-f10-unit" data-translation-unit="at9spro-p29-f10-unit"></span>
+
+<span id="at9spro-p29-f11-unit" data-translation-unit="at9spro-p29-f11-unit"></span>
+
+<span id="at9spro-p29-f12-unit" data-translation-unit="at9spro-p29-f12-unit"></span>
+
+<span id="at9spro-p29-f13-unit" data-translation-unit="at9spro-p29-f13-unit"></span>
+
+<span id="at9spro-p29-f14-unit" data-translation-unit="at9spro-p29-f14-unit"></span>
+
+<span id="at9spro-p29-f15-unit" data-translation-unit="at9spro-p29-f15-unit"></span>
+
+<span id="at9spro-p30-body" data-translation-unit="at9spro-p30-body"></span>
+
+#### アイドルダウンの調整（続き）
+
+### 2.3.10 フェイルセーフ（F/S）
+
+<span id="at9spro-p30-f1-unit" data-translation-unit="at9spro-p30-f1-unit"></span>
+
+<span id="at9spro-p30-f2-unit" data-translation-unit="at9spro-p30-f2-unit"></span>
+
+<span id="at9spro-p30-f3-unit" data-translation-unit="at9spro-p30-f3-unit"></span>
+
+<span id="at9spro-p30-f4-unit" data-translation-unit="at9spro-p30-f4-unit"></span>
+
+<span id="at9spro-p30-f5-unit" data-translation-unit="at9spro-p30-f5-unit"></span>
+
+<span id="at9spro-p30-f6-unit" data-translation-unit="at9spro-p30-f6-unit"></span>
+
+<span id="at9spro-p30-f7-unit" data-translation-unit="at9spro-p30-f7-unit"></span>
+
+<span id="at9spro-p30-f8-unit" data-translation-unit="at9spro-p30-f8-unit"></span>
+
+<span id="at9spro-p30-f9-unit" data-translation-unit="at9spro-p30-f9-unit"></span>
+
+<span id="at9spro-p30-f10-unit" data-translation-unit="at9spro-p30-f10-unit"></span>
+
+<span id="at9spro-p30-f11-unit" data-translation-unit="at9spro-p30-f11-unit"></span>
+
+<span id="at9spro-p30-f12-unit" data-translation-unit="at9spro-p30-f12-unit"></span>
+
+<span id="at9spro-p30-f13-unit" data-translation-unit="at9spro-p30-f13-unit"></span>
+
+<span id="at9spro-p31-body" data-translation-unit="at9spro-p31-body"></span>
+
+### 2.3.11 補助チャンネル機能（CH9・CH10の操作を含む）
+
+<span id="at9spro-p31-f1-unit" data-translation-unit="at9spro-p31-f1-unit"></span>
+
+<span id="at9spro-p31-f2-unit" data-translation-unit="at9spro-p31-f2-unit"></span>
+
+<span id="at9spro-p31-f3-unit" data-translation-unit="at9spro-p31-f3-unit"></span>
+
+<span id="at9spro-p31-f4-unit" data-translation-unit="at9spro-p31-f4-unit"></span>
+
+<span id="at9spro-p31-f5-unit" data-translation-unit="at9spro-p31-f5-unit"></span>
+
+<span id="at9spro-p31-f6-unit" data-translation-unit="at9spro-p31-f6-unit"></span>
+
+<span id="at9spro-p31-f7-unit" data-translation-unit="at9spro-p31-f7-unit"></span>
+
+<span id="at9spro-p31-f8-unit" data-translation-unit="at9spro-p31-f8-unit"></span>
+
+<span id="at9spro-p31-f9-unit" data-translation-unit="at9spro-p31-f9-unit"></span>
+
+<span id="at9spro-p31-f10-unit" data-translation-unit="at9spro-p31-f10-unit"></span>
+
+<span id="at9spro-p31-f11-unit" data-translation-unit="at9spro-p31-f11-unit"></span>
+
+<span id="at9spro-p31-f12-unit" data-translation-unit="at9spro-p31-f12-unit"></span>
+
+<span id="at9spro-p31-f13-unit" data-translation-unit="at9spro-p31-f13-unit"></span>
+
+<span id="at9spro-p31-f14-unit" data-translation-unit="at9spro-p31-f14-unit"></span>
+
+<span id="at9spro-p31-f15-unit" data-translation-unit="at9spro-p31-f15-unit"></span>
+
+<span id="at9spro-p31-f16-unit" data-translation-unit="at9spro-p31-f16-unit"></span>
+
+<span id="at9spro-p31-f17-unit" data-translation-unit="at9spro-p31-f17-unit"></span>
+
+<span id="at9spro-p31-f18-unit" data-translation-unit="at9spro-p31-f18-unit"></span>
+
+<span id="at9spro-p31-f19-unit" data-translation-unit="at9spro-p31-f19-unit"></span>
+
+<span id="at9spro-p32-body" data-translation-unit="at9spro-p32-body"></span>
+
+### 2.3.12 TIMERサブメニュー（ストップウォッチ機能）
+
+<span id="at9spro-p32-f1-unit" data-translation-unit="at9spro-p32-f1-unit"></span>
+
+<span id="at9spro-p32-f2-unit" data-translation-unit="at9spro-p32-f2-unit"></span>
+
+<span id="at9spro-p32-f3-unit" data-translation-unit="at9spro-p32-f3-unit"></span>
+
+<span id="at9spro-p32-f4-unit" data-translation-unit="at9spro-p32-f4-unit"></span>
+
+<span id="at9spro-p32-f5-unit" data-translation-unit="at9spro-p32-f5-unit"></span>
+
+<span id="at9spro-p32-f6-unit" data-translation-unit="at9spro-p32-f6-unit"></span>
+
+<span id="at9spro-p32-f7-unit" data-translation-unit="at9spro-p32-f7-unit"></span>
+
+<span id="at9spro-p32-f8-unit" data-translation-unit="at9spro-p32-f8-unit"></span>
+
+<span id="at9spro-p32-f9-unit" data-translation-unit="at9spro-p32-f9-unit"></span>
+
+<span id="at9spro-p32-f10-unit" data-translation-unit="at9spro-p32-f10-unit"></span>
+
+<span id="at9spro-p32-f11-unit" data-translation-unit="at9spro-p32-f11-unit"></span>
+
+<span id="at9spro-p32-f12-unit" data-translation-unit="at9spro-p32-f12-unit"></span>
+
+<span id="at9spro-p32-f13-unit" data-translation-unit="at9spro-p32-f13-unit"></span>
+
+<span id="at9spro-p32-f14-unit" data-translation-unit="at9spro-p32-f14-unit"></span>
+
+<span id="at9spro-p32-f15-unit" data-translation-unit="at9spro-p32-f15-unit"></span>
+
+<span id="at9spro-p33-body" data-translation-unit="at9spro-p33-body"></span>
+
+### 2.3.13 トレーナー（TRAINER）
+
+<span id="at9spro-p33-f1-unit" data-translation-unit="at9spro-p33-f1-unit"></span>
+
+<span id="at9spro-p33-f2-unit" data-translation-unit="at9spro-p33-f2-unit"></span>
+
+<span id="at9spro-p34-body" data-translation-unit="at9spro-p34-body"></span>
+
+### 2.3.14 ロジックスイッチの選択（LOGIC SW）
+
+### 2.3.15 サーボ表示・サイクルサブメニュー
+
+<span id="at9spro-p34-f1-unit" data-translation-unit="at9spro-p34-f1-unit"></span>
+
+<span id="at9spro-p34-f2-unit" data-translation-unit="at9spro-p34-f2-unit"></span>
+
+<span id="at9spro-p34-f3-unit" data-translation-unit="at9spro-p34-f3-unit"></span>
+
+<span id="at9spro-p34-f4-unit" data-translation-unit="at9spro-p34-f4-unit"></span>
+
+<span id="at9spro-p34-f5-unit" data-translation-unit="at9spro-p34-f5-unit"></span>
+
+<span id="at9spro-p34-f6-unit" data-translation-unit="at9spro-p34-f6-unit"></span>
+
+<span id="at9spro-p34-f7-unit" data-translation-unit="at9spro-p34-f7-unit"></span>
+
+<span id="at9spro-p34-f8-unit" data-translation-unit="at9spro-p34-f8-unit"></span>
+
+<span id="at9spro-p34-f9-unit" data-translation-unit="at9spro-p34-f9-unit"></span>
+
+<span id="at9spro-p34-f10-unit" data-translation-unit="at9spro-p34-f10-unit"></span>
+
+<span id="at9spro-p34-f11-unit" data-translation-unit="at9spro-p34-f11-unit"></span>
+
+<span id="at9spro-p34-f12-unit" data-translation-unit="at9spro-p34-f12-unit"></span>
+
+<span id="at9spro-p34-f13-unit" data-translation-unit="at9spro-p34-f13-unit"></span>
+
+<span id="at9spro-p34-f14-unit" data-translation-unit="at9spro-p34-f14-unit"></span>
+
+<span id="at9spro-p34-f15-unit" data-translation-unit="at9spro-p34-f15-unit"></span>
+
+<span id="at9spro-p35-body" data-translation-unit="at9spro-p35-body"></span>
+
+### 2.3.16 テレメトリー（TELEMETRY）
+
+<span id="at9spro-p35-f1-unit" data-translation-unit="at9spro-p35-f1-unit"></span>
+
+<span id="at9spro-p35-f2-unit" data-translation-unit="at9spro-p35-f2-unit"></span>
+
+<span id="at9spro-p35-f3-unit" data-translation-unit="at9spro-p35-f3-unit"></span>
+
+<span id="at9spro-p35-f4-unit" data-translation-unit="at9spro-p35-f4-unit"></span>
+
+<span id="at9spro-p35-f5-unit" data-translation-unit="at9spro-p35-f5-unit"></span>
+
+<span id="at9spro-p35-f6-unit" data-translation-unit="at9spro-p35-f6-unit"></span>
+
+<span id="at9spro-p35-f7-unit" data-translation-unit="at9spro-p35-f7-unit"></span>
+
+<span id="at9spro-p35-f8-unit" data-translation-unit="at9spro-p35-f8-unit"></span>
+
+<span id="at9spro-p35-f9-unit" data-translation-unit="at9spro-p35-f9-unit"></span>
+
+<span id="at9spro-p35-f10-unit" data-translation-unit="at9spro-p35-f10-unit"></span>
+
+<span id="at9spro-p35-f11-unit" data-translation-unit="at9spro-p35-f11-unit"></span>
+
+<span id="at9spro-p36-body" data-translation-unit="at9spro-p36-body"></span>
+
+## 第3部 ACROのADVANCEメニュー機能
+
+### 3.1 飛行機の主翼タイプ（ACRO／GLID）
+
+### 3.2 2エルロンサーボ（5チャンネル受信機、AILE-2、ACRO／GLID）
+
+<span id="at9spro-p36-f1-unit" data-translation-unit="at9spro-p36-f1-unit"></span>
+
+<span id="at9spro-p36-f2-unit" data-translation-unit="at9spro-p36-f2-unit"></span>
+
+<span id="at9spro-p37-body" data-translation-unit="at9spro-p37-body"></span>
+
+### 3.3 ACROのADVANCE機能メニュー
+
+<span id="at9spro-p37-f1-unit" data-translation-unit="at9spro-p37-f1-unit"></span>
+
+<span id="at9spro-p37-f2-unit" data-translation-unit="at9spro-p37-f2-unit"></span>
+
+<span id="at9spro-p37-f3-unit" data-translation-unit="at9spro-p37-f3-unit"></span>
+
+<span id="at9spro-p37-f4-unit" data-translation-unit="at9spro-p37-f4-unit"></span>
+
+<span id="at9spro-p37-f5-unit" data-translation-unit="at9spro-p37-f5-unit"></span>
+
+<span id="at9spro-p37-f6-unit" data-translation-unit="at9spro-p37-f6-unit"></span>
+
+<span id="at9spro-p37-f7-unit" data-translation-unit="at9spro-p37-f7-unit"></span>
+
+<span id="at9spro-p37-f8-unit" data-translation-unit="at9spro-p37-f8-unit"></span>
+
+<span id="at9spro-p37-f9-unit" data-translation-unit="at9spro-p37-f9-unit"></span>
+
+<span id="at9spro-p38-body" data-translation-unit="at9spro-p38-body"></span>
+
+### 3.3.1 プログラムミキシング
+
+<span id="at9spro-p38-f1-unit" data-translation-unit="at9spro-p38-f1-unit"></span>
+
+<span id="at9spro-p38-f2-unit" data-translation-unit="at9spro-p38-f2-unit"></span>
+
+<span id="at9spro-p38-f3-unit" data-translation-unit="at9spro-p38-f3-unit"></span>
+
+<span id="at9spro-p39-body" data-translation-unit="at9spro-p39-body"></span>
+
+### 3.3.1 プログラムミキシングの調整項目（続き）
+
+<span id="at9spro-p39-f1-unit" data-translation-unit="at9spro-p39-f1-unit"></span>
+
+<span id="at9spro-p40-body" data-translation-unit="at9spro-p40-body"></span>
+
+<span id="at9spro-p40-f1-unit" data-translation-unit="at9spro-p40-f1-unit"></span>
+
+<span id="at9spro-p40-f2-unit" data-translation-unit="at9spro-p40-f2-unit"></span>
+
+<span id="at9spro-p40-f3-unit" data-translation-unit="at9spro-p40-f3-unit"></span>
+
+<span id="at9spro-p40-f4-unit" data-translation-unit="at9spro-p40-f4-unit"></span>
+
+<span id="at9spro-p40-f5-unit" data-translation-unit="at9spro-p40-f5-unit"></span>
+
+<span id="at9spro-p40-f6-unit" data-translation-unit="at9spro-p40-f6-unit"></span>
+
+<span id="at9spro-p40-f7-unit" data-translation-unit="at9spro-p40-f7-unit"></span>
+
+<span id="at9spro-p40-f8-unit" data-translation-unit="at9spro-p40-f8-unit"></span>
+
+<span id="at9spro-p40-f9-unit" data-translation-unit="at9spro-p40-f9-unit"></span>
+
+<span id="at9spro-p40-f10-unit" data-translation-unit="at9spro-p40-f10-unit"></span>
+
+<span id="at9spro-p40-f11-unit" data-translation-unit="at9spro-p40-f11-unit"></span>
+
+<span id="at9spro-p40-f12-unit" data-translation-unit="at9spro-p40-f12-unit"></span>
+
+<span id="at9spro-p40-f13-unit" data-translation-unit="at9spro-p40-f13-unit"></span>
+
+<span id="at9spro-p40-f14-unit" data-translation-unit="at9spro-p40-f14-unit"></span>
+
+<span id="at9spro-p40-f15-unit" data-translation-unit="at9spro-p40-f15-unit"></span>
+
+<span id="at9spro-p40-f16-unit" data-translation-unit="at9spro-p40-f16-unit"></span>
+
+<span id="at9spro-p40-f17-unit" data-translation-unit="at9spro-p40-f17-unit"></span>
+
+<span id="at9spro-p40-f18-unit" data-translation-unit="at9spro-p40-f18-unit"></span>
+
+<span id="at9spro-p40-f19-unit" data-translation-unit="at9spro-p40-f19-unit"></span>
+
+<span id="at9spro-p40-f20-unit" data-translation-unit="at9spro-p40-f20-unit"></span>
+
+<span id="at9spro-p40-f21-unit" data-translation-unit="at9spro-p40-f21-unit"></span>
+
+<span id="at9spro-p40-f22-unit" data-translation-unit="at9spro-p40-f22-unit"></span>
+
+<span id="at9spro-p40-f23-unit" data-translation-unit="at9spro-p40-f23-unit"></span>
+
+<span id="at9spro-p40-f24-unit" data-translation-unit="at9spro-p40-f24-unit"></span>
+
+<span id="at9spro-p40-f25-unit" data-translation-unit="at9spro-p40-f25-unit"></span>
+
+<span id="at9spro-p40-f26-unit" data-translation-unit="at9spro-p40-f26-unit"></span>
+
+<span id="at9spro-p40-f27-unit" data-translation-unit="at9spro-p40-f27-unit"></span>
+
+<span id="at9spro-p40-f28-unit" data-translation-unit="at9spro-p40-f28-unit"></span>
+
+<span id="at9spro-p40-f29-unit" data-translation-unit="at9spro-p40-f29-unit"></span>
+
+<span id="at9spro-p40-f30-unit" data-translation-unit="at9spro-p40-f30-unit"></span>
+
+<span id="at9spro-p41-body" data-translation-unit="at9spro-p41-body"></span>
+
+### 3.3.2 カーブ式プログラムミキシング（PROG.MIX5〜8、HELI：PROG.MIX5〜6）
+
+<span id="at9spro-p41-f1-unit" data-translation-unit="at9spro-p41-f1-unit"></span>
+
+<span id="at9spro-p41-f2-unit" data-translation-unit="at9spro-p41-f2-unit"></span>
+
+<span id="at9spro-p41-f3-unit" data-translation-unit="at9spro-p41-f3-unit"></span>
+
+<span id="at9spro-p41-f4-unit" data-translation-unit="at9spro-p41-f4-unit"></span>
+
+<span id="at9spro-p41-f5-unit" data-translation-unit="at9spro-p41-f5-unit"></span>
+
+<span id="at9spro-p41-f6-unit" data-translation-unit="at9spro-p41-f6-unit"></span>
+
+<span id="at9spro-p41-f7-unit" data-translation-unit="at9spro-p41-f7-unit"></span>
+
+<span id="at9spro-p41-f8-unit" data-translation-unit="at9spro-p41-f8-unit"></span>
+
+<span id="at9spro-p41-f9-unit" data-translation-unit="at9spro-p41-f9-unit"></span>
+
+<span id="at9spro-p41-f10-unit" data-translation-unit="at9spro-p41-f10-unit"></span>
+
+<span id="at9spro-p42-body" data-translation-unit="at9spro-p42-body"></span>
+
+### 3.3.3 フラッペロン（FLAPERON、ACRO／GLID 1A+1F）
+
+<span id="at9spro-p42-f1-unit" data-translation-unit="at9spro-p42-f1-unit"></span>
+
+<span id="at9spro-p42-f2-unit" data-translation-unit="at9spro-p42-f2-unit"></span>
+
+<span id="at9spro-p42-f3-unit" data-translation-unit="at9spro-p42-f3-unit"></span>
+
+<span id="at9spro-p42-f4-unit" data-translation-unit="at9spro-p42-f4-unit"></span>
+
+<span id="at9spro-p42-f5-unit" data-translation-unit="at9spro-p42-f5-unit"></span>
+
+<span id="at9spro-p42-f6-unit" data-translation-unit="at9spro-p42-f6-unit"></span>
+
+<span id="at9spro-p42-f7-unit" data-translation-unit="at9spro-p42-f7-unit"></span>
+
+<span id="at9spro-p42-f8-unit" data-translation-unit="at9spro-p42-f8-unit"></span>
+
+<span id="at9spro-p42-f9-unit" data-translation-unit="at9spro-p42-f9-unit"></span>
+
+<span id="at9spro-p42-f10-unit" data-translation-unit="at9spro-p42-f10-unit"></span>
+
+<span id="at9spro-p42-f11-unit" data-translation-unit="at9spro-p42-f11-unit"></span>
+
+<span id="at9spro-p42-f12-unit" data-translation-unit="at9spro-p42-f12-unit"></span>
+
+<span id="at9spro-p42-f13-unit" data-translation-unit="at9spro-p42-f13-unit"></span>
+
+<span id="at9spro-p42-f14-unit" data-translation-unit="at9spro-p42-f14-unit"></span>
+
+<span id="at9spro-p42-f15-unit" data-translation-unit="at9spro-p42-f15-unit"></span>
+
+<span id="at9spro-p42-f16-unit" data-translation-unit="at9spro-p42-f16-unit"></span>
+
+<span id="at9spro-p42-f17-unit" data-translation-unit="at9spro-p42-f17-unit"></span>
+
+<span id="at9spro-p42-f18-unit" data-translation-unit="at9spro-p42-f18-unit"></span>
+
+<span id="at9spro-p43-body" data-translation-unit="at9spro-p43-body"></span>
+
+### 3.3.4 フラップトリム（FLAP-TRIM）
+
+<span id="at9spro-p43-f1-unit" data-translation-unit="at9spro-p43-f1-unit"></span>
+
+<span id="at9spro-p43-f2-unit" data-translation-unit="at9spro-p43-f2-unit"></span>
+
+<span id="at9spro-p43-f3-unit" data-translation-unit="at9spro-p43-f3-unit"></span>
+
+<span id="at9spro-p43-f4-unit" data-translation-unit="at9spro-p43-f4-unit"></span>
+
+<span id="at9spro-p43-f5-unit" data-translation-unit="at9spro-p43-f5-unit"></span>
+
+<span id="at9spro-p43-f6-unit" data-translation-unit="at9spro-p43-f6-unit"></span>
+
+<span id="at9spro-p43-f7-unit" data-translation-unit="at9spro-p43-f7-unit"></span>
+
+<span id="at9spro-p43-f8-unit" data-translation-unit="at9spro-p43-f8-unit"></span>
+
+<span id="at9spro-p43-f9-unit" data-translation-unit="at9spro-p43-f9-unit"></span>
+
+<span id="at9spro-p43-f10-unit" data-translation-unit="at9spro-p43-f10-unit"></span>
+
+<span id="at9spro-p43-f11-unit" data-translation-unit="at9spro-p43-f11-unit"></span>
+
+<span id="at9spro-p43-f12-unit" data-translation-unit="at9spro-p43-f12-unit"></span>
+
+<span id="at9spro-p43-f13-unit" data-translation-unit="at9spro-p43-f13-unit"></span>
+
+<span id="at9spro-p43-f14-unit" data-translation-unit="at9spro-p43-f14-unit"></span>
+
+<span id="at9spro-p43-f15-unit" data-translation-unit="at9spro-p43-f15-unit"></span>
+
+<span id="at9spro-p43-f16-unit" data-translation-unit="at9spro-p43-f16-unit"></span>
+
+<span id="at9spro-p43-f17-unit" data-translation-unit="at9spro-p43-f17-unit"></span>
+
+<span id="at9spro-p43-f18-unit" data-translation-unit="at9spro-p43-f18-unit"></span>
+
+<span id="at9spro-p43-f19-unit" data-translation-unit="at9spro-p43-f19-unit"></span>
+
+<span id="at9spro-p43-f20-unit" data-translation-unit="at9spro-p43-f20-unit"></span>
+
+<span id="at9spro-p43-f21-unit" data-translation-unit="at9spro-p43-f21-unit"></span>
+
+<span id="at9spro-p43-f22-unit" data-translation-unit="at9spro-p43-f22-unit"></span>
+
+<span id="at9spro-p44-body" data-translation-unit="at9spro-p44-body"></span>
+
+### 3.3.5 エルロンディファレンシャル（AILE DIFF、ACRO／GLID 2A+1F／GLID 2A+2F）
+
+<span id="at9spro-p44-f1-unit" data-translation-unit="at9spro-p44-f1-unit"></span>
+
+<span id="at9spro-p44-f2-unit" data-translation-unit="at9spro-p44-f2-unit"></span>
+
+<span id="at9spro-p44-f3-unit" data-translation-unit="at9spro-p44-f3-unit"></span>
+
+<span id="at9spro-p44-f4-unit" data-translation-unit="at9spro-p44-f4-unit"></span>
+
+<span id="at9spro-p44-f5-unit" data-translation-unit="at9spro-p44-f5-unit"></span>
+
+<span id="at9spro-p44-f6-unit" data-translation-unit="at9spro-p44-f6-unit"></span>
+
+<span id="at9spro-p44-f7-unit" data-translation-unit="at9spro-p44-f7-unit"></span>
+
+<span id="at9spro-p44-f8-unit" data-translation-unit="at9spro-p44-f8-unit"></span>
+
+<span id="at9spro-p44-f9-unit" data-translation-unit="at9spro-p44-f9-unit"></span>
+
+<span id="at9spro-p44-f10-unit" data-translation-unit="at9spro-p44-f10-unit"></span>
+
+<span id="at9spro-p44-f11-unit" data-translation-unit="at9spro-p44-f11-unit"></span>
+
+<span id="at9spro-p44-f12-unit" data-translation-unit="at9spro-p44-f12-unit"></span>
+
+<span id="at9spro-p44-f13-unit" data-translation-unit="at9spro-p44-f13-unit"></span>
+
+<span id="at9spro-p44-f14-unit" data-translation-unit="at9spro-p44-f14-unit"></span>
+
+<span id="at9spro-p44-f15-unit" data-translation-unit="at9spro-p44-f15-unit"></span>
+
+<span id="at9spro-p44-f16-unit" data-translation-unit="at9spro-p44-f16-unit"></span>
+
+<span id="at9spro-p44-f17-unit" data-translation-unit="at9spro-p44-f17-unit"></span>
+
+<span id="at9spro-p44-f18-unit" data-translation-unit="at9spro-p44-f18-unit"></span>
+
+<span id="at9spro-p44-f19-unit" data-translation-unit="at9spro-p44-f19-unit"></span>
+
+<span id="at9spro-p44-f20-unit" data-translation-unit="at9spro-p44-f20-unit"></span>
+
+<span id="at9spro-p44-f21-unit" data-translation-unit="at9spro-p44-f21-unit"></span>
+
+<span id="at9spro-p44-f22-unit" data-translation-unit="at9spro-p44-f22-unit"></span>
+
+<span id="at9spro-p44-f23-unit" data-translation-unit="at9spro-p44-f23-unit"></span>
+
+<span id="at9spro-p45-body" data-translation-unit="at9spro-p45-body"></span>
+
+### 3.3.6 エアブレーキ（原典見出し：Air Break、ACRO／GLID）
+
+<span id="at9spro-p45-f1-unit" data-translation-unit="at9spro-p45-f1-unit"></span>
+
+<span id="at9spro-p45-f2-unit" data-translation-unit="at9spro-p45-f2-unit"></span>
+
+<span id="at9spro-p45-f3-unit" data-translation-unit="at9spro-p45-f3-unit"></span>
+
+<span id="at9spro-p45-f4-unit" data-translation-unit="at9spro-p45-f4-unit"></span>
+
+<span id="at9spro-p46-body" data-translation-unit="at9spro-p46-body"></span>
+
+### 3.3.7 エレベーター→フラップミキシング（ELEV-FLAP、ACRO／GLID）
+
+<span id="at9spro-p46-f1-unit" data-translation-unit="at9spro-p46-f1-unit"></span>
+
+<span id="at9spro-p46-f2-unit" data-translation-unit="at9spro-p46-f2-unit"></span>
+
+<span id="at9spro-p46-f3-unit" data-translation-unit="at9spro-p46-f3-unit"></span>
+
+<span id="at9spro-p46-f4-unit" data-translation-unit="at9spro-p46-f4-unit"></span>
+
+<span id="at9spro-p46-f5-unit" data-translation-unit="at9spro-p46-f5-unit"></span>
+
+<span id="at9spro-p46-f6-unit" data-translation-unit="at9spro-p46-f6-unit"></span>
+
+<span id="at9spro-p46-f7-unit" data-translation-unit="at9spro-p46-f7-unit"></span>
+
+<span id="at9spro-p46-f8-unit" data-translation-unit="at9spro-p46-f8-unit"></span>
+
+<span id="at9spro-p46-f9-unit" data-translation-unit="at9spro-p46-f9-unit"></span>
+
+<span id="at9spro-p46-f10-unit" data-translation-unit="at9spro-p46-f10-unit"></span>
+
+<span id="at9spro-p46-f11-unit" data-translation-unit="at9spro-p46-f11-unit"></span>
+
+<span id="at9spro-p46-f12-unit" data-translation-unit="at9spro-p46-f12-unit"></span>
+
+<span id="at9spro-p46-f13-unit" data-translation-unit="at9spro-p46-f13-unit"></span>
+
+<span id="at9spro-p46-f14-unit" data-translation-unit="at9spro-p46-f14-unit"></span>
+
+<span id="at9spro-p46-f15-unit" data-translation-unit="at9spro-p46-f15-unit"></span>
+
+<span id="at9spro-p46-f16-unit" data-translation-unit="at9spro-p46-f16-unit"></span>
+
+<span id="at9spro-p46-f17-unit" data-translation-unit="at9spro-p46-f17-unit"></span>
+
+<span id="at9spro-p46-f18-unit" data-translation-unit="at9spro-p46-f18-unit"></span>
+
+<span id="at9spro-p46-f19-unit" data-translation-unit="at9spro-p46-f19-unit"></span>
+
+<span id="at9spro-p46-f20-unit" data-translation-unit="at9spro-p46-f20-unit"></span>
+
+<span id="at9spro-p46-f21-unit" data-translation-unit="at9spro-p46-f21-unit"></span>
+
+<span id="at9spro-p46-f22-unit" data-translation-unit="at9spro-p46-f22-unit"></span>
+
+<span id="at9spro-p46-f23-unit" data-translation-unit="at9spro-p46-f23-unit"></span>
+
+<span id="at9spro-p46-f24-unit" data-translation-unit="at9spro-p46-f24-unit"></span>
+
+<span id="at9spro-p47-body" data-translation-unit="at9spro-p47-body"></span>
+
+### 3.3.8 2エレベーターサーボ（ラダー付き、AILEVATOR、ACRO）
+
+<span id="at9spro-p47-f1-unit" data-translation-unit="at9spro-p47-f1-unit"></span>
+
+<span id="at9spro-p47-f2-unit" data-translation-unit="at9spro-p47-f2-unit"></span>
+
+<span id="at9spro-p47-f3-unit" data-translation-unit="at9spro-p47-f3-unit"></span>
+
+<span id="at9spro-p47-f4-unit" data-translation-unit="at9spro-p47-f4-unit"></span>
+
+<span id="at9spro-p47-f5-unit" data-translation-unit="at9spro-p47-f5-unit"></span>
+
+<span id="at9spro-p47-f6-unit" data-translation-unit="at9spro-p47-f6-unit"></span>
+
+<span id="at9spro-p47-f7-unit" data-translation-unit="at9spro-p47-f7-unit"></span>
+
+<span id="at9spro-p47-f8-unit" data-translation-unit="at9spro-p47-f8-unit"></span>
+
+<span id="at9spro-p47-f9-unit" data-translation-unit="at9spro-p47-f9-unit"></span>
+
+<span id="at9spro-p47-f10-unit" data-translation-unit="at9spro-p47-f10-unit"></span>
+
+<span id="at9spro-p47-f11-unit" data-translation-unit="at9spro-p47-f11-unit"></span>
+
+<span id="at9spro-p47-f12-unit" data-translation-unit="at9spro-p47-f12-unit"></span>
+
+<span id="at9spro-p47-f13-unit" data-translation-unit="at9spro-p47-f13-unit"></span>
+
+<span id="at9spro-p47-f14-unit" data-translation-unit="at9spro-p47-f14-unit"></span>
+
+<span id="at9spro-p47-f15-unit" data-translation-unit="at9spro-p47-f15-unit"></span>
+
+<span id="at9spro-p47-f16-unit" data-translation-unit="at9spro-p47-f16-unit"></span>
+
+<span id="at9spro-p47-f17-unit" data-translation-unit="at9spro-p47-f17-unit"></span>
+
+<span id="at9spro-p48-body" data-translation-unit="at9spro-p48-body"></span>
+
+### 3.3.9 スナップロール（ACRO）
+
+<span id="at9spro-p48-f1-unit" data-translation-unit="at9spro-p48-f1-unit"></span>
+
+<span id="at9spro-p48-f2-unit" data-translation-unit="at9spro-p48-f2-unit"></span>
+
+<span id="at9spro-p48-f3-unit" data-translation-unit="at9spro-p48-f3-unit"></span>
+
+<span id="at9spro-p48-f4-unit" data-translation-unit="at9spro-p48-f4-unit"></span>
+
+<span id="at9spro-p48-f5-unit" data-translation-unit="at9spro-p48-f5-unit"></span>
+
+<span id="at9spro-p48-f6-unit" data-translation-unit="at9spro-p48-f6-unit"></span>
+
+<span id="at9spro-p48-f7-unit" data-translation-unit="at9spro-p48-f7-unit"></span>
+
+<span id="at9spro-p48-f8-unit" data-translation-unit="at9spro-p48-f8-unit"></span>
+
+<span id="at9spro-p48-f9-unit" data-translation-unit="at9spro-p48-f9-unit"></span>
+
+<span id="at9spro-p48-f10-unit" data-translation-unit="at9spro-p48-f10-unit"></span>
+
+<span id="at9spro-p48-f11-unit" data-translation-unit="at9spro-p48-f11-unit"></span>
+
+<span id="at9spro-p48-f12-unit" data-translation-unit="at9spro-p48-f12-unit"></span>
+
+<span id="at9spro-p48-f13-unit" data-translation-unit="at9spro-p48-f13-unit"></span>
+
+<span id="at9spro-p48-f14-unit" data-translation-unit="at9spro-p48-f14-unit"></span>
+
+<span id="at9spro-p48-f15-unit" data-translation-unit="at9spro-p48-f15-unit"></span>
+
+<span id="at9spro-p48-f16-unit" data-translation-unit="at9spro-p48-f16-unit"></span>
+
+<span id="at9spro-p48-f17-unit" data-translation-unit="at9spro-p48-f17-unit"></span>
+
+<span id="at9spro-p48-f18-unit" data-translation-unit="at9spro-p48-f18-unit"></span>
+
+<span id="at9spro-p48-f19-unit" data-translation-unit="at9spro-p48-f19-unit"></span>
+
+<span id="at9spro-p48-f20-unit" data-translation-unit="at9spro-p48-f20-unit"></span>
+
+<span id="at9spro-p48-f21-unit" data-translation-unit="at9spro-p48-f21-unit"></span>
+
+<span id="at9spro-p48-f22-unit" data-translation-unit="at9spro-p48-f22-unit"></span>
+
+<span id="at9spro-p48-f23-unit" data-translation-unit="at9spro-p48-f23-unit"></span>
+
+<span id="at9spro-p48-f24-unit" data-translation-unit="at9spro-p48-f24-unit"></span>
+
+<span id="at9spro-p49-body" data-translation-unit="at9spro-p49-body"></span>
+
+### 3.3.10 Vテール（V-TAIL、ACRO／GLID）
+
+<span id="at9spro-p49-f1-unit" data-translation-unit="at9spro-p49-f1-unit"></span>
+
+<span id="at9spro-p49-f2-unit" data-translation-unit="at9spro-p49-f2-unit"></span>
+
+<span id="at9spro-p49-f3-unit" data-translation-unit="at9spro-p49-f3-unit"></span>
+
+<span id="at9spro-p49-f4-unit" data-translation-unit="at9spro-p49-f4-unit"></span>
+
+<span id="at9spro-p49-f5-unit" data-translation-unit="at9spro-p49-f5-unit"></span>
+
+<span id="at9spro-p49-f6-unit" data-translation-unit="at9spro-p49-f6-unit"></span>
+
+<span id="at9spro-p49-f7-unit" data-translation-unit="at9spro-p49-f7-unit"></span>
+
+<span id="at9spro-p49-f8-unit" data-translation-unit="at9spro-p49-f8-unit"></span>
+
+<span id="at9spro-p49-f9-unit" data-translation-unit="at9spro-p49-f9-unit"></span>
+
+<span id="at9spro-p49-f10-unit" data-translation-unit="at9spro-p49-f10-unit"></span>
+
+<span id="at9spro-p49-f11-unit" data-translation-unit="at9spro-p49-f11-unit"></span>
+
+<span id="at9spro-p49-f12-unit" data-translation-unit="at9spro-p49-f12-unit"></span>
+
+<span id="at9spro-p49-f13-unit" data-translation-unit="at9spro-p49-f13-unit"></span>
+
+<span id="at9spro-p49-f14-unit" data-translation-unit="at9spro-p49-f14-unit"></span>
+
+<span id="at9spro-p49-f15-unit" data-translation-unit="at9spro-p49-f15-unit"></span>
+
+<span id="at9spro-p49-f16-unit" data-translation-unit="at9spro-p49-f16-unit"></span>
+
+<span id="at9spro-p49-f17-unit" data-translation-unit="at9spro-p49-f17-unit"></span>
+
+<span id="at9spro-p49-f18-unit" data-translation-unit="at9spro-p49-f18-unit"></span>
+
+<span id="at9spro-p49-f19-unit" data-translation-unit="at9spro-p49-f19-unit"></span>
+
+<span id="at9spro-p49-f20-unit" data-translation-unit="at9spro-p49-f20-unit"></span>
+
+<span id="at9spro-p49-f21-unit" data-translation-unit="at9spro-p49-f21-unit"></span>
+
+<span id="at9spro-p49-f22-unit" data-translation-unit="at9spro-p49-f22-unit"></span>
+
+<span id="at9spro-p49-f23-unit" data-translation-unit="at9spro-p49-f23-unit"></span>
+
+<span id="at9spro-p49-f24-unit" data-translation-unit="at9spro-p49-f24-unit"></span>
+
+<span id="at9spro-p49-f25-unit" data-translation-unit="at9spro-p49-f25-unit"></span>
+
+<span id="at9spro-p49-f26-unit" data-translation-unit="at9spro-p49-f26-unit"></span>
+
+<span id="at9spro-p49-f27-unit" data-translation-unit="at9spro-p49-f27-unit"></span>
+
+<span id="at9spro-p49-f28-unit" data-translation-unit="at9spro-p49-f28-unit"></span>
+
+<span id="at9spro-p49-f29-unit" data-translation-unit="at9spro-p49-f29-unit"></span>
+
+<span id="at9spro-p49-f30-unit" data-translation-unit="at9spro-p49-f30-unit"></span>
+
+<span id="at9spro-p49-f31-unit" data-translation-unit="at9spro-p49-f31-unit"></span>
+
+<span id="at9spro-p49-f32-unit" data-translation-unit="at9spro-p49-f32-unit"></span>
+
+<span id="at9spro-p49-f33-unit" data-translation-unit="at9spro-p49-f33-unit"></span>
+
+<span id="at9spro-p50-body" data-translation-unit="at9spro-p50-body"></span>
+
+### 3.3.11 エレボン（ELEVON）
+
+### 3.3.12 ジャイロ感度（Gyro Sense）
+
+<span id="at9spro-p50-f1-unit" data-translation-unit="at9spro-p50-f1-unit"></span>
+
+<span id="at9spro-p50-f2-unit" data-translation-unit="at9spro-p50-f2-unit"></span>
+
+<span id="at9spro-p50-f3-unit" data-translation-unit="at9spro-p50-f3-unit"></span>
+
+<span id="at9spro-p50-f4-unit" data-translation-unit="at9spro-p50-f4-unit"></span>
+
+<span id="at9spro-p50-f5-unit" data-translation-unit="at9spro-p50-f5-unit"></span>
+
+<span id="at9spro-p50-f6-unit" data-translation-unit="at9spro-p50-f6-unit"></span>
+
+<span id="at9spro-p50-f7-unit" data-translation-unit="at9spro-p50-f7-unit"></span>
+
+<span id="at9spro-p50-f8-unit" data-translation-unit="at9spro-p50-f8-unit"></span>
+
+<span id="at9spro-p50-f9-unit" data-translation-unit="at9spro-p50-f9-unit"></span>
+
+<span id="at9spro-p50-f10-unit" data-translation-unit="at9spro-p50-f10-unit"></span>
+
+<span id="at9spro-p50-f11-unit" data-translation-unit="at9spro-p50-f11-unit"></span>
+
+<span id="at9spro-p50-f12-unit" data-translation-unit="at9spro-p50-f12-unit"></span>
+
+<span id="at9spro-p50-f13-unit" data-translation-unit="at9spro-p50-f13-unit"></span>
+
+<span id="at9spro-p50-f14-unit" data-translation-unit="at9spro-p50-f14-unit"></span>
+
+<span id="at9spro-p50-f15-unit" data-translation-unit="at9spro-p50-f15-unit"></span>
+
+<span id="at9spro-p50-f16-unit" data-translation-unit="at9spro-p50-f16-unit"></span>
+
+<span id="at9spro-p50-f17-unit" data-translation-unit="at9spro-p50-f17-unit"></span>
+
+<span id="at9spro-p50-f18-unit" data-translation-unit="at9spro-p50-f18-unit"></span>
+
+<span id="at9spro-p50-f19-unit" data-translation-unit="at9spro-p50-f19-unit"></span>
+
+<span id="at9spro-p50-f20-unit" data-translation-unit="at9spro-p50-f20-unit"></span>
+
+<span id="at9spro-p50-f21-unit" data-translation-unit="at9spro-p50-f21-unit"></span>
+
+<span id="at9spro-p50-f22-unit" data-translation-unit="at9spro-p50-f22-unit"></span>
+
+<span id="at9spro-p50-f23-unit" data-translation-unit="at9spro-p50-f23-unit"></span>
+
+<span id="at9spro-p50-f24-unit" data-translation-unit="at9spro-p50-f24-unit"></span>
+
+<span id="at9spro-p50-f25-unit" data-translation-unit="at9spro-p50-f25-unit"></span>
+
+<span id="at9spro-p50-f26-unit" data-translation-unit="at9spro-p50-f26-unit"></span>
+
+<span id="at9spro-p50-f27-unit" data-translation-unit="at9spro-p50-f27-unit"></span>
+
+<span id="at9spro-p50-f28-unit" data-translation-unit="at9spro-p50-f28-unit"></span>
+
+<span id="at9spro-p51-body" data-translation-unit="at9spro-p51-body"></span>
+
+### 3.3.13 スロットルディレイ（THR-DELAY、ACRO）
+
+<span id="at9spro-p51-f1-unit" data-translation-unit="at9spro-p51-f1-unit"></span>
+
+<span id="at9spro-p51-f2-unit" data-translation-unit="at9spro-p51-f2-unit"></span>
+
+<span id="at9spro-p51-f3-unit" data-translation-unit="at9spro-p51-f3-unit"></span>
+
+<span id="at9spro-p51-f4-unit" data-translation-unit="at9spro-p51-f4-unit"></span>
+
+<span id="at9spro-p51-f5-unit" data-translation-unit="at9spro-p51-f5-unit"></span>
+
+<span id="at9spro-p51-f6-unit" data-translation-unit="at9spro-p51-f6-unit"></span>
+
+<span id="at9spro-p51-f7-unit" data-translation-unit="at9spro-p51-f7-unit"></span>
+
+<span id="at9spro-p51-f8-unit" data-translation-unit="at9spro-p51-f8-unit"></span>
+
+<span id="at9spro-p51-f9-unit" data-translation-unit="at9spro-p51-f9-unit"></span>
+
+<span id="at9spro-p51-f10-unit" data-translation-unit="at9spro-p51-f10-unit"></span>
+
+<span id="at9spro-p51-f11-unit" data-translation-unit="at9spro-p51-f11-unit"></span>
+
+<span id="at9spro-p51-f12-unit" data-translation-unit="at9spro-p51-f12-unit"></span>
+
+<span id="at9spro-p51-f13-unit" data-translation-unit="at9spro-p51-f13-unit"></span>
+
+<span id="at9spro-p51-f14-unit" data-translation-unit="at9spro-p51-f14-unit"></span>
+
+<span id="at9spro-p51-f15-unit" data-translation-unit="at9spro-p51-f15-unit"></span>
+
+<span id="at9spro-p51-f16-unit" data-translation-unit="at9spro-p51-f16-unit"></span>
+
+<span id="at9spro-p51-f17-unit" data-translation-unit="at9spro-p51-f17-unit"></span>
+
+<span id="at9spro-p51-f18-unit" data-translation-unit="at9spro-p51-f18-unit"></span>
+
+<span id="at9spro-p51-f19-unit" data-translation-unit="at9spro-p51-f19-unit"></span>
+
+<span id="at9spro-p51-f20-unit" data-translation-unit="at9spro-p51-f20-unit"></span>
+
+<span id="at9spro-p51-f21-unit" data-translation-unit="at9spro-p51-f21-unit"></span>
+
+<span id="at9spro-p51-f22-unit" data-translation-unit="at9spro-p51-f22-unit"></span>
+
+<span id="at9spro-p52-body" data-translation-unit="at9spro-p52-body"></span>
+
+### 3.3.14 スロットルカーブ（THR CURVE、ACRO）
+
+<span id="at9spro-p52-f1-unit" data-translation-unit="at9spro-p52-f1-unit"></span>
+
+<span id="at9spro-p52-f2-unit" data-translation-unit="at9spro-p52-f2-unit"></span>
+
+<span id="at9spro-p52-f3-unit" data-translation-unit="at9spro-p52-f3-unit"></span>
+
+<span id="at9spro-p52-f4-unit" data-translation-unit="at9spro-p52-f4-unit"></span>
+
+<span id="at9spro-p52-f5-unit" data-translation-unit="at9spro-p52-f5-unit"></span>
+
+<span id="at9spro-p52-f6-unit" data-translation-unit="at9spro-p52-f6-unit"></span>
+
+<span id="at9spro-p52-f7-unit" data-translation-unit="at9spro-p52-f7-unit"></span>
+
+<span id="at9spro-p52-f8-unit" data-translation-unit="at9spro-p52-f8-unit"></span>
+
+<span id="at9spro-p52-f9-unit" data-translation-unit="at9spro-p52-f9-unit"></span>
+
+<span id="at9spro-p52-f10-unit" data-translation-unit="at9spro-p52-f10-unit"></span>
+
+<span id="at9spro-p52-f11-unit" data-translation-unit="at9spro-p52-f11-unit"></span>
+
+<span id="at9spro-p52-f12-unit" data-translation-unit="at9spro-p52-f12-unit"></span>
+
+<span id="at9spro-p52-f13-unit" data-translation-unit="at9spro-p52-f13-unit"></span>
+
+<span id="at9spro-p52-f14-unit" data-translation-unit="at9spro-p52-f14-unit"></span>
+
+<span id="at9spro-p52-f15-unit" data-translation-unit="at9spro-p52-f15-unit"></span>
+
+<span id="at9spro-p52-f16-unit" data-translation-unit="at9spro-p52-f16-unit"></span>
+
+<span id="at9spro-p52-f17-unit" data-translation-unit="at9spro-p52-f17-unit"></span>
+
+<span id="at9spro-p52-f18-unit" data-translation-unit="at9spro-p52-f18-unit"></span>
+
+<span id="at9spro-p52-f19-unit" data-translation-unit="at9spro-p52-f19-unit"></span>
+
+<span id="at9spro-p52-f20-unit" data-translation-unit="at9spro-p52-f20-unit"></span>
+
+<span id="at9spro-p52-f21-unit" data-translation-unit="at9spro-p52-f21-unit"></span>
+
+<span id="at9spro-p52-f22-unit" data-translation-unit="at9spro-p52-f22-unit"></span>
+
+<span id="at9spro-p52-f23-unit" data-translation-unit="at9spro-p52-f23-unit"></span>
+
+<span id="at9spro-p52-f24-unit" data-translation-unit="at9spro-p52-f24-unit"></span>
+
+<span id="at9spro-p52-f25-unit" data-translation-unit="at9spro-p52-f25-unit"></span>
+
+<span id="at9spro-p52-f26-unit" data-translation-unit="at9spro-p52-f26-unit"></span>
+
+<span id="at9spro-p52-f27-unit" data-translation-unit="at9spro-p52-f27-unit"></span>
+
+<span id="at9spro-p52-f28-unit" data-translation-unit="at9spro-p52-f28-unit"></span>
+
+<span id="at9spro-p52-f29-unit" data-translation-unit="at9spro-p52-f29-unit"></span>
+
+<span id="at9spro-p52-f30-unit" data-translation-unit="at9spro-p52-f30-unit"></span>
+
+<span id="at9spro-p52-f31-unit" data-translation-unit="at9spro-p52-f31-unit"></span>
+
+<span id="at9spro-p52-f32-unit" data-translation-unit="at9spro-p52-f32-unit"></span>
+
+<span id="at9spro-p52-f33-unit" data-translation-unit="at9spro-p52-f33-unit"></span>
+
+<span id="at9spro-p52-f34-unit" data-translation-unit="at9spro-p52-f34-unit"></span>
+
+<span id="at9spro-p53-body" data-translation-unit="at9spro-p53-body"></span>
+
+### 3.3.15 スロットルニードルミキシング（THROTTLE-NEEDLE、ACRO／HELI）
+
+<span id="at9spro-p53-f1-unit" data-translation-unit="at9spro-p53-f1-unit"></span>
+
+<span id="at9spro-p53-f2-unit" data-translation-unit="at9spro-p53-f2-unit"></span>
+
+<span id="at9spro-p53-f3-unit" data-translation-unit="at9spro-p53-f3-unit"></span>
+
+<span id="at9spro-p54-body" data-translation-unit="at9spro-p54-body"></span>
+
+## 第4部 グライダーモデルの機能
+
+### 4.1 GLIDのBASICメニュー設定
+
+<span id="at9spro-p54-f1-unit" data-translation-unit="at9spro-p54-f1-unit"></span>
+
+<span id="at9spro-p54-f2-unit" data-translation-unit="at9spro-p54-f2-unit"></span>
+
+<span id="at9spro-p54-f3-unit" data-translation-unit="at9spro-p54-f3-unit"></span>
+
+<span id="at9spro-p54-f4-unit" data-translation-unit="at9spro-p54-f4-unit"></span>
+
+<span id="at9spro-p54-f5-unit" data-translation-unit="at9spro-p54-f5-unit"></span>
+
+<span id="at9spro-p54-f6-unit" data-translation-unit="at9spro-p54-f6-unit"></span>
+
+<span id="at9spro-p54-f7-unit" data-translation-unit="at9spro-p54-f7-unit"></span>
+
+<span id="at9spro-p54-f8-unit" data-translation-unit="at9spro-p54-f8-unit"></span>
+
+<span id="at9spro-p54-f9-unit" data-translation-unit="at9spro-p54-f9-unit"></span>
+
+<span id="at9spro-p54-f10-unit" data-translation-unit="at9spro-p54-f10-unit"></span>
+
+<span id="at9spro-p54-f11-unit" data-translation-unit="at9spro-p54-f11-unit"></span>
+
+<span id="at9spro-p54-f12-unit" data-translation-unit="at9spro-p54-f12-unit"></span>
+
+<span id="at9spro-p54-f13-unit" data-translation-unit="at9spro-p54-f13-unit"></span>
+
+<span id="at9spro-p54-f14-unit" data-translation-unit="at9spro-p54-f14-unit"></span>
+
+<span id="at9spro-p54-f15-unit" data-translation-unit="at9spro-p54-f15-unit"></span>
+
+<span id="at9spro-p54-f16-unit" data-translation-unit="at9spro-p54-f16-unit"></span>
+
+<span id="at9spro-p54-f17-unit" data-translation-unit="at9spro-p54-f17-unit"></span>
+
+<span id="at9spro-p54-f18-unit" data-translation-unit="at9spro-p54-f18-unit"></span>
+
+<span id="at9spro-p54-f19-unit" data-translation-unit="at9spro-p54-f19-unit"></span>
+
+<span id="at9spro-p54-f20-unit" data-translation-unit="at9spro-p54-f20-unit"></span>
+
+<span id="at9spro-p54-f21-unit" data-translation-unit="at9spro-p54-f21-unit"></span>
+
+<span id="at9spro-p54-f22-unit" data-translation-unit="at9spro-p54-f22-unit"></span>
+
+<span id="at9spro-p54-f23-unit" data-translation-unit="at9spro-p54-f23-unit"></span>
+
+<span id="at9spro-p54-f24-unit" data-translation-unit="at9spro-p54-f24-unit"></span>
+
+<span id="at9spro-p54-f25-unit" data-translation-unit="at9spro-p54-f25-unit"></span>
+
+<span id="at9spro-p54-f26-unit" data-translation-unit="at9spro-p54-f26-unit"></span>
+
+<span id="at9spro-p54-f27-unit" data-translation-unit="at9spro-p54-f27-unit"></span>
+
+<span id="at9spro-p54-f28-unit" data-translation-unit="at9spro-p54-f28-unit"></span>
+
+<span id="at9spro-p54-f29-unit" data-translation-unit="at9spro-p54-f29-unit"></span>
+
+<span id="at9spro-p54-f30-unit" data-translation-unit="at9spro-p54-f30-unit"></span>
+
+<span id="at9spro-p54-f31-unit" data-translation-unit="at9spro-p54-f31-unit"></span>
+
+<span id="at9spro-p54-f32-unit" data-translation-unit="at9spro-p54-f32-unit"></span>
+
+<span id="at9spro-p54-f33-unit" data-translation-unit="at9spro-p54-f33-unit"></span>
+
+<span id="at9spro-p55-body" data-translation-unit="at9spro-p55-body"></span>
+
+<span id="at9spro-p55-f1-unit" data-translation-unit="at9spro-p55-f1-unit"></span>
+
+<span id="at9spro-p55-f2-unit" data-translation-unit="at9spro-p55-f2-unit"></span>
+
+<span id="at9spro-p55-f3-unit" data-translation-unit="at9spro-p55-f3-unit"></span>
+
+<span id="at9spro-p55-f4-unit" data-translation-unit="at9spro-p55-f4-unit"></span>
+
+<span id="at9spro-p55-f5-unit" data-translation-unit="at9spro-p55-f5-unit"></span>
+
+<span id="at9spro-p55-f6-unit" data-translation-unit="at9spro-p55-f6-unit"></span>
+
+<span id="at9spro-p55-f7-unit" data-translation-unit="at9spro-p55-f7-unit"></span>
+
+<span id="at9spro-p55-f8-unit" data-translation-unit="at9spro-p55-f8-unit"></span>
+
+<span id="at9spro-p55-f9-unit" data-translation-unit="at9spro-p55-f9-unit"></span>
+
+<span id="at9spro-p55-f10-unit" data-translation-unit="at9spro-p55-f10-unit"></span>
+
+<span id="at9spro-p55-f11-unit" data-translation-unit="at9spro-p55-f11-unit"></span>
+
+<span id="at9spro-p55-f12-unit" data-translation-unit="at9spro-p55-f12-unit"></span>
+
+<span id="at9spro-p55-f13-unit" data-translation-unit="at9spro-p55-f13-unit"></span>
+
+<span id="at9spro-p55-f14-unit" data-translation-unit="at9spro-p55-f14-unit"></span>
+
+<span id="at9spro-p55-f15-unit" data-translation-unit="at9spro-p55-f15-unit"></span>
+
+<span id="at9spro-p55-f16-unit" data-translation-unit="at9spro-p55-f16-unit"></span>
+
+<span id="at9spro-p55-f17-unit" data-translation-unit="at9spro-p55-f17-unit"></span>
+
+<span id="at9spro-p55-f18-unit" data-translation-unit="at9spro-p55-f18-unit"></span>
+
+<span id="at9spro-p55-f19-unit" data-translation-unit="at9spro-p55-f19-unit"></span>
+
+<span id="at9spro-p55-f20-unit" data-translation-unit="at9spro-p55-f20-unit"></span>
+
+<span id="at9spro-p55-f21-unit" data-translation-unit="at9spro-p55-f21-unit"></span>
+
+<span id="at9spro-p55-f22-unit" data-translation-unit="at9spro-p55-f22-unit"></span>
+
+<span id="at9spro-p55-f23-unit" data-translation-unit="at9spro-p55-f23-unit"></span>
+
+<span id="at9spro-p55-f24-unit" data-translation-unit="at9spro-p55-f24-unit"></span>
+
+<span id="at9spro-p55-f25-unit" data-translation-unit="at9spro-p55-f25-unit"></span>
+
+<span id="at9spro-p55-f26-unit" data-translation-unit="at9spro-p55-f26-unit"></span>
+
+<span id="at9spro-p55-f27-unit" data-translation-unit="at9spro-p55-f27-unit"></span>
+
+<span id="at9spro-p55-f28-unit" data-translation-unit="at9spro-p55-f28-unit"></span>
+
+<span id="at9spro-p55-f29-unit" data-translation-unit="at9spro-p55-f29-unit"></span>
+
+<span id="at9spro-p55-f30-unit" data-translation-unit="at9spro-p55-f30-unit"></span>
+
+<span id="at9spro-p55-f31-unit" data-translation-unit="at9spro-p55-f31-unit"></span>
+
+<span id="at9spro-p55-f32-unit" data-translation-unit="at9spro-p55-f32-unit"></span>
+
+<span id="at9spro-p55-f33-unit" data-translation-unit="at9spro-p55-f33-unit"></span>
+
+<span id="at9spro-p55-f34-unit" data-translation-unit="at9spro-p55-f34-unit"></span>
+
+<span id="at9spro-p55-f35-unit" data-translation-unit="at9spro-p55-f35-unit"></span>
+
+<span id="at9spro-p55-f36-unit" data-translation-unit="at9spro-p55-f36-unit"></span>
+
+<span id="at9spro-p56-body" data-translation-unit="at9spro-p56-body"></span>
+
+### 4.2 GLIDのモデルタイプを設定する
+
+<span id="at9spro-p56-f1-unit" data-translation-unit="at9spro-p56-f1-unit"></span>
+
+<span id="at9spro-p56-f2-unit" data-translation-unit="at9spro-p56-f2-unit"></span>
+
+<span id="at9spro-p56-f3-unit" data-translation-unit="at9spro-p56-f3-unit"></span>
+
+<span id="at9spro-p56-f4-unit" data-translation-unit="at9spro-p56-f4-unit"></span>
+
+<span id="at9spro-p56-f5-unit" data-translation-unit="at9spro-p56-f5-unit"></span>
+
+<span id="at9spro-p56-f6-unit" data-translation-unit="at9spro-p56-f6-unit"></span>
+
+<span id="at9spro-p56-f7-unit" data-translation-unit="at9spro-p56-f7-unit"></span>
+
+<span id="at9spro-p56-f8-unit" data-translation-unit="at9spro-p56-f8-unit"></span>
+
+<span id="at9spro-p56-f9-unit" data-translation-unit="at9spro-p56-f9-unit"></span>
+
+<span id="at9spro-p56-f10-unit" data-translation-unit="at9spro-p56-f10-unit"></span>
+
+<span id="at9spro-p56-f11-unit" data-translation-unit="at9spro-p56-f11-unit"></span>
+
+<span id="at9spro-p56-f12-unit" data-translation-unit="at9spro-p56-f12-unit"></span>
+
+<span id="at9spro-p56-f13-unit" data-translation-unit="at9spro-p56-f13-unit"></span>
+
+<span id="at9spro-p56-f14-unit" data-translation-unit="at9spro-p56-f14-unit"></span>
+
+<span id="at9spro-p56-f15-unit" data-translation-unit="at9spro-p56-f15-unit"></span>
+
+<span id="at9spro-p56-f16-unit" data-translation-unit="at9spro-p56-f16-unit"></span>
+
+<span id="at9spro-p56-f17-unit" data-translation-unit="at9spro-p56-f17-unit"></span>
+
+<span id="at9spro-p56-f18-unit" data-translation-unit="at9spro-p56-f18-unit"></span>
+
+<span id="at9spro-p56-f19-unit" data-translation-unit="at9spro-p56-f19-unit"></span>
+
+<span id="at9spro-p56-f20-unit" data-translation-unit="at9spro-p56-f20-unit"></span>
+
+<span id="at9spro-p56-f21-unit" data-translation-unit="at9spro-p56-f21-unit"></span>
+
+<span id="at9spro-p56-f22-unit" data-translation-unit="at9spro-p56-f22-unit"></span>
+
+<span id="at9spro-p56-f23-unit" data-translation-unit="at9spro-p56-f23-unit"></span>
+
+<span id="at9spro-p56-f24-unit" data-translation-unit="at9spro-p56-f24-unit"></span>
+
+<span id="at9spro-p56-f25-unit" data-translation-unit="at9spro-p56-f25-unit"></span>
+
+<span id="at9spro-p56-f26-unit" data-translation-unit="at9spro-p56-f26-unit"></span>
+
+<span id="at9spro-p56-f27-unit" data-translation-unit="at9spro-p56-f27-unit"></span>
+
+<span id="at9spro-p56-f28-unit" data-translation-unit="at9spro-p56-f28-unit"></span>
+
+<span id="at9spro-p56-f29-unit" data-translation-unit="at9spro-p56-f29-unit"></span>
+
+<span id="at9spro-p56-f30-unit" data-translation-unit="at9spro-p56-f30-unit"></span>
+
+<span id="at9spro-p56-f31-unit" data-translation-unit="at9spro-p56-f31-unit"></span>
+
+<span id="at9spro-p56-f32-unit" data-translation-unit="at9spro-p56-f32-unit"></span>
+
+<span id="at9spro-p56-f33-unit" data-translation-unit="at9spro-p56-f33-unit"></span>
+
+<span id="at9spro-p56-f34-unit" data-translation-unit="at9spro-p56-f34-unit"></span>
+
+<span id="at9spro-p56-f35-unit" data-translation-unit="at9spro-p56-f35-unit"></span>
+
+<span id="at9spro-p56-f36-unit" data-translation-unit="at9spro-p56-f36-unit"></span>
+
+<span id="at9spro-p56-f37-unit" data-translation-unit="at9spro-p56-f37-unit"></span>
+
+<span id="at9spro-p57-body" data-translation-unit="at9spro-p57-body"></span>
+
+### 4.3 GLIDのADVANCEメニュー
+
+#### 4.3.1 AILE DIFF
+
+#### 4.3.2 FLAPERON（GLID 1A+1F）
+
+#### 4.3.3 V-TAIL
+
+#### 4.3.4 OFFSET（GLID 2A+2F）
+
+<span id="at9spro-p57-f1-unit" data-translation-unit="at9spro-p57-f1-unit"></span>
+
+<span id="at9spro-p57-f2-unit" data-translation-unit="at9spro-p57-f2-unit"></span>
+
+<span id="at9spro-p57-f3-unit" data-translation-unit="at9spro-p57-f3-unit"></span>
+
+<span id="at9spro-p58-body" data-translation-unit="at9spro-p58-body"></span>
+
+#### 4.3.5 スタートディレイ（START DELAY、GLID 1A+1Fのみ）
+
+<span id="at9spro-p58-f1-unit" data-translation-unit="at9spro-p58-f1-unit"></span>
+
+<span id="at9spro-p58-f2-unit" data-translation-unit="at9spro-p58-f2-unit"></span>
+
+<span id="at9spro-p58-f3-unit" data-translation-unit="at9spro-p58-f3-unit"></span>
+
+<span id="at9spro-p58-f4-unit" data-translation-unit="at9spro-p58-f4-unit"></span>
+
+<span id="at9spro-p58-f5-unit" data-translation-unit="at9spro-p58-f5-unit"></span>
+
+<span id="at9spro-p58-f6-unit" data-translation-unit="at9spro-p58-f6-unit"></span>
+
+<span id="at9spro-p58-f7-unit" data-translation-unit="at9spro-p58-f7-unit"></span>
+
+<span id="at9spro-p58-f8-unit" data-translation-unit="at9spro-p58-f8-unit"></span>
+
+<span id="at9spro-p58-f9-unit" data-translation-unit="at9spro-p58-f9-unit"></span>
+
+<span id="at9spro-p58-f10-unit" data-translation-unit="at9spro-p58-f10-unit"></span>
+
+<span id="at9spro-p58-f11-unit" data-translation-unit="at9spro-p58-f11-unit"></span>
+
+<span id="at9spro-p58-f12-unit" data-translation-unit="at9spro-p58-f12-unit"></span>
+
+<span id="at9spro-p58-f13-unit" data-translation-unit="at9spro-p58-f13-unit"></span>
+
+<span id="at9spro-p58-f14-unit" data-translation-unit="at9spro-p58-f14-unit"></span>
+
+<span id="at9spro-p58-f15-unit" data-translation-unit="at9spro-p58-f15-unit"></span>
+
+<span id="at9spro-p58-f16-unit" data-translation-unit="at9spro-p58-f16-unit"></span>
+
+<span id="at9spro-p59-body" data-translation-unit="at9spro-p59-body"></span>
+
+### 4.3.6 キャンバーフラップ（見出し原文：CHAMBER-FLP）
+
+<span id="at9spro-p59-f1-unit" data-translation-unit="at9spro-p59-f1-unit"></span>
+
+<span id="at9spro-p59-f2-unit" data-translation-unit="at9spro-p59-f2-unit"></span>
+
+<span id="at9spro-p59-f3-unit" data-translation-unit="at9spro-p59-f3-unit"></span>
+
+<span id="at9spro-p59-f4-unit" data-translation-unit="at9spro-p59-f4-unit"></span>
+
+<span id="at9spro-p59-f5-unit" data-translation-unit="at9spro-p59-f5-unit"></span>
+
+<span id="at9spro-p59-f6-unit" data-translation-unit="at9spro-p59-f6-unit"></span>
+
+<span id="at9spro-p59-f7-unit" data-translation-unit="at9spro-p59-f7-unit"></span>
+
+<span id="at9spro-p59-f8-unit" data-translation-unit="at9spro-p59-f8-unit"></span>
+
+<span id="at9spro-p59-f9-unit" data-translation-unit="at9spro-p59-f9-unit"></span>
+
+<span id="at9spro-p59-f10-unit" data-translation-unit="at9spro-p59-f10-unit"></span>
+
+<span id="at9spro-p59-f11-unit" data-translation-unit="at9spro-p59-f11-unit"></span>
+
+<span id="at9spro-p59-f12-unit" data-translation-unit="at9spro-p59-f12-unit"></span>
+
+<span id="at9spro-p59-f13-unit" data-translation-unit="at9spro-p59-f13-unit"></span>
+
+<span id="at9spro-p59-f14-unit" data-translation-unit="at9spro-p59-f14-unit"></span>
+
+<span id="at9spro-p59-f15-unit" data-translation-unit="at9spro-p59-f15-unit"></span>
+
+<span id="at9spro-p59-f16-unit" data-translation-unit="at9spro-p59-f16-unit"></span>
+
+<span id="at9spro-p59-f17-unit" data-translation-unit="at9spro-p59-f17-unit"></span>
+
+<span id="at9spro-p59-f18-unit" data-translation-unit="at9spro-p59-f18-unit"></span>
+
+<span id="at9spro-p59-f19-unit" data-translation-unit="at9spro-p59-f19-unit"></span>
+
+<span id="at9spro-p59-f20-unit" data-translation-unit="at9spro-p59-f20-unit"></span>
+
+<span id="at9spro-p59-f21-unit" data-translation-unit="at9spro-p59-f21-unit"></span>
+
+<span id="at9spro-p59-f22-unit" data-translation-unit="at9spro-p59-f22-unit"></span>
+
+<span id="at9spro-p59-f23-unit" data-translation-unit="at9spro-p59-f23-unit"></span>
+
+<span id="at9spro-p59-f24-unit" data-translation-unit="at9spro-p59-f24-unit"></span>
+
+<span id="at9spro-p59-f25-unit" data-translation-unit="at9spro-p59-f25-unit"></span>
+
+<span id="at9spro-p59-f26-unit" data-translation-unit="at9spro-p59-f26-unit"></span>
+
+<span id="at9spro-p59-f27-unit" data-translation-unit="at9spro-p59-f27-unit"></span>
+
+<span id="at9spro-p59-f28-unit" data-translation-unit="at9spro-p59-f28-unit"></span>
+
+<span id="at9spro-p59-f29-unit" data-translation-unit="at9spro-p59-f29-unit"></span>
+
+<span id="at9spro-p59-f30-unit" data-translation-unit="at9spro-p59-f30-unit"></span>
+
+<span id="at9spro-p59-f31-unit" data-translation-unit="at9spro-p59-f31-unit"></span>
+
+<span id="at9spro-p59-f32-unit" data-translation-unit="at9spro-p59-f32-unit"></span>
+
+<span id="at9spro-p59-f33-unit" data-translation-unit="at9spro-p59-f33-unit"></span>
+
+<span id="at9spro-p59-f34-unit" data-translation-unit="at9spro-p59-f34-unit"></span>
+
+<span id="at9spro-p59-f35-unit" data-translation-unit="at9spro-p59-f35-unit"></span>
+
+<span id="at9spro-p59-f36-unit" data-translation-unit="at9spro-p59-f36-unit"></span>
+
+<span id="at9spro-p59-f37-unit" data-translation-unit="at9spro-p59-f37-unit"></span>
+
+<span id="at9spro-p60-body" data-translation-unit="at9spro-p60-body"></span>
+
+### 4.3.7 キャンバーミキシング（Camber Mixing）
+
+### 4.3.8 バタフライ（クロウ）ミキシング（BUTTERFLY）
+
+<span id="at9spro-p60-f1-unit" data-translation-unit="at9spro-p60-f1-unit"></span>
+
+<span id="at9spro-p60-f2-unit" data-translation-unit="at9spro-p60-f2-unit"></span>
+
+<span id="at9spro-p60-f3-unit" data-translation-unit="at9spro-p60-f3-unit"></span>
+
+<span id="at9spro-p60-f4-unit" data-translation-unit="at9spro-p60-f4-unit"></span>
+
+<span id="at9spro-p60-f5-unit" data-translation-unit="at9spro-p60-f5-unit"></span>
+
+<span id="at9spro-p60-f6-unit" data-translation-unit="at9spro-p60-f6-unit"></span>
+
+<span id="at9spro-p60-f7-unit" data-translation-unit="at9spro-p60-f7-unit"></span>
+
+<span id="at9spro-p60-f8-unit" data-translation-unit="at9spro-p60-f8-unit"></span>
+
+<span id="at9spro-p60-f9-unit" data-translation-unit="at9spro-p60-f9-unit"></span>
+
+<span id="at9spro-p60-f10-unit" data-translation-unit="at9spro-p60-f10-unit"></span>
+
+<span id="at9spro-p60-f11-unit" data-translation-unit="at9spro-p60-f11-unit"></span>
+
+<span id="at9spro-p60-f12-unit" data-translation-unit="at9spro-p60-f12-unit"></span>
+
+<span id="at9spro-p60-f13-unit" data-translation-unit="at9spro-p60-f13-unit"></span>
+
+<span id="at9spro-p60-f14-unit" data-translation-unit="at9spro-p60-f14-unit"></span>
+
+<span id="at9spro-p60-f15-unit" data-translation-unit="at9spro-p60-f15-unit"></span>
+
+<span id="at9spro-p60-f16-unit" data-translation-unit="at9spro-p60-f16-unit"></span>
+
+<span id="at9spro-p60-f17-unit" data-translation-unit="at9spro-p60-f17-unit"></span>
+
+<span id="at9spro-p60-f18-unit" data-translation-unit="at9spro-p60-f18-unit"></span>
+
+<span id="at9spro-p60-f19-unit" data-translation-unit="at9spro-p60-f19-unit"></span>
+
+<span id="at9spro-p60-f20-unit" data-translation-unit="at9spro-p60-f20-unit"></span>
+
+<span id="at9spro-p60-f21-unit" data-translation-unit="at9spro-p60-f21-unit"></span>
+
+<span id="at9spro-p60-f22-unit" data-translation-unit="at9spro-p60-f22-unit"></span>
+
+<span id="at9spro-p60-f23-unit" data-translation-unit="at9spro-p60-f23-unit"></span>
+
+<span id="at9spro-p60-f24-unit" data-translation-unit="at9spro-p60-f24-unit"></span>
+
+<span id="at9spro-p60-f25-unit" data-translation-unit="at9spro-p60-f25-unit"></span>
+
+<span id="at9spro-p60-f26-unit" data-translation-unit="at9spro-p60-f26-unit"></span>
+
+<span id="at9spro-p60-f27-unit" data-translation-unit="at9spro-p60-f27-unit"></span>
+
+<span id="at9spro-p60-f28-unit" data-translation-unit="at9spro-p60-f28-unit"></span>
+
+<span id="at9spro-p60-f29-unit" data-translation-unit="at9spro-p60-f29-unit"></span>
+
+<span id="at9spro-p61-body" data-translation-unit="at9spro-p61-body"></span>
+
+<span id="at9spro-p61-f1-unit" data-translation-unit="at9spro-p61-f1-unit"></span>
+
+<span id="at9spro-p61-f2-unit" data-translation-unit="at9spro-p61-f2-unit"></span>
+
+<span id="at9spro-p61-f3-unit" data-translation-unit="at9spro-p61-f3-unit"></span>
+
+<span id="at9spro-p61-f4-unit" data-translation-unit="at9spro-p61-f4-unit"></span>
+
+<span id="at9spro-p61-f5-unit" data-translation-unit="at9spro-p61-f5-unit"></span>
+
+<span id="at9spro-p61-f6-unit" data-translation-unit="at9spro-p61-f6-unit"></span>
+
+<span id="at9spro-p61-f7-unit" data-translation-unit="at9spro-p61-f7-unit"></span>
+
+<span id="at9spro-p61-f8-unit" data-translation-unit="at9spro-p61-f8-unit"></span>
+
+<span id="at9spro-p61-f9-unit" data-translation-unit="at9spro-p61-f9-unit"></span>
+
+<span id="at9spro-p61-f10-unit" data-translation-unit="at9spro-p61-f10-unit"></span>
+
+<span id="at9spro-p61-f11-unit" data-translation-unit="at9spro-p61-f11-unit"></span>
+
+<span id="at9spro-p61-f12-unit" data-translation-unit="at9spro-p61-f12-unit"></span>
+
+<span id="at9spro-p61-f13-unit" data-translation-unit="at9spro-p61-f13-unit"></span>
+
+<span id="at9spro-p61-f14-unit" data-translation-unit="at9spro-p61-f14-unit"></span>
+
+<span id="at9spro-p61-f15-unit" data-translation-unit="at9spro-p61-f15-unit"></span>
+
+<span id="at9spro-p61-f16-unit" data-translation-unit="at9spro-p61-f16-unit"></span>
+
+<span id="at9spro-p61-f17-unit" data-translation-unit="at9spro-p61-f17-unit"></span>
+
+<span id="at9spro-p61-f18-unit" data-translation-unit="at9spro-p61-f18-unit"></span>
+
+<span id="at9spro-p61-f19-unit" data-translation-unit="at9spro-p61-f19-unit"></span>
+
+<span id="at9spro-p61-f20-unit" data-translation-unit="at9spro-p61-f20-unit"></span>
+
+<span id="at9spro-p61-f21-unit" data-translation-unit="at9spro-p61-f21-unit"></span>
+
+<span id="at9spro-p61-f22-unit" data-translation-unit="at9spro-p61-f22-unit"></span>
+
+<span id="at9spro-p61-f23-unit" data-translation-unit="at9spro-p61-f23-unit"></span>
+
+<span id="at9spro-p61-f24-unit" data-translation-unit="at9spro-p61-f24-unit"></span>
+
+<span id="at9spro-p61-f25-unit" data-translation-unit="at9spro-p61-f25-unit"></span>
+
+<span id="at9spro-p62-body" data-translation-unit="at9spro-p62-body"></span>
+
+#### 4.3.9 エルロン／ラダーミキシング（AILE／RUDD MIX）
+
+#### 4.3.10 エレベーター→フラップミキシング（ELEV-FLAP）
+
+#### 4.3.11 エルロン→フラップミキシング（AILE-FLAP、GLID 2A+2Fのみ）
+
+<span id="at9spro-p62-f1-unit" data-translation-unit="at9spro-p62-f1-unit"></span>
+
+<span id="at9spro-p62-f2-unit" data-translation-unit="at9spro-p62-f2-unit"></span>
+
+<span id="at9spro-p62-f3-unit" data-translation-unit="at9spro-p62-f3-unit"></span>
+
+<span id="at9spro-p62-f4-unit" data-translation-unit="at9spro-p62-f4-unit"></span>
+
+<span id="at9spro-p62-f5-unit" data-translation-unit="at9spro-p62-f5-unit"></span>
+
+<span id="at9spro-p62-f6-unit" data-translation-unit="at9spro-p62-f6-unit"></span>
+
+<span id="at9spro-p62-f7-unit" data-translation-unit="at9spro-p62-f7-unit"></span>
+
+<span id="at9spro-p62-f8-unit" data-translation-unit="at9spro-p62-f8-unit"></span>
+
+<span id="at9spro-p62-f9-unit" data-translation-unit="at9spro-p62-f9-unit"></span>
+
+<span id="at9spro-p62-f10-unit" data-translation-unit="at9spro-p62-f10-unit"></span>
+
+<span id="at9spro-p62-f11-unit" data-translation-unit="at9spro-p62-f11-unit"></span>
+
+<span id="at9spro-p62-f12-unit" data-translation-unit="at9spro-p62-f12-unit"></span>
+
+<span id="at9spro-p62-f13-unit" data-translation-unit="at9spro-p62-f13-unit"></span>
+
+<span id="at9spro-p62-f14-unit" data-translation-unit="at9spro-p62-f14-unit"></span>
+
+<span id="at9spro-p62-f15-unit" data-translation-unit="at9spro-p62-f15-unit"></span>
+
+<span id="at9spro-p62-f16-unit" data-translation-unit="at9spro-p62-f16-unit"></span>
+
+<span id="at9spro-p62-f17-unit" data-translation-unit="at9spro-p62-f17-unit"></span>
+
+<span id="at9spro-p62-f18-unit" data-translation-unit="at9spro-p62-f18-unit"></span>
+
+<span id="at9spro-p62-f19-unit" data-translation-unit="at9spro-p62-f19-unit"></span>
+
+<span id="at9spro-p62-f20-unit" data-translation-unit="at9spro-p62-f20-unit"></span>
+
+<span id="at9spro-p62-f21-unit" data-translation-unit="at9spro-p62-f21-unit"></span>
+
+<span id="at9spro-p62-f22-unit" data-translation-unit="at9spro-p62-f22-unit"></span>
+
+<span id="at9spro-p63-body" data-translation-unit="at9spro-p63-body"></span>
+
+#### 4.3.12 スポイラーミキシング（SPOILER MIX、GLID）
+
+<span id="at9spro-p63-f1-unit" data-translation-unit="at9spro-p63-f1-unit"></span>
+
+<span id="at9spro-p63-f2-unit" data-translation-unit="at9spro-p63-f2-unit"></span>
+
+<span id="at9spro-p63-f3-unit" data-translation-unit="at9spro-p63-f3-unit"></span>
+
+<span id="at9spro-p63-f4-unit" data-translation-unit="at9spro-p63-f4-unit"></span>
+
+<span id="at9spro-p63-f5-unit" data-translation-unit="at9spro-p63-f5-unit"></span>
+
+<span id="at9spro-p63-f6-unit" data-translation-unit="at9spro-p63-f6-unit"></span>
+
+<span id="at9spro-p63-f7-unit" data-translation-unit="at9spro-p63-f7-unit"></span>
+
+<span id="at9spro-p63-f8-unit" data-translation-unit="at9spro-p63-f8-unit"></span>
+
+<span id="at9spro-p63-f9-unit" data-translation-unit="at9spro-p63-f9-unit"></span>
+
+<span id="at9spro-p63-f10-unit" data-translation-unit="at9spro-p63-f10-unit"></span>
+
+<span id="at9spro-p63-f11-unit" data-translation-unit="at9spro-p63-f11-unit"></span>
+
+<span id="at9spro-p63-f12-unit" data-translation-unit="at9spro-p63-f12-unit"></span>
+
+<span id="at9spro-p63-f13-unit" data-translation-unit="at9spro-p63-f13-unit"></span>
+
+<span id="at9spro-p63-f14-unit" data-translation-unit="at9spro-p63-f14-unit"></span>
+
+<span id="at9spro-p63-f15-unit" data-translation-unit="at9spro-p63-f15-unit"></span>
+
+<span id="at9spro-p63-f16-unit" data-translation-unit="at9spro-p63-f16-unit"></span>
+
+<span id="at9spro-p63-f17-unit" data-translation-unit="at9spro-p63-f17-unit"></span>
+
+<span id="at9spro-p63-f18-unit" data-translation-unit="at9spro-p63-f18-unit"></span>
+
+<span id="at9spro-p63-f19-unit" data-translation-unit="at9spro-p63-f19-unit"></span>
+
+<span id="at9spro-p63-f20-unit" data-translation-unit="at9spro-p63-f20-unit"></span>
+
+<span id="at9spro-p63-f21-unit" data-translation-unit="at9spro-p63-f21-unit"></span>
+
+<span id="at9spro-p63-f22-unit" data-translation-unit="at9spro-p63-f22-unit"></span>
+
+<span id="at9spro-p63-f23-unit" data-translation-unit="at9spro-p63-f23-unit"></span>
+
+<span id="at9spro-p63-f24-unit" data-translation-unit="at9spro-p63-f24-unit"></span>
+
+<span id="at9spro-p63-f25-unit" data-translation-unit="at9spro-p63-f25-unit"></span>
+
+<span id="at9spro-p63-f26-unit" data-translation-unit="at9spro-p63-f26-unit"></span>
+
+<span id="at9spro-p63-f27-unit" data-translation-unit="at9spro-p63-f27-unit"></span>
+
+<span id="at9spro-p63-f28-unit" data-translation-unit="at9spro-p63-f28-unit"></span>
+
+<span id="at9spro-p63-f29-unit" data-translation-unit="at9spro-p63-f29-unit"></span>
+
+<span id="at9spro-p63-f30-unit" data-translation-unit="at9spro-p63-f30-unit"></span>
+
+<span id="at9spro-p63-f31-unit" data-translation-unit="at9spro-p63-f31-unit"></span>
+
+<span id="at9spro-p63-f32-unit" data-translation-unit="at9spro-p63-f32-unit"></span>
+
+<span id="at9spro-p63-f33-unit" data-translation-unit="at9spro-p63-f33-unit"></span>
+
+<span id="at9spro-p63-f34-unit" data-translation-unit="at9spro-p63-f34-unit"></span>
+
+<span id="at9spro-p63-f35-unit" data-translation-unit="at9spro-p63-f35-unit"></span>
+
+<span id="at9spro-p63-f36-unit" data-translation-unit="at9spro-p63-f36-unit"></span>
+
+<span id="at9spro-p63-f37-unit" data-translation-unit="at9spro-p63-f37-unit"></span>
+
+<span id="at9spro-p63-f38-unit" data-translation-unit="at9spro-p63-f38-unit"></span>
+
+<span id="at9spro-p63-f39-unit" data-translation-unit="at9spro-p63-f39-unit"></span>
+
+<span id="at9spro-p63-f40-unit" data-translation-unit="at9spro-p63-f40-unit"></span>
+
+<span id="at9spro-p63-f41-unit" data-translation-unit="at9spro-p63-f41-unit"></span>
+
+<span id="at9spro-p63-f42-unit" data-translation-unit="at9spro-p63-f42-unit"></span>
+
+<span id="at9spro-p63-f43-unit" data-translation-unit="at9spro-p63-f43-unit"></span>
+
+<span id="at9spro-p63-f44-unit" data-translation-unit="at9spro-p63-f44-unit"></span>
+
+<span id="at9spro-p63-f45-unit" data-translation-unit="at9spro-p63-f45-unit"></span>
+
+<span id="at9spro-p63-f46-unit" data-translation-unit="at9spro-p63-f46-unit"></span>
+
+<span id="at9spro-p63-f47-unit" data-translation-unit="at9spro-p63-f47-unit"></span>
+
+<span id="at9spro-p63-f48-unit" data-translation-unit="at9spro-p63-f48-unit"></span>
+
+<span id="at9spro-p63-f49-unit" data-translation-unit="at9spro-p63-f49-unit"></span>
+
+<span id="at9spro-p63-f50-unit" data-translation-unit="at9spro-p63-f50-unit"></span>
+
+<span id="at9spro-p63-f51-unit" data-translation-unit="at9spro-p63-f51-unit"></span>
+
+<span id="at9spro-p63-f52-unit" data-translation-unit="at9spro-p63-f52-unit"></span>
+
+<span id="at9spro-p63-f53-unit" data-translation-unit="at9spro-p63-f53-unit"></span>
+
+<span id="at9spro-p63-f54-unit" data-translation-unit="at9spro-p63-f54-unit"></span>
+
+<span id="at9spro-p64-body" data-translation-unit="at9spro-p64-body"></span>
+
+#### 4.3.13 FLAP-TRIM
+
+#### 4.3.14 コンディション（CONDITION）
+
+## 第5部 ヘリコプターモデルの機能
+
+### 5.1 ヘリコプターの基本設定
+
+<span id="at9spro-p64-f1-unit" data-translation-unit="at9spro-p64-f1-unit"></span>
+
+<span id="at9spro-p64-f2-unit" data-translation-unit="at9spro-p64-f2-unit"></span>
+
+<span id="at9spro-p65-body" data-translation-unit="at9spro-p65-body"></span>
+
+<span id="at9spro-p65-f1-unit" data-translation-unit="at9spro-p65-f1-unit"></span>
+
+<span id="at9spro-p65-f2-unit" data-translation-unit="at9spro-p65-f2-unit"></span>
+
+<span id="at9spro-p65-f3-unit" data-translation-unit="at9spro-p65-f3-unit"></span>
+
+<span id="at9spro-p65-f4-unit" data-translation-unit="at9spro-p65-f4-unit"></span>
+
+<span id="at9spro-p65-f5-unit" data-translation-unit="at9spro-p65-f5-unit"></span>
+
+<span id="at9spro-p65-f6-unit" data-translation-unit="at9spro-p65-f6-unit"></span>
+
+<span id="at9spro-p65-f7-unit" data-translation-unit="at9spro-p65-f7-unit"></span>
+
+<span id="at9spro-p65-f8-unit" data-translation-unit="at9spro-p65-f8-unit"></span>
+
+<span id="at9spro-p65-f9-unit" data-translation-unit="at9spro-p65-f9-unit"></span>
+
+<span id="at9spro-p65-f10-unit" data-translation-unit="at9spro-p65-f10-unit"></span>
+
+<span id="at9spro-p65-f11-unit" data-translation-unit="at9spro-p65-f11-unit"></span>
+
+<span id="at9spro-p65-f12-unit" data-translation-unit="at9spro-p65-f12-unit"></span>
+
+<span id="at9spro-p65-f13-unit" data-translation-unit="at9spro-p65-f13-unit"></span>
+
+<span id="at9spro-p65-f14-unit" data-translation-unit="at9spro-p65-f14-unit"></span>
+
+<span id="at9spro-p65-f15-unit" data-translation-unit="at9spro-p65-f15-unit"></span>
+
+<span id="at9spro-p65-f16-unit" data-translation-unit="at9spro-p65-f16-unit"></span>
+
+<span id="at9spro-p65-f17-unit" data-translation-unit="at9spro-p65-f17-unit"></span>
+
+<span id="at9spro-p65-f18-unit" data-translation-unit="at9spro-p65-f18-unit"></span>
+
+<span id="at9spro-p65-f19-unit" data-translation-unit="at9spro-p65-f19-unit"></span>
+
+<span id="at9spro-p65-f20-unit" data-translation-unit="at9spro-p65-f20-unit"></span>
+
+<span id="at9spro-p65-f21-unit" data-translation-unit="at9spro-p65-f21-unit"></span>
+
+<span id="at9spro-p65-f22-unit" data-translation-unit="at9spro-p65-f22-unit"></span>
+
+<span id="at9spro-p65-f23-unit" data-translation-unit="at9spro-p65-f23-unit"></span>
+
+<span id="at9spro-p65-f24-unit" data-translation-unit="at9spro-p65-f24-unit"></span>
+
+<span id="at9spro-p65-f25-unit" data-translation-unit="at9spro-p65-f25-unit"></span>
+
+<span id="at9spro-p65-f26-unit" data-translation-unit="at9spro-p65-f26-unit"></span>
+
+<span id="at9spro-p65-f27-unit" data-translation-unit="at9spro-p65-f27-unit"></span>
+
+<span id="at9spro-p65-f28-unit" data-translation-unit="at9spro-p65-f28-unit"></span>
+
+<span id="at9spro-p65-f29-unit" data-translation-unit="at9spro-p65-f29-unit"></span>
+
+<span id="at9spro-p65-f30-unit" data-translation-unit="at9spro-p65-f30-unit"></span>
+
+<span id="at9spro-p65-f31-unit" data-translation-unit="at9spro-p65-f31-unit"></span>
+
+<span id="at9spro-p65-f32-unit" data-translation-unit="at9spro-p65-f32-unit"></span>
+
+<span id="at9spro-p65-f33-unit" data-translation-unit="at9spro-p65-f33-unit"></span>
+
+<span id="at9spro-p65-f34-unit" data-translation-unit="at9spro-p65-f34-unit"></span>
+
+<span id="at9spro-p65-f35-unit" data-translation-unit="at9spro-p65-f35-unit"></span>
+
+<span id="at9spro-p65-f36-unit" data-translation-unit="at9spro-p65-f36-unit"></span>
+
+<span id="at9spro-p65-f37-unit" data-translation-unit="at9spro-p65-f37-unit"></span>
+
+<span id="at9spro-p65-f38-unit" data-translation-unit="at9spro-p65-f38-unit"></span>
+
+<span id="at9spro-p65-f39-unit" data-translation-unit="at9spro-p65-f39-unit"></span>
+
+<span id="at9spro-p65-f40-unit" data-translation-unit="at9spro-p65-f40-unit"></span>
+
+<span id="at9spro-p65-f41-unit" data-translation-unit="at9spro-p65-f41-unit"></span>
+
+<span id="at9spro-p65-f42-unit" data-translation-unit="at9spro-p65-f42-unit"></span>
+
+<span id="at9spro-p65-f43-unit" data-translation-unit="at9spro-p65-f43-unit"></span>
+
+<span id="at9spro-p65-f44-unit" data-translation-unit="at9spro-p65-f44-unit"></span>
+
+<span id="at9spro-p65-f45-unit" data-translation-unit="at9spro-p65-f45-unit"></span>
+
+<span id="at9spro-p65-f46-unit" data-translation-unit="at9spro-p65-f46-unit"></span>
+
+<span id="at9spro-p65-f47-unit" data-translation-unit="at9spro-p65-f47-unit"></span>
+
+<span id="at9spro-p65-f48-unit" data-translation-unit="at9spro-p65-f48-unit"></span>
+
+<span id="at9spro-p65-f49-unit" data-translation-unit="at9spro-p65-f49-unit"></span>
+
+<span id="at9spro-p65-f50-unit" data-translation-unit="at9spro-p65-f50-unit"></span>
+
+<span id="at9spro-p65-f51-unit" data-translation-unit="at9spro-p65-f51-unit"></span>
+
+<span id="at9spro-p65-f52-unit" data-translation-unit="at9spro-p65-f52-unit"></span>
+
+<span id="at9spro-p65-f53-unit" data-translation-unit="at9spro-p65-f53-unit"></span>
+
+<span id="at9spro-p65-f54-unit" data-translation-unit="at9spro-p65-f54-unit"></span>
+
+<span id="at9spro-p65-f55-unit" data-translation-unit="at9spro-p65-f55-unit"></span>
+
+<span id="at9spro-p65-f56-unit" data-translation-unit="at9spro-p65-f56-unit"></span>
+
+<span id="at9spro-p65-f57-unit" data-translation-unit="at9spro-p65-f57-unit"></span>
+
+<span id="at9spro-p65-f58-unit" data-translation-unit="at9spro-p65-f58-unit"></span>
+
+<span id="at9spro-p65-f59-unit" data-translation-unit="at9spro-p65-f59-unit"></span>
+
+<span id="at9spro-p65-f60-unit" data-translation-unit="at9spro-p65-f60-unit"></span>
+
+<span id="at9spro-p66-body" data-translation-unit="at9spro-p66-body"></span>
+
+### 5.2 HELI専用のBASICメニュー
+
+<span id="at9spro-p66-f1-unit" data-translation-unit="at9spro-p66-f1-unit"></span>
+
+<span id="at9spro-p66-f2-unit" data-translation-unit="at9spro-p66-f2-unit"></span>
+
+<span id="at9spro-p66-f3-unit" data-translation-unit="at9spro-p66-f3-unit"></span>
+
+<span id="at9spro-p66-f4-unit" data-translation-unit="at9spro-p66-f4-unit"></span>
+
+<span id="at9spro-p66-f5-unit" data-translation-unit="at9spro-p66-f5-unit"></span>
+
+<span id="at9spro-p66-f6-unit" data-translation-unit="at9spro-p66-f6-unit"></span>
+
+<span id="at9spro-p66-f7-unit" data-translation-unit="at9spro-p66-f7-unit"></span>
+
+<span id="at9spro-p66-f8-unit" data-translation-unit="at9spro-p66-f8-unit"></span>
+
+<span id="at9spro-p66-f9-unit" data-translation-unit="at9spro-p66-f9-unit"></span>
+
+<span id="at9spro-p66-f10-unit" data-translation-unit="at9spro-p66-f10-unit"></span>
+
+<span id="at9spro-p66-f11-unit" data-translation-unit="at9spro-p66-f11-unit"></span>
+
+<span id="at9spro-p66-f12-unit" data-translation-unit="at9spro-p66-f12-unit"></span>
+
+<span id="at9spro-p66-f13-unit" data-translation-unit="at9spro-p66-f13-unit"></span>
+
+<span id="at9spro-p66-f14-unit" data-translation-unit="at9spro-p66-f14-unit"></span>
+
+<span id="at9spro-p66-f15-unit" data-translation-unit="at9spro-p66-f15-unit"></span>
+
+<span id="at9spro-p66-f16-unit" data-translation-unit="at9spro-p66-f16-unit"></span>
+
+<span id="at9spro-p66-f17-unit" data-translation-unit="at9spro-p66-f17-unit"></span>
+
+<span id="at9spro-p66-f18-unit" data-translation-unit="at9spro-p66-f18-unit"></span>
+
+<span id="at9spro-p66-f19-unit" data-translation-unit="at9spro-p66-f19-unit"></span>
+
+<span id="at9spro-p66-f20-unit" data-translation-unit="at9spro-p66-f20-unit"></span>
+
+<span id="at9spro-p66-f21-unit" data-translation-unit="at9spro-p66-f21-unit"></span>
+
+<span id="at9spro-p66-f22-unit" data-translation-unit="at9spro-p66-f22-unit"></span>
+
+<span id="at9spro-p66-f23-unit" data-translation-unit="at9spro-p66-f23-unit"></span>
+
+<span id="at9spro-p66-f24-unit" data-translation-unit="at9spro-p66-f24-unit"></span>
+
+<span id="at9spro-p66-f25-unit" data-translation-unit="at9spro-p66-f25-unit"></span>
+
+<span id="at9spro-p66-f26-unit" data-translation-unit="at9spro-p66-f26-unit"></span>
+
+<span id="at9spro-p66-f27-unit" data-translation-unit="at9spro-p66-f27-unit"></span>
+
+<span id="at9spro-p66-f28-unit" data-translation-unit="at9spro-p66-f28-unit"></span>
+
+<span id="at9spro-p66-f29-unit" data-translation-unit="at9spro-p66-f29-unit"></span>
+
+<span id="at9spro-p66-f30-unit" data-translation-unit="at9spro-p66-f30-unit"></span>
+
+<span id="at9spro-p66-f31-unit" data-translation-unit="at9spro-p66-f31-unit"></span>
+
+<span id="at9spro-p66-f32-unit" data-translation-unit="at9spro-p66-f32-unit"></span>
+
+<span id="at9spro-p66-f33-unit" data-translation-unit="at9spro-p66-f33-unit"></span>
+
+<span id="at9spro-p66-f34-unit" data-translation-unit="at9spro-p66-f34-unit"></span>
+
+<span id="at9spro-p66-f35-unit" data-translation-unit="at9spro-p66-f35-unit"></span>
+
+<span id="at9spro-p67-body" data-translation-unit="at9spro-p67-body"></span>
+
+#### ヘリコプターのスワッシュプレート形式
+
+#### 5.2.1 スワッシュプレート形式
+
+<span id="at9spro-p67-f1-unit" data-translation-unit="at9spro-p67-f1-unit"></span>
+
+<span id="at9spro-p67-f2-unit" data-translation-unit="at9spro-p67-f2-unit"></span>
+
+<span id="at9spro-p67-f3-unit" data-translation-unit="at9spro-p67-f3-unit"></span>
+
+<span id="at9spro-p67-f4-unit" data-translation-unit="at9spro-p67-f4-unit"></span>
+
+<span id="at9spro-p67-f5-unit" data-translation-unit="at9spro-p67-f5-unit"></span>
+
+<span id="at9spro-p67-f6-unit" data-translation-unit="at9spro-p67-f6-unit"></span>
+
+<span id="at9spro-p67-f7-unit" data-translation-unit="at9spro-p67-f7-unit"></span>
+
+<span id="at9spro-p67-f8-unit" data-translation-unit="at9spro-p67-f8-unit"></span>
+
+<span id="at9spro-p67-f9-unit" data-translation-unit="at9spro-p67-f9-unit"></span>
+
+<span id="at9spro-p67-f10-unit" data-translation-unit="at9spro-p67-f10-unit"></span>
+
+<span id="at9spro-p67-f11-unit" data-translation-unit="at9spro-p67-f11-unit"></span>
+
+<span id="at9spro-p67-f12-unit" data-translation-unit="at9spro-p67-f12-unit"></span>
+
+<span id="at9spro-p67-f13-unit" data-translation-unit="at9spro-p67-f13-unit"></span>
+
+<span id="at9spro-p67-f14-unit" data-translation-unit="at9spro-p67-f14-unit"></span>
+
+<span id="at9spro-p67-f15-unit" data-translation-unit="at9spro-p67-f15-unit"></span>
+
+<span id="at9spro-p67-f16-unit" data-translation-unit="at9spro-p67-f16-unit"></span>
+
+<span id="at9spro-p67-f17-unit" data-translation-unit="at9spro-p67-f17-unit"></span>
+
+<span id="at9spro-p67-f18-unit" data-translation-unit="at9spro-p67-f18-unit"></span>
+
+<span id="at9spro-p68-body" data-translation-unit="at9spro-p68-body"></span>
+
+#### 5.2.2 スワッシュ機能レート（SWASH AFR、原典見出し：SWH1を除く）
+
+<span id="at9spro-p68-f1-unit" data-translation-unit="at9spro-p68-f1-unit"></span>
+
+<span id="at9spro-p68-f2-unit" data-translation-unit="at9spro-p68-f2-unit"></span>
+
+<span id="at9spro-p69-body" data-translation-unit="at9spro-p69-body"></span>
+
+### 5.3 HELI専用のADVANCEメニュー
+
+#### 5.3.1 スロットルカーブとピッチカーブ（THR-CURVE、PIT-CURVE）
+
+<span id="at9spro-p69-f1-unit" data-translation-unit="at9spro-p69-f1-unit"></span>
+
+<span id="at9spro-p69-f2-unit" data-translation-unit="at9spro-p69-f2-unit"></span>
+
+<span id="at9spro-p69-f3-unit" data-translation-unit="at9spro-p69-f3-unit"></span>
+
+<span id="at9spro-p69-f4-unit" data-translation-unit="at9spro-p69-f4-unit"></span>
+
+<span id="at9spro-p69-f5-unit" data-translation-unit="at9spro-p69-f5-unit"></span>
+
+<span id="at9spro-p69-f6-unit" data-translation-unit="at9spro-p69-f6-unit"></span>
+
+<span id="at9spro-p69-f7-unit" data-translation-unit="at9spro-p69-f7-unit"></span>
+
+<span id="at9spro-p69-f8-unit" data-translation-unit="at9spro-p69-f8-unit"></span>
+
+<span id="at9spro-p69-f9-unit" data-translation-unit="at9spro-p69-f9-unit"></span>
+
+<span id="at9spro-p69-f10-unit" data-translation-unit="at9spro-p69-f10-unit"></span>
+
+<span id="at9spro-p69-f11-unit" data-translation-unit="at9spro-p69-f11-unit"></span>
+
+<span id="at9spro-p70-body" data-translation-unit="at9spro-p70-body"></span>
+
+#### 5.3.2 レボリューションミキシング（REVO MIX）
+
+<span id="at9spro-p70-f1-unit" data-translation-unit="at9spro-p70-f1-unit"></span>
+
+<span id="at9spro-p70-f2-unit" data-translation-unit="at9spro-p70-f2-unit"></span>
+
+<span id="at9spro-p70-f3-unit" data-translation-unit="at9spro-p70-f3-unit"></span>
+
+<span id="at9spro-p70-f4-unit" data-translation-unit="at9spro-p70-f4-unit"></span>
+
+<span id="at9spro-p70-f5-unit" data-translation-unit="at9spro-p70-f5-unit"></span>
+
+<span id="at9spro-p70-f6-unit" data-translation-unit="at9spro-p70-f6-unit"></span>
+
+<span id="at9spro-p70-f7-unit" data-translation-unit="at9spro-p70-f7-unit"></span>
+
+<span id="at9spro-p71-body-before" data-translation-unit="at9spro-p71-body-before"></span>
+
+<span id="at9spro-p71-body-avcs-warning" data-translation-unit="at9spro-p71-body-avcs-warning"></span>
+
+:::caution[注意]
+**ヘディングホールド／AVCSジャイロとREVOミキシングを併用しないでください。**
+:::
+
+<span id="at9spro-p71-body-after" data-translation-unit="at9spro-p71-body-after"></span>
+
+:::caution[原典確認待ち]
+この箇所は原典の記載または適用条件に確認が必要なため、操作・接続の案内を保留しています。確認が取れるまで、この箇所を根拠に機器を操作・接続しないでください。
+:::
+
+<span id="at9spro-p71-f1-unit" data-translation-unit="at9spro-p71-f1-unit"></span>
+
+<span id="at9spro-p71-f2-unit" data-translation-unit="at9spro-p71-f2-unit"></span>
+
+<span id="at9spro-p71-f3-unit" data-translation-unit="at9spro-p71-f3-unit"></span>
+
+<span id="at9spro-p71-f4-unit" data-translation-unit="at9spro-p71-f4-unit"></span>
+
+<span id="at9spro-p71-f5-unit" data-translation-unit="at9spro-p71-f5-unit"></span>
+
+<span id="at9spro-p71-f6-unit" data-translation-unit="at9spro-p71-f6-unit"></span>
+
+<span id="at9spro-p71-f7-unit" data-translation-unit="at9spro-p71-f7-unit"></span>
+
+<span id="at9spro-p71-f8-unit" data-translation-unit="at9spro-p71-f8-unit"></span>
+
+<span id="at9spro-p71-f9-unit" data-translation-unit="at9spro-p71-f9-unit"></span>
+
+<span id="at9spro-p71-f10-unit" data-translation-unit="at9spro-p71-f10-unit"></span>
+
+<span id="at9spro-p71-f11-unit" data-translation-unit="at9spro-p71-f11-unit"></span>
+
+<span id="at9spro-p71-f12-unit" data-translation-unit="at9spro-p71-f12-unit"></span>
+
+<span id="at9spro-p71-f13-unit" data-translation-unit="at9spro-p71-f13-unit"></span>
+
+<span id="at9spro-p71-f14-unit" data-translation-unit="at9spro-p71-f14-unit"></span>
+
+<span id="at9spro-p71-f15-unit" data-translation-unit="at9spro-p71-f15-unit"></span>
+
+<span id="at9spro-p71-f16-unit" data-translation-unit="at9spro-p71-f16-unit"></span>
+
+<span id="at9spro-p71-f17-unit" data-translation-unit="at9spro-p71-f17-unit"></span>
+
+<span id="at9spro-p71-f18-unit" data-translation-unit="at9spro-p71-f18-unit"></span>
+
+<span id="at9spro-p71-f19-unit" data-translation-unit="at9spro-p71-f19-unit"></span>
+
+<span id="at9spro-p71-f20-unit" data-translation-unit="at9spro-p71-f20-unit"></span>
+
+<span id="at9spro-p71-f21-unit" data-translation-unit="at9spro-p71-f21-unit"></span>
+
+<span id="at9spro-p71-f22-unit" data-translation-unit="at9spro-p71-f22-unit"></span>
+
+<span id="at9spro-p71-f23-unit" data-translation-unit="at9spro-p71-f23-unit"></span>
+
+<span id="at9spro-p71-f24-unit" data-translation-unit="at9spro-p71-f24-unit"></span>
+
+<span id="at9spro-p71-f25-unit" data-translation-unit="at9spro-p71-f25-unit"></span>
+
+<span id="at9spro-p72-body" data-translation-unit="at9spro-p72-body"></span>
+
+### 5.3.3 GYRO SENSE
+
+### 5.3.4 THROTTLE HOLD
+
+<span id="at9spro-p72-f1-unit" data-translation-unit="at9spro-p72-f1-unit"></span>
+
+<span id="at9spro-p72-f2-unit" data-translation-unit="at9spro-p72-f2-unit"></span>
+
+<span id="at9spro-p72-f3-unit" data-translation-unit="at9spro-p72-f3-unit"></span>
+
+<span id="at9spro-p72-f4-unit" data-translation-unit="at9spro-p72-f4-unit"></span>
+
+<span id="at9spro-p72-f5-unit" data-translation-unit="at9spro-p72-f5-unit"></span>
+
+<span id="at9spro-p72-f6-unit" data-translation-unit="at9spro-p72-f6-unit"></span>
+
+<span id="at9spro-p72-f7-unit" data-translation-unit="at9spro-p72-f7-unit"></span>
+
+<span id="at9spro-p72-f8-unit" data-translation-unit="at9spro-p72-f8-unit"></span>
+
+<span id="at9spro-p72-f9-unit" data-translation-unit="at9spro-p72-f9-unit"></span>
+
+<span id="at9spro-p72-f10-unit" data-translation-unit="at9spro-p72-f10-unit"></span>
+
+<span id="at9spro-p72-f11-unit" data-translation-unit="at9spro-p72-f11-unit"></span>
+
+<span id="at9spro-p72-f12-unit" data-translation-unit="at9spro-p72-f12-unit"></span>
+
+<span id="at9spro-p72-f13-unit" data-translation-unit="at9spro-p72-f13-unit"></span>
+
+<span id="at9spro-p72-f14-unit" data-translation-unit="at9spro-p72-f14-unit"></span>
+
+<span id="at9spro-p72-f15-unit" data-translation-unit="at9spro-p72-f15-unit"></span>
+
+<span id="at9spro-p72-f16-unit" data-translation-unit="at9spro-p72-f16-unit"></span>
+
+<span id="at9spro-p72-f17-unit" data-translation-unit="at9spro-p72-f17-unit"></span>
+
+<span id="at9spro-p72-f18-unit" data-translation-unit="at9spro-p72-f18-unit"></span>
+
+<span id="at9spro-p72-f19-unit" data-translation-unit="at9spro-p72-f19-unit"></span>
+
+<span id="at9spro-p72-f20-unit" data-translation-unit="at9spro-p72-f20-unit"></span>
+
+<span id="at9spro-p72-f21-unit" data-translation-unit="at9spro-p72-f21-unit"></span>
+
+<span id="at9spro-p72-f22-unit" data-translation-unit="at9spro-p72-f22-unit"></span>
+
+<span id="at9spro-p72-f23-unit" data-translation-unit="at9spro-p72-f23-unit"></span>
+
+<span id="at9spro-p72-f24-unit" data-translation-unit="at9spro-p72-f24-unit"></span>
+
+<span id="at9spro-p72-f25-unit" data-translation-unit="at9spro-p72-f25-unit"></span>
+
+<span id="at9spro-p72-f26-unit" data-translation-unit="at9spro-p72-f26-unit"></span>
+
+<span id="at9spro-p73-body" data-translation-unit="at9spro-p73-body"></span>
+
+### 5.3.5 ホバリング調整（HOV-THR、HOV-PIT）
+
+<span id="at9spro-p73-f1-unit" data-translation-unit="at9spro-p73-f1-unit"></span>
+
+<span id="at9spro-p73-f2-unit" data-translation-unit="at9spro-p73-f2-unit"></span>
+
+<span id="at9spro-p73-f3-unit" data-translation-unit="at9spro-p73-f3-unit"></span>
+
+<span id="at9spro-p73-f4-unit" data-translation-unit="at9spro-p73-f4-unit"></span>
+
+<span id="at9spro-p73-f5-unit" data-translation-unit="at9spro-p73-f5-unit"></span>
+
+<span id="at9spro-p73-f6-unit" data-translation-unit="at9spro-p73-f6-unit"></span>
+
+<span id="at9spro-p73-f7-unit" data-translation-unit="at9spro-p73-f7-unit"></span>
+
+<span id="at9spro-p73-f8-unit" data-translation-unit="at9spro-p73-f8-unit"></span>
+
+<span id="at9spro-p73-f9-unit" data-translation-unit="at9spro-p73-f9-unit"></span>
+
+<span id="at9spro-p73-f10-unit" data-translation-unit="at9spro-p73-f10-unit"></span>
+
+<span id="at9spro-p73-f11-unit" data-translation-unit="at9spro-p73-f11-unit"></span>
+
+<span id="at9spro-p73-f12-unit" data-translation-unit="at9spro-p73-f12-unit"></span>
+
+<span id="at9spro-p73-f13-unit" data-translation-unit="at9spro-p73-f13-unit"></span>
+
+<span id="at9spro-p73-f14-unit" data-translation-unit="at9spro-p73-f14-unit"></span>
+
+<span id="at9spro-p73-f15-unit" data-translation-unit="at9spro-p73-f15-unit"></span>
+
+<span id="at9spro-p73-f16-unit" data-translation-unit="at9spro-p73-f16-unit"></span>
+
+<span id="at9spro-p73-f17-unit" data-translation-unit="at9spro-p73-f17-unit"></span>
+
+<span id="at9spro-p74-body" data-translation-unit="at9spro-p74-body"></span>
+
+### 5.3.6 ハイ／ローピッチ（HI/LO-PIT）
+
+<span id="at9spro-p74-f1-unit" data-translation-unit="at9spro-p74-f1-unit"></span>
+
+<span id="at9spro-p74-f2-unit" data-translation-unit="at9spro-p74-f2-unit"></span>
+
+<span id="at9spro-p74-f3-unit" data-translation-unit="at9spro-p74-f3-unit"></span>
+
+<span id="at9spro-p74-f4-unit" data-translation-unit="at9spro-p74-f4-unit"></span>
+
+<span id="at9spro-p74-f5-unit" data-translation-unit="at9spro-p74-f5-unit"></span>
+
+<span id="at9spro-p74-f6-unit" data-translation-unit="at9spro-p74-f6-unit"></span>
+
+<span id="at9spro-p74-f7-unit" data-translation-unit="at9spro-p74-f7-unit"></span>
+
+<span id="at9spro-p74-f8-unit" data-translation-unit="at9spro-p74-f8-unit"></span>
+
+<span id="at9spro-p74-f9-unit" data-translation-unit="at9spro-p74-f9-unit"></span>
+
+<span id="at9spro-p74-f10-unit" data-translation-unit="at9spro-p74-f10-unit"></span>
+
+<span id="at9spro-p74-f11-unit" data-translation-unit="at9spro-p74-f11-unit"></span>
+
+<span id="at9spro-p74-f12-unit" data-translation-unit="at9spro-p74-f12-unit"></span>
+
+<span id="at9spro-p74-f13-unit" data-translation-unit="at9spro-p74-f13-unit"></span>
+
+<span id="at9spro-p74-f14-unit" data-translation-unit="at9spro-p74-f14-unit"></span>
+
+<span id="at9spro-p74-f15-unit" data-translation-unit="at9spro-p74-f15-unit"></span>
+
+<span id="at9spro-p74-f16-unit" data-translation-unit="at9spro-p74-f16-unit"></span>
+
+<span id="at9spro-p74-f17-unit" data-translation-unit="at9spro-p74-f17-unit"></span>
+
+<span id="at9spro-p74-f18-unit" data-translation-unit="at9spro-p74-f18-unit"></span>
+
+<span id="at9spro-p74-f19-unit" data-translation-unit="at9spro-p74-f19-unit"></span>
+
+<span id="at9spro-p74-f20-unit" data-translation-unit="at9spro-p74-f20-unit"></span>
+
+<span id="at9spro-p74-f21-unit" data-translation-unit="at9spro-p74-f21-unit"></span>
+
+<span id="at9spro-p74-f22-unit" data-translation-unit="at9spro-p74-f22-unit"></span>
+
+<span id="at9spro-p74-f23-unit" data-translation-unit="at9spro-p74-f23-unit"></span>
+
+<span id="at9spro-p74-f24-unit" data-translation-unit="at9spro-p74-f24-unit"></span>
+
+<span id="at9spro-p74-f25-unit" data-translation-unit="at9spro-p74-f25-unit"></span>
+
+<span id="at9spro-p74-f26-unit" data-translation-unit="at9spro-p74-f26-unit"></span>
+
+<span id="at9spro-p74-f27-unit" data-translation-unit="at9spro-p74-f27-unit"></span>
+
+<span id="at9spro-p74-f28-unit" data-translation-unit="at9spro-p74-f28-unit"></span>
+
+<span id="at9spro-p74-f29-unit" data-translation-unit="at9spro-p74-f29-unit"></span>
+
+<span id="at9spro-p74-f30-unit" data-translation-unit="at9spro-p74-f30-unit"></span>
+
+<span id="at9spro-p74-f31-unit" data-translation-unit="at9spro-p74-f31-unit"></span>
+
+<span id="at9spro-p74-f32-unit" data-translation-unit="at9spro-p74-f32-unit"></span>
+
+<span id="at9spro-p75-body" data-translation-unit="at9spro-p75-body"></span>
+
+### 5.3.7 OFFSET
+
+### 5.3.8 DELAY
+
+<span id="at9spro-p75-f1-unit" data-translation-unit="at9spro-p75-f1-unit"></span>
+
+<span id="at9spro-p75-f2-unit" data-translation-unit="at9spro-p75-f2-unit"></span>
+
+<span id="at9spro-p75-f3-unit" data-translation-unit="at9spro-p75-f3-unit"></span>
+
+<span id="at9spro-p75-f4-unit" data-translation-unit="at9spro-p75-f4-unit"></span>
+
+<span id="at9spro-p75-f5-unit" data-translation-unit="at9spro-p75-f5-unit"></span>
+
+<span id="at9spro-p75-f6-unit" data-translation-unit="at9spro-p75-f6-unit"></span>
+
+<span id="at9spro-p75-f7-unit" data-translation-unit="at9spro-p75-f7-unit"></span>
+
+<span id="at9spro-p75-f8-unit" data-translation-unit="at9spro-p75-f8-unit"></span>
+
+<span id="at9spro-p75-f9-unit" data-translation-unit="at9spro-p75-f9-unit"></span>
+
+<span id="at9spro-p75-f10-unit" data-translation-unit="at9spro-p75-f10-unit"></span>
+
+<span id="at9spro-p75-f11-unit" data-translation-unit="at9spro-p75-f11-unit"></span>
+
+<span id="at9spro-p75-f12-unit" data-translation-unit="at9spro-p75-f12-unit"></span>
+
+<span id="at9spro-p75-f13-unit" data-translation-unit="at9spro-p75-f13-unit"></span>
+
+<span id="at9spro-p75-f14-unit" data-translation-unit="at9spro-p75-f14-unit"></span>
+
+<span id="at9spro-p75-f15-unit" data-translation-unit="at9spro-p75-f15-unit"></span>
+
+<span id="at9spro-p75-f16-unit" data-translation-unit="at9spro-p75-f16-unit"></span>
+
+<span id="at9spro-p75-f17-unit" data-translation-unit="at9spro-p75-f17-unit"></span>
+
+<span id="at9spro-p75-f18-unit" data-translation-unit="at9spro-p75-f18-unit"></span>
+
+<span id="at9spro-p75-f19-unit" data-translation-unit="at9spro-p75-f19-unit"></span>
+
+<span id="at9spro-p75-f20-unit" data-translation-unit="at9spro-p75-f20-unit"></span>
+
+<span id="at9spro-p75-f21-unit" data-translation-unit="at9spro-p75-f21-unit"></span>
+
+<span id="at9spro-p75-f22-unit" data-translation-unit="at9spro-p75-f22-unit"></span>
+
+<span id="at9spro-p75-f23-unit" data-translation-unit="at9spro-p75-f23-unit"></span>
+
+<span id="at9spro-p75-f24-unit" data-translation-unit="at9spro-p75-f24-unit"></span>
+
+<span id="at9spro-p75-f25-unit" data-translation-unit="at9spro-p75-f25-unit"></span>
+
+<span id="at9spro-p76-body" data-translation-unit="at9spro-p76-body"></span>
+
+### 5.3.9 GOVERNORS
+
+<span id="at9spro-p76-f1-unit" data-translation-unit="at9spro-p76-f1-unit"></span>
+
+<span id="at9spro-p76-f2-unit" data-translation-unit="at9spro-p76-f2-unit"></span>
+
+<span id="at9spro-p76-f3-unit" data-translation-unit="at9spro-p76-f3-unit"></span>
+
+<span id="at9spro-p76-f4-unit" data-translation-unit="at9spro-p76-f4-unit"></span>
+
+<span id="at9spro-p76-f5-unit" data-translation-unit="at9spro-p76-f5-unit"></span>
+
+<span id="at9spro-p76-f6-unit" data-translation-unit="at9spro-p76-f6-unit"></span>
+
+<span id="at9spro-p76-f7-unit" data-translation-unit="at9spro-p76-f7-unit"></span>
+
+<span id="at9spro-p76-f8-unit" data-translation-unit="at9spro-p76-f8-unit"></span>
+
+<span id="at9spro-p76-f9-unit" data-translation-unit="at9spro-p76-f9-unit"></span>
+
+<span id="at9spro-p76-f10-unit" data-translation-unit="at9spro-p76-f10-unit"></span>
+
+<span id="at9spro-p76-f11-unit" data-translation-unit="at9spro-p76-f11-unit"></span>
+
+<span id="at9spro-p76-f12-unit" data-translation-unit="at9spro-p76-f12-unit"></span>
+
+<span id="at9spro-p76-f13-unit" data-translation-unit="at9spro-p76-f13-unit"></span>
+
+<span id="at9spro-p76-f14-unit" data-translation-unit="at9spro-p76-f14-unit"></span>
+
+<span id="at9spro-p76-f15-unit" data-translation-unit="at9spro-p76-f15-unit"></span>
+
+<span id="at9spro-p76-f16-unit" data-translation-unit="at9spro-p76-f16-unit"></span>
+
+<span id="at9spro-p77-body" data-translation-unit="at9spro-p77-body"></span>
+
+### 5.3.10 スロットルミキシング（THROTTLE MIX）
+
+<span id="at9spro-p77-f1-unit" data-translation-unit="at9spro-p77-f1-unit"></span>
+
+<span id="at9spro-p77-f2-unit" data-translation-unit="at9spro-p77-f2-unit"></span>
+
+<span id="at9spro-p77-f3-unit" data-translation-unit="at9spro-p77-f3-unit"></span>
+
+<span id="at9spro-p77-f4-unit" data-translation-unit="at9spro-p77-f4-unit"></span>
+
+<span id="at9spro-p77-f5-unit" data-translation-unit="at9spro-p77-f5-unit"></span>
+
+<span id="at9spro-p77-f6-unit" data-translation-unit="at9spro-p77-f6-unit"></span>
+
+<span id="at9spro-p77-f7-unit" data-translation-unit="at9spro-p77-f7-unit"></span>
+
+<span id="at9spro-p77-f8-unit" data-translation-unit="at9spro-p77-f8-unit"></span>
+
+<span id="at9spro-p77-f9-unit" data-translation-unit="at9spro-p77-f9-unit"></span>
+
+<span id="at9spro-p77-f10-unit" data-translation-unit="at9spro-p77-f10-unit"></span>
+
+<span id="at9spro-p77-f11-unit" data-translation-unit="at9spro-p77-f11-unit"></span>
+
+<span id="at9spro-p77-f12-unit" data-translation-unit="at9spro-p77-f12-unit"></span>
+
+<span id="at9spro-p77-f13-unit" data-translation-unit="at9spro-p77-f13-unit"></span>
+
+<span id="at9spro-p77-f14-unit" data-translation-unit="at9spro-p77-f14-unit"></span>
+
+<span id="at9spro-p77-f15-unit" data-translation-unit="at9spro-p77-f15-unit"></span>
+
+<span id="at9spro-p77-f16-unit" data-translation-unit="at9spro-p77-f16-unit"></span>
+
+<span id="at9spro-p77-f17-unit" data-translation-unit="at9spro-p77-f17-unit"></span>
+
+<span id="at9spro-p77-f18-unit" data-translation-unit="at9spro-p77-f18-unit"></span>
+
+<span id="at9spro-p77-f19-unit" data-translation-unit="at9spro-p77-f19-unit"></span>
+
+<span id="at9spro-p77-f20-unit" data-translation-unit="at9spro-p77-f20-unit"></span>
+
+<span id="at9spro-p77-f21-unit" data-translation-unit="at9spro-p77-f21-unit"></span>
+
+<span id="at9spro-p77-f22-unit" data-translation-unit="at9spro-p77-f22-unit"></span>
+
+<span id="at9spro-p77-f23-unit" data-translation-unit="at9spro-p77-f23-unit"></span>
+
+<span id="at9spro-p77-f24-unit" data-translation-unit="at9spro-p77-f24-unit"></span>
+
+<span id="at9spro-p77-f25-unit" data-translation-unit="at9spro-p77-f25-unit"></span>
+
+<span id="at9spro-p77-f26-unit" data-translation-unit="at9spro-p77-f26-unit"></span>
+
+<span id="at9spro-p77-f27-unit" data-translation-unit="at9spro-p77-f27-unit"></span>
+
+<span id="at9spro-p77-f28-unit" data-translation-unit="at9spro-p77-f28-unit"></span>
+
+<span id="at9spro-p78-body" data-translation-unit="at9spro-p78-body"></span>
+
+### 5.3.11 SWASH-RING
+
+### 5.3.12 THROTTLE NEEDLE
+
+### 5.3.13 PROG MIX
+
+<span id="at9spro-p78-f1-unit" data-translation-unit="at9spro-p78-f1-unit"></span>
+
+<span id="at9spro-p78-f2-unit" data-translation-unit="at9spro-p78-f2-unit"></span>
+
+<span id="at9spro-p78-f3-unit" data-translation-unit="at9spro-p78-f3-unit"></span>
+
+<span id="at9spro-p78-f4-unit" data-translation-unit="at9spro-p78-f4-unit"></span>
+
+<span id="at9spro-p78-f5-unit" data-translation-unit="at9spro-p78-f5-unit"></span>
+
+<span id="at9spro-p78-f6-unit" data-translation-unit="at9spro-p78-f6-unit"></span>
+
+<span id="at9spro-p78-f7-unit" data-translation-unit="at9spro-p78-f7-unit"></span>
+
+<span id="at9spro-p78-f8-unit" data-translation-unit="at9spro-p78-f8-unit"></span>
+
+<span id="at9spro-p78-f9-unit" data-translation-unit="at9spro-p78-f9-unit"></span>
+
+<span id="at9spro-p78-f10-unit" data-translation-unit="at9spro-p78-f10-unit"></span>
+
+<span id="at9spro-p78-f11-unit" data-translation-unit="at9spro-p78-f11-unit"></span>
+
+<span id="at9spro-p78-f12-unit" data-translation-unit="at9spro-p78-f12-unit"></span>
+
+<span id="at9spro-p78-f13-unit" data-translation-unit="at9spro-p78-f13-unit"></span>
+
+<span id="at9spro-p78-f14-unit" data-translation-unit="at9spro-p78-f14-unit"></span>
+
+<span id="at9spro-p78-f15-unit" data-translation-unit="at9spro-p78-f15-unit"></span>
+
+<span id="at9spro-p78-f16-unit" data-translation-unit="at9spro-p78-f16-unit"></span>
+
+<span id="at9spro-p78-f17-unit" data-translation-unit="at9spro-p78-f17-unit"></span>
+
+<span id="at9spro-p78-f18-unit" data-translation-unit="at9spro-p78-f18-unit"></span>
+
+<span id="at9spro-p78-f19-unit" data-translation-unit="at9spro-p78-f19-unit"></span>
+
+<span id="at9spro-p78-f20-unit" data-translation-unit="at9spro-p78-f20-unit"></span>
+
+<span id="at9spro-p78-f21-unit" data-translation-unit="at9spro-p78-f21-unit"></span>
+
+<span id="at9spro-p78-f22-unit" data-translation-unit="at9spro-p78-f22-unit"></span>
+
+<span id="at9spro-p78-f23-unit" data-translation-unit="at9spro-p78-f23-unit"></span>
+
+<span id="at9spro-p78-f24-unit" data-translation-unit="at9spro-p78-f24-unit"></span>
+
+<span id="at9spro-p78-f25-unit" data-translation-unit="at9spro-p78-f25-unit"></span>
+
+<span id="at9spro-p78-f26-unit" data-translation-unit="at9spro-p78-f26-unit"></span>
+
+<span id="at9spro-p78-f27-unit" data-translation-unit="at9spro-p78-f27-unit"></span>
+
+<span id="at9spro-p78-f28-unit" data-translation-unit="at9spro-p78-f28-unit"></span>
+
+<span id="at9spro-p78-f29-unit" data-translation-unit="at9spro-p78-f29-unit"></span>
+
+<span id="at9spro-p78-f30-unit" data-translation-unit="at9spro-p78-f30-unit"></span>
+
+<span id="at9spro-p78-f31-unit" data-translation-unit="at9spro-p78-f31-unit"></span>
+
+<span id="at9spro-p79-body" data-translation-unit="at9spro-p79-body"></span>
+
+### 5.3.14 CONDITION
+
+## 第6部 マルチローター機能
+
+<span id="at9spro-p79-f1-unit" data-translation-unit="at9spro-p79-f1-unit"></span>
+
+<span id="at9spro-p79-f2-unit" data-translation-unit="at9spro-p79-f2-unit"></span>
+
+<span id="at9spro-p79-f3-unit" data-translation-unit="at9spro-p79-f3-unit"></span>
+
+<span id="at9spro-p79-f4-unit" data-translation-unit="at9spro-p79-f4-unit"></span>
+
+<span id="at9spro-p80-body" data-translation-unit="at9spro-p80-body"></span>
+
+<span id="at9spro-p80-f1-unit" data-translation-unit="at9spro-p80-f1-unit"></span>
+
+<span id="at9spro-p80-f2-unit" data-translation-unit="at9spro-p80-f2-unit"></span>
+
+<span id="at9spro-p80-f3-unit" data-translation-unit="at9spro-p80-f3-unit"></span>
+
+<span id="at9spro-p80-f4-unit" data-translation-unit="at9spro-p80-f4-unit"></span>
+
+<span id="at9spro-p80-f5-unit" data-translation-unit="at9spro-p80-f5-unit"></span>
+
+<span id="at9spro-p80-f6-unit" data-translation-unit="at9spro-p80-f6-unit"></span>
+
+<span id="at9spro-p80-f7-unit" data-translation-unit="at9spro-p80-f7-unit"></span>
+
+<span id="at9spro-p80-f8-unit" data-translation-unit="at9spro-p80-f8-unit"></span>
+
+<span id="at9spro-p80-f9-unit" data-translation-unit="at9spro-p80-f9-unit"></span>
+
+<span id="at9spro-p80-f10-unit" data-translation-unit="at9spro-p80-f10-unit"></span>
+
+<span id="at9spro-p80-f11-unit" data-translation-unit="at9spro-p80-f11-unit"></span>
+
+<span id="at9spro-p80-f12-unit" data-translation-unit="at9spro-p80-f12-unit"></span>
+
+<span id="at9spro-p80-f13-unit" data-translation-unit="at9spro-p80-f13-unit"></span>
+
+<span id="at9spro-p80-f14-unit" data-translation-unit="at9spro-p80-f14-unit"></span>
+
+<span id="at9spro-p80-f15-unit" data-translation-unit="at9spro-p80-f15-unit"></span>
+
+<span id="at9spro-p80-f16-unit" data-translation-unit="at9spro-p80-f16-unit"></span>
+
+<span id="at9spro-p80-f17-unit" data-translation-unit="at9spro-p80-f17-unit"></span>
+
+<span id="at9spro-p80-f18-unit" data-translation-unit="at9spro-p80-f18-unit"></span>
+
+<span id="at9spro-p80-f19-unit" data-translation-unit="at9spro-p80-f19-unit"></span>
+
+<span id="at9spro-p80-f20-unit" data-translation-unit="at9spro-p80-f20-unit"></span>
+
+<span id="at9spro-p80-f21-unit" data-translation-unit="at9spro-p80-f21-unit"></span>
+
+<span id="at9spro-p80-f22-unit" data-translation-unit="at9spro-p80-f22-unit"></span>
+
+<span id="at9spro-p80-f23-unit" data-translation-unit="at9spro-p80-f23-unit"></span>
+
+<span id="at9spro-p80-f24-unit" data-translation-unit="at9spro-p80-f24-unit"></span>
+
+<span id="at9spro-p80-f25-unit" data-translation-unit="at9spro-p80-f25-unit"></span>
+
+<span id="at9spro-p80-f26-unit" data-translation-unit="at9spro-p80-f26-unit"></span>
+
+<span id="at9spro-p80-f27-unit" data-translation-unit="at9spro-p80-f27-unit"></span>
+
+<span id="at9spro-p80-f28-unit" data-translation-unit="at9spro-p80-f28-unit"></span>
+
+<span id="at9spro-p80-f29-unit" data-translation-unit="at9spro-p80-f29-unit"></span>
+
+<span id="at9spro-p80-f30-unit" data-translation-unit="at9spro-p80-f30-unit"></span>
+
+<span id="at9spro-p80-f31-unit" data-translation-unit="at9spro-p80-f31-unit"></span>
+
+<span id="at9spro-p80-f32-unit" data-translation-unit="at9spro-p80-f32-unit"></span>
+
+<span id="at9spro-p80-f33-unit" data-translation-unit="at9spro-p80-f33-unit"></span>
+
+<span id="at9spro-p80-f34-unit" data-translation-unit="at9spro-p80-f34-unit"></span>
+
+<span id="at9spro-p80-f35-unit" data-translation-unit="at9spro-p80-f35-unit"></span>
+
+<span id="at9spro-p80-f36-unit" data-translation-unit="at9spro-p80-f36-unit"></span>
+
+<span id="at9spro-p80-f37-unit" data-translation-unit="at9spro-p80-f37-unit"></span>
+
+<span id="at9spro-p80-f38-unit" data-translation-unit="at9spro-p80-f38-unit"></span>
+
+<span id="at9spro-p80-f39-unit" data-translation-unit="at9spro-p80-f39-unit"></span>
+
+<span id="at9spro-p80-f40-unit" data-translation-unit="at9spro-p80-f40-unit"></span>
+
+<span id="at9spro-p80-f41-unit" data-translation-unit="at9spro-p80-f41-unit"></span>
+
+<span id="at9spro-p80-f42-unit" data-translation-unit="at9spro-p80-f42-unit"></span>
+
+<span id="at9spro-p80-f43-unit" data-translation-unit="at9spro-p80-f43-unit"></span>
+
+<span id="at9spro-p80-f44-unit" data-translation-unit="at9spro-p80-f44-unit"></span>
+
+<span id="at9spro-p80-f45-unit" data-translation-unit="at9spro-p80-f45-unit"></span>
+
+<span id="at9spro-p80-f46-unit" data-translation-unit="at9spro-p80-f46-unit"></span>
+
+<span id="at9spro-p80-f47-unit" data-translation-unit="at9spro-p80-f47-unit"></span>
+
+<span id="at9spro-p80-f48-unit" data-translation-unit="at9spro-p80-f48-unit"></span>
+
+<span id="at9spro-p80-f49-unit" data-translation-unit="at9spro-p80-f49-unit"></span>
+
+<span id="at9spro-p80-f50-unit" data-translation-unit="at9spro-p80-f50-unit"></span>
+
+<span id="at9spro-p80-f51-unit" data-translation-unit="at9spro-p80-f51-unit"></span>
+
+<span id="at9spro-p80-f52-unit" data-translation-unit="at9spro-p80-f52-unit"></span>
+
+<span id="at9spro-p80-f53-unit" data-translation-unit="at9spro-p80-f53-unit"></span>
+
+<span id="at9spro-p80-f54-unit" data-translation-unit="at9spro-p80-f54-unit"></span>
+
+<span id="at9spro-p80-f55-unit" data-translation-unit="at9spro-p80-f55-unit"></span>
+
+<span id="at9spro-p80-f56-unit" data-translation-unit="at9spro-p80-f56-unit"></span>
+
+<span id="at9spro-p80-f57-unit" data-translation-unit="at9spro-p80-f57-unit"></span>
+
+<span id="at9spro-p80-f58-unit" data-translation-unit="at9spro-p80-f58-unit"></span>
+
+<span id="at9spro-p80-f59-unit" data-translation-unit="at9spro-p80-f59-unit"></span>
+
+<span id="at9spro-p80-f60-unit" data-translation-unit="at9spro-p80-f60-unit"></span>
+
+<span id="at9spro-p80-f61-unit" data-translation-unit="at9spro-p80-f61-unit"></span>
+
+<span id="at9spro-p80-f62-unit" data-translation-unit="at9spro-p80-f62-unit"></span>
+
+<span id="at9spro-p80-f63-unit" data-translation-unit="at9spro-p80-f63-unit"></span>
+
+<span id="at9spro-p80-f64-unit" data-translation-unit="at9spro-p80-f64-unit"></span>
+
+<span id="at9spro-p80-f65-unit" data-translation-unit="at9spro-p80-f65-unit"></span>
+
+<span id="at9spro-p80-f66-unit" data-translation-unit="at9spro-p80-f66-unit"></span>
+
+<span id="at9spro-p80-f67-unit" data-translation-unit="at9spro-p80-f67-unit"></span>
+
+<span id="at9spro-p81-body" data-translation-unit="at9spro-p81-body"></span>
+
+### 6.1 MULTIROTOR BASIC MENU
+
+#### 6.1.1 MODEL TYPE
+
+#### 6.1.2 補助チャンネル設定
+
+### 6.2 ADVANCE MENU FOR MULTIROTOR
+
+<span id="at9spro-p81-f1-unit" data-translation-unit="at9spro-p81-f1-unit"></span>
+
+<span id="at9spro-p81-f2-unit" data-translation-unit="at9spro-p81-f2-unit"></span>
+
+<span id="at9spro-p81-f3-unit" data-translation-unit="at9spro-p81-f3-unit"></span>
+
+<span id="at9spro-p81-f4-unit" data-translation-unit="at9spro-p81-f4-unit"></span>
+
+<span id="at9spro-p81-f5-unit" data-translation-unit="at9spro-p81-f5-unit"></span>
+
+<span id="at9spro-p81-f6-unit" data-translation-unit="at9spro-p81-f6-unit"></span>
+
+<span id="at9spro-p81-f7-unit" data-translation-unit="at9spro-p81-f7-unit"></span>
+
+<span id="at9spro-p81-f8-unit" data-translation-unit="at9spro-p81-f8-unit"></span>
+
+<span id="at9spro-p81-f9-unit" data-translation-unit="at9spro-p81-f9-unit"></span>
+
+<span id="at9spro-p81-f10-unit" data-translation-unit="at9spro-p81-f10-unit"></span>
+
+<span id="at9spro-p81-f11-unit" data-translation-unit="at9spro-p81-f11-unit"></span>
+
+<span id="at9spro-p81-f12-unit" data-translation-unit="at9spro-p81-f12-unit"></span>
+
+<span id="at9spro-p81-f13-unit" data-translation-unit="at9spro-p81-f13-unit"></span>
+
+<span id="at9spro-p81-f14-unit" data-translation-unit="at9spro-p81-f14-unit"></span>
+
+<span id="at9spro-p81-f15-unit" data-translation-unit="at9spro-p81-f15-unit"></span>
+
+<span id="at9spro-p81-f16-unit" data-translation-unit="at9spro-p81-f16-unit"></span>
+
+<span id="at9spro-p81-f17-unit" data-translation-unit="at9spro-p81-f17-unit"></span>
+
+<span id="at9spro-p81-f18-unit" data-translation-unit="at9spro-p81-f18-unit"></span>
+
+<span id="at9spro-p81-f19-unit" data-translation-unit="at9spro-p81-f19-unit"></span>
+
+<span id="at9spro-p81-f20-unit" data-translation-unit="at9spro-p81-f20-unit"></span>
+
+<span id="at9spro-p81-f21-unit" data-translation-unit="at9spro-p81-f21-unit"></span>
+
+<span id="at9spro-p81-f22-unit" data-translation-unit="at9spro-p81-f22-unit"></span>
+
+<span id="at9spro-p81-f23-unit" data-translation-unit="at9spro-p81-f23-unit"></span>
+
+<span id="at9spro-p81-f24-unit" data-translation-unit="at9spro-p81-f24-unit"></span>
+
+<span id="at9spro-p82-body" data-translation-unit="at9spro-p82-body"></span>
+
+#### 6.2.1 ATTITUDE
+
+#### 6.2.2 THROTTLE CURVE
+
+#### 6.2.3 PROG. MIX
+
+<span id="at9spro-p82-f1-unit" data-translation-unit="at9spro-p82-f1-unit"></span>
+
+<span id="at9spro-p82-f2-unit" data-translation-unit="at9spro-p82-f2-unit"></span>
+
+<span id="at9spro-p82-f3-unit" data-translation-unit="at9spro-p82-f3-unit"></span>
+
+<span id="at9spro-p82-f4-unit" data-translation-unit="at9spro-p82-f4-unit"></span>
+
+<span id="at9spro-p82-f5-unit" data-translation-unit="at9spro-p82-f5-unit"></span>
+
+<span id="at9spro-p82-f6-unit" data-translation-unit="at9spro-p82-f6-unit"></span>
+
+<span id="at9spro-p82-f7-unit" data-translation-unit="at9spro-p82-f7-unit"></span>
+
+<span id="at9spro-p82-f8-unit" data-translation-unit="at9spro-p82-f8-unit"></span>
+
+<span id="at9spro-p82-f9-unit" data-translation-unit="at9spro-p82-f9-unit"></span>
+
+<span id="at9spro-p82-f10-unit" data-translation-unit="at9spro-p82-f10-unit"></span>
+
+<span id="at9spro-p82-f11-unit" data-translation-unit="at9spro-p82-f11-unit"></span>
+
+<span id="at9spro-p82-f12-unit" data-translation-unit="at9spro-p82-f12-unit"></span>
+
+<span id="at9spro-p82-f13-unit" data-translation-unit="at9spro-p82-f13-unit"></span>
+
+<span id="at9spro-p82-f14-unit" data-translation-unit="at9spro-p82-f14-unit"></span>
+
+<span id="at9spro-p82-f15-unit" data-translation-unit="at9spro-p82-f15-unit"></span>
+
+<span id="at9spro-p82-f16-unit" data-translation-unit="at9spro-p82-f16-unit"></span>
+
+<span id="at9spro-p82-f17-unit" data-translation-unit="at9spro-p82-f17-unit"></span>
+
+<span id="at9spro-p82-f18-unit" data-translation-unit="at9spro-p82-f18-unit"></span>
+
+<span id="at9spro-p82-f19-unit" data-translation-unit="at9spro-p82-f19-unit"></span>
+
+<span id="at9spro-p82-f20-unit" data-translation-unit="at9spro-p82-f20-unit"></span>

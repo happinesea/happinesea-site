@@ -1,6 +1,4 @@
-import remaining from '../src/data/manuals/remaining-web.json' with { type: 'json' };
-import batch6 from '../src/data/manuals/receiver-web-batch6.json' with { type: 'json' };
-import batch5 from '../src/data/manuals/receiver-web-batch5.json' with { type: 'json' };
+import catalogue from '../src/data/product-catalogue.json' with { type: 'json' };
 import assert from 'node:assert/strict';
 import { access, readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -619,11 +617,7 @@ test('Radiolink catalogue exposes seven accessible category filters', async () =
 
 test('Radiolink catalogue renders all inventory products without pending detail links', async () => {
   const html = await route('radiolink/index.html');
-  const detailCount =
-    27 +
-    batch5.manuals.filter((m) => m.product_id !== 'r6fg').length +
-    batch6.manuals.length +
-    remaining.manuals.filter((m) => m.product_id !== 'rtc8').length;
+  const detailCount = catalogue.filter((product) => product.detailPath).length;
 
   assert.equal((html.match(/data-product-card=/g) ?? []).length, 83);
   assert.equal(
@@ -852,7 +846,10 @@ for (const product of [
       assert.doesNotMatch(html, />標準モード</);
       assert.doesNotMatch(html, />長距離モード</);
     }
-    if (['rc8p', 'r12f', 'r7fg', 'r16f', 'r8fg', 'r6fg'].includes(product.slug))
+    if (
+      ['rc8p', 'r12f', 'r7fg', 'r16f', 'r8fg', 'r6fg'].includes(product.slug) ||
+      (product.slug === 't12d' && publicationBase)
+    )
       assert.ok(
         html.includes(`href="${publicationBase}/manuals/${product.slug}/"`),
       );
